@@ -1,6 +1,6 @@
 ---
 layout: post-index
-title: "Welcome to the Neo-HPSTR Blog"
+title: "Sharing coding knowledge"
 description: "Describe this nonsense."
 tags: [Jekyll, theme, themes, responsive, blog, modern]
 comments: false
@@ -33,8 +33,8 @@ comments: false
     {% endif %}
   </header>
   <div class="entry-content">
-    {% if post.content contains "<!-- more -->" %}
-        {{ post.content | split:"<!-- more -->" | first % }}
+    {% if post.content contains "<!--more-->" %}
+        {{ post.content | split:"<!--more-->" | first % }}
         <div align="center">
             <div markdown="0"><a href="{{ site.url }}{{ post.url }}" class="btn btn-info">Continue Reading ...</a></div>
         </div>

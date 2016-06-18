@@ -43,6 +43,11 @@
 <!-- Load Modernizr -->
 <script type="text/javascript" src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 
+<!-- Load highlight.js - https://highlightjs.org/-->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 {% include icons.html %}
 
 {% if page.image.background or site.background %}

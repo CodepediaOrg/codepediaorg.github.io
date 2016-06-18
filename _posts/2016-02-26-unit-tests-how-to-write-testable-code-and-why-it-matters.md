@@ -31,7 +31,9 @@ tags:
   - '#UnitTesting'
   - 'C#'
   - testing
----
+
+show_author: true
+-----------------
 <p style="text-align: justify;">
   Unit testing is an essential instrument in the toolbox of any serious <a href="http://www.toptal.com/software">software developer</a>. However, it can sometimes be quite difficult to write a good unit test for a particular piece of code. Having difficulty testing their own or someone else’s code, developers often think that their struggles are caused by a lack of some fundamental testing knowledge or secret unit testing techniques.
 </p>

@@ -38,15 +38,16 @@ tags:
   - testing
 ---
 <p style="text-align: justify;">
-  If you want to quickly test your REST api from the command line, you can use <a title="http://curl.haxx.se/" href="http://curl.haxx.se/" target="_blank">curl</a>. In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api developed in my post <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a><!--more-->
+  If you want to quickly test your REST api from the command line, you can use <a title="http://curl.haxx.se/" href="http://curl.haxx.se/" target="_blank">curl</a>. In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api developed in my post <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
 </p>
+<!--more-->
 
 <p style="text-align: justify;">
   <div id="toc_container" class="no_bullets">
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#1_Introduction">1. Introduction</a><ul>
@@ -64,7 +65,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#2_SOAPui_test_suite_translated_to_curl_requests">2. SOAPui test suite translated to curl requests</a><ul>
           <li>
@@ -86,7 +87,7 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#22_Read_podcast_resource">2.2. Read podcast resource</a><ul>
               <li>
@@ -97,7 +98,7 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#23_Update_podcast_resource">2.3. Update podcast resource</a><ul>
               <li>
@@ -108,7 +109,7 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#233_POST_partial_update_for_not_existent_podcast_8211_404_NOT_FOUND">2.3.3. POST (partial update) for not existent podcast &#8211; 404 (NOT_FOUND)</a><ul>
               <li>
@@ -116,7 +117,7 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#24_DELETE_resource">2.4. DELETE resource</a><ul>
               <li>
@@ -127,7 +128,7 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#25_Bonus_operations">2.5. Bonus operations</a><ul>
               <li>
@@ -137,7 +138,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Resources">Resources</a>
       </li>
@@ -154,7 +155,7 @@ tags:
 ### <span id="11_What_is_curl"><strong>1.1. What is curl?</strong></span>
 
 <p style="padding-left: 30px; text-align: justify;">
-  Well, <em>curl is a command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, HTTP/2, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, Kerberos&#8230;), file transfer resume, proxy tunneling and more.[1]</em>
+ <em>Curl is a command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, HTTP/2, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, Kerberos&#8230;), file transfer resume, proxy tunneling and more.[1]</em>
 </p>
 
 As mentioned, I will be using curl to simulate HEAD, GET, POST, PUT and DELETE request calls to the REST API.
@@ -167,14 +168,18 @@ As mentioned, I will be using curl to simulate HEAD, GET, POST, PUT and DELETE r
 
 **Request**
 
-<pre class="lang:default decode:true" title="curl -I does a HEAD request">curl -I http://localhost:8888/demo-rest-jersey-spring/podcasts/1
+<pre>
+    <code class="bash">
+        curl -I http://localhost:8888/demo-rest-jersey-spring/podcasts/1
+    </code>
 </pre>
 
-<p style="padding-left: 30px;">
   OR
-</p>
 
-<pre class="lang:less decode:true " title="HEAD request against a resource">curl -i -X HEAD http://localhost:8888/demo-rest-jersey-spring/podcasts/1
+<pre>
+    <code class="bash">
+        curl -i -X HEAD http://localhost:8888/demo-rest-jersey-spring/podcasts/1
+    </code>
 </pre>
 
 **Curl options **
@@ -184,20 +189,23 @@ As mentioned, I will be using curl to simulate HEAD, GET, POST, PUT and DELETE r
 
 **Response**
 
-<pre class="lang:sh decode:true" title="HEAD response">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0   631    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
-HTTP/1.1 200 OK
-Date: Tue, 25 Nov 2014 12:54:56 GMT
-Server: Jetty(9.0.7.v20131107)
-Access-Control-Allow-Headers: X-extra-header
-Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-Allow: OPTIONS
-Content-Type: application/xml
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Vary: Accept-Encoding
-Content-Length: 631
+<pre>
+    <code class="bash">
+        % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                         Dload  Upload   Total   Spent    Left  Speed
+          0   631    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
+        HTTP/1.1 200 OK
+        Date: Tue, 25 Nov 2014 12:54:56 GMT
+        Server: Jetty(9.0.7.v20131107)
+        Access-Control-Allow-Headers: X-extra-header
+        Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+        Allow: OPTIONS
+        Content-Type: application/xml
+        Access-Control-Allow-Origin: *
+        Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+        Vary: Accept-Encoding
+        Content-Length: 631
+    </code>
 </pre>
 
 <p style="text-align: justify;">
@@ -206,7 +214,6 @@ Content-Length: 631
 
   * `Access-Control-Allow-Headers: Content-Type`
   * `Access-Control-Allow-Methods: GET, POST, DELETE, PUT`
-  
     and
   * `Access-Control-Allow-Origin: *`
 
@@ -218,17 +225,21 @@ in the response.
   What I find a little bit intriguing is the response header <code>Content-Type: application/xml</code>, because I would have expected it to be <code>application/json</code>, since in the resource method defined with Jersey this should have taken precedence:
 </p>
 
-<pre class="lang:java mark:3 decode:true" title="@Produces annotation media types">@GET
-@Path("{id}")
-@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-public Response getPodcastById(@PathParam("id") Long id, @QueryParam("detailed") boolean detailed)
-		throws IOException,	AppException {
-	Podcast podcastById = podcastService.getPodcastById(id);
-	return Response.status(200)
-			.entity(podcastById, detailed ? new Annotation[]{PodcastDetailedView.Factory.get()} : new Annotation[0])
-			.header("Access-Control-Allow-Headers", "X-extra-header")
-			.allow("OPTIONS").build();
-}</pre>
+<pre>
+    <code class="java">
+        @GET
+        @Path("{id}")
+        @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+        public Response getPodcastById(@PathParam("id") Long id, @QueryParam("detailed") boolean detailed)
+                throws IOException,	AppException {
+            Podcast podcastById = podcastService.getPodcastById(id);
+            return Response.status(200)
+                    .entity(podcastById, detailed ? new Annotation[]{PodcastDetailedView.Factory.get()} : new Annotation[0])
+                    .header("Access-Control-Allow-Headers", "X-extra-header")
+                    .allow("OPTIONS").build();
+        }
+    </code>
+</pre>
 
 ### <span id="13_GET_request">1.3. GET request</span>
 
@@ -236,60 +247,98 @@ Executing curl with no parameters on a URL (resource) will execute a GET.
 
 **Request**
 
-<pre class="lang:sh decode:true" title="Simple curl call on the resource">curl http://localhost:8888/demo-rest-jersey-spring/podcasts/1
+<pre>
+    <code class="bash">
+        curl http://localhost:8888/demo-rest-jersey-spring/podcasts/1
+    </code>
 </pre>
 
 **Response**
 
-<pre class="lang:sh decode:true" title="Response">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;podcast&gt;&lt;id&gt;1&lt;/id&gt;&lt;title&gt;- The Naked Scientists Podcast - Stripping Down Science&lt;/title&gt;&lt;linkOnPodcastpedia&gt;http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science&lt;/linkOnPodcastpedia&gt;&lt;feed&gt;feed_placeholder&lt;/feed&gt;&lt;description&gt;The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.&lt;/description&gt;&lt;insertionDate&gt;2014-10-29T10:46:02.00+0100&lt;/insertionDate&gt;&lt;/podcast&gt;</pre>
+<pre>
+    <code class="html">
+      &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+      &lt;podcast&gt;
+         &lt;id&gt;1&lt;/id&gt;
+         &lt;title&gt;- The Naked Scientists Podcast - Stripping Down Science&lt;/title&gt;
+         &lt;linkOnPodcastpedia&gt;http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science&lt;/linkOnPodcastpedia&gt;
+         &lt;feed&gt;feed_placeholder&lt;/feed&gt;
+         &lt;description&gt;The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.&lt;/description&gt;
+         &lt;insertionDate&gt;2014-10-29T10:46:02.00+0100&lt;/insertionDate&gt;
+      &lt;/podcast&gt;
+    </code>
+</pre>
 
 <p style="text-align: justify;">
   Note that as expected from the HEAD request we get an xml document. Anyway we can force a JSON response by adding a header line to our curl request, setting the <code>Accept</code> HTTP header to <code>application/json</code>:
 </p>
 
-<pre class="lang:sh decode:true" title="curl request with custom header">curl --header "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1</pre>
+<pre>
+    <code class="bash">
+        curl --header "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1
+    </code>
+</pre>
 
 **Curl options **
 
   * `-H, --header` &#8211; customer header to pass to the server
 
-<pre class="lang:sh decode:true" title="curl request with custom header">curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1</pre>
+
+<pre>
+    <code class="bash">
+        curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1
+    </code>
+</pre>
 
 **Response**
-
-<pre class="lang:sh decode:true " title="Response in JSON format">{"id":1,"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.","insertionDate":"2014-10-29T10:46:02.00+0100"}
+<pre>
+    <code class="json">
+      {
+        "id": 1,
+        "title": "- The Naked Scientists Podcast - Stripping Down Science",
+        "linkOnPodcastpedia": "http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science",
+        "feed": "feed_placeholder",
+        "description": "The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.",
+        "insertionDate": "2014-10-29T10:46:02.00+0100"
+      }
+  </code>
 </pre>
 
 If you want to have it displayed prettier, you can use the following command, provided you have <a title="http://python.org" href="http://python.org" target="_blank">Python </a>installed on your machine.
 
 **Request**
-
-<pre class="lang:sh decode:true" title="Call resource with json pretty print">curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1 | python -m json.tool
+<pre>
+    <code class="bash">
+      curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1 | python -m json.tool
+    </code>
 </pre>
 
 **Response**
-
-<pre class="lang:sh decode:true " title="JSON response - pretty printed">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100   758  100   758    0     0   6954      0 --:--:-- --:--:-- --:--:--  6954
-[
-    {
-        "description": "The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.",
-        "feed": "feed_placeholder",
-        "id": 1,
-        "insertionDate": "2014-10-29T10:46:02.00+0100",
-        "linkOnPodcastpedia": "http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science",
-        "title": "- The Naked Scientists Podcast - Stripping Down Science"
-    },
-    {
-        "description": "Quarks & Co: Das Wissenschaftsmagazin",
-        "feed": "http://podcast.wdr.de/quarks.xml",
-        "id": 2,
-        "insertionDate": "2014-10-29T10:46:13.00+0100",
-        "linkOnPodcastpedia": "http://www.podcastpedia.org/quarks",
-        "title": "Quarks & Co - zum Mitnehmen"
-    }
-]
+<pre>
+    <code class="bash">
+        % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                         Dload  Upload   Total   Spent    Left  Speed
+        100   758  100   758    0     0   6954      0 --:--:-- --:--:-- --:--:--  6954
+        [
+            {
+                "description": "The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.",
+                "feed": "feed_placeholder",
+                "id": 1,
+                "insertionDate": "2014-10-29T10:46:02.00+0100",
+                "linkOnPodcastpedia": "http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science",
+                "title": "- The Naked Scientists Podcast - Stripping Down Science"
+            },
+            {
+                "description": "Quarks & Co: Das Wissenschaftsmagazin",
+                "feed": "http://podcast.wdr.de/quarks.xml",
+                "id": 2,
+                "insert
+                ionDate": "2014-10-29T10:46:13.00+0100",
+                "linkOnPodcastpedia": "http://www.podcastpedia.org/quarks",
+                "title": "Quarks & Co - zum Mitnehmen"
+            }
+        ]
+    </code>
 </pre>
 
 ### <span id="14_Curl_request_with_multiple_headers">1.4. Curl request with multiple headers</span>
@@ -299,8 +348,10 @@ If you want to have it displayed prettier, you can use the following command, pr
 </p>
 
 **Request**
-
-<pre class="lang:java decode:true" title="Set multiple headers with curl">curl -v -H "Accept:application/json" -H "Accept-encoding:gzip" http://localhost:8888/demo-rest-jersey-spring/podcasts/
+<pre>
+    <code class="bash">
+      curl -v -H "Accept:application/json" -H "Accept-encoding:gzip" http://localhost:8888/demo-rest-jersey-spring/podcasts/
+    </code>
 </pre>
 
 **Curl options **
@@ -309,43 +360,46 @@ If you want to have it displayed prettier, you can use the following command, pr
 
 To achieve that you need to simply **add another** -H option with the corresponding value. Of course in this case you would get some unreadable characters in the content, if you do not redirect the response to a file:
 
-<pre class="lang:sh decode:true" title="Response with fuzzy characters">* Adding handle: conn: 0x28ddd80
-* Adding handle: send: 0
-* Adding handle: recv: 0
-* Curl_addHandleToPipeline: length: 1
-* - Conn 0 (0x28ddd80) send_pipe: 1, recv_pipe: 0
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* About to connect() to proxy vldn680 port 19001 (#0)
-*   Trying 10.32.142.80...
-* Connected to vldn680 (10.32.142.80) port 19001 (#0)
-&gt; GET http://localhost:8888/demo-rest-jersey-spring/podcasts/ HTTP/1.1
-&gt; User-Agent: curl/7.30.0
-&gt; Host: localhost:8888
-&gt; Proxy-Connection: Keep-Alive
-&gt; Accept:application/json
-&gt; Accept-encoding:gzip
-&gt;
-&lt; HTTP/1.1 200 OK
-&lt; Date: Tue, 25 Nov 2014 16:17:02 GMT
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-&lt; Server: Jetty(9.0.7.v20131107)
-&lt; Content-Type: application/json
-&lt; Access-Control-Allow-Origin: *
-&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-&lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-&lt; Vary: Accept-Encoding
-&lt; Content-Encoding: gzip
-&lt; Content-Length: 413
-&lt; Via: 1.1 vldn680:8888
-&lt;
-{ [data not shown]
-100   413  100   413    0     0   2647      0 --:--:-- --:--:-- --:--:--  2647▒QKo▒0▒+▒▒g▒▒R▒+{▒V▒Pe▒▒؊c▒▒      n▒▒▒▒fæHH▒"▒▒g▒/?2▒eM▒gl▒a▒d
-▒{=`7▒Eϖ▒▒c▒ZM
+<pre>
+    <code class="bash">
+      * Adding handle: conn: 0x28ddd80
+      * Adding handle: send: 0
+      * Adding handle: recv: 0
+      * Curl_addHandleToPipeline: length: 1
+      * - Conn 0 (0x28ddd80) send_pipe: 1, recv_pipe: 0
+        % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                       Dload  Upload   Total   Spent    Left  Speed
+        0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* About to connect() to proxy vldn680 port 19001 (#0)
+      *   Trying 10.32.142.80...
+      * Connected to vldn680 (10.32.142.80) port 19001 (#0)
+      > GET http://localhost:8888/demo-rest-jersey-spring/podcasts/ HTTP/1.1
+      > User-Agent: curl/7.30.0
+      > Host: localhost:8888
+      > Proxy-Connection: Keep-Alive
+      > Accept:application/json
+      > Accept-encoding:gzip
+      >
+      < HTTP/1.1 200 OK
+      < Date: Tue, 25 Nov 2014 16:17:02 GMT
+      * Server Jetty(9.0.7.v20131107) is not blacklisted
+      < Server: Jetty(9.0.7.v20131107)
+      < Content-Type: application/json
+      < Access-Control-Allow-Origin: *
+      < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      < Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      < Vary: Accept-Encoding
+      < Content-Encoding: gzip
+      < Content-Length: 413
+      < Via: 1.1 vldn680:8888
+      <
+      { [data not shown]
+      100   413  100   413    0     0   2647      0 --:--:-- --:--:-- --:--:--  2647▒QKo▒0▒+▒▒g▒▒R▒+{▒V▒Pe▒▒؊c▒▒      n▒▒▒▒fæHH▒"▒▒g▒/?2▒eM▒gl▒a▒d
+      ▒{=`7▒Eϖ▒▒c▒ZM
 
-n8▒i▒▒▒}H▒▒i1▒3g▒▒▒▒▒   ;▒E▒0O▒n▒R*▒g/E▒▒n=▒▒▒▒)▒U▒▒▒lժ▒Φ▒h▒6▒▒▒_&gt;w▒▒-▒▒:▒▒▒!▒Bb▒Z▒▒tO▒N@'= |▒▒C▒f▒▒loؠ▒,T▒▒A▒4▒▒:▒l+&lt;▒▒▒▒P▒3▒▒A▒lR
-▒u▒a▒͓9hO        #▒▒h▒i▒gq▒▒$▒▒|Ň        ▒▒▒08&gt;#▒0b!▒▒'▒G▒^▒Iﺬ.TU▒▒▒z▒\▒i^]e▒▒▒▒2▒▒▒֯▒▒?▒:/▒m▒▒▒▒▒Y▒h▒▒▒_䶙V▒+R▒WT▒0▒?f{▒▒▒▒&▒l▒▒Sk▒iԽ~▒▒▒▒▒▒n▒▒▒▒_V]į▒
-* Connection #0 to host vldn680 left intact
+      n8▒i▒▒▒}H▒▒i1▒3g▒▒▒▒▒   ;▒E▒0O▒n▒R*▒g/E▒▒n=▒▒▒▒)▒U▒▒▒lժ▒Φ▒h▒6▒▒▒_>w▒▒-▒▒:▒▒▒!▒Bb▒Z▒▒tO▒N@'= |▒▒C▒f▒▒loؠ▒,T▒▒A▒4▒▒:▒l+<▒▒▒▒P▒3▒▒A▒lR
+      ▒u▒a▒͓9hO        #▒▒h▒i▒gq▒▒$▒▒|Ň        ▒▒▒08>#▒0b!▒▒'▒G▒^▒Iﺬ.TU▒▒▒z▒\▒i^]e▒▒▒▒2▒▒▒֯▒▒?▒:/▒m▒▒▒▒▒Y▒h▒▒▒_䶙V▒+R▒WT▒0▒?f{▒▒▒▒&▒l▒▒Sk▒iԽ~▒▒▒▒▒▒n▒▒▒▒_V]į▒
+      * Connection #0 to host vldn680 left intact
+    </code>
 </pre>
 
 ## <span id="2_SOAPui_test_suite_translated_to_curl_requests">2. SOAPui test suite translated to curl requests</span>
@@ -358,98 +412,140 @@ As mentioned, in this second part I will map to curl requests the SOAPui test su
 
 **Request**
 
-<pre class="lang:sh decode:true" title="DELETE all podcasts">curl -i -X DELETE http://localhost:8888/demo-rest-jersey-spring/podcasts/
+<pre>
+    <code class="bash">
+      curl -i -X DELETE http://localhost:8888/demo-rest-jersey-spring/podcasts/
+    </code>
 </pre>
 
 **Response**
 
-<pre class="lang:sh decode:true" title="Response">HTTP/1.1 204 No Content
-Date: Tue, 25 Nov 2014 14:10:17 GMT
-Server: Jetty(9.0.7.v20131107)
-Content-Type: text/html
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-Vary: Accept-Encoding
-Via: 1.1 vldn680:8888
-Content-Length: 0
+<pre>
+    <code class="bash">
+      HTTP/1.1 204 No Content
+      Date: Tue, 25 Nov 2014 14:10:17 GMT
+      Server: Jetty(9.0.7.v20131107)
+      Content-Type: text/html
+      Access-Control-Allow-Origin: *
+      Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      Vary: Accept-Encoding
+      Via: 1.1 vldn680:8888
+      Content-Length: 0
+    </code>
 </pre>
 
 #### <span id="212_POST_new_podcast_without_feed_8211_400_BAD_REQUEST">2.1.2. POST new podcast without feed &#8211; 400 (BAD_REQUEST)</span>
 
 **Request**
 
-<pre class="lang:sh decode:true ">curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science-new-title2","linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
+<pre>
+    <code class="bash">
+      curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science-new-title2","linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
+    </code>
 </pre>
 
 **Response**
 
-<pre class="lang:sh decode:true" title="Response 400 Bad Request">HTTP/1.1 400 Bad Request
-Date: Tue, 25 Nov 2014 15:12:11 GMT
-Server: Jetty(9.0.7.v20131107)
-Content-Type: application/json
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-Vary: Accept-Encoding
-Content-Length: 271
-Via: 1.1 vldn680:8888
-Connection: close
+<pre>
+    <code class="bash">
+      HTTP/1.1 400 Bad Request
+      Date: Tue, 25 Nov 2014 15:12:11 GMT
+      Server: Jetty(9.0.7.v20131107)
+      Content-Type: application/json
+      Access-Control-Allow-Origin: *
+      Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      Vary: Accept-Encoding
+      Content-Length: 271
+      Via: 1.1 vldn680:8888
+      Connection: close
 
-{"status":400,"code":400,"message":"Provided data not sufficient for insertion","link":"http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"Please verify that the feed is properly generated/set"}
+      {"status":400,"code":400,"message":"Provided data not sufficient for insertion","link":"http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"Please verify that the feed is properly generated/set"}
+    </code>
 </pre>
 
 #### <span id="213_POST_new_podcast_correctly_8211_201_CREATED">2.1.3. POST new podcast correctly &#8211; 201 (CREATED)</span>
 
 **Request**
 
-<pre class="lang:sh decode:true" title="POST new podcast correctly - 201 (CREATED)">curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
+<pre>
+    <code class="bash">
+      curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
+    </code>
 </pre>
 
 **Response**
+<pre>
+    <code class="bash">
+      HTTP/1.1 201 Created
+      Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/2
+      Content-Type: text/html
+      Access-Control-Allow-Origin: *
+      Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      Vary: Accept-Encoding
+      Content-Length: 60
+      Server: Jetty(9.0.7.v20131107)
 
-<pre class="lang:sh decode:true ">curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science-new-title2","linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'</pre>
+      A new podcast has been created AT THE LOCATION you specified
+    </code>
+</pre>
 
 #### <span id="214_POST_same_podcast_as_before_to_receive_8211_409_CONFLICT">2.1.4. POST same podcast as before to receive &#8211; 409 (CONFLICT)</span>
 
 **Request**
 
-<pre class="lang:sh decode:true">curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'</pre>
+<pre>
+    <code class="bash">
+      curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
+    </code>
+</pre>
 
 **Response**
 
-<pre class="lang:sh mark:1 decode:true ">HTTP/1.1 409 Conflict
-Date: Tue, 25 Nov 2014 15:58:39 GMT
-Server: Jetty(9.0.7.v20131107)
-Content-Type: application/json
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-Vary: Accept-Encoding
-Content-Length: 300
+<pre>
+    <code class="bash">
+      HTTP/1.1 409 Conflict
+      Date: Tue, 25 Nov 2014 15:58:39 GMT
+      Server: Jetty(9.0.7.v20131107)
+      Content-Type: application/json
+      Access-Control-Allow-Origin: *
+      Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      Vary: Accept-Encoding
+      Content-Length: 300
 
-{"status":409,"code":409,"message":"Podcast with feed already existing in the database with the id 1","link":"http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"Please verify that the feed and title are properly generated"}
+      {"status":409,"code":409,"message":"Podcast with feed already existing in the database with the id 1","link":"http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"Please verify that the feed and title are properly generated"}
+    </code>
 </pre>
 
 #### <span id="215_PUT_new_podcast_at_location_8211_201_CREATED">2.1.5. PUT new podcast at location &#8211; 201 (CREATED)</span>
 
 **Request**
 
-<pre class="lang:sh decode:true ">curl -i -X PUT -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2,"title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"http://www.podcastpedia.org/quarks","feed":"http://podcast.wdr.de/quarks.xml","description":"Quarks & Co: Das Wissenschaftsmagazin"}'</pre>
+<pre>
+    <code class="bash">
+      curl -i -X PUT -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2,"title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"http://www.podcastpedia.org/quarks","feed":"http://podcast.wdr.de/quarks.xml","description":"Quarks & Co: Das Wissenschaftsmagazin"}'
+    </code>
+</pre>
 
 **Response**
 
-<pre class="lang:sh mark:1 decode:true">HTTP/1.1 201 Created
-Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/2
-Content-Type: text/html
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-Vary: Accept-Encoding
-Content-Length: 60
-Server: Jetty(9.0.7.v20131107)
+<pre>
+    <code class="bash">
+      HTTP/1.1 201 Created
+      Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/2
+      Content-Type: text/html
+      Access-Control-Allow-Origin: *
+      Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      Vary: Accept-Encoding
+      Content-Length: 60
+      Server: Jetty(9.0.7.v20131107)
 
-A new podcast has been created AT THE LOCATION you specified
+      A new podcast has been created AT THE LOCATION you specified
+    </code>
 </pre>
 
 ### <span id="22_Read_podcast_resource">2.2. Read podcast resource</span>
@@ -458,58 +554,69 @@ A new podcast has been created AT THE LOCATION you specified
 
 **Request**
 
-<pre class="lang:sh decode:true">curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1 | python -m json.tool
+<pre>
+    <code class="bash">
+      curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1 | python -m json.tool
+    </code>
 </pre>
 
 **Response**
 
-<pre class="lang:sh mark:1 decode:true">&lt; HTTP/1.1 200 OK
-&lt; Access-Control-Allow-Headers: X-extra-header
-&lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-&lt; Allow: OPTIONS
-&lt; Content-Type: application/json
-&lt; Access-Control-Allow-Origin: *
-&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-&lt; Vary: Accept-Encoding
-&lt; Content-Length: 192
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-&lt; Server: Jetty(9.0.7.v20131107)
-&lt;
-{ [data not shown]
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-100   192  100   192    0     0   2766      0 --:--:-- --:--:-- --:--:--  3254
-* Connection #0 to host localhost left intact
-* Expire cleared
-{
-    "feed": "http://podcast.wdr.de/quarks.xml",
-    "id": 1,
-    "insertionDate": "2014-06-05T22:35:34.00+0200",
-    "linkOnPodcastpedia": "http://www.podcastpedia.org/quarks",
-    "title": "Quarks & Co - zum Mitnehmen"
-}
+<pre>
+  <code class="bash">
+    < HTTP/1.1 200 OK
+    < Access-Control-Allow-Headers: X-extra-header
+    < Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+    < Allow: OPTIONS
+    < Content-Type: application/json
+    < Access-Control-Allow-Origin: *
+    < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+    < Vary: Accept-Encoding
+    < Content-Length: 192
+    * Server Jetty(9.0.7.v20131107) is not blacklisted
+    < Server: Jetty(9.0.7.v20131107)
+    <
+    { [data not shown]
+    * STATE: PERFORM => DONE handle 0x600056180; line 1626 (connection #0)
+    100   192  100   192    0     0   2766      0 --:--:-- --:--:-- --:--:--  3254
+    * Connection #0 to host localhost left intact
+    * Expire cleared
+    {
+        "feed": "http://podcast.wdr.de/quarks.xml",
+        "id": 1,
+        "insertionDate": "2014-06-05T22:35:34.00+0200",
+        "linkOnPodcastpedia": "http://www.podcastpedia.org/quarks",
+        "title": "Quarks & Co - zum Mitnehmen"
+    }
+  </code>
 </pre>
 
 #### <span id="222_GET_podcasts_sorted_by_insertion_date_DESC_8211_200_OK">2.2.2. GET podcasts sorted by insertion date DESC &#8211; 200 (OK)</span>
 
 **Request**
 
-<pre class="lang:sh decode:true">curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts?orderByInsertionDate=DESC | python -m json.tool
+<pre>
+    <code class="bash">
+      curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts?orderByInsertionDate=DESC | python -m json.tool
+    </code>
 </pre>
 
 **Response**
 
-<pre class="lang:sh mark:1 decode:true" title="Pretty formatted response">&lt; HTTP/1.1 200 OK
-&lt; Content-Type: application/json
-&lt; Access-Control-Allow-Origin: *
-&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-&lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-&lt; Vary: Accept-Encoding
-&lt; Content-Length: 419
+<pre>
+    <code class="bash">
+< HTTP/1.1 200 OK
+< Content-Type: application/json
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+< Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+< Vary: Accept-Encoding
+< Content-Length: 419
 * Server Jetty(9.0.7.v20131107) is not blacklisted
-&lt; Server: Jetty(9.0.7.v20131107)
-&lt;
+< Server: Jetty(9.0.7.v20131107)
+<
   0   419    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0{ [data not shown]
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
+* STATE: PERFORM => DONE handle 0x600056180; line 1626 (connection #0)
 100   419  100   419    0     0   6044      0 --:--:-- --:--:-- --:--:--  6983
 * Connection #0 to host localhost left intact
 * Expire cleared
@@ -529,6 +636,7 @@ A new podcast has been created AT THE LOCATION you specified
         "title": "Day in Tech History"
     }
 ]
+  </code>
 </pre>
 
 ### <span id="23_Update_podcast_resource">2.3. Update podcast resource</span>
@@ -537,108 +645,133 @@ A new podcast has been created AT THE LOCATION you specified
 
 **Request**
 
-<pre class="lang:sh decode:true ">curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2, "title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"http://www.podcastpedia.org/quarks","feed":"http://podcast.wdr.de/quarks.xml"}'
+<pre>
+    <code class="bash">
+      curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2, "title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"http://www.podcastpedia.org/quarks","feed":"http://podcast.wdr.de/quarks.xml"}'
+    </code>
 </pre>
 
 **Response**
 
-<pre class="lang:default decode:true ">&lt; HTTP/1.1 400 Bad Request
-&lt; Content-Type: application/json
-&lt; Access-Control-Allow-Origin: *
-&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-&lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-&lt; Vary: Accept-Encoding
-&lt; Content-Length: 290
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-&lt; Server: Jetty(9.0.7.v20131107)
-&lt;
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-* Connection #0 to host localhost left intact
-* Expire cleared
-{"status":400,"code":400,"message":"Please specify all properties for Full UPDATE","link":"http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"required properties - id, title, feed, lnkOnPodcastpedia, description"}
+<pre>
+    <code class="bash">
+      < HTTP/1.1 400 Bad Request
+      < Content-Type: application/json
+      < Access-Control-Allow-Origin: *
+      < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      < Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      < Vary: Accept-Encoding
+      < Content-Length: 290
+      * Server Jetty(9.0.7.v20131107) is not blacklisted
+      < Server: Jetty(9.0.7.v20131107)
+      <
+      * STATE: PERFORM => DONE handle 0x600056180; line 1626 (connection #0)
+      * Connection #0 to host localhost left intact
+      * Expire cleared
+      {"status":400,"code":400,"message":"Please specify all properties for Full UPDATE","link":"http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"required properties - id, title, feed, lnkOnPodcastpedia, description"}
+    </code>
 </pre>
 
 #### <span id="232_PUT_podcast_for_FULL_update_8211_200_OK">2.3.2. PUT podcast for FULL update &#8211; 200 (OK)</span>
 
 **Request**
 
-<pre class="lang:default decode:true ">$ curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2, "title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"http://www.podcastpedia.org/quarks","feed":"http://podcast.wdr.de/quarks.xml", "description":"Quarks & Co: Das Wissenschaftsmagazin"}'
+<pre>
+    <code class="bash">
+      $ curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2, "title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"http://www.podcastpedia.org/quarks","feed":"http://podcast.wdr.de/quarks.xml", "description":"Quarks & Co: Das Wissenschaftsmagazin"}'
+    </code>
 </pre>
 
 **Response**
 
-<pre class="lang:default decode:true ">&lt; HTTP/1.1 200 OK
-&lt; Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/2
-&lt; Content-Type: text/html
-&lt; Access-Control-Allow-Origin: *
-&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-&lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-&lt; Vary: Accept-Encoding
-&lt; Content-Length: 86
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-&lt; Server: Jetty(9.0.7.v20131107)
-&lt;
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-* Connection #0 to host localhost left intact
-* Expire cleared
-The podcast you specified has been fully updated created AT THE LOCATION you specified
+<pre>
+    <code class="bash">
+      &lt; HTTP/1.1 200 OK
+      &lt; Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/2
+      &lt; Content-Type: text/html
+      &lt; Access-Control-Allow-Origin: *
+      &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      &lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      &lt; Vary: Accept-Encoding
+      &lt; Content-Length: 86
+      * Server Jetty(9.0.7.v20131107) is not blacklisted
+      &lt; Server: Jetty(9.0.7.v20131107)
+      &lt;
+      * STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
+      * Connection #0 to host localhost left intact
+      * Expire cleared
+      The podcast you specified has been fully updated created AT THE LOCATION you specified
+  </code>
 </pre>
 
 ### <span id="233_POST_partial_update_for_not_existent_podcast_8211_404_NOT_FOUND">2.3.3. POST (partial update) for not existent podcast &#8211; 404 (NOT_FOUND)</span>
 
 **Request**
 
-<pre class="lang:default decode:true">$ curl -v -H "Content-Type:application/json" -X POST http://localhost:8888/demo-rest-jersey-spring/podcasts/3 -d '{"title":"Quarks & Co - zum Mitnehmen - GREAT PODCAST"}' | python -m json.tool</pre>
+<pre>
+    <code class="bash">
+      $ curl -v -H "Content-Type:application/json" -X POST http://localhost:8888/demo-rest-jersey-spring/podcasts/3 -d '{"title":"Quarks & Co - zum Mitnehmen - GREAT PODCAST"}' | python -m json.tool
+    </code>
+</pre>
 
 **Response**
 
-<pre class="lang:default decode:true">&lt; HTTP/1.1 404 Not Found
-&lt; Content-Type: application/json
-&lt; Access-Control-Allow-Origin: *
-&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-&lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-&lt; Vary: Accept-Encoding
-&lt; Content-Length: 306
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-&lt; Server: Jetty(9.0.7.v20131107)
-&lt;
-{ [data not shown]
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-100   361  100   306  100    55   9069   1630 --:--:-- --:--:-- --:--:-- 13304
-* Connection #0 to host localhost left intact
-* Expire cleared
-{
-    "code": 404,
-    "developerMessage": "Please verify existence of data in the database for the id - 3",
-    "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
-    "message": "The resource you are trying to update does not exist in the database",
-    "status": 404
-}
+<pre>
+    <code class="bash">
+      &lt; HTTP/1.1 404 Not Found
+      &lt; Content-Type: application/json
+      &lt; Access-Control-Allow-Origin: *
+      &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      &lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      &lt; Vary: Accept-Encoding
+      &lt; Content-Length: 306
+      * Server Jetty(9.0.7.v20131107) is not blacklisted
+      &lt; Server: Jetty(9.0.7.v20131107)
+      &lt;
+      { [data not shown]
+      * STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
+      100   361  100   306  100    55   9069   1630 --:--:-- --:--:-- --:--:-- 13304
+      * Connection #0 to host localhost left intact
+      * Expire cleared
+      {
+          "code": 404,
+          "developerMessage": "Please verify existence of data in the database for the id - 3",
+          "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
+          "message": "The resource you are trying to update does not exist in the database",
+          "status": 404
+      }
+  </code>
 </pre>
 
 #### <span id="234POST_partial_update_podcast_8211_200_OK">2.3.4. POST (partial update) podcast &#8211; 200 (OK)</span>
 
 **Request**
 
-<pre class="lang:default decode:true ">$ curl -v -H "Content-Type:application/json" -X POST http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"title":"Quarks & Co - zum Mitnehmen - GREAT PODCAST"}'
+<pre>
+    <code class="bash">
+      $ curl -v -H "Content-Type:application/json" -X POST http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"title":"Quarks & Co - zum Mitnehmen - GREAT PODCAST"}'
+    </code>
 </pre>
 
 **Response**
 
-<pre class="lang:default decode:true">&lt; HTTP/1.1 200 OK
-&lt; Content-Type: text/html
-&lt; Access-Control-Allow-Origin: *
-&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-&lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-&lt; Vary: Accept-Encoding
-&lt; Content-Length: 55
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-&lt; Server: Jetty(9.0.7.v20131107)
-&lt;
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-* Connection #0 to host localhost left intact
-* Expire cleared
-The podcast you specified has been successfully updated
+<pre>
+    <code class="bash">
+      &lt; HTTP/1.1 200 OK
+      &lt; Content-Type: text/html
+      &lt; Access-Control-Allow-Origin: *
+      &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      &lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      &lt; Vary: Accept-Encoding
+      &lt; Content-Length: 55
+      * Server Jetty(9.0.7.v20131107) is not blacklisted
+      &lt; Server: Jetty(9.0.7.v20131107)
+      &lt;
+      * STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
+      * Connection #0 to host localhost left intact
+      * Expire cleared
+      The podcast you specified has been successfully updated
+    </code>
 </pre>
 
 ### <span id="24_DELETE_resource">2.4. DELETE resource</span>
@@ -647,57 +780,69 @@ The podcast you specified has been successfully updated
 
 **Request**
 
-<pre class="lang:default decode:true ">$ curl -v -X DELETE http://localhost:8888/demo-rest-jersey-spring/podcasts/2
+<pre>
+    <code class="bash">
+      $ curl -v -X DELETE http://localhost:8888/demo-rest-jersey-spring/podcasts/2
+    </code>
 </pre>
 
 **Response**
 
-<pre class="lang:default mark:1 decode:true ">&lt; HTTP/1.1 204 No Content
-&lt; Content-Type: text/html
-&lt; Access-Control-Allow-Origin: *
-&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-&lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-&lt; Vary: Accept-Encoding
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-&lt; Server: Jetty(9.0.7.v20131107)
-&lt;
-* Excess found in a non pipelined read: excess = 42 url = /demo-rest-jersey-spring/podcasts/2 (zero-length body)
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-* Connection #0 to host localhost left intact
-* Expire cleared
+<pre>
+    <code class="bash">
+      &lt; HTTP/1.1 204 No Content
+      &lt; Content-Type: text/html
+      &lt; Access-Control-Allow-Origin: *
+      &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      &lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      &lt; Vary: Accept-Encoding
+      * Server Jetty(9.0.7.v20131107) is not blacklisted
+      &lt; Server: Jetty(9.0.7.v20131107)
+      &lt;
+      * Excess found in a non pipelined read: excess = 42 url = /demo-rest-jersey-spring/podcasts/2 (zero-length body)
+      * STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
+      * Connection #0 to host localhost left intact
+      * Expire cleared
+    </code>
 </pre>
 
 #### <span id="242_GET_deleted_podcast_8211_404_NOT_FOUND">2.4.2. GET deleted podcast &#8211; 404 (NOT_FOUND)</span>
 
 **Request**
 
-<pre class="lang:default decode:true">curl -v http://localhost:8888/demo-rest-jersey-spring/podcasts/2 | python -m json.tool
+<pre>
+    <code class="bash">
+      curl -v http://localhost:8888/demo-rest-jersey-spring/podcasts/2 | python -m json.tool
+    </code>
 </pre>
 
 **Response**
 
-<pre class="lang:default mark:1 decode:true">&lt; HTTP/1.1 404 Not Found
-&lt; Content-Type: application/json
-&lt; Access-Control-Allow-Origin: *
-&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-&lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-&lt; Vary: Accept-Encoding
-&lt; Content-Length: 306
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-&lt; Server: Jetty(9.0.7.v20131107)
-&lt;
-{ [data not shown]
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-100   306  100   306    0     0   8916      0 --:--:-- --:--:-- --:--:-- 13304
-* Connection #0 to host localhost left intact
-* Expire cleared
-{
-    "code": 404,
-    "developerMessage": "Verify the existence of the podcast with the id 2 in the database",
-    "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
-    "message": "The podcast you requested with id 2 was not found in the database",
-    "status": 404
-}
+<pre>
+    <code class="bash">
+      &lt; HTTP/1.1 404 Not Found
+      &lt; Content-Type: application/json
+      &lt; Access-Control-Allow-Origin: *
+      &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      &lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      &lt; Vary: Accept-Encoding
+      &lt; Content-Length: 306
+      * Server Jetty(9.0.7.v20131107) is not blacklisted
+      &lt; Server: Jetty(9.0.7.v20131107)
+      &lt;
+      { [data not shown]
+      * STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
+      100   306  100   306    0     0   8916      0 --:--:-- --:--:-- --:--:-- 13304
+      * Connection #0 to host localhost left intact
+      * Expire cleared
+      {
+          "code": 404,
+          "developerMessage": "Verify the existence of the podcast with the id 2 in the database",
+          "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
+          "message": "The podcast you requested with id 2 was not found in the database",
+          "status": 404
+      }
+    </code>
 </pre>
 
 ### <span id="25_Bonus_operations">2.5. Bonus operations</span>
@@ -706,40 +851,37 @@ The podcast you specified has been successfully updated
 
 **Request**
 
-<pre class="lang:sh decode:true" title="POST with urlencoded">curl -v --data-urlencode "title=Day in Tech History" --data-urlencode "linkOnPodcastpedia=http://www.podcastpedia.org/podcasts/766/Day-in-Tech-History" --data-urlencode "feed=http://www.dayintechhistory.com/feed/podcast"</pre>
+<pre>
+    <code class="bash">
+      curl -v --data-urlencode "title=Day in Tech History" --data-urlencode "linkOnPodcastpedia=http://www.podcastpedia.org/podcasts/766/Day-in-Tech-History" --data-urlencode "feed=http://www.dayintechhistory.com/feed/podcast"
+    </code>
+</pre>
 
 **Response**
 
-<pre class="lang:sh decode:true">&lt; HTTP/1.1 201 Created
-&lt; Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/null
-&lt; Content-Type: text/html
-&lt; Access-Control-Allow-Origin: *
-&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-&lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-&lt; Vary: Accept-Encoding
-&lt; Content-Length: 81
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-&lt; Server: Jetty(9.0.7.v20131107)
-&lt;
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-* Connection #0 to host localhost left intact
-* Expire cleared
-A new podcast/resource has been created at /demo-rest-jersey-spring/podcasts/null
+<pre>
+    <code class="bash">
+      &lt; HTTP/1.1 201 Created
+      &lt; Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/null
+      &lt; Content-Type: text/html
+      &lt; Access-Control-Allow-Origin: *
+      &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+      &lt; Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+      &lt; Vary: Accept-Encoding
+      &lt; Content-Length: 81
+      * Server Jetty(9.0.7.v20131107) is not blacklisted
+      &lt; Server: Jetty(9.0.7.v20131107)
+      &lt;
+      * STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
+      * Connection #0 to host localhost left intact
+      * Expire cleared
+      A new podcast/resource has been created at /demo-rest-jersey-spring/podcasts/null
+    </code>
 </pre>
 
 <p class="note_normal">
   <strong>Note:</strong><br /> I am still at the beginning of using curl, so please if you have any suggestions leave a comment. Thank you.
 </p>
-
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
 
 ## <span id="Resources">Resources</span>
 
@@ -749,21 +891,21 @@ A new podcast/resource has been created at /demo-rest-jersey-spring/podcasts/nul
   * <a title="http://www.python.org" href="http://www.python.org" target="_blank">Python.org</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

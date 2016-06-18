@@ -139,7 +139,13 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll
+  jekyll-feed
+  jekyll-gist
+  jekyll-paginate
+  jekyll-sitemap
+  json
   octopress (~> 3.0.0.rc.12)
 
 BUNDLED WITH
-   1.11.2
+   1.12.5

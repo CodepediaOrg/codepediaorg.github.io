@@ -36,15 +36,15 @@ menu:
 
 # Owner/author information
 owner:
-  name:           Your name
-  site:           http://aronbordin.com
+  name:          Codingpedia Association
+  site:           http://www.codingpedia.org
   avatar:         images/avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  bio:            "Share coding knowledge"
+  email:          contact@codingpedia.org
   # Twitter nick for use in Twitter cards and follow button.
-  twitter: aron_bordin # if no twitter in this config, the twitter follow button will be removed
+  twitter: codingpedia # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
-  github: aron-bordin
+  github: codingpedia
 
 # Twitter account associated with the site if different from owner/author twitter account.
 # Used in Twitter cards.
@@ -53,11 +53,12 @@ twitter:
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
   - title: "github"
-    url: "https://github.com/aron-bordin"
+    url: "https://github.com/Codingpedia"
   - title: "linkedin"
-    url: "https://br.linkedin.com/in/aronbordin"
+    url: "https://www.linkedin.com/company/codingpediaorg"
   - title: "youtube"
-    url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
+    url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
+
 # Background image to be tiled on all pages
 background:
 
@@ -68,13 +69,16 @@ google_verify:
 bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Europe/Zurich
 locale:      en_US
 future:      true
 highlighter: rouge
 markdown:    kramdown
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
 sass:
   sass_dir: _sass
   style: compressed

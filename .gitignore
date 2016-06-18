@@ -1,3 +1,4 @@
+/.idea
 _site
 .DS_Store
 *.sublime-project
@@ -6,3 +7,5 @@ codekit-config.json
 node_modules
 Gemfile.lock
 .sass-cache
+
+*.iml

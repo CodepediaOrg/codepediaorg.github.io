@@ -42,12 +42,14 @@ tags:
   Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="http://www.podcastpedia.org/podcasting" href="http://www.podcastpedia.org/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
 </p>
 
+<!--more-->
+
 <p style="text-align: justify;">
   <div id="toc_container" class="no_bullets">
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#1_The_example">1. The example</a><ul>
@@ -79,13 +81,13 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#14_Source_code">1.4. Source code</a>
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#2_Configuration">2. Configuration</a><ul>
           <li>
@@ -104,7 +106,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#3_The_REST_API_design_implementation">3. The REST API (design & implementation)</a><ul>
           <li>
@@ -117,7 +119,7 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#32_Methods">3.2. Methods</a><ul>
               <li>
@@ -140,7 +142,7 @@ tags:
                   </li>
                 </ul>
               </li>
-              
+
               <li>
                 <a href="#322_Read_podcasts">3.2.2. Read podcast(s)</a><ul>
                   <li>
@@ -158,7 +160,7 @@ tags:
                   </li>
                 </ul>
               </li>
-              
+
               <li>
                 <a href="#323_Update_podcast">3.2.3. Update podcast</a><ul>
                   <li>
@@ -176,7 +178,7 @@ tags:
                   </li>
                 </ul>
               </li>
-              
+
               <li>
                 <a href="#324_Delete_podcast">3.2.4. Delete podcast</a><ul>
                   <li>
@@ -198,7 +200,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#4_Logging">4. Logging</a>
       </li>
@@ -209,7 +211,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#6_Add_CORS_support_on_the_server_side">6. Add CORS support on the server side</a>
       </li>
@@ -230,7 +232,7 @@ tags:
                   </li>
                 </ul>
               </li>
-              
+
               <li>
                 <a href="#712_Build_the_integration_tests">7.1.2. Build the integration tests</a>
               </li>
@@ -239,13 +241,13 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#72_Integration_tests_with_SoapUI">7.2. Integration tests with SoapUI</a>
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#8_Versioning">8. Versioning</a>
       </li>
@@ -262,7 +264,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#12_Summary">12. Summary</a>
       </li>
@@ -281,10 +283,6 @@ tags:
       </li>
     </ul>
   </div>
-</p>
-
-<p style="text-align: justify;">
-  <!--more-->
 </p>
 
 <h2 style="text-align: justify;">
@@ -408,30 +406,32 @@ Before I start presenting the design and implementation of the REST API, we need
 </p>
 
 <pre>
-    <dependency>
-        <groupId>org.glassfish.jersey.ext</groupId>
-        <artifactId>jersey-spring3</artifactId>
-        <version>${jersey.version}</version>
-        <exclusions>
-            <exclusion>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-core</artifactId>
-            </exclusion>			
-            <exclusion>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-web</artifactId>
-            </exclusion>
-            <exclusion>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-beans</artifactId>
-            </exclusion>
-        </exclusions>			
-    </dependency>
-    <dependency>
-        <groupId>org.glassfish.jersey.media</groupId>
-        <artifactId>jersey-media-json-jackson</artifactId>
-        <version>2.4.1</version>
-    </dependency>
+  <code class="xml">
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
+        &lt;artifactId&gt;jersey-spring3&lt;/artifactId&gt;
+        &lt;version&gt;${jersey.version}&lt;/version&gt;
+        &lt;exclusions&gt;
+            &lt;exclusion&gt;
+                &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-core&lt;/artifactId&gt;
+            &lt;/exclusion&gt;			
+            &lt;exclusion&gt;
+                &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-web&lt;/artifactId&gt;
+            &lt;/exclusion&gt;
+            &lt;exclusion&gt;
+                &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-beans&lt;/artifactId&gt;
+            &lt;/exclusion&gt;
+        &lt;/exclusions&gt;			
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
+        &lt;artifactId&gt;jersey-media-json-jackson&lt;/artifactId&gt;
+        &lt;version&gt;2.4.1&lt;/version&gt;
+    &lt;/dependency&gt;
+  </code>
 </pre>
 
 <p class="note_normal" style="text-align: justify;">
@@ -443,49 +443,51 @@ Before I start presenting the design and implementation of the REST API, we need
 </p>
 
 ### <span id="22_webxml">2.2. web.xml</span>
-{% highlight xml %}
-<?xml version="1.0" encoding="UTF-8"?>
-<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-	<display-name>Demo - Restful Web Application</display-name>
+<pre>
+  <code class="xml">
+    &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+    &lt;web-app version=&quot;3.0&quot; xmlns=&quot;http://java.sun.com/xml/ns/javaee&quot;
+    	xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    	xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd&quot;&gt;
+    	&lt;display-name&gt;Demo - Restful Web Application&lt;/display-name&gt;
 
-	<listener>
-		<listener-class>
-			org.springframework.web.context.ContextLoaderListener
-		</listener-class>
-	</listener>
+    	&lt;listener&gt;
+    		&lt;listener-class&gt;
+    			org.springframework.web.context.ContextLoaderListener
+    		&lt;/listener-class&gt;
+    	&lt;/listener&gt;
 
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:spring/applicationContext.xml</param-value>
-	</context-param>
+    	&lt;context-param&gt;
+    		&lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
+    		&lt;param-value&gt;classpath:spring/applicationContext.xml&lt;/param-value&gt;
+    	&lt;/context-param&gt;
 
-	<servlet>
-		<servlet-name>jersey-serlvet</servlet-name>
-		<servlet-class>
-			org.glassfish.jersey.servlet.ServletContainer
-		</servlet-class>
-		<init-param>
-			<param-name>javax.ws.rs.Application</param-name>
-			<param-value>org.codingpedia.demo.rest.RestDemoJaxRsApplication</param-value>			
-		</init-param>		
-		<load-on-startup>1</load-on-startup>
-	</servlet>
+    	&lt;servlet&gt;
+    		&lt;servlet-name&gt;jersey-serlvet&lt;/servlet-name&gt;
+    		&lt;servlet-class&gt;
+    			org.glassfish.jersey.servlet.ServletContainer
+    		&lt;/servlet-class&gt;
+    		&lt;init-param&gt;
+    			&lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;
+    			&lt;param-value&gt;org.codingpedia.demo.rest.RestDemoJaxRsApplication&lt;/param-value&gt;			
+    		&lt;/init-param&gt;		
+    		&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
+    	&lt;/servlet&gt;
 
-	<servlet-mapping>
-		<servlet-name>jersey-serlvet</servlet-name>
-		<url-pattern>/*</url-pattern>
-	</servlet-mapping>
+    	&lt;servlet-mapping&gt;
+    		&lt;servlet-name&gt;jersey-serlvet&lt;/servlet-name&gt;
+    		&lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+    	&lt;/servlet-mapping&gt;
 
-	<resource-ref>
-        <description>Database resource rest demo web application </description>
-        <res-ref-name>jdbc/restDemoDB</res-ref-name>
-        <res-type>javax.sql.DataSource</res-type>
-        <res-auth>Container</res-auth>
-    </resource-ref>	
-</web-app>
-{% endhighlight %}
+    	&lt;resource-ref&gt;
+            &lt;description&gt;Database resource rest demo web application &lt;/description&gt;
+            &lt;res-ref-name&gt;jdbc/restDemoDB&lt;/res-ref-name&gt;
+            &lt;res-type&gt;javax.sql.DataSource&lt;/res-type&gt;
+            &lt;res-auth&gt;Container&lt;/res-auth&gt;
+        &lt;/resource-ref&gt;
+    &lt;/web-app&gt;
+  </code>
+</pre>
 
 #### <span id="221_Jersey-servlet">2.2.1. Jersey-servlet</span>
 
@@ -497,493 +499,47 @@ My implementation of the `ResourceConfig` class, ``<p style="text-align: justify
   Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="http://www.podcastpedia.org/podcasting" href="http://www.podcastpedia.org/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
 </p>
 
-<p style="text-align: justify;">
-  <div id="toc_container" class="no_bullets">
-    <p class="toc_title">
-      Contents
-    </p>
-    
-    <ul class="toc_list">
-      <li>
-        <a href="#1_The_example">1. The example</a><ul>
-          <li>
-            <a href="#11_Why">1.1. Why?</a>
-          </li>
-          <li>
-            <a href="#12_What_does_it_do">1.2. What does it do?</a>
-          </li>
-          <li>
-            <a href="#13_Architecture_and_technologies">1.3. Architecture and technologies</a><ul>
-              <li>
-                <a href="#131_Jersey_Facade">1.3.1. Jersey (Facade)</a>
-              </li>
-              <li>
-                <a href="#132_Spring_Business_layer">1.3.2. Spring (Business layer)</a>
-              </li>
-              <li>
-                <a href="#133_JPA_2_Hibernate_Persistence_layer">1.3.3. JPA 2 / Hibernate (Persistence layer)</a>
-              </li>
-              <li>
-                <a href="#134_Web_Container">1.3.4. Web Container</a>
-              </li>
-              <li>
-                <a href="#135_MySQL">1.3.5. MySQL</a>
-              </li>
-              <li>
-                <a href="#136_Technology_versions">1.3.6. Technology versions</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="#14_Source_code">1.4. Source code</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#2_Configuration">2. Configuration</a><ul>
-          <li>
-            <a href="#21_Project_dependencies">2.1. Project dependencies</a>
-          </li>
-          <li>
-            <a href="#22_webxml">2.2. web.xml</a><ul>
-              <li>
-                <a href="#221_Jersey-servlet">2.2.1. Jersey-servlet</a><ul>
-                  <li>
-                    <a href="#2122_Spring_application_context_configuration">2.1.2.2. Spring application context configuration</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#3_The_REST_API_design_implementation">3. The REST API (design & implementation)</a><ul>
-          <li>
-            <a href="#31_Resources">3.1. Resources</a><ul>
-              <li>
-                <a href="#311_Design">3.1.1. Design</a>
-              </li>
-              <li>
-                <a href="#312_Implementation">3.1.2. Implementation</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="#32_Methods">3.2. Methods</a><ul>
-              <li>
-                <a href="#321_Create_podcasts">3.2.1. Create podcast(s)</a><ul>
-                  <li>
-                    <a href="#3211_Design">3.2.1.1. Design</a>
-                  </li>
-                  <li>
-                    <a href="#3212_Implementation">3.2.1.2. Implementation</a><ul>
-                      <li>
-                        <a href="#32121_Create_a_single_resource_with_POST">3.2.1.2.1. Create a single resource with POST</a>
-                      </li>
-                      <li>
-                        <a href="#32122_Create_a_single_resource_8220podcast8221_with_PUT">3.2.1.2.2. Create a single resource (&#8220;podcast&#8221;) with PUT</a>
-                      </li>
-                      <li>
-                        <a href="#32123_Bonus_8211_Create_a_single_resource_8220podcast8221_from_form">3.2.1.2.3. Bonus &#8211; Create a single resource (&#8220;podcast&#8221;) from form</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="#322_Read_podcasts">3.2.2. Read podcast(s)</a><ul>
-                  <li>
-                    <a href="#3221_Design">3.2.2.1. Design</a>
-                  </li>
-                  <li>
-                    <a href="#3222_Implementation">3.2.2.2. Implementation</a><ul>
-                      <li>
-                        <a href="#32221_Read_all_podcasts_82208221">3.2.2.2.1. Read all podcasts (&#8220;/&#8221;)</a>
-                      </li>
-                      <li>
-                        <a href="#32221_Read_one_podcast">3.2.2.2.1. Read one podcast</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="#323_Update_podcast">3.2.3. Update podcast</a><ul>
-                  <li>
-                    <a href="#3231_Design">3.2.3.1. Design</a>
-                  </li>
-                  <li>
-                    <a href="#3231_Implementation">3.2.3.1. Implementation</a><ul>
-                      <li>
-                        <a href="#32311_Full_Update">3.2.3.1.1. Full Update</a>
-                      </li>
-                      <li>
-                        <a href="#32312_Partial_Update">3.2.3.1.2. Partial Update</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="#324_Delete_podcast">3.2.4. Delete podcast</a><ul>
-                  <li>
-                    <a href="#3241_Design">3.2.4.1. Design</a>
-                  </li>
-                  <li>
-                    <a href="#3242_Implementation">3.2.4.2. Implementation</a><ul>
-                      <li>
-                        <a href="#32421_Delete_all_resources">3.2.4.2.1. Delete all resources</a>
-                      </li>
-                      <li>
-                        <a href="#32422_Delete_one_resource">3.2.4.2.2. Delete one resource</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#4_Logging">4. Logging</a>
-      </li>
-      <li>
-        <a href="#5_Exception_handling">5. Exception handling</a><ul>
-          <li>
-            <a href="#51_Custom_Reason_Phrase_in_HTTP_status_error_message_response_with_JAX-RS_Jersey">5.1. Custom Reason Phrase in HTTP status error message response with JAX-RS (Jersey)</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#6_Add_CORS_support_on_the_server_side">6. Add CORS support on the server side</a>
-      </li>
-      <li>
-        <a href="#7_Testing">7. Testing</a><ul>
-          <li>
-            <a href="#71_Integration_tests_in_Java">7.1. Integration tests in Java</a><ul>
-              <li>
-                <a href="#711_Configuration">7.1.1. Configuration</a><ul>
-                  <li>
-                    <a href="#7111_Jersey_client_dependency">7.1.1.1 Jersey client dependency</a>
-                  </li>
-                  <li>
-                    <a href="#7112_Failsafe_plugin">7.1.1.2. Failsafe plugin</a>
-                  </li>
-                  <li>
-                    <a href="#7112_Jetty_Maven_Plugin">7.1.1.2. Jetty Maven Plugin</a>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="#712_Build_the_integration_tests">7.1.2. Build the integration tests</a>
-              </li>
-              <li>
-                <a href="#713_Running_the_integration_tests">7.1.3. Running the integration tests</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="#72_Integration_tests_with_SoapUI">7.2. Integration tests with SoapUI</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#8_Versioning">8. Versioning</a>
-      </li>
-      <li>
-        <a href="#9_Compression">9. Compression</a>
-      </li>
-      <li>
-        <a href="#10Quick_way_to_check_if_the_REST_API_is_alive">10. Quick way to check if the REST API is alive</a>
-      </li>
-      <li>
-        <a href="#11_Security">11. Security</a><ul>
-          <li>
-            <a href="#111_Basic_Authentication">11.1. Basic Authentication</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#12_Summary">12. Summary</a>
-      </li>
-      <li>
-        <a href="#Resources">Resources</a><ul>
-          <li>
-            <a href="#Source_Code">Source Code</a>
-          </li>
-          <li>
-            <a href="#Web_resources">Web resources</a>
-          </li>
-          <li>
-            <a href="#Codingpedia_related_resources">Codingpedia related resources</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</p>
-
-<p style="text-align: justify;">
-  <!--more-->
-</p>
-
-<h2 style="text-align: justify;">
-  <span id="1_The_example">1. The example</span>
-</h2>
-
-<h3 style="text-align: justify;">
-  <span id="11_Why">1.1. Why?</span>
-</h3>
-
-<p style="text-align: justify;">
-  Before we start, let me tell you why I&#8217;ve written this post &#8211; well, my intention is to offer in the future a REST API for <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a>. Of course I could use <a title="Designing and Implementing RESTful Web Services with Spring" href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring&#8217;s own REST implementation</a>, as I currently do for the AJAX calls, but I wanted also to see how the &#8220;official&#8221; implementation looks like. So, the best way to get to know the technology is to build a prototype with it. That is what I did and what I am presenting here, and I can say that I am pretty damn satisfied with Jersey. Read along to understand why!!!
-</p>
-
-<p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> You can visit my post <a title="Autocomplete search box with jQuery and Spring MVC" href="http://www.codingpedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a> to see how Spring handles REST requests.
-</p>
-
-<h3 style="text-align: justify;">
-  <span id="12_What_does_it_do">1.2. What does it do?</span>
-</h3>
-
-<p style="text-align: justify;">
-  The <a title="http://en.wikipedia.org/wiki/Web_resource" href="http://en.wikipedia.org/wiki/Web_resource" target="_blank">resource</a> managed in this tutorial are podcasts. The REST API will allow creation, retrieval, update and deletion of such resources.
-</p>
-
-<h3 style="text-align: justify;">
-  <span id="13_Architecture_and_technologies">1.3. Architecture and technologies</span>
-</h3>
-
-<p style="text-align: justify;">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram.png"><img class="alignnone size-full wp-image-1456" src="http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram.png" alt="Architecture diagram" width="591" height="246" srcset="http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram.png 591w, http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram-300x124.png 300w" sizes="(max-width: 591px) 100vw, 591px" /></a>
-</p>
-
-<p style="text-align: justify;">
-  The demo application uses a multi-layered architecture, based on the <em>&#8220;Law of Demeter (LoD) or principle of least knowledge&#8221;[16]</em>:
-</p>
-
-  * the **first layer** is the REST support implemented with Jersey, has the role of a <a title="Facade pattern" href="http://en.wikipedia.org/wiki/Facade_pattern" target="_blank">facade</a> and delegates the logic to the business layer
-  * the **business layer** is where the logic happens
-  * the **data access layer** is where the communcation with the pesistence storage (in our case the MySql database) takes place
-
-A few words on the technologies/frameworks used:
-
-<h4 style="text-align: justify;">
-  <span id="131_Jersey_Facade">1.3.1. Jersey (Facade)</span>
-</h4>
-
-<p style="text-align: justify;">
-  The <a title="https://jersey.java.net/" href="https://jersey.java.net/" target="_blank"><em>Jersey RESTful Web Services framework</em></a> is open source, production quality, framework for developing RESTful Web Services in Java that provides support for JAX-RS APIs and serves as a <a title="Java API for RESTful Services (JAX-RS)" href="https://jax-rs-spec.java.net/" target="_blank">JAX-RS</a> (JSR 311 & JSR 339) Reference Implementation.
-</p>
-
-<h4 style="text-align: justify;">
-  <span id="132_Spring_Business_layer">1.3.2. Spring (Business layer)</span>
-</h4>
-
-<p style="text-align: justify;">
-  I like glueing stuff together with <strong><a title="Spring Framework" href="http://projects.spring.io/spring-framework/" target="_blank">Spring</a></strong>, and this example makes no exception. In my opinion there&#8217;s no better way to make POJOs with different functionalities. You&#8217;ll find out in the tutorial what it takes to integrate Jersey 2 with Spring.
-</p>
-
-<h4 style="text-align: justify;">
-  <span id="133_JPA_2_Hibernate_Persistence_layer">1.3.3. JPA 2 / Hibernate (Persistence layer)</span>
-</h4>
-
-<p style="text-align: justify;">
-  For the persistence layer I still use a DAO pattern, even though for implementing it I am using JPA 2, which, as some people say, should make DAOs superfluous (I, for one, don’t like my service classes cluttered with EntityManager/JPA specific code). AS supporting framework for JPA 2 I am using Hibernate.
-</p>
-
-<p style="text-align: justify;">
-  See my post <a title="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a> for an interesting discussion around persistence thema in Java.
-</p>
-
-<h4 style="text-align: justify;">
-  <span id="134_Web_Container">1.3.4. Web Container</span>
-</h4>
-
-<p style="text-align: justify;">
-  Everything gets packaged with Maven as a <code>.war</code> file and can be deployed on any web container &#8211; I used <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Tomcat</a> and <a title="Jetty" href="http://www.eclipse.org/jetty/" target="_blank">Jetty</a> but, it could also be Glassfih, Weblogic, JBoss or WebSphere.
-</p>
-
-<h4 style="text-align: justify;">
-  <span id="135_MySQL">1.3.5. MySQL</span>
-</h4>
-
-<p style="text-align: justify;">
-  The sample data is stored in a <a title="MySQL" href="http://www.mysql.com/" target="_blank">MySQL</a> table:
-</p>
-
-<p style="text-align: justify;">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema.png"><img class="alignnone size-medium wp-image-1089" src="http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema-300x280.png" alt="database schema" width="300" height="280" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema-300x280.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema.png 566w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-</p>
-
-#### <span id="136_Technology_versions">1.3.6. Technology versions</span>
-
-  1. Jersey 2.9
-  2. Spring 4.0.3
-  3. Hibernate 4
-  4. Maven 3
-  5. Tomcat 7
-  6. Jetty 9
-  7. MySql 5.6
-
-<p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> The main focus in the post will be on the REST api design and its implementation with the Jersey JAX-RS implementation, all the other technologies/layers are considered as enablers.
-</p>
-
-### <span id="14_Source_code">1.4. Source code</span>
-
-The source code for the project presented here is available on GitHub, with complete instructions on how to install and run the project:
-
-  * <a title="Source code for project" href="https://github.com/Codingpedia/demo-rest-jersey-spring" target="_blank">Codingpedia / demo-rest-jersey-spring </a>
-
-## <span id="2_Configuration">2. Configuration</span>
-
-Before I start presenting the design and implementation of the REST API, we need to do a little configuration so that all these wonderful technologies can come and play together
-
-### <span id="21_Project_dependencies">2.1. Project dependencies</span>
-
-<p style="text-align: justify;">
-  The <a title="https://jersey.java.net/documentation/latest/spring.html" href="https://jersey.java.net/documentation/latest/spring.html" target="_blank">Jersey Spring extension</a> must be present in your project&#8217;s classpath. If you are using Maven add it to the <code>pom.xml</code> file of your project:
-</p>
-
-<pre class="lang:default mark:26-49 decode:true" title="Jersey-spring dependency in the pom.xml">&lt;dependency&gt;
-	&lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
-	&lt;artifactId&gt;jersey-spring3&lt;/artifactId&gt;
-	&lt;version&gt;${jersey.version}&lt;/version&gt;
-	&lt;exclusions&gt;
-		&lt;exclusion&gt;
-			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-			&lt;artifactId&gt;spring-core&lt;/artifactId&gt;
-		&lt;/exclusion&gt;			
-		&lt;exclusion&gt;
-			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-			&lt;artifactId&gt;spring-web&lt;/artifactId&gt;
-		&lt;/exclusion&gt;
-		&lt;exclusion&gt;
-			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-			&lt;artifactId&gt;spring-beans&lt;/artifactId&gt;
-		&lt;/exclusion&gt;
-	&lt;/exclusions&gt;			
-&lt;/dependency&gt;
-&lt;dependency&gt;
-	&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
-	&lt;artifactId&gt;jersey-media-json-jackson&lt;/artifactId&gt;
-	&lt;version&gt;2.4.1&lt;/version&gt;
-&lt;/dependency&gt;</pre>
-
-<p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> The jersey-spring3.jar, uses its own version for Spring libraries, so to use the ones you want (Spring 4.0.3.Release in this case), you need to exclude these libraries manually.
-</p>
-
-<p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> If you want to see what other dependencies are needed (e.g. Spring, Hibernate, Jetty maven plugin, testing etc.) in the project you can have a look at the the complete <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" target="_blank">pom.xml</a> file available on GitHub.
-</p>
-
-### <span id="22_webxml">2.2. web.xml</span>
-
-<pre class="lang:default mark:18-33 decode:true" title="Web Application Deployment Descriptor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"&gt;
-	&lt;display-name&gt;Demo - Restful Web Application&lt;/display-name&gt;
-
-	&lt;listener&gt;
-		&lt;listener-class&gt;
-			org.springframework.web.context.ContextLoaderListener
-		&lt;/listener-class&gt;
-	&lt;/listener&gt;
-
-	&lt;context-param&gt;
-		&lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
-		&lt;param-value&gt;classpath:spring/applicationContext.xml&lt;/param-value&gt;
-	&lt;/context-param&gt;
-
-	&lt;servlet&gt;
-		&lt;servlet-name&gt;jersey-serlvet&lt;/servlet-name&gt;
-		&lt;servlet-class&gt;
-			org.glassfish.jersey.servlet.ServletContainer
-		&lt;/servlet-class&gt;
-		&lt;init-param&gt;
-			&lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;
-			&lt;param-value&gt;org.codingpedia.demo.rest.RestDemoJaxRsApplication&lt;/param-value&gt;			
-		&lt;/init-param&gt;		
-		&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
-	&lt;/servlet&gt;
-
-	&lt;servlet-mapping&gt;
-		&lt;servlet-name&gt;jersey-serlvet&lt;/servlet-name&gt;
-		&lt;url-pattern&gt;/*&lt;/url-pattern&gt;
-	&lt;/servlet-mapping&gt;
-
-	&lt;resource-ref&gt;
-        &lt;description&gt;Database resource rest demo web application &lt;/description&gt;
-        &lt;res-ref-name&gt;jdbc/restDemoDB&lt;/res-ref-name&gt;
-        &lt;res-type&gt;javax.sql.DataSource&lt;/res-type&gt;
-        &lt;res-auth&gt;Container&lt;/res-auth&gt;
-    &lt;/resource-ref&gt;	
-&lt;/web-app&gt;</pre>
-
-#### <span id="221_Jersey-servlet">2.2.1. Jersey-servlet</span>
-
-<p style="text-align: justify;">
-  Notice the Jersey servlet configuration [lines 18-33]. The <code>javax.ws.rs.core.Application</code> class defines the components (root resource and provider classes,) of the JAX-RS application. I used <code> ResourceConfig,</code> which is Jersey&#8217;s own implementation of the class <code>Application</code>, and which provides advanced capabilites to simplify registration of JAX-RS components.<code> </code><code class="literal"></code>Check out the <a title="https://jersey.java.net/documentation/latest/user-guide.html#environmenmt.appmodel" href="https://jersey.java.net/documentation/latest/user-guide.html#environmenmt.appmodel" target="_blank">JAX-RS Application Model</a> in the documentation for more possibilities.
-</p>
-
 My implementation of the `ResourceConfig` class,`` registers application resources, filters, exception mappers and feature :
 
-{% highlight java %}
-package org.codingpedia.demo.rest.service;
+<pre>
+  <code class="java">
+    package org.codingpedia.demo.rest.service;
 
-//imports omitted for brevity 
+    //imports omitted for brevity
 
-/**
- * Registers the components to be used by the JAX-RS application
- * 
- * @author ama
- * 
- */
-public class RestDemoJaxRsApplication extends ResourceConfig {
+    /**
+     * Registers the components to be used by the JAX-RS application
+     *
+     * @author ama
+     *
+     */
+    public class RestDemoJaxRsApplication extends ResourceConfig {
 
-	/**
-	 * Register JAX-RS application components.
-	 */
-	public RestDemoJaxRsApplication() {
-		// register application resources
-		register(PodcastResource.class);
-		register(PodcastLegacyResource.class);
+    	/**
+    	 * Register JAX-RS application components.
+    	 */
+    	public RestDemoJaxRsApplication() {
+    		// register application resources
+    		register(PodcastResource.class);
+    		register(PodcastLegacyResource.class);
 
-		// register filters
-		register(RequestContextFilter.class);
-		register(LoggingResponseFilter.class);
-		register(CORSResponseFilter.class);
+    		// register filters
+    		register(RequestContextFilter.class);
+    		register(LoggingResponseFilter.class);
+    		register(CORSResponseFilter.class);
 
-		// register exception mappers
-		register(GenericExceptionMapper.class);
-		register(AppExceptionMapper.class);
-		register(NotFoundExceptionMapper.class);
+    		// register exception mappers
+    		register(GenericExceptionMapper.class);
+    		register(AppExceptionMapper.class);
+    		register(NotFoundExceptionMapper.class);
 
-		// register features
-		register(JacksonFeature.class);
-		register(MultiPartFeature.class);
-	}
-}
-{% endhighlight %}
+    		// register features
+    		register(JacksonFeature.class);
+    		register(MultiPartFeature.class);
+    	}
+    }
+  </code>
+</pre>
 
 Please note the
 
@@ -1001,69 +557,73 @@ Please note the
 
 The Spring application context configuration is located in the classpath under `spring/applicationContext.xml`:
 
-<pre class="lang:default decode:true" title="Spring application context configuration">&lt;beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:tx="http://www.springframework.org/schema/tx"	
-	xsi:schemaLocation="
-		http://www.springframework.org/schema/beans	
-		http://www.springframework.org/schema/beans/spring-beans.xsd
+<pre>
+  <code class="xml">
+    &lt;beans xmlns="http://www.springframework.org/schema/beans"
+    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    	xmlns:context="http://www.springframework.org/schema/context"
+    	xmlns:tx="http://www.springframework.org/schema/tx"
+    	xsi:schemaLocation="
+    		http://www.springframework.org/schema/beans
+    		http://www.springframework.org/schema/beans/spring-beans.xsd
 
-		http://www.springframework.org/schema/tx 
-		http://www.springframework.org/schema/tx/spring-tx.xsd
+    		http://www.springframework.org/schema/tx
+    		http://www.springframework.org/schema/tx/spring-tx.xsd
 
-		http://www.springframework.org/schema/context
-		http://www.springframework.org/schema/context/spring-context.xsd"&gt;
+    		http://www.springframework.org/schema/context
+    		http://www.springframework.org/schema/context/spring-context.xsd"&gt;
 
-	&lt;context:component-scan base-package="org.codingpedia.demo.rest.*" /&gt;
+    	&lt;context:component-scan base-package="org.codingpedia.demo.rest.*" /&gt;
 
-	&lt;!-- ************ JPA configuration *********** --&gt;
-	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;  
-    &lt;bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"&gt;
-        &lt;property name="entityManagerFactory" ref="entityManagerFactory" /&gt;
-    &lt;/bean&gt;
-    &lt;bean id="transactionManagerLegacy" class="org.springframework.orm.jpa.JpaTransactionManager"&gt;
-        &lt;property name="entityManagerFactory" ref="entityManagerFactoryLegacy" /&gt;
-    &lt;/bean&gt;    
-    &lt;bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"&gt;
-        &lt;property name="persistenceXmlLocation" value="classpath:config/persistence-demo.xml" /&gt;
-        &lt;property name="persistenceUnitName" value="demoRestPersistence" /&gt;        
-        &lt;property name="dataSource" ref="restDemoDS" /&gt;
-        &lt;property name="packagesToScan" value="org.codingpedia.demo.*" /&gt;
-        &lt;property name="jpaVendorAdapter"&gt;
-            &lt;bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"&gt;
-                &lt;property name="showSql" value="true" /&gt;
-                &lt;property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" /&gt;
-            &lt;/bean&gt;
-        &lt;/property&gt;
-    &lt;/bean&gt;     
-    &lt;bean id="entityManagerFactoryLegacy" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"&gt;
-        &lt;property name="persistenceXmlLocation" value="classpath:config/persistence-demo.xml" /&gt;
-        &lt;property name="persistenceUnitName" value="demoRestPersistenceLegacy" /&gt;
-        &lt;property name="dataSource" ref="restDemoLegacyDS" /&gt;
-        &lt;property name="packagesToScan" value="org.codingpedia.demo.*" /&gt;
-        &lt;property name="jpaVendorAdapter"&gt;
-            &lt;bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"&gt;
-                &lt;property name="showSql" value="true" /&gt;
-                &lt;property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" /&gt;
-            &lt;/bean&gt;
-        &lt;/property&gt;
-    &lt;/bean&gt;        
+    	&lt;!-- ************ JPA configuration *********** --&gt;
+    	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;  
+        &lt;bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"&gt;
+            &lt;property name="entityManagerFactory" ref="entityManagerFactory" /&gt;
+        &lt;/bean&gt;
+        &lt;bean id="transactionManagerLegacy" class="org.springframework.orm.jpa.JpaTransactionManager"&gt;
+            &lt;property name="entityManagerFactory" ref="entityManagerFactoryLegacy" /&gt;
+        &lt;/bean&gt;    
+        &lt;bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"&gt;
+            &lt;property name="persistenceXmlLocation" value="classpath:config/persistence-demo.xml" /&gt;
+            &lt;property name="persistenceUnitName" value="demoRestPersistence" /&gt;        
+            &lt;property name="dataSource" ref="restDemoDS" /&gt;
+            &lt;property name="packagesToScan" value="org.codingpedia.demo.*" /&gt;
+            &lt;property name="jpaVendorAdapter"&gt;
+                &lt;bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"&gt;
+                    &lt;property name="showSql" value="true" /&gt;
+                    &lt;property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" /&gt;
+                &lt;/bean&gt;
+            &lt;/property&gt;
+        &lt;/bean&gt;     
+        &lt;bean id="entityManagerFactoryLegacy" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"&gt;
+            &lt;property name="persistenceXmlLocation" value="classpath:config/persistence-demo.xml" /&gt;
+            &lt;property name="persistenceUnitName" value="demoRestPersistenceLegacy" /&gt;
+            &lt;property name="dataSource" ref="restDemoLegacyDS" /&gt;
+            &lt;property name="packagesToScan" value="org.codingpedia.demo.*" /&gt;
+            &lt;property name="jpaVendorAdapter"&gt;
+                &lt;bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"&gt;
+                    &lt;property name="showSql" value="true" /&gt;
+                    &lt;property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" /&gt;
+                &lt;/bean&gt;
+            &lt;/property&gt;
+        &lt;/bean&gt;        
 
-	&lt;bean id="podcastDao" class="org.codingpedia.demo.rest.dao.PodcastDaoJPA2Impl"/&gt;	
-    &lt;bean id="podcastService" class="org.codingpedia.demo.rest.service.PodcastServiceDbAccessImpl" /&gt;	
-    &lt;bean id="podcastsResource" class="org.codingpedia.demo.rest.resource.PodcastsResource" /&gt;
-    &lt;bean id="podcastLegacyResource" class="org.codingpedia.demo.rest.resource.PodcastLegacyResource" /&gt;
+    	&lt;bean id="podcastDao" class="org.codingpedia.demo.rest.dao.PodcastDaoJPA2Impl"/&gt;
+        &lt;bean id="podcastService" class="org.codingpedia.demo.rest.service.PodcastServiceDbAccessImpl" /&gt;
+        &lt;bean id="podcastsResource" class="org.codingpedia.demo.rest.resource.PodcastsResource" /&gt;
+        &lt;bean id="podcastLegacyResource" class="org.codingpedia.demo.rest.resource.PodcastLegacyResource" /&gt;
 
-	&lt;bean id="restDemoDS" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
-	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoDB" /&gt;
-	    &lt;property name="resourceRef" value="true" /&gt;        
-	&lt;/bean&gt;
-	&lt;bean id="restDemoLegacyDS" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
-	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoLegacyDB" /&gt;
-	    &lt;property name="resourceRef" value="true" /&gt;        
-	&lt;/bean&gt;	
-&lt;/beans&gt;</pre>
+    	&lt;bean id="restDemoDS" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
+    	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoDB" /&gt;
+    	    &lt;property name="resourceRef" value="true" /&gt;        
+    	&lt;/bean&gt;
+    	&lt;bean id="restDemoLegacyDS" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
+    	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoLegacyDB" /&gt;
+    	    &lt;property name="resourceRef" value="true" /&gt;        
+    	&lt;/bean&gt;
+    &lt;/beans&gt;
+  </code>
+</pre>
 
 <p style="text-align: justify;">
   Nothing special here, it just defines the beans that are needed throughout the demo application (e.g. <code>podcastsResource</code> which is the entry point class for our REST API).
@@ -1112,86 +672,94 @@ For the sake of simplicity, a podcast will have only the following properties:
 
 The <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" target="_blank">Podcast.java</a> classs look something like the following:
 
-<pre class="lang:java decode:true" title="Podcast.java">package org.codingpedia.demo.rest.resource;
+<pre>
+  <code class="java">
+    package org.codingpedia.demo.rest.resource;
 
-//imports omitted for brevity
+    //imports omitted for brevity
 
-/**
- * Podcast resource placeholder for json/xml representation 
- * 
- * @author ama
- *
- */
-@SuppressWarnings("restriction")
-@XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
-public class Podcast implements Serializable {
+    /**
+     * Podcast resource placeholder for json/xml representation
+     *
+     * @author ama
+     *
+     */
+    @SuppressWarnings("restriction")
+    @XmlRootElement
+    @XmlAccessorType(XmlAccessType.FIELD)
+    public class Podcast implements Serializable {
 
-    private static final long serialVersionUID = -8039686696076337053L;
+        private static final long serialVersionUID = -8039686696076337053L;
 
-    /** id of the podcast */
-    @XmlElement(name = "id")    
-    private Long id;
-    
-    /** title of the podcast */
-    @XmlElement(name = "title")    
-    private String title;
-        
-    /** link of the podcast on Podcastpedia.org */
-    @XmlElement(name = "linkOnPodcastpedia")    
-    private String linkOnPodcastpedia;
-    
-    /** url of the feed */
-    @XmlElement(name = "feed")    
-    private String feed;
-    
-    /** description of the podcast */
-    @XmlElement(name = "description")
-    private String description; 
-        
-    /** insertion date in the database */
-    @XmlElement(name = "insertionDate")
-    @XmlJavaTypeAdapter(DateISO8601Adapter.class)    
-    @PodcastDetailedView
-    private Date insertionDate;
+        /** id of the podcast */
+        @XmlElement(name = "id")    
+        private Long id;
+        
+        /** title of the podcast */
+        @XmlElement(name = "title")    
+        private String title;
+            
+        /** link of the podcast on Podcastpedia.org */
+        @XmlElement(name = "linkOnPodcastpedia")    
+        private String linkOnPodcastpedia;
+        
+        /** url of the feed */
+        @XmlElement(name = "feed")    
+        private String feed;
+        
+        /** description of the podcast */
+        @XmlElement(name = "description")
+        private String description;
+            
+        /** insertion date in the database */
+        @XmlElement(name = "insertionDate")
+        @XmlJavaTypeAdapter(DateISO8601Adapter.class)    
+        @PodcastDetailedView
+        private Date insertionDate;
 
-    public Podcast(PodcastEntity podcastEntity){
-        try {
-            BeanUtils.copyProperties(this, podcastEntity);
-        } catch (IllegalAccessException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
-    
-    public Podcast(String title, String linkOnPodcastpedia, String feed,
-            String description) {
-        
-        this.title = title;
-        this.linkOnPodcastpedia = linkOnPodcastpedia;
-        this.feed = feed;
-        this.description = description;
-        
-    }
-    
-    public Podcast(){}
+        public Podcast(PodcastEntity podcastEntity){
+            try {
+                BeanUtils.copyProperties(this, podcastEntity);
+            } catch (IllegalAccessException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+        
+        public Podcast(String title, String linkOnPodcastpedia, String feed,
+                String description) {
+            
+            this.title = title;
+            this.linkOnPodcastpedia = linkOnPodcastpedia;
+            this.feed = feed;
+            this.description = description;
+            
+        }
+        
+        public Podcast(){}
 
-//getters and setters now shown for brevity
-}</pre>
+    //getters and setters now shown for brevity
+    }
+  </code>
+</pre>
 
 and translates into the following JSON representation, which is actually the de facto media type used with REST nowadays:
 
-<pre class="lang:js decode:true">{
-	"id":1,
-	"title":"Quarks & Co - zum Mitnehmen-modified",
-	"linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/1/Quarks-Co-zum-Mitnehmen",
-	"feed":"http://podcast.wdr.de/quarks.xml",
-	"description":"Quarks & Co: Das Wissenschaftsmagazin",
-	"insertionDate":"2014-05-30T10:26:12.00+0200"
-}</pre>
+<pre>
+  <code class="json">
+    {
+    	"id":1,
+    	"title":"Quarks & Co - zum Mitnehmen-modified",
+    	"linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/1/Quarks-Co-zum-Mitnehmen",
+    	"feed":"http://podcast.wdr.de/quarks.xml",
+    	"description":"Quarks & Co: Das Wissenschaftsmagazin",
+    	"insertionDate":"2014-05-30T10:26:12.00+0200"
+    }
+  </code>
+</pre>
 
 <p class="note_normal" style="text-align: justify;">
   Even though JSON is becoming more and more the preffered representation in REST APIs, you shouldn&#8217;t neglect the XML representation, as most of the systems still use XML format for communication with other parties.
@@ -1222,16 +790,20 @@ and is not a strict 1:1 mapping. Why? Because you can also use PUT for Creation 
 
 As already mentioned the `PodcastRestResource` class is the one handling all the rest requests:
 
-<pre class="lang:default mark:4 decode:true" title="PodcastRestService.java">package org.codingpedia.demo.rest.resource;
-//imports
-......................
-@Component
-@Path("/podcasts")
-public class PodcastResource {
-    @Autowired
-    private PodcastService podcastService;
-    .....................
-}</pre>
+<pre>
+  <code class="java">
+    package org.codingpedia.demo.rest.resource;
+    //imports
+    ......................
+    @Component
+    @Path("/podcasts")
+    public class PodcastResource {
+        @Autowired
+        private PodcastService podcastService;
+        .....................
+    }
+  </code>
+</pre>
 
 <p style="text-align: justify;">
   Notice the <code>@Path("/podcasts")</code> before the class definition &#8211; everything related to podcast resources will occur under this path. The <a href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/Path.html" target="_top">@Path</a> annotation&#8217;s value is a relative URI path. In the example above, the Java class will be hosted at the URI path <code>/podcasts</code>. The <code>PodcastService</code> interface exposes the business logic to the REST facade layer.
@@ -1252,57 +824,57 @@ While the &#8220;most known&#8221; way for resource creation is by using POST, A
     <td bgcolor="#808080" width="25%">
       <b>  Description</b>
     </td>
-    
+
     <td bgcolor="#808080" width="25%">
       <b>  URI</b>
     </td>
-    
+
     <td bgcolor="#808080" width="25%">
       <b>  HTTP method<br /> </b>
     </td>
-    
+
     <td bgcolor="#808080" width="25%">
       <b>  HTTP Status response</b>
     </td>
   </tr>
-  
+
   <tr>
     <td width="25%" height="19">
        Add new podcast
     </td>
-    
+
     <td width="25%">
        /podcasts/
     </td>
-    
+
     <td width="25%">
       <p align="CENTER">
         POST
       </p>
     </td>
-    
+
     <td width="25%">
       <p align="CENTER">
         201 Created
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td width="25%" height="19">
        Add new podcast (all values must be sent)
     </td>
-    
+
     <td width="25%">
        /podcasts/{id}
     </td>
-    
+
     <td width="25%">
       <p align="CENTER">
         PUT
       </p>
     </td>
-    
+
     <td width="25%">
       <p align="CENTER">
         201 Created
@@ -1329,36 +901,40 @@ and PUT (idempotent)
 
 ###### <span id="32121_Create_a_single_resource_with_POST">3.2.1.2.1. Create a single resource with POST</span>
 
-<pre class="lang:java decode:true" title="Create a single podcast resource from JSON ">/**
- * Adds a new resource (podcast) from the given json format (at least title
- * and feed elements are required at the DB level)
- * 
- * @param podcast
- * @return
- * @throws AppException
- */
-@POST
-@Consumes({ MediaType.APPLICATION_JSON })
-@Produces({ MediaType.TEXT_HTML })
-public Response createPodcast(Podcast podcast) throws AppException {
-	Long createPodcastId = podcastService.createPodcast(podcast);
-	return Response.status(Response.Status.CREATED)// 201
-			.entity("A new podcast has been created")
-			.header("Location",
-					"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
-							+ String.valueOf(createPodcastId)).build();
-}</pre>
+<pre>
+  <code class="java">
+    /**
+     * Adds a new resource (podcast) from the given json format (at least title
+     * and feed elements are required at the DB level)
+     *
+     * @param podcast
+     * @return
+     * @throws AppException
+     */
+    @POST
+    @Consumes({ MediaType.APPLICATION_JSON })
+    @Produces({ MediaType.TEXT_HTML })
+    public Response createPodcast(Podcast podcast) throws AppException {
+    	Long createPodcastId = podcastService.createPodcast(podcast);
+    	return Response.status(Response.Status.CREATED)// 201
+    			.entity("A new podcast has been created")
+    			.header("Location",
+    					"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
+    							+ String.valueOf(createPodcastId)).build();
+    }
+  </code>
+</pre>
 
 **Annotations**
 
-  * `<code>@POST`</code> &#8211; indicates that the method responds to HTTP POST requests
+  * `@POST` &#8211; indicates that the method responds to HTTP POST requests
   * `@Consumes({MediaType.APPLICATION_JSON})` &#8211; defines the media type, the method accepts, in this case `"application/json"`
   * `@Produces({MediaType.TEXT_HTML})` &#8211; defines the media type) that the method can produce, in this case `"text/html"`.
 
 **<span style="line-height: 1.5;">Response</span>**
 
   * on success: text/html document, with a HTTP status of `201 Created`, and a Location header specifying where the resource has been created
-  * on error: 
+  * on error:
       * `400 Bad request` if not enough data is provided
       * `409 Conflict` if on the server side is determined a podcast with the same feed exists
 
@@ -1368,39 +944,43 @@ This will be treated in the Update Podcast section below.
 
 ###### <span id="32123_Bonus_8211_Create_a_single_resource_8220podcast8221_from_form">3.2.1.2.3. Bonus &#8211; Create a single resource (&#8220;podcast&#8221;) from form</span>
 
-<pre class="lang:java decode:true" title="Create a single podcast resource from form">/**
- * Adds a new podcast (resource) from "form" (at least title and feed
- * elements are required at the DB level)
- * 
- * @param title
- * @param linkOnPodcastpedia
- * @param feed
- * @param description
- * @return
- * @throws AppException
- */
-@POST
-@Consumes({ MediaType.APPLICATION_FORM_URLENCODED })
-@Produces({ MediaType.TEXT_HTML })
-@Transactional
-public Response createPodcastFromApplicationFormURLencoded(
-		@FormParam("title") String title,
-		@FormParam("linkOnPodcastpedia") String linkOnPodcastpedia,
-		@FormParam("feed") String feed,
-		@FormParam("description") String description) throws AppException {
+<pre>
+  <code class="java">
+  /**
+   * Adds a new podcast (resource) from "form" (at least title and feed
+   * elements are required at the DB level)
+   *
+   * @param title
+   * @param linkOnPodcastpedia
+   * @param feed
+   * @param description
+   * @return
+   * @throws AppException
+   */
+  @POST
+  @Consumes({ MediaType.APPLICATION_FORM_URLENCODED })
+  @Produces({ MediaType.TEXT_HTML })
+  @Transactional
+  public Response createPodcastFromApplicationFormURLencoded(
+  		@FormParam("title") String title,
+  		@FormParam("linkOnPodcastpedia") String linkOnPodcastpedia,
+  		@FormParam("feed") String feed,
+  		@FormParam("description") String description) throws AppException {
 
-	Podcast podcast = new Podcast(title, linkOnPodcastpedia, feed,
-			description);
-	Long createPodcastid = podcastService.createPodcast(podcast);
+  	Podcast podcast = new Podcast(title, linkOnPodcastpedia, feed,
+  			description);
+  	Long createPodcastid = podcastService.createPodcast(podcast);
 
-	return Response
-			.status(Response.Status.CREATED)// 201
-			.entity("A new podcast/resource has been created at /demo-rest-jersey-spring/podcasts/"
-					+ createPodcastid)
-			.header("Location",
-					"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
-							+ String.valueOf(createPodcastid)).build();
-}</pre>
+  	return Response
+  			.status(Response.Status.CREATED)// 201
+  			.entity("A new podcast/resource has been created at /demo-rest-jersey-spring/podcasts/"
+  					+ createPodcastid)
+  			.header("Location",
+  					"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
+  							+ String.valueOf(createPodcastid)).build();
+  }
+  </code>
+</pre>
 
 **Annotations**
 
@@ -1420,7 +1000,7 @@ public Response createPodcastFromApplicationFormURLencoded(
 **Response**
 
   * on success: text/html document, with a HTTP status of `201 Created`, and a Location header specifying where the resource has been created
-  * on error: 
+  * on error:
       * `400 Bad request` if not enough data is provided
       * `409 Conflict` if on the server side is determined a podcast with the same feed exists
 
@@ -1438,57 +1018,57 @@ The API supports two Read operations:
     <td bgcolor="#808080" width="25%">
       <b> Description</b>
     </td>
-    
+
     <td bgcolor="#808080" width="45%">
       <b> URI</b>
     </td>
-    
+
     <td bgcolor="#808080" width="15%">
       <b> HTTP method<br /> </b>
     </td>
-    
+
     <td bgcolor="#808080" width="15%">
       <b> HTTP Status response</b>
     </td>
   </tr>
-  
+
   <tr>
     <td width="25%" height="19">
        Return all podcasts
     </td>
-    
+
     <td width="45%">
        /podcasts/?orderByInsertionDate={ASC|DESC}&numberDaysToLookBack={val}
     </td>
-    
+
     <td width="15%">
       <p align="CENTER">
         GET
       </p>
     </td>
-    
+
     <td width="15%">
       <p align="CENTER">
         200 OK
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td width="25%" height="19">
        Add new podcast (all values must be sent)
     </td>
-    
+
     <td width="45%">
        /podcasts/{id}
     </td>
-    
+
     <td width="15%">
       <p align="CENTER">
         GET
       </p>
     </td>
-    
+
     <td width="15%">
       <p align="CENTER">
         200 OK
@@ -1505,1515 +1085,34 @@ The API supports two Read operations:
 
 ###### <span id="32221_Read_all_podcasts_82208221">3.2.2.2.1. Read all podcasts (&#8220;/&#8221;)</span>
 
-<pre class="lang:java decode:true" title="Read all resources">/**
- * Returns all resources (podcasts) from the database
- * 
- * @return
- * @throws IOException
- * @throws JsonMappingException
- * @throws JsonGenerationException
- * @throws AppException
- */
-@GET
-@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-public List&lt;Podcast&gt; getPodcasts(
-		@QueryParam("orderByInsertionDate") String orderByInsertionDate,
-		@QueryParam("numberDaysToLookBack") Integer numberDaysToLookBack)
-		throws JsonGenerationException, JsonMappingException, IOException,
-		AppException {
-	List&lt;Podcast&gt; podcasts = podcastService.getPodcasts(
-			orderByInsertionDate, numberDaysToLookBack);
-	return podcasts;
-}</pre>
+<pre>
+  <code class="java">
+    /**
+     * Returns all resources (podcasts) from the database
+     *
+     * @return
+     * @throws IOException
+     * @throws JsonMappingException
+     * @throws JsonGenerationException
+     * @throws AppException
+     */
+    @GET
+    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+    public List&lt;Podcast&gt; getPodcasts(
+    		@QueryParam("orderByInsertionDate") String orderByInsertionDate,
+    		@QueryParam("numberDaysToLookBack") Integer numberDaysToLookBack)
+    		throws JsonGenerationException, JsonMappingException, IOException,
+    		AppException {
+    	List&lt;Podcast&gt; podcasts = podcastService.getPodcasts(
+    			orderByInsertionDate, numberDaysToLookBack);
+    	return podcasts;
+    }
+  </code>
+</pre>
 
 **Annotations**
 
-  * ```<p style="text-align: justify;">
-  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="http://www.podcastpedia.org/podcasting" href="http://www.podcastpedia.org/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
-</p>
-
-<p style="text-align: justify;">
-  <div id="toc_container" class="no_bullets">
-    <p class="toc_title">
-      Contents
-    </p>
-    
-    <ul class="toc_list">
-      <li>
-        <a href="#1_The_example">1. The example</a><ul>
-          <li>
-            <a href="#11_Why">1.1. Why?</a>
-          </li>
-          <li>
-            <a href="#12_What_does_it_do">1.2. What does it do?</a>
-          </li>
-          <li>
-            <a href="#13_Architecture_and_technologies">1.3. Architecture and technologies</a><ul>
-              <li>
-                <a href="#131_Jersey_Facade">1.3.1. Jersey (Facade)</a>
-              </li>
-              <li>
-                <a href="#132_Spring_Business_layer">1.3.2. Spring (Business layer)</a>
-              </li>
-              <li>
-                <a href="#133_JPA_2_Hibernate_Persistence_layer">1.3.3. JPA 2 / Hibernate (Persistence layer)</a>
-              </li>
-              <li>
-                <a href="#134_Web_Container">1.3.4. Web Container</a>
-              </li>
-              <li>
-                <a href="#135_MySQL">1.3.5. MySQL</a>
-              </li>
-              <li>
-                <a href="#136_Technology_versions">1.3.6. Technology versions</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="#14_Source_code">1.4. Source code</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#2_Configuration">2. Configuration</a><ul>
-          <li>
-            <a href="#21_Project_dependencies">2.1. Project dependencies</a>
-          </li>
-          <li>
-            <a href="#22_webxml">2.2. web.xml</a><ul>
-              <li>
-                <a href="#221_Jersey-servlet">2.2.1. Jersey-servlet</a><ul>
-                  <li>
-                    <a href="#2122_Spring_application_context_configuration">2.1.2.2. Spring application context configuration</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#3_The_REST_API_design_implementation">3. The REST API (design & implementation)</a><ul>
-          <li>
-            <a href="#31_Resources">3.1. Resources</a><ul>
-              <li>
-                <a href="#311_Design">3.1.1. Design</a>
-              </li>
-              <li>
-                <a href="#312_Implementation">3.1.2. Implementation</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="#32_Methods">3.2. Methods</a><ul>
-              <li>
-                <a href="#321_Create_podcasts">3.2.1. Create podcast(s)</a><ul>
-                  <li>
-                    <a href="#3211_Design">3.2.1.1. Design</a>
-                  </li>
-                  <li>
-                    <a href="#3212_Implementation">3.2.1.2. Implementation</a><ul>
-                      <li>
-                        <a href="#32121_Create_a_single_resource_with_POST">3.2.1.2.1. Create a single resource with POST</a>
-                      </li>
-                      <li>
-                        <a href="#32122_Create_a_single_resource_8220podcast8221_with_PUT">3.2.1.2.2. Create a single resource (&#8220;podcast&#8221;) with PUT</a>
-                      </li>
-                      <li>
-                        <a href="#32123_Bonus_8211_Create_a_single_resource_8220podcast8221_from_form">3.2.1.2.3. Bonus &#8211; Create a single resource (&#8220;podcast&#8221;) from form</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="#322_Read_podcasts">3.2.2. Read podcast(s)</a><ul>
-                  <li>
-                    <a href="#3221_Design">3.2.2.1. Design</a>
-                  </li>
-                  <li>
-                    <a href="#3222_Implementation">3.2.2.2. Implementation</a><ul>
-                      <li>
-                        <a href="#32221_Read_all_podcasts_82208221">3.2.2.2.1. Read all podcasts (&#8220;/&#8221;)</a>
-                      </li>
-                      <li>
-                        <a href="#32221_Read_one_podcast">3.2.2.2.1. Read one podcast</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="#323_Update_podcast">3.2.3. Update podcast</a><ul>
-                  <li>
-                    <a href="#3231_Design">3.2.3.1. Design</a>
-                  </li>
-                  <li>
-                    <a href="#3231_Implementation">3.2.3.1. Implementation</a><ul>
-                      <li>
-                        <a href="#32311_Full_Update">3.2.3.1.1. Full Update</a>
-                      </li>
-                      <li>
-                        <a href="#32312_Partial_Update">3.2.3.1.2. Partial Update</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="#324_Delete_podcast">3.2.4. Delete podcast</a><ul>
-                  <li>
-                    <a href="#3241_Design">3.2.4.1. Design</a>
-                  </li>
-                  <li>
-                    <a href="#3242_Implementation">3.2.4.2. Implementation</a><ul>
-                      <li>
-                        <a href="#32421_Delete_all_resources">3.2.4.2.1. Delete all resources</a>
-                      </li>
-                      <li>
-                        <a href="#32422_Delete_one_resource">3.2.4.2.2. Delete one resource</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#4_Logging">4. Logging</a>
-      </li>
-      <li>
-        <a href="#5_Exception_handling">5. Exception handling</a><ul>
-          <li>
-            <a href="#51_Custom_Reason_Phrase_in_HTTP_status_error_message_response_with_JAX-RS_Jersey">5.1. Custom Reason Phrase in HTTP status error message response with JAX-RS (Jersey)</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#6_Add_CORS_support_on_the_server_side">6. Add CORS support on the server side</a>
-      </li>
-      <li>
-        <a href="#7_Testing">7. Testing</a><ul>
-          <li>
-            <a href="#71_Integration_tests_in_Java">7.1. Integration tests in Java</a><ul>
-              <li>
-                <a href="#711_Configuration">7.1.1. Configuration</a><ul>
-                  <li>
-                    <a href="#7111_Jersey_client_dependency">7.1.1.1 Jersey client dependency</a>
-                  </li>
-                  <li>
-                    <a href="#7112_Failsafe_plugin">7.1.1.2. Failsafe plugin</a>
-                  </li>
-                  <li>
-                    <a href="#7112_Jetty_Maven_Plugin">7.1.1.2. Jetty Maven Plugin</a>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="#712_Build_the_integration_tests">7.1.2. Build the integration tests</a>
-              </li>
-              <li>
-                <a href="#713_Running_the_integration_tests">7.1.3. Running the integration tests</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="#72_Integration_tests_with_SoapUI">7.2. Integration tests with SoapUI</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#8_Versioning">8. Versioning</a>
-      </li>
-      <li>
-        <a href="#9_Compression">9. Compression</a>
-      </li>
-      <li>
-        <a href="#10Quick_way_to_check_if_the_REST_API_is_alive">10. Quick way to check if the REST API is alive</a>
-      </li>
-      <li>
-        <a href="#11_Security">11. Security</a><ul>
-          <li>
-            <a href="#111_Basic_Authentication">11.1. Basic Authentication</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#12_Summary">12. Summary</a>
-      </li>
-      <li>
-        <a href="#Resources">Resources</a><ul>
-          <li>
-            <a href="#Source_Code">Source Code</a>
-          </li>
-          <li>
-            <a href="#Web_resources">Web resources</a>
-          </li>
-          <li>
-            <a href="#Codingpedia_related_resources">Codingpedia related resources</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</p>
-
-<p style="text-align: justify;">
-  <!--more-->
-</p>
-
-<h2 style="text-align: justify;">
-  <span id="1_The_example">1. The example</span>
-</h2>
-
-<h3 style="text-align: justify;">
-  <span id="11_Why">1.1. Why?</span>
-</h3>
-
-<p style="text-align: justify;">
-  Before we start, let me tell you why I&#8217;ve written this post &#8211; well, my intention is to offer in the future a REST API for <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a>. Of course I could use <a title="Designing and Implementing RESTful Web Services with Spring" href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring&#8217;s own REST implementation</a>, as I currently do for the AJAX calls, but I wanted also to see how the &#8220;official&#8221; implementation looks like. So, the best way to get to know the technology is to build a prototype with it. That is what I did and what I am presenting here, and I can say that I am pretty damn satisfied with Jersey. Read along to understand why!!!
-</p>
-
-<p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> You can visit my post <a title="Autocomplete search box with jQuery and Spring MVC" href="http://www.codingpedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a> to see how Spring handles REST requests.
-</p>
-
-<h3 style="text-align: justify;">
-  <span id="12_What_does_it_do">1.2. What does it do?</span>
-</h3>
-
-<p style="text-align: justify;">
-  The <a title="http://en.wikipedia.org/wiki/Web_resource" href="http://en.wikipedia.org/wiki/Web_resource" target="_blank">resource</a> managed in this tutorial are podcasts. The REST API will allow creation, retrieval, update and deletion of such resources.
-</p>
-
-<h3 style="text-align: justify;">
-  <span id="13_Architecture_and_technologies">1.3. Architecture and technologies</span>
-</h3>
-
-<p style="text-align: justify;">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram.png"><img class="alignnone size-full wp-image-1456" src="http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram.png" alt="Architecture diagram" width="591" height="246" srcset="http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram.png 591w, http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram-300x124.png 300w" sizes="(max-width: 591px) 100vw, 591px" /></a>
-</p>
-
-<p style="text-align: justify;">
-  The demo application uses a multi-layered architecture, based on the <em>&#8220;Law of Demeter (LoD) or principle of least knowledge&#8221;[16]</em>:
-</p>
-
-  * the **first layer** is the REST support implemented with Jersey, has the role of a <a title="Facade pattern" href="http://en.wikipedia.org/wiki/Facade_pattern" target="_blank">facade</a> and delegates the logic to the business layer
-  * the **business layer** is where the logic happens
-  * the **data access layer** is where the communcation with the pesistence storage (in our case the MySql database) takes place
-
-A few words on the technologies/frameworks used:
-
-<h4 style="text-align: justify;">
-  <span id="131_Jersey_Facade">1.3.1. Jersey (Facade)</span>
-</h4>
-
-<p style="text-align: justify;">
-  The <a title="https://jersey.java.net/" href="https://jersey.java.net/" target="_blank"><em>Jersey RESTful Web Services framework</em></a> is open source, production quality, framework for developing RESTful Web Services in Java that provides support for JAX-RS APIs and serves as a <a title="Java API for RESTful Services (JAX-RS)" href="https://jax-rs-spec.java.net/" target="_blank">JAX-RS</a> (JSR 311 & JSR 339) Reference Implementation.
-</p>
-
-<h4 style="text-align: justify;">
-  <span id="132_Spring_Business_layer">1.3.2. Spring (Business layer)</span>
-</h4>
-
-<p style="text-align: justify;">
-  I like glueing stuff together with <strong><a title="Spring Framework" href="http://projects.spring.io/spring-framework/" target="_blank">Spring</a></strong>, and this example makes no exception. In my opinion there&#8217;s no better way to make POJOs with different functionalities. You&#8217;ll find out in the tutorial what it takes to integrate Jersey 2 with Spring.
-</p>
-
-<h4 style="text-align: justify;">
-  <span id="133_JPA_2_Hibernate_Persistence_layer">1.3.3. JPA 2 / Hibernate (Persistence layer)</span>
-</h4>
-
-<p style="text-align: justify;">
-  For the persistence layer I still use a DAO pattern, even though for implementing it I am using JPA 2, which, as some people say, should make DAOs superfluous (I, for one, don’t like my service classes cluttered with EntityManager/JPA specific code). AS supporting framework for JPA 2 I am using Hibernate.
-</p>
-
-<p style="text-align: justify;">
-  See my post <a title="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a> for an interesting discussion around persistence thema in Java.
-</p>
-
-<h4 style="text-align: justify;">
-  <span id="134_Web_Container">1.3.4. Web Container</span>
-</h4>
-
-<p style="text-align: justify;">
-  Everything gets packaged with Maven as a <code>.war</code> file and can be deployed on any web container &#8211; I used <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Tomcat</a> and <a title="Jetty" href="http://www.eclipse.org/jetty/" target="_blank">Jetty</a> but, it could also be Glassfih, Weblogic, JBoss or WebSphere.
-</p>
-
-<h4 style="text-align: justify;">
-  <span id="135_MySQL">1.3.5. MySQL</span>
-</h4>
-
-<p style="text-align: justify;">
-  The sample data is stored in a <a title="MySQL" href="http://www.mysql.com/" target="_blank">MySQL</a> table:
-</p>
-
-<p style="text-align: justify;">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema.png"><img class="alignnone size-medium wp-image-1089" src="http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema-300x280.png" alt="database schema" width="300" height="280" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema-300x280.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema.png 566w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-</p>
-
-#### <span id="136_Technology_versions">1.3.6. Technology versions</span>
-
-  1. Jersey 2.9
-  2. Spring 4.0.3
-  3. Hibernate 4
-  4. Maven 3
-  5. Tomcat 7
-  6. Jetty 9
-  7. MySql 5.6
-
-<p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> The main focus in the post will be on the REST api design and its implementation with the Jersey JAX-RS implementation, all the other technologies/layers are considered as enablers.
-</p>
-
-### <span id="14_Source_code">1.4. Source code</span>
-
-The source code for the project presented here is available on GitHub, with complete instructions on how to install and run the project:
-
-  * <a title="Source code for project" href="https://github.com/Codingpedia/demo-rest-jersey-spring" target="_blank">Codingpedia / demo-rest-jersey-spring </a>
-
-## <span id="2_Configuration">2. Configuration</span>
-
-Before I start presenting the design and implementation of the REST API, we need to do a little configuration so that all these wonderful technologies can come and play together
-
-### <span id="21_Project_dependencies">2.1. Project dependencies</span>
-
-<p style="text-align: justify;">
-  The <a title="https://jersey.java.net/documentation/latest/spring.html" href="https://jersey.java.net/documentation/latest/spring.html" target="_blank">Jersey Spring extension</a> must be present in your project&#8217;s classpath. If you are using Maven add it to the <code>pom.xml</code> file of your project:
-</p>
-
-<pre class="lang:default mark:26-49 decode:true" title="Jersey-spring dependency in the pom.xml">&lt;dependency&gt;
-	&lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
-	&lt;artifactId&gt;jersey-spring3&lt;/artifactId&gt;
-	&lt;version&gt;${jersey.version}&lt;/version&gt;
-	&lt;exclusions&gt;
-		&lt;exclusion&gt;
-			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-			&lt;artifactId&gt;spring-core&lt;/artifactId&gt;
-		&lt;/exclusion&gt;			
-		&lt;exclusion&gt;
-			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-			&lt;artifactId&gt;spring-web&lt;/artifactId&gt;
-		&lt;/exclusion&gt;
-		&lt;exclusion&gt;
-			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-			&lt;artifactId&gt;spring-beans&lt;/artifactId&gt;
-		&lt;/exclusion&gt;
-	&lt;/exclusions&gt;			
-&lt;/dependency&gt;
-&lt;dependency&gt;
-	&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
-	&lt;artifactId&gt;jersey-media-json-jackson&lt;/artifactId&gt;
-	&lt;version&gt;2.4.1&lt;/version&gt;
-&lt;/dependency&gt;</pre>
-
-<p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> The jersey-spring3.jar, uses its own version for Spring libraries, so to use the ones you want (Spring 4.0.3.Release in this case), you need to exclude these libraries manually.
-</p>
-
-<p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> If you want to see what other dependencies are needed (e.g. Spring, Hibernate, Jetty maven plugin, testing etc.) in the project you can have a look at the the complete <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" target="_blank">pom.xml</a> file available on GitHub.
-</p>
-
-### <span id="22_webxml">2.2. web.xml</span>
-
-<pre class="lang:default mark:18-33 decode:true" title="Web Application Deployment Descriptor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"&gt;
-	&lt;display-name&gt;Demo - Restful Web Application&lt;/display-name&gt;
-
-	&lt;listener&gt;
-		&lt;listener-class&gt;
-			org.springframework.web.context.ContextLoaderListener
-		&lt;/listener-class&gt;
-	&lt;/listener&gt;
-
-	&lt;context-param&gt;
-		&lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
-		&lt;param-value&gt;classpath:spring/applicationContext.xml&lt;/param-value&gt;
-	&lt;/context-param&gt;
-
-	&lt;servlet&gt;
-		&lt;servlet-name&gt;jersey-serlvet&lt;/servlet-name&gt;
-		&lt;servlet-class&gt;
-			org.glassfish.jersey.servlet.ServletContainer
-		&lt;/servlet-class&gt;
-		&lt;init-param&gt;
-			&lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;
-			&lt;param-value&gt;org.codingpedia.demo.rest.RestDemoJaxRsApplication&lt;/param-value&gt;			
-		&lt;/init-param&gt;		
-		&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
-	&lt;/servlet&gt;
-
-	&lt;servlet-mapping&gt;
-		&lt;servlet-name&gt;jersey-serlvet&lt;/servlet-name&gt;
-		&lt;url-pattern&gt;/*&lt;/url-pattern&gt;
-	&lt;/servlet-mapping&gt;
-
-	&lt;resource-ref&gt;
-        &lt;description&gt;Database resource rest demo web application &lt;/description&gt;
-        &lt;res-ref-name&gt;jdbc/restDemoDB&lt;/res-ref-name&gt;
-        &lt;res-type&gt;javax.sql.DataSource&lt;/res-type&gt;
-        &lt;res-auth&gt;Container&lt;/res-auth&gt;
-    &lt;/resource-ref&gt;	
-&lt;/web-app&gt;</pre>
-
-#### <span id="221_Jersey-servlet">2.2.1. Jersey-servlet</span>
-
-<p style="text-align: justify;">
-  Notice the Jersey servlet configuration [lines 18-33]. The <code>javax.ws.rs.core.Application</code> class defines the components (root resource and provider classes,) of the JAX-RS application. I used <code> ResourceConfig,</code> which is Jersey&#8217;s own implementation of the class <code>Application</code>, and which provides advanced capabilites to simplify registration of JAX-RS components.<code> </code><code class="literal"></code>Check out the <a title="https://jersey.java.net/documentation/latest/user-guide.html#environmenmt.appmodel" href="https://jersey.java.net/documentation/latest/user-guide.html#environmenmt.appmodel" target="_blank">JAX-RS Application Model</a> in the documentation for more possibilities.
-</p>
-
-My implementation of the `ResourceConfig` class, ``<p style="text-align: justify;">
-  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="http://www.podcastpedia.org/podcasting" href="http://www.podcastpedia.org/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
-</p>
-
-<p style="text-align: justify;">
-  <div id="toc_container" class="no_bullets">
-    <p class="toc_title">
-      Contents
-    </p>
-    
-    <ul class="toc_list">
-      <li>
-        <a href="#1_The_example">1. The example</a><ul>
-          <li>
-            <a href="#11_Why">1.1. Why?</a>
-          </li>
-          <li>
-            <a href="#12_What_does_it_do">1.2. What does it do?</a>
-          </li>
-          <li>
-            <a href="#13_Architecture_and_technologies">1.3. Architecture and technologies</a><ul>
-              <li>
-                <a href="#131_Jersey_Facade">1.3.1. Jersey (Facade)</a>
-              </li>
-              <li>
-                <a href="#132_Spring_Business_layer">1.3.2. Spring (Business layer)</a>
-              </li>
-              <li>
-                <a href="#133_JPA_2_Hibernate_Persistence_layer">1.3.3. JPA 2 / Hibernate (Persistence layer)</a>
-              </li>
-              <li>
-                <a href="#134_Web_Container">1.3.4. Web Container</a>
-              </li>
-              <li>
-                <a href="#135_MySQL">1.3.5. MySQL</a>
-              </li>
-              <li>
-                <a href="#136_Technology_versions">1.3.6. Technology versions</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="#14_Source_code">1.4. Source code</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#2_Configuration">2. Configuration</a><ul>
-          <li>
-            <a href="#21_Project_dependencies">2.1. Project dependencies</a>
-          </li>
-          <li>
-            <a href="#22_webxml">2.2. web.xml</a><ul>
-              <li>
-                <a href="#221_Jersey-servlet">2.2.1. Jersey-servlet</a><ul>
-                  <li>
-                    <a href="#2122_Spring_application_context_configuration">2.1.2.2. Spring application context configuration</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#3_The_REST_API_design_implementation">3. The REST API (design & implementation)</a><ul>
-          <li>
-            <a href="#31_Resources">3.1. Resources</a><ul>
-              <li>
-                <a href="#311_Design">3.1.1. Design</a>
-              </li>
-              <li>
-                <a href="#312_Implementation">3.1.2. Implementation</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="#32_Methods">3.2. Methods</a><ul>
-              <li>
-                <a href="#321_Create_podcasts">3.2.1. Create podcast(s)</a><ul>
-                  <li>
-                    <a href="#3211_Design">3.2.1.1. Design</a>
-                  </li>
-                  <li>
-                    <a href="#3212_Implementation">3.2.1.2. Implementation</a><ul>
-                      <li>
-                        <a href="#32121_Create_a_single_resource_with_POST">3.2.1.2.1. Create a single resource with POST</a>
-                      </li>
-                      <li>
-                        <a href="#32122_Create_a_single_resource_8220podcast8221_with_PUT">3.2.1.2.2. Create a single resource (&#8220;podcast&#8221;) with PUT</a>
-                      </li>
-                      <li>
-                        <a href="#32123_Bonus_8211_Create_a_single_resource_8220podcast8221_from_form">3.2.1.2.3. Bonus &#8211; Create a single resource (&#8220;podcast&#8221;) from form</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="#322_Read_podcasts">3.2.2. Read podcast(s)</a><ul>
-                  <li>
-                    <a href="#3221_Design">3.2.2.1. Design</a>
-                  </li>
-                  <li>
-                    <a href="#3222_Implementation">3.2.2.2. Implementation</a><ul>
-                      <li>
-                        <a href="#32221_Read_all_podcasts_82208221">3.2.2.2.1. Read all podcasts (&#8220;/&#8221;)</a>
-                      </li>
-                      <li>
-                        <a href="#32221_Read_one_podcast">3.2.2.2.1. Read one podcast</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="#323_Update_podcast">3.2.3. Update podcast</a><ul>
-                  <li>
-                    <a href="#3231_Design">3.2.3.1. Design</a>
-                  </li>
-                  <li>
-                    <a href="#3231_Implementation">3.2.3.1. Implementation</a><ul>
-                      <li>
-                        <a href="#32311_Full_Update">3.2.3.1.1. Full Update</a>
-                      </li>
-                      <li>
-                        <a href="#32312_Partial_Update">3.2.3.1.2. Partial Update</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="#324_Delete_podcast">3.2.4. Delete podcast</a><ul>
-                  <li>
-                    <a href="#3241_Design">3.2.4.1. Design</a>
-                  </li>
-                  <li>
-                    <a href="#3242_Implementation">3.2.4.2. Implementation</a><ul>
-                      <li>
-                        <a href="#32421_Delete_all_resources">3.2.4.2.1. Delete all resources</a>
-                      </li>
-                      <li>
-                        <a href="#32422_Delete_one_resource">3.2.4.2.2. Delete one resource</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#4_Logging">4. Logging</a>
-      </li>
-      <li>
-        <a href="#5_Exception_handling">5. Exception handling</a><ul>
-          <li>
-            <a href="#51_Custom_Reason_Phrase_in_HTTP_status_error_message_response_with_JAX-RS_Jersey">5.1. Custom Reason Phrase in HTTP status error message response with JAX-RS (Jersey)</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#6_Add_CORS_support_on_the_server_side">6. Add CORS support on the server side</a>
-      </li>
-      <li>
-        <a href="#7_Testing">7. Testing</a><ul>
-          <li>
-            <a href="#71_Integration_tests_in_Java">7.1. Integration tests in Java</a><ul>
-              <li>
-                <a href="#711_Configuration">7.1.1. Configuration</a><ul>
-                  <li>
-                    <a href="#7111_Jersey_client_dependency">7.1.1.1 Jersey client dependency</a>
-                  </li>
-                  <li>
-                    <a href="#7112_Failsafe_plugin">7.1.1.2. Failsafe plugin</a>
-                  </li>
-                  <li>
-                    <a href="#7112_Jetty_Maven_Plugin">7.1.1.2. Jetty Maven Plugin</a>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="#712_Build_the_integration_tests">7.1.2. Build the integration tests</a>
-              </li>
-              <li>
-                <a href="#713_Running_the_integration_tests">7.1.3. Running the integration tests</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="#72_Integration_tests_with_SoapUI">7.2. Integration tests with SoapUI</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#8_Versioning">8. Versioning</a>
-      </li>
-      <li>
-        <a href="#9_Compression">9. Compression</a>
-      </li>
-      <li>
-        <a href="#10Quick_way_to_check_if_the_REST_API_is_alive">10. Quick way to check if the REST API is alive</a>
-      </li>
-      <li>
-        <a href="#11_Security">11. Security</a><ul>
-          <li>
-            <a href="#111_Basic_Authentication">11.1. Basic Authentication</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#12_Summary">12. Summary</a>
-      </li>
-      <li>
-        <a href="#Resources">Resources</a><ul>
-          <li>
-            <a href="#Source_Code">Source Code</a>
-          </li>
-          <li>
-            <a href="#Web_resources">Web resources</a>
-          </li>
-          <li>
-            <a href="#Codingpedia_related_resources">Codingpedia related resources</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</p>
-
-<p style="text-align: justify;">
-  <!--more-->
-</p>
-
-<h2 style="text-align: justify;">
-  <span id="1_The_example">1. The example</span>
-</h2>
-
-<h3 style="text-align: justify;">
-  <span id="11_Why">1.1. Why?</span>
-</h3>
-
-<p style="text-align: justify;">
-  Before we start, let me tell you why I&#8217;ve written this post &#8211; well, my intention is to offer in the future a REST API for <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a>. Of course I could use <a title="Designing and Implementing RESTful Web Services with Spring" href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring&#8217;s own REST implementation</a>, as I currently do for the AJAX calls, but I wanted also to see how the &#8220;official&#8221; implementation looks like. So, the best way to get to know the technology is to build a prototype with it. That is what I did and what I am presenting here, and I can say that I am pretty damn satisfied with Jersey. Read along to understand why!!!
-</p>
-
-<p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> You can visit my post <a title="Autocomplete search box with jQuery and Spring MVC" href="http://www.codingpedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a> to see how Spring handles REST requests.
-</p>
-
-<h3 style="text-align: justify;">
-  <span id="12_What_does_it_do">1.2. What does it do?</span>
-</h3>
-
-<p style="text-align: justify;">
-  The <a title="http://en.wikipedia.org/wiki/Web_resource" href="http://en.wikipedia.org/wiki/Web_resource" target="_blank">resource</a> managed in this tutorial are podcasts. The REST API will allow creation, retrieval, update and deletion of such resources.
-</p>
-
-<h3 style="text-align: justify;">
-  <span id="13_Architecture_and_technologies">1.3. Architecture and technologies</span>
-</h3>
-
-<p style="text-align: justify;">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram.png"><img class="alignnone size-full wp-image-1456" src="http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram.png" alt="Architecture diagram" width="591" height="246" srcset="http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram.png 591w, http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram-300x124.png 300w" sizes="(max-width: 591px) 100vw, 591px" /></a>
-</p>
-
-<p style="text-align: justify;">
-  The demo application uses a multi-layered architecture, based on the <em>&#8220;Law of Demeter (LoD) or principle of least knowledge&#8221;[16]</em>:
-</p>
-
-  * the **first layer** is the REST support implemented with Jersey, has the role of a <a title="Facade pattern" href="http://en.wikipedia.org/wiki/Facade_pattern" target="_blank">facade</a> and delegates the logic to the business layer
-  * the **business layer** is where the logic happens
-  * the **data access layer** is where the communcation with the pesistence storage (in our case the MySql database) takes place
-
-A few words on the technologies/frameworks used:
-
-<h4 style="text-align: justify;">
-  <span id="131_Jersey_Facade">1.3.1. Jersey (Facade)</span>
-</h4>
-
-<p style="text-align: justify;">
-  The <a title="https://jersey.java.net/" href="https://jersey.java.net/" target="_blank"><em>Jersey RESTful Web Services framework</em></a> is open source, production quality, framework for developing RESTful Web Services in Java that provides support for JAX-RS APIs and serves as a <a title="Java API for RESTful Services (JAX-RS)" href="https://jax-rs-spec.java.net/" target="_blank">JAX-RS</a> (JSR 311 & JSR 339) Reference Implementation.
-</p>
-
-<h4 style="text-align: justify;">
-  <span id="132_Spring_Business_layer">1.3.2. Spring (Business layer)</span>
-</h4>
-
-<p style="text-align: justify;">
-  I like glueing stuff together with <strong><a title="Spring Framework" href="http://projects.spring.io/spring-framework/" target="_blank">Spring</a></strong>, and this example makes no exception. In my opinion there&#8217;s no better way to make POJOs with different functionalities. You&#8217;ll find out in the tutorial what it takes to integrate Jersey 2 with Spring.
-</p>
-
-<h4 style="text-align: justify;">
-  <span id="133_JPA_2_Hibernate_Persistence_layer">1.3.3. JPA 2 / Hibernate (Persistence layer)</span>
-</h4>
-
-<p style="text-align: justify;">
-  For the persistence layer I still use a DAO pattern, even though for implementing it I am using JPA 2, which, as some people say, should make DAOs superfluous (I, for one, don’t like my service classes cluttered with EntityManager/JPA specific code). AS supporting framework for JPA 2 I am using Hibernate.
-</p>
-
-<p style="text-align: justify;">
-  See my post <a title="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a> for an interesting discussion around persistence thema in Java.
-</p>
-
-<h4 style="text-align: justify;">
-  <span id="134_Web_Container">1.3.4. Web Container</span>
-</h4>
-
-<p style="text-align: justify;">
-  Everything gets packaged with Maven as a <code>.war</code> file and can be deployed on any web container &#8211; I used <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Tomcat</a> and <a title="Jetty" href="http://www.eclipse.org/jetty/" target="_blank">Jetty</a> but, it could also be Glassfih, Weblogic, JBoss or WebSphere.
-</p>
-
-<h4 style="text-align: justify;">
-  <span id="135_MySQL">1.3.5. MySQL</span>
-</h4>
-
-<p style="text-align: justify;">
-  The sample data is stored in a <a title="MySQL" href="http://www.mysql.com/" target="_blank">MySQL</a> table:
-</p>
-
-<p style="text-align: justify;">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema.png"><img class="alignnone size-medium wp-image-1089" src="http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema-300x280.png" alt="database schema" width="300" height="280" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema-300x280.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema.png 566w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-</p>
-
-#### <span id="136_Technology_versions">1.3.6. Technology versions</span>
-
-  1. Jersey 2.9
-  2. Spring 4.0.3
-  3. Hibernate 4
-  4. Maven 3
-  5. Tomcat 7
-  6. Jetty 9
-  7. MySql 5.6
-
-<p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> The main focus in the post will be on the REST api design and its implementation with the Jersey JAX-RS implementation, all the other technologies/layers are considered as enablers.
-</p>
-
-### <span id="14_Source_code">1.4. Source code</span>
-
-The source code for the project presented here is available on GitHub, with complete instructions on how to install and run the project:
-
-  * <a title="Source code for project" href="https://github.com/Codingpedia/demo-rest-jersey-spring" target="_blank">Codingpedia / demo-rest-jersey-spring </a>
-
-## <span id="2_Configuration">2. Configuration</span>
-
-Before I start presenting the design and implementation of the REST API, we need to do a little configuration so that all these wonderful technologies can come and play together
-
-### <span id="21_Project_dependencies">2.1. Project dependencies</span>
-
-<p style="text-align: justify;">
-  The <a title="https://jersey.java.net/documentation/latest/spring.html" href="https://jersey.java.net/documentation/latest/spring.html" target="_blank">Jersey Spring extension</a> must be present in your project&#8217;s classpath. If you are using Maven add it to the <code>pom.xml</code> file of your project:
-</p>
-
-<pre class="lang:default mark:26-49 decode:true" title="Jersey-spring dependency in the pom.xml">&lt;dependency&gt;
-	&lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
-	&lt;artifactId&gt;jersey-spring3&lt;/artifactId&gt;
-	&lt;version&gt;${jersey.version}&lt;/version&gt;
-	&lt;exclusions&gt;
-		&lt;exclusion&gt;
-			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-			&lt;artifactId&gt;spring-core&lt;/artifactId&gt;
-		&lt;/exclusion&gt;			
-		&lt;exclusion&gt;
-			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-			&lt;artifactId&gt;spring-web&lt;/artifactId&gt;
-		&lt;/exclusion&gt;
-		&lt;exclusion&gt;
-			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-			&lt;artifactId&gt;spring-beans&lt;/artifactId&gt;
-		&lt;/exclusion&gt;
-	&lt;/exclusions&gt;			
-&lt;/dependency&gt;
-&lt;dependency&gt;
-	&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
-	&lt;artifactId&gt;jersey-media-json-jackson&lt;/artifactId&gt;
-	&lt;version&gt;2.4.1&lt;/version&gt;
-&lt;/dependency&gt;</pre>
-
-<p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> The jersey-spring3.jar, uses its own version for Spring libraries, so to use the ones you want (Spring 4.0.3.Release in this case), you need to exclude these libraries manually.
-</p>
-
-<p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> If you want to see what other dependencies are needed (e.g. Spring, Hibernate, Jetty maven plugin, testing etc.) in the project you can have a look at the the complete <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" target="_blank">pom.xml</a> file available on GitHub.
-</p>
-
-### <span id="22_webxml">2.2. web.xml</span>
-
-<pre class="lang:default mark:18-33 decode:true" title="Web Application Deployment Descriptor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"&gt;
-	&lt;display-name&gt;Demo - Restful Web Application&lt;/display-name&gt;
-
-	&lt;listener&gt;
-		&lt;listener-class&gt;
-			org.springframework.web.context.ContextLoaderListener
-		&lt;/listener-class&gt;
-	&lt;/listener&gt;
-
-	&lt;context-param&gt;
-		&lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
-		&lt;param-value&gt;classpath:spring/applicationContext.xml&lt;/param-value&gt;
-	&lt;/context-param&gt;
-
-	&lt;servlet&gt;
-		&lt;servlet-name&gt;jersey-serlvet&lt;/servlet-name&gt;
-		&lt;servlet-class&gt;
-			org.glassfish.jersey.servlet.ServletContainer
-		&lt;/servlet-class&gt;
-		&lt;init-param&gt;
-			&lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;
-			&lt;param-value&gt;org.codingpedia.demo.rest.RestDemoJaxRsApplication&lt;/param-value&gt;			
-		&lt;/init-param&gt;		
-		&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
-	&lt;/servlet&gt;
-
-	&lt;servlet-mapping&gt;
-		&lt;servlet-name&gt;jersey-serlvet&lt;/servlet-name&gt;
-		&lt;url-pattern&gt;/*&lt;/url-pattern&gt;
-	&lt;/servlet-mapping&gt;
-
-	&lt;resource-ref&gt;
-        &lt;description&gt;Database resource rest demo web application &lt;/description&gt;
-        &lt;res-ref-name&gt;jdbc/restDemoDB&lt;/res-ref-name&gt;
-        &lt;res-type&gt;javax.sql.DataSource&lt;/res-type&gt;
-        &lt;res-auth&gt;Container&lt;/res-auth&gt;
-    &lt;/resource-ref&gt;	
-&lt;/web-app&gt;</pre>
-
-#### <span id="221_Jersey-servlet">2.2.1. Jersey-servlet</span>
-
-<p style="text-align: justify;">
-  Notice the Jersey servlet configuration [lines 18-33]. The <code>javax.ws.rs.core.Application</code> class defines the components (root resource and provider classes,) of the JAX-RS application. I used <code> ResourceConfig,</code> which is Jersey&#8217;s own implementation of the class <code>Application</code>, and which provides advanced capabilites to simplify registration of JAX-RS components.<code> </code><code class="literal"></code>Check out the <a title="https://jersey.java.net/documentation/latest/user-guide.html#environmenmt.appmodel" href="https://jersey.java.net/documentation/latest/user-guide.html#environmenmt.appmodel" target="_blank">JAX-RS Application Model</a> in the documentation for more possibilities.
-</p>
-
-My implementation of the `ResourceConfig` class,`` registers application resources, filters, exception mappers and feature :
-
-<pre class="lang:default mark:19-21 decode:true" title="org.codingpedia.demo.rest.service.MyDemoApplication">package org.codingpedia.demo.rest.service;
-
-//imports omitted for brevity 
-
-/**
- * Registers the components to be used by the JAX-RS application
- * 
- * @author ama
- * 
- */
-public class RestDemoJaxRsApplication extends ResourceConfig {
-
-	/**
-	 * Register JAX-RS application components.
-	 */
-	public RestDemoJaxRsApplication() {
-		// register application resources
-		register(PodcastResource.class);
-		register(PodcastLegacyResource.class);
-
-		// register filters
-		register(RequestContextFilter.class);
-		register(LoggingResponseFilter.class);
-		register(CORSResponseFilter.class);
-
-		// register exception mappers
-		register(GenericExceptionMapper.class);
-		register(AppExceptionMapper.class);
-		register(NotFoundExceptionMapper.class);
-
-		// register features
-		register(JacksonFeature.class);
-		register(MultiPartFeature.class);
-	}
-}</pre>
-
-Please note the
-
-<li style="text-align: justify;">
-  <code>org.glassfish.jersey.server.spring.scope.RequestContextFilter</code>, which is a Spring filter that provides a bridge between JAX-RS and Spring request attributes
-</li>
-<li style="text-align: justify;">
-  <code>org.codingpedia.demo.rest.resource.PodcastsResource</code>, which is the &#8220;facade&#8221; component that exposes the REST API via annotations and will be thouroughly presented later in the post
-</li>
-<li style="text-align: justify;">
-  <code>org.glassfish.jersey.jackson.JacksonFeature</code>, which is a feature that registers Jackson JSON providers &#8211; you need it for the application to understand JSON data
-</li>
-
-##### <span id="2122_Spring_application_context_configuration">2.1.2.2. Spring application context configuration</span>
-
-The Spring application context configuration is located in the classpath under `spring/applicationContext.xml`:
-
-<pre class="lang:default decode:true" title="Spring application context configuration">&lt;beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:tx="http://www.springframework.org/schema/tx"	
-	xsi:schemaLocation="
-		http://www.springframework.org/schema/beans	
-		http://www.springframework.org/schema/beans/spring-beans.xsd
-
-		http://www.springframework.org/schema/tx 
-		http://www.springframework.org/schema/tx/spring-tx.xsd
-
-		http://www.springframework.org/schema/context
-		http://www.springframework.org/schema/context/spring-context.xsd"&gt;
-
-	&lt;context:component-scan base-package="org.codingpedia.demo.rest.*" /&gt;
-
-	&lt;!-- ************ JPA configuration *********** --&gt;
-	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;  
-    &lt;bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"&gt;
-        &lt;property name="entityManagerFactory" ref="entityManagerFactory" /&gt;
-    &lt;/bean&gt;
-    &lt;bean id="transactionManagerLegacy" class="org.springframework.orm.jpa.JpaTransactionManager"&gt;
-        &lt;property name="entityManagerFactory" ref="entityManagerFactoryLegacy" /&gt;
-    &lt;/bean&gt;    
-    &lt;bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"&gt;
-        &lt;property name="persistenceXmlLocation" value="classpath:config/persistence-demo.xml" /&gt;
-        &lt;property name="persistenceUnitName" value="demoRestPersistence" /&gt;        
-        &lt;property name="dataSource" ref="restDemoDS" /&gt;
-        &lt;property name="packagesToScan" value="org.codingpedia.demo.*" /&gt;
-        &lt;property name="jpaVendorAdapter"&gt;
-            &lt;bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"&gt;
-                &lt;property name="showSql" value="true" /&gt;
-                &lt;property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" /&gt;
-            &lt;/bean&gt;
-        &lt;/property&gt;
-    &lt;/bean&gt;     
-    &lt;bean id="entityManagerFactoryLegacy" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"&gt;
-        &lt;property name="persistenceXmlLocation" value="classpath:config/persistence-demo.xml" /&gt;
-        &lt;property name="persistenceUnitName" value="demoRestPersistenceLegacy" /&gt;
-        &lt;property name="dataSource" ref="restDemoLegacyDS" /&gt;
-        &lt;property name="packagesToScan" value="org.codingpedia.demo.*" /&gt;
-        &lt;property name="jpaVendorAdapter"&gt;
-            &lt;bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"&gt;
-                &lt;property name="showSql" value="true" /&gt;
-                &lt;property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" /&gt;
-            &lt;/bean&gt;
-        &lt;/property&gt;
-    &lt;/bean&gt;        
-
-	&lt;bean id="podcastDao" class="org.codingpedia.demo.rest.dao.PodcastDaoJPA2Impl"/&gt;	
-    &lt;bean id="podcastService" class="org.codingpedia.demo.rest.service.PodcastServiceDbAccessImpl" /&gt;	
-    &lt;bean id="podcastsResource" class="org.codingpedia.demo.rest.resource.PodcastsResource" /&gt;
-    &lt;bean id="podcastLegacyResource" class="org.codingpedia.demo.rest.resource.PodcastLegacyResource" /&gt;
-
-	&lt;bean id="restDemoDS" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
-	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoDB" /&gt;
-	    &lt;property name="resourceRef" value="true" /&gt;        
-	&lt;/bean&gt;
-	&lt;bean id="restDemoLegacyDS" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
-	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoLegacyDB" /&gt;
-	    &lt;property name="resourceRef" value="true" /&gt;        
-	&lt;/bean&gt;	
-&lt;/beans&gt;</pre>
-
-<p style="text-align: justify;">
-  Nothing special here, it just defines the beans that are needed throughout the demo application (e.g. <code>podcastsResource</code> which is the entry point class for our REST API).
-</p>
-
-## <span id="3_The_REST_API_design_implementation">3. The REST API (design & implementation)</span>
-
-### <span id="31_Resources">3.1. Resources</span>
-
-#### <span id="311_Design">3.1.1. Design</span>
-
-<p style="text-align: justify;">
-  As mentioned earlier, the demo application manages podcasts, which represent the <a title="Wikipedia - Web resource" href="http://en.wikipedia.org/wiki/Web_resource" target="_blank">resource</a> in our REST API. Resources are the central concept in REST and are characterized by two main things:
-</p>
-
-  * each is referenced with a global identifier (e.g. a [URI](http://en.wikipedia.org/wiki/Uniform_resource_identifier "Uniform resource identifier") in HTTP).
-  * has one or more representations, that they expose to the outer world and can be manipulated with (we&#8217;ll be working mostly with JSON representations in this example)
-
-Resources are usually represented in REST by nouns (podcasts, customers, user, accounts etc.) and not verbs (getPodcast, deleteUser etc.)
-
-The endpoints used throughout the tutorial are :
-
-  * `/podcasts` &#8211; _(notice the plural)_ URI identifying a **resource** representing a collection of podcasts
-  * `/podcasts/{id}` &#8211; URI identifying a podcast resource, by the podcast&#8217;s id
-
-#### <span id="312_Implementation">3.1.2. Implementation</span>
-
-For the sake of simplicity, a podcast will have only the following properties:
-
-  * `id` &#8211; uniquely identifies the podcast
-  * `feed` &#8211; url feed of the podcast
-  * `title` &#8211; title of the podcast
-  * `linkOnPodcastpedia` &#8211; where you can find the podcast on Podcastpedia.org
-  * `description` &#8211; a short description of the podcast
-
-<p style="text-align: justify;">
-  I could have used only one Java class for the representation of the podcast resource in the code, but in that case the class and its properties/methods would have gotten cluttered with both JPA and XML/JAXB/JSON annotations. I wanted to avoid that and I used two representations which have pretty much the same properties instead:
-</p>
-
-  * <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/dao/PodcastEntity.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/dao/PodcastEntity.java" target="_blank">PodcastEntity.java</a> &#8211; JPA annotated class used in the DB and business layers
-  * <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" target="_blank">Podcast.java</a> &#8211; JAXB/JSON annotated class used in the facade and business layers
-
-<p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> I am still trying to convince myself that this is the better approach, so if you have a suggestion on this please leave a comment.
-</p>
-
-The <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" target="_blank">Podcast.java</a> classs look something like the following:
-
-<pre class="lang:java decode:true" title="Podcast.java">package org.codingpedia.demo.rest.resource;
-
-//imports omitted for brevity
-
-/**
- * Podcast resource placeholder for json/xml representation 
- * 
- * @author ama
- *
- */
-@SuppressWarnings("restriction")
-@XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
-public class Podcast implements Serializable {
-
-    private static final long serialVersionUID = -8039686696076337053L;
-
-    /** id of the podcast */
-    @XmlElement(name = "id")    
-    private Long id;
-    
-    /** title of the podcast */
-    @XmlElement(name = "title")    
-    private String title;
-        
-    /** link of the podcast on Podcastpedia.org */
-    @XmlElement(name = "linkOnPodcastpedia")    
-    private String linkOnPodcastpedia;
-    
-    /** url of the feed */
-    @XmlElement(name = "feed")    
-    private String feed;
-    
-    /** description of the podcast */
-    @XmlElement(name = "description")
-    private String description; 
-        
-    /** insertion date in the database */
-    @XmlElement(name = "insertionDate")
-    @XmlJavaTypeAdapter(DateISO8601Adapter.class)    
-    @PodcastDetailedView
-    private Date insertionDate;
-
-    public Podcast(PodcastEntity podcastEntity){
-        try {
-            BeanUtils.copyProperties(this, podcastEntity);
-        } catch (IllegalAccessException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
-    
-    public Podcast(String title, String linkOnPodcastpedia, String feed,
-            String description) {
-        
-        this.title = title;
-        this.linkOnPodcastpedia = linkOnPodcastpedia;
-        this.feed = feed;
-        this.description = description;
-        
-    }
-    
-    public Podcast(){}
-
-//getters and setters now shown for brevity
-}</pre>
-
-and translates into the following JSON representation, which is actually the de facto media type used with REST nowadays:
-
-<pre class="lang:js decode:true">{
-	"id":1,
-	"title":"Quarks & Co - zum Mitnehmen-modified",
-	"linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/1/Quarks-Co-zum-Mitnehmen",
-	"feed":"http://podcast.wdr.de/quarks.xml",
-	"description":"Quarks & Co: Das Wissenschaftsmagazin",
-	"insertionDate":"2014-05-30T10:26:12.00+0200"
-}</pre>
-
-<p class="note_normal" style="text-align: justify;">
-  Even though JSON is becoming more and more the preffered representation in REST APIs, you shouldn&#8217;t neglect the XML representation, as most of the systems still use XML format for communication with other parties.
-</p>
-
-The good thing is that in Jersey you can kill two rabbits with one shot &#8211; with JAXB beans (as used above) you will be able to use the same Java model to generate JSON as well as XML representations. Another advantage is simplicity of working with such a model and availability of the API in Java SE Platform.
-
-<p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> Most of the methods defined in this tutorial will produce and consume also the application/xml media type, with application/json being the preferred way.
-</p>
-
-### <span id="32_Methods">3.2. Methods</span>
-
-<p style="text-align: justify;">
-  Before I present you the API, let me to tell you that
-</p>
-
-  * Create = POST
-  * Read = GET
-  * Update = PUT
-  * Delete = DELETE
-
-and is not a strict 1:1 mapping. Why? Because you can also use PUT for Creation and POST for Update. This will be explained and demonstrated in the coming paragraphs.
-
-<p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> For Read and Delete it is pretty clear, they map indeed one to one with the GET and DELETE HTTP operations. Anyway REST is an architectural style, is not a specification and you should adapt the architecture to your needs, but if you want to make your API public and have somebody willing to use it, you should follow some &#8220;best practices&#8221;.
-</p>
-
-As already mentioned the `PodcastRestResource` class is the one handling all the rest requests:
-
-<pre class="lang:default mark:4 decode:true" title="PodcastRestService.java">package org.codingpedia.demo.rest.resource;
-//imports
-......................
-@Component
-@Path("/podcasts")
-public class PodcastResource {
-    @Autowired
-    private PodcastService podcastService;
-    .....................
-}</pre>
-
-<p style="text-align: justify;">
-  Notice the <code>@Path("/podcasts")</code> before the class definition &#8211; everything related to podcast resources will occur under this path. The <a href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/Path.html" target="_top">@Path</a> annotation&#8217;s value is a relative URI path. In the example above, the Java class will be hosted at the URI path <code>/podcasts</code>. The <code>PodcastService</code> interface exposes the business logic to the REST facade layer.
-</p>
-
-<p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> You can find the entire content of the class on GitHub &#8211; <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/PodcastResource.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/PodcastResource.java" target="_blank">PodcastResource.java</a>. We&#8217;ll be going through the file step by step and explain the different methods corresponding to the different operations.
-</p>
-
-#### <span id="321_Create_podcasts">3.2.1. Create podcast(s)</span>
-
-##### <span id="3211_Design">3.2.1.1. Design</span>
-
-While the &#8220;most known&#8221; way for resource creation is by using POST, As mentioned before to create a new resource I could use both the POST and PUT methods, and I did just that:
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tr valign="TOP">
-    <td bgcolor="#808080" width="25%">
-      <b>  Description</b>
-    </td>
-    
-    <td bgcolor="#808080" width="25%">
-      <b>  URI</b>
-    </td>
-    
-    <td bgcolor="#808080" width="25%">
-      <b>  HTTP method<br /> </b>
-    </td>
-    
-    <td bgcolor="#808080" width="25%">
-      <b>  HTTP Status response</b>
-    </td>
-  </tr>
-  
-  <tr>
-    <td width="25%" height="19">
-       Add new podcast
-    </td>
-    
-    <td width="25%">
-       /podcasts/
-    </td>
-    
-    <td width="25%">
-      <p align="CENTER">
-        POST
-      </p>
-    </td>
-    
-    <td width="25%">
-      <p align="CENTER">
-        201 Created
-      </p>
-    </td>
-  </tr>
-  
-  <tr>
-    <td width="25%" height="19">
-       Add new podcast (all values must be sent)
-    </td>
-    
-    <td width="25%">
-       /podcasts/{id}
-    </td>
-    
-    <td width="25%">
-      <p align="CENTER">
-        PUT
-      </p>
-    </td>
-    
-    <td width="25%">
-      <p align="CENTER">
-        201 Created
-      </p>
-    </td>
-  </tr>
-</table>
-
-The big difference between using POST (not idempotent)
-
-<p style="padding-left: 30px; text-align: justify;">
-  <em>&#8220;The POST method is used to request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line[&#8230;] If a resource has been created on the origin server, the response SHOULD be 201 (Created) and contain an entity which describes the status of the request and refers to the new resource, and a Location header&#8221; [1]</em>
-</p>
-
-and PUT (idempotent)
-
-<p style="padding-left: 30px; text-align: justify;">
-  <em>&#8220;The PUT method requests that the enclosed entity be stored under the supplied Request-URI [&#8230;] If the Request-URI does not point to an existing resource, and that URI is capable of being defined as a new resource by the requesting user agent, the origin server can create the resource with that URI. If a new resource is created, the origin server MUST inform the user agent via the 201 (Created) response.&#8221; [1]</em>
-</p>
-
-, is that for PUT you should know beforehand the location where the resource will be created and send all the possible values of the entry.
-
-##### <span id="3212_Implementation">3.2.1.2. Implementation</span>
-
-###### <span id="32121_Create_a_single_resource_with_POST">3.2.1.2.1. Create a single resource with POST</span>
-
-<pre class="lang:java decode:true" title="Create a single podcast resource from JSON ">/**
- * Adds a new resource (podcast) from the given json format (at least title
- * and feed elements are required at the DB level)
- * 
- * @param podcast
- * @return
- * @throws AppException
- */
-@POST
-@Consumes({ MediaType.APPLICATION_JSON })
-@Produces({ MediaType.TEXT_HTML })
-public Response createPodcast(Podcast podcast) throws AppException {
-	Long createPodcastId = podcastService.createPodcast(podcast);
-	return Response.status(Response.Status.CREATED)// 201
-			.entity("A new podcast has been created")
-			.header("Location",
-					"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
-							+ String.valueOf(createPodcastId)).build();
-}</pre>
-
-**Annotations**
-
-  * `<code>@POST`</code> &#8211; indicates that the method responds to HTTP POST requests
-  * `@Consumes({MediaType.APPLICATION_JSON})` &#8211; defines the media type, the method accepts, in this case `"application/json"`
-  * `@Produces({MediaType.TEXT_HTML})` &#8211; defines the media type) that the method can produce, in this case `"text/html"`.
-
-**<span style="line-height: 1.5;">Response</span>**
-
-  * on success: text/html document, with a HTTP status of `201 Created`, and a Location header specifying where the resource has been created
-  * on error: 
-      * `400 Bad request` if not enough data is provided
-      * `409 Conflict` if on the server side is determined a podcast with the same feed exists
-
-###### <span id="32122_Create_a_single_resource_8220podcast8221_with_PUT">3.2.1.2.2. Create a single resource (&#8220;podcast&#8221;) with PUT</span>
-
-This will be treated in the Update Podcast section below.
-
-###### <span id="32123_Bonus_8211_Create_a_single_resource_8220podcast8221_from_form">3.2.1.2.3. Bonus &#8211; Create a single resource (&#8220;podcast&#8221;) from form</span>
-
-<pre class="lang:java decode:true" title="Create a single podcast resource from form">/**
- * Adds a new podcast (resource) from "form" (at least title and feed
- * elements are required at the DB level)
- * 
- * @param title
- * @param linkOnPodcastpedia
- * @param feed
- * @param description
- * @return
- * @throws AppException
- */
-@POST
-@Consumes({ MediaType.APPLICATION_FORM_URLENCODED })
-@Produces({ MediaType.TEXT_HTML })
-@Transactional
-public Response createPodcastFromApplicationFormURLencoded(
-		@FormParam("title") String title,
-		@FormParam("linkOnPodcastpedia") String linkOnPodcastpedia,
-		@FormParam("feed") String feed,
-		@FormParam("description") String description) throws AppException {
-
-	Podcast podcast = new Podcast(title, linkOnPodcastpedia, feed,
-			description);
-	Long createPodcastid = podcastService.createPodcast(podcast);
-
-	return Response
-			.status(Response.Status.CREATED)// 201
-			.entity("A new podcast/resource has been created at /demo-rest-jersey-spring/podcasts/"
-					+ createPodcastid)
-			.header("Location",
-					"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
-							+ String.valueOf(createPodcastid)).build();
-}</pre>
-
-**Annotations**
-
-  * `@POST` &#8211; indicates that the method responds to HTTP POST requests
-<li style="text-align: justify;">
-  <code>@Consumes({MediaType.APPLICATION_FORM_URLENCODED})</code>&#8211; defines the media type, the method accepts, in this case<code>"application/x-www-form-urlencoded"</code> <ul>
-    <li style="text-align: justify;">
-      <code>@FormParam</code> &#8211; present before the input parameters of the method, this annotation binds the value(s) of a form parameter contained within a request entity body to a resource method parameter. Values are URL decoded unless this is disabled using the <code>Encoded</code> annotation
-    </li>
-  </ul>
-</li>
-
-<li style="text-align: justify;">
-  <code>@Produces({MediaType.TEXT_HTML})</code> &#8211; defines the media type that the method can produce, in this case &#8220;text/html&#8221;. The response will be a html document, with a status of 201, indicating to the caller that the request has been fulfilled and resulted in a new resource being created.
-</li>
-
-**Response**
-
-  * on success: text/html document, with a HTTP status of `201 Created`, and a Location header specifying where the resource has been created
-  * on error: 
-      * `400 Bad request` if not enough data is provided
-      * `409 Conflict` if on the server side is determined a podcast with the same feed exists
-
-#### <span id="322_Read_podcasts">3.2.2. Read podcast(s)</span>
-
-##### <span id="3221_Design">3.2.2.1. Design</span>
-
-The API supports two Read operations:
-
-  * return a collection of podcasts
-  * return a podcast identified by id
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tr valign="TOP">
-    <td bgcolor="#808080" width="25%">
-      <b> Description</b>
-    </td>
-    
-    <td bgcolor="#808080" width="45%">
-      <b> URI</b>
-    </td>
-    
-    <td bgcolor="#808080" width="15%">
-      <b> HTTP method<br /> </b>
-    </td>
-    
-    <td bgcolor="#808080" width="15%">
-      <b> HTTP Status response</b>
-    </td>
-  </tr>
-  
-  <tr>
-    <td width="25%" height="19">
-       Return all podcasts
-    </td>
-    
-    <td width="45%">
-       /podcasts/?orderByInsertionDate={ASC|DESC}&numberDaysToLookBack={val}
-    </td>
-    
-    <td width="15%">
-      <p align="CENTER">
-        GET
-      </p>
-    </td>
-    
-    <td width="15%">
-      <p align="CENTER">
-        200 OK
-      </p>
-    </td>
-  </tr>
-  
-  <tr>
-    <td width="25%" height="19">
-       Add new podcast (all values must be sent)
-    </td>
-    
-    <td width="45%">
-       /podcasts/{id}
-    </td>
-    
-    <td width="15%">
-      <p align="CENTER">
-        GET
-      </p>
-    </td>
-    
-    <td width="15%">
-      <p align="CENTER">
-        200 OK
-      </p>
-    </td>
-  </tr>
-</table>
-
-<p style="text-align: justify;">
-  Notice the query parameters for the collection resource &#8211; <span style="color: #000000;">orderByInsertionDate and numberDaysToLookBack. It makes perfect sense to add filters as query parameters in the URI and not be part of the path.</span>
-</p>
-
-##### <span id="3222_Implementation">3.2.2.2. Implementation</span>
-
-###### <span id="32221_Read_all_podcasts_82208221">3.2.2.2.1. Read all podcasts (&#8220;/&#8221;)</span>
-
-<pre class="lang:java decode:true" title="Read all resources">/**
- * Returns all resources (podcasts) from the database
- * 
- * @return
- * @throws IOException
- * @throws JsonMappingException
- * @throws JsonGenerationException
- * @throws AppException
- */
-@GET
-@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-public List&lt;Podcast&gt; getPodcasts(
-		@QueryParam("orderByInsertionDate") String orderByInsertionDate,
-		@QueryParam("numberDaysToLookBack") Integer numberDaysToLookBack)
-		throws JsonGenerationException, JsonMappingException, IOException,
-		AppException {
-	List&lt;Podcast&gt; podcasts = podcastService.getPodcasts(
-			orderByInsertionDate, numberDaysToLookBack);
-	return podcasts;
-}</pre>
-
-**Annotations**
-
-  *``` &#8211; indicates that the method responds to HTTP GET requests
+  *`@GET` &#8211; indicates that the method responds to HTTP GET requests
   * `@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})` &#8211; defines the media type) that the method can produce, in this case either `"application/json"` or `"application/xml"`(you need the `@XmlRootElement` in front of the `Podcast` class ). The response will be a list of podcasts either in JSON or XML format.
 
 **Response**
@@ -3022,22 +1121,26 @@ public List&lt;Podcast&gt; getPodcasts(
 
 ###### <span id="32221_Read_one_podcast">3.2.2.2.1. Read one podcast</span>
 
-<pre class="lang:java decode:true" title="Read one resource by id">@GET
-@Path("{id}")
-@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-public Response getPodcastById(@PathParam("id") Long id)
-		throws JsonGenerationException, JsonMappingException, IOException,
-		AppException {
-	Podcast podcastById = podcastService.getPodcastById(id);
-	return Response.status(200).entity(podcastById)
-			.header("Access-Control-Allow-Headers", "X-extra-header")
-			.allow("OPTIONS").build();
-}</pre>
+<pre>
+  <code class="java">
+    @GET
+    @Path("{id}")
+    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+    public Response getPodcastById(@PathParam("id") Long id)
+    		throws JsonGenerationException, JsonMappingException, IOException,
+    		AppException {
+    	Podcast podcastById = podcastService.getPodcastById(id);
+    	return Response.status(200).entity(podcastById)
+    			.header("Access-Control-Allow-Headers", "X-extra-header")
+    			.allow("OPTIONS").build();
+    }
+  </code>
+</pre>
 
 **Annotations**
 
   * `@GET` &#8211; indicates that the method responds to HTTP GET requests
-  * `@Path("{id}")` &#8211; identifies the URI path that the class method will serve requests for. The &#8220;id&#8221; value is an embedded variable making an URI path template. It is used in combination with the `@PathParam` variable. 
+  * `@Path("{id}")` &#8211; identifies the URI path that the class method will serve requests for. The &#8220;id&#8221; value is an embedded variable making an URI path template. It is used in combination with the `@PathParam` variable.
     <li style="text-align: justify;">
       <code>@PathParam("id")</code> &#8211; binds the value of a URI template parameter (&#8220;id&#8221;) to the resource method parameter. The value is URL decoded unless this is di sabled using the <code>@Encoded</code> annotation. A default value can be specified using the <code>@DefaultValue</code> annotation.
     </li>
@@ -3059,57 +1162,57 @@ public Response getPodcastById(@PathParam("id") Long id)
     <td bgcolor="#808080" width="25%">
       <b>Description</b>
     </td>
-    
+
     <td bgcolor="#808080" width="45%">
       <b>URI</b>
     </td>
-    
+
     <td bgcolor="#808080" width="15%">
       <b>HTTP method<br /> </b>
     </td>
-    
+
     <td bgcolor="#808080" width="15%">
       <b>HTTP Status response</b>
     </td>
   </tr>
-  
+
   <tr>
     <td width="25%" height="19">
        Update podcast (<strong>fully</strong>)
     </td>
-    
+
     <td width="45%">
        /podcasts/{id}
     </td>
-    
+
     <td width="15%">
       <p align="CENTER">
         PUT
       </p>
     </td>
-    
+
     <td width="15%">
       <p align="CENTER">
         200 OK
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td width="25%" height="19">
        Update podcast (<strong>partially</strong>)
     </td>
-    
+
     <td width="45%">
        /podcasts/{id}
     </td>
-    
+
     <td width="15%">
       <p align="CENTER">
         POST
       </p>
     </td>
-    
+
     <td width="15%">
       <p align="CENTER">
         200 OK
@@ -3141,17 +1244,21 @@ Now for the partial update there&#8217;s a bunch of proposals/debate on what to 
 
 if I would like to update just the title property of the podcast with the id 2
 
-<pre class="lang:default mark:9-11 decode:true" title="PUT command for partial update">PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 HTTP/1.1
-Accept-Encoding: gzip,deflate
-Content-Type: application/json
-Content-Length: 155
-Host: localhost:8888
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+<pre>
+  <code class="http">
+    PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 HTTP/1.1
+    Accept-Encoding: gzip,deflate
+    Content-Type: application/json
+    Content-Length: 155
+    Host: localhost:8888
+    Connection: Keep-Alive
+    User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 
-{
-	"title":"New Title"
-}</pre>
+    {
+    	"title":"New Title"
+    }
+  </code>
+</pre>
 
 <p style="text-align: justify;">
   then, accordingly to the specification the resource &#8220;stored&#8221; at the location should have only id and title, and clearly my intent was not that.
@@ -3183,43 +1290,47 @@ That does not look like a partial update case to me&#8230;
 
 ###### <span id="32311_Full_Update">3.2.3.1.1. Full Update</span>
 
-<pre class="lang:java decode:true" title="Create or fully update resource implementation method">@PUT
-@Path("{id}")
-@Consumes({ MediaType.APPLICATION_JSON })
-@Produces({ MediaType.TEXT_HTML })
-public Response putPodcastById(@PathParam("id") Long id, Podcast podcast)
-		throws AppException {
+<pre>
+  <code class="java">
+    @PUT
+    @Path("{id}")
+    @Consumes({ MediaType.APPLICATION_JSON })
+    @Produces({ MediaType.TEXT_HTML })
+    public Response putPodcastById(@PathParam("id") Long id, Podcast podcast)
+    		throws AppException {
 
-	Podcast podcastById = podcastService.verifyPodcastExistenceById(id);
+    	Podcast podcastById = podcastService.verifyPodcastExistenceById(id);
 
-	if (podcastById == null) {
-		// resource not existent yet, and should be created under the
-		// specified URI
-		Long createPodcastId = podcastService.createPodcast(podcast);
-		return Response
-				.status(Response.Status.CREATED)
-				// 201
-				.entity("A new podcast has been created AT THE LOCATION you specified")
-				.header("Location",
-						"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
-								+ String.valueOf(createPodcastId)).build();
-	} else {
-		// resource is existent and a full update should occur
-		podcastService.updateFullyPodcast(podcast);
-		return Response
-				.status(Response.Status.OK)
-				// 200
-				.entity("The podcast you specified has been fully updated created AT THE LOCATION you specified")
-				.header("Location",
-						"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
-								+ String.valueOf(id)).build();
-	}
-}</pre>
+    	if (podcastById == null) {
+    		// resource not existent yet, and should be created under the
+    		// specified URI
+    		Long createPodcastId = podcastService.createPodcast(podcast);
+    		return Response
+    				.status(Response.Status.CREATED)
+    				// 201
+    				.entity("A new podcast has been created AT THE LOCATION you specified")
+    				.header("Location",
+    						"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
+    								+ String.valueOf(createPodcastId)).build();
+    	} else {
+    		// resource is existent and a full update should occur
+    		podcastService.updateFullyPodcast(podcast);
+    		return Response
+    				.status(Response.Status.OK)
+    				// 200
+    				.entity("The podcast you specified has been fully updated created AT THE LOCATION you specified")
+    				.header("Location",
+    						"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
+    								+ String.valueOf(id)).build();
+    	}
+    }
+  </code>
+</pre>
 
 **Annotations**
 
   * `@PUT `&#8211; indicates that the method responds to HTTP PUT requests
-  * `@Path("{id}")` &#8211; identifies the URI path that the class method will serve requests for. The &#8220;id&#8221; value is an embedded variable making an URI path template. It is used in combination with the `@PathParam` variable. 
+  * `@Path("{id}")` &#8211; identifies the URI path that the class method will serve requests for. The &#8220;id&#8221; value is an embedded variable making an URI path template. It is used in combination with the `@PathParam` variable.
       * `@PathParam("id")` &#8211; binds the value of a URI template parameter (&#8220;id&#8221;) to the resource method parameter. The value is URL decoded unless this is di sabled using the `@Encoded` annotation. A default value can be specified using the `@DefaultValue` annotation.
   * `@Consumes({MediaType.APPLICATION_JSON})` &#8211; defines the media type, the method accepts, in this case `"application/json"`
   * `@Produces({MediaType.TEXT_HTML})` &#8211; defines the media type) that the method can produce, in this case &#8220;text/html&#8221;.
@@ -3233,29 +1344,33 @@ will be a html document containing different messages and stati depending on wha
   * on success: `201 Created` and in the Location header the specified location where the resource was created
   * on error: `400 Bad request` if the minimum required properties are not provided for insertion
 
-  * on full update 
+  * on full update
       * on success: `200 OK`
       * on error: `400 Bad Request` if not all properties are provided
 
 ###### <span id="32312_Partial_Update">3.2.3.1.2. Partial Update</span>
 
-<pre class="lang:java decode:true" title="Partial Update">//PARTIAL update
-@POST
-@Path("{id}")	
-@Consumes({ MediaType.APPLICATION_JSON })
-@Produces({ MediaType.TEXT_HTML })
-public Response partialUpdatePodcast(@PathParam("id") Long id, Podcast podcast) throws AppException {
-	podcast.setId(id);
-	podcastService.updatePartiallyPodcast(podcast);
-	return Response.status(Response.Status.OK)// 200
-			.entity("The podcast you specified has been successfully updated")
-			.build();	
-}</pre>
+<pre>
+  <code class="java">
+    //PARTIAL update
+    @POST
+    @Path("{id}")
+    @Consumes({ MediaType.APPLICATION_JSON })
+    @Produces({ MediaType.TEXT_HTML })
+    public Response partialUpdatePodcast(@PathParam("id") Long id, Podcast podcast) throws AppException {
+    	podcast.setId(id);
+    	podcastService.updatePartiallyPodcast(podcast);
+    	return Response.status(Response.Status.OK)// 200
+    			.entity("The podcast you specified has been successfully updated")
+    			.build();
+    }
+  </code>
+</pre>
 
 **Annotations**
 
   * `<code>@POST`</code> &#8211; indicates that the method responds to HTTP POST requests
-  * `@Path("{id}")` &#8211; identifies the URI path that the class method will serve requests for. The &#8220;id&#8221; value is an embedded variable making an URI path template. It is used in combination with the `@PathParam` variable. 
+  * `@Path("{id}")` &#8211; identifies the URI path that the class method will serve requests for. The &#8220;id&#8221; value is an embedded variable making an URI path template. It is used in combination with the `@PathParam` variable.
       * `@PathParam("id")` &#8211; binds the value of a URI template parameter (&#8220;id&#8221;) to the resource method parameter. The value is URL decoded unless this is di sabled using the `@Encoded` annotation. A default value can be specified using the `@DefaultValue` annotation.
   * `@Consumes({MediaType.APPLICATION_JSON})` &#8211; defines the media type, the method accepts, in this case `"application/json"`
   * `@Produces({MediaType.TEXT_HTML})` &#8211; defines the media type) that the method can produce, in this case `"text/html"`.
@@ -3274,57 +1389,57 @@ public Response partialUpdatePodcast(@PathParam("id") Long id, Podcast podcast) 
     <td bgcolor="#808080" width="25%">
       <b>Description</b>
     </td>
-    
+
     <td bgcolor="#808080" width="45%">
       <b>URI</b>
     </td>
-    
+
     <td bgcolor="#808080" width="15%">
       <b>HTTP method<br /> </b>
     </td>
-    
+
     <td bgcolor="#808080" width="15%">
       <b>HTTP Status response</b>
     </td>
   </tr>
-  
+
   <tr>
     <td width="25%" height="19">
        Removes all podcasts
     </td>
-    
+
     <td width="45%">
        /podcasts/
     </td>
-    
+
     <td width="15%">
       <p align="CENTER">
         DELETE
       </p>
     </td>
-    
+
     <td width="15%">
       <p align="CENTER">
         204 No content
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td width="25%" height="19">
        Removes podcast at the specified location
     </td>
-    
+
     <td width="45%">
        /podcasts/{id}
     </td>
-    
+
     <td width="15%">
       <p align="CENTER">
         DELETE
       </p>
     </td>
-    
+
     <td width="15%">
       <p align="CENTER">
         204 No content
@@ -3337,13 +1452,17 @@ public Response partialUpdatePodcast(@PathParam("id") Long id, Podcast podcast) 
 
 ###### <span id="32421_Delete_all_resources">3.2.4.2.1. Delete all resources</span>
 
-<pre class="lang:java decode:true" title="Delete all resources">@DELETE
-@Produces({ MediaType.TEXT_HTML })
-public Response deletePodcasts() {
-	podcastService.deletePodcasts();
-	return Response.status(Response.Status.NO_CONTENT)// 204
-			.entity("All podcasts have been successfully removed").build();
-}</pre>
+<pre>
+  <code class="java">
+    @DELETE
+    @Produces({ MediaType.TEXT_HTML })
+    public Response deletePodcasts() {
+    	podcastService.deletePodcasts();
+    	return Response.status(Response.Status.NO_CONTENT)// 204
+    			.entity("All podcasts have been successfully removed").build();
+    }
+  </code>
+</pre>
 
 **Annotations**
 
@@ -3356,14 +1475,18 @@ public Response deletePodcasts() {
 
 ###### <span id="32422_Delete_one_resource">3.2.4.2.2. Delete one resource</span>
 
-<pre class="lang:java decode:true" title="Delete one resource">@DELETE
-@Path("{id}")
-@Produces({ MediaType.TEXT_HTML })
-public Response deletePodcastById(@PathParam("id") Long id) {
-	podcastService.deletePodcastById(id);
-	return Response.status(Response.Status.NO_CONTENT)// 204
-			.entity("Podcast successfully removed from database").build();
-}</pre>
+<pre>
+  <code class="java">
+    @DELETE
+    @Path("{id}")
+    @Produces({ MediaType.TEXT_HTML })
+    public Response deletePodcastById(@PathParam("id") Long id) {
+    	podcastService.deletePodcastById(id);
+    	return Response.status(Response.Status.NO_CONTENT)// 204
+    			.entity("Podcast successfully removed from database").build();
+    }
+  </code>
+</pre>
 
 **Annotations**
 
@@ -3397,13 +1520,17 @@ See my post <a title="http://www.codingpedia.org/ama/how-to-log-in-spring-with-s
 
 In case of errros, I decided to response with unified error message structure.  Here&#8217;s an example how an error response might look like:
 
-<pre class="lang:js decode:true" title="Example - error message response">{
-   "status": 400,
-   "code": 400,
-   "message": "Provided data not sufficient for insertion",
-   "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-with-jersey-and-spring",
-   "developerMessage": "Please verify that the feed is properly generated/set"
-}</pre>
+<pre>
+  <code class="json">
+    {
+       "status": 400,
+       "code": 400,
+       "message": "Provided data not sufficient for insertion",
+       "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-with-jersey-and-spring",
+       "developerMessage": "Please verify that the feed is properly generated/set"
+    }
+  </code>
+</pre>
 
 <p class="note_normal" style="text-align: justify;">
   A detailed explanation of how errors are handled in the REST api, you can find in the following <a title="http://www.codingpedia.org/ama/error-handling-in-rest-api-with-jersey/" href="http://www.codingpedia.org/ama/error-handling-in-rest-api-with-jersey/" target="_blank">post Error handling in REST API with Jersey</a>
@@ -3444,13 +1571,16 @@ In case of errros, I decided to response with unified error message structure. 
 ##### <span id="7111_Jersey_client_dependency">7.1.1.1 Jersey client dependency</span>
 
 To build a Jersey client the `jersey-client` jar is required in the classpath. With Maven you can add it as a dependency to the `pom.xml` file:
-
-<pre class="lang:default decode:true" title="Jersey Client maven dependency">&lt;dependency&gt;
-    &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;
-    &lt;artifactId&gt;jersey-client&lt;/artifactId&gt;
-    &lt;version&gt;${jersey.version}&lt;/version&gt;
-    &lt;scope&gt;test&lt;/scope&gt;
-&lt;/dependency&gt;</pre>
+<pre>
+  <code class="xml">
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;
+        &lt;artifactId&gt;jersey-client&lt;/artifactId&gt;
+        &lt;version&gt;${jersey.version}&lt;/version&gt;
+        &lt;scope&gt;test&lt;/scope&gt;
+    &lt;/dependency&gt;
+  </code>
+</pre>
 
 <h5 style="text-align: justify;">
   <span id="7112_Failsafe_plugin">7.1.1.2. Failsafe plugin</span>
@@ -3460,72 +1590,80 @@ To build a Jersey client the `jersey-client` jar is required in the classpath. W
   The <a title="http://maven.apache.org/surefire/maven-failsafe-plugin/" href="http://maven.apache.org/surefire/maven-failsafe-plugin/" target="_blank">Failsafe Plugin</a> is used during the integration-test and verify phases of the build lifecycle to execute the integration tests of the application. The Failsafe Plugin will not fail the build during the integration-test phase thus enabling the post-integration-test phase to execute.<br /> To use the Failsafe Plugin, you need to add the following configuration to your <code>pom.xml</code>
 </p>
 
-<pre class="lang:default decode:true" title="Maven Failsafe Plugin configuration">&lt;plugins&gt;
-	[...]
-    &lt;plugin&gt;
-        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
-        &lt;artifactId&gt;maven-failsafe-plugin&lt;/artifactId&gt;
-        &lt;version&gt;2.16&lt;/version&gt;
-        &lt;executions&gt;
-            &lt;execution&gt;
-                &lt;id&gt;integration-test&lt;/id&gt;
-                &lt;goals&gt;
-                    &lt;goal&gt;integration-test&lt;/goal&gt;
-                &lt;/goals&gt;
-            &lt;/execution&gt;
-            &lt;execution&gt;
-                &lt;id&gt;verify&lt;/id&gt;
-                &lt;goals&gt;
-                    &lt;goal&gt;verify&lt;/goal&gt;
-                &lt;/goals&gt;
-            &lt;/execution&gt;
-        &lt;/executions&gt;
-    &lt;/plugin&gt;
-	[...]
-&lt;/plugins&gt;</pre>
+<pre>
+  <code class="xml">
+    &lt;plugins&gt;
+    	[...]
+        &lt;plugin&gt;
+            &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+            &lt;artifactId&gt;maven-failsafe-plugin&lt;/artifactId&gt;
+            &lt;version&gt;2.16&lt;/version&gt;
+            &lt;executions&gt;
+                &lt;execution&gt;
+                    &lt;id&gt;integration-test&lt;/id&gt;
+                    &lt;goals&gt;
+                        &lt;goal&gt;integration-test&lt;/goal&gt;
+                    &lt;/goals&gt;
+                &lt;/execution&gt;
+                &lt;execution&gt;
+                    &lt;id&gt;verify&lt;/id&gt;
+                    &lt;goals&gt;
+                        &lt;goal&gt;verify&lt;/goal&gt;
+                    &lt;/goals&gt;
+                &lt;/execution&gt;
+            &lt;/executions&gt;
+        &lt;/plugin&gt;
+    	[...]
+    &lt;/plugins&gt;
+  </code>
+</pre>
 
 ##### <span id="7112_Jetty_Maven_Plugin">7.1.1.2. Jetty Maven Plugin</span>
 
 The integration tests will be executed against a running jetty server, that will be started only for the execution of the tests. For that you have to configure the following executionin the `jetty-maven-plugin`:
 
-<pre class="lang:default mark:15-34 decode:true" title="Jetty Maven Plugin configuration for integration tests">&lt;plugins&gt;
-	&lt;plugin&gt;
-		&lt;groupId&gt;org.eclipse.jetty&lt;/groupId&gt;
-		&lt;artifactId&gt;jetty-maven-plugin&lt;/artifactId&gt;
-		&lt;version&gt;${jetty.version}&lt;/version&gt;
-		&lt;configuration&gt;
-			&lt;jettyConfig&gt;${project.basedir}/src/main/resources/config/jetty9.xml&lt;/jettyConfig&gt;
-			&lt;stopKey&gt;STOP&lt;/stopKey&gt;
-			&lt;stopPort&gt;9999&lt;/stopPort&gt;
-			&lt;stopWait&gt;5&lt;/stopWait&gt;
-			&lt;scanIntervalSeconds&gt;5&lt;/scanIntervalSeconds&gt;
-		[...]
-		&lt;/configuration&gt;
-		&lt;executions&gt;
-			&lt;execution&gt;
-				&lt;id&gt;start-jetty&lt;/id&gt;
-				&lt;phase&gt;pre-integration-test&lt;/phase&gt;
-				&lt;goals&gt;
-					&lt;!-- stop any previous instance to free up the port --&gt;
-					&lt;goal&gt;stop&lt;/goal&gt;				
-					&lt;goal&gt;run-exploded&lt;/goal&gt;
-				&lt;/goals&gt;
-				&lt;configuration&gt;
-					&lt;scanIntervalSeconds&gt;0&lt;/scanIntervalSeconds&gt;
-					&lt;daemon&gt;true&lt;/daemon&gt;
-				&lt;/configuration&gt;
-			&lt;/execution&gt;
-			&lt;execution&gt;
-				&lt;id&gt;stop-jetty&lt;/id&gt;
-				&lt;phase&gt;post-integration-test&lt;/phase&gt;
-				&lt;goals&gt;
-					&lt;goal&gt;stop&lt;/goal&gt;
-				&lt;/goals&gt;
-			&lt;/execution&gt;
-		&lt;/executions&gt;
-	&lt;/plugin&gt;
-	[...]
-&lt;/plugins&gt;</pre>
+<pre>
+  <code class="xml">
+    &lt;plugins&gt;
+    	&lt;plugin&gt;
+    		&lt;groupId&gt;org.eclipse.jetty&lt;/groupId&gt;
+    		&lt;artifactId&gt;jetty-maven-plugin&lt;/artifactId&gt;
+    		&lt;version&gt;${jetty.version}&lt;/version&gt;
+    		&lt;configuration&gt;
+    			&lt;jettyConfig&gt;${project.basedir}/src/main/resources/config/jetty9.xml&lt;/jettyConfig&gt;
+    			&lt;stopKey&gt;STOP&lt;/stopKey&gt;
+    			&lt;stopPort&gt;9999&lt;/stopPort&gt;
+    			&lt;stopWait&gt;5&lt;/stopWait&gt;
+    			&lt;scanIntervalSeconds&gt;5&lt;/scanIntervalSeconds&gt;
+    		[...]
+    		&lt;/configuration&gt;
+    		&lt;executions&gt;
+    			&lt;execution&gt;
+    				&lt;id&gt;start-jetty&lt;/id&gt;
+    				&lt;phase&gt;pre-integration-test&lt;/phase&gt;
+    				&lt;goals&gt;
+    					&lt;!-- stop any previous instance to free up the port --&gt;
+    					&lt;goal&gt;stop&lt;/goal&gt;				
+    					&lt;goal&gt;run-exploded&lt;/goal&gt;
+    				&lt;/goals&gt;
+    				&lt;configuration&gt;
+    					&lt;scanIntervalSeconds&gt;0&lt;/scanIntervalSeconds&gt;
+    					&lt;daemon&gt;true&lt;/daemon&gt;
+    				&lt;/configuration&gt;
+    			&lt;/execution&gt;
+    			&lt;execution&gt;
+    				&lt;id&gt;stop-jetty&lt;/id&gt;
+    				&lt;phase&gt;post-integration-test&lt;/phase&gt;
+    				&lt;goals&gt;
+    					&lt;goal&gt;stop&lt;/goal&gt;
+    				&lt;/goals&gt;
+    			&lt;/execution&gt;
+    		&lt;/executions&gt;
+    	&lt;/plugin&gt;
+    	[...]
+    &lt;/plugins&gt;
+  </code>
+</pre>
 
 <p class="note_normal" style="text-align: justify;">
   <strong>Note:</strong> In the <code>pre-integration-test</code> phase the Jetty server will be started, after stopping any running instance to free up the port, and in the <code>post-integration-phase</code> it will be stopped. The <code>scanIntervalSeconds</code> has to be set to 0, and <code>daemon</code> to true.
@@ -3545,36 +1683,40 @@ I am using JUnit as the testing framework. By default, the Failsafe Plugin will 
 
 I have created a single test class &#8211; `RestDemoServiceIT` &#8211; that will test the read (GET) methods, but the procedure should be the same for all the other:
 
-<pre class="lang:java decode:true">public class RestDemoServiceIT {
+<pre>
+  <code class="java">
+    public class RestDemoServiceIT {
 
-	[....]
-	@Test
-	public void testGetPodcast() throws JsonGenerationException,
-			JsonMappingException, IOException {
+    	[....]
+    	@Test
+    	public void testGetPodcast() throws JsonGenerationException,
+    			JsonMappingException, IOException {
 
-		ClientConfig clientConfig = new ClientConfig();
-		clientConfig.register(JacksonFeature.class);
+    		ClientConfig clientConfig = new ClientConfig();
+    		clientConfig.register(JacksonFeature.class);
 
-		Client client = ClientBuilder.newClient(clientConfig);
+    		Client client = ClientBuilder.newClient(clientConfig);
 
-		WebTarget webTarget = client
-				.target("http://localhost:8888/demo-rest-jersey-spring/podcasts/2");
+    		WebTarget webTarget = client
+    				.target("http://localhost:8888/demo-rest-jersey-spring/podcasts/2");
 
-		Builder request = webTarget.request(MediaType.APPLICATION_JSON);
+    		Builder request = webTarget.request(MediaType.APPLICATION_JSON);
 
-		Response response = request.get();
-		Assert.assertTrue(response.getStatus() == 200);
+    		Response response = request.get();
+    		Assert.assertTrue(response.getStatus() == 200);
 
-		Podcast podcast = response.readEntity(Podcast.class);
+    		Podcast podcast = response.readEntity(Podcast.class);
 
-		ObjectMapper mapper = new ObjectMapper();
-		System.out
-				.print("Received podcast from database *************************** "
-						+ mapper.writerWithDefaultPrettyPrinter()
-								.writeValueAsString(podcast));
+    		ObjectMapper mapper = new ObjectMapper();
+    		System.out
+    				.print("Received podcast from database *************************** "
+    						+ mapper.writerWithDefaultPrettyPrinter()
+    								.writeValueAsString(podcast));
 
-	}
-}</pre>
+    	}
+    }
+  </code>
+</pre>
 
 <p style="text-align: justify;">
   <strong>Note:</strong>
@@ -3595,7 +1737,7 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
 
 <div id="attachment_1190" style="width: 310px" class="wp-caption alignnone">
   <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/run-integration-tests-eclipse.png"><img class="size-medium wp-image-1190" src="http://www.codingpedia.org/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png" alt="Run integration tests from Eclipse" width="300" height="148" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/run-integration-tests-eclipse.png 991w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
+
   <p class="wp-caption-text">
     Run integration tests from Eclipse
   </p>
@@ -3609,7 +1751,7 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
   Recently I&#8217;ve rediscovered <a title="http://www.soapui.org/" href="http://www.soapui.org/" target="_blank">SoapUI</a> after using it heavily for testing SOAP based web services. With the recent versions (at the time of writing latest is 5.0.0) it offers pretty good functionality to test REST based web services, and coming versions should improve on this. So unless you develop your own framework/infrastructure to test REST services, why not give it a try to SoapUI. I did, I was satisfied with the results so far and I&#8217;ve decided to do a video tutorial, that you can now find on YouTube on our channel:
 </p>
 
-
+<iframe width="420" height="315" src="https://www.youtube.com/embed/XV7WW0bDy9c" frameborder="0" allowfullscreen></iframe>
 
 <h2 style="text-align: justify;">
   <span id="8_Versioning">8. Versioning</span>
@@ -3649,18 +1791,22 @@ Here are some great resources from people that understand better the matter:
   All I had to do in this case is adding the following line of code to my JaxRs application class:
 </p>
 
-<pre class="lang:java mark:9 decode:true" title="Compression activation on the server side">public class RestDemoJaxRsApplication extends ResourceConfig {
-	/**
-	 * Register JAX-RS application components.
-	 */
-	public RestDemoJaxRsApplication() {
-		
-        packages("org.codingpedia.demo.rest");
-		register(EntityFilteringFeature.class);
-		EncodingFilter.enableFor(this, GZipEncoder.class);		
-		
-	}
-}</pre>
+<pre>
+  <code class="java">
+    public class RestDemoJaxRsApplication extends ResourceConfig {
+    	/**
+    	 * Register JAX-RS application components.
+    	 */
+    	public RestDemoJaxRsApplication() {
+
+            packages("org.codingpedia.demo.rest");
+    		register(EntityFilteringFeature.class);
+    		EncodingFilter.enableFor(this, GZipEncoder.class);		
+
+    	}
+    }
+  </code>
+</pre>
 
 ## <span id="10Quick_way_to_check_if_the_REST_API_is_alive">10. Quick way to check if the REST API is alive</span>
 
@@ -3685,16 +1831,6 @@ Here are some great resources from people that understand better the matter:
 <p class="note_normal" style="text-align: justify;">
   Well, that&#8217;s it. I have to congratulate you, if you&#8217;ve come so far, but I hope you could learn something from this tutorial about REST, like designing a REST API, implementing a REST API in Java, testing a REST API and much more. If you did, I&#8217;d be very grateful if you helped it spread by leaving a comment or sharing it on Twitter, Google+ or Facebook. Thank you! Don&#8217;t forget also to check out <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> &#8211; you&#8217;ll find for sure interesting podcasts and episodes. We are grateful for <a title="Podcastpedia.org - how can I contribute" href="http://www.podcastpedia.org/how_can_i_help" target="_blank">your support.</a>
 </p>
-
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
 
 ## <span id="Resources">Resources</span>
 
@@ -3731,21 +1867,21 @@ Here are some great resources from people that understand better the matter:
   * <a title="http://www.codingpedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" href="http://www.codingpedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">http://www.codingpedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

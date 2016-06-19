@@ -36,11 +36,16 @@ tags:
   - rest
   - XMLHttpRequest
 ---
+<p style="text-align: justify;">
+  In this post I will present how easy it is to enable HTTP response headers on the server sidein Java with Jersey, as defined by the <a title="http://www.w3.org/TR/cors/" href="http://www.w3.org/TR/cors/" target="_blank">Cross-Origing Resource Sharing (CORS)</a> specification. For that I have extended the REST API  built in the post <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, with CORS support.
+</p>
+<!--more-->
+
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#1_Quick_intro_to_CORS">1. Quick intro to CORS</a><ul>
@@ -59,7 +64,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#2_Adding_HTTP_headers_to_resources_with_Jersey">2. Adding HTTP headers to resources with Jersey</a><ul>
         <li>
@@ -70,7 +75,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#3_Resources">3. Resources</a><ul>
         <li>
@@ -83,14 +88,6 @@ tags:
     </li>
   </ul>
 </div>
-
-<p style="text-align: justify;">
-  In this post I will present how easy it is to enable HTTP response headers on the server sidein Java with Jersey, as defined by the <a title="http://www.w3.org/TR/cors/" href="http://www.w3.org/TR/cors/" target="_blank">Cross-Origing Resource Sharing (CORS)</a> specification. For that I have extended the REST API  built in the post <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, with CORS support.
-</p>
-
-<p style="text-align: justify;">
-  <!--more-->
-</p>
 
 <p style="text-align: justify;">
   But before we delve into that, I would like to start with a quick introduction to CORS as found on various great website like Wikipedia or Mozilla Development Network (MDN), I would myself like to reference later.
@@ -169,18 +166,22 @@ These are headers that clients may use when issuing HTTP requests in order to ma
 
 The first one is by using the `header` method of the `javax.ws.rs.core.Response`. This method adds an arbitrary header to the `ResponseBuilder` (_`ResponseBuilder` is a class used to build `Response` instances that contain metadata instead of or in addition to an entity_):
 
-<pre class="lang:java mark:9,10 decode:true" title="Add headers to Response with the header method">@GET
-@Path("{id}")
-@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-public Response getPodcastById(@PathParam("id") Long id, @QueryParam("detailed") boolean detailed)
-		throws IOException,	AppException {
-	Podcast podcastById = podcastService.getPodcastById(id);
-	return Response.ok() //200
-			.entity(podcastById, detailed ? new Annotation[]{PodcastDetailedView.Factory.get()} : new Annotation[0])
-			.header("Access-Control-Allow-Origin", "*")
-			.header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT")
-			.allow("OPTIONS").build();
-}</pre>
+<pre>
+  <code class="java">
+    @GET
+    @Path("{id}")
+    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+    public Response getPodcastById(@PathParam("id") Long id, @QueryParam("detailed") boolean detailed)
+    		throws IOException,	AppException {
+    	Podcast podcastById = podcastService.getPodcastById(id);
+    	return Response.ok() //200
+    			.entity(podcastById, detailed ? new Annotation[]{PodcastDetailedView.Factory.get()} : new Annotation[0])
+    			.header("Access-Control-Allow-Origin", "*")
+    			.header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT")
+    			.allow("OPTIONS").build();
+    }
+  </code>
+</pre>
 
 <p style="text-align: justify;">
   As you can see on lines 9 and 10, the <code>header</code> method extends the existing <code>ResponseBuilder</code> and adds the HTTP headers <code>Access-Control-Allow-Origin</code>  and <code>Access-Control-Allow-Methods</code>, suggesting that GET requests coming from any domain will be allowed for the resource identified by this method &#8211; <code>/podcasts/{id}</code>
@@ -204,30 +205,34 @@ public Response getPodcastById(@PathParam("id") Long id, @QueryParam("detailed")
   Ok, so let&#8217;s see how this works:
 </p>
 
-<pre class="lang:java mark:18,20,21 decode:true" title="CORS response filter">package org.codingpedia.demo.rest.util;
+<pre>
+  <code class="java">
+    package org.codingpedia.demo.rest.util;
 
-import java.io.IOException;
+    import java.io.IOException;
 
-import javax.ws.rs.container.ContainerRequestContext;
-import javax.ws.rs.container.ContainerResponseContext;
-import javax.ws.rs.container.ContainerResponseFilter;
-import javax.ws.rs.core.MultivaluedMap;
+    import javax.ws.rs.container.ContainerRequestContext;
+    import javax.ws.rs.container.ContainerResponseContext;
+    import javax.ws.rs.container.ContainerResponseFilter;
+    import javax.ws.rs.core.MultivaluedMap;
 
-public class CORSResponseFilter
-implements ContainerResponseFilter {
+    public class CORSResponseFilter
+    implements ContainerResponseFilter {
 
-	public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext)
-			throws IOException {
+    	public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext)
+    			throws IOException {
 
-		MultivaluedMap&lt;String, Object&gt; headers = responseContext.getHeaders();
+    		MultivaluedMap&lt;String, Object&gt; headers = responseContext.getHeaders();
 
-		headers.add("Access-Control-Allow-Origin", "*");
-		//headers.add("Access-Control-Allow-Origin", "http://podcastpedia.org"); //allows CORS requests only coming from podcastpedia.org		
-		headers.add("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");			
-		headers.add("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, X-Codingpedia");
-	}
+    		headers.add("Access-Control-Allow-Origin", "*");
+    		//headers.add("Access-Control-Allow-Origin", "http://podcastpedia.org"); //allows CORS requests only coming from podcastpedia.org		
+    		headers.add("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");			
+    		headers.add("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, X-Codingpedia");
+    	}
 
-}</pre>
+    }
+  </code>
+</pre>
 
 In the example above the `CORSResponseFilter` always  adds
 
@@ -245,13 +250,17 @@ In the example above the `CORSResponseFilter` always  adds
   The filter must inherit from the <code>ContainerResponseFilter</code> interface and must be registered as a provider:
 </p>
 
-<pre class="lang:java mark:5 decode:true" title="Registering the CORS response filter">/**
-* Register JAX-RS application components.
-*/	
-public RestDemoJaxRsApplication(){
-   register(CORSResponseFilter.class);
-   //other registrations omitted for brevity
-}</pre>
+<pre>
+  <code class="java">
+    /**
+    * Register JAX-RS application components.
+    */
+    public RestDemoJaxRsApplication(){
+       register(CORSResponseFilter.class);
+       //other registrations omitted for brevity
+    }
+  </code>
+</pre>
 
 Well, that&#8217;s it &#8211; you&#8217;ve learned how easy it is to add CORS support to the server side with Jersey.
 
@@ -282,21 +291,21 @@ Well, that&#8217;s it &#8211; you&#8217;ve learned how easy it is to add CORS su
   7. <a title="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" target="_blank">HTTP 1.1 &#8211; RFC2616</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

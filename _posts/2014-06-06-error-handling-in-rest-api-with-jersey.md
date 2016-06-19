@@ -133,7 +133,7 @@ Here&#8217;s the explanation for each of the properties in the response:
 <li style="text-align: justify;">
   <strong>status</strong> &#8211; holds redundantly the HTTP error status code, so that the developer can &#8220;see&#8221; it without having to analyze the response&#8217;s header
 </li>
-  * **code** &#8211; this is an internal code specific to the API (should be more relevant for business exceptions)
+   <strong>code</strong> &#8211; this is an internal code specific to the API (should be more relevant for business exceptions)
 <li style="text-align: justify;">
   <strong>message</strong> &#8211; short description of the error, what might have cause it and possibly a &#8220;fixing&#8221; proposal
 </li>

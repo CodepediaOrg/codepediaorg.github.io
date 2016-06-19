@@ -33,11 +33,24 @@ tags:
   - rest
   - rest api
 ---
+
+<p style="color: #222222; text-align: justify;">
+  Error handling is one of the most procrastinated and least enjoyable parts when writing code&#8230; I mean, why should the application not always work as expected, when we&#8217;ve written it with so much passion and care, and, you know, the clients of the application always send the right requests, right?!? Unfortunately things do go wrong from time to time, and when it does we should be prepared to some extent at least&#8230; This is especially the case when writing REST APIs, because clients only get a black box with specification, having no clue what to do when the expected answer doesn&#8217;t come back, unless we do something about it&#8230;
+</p>
+
+<p style="color: #222222; text-align: justify; padding-left: 30px;">
+  <strong>Bottom line:</strong>  error handling is essential when designing REST APIs.
+</p>
+ <!--more-->
+<p style="color: #222222; text-align: justify;">
+  In this post I will present how I&#8217;ve designed and implemented the error handling of a REST API with the help Jersey framework. The<span class="aioseop_option_input"><span id="aioseop_snippet_description"> code is based on the open source project presented in the <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>&#8220;</span></span>
+</p>
+
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#1_Design">1. Design</a>
@@ -52,7 +65,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#3_Testing">3. Testing</a>
     </li>
@@ -77,18 +90,6 @@ tags:
     </li>
   </ul>
 </div>
-
-<p style="color: #222222; text-align: justify;">
-  Error handling is one of the most procrastinated and least enjoyable parts when writing code&#8230; I mean, why should the application not always work as expected, when we&#8217;ve written it with so much passion and care, and, you know, the clients of the application always send the right requests, right?!? Unfortunately things do go wrong from time to time, and when it does we should be prepared to some extent at least&#8230; This is especially the case when writing REST APIs, because clients only get a black box with specification, having no clue what to do when the expected answer doesn&#8217;t come back, unless we do something about it&#8230;
-</p>
-
-<p style="color: #222222; text-align: justify; padding-left: 30px;">
-  <strong>Bottom line:</strong>  error handling is essential when designing REST APIs.
-</p>
-
-<p style="color: #222222; text-align: justify;">
-  In this post I will present how I&#8217;ve designed and implemented the error handling of a REST API with the help Jersey framework. The<span class="aioseop_option_input"><span id="aioseop_snippet_description"> code is based on the open source project presented in the <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>&#8220;</span></span> <!--more-->
-</p>
 
 <h2 style="color: #222222; text-align: justify;">
   <span id="1_Design">1. Design</span>
@@ -115,13 +116,17 @@ The first way to let the client know that an error occurred, is by sending HTT
   The second thing is<strong> to give the API clients as much information as possible about the error</strong> &#8211; based on reason, necessity and best practices found in the resources mentioned above, I&#8217;ve come up with the following structure for error messages:
 </p>
 
-<pre class="lang:js decode:true" title="Error message format">{
-   "status": 400,
-   "code": 4000,
-   "message": "Provided data not sufficient for insertion",
-   "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-with-jersey-and-spring",
-   "developerMessage": "Please verify that the feed is properly generated/set"
-}</pre>
+<pre>
+  <code class="json">
+    {
+       "status": 400,
+       "code": 4000,
+       "message": "Provided data not sufficient for insertion",
+       "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-with-jersey-and-spring",
+       "developerMessage": "Please verify that the feed is properly generated/set"
+    }
+  </code>
+</pre>
 
 Here&#8217;s the explanation for each of the properties in the response:
 
@@ -164,50 +169,61 @@ Now that I know how errors should look like, let&#8217;s write some code to make
   First I packed the checked(business) exceptions under the <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/AppException.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/AppException.java" target="_blank"><code>AppException</code></a> class. The structure of the class has exactly the properties mentioned for errors in the Design section, which are also mirrored in the <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/ErrorMessage.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/ErrorMessage.java" target="_blank">ErrorMessage</a> class holding the JSON entity in the response. With the help of the <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/AppExceptionMapper.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/AppExceptionMapper.java" target="_blank"><code>AppExceptionMapper</code></a>:
 </p>
 
-<pre class="lang:java decode:true" title="AppExceptionMapper implementation">package org.codingpedia.demo.rest.errorhandling;
+<pre>
+  <code class="java">
+    package org.codingpedia.demo.rest.errorhandling;
 
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.ext.ExceptionMapper;
+    import javax.ws.rs.core.MediaType;
+    import javax.ws.rs.core.Response;
+    import javax.ws.rs.ext.ExceptionMapper;
 
-public class AppExceptionMapper implements ExceptionMapper&lt;AppException&gt; {
+    public class AppExceptionMapper implements ExceptionMapper&lt;AppException&gt; {
 
-	public Response toResponse(AppException ex) {
-		return Response.status(ex.getStatus())
-				.entity(new ErrorMessage(ex))
-				.type(MediaType.APPLICATION_JSON).
-				build();
-	}
+    	public Response toResponse(AppException ex) {
+    		return Response.status(ex.getStatus())
+    				.entity(new ErrorMessage(ex))
+    				.type(MediaType.APPLICATION_JSON).
+    				build();
+    	}
 
-}</pre>
+    }
+  </code>
+</pre>
 
 when an `AppException` occurs, let&#8217;s say for example you requested a podcast-resource that might have been deleted in the mean time:
 
-<pre class="lang:batch decode:true" title="HTTP request to GET not existent podcast">GET http://localhost:8888/demo-rest-jersey-spring/podcasts/22 HTTP/1.1
-Accept-Encoding: gzip,deflate
-Accept: application/json
-Host: localhost:8888
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+<pre>
+  <code class="http">
+    GET http://localhost:8888/demo-rest-jersey-spring/podcasts/22 HTTP/1.1
+    Accept-Encoding: gzip,deflate
+    Accept: application/json
+    Host: localhost:8888
+    Connection: Keep-Alive
+    User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+  </code>
 </pre>
 
 the exception mapper encapsulates the error message as JSON, with the HTTP status you desire and you might get a response like the following:
 
-<pre class="lang:default mark:1,9-15 decode:true" title="HTTP error response with JSON entity">HTTP/1.1 404 Not Found
-Content-Type: application/json
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-Content-Length: 231
-Server: Jetty(9.0.7.v20131107)
+<pre>
+  <code class="http">
+    HTTP/1.1 404 Not Found
+    Content-Type: application/json
+    Access-Control-Allow-Origin: *
+    Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+    Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
+    Content-Length: 231
+    Server: Jetty(9.0.7.v20131107)
 
-{
-   "status": 404,
-   "code": 404,
-   "message": "The podcast you requested with id 22 was not found in the database",
-   "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
-   "developerMessage": "Verify the existence of the podcast with the id 22 in the database"
-}</pre>
+    {
+       "status": 404,
+       "code": 404,
+       "message": "The podcast you requested with id 22 was not found in the database",
+       "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
+       "developerMessage": "Verify the existence of the podcast with the id 22 in the database"
+    }
+  </code>
+</pre>
 
 <p class="note_normal">
   <strong>Note: </strong>After receiving this message, it should be clear to the client that the resource is not available anymore and can react to that accordingly.
@@ -223,42 +239,46 @@ Server: Jetty(9.0.7.v20131107)
   I&#8217;ve decided to catch all other exception that are not of type <code>AppException</code>, by implementing an <code>ExceptionMapper</code> on <code>Throwable</code>:
 </p>
 
-<pre class="lang:java decode:true" title="GenerixExceptionMapper code snippet">package org.codingpedia.demo.rest.errorhandling;
+<pre>
+  <code class="java">
+    package org.codingpedia.demo.rest.errorhandling;
 
-//imports omitted for brevity
+    //imports omitted for brevity
 
-import org.codingpedia.demo.rest.filters.AppConstants;
+    import org.codingpedia.demo.rest.filters.AppConstants;
 
-public class GenericExceptionMapper implements ExceptionMapper&lt;Throwable&gt; {
-	
-	@Override 
-	public Response toResponse(Throwable ex) {
+    public class GenericExceptionMapper implements ExceptionMapper&lt;Throwable&gt; {
 
-		ErrorMessage errorMessage = new ErrorMessage();		
-		setHttpStatus(ex, errorMessage);
-		errorMessage.setCode(AppConstants.GENERIC_APP_ERROR_CODE);
-		errorMessage.setMessage(ex.getMessage());
-		StringWriter errorStackTrace = new StringWriter();
-		ex.printStackTrace(new PrintWriter(errorStackTrace));
-		errorMessage.setDeveloperMessage(errorStackTrace.toString());
-		errorMessage.setLink(AppConstants.BLOG_POST_URL);
+    	@Override
+    	public Response toResponse(Throwable ex) {
 
-		return Response.status(errorMessage.getStatus())
-				.entity(errorMessage)
-				.type(MediaType.APPLICATION_JSON)
-				.build();	
-	}
+    		ErrorMessage errorMessage = new ErrorMessage();		
+    		setHttpStatus(ex, errorMessage);
+    		errorMessage.setCode(AppConstants.GENERIC_APP_ERROR_CODE);
+    		errorMessage.setMessage(ex.getMessage());
+    		StringWriter errorStackTrace = new StringWriter();
+    		ex.printStackTrace(new PrintWriter(errorStackTrace));
+    		errorMessage.setDeveloperMessage(errorStackTrace.toString());
+    		errorMessage.setLink(AppConstants.BLOG_POST_URL);
 
-	private void setHttpStatus(Throwable ex, ErrorMessage errorMessage) {
-		if(ex instanceof WebApplicationException ) {
-			errorMessage.setStatus(((WebApplicationException)ex).getResponse().getStatus());
-		} else {
-			errorMessage.setStatus(Response.Status.INTERNAL_SERVER_ERROR.getStatusCode()); //defaults to internal server error 500
-		}
-	}
-}</pre>
+    		return Response.status(errorMessage.getStatus())
+    				.entity(errorMessage)
+    				.type(MediaType.APPLICATION_JSON)
+    				.build();
+    	}
 
-** Note:**
+    	private void setHttpStatus(Throwable ex, ErrorMessage errorMessage) {
+    		if(ex instanceof WebApplicationException ) {
+    			errorMessage.setStatus(((WebApplicationException)ex).getResponse().getStatus());
+    		} else {
+    			errorMessage.setStatus(Response.Status.INTERNAL_SERVER_ERROR.getStatusCode()); //defaults to internal server error 500
+    		}
+    	}
+    }
+  </code>
+</pre>
+
+**Note:**
 
 <li style="text-align: justify;">
   this is not an invasive way of catching and presenting runtime exceptions; if one happens it will be presented to the client without cluttering the code&#8230;
@@ -301,18 +321,6 @@ Check out our video tutorial <a title="https://www.youtube.com/watch?v=XV7WW0bDy
   Well, that&#8217;s it. In this post you&#8217;ve learned one way to design error handling for a REST API and how you could implement it with Jersey.  I&#8217;d more than happy to hear about your approach on treating exceptions in REST APIs so if you have a suggestion please leave a message.
 </p>
 
-<p style="text-align: justify;">
-  <div id="end-donate">
-    <div id="end-donate-text">
-      If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-    </div>
-    
-    <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-    
-    <!-- End PayPal Donations -->
-  </div>
-</p>
-
 ## <span id="6_Resources"><span id="10_Resources">6. </span><span id="10_Resources">Resources</span></span>
 
 ### <span id="61_Source_Code"><span id="101_Source_Code">6.1. Source Code</span></span>
@@ -332,21 +340,21 @@ Check out our video tutorial <a title="https://www.youtube.com/watch?v=XV7WW0bDy
   3. Stackoverflow &#8211; <a title="http://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" href="http://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" target="_blank">When to choose checked and unchecked exceptions</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

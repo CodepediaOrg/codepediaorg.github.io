@@ -1,7 +1,7 @@
 title:            CodingpediaOrg
 description:      Sharing coding knowledge
 # put your disqus here
-disqus_shortname: 
+disqus_shortname:
 reading_time:     true # if true, shows the estimated reading time for a post
 words_per_minute: 200
 logo:             images/logo.png # logo visible in the topbar
@@ -19,8 +19,8 @@ menu:
     url: '/'
   - title: 'Fork'
     url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme'
-  - title: 'Install'
-    url: '/theme-setup/'
+  - title: 'About'
+    url: '/about/'
   - title: 'Tags'
     url: '/tags'
   - title: 'Categories'
@@ -48,7 +48,7 @@ owner:
 
 # Twitter account associated with the site if different from owner/author twitter account.
 # Used in Twitter cards.
-twitter: 
+twitter:
 
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:

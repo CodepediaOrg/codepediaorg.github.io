@@ -33,11 +33,18 @@ tags:
   - logging
   - slf4j
 ---
+
+<p style="text-align: justify;">
+  <span style="text-align: justify; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">In this post I will present how to log in a Spring based application with the help of Simple Logging Facade for Java (SLF4J) and Logback. For demonstration I will use the application presented in the post <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a></span>, to which I will add now logging capabilities.
+</p>
+
+<!--more-->
+
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#1_Introduction">1. Introduction</a><ul>
@@ -52,7 +59,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#2_Configuration">2. Configuration</a><ul>
         <li>
@@ -65,7 +72,7 @@ tags:
             </li>
           </ul>
         </li>
-        
+
         <li>
           <a href="#22_Logback">2.2. Logback</a><ul>
             <li>
@@ -82,7 +89,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#3_Integration_in_code">3. Integration in code</a>
     </li>
@@ -101,10 +108,6 @@ tags:
     </li>
   </ul>
 </div>
-
-<p style="text-align: justify;">
-  <span style="text-align: justify; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">In this post I will present how to log in a Spring based application with the help of Simple Logging Facade for Java (SLF4J) and Logback. For demonstration I will use the application presented in the post <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a></span>, to which I will add now logging capabilities.<!--more-->
-</p>
 
 ## <span id="1_Introduction">1. Introduction</span>
 
@@ -152,33 +155,42 @@ _The logback-access module integrates with Servlet containers, such as Tomcat an
   To switch off commons-logging, the commons-logging dependency mustn&#8217;t be present in the classpath at runtime. If you are using maven like me, you can simply exclude it from the spring-context artifact:
 </p>
 
-<pre class="lang:default mark:6-9 decode:true" title="pom.xml snippet : commons-logging exclusion">&lt;dependency&gt;
-	&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-	&lt;artifactId&gt;spring-context&lt;/artifactId&gt;
-	&lt;version&gt;${spring.version}&lt;/version&gt;
-	&lt;exclusions&gt;
-	   &lt;exclusion&gt;
-		  &lt;groupId&gt;commons-logging&lt;/groupId&gt;
-		  &lt;artifactId&gt;commons-logging&lt;/artifactId&gt;
-	   &lt;/exclusion&gt;
-	&lt;/exclusions&gt;			
-&lt;/dependency&gt;</pre>
+
+<pre>
+  <code class="xml">
+    &lt;dependency&gt;
+    	&lt;groupId&gt;org.springframework&lt;/groupId&gt;
+    	&lt;artifactId&gt;spring-context&lt;/artifactId&gt;
+    	&lt;version&gt;${spring.version}&lt;/version&gt;
+    	&lt;exclusions&gt;
+    	   &lt;exclusion&gt;
+    		  &lt;groupId&gt;commons-logging&lt;/groupId&gt;
+    		  &lt;artifactId&gt;commons-logging&lt;/artifactId&gt;
+    	   &lt;/exclusion&gt;
+    	&lt;/exclusions&gt;			
+    &lt;/dependency&gt;
+  </code>
+</pre>
 
 #### <span id="212_Required_libraries"><span style="line-height: 1.5;">2.1.2. Required libraries</span></span>
 
 Because I am using LogBack, which implements SLF4J directly, you will need to depend on two libraries (`jcl-over-slf4j` and `logback`):
 
-<pre class="lang:default decode:true" title="pom.xml - snippet with Logback dependencies">&lt;!-- LogBack dependencies --&gt; 
-&lt;dependency&gt;
-	&lt;groupId&gt;ch.qos.logback&lt;/groupId&gt;
-	&lt;artifactId&gt;logback-classic&lt;/artifactId&gt;
-	&lt;version&gt;${logback.version}&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;dependency&gt;                                    
-	&lt;groupId&gt;org.slf4j&lt;/groupId&gt;                
-	&lt;artifactId&gt;jcl-over-slf4j&lt;/artifactId&gt;     
-	&lt;version&gt;${jcloverslf4j.version}&lt;/version&gt;  
-&lt;/dependency&gt;</pre>
+<pre>
+  <code class="xml">
+    &lt;!-- LogBack dependencies --&gt;
+    &lt;dependency&gt;
+    	&lt;groupId&gt;ch.qos.logback&lt;/groupId&gt;
+    	&lt;artifactId&gt;logback-classic&lt;/artifactId&gt;
+    	&lt;version&gt;${logback.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;                                    
+    	&lt;groupId&gt;org.slf4j&lt;/groupId&gt;                
+    	&lt;artifactId&gt;jcl-over-slf4j&lt;/artifactId&gt;     
+    	&lt;version&gt;${jcloverslf4j.version}&lt;/version&gt;  
+    &lt;/dependency&gt;
+  </code>
+</pre>
 
 <p class="note_normal" style="text-align: justify;">
   <strong>Note:</strong> You might also want to exclude the <code>slf4j-api</code> depedency from other external dependencies, besides Spring, to avoid having more than one version of that API on the classpath.
@@ -194,58 +206,62 @@ To configure Logback all you have to do is place the file `logback.xml` in the c
 
 #### <span id="21_logbackxml">2.1. logback.xml</span>
 
-<pre class="lang:default decode:true" title="logback.xml for demo">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;configuration&gt;
-	&lt;appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender"&gt;
-		&lt;encoder&gt;
-			&lt;Pattern&gt;.%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg %n
-			&lt;/Pattern&gt;
-		&lt;/encoder&gt;
-		&lt;filter class="ch.qos.logback.classic.filter.ThresholdFilter"&gt;
-			&lt;level&gt;TRACE&lt;/level&gt;
-		&lt;/filter&gt;
-	&lt;/appender&gt;
+<pre>
+  <code class="xml">
+    &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+    &lt;configuration&gt;
+    	&lt;appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender"&gt;
+    		&lt;encoder&gt;
+    			&lt;Pattern&gt;.%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg %n
+    			&lt;/Pattern&gt;
+    		&lt;/encoder&gt;
+    		&lt;filter class="ch.qos.logback.classic.filter.ThresholdFilter"&gt;
+    			&lt;level&gt;TRACE&lt;/level&gt;
+    		&lt;/filter&gt;
+    	&lt;/appender&gt;
 
-  	&lt;appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;
-		&lt;File&gt;c:/tmp/rest-demo.log&lt;/File&gt;
-		&lt;rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"&gt;
-		    &lt;!-- daily rollover --&gt;
-			&lt;FileNamePattern&gt;rest-demo.%d{yyyy-MM-dd}.log&lt;/FileNamePattern&gt;
+      	&lt;appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;
+    		&lt;File&gt;c:/tmp/rest-demo.log&lt;/File&gt;
+    		&lt;rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"&gt;
+    		    &lt;!-- daily rollover --&gt;
+    			&lt;FileNamePattern&gt;rest-demo.%d{yyyy-MM-dd}.log&lt;/FileNamePattern&gt;
 
-			&lt;!-- keep 30 days' worth of history --&gt;
-			&lt;maxHistory&gt;30&lt;/maxHistory&gt;			
-		&lt;/rollingPolicy&gt;
+    			&lt;!-- keep 30 days' worth of history --&gt;
+    			&lt;maxHistory&gt;30&lt;/maxHistory&gt;			
+    		&lt;/rollingPolicy&gt;
 
-		&lt;encoder&gt;
-			&lt;Pattern&gt;%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg %n&lt;/Pattern&gt;
-		&lt;/encoder&gt; 	    
-  	&lt;/appender&gt;
-  	&lt;appender name="minuteRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;
-		&lt;rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"&gt;
-		    &lt;!-- rollover every minute --&gt;
-			&lt;FileNamePattern&gt;c:/tmp/minutes/rest-demo-minute.%d{yyyy-MM-dd_HH-mm}.log&lt;/FileNamePattern&gt;
+    		&lt;encoder&gt;
+    			&lt;Pattern&gt;%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg %n&lt;/Pattern&gt;
+    		&lt;/encoder&gt; 	    
+      	&lt;/appender&gt;
+      	&lt;appender name="minuteRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;
+    		&lt;rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"&gt;
+    		    &lt;!-- rollover every minute --&gt;
+    			&lt;FileNamePattern&gt;c:/tmp/minutes/rest-demo-minute.%d{yyyy-MM-dd_HH-mm}.log&lt;/FileNamePattern&gt;
 
-			&lt;!-- keep 30 minutes' worth of history --&gt;
-			&lt;maxHistory&gt;30&lt;/maxHistory&gt;			
-		&lt;/rollingPolicy&gt;
+    			&lt;!-- keep 30 minutes' worth of history --&gt;
+    			&lt;maxHistory&gt;30&lt;/maxHistory&gt;			
+    		&lt;/rollingPolicy&gt;
 
-		&lt;encoder&gt;
-			&lt;Pattern&gt;%-4relative [%thread] %-5level %logger{35} - %msg %n&lt;/Pattern&gt;
-		&lt;/encoder&gt; 	    
-  	&lt;/appender&gt;  	
+    		&lt;encoder&gt;
+    			&lt;Pattern&gt;%-4relative [%thread] %-5level %logger{35} - %msg %n&lt;/Pattern&gt;
+    		&lt;/encoder&gt; 	    
+      	&lt;/appender&gt;  	
 
-	&lt;logger name="org.codingpedia" additivity="false"&gt;
-	    &lt;level value="DEBUG" /&gt;
-		&lt;appender-ref ref="dailyRollingFileAppender"/&gt;
-		&lt;appender-ref ref="minuteRollingFileAppender"/&gt;
-		&lt;appender-ref ref="consoleAppender" /&gt;
-	&lt;/logger&gt;
+    	&lt;logger name="org.codingpedia" additivity="false"&gt;
+    	    &lt;level value="DEBUG" /&gt;
+    		&lt;appender-ref ref="dailyRollingFileAppender"/&gt;
+    		&lt;appender-ref ref="minuteRollingFileAppender"/&gt;
+    		&lt;appender-ref ref="consoleAppender" /&gt;
+    	&lt;/logger&gt;
 
-	&lt;root&gt;
-		&lt;level value="INFO" /&gt;
-		&lt;appender-ref ref="consoleAppender" /&gt;
-	&lt;/root&gt;
-&lt;/configuration&gt;</pre>
+    	&lt;root&gt;
+    		&lt;level value="INFO" /&gt;
+    		&lt;appender-ref ref="consoleAppender" /&gt;
+    	&lt;/root&gt;
+    &lt;/configuration&gt;
+  </code>
+</pre>
 
 <span style="font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">Logback uses </span><a style="font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;" title="http://logback.qos.ch/manual/appenders.html" href="http://logback.qos.ch/manual/appenders.html" target="_blank">appenders</a><span style="font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">, which are components Logback delegates the task of writing logging events to. </span>
 
@@ -279,13 +295,21 @@ You can find below a short explanation of the the conversion specifiers used in 
 
 The result looks something like this:
 
-<pre class="lang:default decode:true" title="Log output with date">10:12:51.012 [qtp231719230-45] DEBUG o.c.d.r.util.LoggingResponseFilter</pre>
+<pre>
+  <code class="nohighlight">
+    10:12:51.012 [qtp231719230-45] DEBUG o.c.d.r.util.LoggingResponseFilter
+  </code>
+</pre>
 
 <p style="padding-left: 30px;">
    or
 </p>
 
-<pre class="lang:default decode:true" title="Log output with relative time">102662 [qtp1790106082-48] DEBUG o.c.d.r.dao.PodcastDao.getPodcasts</pre>
+<pre>
+  <code class="nohighlight">
+    102662 [qtp1790106082-48] DEBUG o.c.d.r.dao.PodcastDao.getPodcasts
+  </code>
+</pre>
 
 ##### <span id="212_RollingFileAppender">2.1.2. RollingFileAppender</span>
 
@@ -320,36 +344,40 @@ The <a style="text-align: justify; line-height: 1.5;" href="http://logback.qos.
   * **input** &#8211; the HTTP method used + the relative path called of the REST resource
   * **output** &#8211; a pretty print of the response entities in JSON format
 
-<pre class="lang:java mark:16,22,25 decode:true" title="LoggingResponseFilter">package org.codingpedia.demo.rest.util;
+  <pre>
+    <code class="java">
+    package org.codingpedia.demo.rest.util;
 
-import java.io.IOException;
+    import java.io.IOException;
 
-import javax.ws.rs.container.ContainerRequestContext;
-import javax.ws.rs.container.ContainerResponseContext;
-import javax.ws.rs.container.ContainerResponseFilter;
+    import javax.ws.rs.container.ContainerRequestContext;
+    import javax.ws.rs.container.ContainerResponseContext;
+    import javax.ws.rs.container.ContainerResponseFilter;
 
-import org.codehaus.jackson.map.ObjectMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+    import org.codehaus.jackson.map.ObjectMapper;
+    import org.slf4j.Logger;
+    import org.slf4j.LoggerFactory;
 
-public class LoggingResponseFilter
-		implements ContainerResponseFilter {
+    public class LoggingResponseFilter
+    		implements ContainerResponseFilter {
 
-	private static final Logger logger = LoggerFactory.getLogger(LoggingResponseFilter.class);
+    	private static final Logger logger = LoggerFactory.getLogger(LoggingResponseFilter.class);
 
-	public void filter(ContainerRequestContext requestContext,
-			ContainerResponseContext responseContext) throws IOException {
-		String method = requestContext.getMethod();
+    	public void filter(ContainerRequestContext requestContext,
+    			ContainerResponseContext responseContext) throws IOException {
+    		String method = requestContext.getMethod();
 
-		logger.debug("Requesting " + method + " for path " + requestContext.getUriInfo().getPath());
-		Object entity = responseContext.getEntity();
-		if (entity != null) {
-			logger.debug("Response " + new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(entity));
-		}
+    		logger.debug("Requesting " + method + " for path " + requestContext.getUriInfo().getPath());
+    		Object entity = responseContext.getEntity();
+    		if (entity != null) {
+    			logger.debug("Response " + new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(entity));
+    		}
 
-	}
+    	}
 
-}</pre>
+    }
+  </code>
+</pre>
 
 So you I am just getting the &#8220;LoggingResponseFilter &#8221; logger  and on that, I will log messages at DEBUG level and upwards.
 
@@ -380,38 +408,24 @@ So you I am just getting the &#8220;LoggingResponseFilter &#8221; logger  and 
   * <a title="Logback or Log4j Additivity Explained" href="http://blog.idleworx.com/2010/07/logback-log4j-additivity-explained.html" target="_blank">Logback or Log4j Additivity Explained</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>
-</div>
-
-Adrian&#8217;s favorite Spring and Java books
-
-<div class="amazon_book">
-</div>
-
-<div class="amazon_book">
-</div>
-
-<div class="amazon_book">
-</div>
-
-<div class="amazon_book">
 </div>
 
 <div class="clear">

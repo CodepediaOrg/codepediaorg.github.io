@@ -77,7 +77,7 @@ To start, let&#8217;s have a look at how the Angular 1 binding mechanism is impl
 The way this works in Angular 1 is the following, according to this [podcast](http://devchat.tv/js-jabber/032-jsj-angular-js) (see at 3:50):
 
   * in the Javascript runtime, everything is patcheable by design &#8211; we can change the `Number` class if we need
-  * Angular at startup will patch all points of asynchronous interaction: 
+  * Angular at startup will patch all points of asynchronous interaction:
       * timeouts
       * Ajax requests
       * browser events
@@ -117,10 +117,10 @@ It can be used for many use cases, such as for example allowing the framework to
 
 Angular 2 uses the zones mechanism to make a lot of the reasoning about the digest cycle no longer necessary. This plain non-Angular specific Javascript code will transparently trigger a Angular 2 digest, if triggered by a component that is inside a zone:
 
-<pre class="lang:js decode:true ">element.addEventListener('keyup', function () {  
+<pre><code class="javascript">element.addEventListener('keyup', function () {  
   console.log('Key pressed.');
 });
-});</pre>
+});</code></pre>
 
 No longer `$scope.apply` or `$scope.digest` are needed, everything transparently works. Probably we won&#8217;t have to reason about zones in general in most use cases, and it will still be possible to run code outside the Angular zone by using [VmTurnZone](https://angular.io/docs/js/latest/api/core/VmTurnZone-class.html).
 
@@ -223,10 +223,10 @@ In Angular 1, we can inject dependencies in multiple places in different ways:
 
 In Angular 2 there will be only one DI mechanism: constructor injection by type.
 
-<pre class="lang:js decode:true ">constructor(keyUtils: KeyboardUtils) {
+<pre><code class="javascript">constructor(keyUtils: KeyboardUtils) {
         this.keyUtils = keyUtils;
     }
-});</pre>
+});</code></pre>
 
 <p style="text-align: justify;">
   The fact that there is only one mechanism makes it easier to learn. Also the dependency injector is hierarchical, meaning that at different points of the component tree it&#8217;s possible to have different implementations of the same type.
@@ -244,9 +244,9 @@ In Angular 2 there will be only one DI mechanism: constructor injection by type.
 
 To understand why this is important, take a look at this example:
 
-<pre class="lang:xhtml decode:true">&lt;ng1-component&gt;
-     &lt;web-component-widget setting="{{angularExpresssion}}"&gt;&lt;/web-component-widget&gt; 
-&lt;/ng1-component&gt;</pre>
+<pre><code class="xml">&lt;ng1-component&gt;
+     &lt;web-component-widget setting="{{angularExpresssion}}"&gt;&lt;/web-component-widget&gt;
+&lt;/ng1-component&gt;</code></pre>
 
 Here we have an Angular 1 component that interacts with a future web component library.
 
@@ -266,9 +266,9 @@ Well, the web component behaves just like a browser component, such has for exam
 
 In Angular 2, the template syntax will avoid to bind to plain attributes, unless to read constants:
 
-<pre class="lang:xhtml decode:true">&lt;ng2-component&gt;  
+<pre><code class="xml">&lt;ng2-component&gt;  
      &lt;web-component-widget [setting]="angularExpresssion"&gt;&lt;/web-component-widget&gt;
-&lt;/ng2-component&gt;</pre>
+&lt;/ng2-component&gt;</code></pre>
 
 <p style="text-align: justify;">
   The <code>[setting]</code> is a property binding that will write a value of an expression into a component property. In no place will there be Angular expressions in plain attributes, to prevent interoperability problems with web components.

@@ -55,13 +55,13 @@ tags:
 <p class="note_normal" style="text-align: justify;">
   <strong>Note:</strong> I will not focus too much on <a title="Wikipedia - REST" href="http://en.wikipedia.org/wiki/Representational_State_Transfer" target="_blank"><b>Representational state transfer</b></a> (<b>REST</b>) itself, because there are plenty of resources on the topic in the internet, some of which I listed under Resources at the end of the post.
 </p>
-
+<!--more-->
 <p style="text-align: justify;">
   <div id="toc_container" class="no_bullets">
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#1_The_example">1. The example</a><ul>
@@ -98,7 +98,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#2_The_coding">2. The coding</a><ul>
           <li>
@@ -118,7 +118,7 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#22_The_RESTful_API">2.2. The RESTful API</a><ul>
               <li>
@@ -139,7 +139,7 @@ tags:
                       </li>
                     </ul>
                   </li>
-                  
+
                   <li>
                     <a href="#2222_READ">2.2.2.2. READ</a><ul>
                       <li>
@@ -150,7 +150,7 @@ tags:
                       </li>
                     </ul>
                   </li>
-                  
+
                   <li>
                     <a href="#2223_UPDATE">2.2.2.3. UPDATE</a>
                   </li>
@@ -170,7 +170,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#3_Testing">3. Testing</a><ul>
           <li>
@@ -188,7 +188,7 @@ tags:
                   </li>
                 </ul>
               </li>
-              
+
               <li>
                 <a href="#312_Build_the_integration_tests">3.1.2. Build the integration tests</a>
               </li>
@@ -197,13 +197,13 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#32_Live_tests">3.2. Live tests</a>
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#4_Summary">4. Summary</a>
       </li>
@@ -222,10 +222,6 @@ tags:
       </li>
     </ul>
   </div>
-</p>
-
-<p style="text-align: justify;">
-  <!--more-->
 </p>
 
 <h2 style="text-align: justify;">
@@ -338,7 +334,7 @@ If you want to follow along, you find all you need on GitHub:
   Among other things you need to have Jersey Spring extension in your project&#8217;s classpath. You can easily add that with Maven by having the following dependencies to the <code>pom.xml</code> file of the project:
 </p>
 
-<pre class="lang:default mark:26-49 decode:true" title="pom.xml">&lt;dependency&gt;
+<pre><code class="xml">&lt;dependency&gt;
 	&lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
 	&lt;artifactId&gt;jersey-spring3&lt;/artifactId&gt;
 	&lt;version&gt;2.4.1&lt;/version&gt;
@@ -361,7 +357,7 @@ If you want to follow along, you find all you need on GitHub:
 	&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
 	&lt;artifactId&gt;jersey-media-json-jackson&lt;/artifactId&gt;
 	&lt;version&gt;2.4.1&lt;/version&gt;
-&lt;/dependency&gt;</pre>
+&lt;/dependency&gt;</code></pre>
 
 <p class="note_normal" style="text-align: justify;">
   <strong>Note:</strong> The jersey-spring3.jar, uses its own version for Spring libraries, so to use the ones you want, you need to exclude these libraries manually.
@@ -373,7 +369,7 @@ If you want to follow along, you find all you need on GitHub:
 
 #### <span id="212_Web_Application_Deployment_Descriptor_8211_webxml">2.1.2. Web Application Deployment Descriptor &#8211; web.xml</span>
 
-<pre class="lang:default mark:18-33 decode:true" title="Web Application Deployment Descriptor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<pre><code class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"&gt;
@@ -412,8 +408,8 @@ If you want to follow along, you find all you need on GitHub:
         &lt;res-ref-name&gt;jdbc/restDemoDB&lt;/res-ref-name&gt;
         &lt;res-type&gt;javax.sql.DataSource&lt;/res-type&gt;
         &lt;res-auth&gt;Container&lt;/res-auth&gt;
-    &lt;/resource-ref&gt;	
-&lt;/web-app&gt;</pre>
+    &lt;/resource-ref&gt;
+&lt;/web-app&gt;</code></pre>
 
 ##### <span id="2121_Jersey-servlet">2.1.2.1. Jersey-servlet</span>
 
@@ -425,7 +421,7 @@ If you want to follow along, you find all you need on GitHub:
   The implementation of <code>org.codingpedia.demo.rest.service.MyApplication</code> looks like the following in the project:
 </p>
 
-<pre class="lang:default mark:19-21 decode:true" title="org.codingpedia.demo.rest.service.MyDemoApplication">package org.codingpedia.demo.rest.service;
+<pre><code class="java">package org.codingpedia.demo.rest.service;
 
 import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -433,7 +429,7 @@ import org.glassfish.jersey.server.spring.scope.RequestContextFilter;
 
 /**
  * Registers the components to be used by the JAX-RS application  
- * 
+ *
  * @author ama
  *
  */
@@ -441,13 +437,13 @@ public class MyDemoApplication extends ResourceConfig {
 
     /**
 	* Register JAX-RS application components.
-	*/	
+	*/
 	public MyDemoApplication(){
 		register(RequestContextFilter.class);
 		register(PodcastRestService.class);
 		register(JacksonFeature.class);		
 	}
-}</pre>
+}</code></pre>
 
 The class registers the following components
 
@@ -465,15 +461,15 @@ The class registers the following components
 
 The Spring application context configuration is located in the classpath under `spring/applicationContext.xml`:
 
-<pre class="lang:default decode:true" title="Spring application context configuration">&lt;beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<pre><code class="xml">&lt;beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:tx="http://www.springframework.org/schema/tx"	
+	xmlns:tx="http://www.springframework.org/schema/tx"
 	xsi:schemaLocation="
-		http://www.springframework.org/schema/beans	
+		http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans.xsd
 
-		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx
 		http://www.springframework.org/schema/tx/spring-tx.xsd
 
 		http://www.springframework.org/schema/context
@@ -484,7 +480,7 @@ The Spring application context configuration is located in the classpath under `
 	&lt;!--
 		Instruct Spring to perform declarative transaction management
 		automatically on annotated classes.
-	--&gt;	
+	--&gt;
 	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;  
     &lt;bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager"&gt;
@@ -508,7 +504,7 @@ The Spring application context configuration is located in the classpath under `
 	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoDB" /&gt;
 	    &lt;property name="resourceRef" value="true" /&gt;        
 	&lt;/bean&gt;
-&lt;/beans&gt;</pre>
+&lt;/beans&gt;</code></pre>
 
 <p style="text-align: justify;">
   Nothing special here, it just defines the beans that are needed throughout the demo application. The most important one is the <code>podcastRestService</code> which is actually the entry point class for our RESTful API, and will be thouroughly described in the next paragraphs.
@@ -527,7 +523,7 @@ The Spring application context configuration is located in the classpath under `
 
 The podcast resources are represented in our application by the <a title="https://github.com/amacoder/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" href="https://github.com/amacoder/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" target="_blank">Podcast</a> class:
 
-<pre class="lang:java mark:14 decode:true" title="Podcast.java">package org.codingpedia.demo.rest.entities;
+<pre><code class="java">package org.codingpedia.demo.rest.entities;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -535,8 +531,8 @@ import java.util.Date;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * Podcast entity 
- * 
+ * Podcast entity
+ *
  * @author ama
  *
  */
@@ -558,7 +554,7 @@ public class Podcast implements Serializable {
 	private String feed;
 
 	/** description of the podcast */
-	private String description; 
+	private String description;
 
 	/** when an episode was last published on the feed*/
 	private Date insertionDate;
@@ -623,18 +619,18 @@ public class Podcast implements Serializable {
 		this.insertionDate = insertionDate;
 	}
 
-}</pre>
+}</code></pre>
 
 The strucuture is pretty simple &#8211; there are an `id`, which identifies a podcast, and several other fields that we&#8217;ll can see in the JSON representation:
 
-<pre class="lang:js decode:true">{
+<pre><code class="json">{
 	"id":1,
 	"title":"Quarks & Co - zum Mitnehmen-modified",
 	"linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/1/Quarks-Co-zum-Mitnehmen",
 	"feed":"http://podcast.wdr.de/quarks.xml",
 	"description":"Quarks & Co: Das Wissenschaftsmagazin",
 	"insertionDate":1388213547000
-}</pre>
+}</code></pre>
 
 #### <span id="222_Methods">2.2.2. Methods</span>
 
@@ -645,16 +641,16 @@ The API exposed by our example is described in the following table:
     <td bgcolor="#808080" width="33%">
       <b> Resource</b>
     </td>
-    
+
     <td bgcolor="#808080" width="33%">
       <b> URI</b>
     </td>
-    
+
     <td bgcolor="#808080" width="33%">
       <b> Method</b>
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" valign="TOP" width="100%" height="19">
       <p align="CENTER">
@@ -662,39 +658,39 @@ The API exposed by our example is described in the following table:
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="19">
       Add a list podcasts
     </td>
-    
+
     <td width="33%">
       /podcasts/list
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         POST
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="19">
       Add a new podcast
     </td>
-    
+
     <td width="33%">
       /podcasts/
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         POST
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" valign="TOP" width="100%" height="16">
       <p align="CENTER">
@@ -702,39 +698,39 @@ The API exposed by our example is described in the following table:
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="16">
       List of all podcasts
     </td>
-    
+
     <td width="33%">
       /podcasts/
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         GET
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="16">
       List a single podcast
     </td>
-    
+
     <td width="33%">
       /podcasts/{id}
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         GET
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" valign="TOP" width="100%" height="16">
       <p align="CENTER">
@@ -742,23 +738,23 @@ The API exposed by our example is described in the following table:
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="16">
       Updates a single podcasts or creates one if not existent
     </td>
-    
+
     <td width="33%">
       /podcasts/{id}
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         PUT
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" valign="TOP" width="100%" height="16">
       <p align="CENTER">
@@ -766,32 +762,32 @@ The API exposed by our example is described in the following table:
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="16">
       Delete all podcasts
     </td>
-    
+
     <td width="33%">
       /podcasts/
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         DELETE
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="15">
       Delete a single podcast
     </td>
-    
+
     <td width="33%">
       /podcasts/{id}
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         DELETE
@@ -802,7 +798,7 @@ The API exposed by our example is described in the following table:
 
 As already mentioned the `PodcastRestService` class is the one handling all the rest requests:
 
-<pre class="lang:default mark:4 decode:true" title="PodcastRestService.java">package org.codingpedia.demo.rest.service;
+<pre><code class="java">package org.codingpedia.demo.rest.service;
 ......................
 @Component
 @Path("/podcasts")
@@ -811,9 +807,9 @@ public class PodcastRestService {
 	private static final String HOST = "http://localhost:8080/demo-rest-spring-jersey-tomcat-mybatis-0.0.1-SNAPSHOT";
 
 	@Autowired
-	private PodcastDao podcastDao; 
+	private PodcastDao podcastDao;
 	......................
-}</pre>
+}</code></pre>
 
 <p style="text-align: justify;">
   Notice the <code>@Path("/podcasts")</code> before the class definition. The <a href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/Path.html" target="_top">@Path</a> annotation&#8217;s value is a relative URI path. In the example above, the Java class will be hosted at the URI path <code>/podcasts</code>. The <code>PodcastDao</code> interface is used to communicate with the database.
@@ -833,22 +829,22 @@ For the creation of new resources(&#8220;podcasts&#8221;) I use the <a title="Wi
 
 ###### <span id="22211_Create_a_single_resource_8220podcast8221_from_JSON_input">2.2.2.1.1. Create a single resource (&#8220;podcast&#8221;) from JSON input</span>
 
-<pre class="lang:java decode:true" title="Create a single podcast resource from JSON ">/**
+<pre><code class="java">/**
  * Adds a new resource (podcast) from the given json format (at least title and feed elements are required
  * at the DB level)
- * 
+ *
  * @param podcast
  * @return
  */
-@POST 
+@POST
 @Consumes({MediaType.APPLICATION_JSON})
-@Produces({MediaType.TEXT_HTML})	
+@Produces({MediaType.TEXT_HTML})
 @Transactional
 public Response createPodcast(Podcast podcast) {
 	Long id = podcastDao.createPodcast(podcast);
 
 	return Response.status(201).entity(buildNewPodcastResourceURL(id)).build(); 		
-}</pre>
+}</code></pre>
 
 Annotations
 
@@ -863,10 +859,10 @@ Annotations
 
 ###### <span id="22212_Create_multiple_resources_8220podcasts8221_from_JSON_input">2.2.2.1.2. Create multiple resources (&#8220;podcasts&#8221;) from JSON input</span>
 
-<pre class="lang:java decode:true" title="Create multiple resources from JSON input">/**
+<pre><code class="java">/**
 	 * A list of resources (here podcasts) provided in json format will be added
 	 * to the database.
-	 * 
+	 *
 	 * @param podcasts
 	 * @return
 	 */
@@ -879,7 +875,7 @@ Annotations
 		}
 
 		return Response.status(204).build(); 	
-	}</pre>
+	}</code></pre>
 
 Annotations
 
@@ -898,19 +894,19 @@ Annotations
 
 ###### <span id="22213_Create_a_single_resource_8220podcast8221_from_form">2.2.2.1.3. Create a single resource (&#8220;podcast&#8221;) from form</span>
 
-<pre class="lang:java decode:true" title="Create a single podcast resource from form">/**
+<pre><code class="java">/**
  * Adds a new resource (podcast) from "form" (at least title and feed elements are required
  * at the DB level)
- * 
+ *
  * @param title
  * @param linkOnPodcastpedia
  * @param feed
  * @param description
  * @return
  */
-@POST 
+@POST
 @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-@Produces({MediaType.TEXT_HTML})	
+@Produces({MediaType.TEXT_HTML})
 @Transactional
 public Response createPodcastFromForm(
 					@FormParam("title") String title,
@@ -922,7 +918,7 @@ public Response createPodcastFromForm(
 	Long id = podcastDao.createPodcast(podcast);
 
 	return Response.status(201).entity(buildNewPodcastResourceURL(id)).build(); 		
-}</pre>
+}</code></pre>
 
 Annotations
 
@@ -933,11 +929,11 @@ Annotations
       &#8211; defines the media type, the method accepts, in this case
     </ul>
   </ul>
-  
+
   <p>
     <code>"application/x-www-form-urlencoded"</code>
   </p>
-  
+
   <ul>
     <li style="text-align: justify;">
       @FormParam &#8211; present before the input parameters of the method, this annotation binds the value(s) of a form parameter contained within a request entity body to a resource method parameter. Values are URL decoded unless this is disabled using the <code>Encoded</code> annotation
@@ -954,7 +950,7 @@ Annotations
 
 ###### <span id="22221_Read_all_resources">2.2.2.2.1. Read all resources</span>
 
-<pre class="lang:java decode:true" title="Read all resources">/**
+<pre><code class="java">/**
  * Returns all resources (podcasts) from the database
  * @return
  */
@@ -962,7 +958,7 @@ Annotations
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 public List&lt;Podcast&gt; getPodcasts() {
 	return podcastDao.getPodcasts();
-}</pre>
+}</code></pre>
 
 Annotations
 
@@ -983,7 +979,7 @@ Annotations
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#1_The_example">1. The example</a><ul>
@@ -1020,7 +1016,7 @@ Annotations
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#2_The_coding">2. The coding</a><ul>
           <li>
@@ -1040,7 +1036,7 @@ Annotations
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#22_The_RESTful_API">2.2. The RESTful API</a><ul>
               <li>
@@ -1061,7 +1057,7 @@ Annotations
                       </li>
                     </ul>
                   </li>
-                  
+
                   <li>
                     <a href="#2222_READ">2.2.2.2. READ</a><ul>
                       <li>
@@ -1072,7 +1068,7 @@ Annotations
                       </li>
                     </ul>
                   </li>
-                  
+
                   <li>
                     <a href="#2223_UPDATE">2.2.2.3. UPDATE</a>
                   </li>
@@ -1092,7 +1088,7 @@ Annotations
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#3_Testing">3. Testing</a><ul>
           <li>
@@ -1110,7 +1106,7 @@ Annotations
                   </li>
                 </ul>
               </li>
-              
+
               <li>
                 <a href="#312_Build_the_integration_tests">3.1.2. Build the integration tests</a>
               </li>
@@ -1119,13 +1115,13 @@ Annotations
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#32_Live_tests">3.2. Live tests</a>
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#4_Summary">4. Summary</a>
       </li>
@@ -1260,7 +1256,7 @@ If you want to follow along, you find all you need on GitHub:
   Among other things you need to have Jersey Spring extension in your project&#8217;s classpath. You can easily add that with Maven by having the following dependencies to the <code>pom.xml</code> file of the project:
 </p>
 
-<pre class="lang:default mark:26-49 decode:true" title="pom.xml">&lt;dependency&gt;
+<pre><code class="xml">&lt;dependency&gt;
 	&lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
 	&lt;artifactId&gt;jersey-spring3&lt;/artifactId&gt;
 	&lt;version&gt;2.4.1&lt;/version&gt;
@@ -1283,7 +1279,7 @@ If you want to follow along, you find all you need on GitHub:
 	&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
 	&lt;artifactId&gt;jersey-media-json-jackson&lt;/artifactId&gt;
 	&lt;version&gt;2.4.1&lt;/version&gt;
-&lt;/dependency&gt;</pre>
+&lt;/dependency&gt;</code></pre>
 
 <p class="note_normal" style="text-align: justify;">
   <strong>Note:</strong> The jersey-spring3.jar, uses its own version for Spring libraries, so to use the ones you want, you need to exclude these libraries manually.
@@ -1295,7 +1291,7 @@ If you want to follow along, you find all you need on GitHub:
 
 #### <span id="212_Web_Application_Deployment_Descriptor_8211_webxml">2.1.2. Web Application Deployment Descriptor &#8211; web.xml</span>
 
-<pre class="lang:default mark:18-33 decode:true" title="Web Application Deployment Descriptor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<pre><code class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"&gt;
@@ -1334,8 +1330,8 @@ If you want to follow along, you find all you need on GitHub:
         &lt;res-ref-name&gt;jdbc/restDemoDB&lt;/res-ref-name&gt;
         &lt;res-type&gt;javax.sql.DataSource&lt;/res-type&gt;
         &lt;res-auth&gt;Container&lt;/res-auth&gt;
-    &lt;/resource-ref&gt;	
-&lt;/web-app&gt;</pre>
+    &lt;/resource-ref&gt;
+&lt;/web-app&gt;</code></pre>
 
 ##### <span id="2121_Jersey-servlet">2.1.2.1. Jersey-servlet</span>
 
@@ -1347,7 +1343,7 @@ If you want to follow along, you find all you need on GitHub:
   The implementation of <code>org.codingpedia.demo.rest.service.MyApplication</code> looks like the following in the project:
 </p>
 
-<pre class="lang:default mark:19-21 decode:true" title="org.codingpedia.demo.rest.service.MyDemoApplication">package org.codingpedia.demo.rest.service;
+<pre><code class="java">package org.codingpedia.demo.rest.service;
 
 import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -1355,7 +1351,7 @@ import org.glassfish.jersey.server.spring.scope.RequestContextFilter;
 
 /**
  * Registers the components to be used by the JAX-RS application  
- * 
+ *
  * @author ama
  *
  */
@@ -1363,13 +1359,13 @@ public class MyDemoApplication extends ResourceConfig {
 
     /**
 	* Register JAX-RS application components.
-	*/	
+	*/
 	public MyDemoApplication(){
 		register(RequestContextFilter.class);
 		register(PodcastRestService.class);
 		register(JacksonFeature.class);		
 	}
-}</pre>
+}</code></pre>
 
 The class registers the following components
 
@@ -1387,15 +1383,15 @@ The class registers the following components
 
 The Spring application context configuration is located in the classpath under `spring/applicationContext.xml`:
 
-<pre class="lang:default decode:true" title="Spring application context configuration">&lt;beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<pre><code class="xml">&lt;beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:tx="http://www.springframework.org/schema/tx"	
+	xmlns:tx="http://www.springframework.org/schema/tx"
 	xsi:schemaLocation="
-		http://www.springframework.org/schema/beans	
+		http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans.xsd
 
-		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx
 		http://www.springframework.org/schema/tx/spring-tx.xsd
 
 		http://www.springframework.org/schema/context
@@ -1406,7 +1402,7 @@ The Spring application context configuration is located in the classpath under `
 	&lt;!--
 		Instruct Spring to perform declarative transaction management
 		automatically on annotated classes.
-	--&gt;	
+	--&gt;
 	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;  
     &lt;bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager"&gt;
@@ -1430,7 +1426,7 @@ The Spring application context configuration is located in the classpath under `
 	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoDB" /&gt;
 	    &lt;property name="resourceRef" value="true" /&gt;        
 	&lt;/bean&gt;
-&lt;/beans&gt;</pre>
+&lt;/beans&gt;</code></pre>
 
 <p style="text-align: justify;">
   Nothing special here, it just defines the beans that are needed throughout the demo application. The most important one is the <code>podcastRestService</code> which is actually the entry point class for our RESTful API, and will be thouroughly described in the next paragraphs.
@@ -1449,7 +1445,7 @@ The Spring application context configuration is located in the classpath under `
 
 The podcast resources are represented in our application by the <a title="https://github.com/amacoder/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" href="https://github.com/amacoder/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" target="_blank">Podcast</a> class:
 
-<pre class="lang:java mark:14 decode:true" title="Podcast.java">package org.codingpedia.demo.rest.entities;
+<pre><code class="java">package org.codingpedia.demo.rest.entities;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -1457,8 +1453,8 @@ import java.util.Date;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * Podcast entity 
- * 
+ * Podcast entity
+ *
  * @author ama
  *
  */
@@ -1480,7 +1476,7 @@ public class Podcast implements Serializable {
 	private String feed;
 
 	/** description of the podcast */
-	private String description; 
+	private String description;
 
 	/** when an episode was last published on the feed*/
 	private Date insertionDate;
@@ -1545,18 +1541,18 @@ public class Podcast implements Serializable {
 		this.insertionDate = insertionDate;
 	}
 
-}</pre>
+}</code></pre>
 
 The strucuture is pretty simple &#8211; there are an `id`, which identifies a podcast, and several other fields that we&#8217;ll can see in the JSON representation:
 
-<pre class="lang:js decode:true">{
+<pre><code class="json">{
 	"id":1,
 	"title":"Quarks & Co - zum Mitnehmen-modified",
 	"linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/1/Quarks-Co-zum-Mitnehmen",
 	"feed":"http://podcast.wdr.de/quarks.xml",
 	"description":"Quarks & Co: Das Wissenschaftsmagazin",
 	"insertionDate":1388213547000
-}</pre>
+}</code></pre>
 
 #### <span id="222_Methods">2.2.2. Methods</span>
 
@@ -1567,16 +1563,16 @@ The API exposed by our example is described in the following table:
     <td bgcolor="#808080" width="33%">
       <b> Resource</b>
     </td>
-    
+
     <td bgcolor="#808080" width="33%">
       <b> URI</b>
     </td>
-    
+
     <td bgcolor="#808080" width="33%">
       <b> Method</b>
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" valign="TOP" width="100%" height="19">
       <p align="CENTER">
@@ -1584,39 +1580,39 @@ The API exposed by our example is described in the following table:
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="19">
       Add a list podcasts
     </td>
-    
+
     <td width="33%">
       /podcasts/list
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         POST
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="19">
       Add a new podcast
     </td>
-    
+
     <td width="33%">
       /podcasts/
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         POST
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" valign="TOP" width="100%" height="16">
       <p align="CENTER">
@@ -1624,39 +1620,39 @@ The API exposed by our example is described in the following table:
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="16">
       List of all podcasts
     </td>
-    
+
     <td width="33%">
       /podcasts/
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         GET
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="16">
       List a single podcast
     </td>
-    
+
     <td width="33%">
       /podcasts/{id}
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         GET
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" valign="TOP" width="100%" height="16">
       <p align="CENTER">
@@ -1664,23 +1660,23 @@ The API exposed by our example is described in the following table:
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="16">
       Updates a single podcasts or creates one if not existent
     </td>
-    
+
     <td width="33%">
       /podcasts/{id}
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         PUT
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" valign="TOP" width="100%" height="16">
       <p align="CENTER">
@@ -1688,32 +1684,32 @@ The API exposed by our example is described in the following table:
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="16">
       Delete all podcasts
     </td>
-    
+
     <td width="33%">
       /podcasts/
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         DELETE
       </p>
     </td>
   </tr>
-  
+
   <tr style="height: 10px;">
     <td width="33%" height="15">
       Delete a single podcast
     </td>
-    
+
     <td width="33%">
       /podcasts/{id}
     </td>
-    
+
     <td width="33%">
       <p align="CENTER">
         DELETE
@@ -1724,7 +1720,7 @@ The API exposed by our example is described in the following table:
 
 As already mentioned the `PodcastRestService` class is the one handling all the rest requests:
 
-<pre class="lang:default mark:4 decode:true" title="PodcastRestService.java">package org.codingpedia.demo.rest.service;
+<pre><code class="java">package org.codingpedia.demo.rest.service;
 ......................
 @Component
 @Path("/podcasts")
@@ -1733,9 +1729,9 @@ public class PodcastRestService {
 	private static final String HOST = "http://localhost:8080/demo-rest-spring-jersey-tomcat-mybatis-0.0.1-SNAPSHOT";
 
 	@Autowired
-	private PodcastDao podcastDao; 
+	private PodcastDao podcastDao;
 	......................
-}</pre>
+}</code></pre>
 
 <p style="text-align: justify;">
   Notice the <code>@Path("/podcasts")</code> before the class definition. The <a href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/Path.html" target="_top">@Path</a> annotation&#8217;s value is a relative URI path. In the example above, the Java class will be hosted at the URI path <code>/podcasts</code>. The <code>PodcastDao</code> interface is used to communicate with the database.
@@ -1755,22 +1751,22 @@ For the creation of new resources(&#8220;podcasts&#8221;) I use the <a title="Wi
 
 ###### <span id="22211_Create_a_single_resource_8220podcast8221_from_JSON_input">2.2.2.1.1. Create a single resource (&#8220;podcast&#8221;) from JSON input</span>
 
-<pre class="lang:java decode:true" title="Create a single podcast resource from JSON ">/**
+<pre><code class="java">/**
  * Adds a new resource (podcast) from the given json format (at least title and feed elements are required
  * at the DB level)
- * 
+ *
  * @param podcast
  * @return
  */
-@POST 
+@POST
 @Consumes({MediaType.APPLICATION_JSON})
-@Produces({MediaType.TEXT_HTML})	
+@Produces({MediaType.TEXT_HTML})
 @Transactional
 public Response createPodcast(Podcast podcast) {
 	Long id = podcastDao.createPodcast(podcast);
 
 	return Response.status(201).entity(buildNewPodcastResourceURL(id)).build(); 		
-}</pre>
+}</code></pre>
 
 Annotations
 
@@ -1785,10 +1781,10 @@ Annotations
 
 ###### <span id="22212_Create_multiple_resources_8220podcasts8221_from_JSON_input">2.2.2.1.2. Create multiple resources (&#8220;podcasts&#8221;) from JSON input</span>
 
-<pre class="lang:java decode:true" title="Create multiple resources from JSON input">/**
+<pre><code class="java">/**
 	 * A list of resources (here podcasts) provided in json format will be added
 	 * to the database.
-	 * 
+	 *
 	 * @param podcasts
 	 * @return
 	 */
@@ -1801,7 +1797,7 @@ Annotations
 		}
 
 		return Response.status(204).build(); 	
-	}</pre>
+	}</code></pre>
 
 Annotations
 
@@ -1820,19 +1816,19 @@ Annotations
 
 ###### <span id="22213_Create_a_single_resource_8220podcast8221_from_form">2.2.2.1.3. Create a single resource (&#8220;podcast&#8221;) from form</span>
 
-<pre class="lang:java decode:true" title="Create a single podcast resource from form">/**
+<pre><code class="java">/**
  * Adds a new resource (podcast) from "form" (at least title and feed elements are required
  * at the DB level)
- * 
+ *
  * @param title
  * @param linkOnPodcastpedia
  * @param feed
  * @param description
  * @return
  */
-@POST 
+@POST
 @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-@Produces({MediaType.TEXT_HTML})	
+@Produces({MediaType.TEXT_HTML})
 @Transactional
 public Response createPodcastFromForm(
 					@FormParam("title") String title,
@@ -1844,7 +1840,7 @@ public Response createPodcastFromForm(
 	Long id = podcastDao.createPodcast(podcast);
 
 	return Response.status(201).entity(buildNewPodcastResourceURL(id)).build(); 		
-}</pre>
+}</code></pre>
 
 Annotations
 
@@ -1855,11 +1851,11 @@ Annotations
       &#8211; defines the media type, the method accepts, in this case
     </ul>
   </ul>
-  
+
   <p>
     <code>"application/x-www-form-urlencoded"</code>
   </p>
-  
+
   <ul>
     <li style="text-align: justify;">
       @FormParam &#8211; present before the input parameters of the method, this annotation binds the value(s) of a form parameter contained within a request entity body to a resource method parameter. Values are URL decoded unless this is disabled using the <code>Encoded</code> annotation
@@ -1876,7 +1872,7 @@ Annotations
 
 ###### <span id="22221_Read_all_resources">2.2.2.2.1. Read all resources</span>
 
-<pre class="lang:java decode:true" title="Read all resources">/**
+<pre><code class="java">/**
  * Returns all resources (podcasts) from the database
  * @return
  */
@@ -1884,7 +1880,7 @@ Annotations
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 public List&lt;Podcast&gt; getPodcasts() {
 	return podcastDao.getPodcasts();
-}</pre>
+}</code></pre>
 
 Annotations
 
@@ -1895,16 +1891,16 @@ Annotations
 
 ###### <span id="22222_Read_one_resource">2.2.2.2.2. Read one resource</span>
 
-<pre class="lang:default decode:true" title="Read one resource by id">@GET @Path("{id}")
+<pre><code class="java">@GET @Path("{id}")
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 public Response findById(@PathParam("id") Long id) {		
 	Podcast podcastById = podcastDao.getPodcastById(id);
 	if(podcastById != null) {
-		return Response.status(200).entity(podcastById).build(); 
+		return Response.status(200).entity(podcastById).build();
 	} else {
 		return Response.status(404).entity("The podcast with the id " + id + " does not exist").build();
 	}
-}</pre>
+}</code></pre>
 
 Annotations
 
@@ -1923,30 +1919,30 @@ Annotations
 
 ##### <span id="2223_UPDATE">2.2.2.3. UPDATE</span>
 
-<pre class="lang:java decode:true" title="Update resource(">/**
+<pre><code class="java">/**
  * Updates the attributes of the podcast received via JSON for the given @param id
- * 
+ *
  * If the podcast does not exist yet in the database (verified by &lt;strong&gt;id&lt;/strong&gt;) then
  * the application will try to create a new podcast resource in the db
- * 
+ *
  * @param id
  * @param podcast
  * @return
- */	
+ */
 @PUT @Path("{id}")
 @Consumes({MediaType.APPLICATION_JSON})
-@Produces({MediaType.TEXT_HTML})	
+@Produces({MediaType.TEXT_HTML})
 @Transactional
 public Response updatePodcastById(@PathParam("id") Long id, Podcast podcast) {
 	if(podcast.getId() == null) podcast.setId(id);
-	String message; 
-	int status; 
+	String message;
+	int status;
 	if(podcastWasUpdated(podcast)){
 		status = 200; //OK
 		message = "Podcast has been updated";
 	} else if(podcastCanBeCreated(podcast)){
 		podcastDao.createPodcast(podcast);
-		status = 201; //Created 
+		status = 201; //Created
 		message = "The podcast you provided has been added to the database";
 	} else {
 		status = 406; //Not acceptable
@@ -1957,7 +1953,7 @@ public Response updatePodcastById(@PathParam("id") Long id, Podcast podcast) {
 	}
 
 	return Response.status(status).entity(message).build();		
-}</pre>
+}</code></pre>
 
 Annotations
 
@@ -1991,12 +1987,12 @@ Annotations
 
 ###### <span id="22241_Delete_all_resources">2.2.2.4.1. Delete all resources</span>
 
-<pre class="lang:java decode:true">@DELETE
+<pre><code class="java">@DELETE
 @Produces({MediaType.TEXT_HTML})
 public Response deletePodcasts() {
 	podcastDao.deletePodcasts();
 	return Response.status(200).entity("All podcasts have been successfully removed").build();
-}</pre>
+}</code></pre>
 
 Annotations
 
@@ -2017,12 +2013,12 @@ public Response deletePodcastById(@PathParam("id") Long id) {
 	} else {
 		return Response.status(404).entity("Podcast with the id " + id + " is not present in the database").build();
 	}
-}</pre>
+}</code></pre>
 
 Annotations
 
   * `@DELETE` &#8211; indicates that the method responds to HTTP DELETE requests
-  * `@Path("{id}")` &#8211; identifies the URI path that the class method will serve requests for. The &#8220;id&#8221; value is an embedded variable making an URI path template. It is used in combination with the `@PathParam` variable. 
+  * `@Path("{id}")` &#8211; identifies the URI path that the class method will serve requests for. The &#8220;id&#8221; value is an embedded variable making an URI path template. It is used in combination with the `@PathParam` variable.
       * `@PathParam("id")` &#8211; binds the value of a URI template parameter (&#8220;id&#8221;) to the resource method parameter. The value is URL decoded unless this is di sabled using the `@Encoded` annotation. A default value can be specified using the `@DefaultValue` annotation.
   * `@Produces({MediaType.TEXT_HTML})` &#8211; defines the media type that the method can produce, in this case &#8220;text/html&#8221;. If the podcast is deleted, that is found in the database, a 204 &#8220;No Content&#8221; success status is returnred, otherwise an html document with the status of 404 &#8220;Not found&#8221; is returned
   * `@Transactional` &#8211; Spring annotation, specifies that the method execution, should take place inside a transaction
@@ -2041,12 +2037,12 @@ Annotations
 
 To build a Jersey client the `jersey-client` jar is required in the classpath. With Maven you can add it as a dependency to the `pom.xml` file:
 
-<pre class="lang:default decode:true" title="Jersey Client maven dependency">&lt;dependency&gt;
+<pre><code class="xml">&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;
     &lt;artifactId&gt;jersey-client&lt;/artifactId&gt;
     &lt;version&gt;2.4.1&lt;/version&gt;
     &lt;scope&gt;test&lt;/scope&gt;
-&lt;/dependency&gt;</pre>
+&lt;/dependency&gt;</code></pre>
 
 <h5 style="text-align: justify;">
   <span id="3112_Failsafe_plugin">3.1.1.2. Failsafe plugin</span>
@@ -2056,7 +2052,7 @@ To build a Jersey client the `jersey-client` jar is required in the classpath. W
   The Failsafe Plugin is used during the integration-test and verify phases of the build lifecycle to execute the integration tests of the application. The Failsafe Plugin will not fail the build during the integration-test phase thus enabling the post-integration-test phase to execute.<br /> To use the Failsafe Plugin, you need to add the following configuration to your <code>pom.xml</code>
 </p>
 
-<pre class="lang:default decode:true" title="Maven Failsafe Plugin configuration">&lt;plugins&gt;
+<pre><code class="xml">&lt;plugins&gt;
 	[...]
     &lt;plugin&gt;
         &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
@@ -2078,7 +2074,7 @@ To build a Jersey client the `jersey-client` jar is required in the classpath. W
         &lt;/executions&gt;
     &lt;/plugin&gt;
 	[...]
-&lt;/plugins&gt;</pre>
+&lt;/plugins&gt;</code></pre>
 
 ##### <span id="3112_Jetty_Maven_Plugin">3.1.1.2. Jetty Maven Plugin</span>
 
@@ -2121,7 +2117,7 @@ As mentioned, the integration tests will be executed against a running jetty ser
 		&lt;/executions&gt;
 	&lt;/plugin&gt;
 	[...]
-&lt;/plugins&gt;</pre>
+&lt;/plugins&gt;</code></pre>
 
 <p class="note_normal" style="text-align: justify;">
   <strong>Note:</strong> In the <code>pre-integration-test</code> phase the Jetty server will be started, after stopping any running instance to free up the port, and in the <code>post-integration-phase</code> it will be stopped. The <code>scanIntervalSeconds</code> has to be set to 0, and <code>daemon</code> to true.
@@ -2141,7 +2137,7 @@ I am using JUnit as the testing framework. By default, the Failsafe Plugin will 
 
 I have created a single test class &#8211; `RestDemoServiceIT` &#8211; that will test the read (GET) methods, but the procedure should be the same for all the other:
 
-<pre class="lang:java decode:true">public class RestDemoServiceIT {
+<pre><code class="java">public class RestDemoServiceIT {
 
 	[....]
 	@Test
@@ -2170,7 +2166,7 @@ I have created a single test class &#8211; `RestDemoServiceIT` &#8211; that will
 								.writeValueAsString(podcast));
 
 	}
-}</pre>
+}</code></pre>
 
 <p style="text-align: justify;">
   <strong>Note:</strong>
@@ -2185,13 +2181,13 @@ I have created a single test class &#8211; `RestDemoServiceIT` &#8211; that will
 
 The Failsafe Plugin can be invoked by calling the `<tt>verify</tt>` phase of the build lifecycle.
 
-<pre class="lang:default decode:true" title="Maven command to invoke the integration tests">mvn verify</pre>
+<pre><code class="bash">mvn verify</code></pre>
 
 To start jetty on port 8888 you need to set the `jetty.port` property to 8888. In Eclipse I use the following configuration:
 
 <div id="attachment_1190" style="width: 310px" class="wp-caption alignnone">
   <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/run-integration-tests-eclipse.png"><img class="size-medium wp-image-1190" src="http://www.codingpedia.org/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png" alt="Run integration tests from Eclipse" width="300" height="148" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/run-integration-tests-eclipse.png 991w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
+
   <p class="wp-caption-text">
     Run integration tests from Eclipse
   </p>
@@ -2247,21 +2243,21 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
   * <a title="http://www.codingpedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" href="http://www.codingpedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">http://www.codingpedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>
@@ -2271,19 +2267,19 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
   <p>
     Adrian&#8217;s favorite Java and REST books (affiliate links)
   </p>
-  
+
   <div class="amazon_book">
   </div>
-  
+
   <div class="amazon_book">
   </div>
-  
+
   <div class="amazon_book">
   </div>
-  
+
   <div class="amazon_book">
   </div>
-  
+
   <div class="clear">
   </div>
 </div>

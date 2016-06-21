@@ -34,7 +34,7 @@ dsq_thread_id:
 </h2>
 
 <p style="text-align: justify;">
-We strive to share coding knowledge and making coding sharing knowledge easy for everyone who shares the same mission with us. Why? Well, because we believe that technological advancement and efficiency, driven among other things by the humans&#8217; ability to program machines, has a positive impact on human evolution and well-being. We have also grounded a non-profit organization - [Codigpedia Association](//codingpedia.org/codingpedia-association) - to give our intentions a legal form.
+We strive to share coding knowledge and making coding sharing knowledge easy for everyone who shares the same mission with us. Why? Well, because we believe that technological advancement and efficiency, driven among other things by the humans&#8217; ability to program machines, has a positive impact on human evolution and well-being. We have also grounded a non-profit organization - [Codigpedia Association](//www.codingpedia.org/codingpedia-association) - to give our intentions a legal form.
 </p>
 
 <h2 style="text-align: justify;">

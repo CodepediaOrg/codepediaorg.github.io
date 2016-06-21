@@ -167,20 +167,18 @@ These are headers that clients may use when issuing HTTP requests in order to ma
 The first one is by using the `header` method of the `javax.ws.rs.core.Response`. This method adds an arbitrary header to the `ResponseBuilder` (_`ResponseBuilder` is a class used to build `Response` instances that contain metadata instead of or in addition to an entity_):
 
 <pre>
-  <code class="java">
-    @GET
-    @Path("{id}")
-    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-    public Response getPodcastById(@PathParam("id") Long id, @QueryParam("detailed") boolean detailed)
-    		throws IOException,	AppException {
-    	Podcast podcastById = podcastService.getPodcastById(id);
-    	return Response.ok() //200
-    			.entity(podcastById, detailed ? new Annotation[]{PodcastDetailedView.Factory.get()} : new Annotation[0])
-    			.header("Access-Control-Allow-Origin", "*")
-    			.header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT")
-    			.allow("OPTIONS").build();
-    }
-  </code>
+<code class="java">@GET
+@Path("{id}")
+@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+public Response getPodcastById(@PathParam("id") Long id, @QueryParam("detailed") boolean detailed)
+		throws IOException,	AppException {
+	Podcast podcastById = podcastService.getPodcastById(id);
+	return Response.ok() //200
+			.entity(podcastById, detailed ? new Annotation[]{PodcastDetailedView.Factory.get()} : new Annotation[0])
+			.header("Access-Control-Allow-Origin", "*")
+			.header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT")
+			.allow("OPTIONS").build();
+}</code>
 </pre>
 
 <p style="text-align: justify;">
@@ -206,32 +204,30 @@ The first one is by using the `header` method of the `javax.ws.rs.core.Response`
 </p>
 
 <pre>
-  <code class="java">
-    package org.codingpedia.demo.rest.util;
+<code class="java">package org.codingpedia.demo.rest.util;
 
-    import java.io.IOException;
+import java.io.IOException;
 
-    import javax.ws.rs.container.ContainerRequestContext;
-    import javax.ws.rs.container.ContainerResponseContext;
-    import javax.ws.rs.container.ContainerResponseFilter;
-    import javax.ws.rs.core.MultivaluedMap;
+import javax.ws.rs.container.ContainerRequestContext;
+import javax.ws.rs.container.ContainerResponseContext;
+import javax.ws.rs.container.ContainerResponseFilter;
+import javax.ws.rs.core.MultivaluedMap;
 
-    public class CORSResponseFilter
-    implements ContainerResponseFilter {
+public class CORSResponseFilter
+implements ContainerResponseFilter {
 
-    	public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext)
-    			throws IOException {
+	public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext)
+			throws IOException {
 
-    		MultivaluedMap&lt;String, Object&gt; headers = responseContext.getHeaders();
+		MultivaluedMap&lt;String, Object&gt; headers = responseContext.getHeaders();
 
-    		headers.add("Access-Control-Allow-Origin", "*");
-    		//headers.add("Access-Control-Allow-Origin", "http://podcastpedia.org"); //allows CORS requests only coming from podcastpedia.org		
-    		headers.add("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");			
-    		headers.add("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, X-Codingpedia");
-    	}
+		headers.add("Access-Control-Allow-Origin", "*");
+		//headers.add("Access-Control-Allow-Origin", "http://podcastpedia.org"); //allows CORS requests only coming from podcastpedia.org		
+		headers.add("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");			
+		headers.add("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, X-Codingpedia");
+	}
 
-    }
-  </code>
+}</code>
 </pre>
 
 In the example above the `CORSResponseFilter` always  adds
@@ -251,15 +247,13 @@ In the example above the `CORSResponseFilter` always  adds
 </p>
 
 <pre>
-  <code class="java">
-    /**
-    * Register JAX-RS application components.
-    */
-    public RestDemoJaxRsApplication(){
-       register(CORSResponseFilter.class);
-       //other registrations omitted for brevity
-    }
-  </code>
+<code class="java">/**
+* Register JAX-RS application components.
+*/
+public RestDemoJaxRsApplication(){
+   register(CORSResponseFilter.class);
+   //other registrations omitted for brevity
+}</code>
 </pre>
 
 Well, that&#8217;s it &#8211; you&#8217;ve learned how easy it is to add CORS support to the server side with Jersey.

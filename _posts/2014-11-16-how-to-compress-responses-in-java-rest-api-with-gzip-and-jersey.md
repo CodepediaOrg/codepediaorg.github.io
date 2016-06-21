@@ -36,8 +36,10 @@ tags:
   - rest
 ---
 <p style="text-align: justify;">
-  There may be cases when your REST api provides responses that are very long, and we all know how important transfer speed and bandwidth still are on mobile devices/networks. I think this is the first performance optimization point one needs to address, when developing REST apis that support mobile apps. Guess what? Because responses are text, we can compress them. And with today&#8217;s power of smartphones and tablets uncompressing them on the client side should not be a big deal&#8230; So in this post I will present how you can SELECTIVELY compress your REST API responses, if you&#8217;ve built it in Java with <a title="https://jersey.java.net/documentation/latest/user-guide.html" href="https://jersey.java.net/documentation/latest/user-guide.html" target="_blank">Jersey</a>, which is  the JAX-RS Reference Implementation (and more)&#8230; <!--more-->
+  There may be cases when your REST api provides responses that are very long, and we all know how important transfer speed and bandwidth still are on mobile devices/networks. I think this is the first performance optimization point one needs to address, when developing REST apis that support mobile apps. Guess what? Because responses are text, we can compress them. And with today&#8217;s power of smartphones and tablets uncompressing them on the client side should not be a big deal&#8230; So in this post I will present how you can SELECTIVELY compress your REST API responses, if you&#8217;ve built it in Java with <a title="https://jersey.java.net/documentation/latest/user-guide.html" href="https://jersey.java.net/documentation/latest/user-guide.html" target="_blank">Jersey</a>, which is  the JAX-RS Reference Implementation (and more)&#8230; 
 </p>
+
+<!--more-->
 
 <h2 style="text-align: justify;">
   Short Version (compress every response)
@@ -51,18 +53,18 @@ tags:
   All I had to do in this case is adding the following line of code to my JaxRs application class:
 </p>
 
-<pre class="lang:java mark:9 decode:true " title="EncodingFilter activation for resource">public class RestDemoJaxRsApplication extends ResourceConfig {
+<pre><code class="java">public class RestDemoJaxRsApplication extends ResourceConfig {
 	/**
 	 * Register JAX-RS application components.
 	 */
 	public RestDemoJaxRsApplication() {
-		
+
         packages("org.codingpedia.demo.rest");
 		register(EntityFilteringFeature.class);
 		EncodingFilter.enableFor(this, GZipEncoder.class);		
-		
+
 	}
-}</pre>
+}</code></pre>
 
 <p style="text-align: justify; padding-left: 30px;">
   <em>Thank you Marek Potociar(<a class="ProfileHeaderCard-screennameLink u-linkComplex js-nav" style="color: #8899a6;" href="https://twitter.com/marek_potociar">@<span class="u-linkComplex-target">marek_potociar</span></a>) for pointing this out. </em>
@@ -89,7 +91,7 @@ tags:
 </p>
 
   * <a title="http://www.codingpedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" href="http://www.codingpedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" target="_blank">How to add CORS support on the server side in Java with Jersey</a>, where I&#8217;ve shown how to CORS-enable a REST API
-  
+
     **and **
   * <a title="http://www.codingpedia.org/ama/how-to-log-in-spring-with-slf4j-and-logback/" href="http://www.codingpedia.org/ama/how-to-log-in-spring-with-slf4j-and-logback/" target="_blank">How to log in Spring with SLF4J and Logback</a>, where I&#8217;ve shown how to log requests and responses from the REST API
 
@@ -101,7 +103,7 @@ tags:
 
 So let&#8217;s have a look at our GZip Writer Interceptor:
 
-<pre class="lang:java decode:true" title="GZip Writer Interceptor ">package org.codingpedia.demo.rest.interceptors;
+<pre><code class="java">package org.codingpedia.demo.rest.interceptors;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -115,19 +117,19 @@ import javax.ws.rs.ext.WriterInterceptorContext;
 @Provider
 @Compress
 public class GZIPWriterInterceptor implements WriterInterceptor {
-	 
+
     @Override
     public void aroundWriteTo(WriterInterceptorContext context)
                     throws IOException, WebApplicationException {
-    	
+
     	MultivaluedMap&lt;String,Object&gt; headers = context.getHeaders();
     	headers.add("Content-Encoding", "gzip");
-    	
+
         final OutputStream outputStream = context.getOutputStream();
         context.setOutputStream(new GZIPOutputStream(outputStream));
         context.proceed();
     }
-}</pre>
+}</code></pre>
 
 **Note:**
 
@@ -153,7 +155,7 @@ public class GZIPWriterInterceptor implements WriterInterceptor {
   Filters and interceptors can be <span class="emphasis"><em>name-bound</em></span>. Name binding is a concept that allows to say to a JAX-RS runtime that a specific filter or interceptor will be executed only for a specific resource method. When a filter or an interceptor is limited only to a specific resource method we say that it is <span class="emphasis"><em>name-bound</em></span>. Filters and interceptors that do not have such a limitation are called <span class="emphasis"><em>global</em></span>. In our case we&#8217;ve built the @Compress annotation:
 </p>
 
-<pre class="lang:java decode:true" title="Compress annotation">package org.codingpedia.demo.rest.interceptors;
+<pre><code class="xml">package org.codingpedia.demo.rest.interceptors;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -163,11 +165,11 @@ import javax.ws.rs.NameBinding;
 //@Compress annotation is the name binding annotation
 @NameBinding
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Compress {}</pre>
+public @interface Compress {}</code></pre>
 
 and used it to mark methods on resources which should be gzipped (_e.g. when GET-ing all the podcasts with the `PodcastsResource`_):
 
-<pre class="lang:java mark:23 decode:true" title="@Compress annotation usage on resource method">@Component
+<pre><code class="java">@Component
 @Path("/podcasts")
 public class PodcastsResource {
 
@@ -175,13 +177,13 @@ public class PodcastsResource {
 	private PodcastService podcastService;
 
     ...........................
-	
+
 	/*
 	 * *********************************** READ ***********************************
 	 */
 	/**
 	 * Returns all resources (podcasts) from the database
-	 * 
+	 *
 	 * @return
 	 * @throws IOException
 	 * @throws JsonMappingException
@@ -199,9 +201,9 @@ public class PodcastsResource {
 				orderByInsertionDate, numberDaysToLookBack);
 		return podcasts;
 	}
-	
+
     ...........................
-}</pre>
+}</code></pre>
 
 ### 2. Testing
 
@@ -213,17 +215,16 @@ public class PodcastsResource {
 
 ##### Request:
 
-<pre class="lang:default mark:3 decode:true" title="Request example">GET http://localhost:8888/demo-rest-jersey-spring/podcasts/?orderByInsertionDate=DESC HTTP/1.1
+<pre><code class="http">GET http://localhost:8888/demo-rest-jersey-spring/podcasts/?orderByInsertionDate=DESC HTTP/1.1
 Accept-Encoding: gzip,deflate
 Accept: application/json, application/xml
 Host: localhost:8888
 Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
-</pre>
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)</code></pre>
 
 ##### Response:
 
-<pre class="lang:default decode:true" title="GZipped json response, automatically unzipped by SOAPui">HTTP/1.1 200 OK
+<pre><code class="http">HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Encoding: gzip
 Content-Length: 409
@@ -238,7 +239,7 @@ Server: Jetty(9.0.7.v20131107)
       "description": "Quarks & Co: Das Wissenschaftsmagazin",
       "insertionDate": "2014-10-29T10:46:13.00+0100"
    },
-   
+
    {
       "id": 1,
       "title": "- The Naked Scientists Podcast - Stripping Down Science",
@@ -247,7 +248,7 @@ Server: Jetty(9.0.7.v20131107)
       "description": "The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.",
       "insertionDate": "2014-10-29T10:46:02.00+0100"
    }
-]</pre>
+]</code></pre>
 
 <p style="text-align: justify;">
   SOAPui recognizes the <code>Content-Type: gzip</code> header, we&#8217;ve added in the <code>GZIPWriterInterceptor</code> and automatically uncompresses the response and displays it readable to the human eye.
@@ -261,16 +262,6 @@ Server: Jetty(9.0.7.v20131107)
   <strong> Tip:</strong> If you want really learn how to design and implement REST API in Java read the following <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
 </p>
 
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
-
 <p style="text-align: center;">
   <strong>Keep on coding!!!</strong>
 </p>
@@ -278,30 +269,28 @@ Server: Jetty(9.0.7.v20131107)
 ## Resources
 
   1. <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
-  2. <a title="https://jersey.java.net/documentation/latest/user-guide.html" href="https://jersey.java.net/documentation/latest/user-guide.html" target="_blank">Jersey User Guide </a> 
-      1. 
+  2. <a title="https://jersey.java.net/documentation/latest/user-guide.html" href="https://jersey.java.net/documentation/latest/user-guide.html" target="_blank">Jersey User Guide </a>
+      1.
       2. <a title="https://jersey.java.net/documentation/latest/user-guide.html#filters-and-interceptors" href="https://jersey.java.net/documentation/latest/user-guide.html#filters-and-interceptors" target="_blank">Filters and interceptors</a>
   3. <a title="http://www.gzip.org/" href="http://www.gzip.org/" target="_blank">Gzip.org</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>
 </div>
-
-&nbsp;

@@ -36,11 +36,24 @@ tags:
   - velocity
 ---
 <p style="text-align: justify;">
+  In this post I will present how you can format and send automatic emails with Spring and Velocity. Spring offers alone the capability to create simple text emails, which is fine for simple cases, but in typical enterprise application you wouldn&#8217;t want to do that for a number of reasons:
+</p>
+
+  * creating HTML-based email content in Java code is tedious and error prone
+  * there is no clear separation between display logic and business logic
+  * changing the display structure of the email requires writing Java code, recompiling, redeploying etc
+
+<p style="text-align: justify;">
+  Typically the approach taken to address these issues is to use a template library such as FreeMarker or Velocity to define the display structure of email content. For Podcastpedia I chose Velocity, which is a free open source Java-based templating engine from Apache. In the end my only coding task will be to create the data that is to be rendered in the email template and sending the email.
+</p>
+<!--more-->
+
+<p style="text-align: justify;">
   <div id="toc_container" class="no_bullets">
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#Scenario">Scenario</a>
@@ -54,13 +67,13 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#12_Velocity_setup">1.2. Velocity setup</a>
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#2_Email_notification_service">2. Email notification service</a><ul>
           <li>
@@ -76,13 +89,13 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#24_Beans_configuration">2.4. Beans configuration</a>
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Summary">Summary</a>
       </li>
@@ -91,22 +104,6 @@ tags:
       </li>
     </ul>
   </div>
-</p>
-
-<p style="text-align: justify;">
-  In this post I will present how you can format and send automatic emails with Spring and Velocity. Spring offers alone the capability to create simple text emails, which is fine for simple cases, but in typical enterprise application you wouldn&#8217;t want to do that for a number of reasons:
-</p>
-
-  * creating HTML-based email content in Java code is tedious and error prone
-  * there is no clear separation between display logic and business logic
-  * changing the display structure of the email requires writing Java code, recompiling, redeploying etc
-
-<p style="text-align: justify;">
-  Typically the approach taken to address these issues is to use a template library such as FreeMarker or Velocity to define the display structure of email content. For Podcastpedia I chose Velocity, which is a free open source Java-based templating engine from Apache. In the end my only coding task will be to create the data that is to be rendered in the email template and sending the email.
-</p>
-
-<p style="text-align: justify;">
-  <!--more-->
 </p>
 
 <p style="text-align: justify;">
@@ -150,12 +147,12 @@ Let’s see now how Spring and Velocity play together:
       The <a class="ulink" style="color: #4183c4;" href="http://www.oracle.com/technetwork/java/jaf11-139815.html" target="_top">JAF</a> <code class="literal">activation.jar</code> library
     </li>
   </ul>
-  
+
   <p>
     I load these dependencies with Maven, so here&#8217;s the configuration snippet from pom.xml:
   </p>
-  
-  <pre class="lang:default decode:true " title="Spring mail dependencies">&lt;dependency&gt;
+
+<pre><code class="xml">&lt;dependency&gt;
 	&lt;groupId&gt;javax.mail&lt;/groupId&gt;
 	&lt;artifactId&gt;mail&lt;/artifactId&gt;
 	&lt;version&gt;1.4.7&lt;/version&gt;
@@ -165,22 +162,22 @@ Let’s see now how Spring and Velocity play together:
 	&lt;groupId&gt;jaf&lt;/groupId&gt;
 	&lt;artifactId&gt;activation&lt;/artifactId&gt;
 	&lt;version&gt;1.0.2&lt;/version&gt;
-	&lt;scope&gt;provided&lt;/scope&gt;	
-&lt;/dependency&gt;</pre>
-  
+	&lt;scope&gt;provided&lt;/scope&gt;
+&lt;/dependency&gt;</code></pre>
+
   <h3 style="text-align: justify;">
     <span id="12_Velocity_setup">1.2. Velocity setup</span>
   </h3>
-  
+
   <p>
     To use Velocity to create your email template(s), you will need to have the Velocity libraries available on your classpath in the first place.
   </p>
-  
+
   <p style="text-align: justify;">
     With Maven you have the following dependencies in the pom.xml file:
   </p>
-  
-  <pre class="lang:default decode:true" title="Velocity dependencies in Maven">&lt;!-- velocity --&gt;
+
+<pre><code class="xml">&lt;!-- velocity --&gt;
 &lt;dependency&gt;
 	&lt;groupId&gt;org.apache.velocity&lt;/groupId&gt;
 	&lt;artifactId&gt;velocity&lt;/artifactId&gt;
@@ -190,12 +187,12 @@ Let’s see now how Spring and Velocity play together:
 	&lt;groupId&gt;org.apache.velocity&lt;/groupId&gt;
 	&lt;artifactId&gt;velocity-tools&lt;/artifactId&gt;
 	&lt;version&gt;2.0&lt;/version&gt;
-&lt;/dependency&gt;</pre>
-  
+&lt;/dependency&gt;</code></pre>
+
   <h2>
     <span id="2_Email_notification_service">2. Email notification service</span>
   </h2>
-  
+
   <p style="text-align: justify;">
     I defined the EmailNotificationService interface for email notification after a successful podcast submission. It has just one operation, namely to notify the Podcastpedia personnel about the proposed podcast.
   </p>
@@ -205,7 +202,7 @@ Let’s see now how Spring and Velocity play together:
   The code bellow presents the EmailNotificationServiceImpl, which is the implementation of the interface mentioned above:
 </p>
 
-<pre class="lang:java decode:true" title="Java code to send notification email ">package org.podcastpedia.web.suggestpodcast;
+<pre><code class="java">package org.podcastpedia.web.suggestpodcast;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -223,12 +220,12 @@ import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.ui.velocity.VelocityEngineUtils;
 
 public class EmailNotificationServiceImpl implements EmailNotificationService {
-	
+
 	@Autowired
-	private ConfigService configService;	
+	private ConfigService configService;
     private JavaMailSender mailSender;
     private VelocityEngine velocityEngine;
-    
+
 	public void sendSuggestPodcastNotification(final SuggestedPodcast suggestedPodcast) {
 	      MimeMessagePreparator preparator = new MimeMessagePreparator() {
 		        @SuppressWarnings({ "rawtypes", "unchecked" })
@@ -241,7 +238,7 @@ public class EmailNotificationServiceImpl implements EmailNotificationService {
 		             message.setSentDate(new Date());
 		             Map model = new HashMap();	             
 		             model.put("newMessage", suggestedPodcast);
-		             
+
 		             String text = VelocityEngineUtils.mergeTemplateIntoString(
 		                velocityEngine, "velocity/suggestPodcastNotificationMessage.vm", "UTF-8", model);
 		             message.setText(text, true);
@@ -249,11 +246,10 @@ public class EmailNotificationServiceImpl implements EmailNotificationService {
 		       };
 		       mailSender.send(preparator);			
 	}
-	
+
 //getters and setters omitted for brevity
-	
-}
-</pre>
+
+}</code></pre>
 
 <p style="text-align: justify;">
   Let&#8217;s go a little bit through the code now:
@@ -276,22 +272,22 @@ public class EmailNotificationServiceImpl implements EmailNotificationService {
   Another helpful class when dealing with JavaMail messages is the <code>org.springframework.mail.javamail.MimeMessageHelper</code> class, which shields you from having to use the verbose JavaMail API. As you can see by using the <code>MimeMessageHelper</code>, it becomes pretty easy to create a MimeMessage:
 </p>
 
-<pre class="lang:java decode:true" title="Usage of MimeMessageHelper">MimeMessageHelper message = new MimeMessageHelper(mimeMessage);
+<pre><code class="java">MimeMessageHelper message = new MimeMessageHelper(mimeMessage);
  message.setTo(configService.getValue("EMAIL_TO_SUGGEST_PODCAST"));
  message.setBcc("adrianmatei@gmail.com");
  message.setFrom(new InternetAddress(suggestedPodcast.getEmail()) );
  message.setSubject("New suggested podcast");
- message.setSentDate(new Date());</pre>
+ message.setSentDate(new Date());</code></pre>
 
 ### <span id="23_VelocityEngine">2.3. VelocityEngine</span>
 
 The next thing to note is how the email text is being created:
 
-<pre class="lang:java decode:true" title="Create email text with Velocity template">Map model = new HashMap();	             
+<pre><code class="java">Map model = new HashMap();	             
 model.put("newPodcast", suggestedPodcast);		             
 String text = VelocityEngineUtils.mergeTemplateIntoString(
 velocityEngine, "velocity/suggestPodcastNotificationMessage.vm", "UTF-8", model);
-message.setText(text, true);</pre>
+message.setText(text, true);</code></pre>
 
   * the `VelocityEngineUtils.mergeTemplateIntoString` method merges the specified template (`suggestPodcastNotificationMessage.vm` present in the velocity folder from the classpath) with the given model (model &#8211; &#8220;newPodcast&#8221;), which a map containing model names as keys and model objects as values.
   * you also need to the specify the velocityEngine you work with
@@ -303,14 +299,14 @@ message.setText(text, true);</pre>
   You can see below the Velocity template that is being used in this example. Note that it is HTML-based, and since it is plain text it can be created using your favorite HTML or text editor.
 </p>
 
-<pre class="lang:xhtml decode:true" title="Velocity template">&lt;html&gt;
+<pre><code class="html">&lt;html&gt;
 	&lt;body&gt;
 		&lt;h3&gt;Hi Adrian, you have a new suggested podcast!&lt;/h3&gt;
 		&lt;p&gt;
-			From - ${newMessage.name} / ${newMessage.email} 
+			From - ${newMessage.name} / ${newMessage.email}
 		&lt;/p&gt;
 		&lt;h3&gt;
-			Podcast metadataline 
+			Podcast metadataline
 		&lt;/h3&gt;
 		&lt;p&gt;
 			${newMessage.metadataLine}
@@ -323,13 +319,13 @@ message.setText(text, true);</pre>
 		&lt;/p&gt;
 	&lt;/body&gt;
 
-&lt;/html&gt;</pre>
+&lt;/html&gt;</code></pre>
 
 ### <span id="24_Beans_configuration">2.4. Beans configuration</span>
 
 Let&#8217;s see how everything is configured in the application context:
 
-<pre class="lang:default decode:true" title="Email service configuration">&lt;!-- ********************************* email service configuration ******************************* --&gt;
+<pre><code class="xml">&lt;!-- ********************************* email service configuration ******************************* --&gt;
 &lt;bean id="smtpSession" class="org.springframework.jndi.JndiObjectFactoryBean"&gt;
 	&lt;property name="jndiName" value="java:comp/env/mail/Session"/&gt;
 &lt;/bean&gt;          
@@ -347,7 +343,7 @@ Let&#8217;s see how everything is configured in the application context:
 &lt;bean id="emailNotificationServiceSuggestPodcast" class="org.podcastpedia.web.suggestpodcast.EmailNotificationServiceImpl"&gt;
   &lt;property name="mailSender" ref="mailSender"/&gt;
   &lt;property name="velocityEngine" ref="velocityEngine"/&gt;
-&lt;/bean&gt;</pre>
+&lt;/bean&gt;</code></pre>
 
   * the `JavaMailSender` has a JNDI reference to a smtp session. A generic example how to configure an email session with a google account can be found in the Jetty9-gmail-account.xml file
   * the `VelocityEngineFactoryBean` is a factory that configures the VelocityEngine and provides it as a bean reference.
@@ -367,9 +363,9 @@ Let&#8217;s see how everything is configured in the application context:
   <div id="end-donate-text">
     If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
   </div>
-  
+
   <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
+
   <!-- End PayPal Donations -->
 </div>
 
@@ -379,21 +375,21 @@ Let&#8217;s see how everything is configured in the application context:
   2. <a title="http://velocity.apache.org/index.html" href="http://velocity.apache.org/index.html" target="_blank">Apache Velocity Project</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

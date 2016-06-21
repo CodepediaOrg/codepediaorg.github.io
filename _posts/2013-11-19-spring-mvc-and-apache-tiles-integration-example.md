@@ -34,11 +34,43 @@ tags:
   - spring mvc
   - tiles
 ---
+<p class="note_alert" style="text-align: justify;">
+  <strong>Note:</strong> This is a re-edit of the post <a title="Spring 3 and Tiles 2 Integration" href="http://www.codingpedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration.</a> It uses now the latest version of Apache Tiles (at the time of the writing 3.0.1) and presents how Apache Tiles is used on top of Spring/Spring MVC to construct the layout of the <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> website
+</p>
+
+## <span id="1_Why_Apache_Tiles">1. Why Apache Tiles?</span>
+
+Well, because it
+
+<div>
+  <ul>
+    <li style="text-align: justify;">
+      is a free open-sourced templating framework for modern Java applications.  Based upon the Composite pattern it is built to simplify the development of user interfaces.
+    </li>
+    <li style="text-align: justify;">
+      remains, for complex web sites, the easiest and most elegant way to work alongside any MVC technology.
+    </li>
+  </ul>
+
+  <p style="text-align: justify;">
+    Tiles allows authors to define page fragments which can be assembled into a complete pages at runtime. These fragments, or tiles, can be used as simple includes in order to reduce the duplication of common page elements or embedded within other tiles to develop a series of reusable templates. These templates streamline the development of a consistent look and feel across an entire application.
+  </p>
+
+  <p style="text-align: justify;">
+    <p class="note_normal">
+      <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    </p>
+
+  </p>
+</div>
+
+<!--more-->
+
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#1_Why_Apache_Tiles">1. Why Apache Tiles?</a>
@@ -69,7 +101,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#5_Summary">5. Summary</a>
     </li>
@@ -77,37 +109,6 @@ tags:
       <a href="#6_Resources">6. Resources</a>
     </li>
   </ul>
-</div>
-
-<p class="note_alert" style="text-align: justify;">
-  <strong>Note:</strong> This is a re-edit of the post <a title="Spring 3 and Tiles 2 Integration" href="http://www.codingpedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration.</a> It uses now the latest version of Apache Tiles (at the time of the writing 3.0.1) and presents how Apache Tiles is used on top of Spring/Spring MVC to construct the layout of the <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> website
-</p>
-
-## <span id="1_Why_Apache_Tiles">1. Why Apache Tiles?</span>
-
-Well, because it
-
-<div>
-  <ul>
-    <li style="text-align: justify;">
-      is a free open-sourced templating framework for modern Java applications.  Based upon the Composite pattern it is built to simplify the development of user interfaces.
-    </li>
-    <li style="text-align: justify;">
-      remains, for complex web sites, the easiest and most elegant way to work alongside any MVC technology.
-    </li>
-  </ul>
-  
-  <p style="text-align: justify;">
-    Tiles allows authors to define page fragments which can be assembled into a complete pages at runtime. These fragments, or tiles, can be used as simple includes in order to reduce the duplication of common page elements or embedded within other tiles to develop a series of reusable templates. These templates streamline the development of a consistent look and feel across an entire application.
-  </p>
-  
-  <p style="text-align: justify;">
-    <p class="note_normal">
-      <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
-    </p>
-    
-    <!--more-->
-  </p>
 </div>
 
 ## <span id="2_Necessary_artifacts">2. Necessary artifacts</span>
@@ -120,18 +121,16 @@ Well, because it
   You can use one dependency to download all Tiles supported technologies with the following dependency declaration:
 </p>
 
-<div>
-  <pre class="lang:default decode:true" title="Tiles extras dependency">&lt;dependency&gt;
+
+<pre><code class="xml">&lt;dependency&gt;
     &lt;groupId&gt;org.apache.tiles&lt;/groupId&gt;
     &lt;artifactId&gt;tiles-extras&lt;/artifactId&gt;
     &lt;version&gt;${tiles.version}&lt;/version&gt;
-&lt;/dependency&gt;</pre>
-</div>
+&lt;/dependency&gt;</code></pre>
 
 or, as in my case where I didn&#8217;t need all the extras, you can put in your `pom.xml` only the ones you need:
 
-<div>
-  <pre class="lang:default decode:true" title="Tiles dependencies for Podcastpedia.org">&lt;dependency&gt;
+<pre><code class="xml">&lt;dependency&gt;
 	&lt;groupId&gt;org.apache.tiles&lt;/groupId&gt;
 	&lt;artifactId&gt;tiles-jsp&lt;/artifactId&gt;
 	&lt;version&gt;${tiles.version}&lt;/version&gt;
@@ -140,18 +139,17 @@ or, as in my case where I didn&#8217;t need all the extras, you can put in your 
 	&lt;groupId&gt;org.apache.tiles&lt;/groupId&gt;
 	&lt;artifactId&gt;tiles-servlet&lt;/artifactId&gt;
 	&lt;version&gt;${tiles.version}&lt;/version&gt;
-&lt;/dependency&gt;	
+&lt;/dependency&gt;
 &lt;dependency&gt;
 	&lt;groupId&gt;org.apache.tiles&lt;/groupId&gt;
 	&lt;artifactId&gt;tiles-template&lt;/artifactId&gt;
 	&lt;version&gt;${tiles.version}&lt;/version&gt;
-&lt;/dependency&gt;	
+&lt;/dependency&gt;
 &lt;dependency&gt;
 	&lt;groupId&gt;org.apache.tiles&lt;/groupId&gt;
 	&lt;artifactId&gt;tiles-el&lt;/artifactId&gt;
 	&lt;version&gt;${tiles.version}&lt;/version&gt;
-&lt;/dependency&gt;</pre>
-</div>
+&lt;/dependency&gt;</code></pre>
 
 <p class="note_normal" style="text-align: justify;">
   <strong>Note:</strong> The <code>tiles.version</code> is currently 3.0.1. For this to work you need to use at least version <strong>3.2</strong> of Spring MVC.
@@ -161,12 +159,12 @@ or, as in my case where I didn&#8217;t need all the extras, you can put in your 
 
 For better readability and separation of concerns the Spring Tiles configuration has been placed in a separate application context file _`pcm-tiles.xml`_ :
 
-<pre class="lang:default mark:34,48 decode:true" title="Spring application context - Tiles configuration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<pre><code class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:p="http://www.springframework.org/schema/p"
     xsi:schemaLocation="
-		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"&gt;
 
     &lt;!-- Views mapped in views.properties (PDF, XLS classes, and others) --&gt;
@@ -215,8 +213,8 @@ For better readability and separation of concerns the Spring Tiles configuration
                 &lt;value&gt;/WEB-INF/tile-defs/definitions.xml&lt;/value&gt;
             &lt;/list&gt;
         &lt;/property&gt;
-    &lt;/bean&gt; 
-&lt;/beans&gt;</pre>
+    &lt;/bean&gt;
+&lt;/beans&gt;</code></pre>
 
 Of interest here are
 
@@ -235,7 +233,7 @@ After installing and learning some of Tiles concepts, it&#8217;s time to show yo
 
 <div id="attachment_939" style="width: 370px" class="wp-caption alignnone">
   <a href="http://www.codingpedia.org/wp-content/uploads/2013/07/Template.png"><img class="size-full wp-image-939" src="http://www.codingpedia.org/wp-content/uploads/2013/07/Template.png" alt="Template" width="360" height="378" srcset="http://www.codingpedia.org/wp-content/uploads/2013/07/Template.png 360w, http://www.codingpedia.org/wp-content/uploads/2013/07/Template-285x300.png 285w" sizes="(max-width: 360px) 100vw, 360px" /></a>
-  
+
   <p class="wp-caption-text">
     Template
   </p>
@@ -250,7 +248,7 @@ As you can see the layout of the <a title="Podcastpedia.org, knowledge to go" hr
 
 The first step was to create a JSP page that acts as this layout and place it under __/WEB-INF/template/_template.jsp_ file:
 
-<pre class="lang:default mark:24,27,30,34 decode:true" title="File:  /WEB-INF/template/template.jsp">&lt;!DOCTYPE HTML&gt;
+<pre><code class="xml">&lt;!DOCTYPE HTML&gt;
 &lt;%@ include file="/WEB-INF/template/includes.jsp" %&gt;
 
 &lt;%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -286,7 +284,7 @@ The first step was to create a JSP page that acts as this layout and place it un
 			&lt;tiles:insertAttribute name="footer" /&gt;
 		&lt;/div&gt;
 	&lt;/body&gt;
-&lt;/html&gt;</pre>
+&lt;/html&gt;</code></pre>
 
 You can see highlighted the four attributes `header`, `navigation_bar` (menu), `content` (body) and `footer`, which resemble the template layout from the picture. Besides these there are still some other Tiles attributes, like `title`, `page_description` or `og_image`, that will get filled when rendering actual pages.
 
@@ -305,7 +303,7 @@ A **definition** is a composition to be rendered to the end user; essentially a 
 
 Initially I created a /`<em>WEB-INF/<em>tile-defs/template</em>.xml,</em>` with some default .jsp files (`defaultHeader.jsp`, `default_navigation_bar.jsp`,  `defaultContent.jsp` and `defaultFooter.jsp`). This file acts as an abstract definition and is extended by all the other Tiles definitions across the Podcastpedia application:
 
-<pre class="lang:default decode:true" title="File: /WebContent/WEB-INF/tile-defs/template.xml">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+<pre><code class="xml">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 
 &lt;!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"&gt;
 
@@ -318,13 +316,13 @@ Initially I created a /`<em>WEB-INF/<em>tile-defs/template</em>.xml,</em>` with 
         &lt;put-attribute name="footer" value="/WEB-INF/template/defaultFooter.jsp" /&gt;
     &lt;/definition&gt;
  ......
-&lt;/tiles-definitions&gt;</pre>
+&lt;/tiles-definitions&gt;</code></pre>
 
 #### <span id="442_Create_concrete_definitions">4.4.2. Create concrete definitions</span>
 
 Now let&#8217;s see some examples of definitions extending the `defaultTemplate` defined above. For example the definition rendering the <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">home page of Podcastpedia.org</a> looks like the following:
 
-<pre class="lang:default mark:3 decode:true" title="Snippet start page tiles definition from /WEB-INF/tile-defs/definitions.xml">&lt;tiles-definitions&gt;
+<pre><code class="xml">&lt;tiles-definitions&gt;
  ......
 	&lt;definition name="startPage_def" extends="defaultTemplate"&gt;
 		&lt;put-attribute name="title" value="Podcastpedia, knowledge to go" /&gt;
@@ -336,7 +334,7 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
  	    &lt;put-attribute name="og_image" value="http://www.podcastpedia.org/static/images/fb_share.png"/&gt;
 	&lt;/definition&gt;
  ......
-&lt;/tiles-definitions&gt;</pre>
+&lt;/tiles-definitions&gt;</code></pre>
 
 <p style="text-align: justify;">
   Note that the Tiles attributes are filled with <strong>static</strong> values specific to the start page, and there are some attributes from the <code>defaultTemplate</code> (like <code>header</code> and <code>footer</code>) that are not overriden &#8211; that means they will be inherited from the <code>defaultTemplate</code> (one of the advantages of inheritence).
@@ -346,7 +344,7 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
   Let&#8217;s see another example. The  <code>podcastDetails</code>-definition is used to render a podcast details page :
 </p>
 
-<pre class="lang:default mark:4 decode:true" title="Dynamic Tiles attributes">&lt;tiles-definitions&gt;
+<pre><code class="xml">&lt;tiles-definitions&gt;
  ......
     &lt;definition name="podcastDetails" extends="defaultTemplate"&gt;
     	&lt;put-attribute name="title" expression="${podcast.title}"/&gt;
@@ -358,7 +356,7 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
  	&lt;put-attribute name="og_image" expression="${podcast.urlOfImageToDisplay}"/&gt;
     &lt;/definition&gt;
  ......
-&lt;/tiles-definitions&gt;</pre>
+&lt;/tiles-definitions&gt;</code></pre>
 
 <p style="text-align: justify;">
   Notice here how I use <strong>dynamic</strong> values for the Tiles attributes &#8211; for example the <code>title</code> attribute (line 4) is set dynamically with a value(<code>${podcast.title}</code>) passed from the controller. If you follow the link &#8211; <a title="Podcast details example" href="http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science" target="_blank">The Naked Scientist Podcast</a> &#8211; and inspect the source code or the tab name in your browser, you will notice the title of the page was set to &#8220;- The Naked Scientists Podcast &#8211; Stripping Down Science&#8221;
@@ -381,9 +379,9 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
     <div id="end-donate-text">
       If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
     </div>
-    
+
     <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-    
+
     <!-- End PayPal Donations -->
   </div>
 </p>
@@ -397,42 +395,42 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
 
 <div class="amazon_books">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>
   </div>
-  
+
   <p>
     Adrian&#8217;s favorite Spring and Java books
   </p>
-  
+
   <div class="amazon_book">
   </div>
-  
+
   <div class="amazon_book">
   </div>
-  
+
   <div class="amazon_book">
   </div>
-  
+
   <div class="amazon_book">
   </div>
-  
+
   <div class="clear">
   </div>
 </div>

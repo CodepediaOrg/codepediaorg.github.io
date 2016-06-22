@@ -31,7 +31,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#Necessary_artifacts">Necessary artifacts</a>
@@ -52,7 +52,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Resources">Resources</a>
     </li>
@@ -88,7 +88,7 @@ tags:
 <!--more-->
 
 
-  
+
 The basic Tiles dependency with only servlet support can be added this way:
 
 <div>
@@ -118,7 +118,7 @@ For better readability the Spring Tiles configuration has been placed in a separ
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:p="http://www.springframework.org/schema/p"
     xsi:schemaLocation="
-		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"&gt;
 
     &lt;!-- Views mapped in views.properties (PDF, XLS classes, and others) --&gt;
@@ -167,7 +167,7 @@ For better readability the Spring Tiles configuration has been placed in a separ
                 &lt;value&gt;/WEB-INF/tile-defs/definitions.xml&lt;/value&gt;
             &lt;/list&gt;
         &lt;/property&gt;
-    &lt;/bean&gt; 
+    &lt;/bean&gt;
 &lt;/beans&gt;</pre>
 
 Of interest are
@@ -187,7 +187,7 @@ After installing and learning some of Tiles concepts, it&#8217;s time to show yo
 
 <div id="attachment_939" style="width: 370px" class="wp-caption alignnone">
   <a href="http://www.codingpedia.org/wp-content/uploads/2013/07/Template.png"><img class="size-full wp-image-939" src="http://www.codingpedia.org/wp-content/uploads/2013/07/Template.png" alt="Template" width="360" height="378" srcset="http://www.codingpedia.org/wp-content/uploads/2013/07/Template.png 360w, http://www.codingpedia.org/wp-content/uploads/2013/07/Template-285x300.png 285w" sizes="(max-width: 360px) 100vw, 360px" /></a>
-  
+
   <p class="wp-caption-text">
     Template
   </p>
@@ -315,7 +315,7 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
 Well, this is pretty much all you need to do to integrate Tiles 2 in Spring MVC.
 
 If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="http://www.podcastpedia.org/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org/" target="_blank">Podcastpedia.org</a>
-  
+
 We promise to only share high quality podcasts and episodes.
 
 ## <span id="Resources">Resources</span>
@@ -324,43 +324,22 @@ We promise to only share high quality podcasts and episodes.
   2. <a title="Springsource" href="http://www.springsource.org/" target="_blank">http://www.springsource.org/</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
-  </div>
-</div>
-
-<div class="amazon_books">
-  <p>
-    Adrian&#8217;s favorite Spring and Java books
-  </p>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="clear">
   </div>
 </div>

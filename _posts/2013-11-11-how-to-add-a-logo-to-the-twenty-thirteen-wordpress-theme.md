@@ -35,7 +35,7 @@ tags:
 
 <div id="attachment_918" style="width: 614px" class="wp-caption alignnone">
   <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/Preview-2013.png"><img class="size-large wp-image-918" alt="Preview Twenty Thirteen Theme" src="http://www.codingpedia.org/wp-content/uploads/2013/11/Preview-2013-1024x616.png" width="604" height="363" srcset="http://www.codingpedia.org/wp-content/uploads/2013/11/Preview-2013-1024x616.png 1024w, http://www.codingpedia.org/wp-content/uploads/2013/11/Preview-2013-300x180.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/11/Preview-2013.png 1439w" sizes="(max-width: 604px) 100vw, 604px" /></a>
-  
+
   <p class="wp-caption-text">
     Preview Twenty Thirteen Theme
   </p>
@@ -63,7 +63,7 @@ tags:
 
 <div id="attachment_920" style="width: 596px" class="wp-caption alignnone">
   <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/Firebug-inspection.png"><img class=" wp-image-920  " alt="Firebug HTML inspector" src="http://www.codingpedia.org/wp-content/uploads/2013/11/Firebug-inspection.png" width="586" height="287" srcset="http://www.codingpedia.org/wp-content/uploads/2013/11/Firebug-inspection.png 837w, http://www.codingpedia.org/wp-content/uploads/2013/11/Firebug-inspection-300x146.png 300w" sizes="(max-width: 586px) 100vw, 586px" /></a>
-  
+
   <p class="wp-caption-text">
     Firebug HTML inspector
   </p>
@@ -193,59 +193,23 @@ Now to the **logo adding** part, I floated both the image (line 27) and the `tit
 
   1. <a title="WordPress - Child Themes" href="http://codex.wordpress.org/Child_Themes" target="_blank">WordPress &#8211; Child Themes</a>
 
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <p>
-    <img id="author_portrait" style="float: left; margin-right: 20px;" alt="Podcastpedia image" src="http://www.codingpedia.org/wp-content/uploads/2014/01/AdrianMatei.png" />
-  </p>
-  
-  <div id="author_details">
-    Adrian Matei is the creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, unleashed programming" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy.
-  </div>
-  
-  <div id="follow_social" style="clear: both;">
-    <p>
-      <span><br /> Get connected on</span>
+  <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
+    <p id="about_author_header">
+      <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
     </p>
-    
-    <div id="social_logos">
-      <div class="social_logo">
-        <a href="https://plus.google.com/u/0/111084336624234885358/posts" target="_blank"><img style="float: left;" alt="Google plus" src="http://www.codingpedia.org/wp-content/uploads/2013/10/g_plus.png" /></a>
+
+    <div id="author_details" style="text-align: justify;">
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    </div>
+
+    <div id="follow_social" style="clear: both;">
+      <div id="social_logos">
+        <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
       </div>
-      
-      <div class="social_logo">
-        <a href="http://www.linkedin.com/in/adrianmatei1983" target="_blank"><img class="social_logo" alt="Linkedin" src="http://www.codingpedia.org/wp-content/uploads/2013/10/linkedin.png" /></a>
-      </div>
-      
-      <div class="social_logo">
-        <a href="https://twitter.com/adrianimatei" target="_blank"><img class="social_logo" alt="Twitter" src="http://www.codingpedia.org/wp-content/uploads/2013/10/twitter.png" /></a>
-      </div>
-      
-      <div class="social_logo">
-        <a href="https://www.facebook.com/adrian.matei.90" target="_blank"><img class="social_logo" alt="Facebook" src="http://www.codingpedia.org/wp-content/uploads/2013/10/fb.png" /></a>
-      </div>
-      
-      <div class="social_logo">
-        <a href="mailto:ama@codingpedia.org" target="_blank"><img class="social_logo" alt="Email" src="http://www.codingpedia.org/wp-content/uploads/2013/10/email.png" /></a>
-      </div>
-      
+
       <div class="clear">
       </div>
     </div>
   </div>
-  
-  <p>
-    Adrian&#8217;s favorite WordPress books
-  </p>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="clear">
-  </div>
-</div>

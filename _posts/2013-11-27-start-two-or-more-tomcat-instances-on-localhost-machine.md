@@ -39,7 +39,7 @@ format: aside
 
 <div id="attachment_984" style="width: 721px" class="wp-caption alignnone">
   <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/clone-tomcat-directory.png"><img class="size-full wp-image-984" src="http://www.codingpedia.org/wp-content/uploads/2013/11/clone-tomcat-directory.png" alt="Clone Tomcat directory" width="711" height="192" srcset="http://www.codingpedia.org/wp-content/uploads/2013/11/clone-tomcat-directory.png 711w, http://www.codingpedia.org/wp-content/uploads/2013/11/clone-tomcat-directory-300x81.png 300w" sizes="(max-width: 711px) 100vw, 711px" /></a>
-  
+
   <p class="wp-caption-text">
     Clone Tomcat directory
   </p>
@@ -72,7 +72,7 @@ modified
 And then start your two instances. Because I still get an `java.net.BindException: Address already in use: JVM_Bind error`:
 
 <pre class="lang:default decode:true" title="Address already in use Error">27.11.2013 06:56:47 org.apache.catalina.core.StandardServer await
-SEVERE: StandardServer.await: create[localhost:8005]: 
+SEVERE: StandardServer.await: create[localhost:8005]:
 java.net.BindException: Address already in use: JVM_Bind
 	at java.net.PlainSocketImpl.socketBind(Native Method)
 	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:383)
@@ -108,38 +108,23 @@ modified
 
 <p class="note_normal">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>
   </div>
 </p>
-
-<div class="amazon_books">
-  <p>
-    Adrian&#8217;s favorite Tomcat books (affiliate links)
-  </p>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="clear">
-  </div>
-</div>

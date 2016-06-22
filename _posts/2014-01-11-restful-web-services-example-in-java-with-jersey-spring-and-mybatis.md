@@ -2262,24 +2262,3 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
     </div>
   </div>
 </div>
-
-<div class="amazon_books">
-  <p>
-    Adrian&#8217;s favorite Java and REST books (affiliate links)
-  </p>
-
-  <div class="amazon_book">
-  </div>
-
-  <div class="amazon_book">
-  </div>
-
-  <div class="amazon_book">
-  </div>
-
-  <div class="amazon_book">
-  </div>
-
-  <div class="clear">
-  </div>
-</div>

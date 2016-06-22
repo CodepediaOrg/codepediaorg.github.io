@@ -374,18 +374,6 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
   Well, this is pretty much all you need to do to integrate Tiles in Spring MVC &#8211; you&#8217;ve learned what libraries you need, how to configure Tiles in the application context, how to create abstract and concrete Tiles definitions, and fill them with both static and dynamic values.
 </p>
 
-<p style="text-align: justify;">
-  <div id="end-donate">
-    <div id="end-donate-text">
-      If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-    </div>
-
-    <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-
-    <!-- End PayPal Donations -->
-  </div>
-</p>
-
 ## <span id="6_Resources">6. Resources</span>
 
   1. <a title="Spring 3 and Tiles 2 Integration" href="http://www.codingpedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration</a>
@@ -393,7 +381,6 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
   3. <a title="Apache Tiles" href="http://tiles.apache.org/" target="_blank">http://tiles.apache.org/</a>
   4. <a title="Springsource" href="http://www.springsource.org/" target="_blank">http://www.springsource.org/</a>
 
-<div class="amazon_books">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
     <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
 
@@ -414,23 +401,3 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
       </div>
     </div>
   </div>
-
-  <p>
-    Adrian&#8217;s favorite Spring and Java books
-  </p>
-
-  <div class="amazon_book">
-  </div>
-
-  <div class="amazon_book">
-  </div>
-
-  <div class="amazon_book">
-  </div>
-
-  <div class="amazon_book">
-  </div>
-
-  <div class="clear">
-  </div>
-</div>

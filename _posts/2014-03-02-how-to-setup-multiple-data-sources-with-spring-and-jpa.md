@@ -39,7 +39,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#1_Showcase">1. Showcase</a>
@@ -61,7 +61,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#3_Testing_it_8211_optional">3. Testing it &#8211; optional</a>
     </li>
@@ -86,7 +86,7 @@ tags:
 </p>
 
   * <a title="http://www.codingpedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" href="http://www.codingpedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis</a>
-  
+
     and
   * <a title="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>
 
@@ -135,14 +135,14 @@ The first thing I did was to modify the `persistence.xml` file by adding a new `
 In the Spring application context I just added new beans for the entity manager, transaction manger and datasource:
 
 <pre class="lang:default mark:22-24,37-49,58-61 decode:true">&lt;beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:tx="http://www.springframework.org/schema/tx"	
+	xmlns:tx="http://www.springframework.org/schema/tx"
 	xsi:schemaLocation="
-		http://www.springframework.org/schema/beans	
+		http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans.xsd
 
-		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx
 		http://www.springframework.org/schema/tx/spring-tx.xsd
 
 		http://www.springframework.org/schema/context
@@ -183,7 +183,7 @@ In the Spring application context I just added new beans for the entity manager,
         &lt;/property&gt;
     &lt;/bean&gt;        
 
-	&lt;bean id="podcastDao" class="org.codingpedia.demo.rest.dao.impl.PodcastDaoJPA2Impl"/&gt;	
+	&lt;bean id="podcastDao" class="org.codingpedia.demo.rest.dao.impl.PodcastDaoJPA2Impl"/&gt;
     &lt;bean id="podcastRestService" class="org.codingpedia.demo.rest.service.PodcastRestService" /&gt;
     &lt;bean id="podcastLegacyRestService" class="org.codingpedia.demo.rest.service.PodcastLegacyRestService" /&gt;
 
@@ -194,7 +194,7 @@ In the Spring application context I just added new beans for the entity manager,
 	&lt;bean id="restDemoLegacyDS" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
 	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoLegacyDB" /&gt;
 	    &lt;property name="resourceRef" value="true" /&gt;        
-	&lt;/bean&gt;	
+	&lt;/bean&gt;
 &lt;/beans&gt;</pre>
 
 Note the persistenceUnitName property of the entityManagerFactory is pointing to the corresponding persistence unit.
@@ -271,16 +271,16 @@ If you are using transactions via the @Transactional annotation you need to spec
 <pre class="lang:java mark:2 decode:true" title="Specify transaction manager name">/********************* Create related methods implementation ***********************/
 @Transactional("transactionManager")
 public Long createPodcast(Podcast podcast) throws AppException {
-	
+
 	validateInputForCreation(podcast);
-	
+
 	//verify existence of resource in the db (feed must be unique)
 	PodcastEntity podcastByFeed = podcastDao.getPodcastByFeed(podcast.getFeed());
 	if(podcastByFeed != null){
 		throw new AppException(Response.Status.CONFLICT.getStatusCode(), 409, "Podcast with feed already existing in the database with the id " + podcastByFeed.getId(),
 				"Please verify that the feed and title are properly generated", AppConstants.BLOG_POST_URL);
 	}
-	
+
 	return podcastDao.createPodcast(new PodcastEntity(podcast));
 }</pre>
 
@@ -296,11 +296,11 @@ Once Jetty is started execute GET operations on the following URIs:
   * <a title="http://localhost:8888/demo-rest-spring-jersey-jpa2-hibernate-0.0.1-SNAPSHOT/legacy/podcasts/2" href="http://localhost:8888/demo-rest-spring-jersey-jpa2-hibernate-0.0.1-SNAPSHOT/legacy/podcasts/2" target="_blank">http://localhost:8888/demo-rest-spring-jersey-jpa2-hibernate-0.0.1-SNAPSHOT/legacy/podcasts/2</a>
 
 to get all podcasts, or respectively a specific podcast from the &#8220;legacy&#8221; system.
-  
-You can also have look at my video on how to test a REST API with the <a title="https://plus.google.com/104025798250320128549/posts" href="https://plus.google.com/104025798250320128549/posts" target="_blank">DEV HTTP Client</a>
-  
 
-  
+You can also have look at my video on how to test a REST API with the <a title="https://plus.google.com/104025798250320128549/posts" href="https://plus.google.com/104025798250320128549/posts" target="_blank">DEV HTTP Client</a>
+
+
+
 Well, that&#8217;s it. You&#8217;ve learned how to configure multiple a Spring application to access multiple data sources via JPA.
 
 <p class="note_normal">
@@ -326,43 +326,22 @@ Well, that&#8217;s it. You&#8217;ve learned how to configure multiple a Spring a
   * <a title="http://stackoverflow.com/questions/1961371/spring-multiple-transactional-datasource" href="http://stackoverflow.com/questions/1961371/spring-multiple-transactional-datasource" target="_blank">http://stackoverflow.com/questions/1961371/spring-multiple-transactional-datasource</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
-  </div>
-</div>
-
-<div class="amazon_books">
-  <p>
-    Adrian&#8217;s favorite JPA and Java books (affiliate links)
-  </p>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="clear">
   </div>
 </div>

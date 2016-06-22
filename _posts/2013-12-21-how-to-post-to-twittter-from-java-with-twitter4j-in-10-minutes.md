@@ -32,7 +32,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#The_example">The example</a><ul>
@@ -44,7 +44,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Appendix_Create_a_Twitter_application">(Appendix) Create a Twitter application</a><ul>
         <li>
@@ -58,7 +58,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Resources">Resources</a>
     </li>
@@ -66,14 +66,14 @@ tags:
 </div>
 
 
-  
+
 I have just posted my first tweet from Java
 
 <blockquote class="twitter-tweet" lang="en-gb">
   <p>
     &#8221; A Visit to Transylvania&#8221; by Euromaxx: Lifestyle Europe (DW) <a href="http://t.co/MJFDD4540y">http://t.co/MJFDD4540y</a>
   </p>
-  
+
   <p>
     — Podcastpedia.org (@podcastpedia) <a href="https://twitter.com/podcastpedia/statuses/414285653900533760">December 21, 2013</a>
   </p>
@@ -92,7 +92,7 @@ I have just posted my first tweet from Java
 </p>
 
 
-  
+
 <!--more-->
 
 <h2 style="text-align: justify;">
@@ -150,7 +150,7 @@ import twitter4j.TwitterFactory;
 
 public class TestTwitterPosting {
 
-	private static Logger LOG = Logger.getLogger(TestTwitterPosting.class);	
+	private static Logger LOG = Logger.getLogger(TestTwitterPosting.class);
 
 	@Test
 	public void testPostingToTwitter() throws TwitterException{
@@ -168,7 +168,7 @@ public class TestTwitterPosting {
 
 I ran the test method and in the log console I got:
 
-<pre class="lang:default decode:true" title="Log result">2013-12-21 07:46:16,461 DEBUG [org.podcastpedia.admin.general.TestTwitterPosting:20] - &lt;Successfully updated status to " A Visit to Transylvania" by Euromaxx: Lifestyle Europe (DW) 
+<pre class="lang:default decode:true" title="Log result">2013-12-21 07:46:16,461 DEBUG [org.podcastpedia.admin.general.TestTwitterPosting:20] - &lt;Successfully updated status to " A Visit to Transylvania" by Euromaxx: Lifestyle Europe (DW)
  http://t.co/MJFDD4540y&gt;</pre>
 
 I couldn&#8217;t believe my eyes so I went to check Twitter, and there it was, the tweet shown at the start of the post.
@@ -187,7 +187,7 @@ I couldn&#8217;t believe my eyes so I went to check Twitter, and there it was, t
 
 <div id="attachment_1053" style="width: 310px" class="wp-caption alignnone">
   <a href="http://www.codingpedia.org/wp-content/uploads/2013/12/create-twitter-application.png"><img class="size-medium wp-image-1053" src="http://www.codingpedia.org/wp-content/uploads/2013/12/create-twitter-application-300x208.png" alt="Create new Twitter application" width="300" height="208" srcset="http://www.codingpedia.org/wp-content/uploads/2013/12/create-twitter-application-300x208.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/12/create-twitter-application.png 990w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
+
   <p class="wp-caption-text">
     Create new Twitter application
   </p>
@@ -199,7 +199,7 @@ Once you&#8217;ve done that you will be redirected to your application under <a 
 
 <div id="attachment_1054" style="width: 310px" class="wp-caption alignnone">
   <a href="http://www.codingpedia.org/wp-content/uploads/2013/12/OAuth-settings.png"><img class="size-medium wp-image-1054" src="http://www.codingpedia.org/wp-content/uploads/2013/12/OAuth-settings-300x171.png" alt="OAuth settings" width="300" height="171" srcset="http://www.codingpedia.org/wp-content/uploads/2013/12/OAuth-settings-300x171.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/12/OAuth-settings.png 970w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
+
   <p class="wp-caption-text">
     Home->My applications->Details:OAuth settings
   </p>
@@ -211,7 +211,7 @@ Once you&#8217;ve done that you will be redirected to your application under <a 
 
 <div id="attachment_1055" style="width: 310px" class="wp-caption alignnone">
   <a href="http://www.codingpedia.org/wp-content/uploads/2013/12/write-permission.png"><img class="size-medium wp-image-1055" src="http://www.codingpedia.org/wp-content/uploads/2013/12/write-permission-300x234.png" alt="Grant write access " width="300" height="234" srcset="http://www.codingpedia.org/wp-content/uploads/2013/12/write-permission-300x234.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/12/write-permission.png 836w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
+
   <p class="wp-caption-text">
     Grant write access
   </p>
@@ -250,43 +250,22 @@ You have now all the parameters needed to configure Twitter4J and post on Twitte
   * <a title="OAuth" href="http://oauth.net/" target="_blank">OAuth</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
-  </div>
-</div>
-
-<div class="amazon_books">
-  <p>
-    Adrian&#8217;s favorite Spring and Java books (affiliate links)
-  </p>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="clear">
   </div>
 </div>

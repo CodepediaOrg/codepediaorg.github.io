@@ -46,7 +46,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#1_Cache">1. Cache</a><ul>
@@ -58,7 +58,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#2_Flushing_the_cache">2. Flushing the cache</a><ul>
         <li>
@@ -71,13 +71,13 @@ tags:
             </li>
           </ul>
         </li>
-        
+
         <li>
           <a href="#22_Rest_service_call">2.2. Rest service call</a>
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Resources">Resources</a><ul>
         <li>
@@ -98,12 +98,12 @@ This was supposed to be a read-only cache with the possibility to flush it from
 public interface ReferenceDataCache {
 
 	/**
-	 * Returns all reference data required in the application 
+	 * Returns all reference data required in the application
 	 */
 	ReferenceData getReferenceData();
- 
+
 	/**
-	 * evict/flush all data from cache 
+	 * evict/flush all data from cache
 	 */
 	void evictAll();
 }</pre>
@@ -118,19 +118,19 @@ The caching functionality defines two simple methods:
 <pre class="lang:java decode:true" title="Simple reference data cache implementation with @Singleton">@ConcurrencyManagement(ConcurrencyManagementType.CONTAINER)
 @Singleton
 public class ReferenceDataCacheBean implements ReferenceDataCache {
-	
+
 	private static final String ALL_REFERENCE_DATA_KEY = "ALL_REFERENCE_DATA";
 
 	private ConcurrentHashMap&lt;String, Object&gt; refDataCache = null;
 
 	@EJB
 	ReferenceDataService referenceDataService;
-	
+
 	@PostConstruct
 	public void initialize(){
-		this.refDataCache = new ConcurrentHashMap&lt;&gt;(); 
+		this.refDataCache = new ConcurrentHashMap&lt;&gt;();
 	}
-	
+
 	@Override
 	@Lock(LockType.READ)
 	public ReferenceData getReferenceData() {
@@ -139,7 +139,7 @@ public class ReferenceDataCacheBean implements ReferenceDataCache {
 		} else {
 			ReferenceData referenceData = referenceDataService.getReferenceData();
 			refDataCache.put(ALL_REFERENCE_DATA_KEY, referenceData);
-			
+
 			return referenceData;
 		}		
 	}
@@ -147,7 +147,7 @@ public class ReferenceDataCacheBean implements ReferenceDataCache {
 	@Override
 	public void evictAll() {
 		refDataCache.clear(); 		
-	}	
+	}
 	..........
 }</pre>
 
@@ -197,7 +197,7 @@ The method exposed will only allow the reset of the cache via JMX:
 
 <pre class="lang:java decode:true" title="CacheRest MBean">@MXBean
 public interface CacheResetMXBean {
-	void resetReferenceDataCache();	
+	void resetReferenceDataCache();
 }</pre>
 
 <p style="padding-left: 30px; text-align: justify;">
@@ -209,13 +209,13 @@ public interface CacheResetMXBean {
 <pre class="lang:java decode:true" title="MBean implementation of CacheReset">@Singleton
 @Startup
 public class CacheReset implements CacheResetMXBean {
-    
+
 	private MBeanServer platformMBeanServer;
     private ObjectName objectName = null;
-    	
+
 	@EJB
 	ReferenceDataCache referenceDataCache;
-	
+
     @PostConstruct
     public void registerInJMX() {
         try {
@@ -227,19 +227,19 @@ public class CacheReset implements CacheResetMXBean {
             if(existing.size() &gt; 0){
             	platformMBeanServer.unregisterMBean(objectName);
             }
-            
+
             platformMBeanServer.registerMBean(this, objectName);
         } catch (Exception e) {
             throw new IllegalStateException("Problem during registration of Monitoring into JMX:" + e);
         }
-    }	
-	
+    }
+
 	@Override
 	public void resetReferenceDataCache() {
 		referenceDataCache.evictAll();
 
 	}
-	
+
 }</pre>
 
 ** Note: **
@@ -257,30 +257,30 @@ I&#8217;ve also built in the possibility to clear the cache by calling a REST re
 
 <pre class="lang:java decode:true " title="Rest calls on Reference data cache">@Path("/reference-data")
 public class ReferenceDataResource {
-	
+
 	@EJB
 	ReferenceDataCache referenceDataCache;
-	
+
         @POST
 	@Path("flush-cache")
 	public Response flushReferenceDataCache() {
 		referenceDataCache.evictAll();
-		
+
 		return Response.status(Status.OK).entity("Cache successfully flushed").build();
-	}	
-	
+	}
+
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 	public Response getReferenceData(@QueryParam("version") String version) {
 		ReferenceData referenceData = referenceDataCache.getReferenceData();				
-		
+
 		if(version!=null && version.equals(referenceData.getVersion())){
 			return Response.status(Status.NOT_MODIFIED).entity("Reference data was not modified").build();				
 		} else {
 			return Response.status(Status.OK)
 					.entity(referenceData).build();				
 		}
-	}	
+	}
 }</pre>
 
 <p style="text-align: justify;">
@@ -295,16 +295,6 @@ public class ReferenceDataResource {
   Well, that&#8217;s it. In this post we&#8217;ve learned how to build a simple cache with Java EE annotations :). Of course you can easily extend the cache functionality to offer more granular access/clearing to cached objects. Don&#8217;t forget to use <code>LockType.WRITE</code> for the clear methods in this case&#8230;
 </p>
 
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
-
 <h2 class="title" style="color: #000000;">
   <span id="Resources"><span id="Resources">Resources</span></span>
 </h2>
@@ -318,21 +308,21 @@ public class ReferenceDataResource {
   5. <a title="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" target="_blank">Spring Cache Abstraction</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

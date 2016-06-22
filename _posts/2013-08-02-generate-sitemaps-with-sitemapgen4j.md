@@ -48,7 +48,7 @@ Check out the latest version <a title="Mvn repository" href="http://mvnrepositor
 <!--more-->
 
 
-  
+
 The podcasts from Podcastpedia.org have an update frequency (DAILY, WEEKLY, MONTHLY, TERMINATED, UNKNOWN) associated, so it made sense to organize sub-sitemaps to make use of the _lastMod_ and _changeFreq_ properties accordingly. This way you can modify the _lastMod_ of the daily sitemap in the sitemap index without modifying the _lastMod_ of the monthly sitemap, and the Google bot doesn&#8217;t need to check the monthly sitemap everyday.
 
 ## Generation of sitemap
@@ -114,7 +114,7 @@ _Method : createSitemapForPodcastsWithFrequency &#8211; generates one sitemap fi
 </pre>
 
 The generated file contains URLs to podcasts and episodes, with changeFreq and lastMod set accordingly.
-  
+
 Snippet from the generated <a title="sitemap for monthly updated podcasts" href="http://www.podcastpedia.org/sitemap_MONTHLY.xml.gz" target="_blank">sitemap_MONTHLY.xml</a>:
 
 <pre class="brush: xml; title: ; notranslate" title="">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
@@ -144,7 +144,7 @@ Snippet from the generated <a title="sitemap for monthly updated podcasts" href=
 ## Generation of sitemap index
 
 After sitemaps are generated for all update frequencies, a sitemap index is generated to list all the sitemaps. This file will be submitted in the Google Webmaster Toolos.
-  
+
 _Method : createSitemapIndexFile_
 
 <pre class="brush: java; highlight: [18]; title: ; notranslate" title="">/**
@@ -174,7 +174,7 @@ _Method : createSitemapIndexFile_
 </pre>
 
 The process is quite simple &#8211; the method looks in the folder where the sitemaps files were created and generates a sitemaps index with these files setting the _lastmod_ value to the time each file had been last modified (line 18).
-  
+
 Et voilà <a title="Sitemap index Podcastpedia.org" href="http://www.podcastpedia.org/sitemap_index.xml" target="_blank">sitemap_index.xml</a>:
 
 <pre class="brush: xml; title: ; notranslate" title="">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
@@ -203,7 +203,7 @@ Et voilà <a title="Sitemap index Podcastpedia.org" href="http://www.podcastpedi
 </pre>
 
 If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="http://www.podcastpedia.org/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org/" target="_blank">Podcastpedia.org</a>
-  
+
 We promise to only share high quality podcasts and episodes.
 
 ### Source code
@@ -217,43 +217,22 @@ We promise to only share high quality podcasts and episodes.
   * <a href="http://www.sitemaps.org/" target="_blank">http://www.sitemaps.org/</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>
 </div>
-
-<div class="amazon_books">
-  <p>
-    Adrian&#8217;s favorite Spring and Java books
-  </p>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="clear">
-  </div>
-</div></div>

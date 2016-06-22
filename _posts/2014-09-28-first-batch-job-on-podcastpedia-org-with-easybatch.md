@@ -43,7 +43,7 @@ tags:
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#1_Job_description">1. Job description</a>
@@ -69,13 +69,13 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#34_Execution_and_reporting">3.4. Execution and reporting</a>
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Conclusion">Conclusion</a>
       </li>
@@ -145,31 +145,31 @@ public class JobLauncher {
 	private static final String OUTPUT_FILE_HEADER = "FEED_URL; IDENTIFIER_ON_PODCASTPEDIA; CATEGORIES; LANGUAGE; MEDIA_TYPE; UPDATE_FREQUENCY; KEYWORDS; FB_PAGE; TWITTER_PAGE; GPLUS_PAGE; NAME_SUBMITTER; EMAIL_SUBMITTER";
 
 	public static void main(String[] args) throws Exception {
-		
-		 //connect to MySql Database 
+
+		 //connect to MySql Database
 		Class.forName("com.mysql.jdbc.Driver").newInstance();
 		Connection connection = DriverManager.getConnection(System.getProperty("db.url"), System.getProperty("db.user"), System.getProperty("db.pwd"));
-		 
+
 		FileWriter fileWriter = new FileWriter(getOutputFilePath());
-		fileWriter.write(OUTPUT_FILE_HEADER + "\n"); 
-		
+		fileWriter.write(OUTPUT_FILE_HEADER + "\n");
+
 		// Build an easy batch engine
 		EasyBatchEngine easyBatchEngine = new EasyBatchEngineBuilder()
 		.registerRecordReader(new JdbcRecordReader(connection, "SELECT * FROM ui_suggested_podcasts WHERE insertion_date &gt;= STR_TO_DATE(\'" + args[0] + "\', \'%Y-%m-%d %H:%i\')" ))
 		.registerRecordMapper(new CustomMapper())
 		.registerRecordProcessor(new Processor(fileWriter))
 		.build();
-		 
+
 		// Run easy batch engine
 		EasyBatchReport easyBatchReport = easyBatchEngine.call();
-		 
+
 		//close file writer
 		fileWriter.close();
 		System.out.println(easyBatchReport);
 	}
 
 	private static String getOutputFilePath() throws Exception {
-		
+
 		//create if not existent a "weeknum" directory in the given "output.directory.base" directory
 		Date now = new Date();
 		Calendar calendar = Calendar.getInstance();
@@ -180,14 +180,14 @@ public class JobLauncher {
 		if(!targetDirectory.exists()){
 			boolean created = targetDirectory.mkdir();
 			if(!created){
-				throw new Exception("Target directory could not be created"); 
+				throw new Exception("Target directory could not be created");
 			}
 		}
-		
+
 		//build the file name based on current time to be placed in the "weeknum" directory  
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH.mm");
 		String outputFileName = "suggestedPodcasts " + dateFormat.format(now) + ".csv";
-		
+
 		String filePath = targetDirPath + "/" + outputFileName;		
 		return filePath;
 	}
@@ -255,10 +255,10 @@ To map the database object to the domain object I defined a `CustomMapper`:
 	public SuggestedPodcast mapRecord(Record record) throws Exception {
         JdbcRecord jdbcRecord = (JdbcRecord) record;
         ResultSet resultSet = jdbcRecord.getRawContent();
-        
+
         SuggestedPodcast response = new SuggestedPodcast();
         response.setMetadataLine(resultSet.getString("metadata_line"));
-        
+
 		return response;
 	}
 
@@ -283,11 +283,11 @@ To map the database object to the domain object I defined a `CustomMapper`:
 <pre class="lang:java decode:true" title="Processor implementation">public class Processor extends AbstractRecordProcessor&lt;SuggestedPodcast&gt;{
 
 	 private FileWriter fileWriter;
-	 
+
 	 public Processor(FileWriter fileWriter) {
 		 this.fileWriter = fileWriter;
 	 }
-	
+
 	@Override
 	public void processRecord(SuggestedPodcast record) throws Exception {
 		 fileWriter.write(record.getMetadataLine() + "\n");
@@ -331,18 +331,6 @@ Check out the <a title="http://www.easybatch.org/documentation/userGuide.html" h
   <em>&#8220;Choose the right tool for the right job! If your application requires advanced features like retry on failure, remoting or flows, then go for Spring Batch (or an implementation of JSR352). If you don’t need all this advanced stuff; then Easy Batch can be very handy to simplify your batch application development. &#8220;</em>
 </p>
 
-<p style="text-align: justify;">
-  <div id="end-donate">
-    <div id="end-donate-text">
-      If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-    </div>
-    
-    <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-    
-    <!-- End PayPal Donations -->
-  </div>
-</p>
-
 <h2 class="title" style="color: #000000;">
   <span id="Resources"><span id="Resources">Resources</span></span>
 </h2>
@@ -353,7 +341,7 @@ Check out the <a title="http://www.easybatch.org/documentation/userGuide.html" h
 
 ### <span id="Web"><span id="Web">Web</span></span>
 
-  1. <a title="http://www.easybatch.org/" href="http://www.easybatch.org/" target="_blank">EasyBatch.org</a> 
+  1. <a title="http://www.easybatch.org/" href="http://www.easybatch.org/" target="_blank">EasyBatch.org</a>
       1. <a title="http://www.easybatch.org/tutorials/index.html" href="http://www.easybatch.org/tutorials/index.html" target="_blank">Tutorials</a>
       2. <a title="http://www.easybatch.org/documentation/userGuide.html" href="http://www.easybatch.org/documentation/userGuide.html" target="_blank">User guide</a>
       3. <a title="http://www.easybatch.org/tutorials/customers.html" href="http://www.easybatch.org/tutorials/customers.html" target="_blank">Customers ETL tutorial</a>
@@ -361,21 +349,21 @@ Check out the <a title="http://www.easybatch.org/documentation/userGuide.html" h
 
 <p style="text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

@@ -54,10 +54,10 @@ Remember my post <a title="Reading/Parsing RSS and Atom feeds in Java with Rome"
 		if( is != null)	is.close();
 	}
 
-	return feed; 
+	return feed;
 }</pre>
 
-<!--more-->It works pretty well, but one bug managed to mangle through &#8211; 
+<!--more-->It works pretty well, but one bug managed to mangle through &#8211;
 
 `java.io.IOException: Server returned HTTP response code: 403 for URL http://happysomeone.com/feed/podcast`:
 
@@ -179,7 +179,7 @@ Connection: keep-alive</pre>
 
 	try {
 
-		URLConnection openConnection = new URL(url).openConnection();	
+		URLConnection openConnection = new URL(url).openConnection();
 		openConnection.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
 		is = openConnection.getInputStream();
 		if("gzip".equals(openConnection.getContentEncoding())){
@@ -191,18 +191,18 @@ Connection: keep-alive</pre>
 
 	} catch (ParsingFeedException e){
 		LOG.error("************* ParsingFeedException *************\n ", e);
-		throw e; 
+		throw e;
 	} catch (MalformedByteSequenceException e) {
 		LOG.error("************* MalformedByteSequenceException *************\n ", e);
 		throw e;
 	} catch (IOException e) {
 		LOG.error("************* IOException *************\n ", e);
-		throw e;	
+		throw e;
 	} finally {
 		if( is != null)	is.close();
 	}
 
-	return feed; 
+	return feed;
 }</pre>
 
 <p style="text-align: justify;">
@@ -217,44 +217,23 @@ Et voilà, this solved the problem. I hope you could learn something from this a
 
 <p class="note_normal">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>
   </div>
 </p>
-
-<div class="amazon_books">
-  <p>
-    Adrian&#8217;s favorite Spring and Java books (affiliate links)
-  </p>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="clear">
-  </div>
-</div>

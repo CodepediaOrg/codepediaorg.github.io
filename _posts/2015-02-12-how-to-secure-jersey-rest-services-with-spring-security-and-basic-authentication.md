@@ -53,7 +53,7 @@ tags:
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#Software_used">Software used</a>
@@ -71,7 +71,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Testing">Testing</a><ul>
           <li>
@@ -89,7 +89,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Summary">Summary</a>
       </li>
@@ -141,12 +141,12 @@ tags:
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:security="http://www.springframework.org/schema/security"    
     xsi:schemaLocation="
-    	http://www.springframework.org/schema/beans 
+    	http://www.springframework.org/schema/beans
     	http://www.springframework.org/schema/beans/spring-beans.xsd
-                
-        http://www.springframework.org/schema/security 
+
+        http://www.springframework.org/schema/security
         http://www.springframework.org/schema/security/spring-security.xsd"&gt;
-	
+
 	&lt;!-- Stateless RESTful services use BASIC authentication --&gt;
     &lt;security:http create-session="stateless" pattern="/manifest/**"&gt;
         &lt;security:intercept-url pattern="/**" access="ROLE_REST"/&gt;
@@ -239,7 +239,7 @@ The Spring security filter chain needs to be activated.
 ### <span id="Browser">Browser</span>
 
 If you access a secured location via the browser, a standard HTTP authentication popup appears asking for the authentication details:
-  
+
 [<img class="alignnone size-full wp-image-2263" src="http://www.codingpedia.org/wp-content/uploads/2015/02/standard-popup-browser.png" alt="standard-popup-browser" width="895" height="462" srcset="http://www.codingpedia.org/wp-content/uploads/2015/02/standard-popup-browser.png 895w, http://www.codingpedia.org/wp-content/uploads/2015/02/standard-popup-browser-300x154.png 300w" sizes="(max-width: 895px) 100vw, 895px" />](http://www.codingpedia.org/wp-content/uploads/2015/02/standard-popup-browser.png)
 
 Put in _rest/rest_ and you should receive the JSON response.
@@ -304,34 +304,24 @@ Server: Jetty(9.2.6.v20141205)
   <strong>Note:<br /> </strong>If you decide to use Basic Authentication to secure your REST resources, please make sure they are called over HTTPS. The preferred way nowadays to secure REST resources is with <a title="http://oauth.net/" href="http://oauth.net/" target="_blank">OAuth</a>. More on that on a later post.
 </p>
 
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
-
 ## <span id="Resources">Resources</span>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

@@ -74,10 +74,10 @@ tags:
 <pre class="lang:xhtml decode:true" title="Doubling the information in HTML">....................
 &lt;div class="ep_desc"&gt;
 	${fn:substring(episode.description,0,300)}
-&lt;/div&gt;	
+&lt;/div&gt;
 &lt;div class="ep_desc_bigger"&gt;
 	${fn:substring(episode.description,0,600)}
-&lt;/div&gt;	
+&lt;/div&gt;
 ....................</pre>
 
 <p class="note_code">
@@ -90,14 +90,14 @@ The CSS code supporting this is the following:
 
 <pre class="lang:css decode:true" title="Media queries in CSS">@media screen and (min-width: 720px) {
     .ep_desc {
-		display: none; 
-	 } 
+		display: none;
+	 }
 }
 
 @media screen and (max-width: 719px) {
     .ep_desc_bigger {
-		display: none; 
-	 } 
+		display: none;
+	 }
 }</pre>
 
 <p class="note_code">
@@ -106,23 +106,13 @@ The CSS code supporting this is the following:
 
 Well, that&#8217;s it. If you have a better proposal to achieve this please leave a comment!!! 10x
 
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
-
 ## Resources
 
 ### <span id="41_Source_code">Source code</span>
 
   * #### GitHub
-    
-      * Repositories 
+
+      * Repositories
           * <a style="color: #bc360a;" title="https://github.com/podcastpedia/css-generator-sass-gulp" href="https://github.com/podcastpedia/css-generator-sass-gulp" target="_blank">https://github.com/podcastpedia/css-generator-sass-gulp</a>
           * <a title="https://github.com/podcastpedia/podcastpedia-web" href="https://github.com/podcastpedia/podcastpedia-web" target="_blank">podcastpedia-web (JSPs, java backend&#8230;)</a>
       * Relevant files
@@ -132,21 +122,21 @@ Well, that&#8217;s it. If you have a better proposal to achieve this please leav
   1. [Oracle &#8211; JavaServer Pages Standard Tag Library](http://www.oracle.com/technetwork/java/index-jsp-135995.html "http://www.oracle.com/technetwork/java/index-jsp-135995.html")
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

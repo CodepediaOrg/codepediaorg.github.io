@@ -34,11 +34,25 @@ tags:
   - maven
   - nodejs
 ---
+<p style="text-align: justify;">
+  Well, I&#8217;ve recently gone to the &#8220;silver&#8221; side and acquired a MacBook Pro to use it for development when I am not at my PC. By development I mean here mainly Java + Javascript development. So I&#8217;ve written this post to remember what I had to install/configure to achieve this goal.
+</p>
+
+<p class="note_normal" style="text-align: justify;">
+  I need to mention that until now I’ve been a user of Windows (XP/7) and Linux (Ubuntu/Mint/Cent OS) operation systems.
+</p>
+
+<p style="text-align: justify;">
+  At the time of this writing MacBook Pro runs on OS X Yosemite Version 10.10.5. The new version El Capitan was available, but I didn’t do the upgrade first because it had to many bad reviews&#8230;
+</p>
+
+<!--more-->
+
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#JDK">JDK</a><ul>
@@ -47,7 +61,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Maven">Maven</a>
     </li>
@@ -69,7 +83,7 @@ tags:
             </li>
           </ul>
         </li>
-        
+
         <li>
           <a href="#NodeJS">NodeJS</a>
         </li>
@@ -86,7 +100,7 @@ tags:
             </li>
           </ul>
         </li>
-        
+
         <li>
           <a href="#Terminal_window">Terminal window</a><ul>
             <li>
@@ -106,7 +120,7 @@ tags:
             </li>
           </ul>
         </li>
-        
+
         <li>
           <a href="#iTerm2">iTerm2</a>
         </li>
@@ -121,7 +135,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#How_to_test_everything_is_working">How to test everything is working</a>
     </li>
@@ -130,20 +144,6 @@ tags:
     </li>
   </ul>
 </div>
-
-<p style="text-align: justify;">
-  Well, I&#8217;ve recently gone to the &#8220;silver&#8221; side and acquired a MacBook Pro to use it for development when I am not at my PC. By development I mean here mainly Java + Javascript development. So I&#8217;ve written this post to remember what I had to install/configure to achieve this goal.
-</p>
-
-<p class="note_normal" style="text-align: justify;">
-  I need to mention that until now I’ve been a user of Windows (XP/7) and Linux (Ubuntu/Mint/Cent OS) operation systems.
-</p>
-
-<p style="text-align: justify;">
-  At the time of this writing MacBook Pro runs on OS X Yosemite Version 10.10.5. The new version El Capitan was available, but I didn’t do the upgrade first because it had to many bad reviews&#8230;
-</p>
-
-<!--more-->
 
 <h2 style="text-align: justify;">
   <span id="JDK">JDK</span>
@@ -192,287 +192,7 @@ Adrians-MacBook-Pro:ama ama$</pre>
   In Mac OSX 10.5 or later, Apple recommends to set the <code>$JAVA_HOME</code> variable to <code>/usr/libexec/java_home</code>, just export <code>$JAVA_HOME</code> in file <code>~/.bash_profile</code> or <code>~/.profile</code>
 </p>
 
-<pre class="lang:sh decode:true">$ vim .bash_profile 
-
-export JAVA_HOME=$(/usr/libexec/java_home)
-
-$ source .bash_profile
-
-$ echo $JAVA_HOME
-/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home</pre>
-
-<h2 style="text-align: justify;">
-  <span id="Maven">Maven</span>
-</h2>
-
-<p style="text-align: justify;">
-  With the JAVA_HOME environment variable configure, go to the <a href="https://maven.apache.org/download.cgi">Apache Maven Downloads</a> website, download the <em>.tar.gz</em> or <em>.zip</em> archive and unpack it in a folder of your choice &#8211; I put it under the <em>/opt</em> directory:
-</p>
-
-<pre class="lang:sh decode:true ">tar xzvf apache-maven-3.3.3-bin.tar.gz</pre>
-
-<p style="text-align: justify;">
-  It is also recommended to create a <a href="http://www.cyberciti.biz/faq/creating-soft-link-or-symbolic-link/">symbolic link</a> to the Maven home, so that when let’s say you update your Maven version,  you’ll only have to change the symbolic link target:
-</p>
-
-<pre class="lang:default decode:true">ln -s /opt/apache-maven-3.3.3 /opt/maven</pre>
-
-<p style="text-align: justify;">
-  Then set Maven in the environment variables
-</p>
-
-<pre class="lang:sh decode:true ">vim ~/.bash_profile</pre>
-
-<pre class="lang:vim decode:true" title="Add these lines to .bash_profile">export M2_HOME=/path/to/maven
-export M2=$M2_HOME/bin
-export PATH=$M2:$PATH</pre>
-
-<p style="text-align: justify;">
-  Close the terminal and open a new one. When you try now to get the maven versioning you should get something like the following:
-</p>
-
-<pre class="lang:sh decode:true " title="mvn -version">ama$ mvn -version
-Apache Maven 3.3.3 (7994120775791599e205a5524ec3e0dfe41d4a06; 2015-04-22T13:57:37+02:00)
-Maven home: /opt/maven
-Java version: 1.8.0_65, vendor: Oracle Corporation
-Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre
-Default locale: en_US, platform encoding: UTF-8
-OS name: "mac os x", version: "10.10.5", arch: "x86_64", family: "mac"</pre>
-
-<p style="text-align: justify;">
-  An alternative is to use <a href="http://brew.sh/">Homebrew</a> and execute the following command:
-</p>
-
-<pre class="lang:sh decode:true" title="Installation via Homebrew">brew install maven</pre>
-
-<h2 style="text-align: justify;">
-  <span id="GIT">GIT</span>
-</h2>
-
-<p style="text-align: justify;">
-  Open a terminal window and type the following command for example:
-</p>
-
-<pre class="lang:default decode:true">$ git --version
-</pre>
-
-<p style="text-align: justify;">
-  At the next moment you will be asekd to install Xcode. This is the a complete developer toolset for building apps that run on Apple TV, Apple Watch, iPhone, iPad, and Mac. It includes the Xcode IDE, simulators, and all the required tools and frameworks to build apps for iOS, watchOS, tvOS, and OS X (it also contains <a href="https://en.wikipedia.org/wiki/GNU_Compiler_Collection">GNU Compiler Collection-gcc</a>).
-</p>
-
-<p style="text-align: justify;">
-  You can do the above, but if you do not want everything from that package you can install <a href="http://brew.sh/">Homebrew</a> (<em>&#8220;Homebrew installs <a title="List of Homebrew packages" href="https://github.com/Homebrew/homebrew/tree/master/Library/Formula">the stuff you need</a> that Apple didn’t.&#8221;</em>) and run the following commands:
-</p>
-
-<pre class="lang:sh decode:true">brew install gcc
-brew install git</pre>
-
-<p style="text-align: justify;">
-  Either way once Git is installed the initial command <em>git &#8211;version </em>will bring the installed version:
-</p>
-
-<pre class="lang:sh decode:true">$ git --version
-git version 2.4.9 (Apple Git-60)</pre>
-
-<p style="text-align: justify;">
-  If you are working with Github, I recommend you also install the <a href="https://desktop.github.com/">Github Desktop</a>
-</p>
-
-<h2 style="text-align: justify;">
-  <span id="IntelliJ">IntelliJ</span>
-</h2>
-
-<p style="text-align: justify;">
-  In the mean time IntelliJ has become my favorite IDE, mainly because you have almost the same feature support when doing front-end development. To install it, go to the <a href="https://www.jetbrains.com/idea/download/">download page </a>and follow the installation instructions:
-</p>
-
-<p style="text-align: justify;">
-  <strong>INSTALLATION INSTRUCTIONS</strong>
-</p>
-
-<ul class="starlist" style="text-align: justify;">
-  <li>
-    Download the idea-15.dmg OS X Disk Image file.
-  </li>
-  <li>
-    Mount it as another disk in your system.
-  </li>
-  <li>
-    Copy IntelliJ IDEA to your Applications folder
-  </li>
-</ul>
-
-Once done you need to get acquainted with key shortcuts for OS X &#8211; [IntelliJ IDEA Mac OS X Keymap](https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard_Mac.pdf)
-
-<h2 style="text-align: justify;">
-  <span id="Extras">Extras</span>
-</h2>
-
-<h3 style="text-align: justify;">
-  <span id="Keyboard_shortcuts">Keyboard shortcuts</span>
-</h3>
-
-#### <span id="General">General</span>
-
-Please visit [<div id="toc_container" class="no_bullets">
-  <p class="toc_title">
-    Contents
-  </p>
-  
-  <ul class="toc_list">
-    <li>
-      <a href="#JDK">JDK</a><ul>
-        <li>
-          <a href="#Set_JAVA_HOME">Set JAVA_HOME</a>
-        </li>
-      </ul>
-    </li>
-    
-    <li>
-      <a href="#Maven">Maven</a>
-    </li>
-    <li>
-      <a href="#GIT">GIT</a>
-    </li>
-    <li>
-      <a href="#IntelliJ">IntelliJ</a>
-    </li>
-    <li>
-      <a href="#Extras">Extras</a><ul>
-        <li>
-          <a href="#Keyboard_shortcuts">Keyboard shortcuts</a><ul>
-            <li>
-              <a href="#General">General</a>
-            </li>
-            <li>
-              <a href="#Finder">Finder</a>
-            </li>
-          </ul>
-        </li>
-        
-        <li>
-          <a href="#NodeJS">NodeJS</a>
-        </li>
-        <li>
-          <a href="#MySQL">MySQL</a><ul>
-            <li>
-              <a href="#Start_stop_server">Start, stop server</a>
-            </li>
-            <li>
-              <a href="#Access_MySQL_from_command_line">Access MySQL from command line</a>
-            </li>
-            <li>
-              <a href="#Install_MySQL_Workbench">Install MySQL Workbench</a>
-            </li>
-          </ul>
-        </li>
-        
-        <li>
-          <a href="#Terminal_window">Terminal window</a><ul>
-            <li>
-              <a href="#Set_background_black">Set background black</a>
-            </li>
-            <li>
-              <a href="#Jump_to_beginningend_of_a_line">Jump to beginning/end of a line</a>
-            </li>
-            <li>
-              <a href="#Open_terminal_in_here">Open terminal in here</a>
-            </li>
-            <li>
-              <a href="#Use_aliases">Use aliases</a>
-            </li>
-            <li>
-              <a href="#Commands">Commands</a>
-            </li>
-          </ul>
-        </li>
-        
-        <li>
-          <a href="#iTerm2">iTerm2</a>
-        </li>
-        <li>
-          <a href="#Generate_ssh_keys">Generate ssh keys</a>
-        </li>
-        <li>
-          <a href="#Install_Programs_from_Unidentified_Developers">Install Programs from Unidentified Developers</a>
-        </li>
-        <li>
-          <a href="#Often_used_UNIX_keys_on_the_GermanSwiss_keyboard">Often used UNIX keys on the German/Swiss keyboard</a>
-        </li>
-      </ul>
-    </li>
-    
-    <li>
-      <a href="#How_to_test_everything_is_working">How to test everything is working</a>
-    </li>
-    <li>
-      <a href="#References">References</a>
-    </li>
-  </ul>
-</div>
-
-<p style="text-align: justify;">
-  Well, I&#8217;ve recently gone to the &#8220;silver&#8221; side and acquired a MacBook Pro to use it for development when I am not at my PC. By development I mean here mainly Java + Javascript development. So I&#8217;ve written this post to remember what I had to install/configure to achieve this goal.
-</p>
-
-<p class="note_normal" style="text-align: justify;">
-  I need to mention that until now I’ve been a user of Windows (XP/7) and Linux (Ubuntu/Mint/Cent OS) operation systems.
-</p>
-
-<p style="text-align: justify;">
-  At the time of this writing MacBook Pro runs on OS X Yosemite Version 10.10.5. The new version El Capitan was available, but I didn’t do the upgrade first because it had to many bad reviews&#8230;
-</p>
-
-<!--more-->
-
-<h2 style="text-align: justify;">
-  <span id="JDK">JDK</span>
-</h2>
-
-<p style="text-align: justify;">
-  So first things first- installe a <b>Java Development Kit</b> (<b>JDK</b>), which is a software development environment used for developing Java applications and applets. It includes the Java Runtime Environment (JRE), an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (javadoc) and other tools needed in Java development.
-</p>
-
-<p style="text-align: justify;">
-  Download the Mac OS X x64 <a href="http://www.howtogeek.com/177619/how-to-install-applications-on-a-mac-everything-you-need-to-know/">.dmg</a> files version
-</p>
-
-<ul style="text-align: justify;">
-  <li>
-    <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">Java 7</a>
-  </li>
-  <li>
-    <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Java 8</a>
-  </li>
-</ul>
-
-<p style="text-align: justify;">
-  You can find out where the JDK is installed, by executing the <code>/usr/libexec/java_home -v 1.7</code> , on the terminal command:
-</p>
-
-<pre class="lang:sh decode:true ">Adrians-MacBook-Pro:ama ama$ /usr/libexec/java_home -v 1.8
-/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
-Adrians-MacBook-Pro:ama ama$ /usr/libexec/java_home -v 1.7
-/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
-Adrians-MacBook-Pro:ama ama$</pre>
-
-<p style="text-align: justify;">
-  You will need to know this when setting up a project in IntelliJ for example.
-</p>
-
-<h3 style="text-align: justify;">
-  <span id="Set_JAVA_HOME">Set JAVA_HOME</span>
-</h3>
-
-<p style="text-align: justify;">
-  <code>JAVA_HOME</code> is just a convention, usually used by Tomcat, other Java EE app servers and build tools such as <code>Maven</code> to find where Java lives.
-</p>
-
-<p style="text-align: justify;">
-  In Mac OSX 10.5 or later, Apple recommends to set the <code>$JAVA_HOME</code> variable to <code>/usr/libexec/java_home</code>, just export <code>$JAVA_HOME</code> in file <code>~/.bash_profile</code> or <code>~/.profile</code>
-</p>
-
-<pre class="lang:sh decode:true">$ vim .bash_profile 
+<pre class="lang:sh decode:true">$ vim .bash_profile
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
@@ -718,7 +438,7 @@ Finally, if you drag a folder or pathname onto a tab (in the tab bar) and the fo
 You can also do this from the command line or a shell script:
 
     open -a Terminal /path/to/folder
-    
+
 
 This is the command-line equivalent of dragging a folder/pathname onto the Terminal application icon.
 
@@ -799,186 +519,189 @@ You can now use the generated _id_rsa.pub_ key and upload it to the systems you 
 </p>
 
 <table border="1" cellpadding="1" cellspacing="1">
-  <tr>
-    <td align="center">
-      <b>|</b>
-    </td>
-    
-    <td>
-       pipe symbol
-    </td>
-    
-    <td>
-      <b> <alt>7</b>
-    </td>
-  </tr>
-  
-  <tr>
-    <td align="center" valign="top">
-      <b>\\</b>
-    </td>
-    
-    <td valign="top">
-       backslash
-    </td>
-    
-    <td valign="top">
-      <b> <alt><shift>7</b> = <b><alt>/</b>
-    </td>
-  </tr>
-  
-  <tr>
-    <td align="center" valign="top">
-      <b>[</b>
-    </td>
-    
-    <td valign="top">
-       left (opening) square bracket
-    </td>
-    
-    <td valign="top">
-      <b> <alt>5</b>
-    </td>
-  </tr>
-  
-  <tr>
-    <td align="center" valign="top">
-      <b>]</b>
-    </td>
-    
-    <td valign="top">
-       right (closing) square bracket
-    </td>
-    
-    <td valign="top">
-      <b> <alt>6</b>
-    </td>
-  </tr>
-  
-  <tr>
-    <td align="center" valign="top">
-      <b>{</b>
-    </td>
-    
-    <td valign="top">
-       left (opening) curly bracket
-    </td>
-    
-    <td valign="top">
-      <b> <alt>8</b>
-    </td>
-  </tr>
-  
-  <tr>
-    <td align="center" valign="top">
-      <b>}</b>
-    </td>
-    
-    <td valign="top">
-       right (closing) curly bracket
-    </td>
-    
-    <td valign="top">
-      <b> <alt>9</b>
-    </td>
-  </tr>
-  
-  <tr>
-    <td align="center" valign="top">
-      <b>~</b>
-    </td>
-    
-    <td valign="top">
-       Tilde
-    </td>
-    
-    <td valign="top">
-      <b> <alt>n</b> followed by the space key
-    </td>
-  </tr>
-  
-  <tr>
-    <td align="center" valign="top">
-      <b>@</b>
-    </td>
-    
-    <td valign="top">
-       &#8220;At&#8221; symbol
-    </td>
-    
-    <td valign="top">
-      <b> <alt>g</b> (lowercase G)</p> 
-      
-      <p>
-        <b><alt>L</b> German Keyboard</td> </tr> </tbody> </table> 
-        
-        <h3 style="text-align: justify;">
-        </h3>
-        
-        <h2 style="text-align: justify;">
-          <span id="How_to_test_everything_is_working">How to test everything is working</span>
-        </h2>
-        
-        <p style="text-align: justify;">
-          A smoke test to verify if everything installed is functioning properly &#8220;together&#8221; is to generate an application with <a href="http://jhipster.github.io/">JHipster</a> and push it to a git repository.
-        </p>
-        
-        <p class="note_normal" style="text-align: justify;">
-          JHipster is a <a href="http://yeoman.io/" target="_blank">Yeoman generator</a>, used to create a <a href="http://projects.spring.io/spring-boot/" target="_blank">Spring Boot</a> + <a href="https://angularjs.org/" target="_blank">AngularJS</a> project.
-        </p>
-        
-        <p style="text-align: justify;">
-          For any suggestions please leave a comment. Thank you.
-        </p>
-        
-        <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-          <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-          
-          <p id="about_author_header">
-            <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
-          </p>
-          
-          <div id="author_details" style="text-align: justify;">
-            Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-          </div>
-          
-          <div id="follow_social" style="clear: both;">
-            <div id="social_logos">
-              <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
-            </div>
-            
-            <div class="clear">
-            </div>
-          </div>
-        </div>
-        
-        <h2 style="text-align: justify;">
-          <span id="References">References</span>
-        </h2>
-        
-        <ol>
-          <li style="text-align: justify;">
-            <a href="http://superuser.com/questions/100281/linux-mac-os-x-terminal-make-the-background-black-not-white">Linux/Mac OS X Terminal: make the background black, not white</a>
-          </li>
-          <li style="text-align: justify;">
-            <a href="http://www.mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/">How to Set $JAVA_HOME environment variable on Mac OS X</a>
-          </li>
-          <li style="text-align: justify;">
-            <a href="https://maven.apache.org/install.html">Maven installation guide</a>
-          </li>
-          <li style="text-align: justify;">
-            <a href="https://blogs.oracle.com/blogfinger/entry/mac_os_x_often_used">Mac OS X: often used UNIX keys on the German keyboard</a>
-          </li>
-          <li style="text-align: justify;">
-            <a href="http://stackoverflow.com/questions/81272/is-there-any-way-in-the-os-x-terminal-to-move-the-cursor-word-by-word">Is there any way in the OS X Terminal to move the cursor word by word?</a>
-          </li>
-          <li style="text-align: justify;">
-            <a href="http://stackoverflow.com/questions/420456/open-terminal-here-in-mac-os-finder">Open terminal here in Mac OS finder</a>
-          </li>
-          <li style="text-align: justify;">
-            <a href="http://www.puddingonline.com/~dave/publications/SSH-with-Keys-HOWTO/document/html/SSH-with-Keys-HOWTO-5.html">SSH Keys with a Passphrase</a>
-          </li>
-          <li style="text-align: justify;">
-            <a href="http://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/">Make an Alias in Bash Shell in OS X Terminal</a>
-          </li>
-        </ol>
+<tr>
+  <td align="center">
+    <b>|</b>
+  </td>
+
+  <td>
+     pipe symbol
+  </td>
+
+  <td>
+    <b> <alt>7</b>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" valign="top">
+    <b>\\</b>
+  </td>
+
+  <td valign="top">
+     backslash
+  </td>
+
+  <td valign="top">
+    <b> <alt><shift>7</b> = <b><alt>/</b>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" valign="top">
+    <b>[</b>
+  </td>
+
+  <td valign="top">
+     left (opening) square bracket
+  </td>
+
+  <td valign="top">
+    <b> <alt>5</b>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" valign="top">
+    <b>]</b>
+  </td>
+
+  <td valign="top">
+     right (closing) square bracket
+  </td>
+
+  <td valign="top">
+    <b> <alt>6</b>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" valign="top">
+    <b>{</b>
+  </td>
+
+  <td valign="top">
+     left (opening) curly bracket
+  </td>
+
+  <td valign="top">
+    <b> <alt>8</b>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" valign="top">
+    <b>}</b>
+  </td>
+
+  <td valign="top">
+     right (closing) curly bracket
+  </td>
+
+  <td valign="top">
+    <b> <alt>9</b>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" valign="top">
+    <b>~</b>
+  </td>
+
+  <td valign="top">
+     Tilde
+  </td>
+
+  <td valign="top">
+    <b> <alt>n</b> followed by the space key
+  </td>
+</tr>
+
+<tr>
+  <td align="center" valign="top">
+    <b>@</b>
+  </td>
+
+  <td valign="top">
+     &#8220;At&#8221; symbol
+  </td>
+
+  <td valign="top">
+    <b> <alt>g</b> (lowercase G)</p>
+
+    <p>
+      <b><alt>L</b> German Keyboard
+  </td>
+</tr>
+</table>
+
+<h3 style="text-align: justify;">
+</h3>
+
+<h2 style="text-align: justify;">
+  <span id="How_to_test_everything_is_working">How to test everything is working</span>
+</h2>
+
+<p style="text-align: justify;">
+  A smoke test to verify if everything installed is functioning properly &#8220;together&#8221; is to generate an application with <a href="http://jhipster.github.io/">JHipster</a> and push it to a git repository.
+</p>
+
+<p class="note_normal" style="text-align: justify;">
+  JHipster is a <a href="http://yeoman.io/" target="_blank">Yeoman generator</a>, used to create a <a href="http://projects.spring.io/spring-boot/" target="_blank">Spring Boot</a> + <a href="https://angularjs.org/" target="_blank">AngularJS</a> project.
+</p>
+
+<p style="text-align: justify;">
+  For any suggestions please leave a comment. Thank you.
+</p>
+
+<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
+  <p id="about_author_header">
+    <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
+  </p>
+
+  <div id="author_details" style="text-align: justify;">
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+  </div>
+
+  <div id="follow_social" style="clear: both;">
+    <div id="social_logos">
+      <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
+    </div>
+
+    <div class="clear">
+    </div>
+  </div>
+</div>
+
+<h2 style="text-align: justify;">
+  <span id="References">References</span>
+</h2>
+
+<ol>
+  <li style="text-align: justify;">
+    <a href="http://superuser.com/questions/100281/linux-mac-os-x-terminal-make-the-background-black-not-white">Linux/Mac OS X Terminal: make the background black, not white</a>
+  </li>
+  <li style="text-align: justify;">
+    <a href="http://www.mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/">How to Set $JAVA_HOME environment variable on Mac OS X</a>
+  </li>
+  <li style="text-align: justify;">
+    <a href="https://maven.apache.org/install.html">Maven installation guide</a>
+  </li>
+  <li style="text-align: justify;">
+    <a href="https://blogs.oracle.com/blogfinger/entry/mac_os_x_often_used">Mac OS X: often used UNIX keys on the German keyboard</a>
+  </li>
+  <li style="text-align: justify;">
+    <a href="http://stackoverflow.com/questions/81272/is-there-any-way-in-the-os-x-terminal-to-move-the-cursor-word-by-word">Is there any way in the OS X Terminal to move the cursor word by word?</a>
+  </li>
+  <li style="text-align: justify;">
+    <a href="http://stackoverflow.com/questions/420456/open-terminal-here-in-mac-os-finder">Open terminal here in Mac OS finder</a>
+  </li>
+  <li style="text-align: justify;">
+    <a href="http://www.puddingonline.com/~dave/publications/SSH-with-Keys-HOWTO/document/html/SSH-with-Keys-HOWTO-5.html">SSH Keys with a Passphrase</a>
+  </li>
+  <li style="text-align: justify;">
+    <a href="http://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/">Make an Alias in Bash Shell in OS X Terminal</a>
+  </li>
+</ol>

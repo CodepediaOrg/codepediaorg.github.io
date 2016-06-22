@@ -980,18 +980,6 @@ The best explanation for  `SpringApplication`-, `@ComponentScan`&#8211; and `@E
   <strong>Note:<br /> </strong>As I mentioned, I am fairly new to Spring Batch, and especially to Spring Boot and Spring Configuration with Java, so if you see any potential for improvement (code, job design etc.) please make a pull request or leave a comment below. Thanks a lot.
 </p>
 
-<p style="text-align: justify;">
-  <div id="end-donate">
-    <div id="end-donate-text">
-      If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-    </div>
-
-    <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-
-    <!-- End PayPal Donations -->
-  </div>
-</p>
-
 <h2 class="title" style="color: #000000;">
   <span id="Resources">Resources</span>
 </h2>

@@ -134,7 +134,7 @@ tags:
   top: 0;
   z-index: 9999; //should really be on top of everything
   pointer-events: none;
-  @include until-mq(1340px){ 
+  @include until-mq(1340px){
     display: none;
   }  
   &.fixed {
@@ -196,27 +196,17 @@ $rotation-angle: 45deg;
 
 Following the instrunctions from GitHub, the second step was to add the highlighted html code snippet after the body tag:
 
-<pre class="lang:xhtml mark:2-7 decode:true" title="Top left ribbon html snippet">&lt;body id="&lt;tiles:insertAttribute name="body-id" /&gt;"&gt;	
+<pre class="lang:xhtml mark:2-7 decode:true" title="Top left ribbon html snippet">&lt;body id="&lt;tiles:insertAttribute name="body-id" /&gt;"&gt;
 	&lt;!-- TOP LEFT RIBBON: START COPYING HERE --&gt;
 	&lt;div class="github-fork-ribbon-wrapper left"&gt;
 		&lt;div class="github-fork-ribbon"&gt;
 			&lt;a href="https://github.com/podcastpedia/podcastpedia-web" target="_blank"&gt;Fork me on GitHub&lt;/a&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;   
-	...............	
+	...............
 &lt;/body&gt;</pre>
 
 Well, it cannot get simpler than that&#8230; So thanks again <a title="https://github.com/simonwhitaker" href="https://github.com/simonwhitaker" target="_blank">Simon</a> for this nice peace of work.
-
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
 
 <p class="note_normal">
   <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
@@ -230,21 +220,21 @@ Well, it cannot get simpler than that&#8230; So thanks again <a title="https://g
 
 <p style="text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

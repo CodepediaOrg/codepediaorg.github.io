@@ -49,7 +49,7 @@ When trying to execute execute the &#8220;jetty:run&#8221; maven goal from withi
 
 <div id="attachment_1064" style="width: 310px" class="wp-caption alignnone">
   <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse.png"><img class="size-medium wp-image-1064" src="http://www.codingpedia.org/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse-300x215.png" alt="Execute jetty:run from Eclipse" width="300" height="215" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse-300x215.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse-1024x737.png 1024w, http://www.codingpedia.org/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse.png 1289w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
+
   <p class="wp-caption-text">
     Execute jetty:run from Eclipse
   </p>
@@ -122,18 +122,18 @@ Caused by: java.lang.UnsupportedClassVersionError: org/eclipse/jetty/maven/plugi
 
 I have to mention I had just did an upgrade to JDK 1.7 (without removing the previous JDK 1.6). I thought I did everything right, so here are the steps I took after installing the JDK 1.7:
 
-  1. set environemnt variables 
+  1. set environemnt variables
       * add `JAVA_HOME` in environment variables and make it point to the new JDK  (e.g. _C:\Java\jdk1.7.0_45_)
       * add `%JAVA_HOME%/bin` to the `PATH` environment variable
-  2. made sure Eclipse uses the right JDK: 
+  2. made sure Eclipse uses the right JDK:
     <div id="attachment_1065" style="width: 310px" class="wp-caption alignnone">
       <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/2-choose-correct-JRE.png"><img class="size-medium wp-image-1065 " src="http://www.codingpedia.org/wp-content/uploads/2014/01/2-choose-correct-JRE-300x231.png" alt="Choose the correct JRE" width="300" height="231" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/2-choose-correct-JRE-300x231.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/2-choose-correct-JRE.png 895w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-      
+
       <p class="wp-caption-text">
         Eclipse Menu -> Window -> Preferences -> Java &#8211; > Installed JREs
       </p>
-    </div></li> 
-    
+    </div></li>
+
       * pointed to the correct JRE in `eclipse.ini` <pre class="lang:default mark:18,19 decode:true" title="eclipse.ini">-startup
 plugins/org.eclipse.equinox.launcher_1.3.0.v20130327-1440.jar
 --launcher.library
@@ -158,20 +158,20 @@ C:/Java/jdk1.7.0_45/bin/javaw.exe
 -XX:MaxPermSize=512m
 -Xms128m
 -Xmx1024m</pre>
-    
+
       * made sure the external Maven installation used &#8220;sees&#8221; the correct JDK by issuing &#8220;mvn &#8211;version&#8221; on the command line: <pre class="lang:default mark:3,4 decode:true" title="" mvn="" --version="" output="">Apache Maven 3.1.1 (0728685237757ffbf44136acec0402957f723d9a; 2013-09-17 17:22:22+0200)
 Maven home: C:\Java\apache-maven-3.1.1
 Java version: 1.7.0_45, vendor: Oracle Corporation
 Java home: C:\Java\jdk1.7.0_45\jre
 Default locale: en_US, platform encoding: Cp1252
-OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows" &lt;br&gt;</pre></ol> 
-    
+OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows" &lt;br&gt;</pre></ol>
+
     ## Solution
-    
+
     The jetty plugin configuration seemed also to be correct in the `pom.xml` file:
-    
+
     <pre class="lang:default decode:true" title="jetty-maven-plugin configuration in pom.xml">&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
-.................................................	
+.................................................
 	&lt;build&gt;
 		&lt;plugins&gt;
 			&lt;plugin&gt;
@@ -182,12 +182,12 @@ OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows" &lt;br&gt
 				     &lt;jettyConfig&gt;${project.basedir}/src/main/resources/config/jetty9.xml&lt;/jettyConfig&gt;
 				     &lt;stopKey&gt;STOP&lt;/stopKey&gt;
 				     &lt;stopPort&gt;9999&lt;/stopPort&gt;
-				     &lt;scanIntervalSeconds&gt;5&lt;/scanIntervalSeconds&gt;	
+				     &lt;scanIntervalSeconds&gt;5&lt;/scanIntervalSeconds&gt;
 					 &lt;contextXml&gt;${project.basedir}/src/test/resources/jetty-context.xml&lt;/contextXml&gt;
 				     &lt;webAppConfig&gt;
 				     	&lt;contextPath&gt;/${project.artifactId}-${project.version}&lt;/contextPath&gt;
 				     &lt;/webAppConfig&gt;					 			     		     
-			    &lt;/configuration&gt;	
+			    &lt;/configuration&gt;
 			    &lt;dependencies&gt;
 					&lt;dependency&gt;
 						&lt;groupId&gt;mysql&lt;/groupId&gt;
@@ -199,83 +199,62 @@ OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows" &lt;br&gt
 		&lt;/plugins&gt;
 	&lt;/build&gt;
 &lt;/project&gt;</pre>
-    
+
     Then what was the problem? Well, thanks to <a title="java.lang.UnsupportedClassVersionError Unsupported major.minor version 51.0 [duplicate]" href="http://stackoverflow.com/questions/11239086/java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0" target="_blank">Stackoverflow</a> I found out the error happens because of a higher JDK during compile time and lower JDK during runtime. But I thought I compiled and executed everything with Java 7&#8230;
-    
+
     When checking the JDK compliance for the project:
-    
+
     <div id="attachment_1071" style="width: 304px" class="wp-caption alignnone">
       <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/3-check-project-jdk-compliance.png"><img class="size-medium wp-image-1071" src="http://www.codingpedia.org/wp-content/uploads/2014/01/3-check-project-jdk-compliance-294x300.png" alt="Check project JDK compliance" width="294" height="300" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/3-check-project-jdk-compliance-294x300.png 294w, http://www.codingpedia.org/wp-content/uploads/2014/01/3-check-project-jdk-compliance.png 741w" sizes="(max-width: 294px) 100vw, 294px" /></a>
-      
+
       <p class="wp-caption-text">
         Project -> Properties -> Java Compiler
       </p>
     </div>
-    
+
     the default was on 1.5, which should be no problem for Java 7&#8230;
-    
+
     After looking again in the console it struck me:
-    
+
     <div id="attachment_1072" style="width: 310px" class="wp-caption alignnone">
       <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/4-console-output.png"><img class="size-medium wp-image-1072" src="http://www.codingpedia.org/wp-content/uploads/2014/01/4-console-output-300x177.png" alt="Console output" width="300" height="177" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/4-console-output-300x177.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/4-console-output-1024x604.png 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-      
+
       <p class="wp-caption-text">
         Console output
       </p>
     </div>
-    
+
     &#8230;it was indeed using the older JDK (1.6) at execution time. This was caused by using an Alternate JRE (which was set to `jdk1.6.0_39`), in the setup of the **Run Configuration**:
-    
+
     <div id="attachment_1073" style="width: 310px" class="wp-caption alignnone">
       <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/5-run-configuration-JRE.png"><img class="size-medium wp-image-1073" src="http://www.codingpedia.org/wp-content/uploads/2014/01/5-run-configuration-JRE-300x215.png" alt="run configuration JRE" width="300" height="215" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/5-run-configuration-JRE-300x215.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/5-run-configuration-JRE-1024x737.png 1024w, http://www.codingpedia.org/wp-content/uploads/2014/01/5-run-configuration-JRE.png 1289w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-      
+
       <p class="wp-caption-text">
         Eclipse Menu -> Run -> Run configurations
       </p>
     </div>
-    
+
     After selecting the &#8220;Workspace default JRE (jdk1.7.0_45)&#8221; everything worked as expected.
-    
+
     I hope you could learn something from this as I did.
-    
+
     <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-      <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-      
+      <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
       <p id="about_author_header">
         <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
       </p>
-      
+
       <div id="author_details" style="text-align: justify;">
         Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
       </div>
-      
+
       <div id="follow_social" style="clear: both;">
         <div id="social_logos">
           <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
         </div>
-        
+
         <div class="clear">
         </div>
-      </div>
-    </div>
-    
-    <div class="amazon_books">
-      <p>
-        Adrian&#8217;s favorite Spring and Java books (affiliate links)
-      </p>
-      
-      <div class="amazon_book">
-      </div>
-      
-      <div class="amazon_book">
-      </div>
-      
-      <div class="amazon_book">
-      </div>
-      
-      <div class="amazon_book">
-      </div>
-      
-      <div class="clear">
       </div>
     </div>

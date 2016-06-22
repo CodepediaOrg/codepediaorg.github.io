@@ -37,7 +37,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#1_The_trick">1. The trick</a><ul>
@@ -62,7 +62,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#2_Resources">2. Resources</a><ul>
         <li>
@@ -74,12 +74,12 @@ tags:
 </div>
 
 
-  
+
 In this post I will present a trick I used to create the responsive menu on <a title="http://www.podcastpedia.org/" href="http://www.podcastpedia.org/" target="_blank">Podcastpedia.org</a> :
 
 <div id="attachment_1408" style="width: 643px" class="wp-caption alignnone">
   <a href="http://www.codingpedia.org/wp-content/uploads/2014/05/Responsive-menu-support.png"><img class="wp-image-1408 size-full" src="http://www.codingpedia.org/wp-content/uploads/2014/05/Responsive-menu-support.png" alt="Responsive menu on Podcastpedia.org" width="633" height="372" srcset="http://www.codingpedia.org/wp-content/uploads/2014/05/Responsive-menu-support.png 633w, http://www.codingpedia.org/wp-content/uploads/2014/05/Responsive-menu-support-300x176.png 300w" sizes="(max-width: 633px) 100vw, 633px" /></a>
-  
+
   <p class="wp-caption-text">
     Responsive menu on Podcastpedia.org
   </p>
@@ -140,48 +140,48 @@ Well, the trick I used was to have the links from the menu inserted twice in the
 <pre class="lang:xhtml mark:25-49 decode:true" title="Navigation HTML/JSP code">&lt;div id="nav"&gt;
 	&lt;ul&gt;						
 		&lt;li id="nav-homepage"&gt; 			
-			&lt;a href="/"&gt;Home&lt;/a&gt; 
+			&lt;a href="/"&gt;Home&lt;/a&gt;
 		&lt;/li&gt;				
-		&lt;li id="nav-tags"&gt; 
+		&lt;li id="nav-tags"&gt;
 			&lt;a href="/tags/all/0"&gt;Keywords&lt;/a&gt;					
 		&lt;/li&gt;							
-		&lt;li id="nav-categories"&gt; 
+		&lt;li id="nav-categories"&gt;
 			&lt;a href="/categories"&gt;Categories&lt;/a&gt; 					
-		&lt;/li&gt;	
+		&lt;/li&gt;
 		&lt;li id="nav-add-podcast"&gt; 				
-			&lt;a href="/how_can_i_help/add_podcast"&gt;Add Podcast&lt;/a&gt; 
+			&lt;a href="/how_can_i_help/add_podcast"&gt;Add Podcast&lt;/a&gt;
 		&lt;/li&gt;								
-		&lt;li id="nav-support"&gt; 
+		&lt;li id="nav-support"&gt;
 
-			&lt;a href="/how_can_i_help"&gt;Support&lt;/a&gt; 
+			&lt;a href="/how_can_i_help"&gt;Support&lt;/a&gt;
 		&lt;/li&gt;		
-		&lt;li id="nav-contact"&gt; 
-			&lt;a href="/contact"&gt;Contact&lt;/a&gt; 
+		&lt;li id="nav-contact"&gt;
+			&lt;a href="/contact"&gt;Contact&lt;/a&gt;
 		&lt;/li&gt;
-		&lt;li id="nav-podcasting"&gt; 
-			&lt;a href="/podcasting"&gt;Podcasting&lt;/a&gt; 
+		&lt;li id="nav-podcasting"&gt;
+			&lt;a href="/podcasting"&gt;Podcasting&lt;/a&gt;
 		&lt;/li&gt;
-		&lt;li id="nav-responsive"&gt; 
-			&lt;a href="#"&gt;&lt;/a&gt; 
+		&lt;li id="nav-responsive"&gt;
+			&lt;a href="#"&gt;&lt;/a&gt;
 			&lt;ul&gt;
-				&lt;li id="nav-tags-resp"&gt; 
+				&lt;li id="nav-tags-resp"&gt;
 					&lt;a href="/tags/all/0"&gt;Keywords&lt;/a&gt;					
 				&lt;/li&gt;				
-				&lt;li id="nav-categories-resp"&gt; 
+				&lt;li id="nav-categories-resp"&gt;
 					&lt;a href="/categories"&gt;Categories&lt;/a&gt; 					
-				&lt;/li&gt;	
-				&lt;li id="nav-add-podcast-resp"&gt; 				
-					&lt;a href="/how_can_i_help/add_podcast"&gt;Add Podcast&lt;/a&gt; 
-				&lt;/li&gt;								
-				&lt;li id="nav-support-resp"&gt; 
-
-					&lt;a href="/how_can_i_help"&gt;Support&lt;/a&gt; 
-				&lt;/li&gt;		
-				&lt;li id="nav-contact-resp"&gt; 
-					&lt;a href="/contact"&gt;Contact&lt;/a&gt; 
 				&lt;/li&gt;
-				&lt;li id="nav-podcasting-resp"&gt; 
-					&lt;a href="/podcasting"&gt;Podcasting&lt;/a&gt; 
+				&lt;li id="nav-add-podcast-resp"&gt; 				
+					&lt;a href="/how_can_i_help/add_podcast"&gt;Add Podcast&lt;/a&gt;
+				&lt;/li&gt;								
+				&lt;li id="nav-support-resp"&gt;
+
+					&lt;a href="/how_can_i_help"&gt;Support&lt;/a&gt;
+				&lt;/li&gt;		
+				&lt;li id="nav-contact-resp"&gt;
+					&lt;a href="/contact"&gt;Contact&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li id="nav-podcasting-resp"&gt;
+					&lt;a href="/podcasting"&gt;Podcasting&lt;/a&gt;
 				&lt;/li&gt;					
 			&lt;/ul&gt;
 		&lt;/li&gt;			
@@ -209,7 +209,7 @@ Now that the menu item are present twice, I can show and hide them based on the 
 }
 
 @media screen and (max-width: 900px) {
-  #nav-support-resp { 
+  #nav-support-resp {
     display: block;
   }
   #nav-support {
@@ -218,7 +218,7 @@ Now that the menu item are present twice, I can show and hide them based on the 
 }
 
 @media screen and (max-width: 750px) {
-  #nav-add-podcast-resp { 
+  #nav-add-podcast-resp {
     display: block;
   }
   #nav-add-podcast {
@@ -227,7 +227,7 @@ Now that the menu item are present twice, I can show and hide them based on the 
 }
 
 @media screen and (max-width: 610px) {
-  #nav-categories-resp { 
+  #nav-categories-resp {
     display: block;
   }
   #nav-categories {
@@ -236,7 +236,7 @@ Now that the menu item are present twice, I can show and hide them based on the 
 }
 
 @media screen and (max-width: 465px) {
-  #nav-tags-resp { 
+  #nav-tags-resp {
     display: block;
   }
   #nav-tags {
@@ -247,16 +247,6 @@ Now that the menu item are present twice, I can show and hide them based on the 
 <p style="text-align: justify;">
   As you can see in the code for big screens (width over 1040px) the elements marked with <code>resp(onsive)</code> are not shown at all, but once the width gets smaller, elements from the menu are hidden and corresponding elements from the second <code>resp(onsive)</code> menu list. These are now shown when you hover (tip on mobile) over the standard menu icon <img class="alignnone size-full wp-image-1412" src="http://www.codingpedia.org/wp-content/uploads/2014/05/standard-menu-icon.png" alt="standard menu icon" width="33" height="30" />
 </p>
-
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
 
 <p class="note_normal">
   <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
@@ -270,21 +260,21 @@ Now that the menu item are present twice, I can show and hide them based on the 
   2. <a title="http://www.w3schools.com/cssref/pr_class_display.asp" href="http://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">CSS display Property</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

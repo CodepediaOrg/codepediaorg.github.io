@@ -44,7 +44,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#Problem">Problem</a>
@@ -85,8 +85,8 @@ The resource called the jQuery ajax `getJSON`:
     $("#tagQuery").autocomplete({    	
     	minLength: 1,
     	delay: 500,
-    	
-    	//define callback to format results 
+
+    	//define callback to format results
         source: function (request, response) {
             $.getJSON("/tags/get_tag_list", request, function(result) {                
                 response($.map(result, function(item) {                	
@@ -98,11 +98,11 @@ The resource called the jQuery ajax `getJSON`:
                         // following property is added for our own use
                         tag_url: "http://" + window.location.host + "/tags/" + item.tagId + "/" + item.name
                     }
-                	
+
                 }));
-        	}); 
+        	});
     	},
-        
+
     	//define select handler
     	select : function(event, ui) {
             if (ui.item) {       
@@ -112,12 +112,12 @@ The resource called the jQuery ajax `getJSON`:
                 var defValue = $("#tagQuery").prop('defaultValue');
                 $("#tagQuery").val(defValue);
                 $("#tagQuery").blur();
-                return false; 
+                return false;
             }
     	}
-    	  	
+
     });
-            
+
 });</pre>
 
 seemed to have been &#8220;rightfully&#8221; mapped by Spring, when looking in the starting log:
@@ -198,16 +198,6 @@ This dependency will download also the [jackson-core](http://mvnrepository.com/
 
 So, the short version of the blog post is _upgrade your jackson libraries to minimum of 2.1 to work with Spring 4.1 🙂_
 
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
-
 ## <span id="Resources">Resources</span>
 
 ### <span id="GitHub">GitHub</span>
@@ -222,21 +212,21 @@ So, the short version of the blog post is _upgrade your jackson libraries to min
   * <a title="http://wiki.fasterxml.com/JacksonUpgradeFrom19To20" href="http://wiki.fasterxml.com/JacksonUpgradeFrom19To20" target="_blank">Upgrading Jackson 1.9 to 2.0</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

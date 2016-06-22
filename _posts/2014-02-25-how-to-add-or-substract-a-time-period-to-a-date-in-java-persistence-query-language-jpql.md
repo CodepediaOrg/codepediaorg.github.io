@@ -49,9 +49,9 @@ tags:
 <pre class="lang:java decode:true" title="Substract time period with JPA/JPQL">public List&lt;Podcast&gt; getRecentPodcasts(int numberOfDaysToLookBack) {
 
 	Calendar calendar = new GregorianCalendar();
-	calendar.setTimeZone(TimeZone.getTimeZone("UTC+1"));//Munich time 
+	calendar.setTimeZone(TimeZone.getTimeZone("UTC+1"));//Munich time
 	calendar.setTime(new Date());
-	calendar.add(Calendar.DATE, -numberOfDaysToLookBack);//substract the number of days to look back 
+	calendar.add(Calendar.DATE, -numberOfDaysToLookBack);//substract the number of days to look back
 	Date dateToLookBackAfter = calendar.getTime();
 
 	String qlString = "SELECT p FROM Podcast p where p.insertionDate &gt; :dateToLookBackAfter";
@@ -83,43 +83,22 @@ Check out also my related posts on the topic
   * <a title="RESTful Web Services Example in Java with Jersey, Spring and MyBatis" href="http://www.codingpedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/http://" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis </a>&#8211; defines a REST API that among others, it requests recent podcasts employing the above method
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
-  </div>
-</div>
-
-<div class="amazon_books">
-  <p>
-    Adrian&#8217;s favorite JPA and Java books (affiliate links)
-  </p>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="clear">
   </div>
 </div>

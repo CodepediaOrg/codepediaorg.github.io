@@ -74,7 +74,7 @@ If you find yourself getting the following errror, when trying to send an email 
         &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
         &lt;version&gt;1.1.3.RELEASE&lt;/version&gt;
     &lt;/parent&gt;
-    
+
     &lt;dependencies&gt;
 	........
  		&lt;dependency&gt;
@@ -91,10 +91,10 @@ If you find yourself getting the following errror, when trying to send an email 
 			&lt;groupId&gt;javax.mail&lt;/groupId&gt;
 			&lt;artifactId&gt;mail&lt;/artifactId&gt;
 			&lt;version&gt;1.4.7&lt;/version&gt;
-		&lt;/dependency&gt;	
+		&lt;/dependency&gt;
 	........
-    &lt;/dependencies&gt;	
-	
+    &lt;/dependencies&gt;
+
     &lt;repositories&gt;
         &lt;repository&gt;
             &lt;id&gt;spring-snapshots&lt;/id&gt;
@@ -121,34 +121,24 @@ If you get this error in any circumstances make sure you use a newer version of 
   P.S. A complete Spring Batch tutorial with Spring Boot will follow soon, so stay tuned&#8230;
 </p>
 
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
-
 &nbsp;
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

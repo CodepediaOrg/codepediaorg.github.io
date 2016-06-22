@@ -38,7 +38,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#1_Use_case_from_Podcastpediaorg">1. Use case from Podcastpedia.org</a>
@@ -55,7 +55,7 @@ tags:
             </li>
           </ul>
         </li>
-        
+
         <li>
           <a href="#22_HEAD_request_with_Apache_Http_Client">2.2. HEAD request with Apache Http Client</a><ul>
             <li>
@@ -71,7 +71,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Resources">Resources</a><ul>
         <li>
@@ -148,29 +148,29 @@ tags:
 #### <span id="221_Before_v42x">2.2.1. Before v4.2.x</span>
 
 <pre class="lang:java decode:true" title="Example of executing a HEAD request with Apache HttpClient">private void setHeaderFieldAttributes(Podcast podcast) throws ClientProtocolException, IOException, DateParseException{
-	
+
 	HttpHead headMethod = null;					
 	headMethod = new HttpHead(podcast.getUrl());
-	
+
 	org.apache.http.client.HttpClient httpClient = new DefaultHttpClient(poolingClientConnectionManager);
-	
+
 	HttpParams params = httpClient.getParams();
 	org.apache.http.params.HttpConnectionParams.setConnectionTimeout(params, 10000);
 	org.apache.http.params.HttpConnectionParams.setSoTimeout(params, 10000);
 	HttpResponse httpResponse = httpClient.execute(headMethod);
 	int statusCode = httpResponse.getStatusLine().getStatusCode();
-  
+
 	if (statusCode != HttpStatus.SC_OK) {
 		LOG.error("The introduced URL is not valid " + podcast.getUrl()  + " : " + statusCode);
 	}
-  
+
 	//set the new etag if existent
 	org.apache.http.Header eTagHeader = httpResponse.getLastHeader("etag");
 	if(eTagHeader != null){
 		podcast.setEtagHeaderField(eTagHeader.getValue());
 	}
-  
-	//set the new "last modified" header field if existent 
+
+	//set the new "last modified" header field if existent
 	org.apache.http.Header lastModifiedHeader= httpResponse.getLastHeader("last-modified");
 	if(lastModifiedHeader != null) {
 		podcast.setLastModifiedHeaderField(DateUtil.parseDate(lastModifiedHeader.getValue()));
@@ -192,15 +192,15 @@ tags:
 #### <span id="222_After_v_43x"> 2.2.2. After v 4.3.x</span>
 
 <pre class="lang:default mark:11-15 decode:true" title="HEAD request example with Apache Http Client v 4.3.x">private void setHeaderFieldAttributes(Podcast podcast) throws ClientProtocolException, IOException, DateParseException{
-	
+
 	HttpHead headMethod = null;					
 	headMethod = new HttpHead(podcast.getUrl());
-					
+
 	RequestConfig requestConfig = RequestConfig.custom()
 			.setSocketTimeout(TIMEOUT * 1000)
 			.setConnectTimeout(TIMEOUT * 1000)
 			.build();
-	
+
 	CloseableHttpClient httpClient = HttpClientBuilder
 								.create()
 								.setDefaultRequestConfig(requestConfig)
@@ -209,18 +209,18 @@ tags:
 
 	HttpResponse httpResponse = httpClient.execute(headMethod);
 	int statusCode = httpResponse.getStatusLine().getStatusCode();
-  
+
 	if (statusCode != HttpStatus.SC_OK) {
 		LOG.error("The introduced URL is not valid " + podcast.getUrl()  + " : " + statusCode);
 	}
-  
+
 	//set the new etag if existent
 	Header eTagHeader = httpResponse.getLastHeader("etag");
 	if(eTagHeader != null){
 		podcast.setEtagHeaderField(eTagHeader.getValue());
 	}
-  
-	//set the new "last modified" header field if existent 
+
+	//set the new "last modified" header field if existent
 	Header lastModifiedHeader= httpResponse.getLastHeader("last-modified");
 	if(lastModifiedHeader != null) {
 		podcast.setLastModifiedHeaderField(DateUtil.parseDate(lastModifiedHeader.getValue()));
@@ -257,16 +257,6 @@ RequestConfig requestConfig = RequestConfig.custom()
 		.setProxy(proxy)
 		.build();</pre>
 
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
-
 ## <span id="Resources">Resources</span>
 
 ### <span id="Source_Code_8211_GitHub">Source Code &#8211; GitHub</span>
@@ -278,22 +268,22 @@ RequestConfig requestConfig = RequestConfig.custom()
 ### <span id="Web">Web</span>
 
   * <a title="http://www.ietf.org/rfc/rfc2616.txt" href="http://www.ietf.org/rfc/rfc2616.txthttp://" target="_blank"> Hypertext Transfer Protocol &#8212; HTTP/1.1</a>
-  * Maven Repository 
+  * Maven Repository
       * <a title="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient" href="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient" target="_blank">HttpComponents Client </a>
       * <a title="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore" href="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore" target="_blank">HttpComponents Core (blocking I/O)</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2014/01/AdrianMatei.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2014/01/AdrianMatei.png" alt="Podcastpedia image" />
+
   <div id="author_details" style="text-align: justify;">
     <a title="Codingpedia.org, let's code the better world" href="http://www.codingpedia.org/" target="_blank">Codingpedia.org</a> was founded by Adrian Matei (ama [AT] codingpedia DOT org), a computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy.
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+AdrianMatei" target="_blank"> </a><a class="icon-twitter" href="https://twitter.com/adrianimatei" target="_blank"> </a><a class="icon-linkedin" href="http://www.linkedin.com/in/adrianmatei1983" target="_blank"> </a><a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

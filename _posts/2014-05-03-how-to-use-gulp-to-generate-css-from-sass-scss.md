@@ -40,7 +40,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#1_Set_up_the_infrastructure">1. Set up the infrastructure</a><ul>
@@ -63,13 +63,13 @@ tags:
             </li>
           </ul>
         </li>
-        
+
         <li>
           <a href="#13_Install_Gulp_plugins">1.3. Install Gulp plugins</a>
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#2_gulpfilejs">2. gulpfile.js</a><ul>
         <li>
@@ -86,7 +86,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#3_Resources">3. Resources</a><ul>
         <li>
@@ -250,7 +250,7 @@ except in node instead of the shell! &#8221; [7]
   * minify them
   * and write them (_podcastpedia.css_, _podcastpedia.min.css_) minified to disk in the folder _target/css_:
 
-<pre class="lang:js decode:true" title="Define gulp sass piped task">gulp.task("sass", function(){ 
+<pre class="lang:js decode:true" title="Define gulp sass piped task">gulp.task("sass", function(){
 	log("Generate CSS files " + (new Date()).toString());
     gulp.src(sassFiles)
 		.pipe(sass({ style: 'expanded' }))
@@ -286,20 +286,6 @@ To run the task I have to execute `gulp sass` on the command line in the root fo
 
 Well, that&#8217;s it &#8211; few lines of code for pretty good functionality. I am looking forward to dwelve more and find out what Gulp can do&#8230; Your comments, suggestions and code contributions are very welcomed.
 
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
-
-
-  
-
-
 <p class="note_normal">
   <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
@@ -326,21 +312,21 @@ Well, that&#8217;s it &#8211; few lines of code for pretty good functionality. I
   8. <a title="http://slides.com/contra/gulp" href="http://slides.com/contra/gulp" target="_blank">Gulp &#8211; the streaming build system [presentation]</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

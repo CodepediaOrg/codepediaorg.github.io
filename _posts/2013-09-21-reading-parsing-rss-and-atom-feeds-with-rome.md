@@ -33,7 +33,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#Maven_dependencies">Maven dependencies</a>
@@ -51,7 +51,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Using_the_SyndFeed_interface">Using the SyndFeed interface</a>
     </li>
@@ -71,7 +71,7 @@ In order to use Rome in the Java project, you have to add `rome.jar` and `jdom.j
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#Maven_dependencies">Maven dependencies</a>
@@ -89,7 +89,7 @@ In order to use Rome in the Java project, you have to add `rome.jar` and `jdom.j
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Using_the_SyndFeed_interface">Using the SyndFeed interface</a>
     </li>
@@ -167,7 +167,7 @@ SyndFeed feed = input.build(new XmlReader(feedUrl));</pre>
 		if( is != null)	is.close();
 	}
 
-	return feed; 
+	return feed;
 }</pre>
 
 <p style="text-align: justify;">
@@ -316,47 +316,27 @@ Thanks for sharing and connecting with us
   4. <a title="JAVA: Resolving org.xml.sax.SAXParseException: Content is not allowed in prolog" href="http://mark.koli.ch/2009/02/resolving-orgxmlsaxsaxparseexception-content-is-not-allowed-in-prolog.html" target="_blank">JAVA: Resolving org.xml.sax.SAXParseException: Content is not allowed in prolog</a>
   5. <a title="Stackoverflow resource" href="http://stackoverflow.com/questions/20148840/getting-strange-characters-when-trying-to-read-utf-8-document-from-url" target="_blank">Stackoverflow &#8211; Getting strange characters when trying to read UTF-8 document from URL</a>
 
-<div class="amazon_books">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>
   </div>
-  
-  <p>
-    Adrian&#8217;s favorite Spring and Java books
-  </p>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="amazon_book">
-  </div>
-  
-  <div class="clear">
-  </div>
-</div>
+
 
 P.S. The stack trace of the mean &#8220;Content is not allowed in prolog&#8221;-error is listed bellow:
 

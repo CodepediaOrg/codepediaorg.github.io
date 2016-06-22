@@ -46,7 +46,7 @@ tags:
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#1_Define_checked_exception_and_exception_mapper">1. Define checked exception and exception mapper</a>
@@ -64,7 +64,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Summary">Summary</a>
       </li>
@@ -88,9 +88,9 @@ For the purpose of this demonstration I defined a `CustomReasonPhraseException`:
 <pre class="lang:java decode:true" title="CustomReasonPhraseException">package org.codingpedia.demo.rest.errorhandling;
 
 public class CustomReasonPhraseException extends Exception {
-		
+
 	private static final long serialVersionUID = -271582074543512905L;
-	
+
 	private final int businessCode;
 
 	public CustomReasonPhraseException(int businessCode, String message) {
@@ -101,7 +101,7 @@ public class CustomReasonPhraseException extends Exception {
 	public int getBusinessCode() {
 		return businessCode;
 	}
-		
+
 }</pre>
 
 and a  `CustomReasonPhraseExceptionMapper` to handle the mapping to a response if a `CustomReasonPhraseException` occurs:
@@ -153,30 +153,30 @@ public abstract class AbstractStatusType implements StatusType {
 	public AbstractStatusType(final Family family, final int statusCode,
                           final String reasonPhrase) {
 	    super();
-	
+
 	    this.family = family;
 	    this.statusCode = statusCode;
 	    this.reasonPhrase = reasonPhrase;
 	}
-	
+
 	protected AbstractStatusType(final Status status,
 	                             final String reasonPhrase) {
 	    this(status.getFamily(), status.getStatusCode(), reasonPhrase);
 	}
-	
+
 	@Override
 	public Family getFamily() { return family; }
-	
+
 	@Override
 	public String getReasonPhrase() { return reasonPhrase; }
-	
+
 	@Override
 	public int getStatusCode() { return statusCode; }
 
 	private final Family family;
 	private final int statusCode;
 	private final String reasonPhrase;
-	
+
 }
 </pre>
 
@@ -191,9 +191,9 @@ import javax.ws.rs.core.Response.Status;
  * The Reason Phrase is set in this case to "Custom error message"
  */
 public class CustomReasonPhraseExceptionStatusType extends AbstractStatusType{
-	
+
 	private static final String CUSTOM_EXCEPTION_REASON_PHRASE = "Custom error message";
-	
+
 	public CustomReasonPhraseExceptionStatusType(Status httpStatus) {
 		super(httpStatus, CUSTOM_EXCEPTION_REASON_PHRASE);
 	}
@@ -244,39 +244,27 @@ Custom Reason Phrase exception occured : message attached to the Custom Reason P
   Well, that&#8217;s it. Keep on coding and keep on sharing coding knowledge.
 </p>
 
-<p style="text-align: justify;">
-  <div id="end-donate">
-    <div id="end-donate-text">
-      If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-    </div>
-    
-    <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-    
-    <!-- End PayPal Donations -->
-  </div>
-</p>
-
 ## <span id="Resources">Resources</span>
 
   1. <a title="http://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html" target="_blank">Hypertext Transfer Protocol &#8212; HTTP/1.1 &#8211; Response</a>
   2. <a title="https://jersey.java.net/documentation/latest/user-guide.html" href="https://jersey.java.net/documentation/latest/user-guide.html" target="_blank">Jersey User Guide</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

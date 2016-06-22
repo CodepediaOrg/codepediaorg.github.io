@@ -27,7 +27,6 @@ dsq_thread_id:
 categories:
   - Java EE
   - spring
-  - Uncategorized
 tags:
   - api
   - manifest
@@ -57,31 +56,31 @@ I have developed two REST resources reading from the Manifest file :
 
 <pre class="lang:java mark:1 decode:true" title="Manifest REST resource">@Path("/manifest")
 public class ManifestResource {
-	
+
 	@Autowired
 	ManifestService manifestService;
-	
+
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 	public Response getManifestAttributes() throws FileNotFoundException, IOException{
 		Attributes manifestAttributes = manifestService.getManifestAttributes();
-		
+
 		return Response.status(Response.Status.OK)
 				.entity(manifestAttributes)
 				.build();
-	}	
-	
+	}
+
 	@Path("/implementation-details")
-	@GET	
+	@GET
 	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 	public Response getVersion() throws FileNotFoundException, IOException{
 		ImplementationDetails implementationVersion = manifestService.getImplementationVersion();
-		
+
 		return Response.status(Response.Status.OK)
 				.entity(implementationVersion)
 				.build();
 	}
-	
+
 }</pre>
 
 ### Request
@@ -174,19 +173,19 @@ See  <a title=" Apache Maven Archiver" href="http://maven.apache.org/shared/mav
 Reading from the manifest file occurs in the injected ManifestService class:
 
 <pre class="lang:java decode:true" title="ManifestService.java">public class ManifestService {
-	
+
 	@Autowired
 	ServletContext context;
-		
+
 	Attributes getManifestAttributes() throws FileNotFoundException, IOException{
 	    InputStream resourceAsStream = context.getResourceAsStream("/META-INF/MANIFEST.MF");
 	    Manifest mf = new Manifest();
 	    mf.read(resourceAsStream);
 	    Attributes atts = mf.getMainAttributes();
-	    
+
 	    return atts;	    		
-	}	
-	
+	}
+
 	ImplementationDetails getImplementationVersion() throws FileNotFoundException, IOException{
 	    String appServerHome = context.getRealPath("/");
 	    File manifestFile = new File(appServerHome, "META-INF/MANIFEST.MF");
@@ -200,10 +199,10 @@ Reading from the manifest file occurs in the injected ManifestService class:
 	    response.setImplementationTitle(atts.getValue("Implementation-Title"));
 	    response.setImplementationVersion(atts.getValue("Implementation-Version"));
 	    response.setImplementationVendorId(atts.getValue("Implementation-Vendor-Id"));
-	    
+
 	    return response;		
 	}
-	
+
 }</pre>
 
 To access the MANIFEST.MF file you need to inject the <a title="http://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html" href="http://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html" target="_blank">ServletContext</a>, and call one of its methods
@@ -218,18 +217,18 @@ To access the MANIFEST.MF file you need to inject the <a title="http://docs.ora
 In a JavaEE environment, you would have the ServletContext injected via the @Context annotation:
 
 <pre class="lang:java mark:3 decode:true" title="Java EE implementation version">public class ManifestResource {
-	
+
 	@Context
 	ServletContext context;
-	
+
 	@GET
-	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })	
+	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 	public Response getManifestAttributes() throws FileNotFoundException, IOException{
 	    InputStream resourceAsStream = context.getResourceAsStream("/META-INF/MANIFEST.MF");
 	    Manifest mf = new Manifest();
 	    mf.read(resourceAsStream);
 	    Attributes atts = mf.getMainAttributes();
-	    
+
 		return Response.status(Response.Status.OK)
 				.entity(atts)
 				.build();	    		
@@ -238,45 +237,33 @@ In a JavaEE environment, you would have the ServletContext injected via the @Con
 }</pre>
 
 Here you have &#8211; a quick way to verify that your REST api is reachable. If you have any suggestions please leave a comment below.
-  
-
-
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-  
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-  
-  <!-- End PayPal Donations -->
-</div>
 
 ## Resources
 
-  1. Apache Maven 
+  1. Apache Maven
       1. <a title="http://maven.apache.org/shared/maven-archiver/index.html" href="http://maven.apache.org/shared/maven-archiver/index.html" target="_blank">Apache Maven Archiver</a>
       2. <a title="http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Built-in_Lifecycle_Bindings" href="http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Built-in_Lifecycle_Bindings" target="_blank">Introduction to the Build Lifecycle#Built-in_Lifecycle_Bindings</a>
   2. Oracle docs &#8211; <a title="http://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html" href="http://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html" target="_blank">Working with Manifest Files: The Basics</a>
-  3.  Stackoverflow 
+  3.  Stackoverflow
       1. <a title="http://stackoverflow.com/questions/2712970/how-to-get-maven-artifact-version-at-runtime" href="http://stackoverflow.com/questions/2712970/how-to-get-maven-artifact-version-at-runtime" target="_blank">How to get Maven Artifact version at runtime?</a>
       2. <a title="http://stackoverflow.com/questions/14760638/how-to-get-maven-project-version-from-java-method-as-like-at-pom" href="http://stackoverflow.com/questions/14760638/how-to-get-maven-project-version-from-java-method-as-like-at-pom" target="_blank">How to Get Maven Project Version From Java Method as Like at Pom</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

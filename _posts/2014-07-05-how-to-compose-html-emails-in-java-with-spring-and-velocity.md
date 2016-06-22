@@ -359,16 +359,6 @@ Let&#8217;s see how everything is configured in the application context:
   You&#8217;ve learned in this example how to compose html emails in Java with Spring and Velocity. All you need are mail, spring and velocity libraries, compose your email template and use those simple Spring helper classes to add metadata to the email and send it.
 </p>
 
-<div id="end-donate">
-  <div id="end-donate-text">
-    If you liked this article, we would really appreciate a small contribution for our work! Donate now with Paypal.
-  </div>
-
-  <!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
-
-  <!-- End PayPal Donations -->
-</div>
-
 ## <span id="Resources">Resources</span>
 
   1. <a title="http://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/mail.html" href="http://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/mail.html" target="_blank">Spring Email integration </a>

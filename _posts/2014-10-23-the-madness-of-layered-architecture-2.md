@@ -143,7 +143,7 @@ tags:
 
 <p style="color: #333333;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.gravatar.com/avatar/4f603396c8723741d2665f87beb4d1f2?s=150&r=pg&d=mm" alt="Johannes Brodwall" /> 
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/johannes-brodwall.jpeg" alt="Johannes Brodwall" /> 
     
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/jhannes/" target="_blank">Johannes Brodwall</a></strong>

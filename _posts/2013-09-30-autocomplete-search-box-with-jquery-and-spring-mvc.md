@@ -331,7 +331,7 @@ The controller method is called asynchronously every time the user tips a new ch
   6. <a title="Ajax Simplifications in Spring 3.0" href="http://spring.io/blog/2010/01/25/ajax-simplifications-in-spring-3-0/" target="_blank">Ajax Simplifications in Spring 3.0</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

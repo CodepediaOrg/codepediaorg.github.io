@@ -312,7 +312,7 @@ Well, that&#8217;s it &#8211; few lines of code for pretty good functionality. I
   8. <a title="http://slides.com/contra/gulp" href="http://slides.com/contra/gulp" target="_blank">Gulp &#8211; the streaming build system [presentation]</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

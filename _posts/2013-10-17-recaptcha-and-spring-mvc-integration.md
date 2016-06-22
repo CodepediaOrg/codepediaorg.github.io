@@ -299,7 +299,7 @@ Well, that&#8217;s it. After reading this I hope you feel more positive about re
   4. <a title="Spring Framework Reference Documentation" href="http://docs.spring.io/spring/docs/3.2.3.RELEASE/spring-framework-reference/html/" target="_blank">Spring Framework Reference Documentation</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
   
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

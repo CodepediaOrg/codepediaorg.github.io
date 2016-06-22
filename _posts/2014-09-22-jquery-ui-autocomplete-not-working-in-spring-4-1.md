@@ -212,7 +212,7 @@ So, the short version of the blog post is _upgrade your jackson libraries to min
   * <a title="http://wiki.fasterxml.com/JacksonUpgradeFrom19To20" href="http://wiki.fasterxml.com/JacksonUpgradeFrom19To20" target="_blank">Upgrading Jackson 1.9 to 2.0</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

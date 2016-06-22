@@ -260,7 +260,7 @@ Now that the menu item are present twice, I can show and hide them based on the 
   2. <a title="http://www.w3schools.com/cssref/pr_class_display.asp" href="http://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">CSS display Property</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

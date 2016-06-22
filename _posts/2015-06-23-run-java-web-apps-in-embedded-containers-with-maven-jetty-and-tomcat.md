@@ -250,7 +250,7 @@ In context.xml there are defined the database and email resources.
   2. <a title="https://tomcat.apache.org/maven-plugin-trunk/index.html" href="https://tomcat.apache.org/maven-plugin-trunk/index.html" target="_blank">Apache Tomcat Maven Plugin</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
   
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

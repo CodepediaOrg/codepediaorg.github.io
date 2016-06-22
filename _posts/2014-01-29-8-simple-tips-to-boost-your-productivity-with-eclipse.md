@@ -471,7 +471,7 @@ you can automate some of the boring tasks like format source code, organize impo
   * <a title="http://www.codingpedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit/" href="http://www.codingpedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit/" target="_blank">Install Eclipse Kepler 64-bit on Windows 7 64-bit</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

@@ -488,7 +488,7 @@ else if (time.Subtract(LastMotionTime) &gt; TimeSpan.FromMinutes(1) || (timeOfDa
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2016/02/toptal-logo.png" alt="Toptal-logo" /> 
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/toptal-logo.png" alt="Toptal-logo" /> 
   
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/toptal/" target="_blank">Toptal Blog</a></strong>

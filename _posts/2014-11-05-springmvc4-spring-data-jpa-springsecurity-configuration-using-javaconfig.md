@@ -858,7 +858,7 @@ You can find the source code at github <a title="https://github.com/sivaprasadr
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2014/09/sivalabs.png" alt="Siva Reddy" /> 
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/sivalabs.png" alt="Siva Reddy" /> 
   
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/sivalabs/" target="_blank">Siva Reddy</a></strong>

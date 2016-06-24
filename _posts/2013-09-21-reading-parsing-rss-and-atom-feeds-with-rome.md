@@ -286,19 +286,19 @@ public void setPodcastFeedAttributes(Podcast podcast,  boolean feedPropertyHasBe
 Thanks for sharing and connecting with us
 
 <div class="social_logo_small">
-  <a href="https://plus.google.com/+CodingpediaOrg" target="_blank"><img style="float: left;" src="http://www.codingpedia.org/wp-content/uploads/2013/10/g_plus.png" alt="Google plus" /></a>
+  <a href="https://plus.google.com/+CodingpediaOrg" target="_blank"><img style="float: left;" src="{{site.url}}/images/wp-content/uploads/2013/10/g_plus.png" alt="Google plus" /></a>
 </div>
 
 <div class="social_logo_small">
-  <a href="https://twitter.com/codingpedia" target="_blank"><img class="social_logo" src="http://www.codingpedia.org/wp-content/uploads/2013/10/twitter.png" alt="Twitter" /></a>
+  <a href="https://twitter.com/codingpedia" target="_blank"><img class="social_logo" src="{{site.url}}/images/wp-content/uploads/2013/10/twitter.png" alt="Twitter" /></a>
 </div>
 
 <div class="social_logo_small">
-  <a href="https://www.facebook.com/Codingpedia" target="_blank"><img class="social_logo" src="http://www.codingpedia.org/wp-content/uploads/2013/10/fb.png" alt="Facebook" /></a>
+  <a href="https://www.facebook.com/Codingpedia" target="_blank"><img class="social_logo" src="{{site.url}}/images/wp-content/uploads/2013/10/fb.png" alt="Facebook" /></a>
 </div>
 
 <div class="social_logo_small">
-  <a href="mailto:contact@codingpedia.org" target="_blank"><img class="social_logo" src="http://www.codingpedia.org/wp-content/uploads/2013/10/email.png" alt="Email" /></a>
+  <a href="mailto:contact@codingpedia.org" target="_blank"><img class="social_logo" src="{{site.url}}/images/wp-content/uploads/2013/10/email.png" alt="Email" /></a>
 </div>
 
 <div class="clear">

@@ -186,7 +186,7 @@ After installing and learning some of Tiles concepts, it&#8217;s time to show yo
 <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> uses sort of a **classic  layout** page structure:
 
 <div id="attachment_939" style="width: 370px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/07/Template.png"><img class="size-full wp-image-939" src="http://www.codingpedia.org/wp-content/uploads/2013/07/Template.png" alt="Template" width="360" height="378" srcset="http://www.codingpedia.org/wp-content/uploads/2013/07/Template.png 360w, http://www.codingpedia.org/wp-content/uploads/2013/07/Template-285x300.png 285w" sizes="(max-width: 360px) 100vw, 360px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/07/Template.png"><img class="size-full wp-image-939" src="{{site.url}}/images/wp-content/uploads/2013/07/Template.png" alt="Template" width="360" height="378" srcset="{{site.url}}/images/wp-content/uploads/2013/07/Template.png 360w, {{site.url}}/images/wp-content/uploads/2013/07/Template-285x300.png 285w" sizes="(max-width: 360px) 100vw, 360px" /></a>
 
   <p class="wp-caption-text">
     Template

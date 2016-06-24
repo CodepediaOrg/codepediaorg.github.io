@@ -128,7 +128,7 @@ tags:
   * JDBC
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <!--more-->
@@ -156,7 +156,7 @@ Enough with talking, let&#8217;s focus now on the main topic of this post, which
 </p>
 
 <div id="attachment_814" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/10/last_updated_podcasts.png"><img class="size-medium wp-image-814 " src="http://www.codingpedia.org/wp-content/uploads/2013/10/last_updated_podcasts-300x245.png" alt="last updated podcasts" width="300" height="245" srcset="http://www.codingpedia.org/wp-content/uploads/2013/10/last_updated_podcasts-300x245.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/10/last_updated_podcasts-624x511.png 624w, http://www.codingpedia.org/wp-content/uploads/2013/10/last_updated_podcasts.png 1023w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/10/last_updated_podcasts.png"><img class="size-medium wp-image-814 " src="{{site.url}}/images/wp-content/uploads/2013/10/last_updated_podcasts-300x245.png" alt="last updated podcasts" width="300" height="245" srcset="{{site.url}}/images/wp-content/uploads/2013/10/last_updated_podcasts-300x245.png 300w, {{site.url}}/images/wp-content/uploads/2013/10/last_updated_podcasts-624x511.png 624w, {{site.url}}/images/wp-content/uploads/2013/10/last_updated_podcasts.png 1023w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   
   <p class="wp-caption-text">
     Print screen home page Podcastpedia.org
@@ -408,7 +408,7 @@ public interface PodcastDao {
   </p>
   
   <div id="attachment_821" style="width: 264px" class="wp-caption alignnone">
-    <a href="http://www.codingpedia.org/wp-content/uploads/2013/10/MyBatis-files.png"><img class="size-medium wp-image-821" src="http://www.codingpedia.org/wp-content/uploads/2013/10/MyBatis-files-254x300.png" alt="MyBatis config files " width="254" height="300" srcset="http://www.codingpedia.org/wp-content/uploads/2013/10/MyBatis-files-254x300.png 254w, http://www.codingpedia.org/wp-content/uploads/2013/10/MyBatis-files.png 482w" sizes="(max-width: 254px) 100vw, 254px" /></a>
+    <a href="{{site.url}}/images/wp-content/uploads/2013/10/MyBatis-files.png"><img class="size-medium wp-image-821" src="{{site.url}}/images/wp-content/uploads/2013/10/MyBatis-files-254x300.png" alt="MyBatis config files " width="254" height="300" srcset="{{site.url}}/images/wp-content/uploads/2013/10/MyBatis-files-254x300.png 254w, {{site.url}}/images/wp-content/uploads/2013/10/MyBatis-files.png 482w" sizes="(max-width: 254px) 100vw, 254px" /></a>
     
     <p class="wp-caption-text">
       MyBatis configuration file and mappers location
@@ -531,7 +531,7 @@ Well, that&#8217;s it. You&#8217;ve learned about MyBatis, how it integrates wit
 
 <p class="note_normal" style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 
@@ -630,7 +630,7 @@ Well, that&#8217;s it. You&#8217;ve learned about MyBatis, how it integrates wit
   * JDBC
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <!--more-->
@@ -658,7 +658,7 @@ Enough with talking, let&#8217;s focus now on the main topic of this post, which
 </p>
 
 <div id="attachment_814" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/10/last_updated_podcasts.png"><img class="size-medium wp-image-814 " src="http://www.codingpedia.org/wp-content/uploads/2013/10/last_updated_podcasts-300x245.png" alt="last updated podcasts" width="300" height="245" srcset="http://www.codingpedia.org/wp-content/uploads/2013/10/last_updated_podcasts-300x245.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/10/last_updated_podcasts-624x511.png 624w, http://www.codingpedia.org/wp-content/uploads/2013/10/last_updated_podcasts.png 1023w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/10/last_updated_podcasts.png"><img class="size-medium wp-image-814 " src="{{site.url}}/images/wp-content/uploads/2013/10/last_updated_podcasts-300x245.png" alt="last updated podcasts" width="300" height="245" srcset="{{site.url}}/images/wp-content/uploads/2013/10/last_updated_podcasts-300x245.png 300w, {{site.url}}/images/wp-content/uploads/2013/10/last_updated_podcasts-624x511.png 624w, {{site.url}}/images/wp-content/uploads/2013/10/last_updated_podcasts.png 1023w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   
   <p class="wp-caption-text">
     Print screen home page Podcastpedia.org
@@ -910,7 +910,7 @@ public interface PodcastDao {
   </p>
   
   <div id="attachment_821" style="width: 264px" class="wp-caption alignnone">
-    <a href="http://www.codingpedia.org/wp-content/uploads/2013/10/MyBatis-files.png"><img class="size-medium wp-image-821" src="http://www.codingpedia.org/wp-content/uploads/2013/10/MyBatis-files-254x300.png" alt="MyBatis config files " width="254" height="300" srcset="http://www.codingpedia.org/wp-content/uploads/2013/10/MyBatis-files-254x300.png 254w, http://www.codingpedia.org/wp-content/uploads/2013/10/MyBatis-files.png 482w" sizes="(max-width: 254px) 100vw, 254px" /></a>
+    <a href="{{site.url}}/images/wp-content/uploads/2013/10/MyBatis-files.png"><img class="size-medium wp-image-821" src="{{site.url}}/images/wp-content/uploads/2013/10/MyBatis-files-254x300.png" alt="MyBatis config files " width="254" height="300" srcset="{{site.url}}/images/wp-content/uploads/2013/10/MyBatis-files-254x300.png 254w, {{site.url}}/images/wp-content/uploads/2013/10/MyBatis-files.png 482w" sizes="(max-width: 254px) 100vw, 254px" /></a>
     
     <p class="wp-caption-text">
       MyBatis configuration file and mappers location
@@ -1033,7 +1033,7 @@ Well, that&#8217;s it. You&#8217;ve learned about MyBatis, how it integrates wit
 
 <p class="note_normal" style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 

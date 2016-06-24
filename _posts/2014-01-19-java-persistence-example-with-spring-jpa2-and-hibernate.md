@@ -130,7 +130,7 @@ tags:
 ### <span id="11_Architecture">1.1. Architecture</span>
 
 <p style="text-align: justify;">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/Example-architecture.png"><img class="alignnone size-medium wp-image-1098" src="http://www.codingpedia.org/wp-content/uploads/2014/01/Example-architecture-300x140.png" alt="Example architecture" width="300" height="140" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/Example-architecture-300x140.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/Example-architecture.png 602w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2014/01/Example-architecture.png"><img class="alignnone size-medium wp-image-1098" src="{{site.url}}/images/wp-content/uploads/2014/01/Example-architecture-300x140.png" alt="Example architecture" width="300" height="140" srcset="{{site.url}}/images/wp-content/uploads/2014/01/Example-architecture-300x140.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/Example-architecture.png 602w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 </p>
 
 #### <span id="12_Technologies_used"><span id="Technologies_version">1.2. Technologies used</span></span>

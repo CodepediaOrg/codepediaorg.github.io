@@ -35,7 +35,7 @@ tags:
 </p>
 
 <div id="attachment_959" style="width: 721px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/search-results-snippet.png"><img class="size-full wp-image-959" src="http://www.codingpedia.org/wp-content/uploads/2013/11/search-results-snippet.png" alt="Search results - print screen snippet" width="711" height="268" srcset="http://www.codingpedia.org/wp-content/uploads/2013/11/search-results-snippet.png 711w, http://www.codingpedia.org/wp-content/uploads/2013/11/search-results-snippet-300x113.png 300w" sizes="(max-width: 711px) 100vw, 711px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/search-results-snippet.png"><img class="size-full wp-image-959" src="{{site.url}}/images/wp-content/uploads/2013/11/search-results-snippet.png" alt="Search results - print screen snippet" width="711" height="268" srcset="{{site.url}}/images/wp-content/uploads/2013/11/search-results-snippet.png 711w, {{site.url}}/images/wp-content/uploads/2013/11/search-results-snippet-300x113.png 300w" sizes="(max-width: 711px) 100vw, 711px" /></a>
 
   <p class="wp-caption-text">
     Search results &#8211; print screen snippet
@@ -43,7 +43,7 @@ tags:
 </div>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <p style="text-align: justify;">
@@ -187,7 +187,7 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
   </p>
 
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </div>
 

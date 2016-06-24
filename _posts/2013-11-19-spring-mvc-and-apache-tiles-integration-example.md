@@ -58,7 +58,7 @@ Well, because it
 
   <p style="text-align: justify;">
     <p class="note_normal">
-      <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+      <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
     </p>
 
   </p>
@@ -232,7 +232,7 @@ After installing and learning some of Tiles concepts, it&#8217;s time to show yo
 <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> uses sort of a **classic layout** page structure:
 
 <div id="attachment_939" style="width: 370px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/07/Template.png"><img class="size-full wp-image-939" src="http://www.codingpedia.org/wp-content/uploads/2013/07/Template.png" alt="Template" width="360" height="378" srcset="http://www.codingpedia.org/wp-content/uploads/2013/07/Template.png 360w, http://www.codingpedia.org/wp-content/uploads/2013/07/Template-285x300.png 285w" sizes="(max-width: 360px) 100vw, 360px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/07/Template.png"><img class="size-full wp-image-939" src="{{site.url}}/images/wp-content/uploads/2013/07/Template.png" alt="Template" width="360" height="378" srcset="{{site.url}}/images/wp-content/uploads/2013/07/Template.png 360w, {{site.url}}/images/wp-content/uploads/2013/07/Template-285x300.png 285w" sizes="(max-width: 360px) 100vw, 360px" /></a>
 
   <p class="wp-caption-text">
     Template
@@ -364,7 +364,7 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 

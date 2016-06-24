@@ -69,7 +69,7 @@ tags:
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 
@@ -97,7 +97,7 @@ But what is a **&#8220;friendly&#8221;** URL? I would say it&#8217;s
 </p>
 
 <div id="attachment_848" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/google-search-results-bold.png"><img class="size-medium wp-image-848" src="http://www.codingpedia.org/wp-content/uploads/2013/11/google-search-results-bold-300x193.png" alt="goole search results page highlighted" width="300" height="193" srcset="http://www.codingpedia.org/wp-content/uploads/2013/11/google-search-results-bold-300x193.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/11/google-search-results-bold-624x403.png 624w, http://www.codingpedia.org/wp-content/uploads/2013/11/google-search-results-bold.png 1007w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/google-search-results-bold.png"><img class="size-medium wp-image-848" src="{{site.url}}/images/wp-content/uploads/2013/11/google-search-results-bold-300x193.png" alt="goole search results page highlighted" width="300" height="193" srcset="{{site.url}}/images/wp-content/uploads/2013/11/google-search-results-bold-300x193.png 300w, {{site.url}}/images/wp-content/uploads/2013/11/google-search-results-bold-624x403.png 624w, {{site.url}}/images/wp-content/uploads/2013/11/google-search-results-bold.png 1007w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   
   <p class="wp-caption-text">
     highlight of keywords in URLs
@@ -131,7 +131,7 @@ But what is a **&#8220;friendly&#8221;** URL? I would say it&#8217;s
 In the following sections I will present how an episode URL is constructed, as it is more complex:
 
 <div id="attachment_850" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/episode-URL-construction.png"><img class="size-medium wp-image-850" src="http://www.codingpedia.org/wp-content/uploads/2013/11/episode-URL-construction-300x226.png" alt="Episode URL construction" width="300" height="226" srcset="http://www.codingpedia.org/wp-content/uploads/2013/11/episode-URL-construction-300x226.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/11/episode-URL-construction-624x471.png 624w, http://www.codingpedia.org/wp-content/uploads/2013/11/episode-URL-construction.png 985w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/episode-URL-construction.png"><img class="size-medium wp-image-850" src="{{site.url}}/images/wp-content/uploads/2013/11/episode-URL-construction-300x226.png" alt="Episode URL construction" width="300" height="226" srcset="{{site.url}}/images/wp-content/uploads/2013/11/episode-URL-construction-300x226.png 300w, {{site.url}}/images/wp-content/uploads/2013/11/episode-URL-construction-624x471.png 624w, {{site.url}}/images/wp-content/uploads/2013/11/episode-URL-construction.png 985w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   
   <p class="wp-caption-text">
     Episode URL construction
@@ -309,7 +309,7 @@ So if you add the values of the `@RequestMapping` at the class level (line 16) &
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 

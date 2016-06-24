@@ -240,7 +240,7 @@ The Spring security filter chain needs to be activated.
 
 If you access a secured location via the browser, a standard HTTP authentication popup appears asking for the authentication details:
 
-[<img class="alignnone size-full wp-image-2263" src="http://www.codingpedia.org/wp-content/uploads/2015/02/standard-popup-browser.png" alt="standard-popup-browser" width="895" height="462" srcset="http://www.codingpedia.org/wp-content/uploads/2015/02/standard-popup-browser.png 895w, http://www.codingpedia.org/wp-content/uploads/2015/02/standard-popup-browser-300x154.png 300w" sizes="(max-width: 895px) 100vw, 895px" />](http://www.codingpedia.org/wp-content/uploads/2015/02/standard-popup-browser.png)
+[<img class="alignnone size-full wp-image-2263" src="{{site.url}}/images/wp-content/uploads/2015/02/standard-popup-browser.png" alt="standard-popup-browser" width="895" height="462" srcset="{{site.url}}/images/wp-content/uploads/2015/02/standard-popup-browser.png 895w, {{site.url}}/images/wp-content/uploads/2015/02/standard-popup-browser-300x154.png 300w" sizes="(max-width: 895px) 100vw, 895px" />]({{site.url}}/images/wp-content/uploads/2015/02/standard-popup-browser.png)
 
 Put in _rest/rest_ and you should receive the JSON response.
 

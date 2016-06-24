@@ -273,7 +273,7 @@ RequestConfig requestConfig = RequestConfig.custom()
       * <a title="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore" href="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore" target="_blank">HttpComponents Core (blocking I/O)</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2014/01/AdrianMatei.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/wp-content/uploads/2014/01/AdrianMatei.png" alt="Podcastpedia image" />
 
   <div id="author_details" style="text-align: justify;">
     <a title="Codingpedia.org, let's code the better world" href="http://www.codingpedia.org/" target="_blank">Codingpedia.org</a> was founded by Adrian Matei (ama [AT] codingpedia DOT org), a computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy.

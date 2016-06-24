@@ -29,7 +29,7 @@ tags:
   - usb
 ---
 <div id="attachment_901" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/1-select-apps.png"><img class="size-full wp-image-901" alt="1 - Select Apps" src="http://www.codingpedia.org/wp-content/uploads/2013/11/1-select-apps.png" width="300" height="533" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/1-select-apps.png"><img class="size-full wp-image-901" alt="1 - Select Apps" src="{{site.url}}/images/wp-content/uploads/2013/11/1-select-apps.png" width="300" height="533" /></a>
   
   <p class="wp-caption-text">
     1 &#8211; Select Apps
@@ -39,7 +39,7 @@ tags:
 <!--more-->
 
 <div id="attachment_887" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/2-go-to-settings.png"><img class="size-full wp-image-887 " alt="2 - Go to Settings" src="http://www.codingpedia.org/wp-content/uploads/2013/11/2-go-to-settings.png" width="300" height="533" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/2-go-to-settings.png"><img class="size-full wp-image-887 " alt="2 - Go to Settings" src="{{site.url}}/images/wp-content/uploads/2013/11/2-go-to-settings.png" width="300" height="533" /></a>
   
   <p class="wp-caption-text">
     2 &#8211; Go to Settings
@@ -47,7 +47,7 @@ tags:
 </div>
 
 <div id="attachment_888" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/3-select-more-about-device.png"><img class="size-full wp-image-888" alt="3 - Select More -> About Device" src="http://www.codingpedia.org/wp-content/uploads/2013/11/3-select-more-about-device.png" width="300" height="480" srcset="http://www.codingpedia.org/wp-content/uploads/2013/11/3-select-more-about-device.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/11/3-select-more-about-device-187x300.png 187w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/3-select-more-about-device.png"><img class="size-full wp-image-888" alt="3 - Select More -> About Device" src="{{site.url}}/images/wp-content/uploads/2013/11/3-select-more-about-device.png" width="300" height="480" srcset="{{site.url}}/images/wp-content/uploads/2013/11/3-select-more-about-device.png 300w, {{site.url}}/images/wp-content/uploads/2013/11/3-select-more-about-device-187x300.png 187w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   
   <p class="wp-caption-text">
     3 &#8211; Select More -> About Device
@@ -55,7 +55,7 @@ tags:
 </div>
 
 <div id="attachment_889" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/4-tap-on-build-number.png"><img class="size-full wp-image-889" alt="4 - Tap 7 times on Build Number" src="http://www.codingpedia.org/wp-content/uploads/2013/11/4-tap-on-build-number.png" width="300" height="533" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/4-tap-on-build-number.png"><img class="size-full wp-image-889" alt="4 - Tap 7 times on Build Number" src="{{site.url}}/images/wp-content/uploads/2013/11/4-tap-on-build-number.png" width="300" height="533" /></a>
   
   <p class="wp-caption-text">
     4 &#8211; Tap 7 times on Build Number
@@ -63,7 +63,7 @@ tags:
 </div>
 
 <div id="attachment_890" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/5-select-more-developer-options.png"><img class="size-full wp-image-890" alt="5 - Select More -> Developer options" src="http://www.codingpedia.org/wp-content/uploads/2013/11/5-select-more-developer-options.png" width="300" height="533" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/5-select-more-developer-options.png"><img class="size-full wp-image-890" alt="5 - Select More -> Developer options" src="{{site.url}}/images/wp-content/uploads/2013/11/5-select-more-developer-options.png" width="300" height="533" /></a>
   
   <p class="wp-caption-text">
     5 &#8211; Select More -> Developer options
@@ -71,7 +71,7 @@ tags:
 </div>
 
 <div id="attachment_891" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/6-enable-usb-debugging.png"><img class="size-full wp-image-891 " title="6 - Check USB debugging" alt="6-enable-usb-debugging" src="http://www.codingpedia.org/wp-content/uploads/2013/11/6-enable-usb-debugging.png" width="300" height="533" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/6-enable-usb-debugging.png"><img class="size-full wp-image-891 " title="6 - Check USB debugging" alt="6-enable-usb-debugging" src="{{site.url}}/images/wp-content/uploads/2013/11/6-enable-usb-debugging.png" width="300" height="533" /></a>
   
   <p class="wp-caption-text">
     6 &#8211; Check USB debugging
@@ -79,7 +79,7 @@ tags:
 </div>
 
 <div id="attachment_892" style="width: 310px" class="wp-caption alignleft">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/7-Allow-USB-debugging.png"><img class="size-full wp-image-892 " title="7 - Select OK to allow USB debugging" alt="7-Allow-USB-debugging" src="http://www.codingpedia.org/wp-content/uploads/2013/11/7-Allow-USB-debugging.png" width="300" height="533" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/7-Allow-USB-debugging.png"><img class="size-full wp-image-892 " title="7 - Select OK to allow USB debugging" alt="7-Allow-USB-debugging" src="{{site.url}}/images/wp-content/uploads/2013/11/7-Allow-USB-debugging.png" width="300" height="533" /></a>
   
   <p class="wp-caption-text">
     7 &#8211; Select OK to allow USB debugging
@@ -87,7 +87,7 @@ tags:
 </div>
 
 <div id="attachment_893" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/8-ready.png"><img class="size-full wp-image-893 " title="8 - That's it" alt="8-ready" src="http://www.codingpedia.org/wp-content/uploads/2013/11/8-ready.png" width="300" height="533" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/8-ready.png"><img class="size-full wp-image-893 " title="8 - That's it" alt="8-ready" src="{{site.url}}/images/wp-content/uploads/2013/11/8-ready.png" width="300" height="533" /></a>
   
   <p class="wp-caption-text">
     8 &#8211; That&#8217;s it

@@ -34,8 +34,6 @@ tags:
   - javascript
   - plugin
 
-show_author: true
-
 ---
 <p style="text-align: justify;">
   <div id="toc_container" class="no_bullets">

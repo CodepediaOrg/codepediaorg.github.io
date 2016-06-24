@@ -215,25 +215,25 @@ Et voilà, this solved the problem. I hope you could learn something from this a
   <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
-<p class="note_normal">
-  <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
+<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
+    
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
     </p>
-
+    
     <div id="author_details" style="text-align: justify;">
       Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
-
+    
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
       </div>
-
+    
       <div class="clear">
       </div>
     </div>
-  </div>
-</p>
+</div>
+

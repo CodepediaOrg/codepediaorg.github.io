@@ -31,9 +31,7 @@ tags:
   - '#UnitTesting'
   - 'C#'
   - testing
-
-show_author: true
------------------
+---
 <p style="text-align: justify;">
   Unit testing is an essential instrument in the toolbox of any serious <a href="http://www.toptal.com/software">software developer</a>. However, it can sometimes be quite difficult to write a good unit test for a particular piece of code. Having difficulty testing their own or someone else’s code, developers often think that their struggles are caused by a lack of some fundamental testing knowledge or secret unit testing techniques.
 </p>
@@ -79,7 +77,7 @@ public void IsPalindrome_ForPalindromeString_ReturnsTrue()
     // A system under test could be a method, a single object, or a graph of connected objects.
     // It is OK to have an empty Arrange phase, for example if we are testing a static method -
     // in this case SUT already exists in a static form and we don't have to initialize anything explicitly.
-    PalindromeDetector detector = new PalindromeDetector(); 
+    PalindromeDetector detector = new PalindromeDetector();
 
     // The Act phase is where we poke the system under test, usually by invoking a method.
     // If this method returns something back to us, we want to collect the result to ensure it was correct.
@@ -321,7 +319,7 @@ public void GetTimeOfDay_For6AM_ReturnsMorning()
         {
             LastMotionTime = time;
         }
-        
+
         // If motion was detected in the evening or at night, turn the light on.
         string timeOfDay = GetTimeOfDay(time);
         if (motionDetected && (timeOfDay == "Evening" || timeOfDay == "Night"))
@@ -488,20 +486,20 @@ else if (time.Subtract(LastMotionTime) &gt; TimeSpan.FromMinutes(1) || (timeOfDa
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/toptal-logo.png" alt="Toptal-logo" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/toptal-logo.png" alt="Toptal-logo" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/toptal/" target="_blank">Toptal Blog</a></strong>
   </p>
-  
+
   <div id="social_logos_up">
     <a class="icon-earth" href="http://www.toptal.com/blog" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/toptalllc" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/Toptal-141928212544793/" target="_blank"> </a> <a class="icon-gplus" href="https://plus.google.com/+Toptalllc/posts" target="_blank"> </a>
   </div>
-  
+
   <div id="author_details" style="text-align: justify;">
     The Toptal Engineering Blog is a hub for in-depth development tutorials and new technology announcements created by professional freelance software engineers in the Toptal network.
   </div>
-  
+
   <div class="clear">
   </div>
 </div>

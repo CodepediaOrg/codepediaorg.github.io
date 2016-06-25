@@ -518,121 +518,123 @@ You can now use the generated _id_rsa.pub_ key and upload it to the systems you 
   So here it is, my personal keyboard map reminder for the Mac OS X:
 </p>
 
-<table border="1" cellpadding="1" cellspacing="1">
-  <tr>
-    <td align="center">
-      <b>|</b>
-    </td>
+<div style="padding-bottom:20px">
+  <table border="1" cellpadding="1" cellspacing="1">
+    <tr>
+      <td align="center">
+        <b>|</b>
+      </td>
 
-    <td>
-       pipe symbol
-    </td>
+      <td>
+         pipe symbol
+      </td>
 
-    <td>
-      <b> alt7</b>
-    </td>
-  </tr>
+      <td>
+        <b> alt7</b>
+      </td>
+    </tr>
 
-  <tr>
-    <td align="center" valign="top">
-      <b>\\</b>
-    </td>
+    <tr>
+      <td align="center" valign="top">
+        <b>\\</b>
+      </td>
 
-    <td valign="top">
-       backslash
-    </td>
+      <td valign="top">
+         backslash
+      </td>
 
-    <td valign="top">
-      <b> alt shift 7</b> = <b>alt/</b>
-    </td>
-  </tr>
+      <td valign="top">
+        <b> alt shift 7</b> = <b>alt/</b>
+      </td>
+    </tr>
 
-  <tr>
-    <td align="center" valign="top">
-      <b>[</b>
-    </td>
+    <tr>
+      <td align="center" valign="top">
+        <b>[</b>
+      </td>
 
-    <td valign="top">
-       left (opening) square bracket
-    </td>
+      <td valign="top">
+         left (opening) square bracket
+      </td>
 
-    <td valign="top">
-      <b> alt 5</b>
-    </td>
-  </tr>
+      <td valign="top">
+        <b> alt 5</b>
+      </td>
+    </tr>
 
-  <tr>
-    <td align="center" valign="top">
-      <b>]</b>
-    </td>
+    <tr>
+      <td align="center" valign="top">
+        <b>]</b>
+      </td>
 
-    <td valign="top">
-       right (closing) square bracket
-    </td>
+      <td valign="top">
+         right (closing) square bracket
+      </td>
 
-    <td valign="top">
-      <b> alt 6</b>
-    </td>
-  </tr>
+      <td valign="top">
+        <b> alt 6</b>
+      </td>
+    </tr>
 
-  <tr>
-    <td align="center" valign="top">
-      <b>{</b>
-    </td>
+    <tr>
+      <td align="center" valign="top">
+        <b>{</b>
+      </td>
 
-    <td valign="top">
-       left (opening) curly bracket
-    </td>
+      <td valign="top">
+         left (opening) curly bracket
+      </td>
 
-    <td valign="top">
-      <b> alt 8</b>
-    </td>
-  </tr>
+      <td valign="top">
+        <b> alt 8</b>
+      </td>
+    </tr>
 
-  <tr>
-    <td align="center" valign="top">
-      <b>}</b>
-    </td>
+    <tr>
+      <td align="center" valign="top">
+        <b>}</b>
+      </td>
 
-    <td valign="top">
-       right (closing) curly bracket
-    </td>
+      <td valign="top">
+         right (closing) curly bracket
+      </td>
 
-    <td valign="top">
-      <b> alt 9</b>
-    </td>
-  </tr>
+      <td valign="top">
+        <b> alt 9</b>
+      </td>
+    </tr>
 
-  <tr>
-    <td align="center" valign="top">
-      <b>~</b>
-    </td>
+    <tr>
+      <td align="center" valign="top">
+        <b>~</b>
+      </td>
 
-    <td valign="top">
-       Tilde
-    </td>
+      <td valign="top">
+         Tilde
+      </td>
 
-    <td valign="top">
-      <b> alt n</b> followed by the space key
-    </td>
-  </tr>
+      <td valign="top">
+        <b> alt n</b> followed by the space key
+      </td>
+    </tr>
 
-  <tr>
-    <td align="center" valign="top">
-      <b>@</b>
-    </td>
+    <tr>
+      <td align="center" valign="top">
+        <b>@</b>
+      </td>
 
-    <td valign="top">
-       &#8220;At&#8221; symbol
-    </td>
+      <td valign="top">
+         &#8220;At&#8221; symbol
+      </td>
 
-    <td valign="top">
-      <b> alt g</b> (lowercase G)
+      <td valign="top">
+        <b> alt g</b> (lowercase G)
 
-      <b>alt L</b> German Keyboard
-    </td>
-  </tr>
-</table>
+        <b>alt L</b> German Keyboard
+      </td>
+    </tr>
+  </table>
+</div>
 
 <h3 style="text-align: justify;">
 </h3>

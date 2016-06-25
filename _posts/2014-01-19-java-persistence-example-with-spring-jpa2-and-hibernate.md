@@ -130,7 +130,7 @@ tags:
 ### <span id="11_Architecture">1.1. Architecture</span>
 
 <p style="text-align: justify;">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/Example-architecture.png"><img class="alignnone size-medium wp-image-1098" src="http://www.codingpedia.org/wp-content/uploads/2014/01/Example-architecture-300x140.png" alt="Example architecture" width="300" height="140" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/Example-architecture-300x140.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/Example-architecture.png 602w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2014/01/Example-architecture.png"><img class="alignnone size-medium wp-image-1098" src="{{site.url}}/images/wp-content/uploads/2014/01/Example-architecture-300x140.png" alt="Example architecture" width="300" height="140" srcset="{{site.url}}/images/wp-content/uploads/2014/01/Example-architecture-300x140.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/Example-architecture.png 602w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 </p>
 
 #### <span id="12_Technologies_used"><span id="Technologies_version">1.2. Technologies used</span></span>
@@ -507,7 +507,7 @@ Well, that&#8217;s it. You&#8217;ve seen how to configure Spring with JPA/Hibern
   * <a title="http://www.codingpedia.org/ama/spring-mybatis-integration-example/" href="http://www.codingpedia.org/ama/spring-mybatis-integration-example/" target="_blank">Spring MyBatis integration example</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

@@ -37,7 +37,7 @@ tags:
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#Keyboard_shortcuts">Keyboard shortcuts</a>
@@ -52,7 +52,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#What_I_really_like_about_IntelliJ">What I really like about IntelliJ</a><ul>
           <li>
@@ -75,7 +75,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#What_I_miss_from_Eclipse">What I miss from Eclipse</a><ul>
           <li>
@@ -86,7 +86,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Summary">Summary</a>
       </li>
@@ -110,239 +110,239 @@ So firt things first. Here&#8217;s a list of the shortcuts I use or ought to be
     <td width="290">
       <strong>Description</strong>
     </td>
-    
+
     <td width="156">
       <strong>Eclipse</strong>
     </td>
-    
+
     <td width="157">
       <strong>IntelliJ</strong>
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Code completion
     </td>
-    
+
     <td width="156">
        Ctrl+Space
     </td>
-    
+
     <td width="157">
        Ctrl+Space
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Open class or interface<br /> (in both cases you can ease the search by filtering the lookup list with the help of the &#8220;camel words&#8221; prefixes <em>e.g. &#8220;PoDI&#8221; will also list the <strong>Po</strong>dcast<strong>D</strong>ao<strong>I</strong>mpl class</em>)
     </td>
-    
+
     <td width="156">
        Ctrl+Shif +T
     </td>
-    
+
     <td width="157">
        Ctrl+N
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Open file/resource quickly
     </td>
-    
+
     <td width="156">
        Ctrl+Shift+R
     </td>
-    
+
     <td width="157">
        Ctrl+Shift +N
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Refactor/Rename classes
     </td>
-    
+
     <td width="156">
        Alt+Shift+R
     </td>
-    
+
     <td width="157">
        Shift+F6
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Open declaration
     </td>
-    
+
     <td width="156">
        F3
     </td>
-    
+
     <td width="157">
        Ctrl+B
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        View Javadoc / Details
     </td>
-    
+
     <td width="156">
        Mouse Over (F2 focus)
     </td>
-    
+
     <td width="157">
        Ctrl+Q
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Quick fix
     </td>
-    
+
     <td width="156">
        Ctrl+1
     </td>
-    
+
     <td width="157">
        Alt+Enter
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Organize imports
     </td>
-    
+
     <td width="156">
        Ctrl+Shift+O
     </td>
-    
+
     <td width="157">
       Ctrl+Alt+O
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Save file / Save all files
     </td>
-    
+
     <td width="156">
        Ctrl+S / Ctrl+Shift+S
     </td>
-    
+
     <td width="157">
       Don&#8217;t need to. Happens automatically
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        File Structure pop-up for quick navigation through the current file (members, methods)
     </td>
-    
+
     <td width="156">
        Ctrl+O
     </td>
-    
+
     <td width="157">
       Ctrl+F12
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Source (Generate getters/setters, constructor etc.)
     </td>
-    
+
     <td width="156">
        Alt+Up /Alt+Down
     </td>
-    
+
     <td width="157">
        Alt+Insert
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Maximize Editor
     </td>
-    
+
     <td width="156">
        Ctrl+M (works for any current view with focus on)
     </td>
-    
+
     <td width="157">
        Ctrl+Shift+F12
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Source (Generate getters/setters, constructor etc.)
     </td>
-    
+
     <td width="156">
        Alt+Up /Alt+Down
     </td>
-    
+
     <td width="157">
        Alt+Insert
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Complete current statement such as if, do-while, try-catch, return (or a method call) into a syntactically correct construct (e.g. add curly braces)
     </td>
-    
+
     <td width="156">
     </td>
-    
+
     <td width="157">
        Ctrl+Shift+Enter
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Extract constant
     </td>
-    
+
     <td width="156">
        Ctrl+1 -> Extract to constant
     </td>
-    
+
     <td width="157">
        Ctrl+Alt+C
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Extract variable
     </td>
-    
+
     <td width="156">
        Ctrl+1 -> Extract to variable
     </td>
-    
+
     <td width="157">
        Ctrl+Alt+V
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" width="603">
       <p style="text-align: center;">
@@ -350,63 +350,63 @@ So firt things first. Here&#8217;s a list of the shortcuts I use or ought to be
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
       Add new line after the one at caret
     </td>
-    
+
     <td width="156">
       Shift+Enter
     </td>
-    
+
     <td width="157">
       Shift+Enter
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
       Duplicate line or code fragment
     </td>
-    
+
     <td width="156">
       Ctrl+Alt+Up/Down
     </td>
-    
+
     <td width="157">
       Ctrl+D
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
       Remove line
     </td>
-    
+
     <td width="156">
       Ctrl+D
     </td>
-    
+
     <td width="157">
       Ctrl+Y
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
       Move row or entire selection up or down
     </td>
-    
+
     <td width="156">
       Alt+Up/Down
     </td>
-    
+
     <td width="157">
       Shift+Alt+Up/Down
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" width="603">
       <p style="text-align: center;">
@@ -414,35 +414,35 @@ So firt things first. Here&#8217;s a list of the shortcuts I use or ought to be
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Find usage of class/variable in workspace / project
     </td>
-    
+
     <td width="156">
        Ctrl+Shift+G
     </td>
-    
+
     <td width="157">
        Ctrl+Alt+F7 (popup)<br /> Alt+F7 (Found console)
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Find text in project/workspace project
     </td>
-    
+
     <td width="156">
        Ctrl+H (choose File Search)
     </td>
-    
+
     <td width="157">
        Ctrl+Shift+F
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" width="603">
       <p style="text-align: center;">
@@ -450,90 +450,90 @@ So firt things first. Here&#8217;s a list of the shortcuts I use or ought to be
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Back (Undo last navigation operation)
     </td>
-    
+
     <td width="156">
        Alt+Left
     </td>
-    
+
     <td width="157">
        Ctrl+Alt+Left
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Back (Undo last navigation operation)
     </td>
-    
+
     <td width="156">
        Alt+ Left
     </td>
-    
+
     <td width="157">
        Ctrl + Alt + Left
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Navigate between tabs/editors
     </td>
-    
+
     <td width="156">
        Ctrl + Page Down / Up
     </td>
-    
+
     <td width="157">
        Alt + Left/Alt + Right
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Go to line
     </td>
-    
+
     <td width="156">
        Ctrl + L
     </td>
-    
+
     <td width="157">
        Ctrl + G
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Navigate to recent files
     </td>
-    
+
     <td width="156">
        Ctrl + E
     </td>
-    
+
     <td width="157">
        Ctrl + E
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Quickly move between methods in the editor
     </td>
-    
+
     <td width="156">
     </td>
-    
+
     <td width="157">
        Alt + Up / Down
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" width="603">
       <p style="text-align: center;">
@@ -541,63 +541,63 @@ So firt things first. Here&#8217;s a list of the shortcuts I use or ought to be
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Step over
     </td>
-    
+
     <td width="156">
        F6
     </td>
-    
+
     <td width="157">
        F8
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Step into
     </td>
-    
+
     <td width="156">
        F5
     </td>
-    
+
     <td width="157">
        F7
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Step out
     </td>
-    
+
     <td width="156">
        F7
     </td>
-    
+
     <td width="157">
        Shift + F8
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Resume
     </td>
-    
+
     <td width="156">
        F8
     </td>
-    
+
     <td width="157">
        F9
     </td>
   </tr>
-  
+
   <tr>
     <td colspan="3" width="603">
       <p style="text-align: center;">
@@ -605,30 +605,30 @@ So firt things first. Here&#8217;s a list of the shortcuts I use or ought to be
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Run as JUnit Test (valid both for test classes and methods)
     </td>
-    
+
     <td width="156">
        Alt+Shift+X,T
     </td>
-    
+
     <td width="157">
        Ctrl+Shift+F10
     </td>
   </tr>
-  
+
   <tr>
     <td width="290">
        Debug as JUnit Test
     </td>
-    
+
     <td width="156">
        Alt+Shift+D,T
     </td>
-    
+
     <td width="157">
     </td>
   </tr>
@@ -638,51 +638,51 @@ So firt things first. Here&#8217;s a list of the shortcuts I use or ought to be
   <h2>
     <span id="Link_to_editor">Link to editor</span>
   </h2>
-  
+
   <p style="text-align: justify;">
     I often find myself when editing a file and to need to edit others files in the same context. For example ff it is a class usually, I also work on others classes in the same package &#8211; you can quickly navigate to the other class in the package by having the Link to Editor feature turned on.  What does it do? Whenever I edit a file it diplays it instantly in the package explorer/project. If you take vertical packaging approach, which holds classes together based on functionality rather than on layers (dao, service etc.), which I highly recommend, this comes pretty handy.
   </p>
-  
+
   <h3>
     <span id="Eclipse">Eclipse</span>
   </h3>
-  
+
   <p>
     Go to the Project Explorer or Package Explorer View and click on the <strong>Link to Editor</strong> button
   </p>
-  
+
   <p>
-    <a href="http://www.codingpedia.org/wp-content/uploads/2015/02/link-with-editor-eclipse.png"><img class="alignnone size-full wp-image-2304" src="http://www.codingpedia.org/wp-content/uploads/2015/02/link-with-editor-eclipse.png" alt="link-with-editor-eclipse" width="784" height="393" srcset="http://www.codingpedia.org/wp-content/uploads/2015/02/link-with-editor-eclipse.png 784w, http://www.codingpedia.org/wp-content/uploads/2015/02/link-with-editor-eclipse-300x150.png 300w" sizes="(max-width: 784px) 100vw, 784px" /></a>
+    <a href="{{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-eclipse.png"><img class="alignnone size-full wp-image-2304" src="{{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-eclipse.png" alt="link-with-editor-eclipse" width="784" height="393" srcset="{{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-eclipse.png 784w, {{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-eclipse-300x150.png 300w" sizes="(max-width: 784px) 100vw, 784px" /></a>
   </p>
-  
+
   <p style="text-align: justify;">
     If you don&#8217;t want to enable this feature, you can still navigate to the package/project explorer hierarchy by using the keys combination <strong>Alt + Shift + W</strong> and select where you want to show it:
   </p>
-  
+
   <p>
-    <a href="http://www.codingpedia.org/wp-content/uploads/2015/02/show-in-package-explorer-eclipse.png"><img class="alignnone size-full wp-image-2306" src="http://www.codingpedia.org/wp-content/uploads/2015/02/show-in-package-explorer-eclipse.png" alt="show in package explorer eclipse" width="909" height="431" srcset="http://www.codingpedia.org/wp-content/uploads/2015/02/show-in-package-explorer-eclipse.png 909w, http://www.codingpedia.org/wp-content/uploads/2015/02/show-in-package-explorer-eclipse-300x142.png 300w" sizes="(max-width: 909px) 100vw, 909px" /></a>
+    <a href="{{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-eclipse.png"><img class="alignnone size-full wp-image-2306" src="{{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-eclipse.png" alt="show in package explorer eclipse" width="909" height="431" srcset="{{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-eclipse.png 909w, {{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-eclipse-300x142.png 300w" sizes="(max-width: 909px) 100vw, 909px" /></a>
   </p>
-  
+
   <h3>
     <span id="IntelliJ">IntelliJ</span>
   </h3>
-  
+
   <p>
     In the Project or Packages view select Settings and then <strong>Autoscroll From Source</strong>
   </p>
-  
+
   <p>
-    <a href="http://www.codingpedia.org/wp-content/uploads/2015/02/link-with-editor-intellij.png"><img class="alignnone size-full wp-image-2305" src="http://www.codingpedia.org/wp-content/uploads/2015/02/link-with-editor-intellij.png" alt="link-with-editor-intellij" width="698" height="602" srcset="http://www.codingpedia.org/wp-content/uploads/2015/02/link-with-editor-intellij.png 698w, http://www.codingpedia.org/wp-content/uploads/2015/02/link-with-editor-intellij-300x259.png 300w" sizes="(max-width: 698px) 100vw, 698px" /></a>
+    <a href="{{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-intellij.png"><img class="alignnone size-full wp-image-2305" src="{{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-intellij.png" alt="link-with-editor-intellij" width="698" height="602" srcset="{{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-intellij.png 698w, {{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-intellij-300x259.png 300w" sizes="(max-width: 698px) 100vw, 698px" /></a>
   </p>
-  
+
   <p>
-    If you don&#8217;t want to enable this feature you can still navigate by using the keys combination <strong>Alt + F1</strong> and select where you want to show it:<a href="http://www.codingpedia.org/wp-content/uploads/2015/02/show-in-package-explorer-intellij.png"><img class="alignnone size-full wp-image-2307" src="http://www.codingpedia.org/wp-content/uploads/2015/02/show-in-package-explorer-intellij.png" alt="show in package explorer intellij" width="891" height="624" srcset="http://www.codingpedia.org/wp-content/uploads/2015/02/show-in-package-explorer-intellij.png 891w, http://www.codingpedia.org/wp-content/uploads/2015/02/show-in-package-explorer-intellij-300x210.png 300w" sizes="(max-width: 891px) 100vw, 891px" /></a>
+    If you don&#8217;t want to enable this feature you can still navigate by using the keys combination <strong>Alt + F1</strong> and select where you want to show it:<a href="{{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-intellij.png"><img class="alignnone size-full wp-image-2307" src="{{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-intellij.png" alt="show in package explorer intellij" width="891" height="624" srcset="{{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-intellij.png 891w, {{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-intellij-300x210.png 300w" sizes="(max-width: 891px) 100vw, 891px" /></a>
   </p>
-  
+
   <h2>
     <span id="What_I_really_like_about_IntelliJ">What I really like about IntelliJ</span>
   </h2>
-  
+
   <h3>
     <span id="Lots_of_things_by_default">Lots of things by default</span>
   </h3>
@@ -719,7 +719,7 @@ Alt + F12
   Lets&#8217;s say you&#8217;d want to find the shortcut for Find usages for example, then click <strong>Ctrl+Shift+A</strong> and then start typing &#8220;<em>Find usage</em>&#8221; in the search box:
 </p>
 
-[<img class="alignnone size-full wp-image-2361" src="http://www.codingpedia.org/wp-content/uploads/2015/03/intellij-find-action-by-name.png" alt="intellij - find action by name" width="471" height="384" srcset="http://www.codingpedia.org/wp-content/uploads/2015/03/intellij-find-action-by-name.png 471w, http://www.codingpedia.org/wp-content/uploads/2015/03/intellij-find-action-by-name-300x245.png 300w" sizes="(max-width: 471px) 100vw, 471px" />](http://www.codingpedia.org/wp-content/uploads/2015/03/intellij-find-action-by-name.png)
+[<img class="alignnone size-full wp-image-2361" src="{{site.url}}/images/wp-content/uploads/2015/03/intellij-find-action-by-name.png" alt="intellij - find action by name" width="471" height="384" srcset="{{site.url}}/images/wp-content/uploads/2015/03/intellij-find-action-by-name.png 471w, {{site.url}}/images/wp-content/uploads/2015/03/intellij-find-action-by-name-300x245.png 300w" sizes="(max-width: 471px) 100vw, 471px" />]({{site.url}}/images/wp-content/uploads/2015/03/intellij-find-action-by-name.png)
 
 ### <span id="Coollive_templates">Cool live templates</span>
 
@@ -770,21 +770,21 @@ Well, that&#8217;s all I have so far, but I&#8217;ll try to add features to the 
   4. <a title="http://www.vogella.com/tutorials/EclipseShortcuts/article.html" href="http://www.vogella.com/tutorials/EclipseShortcuts/article.html" target="_blank">Eclipse Shortcuts &#8211; Tutorial</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

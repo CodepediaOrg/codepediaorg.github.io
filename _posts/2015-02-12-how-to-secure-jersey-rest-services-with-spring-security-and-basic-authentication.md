@@ -240,7 +240,7 @@ The Spring security filter chain needs to be activated.
 
 If you access a secured location via the browser, a standard HTTP authentication popup appears asking for the authentication details:
 
-[<img class="alignnone size-full wp-image-2263" src="http://www.codingpedia.org/wp-content/uploads/2015/02/standard-popup-browser.png" alt="standard-popup-browser" width="895" height="462" srcset="http://www.codingpedia.org/wp-content/uploads/2015/02/standard-popup-browser.png 895w, http://www.codingpedia.org/wp-content/uploads/2015/02/standard-popup-browser-300x154.png 300w" sizes="(max-width: 895px) 100vw, 895px" />](http://www.codingpedia.org/wp-content/uploads/2015/02/standard-popup-browser.png)
+[<img class="alignnone size-full wp-image-2263" src="{{site.url}}/images/wp-content/uploads/2015/02/standard-popup-browser.png" alt="standard-popup-browser" width="895" height="462" srcset="{{site.url}}/images/wp-content/uploads/2015/02/standard-popup-browser.png 895w, {{site.url}}/images/wp-content/uploads/2015/02/standard-popup-browser-300x154.png 300w" sizes="(max-width: 895px) 100vw, 895px" />]({{site.url}}/images/wp-content/uploads/2015/02/standard-popup-browser.png)
 
 Put in _rest/rest_ and you should receive the JSON response.
 
@@ -307,7 +307,7 @@ Server: Jetty(9.2.6.v20141205)
 ## <span id="Resources">Resources</span>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

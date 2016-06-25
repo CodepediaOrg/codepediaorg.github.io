@@ -36,7 +36,7 @@ tags:
 Each podcast on <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> has one or several associated keywords. When you go to a specific podcast you will see all the associated keywords :
 
 <div id="attachment_610" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/09/podcast_keywords.png"><img class="size-medium wp-image-610" title="Podcast keywords sample" src="http://www.codingpedia.org/wp-content/uploads/2013/09/podcast_keywords-300x146.png" alt="Podcast keywords sample" width="300" height="146" srcset="http://www.codingpedia.org/wp-content/uploads/2013/09/podcast_keywords-300x146.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/09/podcast_keywords-1024x499.png 1024w, http://www.codingpedia.org/wp-content/uploads/2013/09/podcast_keywords-624x304.png 624w, http://www.codingpedia.org/wp-content/uploads/2013/09/podcast_keywords.png 1065w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/09/podcast_keywords.png"><img class="size-medium wp-image-610" title="Podcast keywords sample" src="{{site.url}}/images/wp-content/uploads/2013/09/podcast_keywords-300x146.png" alt="Podcast keywords sample" width="300" height="146" srcset="{{site.url}}/images/wp-content/uploads/2013/09/podcast_keywords-300x146.png 300w, {{site.url}}/images/wp-content/uploads/2013/09/podcast_keywords-1024x499.png 1024w, {{site.url}}/images/wp-content/uploads/2013/09/podcast_keywords-624x304.png 624w, {{site.url}}/images/wp-content/uploads/2013/09/podcast_keywords.png 1065w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Podcast keywords sample
@@ -48,7 +48,7 @@ Each podcast on <a title="Podcastpedia.org, knowledge to go" href="http://www.po
 </p>
 
 <div id="attachment_611" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/09/autocomplete_jQuery.png"><img class="size-medium wp-image-611" src="http://www.codingpedia.org/wp-content/uploads/2013/09/autocomplete_jQuery-300x173.png" alt="Autocomplete jQuery" width="300" height="173" srcset="http://www.codingpedia.org/wp-content/uploads/2013/09/autocomplete_jQuery-300x173.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/09/autocomplete_jQuery-1024x591.png 1024w, http://www.codingpedia.org/wp-content/uploads/2013/09/autocomplete_jQuery-624x360.png 624w, http://www.codingpedia.org/wp-content/uploads/2013/09/autocomplete_jQuery.png 1237w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/09/autocomplete_jQuery.png"><img class="size-medium wp-image-611" src="{{site.url}}/images/wp-content/uploads/2013/09/autocomplete_jQuery-300x173.png" alt="Autocomplete jQuery" width="300" height="173" srcset="{{site.url}}/images/wp-content/uploads/2013/09/autocomplete_jQuery-300x173.png 300w, {{site.url}}/images/wp-content/uploads/2013/09/autocomplete_jQuery-1024x591.png 1024w, {{site.url}}/images/wp-content/uploads/2013/09/autocomplete_jQuery-624x360.png 624w, {{site.url}}/images/wp-content/uploads/2013/09/autocomplete_jQuery.png 1237w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Autocomplete keywords box
@@ -58,7 +58,7 @@ Each podcast on <a title="Podcastpedia.org, knowledge to go" href="http://www.po
 As shown in the picture above, you can select several keywords on the same page. But enough talking&#8230; let&#8217;s see how the magic happens behind the scenes, because this is actually the topic of this post.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <!--more-->
@@ -318,7 +318,7 @@ The controller method is called asynchronously every time the user tips a new ch
 </p>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ### <span id="References">References</span>
@@ -331,7 +331,7 @@ The controller method is called asynchronously every time the user tips a new ch
   6. <a title="Ajax Simplifications in Spring 3.0" href="http://spring.io/blog/2010/01/25/ajax-simplifications-in-spring-3-0/" target="_blank">Ajax Simplifications in Spring 3.0</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

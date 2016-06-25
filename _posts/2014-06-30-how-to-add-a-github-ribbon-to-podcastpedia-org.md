@@ -40,12 +40,12 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/06/ribbon.png"><img class="alignnone size-full wp-image-1507" src="http://www.codingpedia.org/wp-content/uploads/2014/06/ribbon.png" alt="GitHub ribbon" width="574" height="175" srcset="http://www.codingpedia.org/wp-content/uploads/2014/06/ribbon.png 574w, http://www.codingpedia.org/wp-content/uploads/2014/06/ribbon-300x91.png 300w" sizes="(max-width: 574px) 100vw, 574px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2014/06/ribbon.png"><img class="alignnone size-full wp-image-1507" src="{{site.url}}/images/wp-content/uploads/2014/06/ribbon.png" alt="GitHub ribbon" width="574" height="175" srcset="{{site.url}}/images/wp-content/uploads/2014/06/ribbon.png 574w, {{site.url}}/images/wp-content/uploads/2014/06/ribbon-300x91.png 300w" sizes="(max-width: 574px) 100vw, 574px" /></a>
 </p>
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 
@@ -209,7 +209,7 @@ Following the instrunctions from GitHub, the second step was to add the highlig
 Well, it cannot get simpler than that&#8230; So thanks again <a title="https://github.com/simonwhitaker" href="https://github.com/simonwhitaker" target="_blank">Simon</a> for this nice peace of work.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## Resources
@@ -220,7 +220,7 @@ Well, it cannot get simpler than that&#8230; So thanks again <a title="https://g
 
 <p style="text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

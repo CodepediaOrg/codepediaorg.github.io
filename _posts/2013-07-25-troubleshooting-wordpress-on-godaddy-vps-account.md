@@ -86,7 +86,7 @@ extension=mysqli.so
 I also had to recompile Apache with _EasyApache_ and check MySql options from _Exhaustive Options List_:
 
 <p style="padding-left: 30px;">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/07/enable_mysql_easyapache.png"><img class="alignnone size-medium wp-image-28" src="http://www.codingpedia.org/wp-content/uploads/2013/07/enable_mysql_easyapache-300x132.png" alt="enable_mysql_easyapache" width="361" height="160" srcset="http://www.codingpedia.org/wp-content/uploads/2013/07/enable_mysql_easyapache-300x132.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/07/enable_mysql_easyapache-1024x452.png 1024w, http://www.codingpedia.org/wp-content/uploads/2013/07/enable_mysql_easyapache-624x275.png 624w, http://www.codingpedia.org/wp-content/uploads/2013/07/enable_mysql_easyapache.png 1287w" sizes="(max-width: 361px) 100vw, 361px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/07/enable_mysql_easyapache.png"><img class="alignnone size-medium wp-image-28" src="{{site.url}}/images/wp-content/uploads/2013/07/enable_mysql_easyapache-300x132.png" alt="enable_mysql_easyapache" width="361" height="160" srcset="{{site.url}}/images/wp-content/uploads/2013/07/enable_mysql_easyapache-300x132.png 300w, {{site.url}}/images/wp-content/uploads/2013/07/enable_mysql_easyapache-1024x452.png 1024w, {{site.url}}/images/wp-content/uploads/2013/07/enable_mysql_easyapache-624x275.png 624w, {{site.url}}/images/wp-content/uploads/2013/07/enable_mysql_easyapache.png 1287w" sizes="(max-width: 361px) 100vw, 361px" /></a>
 </p>
 
 Lucky number four &#8211; installation was successful, but as you can see I am still using the default WordPress theme and didn&#8217;t have enough time to edit anything as I have a plane to catch in two hours. But I promise to come back soon with an &#8220;About us&#8221; page and more coding related posts&#8230;
@@ -96,7 +96,7 @@ Lucky number four &#8211; installation was successful, but as you can see I am s
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
   
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

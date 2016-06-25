@@ -48,7 +48,7 @@ tags:
 When trying to execute execute the &#8220;jetty:run&#8221; maven goal from within Eclipse
 
 <div id="attachment_1064" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse.png"><img class="size-medium wp-image-1064" src="http://www.codingpedia.org/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse-300x215.png" alt="Execute jetty:run from Eclipse" width="300" height="215" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse-300x215.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse-1024x737.png 1024w, http://www.codingpedia.org/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse.png 1289w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse.png"><img class="size-medium wp-image-1064" src="{{site.url}}/images/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse-300x215.png" alt="Execute jetty:run from Eclipse" width="300" height="215" srcset="{{site.url}}/images/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse-300x215.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse-1024x737.png 1024w, {{site.url}}/images/wp-content/uploads/2014/01/1-execute-jetty-run-from-eclipse.png 1289w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Execute jetty:run from Eclipse
@@ -127,7 +127,7 @@ I have to mention I had just did an upgrade to JDK 1.7 (without removing the pre
       * add `%JAVA_HOME%/bin` to the `PATH` environment variable
   2. made sure Eclipse uses the right JDK:
     <div id="attachment_1065" style="width: 310px" class="wp-caption alignnone">
-      <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/2-choose-correct-JRE.png"><img class="size-medium wp-image-1065 " src="http://www.codingpedia.org/wp-content/uploads/2014/01/2-choose-correct-JRE-300x231.png" alt="Choose the correct JRE" width="300" height="231" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/2-choose-correct-JRE-300x231.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/2-choose-correct-JRE.png 895w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+      <a href="{{site.url}}/images/wp-content/uploads/2014/01/2-choose-correct-JRE.png"><img class="size-medium wp-image-1065 " src="{{site.url}}/images/wp-content/uploads/2014/01/2-choose-correct-JRE-300x231.png" alt="Choose the correct JRE" width="300" height="231" srcset="{{site.url}}/images/wp-content/uploads/2014/01/2-choose-correct-JRE-300x231.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/2-choose-correct-JRE.png 895w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
       <p class="wp-caption-text">
         Eclipse Menu -> Window -> Preferences -> Java &#8211; > Installed JREs
@@ -205,7 +205,7 @@ OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows" &lt;br&gt
     When checking the JDK compliance for the project:
 
     <div id="attachment_1071" style="width: 304px" class="wp-caption alignnone">
-      <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/3-check-project-jdk-compliance.png"><img class="size-medium wp-image-1071" src="http://www.codingpedia.org/wp-content/uploads/2014/01/3-check-project-jdk-compliance-294x300.png" alt="Check project JDK compliance" width="294" height="300" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/3-check-project-jdk-compliance-294x300.png 294w, http://www.codingpedia.org/wp-content/uploads/2014/01/3-check-project-jdk-compliance.png 741w" sizes="(max-width: 294px) 100vw, 294px" /></a>
+      <a href="{{site.url}}/images/wp-content/uploads/2014/01/3-check-project-jdk-compliance.png"><img class="size-medium wp-image-1071" src="{{site.url}}/images/wp-content/uploads/2014/01/3-check-project-jdk-compliance-294x300.png" alt="Check project JDK compliance" width="294" height="300" srcset="{{site.url}}/images/wp-content/uploads/2014/01/3-check-project-jdk-compliance-294x300.png 294w, {{site.url}}/images/wp-content/uploads/2014/01/3-check-project-jdk-compliance.png 741w" sizes="(max-width: 294px) 100vw, 294px" /></a>
 
       <p class="wp-caption-text">
         Project -> Properties -> Java Compiler
@@ -217,7 +217,7 @@ OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows" &lt;br&gt
     After looking again in the console it struck me:
 
     <div id="attachment_1072" style="width: 310px" class="wp-caption alignnone">
-      <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/4-console-output.png"><img class="size-medium wp-image-1072" src="http://www.codingpedia.org/wp-content/uploads/2014/01/4-console-output-300x177.png" alt="Console output" width="300" height="177" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/4-console-output-300x177.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/4-console-output-1024x604.png 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+      <a href="{{site.url}}/images/wp-content/uploads/2014/01/4-console-output.png"><img class="size-medium wp-image-1072" src="{{site.url}}/images/wp-content/uploads/2014/01/4-console-output-300x177.png" alt="Console output" width="300" height="177" srcset="{{site.url}}/images/wp-content/uploads/2014/01/4-console-output-300x177.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/4-console-output-1024x604.png 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
       <p class="wp-caption-text">
         Console output
@@ -227,7 +227,7 @@ OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows" &lt;br&gt
     &#8230;it was indeed using the older JDK (1.6) at execution time. This was caused by using an Alternate JRE (which was set to `jdk1.6.0_39`), in the setup of the **Run Configuration**:
 
     <div id="attachment_1073" style="width: 310px" class="wp-caption alignnone">
-      <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/5-run-configuration-JRE.png"><img class="size-medium wp-image-1073" src="http://www.codingpedia.org/wp-content/uploads/2014/01/5-run-configuration-JRE-300x215.png" alt="run configuration JRE" width="300" height="215" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/5-run-configuration-JRE-300x215.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/5-run-configuration-JRE-1024x737.png 1024w, http://www.codingpedia.org/wp-content/uploads/2014/01/5-run-configuration-JRE.png 1289w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+      <a href="{{site.url}}/images/wp-content/uploads/2014/01/5-run-configuration-JRE.png"><img class="size-medium wp-image-1073" src="{{site.url}}/images/wp-content/uploads/2014/01/5-run-configuration-JRE-300x215.png" alt="run configuration JRE" width="300" height="215" srcset="{{site.url}}/images/wp-content/uploads/2014/01/5-run-configuration-JRE-300x215.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/5-run-configuration-JRE-1024x737.png 1024w, {{site.url}}/images/wp-content/uploads/2014/01/5-run-configuration-JRE.png 1289w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
       <p class="wp-caption-text">
         Eclipse Menu -> Run -> Run configurations
@@ -239,7 +239,7 @@ OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows" &lt;br&gt
     I hope you could learn something from this as I did.
 
     <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-      <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+      <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
       <p id="about_author_header">
         <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

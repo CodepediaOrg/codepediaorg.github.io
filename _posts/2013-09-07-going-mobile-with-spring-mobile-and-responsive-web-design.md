@@ -144,7 +144,7 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
 To obtain the reference to the current site preference, the `SitePreferenceUtils` (line 21) was used, by calling the `getCurrentSitePreference` method on the `HttpServletRequest` parameter. If the currentSitePreference is mobile a `mobile view (m_podcastDetails)` is selected, otherwise it will default to the `normal (podcastDetails)` desktop view. In <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a>, you can choose your site preference by selecting the mobile or desktop icon at the top left corner, right after the social media follow buttons:
 
 <div id="attachment_550" style="width: 166px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/09/switch-to-desktop.png"><img class="size-medium wp-image-550" src="http://www.codingpedia.org/wp-content/uploads/2013/09/switch-to-desktop-156x300.png" alt="switch to desktop" width="156" height="300" srcset="http://www.codingpedia.org/wp-content/uploads/2013/09/switch-to-desktop-156x300.png 156w, http://www.codingpedia.org/wp-content/uploads/2013/09/switch-to-desktop.png 355w" sizes="(max-width: 156px) 100vw, 156px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/09/switch-to-desktop.png"><img class="size-medium wp-image-550" src="{{site.url}}/images/wp-content/uploads/2013/09/switch-to-desktop-156x300.png" alt="switch to desktop" width="156" height="300" srcset="{{site.url}}/images/wp-content/uploads/2013/09/switch-to-desktop-156x300.png 156w, {{site.url}}/images/wp-content/uploads/2013/09/switch-to-desktop.png 355w" sizes="(max-width: 156px) 100vw, 156px" /></a>
   
   <p class="wp-caption-text">
     Mobile version &#8211; switch to desktop
@@ -152,7 +152,7 @@ To obtain the reference to the current site preference, the `SitePreferenceUtils
 </div>
 
 <div id="attachment_551" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/09/switch-to-mobile.png"><img class="size-medium wp-image-551" src="http://www.codingpedia.org/wp-content/uploads/2013/09/switch-to-mobile-300x230.png" alt="switch to mobile" width="300" height="230" srcset="http://www.codingpedia.org/wp-content/uploads/2013/09/switch-to-mobile-300x230.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/09/switch-to-mobile-624x478.png 624w, http://www.codingpedia.org/wp-content/uploads/2013/09/switch-to-mobile.png 800w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/09/switch-to-mobile.png"><img class="size-medium wp-image-551" src="{{site.url}}/images/wp-content/uploads/2013/09/switch-to-mobile-300x230.png" alt="switch to mobile" width="300" height="230" srcset="{{site.url}}/images/wp-content/uploads/2013/09/switch-to-mobile-300x230.png 300w, {{site.url}}/images/wp-content/uploads/2013/09/switch-to-mobile-624x478.png 624w, {{site.url}}/images/wp-content/uploads/2013/09/switch-to-mobile.png 800w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   
   <p class="wp-caption-text">
     Desktop version &#8211; switch to mobile
@@ -209,7 +209,7 @@ Behind the image the `currentSitePreference` parameter is set to either _mobile_
 On the <a title="Podcastpedia.org, knowledge to go - mobile" href="http://www.podcastpedia.org/?site_preference=mobile" target="_blank">home page, </a>the <a title="Responsive Grid System" href="http://www.responsivegridsystem.com/" target="_blank">Responsive Grid System</a> was used to allow the podcast charts to slide under each other when the screen-width becomes small enough. Thank you very much Graham Miller for this:
 
 <div id="attachment_565" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/09/home-page-responsiveness.png"><img class="size-medium wp-image-565  " src="http://www.codingpedia.org/wp-content/uploads/2013/09/home-page-responsiveness-300x165.png" alt="home page responsiveness" width="300" height="165" srcset="http://www.codingpedia.org/wp-content/uploads/2013/09/home-page-responsiveness-300x165.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/09/home-page-responsiveness-624x345.png 624w, http://www.codingpedia.org/wp-content/uploads/2013/09/home-page-responsiveness.png 1020w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/09/home-page-responsiveness.png"><img class="size-medium wp-image-565  " src="{{site.url}}/images/wp-content/uploads/2013/09/home-page-responsiveness-300x165.png" alt="home page responsiveness" width="300" height="165" srcset="{{site.url}}/images/wp-content/uploads/2013/09/home-page-responsiveness-300x165.png 300w, {{site.url}}/images/wp-content/uploads/2013/09/home-page-responsiveness-624x345.png 624w, {{site.url}}/images/wp-content/uploads/2013/09/home-page-responsiveness.png 1020w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   
   <p class="wp-caption-text">
     Podcastpedia.org&#8217;s home page responsiveness
@@ -234,7 +234,7 @@ We promise to only share high quality podcasts and episodes.
   4. <a title="Responsive Grid System" href="http://www.responsivegridsystem.com/" target="_blank">Responsive Grid System</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
   
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

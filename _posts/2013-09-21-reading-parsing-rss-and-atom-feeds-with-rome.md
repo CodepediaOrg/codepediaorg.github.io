@@ -286,19 +286,19 @@ public void setPodcastFeedAttributes(Podcast podcast,  boolean feedPropertyHasBe
 Thanks for sharing and connecting with us
 
 <div class="social_logo_small">
-  <a href="https://plus.google.com/+CodingpediaOrg" target="_blank"><img style="float: left;" src="http://www.codingpedia.org/wp-content/uploads/2013/10/g_plus.png" alt="Google plus" /></a>
+  <a href="https://plus.google.com/+CodingpediaOrg" target="_blank"><img style="float: left;" src="{{site.url}}/images/wp-content/uploads/2013/10/g_plus.png" alt="Google plus" /></a>
 </div>
 
 <div class="social_logo_small">
-  <a href="https://twitter.com/codingpedia" target="_blank"><img class="social_logo" src="http://www.codingpedia.org/wp-content/uploads/2013/10/twitter.png" alt="Twitter" /></a>
+  <a href="https://twitter.com/codingpedia" target="_blank"><img class="social_logo" src="{{site.url}}/images/wp-content/uploads/2013/10/twitter.png" alt="Twitter" /></a>
 </div>
 
 <div class="social_logo_small">
-  <a href="https://www.facebook.com/Codingpedia" target="_blank"><img class="social_logo" src="http://www.codingpedia.org/wp-content/uploads/2013/10/fb.png" alt="Facebook" /></a>
+  <a href="https://www.facebook.com/Codingpedia" target="_blank"><img class="social_logo" src="{{site.url}}/images/wp-content/uploads/2013/10/fb.png" alt="Facebook" /></a>
 </div>
 
 <div class="social_logo_small">
-  <a href="mailto:contact@codingpedia.org" target="_blank"><img class="social_logo" src="http://www.codingpedia.org/wp-content/uploads/2013/10/email.png" alt="Email" /></a>
+  <a href="mailto:contact@codingpedia.org" target="_blank"><img class="social_logo" src="{{site.url}}/images/wp-content/uploads/2013/10/email.png" alt="Email" /></a>
 </div>
 
 <div class="clear">
@@ -317,7 +317,7 @@ Thanks for sharing and connecting with us
   5. <a title="Stackoverflow resource" href="http://stackoverflow.com/questions/20148840/getting-strange-characters-when-trying-to-read-utf-8-document-from-url" target="_blank">Stackoverflow &#8211; Getting strange characters when trying to read UTF-8 document from URL</a>
 
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

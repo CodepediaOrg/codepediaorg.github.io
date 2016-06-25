@@ -78,7 +78,7 @@ tags:
 In this post I will present a trick I used to create the responsive menu on <a title="http://www.podcastpedia.org/" href="http://www.podcastpedia.org/" target="_blank">Podcastpedia.org</a> :
 
 <div id="attachment_1408" style="width: 643px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/05/Responsive-menu-support.png"><img class="wp-image-1408 size-full" src="http://www.codingpedia.org/wp-content/uploads/2014/05/Responsive-menu-support.png" alt="Responsive menu on Podcastpedia.org" width="633" height="372" srcset="http://www.codingpedia.org/wp-content/uploads/2014/05/Responsive-menu-support.png 633w, http://www.codingpedia.org/wp-content/uploads/2014/05/Responsive-menu-support-300x176.png 300w" sizes="(max-width: 633px) 100vw, 633px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2014/05/Responsive-menu-support.png"><img class="wp-image-1408 size-full" src="{{site.url}}/images/wp-content/uploads/2014/05/Responsive-menu-support.png" alt="Responsive menu on Podcastpedia.org" width="633" height="372" srcset="{{site.url}}/images/wp-content/uploads/2014/05/Responsive-menu-support.png 633w, {{site.url}}/images/wp-content/uploads/2014/05/Responsive-menu-support-300x176.png 300w" sizes="(max-width: 633px) 100vw, 633px" /></a>
 
   <p class="wp-caption-text">
     Responsive menu on Podcastpedia.org
@@ -86,7 +86,7 @@ In this post I will present a trick I used to create the responsive menu on <a t
 </div>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <!--more-->
@@ -245,11 +245,11 @@ Now that the menu item are present twice, I can show and hide them based on the 
 }</pre>
 
 <p style="text-align: justify;">
-  As you can see in the code for big screens (width over 1040px) the elements marked with <code>resp(onsive)</code> are not shown at all, but once the width gets smaller, elements from the menu are hidden and corresponding elements from the second <code>resp(onsive)</code> menu list. These are now shown when you hover (tip on mobile) over the standard menu icon <img class="alignnone size-full wp-image-1412" src="http://www.codingpedia.org/wp-content/uploads/2014/05/standard-menu-icon.png" alt="standard menu icon" width="33" height="30" />
+  As you can see in the code for big screens (width over 1040px) the elements marked with <code>resp(onsive)</code> are not shown at all, but once the width gets smaller, elements from the menu are hidden and corresponding elements from the second <code>resp(onsive)</code> menu list. These are now shown when you hover (tip on mobile) over the standard menu icon <img class="alignnone size-full wp-image-1412" src="{{site.url}}/images/wp-content/uploads/2014/05/standard-menu-icon.png" alt="standard menu icon" width="33" height="30" />
 </p>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="2_Resources">2. Resources</span>
@@ -260,7 +260,7 @@ Now that the menu item are present twice, I can show and hide them based on the 
   2. <a title="http://www.w3schools.com/cssref/pr_class_display.asp" href="http://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">CSS display Property</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

@@ -38,7 +38,7 @@ Revert changes:
   * **EGit** &#8211; _**right click on file**_ > _**Replace With**_ > _**File in Git Index**_
 
 <div id="attachment_1222" style="width: 614px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/02/Replace-with-file-from-Git.png"><img class="size-large wp-image-1222" alt="Replace with file from Git index" src="http://www.codingpedia.org/wp-content/uploads/2014/02/Replace-with-file-from-Git-847x1024.png" width="604" height="730" srcset="http://www.codingpedia.org/wp-content/uploads/2014/02/Replace-with-file-from-Git-847x1024.png 847w, http://www.codingpedia.org/wp-content/uploads/2014/02/Replace-with-file-from-Git-248x300.png 248w, http://www.codingpedia.org/wp-content/uploads/2014/02/Replace-with-file-from-Git.png 976w" sizes="(max-width: 604px) 100vw, 604px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2014/02/Replace-with-file-from-Git.png"><img class="size-large wp-image-1222" alt="Replace with file from Git index" src="{{site.url}}/images/wp-content/uploads/2014/02/Replace-with-file-from-Git-847x1024.png" width="604" height="730" srcset="{{site.url}}/images/wp-content/uploads/2014/02/Replace-with-file-from-Git-847x1024.png 847w, {{site.url}}/images/wp-content/uploads/2014/02/Replace-with-file-from-Git-248x300.png 248w, {{site.url}}/images/wp-content/uploads/2014/02/Replace-with-file-from-Git.png 976w" sizes="(max-width: 604px) 100vw, 604px" /></a>
   
   <p class="wp-caption-text">
     Replace with file from Git index

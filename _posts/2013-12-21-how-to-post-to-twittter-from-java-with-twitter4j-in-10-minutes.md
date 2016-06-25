@@ -88,7 +88,7 @@ I have just posted my first tweet from Java
 </p>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 
@@ -128,7 +128,7 @@ There are a number of properties available for configuring Twitter4J:
   You can specify the properties via <code>twitter4j.properties</code> file, <code>ConfigurationBuilder</code> class or <code>System Property</code>. In the PodcastpediaAdmin project I chose to add a <code>twitter4.properties</code> file in the classpath under <code>src/test/resources</code>:
 </p>
 
-[<img class="alignnone size-medium wp-image-1052" src="http://www.codingpedia.org/wp-content/uploads/2013/12/twitter4j-properties-186x300.png" alt="twitter4j-properties" width="186" height="300" srcset="http://www.codingpedia.org/wp-content/uploads/2013/12/twitter4j-properties-186x300.png 186w, http://www.codingpedia.org/wp-content/uploads/2013/12/twitter4j-properties.png 352w" sizes="(max-width: 186px) 100vw, 186px" />](http://www.codingpedia.org/wp-content/uploads/2013/12/twitter4j-properties.png)
+[<img class="alignnone size-medium wp-image-1052" src="{{site.url}}/images/wp-content/uploads/2013/12/twitter4j-properties-186x300.png" alt="twitter4j-properties" width="186" height="300" srcset="{{site.url}}/images/wp-content/uploads/2013/12/twitter4j-properties-186x300.png 186w, {{site.url}}/images/wp-content/uploads/2013/12/twitter4j-properties.png 352w" sizes="(max-width: 186px) 100vw, 186px" />]({{site.url}}/images/wp-content/uploads/2013/12/twitter4j-properties.png)
 
 <pre class="lang:default decode:true" title="twitter4j.properties">debug=true
 oauth.consumerKey=*********************
@@ -186,7 +186,7 @@ I couldn&#8217;t believe my eyes so I went to check Twitter, and there it was, t
 </p>
 
 <div id="attachment_1053" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/12/create-twitter-application.png"><img class="size-medium wp-image-1053" src="http://www.codingpedia.org/wp-content/uploads/2013/12/create-twitter-application-300x208.png" alt="Create new Twitter application" width="300" height="208" srcset="http://www.codingpedia.org/wp-content/uploads/2013/12/create-twitter-application-300x208.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/12/create-twitter-application.png 990w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/12/create-twitter-application.png"><img class="size-medium wp-image-1053" src="{{site.url}}/images/wp-content/uploads/2013/12/create-twitter-application-300x208.png" alt="Create new Twitter application" width="300" height="208" srcset="{{site.url}}/images/wp-content/uploads/2013/12/create-twitter-application-300x208.png 300w, {{site.url}}/images/wp-content/uploads/2013/12/create-twitter-application.png 990w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Create new Twitter application
@@ -198,7 +198,7 @@ I couldn&#8217;t believe my eyes so I went to check Twitter, and there it was, t
 Once you&#8217;ve done that you will be redirected to your application under <a title="My applications - Twitter" href="https://dev.twitter.com/apps" target="_blank">My applications</a>. In the &#8220;Details&#8221; tab you have the &#8220;OAuth settings&#8221; section:
 
 <div id="attachment_1054" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/12/OAuth-settings.png"><img class="size-medium wp-image-1054" src="http://www.codingpedia.org/wp-content/uploads/2013/12/OAuth-settings-300x171.png" alt="OAuth settings" width="300" height="171" srcset="http://www.codingpedia.org/wp-content/uploads/2013/12/OAuth-settings-300x171.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/12/OAuth-settings.png 970w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/12/OAuth-settings.png"><img class="size-medium wp-image-1054" src="{{site.url}}/images/wp-content/uploads/2013/12/OAuth-settings-300x171.png" alt="OAuth settings" width="300" height="171" srcset="{{site.url}}/images/wp-content/uploads/2013/12/OAuth-settings-300x171.png 300w, {{site.url}}/images/wp-content/uploads/2013/12/OAuth-settings.png 970w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Home->My applications->Details:OAuth settings
@@ -210,7 +210,7 @@ Once you&#8217;ve done that you will be redirected to your application under <a 
 </p>
 
 <div id="attachment_1055" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/12/write-permission.png"><img class="size-medium wp-image-1055" src="http://www.codingpedia.org/wp-content/uploads/2013/12/write-permission-300x234.png" alt="Grant write access " width="300" height="234" srcset="http://www.codingpedia.org/wp-content/uploads/2013/12/write-permission-300x234.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/12/write-permission.png 836w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/12/write-permission.png"><img class="size-medium wp-image-1055" src="{{site.url}}/images/wp-content/uploads/2013/12/write-permission-300x234.png" alt="Grant write access " width="300" height="234" srcset="{{site.url}}/images/wp-content/uploads/2013/12/write-permission-300x234.png 300w, {{site.url}}/images/wp-content/uploads/2013/12/write-permission.png 836w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Grant write access
@@ -219,7 +219,7 @@ Once you&#8217;ve done that you will be redirected to your application under <a 
 
 The new value will be reflected on the &#8220;Details&#8221; page:
 
-[<img class="alignnone size-medium wp-image-1056" src="http://www.codingpedia.org/wp-content/uploads/2013/12/write-permission-reflect-300x165.png" alt="write-permission-reflect" width="300" height="165" srcset="http://www.codingpedia.org/wp-content/uploads/2013/12/write-permission-reflect-300x165.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/12/write-permission-reflect.png 847w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.codingpedia.org/wp-content/uploads/2013/12/write-permission-reflect.png)
+[<img class="alignnone size-medium wp-image-1056" src="{{site.url}}/images/wp-content/uploads/2013/12/write-permission-reflect-300x165.png" alt="write-permission-reflect" width="300" height="165" srcset="{{site.url}}/images/wp-content/uploads/2013/12/write-permission-reflect-300x165.png 300w, {{site.url}}/images/wp-content/uploads/2013/12/write-permission-reflect.png 847w" sizes="(max-width: 300px) 100vw, 300px" />]({{site.url}}/images/wp-content/uploads/2013/12/write-permission-reflect.png)
 
 <h3 style="text-align: justify;">
   <span id="Generate_Access_Token_and_Access_Token_Secret">Generate Access Token and Access Token Secret</span>
@@ -229,7 +229,7 @@ The new value will be reflected on the &#8220;Details&#8221; page:
   On the &#8220;Details&#8221; page notice also the <code>Consumer key</code> and <code>Consumer secret</code> values. What we still miss are the <code>Access Token</code> and <code>Access Token Secret</code> values. You can generate them by clicking on the &#8220;Create my access token&#8221; button at the bottom of the &#8220;Details&#8221; page. Once you do that, the generated values will be reflected on the bottom of the &#8220;Details&#8221; page:
 </p>
 
-[<img class="alignnone size-medium wp-image-1057" src="http://www.codingpedia.org/wp-content/uploads/2013/12/OAuth-tokens-generated-300x193.png" alt="OAuth-tokens-generated" width="300" height="193" srcset="http://www.codingpedia.org/wp-content/uploads/2013/12/OAuth-tokens-generated-300x193.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/12/OAuth-tokens-generated.png 869w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.codingpedia.org/wp-content/uploads/2013/12/OAuth-tokens-generated.png)
+[<img class="alignnone size-medium wp-image-1057" src="{{site.url}}/images/wp-content/uploads/2013/12/OAuth-tokens-generated-300x193.png" alt="OAuth-tokens-generated" width="300" height="193" srcset="{{site.url}}/images/wp-content/uploads/2013/12/OAuth-tokens-generated-300x193.png 300w, {{site.url}}/images/wp-content/uploads/2013/12/OAuth-tokens-generated.png 869w" sizes="(max-width: 300px) 100vw, 300px" />]({{site.url}}/images/wp-content/uploads/2013/12/OAuth-tokens-generated.png)
 
 You have now all the parameters needed to configure Twitter4J and post on Twitter. I hope you could learn something from this as I did.
 
@@ -238,7 +238,7 @@ You have now all the parameters needed to configure Twitter4J and post on Twitte
 </p>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="Resources">Resources</span>
@@ -250,7 +250,7 @@ You have now all the parameters needed to configure Twitter4J and post on Twitte
   * <a title="OAuth" href="http://oauth.net/" target="_blank">OAuth</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

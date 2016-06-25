@@ -38,7 +38,7 @@ format: aside
 **How do I do that?** It&#8217;s very easy. First make a copy of one instance and name it as you please:
 
 <div id="attachment_984" style="width: 721px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/clone-tomcat-directory.png"><img class="size-full wp-image-984" src="http://www.codingpedia.org/wp-content/uploads/2013/11/clone-tomcat-directory.png" alt="Clone Tomcat directory" width="711" height="192" srcset="http://www.codingpedia.org/wp-content/uploads/2013/11/clone-tomcat-directory.png 711w, http://www.codingpedia.org/wp-content/uploads/2013/11/clone-tomcat-directory-300x81.png 300w" sizes="(max-width: 711px) 100vw, 711px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/clone-tomcat-directory.png"><img class="size-full wp-image-984" src="{{site.url}}/images/wp-content/uploads/2013/11/clone-tomcat-directory.png" alt="Clone Tomcat directory" width="711" height="192" srcset="{{site.url}}/images/wp-content/uploads/2013/11/clone-tomcat-directory.png 711w, {{site.url}}/images/wp-content/uploads/2013/11/clone-tomcat-directory-300x81.png 300w" sizes="(max-width: 711px) 100vw, 711px" /></a>
 
   <p class="wp-caption-text">
     Clone Tomcat directory
@@ -108,7 +108,7 @@ modified
 
 <p class="note_normal">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

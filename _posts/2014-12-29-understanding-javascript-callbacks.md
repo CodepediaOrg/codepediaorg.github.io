@@ -229,7 +229,7 @@ Hope this helps! Any questions? Drop me a line or comment in the discussion belo
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2014/12/cwbuecheler.png" alt="Johannes Brodwall" /> 
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/cwbuecheler.png" alt="Johannes Brodwall" /> 
   
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/cwbuecheler/" target="_blank">Christopher Buecheler</a></strong>

@@ -34,7 +34,7 @@ tags:
 </p>
 
 <div id="attachment_918" style="width: 614px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/Preview-2013.png"><img class="size-large wp-image-918" alt="Preview Twenty Thirteen Theme" src="http://www.codingpedia.org/wp-content/uploads/2013/11/Preview-2013-1024x616.png" width="604" height="363" srcset="http://www.codingpedia.org/wp-content/uploads/2013/11/Preview-2013-1024x616.png 1024w, http://www.codingpedia.org/wp-content/uploads/2013/11/Preview-2013-300x180.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/11/Preview-2013.png 1439w" sizes="(max-width: 604px) 100vw, 604px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/Preview-2013.png"><img class="size-large wp-image-918" alt="Preview Twenty Thirteen Theme" src="{{site.url}}/images/wp-content/uploads/2013/11/Preview-2013-1024x616.png" width="604" height="363" srcset="{{site.url}}/images/wp-content/uploads/2013/11/Preview-2013-1024x616.png 1024w, {{site.url}}/images/wp-content/uploads/2013/11/Preview-2013-300x180.png 300w, {{site.url}}/images/wp-content/uploads/2013/11/Preview-2013.png 1439w" sizes="(max-width: 604px) 100vw, 604px" /></a>
 
   <p class="wp-caption-text">
     Preview Twenty Thirteen Theme
@@ -62,7 +62,7 @@ tags:
 </p>
 
 <div id="attachment_920" style="width: 596px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/Firebug-inspection.png"><img class=" wp-image-920  " alt="Firebug HTML inspector" src="http://www.codingpedia.org/wp-content/uploads/2013/11/Firebug-inspection.png" width="586" height="287" srcset="http://www.codingpedia.org/wp-content/uploads/2013/11/Firebug-inspection.png 837w, http://www.codingpedia.org/wp-content/uploads/2013/11/Firebug-inspection-300x146.png 300w" sizes="(max-width: 586px) 100vw, 586px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/Firebug-inspection.png"><img class=" wp-image-920  " alt="Firebug HTML inspector" src="{{site.url}}/images/wp-content/uploads/2013/11/Firebug-inspection.png" width="586" height="287" srcset="{{site.url}}/images/wp-content/uploads/2013/11/Firebug-inspection.png 837w, {{site.url}}/images/wp-content/uploads/2013/11/Firebug-inspection-300x146.png 300w" sizes="(max-width: 586px) 100vw, 586px" /></a>
 
   <p class="wp-caption-text">
     Firebug HTML inspector
@@ -95,7 +95,7 @@ tags:
 &lt;header id="masthead" class="site-header" role="banner"&gt;
 	&lt;a class="home-link" href="&lt;?php echo esc_url( home_url( '/' ) ); ?&gt;" title="&lt;?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?&gt;" rel="home"&gt;
 		&lt;div id="logo_and_title"&gt;
-				&lt;img class="header-logo" src="http://www.codingpedia.org/wp-content/uploads/2013/11/logo.png"/&gt;
+				&lt;img class="header-logo" src="{{site.url}}/images/wp-content/uploads/2013/11/logo.png"/&gt;
 				&lt;div id="title_subtitle"&gt;
 					&lt;h1 class="site-title"&gt;&lt;?php bloginfo( 'name' ); ?&gt;&lt;/h1&gt;
 					&lt;h2 class="site-description"&gt;&lt;?php bloginfo( 'description' ); ?&gt;&lt;/h2&gt;
@@ -194,7 +194,7 @@ Now to the **logo adding** part, I floated both the image (line 27) and the `tit
   1. <a title="WordPress - Child Themes" href="http://codex.wordpress.org/Child_Themes" target="_blank">WordPress &#8211; Child Themes</a>
 
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

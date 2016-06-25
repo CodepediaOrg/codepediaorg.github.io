@@ -1600,7 +1600,7 @@ If you enjoyed my teaching style and would like to learn more from me, [subscrib
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/10/udemy-logo.png" alt="Udemy blog" /> 
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/udemy-logo.png" alt="Udemy blog" /> 
   
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/udemy/" target="_blank">Udemy</a></strong>

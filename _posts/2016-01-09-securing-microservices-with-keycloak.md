@@ -88,7 +88,7 @@ tags:
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2016/01/keycloak-logo.png" alt="Keycloak-logo" /> 
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://raw.githubusercontent.com/keycloak/keycloak/master/misc/logo/keycloak_icon_256px.png" alt="Keycloak-logo" /> 
   
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/keycloak/" target="_blank">Keycloak</a></strong>

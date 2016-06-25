@@ -285,7 +285,7 @@ Well, that&#8217;s it &#8211; you&#8217;ve learned how easy it is to add CORS su
   7. <a title="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" target="_blank">HTTP 1.1 &#8211; RFC2616</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

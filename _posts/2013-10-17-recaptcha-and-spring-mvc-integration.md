@@ -76,7 +76,7 @@ tags:
 This post presents how reCAPTCHA is integrated with a Spring MVC form to recommend podcasts.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 
@@ -185,7 +185,7 @@ If put together, all these relevant things look somewhat like the following in t
 
 where `/WEB-INF/jsp/common/recaptcha_options.jsp` contains the customization options mentioned above. The result looks similar to the following:
 
-[<img class="alignnone size-medium wp-image-741" src="http://www.codingpedia.org/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha-300x178.png" alt="recaptcha widget" width="300" height="178" srcset="http://www.codingpedia.org/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha-300x178.png 300w, http://www.codingpedia.org/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha-624x372.png 624w, http://www.codingpedia.org/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha.png 880w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.codingpedia.org/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha.png)
+[<img class="alignnone size-medium wp-image-741" src="{{site.url}}/images/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha-300x178.png" alt="recaptcha widget" width="300" height="178" srcset="{{site.url}}/images/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha-300x178.png 300w, {{site.url}}/images/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha-624x372.png 624w, {{site.url}}/images/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha.png 880w" sizes="(max-width: 300px) 100vw, 300px" />]({{site.url}}/images/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha.png)
 
 ### <span id="Server_Side_How_to_test_if_the_user_entered_the_right_answer">Server Side (How to test if the user entered the right answer)</span>
 
@@ -288,7 +288,7 @@ Well, that&#8217;s it. After reading this I hope you feel more positive about re
   * very much to the guys who recommended podcasts for the directory and remember if you know any good podcast worth sharing <a title="Recommend podcasts on Podcastpedia.org" href="http://www.podcastpedia.org/how_can_i_help/add_podcast" target="_blank">tell us</a> about it and we will add it to the directory.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="References">References</span>
@@ -299,7 +299,7 @@ Well, that&#8217;s it. After reading this I hope you feel more positive about re
   4. <a title="Spring Framework Reference Documentation" href="http://docs.spring.io/spring/docs/3.2.3.RELEASE/spring-framework-reference/html/" target="_blank">Spring Framework Reference Documentation</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
   
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

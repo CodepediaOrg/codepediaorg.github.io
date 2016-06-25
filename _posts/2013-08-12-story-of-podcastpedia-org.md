@@ -58,7 +58,7 @@ categories:
 </p>
 
 <div id="attachment_366" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/07/baby_working1.jpg"><img class="size-medium wp-image-366  " title="Baby's support by coding" src="http://www.codingpedia.org/wp-content/uploads/2013/07/baby_working1-300x224.jpg" alt="working with baby" width="300" height="224" srcset="http://www.codingpedia.org/wp-content/uploads/2013/07/baby_working1-300x224.jpg 300w, http://www.codingpedia.org/wp-content/uploads/2013/07/baby_working1-624x467.jpg 624w, http://www.codingpedia.org/wp-content/uploads/2013/07/baby_working1.jpg 827w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/07/baby_working1.jpg"><img class="size-medium wp-image-366  " title="Baby's support by coding" src="{{site.url}}/images/wp-content/uploads/2013/07/baby_working1-300x224.jpg" alt="working with baby" width="300" height="224" srcset="{{site.url}}/images/wp-content/uploads/2013/07/baby_working1-300x224.jpg 300w, {{site.url}}/images/wp-content/uploads/2013/07/baby_working1-624x467.jpg 624w, {{site.url}}/images/wp-content/uploads/2013/07/baby_working1.jpg 827w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   
   <p class="wp-caption-text">
     Who said men can&#8217;t do multi-tasking?
@@ -66,7 +66,7 @@ categories:
 </div>
 
 <div id="attachment_367" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/07/baby_working2.jpg"><img class="size-medium wp-image-367 " title="Baby's support by coding" src="http://www.codingpedia.org/wp-content/uploads/2013/07/baby_working2-300x224.jpg" alt="baby's support" width="300" height="224" srcset="http://www.codingpedia.org/wp-content/uploads/2013/07/baby_working2-300x224.jpg 300w, http://www.codingpedia.org/wp-content/uploads/2013/07/baby_working2-624x467.jpg 624w, http://www.codingpedia.org/wp-content/uploads/2013/07/baby_working2.jpg 827w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/07/baby_working2.jpg"><img class="size-medium wp-image-367 " title="Baby's support by coding" src="{{site.url}}/images/wp-content/uploads/2013/07/baby_working2-300x224.jpg" alt="baby's support" width="300" height="224" srcset="{{site.url}}/images/wp-content/uploads/2013/07/baby_working2-300x224.jpg 300w, {{site.url}}/images/wp-content/uploads/2013/07/baby_working2-624x467.jpg 624w, {{site.url}}/images/wp-content/uploads/2013/07/baby_working2.jpg 827w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   
   <p class="wp-caption-text">
     &#8230; or take good care of babys?
@@ -75,7 +75,7 @@ categories:
 
 but with a positive attitude
 
-[<img class="alignnone size-medium wp-image-368" src="http://www.codingpedia.org/wp-content/uploads/2013/07/positive_attitude-225x300.jpg" alt="positive attitude" width="225" height="300" srcset="http://www.codingpedia.org/wp-content/uploads/2013/07/positive_attitude-225x300.jpg 225w, http://www.codingpedia.org/wp-content/uploads/2013/07/positive_attitude.jpg 465w" sizes="(max-width: 225px) 100vw, 225px" />](http://www.codingpedia.org/wp-content/uploads/2013/07/positive_attitude.jpg)
+[<img class="alignnone size-medium wp-image-368" src="{{site.url}}/images/wp-content/uploads/2013/07/positive_attitude-225x300.jpg" alt="positive attitude" width="225" height="300" srcset="{{site.url}}/images/wp-content/uploads/2013/07/positive_attitude-225x300.jpg 225w, {{site.url}}/images/wp-content/uploads/2013/07/positive_attitude.jpg 465w" sizes="(max-width: 225px) 100vw, 225px" />]({{site.url}}/images/wp-content/uploads/2013/07/positive_attitude.jpg)
 
 I have pushed things through.
 
@@ -138,7 +138,7 @@ but any extra hand is <a href="mailto:ama@codingpedia.org?Subject=Support%20Podc
 
 <p style="text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" /> 
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
     
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

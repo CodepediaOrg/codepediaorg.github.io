@@ -35,7 +35,7 @@ tags:
 </p>
 
 <div id="attachment_959" style="width: 721px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2013/11/search-results-snippet.png"><img class="size-full wp-image-959" src="http://www.codingpedia.org/wp-content/uploads/2013/11/search-results-snippet.png" alt="Search results - print screen snippet" width="711" height="268" srcset="http://www.codingpedia.org/wp-content/uploads/2013/11/search-results-snippet.png 711w, http://www.codingpedia.org/wp-content/uploads/2013/11/search-results-snippet-300x113.png 300w" sizes="(max-width: 711px) 100vw, 711px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2013/11/search-results-snippet.png"><img class="size-full wp-image-959" src="{{site.url}}/images/wp-content/uploads/2013/11/search-results-snippet.png" alt="Search results - print screen snippet" width="711" height="268" srcset="{{site.url}}/images/wp-content/uploads/2013/11/search-results-snippet.png 711w, {{site.url}}/images/wp-content/uploads/2013/11/search-results-snippet-300x113.png 300w" sizes="(max-width: 711px) 100vw, 711px" /></a>
 
   <p class="wp-caption-text">
     Search results &#8211; print screen snippet
@@ -43,7 +43,7 @@ tags:
 </div>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <p style="text-align: justify;">
@@ -187,7 +187,7 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
   </p>
 
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="http://www.codingpedia.org/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </div>
 
@@ -202,7 +202,7 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
   7. <a title="WordPress SEO" href="yoast.com/articles/wordpress-seo/" target="_blank">WordPress SEO</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

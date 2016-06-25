@@ -314,7 +314,7 @@ tags:
 </h3>
 
 <p style="text-align: justify;">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram.png"><img class="alignnone size-full wp-image-1456" src="http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram.png" alt="Architecture diagram" width="591" height="246" srcset="http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram.png 591w, http://www.codingpedia.org/wp-content/uploads/2014/05/Rest-Demo-Diagram-300x124.png 300w" sizes="(max-width: 591px) 100vw, 591px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2014/05/Rest-Demo-Diagram.png"><img class="alignnone size-full wp-image-1456" src="{{site.url}}/images/wp-content/uploads/2014/05/Rest-Demo-Diagram.png" alt="Architecture diagram" width="591" height="246" srcset="{{site.url}}/images/wp-content/uploads/2014/05/Rest-Demo-Diagram.png 591w, {{site.url}}/images/wp-content/uploads/2014/05/Rest-Demo-Diagram-300x124.png 300w" sizes="(max-width: 591px) 100vw, 591px" /></a>
 </p>
 
 <p style="text-align: justify;">
@@ -372,7 +372,7 @@ A few words on the technologies/frameworks used:
 </p>
 
 <p style="text-align: justify;">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema.png"><img class="alignnone size-medium wp-image-1089" src="http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema-300x280.png" alt="database schema" width="300" height="280" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema-300x280.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/database-schema.png 566w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2014/01/database-schema.png"><img class="alignnone size-medium wp-image-1089" src="{{site.url}}/images/wp-content/uploads/2014/01/database-schema-300x280.png" alt="database schema" width="300" height="280" srcset="{{site.url}}/images/wp-content/uploads/2014/01/database-schema-300x280.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/database-schema.png 566w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 </p>
 
 #### <span id="136_Technology_versions">1.3.6. Technology versions</span>
@@ -1736,7 +1736,7 @@ The Failsafe Plugin can be invoked by calling the `<tt>verify</tt>` phase of the
 To start jetty on port 8888 you need to set the `jetty.port` property to 8888. In Eclipse I use the following configuration:
 
 <div id="attachment_1190" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://www.codingpedia.org/wp-content/uploads/2014/01/run-integration-tests-eclipse.png"><img class="size-medium wp-image-1190" src="http://www.codingpedia.org/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png" alt="Run integration tests from Eclipse" width="300" height="148" srcset="http://www.codingpedia.org/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png 300w, http://www.codingpedia.org/wp-content/uploads/2014/01/run-integration-tests-eclipse.png 991w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/images/wp-content/uploads/2014/01/run-integration-tests-eclipse.png"><img class="size-medium wp-image-1190" src="{{site.url}}/images/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png" alt="Run integration tests from Eclipse" width="300" height="148" srcset="{{site.url}}/images/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/run-integration-tests-eclipse.png 991w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Run integration tests from Eclipse
@@ -1867,7 +1867,7 @@ Here are some great resources from people that understand better the matter:
   * <a title="http://www.codingpedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" href="http://www.codingpedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">http://www.codingpedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

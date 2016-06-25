@@ -408,7 +408,7 @@ So you I am just getting the &#8220;LoggingResponseFilter &#8221; logger  and 
   * <a title="Logback or Log4j Additivity Explained" href="http://blog.idleworx.com/2010/07/logback-log4j-additivity-explained.html" target="_blank">Logback or Log4j Additivity Explained</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>

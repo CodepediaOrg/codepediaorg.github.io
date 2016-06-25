@@ -519,120 +519,119 @@ You can now use the generated _id_rsa.pub_ key and upload it to the systems you 
 </p>
 
 <table border="1" cellpadding="1" cellspacing="1">
-<tr>
-  <td align="center">
-    <b>|</b>
-  </td>
+  <tr>
+    <td align="center">
+      <b>|</b>
+    </td>
 
-  <td>
-     pipe symbol
-  </td>
+    <td>
+       pipe symbol
+    </td>
 
-  <td>
-    <b> <alt>7</b>
-  </td>
-</tr>
+    <td>
+      <b> alt7</b>
+    </td>
+  </tr>
 
-<tr>
-  <td align="center" valign="top">
-    <b>\\</b>
-  </td>
+  <tr>
+    <td align="center" valign="top">
+      <b>\\</b>
+    </td>
 
-  <td valign="top">
-     backslash
-  </td>
+    <td valign="top">
+       backslash
+    </td>
 
-  <td valign="top">
-    <b> <alt><shift>7</b> = <b><alt>/</b>
-  </td>
-</tr>
+    <td valign="top">
+      <b> alt shift 7</b> = <b>alt/</b>
+    </td>
+  </tr>
 
-<tr>
-  <td align="center" valign="top">
-    <b>[</b>
-  </td>
+  <tr>
+    <td align="center" valign="top">
+      <b>[</b>
+    </td>
 
-  <td valign="top">
-     left (opening) square bracket
-  </td>
+    <td valign="top">
+       left (opening) square bracket
+    </td>
 
-  <td valign="top">
-    <b> <alt>5</b>
-  </td>
-</tr>
+    <td valign="top">
+      <b> alt 5</b>
+    </td>
+  </tr>
 
-<tr>
-  <td align="center" valign="top">
-    <b>]</b>
-  </td>
+  <tr>
+    <td align="center" valign="top">
+      <b>]</b>
+    </td>
 
-  <td valign="top">
-     right (closing) square bracket
-  </td>
+    <td valign="top">
+       right (closing) square bracket
+    </td>
 
-  <td valign="top">
-    <b> <alt>6</b>
-  </td>
-</tr>
+    <td valign="top">
+      <b> alt 6</b>
+    </td>
+  </tr>
 
-<tr>
-  <td align="center" valign="top">
-    <b>{</b>
-  </td>
+  <tr>
+    <td align="center" valign="top">
+      <b>{</b>
+    </td>
 
-  <td valign="top">
-     left (opening) curly bracket
-  </td>
+    <td valign="top">
+       left (opening) curly bracket
+    </td>
 
-  <td valign="top">
-    <b> <alt>8</b>
-  </td>
-</tr>
+    <td valign="top">
+      <b> alt 8</b>
+    </td>
+  </tr>
 
-<tr>
-  <td align="center" valign="top">
-    <b>}</b>
-  </td>
+  <tr>
+    <td align="center" valign="top">
+      <b>}</b>
+    </td>
 
-  <td valign="top">
-     right (closing) curly bracket
-  </td>
+    <td valign="top">
+       right (closing) curly bracket
+    </td>
 
-  <td valign="top">
-    <b> <alt>9</b>
-  </td>
-</tr>
+    <td valign="top">
+      <b> alt 9</b>
+    </td>
+  </tr>
 
-<tr>
-  <td align="center" valign="top">
-    <b>~</b>
-  </td>
+  <tr>
+    <td align="center" valign="top">
+      <b>~</b>
+    </td>
 
-  <td valign="top">
-     Tilde
-  </td>
+    <td valign="top">
+       Tilde
+    </td>
 
-  <td valign="top">
-    <b> <alt>n</b> followed by the space key
-  </td>
-</tr>
+    <td valign="top">
+      <b> alt n</b> followed by the space key
+    </td>
+  </tr>
 
-<tr>
-  <td align="center" valign="top">
-    <b>@</b>
-  </td>
+  <tr>
+    <td align="center" valign="top">
+      <b>@</b>
+    </td>
 
-  <td valign="top">
-     &#8220;At&#8221; symbol
-  </td>
+    <td valign="top">
+       &#8220;At&#8221; symbol
+    </td>
 
-  <td valign="top">
-    <b> <alt>g</b> (lowercase G)</p>
+    <td valign="top">
+      <b> alt g</b> (lowercase G)
 
-    <p>
-      <b><alt>L</b> German Keyboard
-  </td>
-</tr>
+      <b>alt L</b> German Keyboard
+    </td>
+  </tr>
 </table>
 
 <h3 style="text-align: justify;">
@@ -654,26 +653,6 @@ You can now use the generated _id_rsa.pub_ key and upload it to the systems you 
   For any suggestions please leave a comment. Thank you.
 </p>
 
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-      <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>
 
 <h2 style="text-align: justify;">
   <span id="References">References</span>
@@ -705,3 +684,24 @@ You can now use the generated _id_rsa.pub_ key and upload it to the systems you 
     <a href="http://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/">Make an Alias in Bash Shell in OS X Terminal</a>
   </li>
 </ol>
+
+<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
+
+  <p id="about_author_header">
+    <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
+  </p>
+
+  <div id="author_details" style="text-align: justify;">
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+  </div>
+
+  <div id="follow_social" style="clear: both;">
+    <div id="social_logos">
+      <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
+    </div>
+
+    <div class="clear">
+    </div>
+  </div>
+</div>

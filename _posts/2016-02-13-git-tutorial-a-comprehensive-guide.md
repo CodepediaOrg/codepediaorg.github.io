@@ -36,7 +36,7 @@ tags:
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#INTRODUCTION">INTRODUCTION</a>
@@ -60,7 +60,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#History_of_Git">History of Git</a>
       </li>
@@ -95,7 +95,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Setting_up_a_Git_Repository">Setting up a Git Repository</a><ul>
           <li>
@@ -106,7 +106,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Workflow">Workflow</a><ul>
           <li>
@@ -138,7 +138,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Remote_Repositories">Remote Repositories</a><ul>
           <li>
@@ -161,7 +161,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Undoing_Actions">Undoing Actions</a><ul>
           <li>
@@ -178,7 +178,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Branching">Branching</a><ul>
           <li>
@@ -195,7 +195,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Merging">Merging</a><ul>
           <li>
@@ -227,7 +227,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Rebasing">Rebasing</a><ul>
           <li>
@@ -238,7 +238,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Log">Log</a>
       </li>
@@ -255,7 +255,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Aliases">Aliases</a>
       </li>
@@ -272,7 +272,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#GitHub">GitHub</a><ul>
           <li>
@@ -286,13 +286,15 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Additional_Resources">Additional Resources</a>
       </li>
     </ul>
   </div>
 </p>
+
+<!--more-->
 
 <h2 style="text-align: justify;">
   <span id="INTRODUCTION"><span>INTRODUCTION</span></span>
@@ -353,8 +355,6 @@ tags:
 <h3 style="text-align: justify;">
   <span id="So_what_is_Git"><span><a id="2_4"></a>So, what is Git?</span></span>
 </h3>
-
-<!--more-->
 
 <p style="text-align: justify;">
   <em><strong>Snapshots</strong></em>
@@ -643,56 +643,56 @@ man git-command</pre>
 <ol start="2" style="text-align: justify;">
   <li>
     Use the git init command <pre class="lang:default decode:true">$ git init</pre>
-    
+
     <p>
-      <strong>Note:</strong> At this stage, you have created a new subdirectory named .git that has the repository files. Tracking has not commenced.</li> 
-      
+      <strong>Note:</strong> At this stage, you have created a new subdirectory named .git that has the repository files. Tracking has not commenced.</li>
+
       <li>
         To start tracking these repository files, perform an initial commit by typing the following: <pre class="lang:default decode:true">$ git add *.c
 $ git add LICENSE
 $ git commit -m “any message here”</pre>
-      </li></ol> 
-      
+      </li></ol>
+
       <p style="text-align: justify;">
         Now, your files are tracked and there’s an initial commit. We will discuss the particular commands in detail soon.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Cloning"><span><a id="5_2"></a>Cloning</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         You can also create a copy of an existing Git repository from a particular server by using the clone command with a repository’s URL:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git clone https://github.com/test</pre>
-      
+
       <p style="text-align: justify;">
         By cloning the file, you have copied all versions of all files for a project. This command leads to the creation of a directory called “test,” with an initialized .git directory inside it, which has copies of all versions of all files for the specified project. The command also automatically checks out — or retrieves for editing — a copy of the newest version of the project.
       </p>
-      
+
       <p style="text-align: justify;">
         To clone a repository into a directory with another name of your choosing, use the following command format:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git clone https://github.com/test mydirectory</pre>
-      
+
       <p style="text-align: justify;">
         The command above makes a copy of the target repository in a directory named “mydirectory.”
       </p>
-      
+
       <h2 style="text-align: justify;">
         <span id="Workflow"><span><a id="6"></a>Workflow</span></span>
       </h2>
-      
+
       <h3 style="text-align: justify;">
         <span id="Local_Repository_Structure"><span><a id="6_1"></a>Local Repository Structure</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         The local Git repository has three components:
       </p>
-      
+
       <ol style="text-align: justify;">
         <li>
           Working Directory: The actual files reside here.
@@ -704,35 +704,35 @@ $ git commit -m “any message here”</pre>
           Head: Points to the most recent commit
         </li>
       </ol>
-      
+
       <p style="text-align: justify;">
         <a href="https://blog.udemy.com/wp-content/uploads/2015/08/image036.png"><img class="aligncenter size-full wp-image-146963" src="https://blog.udemy.com/wp-content/uploads/2015/08/image036.png" alt="image03" width="918" height="272" /></a>
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Saving_Changes"><span><a id="6_2"></a>Saving Changes</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         All files in a checked out (or working) copy of a project file are either in a tracked or untracked state.
       </p>
-      
+
       <p style="text-align: justify;">
         <em><strong>Tracked</strong> </em><br /> Tracked files can be modified, unmodified, or staged; they were part of the most recent file snapshot.
       </p>
-      
+
       <p style="text-align: justify;">
         <em><strong>Untracked</strong></em><br /> Untracked files were not in the last snapshot and do not currently reside in the staging area.
       </p>
-      
+
       <p style="text-align: justify;">
         *After cloning a repository, files have tracked status and are unmodified because they have been checked out but not edited.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="The_Life_Cycle_of_File_Status"><span><a id="6_3"></a>The Life Cycle of File Status</span></span>
       </h3>
-      
+
       <ol style="text-align: justify;">
         <li>
           After you edit a file, Git flags it as modified because of changes made after the previous commit.
@@ -744,146 +744,146 @@ $ git commit -m “any message here”</pre>
           Then, you commit staged changes.
         </li>
       </ol>
-      
+
       <p style="text-align: justify;">
         <a href="https://blog.udemy.com/wp-content/uploads/2015/08/image006.png"><img class="aligncenter size-full wp-image-146964" src="https://blog.udemy.com/wp-content/uploads/2015/08/image006.png" alt="image00" width="998" height="502" /></a>
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Check_File_Status"><span><a id="6_4"></a>Check File Status</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To determine the state of files, utilize the <code>git status</code> command:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git status</pre>
-      
+
       <p style="text-align: justify;">
         On branch master<br /> nothing to commit, working directory clean
       </p>
-      
+
       <p style="text-align: justify;">
         *This information indicates which branch you’re on (we will cover branches in a later section) and states “working directory clean,” which means that files have tracked or modified status at the moment. Also, no untracked files are present because Git has not listed any.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Tracking_and_Staging_a_New_File"><span><a id="6_5"></a>Tracking and Staging a New File</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         <em><strong>Single File</strong></em><br /> Track one file only by using the following format:
       </p>
-      
+
       <pre class="lang:default decode:true">git add filename</pre>
-      
+
       <p style="text-align: justify;">
         <em><strong>All Files</strong></em><br /> Track all files in a repository by using the following command:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git add *</pre>
-      
+
       <p style="text-align: justify;">
         *After using these commands, files are tracked and staged for committing.
       </p>
-      
+
       <p style="text-align: justify;">
         After adding a new file called EXAMPLE, you would see information regarding changes to be committed when using the <code>git status</code> command:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git status
 On branch master
 Changes to be committed:
   (use "git reset HEAD ..." to unstage)</pre>
-      
+
       <pre class="lang:default decode:true">new file: EXAMPLE</pre>
-      
+
       <p style="text-align: justify;">
         This information tells us that there are changes to be committed and that the file has been staged.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Committing_a_File"><span><a id="6_6"></a>Committing a File</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         After staging one or multiple files, you should commit the changes and record what you did within the commit message:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git commit -m “made change x,y,z”</pre>
-      
+
       <p style="text-align: justify;">
         *This step has committed changes for the file or files (you can have one commit message for multiple files, if applicable) to the HEAD.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Committing_All_Changes"><span><a id="6_7"></a>Committing All Changes</span></span>
       </h3>
-      
+
       <pre class="lang:default decode:true">$ git commit -a</pre>
-      
+
       <p style="text-align: justify;">
         *This command commits a snapshot of all modifications to tracked files in the working directory.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Pushing_Changes"><span><a id="6_8"></a>Pushing Changes</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         Next, you would push changes to a remote repository. We will discuss remote repositories in more depth in the next section. For now, we will look at a general overview of pushing changes to remotes.
       </p>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git push origin master</pre>
-      
+
       <p style="text-align: justify;">
         *This command pushes changes from the local “master” branch to the remote repository named “origin”.
       </p>
-      
+
       <p style="text-align: justify;">
         *For cloned repositories, Git will automatically give the name “origin” to the server from which you cloned and the name “master” to your local repository. However, these names can be changed by the user.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Stashing_Changes"><span><a id="6_9"></a>Stashing Changes</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         When you are not ready to commit changes but do not want to lose them either,<code>git stash</code> is a great option. This command temporarily removes changes and hides them, giving you a clean working directory. When you are ready to continue working on the changes, simply use the <code>git stash apply</code> command to retrieve the hidden changes.
       </p>
-      
+
       <h2 style="text-align: justify;">
         <span id="Remote_Repositories"><span><a id="7"></a>Remote Repositories</span></span>
       </h2>
-      
+
       <p style="text-align: justify;">
         In order to collaborate on Git projects, you must interact with remote repositories, versions of a project residing online or on a network. You can work with multiple repositories, for which you can have read/write or read-only privileges. Teams can use remote repositories to push information to and pull data from.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Cloned_Repositories"><span><a id="7_1"></a>Cloned Repositories</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         As mentioned earlier, for cloned repositories, Git will automatically give the name “origin” to the server from which you cloned and the name “master” to your local branch.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Seeing_Your_Remotes"><span><a id="7_2"></a>Seeing Your Remotes</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         By running the <code>git remote</code> command, you can view the short names, such as “origin,” of all specified remote handles.
       </p>
-      
+
       <p style="text-align: justify;">
         By using <code>git remote -v</code>, you can view all the remote URLs next to their corresponding short names.
       </p>
-      
+
       <pre class="lang:default decode:true">$ cd example
 $ git remote -v
 remote1 https://github.com/remote1/example (fetch)
@@ -892,21 +892,21 @@ remote2 https://github.com/remote2/example (fetch)
 remote2 https://github.com/remote2/example (push)
 remote3 https://github.com/remote3/example (fetch)
 remote3 https://github.com/remote3/example (push)</pre>
-      
+
       <h3 style="text-align: justify;">
         <span id="Adding_Remotes"><span><a id="7_3"></a>Adding Remotes</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To create a new remote Git repository with a short name, use the following format:
       </p>
-      
+
       <pre class="lang:default decode:true">git remote add shortname url</pre>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git remote
 origin
 $ git remote add js https://github.com/janesmith/project1
@@ -915,636 +915,636 @@ origin https://github.com/johndoe/project1 (fetch)
 origin https://github.com/johndoe/project1 (push)
 js     https://github.com/janesmith/project1 (fetch)
 js     https://github.com/janesmith/project1 (push)</pre>
-      
+
       <p style="text-align: justify;">
         This addition of these remote and short names allows you to use shortnames for Git collaboration.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Fetching"><span><a id="7_4"></a>Fetching</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         Fetching entails pulling data that you don’t have from a remote project.
       </p>
-      
+
       <p style="text-align: justify;">
         Here is the command format:
       </p>
-      
+
       <pre class="lang:default decode:true">git fetch [remote-name]</pre>
-      
+
       <p style="text-align: justify;">
         *Now, you should also possess the references to all branches for that remote (more on branching later).
       </p>
-      
+
       <p style="text-align: justify;">
         Cloned Repositories<br /> For cloned repositories, use the command <code>git fetch origin</code> to pull down any new changes that were pushed to the server since you cloned or last fetched from it.
       </p>
-      
+
       <hr />
-      
+
       <p style="text-align: justify;">
         <strong>Note:</strong> <code>git fetch</code> solely pulls new data to a local repository; it does not merge changes with or modify your local work. We will discuss <code>merging</code> in a later section. Later, we will also discuss <code>git pull</code> , which allows for fetching and automatic merging.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Pushing"><span><a id="7_5"></a>Pushing</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To push your changes “upstream” for sharing, you would use the following <code>git push</code> command format:
       </p>
-      
+
       <pre class="lang:default decode:true">git push [remote-name][branch-name]</pre>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git push origin master</pre>
-      
+
       <p style="text-align: justify;">
         *This command pushes committed changes from your local “master” branch upstream to the “origin” server.
       </p>
-      
+
       <p style="text-align: justify;">
         Note: You can only successfully push changes upstream if you have write access for the server from which you cloned, and if someone else has not pushed changes upstream that you haven’t pulled yet. If a collaborator pushed changes upstream after you had cloned, your push will not be successful. You will have to pull new changes and merge them with your branch before you can successfully push your changes upstream.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="RenamingRemoving_Remotes"><span><a id="7_6"></a>Renaming/Removing Remotes</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         <em><strong>Rename</strong></em><br /> To rename a remote’s short name, use the <code>git remote rename</code> command.
       </p>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git remote rename js jane
 $ git remote
 origin
 jane</pre>
-      
+
       <p style="text-align: justify;">
         *In the example above, we can see that the remote’s short name has been changed from js to Jane. The command <code>git remote</code> lists our existing remotes, which jane is now one of. The rename action also alters names of remote branches: js/master would change to jane/master.
       </p>
-      
+
       <p style="text-align: justify;">
         <em><strong>Remove</strong></em><br /> To remove a remote for whatever reason (e.g., a contributor has left the team, the server has moved), simply use the git remote rm command:
       </p>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git remote rm jane
 $ git remote
 origin</pre>
-      
+
       <hr />
-      
+
       <p style="text-align: justify;">
         <strong>NOTE:</strong> Reminder: “origin” is simply the default remote name when you use the <code>git clone</code> command.
       </p>
-      
+
       <h2 style="text-align: justify;">
         <span id="Undoing_Actions"><span><a id="8"></a>Undoing Actions</span></span>
       </h2>
-      
+
       <p style="text-align: justify;">
         Git has mechanisms for undoing certain actions.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Commit_Mistakes"><span><a id="8_1"></a>Commit Mistakes</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         You can use the –amend command when you need to alter a commit message or forgot to add some files.
       </p>
-      
+
       <pre class="lang:default decode:true">$ git commit --amend</pre>
-      
+
       <p style="text-align: justify;">
         In the example above, you can use this command to easily change your commit message, if no changes were made since the newest commit.
       </p>
-      
+
       <pre class="lang:default decode:true">$ git commit -m “my first commit”
 $ git add example_file
 $ git commit --amend</pre>
-      
+
       <p style="text-align: justify;">
         In the above example, a forgotten file is added to a commit.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Unstaging_a_File"><span><a id="8_2"></a>Unstaging a File</span></span>
       </h3>
-      
+
       <pre class="lang:default decode:true">$ git reset HEAD index.html
 Unstaged changes after reset:
 M index.html</pre>
-      
+
       <p style="text-align: justify;">
         Above, we see that the <code>git reset HEAD</code> command unstaged the index.html file.
       </p>
-      
+
       <hr />
-      
+
       <p style="text-align: justify;">
         <strong>NOTE:</strong> When <code>git reset --hard</code> is used, Git overwrites all changes in the working directory, permanently destroying any uncommitted changes.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Undo_a_Committed_Snapshot"><span><a id="8_3"></a>Undo a Committed Snapshot</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To undo changes resulting from a particular commit, use the <code>git revert</code> command. This command appends a new commit that undoes changes introduced by a specific commit. This prevents Git from losing history.
       </p>
-      
+
       <pre class="lang:default decode:true">$ git commit -m "Example Commit"
 $ git revert HEAD</pre>
-      
+
       <p style="text-align: justify;">
         *In the example above, a new commit gets appended and rolls back changes from a specific commit.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Unmodifying_a_File"><span><a id="8_4"></a>Unmodifying a File</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To have a file return to its state when you last committed, utilize the <code>git checkout</code>command.<br /> Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git checkout -- index.html</pre>
-      
+
       <hr />
-      
+
       <p style="text-align: justify;">
         <strong>NOTE:</strong> <code>git checkout -- file</code> erases any changes made to the file because you are copying another file over it. Almost all committed information in Git can be recovered; however, any uncommitted information can be lost forever.
       </p>
-      
+
       <h2 style="text-align: justify;">
         <span id="Branching"><span><a id="9"></a>Branching</span></span>
       </h2>
-      
+
       <p style="text-align: justify;">
         Almost every type of Version Control System incorporates branching. By creating branches of a central repository, collaborators are able to work on a project simultaneously via multiple branches, without affecting this main repository.
       </p>
-      
+
       <p style="text-align: justify;">
         A collaborator can create a branch, work on it and save commit snapshots within it, switch between various branches, and merge changes. A Git branch is basically a movable pointer that always points to the most recent commit, or snapshot. Git uses the default local branch name “master,” which can be changed. Just because the default name is “master” does not imply that it is higher in importance or has more functionality than other branches. The head is a special pointer which indicates which branch you are currently working within.
       </p>
-      
+
       <p style="text-align: justify;">
         <a href="https://blog.udemy.com/wp-content/uploads/2015/08/image016.png"><img class="aligncenter size-full wp-image-146968" src="https://blog.udemy.com/wp-content/uploads/2015/08/image016.png" alt="image01" width="534" height="372" /></a>
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Creating_a_New_Branch"><span><a id="9_1"></a>Creating a New Branch</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To create a new branch, use the git branch name format:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git branch test</pre>
-      
+
       <p style="text-align: justify;">
         *The above command creates a new branch named “test” that points toward your most recent commit. However, this command does not switch you over to this new branch.
       </p>
-      
+
       <p style="text-align: justify;">
         <a href="https://blog.udemy.com/wp-content/uploads/2015/08/image027.png"><img class="aligncenter size-full wp-image-146969" src="https://blog.udemy.com/wp-content/uploads/2015/08/image027.png" alt="image02" width="792" height="380" /></a>
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Switching_Branches"><span><a id="9_2"></a>Switching Branches</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To switch to another branch, use the <code>git checkout</code> command.
       </p>
-      
+
       <p style="text-align: justify;">
         <code>$ git checkout test</code>
       </p>
-      
+
       <p style="text-align: justify;">
         *This command moves the HEAD pointer to the test branch
       </p>
-      
+
       <p style="text-align: justify;">
         <a href="https://blog.udemy.com/wp-content/uploads/2015/08/image086.png"><img class="aligncenter size-full wp-image-146970" src="https://blog.udemy.com/wp-content/uploads/2015/08/image086.png" alt="image08" width="966" height="398" /></a>
       </p>
-      
+
       <p style="text-align: justify;">
         If you make a commit while on the test branch, only this branch will point to the most recent commit. The master branch will still point at the commit it was pointing to when you checked out to the test branch. So, if you switch back to the master branch, none of your recent changes made on the test branch will exist on the master branch.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Create_a_Branch_and_Checkout"><span><a id="9_3"></a>Create a Branch and Checkout</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To simultaneously create a new branch and switch to it, use the -b switch with the<code>git checkout</code> command:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git checkout -b test2</pre>
-      
+
       <p style="text-align: justify;">
         *The command above creates a new branch “test2” and switches you to it.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="List_Branches"><span><a id="9_4"></a>List Branches</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         You can list available branches by using the <code>git branch</code> command.
       </p>
-      
+
       <pre class="lang:default decode:true">$ git branch
 *master</pre>
-      
+
       <p style="text-align: justify;">
         Above, we see that we have one local branch, named “master”.
       </p>
-      
+
       <h2 style="text-align: justify;">
         <span id="Merging"><span><a id="10"></a>Merging</span></span>
       </h2>
-      
+
       <p style="text-align: justify;">
         When you want to merge changes from one branch into your current one, you can use the <code>git merge</code> command.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Fast-Forward_Merging"><span><a id="10_1"></a>Fast-Forward Merging</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         With a fast-forward merge, your current branch’s pointer moves forward to the most recent commit for the branch being merged in – there is no divergent work to merge together because the latter branch is directly upstream in relation to the former one.
       </p>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git checkout master (switches you to the master branch)
 $ git merge test (merges in changes from test branch)
 Updating c58d775 .. 8b9205d
 Fast-forward
 index.html| 4 ++
 1 file changed, 4 insertions(+)</pre>
-      
+
       <p style="text-align: justify;">
         <a href="https://blog.udemy.com/wp-content/uploads/2015/08/image054.png"><img class="aligncenter size-full wp-image-146971" src="https://blog.udemy.com/wp-content/uploads/2015/08/image054.png" alt="image05" width="1062" height="520" /></a>
       </p>
-      
+
       <p style="text-align: justify;">
         In the diagram above, the Master branch, which previously pointed at Commit 3, now points at Commit 4, after fast forwarding and merging in changes from the Test branch – made possible by the fact that Master had not diverged from the latter.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="No_Fast-forward"><span><a id="10_2"></a>No Fast-forward</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         When you use the <code>git merge --no-ff &lt;branch&gt;</code> command, instead of a branch simply moving its pointer forward, a new commit object is created. The –no-ff flag is often used to prevent the loss of historical information regarding a merged-in branch.
       </p>
-      
+
       <pre class="lang:default decode:true">$ git merge test --no-ff</pre>
-      
+
       <h3 style="text-align: justify;">
         <span id="Three-way_Merge"><span><a id="10_3"></a>Three-way Merge</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         In cases of branches diverging, fast-forward merges are not an option. A three-way merge can be used, however. This type of merge involves the two latest commit snapshots pointed to by both branches, and their common ancestor. Here is an example of creating a three-way merge:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git checkout master
 $ git merge test</pre>
-      
+
       <p style="text-align: justify;">
         <a href="https://blog.udemy.com/wp-content/uploads/2015/08/image075.png"><img class="aligncenter size-full wp-image-146972" src="https://blog.udemy.com/wp-content/uploads/2015/08/image075.png" alt="image07" width="1090" height="676" /></a>
       </p>
-      
+
       <p style="text-align: justify;">
         Instead of just moving the branch pointer forward, Git creates a new snapshot that results from this three-way merge and automatically creates a new commit that points to it. This is referred to as a merge commit, which is special because it has more than one parent.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Fetch_and_Merge"><span><a id="10_4"></a>Fetch and Merge</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To easily fetch and merge remote changes, use the <code>git pull</code> command in your working directory.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Deleting_Branches"><span><a id="10_5"></a>Deleting Branches</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         After you’ve merged branches, and they’re no longer needed, you can easily delete them with the -d flag.
       </p>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git branch -d test</pre>
-      
+
       <p style="text-align: justify;">
         *This deletes the “test” branch.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Merge_Conflicts"><span><a id="10_6"></a>Merge Conflicts</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         When the two files being merged both have changes in identical sections of a file, Git will not be able to complete the merge cleanly. These conflicts must be dealt with manually. Portions of files with unresolved merge conflicts will be labeled “unmerged”.
       </p>
-      
+
       <p style="text-align: justify;">
         You can easily locate areas of merge conflict via Git’s conflict resolution markers, which appear in applicable files.
       </p>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <pre class="lang:default decode:true">My name is
  &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
  Jane
  =======
  Mary
  &gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-test</pre>
-      
+
       <p style="text-align: justify;">
         Here, HEAD indicates the branch you checked out before running the merge command. The content above the ======= resides within this branch, while everything below it is within the test branch. As you can see, the conflict is that Jane and Mary conflict with each other. After fixing this conflict and removing the ======= and >>>>>>> lines, run the git add command on fixed files to mark them as resolved.
       </p>
-      
+
       <p style="text-align: justify;">
         To view unmerged files, use the<code> git status</code> command.
       </p>
-      
+
       <pre class="lang:default decode:true">$ git status</pre>
-      
+
       <p style="text-align: justify;">
         # On branch master<br /> # Unmerged paths:<br /> # (use “git add/rm …” as appropriate to mark resolution)<br /> #<br /> # both modified: index.html<br /> #<br /> *Here, we see that there is a merge conflict in index.html.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Preview_Changes"><span><a id="10_7"></a>Preview Changes</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To preview changes for merging, use the <code>git diff</code> command in the following format:
       </p>
-      
+
       <pre class="lang:default decode:true">git diff &lt;source_branch&gt; &lt;target_branch&gt;</pre>
-      
+
       <h3 style="text-align: justify;">
         <span id="Listing_Branches"><span><a id="10_8"></a>Listing Branches</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To list local branches, use the <code>git branch</code> command. The branch currently being worked on will have an asterisk next to its name.
       </p>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git branch
 *master
 test</pre>
-      
+
       <h3 style="text-align: justify;">
         <span id="See_Latest_Commits"><span><a id="10_9"></a>See Latest Commits</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To see the newest commits for each branch, use the <code>git branch-v</code> command.
       </p>
-      
+
       <pre class="lang:default decode:true">$ git branch -v
 *master 51g222e updated html file
 test 52c667a updated JavaScript file</pre>
-      
+
       <p style="text-align: justify;">
         The useful <code>--merged</code> and <code>--no-merged</code> options can filter this list to branches that you have or have not yet merged into the branch you’re currently on. To see which branches are already merged into the branch you’re on, you can run <code>git branch --merged</code>:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git branch --merged
 test
  * master</pre>
-      
+
       <p style="text-align: justify;">
         Because you already merged in test earlier, you see it in your list. Branches on this list without the * in front of them are generally fine to delete with git branch -d; you’ve already incorporated their work into another branch, so you’re not going to lose anything.<br /> To see all the branches that contain work you haven’t yet merged in, you can run<code>git branch --no-merged</code>:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git branch --no-merged
 testing</pre>
-      
+
       <h2 style="text-align: justify;">
         <span id="Rebasing"><span><a id="11"></a>Rebasing</span></span>
       </h2>
-      
+
       <p style="text-align: justify;">
         A popular alternative to merging is rebasing.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="The_Basics"><span><a id="11_1"></a>The Basics</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         Rebasing starts with the common ancestor of two branches: the one you’re on and the one you’re rebasing onto. Then, the diffs resulting from each commit of your current branch are saved to temporary files, and the current branch gets reset to the same commit as that of the branch you are rebasing onto. Last but not least, all changes get applied to the branch you are rebasing onto.<br /> This process essentially rewrites a project’s history by replaying all changes committed on one branch to another one, leading to cleaner application of commits on a remote branch and a linear history.<br /> Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git checkout test
 $ git rebase master</pre>
-      
+
       <p style="text-align: justify;">
         <a href="https://blog.udemy.com/wp-content/uploads/2015/08/image046.png"><img class="aligncenter size-full wp-image-146974" src="https://blog.udemy.com/wp-content/uploads/2015/08/image046.png" alt="image04" width="970" height="586" /></a>
       </p>
-      
+
       <p style="text-align: justify;">
         In this example, changes committed on commit 4 are replayed onto commit 3, allowing a fast-forward merge of master and the creation of a clean, linear history.
       </p>
-      
+
       <p style="text-align: justify;">
         Rebase Caveat: Avoid rebasing commits that are not within your repository; this could lead to confusion and inefficiency.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Rebase_vs_Merge"><span><a id="11_2"></a>Rebase vs. Merge</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         There are opposing viewpoints regarding merging and rebasing.
       </p>
-      
+
       <p style="text-align: justify;">
         <em><strong>Pro-merge argument</strong></em>
       </p>
-      
+
       <p style="text-align: justify;">
         The true commit history of a repository should not be altered because it’s a record of occurrences.
       </p>
-      
+
       <p style="text-align: justify;">
         <strong><em>Pro-rebase argument<br /> </em></strong><br /> Commit histories should be polished and well edited.
       </p>
-      
+
       <h2 style="text-align: justify;">
         <span id="Log"><span><a id="12"></a>Log</span></span>
       </h2>
-      
+
       <p style="text-align: justify;">
         You can utilize the <code>git log</code> command to view committed snapshots. You can use the command to see a project’s history, use a filter, and find specific modifications. Here are example uses of the <code>git log</code> command:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git log</pre>
-      
+
       <p style="text-align: justify;">
         This command lists the exhaustive commit history in default formatting.
       </p>
-      
+
       <pre class="lang:default decode:true">$ git log -n 3</pre>
-      
+
       <p style="text-align: justify;">
         This command line only allows for 3 displayed commits.
       </p>
-      
+
       <pre class="lang:default decode:true">$ git log --stat</pre>
-      
+
       <p style="text-align: justify;">
         This command results in the display of regular git log information, as well as information on which files underwent modification and the relative numbers of line deletions and additions from each of them.
       </p>
-      
+
       <pre class="lang:default decode:true">$ git log -p</pre>
-      
+
       <p style="text-align: justify;">
         This command shows the full diff of each commit.
       </p>
-      
+
       <pre class="lang:default decode:true">$ git log --grep="updated"</pre>
-      
+
       <p style="text-align: justify;">
         With this command, one can search for commits containing the string “updated.”
       </p>
-      
+
       <pre class="lang:default decode:true">$ git log --author="smith"</pre>
-      
+
       <p style="text-align: justify;">
         The command above allows for a specific search for commits by an author whose name includes the string “smith.”
       </p>
-      
+
       <pre class="lang:default decode:true">$ git log index.html</pre>
-      
+
       <p style="text-align: justify;">
         The command above will display only those commits including the index.html file.
       </p>
-      
+
       <pre class="lang:default decode:true">$ git log --oneline</pre>
-      
+
       <p style="text-align: justify;">
         This command presents repository information in a single line, so you can get a high-level overview.
       </p>
-      
+
       <p style="text-align: justify;">
         *Additional git log commands can be accessed via <code>git log --help</code>.
       </p>
-      
+
       <h2 style="text-align: justify;">
         <span id="Tagging"><span><a id="13"></a>Tagging</span></span>
       </h2>
-      
+
       <p style="text-align: justify;">
         With the use of tags, Git can flag certain points in a project’s history as being significant.
       </p>
-      
+
       <p style="text-align: justify;">
         To list available Git tags, use the <code>git tag</code> command:<br /> Example:
       </p>
-      
+
       <pre class="lang:default decode:true">git tag
  v1.0
  v2.0
  v3.0</pre>
-      
+
       <p style="text-align: justify;">
         To list only particular types of tags, use the <code>git tag -l</code> command:
       </p>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <pre class="lang:default decode:true">git tag -l “v1.2.9”
  v1.2.9
  v.1.2.9.1
  v.1.2.9.2
  v.1.2.9.3</pre>
-      
+
       <h3 style="text-align: justify;">
         <span id="Create_a_Tag"><span><a id="13_1"></a>Create a Tag</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         There are two main categories of tags in Git: lightweight and annotated.
       </p>
-      
+
       <p style="text-align: justify;">
         <strong><em>Lightweight</em></strong>
       </p>
-      
+
       <p style="text-align: justify;">
         A lightweight tag is a pointer to a particular commit – like a branch.
       </p>
-      
+
       <p style="text-align: justify;">
         <em><strong>Annotated</strong></em>
       </p>
-      
+
       <p style="text-align: justify;">
         An annotated tag is stored in the Git database as a full object, containing a tagging message, tagger name and email, and tag date. Annotated Tags can also undergo signing and verification with GNU Privacy Guard (GPG). The best practice is to use annotated tags when possible, to allow for storage of valuable information and privacy safeguards.
       </p>
-      
+
       <p style="text-align: justify;">
         <span><strong><em>Create Annotated Tags</em></strong></span>
       </p>
-      
+
       <p style="text-align: justify;">
         To create an annotated tag, use <code>-a</code> with the <code>git tag</code> command.<br /> Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git tag -a v2.0 -m “my version 2.0”
 $ git tag
 v1.0
 v1.5
 v2.0</pre>
-      
+
       <p style="text-align: justify;">
         Above, we see that the v2.0 tag has been created. We used <code>-m</code> for a specific tagging message.
       </p>
-      
+
       <p style="text-align: justify;">
         To see the tag data and corresponding commit, use the <code>git show</code> command.<br /> Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git show v2.0
   tag v2.0
 
@@ -1555,123 +1555,123 @@ my version 2.0
 commit ka93a8dfg718ce54f00342227218580a92764449
 Author: John Doe
 Date: Wed Mar 19 20:38:12 2008 -0700</pre>
-      
+
       <hr />
-      
+
       <p style="text-align: justify;">
         <strong>Note:</strong> After the word “commit,” we see a checksum – a hash value containing 40 characters – which is stored in a file.
       </p>
-      
+
       <p style="text-align: justify;">
         <span><strong><em>Create Lightweight Tags</em></strong></span>
       </p>
-      
+
       <p style="text-align: justify;">
         A lightweight tag for commits only holds a checksum. To create a lightweight tag, simply utilize the <code>git tag</code> command without using <code>-a</code>, <code>-s</code>, or <code>-m</code>.<br /> Example:
       </p>
-      
+
       <pre class="lang:default decode:true ">$ git tag v2.5
 $ git tag
 v1.0
 v1.5
 v2.0
 v2.5</pre>
-      
+
       <pre class="lang:default decode:true ">For the lightweight tag above, git show would only display the commit:</pre>
-      
+
       <pre class="lang:default decode:true">$ git show v2.5
 commit p641d7dff657pc77f33442017208880k91563822
 Author: John Doe
 Date: Wed Mar 19 20:33:05 2008 -0700
 
 changed the version number</pre>
-      
+
       <h3 style="text-align: justify;">
         <span id="Tag_Sharing"><span><a id="13_2"></a>Tag Sharing</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         Users must push tags to shared servers after creation because, by default, the <code>git push</code> command does not send tags to remote servers.
       </p>
-      
+
       <p style="text-align: justify;">
         To push tags to shared servers, use the<code> git push origin [tagname]</code> command.
       </p>
-      
+
       <p style="text-align: justify;">
         To push all of your tags at once, use the<code> --tags</code> option for the <code>git push</code> command.
       </p>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <pre class="lang:default decode:true">git push origin --tags</pre>
-      
+
       <hr />
-      
+
       <p style="text-align: justify;">
         <strong>Note:</strong> Anyone who pulls from your repository or clones it will also receive all of your tags.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Tag_Checkout"><span><a id="13_3"></a>Tag Checkout</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         Because you cannot move tags around, they cannot be checked out in Git. However, you can create a new branch at a specific tag with the <code>git checkout -b [branchname][tagname]</code> command.
       </p>
-      
+
       <h2 style="text-align: justify;">
         <span id="Aliases"><span><a id="14"></a>Aliases</span></span>
       </h2>
-      
+
       <p style="text-align: justify;">
         Aliases allow users to navigate Git in an easier fashion. To save time and effort, one can create aliases for Git commands, which eliminates the need to type out an entire default Git command.
       </p>
-      
+
       <p style="text-align: justify;">
         You can set up aliases using the <code>git config</code> command.
       </p>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <pre class="lang:default decode:true">$ git config --global alias.br branch
 $ git config --global alias.st status
 $ git config --global alias.co commit</pre>
-      
+
       <p style="text-align: justify;">
         The above commands allow the user to simply type git br, git st, or git co, instead of git branch, git status, or git commit.<br /> You can also create new commands with an alias.<br /> Example:
       </p>
-      
+
       <pre class="lang:default decode:true ">$ git config --global alias.stage “add”</pre>
-      
+
       <p style="text-align: justify;">
         The above command makes <code>git stage</code> equivalent to <code>git add</code>.<br /> Many people create a last command for viewing the most recent commit.
       </p>
-      
+
       <p style="text-align: justify;">
         Example:
       </p>
-      
+
       <p style="text-align: justify;">
         <span>$</span> git config –global alias.last “log -1 HEAD”
       </p>
-      
+
       <h2 style="text-align: justify;">
         <span id="Ignoring_Files"><span><a id="15"></a>Ignoring Files</span></span>
       </h2>
-      
+
       <p style="text-align: justify;">
         Usually, untracked files consist of uncommitted files recently added to a project or compiled binaries with extensions such as .exe and .obj. Compiled binaries can make it difficult to clearly monitor your repository. Git allows users to avoid this situation by ignoring certain files by sending them to a special file with the name .gitignore.
       </p>
-      
+
       <p style="text-align: justify;">
         <strong>Note:</strong> It’s always wise to check your repository before committing anything, to avoid accidentally committing certain files.
       </p>
-      
+
       <ul style="text-align: justify;">
         <li>
           Files that all developers should disregard go into a <span>.gitignore</span> file.
@@ -1680,71 +1680,71 @@ $ git config --global alias.co commit</pre>
           Every line within a gitignore file indicates a pattern.
         </li>
       </ul>
-      
+
       <p style="text-align: justify;">
         Additional information regarding gitignore files can be found <span><a href="http://git-scm.com/docs/gitignore%20and%20https://github.com/github/gitignore" target="_blank">here</a></span>.
       </p>
-      
+
       <h2 style="text-align: justify;">
         <span id="Distributed_Workflows"><span><a id="16"></a>Distributed Workflows</span></span>
       </h2>
-      
+
       <p style="text-align: justify;">
         As we mentioned earlier, distributed workflows allow developers collaborating on projects much more flexibility. Every developer using Git can be both a node and a hub; this means he/she can own a main repository which collaborators contribute to and base their work off of while also contributing code to other repositories. This opens up the possibilities for workflows immensely.<br /> For now, we are only going to discuss a couple of the most common distributed workflows.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Centralized_Workflow"><span><a id="16_1"></a>Centralized Workflow</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         The centralized workflow entails the existence of one main hub, which can accept code. In this type of structure, many developers synchronize to this central repository, pushing and merging changes to it.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Integration-Manager_Workflow"><span><a id="16_2"></a>Integration-Manager Workflow</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         This workflow structure involves multiple remote repositories. In this scenario, there is often one main project repository, and developers can have read access to others’ repositories and write access to their own. Those involved in the Integration-Manager Workflow create clones of the main project repository, push any changes to it, and ask the repository maintainer to pull in the pushed changes. The maintainer can add someone’s repository as a remote, test changes locally, merge them into their branch, and push back to their repository.<br /> This workflow is commonly found with hub-centered resources, such as GitHub (we’ll talk about GitHub in the next section).
       </p>
-      
+
       <h2 style="text-align: justify;">
         <span id="GitHub"><span><a id="17"></a>GitHub</span></span>
       </h2>
-      
+
       <p style="text-align: justify;">
         As previously mentioned, GitHub is a hub-focused tool which facilitates Integration-Manager Workflow. It is the largest existing host for Git repositories and is used by millions of developers worldwide. A high percentage of Git repositories reside on GitHub, and this resource is used by many open source projects.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Getting_Started-2"><span><a id="17_1"></a>Getting Started</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         First, in order to use GitHub, you must set up a free user account. You can easily do this by visiting <span><a href="https://github.com/" target="_blank">https://github.com</a></span>.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="Contributing_to_Projects"><span><a id="17_2"></a>Contributing to Projects</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         To contribute to a project which you do not have push privileges for, you can “fork” a project, which means you will have your own copy of it, which you can freely push to. To complete a “fork,” look for the Fork button at the top right of the project page.
       </p>
-      
+
       <h3 style="text-align: justify;">
         <span id="General_Workflow"><span><a id="17_3"></a>General Workflow</span></span>
       </h3>
-      
+
       <p style="text-align: justify;">
         GitHub’s collaboration workflow revolves around Pull Requests.
       </p>
-      
+
       <p style="text-align: justify;">
         Here are the main steps of the GitHub collaboration workflow:
       </p>
-      
+
       <ol style="text-align: justify;">
         <li>
           Create a topic branch from master.
@@ -1765,50 +1765,50 @@ $ git config --global alias.co commit</pre>
           The project owner closes or merges the Pull Request.
         </li>
       </ol>
-      
+
       <h2 style="text-align: justify;">
         <span id="Additional_Resources"><span><a id="18"></a>Additional Resources</span></span>
       </h2>
-      
+
       <p style="text-align: justify;">
         <span><a href="http://git-scm.com/" target="_blank">http://git-scm.com</a></span>
       </p>
-      
+
       <p style="text-align: justify;">
         <span><a href="https://github.com/" target="_blank">https://github.com/</a></span>
       </p>
-      
+
       <p style="text-align: justify;">
         <span><a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf" target="_blank">https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf</a></span>
       </p>
-      
+
       <p style="text-align: justify;">
         <span><a href="http://alx.github.io/gitbook/" target="_blank">http://alx.github.io/gitbook/</a></span>
       </p>
-      
+
       <p style="text-align: justify;">
         <span><a href="https://progit.org/" target="_blank">https://progit.org/</a></span>
       </p>
-      
+
       <p style="text-align: justify;" class="note_normal">
         <span>Published on Codingpedia.org with the permission of</span><span class="Apple-converted-space"> </span><a title="http://www.codingpedia.org/author/aredko" href="http://www.codingpedia.org/author/Udemy" target="_blank">Udemy</a><span class="Apple-converted-space"> </span><span>– source </span><a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/git-tutorial-a-comprehensive-guide/" target="_blank">Git Tutorial: A Comprehensive Introduction</a><span> from</span><span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
       </p>
-      
+
       <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-        <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/udemy-logo.png" alt="Udemy blog" /> 
-        
+        <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/udemy-logo.png" alt="Udemy blog" />
+
         <p id="about_author_header">
           <strong><a href="http://www.codingpedia.org/author/udemy/" target="_blank">Udemy</a></strong>
         </p>
-        
+
         <div id="social_logos_up">
           <a class="icon-earth" href="https://blog.udemy.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/udemy" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/udemy" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/+UdemySF" target="_blank"> </a>
         </div>
-        
+
         <div id="author_details" style="text-align: justify;">
           Udemy.com is a platform or marketplace for online learning. Unlike academic MOOC programs driven by traditional collegiate coursework, Udemy provides a platform for experts of any kind to create courses which can be offered to the public, either at no charge or for a tuition fee. Udemy provides tools which enable users to create a course, promote it and earn money from student tuition charges.
         </div>
-        
+
         <div id="follow_social" style="clear: both;">
           <div class="clear">
           </div>

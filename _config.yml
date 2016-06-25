@@ -1,7 +1,7 @@
 title:            CodingpediaOrg
 description:      Sharing coding knowledge
 # put your disqus here
-disqus_shortname:
+disqus_shortname:  codingpedia
 reading_time:     true # if true, shows the estimated reading time for a post
 words_per_minute: 200
 logo:             images/logo.png # logo visible in the topbar
@@ -18,7 +18,7 @@ menu:
   - title: 'Home'
     url: '/'
   - title: 'Fork'
-    url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme'
+    url: 'https://github.com/Codingpedia/codingpedia.github.io'
   - title: 'About'
     url: '/about/'
   - title: 'Tags'

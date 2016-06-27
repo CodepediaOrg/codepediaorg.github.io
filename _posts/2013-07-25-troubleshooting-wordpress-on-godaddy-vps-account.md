@@ -2,7 +2,7 @@
 id: 5
 title: Troubleshooting WordPress installation on GoDaddy VPS
 date: 2013-07-25T14:50:14+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codingpedia.org/?p=5
 permalink: /ama/troubleshooting-wordpress-on-godaddy-vps-account/
@@ -60,7 +60,7 @@ UserDir enabled my_user
 ...</pre>
 
 , this problem was solved.
-  
+
 But when trying run the install script <tt>http://codingpedia.org/wp-admin/install.php</tt> again, I got another infamous HTTP error code &#8211; 403
 
 <p style="padding-left: 30px;">
@@ -96,38 +96,22 @@ Lucky number four &#8211; installation was successful, but as you can see I am s
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>
-</div>
-
-
-  
-Adrian&#8217;s favorite WordPress books
-
-<div class="amazon_book">
-</div>
-
-<div class="amazon_book">
-</div>
-
-<div class="amazon_book">
-</div>
-
-<div class="clear">
 </div>

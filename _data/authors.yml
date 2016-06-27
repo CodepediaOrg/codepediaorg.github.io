@@ -1,0 +1,11 @@
+ama:
+  name:          Adrian Matei
+  site:           http://www.codingpedia.org
+  avatar:         images/authors/amacoder.png
+  bio:            "Life force in a coding capable human being"
+  email:          adrianmatei@gmail.com
+  # Twitter nick for use in Twitter cards and follow button.
+  twitter: ama_coder # if no twitter in this config, the twitter follow button will be removed
+  # GitHub nick for use in follow button in author block.
+  github: amacoder
+

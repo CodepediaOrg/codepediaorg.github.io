@@ -8,4 +8,12 @@ ama:
   twitter: ama_coder # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
   github: amacoder
-
+  social:
+    - title: "github"
+      url: "https://github.com/amacoder"
+    - title: "linkedin"
+      url: "https://www.linkedin.com/in/adrianmatei1983"
+    - title: "youtube"
+      url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
+    - title: "facebook"
+      url: "https://www.facebook.com/adrian.matei.90"

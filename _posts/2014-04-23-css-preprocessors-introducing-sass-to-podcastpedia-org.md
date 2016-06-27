@@ -39,7 +39,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#1_CSS_Preprocessors">1. CSS Preprocessors</a><ul>
@@ -52,7 +52,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#2_Advantages_of_using_preprocessors_Sass">2. Advantages of using preprocessors (Sass)</a><ul>
         <li>
@@ -75,7 +75,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#3_Generate_the_CSS">3. Generate the CSS</a>
     </li>
@@ -95,9 +95,9 @@ tags:
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
-  
+
   <!--more-->
 </p>
 
@@ -149,7 +149,7 @@ There are many &#8220;best practices&#8221; on how to structure a Sass project w
 //initializing css
 @import "_init";
 
-//elements 
+//elements
 @import "common/_icon_fonts";
 @import "common/_languageSelection";
 @import "common/_responsiveGrid";
@@ -201,20 +201,20 @@ you can see what suits me for now:
     font-weight: 700;
     margin-bottom: 15px;
     padding-top: 8px;
-    @include until-mq($break-point-normal){        
+    @include until-mq($break-point-normal){
       font-size:1.9em;
     }
-    @include until-mq($break-point-smaller){   
+    @include until-mq($break-point-smaller){
       font-size:1.6em;
     }
     @include until-mq($break-point-small){
       font-size: 1.3em;
       margin-bottom:0px;
-      padding-top:0px;      
+      padding-top:0px;
     }
     @include until-mq($break-point-very-small){
       font-size: 14px;
-		}    
+		}
   }
   ...............
 }
@@ -335,7 +335,7 @@ is compiled to :
 <pre class="lang:sass mark:2 decode:true" title="Mixin - media query naming">/* media query mixin */
 @mixin until-mq($device-width) {
   @media screen and (max-width: $device-width - 1) {
-    @content 
+    @content
   }
 }</pre>
 
@@ -353,20 +353,20 @@ is compiled to :
     font-weight: 700;
     margin-bottom: 15px;
     padding-top: 8px;
-    @include until-mq($break-point-normal){        
+    @include until-mq($break-point-normal){
       font-size:1.9em;
     }
-    @include until-mq($break-point-smaller){   
+    @include until-mq($break-point-smaller){
       font-size:1.6em;
     }
     @include until-mq($break-point-small){
       font-size: 1.3em;
       margin-bottom:0px;
-      padding-top:0px;      
+      padding-top:0px;
     }
     @include until-mq($break-point-very-small){
       font-size: 14px;
-	}    
+	}
   }
   .......
 }</pre>
@@ -410,7 +410,7 @@ is compiled to :
 </p>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="4_Resources">4. Resources</span>
@@ -426,21 +426,21 @@ is compiled to :
   7. <a title="http://css-tricks.com/naming-media-queries/" href="http://css-tricks.com/naming-media-queries/" target="_blank">CSS tricks &#8211; Naming Media Queries</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

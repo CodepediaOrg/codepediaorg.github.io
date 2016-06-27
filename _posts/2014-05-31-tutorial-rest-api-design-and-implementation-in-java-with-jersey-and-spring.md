@@ -314,7 +314,7 @@ tags:
 </h3>
 
 <p style="text-align: justify;">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/05/Rest-Demo-Diagram.png"><img class="alignnone size-full wp-image-1456" src="{{site.url}}/images/wp-content/uploads/2014/05/Rest-Demo-Diagram.png" alt="Architecture diagram" width="591" height="246" srcset="{{site.url}}/images/wp-content/uploads/2014/05/Rest-Demo-Diagram.png 591w, {{site.url}}/images/wp-content/uploads/2014/05/Rest-Demo-Diagram-300x124.png 300w" sizes="(max-width: 591px) 100vw, 591px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/05/Rest-Demo-Diagram.png"><img class="alignnone size-full wp-image-1456" src="{{site.url}}/wp-content/uploads/2014/05/Rest-Demo-Diagram.png" alt="Architecture diagram" width="591" height="246" srcset="{{site.url}}/wp-content/uploads/2014/05/Rest-Demo-Diagram.png 591w, {{site.url}}/wp-content/uploads/2014/05/Rest-Demo-Diagram-300x124.png 300w" sizes="(max-width: 591px) 100vw, 591px" /></a>
 </p>
 
 <p style="text-align: justify;">
@@ -372,7 +372,7 @@ A few words on the technologies/frameworks used:
 </p>
 
 <p style="text-align: justify;">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/database-schema.png"><img class="alignnone size-medium wp-image-1089" src="{{site.url}}/images/wp-content/uploads/2014/01/database-schema-300x280.png" alt="database schema" width="300" height="280" srcset="{{site.url}}/images/wp-content/uploads/2014/01/database-schema-300x280.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/database-schema.png 566w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/database-schema.png"><img class="alignnone size-medium wp-image-1089" src="{{site.url}}/wp-content/uploads/2014/01/database-schema-300x280.png" alt="database schema" width="300" height="280" srcset="{{site.url}}/wp-content/uploads/2014/01/database-schema-300x280.png 300w, {{site.url}}/wp-content/uploads/2014/01/database-schema.png 566w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 </p>
 
 #### <span id="136_Technology_versions">1.3.6. Technology versions</span>
@@ -415,7 +415,7 @@ Before I start presenting the design and implementation of the REST API, we need
             &lt;exclusion&gt;
                 &lt;groupId&gt;org.springframework&lt;/groupId&gt;
                 &lt;artifactId&gt;spring-core&lt;/artifactId&gt;
-            &lt;/exclusion&gt;			
+            &lt;/exclusion&gt;
             &lt;exclusion&gt;
                 &lt;groupId&gt;org.springframework&lt;/groupId&gt;
                 &lt;artifactId&gt;spring-web&lt;/artifactId&gt;
@@ -424,7 +424,7 @@ Before I start presenting the design and implementation of the REST API, we need
                 &lt;groupId&gt;org.springframework&lt;/groupId&gt;
                 &lt;artifactId&gt;spring-beans&lt;/artifactId&gt;
             &lt;/exclusion&gt;
-        &lt;/exclusions&gt;			
+        &lt;/exclusions&gt;
     &lt;/dependency&gt;
     &lt;dependency&gt;
         &lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
@@ -469,8 +469,8 @@ Before I start presenting the design and implementation of the REST API, we need
     		&lt;/servlet-class&gt;
     		&lt;init-param&gt;
     			&lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;
-    			&lt;param-value&gt;org.codingpedia.demo.rest.RestDemoJaxRsApplication&lt;/param-value&gt;			
-    		&lt;/init-param&gt;		
+    			&lt;param-value&gt;org.codingpedia.demo.rest.RestDemoJaxRsApplication&lt;/param-value&gt;
+    		&lt;/init-param&gt;
     		&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
     	&lt;/servlet&gt;
 
@@ -576,16 +576,16 @@ The Spring application context configuration is located in the classpath under `
     	&lt;context:component-scan base-package="org.codingpedia.demo.rest.*" /&gt;
 
     	&lt;!-- ************ JPA configuration *********** --&gt;
-    	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;  
+    	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;
         &lt;bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"&gt;
             &lt;property name="entityManagerFactory" ref="entityManagerFactory" /&gt;
         &lt;/bean&gt;
         &lt;bean id="transactionManagerLegacy" class="org.springframework.orm.jpa.JpaTransactionManager"&gt;
             &lt;property name="entityManagerFactory" ref="entityManagerFactoryLegacy" /&gt;
-        &lt;/bean&gt;    
+        &lt;/bean&gt;
         &lt;bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"&gt;
             &lt;property name="persistenceXmlLocation" value="classpath:config/persistence-demo.xml" /&gt;
-            &lt;property name="persistenceUnitName" value="demoRestPersistence" /&gt;        
+            &lt;property name="persistenceUnitName" value="demoRestPersistence" /&gt;
             &lt;property name="dataSource" ref="restDemoDS" /&gt;
             &lt;property name="packagesToScan" value="org.codingpedia.demo.*" /&gt;
             &lt;property name="jpaVendorAdapter"&gt;
@@ -594,7 +594,7 @@ The Spring application context configuration is located in the classpath under `
                     &lt;property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" /&gt;
                 &lt;/bean&gt;
             &lt;/property&gt;
-        &lt;/bean&gt;     
+        &lt;/bean&gt;
         &lt;bean id="entityManagerFactoryLegacy" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"&gt;
             &lt;property name="persistenceXmlLocation" value="classpath:config/persistence-demo.xml" /&gt;
             &lt;property name="persistenceUnitName" value="demoRestPersistenceLegacy" /&gt;
@@ -606,7 +606,7 @@ The Spring application context configuration is located in the classpath under `
                     &lt;property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" /&gt;
                 &lt;/bean&gt;
             &lt;/property&gt;
-        &lt;/bean&gt;        
+        &lt;/bean&gt;
 
     	&lt;bean id="podcastDao" class="org.codingpedia.demo.rest.dao.PodcastDaoJPA2Impl"/&gt;
         &lt;bean id="podcastService" class="org.codingpedia.demo.rest.service.PodcastServiceDbAccessImpl" /&gt;
@@ -615,11 +615,11 @@ The Spring application context configuration is located in the classpath under `
 
     	&lt;bean id="restDemoDS" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
     	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoDB" /&gt;
-    	    &lt;property name="resourceRef" value="true" /&gt;        
+    	    &lt;property name="resourceRef" value="true" /&gt;
     	&lt;/bean&gt;
     	&lt;bean id="restDemoLegacyDS" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
     	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoLegacyDB" /&gt;
-    	    &lt;property name="resourceRef" value="true" /&gt;        
+    	    &lt;property name="resourceRef" value="true" /&gt;
     	&lt;/bean&gt;
     &lt;/beans&gt;
   </code>
@@ -1643,7 +1643,7 @@ The integration tests will be executed against a running jetty server, that will
     				&lt;phase&gt;pre-integration-test&lt;/phase&gt;
     				&lt;goals&gt;
     					&lt;!-- stop any previous instance to free up the port --&gt;
-    					&lt;goal&gt;stop&lt;/goal&gt;				
+    					&lt;goal&gt;stop&lt;/goal&gt;
     					&lt;goal&gt;run-exploded&lt;/goal&gt;
     				&lt;/goals&gt;
     				&lt;configuration&gt;
@@ -1736,7 +1736,7 @@ The Failsafe Plugin can be invoked by calling the `<tt>verify</tt>` phase of the
 To start jetty on port 8888 you need to set the `jetty.port` property to 8888. In Eclipse I use the following configuration:
 
 <div id="attachment_1190" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/run-integration-tests-eclipse.png"><img class="size-medium wp-image-1190" src="{{site.url}}/images/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png" alt="Run integration tests from Eclipse" width="300" height="148" srcset="{{site.url}}/images/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/run-integration-tests-eclipse.png 991w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/run-integration-tests-eclipse.png"><img class="size-medium wp-image-1190" src="{{site.url}}/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png" alt="Run integration tests from Eclipse" width="300" height="148" srcset="{{site.url}}/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png 300w, {{site.url}}/wp-content/uploads/2014/01/run-integration-tests-eclipse.png 991w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Run integration tests from Eclipse
@@ -1801,7 +1801,7 @@ Here are some great resources from people that understand better the matter:
 
             packages("org.codingpedia.demo.rest");
     		register(EntityFilteringFeature.class);
-    		EncodingFilter.enableFor(this, GZipEncoder.class);		
+    		EncodingFilter.enableFor(this, GZipEncoder.class);
 
     	}
     }

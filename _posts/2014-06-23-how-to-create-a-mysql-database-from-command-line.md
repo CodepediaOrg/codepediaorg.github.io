@@ -38,7 +38,7 @@ tags:
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <ul>
         <li>
@@ -57,7 +57,7 @@ tags:
           <a href="#5_Backup_the_database_optional">5. Backup the database (optional)</a>
         </li>
       </ul></li>
-      
+
       <li>
         <a href="#Resources">Resources</a><ul>
           <li>
@@ -67,7 +67,7 @@ tags:
       </li>
     </ul>
   </div>
-  
+
   <br /> We use currently for <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org </a>a MySQL database and because we&#8217;ve recently gone <a title="PodcastpediaOrg on GitHub" href="https://github.com/PodcastpediaOrg/podcastpedia" target="_blank">open source on GitHub</a>, we&#8217;ve created a <a title="https://github.com/podcastpedia/podcastpedia-sql" href="https://github.com/PodcastpediaOrg/podcastpedia/blob/master/README.md" target="_blank">README.md to explain the setup of the database</a>. The content of that file is basically reproduced here, as &#8220;back-up&#8221;, for future reference and why not?, it might also serve others in the mean time.
 </p>
 
@@ -99,7 +99,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li style="text-align: justify;">
         <a title="http://dev.mysql.com/doc/refman/5.6/en/setting-environment-variables.html" href="http://dev.mysql.com/doc/refman/5.6/en/setting-environment-variables.html" target="_blank">Set up the environment variables</a> &#8211; the MySQL programs are installed in <code>MySQL_installation_path/bin</code>, so you&#8217;d want this location added to the <code>PATH</code> variable to be easily invoked from shells and command lines.
       </li>
@@ -126,10 +126,10 @@ Once you are connected to the MySQL command line do following the steps:
 mysql&gt; DROP DATABASE IF EXISTS pcmDB;
 
 --create the pcmDB database
-mysql&gt; CREATE DATABASE pcmDB; 
+mysql&gt; CREATE DATABASE pcmDB;
 
 -- connect to the created database
-mysal&gt; use pcmDB; 
+mysal&gt; use pcmDB;
 
 -- drop 'pcm' user
 mysql&gt; DROP USER 'pcm'@'localhost';
@@ -202,7 +202,7 @@ shell&gt; mysql --host=localhost --user=pcm --password=pcm_pw
 mysql&gt; USE pcmDB;
 
 -- show tables imported
-mysql&gt; SHOW TABLES; 
+mysql&gt; SHOW TABLES;
 
 -- select data from a table, e.g. "categories"
 mysql&gt; SELECT * from categories;
@@ -242,35 +242,35 @@ If you ever want to backup up the database you can use the _mysqldump_ program, 
 The pcmDB database will be than saved into the single file _pcmdb-backup-2014.06.22.sql,_ which you can later import as mentioned on the previous step.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="Resources">Resources</span>
 
 ### <span id="Web">Web</span>
 
-  1.  <a title="MySQL documentation" href="http://dev.mysql.com/doc/" target="_blank">MySQL documentation</a> 
+  1.  <a title="MySQL documentation" href="http://dev.mysql.com/doc/" target="_blank">MySQL documentation</a>
       1. <a title="http://dev.mysql.com/doc/refman/5.6/en/connecting.html" href="http://dev.mysql.com/doc/refman/5.6/en/connecting.html" target="_blank">Connecting to the MySQL Server</a>
       2. <a title="http://dev.mysql.com/doc/refman/5.5/en/adding-users.html" href="http://dev.mysql.com/doc/refman/5.5/en/adding-users.html" target="_blank">Adding User Accounts</a>
       3. <a title="http://dev.mysql.com/doc/refman/5.6/en/drop-database.html" href="http://dev.mysql.com/doc/refman/5.6/en/drop-database.html" target="_blank">DROP DATABASE Syntax</a>
   2. <a title="https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql" href="https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql" target="_blank">How To Create a New User and Grant Permissions in MySQL</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

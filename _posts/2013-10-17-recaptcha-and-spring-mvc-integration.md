@@ -34,7 +34,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#Why_use_reCAPTCHA">Why use reCAPTCHA?</a><ul>
@@ -43,7 +43,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#reCAPTCHA_Spring_MVC_integration">reCAPTCHA Spring MVC integration</a><ul>
         <li>
@@ -57,7 +57,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#10x">10x</a>
     </li>
@@ -76,11 +76,11 @@ tags:
 This post presents how reCAPTCHA is integrated with a Spring MVC form to recommend podcasts.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 
-  
+
 <!--more-->
 
 ### <span id="Sign_up_for_a_reCAPTCHA_account">Sign up for a reCAPTCHA account</span>
@@ -124,17 +124,17 @@ I wanted the reCAPTCHA widget customized, so I used the &#8220;clean&#8221; them
 <pre class="lang:js decode:true" title="reCAPTCHA custom options">&lt;script type="text/javascript"&gt;
 	var strings = new Array();
 	strings['recaptcha.instructions_visual'] = "&lt;spring:message code='recaptcha.instructions_visual' javaScriptEscape='true'/&gt;";
-	strings['recaptcha.instructions_audio'] = "&lt;spring:message code='recaptcha.instructions_audio' javaScriptEscape='true'/&gt;"; 
+	strings['recaptcha.instructions_audio'] = "&lt;spring:message code='recaptcha.instructions_audio' javaScriptEscape='true'/&gt;";
 	strings['recaptcha.play_again'] = "&lt;spring:message code='recaptcha.play_again' javaScriptEscape='true'/&gt;";
 	strings['recaptcha.cant_hear_this'] = "&lt;spring:message code='recaptcha.cant_hear_this' javaScriptEscape='true'/&gt;";
 	strings['recaptcha.visual_challenge'] = "&lt;spring:message code='recaptcha.visual_challenge' javaScriptEscape='true'/&gt;";
 	strings['recaptcha.audio_challenge'] = "&lt;spring:message code='recaptcha.audio_challenge' javaScriptEscape='true'/&gt;";
-	strings['recaptcha.refresh_btn'] = "&lt;spring:message code='recaptcha.refresh_btn' javaScriptEscape='true'/&gt;"; 
+	strings['recaptcha.refresh_btn'] = "&lt;spring:message code='recaptcha.refresh_btn' javaScriptEscape='true'/&gt;";
 	strings['recaptcha.help_btn'] = "&lt;spring:message code='recaptcha.help_btn' javaScriptEscape='true'/&gt;";
 	strings['recaptcha.incorrect_try_again'] = "&lt;spring:message code='recaptcha.incorrect_try_again' javaScriptEscape='true'/&gt;";
 
 	var RecaptchaOptions = {
-	custom_translations : {		 
+	custom_translations : {
 		 instructions_visual :  strings['recaptcha.instructions_visual'] ,
 		 instructions_audio : strings['recaptcha.instructions_audio'],
 		 play_again : strings['recaptcha.play_again'],
@@ -144,9 +144,9 @@ I wanted the reCAPTCHA widget customized, so I used the &#8220;clean&#8221; them
 		 refresh_btn : strings['recaptcha.refresh_btn'],
 		 help_btn : strings['recaptcha.help_btn'],
 		 incorrect_try_again : strings['recaptcha.incorrect_try_again']
-	},		 
+	},
 	theme : 'clean'
-	}; 
+	};
 &lt;/script&gt;</pre>
 
 The strings array contains the values of the localized messages I want displayed in the captcha widget. See the post <a title="Spring 3 MVC: Internationalization & localization of Podcastpedia.org" href="http://www.codingpedia.org/ama/spring-3-mvc-internationalization-localization-of-podcastpedia-org/" target="_blank">Spring 3 MVC: Internationalization & localization of Podcastpedia.org</a> to find out how internationalization and localization is achieved for Podcastpedia.org
@@ -154,7 +154,7 @@ The strings array contains the values of the localized messages I want displayed
 If put together, all these relevant things look somewhat like the following in the jsp file:
 
 <pre class="lang:xhtml decode:true" title="relevant reCAPTCHA code in JSP file">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&gt;   
+&lt;%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&gt;
 &lt;%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%&gt;
 &lt;%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%&gt;
 &lt;%@ page import="net.tanesha.recaptcha.ReCaptcha" %&gt;
@@ -165,19 +165,19 @@ If put together, all these relevant things look somewhat like the following in t
 &lt;%@ include file="/WEB-INF/jsp/common/recaptcha_options.jsp" %&gt;
 
 .....
-	&lt;form:form id="add_podcast_form" class="vertical_style_form" 
+	&lt;form:form id="add_podcast_form" class="vertical_style_form"
 		method="POST" modelAttribute="addPodcastForm"&gt;
-		.....		
+		.....
 		&lt;div id="captcha_paragraph"&gt;
 			&lt;c:if test="${invalidRecaptcha == true}"&gt;
 				&lt;span class="error_form_validation"&gt;&lt;spring:message code="invalid.captcha" text="Invalid captcha please try again"/&gt;&lt;/span&gt;
 			&lt;/c:if&gt;
 		    &lt;%
-		        ReCaptcha c = ReCaptchaFactory.newReCaptcha("6LcW3OASAAAAAKEJTHMmp_bo5kny4lZXeDtgcMqC", 
+		        ReCaptcha c = ReCaptchaFactory.newReCaptcha("6LcW3OASAAAAAKEJTHMmp_bo5kny4lZXeDtgcMqC",
 		        					"6LcW3OASAAAAAKVX2duVsSy2uMMHL105-jPDrHMD", false);
 		        out.print(c.createRecaptchaHtml(null, null));
-		    %&gt;			    
-		&lt;/div&gt; 				
+		    %&gt;
+		&lt;/div&gt;
 		.....
 	&lt;/form:form&gt;
 	&lt;span style="color:#A73030;margin-left:30px;font-weight: bold;"&gt;*&lt;spring:message code="required" text="required"/&gt;&lt;/span&gt;
@@ -185,7 +185,7 @@ If put together, all these relevant things look somewhat like the following in t
 
 where `/WEB-INF/jsp/common/recaptcha_options.jsp` contains the customization options mentioned above. The result looks similar to the following:
 
-[<img class="alignnone size-medium wp-image-741" src="{{site.url}}/images/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha-300x178.png" alt="recaptcha widget" width="300" height="178" srcset="{{site.url}}/images/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha-300x178.png 300w, {{site.url}}/images/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha-624x372.png 624w, {{site.url}}/images/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha.png 880w" sizes="(max-width: 300px) 100vw, 300px" />]({{site.url}}/images/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha.png)
+[<img class="alignnone size-medium wp-image-741" src="{{site.url}}/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha-300x178.png" alt="recaptcha widget" width="300" height="178" srcset="{{site.url}}/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha-300x178.png 300w, {{site.url}}/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha-624x372.png 624w, {{site.url}}/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha.png 880w" sizes="(max-width: 300px) 100vw, 300px" />]({{site.url}}/wp-content/uploads/2013/10/recommend-podcast-form-focus-recaptcha.png)
 
 ### <span id="Server_Side_How_to_test_if_the_user_entered_the_right_answer">Server Side (How to test if the user entered the right answer)</span>
 
@@ -195,24 +195,24 @@ First the `reCAPTCHA bean` has to be configured in the Spring application contex
 &lt;beans  xmlns="http://www.springframework.org/schema/beans"
 	    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	    xmlns:jaxws="http://cxf.apache.org/jaxws"
-	    xmlns:p="http://www.springframework.org/schema/p" 
+	    xmlns:p="http://www.springframework.org/schema/p"
 	    xmlns:context="http://www.springframework.org/schema/context"
 	    xmlns:tx="http://www.springframework.org/schema/tx"
 	    xmlns:mvc="http://www.springframework.org/schema/mvc"
 	    xmlns:cache="http://www.springframework.org/schema/cache"
-	    xsi:schemaLocation=" 
-			http://www.springframework.org/schema/beans	 
-			http://www.springframework.org/schema/beans/spring-beans.xsd			 
-			http://www.springframework.org/schema/mvc	 
-			http://www.springframework.org/schema/mvc/spring-mvc.xsd			
+	    xsi:schemaLocation="
+			http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/mvc
+			http://www.springframework.org/schema/mvc/spring-mvc.xsd
 			http://www.springframework.org/schema/context
-			http://www.springframework.org/schema/context/spring-context.xsd			
-			http://cxf.apache.org/jaxws 
-			http://cxf.apache.org/schemas/jaxws.xsd			
-			http://www.springframework.org/schema/tx 
-			http://www.springframework.org/schema/tx/spring-tx.xsd			
+			http://www.springframework.org/schema/context/spring-context.xsd
+			http://cxf.apache.org/jaxws
+			http://cxf.apache.org/schemas/jaxws.xsd
+			http://www.springframework.org/schema/tx
+			http://www.springframework.org/schema/tx/spring-tx.xsd
 			http://www.springframework.org/schema/cache
-			http://www.springframework.org/schema/cache/spring-cache.xsd"&gt; 
+			http://www.springframework.org/schema/cache/spring-cache.xsd"&gt;
 
 	&lt;context:component-scan base-package="org.podcastpedia.service, org.podcastpedia.controllers"/&gt;
 	&lt;mvc:annotation-driven/&gt;
@@ -232,19 +232,19 @@ import net.tanesha.recaptcha.ReCaptchaResponse;
 ....
 
 @Controller
-@RequestMapping("/how_can_i_help") 
+@RequestMapping("/how_can_i_help")
 @SessionAttributes("addPodcastForm")
 public class HowCanIhelpController {
 	@Autowired
 	ReCaptchaImpl reCaptcha;
-	.....	
+	.....
 	@RequestMapping(value="add_podcast", method=RequestMethod.POST)
 	public String processAddPodcastForm(
-			@ModelAttribute("addPodcastForm") SuggestedPodcast addPodcastFormData,			
-			BindingResult result, 
+			@ModelAttribute("addPodcastForm") SuggestedPodcast addPodcastFormData,
+			BindingResult result,
 			Model model,
-			@RequestParam("recaptcha_challenge_field") String challangeField, 
-			@RequestParam("recaptcha_response_field") String responseField, 
+			@RequestParam("recaptcha_challenge_field") String challangeField,
+			@RequestParam("recaptcha_response_field") String responseField,
 			ServletRequest servletRequest,
 			SessionStatus sessionStatus){
 
@@ -256,7 +256,7 @@ public class HowCanIhelpController {
 
 		if(reCaptchaResponse.isValid() && !result.hasErrors()){
 
-        	userInteractionService.addSuggestedPodcast(addPodcastFormData);	
+        	userInteractionService.addSuggestedPodcast(addPodcastFormData);
         	emailNotificationService.sendSuggestPodcastNotification(addPodcastFormData);
         	sessionStatus.setComplete();
 
@@ -266,11 +266,11 @@ public class HowCanIhelpController {
     		if(!reCaptchaResponse.isValid()) {
     			result.rejectValue("invalidRecaptcha", "invalid.captcha");
     			model.addAttribute("invalidRecaptcha", true);
-    		}   			
-			return "add_podcast_form_def";	   	
-		}		
+    		}
+			return "add_podcast_form_def";
+		}
 
-	}	
+	}
 	.....
 }</pre>
 
@@ -288,7 +288,7 @@ Well, that&#8217;s it. After reading this I hope you feel more positive about re
   * very much to the guys who recommended podcasts for the directory and remember if you know any good podcast worth sharing <a title="Recommend podcasts on Podcastpedia.org" href="http://www.podcastpedia.org/how_can_i_help/add_podcast" target="_blank">tell us</a> about it and we will add it to the directory.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="References">References</span>
@@ -299,21 +299,21 @@ Well, that&#8217;s it. After reading this I hope you feel more positive about re
   4. <a title="Spring Framework Reference Documentation" href="http://docs.spring.io/spring/docs/3.2.3.RELEASE/spring-framework-reference/html/" target="_blank">Spring Framework Reference Documentation</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

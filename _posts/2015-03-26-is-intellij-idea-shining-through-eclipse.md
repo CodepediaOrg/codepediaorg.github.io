@@ -652,7 +652,7 @@ So firt things first. Here&#8217;s a list of the shortcuts I use or ought to be
   </p>
 
   <p>
-    <a href="{{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-eclipse.png"><img class="alignnone size-full wp-image-2304" src="{{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-eclipse.png" alt="link-with-editor-eclipse" width="784" height="393" srcset="{{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-eclipse.png 784w, {{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-eclipse-300x150.png 300w" sizes="(max-width: 784px) 100vw, 784px" /></a>
+    <a href="{{site.url}}/wp-content/uploads/2015/02/link-with-editor-eclipse.png"><img class="alignnone size-full wp-image-2304" src="{{site.url}}/wp-content/uploads/2015/02/link-with-editor-eclipse.png" alt="link-with-editor-eclipse" width="784" height="393" srcset="{{site.url}}/wp-content/uploads/2015/02/link-with-editor-eclipse.png 784w, {{site.url}}/wp-content/uploads/2015/02/link-with-editor-eclipse-300x150.png 300w" sizes="(max-width: 784px) 100vw, 784px" /></a>
   </p>
 
   <p style="text-align: justify;">
@@ -660,7 +660,7 @@ So firt things first. Here&#8217;s a list of the shortcuts I use or ought to be
   </p>
 
   <p>
-    <a href="{{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-eclipse.png"><img class="alignnone size-full wp-image-2306" src="{{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-eclipse.png" alt="show in package explorer eclipse" width="909" height="431" srcset="{{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-eclipse.png 909w, {{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-eclipse-300x142.png 300w" sizes="(max-width: 909px) 100vw, 909px" /></a>
+    <a href="{{site.url}}/wp-content/uploads/2015/02/show-in-package-explorer-eclipse.png"><img class="alignnone size-full wp-image-2306" src="{{site.url}}/wp-content/uploads/2015/02/show-in-package-explorer-eclipse.png" alt="show in package explorer eclipse" width="909" height="431" srcset="{{site.url}}/wp-content/uploads/2015/02/show-in-package-explorer-eclipse.png 909w, {{site.url}}/wp-content/uploads/2015/02/show-in-package-explorer-eclipse-300x142.png 300w" sizes="(max-width: 909px) 100vw, 909px" /></a>
   </p>
 
   <h3>
@@ -672,11 +672,11 @@ So firt things first. Here&#8217;s a list of the shortcuts I use or ought to be
   </p>
 
   <p>
-    <a href="{{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-intellij.png"><img class="alignnone size-full wp-image-2305" src="{{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-intellij.png" alt="link-with-editor-intellij" width="698" height="602" srcset="{{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-intellij.png 698w, {{site.url}}/images/wp-content/uploads/2015/02/link-with-editor-intellij-300x259.png 300w" sizes="(max-width: 698px) 100vw, 698px" /></a>
+    <a href="{{site.url}}/wp-content/uploads/2015/02/link-with-editor-intellij.png"><img class="alignnone size-full wp-image-2305" src="{{site.url}}/wp-content/uploads/2015/02/link-with-editor-intellij.png" alt="link-with-editor-intellij" width="698" height="602" srcset="{{site.url}}/wp-content/uploads/2015/02/link-with-editor-intellij.png 698w, {{site.url}}/wp-content/uploads/2015/02/link-with-editor-intellij-300x259.png 300w" sizes="(max-width: 698px) 100vw, 698px" /></a>
   </p>
 
   <p>
-    If you don&#8217;t want to enable this feature you can still navigate by using the keys combination <strong>Alt + F1</strong> and select where you want to show it:<a href="{{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-intellij.png"><img class="alignnone size-full wp-image-2307" src="{{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-intellij.png" alt="show in package explorer intellij" width="891" height="624" srcset="{{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-intellij.png 891w, {{site.url}}/images/wp-content/uploads/2015/02/show-in-package-explorer-intellij-300x210.png 300w" sizes="(max-width: 891px) 100vw, 891px" /></a>
+    If you don&#8217;t want to enable this feature you can still navigate by using the keys combination <strong>Alt + F1</strong> and select where you want to show it:<a href="{{site.url}}/wp-content/uploads/2015/02/show-in-package-explorer-intellij.png"><img class="alignnone size-full wp-image-2307" src="{{site.url}}/wp-content/uploads/2015/02/show-in-package-explorer-intellij.png" alt="show in package explorer intellij" width="891" height="624" srcset="{{site.url}}/wp-content/uploads/2015/02/show-in-package-explorer-intellij.png 891w, {{site.url}}/wp-content/uploads/2015/02/show-in-package-explorer-intellij-300x210.png 300w" sizes="(max-width: 891px) 100vw, 891px" /></a>
   </p>
 
   <h2>
@@ -719,7 +719,7 @@ Alt + F12
   Lets&#8217;s say you&#8217;d want to find the shortcut for Find usages for example, then click <strong>Ctrl+Shift+A</strong> and then start typing &#8220;<em>Find usage</em>&#8221; in the search box:
 </p>
 
-[<img class="alignnone size-full wp-image-2361" src="{{site.url}}/images/wp-content/uploads/2015/03/intellij-find-action-by-name.png" alt="intellij - find action by name" width="471" height="384" srcset="{{site.url}}/images/wp-content/uploads/2015/03/intellij-find-action-by-name.png 471w, {{site.url}}/images/wp-content/uploads/2015/03/intellij-find-action-by-name-300x245.png 300w" sizes="(max-width: 471px) 100vw, 471px" />]({{site.url}}/images/wp-content/uploads/2015/03/intellij-find-action-by-name.png)
+[<img class="alignnone size-full wp-image-2361" src="{{site.url}}/wp-content/uploads/2015/03/intellij-find-action-by-name.png" alt="intellij - find action by name" width="471" height="384" srcset="{{site.url}}/wp-content/uploads/2015/03/intellij-find-action-by-name.png 471w, {{site.url}}/wp-content/uploads/2015/03/intellij-find-action-by-name-300x245.png 300w" sizes="(max-width: 471px) 100vw, 471px" />]({{site.url}}/wp-content/uploads/2015/03/intellij-find-action-by-name.png)
 
 ### <span id="Coollive_templates">Cool live templates</span>
 

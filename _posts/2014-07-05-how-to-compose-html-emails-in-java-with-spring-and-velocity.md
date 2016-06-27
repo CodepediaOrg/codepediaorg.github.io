@@ -118,7 +118,7 @@ tags:
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 
@@ -236,7 +236,7 @@ public class EmailNotificationServiceImpl implements EmailNotificationService {
 		             message.setFrom(new InternetAddress(suggestedPodcast.getEmail()) );
 		             message.setSubject("New suggested podcast");
 		             message.setSentDate(new Date());
-		             Map model = new HashMap();	             
+		             Map model = new HashMap();
 		             model.put("newMessage", suggestedPodcast);
 
 		             String text = VelocityEngineUtils.mergeTemplateIntoString(
@@ -244,7 +244,7 @@ public class EmailNotificationServiceImpl implements EmailNotificationService {
 		             message.setText(text, true);
 		          }
 		       };
-		       mailSender.send(preparator);			
+		       mailSender.send(preparator);
 	}
 
 //getters and setters omitted for brevity
@@ -283,8 +283,8 @@ public class EmailNotificationServiceImpl implements EmailNotificationService {
 
 The next thing to note is how the email text is being created:
 
-<pre><code class="java">Map model = new HashMap();	             
-model.put("newPodcast", suggestedPodcast);		             
+<pre><code class="java">Map model = new HashMap();
+model.put("newPodcast", suggestedPodcast);
 String text = VelocityEngineUtils.mergeTemplateIntoString(
 velocityEngine, "velocity/suggestPodcastNotificationMessage.vm", "UTF-8", model);
 message.setText(text, true);</code></pre>
@@ -328,10 +328,10 @@ Let&#8217;s see how everything is configured in the application context:
 <pre><code class="xml">&lt;!-- ********************************* email service configuration ******************************* --&gt;
 &lt;bean id="smtpSession" class="org.springframework.jndi.JndiObjectFactoryBean"&gt;
 	&lt;property name="jndiName" value="java:comp/env/mail/Session"/&gt;
-&lt;/bean&gt;          
+&lt;/bean&gt;
 &lt;bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl"&gt;
 	&lt;property name="session" ref="smtpSession" /&gt;
-&lt;/bean&gt;    
+&lt;/bean&gt;
 &lt;bean id="velocityEngine" class="org.springframework.ui.velocity.VelocityEngineFactoryBean"&gt;
   &lt;property name="velocityProperties"&gt;
 	 &lt;value&gt;
@@ -339,7 +339,7 @@ Let&#8217;s see how everything is configured in the application context:
 	  class.resource.loader.class=org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
 	 &lt;/value&gt;
   &lt;/property&gt;
-&lt;/bean&gt;   
+&lt;/bean&gt;
 &lt;bean id="emailNotificationServiceSuggestPodcast" class="org.podcastpedia.web.suggestpodcast.EmailNotificationServiceImpl"&gt;
   &lt;property name="mailSender" ref="mailSender"/&gt;
   &lt;property name="velocityEngine" ref="velocityEngine"/&gt;
@@ -350,7 +350,7 @@ Let&#8217;s see how everything is configured in the application context:
   * the `ClasspathResourceLoader` is a simple loader that will load templates from the classpath
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="Summary">Summary</span>

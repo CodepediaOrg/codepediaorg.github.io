@@ -27,7 +27,7 @@ categories:
 
 <p style="text-align: justify;">
   It all began back 2002, my first year at the <a title="Computer Science - University Politehnica of Bucharest" href="http://www.cs.pub.ro/" target="_blank">university</a> in Romania, when I wanted to improve my German skills. At that time my grammar was pretty good, my writing skills were satisfying, but I still had difficulties expressing myself and understanding what the Germans are talking about on TV. Being a self-taught kind of person, I began looking for ways to improve that. On my research I stumbled upon Deutsche Welle&#8217;s <a title="Deutsche Welle" href="http://www.dw.de" target="_blank">website</a>, which had lots of useful resources for learning German. I first listened to <a title="Langsam gesprochene Nachrichten" href="http://www.dw.de/deutsch-lernen/nachrichten/s-8030" target="_blank">Langsam Gesprochene Nachrichten</a> (Slowly Spoken News), which turned out to be very accesible and easy to understand. Then followed „<a title="Deutsch - warum nicht?" href="http://www.dw.de/learn-german/wieso-nicht/s-2551" target="_blank">Deutsch &#8211; warum nicht?</a>“ (German- why not?) and „<a title="Marktplatz" href="http://www.dw.de/learn-german/marktplatz/s-2555" target="_blank">Marktplatz</a>“ (marketplace). Back then you could download audio files with transcripts from the website &#8211; I still have like half of tree worth of paper of that lying in my basement, sorry&#8230;<br /> <!--more-->
-  
+
   <br /> Some years passed by and when I checked the website again I found out I could download the files and follow the preferred series by subscribing to <a title="Podcasting - podcastpedia.org" href="http://www.podcastpedia.org/podcasting" target="_blank">podcasts</a>. According to wikipedia:
 </p>
 
@@ -58,16 +58,16 @@ categories:
 </p>
 
 <div id="attachment_366" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2013/07/baby_working1.jpg"><img class="size-medium wp-image-366  " title="Baby's support by coding" src="{{site.url}}/images/wp-content/uploads/2013/07/baby_working1-300x224.jpg" alt="working with baby" width="300" height="224" srcset="{{site.url}}/images/wp-content/uploads/2013/07/baby_working1-300x224.jpg 300w, {{site.url}}/images/wp-content/uploads/2013/07/baby_working1-624x467.jpg 624w, {{site.url}}/images/wp-content/uploads/2013/07/baby_working1.jpg 827w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
+  <a href="{{site.url}}/wp-content/uploads/2013/07/baby_working1.jpg"><img class="size-medium wp-image-366  " title="Baby's support by coding" src="{{site.url}}/wp-content/uploads/2013/07/baby_working1-300x224.jpg" alt="working with baby" width="300" height="224" srcset="{{site.url}}/wp-content/uploads/2013/07/baby_working1-300x224.jpg 300w, {{site.url}}/wp-content/uploads/2013/07/baby_working1-624x467.jpg 624w, {{site.url}}/wp-content/uploads/2013/07/baby_working1.jpg 827w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+
   <p class="wp-caption-text">
     Who said men can&#8217;t do multi-tasking?
   </p>
 </div>
 
 <div id="attachment_367" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2013/07/baby_working2.jpg"><img class="size-medium wp-image-367 " title="Baby's support by coding" src="{{site.url}}/images/wp-content/uploads/2013/07/baby_working2-300x224.jpg" alt="baby's support" width="300" height="224" srcset="{{site.url}}/images/wp-content/uploads/2013/07/baby_working2-300x224.jpg 300w, {{site.url}}/images/wp-content/uploads/2013/07/baby_working2-624x467.jpg 624w, {{site.url}}/images/wp-content/uploads/2013/07/baby_working2.jpg 827w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
+  <a href="{{site.url}}/wp-content/uploads/2013/07/baby_working2.jpg"><img class="size-medium wp-image-367 " title="Baby's support by coding" src="{{site.url}}/wp-content/uploads/2013/07/baby_working2-300x224.jpg" alt="baby's support" width="300" height="224" srcset="{{site.url}}/wp-content/uploads/2013/07/baby_working2-300x224.jpg 300w, {{site.url}}/wp-content/uploads/2013/07/baby_working2-624x467.jpg 624w, {{site.url}}/wp-content/uploads/2013/07/baby_working2.jpg 827w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+
   <p class="wp-caption-text">
     &#8230; or take good care of babys?
   </p>
@@ -75,7 +75,7 @@ categories:
 
 but with a positive attitude
 
-[<img class="alignnone size-medium wp-image-368" src="{{site.url}}/images/wp-content/uploads/2013/07/positive_attitude-225x300.jpg" alt="positive attitude" width="225" height="300" srcset="{{site.url}}/images/wp-content/uploads/2013/07/positive_attitude-225x300.jpg 225w, {{site.url}}/images/wp-content/uploads/2013/07/positive_attitude.jpg 465w" sizes="(max-width: 225px) 100vw, 225px" />]({{site.url}}/images/wp-content/uploads/2013/07/positive_attitude.jpg)
+[<img class="alignnone size-medium wp-image-368" src="{{site.url}}/wp-content/uploads/2013/07/positive_attitude-225x300.jpg" alt="positive attitude" width="225" height="300" srcset="{{site.url}}/wp-content/uploads/2013/07/positive_attitude-225x300.jpg 225w, {{site.url}}/wp-content/uploads/2013/07/positive_attitude.jpg 465w" sizes="(max-width: 225px) 100vw, 225px" />]({{site.url}}/wp-content/uploads/2013/07/positive_attitude.jpg)
 
 I have pushed things through.
 
@@ -95,16 +95,16 @@ Developing Podcastpedia.org was/is a great technical and personal experience, th
 
 What lies ahead we never know for certain, but what Podcastpedia&#8217;s agenda concerns, the following tasks are planned:
 
-  * improve the mobile user-friendliness (enough room for improvement at the time of this writing&#8230;) 
+  * improve the mobile user-friendliness (enough room for improvement at the time of this writing&#8230;)
       * considering responsive web design
       * any suggestions ?&#8230;
-  * introduce wiki pages, at first to simplify collobaration for internationalization (next languages considered Spanish, Polnish) 
+  * introduce wiki pages, at first to simplify collobaration for internationalization (next languages considered Spanish, Polnish)
       * considering <a title="Apache JSPWiki" href="http://jspwiki.apache.org/" target="_blank">Apache JSPWiki</a>
       * convince some friends to help
       * <a href="mailto:ama@codingpedia.org?Subject=Localize%20Podcastpedia.org" target="_top">contact us</a> if you want Podcastpedia.org localized in your language
       * any suggestions ?&#8230;
   * weekly posts on Codingpedia.org
-  * open source the website / project 
+  * open source the website / project
       * considering <a title="Github" href="https://github.com/" target="_blank">GIT</a>
       * any suggestions ?&#8230;
   * build a platform for podcast producers
@@ -138,21 +138,21 @@ but any extra hand is <a href="mailto:ama@codingpedia.org?Subject=Support%20Podc
 
 <p style="text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
+
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

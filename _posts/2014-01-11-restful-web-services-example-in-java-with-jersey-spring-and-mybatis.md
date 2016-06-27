@@ -253,7 +253,7 @@ tags:
 </h3>
 
 <p style="text-align: justify;">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/Architecture.png"><img class="alignnone size-medium wp-image-1080" src="{{site.url}}/images/wp-content/uploads/2014/01/Architecture-300x140.png" alt="Demo architecture" width="300" height="140" srcset="{{site.url}}/images/wp-content/uploads/2014/01/Architecture-300x140.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/Architecture.png 602w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/Architecture.png"><img class="alignnone size-medium wp-image-1080" src="{{site.url}}/wp-content/uploads/2014/01/Architecture-300x140.png" alt="Demo architecture" width="300" height="140" srcset="{{site.url}}/wp-content/uploads/2014/01/Architecture-300x140.png 300w, {{site.url}}/wp-content/uploads/2014/01/Architecture.png 602w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 </p>
 
 <h4 style="text-align: justify;">
@@ -301,7 +301,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/database-schema.png"><img class="alignnone size-medium wp-image-1089" src="{{site.url}}/images/wp-content/uploads/2014/01/database-schema-300x280.png" alt="database schema" width="300" height="280" srcset="{{site.url}}/images/wp-content/uploads/2014/01/database-schema-300x280.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/database-schema.png 566w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/database-schema.png"><img class="alignnone size-medium wp-image-1089" src="{{site.url}}/wp-content/uploads/2014/01/database-schema-300x280.png" alt="database schema" width="300" height="280" srcset="{{site.url}}/wp-content/uploads/2014/01/database-schema-300x280.png 300w, {{site.url}}/wp-content/uploads/2014/01/database-schema.png 566w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 </p>
 
 <p class="note_normal" style="text-align: justify;">
@@ -342,7 +342,7 @@ If you want to follow along, you find all you need on GitHub:
 		&lt;exclusion&gt;
 			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
 			&lt;artifactId&gt;spring-core&lt;/artifactId&gt;
-		&lt;/exclusion&gt;			
+		&lt;/exclusion&gt;
 		&lt;exclusion&gt;
 			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
 			&lt;artifactId&gt;spring-web&lt;/artifactId&gt;
@@ -351,7 +351,7 @@ If you want to follow along, you find all you need on GitHub:
 			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
 			&lt;artifactId&gt;spring-beans&lt;/artifactId&gt;
 		&lt;/exclusion&gt;
-	&lt;/exclusions&gt;			
+	&lt;/exclusions&gt;
 &lt;/dependency&gt;
 &lt;dependency&gt;
 	&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
@@ -393,8 +393,8 @@ If you want to follow along, you find all you need on GitHub:
 		&lt;/servlet-class&gt;
 		&lt;init-param&gt;
 			&lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;
-			&lt;param-value&gt;org.codingpedia.demo.rest.service.MyApplication&lt;/param-value&gt;			
-		&lt;/init-param&gt;		
+			&lt;param-value&gt;org.codingpedia.demo.rest.service.MyApplication&lt;/param-value&gt;
+		&lt;/init-param&gt;
 		&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
 	&lt;/servlet&gt;
 
@@ -428,7 +428,7 @@ import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.spring.scope.RequestContextFilter;
 
 /**
- * Registers the components to be used by the JAX-RS application  
+ * Registers the components to be used by the JAX-RS application
  *
  * @author ama
  *
@@ -441,7 +441,7 @@ public class MyDemoApplication extends ResourceConfig {
 	public MyDemoApplication(){
 		register(RequestContextFilter.class);
 		register(PodcastRestService.class);
-		register(JacksonFeature.class);		
+		register(JacksonFeature.class);
 	}
 }</code></pre>
 
@@ -481,15 +481,15 @@ The Spring application context configuration is located in the classpath under `
 		Instruct Spring to perform declarative transaction management
 		automatically on annotated classes.
 	--&gt;
-	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;  
+	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;
     &lt;bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager"&gt;
         &lt;property name="dataSource" ref="dataSource"/&gt;
-    &lt;/bean&gt;  
+    &lt;/bean&gt;
 
 	&lt;!-- =============== MyBATIS beans configuration ================== --&gt;
 	&lt;bean id="podcastDao" class="org.mybatis.spring.mapper.MapperFactoryBean"&gt;
-	   &lt;property name="sqlSessionFactory" ref="sqlSessionFactory"/&gt;    
+	   &lt;property name="sqlSessionFactory" ref="sqlSessionFactory"/&gt;
 	   &lt;property name="mapperInterface" value="org.codingpedia.demo.rest.dao.PodcastDao" /&gt;
 	&lt;/bean&gt;
 
@@ -502,7 +502,7 @@ The Spring application context configuration is located in the classpath under `
 
 	&lt;bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
 	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoDB" /&gt;
-	    &lt;property name="resourceRef" value="true" /&gt;        
+	    &lt;property name="resourceRef" value="true" /&gt;
 	&lt;/bean&gt;
 &lt;/beans&gt;</code></pre>
 
@@ -843,7 +843,7 @@ For the creation of new resources(&#8220;podcasts&#8221;) I use the <a title="Wi
 public Response createPodcast(Podcast podcast) {
 	Long id = podcastDao.createPodcast(podcast);
 
-	return Response.status(201).entity(buildNewPodcastResourceURL(id)).build(); 		
+	return Response.status(201).entity(buildNewPodcastResourceURL(id)).build();
 }</code></pre>
 
 Annotations
@@ -871,10 +871,10 @@ Annotations
 	@Transactional
 	public Response createPodcasts(List&lt;Podcast&gt; podcasts) {
 		for(Podcast podcast : podcasts){
-			podcastDao.createPodcast(podcast);			
+			podcastDao.createPodcast(podcast);
 		}
 
-		return Response.status(204).build(); 	
+		return Response.status(204).build();
 	}</code></pre>
 
 Annotations
@@ -917,7 +917,7 @@ public Response createPodcastFromForm(
 	Podcast podcast = new Podcast(title, linkOnPodcastpedia, feed, description);
 	Long id = podcastDao.createPodcast(podcast);
 
-	return Response.status(201).entity(buildNewPodcastResourceURL(id)).build(); 		
+	return Response.status(201).entity(buildNewPodcastResourceURL(id)).build();
 }</code></pre>
 
 Annotations
@@ -1175,7 +1175,7 @@ Annotations
 </h3>
 
 <p style="text-align: justify;">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/Architecture.png"><img class="alignnone size-medium wp-image-1080" src="{{site.url}}/images/wp-content/uploads/2014/01/Architecture-300x140.png" alt="Demo architecture" width="300" height="140" srcset="{{site.url}}/images/wp-content/uploads/2014/01/Architecture-300x140.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/Architecture.png 602w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/Architecture.png"><img class="alignnone size-medium wp-image-1080" src="{{site.url}}/wp-content/uploads/2014/01/Architecture-300x140.png" alt="Demo architecture" width="300" height="140" srcset="{{site.url}}/wp-content/uploads/2014/01/Architecture-300x140.png 300w, {{site.url}}/wp-content/uploads/2014/01/Architecture.png 602w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 </p>
 
 <h4 style="text-align: justify;">
@@ -1223,7 +1223,7 @@ Annotations
 </p>
 
 <p style="text-align: justify;">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/database-schema.png"><img class="alignnone size-medium wp-image-1089" src="{{site.url}}/images/wp-content/uploads/2014/01/database-schema-300x280.png" alt="database schema" width="300" height="280" srcset="{{site.url}}/images/wp-content/uploads/2014/01/database-schema-300x280.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/database-schema.png 566w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/database-schema.png"><img class="alignnone size-medium wp-image-1089" src="{{site.url}}/wp-content/uploads/2014/01/database-schema-300x280.png" alt="database schema" width="300" height="280" srcset="{{site.url}}/wp-content/uploads/2014/01/database-schema-300x280.png 300w, {{site.url}}/wp-content/uploads/2014/01/database-schema.png 566w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 </p>
 
 <p class="note_normal" style="text-align: justify;">
@@ -1264,7 +1264,7 @@ If you want to follow along, you find all you need on GitHub:
 		&lt;exclusion&gt;
 			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
 			&lt;artifactId&gt;spring-core&lt;/artifactId&gt;
-		&lt;/exclusion&gt;			
+		&lt;/exclusion&gt;
 		&lt;exclusion&gt;
 			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
 			&lt;artifactId&gt;spring-web&lt;/artifactId&gt;
@@ -1273,7 +1273,7 @@ If you want to follow along, you find all you need on GitHub:
 			&lt;groupId&gt;org.springframework&lt;/groupId&gt;
 			&lt;artifactId&gt;spring-beans&lt;/artifactId&gt;
 		&lt;/exclusion&gt;
-	&lt;/exclusions&gt;			
+	&lt;/exclusions&gt;
 &lt;/dependency&gt;
 &lt;dependency&gt;
 	&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
@@ -1315,8 +1315,8 @@ If you want to follow along, you find all you need on GitHub:
 		&lt;/servlet-class&gt;
 		&lt;init-param&gt;
 			&lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;
-			&lt;param-value&gt;org.codingpedia.demo.rest.service.MyApplication&lt;/param-value&gt;			
-		&lt;/init-param&gt;		
+			&lt;param-value&gt;org.codingpedia.demo.rest.service.MyApplication&lt;/param-value&gt;
+		&lt;/init-param&gt;
 		&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
 	&lt;/servlet&gt;
 
@@ -1350,7 +1350,7 @@ import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.spring.scope.RequestContextFilter;
 
 /**
- * Registers the components to be used by the JAX-RS application  
+ * Registers the components to be used by the JAX-RS application
  *
  * @author ama
  *
@@ -1363,7 +1363,7 @@ public class MyDemoApplication extends ResourceConfig {
 	public MyDemoApplication(){
 		register(RequestContextFilter.class);
 		register(PodcastRestService.class);
-		register(JacksonFeature.class);		
+		register(JacksonFeature.class);
 	}
 }</code></pre>
 
@@ -1403,15 +1403,15 @@ The Spring application context configuration is located in the classpath under `
 		Instruct Spring to perform declarative transaction management
 		automatically on annotated classes.
 	--&gt;
-	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;  
+	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;
     &lt;bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager"&gt;
         &lt;property name="dataSource" ref="dataSource"/&gt;
-    &lt;/bean&gt;  
+    &lt;/bean&gt;
 
 	&lt;!-- =============== MyBATIS beans configuration ================== --&gt;
 	&lt;bean id="podcastDao" class="org.mybatis.spring.mapper.MapperFactoryBean"&gt;
-	   &lt;property name="sqlSessionFactory" ref="sqlSessionFactory"/&gt;    
+	   &lt;property name="sqlSessionFactory" ref="sqlSessionFactory"/&gt;
 	   &lt;property name="mapperInterface" value="org.codingpedia.demo.rest.dao.PodcastDao" /&gt;
 	&lt;/bean&gt;
 
@@ -1424,7 +1424,7 @@ The Spring application context configuration is located in the classpath under `
 
 	&lt;bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
 	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoDB" /&gt;
-	    &lt;property name="resourceRef" value="true" /&gt;        
+	    &lt;property name="resourceRef" value="true" /&gt;
 	&lt;/bean&gt;
 &lt;/beans&gt;</code></pre>
 
@@ -1765,7 +1765,7 @@ For the creation of new resources(&#8220;podcasts&#8221;) I use the <a title="Wi
 public Response createPodcast(Podcast podcast) {
 	Long id = podcastDao.createPodcast(podcast);
 
-	return Response.status(201).entity(buildNewPodcastResourceURL(id)).build(); 		
+	return Response.status(201).entity(buildNewPodcastResourceURL(id)).build();
 }</code></pre>
 
 Annotations
@@ -1793,10 +1793,10 @@ Annotations
 	@Transactional
 	public Response createPodcasts(List&lt;Podcast&gt; podcasts) {
 		for(Podcast podcast : podcasts){
-			podcastDao.createPodcast(podcast);			
+			podcastDao.createPodcast(podcast);
 		}
 
-		return Response.status(204).build(); 	
+		return Response.status(204).build();
 	}</code></pre>
 
 Annotations
@@ -1839,7 +1839,7 @@ public Response createPodcastFromForm(
 	Podcast podcast = new Podcast(title, linkOnPodcastpedia, feed, description);
 	Long id = podcastDao.createPodcast(podcast);
 
-	return Response.status(201).entity(buildNewPodcastResourceURL(id)).build(); 		
+	return Response.status(201).entity(buildNewPodcastResourceURL(id)).build();
 }</code></pre>
 
 Annotations
@@ -1893,7 +1893,7 @@ Annotations
 
 <pre><code class="java">@GET @Path("{id}")
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-public Response findById(@PathParam("id") Long id) {		
+public Response findById(@PathParam("id") Long id) {
 	Podcast podcastById = podcastDao.getPodcastById(id);
 	if(podcastById != null) {
 		return Response.status(200).entity(podcastById).build();
@@ -1952,7 +1952,7 @@ public Response updatePodcastById(@PathParam("id") Long id, Podcast podcast) {
 				+ " If you want to insert a new podcast please provide at least a &lt;strong&gt;title&lt;/strong&gt; and the &lt;strong&gt;feed&lt;/strong&gt; for the podcast resource";
 	}
 
-	return Response.status(status).entity(message).build();		
+	return Response.status(status).entity(message).build();
 }</code></pre>
 
 Annotations
@@ -2099,7 +2099,7 @@ As mentioned, the integration tests will be executed against a running jetty ser
 				&lt;phase&gt;pre-integration-test&lt;/phase&gt;
 				&lt;goals&gt;
 					&lt;!-- stop any previous instance to free up the port --&gt;
-					&lt;goal&gt;stop&lt;/goal&gt;				
+					&lt;goal&gt;stop&lt;/goal&gt;
 					&lt;goal&gt;run-exploded&lt;/goal&gt;
 				&lt;/goals&gt;
 				&lt;configuration&gt;
@@ -2186,7 +2186,7 @@ The Failsafe Plugin can be invoked by calling the `<tt>verify</tt>` phase of the
 To start jetty on port 8888 you need to set the `jetty.port` property to 8888. In Eclipse I use the following configuration:
 
 <div id="attachment_1190" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/run-integration-tests-eclipse.png"><img class="size-medium wp-image-1190" src="{{site.url}}/images/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png" alt="Run integration tests from Eclipse" width="300" height="148" srcset="{{site.url}}/images/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/run-integration-tests-eclipse.png 991w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/run-integration-tests-eclipse.png"><img class="size-medium wp-image-1190" src="{{site.url}}/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png" alt="Run integration tests from Eclipse" width="300" height="148" srcset="{{site.url}}/wp-content/uploads/2014/01/run-integration-tests-eclipse-300x148.png 300w, {{site.url}}/wp-content/uploads/2014/01/run-integration-tests-eclipse.png 991w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Run integration tests from Eclipse

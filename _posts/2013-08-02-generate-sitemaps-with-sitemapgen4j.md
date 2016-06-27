@@ -208,7 +208,7 @@ We promise to only share high quality podcasts and episodes.
 
 ### Source code
 
-  * [SitemapService.zip]({{site.url}}/images/wp-content/uploads/2013/08/SitemapService.zip) &#8211; the archive contains the interface and class implementation for the methods described in the post
+  * [SitemapService.zip]({{site.url}}/wp-content/uploads/2013/08/SitemapService.zip) &#8211; the archive contains the interface and class implementation for the methods described in the post
 
 ### References
 

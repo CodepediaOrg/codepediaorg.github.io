@@ -147,22 +147,22 @@ SyndFeed feed = input.build(new XmlReader(feedUrl));</pre>
 
 <pre class="lang:java mark:8-15 decode:true" title="Build SyndFeed from URL">public SyndFeed getSyndFeedForUrl(String url) throws MalformedURLException, IOException, IllegalArgumentException, FeedException {
 
-	SyndFeed feed = null;		
+	SyndFeed feed = null;
 	InputStream is = null;
 
 	try {
 
-		URLConnection openConnection = new URL(url).openConnection();			
+		URLConnection openConnection = new URL(url).openConnection();
 		is = new URL(url).openConnection().getInputStream();
 		if("gzip".equals(openConnection.getContentEncoding())){
 			is = new GZIPInputStream(is);
-		}			
-		InputSource source = new InputSource(is);			
+		}
+		InputSource source = new InputSource(is);
 		SyndFeedInput input = new SyndFeedInput();
 		feed = input.build(source);
 
 	} catch (Exception e){
-		LOG.error("Exception occured when building the feed object out of the url", e);				
+		LOG.error("Exception occured when building the feed object out of the url", e);
 	} finally {
 		if( is != null)	is.close();
 	}
@@ -286,19 +286,19 @@ public void setPodcastFeedAttributes(Podcast podcast,  boolean feedPropertyHasBe
 Thanks for sharing and connecting with us
 
 <div class="social_logo_small">
-  <a href="https://plus.google.com/+CodingpediaOrg" target="_blank"><img style="float: left;" src="{{site.url}}/images/wp-content/uploads/2013/10/g_plus.png" alt="Google plus" /></a>
+  <a href="https://plus.google.com/+CodingpediaOrg" target="_blank"><img style="float: left;" src="{{site.url}}/wp-content/uploads/2013/10/g_plus.png" alt="Google plus" /></a>
 </div>
 
 <div class="social_logo_small">
-  <a href="https://twitter.com/codingpedia" target="_blank"><img class="social_logo" src="{{site.url}}/images/wp-content/uploads/2013/10/twitter.png" alt="Twitter" /></a>
+  <a href="https://twitter.com/codingpedia" target="_blank"><img class="social_logo" src="{{site.url}}/wp-content/uploads/2013/10/twitter.png" alt="Twitter" /></a>
 </div>
 
 <div class="social_logo_small">
-  <a href="https://www.facebook.com/Codingpedia" target="_blank"><img class="social_logo" src="{{site.url}}/images/wp-content/uploads/2013/10/fb.png" alt="Facebook" /></a>
+  <a href="https://www.facebook.com/Codingpedia" target="_blank"><img class="social_logo" src="{{site.url}}/wp-content/uploads/2013/10/fb.png" alt="Facebook" /></a>
 </div>
 
 <div class="social_logo_small">
-  <a href="mailto:contact@codingpedia.org" target="_blank"><img class="social_logo" src="{{site.url}}/images/wp-content/uploads/2013/10/email.png" alt="Email" /></a>
+  <a href="mailto:contact@codingpedia.org" target="_blank"><img class="social_logo" src="{{site.url}}/wp-content/uploads/2013/10/email.png" alt="Email" /></a>
 </div>
 
 <div class="clear">

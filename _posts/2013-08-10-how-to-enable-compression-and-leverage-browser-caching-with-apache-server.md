@@ -40,7 +40,7 @@ Compressing resources with gzip or deflate will reduce the number of bytes sent 
 
 To enable  <span style="background-color: #e6e6e6; padding: 0px 3px;">mod_deflate</span> on a GoDaddy Virtual Private Server account, you have to use _Easy Apache_ and the same procedure as in <a title="Troubleshooting wordpress on GoDaddy" href="http://www.codingpedia.org/troubleshooting-wordpress-on-godaddy-vps-account/" target="_blank">Troubleshooting WordPress installation on GoDaddy VPS</a>. You need to check the <span style="background-color: #e6e6e6; padding: 0px 3px;">Deflate</span> option at step number _5. Exhaustive Options List_ and recompile the Apache Server.
 
-[<img class="alignnone size-medium wp-image-288" src="{{site.url}}/images/wp-content/uploads/2013/08/easy_apache_deflate-300x126.png" alt="easy_apache_deflate" width="300" height="126" srcset="{{site.url}}/images/wp-content/uploads/2013/08/easy_apache_deflate-300x126.png 300w, {{site.url}}/images/wp-content/uploads/2013/08/easy_apache_deflate-1024x432.png 1024w, {{site.url}}/images/wp-content/uploads/2013/08/easy_apache_deflate-624x263.png 624w, {{site.url}}/images/wp-content/uploads/2013/08/easy_apache_deflate.png 1028w" sizes="(max-width: 300px) 100vw, 300px" />]({{site.url}}/images/wp-content/uploads/2013/08/easy_apache_deflate.png)
+[<img class="alignnone size-medium wp-image-288" src="{{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate-300x126.png" alt="easy_apache_deflate" width="300" height="126" srcset="{{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate-300x126.png 300w, {{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate-1024x432.png 1024w, {{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate-624x263.png 624w, {{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate.png 1028w" sizes="(max-width: 300px) 100vw, 300px" />]({{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate.png)
 
 To verify the module <span style="background-color: #e6e6e6; padding: 0px 3px;">mod_deflate</span> is active run the following command on CentOS
 
@@ -89,7 +89,7 @@ Header append Vary User-Agent env=!dont-vary</pre>
 The second point was enabling **browser caching** for static resources, which can save a user time if they visit your site more than once. You can do that by configuring the <span style="background-color: #e6e6e6; padding: 0px 3px;">Expires</span> and <span style="background-color: #e6e6e6; padding: 0px 3px;">Cache-control</span> HTTP headers with Apache web server.
 
 First I checked if the <a title="Apache Module mod_expires" href="http://httpd.apache.org/docs/current/mod/mod_expires.html" target="_blank">mod_expires</a> and <a title="Apache Module mod_headers" href="http://httpd.apache.org/docs/current/mod/mod_headers.html" target="_blank">mod_headers</a> modules are active on Apache modules by issuing <span style="background-color: #e6e6e6; padding: 0px 5px;">httpd -M</span>
-  
+
 All I had to do next is adding the following to the virtual host configuration for <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a>, and to _.htaccess_ for <a title="Codingpedia" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>:
 
 <pre class="brush: plain; title: ; notranslate" title=""># Feed
@@ -150,7 +150,7 @@ Well, that&#8217;s it&#8230; Two small steps, I had no clue about until now, tha
 If you notice any room for improvement, please <a href="mailto:contact@codingepdia.org?Subject=Apache%20optimization" target="_top">contact us</a> or leave a message.
 
 If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="http://www.podcastpedia.org/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org/" target="_blank">Podcastpedia.org</a>
-  
+
 We promise to only share high quality podcasts and episodes.
 
 <h3 style="margin: 1.714285714rem 0px; padding: 0px; border: 0px; font-size: 1.142857143rem; vertical-align: baseline; clear: both; line-height: 1.846153846; color: #444444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">
@@ -179,21 +179,21 @@ We promise to only share high quality podcasts and episodes.
 </ul>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

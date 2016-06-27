@@ -108,7 +108,7 @@ tags:
 </p>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="1_Set_up_the_infrastructure">1. Set up the infrastructure</span>
@@ -174,7 +174,7 @@ To install these plugins issue the following command in the console in the root 
 	"gulp-minify-css": "~0.3.1",
 	"gulp-util": "~2.2.14",
 	"gulp-rename": "~1.2.0",
-	"gulp-sass": "~0.7.1",      
+	"gulp-sass": "~0.7.1",
 	"gulp-autoprefixer": "0.0.7"
 }</pre>
 
@@ -287,7 +287,7 @@ To run the task I have to execute `gulp sass` on the command line in the root fo
 Well, that&#8217;s it &#8211; few lines of code for pretty good functionality. I am looking forward to dwelve more and find out what Gulp can do&#8230; Your comments, suggestions and code contributions are very welcomed.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="3_Resources">3. Resources</span>

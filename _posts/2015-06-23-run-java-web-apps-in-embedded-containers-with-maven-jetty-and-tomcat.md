@@ -34,9 +34,9 @@ tags:
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
-  
+
   <!--more-->
 </p>
 
@@ -214,18 +214,18 @@ In the <a title="http://www.eclipse.org/jetty/documentation/current/jetty-xml-co
             password="pcm_pw"
             driverClassName="com.mysql.jdbc.Driver"
             url="jdbc:mysql://localhost:3307/pcmDB?allowMultiQueries=true"
-   /&gt; 
+   /&gt;
 
 	&lt;Resource name="mail/Session" auth="Container"
 	            type="javax.mail.Session"
 		        username="test-dev@podcastpedia.org"
-		        password="test-dev"	            
+		        password="test-dev"
 	            mail.smtp.host="mail.podcastpedia.org"
 	            mail.smtp.port="25"
 	            mail.smtp.user="test-dev@podcastpedia.org"
-	            mail.transport.protocol="smtp" 
+	            mail.transport.protocol="smtp"
 	            mail.smtp.auth="true"
-	/&gt; 
+	/&gt;
 &lt;/Context&gt;</pre>
 
 In context.xml there are defined the database and email resources.
@@ -241,7 +241,7 @@ In context.xml there are defined the database and email resources.
 </p>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## References
@@ -250,21 +250,21 @@ In context.xml there are defined the database and email resources.
   2. <a title="https://tomcat.apache.org/maven-plugin-trunk/index.html" href="https://tomcat.apache.org/maven-plugin-trunk/index.html" target="_blank">Apache Tomcat Maven Plugin</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

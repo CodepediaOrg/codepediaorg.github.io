@@ -139,7 +139,7 @@ tags:
 &lt;beans:beans xmlns="http://www.springframework.org/schema/security"
     xmlns:beans="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:security="http://www.springframework.org/schema/security"    
+    xmlns:security="http://www.springframework.org/schema/security"
     xsi:schemaLocation="
     	http://www.springframework.org/schema/beans
     	http://www.springframework.org/schema/beans/spring-beans.xsd
@@ -211,8 +211,8 @@ Hook in Spring security only for URLs related to the _manifest_:
 	&lt;/servlet-class&gt;
 	&lt;init-param&gt;
 		&lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;
-		&lt;param-value&gt;org.codingpedia.demo.rest.RestDemoJaxRsApplication&lt;/param-value&gt;			
-	&lt;/init-param&gt;		
+		&lt;param-value&gt;org.codingpedia.demo.rest.RestDemoJaxRsApplication&lt;/param-value&gt;
+	&lt;/init-param&gt;
 	&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
 &lt;/servlet&gt;
 
@@ -240,7 +240,7 @@ The Spring security filter chain needs to be activated.
 
 If you access a secured location via the browser, a standard HTTP authentication popup appears asking for the authentication details:
 
-[<img class="alignnone size-full wp-image-2263" src="{{site.url}}/images/wp-content/uploads/2015/02/standard-popup-browser.png" alt="standard-popup-browser" width="895" height="462" srcset="{{site.url}}/images/wp-content/uploads/2015/02/standard-popup-browser.png 895w, {{site.url}}/images/wp-content/uploads/2015/02/standard-popup-browser-300x154.png 300w" sizes="(max-width: 895px) 100vw, 895px" />]({{site.url}}/images/wp-content/uploads/2015/02/standard-popup-browser.png)
+[<img class="alignnone size-full wp-image-2263" src="{{site.url}}/wp-content/uploads/2015/02/standard-popup-browser.png" alt="standard-popup-browser" width="895" height="462" srcset="{{site.url}}/wp-content/uploads/2015/02/standard-popup-browser.png 895w, {{site.url}}/wp-content/uploads/2015/02/standard-popup-browser-300x154.png 300w" sizes="(max-width: 895px) 100vw, 895px" />]({{site.url}}/wp-content/uploads/2015/02/standard-popup-browser.png)
 
 Put in _rest/rest_ and you should receive the JSON response.
 

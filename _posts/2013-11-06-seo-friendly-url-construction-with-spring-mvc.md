@@ -36,7 +36,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#What_is_a_friendly_URL">What is a friendly URL?</a>
@@ -54,7 +54,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Resources">Resources</a>
     </li>
@@ -69,14 +69,14 @@ tags:
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 
 <!--more-->
 
 
-  
+
 But what is a **&#8220;friendly&#8221;** URL? I would say it&#8217;s
 
 <li style="text-align: justify;">
@@ -97,8 +97,8 @@ But what is a **&#8220;friendly&#8221;** URL? I would say it&#8217;s
 </p>
 
 <div id="attachment_848" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2013/11/google-search-results-bold.png"><img class="size-medium wp-image-848" src="{{site.url}}/images/wp-content/uploads/2013/11/google-search-results-bold-300x193.png" alt="goole search results page highlighted" width="300" height="193" srcset="{{site.url}}/images/wp-content/uploads/2013/11/google-search-results-bold-300x193.png 300w, {{site.url}}/images/wp-content/uploads/2013/11/google-search-results-bold-624x403.png 624w, {{site.url}}/images/wp-content/uploads/2013/11/google-search-results-bold.png 1007w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
+  <a href="{{site.url}}/wp-content/uploads/2013/11/google-search-results-bold.png"><img class="size-medium wp-image-848" src="{{site.url}}/wp-content/uploads/2013/11/google-search-results-bold-300x193.png" alt="goole search results page highlighted" width="300" height="193" srcset="{{site.url}}/wp-content/uploads/2013/11/google-search-results-bold-300x193.png 300w, {{site.url}}/wp-content/uploads/2013/11/google-search-results-bold-624x403.png 624w, {{site.url}}/wp-content/uploads/2013/11/google-search-results-bold.png 1007w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+
   <p class="wp-caption-text">
     highlight of keywords in URLs
   </p>
@@ -131,8 +131,8 @@ But what is a **&#8220;friendly&#8221;** URL? I would say it&#8217;s
 In the following sections I will present how an episode URL is constructed, as it is more complex:
 
 <div id="attachment_850" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2013/11/episode-URL-construction.png"><img class="size-medium wp-image-850" src="{{site.url}}/images/wp-content/uploads/2013/11/episode-URL-construction-300x226.png" alt="Episode URL construction" width="300" height="226" srcset="{{site.url}}/images/wp-content/uploads/2013/11/episode-URL-construction-300x226.png 300w, {{site.url}}/images/wp-content/uploads/2013/11/episode-URL-construction-624x471.png 624w, {{site.url}}/images/wp-content/uploads/2013/11/episode-URL-construction.png 985w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
+  <a href="{{site.url}}/wp-content/uploads/2013/11/episode-URL-construction.png"><img class="size-medium wp-image-850" src="{{site.url}}/wp-content/uploads/2013/11/episode-URL-construction-300x226.png" alt="Episode URL construction" width="300" height="226" srcset="{{site.url}}/wp-content/uploads/2013/11/episode-URL-construction-300x226.png 300w, {{site.url}}/wp-content/uploads/2013/11/episode-URL-construction-624x471.png 624w, {{site.url}}/wp-content/uploads/2013/11/episode-URL-construction.png 985w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+
   <p class="wp-caption-text">
     Episode URL construction
   </p>
@@ -161,20 +161,20 @@ import java.util.Date;
 public class Episode implements Serializable{
 
 	/**
-	 * automatic generated serialVersionUID 
+	 * automatic generated serialVersionUID
 	 */
 	private static final long serialVersionUID = -1957667986801174870L;
 
 	/** identifies the podcast the episode belongs to */
 	public Integer podcastId;
 
-	/** episode id - unique identifier of a podcast's episode */ 
+	/** episode id - unique identifier of a podcast's episode */
 	public Integer episodeId;
 
 	/** description of the episode */
 	public String description;
 
-	/** title of the episode */ 
+	/** title of the episode */
 	public String title;
 
 	/** title of the podcast the episode belongs to */
@@ -191,7 +191,7 @@ public class Episode implements Serializable{
 
 The two properties `titleInUrl` and `podcastTitleInUrl` hold the &#8220;transformed&#8221; episode&#8217;s and respectively, the podcast&#8217;s title. In the transformation process, the spaces between words are replaced with hyphens (-) and if the length exceeds a certain limit (TITLE\_IN\_URL\_MAX\_LENGTH = 100), it will be shortened:
 
-<pre class="lang:java decode:true" title="Transform title to contain hyphens">//build the title that appears in the URL when accessing a podcast from the main application 
+<pre class="lang:java decode:true" title="Transform title to contain hyphens">//build the title that appears in the URL when accessing a podcast from the main application
 String titleInUrl = podcastTitle.trim().replaceAll("[^a-zA-Z0-9\\-\\s\\.]", "");
 titleInUrl = titleInUrl.replaceAll("[\\-| |\\.]+", "-");
 if(titleInUrl.length() &gt; TITLE_IN_URL_MAX_LENGTH){
@@ -208,25 +208,25 @@ Let&#8217;s consider a use case, for example when <a title="Podcastpedia.org - a
 
 <pre class="lang:default mark:3,7 decode:true" title="JSP snippet - Episodes search results">&lt;div class="results_list"&gt;
 	&lt;c:forEach items="${advancedSearchResult.episodes}" var="episode" varStatus="loop"&gt;
-		&lt;c:url var="episodeUrl" value="/podcasts/${episode.podcastId}/${episode.podcastTitleInUrl}/episodes/${episode.episodeId}/${episode.titleInUrl}"/&gt;			
-	    &lt;div class="bg_color shadowy item_wrapper"&gt;		
+		&lt;c:url var="episodeUrl" value="/podcasts/${episode.podcastId}/${episode.podcastTitleInUrl}/episodes/${episode.episodeId}/${episode.titleInUrl}"/&gt;
+	    &lt;div class="bg_color shadowy item_wrapper"&gt;
 			....
-	    	&lt;div class="metadata_desc"&gt;						
+	    	&lt;div class="metadata_desc"&gt;
 				&lt;a href="${episodeUrl}"&gt; &lt;c:out value="${episode.title}"/&gt; &lt;/a&gt;
-				&lt;div class="pub_date_media_type"&gt;						
+				&lt;div class="pub_date_media_type"&gt;
 					&lt;div class="pub_date"&gt;
 						&lt;fmt:formatDate pattern="yyyy-MM-dd" value="${episode.publicationDate}" /&gt;
 						&lt;c:choose&gt;
 							&lt;c:when test="${episode.isNew == 1}"&gt;
 								&lt;span class="ep_is_new"&gt;&lt;spring:message code="new"/&gt;&lt;/span&gt;
-							&lt;/c:when&gt;	
+							&lt;/c:when&gt;
 						&lt;/c:choose&gt;
 					&lt;/div&gt;
-				&lt;/div&gt;												
+				&lt;/div&gt;
 				&lt;div class="ep_desc"&gt;
-					${fn:substring(episode.description,0,600)}   		
-				&lt;/div&gt;						
-			&lt;/div&gt;		
+					${fn:substring(episode.description,0,600)}
+				&lt;/div&gt;
+			&lt;/div&gt;
 			.......
 		&lt;/div&gt;
 	&lt;/c:forEach&gt;
@@ -251,18 +251,18 @@ import javax.servlet.http.HttpSession;
 /**
  * Annotation-driven controller that handles requests to display episodes
  * and episode archive pages.
- * 
- * @author ama 
+ *
+ * @author ama
  */
 @Controller
-@RequestMapping("/podcasts") 
+@RequestMapping("/podcasts")
 public class EpisodeController {
 	@Autowired
-	private EpisodeService episodeService;		
-    ............		  
+	private EpisodeService episodeService;
+    ............
 	/**
 	* Controller method for episode page.
-	* 
+	*
 	* @param podcastId
 	* @param episodeId
 	* @param show_other_episodes
@@ -278,17 +278,17 @@ public class EpisodeController {
 									ModelMap model,
 									HttpServletRequest httpRequest) throws BusinessException {
 
-		LOG.debug("------ getEpisodeDetails : Received request to show details for episode id " + episodeId 
-				+ " of the podcast id " + podcastId  + " ------");		  
+		LOG.debug("------ getEpisodeDetails : Received request to show details for episode id " + episodeId
+				+ " of the podcast id " + podcastId  + " ------");
 
-		EpisodeWrapper episodeDetails = episodeService.getEpisodeDetails(podcastId, episodeId);				
-        .............		
+		EpisodeWrapper episodeDetails = episodeService.getEpisodeDetails(podcastId, episodeId);
+        .............
 		SitePreference currentSitePreference = SitePreferenceUtils.getCurrentSitePreference(httpRequest);
 		if(currentSitePreference.isMobile() || currentSitePreference.isTablet()){
-			return "m_episodeDetails_def";					
+			return "m_episodeDetails_def";
 		} else {
 			return "episodeDetails_def";
-		}									
+		}
 	}
     ..............
 }</pre>
@@ -309,7 +309,7 @@ So if you add the values of the `@RequestMapping` at the class level (line 16) &
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 
@@ -319,21 +319,21 @@ So if you add the values of the `@RequestMapping` at the class level (line 16) &
   2. [Search-engine-optimization-starter-guide](https://static.googleusercontent.com/external_content/untrusted_dlcp/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf "https://static.googleusercontent.com/external_content/untrusted_dlcp/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf")
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

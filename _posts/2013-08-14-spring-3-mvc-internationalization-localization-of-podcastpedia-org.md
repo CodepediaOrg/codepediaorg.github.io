@@ -52,7 +52,7 @@ Normally in the Java world, the <a title="Wikipedia - locale" href="http://en.wi
 
 <div>
   <div id="attachment_414" style="width: 299px" class="wp-caption alignnone">
-    <a href="{{site.url}}/images/wp-content/uploads/2013/08/messages_classpath.png"><img class="size-medium wp-image-414" src="{{site.url}}/images/wp-content/uploads/2013/08/messages_classpath-289x300.png" alt="messages classpath" width="289" height="300" srcset="{{site.url}}/images/wp-content/uploads/2013/08/messages_classpath-289x300.png 289w, {{site.url}}/images/wp-content/uploads/2013/08/messages_classpath.png 398w" sizes="(max-width: 289px) 100vw, 289px" /></a>
+    <a href="{{site.url}}/wp-content/uploads/2013/08/messages_classpath.png"><img class="size-medium wp-image-414" src="{{site.url}}/wp-content/uploads/2013/08/messages_classpath-289x300.png" alt="messages classpath" width="289" height="300" srcset="{{site.url}}/wp-content/uploads/2013/08/messages_classpath-289x300.png 289w, {{site.url}}/wp-content/uploads/2013/08/messages_classpath.png 398w" sizes="(max-width: 289px) 100vw, 289px" /></a>
 
     <p class="wp-caption-text">
       Message resource files in classpath
@@ -95,7 +95,7 @@ Normally in the Java world, the <a title="Wikipedia - locale" href="http://en.wi
 <pre><code class="xml">&lt;bean id="localeResolver"&gt;
     &lt;property name="cookieName" value="podcastpediaPreferredLanguage"/&gt;
     &lt;property name="defaultLocale" value="en_US" /&gt;
-    &lt;property name="cookieMaxAge" value="604800"/&gt;        
+    &lt;property name="cookieMaxAge" value="604800"/&gt;
 &lt;/bean&gt;</code></pre>
 
   <p>
@@ -124,7 +124,7 @@ Normally in the Java world, the <a title="Wikipedia - locale" href="http://en.wi
 
 On <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org/" target="_blank">Podcastpedia.org</a> you can change the language by selecting the corresponding flag :
 
-[<img class="alignnone  wp-image-417" src="{{site.url}}/images/wp-content/uploads/2013/08/Language_selection-300x44.png" alt="Language_selection" width="500" height="75" srcset="{{site.url}}/images/wp-content/uploads/2013/08/Language_selection-300x44.png 300w, {{site.url}}/images/wp-content/uploads/2013/08/Language_selection-1024x153.png 1024w, {{site.url}}/images/wp-content/uploads/2013/08/Language_selection-624x93.png 624w, {{site.url}}/images/wp-content/uploads/2013/08/Language_selection.png 1082w" sizes="(max-width: 500px) 100vw, 500px" />]({{site.url}}/images/wp-content/uploads/2013/08/Language_selection.png)
+[<img class="alignnone  wp-image-417" src="{{site.url}}/wp-content/uploads/2013/08/Language_selection-300x44.png" alt="Language_selection" width="500" height="75" srcset="{{site.url}}/wp-content/uploads/2013/08/Language_selection-300x44.png 300w, {{site.url}}/wp-content/uploads/2013/08/Language_selection-1024x153.png 1024w, {{site.url}}/wp-content/uploads/2013/08/Language_selection-624x93.png 624w, {{site.url}}/wp-content/uploads/2013/08/Language_selection.png 1082w" sizes="(max-width: 500px) 100vw, 500px" />]({{site.url}}/wp-content/uploads/2013/08/Language_selection.png)
 
 Behind the scenes, the jsp file, which common to all pages, looks something like the following:
 
@@ -182,7 +182,7 @@ Header set Cache-Control "max-age=0, private"</code></pre>
 
 , so that changing the locale is effective immediately for the page &#8211; otherwise if you come back later to the same page, but without the locale parameter in the url, you would have the page displayed in the old locale, if the expiration time was not reached yet.
 
-Well, that&#8217;s All Folks! If you would like to have Podcastpedia.org localized in your language, you can download the message resource file for English &#8211; [messages_en.properties]({{site.url}}/images/wp-content/uploads/2013/08/messages_en.zip), and contact me at _ama [AT] codingpedia DOT org_ &#8211; thanks
+Well, that&#8217;s All Folks! If you would like to have Podcastpedia.org localized in your language, you can download the message resource file for English &#8211; [messages_en.properties]({{site.url}}/wp-content/uploads/2013/08/messages_en.zip), and contact me at _ama [AT] codingpedia DOT org_ &#8211; thanks
 
 If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="http://www.podcastpedia.org/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org/" target="_blank">Podcastpedia.org</a>
 

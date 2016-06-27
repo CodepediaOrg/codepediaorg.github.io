@@ -136,7 +136,7 @@ tags:
 	&lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;
 	&lt;artifactId&gt;httpclient&lt;/artifactId&gt;
 	&lt;version&gt;4.3.5&lt;/version&gt;
-&lt;/dependency&gt;		
+&lt;/dependency&gt;
 &lt;dependency&gt;
 	&lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;
 	&lt;artifactId&gt;httpcore&lt;/artifactId&gt;
@@ -149,7 +149,7 @@ tags:
 
 <pre class="lang:java decode:true" title="Example of executing a HEAD request with Apache HttpClient">private void setHeaderFieldAttributes(Podcast podcast) throws ClientProtocolException, IOException, DateParseException{
 
-	HttpHead headMethod = null;					
+	HttpHead headMethod = null;
 	headMethod = new HttpHead(podcast.getUrl());
 
 	org.apache.http.client.HttpClient httpClient = new DefaultHttpClient(poolingClientConnectionManager);
@@ -175,10 +175,10 @@ tags:
 	if(lastModifiedHeader != null) {
 		podcast.setLastModifiedHeaderField(DateUtil.parseDate(lastModifiedHeader.getValue()));
 		podcast.setLastModifiedHeaderFieldStr(lastModifiedHeader.getValue());
-	}	   	      	   	      	   	        	         	      
+	}
 
 	// Release the connection.
-	headMethod.releaseConnection();	   	       	  		
+	headMethod.releaseConnection();
 }</pre>
 
 <p style="text-align: justify;">
@@ -193,7 +193,7 @@ tags:
 
 <pre class="lang:default mark:11-15 decode:true" title="HEAD request example with Apache Http Client v 4.3.x">private void setHeaderFieldAttributes(Podcast podcast) throws ClientProtocolException, IOException, DateParseException{
 
-	HttpHead headMethod = null;					
+	HttpHead headMethod = null;
 	headMethod = new HttpHead(podcast.getUrl());
 
 	RequestConfig requestConfig = RequestConfig.custom()
@@ -225,10 +225,10 @@ tags:
 	if(lastModifiedHeader != null) {
 		podcast.setLastModifiedHeaderField(DateUtil.parseDate(lastModifiedHeader.getValue()));
 		podcast.setLastModifiedHeaderFieldStr(lastModifiedHeader.getValue());
-	}	   	      	   	      	   	        	         	      
+	}
 
 	// Release the connection.
-	headMethod.releaseConnection();	   	       	  		
+	headMethod.releaseConnection();
 }</pre>
 
 Notice
@@ -250,7 +250,7 @@ The remaining of the code is quite simple:
 
 If you are behind a proxy you can easily configure the HTTP call by setting a `org.apache.http.HttpHost` proxy host on the `RequestConfig`:
 
-<pre class="lang:java decode:true" title="HTTP call behind a proxy ">HttpHost proxy = new HttpHost("xx.xx.xx.xx", 8080, "http"); 		
+<pre class="lang:java decode:true" title="HTTP call behind a proxy ">HttpHost proxy = new HttpHost("xx.xx.xx.xx", 8080, "http");
 RequestConfig requestConfig = RequestConfig.custom()
 		.setSocketTimeout(TIMEOUT * 1000)
 		.setConnectTimeout(TIMEOUT * 1000)
@@ -273,7 +273,7 @@ RequestConfig requestConfig = RequestConfig.custom()
       * <a title="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore" href="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore" target="_blank">HttpComponents Core (blocking I/O)</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/wp-content/uploads/2014/01/AdrianMatei.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/wp-content/uploads/2014/01/AdrianMatei.png" alt="Podcastpedia image" />
 
   <div id="author_details" style="text-align: justify;">
     <a title="Codingpedia.org, let's code the better world" href="http://www.codingpedia.org/" target="_blank">Codingpedia.org</a> was founded by Adrian Matei (ama [AT] codingpedia DOT org), a computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy.

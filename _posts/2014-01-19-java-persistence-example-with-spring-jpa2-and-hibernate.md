@@ -130,7 +130,7 @@ tags:
 ### <span id="11_Architecture">1.1. Architecture</span>
 
 <p style="text-align: justify;">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/Example-architecture.png"><img class="alignnone size-medium wp-image-1098" src="{{site.url}}/images/wp-content/uploads/2014/01/Example-architecture-300x140.png" alt="Example architecture" width="300" height="140" srcset="{{site.url}}/images/wp-content/uploads/2014/01/Example-architecture-300x140.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/Example-architecture.png 602w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/Example-architecture.png"><img class="alignnone size-medium wp-image-1098" src="{{site.url}}/wp-content/uploads/2014/01/Example-architecture-300x140.png" alt="Example architecture" width="300" height="140" srcset="{{site.url}}/wp-content/uploads/2014/01/Example-architecture-300x140.png 300w, {{site.url}}/wp-content/uploads/2014/01/Example-architecture.png 602w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 </p>
 
 #### <span id="12_Technologies_used"><span id="Technologies_version">1.2. Technologies used</span></span>
@@ -172,7 +172,7 @@ If you want to follow along, you find all you need on GitHub:
     	&lt;groupId&gt;org.hibernate&lt;/groupId&gt;
     	&lt;artifactId&gt;hibernate-core&lt;/artifactId&gt;
     	&lt;version&gt;${hibernate.version}&lt;/version&gt;
-    &lt;/dependency&gt;		
+    &lt;/dependency&gt;
     &lt;dependency&gt;
     	&lt;groupId&gt;org.hibernate.javax.persistence&lt;/groupId&gt;
     	&lt;artifactId&gt;hibernate-jpa-2.0-api&lt;/artifactId&gt;
@@ -213,7 +213,7 @@ The Spring application context configuration is located at `classpath:spring/app
     	&lt;context:component-scan base-package="org.codingpedia.demo.rest.*" /&gt;
 
     	&lt;!-- ************ JPA configuration *********** --&gt;
-    	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;  
+    	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;
         &lt;bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"&gt;
             &lt;property name="entityManagerFactory" ref="entityManagerFactory" /&gt;
         &lt;/bean&gt;
@@ -227,7 +227,7 @@ The Spring application context configuration is located at `classpath:spring/app
                     &lt;property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" /&gt;
                 &lt;/bean&gt;
             &lt;/property&gt;
-        &lt;/bean&gt;      
+        &lt;/bean&gt;
 
     	&lt;bean id="podcastDao" class="org.codingpedia.demo.rest.dao.impl.PodcastDaoJPA2Impl"/&gt;
         &lt;bean id="podcastRestService" class="org.codingpedia.demo.rest.service.PodcastRestService" &gt;
@@ -236,7 +236,7 @@ The Spring application context configuration is located at `classpath:spring/app
 
     	&lt;bean id="restDemoDS" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
     	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoDB" /&gt;
-    	    &lt;property name="resourceRef" value="true" /&gt;        
+    	    &lt;property name="resourceRef" value="true" /&gt;
     	&lt;/bean&gt;
     &lt;/beans&gt;
   </code>
@@ -374,12 +374,12 @@ For this interface I provide a `PodcastDaoJPA2Impl` JPA-specific implementation 
   <code class="java">
     @POST
     @Consumes({MediaType.APPLICATION_JSON})
-    @Produces({MediaType.TEXT_HTML})        
+    @Produces({MediaType.TEXT_HTML})
     @Transactional
     public Response createPodcast(Podcast podcast) {
     		podcastDao.createPodcast(podcast);
 
-    		return Response.status(201).entity("A new podcast/resource has been created").build();                 
+    		return Response.status(201).entity("A new podcast/resource has been created").build();
     }
   </code>
 </pre>
@@ -397,7 +397,7 @@ For this interface I provide a `PodcastDaoJPA2Impl` JPA-specific implementation 
     public List&lt;Podcast&gt; getPodcasts() {
 
     	String qlString = "SELECT p FROM Podcast p";
-    	TypedQuery&lt;Podcast&gt; query = entityManager.createQuery(qlString, Podcast.class);		
+    	TypedQuery&lt;Podcast&gt; query = entityManager.createQuery(qlString, Podcast.class);
 
     	return query.getResultList();
     }
@@ -406,7 +406,7 @@ For this interface I provide a `PodcastDaoJPA2Impl` JPA-specific implementation 
 
     	try {
     		String qlString = "SELECT p FROM Podcast p WHERE p.id = ?1";
-    		TypedQuery&lt;Podcast&gt; query = entityManager.createQuery(qlString, Podcast.class);		
+    		TypedQuery&lt;Podcast&gt; query = entityManager.createQuery(qlString, Podcast.class);
     		query.setParameter(1, id);
 
     		return query.getSingleResult();
@@ -457,7 +457,7 @@ The deletion of an entity is executed with the `remove` method of the `EntityMan
 <pre>
   <code class="java">
     public void deletePodcasts() {
-    	Query query = entityManager.createNativeQuery("TRUNCATE TABLE podcasts");		
+    	Query query = entityManager.createNativeQuery("TRUNCATE TABLE podcasts");
     	query.executeUpdate();
     }
   </code>

@@ -35,7 +35,7 @@ tags:
 </p>
 
 <div id="attachment_959" style="width: 721px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2013/11/search-results-snippet.png"><img class="size-full wp-image-959" src="{{site.url}}/images/wp-content/uploads/2013/11/search-results-snippet.png" alt="Search results - print screen snippet" width="711" height="268" srcset="{{site.url}}/images/wp-content/uploads/2013/11/search-results-snippet.png 711w, {{site.url}}/images/wp-content/uploads/2013/11/search-results-snippet-300x113.png 300w" sizes="(max-width: 711px) 100vw, 711px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2013/11/search-results-snippet.png"><img class="size-full wp-image-959" src="{{site.url}}/wp-content/uploads/2013/11/search-results-snippet.png" alt="Search results - print screen snippet" width="711" height="268" srcset="{{site.url}}/wp-content/uploads/2013/11/search-results-snippet.png 711w, {{site.url}}/wp-content/uploads/2013/11/search-results-snippet-300x113.png 300w" sizes="(max-width: 711px) 100vw, 711px" /></a>
 
   <p class="wp-caption-text">
     Search results &#8211; print screen snippet
@@ -43,7 +43,7 @@ tags:
 </div>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <p style="text-align: justify;">
@@ -83,22 +83,22 @@ After learning some of the Tiles concepts, let&#8217;s have a look at the Tiles 
 		&lt;meta property="og:title" content="&lt;tiles:insertAttribute name="og_title" ignore="true"/&gt;" /&gt;
 		&lt;meta property="og:description" content="&lt;tiles:insertAttribute name="og_desc" ignore="true"/&gt;"/&gt;
 		&lt;link rel="stylesheet" href="&lt;tiles:insertAttribute name="jquery_ui_css" ignore="true"/&gt;" /&gt;
-		&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;				 				
+		&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
 	&lt;/head&gt;
     &lt;body&gt;
-    	&lt;div id="banner"&gt;			
+    	&lt;div id="banner"&gt;
 			&lt;tiles:insertAttribute name="header" /&gt;
 		&lt;/div&gt;
 		&lt;div class="clear"&gt;&lt;/div&gt;
 		&lt;tiles:insertAttribute name="navigation_bar" /&gt;
-		&lt;div class="clear"&gt;&lt;/div&gt;			
+		&lt;div class="clear"&gt;&lt;/div&gt;
 		&lt;div id="page"&gt;
 			&lt;tiles:insertAttribute name="content" /&gt;
-		&lt;/div&gt;		
+		&lt;/div&gt;
 		&lt;div class="clear"&gt;&lt;/div&gt;
 		&lt;div id="footer_wrapper"&gt;
 			&lt;tiles:insertAttribute name="footer" /&gt;
-		&lt;/div&gt;			
+		&lt;/div&gt;
 	&lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -125,8 +125,8 @@ Let&#8217;s have look now at the Tiles definition (`podcastDetails`), which rend
 <pre class="lang:default mark:7,8 decode:true" title="Tiles configuration file">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 &lt;!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"&gt;
 
-&lt;tiles-definitions&gt;  
-.............	  
+&lt;tiles-definitions&gt;
+.............
     &lt;definition name="podcastDetails" extends="defaultTemplate"&gt;
     	&lt;put-attribute name="title" expression="${podcast.title}"/&gt;
  	    &lt;put-attribute name="page_description" expression="${podcast.description}"/&gt;
@@ -134,7 +134,7 @@ Let&#8217;s have look now at the Tiles definition (`podcastDetails`), which rend
     	&lt;put-attribute name="content" value="/WEB-INF/jsp/podcastDetails.jsp"/&gt;
     	&lt;put-attribute name="og_title" expression="${podcast.title}"/&gt;
  	    &lt;put-attribute name="og_desc" expression="${podcast.description}"/&gt;
- 	    &lt;put-attribute name="og_image" expression="${podcast.urlOfImageToDisplay}"/&gt; 	      	        	
+ 	    &lt;put-attribute name="og_image" expression="${podcast.urlOfImageToDisplay}"/&gt;
     &lt;/definition&gt;
 .............
 &lt;/tiles-definitions&gt;</pre>
@@ -159,7 +159,7 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
 	} else {
 		lastEpisodes = podcast.getEpisodes();
 	}
-	model.addAttribute("lastEpisodes", lastEpisodes);	  		
+	model.addAttribute("lastEpisodes", lastEpisodes);
 	model.addAttribute("nr_divs_with_ratings", lastEpisodes.size());
 	if(podcast.getRating() == null) podcast.setRating(10f);
 	model.addAttribute("roundedRatingScore", Math.round(podcast.getRating()));
@@ -167,10 +167,10 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
 
 	SitePreference currentSitePreference = SitePreferenceUtils.getCurrentSitePreference(httpRequest);
 	if(currentSitePreference.isMobile() || currentSitePreference.isTablet()){
-		return "m_podcastDetails";					
+		return "m_podcastDetails";
 	} else {
 		return "podcastDetails";
-	}			
+	}
 }</pre>
 
 <p style="text-align: justify;">
@@ -187,7 +187,7 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
   </p>
 
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </div>
 

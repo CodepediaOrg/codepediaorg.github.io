@@ -40,12 +40,12 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/06/ribbon.png"><img class="alignnone size-full wp-image-1507" src="{{site.url}}/images/wp-content/uploads/2014/06/ribbon.png" alt="GitHub ribbon" width="574" height="175" srcset="{{site.url}}/images/wp-content/uploads/2014/06/ribbon.png 574w, {{site.url}}/images/wp-content/uploads/2014/06/ribbon-300x91.png 300w" sizes="(max-width: 574px) 100vw, 574px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/06/ribbon.png"><img class="alignnone size-full wp-image-1507" src="{{site.url}}/wp-content/uploads/2014/06/ribbon.png" alt="GitHub ribbon" width="574" height="175" srcset="{{site.url}}/wp-content/uploads/2014/06/ribbon.png 574w, {{site.url}}/wp-content/uploads/2014/06/ribbon-300x91.png 300w" sizes="(max-width: 574px) 100vw, 574px" /></a>
 </p>
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 
@@ -136,7 +136,7 @@ tags:
   pointer-events: none;
   @include until-mq(1340px){
     display: none;
-  }  
+  }
   &.fixed {
     position: fixed;
   }
@@ -202,14 +202,14 @@ Following the instrunctions from GitHub, the second step was to add the highlig
 		&lt;div class="github-fork-ribbon"&gt;
 			&lt;a href="https://github.com/podcastpedia/podcastpedia-web" target="_blank"&gt;Fork me on GitHub&lt;/a&gt;
 		&lt;/div&gt;
-	&lt;/div&gt;   
+	&lt;/div&gt;
 	...............
 &lt;/body&gt;</pre>
 
 Well, it cannot get simpler than that&#8230; So thanks again <a title="https://github.com/simonwhitaker" href="https://github.com/simonwhitaker" target="_blank">Simon</a> for this nice peace of work.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## Resources

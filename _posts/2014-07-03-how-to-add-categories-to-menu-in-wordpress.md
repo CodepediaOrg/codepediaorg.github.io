@@ -42,7 +42,7 @@ So here&#8217;s the trick:
 </p>
 
 <div id="attachment_1671" style="width: 614px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/07/trick-for-categories.png"><img class="wp-image-1671 size-large" src="{{site.url}}/images/wp-content/uploads/2014/07/trick-for-categories-1024x705.png" alt="trick for categories" width="604" height="415" srcset="{{site.url}}/images/wp-content/uploads/2014/07/trick-for-categories-1024x705.png 1024w, {{site.url}}/images/wp-content/uploads/2014/07/trick-for-categories-300x206.png 300w, {{site.url}}/images/wp-content/uploads/2014/07/trick-for-categories.png 1233w" sizes="(max-width: 604px) 100vw, 604px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/07/trick-for-categories.png"><img class="wp-image-1671 size-large" src="{{site.url}}/wp-content/uploads/2014/07/trick-for-categories-1024x705.png" alt="trick for categories" width="604" height="415" srcset="{{site.url}}/wp-content/uploads/2014/07/trick-for-categories-1024x705.png 1024w, {{site.url}}/wp-content/uploads/2014/07/trick-for-categories-300x206.png 300w, {{site.url}}/wp-content/uploads/2014/07/trick-for-categories.png 1233w" sizes="(max-width: 604px) 100vw, 604px" /></a>
 
   <p class="wp-caption-text">
     Dashboard printscreen after completing the trick

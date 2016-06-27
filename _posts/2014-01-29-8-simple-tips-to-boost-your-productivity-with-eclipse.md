@@ -40,7 +40,7 @@ tags:
 Once you&#8217;ve done that, the results will be displayed in the **Search view**:
 
 <div id="attachment_1130" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/1-show-references.png" target="_blank"><img class="size-medium wp-image-1130 " src="{{site.url}}/images/wp-content/uploads/2014/01/1-show-references-300x271.png" alt="Show-References" width="300" height="271" srcset="{{site.url}}/images/wp-content/uploads/2014/01/1-show-references-300x271.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/1-show-references.png 939w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/1-show-references.png" target="_blank"><img class="size-medium wp-image-1130 " src="{{site.url}}/wp-content/uploads/2014/01/1-show-references-300x271.png" alt="Show-References" width="300" height="271" srcset="{{site.url}}/wp-content/uploads/2014/01/1-show-references-300x271.png 300w, {{site.url}}/wp-content/uploads/2014/01/1-show-references.png 939w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Show references
@@ -50,7 +50,7 @@ Once you&#8217;ve done that, the results will be displayed in the **Search view*
 Another alternative for that is by selecting the class/method > start Java Search (**Ctrl+H**) > select your search criteria (in this case **Type**) and limit to **References**:
 
 <div id="attachment_1132" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/1-1-show-references.png" target="_blank"><img class="size-medium wp-image-1132 " src="{{site.url}}/images/wp-content/uploads/2014/01/1-1-show-references-300x251.png" alt="show references - java search" width="300" height="251" srcset="{{site.url}}/images/wp-content/uploads/2014/01/1-1-show-references-300x251.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/1-1-show-references.png 735w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/1-1-show-references.png" target="_blank"><img class="size-medium wp-image-1132 " src="{{site.url}}/wp-content/uploads/2014/01/1-1-show-references-300x251.png" alt="show references - java search" width="300" height="251" srcset="{{site.url}}/wp-content/uploads/2014/01/1-1-show-references-300x251.png 300w, {{site.url}}/wp-content/uploads/2014/01/1-1-show-references.png 735w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Show References via Java Search
@@ -112,7 +112,7 @@ Another alternative for that is by selecting the class/method > start Java Searc
 </p>
 
 <div id="attachment_1131" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/2-add-bookmark.png" target="_blank"><img class="size-medium wp-image-1131 " src="{{site.url}}/images/wp-content/uploads/2014/01/2-add-bookmark-300x246.png" alt="Add bookmark" width="300" height="246" srcset="{{site.url}}/images/wp-content/uploads/2014/01/2-add-bookmark-300x246.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/2-add-bookmark.png 809w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/2-add-bookmark.png" target="_blank"><img class="size-medium wp-image-1131 " src="{{site.url}}/wp-content/uploads/2014/01/2-add-bookmark-300x246.png" alt="Add bookmark" width="300" height="246" srcset="{{site.url}}/wp-content/uploads/2014/01/2-add-bookmark-300x246.png 300w, {{site.url}}/wp-content/uploads/2014/01/2-add-bookmark.png 809w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Add bookmark
@@ -132,7 +132,7 @@ Another alternative for that is by selecting the class/method > start Java Searc
 </p>
 
 <div id="attachment_1134" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/3-search-in-file.png" target="_blank"><img class="size-medium wp-image-1134 " src="{{site.url}}/images/wp-content/uploads/2014/01/3-search-in-file-300x231.png" alt="Search in files" width="300" height="231" srcset="{{site.url}}/images/wp-content/uploads/2014/01/3-search-in-file-300x231.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/3-search-in-file.png 606w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/3-search-in-file.png" target="_blank"><img class="size-medium wp-image-1134 " src="{{site.url}}/wp-content/uploads/2014/01/3-search-in-file-300x231.png" alt="Search in files" width="300" height="231" srcset="{{site.url}}/wp-content/uploads/2014/01/3-search-in-file-300x231.png 300w, {{site.url}}/wp-content/uploads/2014/01/3-search-in-file.png 606w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Search in files
@@ -147,7 +147,7 @@ Another alternative for that is by selecting the class/method > start Java Searc
 
 <dl id="attachment_1136" class="wp-caption alignnone" style="width: 310px;">
   <dt class="wp-caption-dt" style="display: inline !important;">
-    <a href="{{site.url}}/images/wp-content/uploads/2014/01/4-open-declaration.png" target="_blank"><img class="size-medium wp-image-1136 alignnone" src="{{site.url}}/images/wp-content/uploads/2014/01/4-open-declaration-300x112.png" alt="open declaration" width="300" height="112" srcset="{{site.url}}/images/wp-content/uploads/2014/01/4-open-declaration-300x112.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/4-open-declaration.png 883w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+    <a href="{{site.url}}/wp-content/uploads/2014/01/4-open-declaration.png" target="_blank"><img class="size-medium wp-image-1136 alignnone" src="{{site.url}}/wp-content/uploads/2014/01/4-open-declaration-300x112.png" alt="open declaration" width="300" height="112" srcset="{{site.url}}/wp-content/uploads/2014/01/4-open-declaration-300x112.png 300w, {{site.url}}/wp-content/uploads/2014/01/4-open-declaration.png 883w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   </dt>
 </dl>
 
@@ -179,7 +179,7 @@ Another alternative for that is by selecting the class/method > start Java Searc
   1. Name your workspaces  **Window** > **Preferences** >  **General** > **Workspace:**
 
 <div id="attachment_1139" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/5-name-workspace.png"><img class="size-medium wp-image-1139" src="{{site.url}}/images/wp-content/uploads/2014/01/5-name-workspace-300x148.png" alt="Name workspace" width="300" height="148" srcset="{{site.url}}/images/wp-content/uploads/2014/01/5-name-workspace-300x148.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/5-name-workspace-1024x507.png 1024w, {{site.url}}/images/wp-content/uploads/2014/01/5-name-workspace.png 1151w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/5-name-workspace.png"><img class="size-medium wp-image-1139" src="{{site.url}}/wp-content/uploads/2014/01/5-name-workspace-300x148.png" alt="Name workspace" width="300" height="148" srcset="{{site.url}}/wp-content/uploads/2014/01/5-name-workspace-300x148.png 300w, {{site.url}}/wp-content/uploads/2014/01/5-name-workspace-1024x507.png 1024w, {{site.url}}/wp-content/uploads/2014/01/5-name-workspace.png 1151w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Name workspace
@@ -412,7 +412,7 @@ I&#8217;ve listed below the ones I use most frequently :
 </p>
 
 <div id="attachment_1143" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/7-templates-in-action.png" target="_blank"><img class="size-medium wp-image-1143 " src="{{site.url}}/images/wp-content/uploads/2014/01/7-templates-in-action-300x131.png" alt="Templates in action" width="300" height="131" srcset="{{site.url}}/images/wp-content/uploads/2014/01/7-templates-in-action-300x131.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/7-templates-in-action.png 947w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/7-templates-in-action.png" target="_blank"><img class="size-medium wp-image-1143 " src="{{site.url}}/wp-content/uploads/2014/01/7-templates-in-action-300x131.png" alt="Templates in action" width="300" height="131" srcset="{{site.url}}/wp-content/uploads/2014/01/7-templates-in-action-300x131.png 300w, {{site.url}}/wp-content/uploads/2014/01/7-templates-in-action.png 947w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Templates in action
@@ -424,7 +424,7 @@ I&#8217;ve listed below the ones I use most frequently :
 </p>
 
 <div id="attachment_1142" style="width: 296px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/7-pref-templates.png" target="_blank"><img class="size-medium wp-image-1142 " src="{{site.url}}/images/wp-content/uploads/2014/01/7-pref-templates-286x300.png" alt="Templates in Preferences" width="286" height="300" srcset="{{site.url}}/images/wp-content/uploads/2014/01/7-pref-templates-286x300.png 286w, {{site.url}}/images/wp-content/uploads/2014/01/7-pref-templates.png 846w" sizes="(max-width: 286px) 100vw, 286px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/7-pref-templates.png" target="_blank"><img class="size-medium wp-image-1142 " src="{{site.url}}/wp-content/uploads/2014/01/7-pref-templates-286x300.png" alt="Templates in Preferences" width="286" height="300" srcset="{{site.url}}/wp-content/uploads/2014/01/7-pref-templates-286x300.png 286w, {{site.url}}/wp-content/uploads/2014/01/7-pref-templates.png 846w" sizes="(max-width: 286px) 100vw, 286px" /></a>
 
   <p class="wp-caption-text">
     Templates in Preferences
@@ -438,7 +438,7 @@ You can also define your own code templates, but this is a story for a dedicated
 With **Window** > **Preferences** > **Java** > **Editor** > **Save actions**
 
 <div id="attachment_1144" style="width: 310px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/01/8-save-actions.png" target="_blank"><img class="size-medium wp-image-1144 " src="{{site.url}}/images/wp-content/uploads/2014/01/8-save-actions-300x276.png" alt="Save actions" width="300" height="276" srcset="{{site.url}}/images/wp-content/uploads/2014/01/8-save-actions-300x276.png 300w, {{site.url}}/images/wp-content/uploads/2014/01/8-save-actions.png 917w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/01/8-save-actions.png" target="_blank"><img class="size-medium wp-image-1144 " src="{{site.url}}/wp-content/uploads/2014/01/8-save-actions-300x276.png" alt="Save actions" width="300" height="276" srcset="{{site.url}}/wp-content/uploads/2014/01/8-save-actions-300x276.png 300w, {{site.url}}/wp-content/uploads/2014/01/8-save-actions.png 917w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
   <p class="wp-caption-text">
     Save actions

@@ -78,7 +78,7 @@ tags:
 In this post I will present a trick I used to create the responsive menu on <a title="http://www.podcastpedia.org/" href="http://www.podcastpedia.org/" target="_blank">Podcastpedia.org</a> :
 
 <div id="attachment_1408" style="width: 643px" class="wp-caption alignnone">
-  <a href="{{site.url}}/images/wp-content/uploads/2014/05/Responsive-menu-support.png"><img class="wp-image-1408 size-full" src="{{site.url}}/images/wp-content/uploads/2014/05/Responsive-menu-support.png" alt="Responsive menu on Podcastpedia.org" width="633" height="372" srcset="{{site.url}}/images/wp-content/uploads/2014/05/Responsive-menu-support.png 633w, {{site.url}}/images/wp-content/uploads/2014/05/Responsive-menu-support-300x176.png 300w" sizes="(max-width: 633px) 100vw, 633px" /></a>
+  <a href="{{site.url}}/wp-content/uploads/2014/05/Responsive-menu-support.png"><img class="wp-image-1408 size-full" src="{{site.url}}/wp-content/uploads/2014/05/Responsive-menu-support.png" alt="Responsive menu on Podcastpedia.org" width="633" height="372" srcset="{{site.url}}/wp-content/uploads/2014/05/Responsive-menu-support.png 633w, {{site.url}}/wp-content/uploads/2014/05/Responsive-menu-support-300x176.png 300w" sizes="(max-width: 633px) 100vw, 633px" /></a>
 
   <p class="wp-caption-text">
     Responsive menu on Podcastpedia.org
@@ -86,7 +86,7 @@ In this post I will present a trick I used to create the responsive menu on <a t
 </div>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <!--more-->
@@ -138,23 +138,23 @@ In this post I will present a trick I used to create the responsive menu on <a t
 Well, the trick I used was to have the links from the menu inserted twice in the html code but with differend `ids` for the list elements containing them:
 
 <pre class="lang:xhtml mark:25-49 decode:true" title="Navigation HTML/JSP code">&lt;div id="nav"&gt;
-	&lt;ul&gt;						
-		&lt;li id="nav-homepage"&gt; 			
+	&lt;ul&gt;
+		&lt;li id="nav-homepage"&gt;
 			&lt;a href="/"&gt;Home&lt;/a&gt;
-		&lt;/li&gt;				
-		&lt;li id="nav-tags"&gt;
-			&lt;a href="/tags/all/0"&gt;Keywords&lt;/a&gt;					
-		&lt;/li&gt;							
-		&lt;li id="nav-categories"&gt;
-			&lt;a href="/categories"&gt;Categories&lt;/a&gt; 					
 		&lt;/li&gt;
-		&lt;li id="nav-add-podcast"&gt; 				
+		&lt;li id="nav-tags"&gt;
+			&lt;a href="/tags/all/0"&gt;Keywords&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li id="nav-categories"&gt;
+			&lt;a href="/categories"&gt;Categories&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li id="nav-add-podcast"&gt;
 			&lt;a href="/how_can_i_help/add_podcast"&gt;Add Podcast&lt;/a&gt;
-		&lt;/li&gt;								
+		&lt;/li&gt;
 		&lt;li id="nav-support"&gt;
 
 			&lt;a href="/how_can_i_help"&gt;Support&lt;/a&gt;
-		&lt;/li&gt;		
+		&lt;/li&gt;
 		&lt;li id="nav-contact"&gt;
 			&lt;a href="/contact"&gt;Contact&lt;/a&gt;
 		&lt;/li&gt;
@@ -165,27 +165,27 @@ Well, the trick I used was to have the links from the menu inserted twice in the
 			&lt;a href="#"&gt;&lt;/a&gt;
 			&lt;ul&gt;
 				&lt;li id="nav-tags-resp"&gt;
-					&lt;a href="/tags/all/0"&gt;Keywords&lt;/a&gt;					
-				&lt;/li&gt;				
-				&lt;li id="nav-categories-resp"&gt;
-					&lt;a href="/categories"&gt;Categories&lt;/a&gt; 					
+					&lt;a href="/tags/all/0"&gt;Keywords&lt;/a&gt;
 				&lt;/li&gt;
-				&lt;li id="nav-add-podcast-resp"&gt; 				
+				&lt;li id="nav-categories-resp"&gt;
+					&lt;a href="/categories"&gt;Categories&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li id="nav-add-podcast-resp"&gt;
 					&lt;a href="/how_can_i_help/add_podcast"&gt;Add Podcast&lt;/a&gt;
-				&lt;/li&gt;								
+				&lt;/li&gt;
 				&lt;li id="nav-support-resp"&gt;
 
 					&lt;a href="/how_can_i_help"&gt;Support&lt;/a&gt;
-				&lt;/li&gt;		
+				&lt;/li&gt;
 				&lt;li id="nav-contact-resp"&gt;
 					&lt;a href="/contact"&gt;Contact&lt;/a&gt;
 				&lt;/li&gt;
 				&lt;li id="nav-podcasting-resp"&gt;
 					&lt;a href="/podcasting"&gt;Podcasting&lt;/a&gt;
-				&lt;/li&gt;					
+				&lt;/li&gt;
 			&lt;/ul&gt;
-		&lt;/li&gt;			
-	&lt;/ul&gt;			
+		&lt;/li&gt;
+	&lt;/ul&gt;
 &lt;/div&gt;</pre>
 
 #### <span id="142_SCSSCSS_code">1.4.2. SCSS/CSS code</span>
@@ -245,11 +245,11 @@ Now that the menu item are present twice, I can show and hide them based on the 
 }</pre>
 
 <p style="text-align: justify;">
-  As you can see in the code for big screens (width over 1040px) the elements marked with <code>resp(onsive)</code> are not shown at all, but once the width gets smaller, elements from the menu are hidden and corresponding elements from the second <code>resp(onsive)</code> menu list. These are now shown when you hover (tip on mobile) over the standard menu icon <img class="alignnone size-full wp-image-1412" src="{{site.url}}/images/wp-content/uploads/2014/05/standard-menu-icon.png" alt="standard menu icon" width="33" height="30" />
+  As you can see in the code for big screens (width over 1040px) the elements marked with <code>resp(onsive)</code> are not shown at all, but once the width gets smaller, elements from the menu are hidden and corresponding elements from the second <code>resp(onsive)</code> menu list. These are now shown when you hover (tip on mobile) over the standard menu icon <img class="alignnone size-full wp-image-1412" src="{{site.url}}/wp-content/uploads/2014/05/standard-menu-icon.png" alt="standard menu icon" width="33" height="30" />
 </p>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="2_Resources">2. Resources</span>

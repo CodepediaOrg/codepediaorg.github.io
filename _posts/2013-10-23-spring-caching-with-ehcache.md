@@ -51,7 +51,7 @@ tags:
 This post presents how Ehcache is integrated with Spring, which is the main technology used to develop Podcastpedia.org
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <!--more-->
@@ -169,7 +169,7 @@ The EhCache implementation is located under `org.springframework.cache.ehcache` 
   <code class="xml">
     &lt;!-- *******************************
     	 ***** CACHE CONFIGURATION *****
-    	 ******************************* --&gt;				
+    	 ******************************* --&gt;
     &lt;bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager"&gt;
     	&lt;property name="cacheManager" ref="ehcache"/&gt;
     &lt;/bean&gt;
@@ -236,7 +236,7 @@ Normally you would just have  `<cache:annotation-driven>` inserted into your ap
 
     	public Object generate(Object target, Method method, Object... params) {
     		if (params.length == 1 && isWrapperType(params[0].getClass())) {
-    				return (params[0] == null ? NULL_PARAM_KEY : params[0]);				
+    				return (params[0] == null ? NULL_PARAM_KEY : params[0]);
     		}
     		if (params.length == 0) {
     			return NO_PARAM_KEY;
@@ -484,7 +484,7 @@ In this example the result (a podcast) will be placed in the `"podcasts"`-cache,
     	List&lt;Podcast&gt; randomPodcasts = podcastDao.getRandomPodcasts(numberOfPodcasts);
     	for(Podcast p : randomPodcasts){
     		p.setLastEpisode(episodeDao.getLastEpisodeForPodcast(p.getPodcastId()));
-    	}		
+    	}
     	return randomPodcasts;
     }
   </code>
@@ -574,10 +574,10 @@ I am going to give again some examples of using this annotation and explain why 
     		@CacheEvict(value="podcasts", allEntries=true),
     		@CacheEvict(value="searchResults", allEntries=true),
     		@CacheEvict(value="newestAndRecommendedPodcasts", allEntries=true),
-    		@CacheEvict(value="randomAndTopRatedPodcasts", allEntries=true)		    
+    		@CacheEvict(value="randomAndTopRatedPodcasts", allEntries=true)
     	})
     public void flushAllCaches() {
-    	LOG.warn("All caches have been completely flushed");		
+    	LOG.warn("All caches have been completely flushed");
     }
   </code>
 </pre>
@@ -606,8 +606,8 @@ As mentioned in the section _Configure the cache storage_, the caches configurat
     	      eternal="false"
     	      timeToIdleSeconds="300"
     	      overflowToDisk="true"
-    	      maxElementsOnDisk="1000"	      
-    	      memoryStoreEvictionPolicy="LRU"/&gt;	      
+    	      maxElementsOnDisk="1000"
+    	      memoryStoreEvictionPolicy="LRU"/&gt;
 
     	&lt;cache name="podcasts"
     	      maxBytesLocalHeap="40M"
@@ -617,7 +617,7 @@ As mentioned in the section _Configure the cache storage_, the caches configurat
     	      maxEntriesLocalDisk="1000"
     	      diskPersistent="false"
     	      diskExpiryThreadIntervalSeconds="120"
-    	      memoryStoreEvictionPolicy="LRU"/&gt;	 	      
+    	      memoryStoreEvictionPolicy="LRU"/&gt;
 
     	&lt;cache name="referenceData"
     	      maxBytesLocalHeap="5M"
@@ -636,8 +636,8 @@ As mentioned in the section _Configure the cache storage_, the caches configurat
     	&lt;cache name="randomAndTopRatedPodcasts"
                   maxBytesLocalHeap="1M"
     	      timeToLiveSeconds="300"
-    	      memoryStoreEvictionPolicy="LRU"&gt;	      
-    	 &lt;/cache&gt;	 
+    	      memoryStoreEvictionPolicy="LRU"&gt;
+    	 &lt;/cache&gt;
 
     &lt;/ehcache&gt;
   </code>
@@ -678,7 +678,7 @@ Most of the properties set in the caches are self explaining by name, but here a
   *  <a title="How To: Enable compression and leverage browser caching with Apache Server" href="http://www.codingpedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">to tweak your Tomcat&#8217;s JDBC connection pool configuration </a>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/images/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="4_Resources">4. Resources</span>

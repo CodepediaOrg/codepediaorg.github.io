@@ -17,3 +17,23 @@ ama:
       url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
     - title: "facebook"
       url: "https://www.facebook.com/adrian.matei.90"
+
+dexter:
+  name:          Dexter's Laboratory
+  site:           http://www.codingpedia.org
+  avatar:         images/authors/dexter.jpg
+  bio:            "A boy-genius and inventor with a secret laboratory, who constantly battles his sister Dee Dee in an attempt to keep her out of the lab."
+  email:          adrianmatei@gmail.com
+  # Twitter nick for use in Twitter cards and follow button.
+  twitter: codingpedia # if no twitter in this config, the twitter follow button will be removed
+  # GitHub nick for use in follow button in author block.
+  github: amacoder
+  social:
+    - title: "github"
+      url: "https://github.com/amacoder"
+    - title: "linkedin"
+      url: "https://www.linkedin.com/in/adrianmatei1983"
+    - title: "youtube"
+      url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
+    - title: "facebook"
+      url: "https://www.facebook.com/adrian.matei.90"

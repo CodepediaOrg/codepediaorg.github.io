@@ -19,7 +19,8 @@ sitemap: false
 @import "vendor/magnific-popup/magnific-popup";
 @import "site";
 @import "typography";
-@import "rouge";
+//@import "rouge";//replaced rouge with syntax at recommendation from Jekyll
+@import "syntax";
 @import "coderay";
 @import "grid";
 @import "elements";

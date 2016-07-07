@@ -37,7 +37,21 @@ Bellow I will list some samples in different languages both hightlighted with bo
 </code></pre>
 
 ### Rouge code block
+
 {% highlight css %}
+#container {
+    float: left;
+    margin: 0 -240px 0 0;
+    width: 100%;
+}
+{% endhighlight %}
+
+There is a second argument to `highlight` called `linenos` that is optional.
+Including the `linenos` argument will force the highlighted code to include line
+numbers. For instance, the following code block would include line numbers next
+to each line:
+
+{% highlight css lineos %}
 #container {
     float: left;
     margin: 0 -240px 0 0;
@@ -170,13 +184,40 @@ end
 
 ### Standard Code Block Without Escaping
 
-    {% raw %}
-    <nav class="pagination" role="navigation">
-        {% if page.previous %}
-            <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-        {% endif %}
-        {% if page.next %}
-            <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-        {% endif %}
-    </nav><!-- /.pagination -->
-    {% endraw %}
+{% raw %}
+<nav class="pagination" role="navigation">
+    {% if page.previous %}
+        <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
+    {% endif %}
+    {% if page.next %}
+        <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
+    {% endif %}
+</nav><!-- /.pagination -->
+{% endraw %}
+
+## Gist
+
+Use the `gist` tag to easily embed a GitHub Gist onto your site. This works
+with public or secret gists:
+
+{% highlight liquid %}
+{% raw %}
+{% gist parkr/931c1c8d465a04042403 %}
+{% endraw %}
+{% endhighlight %}
+
+Result
+
+{% gist parkr/931c1c8d465a04042403 %}
+
+You may optionally specify a `filename` after the `gist_id`:
+
+{% highlight liquid %}
+{% raw %}
+{% gist parkr/931c1c8d465a04042403 jekyll-private-gist.markdown %}
+{% endraw %}
+{% endhighlight %}
+
+Result:
+
+{% gist parkr/931c1c8d465a04042403 jekyll-private-gist.markdown %}

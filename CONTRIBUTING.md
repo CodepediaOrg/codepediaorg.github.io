@@ -68,7 +68,7 @@ Go ahead and press the button!
 
 On this page, ensure that the "base fork" points to the correct repository and branch.
 
-> The __guidelines for contributing__ from the yellow box will lead you to this guide. Please read it carefully before submiting wour pull request.
+> The __guidelines for contributing__ link from the yellow box will lead you to this guide.
 
 Then ensure that you provide a good, succinct title for your pull request and explain why you have created it in the description box.
 Add any relevant issue numbers if you have them.

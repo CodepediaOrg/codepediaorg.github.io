@@ -1,6 +1,6 @@
 ## Getting Started
 * Make sure you have a [GitHub account](https://github.com/signup/free)
-* Fork the repository on GitHub
+* Fork the [repository](https://github.com/Codingpedia/codingpedia.github.io) on GitHub
 
 ## Step 1: Set up a working copy on your computer
 Firstly you need a local fork of the the [Codingpedia project](https://github.com/Codingpedia/codingpedia.github.io), so go ahead and press the "fork" button in GitHub. This will create a copy of the repository in your own GitHub account and you'll see a note that it's been forked underneath the project name:

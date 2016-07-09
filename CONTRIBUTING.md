@@ -1,4 +1,5 @@
-> Contributing to Codingpedia could mean case two different things
+***** Contributing to Codingpedia could mean case two different things *****
+
 1. Contribute to the website itself (bugfixes and new features)
 2. Contribute with a new post to Codingpedia.org
 
@@ -59,11 +60,11 @@ This will create the branch on your GitHub project. The -u flag links this branc
 
 Swap back to the browser and navigate to your fork of the project (**https://github.com/your_github_account/codingpedia.github.io**)
 and you'll see that your new branch is listed at the top with a handy "Compare & pull request" button:
-![Pull request button]({{ site.url }}/images/contributing/contributing-pull-request-button.png)
+[Pull request button](images/contributing/contributing-pull-request-button.png)
 
 Go ahead and press the button!
 
-![Pull request button]({{ site.url }}/images/contributing/contributing-open-pull-request.png)
+![Pull request button](images/contributing/contributing-open-pull-request.png)
 
 On this page, ensure that the "base fork" points to the correct repository and branch.
 

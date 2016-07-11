@@ -2,6 +2,7 @@
 layout: post
 title: How to insert and highlight code in Jekyll blog post on Codingpedia.org
 description: "Demo post displaying the various ways of inserting and highlighting code in Markdown, when posting on Codingpedia.org"
+permalink: /ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org
 author: ama
 modified: 2014-12-23
 tags: [sample post, code, highlighting]

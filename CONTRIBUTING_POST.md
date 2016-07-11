@@ -2,13 +2,13 @@
 you have the right setup in place to contribute a new post to Codingpedia.org
 
 Codingpedia.org is developed currently with [Jekyll](https://jekyllrb.com/), therefore there are some
-standard rules you need to follow, but as you'll see in the next paragraph that is very easy and makes a lot of sense.
+standard rules you need to follow, but as you'll see in the coming paragraphs that is very easy and makes a lot of sense.
 
 ## 1 Add information about you
 
 > Before you first commit, don't forget to branch
 
-Open the file [data/authors.yml](data/authors.yml) in your favorite editor, and at the end of the file add
+Open the file [_data/authors.yml](_data/authors.yml) in your favorite editor, and at the end of the file add
 information about yourself as in the following example:
 
 ```yaml
@@ -50,7 +50,7 @@ The result is placed at the end of your posts and looks something like the follo
 
 ### 2.1 Placement and naming convention
 
-Your new posts has to conform to the following rules
+Your new post has to conform to the following rules
 * it needs to be added in the [_posts](_posts) directory
 * the naming convention of your new file is important, and must follow the format: <code>YEAR-MONTH-DAY-title.md</code>.
 The permalinks can be customized for each post, but the date and markup language (in our case [Markdown](http://daringfireball.net/projects/markdown/)) are determined solely by the file name.

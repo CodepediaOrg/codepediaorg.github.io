@@ -1,7 +1,7 @@
-***** Contributing to Codingpedia could mean case two different things *****
+# Contributing to Codingpedia could mean case two different things
 
-**********  1. Contribute to the website itself (bugfixes and new features) **********
-**********  2. Contribute with a new post to Codingpedia.org **********
+1. Contribute to the website itself (bugfixes and new features) **********
+2. Contribute with a new post to Codingpedia.org **********
 
 > If you want to contribute with a new post make sure you read the [Contribute post guide](CONTRIBUTING_POST.md)
 once you have finished this one
@@ -84,7 +84,7 @@ Once you are happy, press the "Create pull request" button and you're done.
 
 For your work to be integrated into the project, the maintainers of the projet will review your work and either request changes or merge it.
 
-To sum up
+## Summary
 
 That's all there is to it. The fundamentals are:
 

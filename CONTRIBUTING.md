@@ -12,6 +12,24 @@ Both require some common things which are listed below:
 * Make sure you have a [GitHub account](https://github.com/signup/free)
 * Fork the [repository](https://github.com/Codingpedia/codingpedia.github.io) on GitHub
 
+## Requirements
+We recommend using [Bundler](http://bundler.io/) to install and run Jekyll. Bundler manages Ruby gem dependencies, reduces Jekyll build errors, and prevents environment-related bugs. To install Bundler, you must install [Ruby](https://www.ruby-lang.org/).
+
+### 1 Open terminal
+
+### 2 Check whether your have Ruby 2.0.0 or higher installed:
+```bash
+$ ruby --version
+ruby 2.X.X
+```
+### 3 If don't have Ruby installed, [install Ruby 2.0.0 or higher](https://www.ruby-lang.org/en/downloads/). 
+
+### 4 Install bundler
+```bash
+$ gem install bundler
+# Installs the Bundler gem
+```
+
 ## Step 1: Set up a working copy on your computer
 Firstly you need a local fork of the the [Codingpedia project](https://github.com/Codingpedia/codingpedia.github.io), so go ahead and press the "fork" button in GitHub. This will create a copy of the repository in your own GitHub account and you'll see a note that it's been forked underneath the project name:
 
@@ -48,7 +66,38 @@ and the git push syncs it to our forked GitHub project. Finally we create our ne
 
 Now you can do the work.
 
-## Step 3: Create a Pull Request
+## Step 3: Test your work locally
+
+Navigate into the root directory of Codingpedia Jekyll site repository.
+Install Jekyll and other dependencies from the GitHub Pages gem:
+```bash
+$ bundle install
+Fetching gem metadata from https://rubygems.org/............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+```
+
+Run Jekyll site locally
+```bash
+$ bundle exec jekyll serve
+Configuration file: /Users/octocat/my-site/_config.yml
+           Source: /Users/octocat/my-site
+      Destination: /Users/octocat/my-site/_site
+Incremental build: disabled. Enable with --incremental
+     Generating...
+                   done in 0.309 seconds.
+Auto-regeneration: enabled for '/Users/octocat/my-site'
+Configuration file: /Users/octocat/my-site/_config.yml
+   Server address: http://127.0.0.1:4000/
+ Server running... press ctrl-c to stop.
+```
+
+Preview your local Jekyll site in your web browser at <code>http://localhost:4000</code>
+
+Once you are satisfied with your changes, go ahead and:
+
+## Step 4: Create a Pull Request
 
 To create a PR you need to push your branch to the origin remote and then press some buttons on GitHub.
 

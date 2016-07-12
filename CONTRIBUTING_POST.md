@@ -1,7 +1,7 @@
 > Please read the [Contributing guide](CONTRIBUTING.md) guide first to make sure
 you have the right setup in place to contribute a new post to Codingpedia.org
 
-Codingpedia.org is developed currently with [Jekyll](https://jekyllrb.com/), therefore there are some
+Codingpedia.org is developed currently with [Jekyll](https://jekyllrb.com/), so there are some
 standard rules you need to follow, but as you'll see in the coming paragraphs that is very easy and makes a lot of sense.
 
 ## 1 Add information about you
@@ -89,7 +89,7 @@ Things to consider when writing a post:
 * add a short introduction, where you tell the readers what the post is about
 * after the short introduction introduce a <code><!--more--></code> tag; to this point will be extracted the post snippet
 after which <code>Continue reading</code> follows, when the post is present in a List
-* your most likely will include **code** - see [How to insert and highlight code in Jekyll blog post on Codingpedia.org]({{ site.url }}/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org) for the different possibilities to insert code in your post
+* you most likely will include **code** - see [How to insert and highlight code in Jekyll blog post on Codingpedia.org]({{ site.url }}/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org) for the different possibilities to insert code in your post
 * if you are just republishing your post, don't forget to backlink to your original post.
 
 Please leave a comment if something is unclear to you - thank you.

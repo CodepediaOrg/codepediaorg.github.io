@@ -1,7 +1,7 @@
 # Contributing to Codingpedia could mean case two different things
 
-1. Contribute to the website itself (bugfixes and new features) **********
-2. Contribute with a new post to Codingpedia.org **********
+1. Contribute to the website itself (bugfixes and new features)
+2. Contribute with a new post to Codingpedia.org
 
 > If you want to contribute with a new post make sure you read the [Contribute post guide](CONTRIBUTING_POST.md)
 once you have finished this one
@@ -140,7 +140,7 @@ That's all there is to it. The fundamentals are:
 1. Fork the project & clone locally.
 2. Create an __upstream__ remote and sync your local copy before you branch.
 3. Branch for each separate piece of work.
-4. Do the work, write [good commit messages](https://blogs.gnome.org/danni/2011/10/25/a-guide-to-writing-git-commit-messages/), and re-read this CONTRIBUTING guide.
+4. Do the work, test locally, write [good commit messages](https://blogs.gnome.org/danni/2011/10/25/a-guide-to-writing-git-commit-messages/), and re-read this CONTRIBUTING guide.
 5. Push to your origin repository.
 6. Create a new Pull Request in GitHub.
 7. Respond to any code review feedback.

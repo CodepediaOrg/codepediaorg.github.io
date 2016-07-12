@@ -1,17 +1,9 @@
-# [Codingpedia.org website](http://www.codingpedia.org) source code
+Codingpedia.org - sharing coding knowledge
+=======================================
+The website is developed with [Jekyll](https://github.com/jekyll/jekyll) and is based on https://github.com/aron-bordin/neo-hpstr-jekyll-theme
 
-The website is developed with [Jekyll](https://github.com/jekyll/jekyll)
+## Contributing
+This website is open for contributions:
 
-Based on https://github.com/aron-bordin/neo-hpstr-jekyll-theme
-
-
-# How to submit a post
-
-
----
-
-## Getting Started
-
-Neo-HPSTR takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
-
-To learn how to install and use this theme check out the [Setup Guide](http://aronbordin.com/neo-hpstr-jekyll-theme//theme-setup/) for more information.
+1. feel free to signal errors and improvements to the project itself - see [CONTRIBUTING.md](CONTRIBUTING.md)
+2. add your own blog posts - see [CONTRIBUTING_POST.md](CONTRIBUTING_POST.md)

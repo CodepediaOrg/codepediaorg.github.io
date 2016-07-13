@@ -87,9 +87,12 @@ Let's have again a look at the different elements now
 
 Things to consider when writing a post:
 * add a short introduction, where you tell the readers what the post is about
-* after the short introduction introduce a <code><!--more--></code> tag; to this point will be extracted the post snippet
-after which <code>Continue reading</code> follows, when the post is present in a List
+* after the short introduction put in a <code><!--more--></code> tag; this will end the excerpt shown before
+<code>Continue reading</code>, when the post is present in a list
 * you most likely will include **code** - see [How to insert and highlight code in Jekyll blog post on Codingpedia.org]({{ site.url }}/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org) for the different possibilities to insert code in your post
+* give credit to others and put reference links at the end of the article
+* be polite and open when replying to comments
 * if you are just republishing your post, don't forget to backlink to your original post.
 
-Please leave a comment if something is unclear to you - thank you.
+ 
+We are looking forward to your contribution to the coding community and please leave a comment if something is unclear to you - thank you.

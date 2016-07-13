@@ -96,3 +96,7 @@ Things to consider when writing a post:
 
  
 We are looking forward to your contribution to the coding community and please leave a comment if something is unclear to you - thank you.
+
+<p style="text-align: justify; padding-left: 30px;">
+  <em><strong>Note:</strong> No time to contribute original posts to Codingpedia.org yet, but you strongly believe you have coding-related articles worth sharing, then you can join our <a title="Coding Friend Program" href="http://www.codingpedia.org/friends" target="_blank">Coding Friend Program</a> and have your best ones republished. </em>
+</p>

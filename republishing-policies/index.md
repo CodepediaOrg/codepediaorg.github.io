@@ -24,11 +24,11 @@ Our content policies play an important role in maintaining a positive, and espec
 7. Codingpedia is not required to host, display, or distribute all your published articles, and may remove or refuse any article at any time for any reason
 8. Any information contained in your articles is not known by you to be false, inaccurate, or misleading
 9. Copyright
-  1. the copyright and any other applicable intellectual property rights for republished articles remain solely with the author of the relevant articles
-  2. you own the copyright, or have the permission for your profile picture, or other pictures that may appear in your articles
-  3. your articles do not infringe the copyright, trademark, patent, trade secret, or other intellectual property rights, privacy rights, or any other legal or moral rights of any third party
-  4. it is our policy to respond to clear notices of alleged copyright infringement. If Codingpedia receives such a notification for any of your published articles, we will inform you immediately
-  5. Codingpedia is not responsible for protecting the republished content from misuse or copyright infringement by others. Accordingly, the author indemnifies and holds harmless Codingpedia in all matters regarding copyright.
+  * the copyright and any other applicable intellectual property rights for republished articles remain solely with the author of the relevant articles
+  * you own the copyright, or have the permission for your profile picture, or other pictures that may appear in your articles
+  * your articles do not infringe the copyright, trademark, patent, trade secret, or other intellectual property rights, privacy rights, or any other legal or moral rights of any third party
+  * it is our policy to respond to clear notices of alleged copyright infringement. If Codingpedia receives such a notification for any of your published articles, we will inform you immediately
+  *  Codingpedia is not responsible for protecting the republished content from misuse or copyright infringement by others. Accordingly, the author indemnifies and holds harmless Codingpedia in all matters regarding copyright.
 10. You are not given any material compensation for having your articles republished
 
 > Should the republishing policies change, we will inform you when this happens.

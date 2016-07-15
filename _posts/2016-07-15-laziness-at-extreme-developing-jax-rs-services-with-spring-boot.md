@@ -8,6 +8,7 @@ modified: 2016-07-15
 tags: [spring boot, jax-rs, rest, apache cxf]
 categories: [java]
 ---
+
 I think it would be fair to state that we, as software developers, are always looking for the ways to write less code
 which does more stuff, automagically or not. With this regards, [Spring Boot](http://projects.spring.io/spring-boot/) project, proud member of the Spring portfolio, disrupted the traditional approaches, dramatically speeding up and simplifying Spring-based applications development.
 

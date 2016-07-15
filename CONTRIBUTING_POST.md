@@ -33,9 +33,9 @@ ama:
       url: "https://www.facebook.com/adrian.matei.90"
 ```
 Let's go through the elements now one by one:
-* The first element (here **ama**) is very important, as it is used in your posts to identify you
+* The first element (here **ama**) is very important, as it is used in your posts to identify you, the author
 * **name** - your name
-* **site** - your website, where visitors can find out more about you; it is the the "About Your Name" link from the end result
+* **site** - your website, where visitors can find out more about you; it is the the "About Your Name" link 
 * **avatar** - a picture of you, please upload one in the __images/authors/folder__
 * **bio** - short information about you
 * **email** - your email address
@@ -92,9 +92,8 @@ Things to consider when writing a post:
 * you most likely will include **code** - see [How to insert and highlight code in Jekyll blog post on Codingpedia.org]({{ site.url }}/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org) for the different possibilities to insert code in your post
 * give credit to others and put reference links at the end of the article
 * be polite and open when replying to comments
-* if you are just republishing your post, don't forget to backlink to your original post.
+* make sure you comply with our [Publishing Policies](http://www.codingpedia.org/contributors/publishing-policy/)
 
- 
 We are looking forward to your contribution to the coding community and please leave a comment if something is unclear to you - thank you.
 
 <p style="text-align: justify; padding-left: 30px;">

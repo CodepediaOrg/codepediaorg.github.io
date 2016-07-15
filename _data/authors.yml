@@ -37,3 +37,16 @@ dexter:
       url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
     - title: "facebook"
       url: "https://www.facebook.com/adrian.matei.90"
+      
+aredko:
+  name:          Andriy Redko
+  site:           http://aredko.blogspot.com/
+  avatar:         images/authors/amacoder.png
+  bio:            "Seasoned software developer with a great passion to code. I am extensively working with JVM platform using Java, Groovy, Scala as well as other languages and technologies (Ruby, Grails, Play!, Akka, MySQL, PostreSQL, MongoDB, Redis, JUnit, ...)"
+  # GitHub nick for use in follow button in author block.
+  github: reta
+  social:
+    - title: "github"
+      url: "https://github.com/reta"
+    - title: "linkedin"
+      url: "http://ca.linkedin.com/in/aredko"

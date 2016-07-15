@@ -1,7 +1,7 @@
 # Contributing to Codingpedia could mean case two different things
 
 1. Contribute to the website itself (bugfixes and new features)
-2. Contribute with a new post to Codingpedia.org
+2. Contribute with a [new post to Codingpedia.org](CONTRIBUTING_POST.md)
 
 > If you want to contribute with a new post make sure you read the [Contribute post guide](CONTRIBUTING_POST.md)
 once you have finished this one

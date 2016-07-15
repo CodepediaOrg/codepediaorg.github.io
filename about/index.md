@@ -45,8 +45,8 @@ We strive to share coding knowledge and making coding sharing knowledge easy for
   If you think the same way as we do, you should know we are on a continuous journey looking to recruit talented people who know how to write both code and articles. You can join us by becoming:
 </p>
 
+  * <a title="Codingpedia.org - Contributing posts" href="https://github.com/Codingpedia/codingpedia.github.io/blob/master/CONTRIBUTING_POST.md" target="_blank">Contributing posts</a> &#8211; either regularly or as a guest
   * <a title="Codingpedia.org - Coding Friend Program" href="http://www.codingpedia.org/friends" target="_blank">Coding Friend</a> &#8211; this implies you allow Codingpedia to republish your best articles on our website
-  * <a title="Codingpedia.org - Contributors" href="http://www.codingpedia.org/contributors" target="_blank">Coding Contributor</a> &#8211;  take it a step further and write original content for Codingpedia.org
 
 ## <span id="Organization">Organization</span>
 We are a non-profit organization, with the following coordinates:
@@ -62,8 +62,4 @@ We are currently supporting two websites:
   <strong><em> <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org, knowledge to go</a></em> &#8211; with the mission to build the most popular podcast directory</strong>. You can learn more about Podcastpedia by visiting <em>our <a title="http://www.codingpedia.org/ama/story-of-podcastpedia-org/" href="http://www.codingpedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia.org </a></em>page. The Pocastpedia.org has recently been made open-source &#8211; <a title="https://github.com/podcastpedia" href="https://github.com/podcastpedia" target="_blank">PodcastpediaOrg GitHub repositories.</a> We are looking there for your feedback and support.
 </li>
 
-As most of the non-profits, we live from our members funds and energy and from donations. We would really appreciate a small contribution for our work - help us keep the servers running:
-
-TODO - include the paypal donate button
-
-&nbsp;
+As most of the non-profits, we live from our members funds and energy and from donations. We would really appreciate a small contribution for our work - help us keep the servers running

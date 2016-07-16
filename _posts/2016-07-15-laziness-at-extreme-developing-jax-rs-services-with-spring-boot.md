@@ -8,9 +8,9 @@ modified: 2016-07-15
 tags: [spring boot, jax-rs, rest, apache cxf]
 categories: [java]
 
-republished:
-  - title: Laziness at extreme - developing JAX-RS services with Spring Boot 
-  - url: https://aredko.blogspot.ch/2016/04/laziness-at-extreme-developing-jax-rs.html
+republished: true
+original_title: Laziness at extreme - developing JAX-RS services with Spring Boot
+original_url: https://aredko.blogspot.ch/2016/04/laziness-at-extreme-developing-jax-rs.html
 
 ---
 
@@ -49,7 +49,7 @@ like [Tomcat](http://tomcat.apache.org/), [Jetty](http://www.eclipse.org/jetty/)
 @ComponentScan(basePackageClasses = PeopleRestService.class)
 public class AppConfig {
     @Autowired private PeopleRestService peopleRestService;
- 
+
     @Bean(destroyMethod = "shutdown")
     public SpringBus cxf() {
         return new SpringBus();
@@ -69,7 +69,7 @@ public class AppConfig {
 
     @Bean
     public ServletRegistrationBean cxfServlet() {
-        final ServletRegistrationBean servletRegistrationBean = 
+        final ServletRegistrationBean servletRegistrationBean =
             new ServletRegistrationBean(new CXFServlet(), "/api/*");
         servletRegistrationBean.setLoadOnStartup(1);
         return servletRegistrationBean;
@@ -134,16 +134,16 @@ It would be unfair to finish up without covering yet another important feature o
 @WebIntegrationTest(randomPort = true)
 public class PeopleRestServiceIntegrationTest {
     @Value("${local.server.port}") private int port;
- 
+
     @Before
     public void setUp() {
         RestAssured.port = port;
     }
- 
+
     @Test
     public void testListOfPersonsIsBeingReturnedSuccessfuly() {
         given()
-            .when() 
+            .when()
             .contentType(ContentType.JSON)
             .get("/api/people")
             .then()

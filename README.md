@@ -1,6 +1,6 @@
 Codingpedia.org - sharing coding knowledge
 =======================================
-The website is developed with [Jekyll](https://github.com/jekyll/jekyll) and is based on https://github.com/aron-bordin/neo-hpstr-jekyll-theme
+The website is developed with [Jekyll](https://github.com/jekyll/jekyll), hosted on Github Pages and is based on https://github.com/aron-bordin/neo-hpstr-jekyll-theme
 
 ## Contributing
 This website is open for contributions:

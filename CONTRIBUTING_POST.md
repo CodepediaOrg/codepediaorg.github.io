@@ -69,6 +69,11 @@ permalink: /ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpe
 modified: 2014-12-23
 tags: [sample post, code, highlighting]
 categories: [intro]
+
+# properties only relevant if the post is being republished
+republished: true
+original_title: How to insert and highlight code in jekyll blog post on Codingpedia.org
+original_url: http://www.codingpedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org
 ---
 ```
 
@@ -82,6 +87,9 @@ Let's have again a look at the different elements now
 * **modified** - the date when the post was last modified in [yyyy-MM-dd] format
 * **tags** - relevant tags/keywords for the post - no more than 5; see the [tags page](http://www.codingpedia.org/tags/) for already used tags
 * **categories** - relevant categories - no more than 2;  see the [categoreis page](http://www.codingpedia.org/categories/) for already used categories
+* **republished** - these three properties are relevant only when the post is republished from another website; it generates the __Republished from paragraph...__ at the end of the post
+* **original_title** - title of the original post
+* **original_url** - URL of the original post
 
 ### 2.3 Post
 

@@ -70,7 +70,7 @@ modified: 2014-12-23
 tags: [sample post, code, highlighting]
 categories: [intro]
 
-# properties only relevant if the post is being republished
+# properties only relevant if this is a republished post
 republished: true
 original_title: How to insert and highlight code in jekyll blog post on Codingpedia.org
 original_url: http://www.codingpedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org

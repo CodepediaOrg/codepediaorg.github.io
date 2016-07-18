@@ -18,6 +18,37 @@ ama:
     - title: "facebook"
       url: "https://www.facebook.com/adrian.matei.90"
 
+aredko:
+  name:          Andriy Redko
+  site:           http://aredko.blogspot.com/
+  avatar:         images/authors/aredko.jpg
+  bio:            "Seasoned software developer with a great passion to code. I am extensively working with JVM platform using Java, Groovy, Scala as well as other languages and technologies (Ruby, Grails, Play!, Akka, MySQL, PostreSQL, MongoDB, Redis, JUnit, ...)"
+  # GitHub nick for use in follow button in author block.
+  github: reta
+  social:
+    - title: "github"
+      url: "https://github.com/reta"
+    - title: "linkedin"
+      url: "http://ca.linkedin.com/in/aredko"
+
+benas:
+  name:          Mahmoud Ben Hassine
+  site:           http://benas.github.io/
+  avatar:         images/authors/amacoder.png
+  bio:            "Aspiring software craftsman living in the shell, chess master and scrum basterd!"
+  email:          mahmoud.benhassine@icloud.com
+  # Twitter nick for use in Twitter cards and follow button.
+  twitter: pragmatic_coder # if no twitter in this config, the twitter follow button will be removed
+  # GitHub nick for use in follow button in author block.
+  github: benas
+  social:
+    - title: "twitter"
+      url: "https://twitter.com/pragmatic_coder"
+    - title: "github"
+      url: "https://github.com/benas"
+    - title: "linkedin"
+      url: "http://fr.linkedin.com/in/mahmoudbenhassine/"
+
 dexter:
   name:          Dexter's Laboratory
   site:           http://www.codingpedia.org
@@ -37,16 +68,3 @@ dexter:
       url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
     - title: "facebook"
       url: "https://www.facebook.com/adrian.matei.90"
-      
-aredko:
-  name:          Andriy Redko
-  site:           http://aredko.blogspot.com/
-  avatar:         images/authors/aredko.jpg
-  bio:            "Seasoned software developer with a great passion to code. I am extensively working with JVM platform using Java, Groovy, Scala as well as other languages and technologies (Ruby, Grails, Play!, Akka, MySQL, PostreSQL, MongoDB, Redis, JUnit, ...)"
-  # GitHub nick for use in follow button in author block.
-  github: reta
-  social:
-    - title: "github"
-      url: "https://github.com/reta"
-    - title: "linkedin"
-      url: "http://ca.linkedin.com/in/aredko"

@@ -8,10 +8,10 @@ modified: 2016-07-15
 tags: [spring boot, jax-rs, rest, apache cxf]
 categories: [java]
 
+# properties only relevant if the post is being republished
 republished: true
 original_title: Laziness at extreme - developing JAX-RS services with Spring Boot
 original_url: https://aredko.blogspot.ch/2016/04/laziness-at-extreme-developing-jax-rs.html
-
 ---
 
 

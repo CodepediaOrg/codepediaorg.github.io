@@ -1,10 +1,18 @@
 ---
 layout: post
-tags: [Java, web sockets]
-published: false
+title: Using The Java Api For Websocket To Create A Chat Server
+description: "In this post, I’ll use Web sockets to create a tiny chat server using Tyrus, the reference implementation of the Java API for WebSocket (JSR 356)."
+author: benas
+permalink: /benas/using-the-java-api-for-webSocket-to-create-a-chat-server.html
+categories: [java]
+tags: [java, web sockets]
+
+republished: true
+original_title: Using The Java Api For Websocket To Create A Chat Server
+original_url: http://benas.github.io/2016/02/21/using-the-java-api-for-webSocket-to-create-a-chat-server.html
 ---
 
-In a [previous post]({{ site.url }}/2014/10/14/using-server-sent-events-to-create-a-monitoring-dashboard.html), I've used Server Sent Events to create a monitoring dashboard. SSE are a one way messaging format form server to clients
+In a [previous post](http://benas.github.io/2014/10/14/using-server-sent-events-to-create-a-monitoring-dashboard.html), I've used Server Sent Events to create a monitoring dashboard. SSE are a one way messaging format form server to clients
  in contrast to Web Sockets where communication is bidirectional. In this post, I'll use Web sockets to create a tiny chat server using [Tyrus](https://tyrus.java.net/), the reference
  implementation of the Java API for WebSocket (JSR 356). A great introduction to this API can be found on Oracle Network [here](http://www.oracle.com/technetwork/articles/java/jsr356-1937161.html).
 

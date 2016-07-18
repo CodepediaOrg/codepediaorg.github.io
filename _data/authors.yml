@@ -34,7 +34,7 @@ aredko:
 benas:
   name:          Mahmoud Ben Hassine
   site:           http://benas.github.io/
-  avatar:         images/authors/amacoder.png
+  avatar_url: https://pbs.twimg.com/profile_images/682858329220190208/YhIK6TIE_400x400.jpg
   bio:            "Aspiring software craftsman living in the shell, chess master and scrum basterd!"
   email:          mahmoud.benhassine@icloud.com
   # Twitter nick for use in Twitter cards and follow button.

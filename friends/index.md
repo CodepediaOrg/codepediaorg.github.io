@@ -65,7 +65,7 @@ Dear fellow coder,
       <span style="line-height: 1.5;"> because every article republished provides a link to the original post and clearly acknowledges your work </span>
     </li>
     <li style="text-align: justify;">
-      each of your republished posts will be promoted on our social media channels and will be part of our main <a style="color: #bc360a;" title="Codingpedia.org - RSS feed" href="http://www.codingpedia.org/feed/" target="_blank">RSS feed</a>
+      each of your republished posts will be promoted on our social media channels and will be part of our main <a style="color: #bc360a;" title="Codingpedia.org - RSS feed" href="http://www.codingpedia.org/feed.xml" target="_blank">RSS feed</a>
     </li>
   </ul>
 </li>
@@ -78,9 +78,6 @@ Dear fellow coder,
 </li>
 <li style="text-align: justify;">
   enhancing the quality of your posts by having at least one pair of eyes reviewing them before republishing
-</li>
-<li style="text-align: justify;">
-  you can also see it as a &#8220;back up&#8221; solution for your best articles&#8230;
 </li>
 
 <p style="text-align: justify;">

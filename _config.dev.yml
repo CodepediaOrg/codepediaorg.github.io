@@ -17,8 +17,6 @@ url: http://localhost:4000
 menu:
   - title: 'Home'
     url: '/'
-  - title: 'Fork'
-    url: 'https://github.com/Codingpedia/codingpedia.github.io'
   - title: 'About'
     url: '/about/'
   - title: 'Tags'

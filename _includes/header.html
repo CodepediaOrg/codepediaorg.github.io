@@ -12,6 +12,7 @@
           <a href="{{site.url}}/" class="title"> {{ site.title }}</a>
         </a>
       </li>
+      <li class="header-item"><a href="{{site.url}}/feed.xml"><h3>Feed <i class="fa fa-rss"></i></h3></a></li>
       {% for menu in site.menu reversed %}
         {% assign class = nil %}
         {% if ((page.url contains menu.url and menu.url != '/') or (page.url == '/index.html' and menu.url == '/')) %}

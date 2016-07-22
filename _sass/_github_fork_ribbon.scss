@@ -68,7 +68,7 @@
   top: 0;
   z-index: 9999; //should really be on top of everything
   pointer-events: none;
-  @include until-mq(1200px){
+  @include until-mq(1100px){
     display: none;
   }
   &.fixed {

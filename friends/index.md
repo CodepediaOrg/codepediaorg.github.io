@@ -13,7 +13,7 @@ dsq_thread_id:
 Dear fellow coder,
 
 <p style="text-align: justify;">
-  We believe here, at <a style="color: #bc360a;" title="Codingpedia.org - about us" href="http://www.codingpedia.org/about-us/" target="_blank">Codingpedia.org</a>, that technological advancement and efficiency, driven among other things by the humans’ ability to program machines, has a positive impact on human evolution and well-being. We want to contribute to the expansion of this ability by offering a platform for sharing coding knowledge. We invite you to join our efforts and become a <em>Coding Friend</em>. All you have to do is keep publishing great articles to your blog, and our team of content editors will pick up your best content and republish it on our website.
+  We believe here, at <a style="color: #bc360a;" title="Codingpedia.org - about us" href="http://www.codingpedia.org/about-us/" target="_blank">Codingpedia.org</a>, that technological advancement and efficiency, driven among other things by the humans’ ability to program machines, has a positive impact on human evolution and well-being. We want to contribute to the expansion of this ability by offering a platform for sharing coding knowledge. We invite you to join our efforts and become a <em>Coding Friend</em> - <a style="color: #bc360a;" title="Codingpedia.org - Friends" href="http://www.codingpedia.org/frinds/" target="_blank">www.codingpedia.org/friends</a>. All you have to do is keep publishing great articles to your blog, and our team of content editors will pick up your best content and republish it on our website.
 </p>
 
 <p class="alert_normal" style="text-align: justify; padding-left: 30px;">

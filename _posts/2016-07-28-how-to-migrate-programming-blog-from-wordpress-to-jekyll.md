@@ -109,7 +109,7 @@ The first task was to find a proper Jekyll Theme[^7] - I was looking for one tha
 ### Code embedding
 
 One concern that I had, was what would happen with all the code from the posts, because you know it is a programming blog...
-Well the exported code snippets are maintained, that is surrounded and escaped correctly in  `<pre><code>...</code></pre>` tags
+Well the exported code snippets are maintained, that is they surrounded and escaped correctly in  `<pre><code>...</code></pre>` tags
 {% highlight liquid %}
 {% raw %}
 <pre><code class="xml">&lt;div id="flags"&gt;
@@ -161,7 +161,7 @@ so they show nicely in the browser:
 > On Wordpress I was using a syntax highlighter with line numbers and everything, but somehow I find it neater in Jekyll
 
 <p class="note_normal">
-When writing new posts I will definitely use one of the methods suggested in [How to insert and highlight code in Jekyll blog post on Codingpedia.org](http://www.codingpedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org) and if want to publish on Codingpedia.org I recommend you use them too.
+When writing new posts I will definitely use one of the methods suggested in <a href="http://www.codingpedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org" target="_blank">How to insert and highlight code in Jekyll blog post on Codingpedia.org</a> and if want to publish on Codingpedia.org I recommend you use them too.
 </p>
 
 
@@ -200,7 +200,7 @@ comments: false
 
 ### Feed
 
-It uses the theme's own [Atom implementation](https://github.com/Codingpedia/codingpedia.github.io/blob/master/feed.xml), which I adjusted for multiple authors. Don't forget to subscribe to it [here](http://www.codingpedia.org/feed.xml).
+It uses the theme's own [Atom implementation](https://github.com/Codingpedia/codingpedia.github.io/blob/master/feed.xml), which I adjusted for multiple authors - __don't forget to subscribe to it [here](http://www.codingpedia.org/feed.xml)__
 
 > Another possibility would have been to use Atom (RSS) feeds for GitHub Pages[^9], which can automatically create an
  [Atom feed](https://en.wikipedia.org/wiki/Atom_%28standard%29) for the Jekyll blog deployed on GitHub Pages.
@@ -218,6 +218,7 @@ Unlike custom feed generation, I used Sitemaps for GitHub Pages[^10], which can 
 ### Benefits
 
 So far I am glad I did this move. Here are a summary of the benefits I reaped til now:
+
 * it just feels right, like it's better suited for a programming blog
 * the generated static website is light years faster than what I had before
 * free hosting; edit, git push and is live via GitHub Pages
@@ -227,6 +228,6 @@ So far I am glad I did this move. Here are a summary of the benefits I reaped ti
 
 [^11]: <https://daringfireball.net/projects/markdown/>
 
-I hope you've found this useful and after you will have migrated to Jekyll, we hope you'll join our [Coding Friend Program](http://www.codingpedia.org/friends/) so we can easier republish your articles or, even better, do it yourself with a [pull request](https://github.com/Codingpedia/codingpedia.github.io/blob/master/CONTRIBUTING_POST.md).
+I hope you've found this useful and after you will have migrated to Jekyll, join our [Coding Friend Program](http://www.codingpedia.org/friends/) so we can easier republish your articles or, even better, do it yourself with a [pull request](https://github.com/Codingpedia/codingpedia.github.io/blob/master/CONTRIBUTING_POST.md).
 
 ## References

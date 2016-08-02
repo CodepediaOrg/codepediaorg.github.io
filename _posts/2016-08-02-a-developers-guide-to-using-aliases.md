@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A developer's guide to using aliases
-description: "In this post, I will give my two cents on migrating a programming blog from Wordpress to Jekyll, namely I will list and detail the main steps I took for migrating Codingpedia.org"
+title: A developer's approach to using aliases
+description: "In this post, I am presenting how I am using bash aliases to make my everyday developer life easier"
 author: ama
 permalink: /ama/a-developers-guide-to-using-aliases/
 published: false
@@ -9,7 +9,13 @@ categories: [dev tools]
 tags: [linux shell, alias, dev tools]
 ---
 
-Not long time ago I have rediscovered bash aliases 
+Not long time ago I have rediscovered an old friend - alias. We got acquainted in the beginning of my computer science studies, when I went to course held by Cisco "Linux Essentials" or something similar, where the trainer mentioned at one
+point what were aliases and how handy they could be. Well 12 years or so fast forward, and I still did not get that,
+until recently where a moment of illumination struck me and since then I've been using them extensively in my everyday developer life. 
+
+So what are aliases? According to The Linux Documentation Project [http://tldp.org/LDP/abs/html/aliases.html] - "A Bash alias is essentially nothing more than a keyboard shortcut, an abbreviation, a means of avoiding typing a long command sequence." 
+
+!!!! Alphabetically ordered !!!! -  a good idea, or should be more category relevant
 
 But first things first, let's set an alias for alias
 
@@ -39,6 +45,12 @@ alias cd-jboss-eap-6.1-logs="cd ~/dev/as/jboss-eap-6.1/standalone/logs
 
 > `cd` alone will change to the user's home directory
 
+#df -- display free disk space
+
+```
+alias df="df -h" # "human-readable" output
+```
+
 ```
 #maven
 alias mci="mvn clean install"
@@ -57,6 +69,16 @@ alias kc2-cd-home="cd ~/dev/as/jboss-eap-7.0-keycloak-server/"
 alias kc2-export-JBOSS_HOME="export JBOSS_HOME=~/dev/as/jboss-eap-7.0-keycloak-server/"
 alias kc2-vim-standalone.xml="vim ~/dev/as/jboss-eap-7.0-keycloak-server/standalone/configuration/standalone.xml"
 alias kc2-start="~/dev/as/jboss-eap-7.0-keycloak-server/bin/standalone.sh -Djboss.socket.binding.port-offset=200 -Djdk.tls.client.protocols=TLSv1 -b 0.0.0.0 --server-config=standalone.xml"
+```
+
+```
+#mkdir -- make directory
+alias mkdir="mkdir -pv" # make necessary parent directory, and make it verbose to help avoid typos
+```
+
+```
+#ps -- process status
+alias ps-grep="ps aux | grep" # e.g."ps-grep java" will list processes that have java in description
 ```
 
 ```

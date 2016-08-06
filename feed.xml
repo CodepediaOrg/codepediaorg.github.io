@@ -24,11 +24,22 @@ layout: null
   <published>{{ post.date | date_to_xmlschema }}</published>
   {% else %}<published>{{ post.date | date_to_xmlschema }}</published>
   <updated>{{ post.date | date_to_xmlschema }}</updated>{% endif %}
+  {% assign author = site.data.authors[post.author] %}
+  {% if author %}
   <author>
-    <name>{{ site.owner.name }}</name>
+    <name>{{ author.name }}</name>
+    <uri>{{ author.site }}</uri>
+    {% if author.email %}
+    <email>{{ site.owner.email }}</email>
+    {% endif %}
+  </author>
+  {% else %}
+  <author>
+    <name>{{ post.author }}</name>
     <uri>{{ site.url }}</uri>
     <email>{{ site.owner.email }}</email>
   </author>
+  {% endif %}
   <content type="html">
     {{ post.content | xml_escape }}
     {% include feed-footer.html %}

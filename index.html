@@ -18,8 +18,9 @@ comments: false
     {% endif %}
     <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span>
-      {% if post.show_author %} <!-- show by author only when the page has the author details defined -->
-      <span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
+      {% assign author = site.data.authors[post.author] %}
+      {% if author %} <!-- show by author only when the page has the author details defined -->
+      <span class="author vcard"><span class="fn"><a href="{{ author.site }}" title="About {{ author.name }}">{{ author.name }}</a></span></span>
       {% endif %}
       {% if site.reading_time %}
       <span class="entry-reading-time">

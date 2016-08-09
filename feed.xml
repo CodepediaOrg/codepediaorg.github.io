@@ -30,7 +30,7 @@ layout: null
     <name>{{ author.name }}</name>
     <uri>{{ author.site }}</uri>
     {% if author.email %}
-    <email>{{ site.owner.email }}</email>
+    <email>{{ author.email }}</email>
     {% endif %}
   </author>
   {% else %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A developer's guide to using aliases
-description: "In this post, I am presenting a show introduction to aliases and how I am using bash aliases to make my everyday developer life easier"
+description: "In this post, I am presenting a short introduction to aliases and how I am using them to make my everyday developer life easier"
 author: ama
 permalink: /ama/a-developers-guide-to-using-aliases/
 published: true

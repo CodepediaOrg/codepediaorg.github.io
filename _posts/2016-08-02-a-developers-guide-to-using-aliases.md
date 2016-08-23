@@ -289,6 +289,13 @@ nginxconfigbackup(){
 }
 ```
 
+### Npm - https://www.npmjs.com/
+```
+#npm
+alias npmi="npm install" 
+alias npmig="npm install -g" # -g install globally
+```
+
 ### Ps
 ```
 #ps -- process status

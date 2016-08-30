@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to migrate a Java EE REST API from JBoss EAP 6 to EAP 7
-description: "In this post I will list a few points I had to do to migrate a Java REST API from JBoss EAP 6/JEE 6 to Jboss EAP7/JEE 7"
+description: "In this post I will list a few points I had to do to migrate a Java REST API from JBoss EAP 6/JEE 6/JAX RS 1.0 to Jboss EAP7/JEE 7/JAX RS 2.0"
 author: ama
 permalink: /ama/how-to-migrate-a-java-ee-rest-api-from-jboss-eap6-to-jboss-eap7
 published: true
@@ -337,7 +337,7 @@ UserRepresentation userDetails = keycloakApiClient.getUserDetails(keycloakUserId
 
 #### Logging interceptor
 
-Used to log incoming requests for traceability - TODO adjust don't like it like this....
+Used to log incoming request paths and responses in INFO log level for traceability. Uses now standard JAX RS 2.0 filters - `javax.ws.rs.container.ContainerResponseFilter`
 
 *From*
 
@@ -389,39 +389,41 @@ public class LoggingInterceptor implements PreProcessInterceptor {
 *to*
 
 ```java
-import org.jboss.resteasy.annotations.interception.ServerInterceptor;
+mport org.codehaus.jackson.map.ObjectMapper;
 import org.slf4j.Logger;
 
 import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.container.ContainerRequestContext;
+import javax.ws.rs.container.ContainerResponseContext;
 import javax.ws.rs.core.Context;
+import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.ext.Provider;
 import java.io.IOException;
 
 /**
- * Basic logging interceptor
+ * Basic logging interceptor for all API calls. Logs in INFO log level the HTTP Method, path and the response entity
  *
  */
 @Provider
-@ServerInterceptor
-public class LoggingInterceptor implements javax.ws.rs.container.ContainerRequestFilter {
+public class LoggingInterceptor implements javax.ws.rs.container.ContainerResponseFilter {
 
     @Inject
     private Logger logger;
 
     @Context
-    HttpServletRequest servletRequest;
-
+    private UriInfo uriInfo;
 
     @Override
-    public void filter(ContainerRequestContext requestContext) throws IOException {
+    public void filter(ContainerRequestContext containerRequestContext, ContainerResponseContext containerResponseContext) throws IOException {
+        String httpMethod = containerRequestContext.getRequest().getMethod();
 
-        String methodName = requestContext.getMethod();
-        String httpMethod = requestContext.getRequest().getMethod();
+        int httpResponseStatus = containerResponseContext.getStatus();
 
-        logger.info("Receiving " + httpMethod + " request from: " + servletRequest.getRemoteAddr());
-        logger.info("Attempt to invoke method \"" + methodName + "\"");
+        logger.info(httpMethod.toUpperCase() + " " + uriInfo.getPath() + " " + httpResponseStatus);
+        ObjectMapper mapper = new ObjectMapper();
+        logger.info("Response entity: \n"
+                + mapper.writerWithDefaultPrettyPrinter().writeValueAsString(containerResponseContext.getEntity())
+                + "\n");
     }
 }
 ```
@@ -442,11 +444,47 @@ While Jackson does come with its own JAX-RS integration. Resteasy expanded it a 
 
 [^]: <http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#json>
 
-Because the Keycloak version I am using, 1.7.0.Final, but also the newest one Stand 2.1.0.Final still uses Jackson Version 1.9.x
-I had to convince the JBoss Server that this is the version I want, by
+Because the Keycloak version I am using, 1.7.0.Final, but also the newest one, 2.1.0.Final still use Jackson Version 1.9.x I had to convince the JBoss Server EAP 7 that this is the version I want.
+Some of the Jackson classes like for example `ObjectMapper` are used throughout the code, for example to show a pretty format in Jackson of an `AppException`:
 
-TODO - verify without the provider and without the jboss-deployment-structure.xml if it still works; if it works mention how would you use Jackson 2.2.x versions...
+```java
+    ObjectMapper mapper = new ObjectMapper();
+    try {
+        logger.error("Application Exception: \n "
+                + mapper.writerWithDefaultPrettyPrinter().writeValueAsString(appException.getErrorMessage())
+                + "\n");
+    } catch (IOException e1) {
+        logger.error("Error when pretty printing the error message", e1);
+    }
+```
 
+, I had to import the RestEasy Jackson Provider maven dependency as provided:
+
+```xml
+    <dependency>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-jackson-provider</artifactId>
+        <version>3.0.16.Final</version>
+        <scope>provided</scope>
+    </dependency>
+```
+ 
+
+To get thinks working I had to also create a `jboss-deployment-structure.xml` file withing the *WEB-INF* directory and tell JBoss to exclude the `resteasy-jackson2-provider` and 
+to import the `resteasy-jackson-provider` :
+
+```xml
+<jboss-deployment-structure>
+    <deployment>
+        <exclusions>
+            <module name="org.jboss.resteasy.resteasy-jackson2-provider"/>
+        </exclusions>
+        <dependencies>
+            <module name="org.jboss.resteasy.resteasy-jackson-provider" services="import"/>
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>
+```
 
 ### Keycloak
 

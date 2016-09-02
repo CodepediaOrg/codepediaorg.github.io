@@ -113,21 +113,67 @@ to
 ```
 
 ### persistence.xml
-TODO add here and test
 
-## REST API modifications
+*From*
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence
+        xmlns="http://java.sun.com/xml/ns/persistence"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+        version="2.0">
+...........
+</persistence>
+
+```
+
+*To*
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+...........
+</persistence>
+
+```
+
+## Meet JAX-RS 2.0
 
 > [The documentation for RESTEasy is for the version 3.0.16.Final](http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html) as this is the version used for JBoss EAP 7.0.0 for which the migration took place.
+For other versions check the [RESTEasy Documentation](http://resteasy.jboss.org/docs.html), where you can find  examples, HTML, PDF, Javadocs for all RESTEasy versions. 
+
+### Server API
+
+On the server side the things have remained much or less the same, needless to say they were very good to begin with.
+The way to go with with RESTEasy is to define an `javax.ws.rs.core.Application` class that is annotated withe the `@ApplicationPath` annotation.If you return
+any empty set for by classes and singletons, your WAR will be scanned for JAX-RS annotation resource and provider classes[^].
+
+```java
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+
+@ApplicationPath("/root-path")
+public class MyApplication extends Application
+{
+}     
+```
+
+The Resteasy distribution has ported the "Restful Java" O'Reilly workbook examples to AS7. You can find these under the directory examples/oreilly-workbook-as7 - https://github.com/resteasy/Resteasy/tree/3.0.16.Final/jaxrs/examples/oreilly-jaxrs-2.0-workbook
 
 
-### REST API
+[^]: <http://docs.jboss.org/resteasy/docs/3.0.19.Final/userguide/html_single/index.html#d4e42>
 
-TODO - modify the version and hypermedia stuff...
 
-### RESTEasy Client API
+### Client API
 
-The backend of the api some calls are made to a Keycloak[^4] Admin REST API[^5]. Although the current RESTEasy implementation comes with JAX-RS 2.0 support[^6], I preferred using the `RestEasyClientBuilder` implementation in combination with the Resteasy Proxy Framework[^7], as so I've used it in JBoss EAP 6 and I still find it cool to use JAX-RS annotations to invoke on a remote HTTP resource. The way it works is that you write a Java interface and use JAX-RS annotations on methods and the interface. Check out the documentation[^7] and the code snippets posted below to see what I mean
+JAX-RS 1.0 was more or less a server side API. To write client calls one would most likely go to Apache's HTTP Client[^]. But JAX-RS 2.0  introduces a new API to make requests to REST web services.
+I needed such a client to make api calls to a Keycloak[^4] Admin REST API[^5]. Although the current RESTEasy implementation comes with JAX-RS 2.0 support[^6], I preferred using the `RestEasyClientBuilder` implementation in combination with the Resteasy Proxy Framework[^7], as so I've used it in JBoss EAP 6 and I still find it cool to use JAX-RS annotations to invoke on a remote HTTP resource. The way it works is that you write a Java interface and use JAX-RS annotations on methods and the interface. Check out the documentation[^7] and the code snippets posted below to see what I mean
 
+[^]: <https://hc.apache.org/httpcomponents-client-ga/>
 [^4]: <http://www.keycloak.org>
 [^5]: <http://www.keycloak.org/docs/rest-api/index.html>
 [^6]: <http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#RESTEasy_Client_Framework>
@@ -428,9 +474,50 @@ public class LoggingInterceptor implements javax.ws.rs.container.ContainerRespon
 }
 ```
 
+> All interceptors and filters registered with the `@Provider` annotation are globally enabled for all resources.
+
 #### CORS interceptor
-TODO
-http://stackoverflow.com/questions/29388937/problems-resteasy-3-09-corsfilter
+
+```java
+
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+import java.util.HashSet;
+import java.util.Set;
+
+
+@ApplicationPath("")
+public class TestApplication extends Application {
+
+    private Set<Object> singletons = new HashSet<Object>();
+    private HashSet<Class<?>> classes = new HashSet<Class<?>>();
+
+    public OnePortalB2bApplication()
+    {
+        CorsFilter corsFilter = new CorsFilter();
+        corsFilter.getAllowedOrigins().add("*");
+        corsFilter.setAllowedMethods("OPTIONS, GET, POST, DELETE, PUT, PATCH");
+        singletons.add(corsFilter);
+
+        classes.add(ApiResource.class);
+        classes.add(UsersResource.class);
+    }
+
+    @Override
+    public Set<Object> getSingletons() {
+        return singletons;
+    }
+
+    @Override
+    public HashSet<Class<?>> getClasses(){
+      return classes;
+    }
+
+}
+
+```
+
+
 
 
 #### GZIP filter
@@ -511,3 +598,11 @@ The Keycloak core uses also Jackson, and to make sure not to make a conflicting 
 
 
 ## References
+
+### Other good REST(easy) related resources
+
+
+* [RESTEasy Documentation examples, HTML, PDF, Javadocs](http://resteasy.jboss.org/docs.html) - for all versions...
+* [Java EE 7 and JAX-RS 2.0](http://www.oracle.com/technetwork/articles/java/jaxrs20-1929352.html) by Adam Bien
+* [What's new in JAX-RS 2.0](https://www.infoq.com/news/2013/06/Whats-New-in-JAX-RS-2.0) at InfoQ
+* [Java EE 7 Deployment Descriptors](https://antoniogoncalves.org/2013/06/04/java-ee-7-deployment-descriptors/)

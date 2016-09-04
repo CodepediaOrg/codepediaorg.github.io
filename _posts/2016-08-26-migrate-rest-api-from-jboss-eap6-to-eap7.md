@@ -16,6 +16,9 @@ In this post I will briefly describe the steps and issues encountered when migra
 
 <!--more-->
 
+* TOC
+{:toc}
+
 ## Update dependencies versions
 
 The first thing I've done was to migrate the library dependencies used in the project. You can find usual component versions, like RESTEasy, Hibernate, Hibernate-validator etc. at [JBoss Enterprise Application Platform Component Details](https://access.redhat.com/articles/112673#EAP_7). A couple of example are:

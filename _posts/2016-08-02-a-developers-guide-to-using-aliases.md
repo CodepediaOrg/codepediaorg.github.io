@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A developer's guide to using aliases
-description: "In this post, I am presenting a show introduction to aliases and how I am using bash aliases to make my everyday developer life easier"
+description: "In this post, I am presenting a short introduction to aliases and how I am using them to make my everyday developer life easier"
 author: ama
 permalink: /ama/a-developers-guide-to-using-aliases/
 published: true
@@ -287,6 +287,13 @@ alias nginx-config-backup=nginxconfigbackup
 nginxconfigbackup(){
   sudo cp /usr/local/etc/nginx/nginx.conf /usr/local/etc/nginx/nginx.conf.$(date "+%Y-%m-%d_%H:%M")-$1 #the parameter ending is the comment use dashes "-" between words
 }
+```
+
+### Npm - https://www.npmjs.com/
+```
+#npm
+alias npmi="npm install" 
+alias npmig="npm install -g" # -g install globally
 ```
 
 ### Ps

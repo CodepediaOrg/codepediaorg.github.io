@@ -1,15 +1,15 @@
 ---
 layout: post
 title: How to migrate a Java EE REST API from JBoss EAP 6 to EAP 7
-description: "In this post I will list a few points I had to do to migrate a Java REST API from JBoss EAP 6/JEE 6/JAX RS 1.0 to Jboss EAP7/JEE 7/JAX RS 2.0"
+description: "In this post I will present a few points I had to do to migrate a Java REST API from JBoss EAP 6/JEE 6/JAX RS 1.0 to Jboss EAP7/JEE 7/JAX RS 2.0"
 author: ama
 permalink: /ama/how-to-migrate-a-java-ee-rest-api-from-jboss-eap6-to-jboss-eap7
 published: true
 categories: [java ee]
-tags: [jboss, wildfly, rest, resteasy, java ee, keycloak]
+tags: [jboss, wildfly, rest, resteasy, java ee, keycloak, cors]
 ---
 
-In this post I will briefly describe the steps and issues encountered when migrating a Java EE REST API from JBoss EAP 6 to JBoss EAP 7. Not long time ago Red Hat  announced the general availability of their JBoss Enterprise Application Platform 7 (JBoss EAP) [^1] - this was great news because one can use Java EE 7 in the enterprise and benefit from the Red Hat's support. JBoss EAP 7 is based on Wildfly 10[^2], so the code snippets showed along the post should work there too.
+In this post I will briefly describe the steps and issues encountered when migrating a Java EE REST API from JBoss EAP 6 to JBoss EAP 7 - this implies migrating from a Java EE 6/JAX RS 1.0 implementation to a Java EE 7/JAX RS.2.0 implementation. The trigger was the announcement from Red Hat regarding the general availability of their JBoss Enterprise Application Platform 7 (JBoss EAP) [^1]. JBoss EAP 7 is based on Wildfly 10[^2], so the code snippets showed along the post should work on Wildfly 10 too.
 
 [^1]: <https://www.redhat.com/en/about/press-releases/red-hat-delivers-jboss-eap-7-foundation-hybrid-cloud-applications>
 [^2]: <https://access.redhat.com/documentation/en/red-hat-jboss-enterprise-application-platform/7.0/paged/introduction-to-jboss-eap/chapter-2-overview-of-jboss-eap>
@@ -18,7 +18,7 @@ In this post I will briefly describe the steps and issues encountered when migra
 
 ## Update dependencies versions
 
-The first I've done was to migrate the library dependencies used in the project. You can find usual component version like RESTEasy, Hibernate, Hibernate-validator etc. at [JBoss Enterprise Application Platform Component Details](https://access.redhat.com/articles/112673#EAP_7). A couple of example are:
+The first thing I've done was to migrate the library dependencies used in the project. You can find usual component versions, like RESTEasy, Hibernate, Hibernate-validator etc. at [JBoss Enterprise Application Platform Component Details](https://access.redhat.com/articles/112673#EAP_7). A couple of example are:
 
 |    Library      |  JBoss EAP 6  |  JBoss EAP 7  |
 | --------------  |:-------------:| -------------:|
@@ -27,50 +27,45 @@ The first I've done was to migrate the library dependencies used in the project.
 
 > Be aware to adjust the versions whenever you update to a newer minor/major release
 
-
 ### Update the JBoss JavaEE Specs API [^3]
 
 [^3]: <https://github.com/jboss/jboss-javaee-specs>
 
-From
+**From**
 
-```
-<jboss-javaee-6.0.version>3.0.3.Final</jboss-javaee-6.0.version>
-
+```xml
 <dependency>
     <groupId>org.jboss.spec</groupId>
     <artifactId>jboss-javaee-6.0</artifactId>
-    <version>${jboss-javaee-6.0.version}</version>
+    <version>3.0.3.Final</version>
     <type>pom</type>
     <scope>provided</scope>
 </dependency>
 ```
 
-to
+**to**
 
-```
-<jboss-javaee-7.0.version>1.0.3.Final</jboss-javaee-7.0.version>
-
+```xml
 <!-- https://mvnrepository.com/artifact/org.jboss.spec/jboss-javaee-7.0 -->
 <dependency>
     <groupId>org.jboss.spec</groupId>
     <artifactId>jboss-javaee-7.0</artifactId>
-    <version>${jboss-javaee-7.0.version}</version>
+    <version>1.0.3.Final</version>
     <type>pom</type>
 </dependency>
 ```
 
 ## Java EE Deployment Descriptors
 
-The next thing to modify were the Java EE deployment descriptors. Check out the [Java EE: XML Schemas for Java EE Deployment Descriptors](http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/index.html) document from Oracle to see the new descriptor versions and namespaces. All Java EE 7 and newer Deployment Descriptor Schemas share now the namespace __http://xmlns.jcp.org/xml/ns/javaee/__
+The next thing to modify, were the Java EE deployment descriptors. Check out the [Java EE: XML Schemas for Java EE Deployment Descriptors](http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/index.html) document from Oracle to see the new descriptor versions and namespaces. All Java EE 7 and newer Deployment Descriptor Schemas share now the namespace __http://xmlns.jcp.org/xml/ns/javaee/__
 
-Down below are listed the ones I needed in my project:
+Down below are listed the ones I used in my project:
 
 ### web.xml
 
-From
+**From**
 
-```
+```xml
 <web-app
         xmlns="http://java.sun.com/xml/ns/javaee"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -80,9 +75,9 @@ From
 </web-app>
 ```
 
-to
+**to**
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -92,18 +87,18 @@ to
 
 ### beans.xml
 
-From
+**From**
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/beans_1_0.xsd">
 </beans>
 ```
 
-to
+**To**
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://xmlns.jcp.org/xml/ns/javaee"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -114,9 +109,9 @@ to
 
 ### persistence.xml
 
-*From*
+**From**
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence
         xmlns="http://java.sun.com/xml/ns/persistence"
@@ -128,9 +123,9 @@ to
 
 ```
 
-*To*
+**To**
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -143,14 +138,13 @@ to
 
 ## Meet JAX-RS 2.0
 
-> [The documentation for RESTEasy is for the version 3.0.16.Final](http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html) as this is the version used for JBoss EAP 7.0.0 for which the migration took place.
-For other versions check the [RESTEasy Documentation](http://resteasy.jboss.org/docs.html), where you can find  examples, HTML, PDF, Javadocs for all RESTEasy versions. 
+> The RESTEasy documentation version referenced throughout this post is [3.0.16.Final](http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html), as this is the version used for JBoss EAP 7.0.0, for which the migration took place at the time of the writing.
+For other/newer versions check the [RESTEasy Documentation](http://resteasy.jboss.org/docs.html), where you can find  examples, HTML, PDF, Javadocs for all RESTEasy versions.
 
 ### Server API
 
-On the server side the things have remained much or less the same, needless to say they were very good to begin with.
-The way to go with with RESTEasy is to define an `javax.ws.rs.core.Application` class that is annotated withe the `@ApplicationPath` annotation.If you return
-any empty set for by classes and singletons, your WAR will be scanned for JAX-RS annotation resource and provider classes[^].
+On the server side the things have remained much or less the same. One has to admit they were very good to begin with.
+The way to go with with RESTEasy is to define an `javax.ws.rs.core.Application` class that is annotated with the `@ApplicationPath` annotation.If you return an empty set of classes and singletons (or nothing), your WAR will be scanned for JAX-RS annotation resource and provider classes[^4]:
 
 ```java
 import javax.ws.rs.ApplicationPath;
@@ -162,22 +156,85 @@ public class MyApplication extends Application
 }     
 ```
 
-The Resteasy distribution has ported the "Restful Java" O'Reilly workbook examples to AS7. You can find these under the directory examples/oreilly-workbook-as7 - https://github.com/resteasy/Resteasy/tree/3.0.16.Final/jaxrs/examples/oreilly-jaxrs-2.0-workbook
-
-
-[^]: <http://docs.jboss.org/resteasy/docs/3.0.19.Final/userguide/html_single/index.html#d4e42>
-
+[^4]: <http://docs.jboss.org/resteasy/docs/3.0.19.Final/userguide/html_single/index.html#d4e42>
 
 ### Client API
 
-JAX-RS 1.0 was more or less a server side API. To write client calls one would most likely go to Apache's HTTP Client[^]. But JAX-RS 2.0  introduces a new API to make requests to REST web services.
-I needed such a client to make api calls to a Keycloak[^4] Admin REST API[^5]. Although the current RESTEasy implementation comes with JAX-RS 2.0 support[^6], I preferred using the `RestEasyClientBuilder` implementation in combination with the Resteasy Proxy Framework[^7], as so I've used it in JBoss EAP 6 and I still find it cool to use JAX-RS annotations to invoke on a remote HTTP resource. The way it works is that you write a Java interface and use JAX-RS annotations on methods and the interface. Check out the documentation[^7] and the code snippets posted below to see what I mean
+JAX-RS 1.0 was more or less a server side API. To write client calls one would most likely go to Apache's HTTP Client[^5]. Now JAX-RS 2.0  introduces a new API to make requests to REST web services. I needed such a REST client to make api calls to a Keycloak[^6] Admin REST API[^7]. Although the current RESTEasy implementation comes with JAX-RS 2.0 support[^8], I preferred to use  the `RestEasyClientBuilder` implementation in combination with the Resteasy Proxy Framework[^7], because I've used it like that in JBoss EAP 6 and I still find it cool to use JAX-RS annotations on the client side too. The way it works is that you write a Java interface and use JAX-RS annotations on methods of the interface. Check out the code snippets posted below and the documentation[^9] to see what I mean
 
-[^]: <https://hc.apache.org/httpcomponents-client-ga/>
-[^4]: <http://www.keycloak.org>
-[^5]: <http://www.keycloak.org/docs/rest-api/index.html>
-[^6]: <http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#RESTEasy_Client_Framework>
-[^7]: <http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#d4e2149>
+[^5]: <https://hc.apache.org/httpcomponents-client-ga/>
+[^6]: <http://www.keycloak.org>
+[^7]: <http://www.keycloak.org/docs/rest-api/index.html>
+[^8]: <http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#RESTEasy_Client_Framework>
+[^9]: <http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#d4e2149>
+
+#### REST Client interface
+
+From
+
+```java
+import org.jboss.resteasy.client.ClientResponse;
+import org.keycloak.representations.idm.CredentialRepresentation;
+import org.keycloak.representations.idm.RoleRepresentation;
+import org.keycloak.representations.idm.UserRepresentation;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+import java.util.List;
+
+/**
+ * Client to access the Keycloak admin REST API
+ */
+public interface KeycloakApiClient {
+
+    @POST
+    @Path("users")
+    @Consumes(MediaType.APPLICATION_JSON)
+    ClientResponse<String> createUser(UserRepresentation userRepresentation,
+                                      @HeaderParam("Authorization") String authorization);
+
+    @GET
+    @Path("users")
+    @Produces(MediaType.APPLICATION_JSON)
+    ClientResponse<List<UserRepresentation>> getUserByEmail(@QueryParam("email") String email,
+                                      @HeaderParam("Authorization") String authorization);
+    ...........
+}
+```
+
+to
+
+```java
+import org.jboss.resteasy.client.ClientResponse;
+import org.keycloak.representations.idm.CredentialRepresentation;
+import org.keycloak.representations.idm.RoleRepresentation;
+import org.keycloak.representations.idm.UserRepresentation;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.util.List;
+
+/**
+ * Client to access the Keycloak admin REST API
+ */
+public interface KeycloakApiClient {
+
+    @POST
+    @Path("users")
+    @Consumes(MediaType.APPLICATION_JSON)
+    Response createUser(UserRepresentation userRepresentation,
+                        @HeaderParam("Authorization") String authorization);
+
+    @GET
+    @Path("users")
+    @Produces(MediaType.APPLICATION_JSON)
+    List<UserRepresentation>  getUserByEmail(@QueryParam("email") String email,
+                                      @HeaderParam("Authorization") String authorization);
+
+    ...............................
+}
+```
 
 #### REST client producer
 
@@ -196,7 +253,6 @@ public class KeycloakApiClientProducer {
         return ProxyFactory.create(KeycloakApiClient.class, KEYCLOAK_AUTH_ADMIN_REALMS_ONEPORTAL_BASE_URL);
     }
 }
-
 ```
 
 to
@@ -219,91 +275,22 @@ public class KeycloakApiClientProducer {
         ResteasyWebTarget target = client.target(KEYCLOAK_AUTH_ADMIN_REALMS_ONEPORTAL_BASE_URL);
 
         return target.proxy(KeycloakApiClient .class);
-
     }
 }
-
 ```
 
-> A producer method acts as a source of objects to be injected[^8] in CDI
+> A producer method acts as a source of objects to be injected[^10] in CDI
 
-[^8]: <http://stackoverflow.com/questions/16534728/please-explain-the-produces-annotation-in-cdi>
-
-#### REST Client itself
-
-From
-
-```java
-import org.jboss.resteasy.client.ClientResponse;
-import org.keycloak.representations.idm.CredentialRepresentation;
-import org.keycloak.representations.idm.RoleRepresentation;
-import org.keycloak.representations.idm.UserRepresentation;
-
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-import java.util.List;
-
-/**
- * Client to access the Keycloak admin REST API
- * Currently supported operations: reset password and update user details
- */
-public interface KeycloakApiClient {
-
-    @POST
-    @Path("users")
-    @Consumes(MediaType.APPLICATION_JSON)
-    ClientResponse<String> createUser(UserRepresentation userRepresentation,
-                                      @HeaderParam("Authorization") String authorization);
-
-    @GET
-    @Path("users")
-    @Produces(MediaType.APPLICATION_JSON)
-    ClientResponse<List<UserRepresentation>> getUserByEmail(@QueryParam("email") String email,
-                                      @HeaderParam("Authorization") String authorization);
-    ...........
-}
-```
-
-to
-
-```
-import org.jboss.resteasy.client.ClientResponse;
-import org.keycloak.representations.idm.CredentialRepresentation;
-import org.keycloak.representations.idm.RoleRepresentation;
-import org.keycloak.representations.idm.UserRepresentation;
-
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import java.util.List;
-
-/**
- * Client to access the Keycloak admin REST API
- * Currently supported operations: reset password and update user details
- */
-public interface KeycloakApiClient {
-
-
-    @POST
-    @Path("users")
-    @Consumes(MediaType.APPLICATION_JSON)
-    Response createUser(UserRepresentation userRepresentation,
-                        @HeaderParam("Authorization") String authorization);
-
-    @GET
-    @Path("users")
-    @Produces(MediaType.APPLICATION_JSON)
-    List<UserRepresentation>  getUserByEmail(@QueryParam("email") String email,
-                                      @HeaderParam("Authorization") String authorization);
-
-    ...............................
-}
-```
-
+[^10]: <http://stackoverflow.com/questions/16534728/please-explain-the-produces-annotation-in-cdi>
 
 #### REST Client Usage
 
-```java
+**From**
+
+```
+@Inject
+KeycloakClient keycloakClient;
+
 String keycloakUserId;
 ClientResponse<String> userDetailsUpdateResponse = null;
 try{
@@ -348,12 +335,14 @@ try{
         userDetailsRepresentation.releaseConnection();
     }
 }
-
 ```
 
-to
+**To**
 
 ```java
+@Inject
+KeycloakClient keycloakClient;
+.......
 String keycloakUserId;
 Response userDetailsUpdateResponse = null;
 try{
@@ -379,13 +368,15 @@ try{
 UserRepresentation userDetails = keycloakApiClient.getUserDetails(keycloakUserId, realmAdminBearerToken);
 ```
 
+> Note in the examples above that Resteasy will release the connection under covers. On the other hand, if the result of an invocation is an instance of **Response**, then **Response.close()** method must be used to released the connection - the method <code class="java"> Response createUser(UserRepresentation userRepresentation, @HeaderParam("Authorization") String authorization)</code> and its usage in the **To** snippet above is a good example
+
 ### Filters and Interceptors
 
 #### Logging interceptor
 
-Used to log incoming request paths and responses in INFO log level for traceability. Uses now standard JAX RS 2.0 filters - `javax.ws.rs.container.ContainerResponseFilter`
+The logging interceptor is used to trace incoming request paths and responses at INFO level and now is implemented with standard JAX RS 2.0 filters - `javax.ws.rs.container.ContainerResponseFilter`
 
-*From*
+**From**
 
 ```java
 import org.jboss.resteasy.annotations.interception.ServerInterceptor;
@@ -428,14 +419,13 @@ public class LoggingInterceptor implements PreProcessInterceptor {
 
         return null;
     }
-
 }
 ```
 
-*to*
+**To**
 
 ```java
-mport org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.map.ObjectMapper;
 import org.slf4j.Logger;
 
 import javax.inject.Inject;
@@ -478,13 +468,15 @@ public class LoggingInterceptor implements javax.ws.rs.container.ContainerRespon
 
 #### CORS interceptor
 
-```java
+Resteasy has a built-in `ContainerRequestFilter` that can be used to handle CORS preflight and actual requests -  the `org.jboss.resteasy.plugins.interceptors.CorsFilter`[^11]. In order to use it, you must allocate this and register it as a singleton provider from your `Application` class. See below an example:
 
+[^11]:<http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#d4e1327>
+
+```java
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
 import java.util.Set;
-
 
 @ApplicationPath("")
 public class TestApplication extends Application {
@@ -512,40 +504,22 @@ public class TestApplication extends Application {
     public HashSet<Class<?>> getClasses(){
       return classes;
     }
-
 }
-
 ```
 
+> If you want to implement a CORS filter yourself and not make you dependent of the RESTEasy framework you can just inspire yourself from the [RESTEasy implementation](https://github.com/resteasy/Resteasy/blob/4e5acbb3f61263a300f0316d952233a404f9b702/resteasy-jaxrs/src/main/java/org/jboss/resteasy/plugins/interceptors/CorsFilter.java), which, as said, handles CORS[^12] requests both preflight and simple CORS requests.
 
-
-
-#### GZIP filter
-TODO
+[^12]:<https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS>
 
 ## Jackson
 
-Besides the Jettision JAXB adapter for JSON, Resteasy also support integration with the Jackson project. Many users (I am one of them) find the output from Jackson much much nicer than the Badger format or Mapped format provided by Jettison. Jackson lives at http://jackson.codehaus.org. It allows you to easily marshal Java objects to and from JSON. It has a Java Bean based model as well as JAXB like APIs. Resteasy integrates with the JavaBean model.
+Besides the Jettison JAXB adapter for JSON, Resteasy also support integration with the Jackson project. Many users (I am one of them) find the output from Jackson much much nicer than the Badger format or Mapped format provided by Jettison. Jackson allows you to easily marshal Java objects to and from JSON. It has a Java Bean based model as well as JAXB like APIs. Resteasy integrates with the JavaBean model.
 
-While Jackson does come with its own JAX-RS integration. Resteasy expanded it a little. To include it within your project, just add this maven dependency to your build. Resteasy supports both Jackson 1.9.x and Jackson 2.2.x. Read further on how to use each.[^].
+While Jackson does come with its own JAX-RS integration. Resteasy expanded it a little.To include it within your project, just add this maven dependency to your build. Resteasy supports both Jackson 1.9.x and Jackson 2.2.x. Read further on how to use each.[^13].
 
-[^]: <http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#json>
+[^13]: <http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#json>
 
-Because the Keycloak version I am using, 1.7.0.Final, but also the newest one, 2.1.0.Final still use Jackson Version 1.9.x I had to convince the JBoss Server EAP 7 that this is the version I want.
-Some of the Jackson classes like for example `ObjectMapper` are used throughout the code, for example to show a pretty format in Jackson of an `AppException`:
-
-```java
-    ObjectMapper mapper = new ObjectMapper();
-    try {
-        logger.error("Application Exception: \n "
-                + mapper.writerWithDefaultPrettyPrinter().writeValueAsString(appException.getErrorMessage())
-                + "\n");
-    } catch (IOException e1) {
-        logger.error("Error when pretty printing the error message", e1);
-    }
-```
-
-, I had to import the RestEasy Jackson Provider maven dependency as provided:
+Because of the Keycloak version I am using, 1.7.0.Final still use Jackson Version 1.9.x (apparently the newest one, 2.1.0.Final, also uses the same version), I had to convince the JBoss Server EAP 7 that this is the version I want. To do this I had to import the RestEasy Jackson Provider maven dependency and mark it as _provided_:
 
 ```xml
     <dependency>
@@ -555,10 +529,8 @@ Some of the Jackson classes like for example `ObjectMapper` are used throughout 
         <scope>provided</scope>
     </dependency>
 ```
- 
 
-To get thinks working I had to also create a `jboss-deployment-structure.xml` file withing the *WEB-INF* directory and tell JBoss to exclude the `resteasy-jackson2-provider` and 
-to import the `resteasy-jackson-provider` :
+and also create a `jboss-deployment-structure.xml` file within the *WEB-INF* directory and tell JBoss to exclude the `resteasy-jackson2-provider` and import the `resteasy-jackson-provider` :
 
 ```xml
 <jboss-deployment-structure>
@@ -573,9 +545,22 @@ to import the `resteasy-jackson-provider` :
 </jboss-deployment-structure>
 ```
 
+Some of the Jackson classes can now be used throughout the application, like for example the `ObjectMapper`, to pretty print in JSON a `AppException`:
+
+```java
+    ObjectMapper mapper = new ObjectMapper();
+    try {
+        logger.error("Application Exception: \n "
+                + mapper.writerWithDefaultPrettyPrinter().writeValueAsString(appException.getErrorMessage())
+                + "\n");
+    } catch (IOException e1) {
+        logger.error("Error when pretty printing the error message", e1);
+    }
+```
+
 ### Keycloak
 
-The Keycloak core uses also Jackson, and to make sure not to make a conflicting version of it exclude the libraries from the dependency and it will use the one provided by the JBoss container:
+As mentioned, the Keycloak core uses also Jackson, and to avoid a potential conflicting  or undebuggable errors, I force Keycloak to use the Jackson packages that come with the RESTEasy provider via maven exclusions:
 
 ```xml
     <dependency>
@@ -596,13 +581,11 @@ The Keycloak core uses also Jackson, and to make sure not to make a conflicting 
     </dependency>
 ```
 
-
-## References
-
-### Other good REST(easy) related resources
-
+## Other good REST(easy) related resources
 
 * [RESTEasy Documentation examples, HTML, PDF, Javadocs](http://resteasy.jboss.org/docs.html) - for all versions...
 * [Java EE 7 and JAX-RS 2.0](http://www.oracle.com/technetwork/articles/java/jaxrs20-1929352.html) by Adam Bien
 * [What's new in JAX-RS 2.0](https://www.infoq.com/news/2013/06/Whats-New-in-JAX-RS-2.0) at InfoQ
 * [Java EE 7 Deployment Descriptors](https://antoniogoncalves.org/2013/06/04/java-ee-7-deployment-descriptors/)
+
+## References

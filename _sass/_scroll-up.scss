@@ -1,8 +1,8 @@
 // breakpoints
-
 $S:    480px;
-$M:     768px;
-$L:     1024px;
+$M:     760px;
+$L:     1000px; // at this breakpoint moves the "follow on twitter" in the upper menu
+
 $link: #e86256; // anchor tags
 
 // media queries
@@ -26,8 +26,8 @@ $link: #e86256; // anchor tags
 	width: 40px;
 
 	position: fixed;
-	bottom: 40px;
-	left: 30px;
+	bottom: 70px;
+	right: 10px;
 
 	box-shadow: 0 0 10px rgba(#000, .05);
 
@@ -66,14 +66,14 @@ $link: #e86256; // anchor tags
 	}
 
 	@include MQ(M) {
-		left: 20px;
-		bottom: 20px;
+		right: 20px;
+		bottom: 70px;
 	}
 
 	@include MQ(L) {
 		height: 60px;
 		width: 60px;
-		left: 30px;
+		left: 25px;
 		bottom: 30px;
 	}
 }

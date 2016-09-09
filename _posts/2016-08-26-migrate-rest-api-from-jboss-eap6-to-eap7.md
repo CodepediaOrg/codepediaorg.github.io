@@ -249,11 +249,11 @@ import javax.enterprise.inject.Produces;
 
 public class KeycloakApiClientProducer {
 
-    private static final String KEYCLOAK_AUTH_ADMIN_REALMS_PODCASTPEDIA_BASE_URL = "http://localhost:8180/auth/admin/realms/podcastpedia";
+    private static final String KEYCLOAK_AUTH_ADMIN_REALMS_TEST_BASE_URL = "http://localhost:8180/auth/admin/realms/podcastpedia";
 
     @Produces
     public KeycloakApiClient getKeycloakApiClient(){
-        return ProxyFactory.create(KeycloakApiClient.class, KEYCLOAK_AUTH_ADMIN_REALMS_ONEPORTAL_BASE_URL);
+        return ProxyFactory.create(KeycloakApiClient.class, KEYCLOAK_AUTH_ADMIN_REALMS_TEST_BASE_URL);
     }
 }
 ```
@@ -269,13 +269,13 @@ import javax.enterprise.inject.Produces;
 
 public class KeycloakApiClientProducer {
 
-    private static final String KEYCLOAK_AUTH_ADMIN_REALMS_PODCASTPEDIA_BASE_URL = "http://localhost:8180/auth/admin/realms/podcastpedia";
+    private static final String KEYCLOAK_AUTH_ADMIN_REALMS_TEST_BASE_URL = "http://localhost:8180/auth/admin/realms/podcastpedia";
 
     @Produces
     public KeycloakApiClient getKeycloakApiClient(){
         ResteasyClientBuilder resteasyClientBuilder = new ResteasyClientBuilder().connectionPoolSize(20);
         ResteasyClient client = resteasyClientBuilder.build();
-        ResteasyWebTarget target = client.target(KEYCLOAK_AUTH_ADMIN_REALMS_ONEPORTAL_BASE_URL);
+        ResteasyWebTarget target = client.target(KEYCLOAK_AUTH_ADMIN_REALMS_TEST_BASE_URL);
 
         return target.proxy(KeycloakApiClient .class);
     }
@@ -487,7 +487,7 @@ public class TestApplication extends Application {
     private Set<Object> singletons = new HashSet<Object>();
     private HashSet<Class<?>> classes = new HashSet<Class<?>>();
 
-    public OnePortalB2bApplication()
+    public TestApplication()
     {
         CorsFilter corsFilter = new CorsFilter();
         corsFilter.getAllowedOrigins().add("*");

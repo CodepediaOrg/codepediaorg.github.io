@@ -6,6 +6,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 {% include head.html %}
+  <!-- include stuff relevant only for posts -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.2/clipboard.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
 </head>
 
 <body id="post" {% if page.image.feature %}class="feature"{% endif %}>
@@ -44,6 +47,8 @@
     {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
     {% if site.related_posts.size > 0 %}{% include read-more.html %}{% endif %}
   </article>
+
+
 </div><!-- /#main -->
 
 {% include scripts.html %}
@@ -57,5 +62,6 @@
 <!-- scroll to top -->
 <a href="#0" class="cd-top">Top</a>
 <script type="text/javascript" src="{{ site.url }}/assets/js/scroll-up.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/clipboard.js"></script>
 </body>
 </html>

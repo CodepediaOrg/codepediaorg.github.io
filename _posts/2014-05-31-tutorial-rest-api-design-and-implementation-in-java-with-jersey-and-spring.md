@@ -405,9 +405,7 @@ Before I start presenting the design and implementation of the REST API, we need
   The <a title="https://jersey.java.net/documentation/latest/spring.html" href="https://jersey.java.net/documentation/latest/spring.html" target="_blank">Jersey Spring extension</a> must be present in your project&#8217;s classpath. If you are using Maven add it to the <code>pom.xml</code> file of your project:
 </p>
 
-<pre>
-  <code class="xml">
-    &lt;dependency&gt;
+<pre><code class="xml">&lt;dependency&gt;
         &lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
         &lt;artifactId&gt;jersey-spring3&lt;/artifactId&gt;
         &lt;version&gt;${jersey.version}&lt;/version&gt;
@@ -430,9 +428,7 @@ Before I start presenting the design and implementation of the REST API, we need
         &lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
         &lt;artifactId&gt;jersey-media-json-jackson&lt;/artifactId&gt;
         &lt;version&gt;2.4.1&lt;/version&gt;
-    &lt;/dependency&gt;
-  </code>
-</pre>
+    &lt;/dependency&gt;</code></pre>
 
 <p class="note_normal" style="text-align: justify;">
   <strong>Note:</strong> The jersey-spring3.jar, uses its own version for Spring libraries, so to use the ones you want (Spring 4.0.3.Release in this case), you need to exclude these libraries manually.
@@ -443,9 +439,7 @@ Before I start presenting the design and implementation of the REST API, we need
 </p>
 
 ### <span id="22_webxml">2.2. web.xml</span>
-<pre>
-  <code class="xml">
-    &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
     &lt;web-app version=&quot;3.0&quot; xmlns=&quot;http://java.sun.com/xml/ns/javaee&quot;
     	xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
     	xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd&quot;&gt;
@@ -501,9 +495,7 @@ My implementation of the `ResourceConfig` class, ``<p style="text-align: justify
 
 My implementation of the `ResourceConfig` class,`` registers application resources, filters, exception mappers and feature :
 
-<pre>
-  <code class="java">
-    package org.codingpedia.demo.rest.service;
+<pre><code class="java">package org.codingpedia.demo.rest.service;
 
     //imports omitted for brevity
 
@@ -537,8 +529,7 @@ My implementation of the `ResourceConfig` class,`` registers application resourc
     		register(JacksonFeature.class);
     		register(MultiPartFeature.class);
     	}
-    }
-  </code>
+    }</code>
 </pre>
 
 Please note the
@@ -557,9 +548,7 @@ Please note the
 
 The Spring application context configuration is located in the classpath under `spring/applicationContext.xml`:
 
-<pre>
-  <code class="xml">
-    &lt;beans xmlns="http://www.springframework.org/schema/beans"
+<pre><code class="xml">&lt;beans xmlns="http://www.springframework.org/schema/beans"
     	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     	xmlns:context="http://www.springframework.org/schema/context"
     	xmlns:tx="http://www.springframework.org/schema/tx"
@@ -672,9 +661,7 @@ For the sake of simplicity, a podcast will have only the following properties:
 
 The <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" target="_blank">Podcast.java</a> classs look something like the following:
 
-<pre>
-  <code class="java">
-    package org.codingpedia.demo.rest.resource;
+<pre><code class="java">package org.codingpedia.demo.rest.resource;
 
     //imports omitted for brevity
 
@@ -748,17 +735,14 @@ The <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e6
 
 and translates into the following JSON representation, which is actually the de facto media type used with REST nowadays:
 
-<pre>
-  <code class="json">
-    {
+<pre><code class="json">{
     	"id":1,
     	"title":"Quarks & Co - zum Mitnehmen-modified",
     	"linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/1/Quarks-Co-zum-Mitnehmen",
     	"feed":"http://podcast.wdr.de/quarks.xml",
     	"description":"Quarks & Co: Das Wissenschaftsmagazin",
     	"insertionDate":"2014-05-30T10:26:12.00+0200"
-    }
-  </code>
+    }</code>
 </pre>
 
 <p class="note_normal" style="text-align: justify;">
@@ -790,8 +774,7 @@ and is not a strict 1:1 mapping. Why? Because you can also use PUT for Creation 
 
 As already mentioned the `PodcastRestResource` class is the one handling all the rest requests:
 
-<pre>
-  <code class="java">
+<pre><code class="java">
     package org.codingpedia.demo.rest.resource;
     //imports
     ......................
@@ -901,9 +884,7 @@ and PUT (idempotent)
 
 ###### <span id="32121_Create_a_single_resource_with_POST">3.2.1.2.1. Create a single resource with POST</span>
 
-<pre>
-  <code class="java">
-    /**
+<pre><code class="java">/**
      * Adds a new resource (podcast) from the given json format (at least title
      * and feed elements are required at the DB level)
      *
@@ -921,9 +902,7 @@ and PUT (idempotent)
     			.header("Location",
     					"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
     							+ String.valueOf(createPodcastId)).build();
-    }
-  </code>
-</pre>
+    }</code></pre>
 
 **Annotations**
 
@@ -944,9 +923,7 @@ This will be treated in the Update Podcast section below.
 
 ###### <span id="32123_Bonus_8211_Create_a_single_resource_8220podcast8221_from_form">3.2.1.2.3. Bonus &#8211; Create a single resource (&#8220;podcast&#8221;) from form</span>
 
-<pre>
-  <code class="java">
-  /**
+<pre><code class="java">/**
    * Adds a new podcast (resource) from "form" (at least title and feed
    * elements are required at the DB level)
    *
@@ -978,8 +955,7 @@ This will be treated in the Update Podcast section below.
   			.header("Location",
   					"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
   							+ String.valueOf(createPodcastid)).build();
-  }
-  </code>
+  }</code>
 </pre>
 
 **Annotations**
@@ -1085,9 +1061,7 @@ The API supports two Read operations:
 
 ###### <span id="32221_Read_all_podcasts_82208221">3.2.2.2.1. Read all podcasts (&#8220;/&#8221;)</span>
 
-<pre>
-  <code class="java">
-    /**
+<pre><code class="java">/**
      * Returns all resources (podcasts) from the database
      *
      * @return
@@ -1106,9 +1080,7 @@ The API supports two Read operations:
     	List&lt;Podcast&gt; podcasts = podcastService.getPodcasts(
     			orderByInsertionDate, numberDaysToLookBack);
     	return podcasts;
-    }
-  </code>
-</pre>
+    }</code></pre>
 
 **Annotations**
 
@@ -1121,9 +1093,7 @@ The API supports two Read operations:
 
 ###### <span id="32221_Read_one_podcast">3.2.2.2.1. Read one podcast</span>
 
-<pre>
-  <code class="java">
-    @GET
+<pre><code class="java">@GET
     @Path("{id}")
     @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
     public Response getPodcastById(@PathParam("id") Long id)
@@ -1133,9 +1103,7 @@ The API supports two Read operations:
     	return Response.status(200).entity(podcastById)
     			.header("Access-Control-Allow-Headers", "X-extra-header")
     			.allow("OPTIONS").build();
-    }
-  </code>
-</pre>
+    }</code></pre>
 
 **Annotations**
 
@@ -1244,9 +1212,7 @@ Now for the partial update there&#8217;s a bunch of proposals/debate on what to 
 
 if I would like to update just the title property of the podcast with the id 2
 
-<pre>
-  <code class="http">
-    PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 HTTP/1.1
+<pre><code class="http">PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 HTTP/1.1
     Accept-Encoding: gzip,deflate
     Content-Type: application/json
     Content-Length: 155
@@ -1256,8 +1222,7 @@ if I would like to update just the title property of the podcast with the id 2
 
     {
     	"title":"New Title"
-    }
-  </code>
+    }</code>
 </pre>
 
 <p style="text-align: justify;">
@@ -1290,9 +1255,7 @@ That does not look like a partial update case to me&#8230;
 
 ###### <span id="32311_Full_Update">3.2.3.1.1. Full Update</span>
 
-<pre>
-  <code class="java">
-    @PUT
+<pre><code class="java">@PUT
     @Path("{id}")
     @Consumes({ MediaType.APPLICATION_JSON })
     @Produces({ MediaType.TEXT_HTML })
@@ -1323,8 +1286,7 @@ That does not look like a partial update case to me&#8230;
     						"http://localhost:8888/demo-rest-jersey-spring/podcasts/"
     								+ String.valueOf(id)).build();
     	}
-    }
-  </code>
+    }</code>
 </pre>
 
 **Annotations**
@@ -1350,9 +1312,7 @@ will be a html document containing different messages and stati depending on wha
 
 ###### <span id="32312_Partial_Update">3.2.3.1.2. Partial Update</span>
 
-<pre>
-  <code class="java">
-    //PARTIAL update
+<pre><code class="java">//PARTIAL update
     @POST
     @Path("{id}")
     @Consumes({ MediaType.APPLICATION_JSON })
@@ -1363,9 +1323,7 @@ will be a html document containing different messages and stati depending on wha
     	return Response.status(Response.Status.OK)// 200
     			.entity("The podcast you specified has been successfully updated")
     			.build();
-    }
-  </code>
-</pre>
+    }</code></pre>
 
 **Annotations**
 
@@ -1452,17 +1410,13 @@ will be a html document containing different messages and stati depending on wha
 
 ###### <span id="32421_Delete_all_resources">3.2.4.2.1. Delete all resources</span>
 
-<pre>
-  <code class="java">
-    @DELETE
+<pre><code class="java">@DELETE
     @Produces({ MediaType.TEXT_HTML })
     public Response deletePodcasts() {
     	podcastService.deletePodcasts();
     	return Response.status(Response.Status.NO_CONTENT)// 204
     			.entity("All podcasts have been successfully removed").build();
-    }
-  </code>
-</pre>
+    }</code></pre>
 
 **Annotations**
 
@@ -1476,17 +1430,14 @@ will be a html document containing different messages and stati depending on wha
 ###### <span id="32422_Delete_one_resource">3.2.4.2.2. Delete one resource</span>
 
 <pre>
-  <code class="java">
-    @DELETE
+  <code class="java">@DELETE
     @Path("{id}")
     @Produces({ MediaType.TEXT_HTML })
     public Response deletePodcastById(@PathParam("id") Long id) {
     	podcastService.deletePodcastById(id);
     	return Response.status(Response.Status.NO_CONTENT)// 204
     			.entity("Podcast successfully removed from database").build();
-    }
-  </code>
-</pre>
+    }</code></pre>
 
 **Annotations**
 
@@ -1520,17 +1471,13 @@ See my post <a title="http://www.codingpedia.org/ama/how-to-log-in-spring-with-s
 
 In case of errros, I decided to response with unified error message structure.  Here&#8217;s an example how an error response might look like:
 
-<pre>
-  <code class="json">
-    {
+<pre><code class="json">{
        "status": 400,
        "code": 400,
        "message": "Provided data not sufficient for insertion",
        "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-with-jersey-and-spring",
        "developerMessage": "Please verify that the feed is properly generated/set"
-    }
-  </code>
-</pre>
+    }</code></pre>
 
 <p class="note_normal" style="text-align: justify;">
   A detailed explanation of how errors are handled in the REST api, you can find in the following <a title="http://www.codingpedia.org/ama/error-handling-in-rest-api-with-jersey/" href="http://www.codingpedia.org/ama/error-handling-in-rest-api-with-jersey/" target="_blank">post Error handling in REST API with Jersey</a>
@@ -1571,16 +1518,12 @@ In case of errros, I decided to response with unified error message structure. 
 ##### <span id="7111_Jersey_client_dependency">7.1.1.1 Jersey client dependency</span>
 
 To build a Jersey client the `jersey-client` jar is required in the classpath. With Maven you can add it as a dependency to the `pom.xml` file:
-<pre>
-  <code class="xml">
-    &lt;dependency&gt;
+<pre><code class="xml">&lt;dependency&gt;
         &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;
         &lt;artifactId&gt;jersey-client&lt;/artifactId&gt;
         &lt;version&gt;${jersey.version}&lt;/version&gt;
         &lt;scope&gt;test&lt;/scope&gt;
-    &lt;/dependency&gt;
-  </code>
-</pre>
+    &lt;/dependency&gt;</code></pre>
 
 <h5 style="text-align: justify;">
   <span id="7112_Failsafe_plugin">7.1.1.2. Failsafe plugin</span>
@@ -1590,9 +1533,7 @@ To build a Jersey client the `jersey-client` jar is required in the classpath. W
   The <a title="http://maven.apache.org/surefire/maven-failsafe-plugin/" href="http://maven.apache.org/surefire/maven-failsafe-plugin/" target="_blank">Failsafe Plugin</a> is used during the integration-test and verify phases of the build lifecycle to execute the integration tests of the application. The Failsafe Plugin will not fail the build during the integration-test phase thus enabling the post-integration-test phase to execute.<br /> To use the Failsafe Plugin, you need to add the following configuration to your <code>pom.xml</code>
 </p>
 
-<pre>
-  <code class="xml">
-    &lt;plugins&gt;
+<pre><code class="xml">&lt;plugins&gt;
     	[...]
         &lt;plugin&gt;
             &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
@@ -1614,17 +1555,13 @@ To build a Jersey client the `jersey-client` jar is required in the classpath. W
             &lt;/executions&gt;
         &lt;/plugin&gt;
     	[...]
-    &lt;/plugins&gt;
-  </code>
-</pre>
+    &lt;/plugins&gt;</code></pre>
 
 ##### <span id="7112_Jetty_Maven_Plugin">7.1.1.2. Jetty Maven Plugin</span>
 
 The integration tests will be executed against a running jetty server, that will be started only for the execution of the tests. For that you have to configure the following executionin the `jetty-maven-plugin`:
 
-<pre>
-  <code class="xml">
-    &lt;plugins&gt;
+<pre><code class="xml">&lt;plugins&gt;
     	&lt;plugin&gt;
     		&lt;groupId&gt;org.eclipse.jetty&lt;/groupId&gt;
     		&lt;artifactId&gt;jetty-maven-plugin&lt;/artifactId&gt;
@@ -1661,9 +1598,7 @@ The integration tests will be executed against a running jetty server, that will
     		&lt;/executions&gt;
     	&lt;/plugin&gt;
     	[...]
-    &lt;/plugins&gt;
-  </code>
-</pre>
+    &lt;/plugins&gt;</code></pre>
 
 <p class="note_normal" style="text-align: justify;">
   <strong>Note:</strong> In the <code>pre-integration-test</code> phase the Jetty server will be started, after stopping any running instance to free up the port, and in the <code>post-integration-phase</code> it will be stopped. The <code>scanIntervalSeconds</code> has to be set to 0, and <code>daemon</code> to true.
@@ -1683,9 +1618,7 @@ I am using JUnit as the testing framework. By default, the Failsafe Plugin will 
 
 I have created a single test class &#8211; `RestDemoServiceIT` &#8211; that will test the read (GET) methods, but the procedure should be the same for all the other:
 
-<pre>
-  <code class="java">
-    public class RestDemoServiceIT {
+<pre><code class="java">public class RestDemoServiceIT {
 
     	[....]
     	@Test
@@ -1714,9 +1647,7 @@ I have created a single test class &#8211; `RestDemoServiceIT` &#8211; that will
     								.writeValueAsString(podcast));
 
     	}
-    }
-  </code>
-</pre>
+    }</code></pre>
 
 <p style="text-align: justify;">
   <strong>Note:</strong>
@@ -1791,9 +1722,7 @@ Here are some great resources from people that understand better the matter:
   All I had to do in this case is adding the following line of code to my JaxRs application class:
 </p>
 
-<pre>
-  <code class="java">
-    public class RestDemoJaxRsApplication extends ResourceConfig {
+<pre><code class="java">public class RestDemoJaxRsApplication extends ResourceConfig {
     	/**
     	 * Register JAX-RS application components.
     	 */
@@ -1804,9 +1733,7 @@ Here are some great resources from people that understand better the matter:
     		EncodingFilter.enableFor(this, GZipEncoder.class);
 
     	}
-    }
-  </code>
-</pre>
+    }</code></pre>
 
 ## <span id="10Quick_way_to_check_if_the_REST_API_is_alive">10. Quick way to check if the REST API is alive</span>
 

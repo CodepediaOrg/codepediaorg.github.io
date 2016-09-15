@@ -12,8 +12,8 @@ $(document).ready(function(e){
   // which only has the className of 'language-'.
 
   for (var i = 0; i < pre.length; i++) {
-    var isLanguage = pre[i].children[0].className.indexOf('language-');
 
+   // var isLanguage = pre[i].children[0].className.indexOf('language-');
     //if ( isLanguage === 0 ) {
       var button           = document.createElement('button');
       button.className = 'copy-button';

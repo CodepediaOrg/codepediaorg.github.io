@@ -15,11 +15,14 @@ $(document).ready(function(e){
 
    // var isLanguage = pre[i].children[0].className.indexOf('language-');
     //if ( isLanguage === 0 ) {
-      var button           = document.createElement('button');
-      button.className = 'copy-button';
-      button.textContent = 'Copy';
+      if(pre[i].firstChild.nodeName == 'CODE' ){
+        var button           = document.createElement('button');
+        button.className = 'copy-button';
+        button.textContent = 'Copy';
 
-      pre[i].appendChild(button);
+        pre[i].appendChild(button);
+      }
+
    // }
   };
 

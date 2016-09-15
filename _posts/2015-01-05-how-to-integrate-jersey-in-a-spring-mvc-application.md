@@ -48,7 +48,7 @@ Current versions used:
 
 The <a style="color: #bc360a;" title="https://jersey.java.net/documentation/latest/spring.html" href="https://jersey.java.net/documentation/latest/spring.html" target="_blank">Jersey Spring extension</a> must be present in your project’s classpath. If you are using Maven add it to the `pom.xml` file of your project:
 
-<pre class="lang:default decode:true" title="Dependencies snippet - pom.xml">&lt;!-- Jersey-Spring http://mvnrepository.com/artifact/org.glassfish.jersey.ext/jersey-spring3/2.4.1 --&gt;
+<pre class="lang:default decode:true" title="Dependencies snippet - pom.xml"><code>&lt;!-- Jersey-Spring http://mvnrepository.com/artifact/org.glassfish.jersey.ext/jersey-spring3/2.4.1 --&gt;
 &lt;dependency&gt;
 	&lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
 	&lt;artifactId&gt;jersey-spring3&lt;/artifactId&gt;
@@ -76,7 +76,7 @@ The <a style="color: #bc360a;" title="https://jersey.java.net/documentation/lat
 		&lt;exclusion&gt;
 			&lt;groupId&gt;com.fasterxml.jackson.jaxrs&lt;/groupId&gt;
 			&lt;artifactId&gt;jackson-jaxrs-base&lt;/artifactId&gt;
-		&lt;/exclusion&gt;		
+		&lt;/exclusion&gt;
 		&lt;exclusion&gt;
 			&lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;
 			&lt;artifactId&gt;jackson-annotations&lt;/artifactId&gt;
@@ -84,9 +84,9 @@ The <a style="color: #bc360a;" title="https://jersey.java.net/documentation/lat
 		&lt;exclusion&gt;
 			&lt;groupId&gt;com.fasterxml.jackson.jaxrs&lt;/groupId&gt;
 			&lt;artifactId&gt;jackson-jaxrs-json-provider&lt;/artifactId&gt;
-		&lt;/exclusion&gt;        					
+		&lt;/exclusion&gt;
 	&lt;/exclusions&gt;
-&lt;/dependency&gt;</pre>
+&lt;/dependency&gt;</code></pre>
 
 <p class="note_normal">
   <strong>Note:</strong> I have explicitly excluded the Spring core and the Jackson implementation libraries as they have been already imported in the project with preferred versions.
@@ -99,15 +99,15 @@ In the `web.xml`, in addition  to the Spring MVC servlet configuration I added 
 <pre class="lang:default mark:18-32 decode:true" title="Configuration snippet from web.xml">&lt;servlet&gt;
 	&lt;servlet-name&gt;Spring MVC Dispatcher Servlet&lt;/servlet-name&gt;
 	&lt;servlet-class&gt;org.springframework.web.servlet.DispatcherServlet&lt;/servlet-class&gt;
-	
+
 	&lt;init-param&gt;
 		&lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
 		&lt;param-value&gt;
-			classpath:spring/application-context.xml	   			
+			classpath:spring/application-context.xml
 		&lt;/param-value&gt;
 	&lt;/init-param&gt;
 	&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
-&lt;/servlet&gt;		
+&lt;/servlet&gt;
 &lt;servlet-mapping&gt;
 	&lt;servlet-name&gt;Spring MVC Dispatcher Servlet&lt;/servlet-name&gt;
 	&lt;url-pattern&gt;/&lt;/url-pattern&gt;
@@ -120,14 +120,14 @@ In the `web.xml`, in addition  to the Spring MVC servlet configuration I added 
 	&lt;/servlet-class&gt;
 	&lt;init-param&gt;
 		&lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;
-		&lt;param-value&gt;org.podcastpedia.web.api.JaxRsApplication&lt;/param-value&gt;			
-	&lt;/init-param&gt;		
+		&lt;param-value&gt;org.podcastpedia.web.api.JaxRsApplication&lt;/param-value&gt;
+	&lt;/init-param&gt;
 	&lt;load-on-startup&gt;2&lt;/load-on-startup&gt;
 &lt;/servlet&gt;
 &lt;servlet-mapping&gt;
 	&lt;servlet-name&gt;jersey-serlvet&lt;/servlet-name&gt;
 	&lt;url-pattern&gt;/api/*&lt;/url-pattern&gt;
-&lt;/servlet-mapping&gt;	
+&lt;/servlet-mapping&gt;
 </pre>
 
 <p style="text-align: justify;">
@@ -140,23 +140,23 @@ In the `web.xml`, in addition  to the Spring MVC servlet configuration I added 
 
 <p style="text-align: justify;">
    
-  
+
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
+
     <p id="about_author_header">
       <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

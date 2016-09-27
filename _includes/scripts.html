@@ -26,3 +26,112 @@
     sharing();
 </script>
 {% endif %}
+
+<!--
+  scroll to top
+  TODO - add scroll-up.js to main.js via gulp tasks (minification and obfuscation)
+-->
+<a href="#0" class="cd-top">Top</a>
+<script type="text/javascript">
+  // scroll up arrow functionality -
+  $(document).ready(function(e){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+      offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+      scroll_top_duration = 700,
+    //grab the "back to top" link
+      $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+      ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+      if( $(this).scrollTop() > offset_opacity ) {
+        $back_to_top.addClass('cd-fade-out');
+      }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+      event.preventDefault();
+      $('body,html').animate({
+          scrollTop: 0 ,
+        }, scroll_top_duration
+      );
+    });
+
+  });
+
+</script>
+
+
+<!--
+add **copy** button to code snippets with clipboard.js
+inspired by the blog post https://webdesign.tutsplus.com/tutorials/copy-to-clipboard-made-easy-with-clipboardjs--cms-25086
+
+TODO - move to own javascript (clipboard.js) file and build them together in app.min.js maybe via gulp tasks
+-->
+<script type="text/javascript">
+  (function(){
+
+    // Get the elements.
+    // - the 'pre' element.
+    // - the 'div' with the 'paste-content' id.
+
+    var pre = document.getElementsByTagName('pre');
+    var pasteContent = document.getElementById('paste-content');
+
+    // Add a copy button in the 'pre' element.
+    // which only has the className of 'language-'.
+
+    for (var i = 0; i < pre.length; i++) {
+      // append copy button only after <pre><code>...</code></pre> sections
+      if(pre[i].firstChild.nodeName == 'CODE' ){
+        var button           = document.createElement('button');
+        button.className = 'copy-button';
+        button.textContent = 'Copy';
+
+        pre[i].appendChild(button);
+      }
+
+      // }
+    };
+
+    // Run Clipboard
+    var copyCode = new Clipboard('.copy-button', {
+      target: function(trigger) {
+        return trigger.previousElementSibling;
+      }
+    });
+
+    // On success:
+    // - Change the "Copy" text to "Copied".
+    // - Swap it to "Copy" in 2s.
+    // - Lead user to the "contenteditable" area with Velocity scroll.
+
+    copyCode.on('success', function(event) {
+      event.clearSelection();
+      event.trigger.textContent = 'Copied';
+      window.setTimeout(function() {
+        event.trigger.textContent = 'Copy';
+      }, 2000);
+
+      $.Velocity(pasteContent, 'scroll', {
+        duration: 1000
+      });
+    });
+
+    // On error (Safari):
+    // - Change the  "Press Ctrl+C to copy"
+    // - Swap it to "Copy" in 2s.
+
+    copyCode.on('error', function(event) {
+      event.trigger.textContent = 'Press "Ctrl + C" to copy';
+      window.setTimeout(function() {
+        event.trigger.textContent = 'Copy';
+      }, 5000);
+    });
+
+  })();
+</script>

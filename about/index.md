@@ -34,7 +34,7 @@ dsq_thread_id:
 </h2>
 
 <p style="text-align: justify;">
-We strive to share coding knowledge and making coding sharing knowledge easy for everyone who shares the same mission with us. Why? Well, because we believe that technological advancement and efficiency, driven among other things by the humans&#8217; ability to program machines, has a positive impact on human evolution and well-being. We have also grounded a non-profit organization - [Codigpedia Association](http://www.codingpedia.org/codingpedia-association) - to give our intentions a legal form.
+We believe that technological advancement and efficiency, driven among other things by the humans&#8217; ability to program machines, has a positive impact on human evolution and well-being. Therefore we strive to share coding knowledge and make  sharing coding knowledge as easy as possible. We have also grounded a non-profit organization - <a title="Codingpedia Association" href="http://www.codingpedia.org/codingpedia-association/" target="_blank">Codigpedia Association</a> - to give our intentions a legal form.
 </p>
 
 <h2 style="text-align: justify;">
@@ -42,11 +42,11 @@ We strive to share coding knowledge and making coding sharing knowledge easy for
 </h2>
 
 <p style="text-align: justify;">
-  If you think the same way as we do, you should know we are on a continuous journey looking to recruit talented people who know how to write both code and articles. You can join us by becoming:
+If you think the same way we do, you should know we are on a continuous journey looking to recruit talented people who know how to write both code and articles. You can join us by becoming:
 </p>
 
   * <a title="Codingpedia.org - Contributing posts" href="https://github.com/Codingpedia/codingpedia.github.io/blob/master/CONTRIBUTING_POST.md" target="_blank">Contributing posts</a> &#8211; either regularly or as a guest
-  * <a title="Codingpedia.org - Coding Friend Program" href="http://www.codingpedia.org/friends" target="_blank">Coding Friend</a> &#8211; this implies you allow Codingpedia to republish your best articles on our website
+  * <a title="Codingpedia.org - Coding Friend Program" href="http://www.codingpedia.org/friends" target="_blank">Coding Friend</a> &#8211; this implies you allow Codingpedia to republish some of your articles on our website
 
 ## <span id="Organization">Organization</span>
 We are a non-profit organization, with the following coordinates:

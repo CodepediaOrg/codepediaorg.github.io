@@ -161,6 +161,10 @@ public class GenericExceptionMapper implements ExceptionMapper<Exception> {
 }
 ```
 
+First thing to note, the @Provider annotation https://docs.oracle.com/javaee/7/api/javax/ws/rs/ext/ExceptionMapper.html
+" so that is automatically "
+
+How to register it see bellow
 
 ```
 import org.jboss.resteasy.plugins.interceptors.CorsFilter;
@@ -170,9 +174,6 @@ import javax.ws.rs.core.Application;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by micpi on 04.02.16.
- */
 @ApplicationPath("")
 public class TestApplication extends Application {
 
@@ -206,9 +207,27 @@ public class TestApplication extends Application {
 
 }
 ```
-First thing to note, the @Provider annotation https://docs.oracle.com/javaee/7/api/javax/ws/rs/ext/ExceptionMapper.html
-" so that is automatically "
 
+** Usage example ** 
+
+```
+public void deleteUser(String userId) throws AppException {
+
+    UserEntity userEntity =  userServiceDB.getUser(userId);
+
+    if(userEntity == null){
+
+        ErrorMessage errorMessage = new ErrorMessage.Builder()
+                .httpStatus(Response.Status.NOT_FOUND.getStatusCode())
+                .message("User was not found in the database")
+                .build();
+
+        throw new AppException("User was not found in the OnePortal DB", errorMessage);
+    } else {
+        userServiceDB.deleteUser(userId);
+    }
+}
+```
 
 ## Other good REST(easy) related resources
 

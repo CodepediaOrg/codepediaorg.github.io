@@ -229,6 +229,176 @@ public void deleteUser(String userId) throws AppException {
 }
 ```
 
+AppException
+```
+public class AppException  extends Exception {
+
+    private ErrorMessage errorMessage;
+
+    public AppException(String message, ErrorMessage errorMessage){
+        super(message);
+        this.errorMessage = errorMessage;
+    }
+
+    public ErrorMessage getErrorMessage() {
+        return errorMessage;
+    }
+
+    public void setErrorMessage(ErrorMessage errorMessage) {
+        this.errorMessage = errorMessage;
+    }
+}
+```
+
+Either stick to checked or unchecked exceptions, mention article from jenkov
+
+ErrorMessage
+```
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.codehaus.jackson.annotate.JsonProperty;
+
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class ErrorMessage {
+
+    @JsonProperty("http_status")
+    private Integer httpStatus;
+
+    @JsonProperty("error_code")
+    private String errorCode;
+
+    @JsonProperty("documentation_link")
+    private String documentationLink;
+
+    @JsonProperty("message")
+    private String message;
+
+    @JsonProperty("developer_message")
+    private String developerMessage;
+
+    @JsonProperty("uuid")
+    private String uuid;
+
+    public static class Builder {
+
+        private Integer httpStatus;
+
+        private String errorCode;
+
+        private String documentationLink;
+
+        private String message;
+
+        private String developerMessage;
+
+        private String uuid;
+
+        public Builder(Integer httpStatus, String documentationLink, String errorCode, String message, String developerMessage, String uuid) {
+            this.httpStatus = httpStatus;
+            this.documentationLink = documentationLink;
+            this.errorCode = errorCode;
+            this.message = message;
+            this.developerMessage = developerMessage;
+            this.uuid = uuid;
+        }
+
+        public Builder(){};
+
+        public Builder httpStatus(Integer httpStatus){
+            this.httpStatus = httpStatus;
+            return this;
+        }
+
+        public Builder documentationLink(Integer documentationLink){
+            this.httpStatus = documentationLink;
+            return this;
+        }
+
+        public Builder errorCode(String errorCode){
+            this.errorCode = errorCode;
+            return this;
+        }
+
+        public Builder message(String message){
+            this.message = message;
+            return this;
+        }
+
+        public Builder developerMessage(String developerMessage){
+            this.developerMessage = developerMessage;
+            return this;
+        }
+
+        public Builder uuid(String uuid){
+            this.uuid = uuid;
+            return this;
+        }
+
+        public ErrorMessage build(){
+            return new ErrorMessage(this);
+        }
+    }
+
+    private ErrorMessage(Builder builder){
+        httpStatus = builder.httpStatus;
+        errorCode = builder.errorCode;
+        message = builder.message;
+        developerMessage = builder.developerMessage;
+        documentationLink = builder.documentationLink;
+        uuid = builder.uuid;
+    }
+
+    public Integer getHttpStatus() {
+        return httpStatus;
+    }
+
+    public void setHttpStatus(Integer httpStatus) {
+        this.httpStatus = httpStatus;
+    }
+
+    public String getErrorCode() {
+        return errorCode;
+    }
+
+    public void setErrorCode(String errorCode) {
+        this.errorCode = errorCode;
+    }
+
+    public String getDocumentationLink() {
+        return documentationLink;
+    }
+
+    public void setDocumentationLink(String documentationLink) {
+        this.documentationLink = documentationLink;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getDeveloperMessage() {
+        return developerMessage;
+    }
+
+    public void setDeveloperMessage(String developerMessage) {
+        this.developerMessage = developerMessage;
+    }
+
+    public String getUuid() {
+        return uuid;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
+}
+
+```
+
 ## Other good REST(easy) related resources
 
 * [RESTEasy Documentation examples, HTML, PDF, Javadocs](http://resteasy.jboss.org/docs.html) - for all versions...

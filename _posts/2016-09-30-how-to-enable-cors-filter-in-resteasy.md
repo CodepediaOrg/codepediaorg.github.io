@@ -4,7 +4,7 @@ title: How to enable the CORS Filter in RESTEasy
 description: "In this post I will shortly present how to enable the provided RESTEasy CORS Filter in a JAX-RS REST API backend"
 author: ama
 permalink: /ama/how-to-enable-cors-filter-in-resteasy
-published: false
+published: true
 categories: [java ee]
 tags: [jboss, wildfly, rest, resteasy, java ee, cors]
 ---

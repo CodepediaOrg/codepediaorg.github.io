@@ -101,3 +101,21 @@ titlecase: true
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+
+
+# Collections
+collections:
+  commands:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  # _commands
+  - scope:
+      path: ""
+      type: commands
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true

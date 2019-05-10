@@ -94,7 +94,7 @@ The images are exported into the `wp-content` directory under the root directory
 ### Hosting
 
 I decided to host the website on GitHub Pages[^6], because is currently free, hosted directly from the
-[GitHub Repository](https://github.com/Codingpedia/codingpedia.github.io). Just edit, push, and your changes are live.
+[GitHub Repository](https://github.com/Codingpedia/codepedia.github.io). Just edit, push, and your changes are live.
 
 > It matches perfectly our vision of [sharing coding knowledge](http://www.codepedia.org/about/#Mission)
 
@@ -168,8 +168,8 @@ When writing new posts I will definitely use one of the methods suggested in <a 
 ### Migrate custom CSS
 
 There are some custom styles from the old [Wordpress theme](http://www.codepedia.org/ama/how-to-add-a-logo-to-the-twenty-thirteen-wordpress-theme/)
-I'd like to user further. Because Jekyll supports natively SASS[^8], I just moved the style to [_wordpress.scss](https://github.com/Codingpedia/codingpedia.github.io/blob/master/_sass/_wordpress.scss) file
-and imported it into the [_main.scss](https://github.com/Codingpedia/codingpedia.github.io/blob/master/assets/css/main.scss), which combines
+I'd like to user further. Because Jekyll supports natively SASS[^8], I just moved the style to [_wordpress.scss](https://github.com/Codingpedia/codepedia.github.io/blob/master/_sass/_wordpress.scss) file
+and imported it into the [_main.scss](https://github.com/Codingpedia/codepedia.github.io/blob/master/assets/css/main.scss), which combines
 all the SASS files.
 
 ```
@@ -199,7 +199,7 @@ comments: false
 
 ### Feed
 
-It uses the theme's own [Atom implementation](https://github.com/Codingpedia/codingpedia.github.io/blob/master/feed.xml), which I adjusted for multiple authors - __don't forget to subscribe to it [here](http://www.codepedia.org/feed.xml)__
+It uses the theme's own [Atom implementation](https://github.com/Codingpedia/codepedia.github.io/blob/master/feed.xml), which I adjusted for multiple authors - __don't forget to subscribe to it [here](http://www.codepedia.org/feed.xml)__
 
 > Another possibility would have been to use Atom (RSS) feeds for GitHub Pages[^9], which can automatically create an
  [Atom feed](https://en.wikipedia.org/wiki/Atom_%28standard%29) for the Jekyll blog deployed on GitHub Pages.
@@ -227,6 +227,6 @@ So far I am glad I did this move. Here are a summary of the benefits I reaped ti
 
 [^11]: <https://daringfireball.net/projects/markdown/>
 
-I hope you've found this useful and after you will have migrated to Jekyll, join our [Coding Friend Program](http://www.codepedia.org/friends/) so we can easier republish your articles or, even better, do it yourself with a [pull request](https://github.com/Codingpedia/codingpedia.github.io/blob/master/CONTRIBUTING_POST.md).
+I hope you've found this useful and after you will have migrated to Jekyll, join our [Coding Friend Program](http://www.codepedia.org/friends/) so we can easier republish your articles or, even better, do it yourself with a [pull request](https://github.com/Codingpedia/codepedia.github.io/blob/master/CONTRIBUTING_POST.md).
 
 ## References

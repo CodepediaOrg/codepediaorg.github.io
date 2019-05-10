@@ -181,6 +181,6 @@ The same functionality is valid when generating the entries in the atom [feed.xm
 
 In Wordpress if I clicked on __http://www.codepedia.org/authors/{author_username}__ I would get all the posts of the name author with pagination if they were more than five, I guess it's a nice feature and once I will implement that I will post it here.
 
-I hope you've found this useful and if you see any improvement possibilities to this approach please leave a comment below, or even better make a pull request to improve the [source code](https://github.com/Codingpedia/codingpedia.github.io) directly - thanks.
+I hope you've found this useful and if you see any improvement possibilities to this approach please leave a comment below, or even better make a pull request to improve the [source code](https://github.com/Codingpedia/codepedia.github.io) directly - thanks.
 
 ## References

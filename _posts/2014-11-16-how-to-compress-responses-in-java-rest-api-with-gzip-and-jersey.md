@@ -4,7 +4,7 @@ title: How to compress responses in Java REST API with GZip and Jersey
 date: 2014-11-16T15:47:59+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=2090
+guid: http://www.codepedia.org/?p=2090
 permalink: /ama/how-to-compress-responses-in-java-rest-api-with-gzip-and-jersey/
 gr_overridden:
   - 1
@@ -90,10 +90,10 @@ tags:
   You&#8217;ve seen the power of filters in my posts
 </p>
 
-  * <a title="http://www.codingpedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" href="http://www.codingpedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" target="_blank">How to add CORS support on the server side in Java with Jersey</a>, where I&#8217;ve shown how to CORS-enable a REST API
+  * <a title="http://www.codepedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" href="http://www.codepedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" target="_blank">How to add CORS support on the server side in Java with Jersey</a>, where I&#8217;ve shown how to CORS-enable a REST API
 
     **and **
-  * <a title="http://www.codingpedia.org/ama/how-to-log-in-spring-with-slf4j-and-logback/" href="http://www.codingpedia.org/ama/how-to-log-in-spring-with-slf4j-and-logback/" target="_blank">How to log in Spring with SLF4J and Logback</a>, where I&#8217;ve shown how to log requests and responses from the REST API
+  * <a title="http://www.codepedia.org/ama/how-to-log-in-spring-with-slf4j-and-logback/" href="http://www.codepedia.org/ama/how-to-log-in-spring-with-slf4j-and-logback/" target="_blank">How to log in Spring with SLF4J and Logback</a>, where I&#8217;ve shown how to log requests and responses from the REST API
 
 <p style="text-align: justify;">
   , but for compressing will be using a <code>GZip WriterInterceptor</code>. A writer interceptor is used for cases where entity is written to the &#8220;wire&#8221;, which on the server side as in this case, means when writing out a response entity.
@@ -259,7 +259,7 @@ Server: Jetty(9.0.7.v20131107)
 </p>
 
 <p class="note_code" style="text-align: justify;">
-  <strong> Tip:</strong> If you want really learn how to design and implement REST API in Java read the following <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
+  <strong> Tip:</strong> If you want really learn how to design and implement REST API in Java read the following <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
 </p>
 
 <p style="text-align: center;">
@@ -268,7 +268,7 @@ Server: Jetty(9.0.7.v20131107)
 
 ## Resources
 
-  1. <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
+  1. <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
   2. <a title="https://jersey.java.net/documentation/latest/user-guide.html" href="https://jersey.java.net/documentation/latest/user-guide.html" target="_blank">Jersey User Guide </a>
       1.
       2. <a title="https://jersey.java.net/documentation/latest/user-guide.html#filters-and-interceptors" href="https://jersey.java.net/documentation/latest/user-guide.html#filters-and-interceptors" target="_blank">Filters and interceptors</a>
@@ -282,7 +282,7 @@ Server: Jetty(9.0.7.v20131107)
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -4,7 +4,7 @@ title: Lessons learned from building ChessHub.io
 date: 2014-12-13T15:08:16+00:00
 author: Mahmoud Ben Hassine
 layout: post
-guid: http://www.codingpedia.org/?p=2148
+guid: http://www.codepedia.org/?p=2148
 permalink: /mahmoudbenhassine/lessons-learned-from-building-chesshub-io/
 fsb_show_social:
   - 0

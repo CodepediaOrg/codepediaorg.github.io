@@ -4,7 +4,7 @@ title: 'Angular 1 vs Angular 2 &#8211; a high-level comparison'
 date: 2015-10-07T17:33:45+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codingpedia.org/?p=2385
+guid: http://www.codepedia.org/?p=2385
 permalink: /jhadesdev/angular-1-vs-angular-2-a-high-level-comparison/
 fsb_show_social:
   - 0
@@ -357,5 +357,5 @@ The problem with this approach is that those tests are no longer unit tests, the
 It&#8217;s definitely not too soon to try it out, if you want to give it a go this is a [seed project](https://github.com/mgechev/angular2-seed), and the Visual Studio Code [editor](https://www.youtube.com/watch?v=HmWm21cCAXM) or [Webstorm](https://www.jetbrains.com/webstorm/) already provide great Typescript 1.5 support.
 
 <p class="note_normal">
-  Published at Codingpedia.org with permission of Aleksey Novik – source <em><a title="The main goals of Angular 2 and how they will be achieved" href="http://blog.jhades.org/introduction-to-angular2-the-main-goals/" target="_blank">The main goals of Angular 2 and how they will be achieved</a></em> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik – source <em><a title="The main goals of Angular 2 and how they will be achieved" href="http://blog.jhades.org/introduction-to-angular2-the-main-goals/" target="_blank">The main goals of Angular 2 and how they will be achieved</a></em> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p>

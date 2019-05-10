@@ -4,7 +4,7 @@ title: How to build and clear a reference data cache with singleton EJBs and MBe
 date: 2014-09-19T16:09:15+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1836
+guid: http://www.codepedia.org/?p=1836
 permalink: /ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-and-mbeans/
 fsb_show_social:
   - 0
@@ -284,7 +284,7 @@ public class ReferenceDataResource {
 }</pre>
 
 <p style="text-align: justify;">
-  Notice the existence of the version query parameter in the <code>@GET</code> <code>getReferenceData(...)</code> method.  This represents a hash on the reference data and if it hasn&#8217;t modified the client will receive a <em>304 Not Modified HTTP Status</em>. This is a nice way to spare some bandwidth, especially if you have mobile clients. See my post <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, for a detailed discussion around REST services design and implementation.
+  Notice the existence of the version query parameter in the <code>@GET</code> <code>getReferenceData(...)</code> method.  This represents a hash on the reference data and if it hasn&#8217;t modified the client will receive a <em>304 Not Modified HTTP Status</em>. This is a nice way to spare some bandwidth, especially if you have mobile clients. See my post <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, for a detailed discussion around REST services design and implementation.
 </p>
 
 <p class="note_normal" style="text-align: justify;">
@@ -315,7 +315,7 @@ public class ReferenceDataResource {
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -4,7 +4,7 @@ title: Is IntelliJ IDEA shining through Eclipse?
 date: 2015-03-26T14:16:47+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=2253
+guid: http://www.codepedia.org/?p=2253
 permalink: /ama/is-intellij-idea-shining-through-eclipse/
 fsb_show_social:
   - 0
@@ -29,7 +29,7 @@ tags:
   - intellij
 ---
 <p style="text-align: justify;">
-  As a long time Eclipse user, I want to give a more serious look to <a title="https://www.jetbrains.com/idea/" href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a>. The people from <a title="https://www.jetbrains.com/" href="https://www.jetbrains.com/" target="_blank">JetBrains</a> were very nice and granted me an open source license for the <a title="https://github.com/Codingpedia/podcastpedia" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>  and <a title="http://www.codingpedia.org" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a> projects. In the post I listed some of the things I use often in Eclipse and their equivalent in IntelliJ. I wrote this post so I can bookmark it and come back to, whenever I forget something, and if it helps others the better.
+  As a long time Eclipse user, I want to give a more serious look to <a title="https://www.jetbrains.com/idea/" href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a>. The people from <a title="https://www.jetbrains.com/" href="https://www.jetbrains.com/" target="_blank">JetBrains</a> were very nice and granted me an open source license for the <a title="https://github.com/Codingpedia/podcastpedia" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>  and <a title="http://www.codepedia.org" href="http://www.codepedia.org" target="_blank">Codepedia.org</a> projects. In the post I listed some of the things I use often in Eclipse and their equivalent in IntelliJ. I wrote this post so I can bookmark it and come back to, whenever I forget something, and if it helps others the better.
 </p>
 
 <p style="text-align: justify;">
@@ -777,7 +777,7 @@ Well, that&#8217;s all I have so far, but I&#8217;ll try to add features to the 
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

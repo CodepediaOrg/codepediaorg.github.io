@@ -30,7 +30,7 @@ Exemplary real world application built with Angular 5+
 
 ## async 
 
-**[How to make parallel calls in Java with CompletableFuture example – CodingpediaOrg](http://www.codingpedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example)**
+**[How to make parallel calls in Java with CompletableFuture example – CodingpediaOrg](http://www.codepedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-01-26
   * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])
@@ -102,7 +102,7 @@ Mark the POJO to ignore unknown properties
 
 ## java 
 
-**[How to make parallel calls in Java with CompletableFuture example – CodingpediaOrg](http://www.codingpedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example)**
+**[How to make parallel calls in Java with CompletableFuture example – CodingpediaOrg](http://www.codepedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-01-26
   * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])
@@ -145,7 +145,7 @@ Mark the POJO to ignore unknown properties
 
 ## javaee 
 
-**[How to make parallel calls in Java with CompletableFuture example – CodingpediaOrg](http://www.codingpedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example)**
+**[How to make parallel calls in Java with CompletableFuture example – CodingpediaOrg](http://www.codepedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-01-26
   * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])

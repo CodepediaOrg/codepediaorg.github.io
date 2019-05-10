@@ -4,7 +4,7 @@ title: Optimizing MySQL server settings
 date: 2013-10-12T09:29:24+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=646
+guid: http://www.codepedia.org/?p=646
 permalink: /ama/optimizing-mysql-server-settings/
 fsb_show_social:
   - 0
@@ -131,11 +131,11 @@ The explanation for a few parameters:
 To verify if the variable has been set correctly run &#8221; `show variable like 'VARIABLE_NAME'` &#8221; (e.g. `show variables like 'max_connections'`) in the MySQL console.
 
 <p style="text-align: justify;">
-  The calculation was based on the assumptions that MySQL has 756MB of RAM available, a database size around 250MB and maximum 300 users trying to access the system (the underlying machine is Cent OS 6.4 virtual private server with 2GB of RAM and 8 cores processor). The same assumptions were made trying to configure the Tomcat JDBC Connection Pool &#8211; see my post <a title="Using the Tomcat 7 JDBC Connection Pool in Production" href="http://www.codingpedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">Tomcat JDBC Connection Pool configuration for production and development</a> on that. Of course if resource demand grows (fingers crossed 🙂 ), I would have to adjust.
+  The calculation was based on the assumptions that MySQL has 756MB of RAM available, a database size around 250MB and maximum 300 users trying to access the system (the underlying machine is Cent OS 6.4 virtual private server with 2GB of RAM and 8 cores processor). The same assumptions were made trying to configure the Tomcat JDBC Connection Pool &#8211; see my post <a title="Using the Tomcat 7 JDBC Connection Pool in Production" href="http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">Tomcat JDBC Connection Pool configuration for production and development</a> on that. Of course if resource demand grows (fingers crossed 🙂 ), I would have to adjust.
 </p>
 
 <div style="background-color: #f8e0e6; color: #580404; padding: 10px; border-style: solid; border-width: thin; margin-bottom: 15px; text-align: justify;">
-  <strong>Post disclaimer</strong><br /> I am by no means a DB/MySql Expert, I come from a development background, so please take the configuration as is. You should treat your application/system optimization, as a holistic approach including OS, DB, web server, application server, web caching, 2nd level caching, etc. I posted this here to easily remember what everything means in the configuration file, why I set these values, to learn something and hopefully to get <a href="mailto:contact@codingpedia.org?Subject=Improve%20my.cnf%20configuration" target="_top">your feedback</a> if you see any room improvement.
+  <strong>Post disclaimer</strong><br /> I am by no means a DB/MySql Expert, I come from a development background, so please take the configuration as is. You should treat your application/system optimization, as a holistic approach including OS, DB, web server, application server, web caching, 2nd level caching, etc. I posted this here to easily remember what everything means in the configuration file, why I set these values, to learn something and hopefully to get <a href="mailto:contact@codepedia.org?Subject=Improve%20my.cnf%20configuration" target="_top">your feedback</a> if you see any room improvement.
 </div>
 
 If you really want an expert&#8217;s opinion, I highly recommend <a href="http://www.amazon.de/gp/product/1449314287/ref=as_li_tf_il?ie=UTF8&camp=1638&creative=6742&creativeASIN=1449314287&linkCode=as2&tag=codingpedia-21" target="_blank">Baron Schwartz&#8217; book &#8211; High Perfomance MySQL</a>:
@@ -167,7 +167,7 @@ We promise to only share high quality podcasts and episodes.
   </p>
   
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
   
   <div id="follow_social" style="clear: both;">

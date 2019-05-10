@@ -4,7 +4,7 @@ title: JavaScript hoisting example reloaded
 date: 2014-02-17T21:32:01+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1197
+guid: http://www.codepedia.org/?p=1197
 permalink: /ama/javascript-hoisting-example-reloaded/
 fsb_show_social:
   - 0

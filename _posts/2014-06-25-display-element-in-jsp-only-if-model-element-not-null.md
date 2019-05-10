@@ -4,7 +4,7 @@ title: Display element in JSP only if model element not null
 date: 2014-06-25T17:45:49+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1604
+guid: http://www.codepedia.org/?p=1604
 permalink: /ama/display-element-in-jsp-only-if-model-element-not-null/
 fsb_show_social:
   - 0

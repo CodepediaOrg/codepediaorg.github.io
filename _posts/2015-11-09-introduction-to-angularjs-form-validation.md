@@ -4,7 +4,7 @@ title: Introduction to AngularJs Form Validation
 date: 2015-11-09T21:03:12+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codingpedia.org/?p=2535
+guid: http://www.codepedia.org/?p=2535
 permalink: /jhadesdev/introduction-to-angularjs-form-validation/
 fsb_show_social:
   - 0

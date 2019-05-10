@@ -4,7 +4,7 @@ title: 'Spring 3 MVC: Internationalization &#038; localization of Podcastpedia.o
 date: 2013-08-14T09:29:59+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=387
+guid: http://www.codepedia.org/?p=387
 permalink: /ama/spring-3-mvc-internationalization-localization-of-podcastpedia-org/
 fsb_show_social:
   - 0
@@ -174,7 +174,7 @@ public void addDataToModel(ModelMap model){
 
 #### Browser Caching optimization
 
-If you have enabled browser caching, as specified for example in the post <a title="How To: Enable compression and leverage browser caching with Apache Server" href="http://www.codingpedia.org/ama/how-to-enable-compression-and-leverage-browser-caching-with-apache-server/" target="_blank">How To: Enable compression and leverage browser caching with Apache Server</a>, make sure you set the `expiring` and `cache control` for the html pages to 0 seconds:
+If you have enabled browser caching, as specified for example in the post <a title="How To: Enable compression and leverage browser caching with Apache Server" href="http://www.codepedia.org/ama/how-to-enable-compression-and-leverage-browser-caching-with-apache-server/" target="_blank">How To: Enable compression and leverage browser caching with Apache Server</a>, make sure you set the `expiring` and `cache control` for the html pages to 0 seconds:
 
 <pre><code class="xml">ExpiresByType text/html                 "access plus 0 seconds"
 ....
@@ -205,7 +205,7 @@ We promise to only share high quality podcasts and episodes.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

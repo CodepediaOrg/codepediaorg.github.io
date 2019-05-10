@@ -4,7 +4,7 @@ title: Why Angular is not only for single page web apps
 date: 2015-03-12T10:46:43+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codingpedia.org/?p=2331
+guid: http://www.codepedia.org/?p=2331
 permalink: /jhadesdev/why-angular-is-not-only-for-single-page-web-apps/
 fsb_show_social:
   - 0
@@ -174,7 +174,7 @@ The submit button can be made enabled/disabled according to the form validity an
 A thorough walk-through of Angular form validation can be found on this [screencast](https://www.youtube.com/watch?v=t6XUPVmlYbY) (pre-ngMessages).
 
 <p class="note_normal">
-  Published at Codingpedia.org with permission of Aleksey Novik – source<a title="http://blog.jhades.org/why-angular-is-not-only-for-single-page-web-apps/" href="http://blog.jhades.org/why-angular-is-not-only-for-single-page-web-apps/"> Why Angular is not only for single page web apps</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik – source<a title="http://blog.jhades.org/why-angular-is-not-only-for-single-page-web-apps/" href="http://blog.jhades.org/why-angular-is-not-only-for-single-page-web-apps/"> Why Angular is not only for single page web apps</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

@@ -4,7 +4,7 @@ title: A beginner’s guide to JPA and Hibernate Cascade Types
 date: 2015-03-06T20:21:52+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codingpedia.org/?p=2324
+guid: http://www.codepedia.org/?p=2324
 permalink: /vladmihalcea/a-beginners-guide-to-jpa-and-hibernate-cascade-types/
 fsb_show_social:
   - 0
@@ -1120,7 +1120,7 @@ When it comes to Hibernate mappings, you should always strive for simplicity. Th
 Code available on [GitHub](https://github.com/vladmihalcea/hibernate-master-class).
 
 <p class="note_normal">
-  Published at Codingpedia.org with permission of Vlad Mihalcea – source <a title="http://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/" href="http://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/" target="_blank">A beginner’s guide to JPA and Hibernate Cascade Types</a> from http://vladmihalcea.com/
+  Published at Codepedia.org with permission of Vlad Mihalcea – source <a title="http://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/" href="http://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/" target="_blank">A beginner’s guide to JPA and Hibernate Cascade Types</a> from http://vladmihalcea.com/
 </p>
 
 <p class="note_normal">

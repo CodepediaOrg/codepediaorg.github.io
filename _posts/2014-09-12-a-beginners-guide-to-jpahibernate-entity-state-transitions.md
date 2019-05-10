@@ -4,7 +4,7 @@ title: 'A beginner&#8217;s guide to JPA/Hibernate entity state transitions'
 date: 2014-09-12T06:39:29+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codingpedia.org/?p=1793
+guid: http://www.codepedia.org/?p=1793
 permalink: /vladmihalcea/a-beginners-guide-to-jpahibernate-entity-state-transitions/
 fsb_show_social:
   - 0
@@ -152,7 +152,7 @@ tags:
 </p>
 
 <p class="note_normal" style="color: #444444;">
-  Published at Codingpedia.org with permission of <a title="http://www.codingpedia.org/author/vladmihalcea" href="http://www.codingpedia.org/author/vladmihalcea" target="_blank">Vlad Mihalcea</a> &#8211; source <a title="http://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/" href="http://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/" target="_blank">A BEGINNER’S GUIDE TO JPA/HIBERNATE ENTITY STATE TRANSITIONS</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
+  Published at Codepedia.org with permission of <a title="http://www.codepedia.org/author/vladmihalcea" href="http://www.codepedia.org/author/vladmihalcea" target="_blank">Vlad Mihalcea</a> &#8211; source <a title="http://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/" href="http://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/" target="_blank">A BEGINNER’S GUIDE TO JPA/HIBERNATE ENTITY STATE TRANSITIONS</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
 </p>
 
 <p style="color: #444444;">

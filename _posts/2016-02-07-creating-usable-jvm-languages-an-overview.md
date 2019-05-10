@@ -4,7 +4,7 @@ title: 'Creating Usable JVM Languages: An Overview'
 date: 2016-02-07T21:29:49+00:00
 author: Toptal Blog
 layout: post
-guid: http://www.codingpedia.org/?p=2633
+guid: http://www.codepedia.org/?p=2633
 permalink: /toptal/creating-usable-jvm-languages-an-overview/
 fsb_show_social:
   - 0
@@ -258,7 +258,7 @@ tags:
 </p>
 
 <p style="text-align: justify;" class="note_normal">
-  <span>Published at Codingpedia.org with the permission of Toptal – source </span><a title="Are you getting worked up over code duplication?" href="http://www.toptal.com/software/creating-jvm-languages-an-overview" target="_blank">Creating Usable JVM Languages: An Overview</a><span> from </span><a title="http://www.toptal.com/blog" href="http://www.toptal.com/blog" target="_blank">http://www.toptal.com/blog</a>
+  <span>Published at Codepedia.org with the permission of Toptal – source </span><a title="Are you getting worked up over code duplication?" href="http://www.toptal.com/software/creating-jvm-languages-an-overview" target="_blank">Creating Usable JVM Languages: An Overview</a><span> from </span><a title="http://www.toptal.com/blog" href="http://www.toptal.com/blog" target="_blank">http://www.toptal.com/blog</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

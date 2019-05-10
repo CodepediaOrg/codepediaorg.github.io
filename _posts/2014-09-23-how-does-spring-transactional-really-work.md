@@ -4,7 +4,7 @@ title: How does Spring @Transactional Really Work?
 date: 2014-09-23T13:51:38+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codingpedia.org/?p=1789
+guid: http://www.codepedia.org/?p=1789
 permalink: /jhadesdev/how-does-spring-transactional-really-work/
 fsb_show_social:
   - 0
@@ -439,7 +439,7 @@ public class TransactionManagersConfig {
 </p>
 
 <p class="note_normal" style="color: #3a4145; text-align: justify;">
-  Published at Codingpedia.org with permission of <a title="http://www.codingpedia.org/jhadesdev/" href="http://www.codingpedia.org/jhadesdev/" target="_blank">Aleksey Novik</a> &#8211; source <a title="http://blog.jhades.org/how-does-spring-transactional-really-work/" href="http://blog.jhades.org/how-does-spring-transactional-really-work/" target="_blank">How does Spring @Transactional Really Work?</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of <a title="http://www.codepedia.org/jhadesdev/" href="http://www.codepedia.org/jhadesdev/" target="_blank">Aleksey Novik</a> &#8211; source <a title="http://blog.jhades.org/how-does-spring-transactional-really-work/" href="http://blog.jhades.org/how-does-spring-transactional-really-work/" target="_blank">How does Spring @Transactional Really Work?</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p>
 
 <p style="color: #3a4145; text-align: justify;">

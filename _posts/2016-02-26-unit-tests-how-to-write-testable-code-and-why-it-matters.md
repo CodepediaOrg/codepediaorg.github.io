@@ -4,7 +4,7 @@ title: Unit Tests, How to Write Testable Code and Why it Matters
 date: 2016-02-26T16:24:36+00:00
 author: Toptal Blog
 layout: post
-guid: http://www.codingpedia.org/?p=2650
+guid: http://www.codepedia.org/?p=2650
 permalink: /toptal/unit-tests-how-to-write-testable-code-and-why-it-matters/
 fsb_show_social:
   - 0
@@ -482,7 +482,7 @@ else if (time.Subtract(LastMotionTime) &gt; TimeSpan.FromMinutes(1) || (timeOfDa
 </p>
 
 <p style="text-align: justify;" class="note_normal">
-  <span>Published at Codingpedia.org with the permission of Toptal – source </span><a title="Are you getting worked up over code duplication?" href="http://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters" target="_blank">Unit Tests, How to Write Testable Code and Why it Matters</a><span> from </span><a title="http://www.toptal.com/blog" href="http://www.toptal.com/blog" target="_blank">http://www.toptal.com/blog</a>
+  <span>Published at Codepedia.org with the permission of Toptal – source </span><a title="Are you getting worked up over code duplication?" href="http://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters" target="_blank">Unit Tests, How to Write Testable Code and Why it Matters</a><span> from </span><a title="http://www.toptal.com/blog" href="http://www.toptal.com/blog" target="_blank">http://www.toptal.com/blog</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

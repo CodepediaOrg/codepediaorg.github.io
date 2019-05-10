@@ -4,7 +4,7 @@ title: 'A beginner&#8217;s guide to java time zone handling'
 date: 2014-11-21T15:52:20+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codingpedia.org/?p=2113
+guid: http://www.codepedia.org/?p=2113
 permalink: /vladmihalcea/a-beginners-guide-to-java-time-zone-handling/
 gr_overridden:
   - 1
@@ -502,7 +502,7 @@ jodaTimeParse("1970-01-01T00:00:00.200+0100", 200L - 1000 * 60 * 60);
 </p>
 
 <p class="note_normal">
-  Published at Codingpedia.org with permission of Vlad Mihalcea &#8211; source <a title="http://vladmihalcea.com/2014/11/17/a-beginners-guide-to-java-time-zone-handling/" href="http://vladmihalcea.com/2014/11/17/a-beginners-guide-to-java-time-zone-handling/" target="_blank">A beginner&#8217;s guide to java time zone handling</a> from http://vladmihalcea.com/
+  Published at Codepedia.org with permission of Vlad Mihalcea &#8211; source <a title="http://vladmihalcea.com/2014/11/17/a-beginners-guide-to-java-time-zone-handling/" href="http://vladmihalcea.com/2014/11/17/a-beginners-guide-to-java-time-zone-handling/" target="_blank">A beginner&#8217;s guide to java time zone handling</a> from http://vladmihalcea.com/
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

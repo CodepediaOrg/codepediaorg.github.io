@@ -4,7 +4,7 @@ title: How does the MySQL JDBC driver handle prepared statements
 date: 2015-10-06T08:04:27+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codingpedia.org/?p=2488
+guid: http://www.codepedia.org/?p=2488
 permalink: /vladmihalcea/how-does-the-mysql-jdbc-driver-handle-prepared-statements/
 fsb_show_social:
   - 0
@@ -90,7 +90,7 @@ tags:
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with permission of Vlad Mihalcea – source <a title="http://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/" href="http://vladmihalcea.com/2015/09/21/how-does-the-mysql-jdbc-driver-handle-prepared-statements/" target="_blank">How does the MySQL JDBC driver handle prepared statements</a> from http://vladmihalcea.com/
+  Published at Codepedia.org with permission of Vlad Mihalcea – source <a title="http://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/" href="http://vladmihalcea.com/2015/09/21/how-does-the-mysql-jdbc-driver-handle-prepared-statements/" target="_blank">How does the MySQL JDBC driver handle prepared statements</a> from http://vladmihalcea.com/
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

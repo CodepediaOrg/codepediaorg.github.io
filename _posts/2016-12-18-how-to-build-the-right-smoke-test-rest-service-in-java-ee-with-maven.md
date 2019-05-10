@@ -46,7 +46,7 @@ You can then use the `gitSha1` value with the `git show` command to show the cor
 $ git show 8f0b7f7
 commit 8f0b7f7e1fc0dcde3ccc0a9418f37a698dabb3b7
 Merge: df736ab 3ebcbdb
-Author: Adrian Matei <ama@codingpedia.org>
+Author: Adrian Matei <ama@codepedia.org>
 Date:   Sat Dec 3 09:30:41 2016 +0100
 
     Merge branch 'master' of https://github.com/Codingpedia/codingpedia.github.io
@@ -59,7 +59,7 @@ Ok, let's see now how to build such a feature.
 
 ## Build Number Maven Plugin
 
-So the first question is where do we get this info from? We know from a previous post of mine, [Quick way to check if the REST API is alive – GET details from Manifest file](http://www.codingpedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/),
+So the first question is where do we get this info from? We know from a previous post of mine, [Quick way to check if the REST API is alive – GET details from Manifest file](http://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/),
  that we can get the implementation details from the MANIFEST[^5] file, so it would be great if we had the git commit SHA-1 hash sum there too. It turns out we could have it, with
 the help of the [Build Number Maven Plugin](http://www.mojohaus.org/buildnumber-maven-plugin/), which is designed to get a unique build number for each time you build your project.
 
@@ -182,7 +182,7 @@ Implementation-URL: https://github.com/Codingpedia/podcastpedia
 
 As shown in a previous post[^6], reading from the manifest file in a backend service and exposing it as a REST service in Java EE is fairly straight and easy.
 
-[^6]: <http://www.codingpedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/>
+[^6]: <http://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/>
 
 We first build a POJO to hold the information:
 

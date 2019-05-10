@@ -4,7 +4,7 @@ title: Are you getting worked up over code duplication?
 date: 2015-06-25T20:50:05+00:00
 author: Johannes Brodwall
 layout: post
-guid: http://www.codingpedia.org/?p=2403
+guid: http://www.codepedia.org/?p=2403
 permalink: /jhannes/are-you-getting-worked-up-over-code-duplication/
 fsb_show_social:
   - 0
@@ -60,7 +60,7 @@ tags:
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with the permission of Johannes Brodwall – source <a title="Are you getting worked up over code duplication?" href="http://johannesbrodwall.com/2015/06/10/are-you-getting-worked-up-over-code-duplication/" target="_blank">Are you getting worked up over code duplication?</a> from <a title="http://johannesbrodwall.com/" href="http://johannesbrodwall.com/" target="_blank">http://johannesbrodwall.com/</a>
+  Published at Codepedia.org with the permission of Johannes Brodwall – source <a title="Are you getting worked up over code duplication?" href="http://johannesbrodwall.com/2015/06/10/are-you-getting-worked-up-over-code-duplication/" target="_blank">Are you getting worked up over code duplication?</a> from <a title="http://johannesbrodwall.com/" href="http://johannesbrodwall.com/" target="_blank">http://johannesbrodwall.com/</a>
 </p>
 
 <p style="text-align: justify;">

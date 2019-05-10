@@ -131,7 +131,7 @@ Similar to front-end, add the `showdown` dependency in `package.json` and then `
 
 ```javascript
 {
-  "name": "bookmarks-api.codingpedia.org",
+  "name": "bookmarks-api.codepedia.org",
   "version": "0.0.0",
   "private": true,
   "scripts": {

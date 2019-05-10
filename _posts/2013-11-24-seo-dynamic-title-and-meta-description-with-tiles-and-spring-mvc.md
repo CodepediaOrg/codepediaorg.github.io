@@ -4,7 +4,7 @@ title: 'SEO: Dynamic title and meta description with Tiles and Spring MVC'
 date: 2013-11-24T16:08:33+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=972
+guid: http://www.codepedia.org/?p=972
 permalink: /ama/seo-dynamic-title-and-meta-description-with-tiles-and-spring-mvc/
 fsb_show_social:
   - 0
@@ -55,7 +55,7 @@ tags:
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> A prerequisite to understanding this is to have some knowledge of integrating Tiles and Spring. You can see my posts <a title="Spring MVC and Apache Tiles integration example" href="http://www.codingpedia.org/ama/spring-mvc-and-apache-tiles-integration-example/" target="_blank">Spring MVC and Apache Tiles integration example</a>, <a title="Spring 3 and Tiles 2 integration" href="http://www.codingpedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 integration</a> and <a title="Upgrade from Tiles 2 to Tiles 3 on Spring MVC 3 application" href="http://www.codingpedia.org/ama/upgrade-from-tiles-2-to-tiles-3-on-spring-mvc-3-application/#more-931" target="_blank">Upgrade from Tiles 2 to Tiles 3 on Spring MVC 3 application </a>for that.
+  <strong>Note:</strong> A prerequisite to understanding this is to have some knowledge of integrating Tiles and Spring. You can see my posts <a title="Spring MVC and Apache Tiles integration example" href="http://www.codepedia.org/ama/spring-mvc-and-apache-tiles-integration-example/" target="_blank">Spring MVC and Apache Tiles integration example</a>, <a title="Spring 3 and Tiles 2 integration" href="http://www.codepedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 integration</a> and <a title="Upgrade from Tiles 2 to Tiles 3 on Spring MVC 3 application" href="http://www.codepedia.org/ama/upgrade-from-tiles-2-to-tiles-3-on-spring-mvc-3-application/#more-931" target="_blank">Upgrade from Tiles 2 to Tiles 3 on Spring MVC 3 application </a>for that.
 </p>
 
 <p style="text-align: justify;">
@@ -178,7 +178,7 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
 </p>
 
 <p class="note_normal">
-  <strong>Note:</strong> To better understand the site preference part (lines 23-28) see my post <a title="Going mobile with Spring mobile and responsive web design" href="http://www.codingpedia.org/ama/going-mobile-with-spring-mobile-and-responsive-web-design/" target="_blank">Going mobile with Spring mobile and responsive web design</a>
+  <strong>Note:</strong> To better understand the site preference part (lines 23-28) see my post <a title="Going mobile with Spring mobile and responsive web design" href="http://www.codepedia.org/ama/going-mobile-with-spring-mobile-and-responsive-web-design/" target="_blank">Going mobile with Spring mobile and responsive web design</a>
 </p>
 
 <div id="social_logos_small">
@@ -193,7 +193,7 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
 
 ## Resources
 
-  1. <a title="Spring MVC and Apache Tiles integration example" href="http://www.codingpedia.org/ama/spring-mvc-and-apache-tiles-integration-example/" target="_blank">Spring MVC and Apache tiles integration example</a>
+  1. <a title="Spring MVC and Apache Tiles integration example" href="http://www.codepedia.org/ama/spring-mvc-and-apache-tiles-integration-example/" target="_blank">Spring MVC and Apache tiles integration example</a>
   2. <a title="Apache Tiles Homepage" href="https://tiles.apache.org/" target="_blank">Apache Tiles homepage</a>
   3. <a title="Expression Language support" href="http://tiles.apache.org/framework/tutorial/advanced/el-support.html" target="_blank">Apache Tiles &#8211; Expression Language support</a>
   4. <a title="Site title and description - Google Webmaster tools help" href="https://support.google.com/webmasters/answer/35624?hl=en&ref_topic=2371375" target="_blank">Site title and description &#8211; Google Webmaster Tools help</a>
@@ -209,7 +209,7 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

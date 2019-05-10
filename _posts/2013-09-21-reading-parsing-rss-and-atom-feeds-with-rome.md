@@ -4,7 +4,7 @@ title: Reading/Parsing RSS and Atom feeds in Java with Rome
 date: 2013-09-21T14:09:59+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=585
+guid: http://www.codepedia.org/?p=585
 permalink: /ama/reading-parsing-rss-and-atom-feeds-with-rome/
 fsb_show_social:
   - 0
@@ -298,7 +298,7 @@ Thanks for sharing and connecting with us
 </div>
 
 <div class="social_logo_small">
-  <a href="mailto:contact@codingpedia.org" target="_blank"><img class="social_logo" src="{{site.url}}/wp-content/uploads/2013/10/email.png" alt="Email" /></a>
+  <a href="mailto:contact@codepedia.org" target="_blank"><img class="social_logo" src="{{site.url}}/wp-content/uploads/2013/10/email.png" alt="Email" /></a>
 </div>
 
 <div class="clear">
@@ -324,7 +324,7 @@ Thanks for sharing and connecting with us
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

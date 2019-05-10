@@ -32,7 +32,7 @@ To start the mongo shell and connect to the MongoDB instance running on **localh
 
 and then type `./bin/mongo` to start mongo
 
-> If you are like me, and [hooked on aliases](http://www.codingpedia.org/ama/a-developers-guide-to-using-aliases/), you might use something like `alias mongo-start-client='~/dev/mongodb/bin/mongo'`.
+> If you are like me, and [hooked on aliases](http://www.codepedia.org/ama/a-developers-guide-to-using-aliases/), you might use something like `alias mongo-start-client='~/dev/mongodb/bin/mongo'`.
  You can also add `<mongodb installation dir>/bin` to the PATH environment variable and then you can just type `mongo`
 
 MongoDB does not enable access control by default. This might be fine for development, but for a production environment it is highly recommended
@@ -218,7 +218,7 @@ For more details see the [db.collection.remove() documentation](https://docs.mon
 Update `githubURL` for document with the given `location` (we know that is unique):
 
 ```
-> db.bookmarks.update({ location : "http://www.codingpedia.org/" }, { githubURL : "https://github.com/Codingpedia/codingpedia.github.io"} );
+> db.bookmarks.update({ location : "http://www.codepedia.org/" }, { githubURL : "https://github.com/Codingpedia/codingpedia.github.io"} );
 ```
 
 ### Add new field

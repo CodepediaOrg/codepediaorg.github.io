@@ -4,7 +4,7 @@ title: Disclaimer
 date: 2013-08-14T17:35:16+00:00
 author: Adrian Matei
 layout: page
-guid: http://www.codingpedia.org/?page_id=464
+guid: http://www.codepedia.org/?page_id=464
 dsq_thread_id:
   - 1606028037
 ---
@@ -58,11 +58,11 @@ This policy is valid from 14 August 2013
 ### <span id="Content_and_use_of_site">Content and use of site</span>
 
 <p style="text-align: justify;">
-  YOU ASSUME TOTAL RESPONSIBILITY AND RISK FOR YOUR USE OF THE SITE AND THE INTERNET. Codingpedia.org PROVIDES THE SITE AND RELATED INFORMATION &#8220;AS IS&#8221; AND DOES NOT MAKE ANY EXPRESS OR IMPLIED WARRANTIES, REPRESENTATIONS OR ENDORSEMENTS WHATSOEVER (INCLUDING WITHOUT LIMITATION WARRANTIES OF TITLE OR NONINFRINGEMENT, OR THE IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE) WITH REGARD TO THE SERVICE, ANY MERCHANDISE INFORMATION OR SERVICE PROVIDED THROUGH THE SERVICE OR ON THE INTERNET GENERALLY, AND Codingpedia.org SHALL NOT BE LIABLE FOR ANY COST OR DAMAGE ARISING EITHER DIRECTLY OR INDIRECTLY FROM ANY SUCH TRANSACTION. IT IS SOLELY YOUR RESPONSIBILITY TO EVALUATE THE ACCURACY, COMPLETENESS AND USEFULNESS OF ALL OPINIONS, ADVICE, SERVICES, MERCHANDISE AND OTHER INFORMATION PROVIDED THROUGH THE SERVICE OR ON THE INTERNET GENERALLY. Codingpedia.org DOES NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED OR ERROR-FREE OR THAT DEFECTS IN THE SERVICE WILL BE CORRECTED. YOU UNDERSTAND FURTHER THAT THE PURE NATURE OF THE INTERNET CONTAINS UNEDITED MATERIALS SOME OF WHICH ARE SEXUALLY EXPLICIT OR MAY BE OFFENSIVE TO YOU. YOUR ACCESS TO SUCH MATERIALS IS AT YOUR RISK. Codingpedia.org HAS NO CONTROL OVER AND ACCEPTS NO RESPONSIBILITY WHATSOEVER FOR SUCH MATERIALS.
+  YOU ASSUME TOTAL RESPONSIBILITY AND RISK FOR YOUR USE OF THE SITE AND THE INTERNET. Codepedia.org PROVIDES THE SITE AND RELATED INFORMATION &#8220;AS IS&#8221; AND DOES NOT MAKE ANY EXPRESS OR IMPLIED WARRANTIES, REPRESENTATIONS OR ENDORSEMENTS WHATSOEVER (INCLUDING WITHOUT LIMITATION WARRANTIES OF TITLE OR NONINFRINGEMENT, OR THE IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE) WITH REGARD TO THE SERVICE, ANY MERCHANDISE INFORMATION OR SERVICE PROVIDED THROUGH THE SERVICE OR ON THE INTERNET GENERALLY, AND Codepedia.org SHALL NOT BE LIABLE FOR ANY COST OR DAMAGE ARISING EITHER DIRECTLY OR INDIRECTLY FROM ANY SUCH TRANSACTION. IT IS SOLELY YOUR RESPONSIBILITY TO EVALUATE THE ACCURACY, COMPLETENESS AND USEFULNESS OF ALL OPINIONS, ADVICE, SERVICES, MERCHANDISE AND OTHER INFORMATION PROVIDED THROUGH THE SERVICE OR ON THE INTERNET GENERALLY. Codepedia.org DOES NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED OR ERROR-FREE OR THAT DEFECTS IN THE SERVICE WILL BE CORRECTED. YOU UNDERSTAND FURTHER THAT THE PURE NATURE OF THE INTERNET CONTAINS UNEDITED MATERIALS SOME OF WHICH ARE SEXUALLY EXPLICIT OR MAY BE OFFENSIVE TO YOU. YOUR ACCESS TO SUCH MATERIALS IS AT YOUR RISK. Codepedia.org HAS NO CONTROL OVER AND ACCEPTS NO RESPONSIBILITY WHATSOEVER FOR SUCH MATERIALS.
 </p>
 
 <p style="text-align: justify;">
-  You also understand that Codingpedia.org cannot and does not guarantee or warrant that files available for downloading through the Site will be free of infection or viruses, worms, Trojan horses or other code that manifest contaminating or destructive properties. You are responsible for implementing sufficient procedures and checkpoints to satisfy your particular requirements for accuracy of data input and output, and for maintaining a means external to the Site for the reconstruction of any lost data.
+  You also understand that Codepedia.org cannot and does not guarantee or warrant that files available for downloading through the Site will be free of infection or viruses, worms, Trojan horses or other code that manifest contaminating or destructive properties. You are responsible for implementing sufficient procedures and checkpoints to satisfy your particular requirements for accuracy of data input and output, and for maintaining a means external to the Site for the reconstruction of any lost data.
 </p>
 
 ### <span id="Conflict_of_interest">Conflict of interest</span>
@@ -82,13 +82,13 @@ All rights reserved.
 ### <span id="Privacy">Privacy</span>
 
 <p style="text-align: justify;">
-  Codingpedia.org respects your privacy. Any personal information you provide to us including and similar to your name and e-mail address will not be released, sold, or rented to any entities or individuals outside of Codingpedia.org.
+  Codepedia.org respects your privacy. Any personal information you provide to us including and similar to your name and e-mail address will not be released, sold, or rented to any entities or individuals outside of Codepedia.org.
 </p>
 
 ### <span id="Cookies"><b>Cookies </b></span>
 
 <p style="text-align: justify;">
-  A &#8220;cookie&#8221; is a small data text file that is placed in your browser and allows Codingpedia.org to recognize you each time you visit this site(customisation etc). Cookies themselves do not contain any personal information, and Codingpedia.org does not use cookies to collect personal information. Cookies may also be used by 3rd party content providers such as newsfeeds.
+  A &#8220;cookie&#8221; is a small data text file that is placed in your browser and allows Codepedia.org to recognize you each time you visit this site(customisation etc). Cookies themselves do not contain any personal information, and Codepedia.org does not use cookies to collect personal information. Cookies may also be used by 3rd party content providers such as newsfeeds.
 </p>
 
 <p style="text-align: justify;">
@@ -98,7 +98,7 @@ All rights reserved.
 ### <span id="External_websites">External websites</span>
 
 <p style="text-align: justify;">
-  In posts there are references present to external websites. Despite careful checks of their content, Codingpedia.org does not accept any liability for the contents of external links. The contents of the external links remain the exclusive liability of the respective providers of the linked pages. Codingpedia.org does not have any influence regarding the present and future design, contents, or authorship of the linked pages.
+  In posts there are references present to external websites. Despite careful checks of their content, Codepedia.org does not accept any liability for the contents of external links. The contents of the external links remain the exclusive liability of the respective providers of the linked pages. Codepedia.org does not have any influence regarding the present and future design, contents, or authorship of the linked pages.
 </p>
 
 ### <span id="Compensation">Compensation</span>

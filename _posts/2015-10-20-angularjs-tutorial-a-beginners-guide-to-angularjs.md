@@ -4,7 +4,7 @@ title: 'AngularJS Tutorial: A Beginner’s Guide to AngularJS'
 date: 2015-10-20T15:12:59+00:00
 author: Udemy tutorials
 layout: post
-guid: http://www.codingpedia.org/?p=2503
+guid: http://www.codepedia.org/?p=2503
 permalink: /udemy/angularjs-tutorial-a-beginners-guide-to-angularjs/
 fsb_show_social:
   - 0
@@ -1801,7 +1801,7 @@ Edit `app.js` as follows:
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published on Codingpedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/angularjs-tutorial/" target="_blank">AngularJS Tutorial: A Beginner’s Guide to AngularJS</a> from<span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
+  Published on Codepedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/angularjs-tutorial/" target="_blank">AngularJS Tutorial: A Beginner’s Guide to AngularJS</a> from<span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
 </p>
 
 <p style="text-align: justify;">

@@ -4,7 +4,7 @@ title: How to build and clear a reference data cache with singleton EJBs, Ehcach
 date: 2014-11-07T16:15:42+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=2084
+guid: http://www.codepedia.org/?p=2084
 permalink: /ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-ehcache-and-mbeans/
 fsb_show_social:
   - 0
@@ -32,12 +32,12 @@ tags:
   - singleton
 ---
 <p style="text-align: justify;">
-  In this post I will present how to build a simple reference data cache in Java EE, using singleton EJBs and <a title="http://ehcache.org/" href="http://ehcache.org/" target="_blank">Ehcache</a>. The cache will reset itself after a given period of time, and can be cleared &#8220;manually&#8221; by calling a REST endpoint or a MBean method. This post actually builds on a previous post <a title="http://www.codingpedia.org/ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-and-mbeans/" href="http://www.codingpedia.org/ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-and-mbeans/" target="_blank">How to build and clear a reference data cache with singleton EJBs and MBeans</a>; the only difference is that instead of the storing of the data in a <code>ConcurrentHashMap&lt;String, Object&gt;</code> I will be using an Ehcache cache, and the cache is able to renew itself by Ehcache means.<!--more-->
+  In this post I will present how to build a simple reference data cache in Java EE, using singleton EJBs and <a title="http://ehcache.org/" href="http://ehcache.org/" target="_blank">Ehcache</a>. The cache will reset itself after a given period of time, and can be cleared &#8220;manually&#8221; by calling a REST endpoint or a MBean method. This post actually builds on a previous post <a title="http://www.codepedia.org/ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-and-mbeans/" href="http://www.codepedia.org/ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-and-mbeans/" target="_blank">How to build and clear a reference data cache with singleton EJBs and MBeans</a>; the only difference is that instead of the storing of the data in a <code>ConcurrentHashMap&lt;String, Object&gt;</code> I will be using an Ehcache cache, and the cache is able to renew itself by Ehcache means.<!--more-->
 </p>
 
 ## <span id="1_Cache">1. Cache</span>
 
-This was supposed to be a read-only cache with the possibility to flush it from exterior. I wanted to have the cache as a sort of a wrapper on the service providing the actual reference data for the application – AOP style with code <img class="wp-smiley" src="http://www.codingpedia.org/wp-includes/images/smilies/icon_smile.gif" alt=":)" />
+This was supposed to be a read-only cache with the possibility to flush it from exterior. I wanted to have the cache as a sort of a wrapper on the service providing the actual reference data for the application – AOP style with code <img class="wp-smiley" src="http://www.codepedia.org/wp-includes/images/smilies/icon_smile.gif" alt=":)" />
 
 ### <span id="11_Interface">1.1. Interface</span>
 
@@ -311,7 +311,7 @@ public class ReferenceDataResource {
 }</pre>
 
 <p style="text-align: justify;">
-  Notice the existence of the version query parameter in the <code>@GET</code> <code>getReferenceData(...)</code> method.  This represents a hash on the reference data and if it hasn’t modified the client will receive a <em>304 Not Modified HTTP Status</em>. This is a nice way to spare some bandwidth, especially if you have mobile clients. See my post <a style="color: #bc360a;" title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, for a detailed discussion around REST services design and implementation.
+  Notice the existence of the version query parameter in the <code>@GET</code> <code>getReferenceData(...)</code> method.  This represents a hash on the reference data and if it hasn’t modified the client will receive a <em>304 Not Modified HTTP Status</em>. This is a nice way to spare some bandwidth, especially if you have mobile clients. See my post <a style="color: #bc360a;" title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, for a detailed discussion around REST services design and implementation.
 </p>
 
 <p class="note_normal" style="font-style: italic;">
@@ -344,7 +344,7 @@ public class ReferenceDataResource {
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

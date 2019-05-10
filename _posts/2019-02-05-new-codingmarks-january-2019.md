@@ -110,7 +110,7 @@ Feature Toggles (often also refered to as Feature Flags) are a powerful techniqu
 
 ## async-await 
 
-**[Cleaner code in NodeJs with async-await - Mongoose calls example – CodingpediaOrg](http://www.codingpedia.org/ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example)**
+**[Cleaner code in NodeJs with async-await - Mongoose calls example – CodingpediaOrg](http://www.codepedia.org/ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-11-05
   * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [async-await](https://www.codingmarks.org/search?q=[async-await]), &nbsp; [mongoose](https://www.codingmarks.org/search?q=[mongoose]), &nbsp; [mongodb](https://www.codingmarks.org/search?q=[mongodb])
@@ -984,7 +984,7 @@ var parentSchema = new Schema({
 
 <hr>
 
-**[Cleaner code in NodeJs with async-await - Mongoose calls example – CodingpediaOrg](http://www.codingpedia.org/ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example)**
+**[Cleaner code in NodeJs with async-await - Mongoose calls example – CodingpediaOrg](http://www.codepedia.org/ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-11-05
   * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [async-await](https://www.codingmarks.org/search?q=[async-await]), &nbsp; [mongoose](https://www.codingmarks.org/search?q=[mongoose]), &nbsp; [mongodb](https://www.codingmarks.org/search?q=[mongodb])
@@ -1018,7 +1018,7 @@ var parentSchema = new Schema({
 
 <hr>
 
-**[Cleaner code in NodeJs with async-await - Mongoose calls example – CodingpediaOrg](http://www.codingpedia.org/ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example)**
+**[Cleaner code in NodeJs with async-await - Mongoose calls example – CodingpediaOrg](http://www.codepedia.org/ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-11-05
   * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [async-await](https://www.codingmarks.org/search?q=[async-await]), &nbsp; [mongoose](https://www.codingmarks.org/search?q=[mongoose]), &nbsp; [mongodb](https://www.codingmarks.org/search?q=[mongodb])
@@ -1098,7 +1098,7 @@ Loads environment variables from .env for nodejs projects.
 
 <hr>
 
-**[Cleaner code in NodeJs with async-await - Mongoose calls example – CodingpediaOrg](http://www.codingpedia.org/ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example)**
+**[Cleaner code in NodeJs with async-await - Mongoose calls example – CodingpediaOrg](http://www.codepedia.org/ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-11-05
   * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [async-await](https://www.codingmarks.org/search?q=[async-await]), &nbsp; [mongoose](https://www.codingmarks.org/search?q=[mongoose]), &nbsp; [mongodb](https://www.codingmarks.org/search?q=[mongodb])

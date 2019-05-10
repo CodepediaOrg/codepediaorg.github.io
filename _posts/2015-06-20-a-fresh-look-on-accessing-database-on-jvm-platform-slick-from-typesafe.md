@@ -4,7 +4,7 @@ title: 'A fresh look on accessing database on JVM platform: Slick from Typesafe'
 date: 2015-06-20T17:41:18+00:00
 author: Andriy Redko
 layout: post
-guid: http://www.codingpedia.org/?p=2388
+guid: http://www.codepedia.org/?p=2388
 permalink: /aredko/a-fresh-look-on-accessing-database-on-jvm-platform-slick-from-typesafe/
 fsb_show_social:
   - 0
@@ -197,5 +197,5 @@ Let us see those two methods in action:
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published on Codingpedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" target="_blank">A fresh look on accessing database on JVM platform: Slick from Typesafe</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com/" target="_blank">http://aredko.blogspot.com</a>
+  Published on Codepedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" target="_blank">A fresh look on accessing database on JVM platform: Slick from Typesafe</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com/" target="_blank">http://aredko.blogspot.com</a>
 </p>

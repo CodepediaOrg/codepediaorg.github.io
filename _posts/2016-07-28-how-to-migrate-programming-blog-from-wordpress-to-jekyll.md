@@ -1,21 +1,21 @@
 ---
 layout: post
 title: How to migrate programming blog from Wordpress to Jekyll
-description: "In this post, I will give my two cents on migrating a programming blog from Wordpress to Jekyll, namely I will list and detail the main steps I took for migrating Codingpedia.org"
+description: "In this post, I will give my two cents on migrating a programming blog from Wordpress to Jekyll, namely I will list and detail the main steps I took for migrating Codepedia.org"
 author: ama
 permalink: /ama/how-to-migrate-programming-blog-from-wordpress-to-jekyll/
 categories: [jekyll]
 tags: [jekyll, wordpress, migration, codingpedia]
 ---
 
-In this post, I will give my two cents on migrating a programming blog from Wordpress[^1] to Jekyll[^2], namely I will list and detail the main steps I took for migrating [Codingpedia.org](http://www.codingpedia.org).
+In this post, I will give my two cents on migrating a programming blog from Wordpress[^1] to Jekyll[^2], namely I will list and detail the main steps I took for migrating [Codepedia.org](http://www.codepedia.org).
 
 [^1]: <https://wordpress.org/>
 [^2]: <https://jekyllrb.com/>
 
 ## Why?
 
-Well, there were pains - I was experiencing performance issues (caused mainly by memory shortages on a 4GB machine) with the virtual private server from GoDaddy, where I used to host both [Podcastpedia.org](https://github.com/Codingpedia/podcastpedia) and [Codingpedia.org](http://www.codingpedia.org). Codingpedia was developed initially with Wordpress[^1], which I still think is a great tool, if you want to quickly start a blog and don't have programming experience, but it kinda requires a LAMP[^2] stack, which it's kinda performance killer from a number of visitors forward. Of course you can always add more hardware to support the website, but that has a limit too. Limited was also the budget I was ready to spend on hosting, by today's standards.
+Well, there were pains - I was experiencing performance issues (caused mainly by memory shortages on a 4GB machine) with the virtual private server from GoDaddy, where I used to host both [Podcastpedia.org](https://github.com/Codingpedia/podcastpedia) and [Codepedia.org](http://www.codepedia.org). Codingpedia was developed initially with Wordpress[^1], which I still think is a great tool, if you want to quickly start a blog and don't have programming experience, but it kinda requires a LAMP[^2] stack, which it's kinda performance killer from a number of visitors forward. Of course you can always add more hardware to support the website, but that has a limit too. Limited was also the budget I was ready to spend on hosting, by today's standards.
 
 [^3]: <https://en.wikipedia.org/wiki/LAMP_(software_bundle)>
 
@@ -96,7 +96,7 @@ The images are exported into the `wp-content` directory under the root directory
 I decided to host the website on GitHub Pages[^6], because is currently free, hosted directly from the
 [GitHub Repository](https://github.com/Codingpedia/codingpedia.github.io). Just edit, push, and your changes are live.
 
-> It matches perfectly our vision of [sharing coding knowledge](http://www.codingpedia.org/about/#Mission)
+> It matches perfectly our vision of [sharing coding knowledge](http://www.codepedia.org/about/#Mission)
 
 [^6]: <https://pages.github.com/>
 
@@ -161,13 +161,13 @@ so they show nicely in the browser:
 > On Wordpress I was using a syntax highlighter with line numbers and everything, but somehow I find it neater in Jekyll
 
 <p class="note_normal">
-When writing new posts I will definitely use one of the methods suggested in <a href="http://www.codingpedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org" target="_blank">How to insert and highlight code in Jekyll blog post on Codingpedia.org</a> and if want to publish on Codingpedia.org I recommend you use them too.
+When writing new posts I will definitely use one of the methods suggested in <a href="http://www.codepedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org" target="_blank">How to insert and highlight code in Jekyll blog post on Codepedia.org</a> and if want to publish on Codepedia.org I recommend you use them too.
 </p>
 
 
 ### Migrate custom CSS
 
-There are some custom styles from the old [Wordpress theme](http://www.codingpedia.org/ama/how-to-add-a-logo-to-the-twenty-thirteen-wordpress-theme/)
+There are some custom styles from the old [Wordpress theme](http://www.codepedia.org/ama/how-to-add-a-logo-to-the-twenty-thirteen-wordpress-theme/)
 I'd like to user further. Because Jekyll supports natively SASS[^8], I just moved the style to [_wordpress.scss](https://github.com/Codingpedia/codingpedia.github.io/blob/master/_sass/_wordpress.scss) file
 and imported it into the [_main.scss](https://github.com/Codingpedia/codingpedia.github.io/blob/master/assets/css/main.scss), which combines
 all the SASS files.
@@ -184,7 +184,7 @@ all the SASS files.
 
 ### Multiple authors support
 
-This was very important because of of our [Coding Friend Program](http://www.codingpedia.org/friends/)
+This was very important because of of our [Coding Friend Program](http://www.codepedia.org/friends/)
 It is pretty well supported in Jekyll, once you are ready to get your hands a little bit dirty - for more details see my post  [How to handle multiple authors in Jekyll]({{site.url}}/ama/how-to-handle-multiple-authors-in-jekyll)
 
 ### Comments
@@ -199,7 +199,7 @@ comments: false
 
 ### Feed
 
-It uses the theme's own [Atom implementation](https://github.com/Codingpedia/codingpedia.github.io/blob/master/feed.xml), which I adjusted for multiple authors - __don't forget to subscribe to it [here](http://www.codingpedia.org/feed.xml)__
+It uses the theme's own [Atom implementation](https://github.com/Codingpedia/codingpedia.github.io/blob/master/feed.xml), which I adjusted for multiple authors - __don't forget to subscribe to it [here](http://www.codepedia.org/feed.xml)__
 
 > Another possibility would have been to use Atom (RSS) feeds for GitHub Pages[^9], which can automatically create an
  [Atom feed](https://en.wikipedia.org/wiki/Atom_%28standard%29) for the Jekyll blog deployed on GitHub Pages.
@@ -227,6 +227,6 @@ So far I am glad I did this move. Here are a summary of the benefits I reaped ti
 
 [^11]: <https://daringfireball.net/projects/markdown/>
 
-I hope you've found this useful and after you will have migrated to Jekyll, join our [Coding Friend Program](http://www.codingpedia.org/friends/) so we can easier republish your articles or, even better, do it yourself with a [pull request](https://github.com/Codingpedia/codingpedia.github.io/blob/master/CONTRIBUTING_POST.md).
+I hope you've found this useful and after you will have migrated to Jekyll, join our [Coding Friend Program](http://www.codepedia.org/friends/) so we can easier republish your articles or, even better, do it yourself with a [pull request](https://github.com/Codingpedia/codingpedia.github.io/blob/master/CONTRIBUTING_POST.md).
 
 ## References

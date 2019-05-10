@@ -4,7 +4,7 @@ title: Custom Reason Phrase in HTTP status error message response with JAX-RS (J
 date: 2014-10-28T20:15:08+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=2051
+guid: http://www.codepedia.org/?p=2051
 permalink: /ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/
 fsb_show_social:
   - 0
@@ -80,7 +80,7 @@ tags:
 </h2>
 
 <p style="text-align: justify;">
-  As you might have found out from my post <a title="http://www.codingpedia.org/ama/error-handling-in-rest-api-with-jersey/" href="http://www.codingpedia.org/ama/error-handling-in-rest-api-with-jersey/" target="_blank">Error handling in REST API with Jersey</a>, I like handling the checked exceptions using Jersey&#8217;s <a title="https://jersey.java.net/documentation/latest/user-guide.html#d0e5206" href="https://jersey.java.net/documentation/latest/user-guide.html#d0e5206" target="_blank">ExceptionMapper </a>capability.
+  As you might have found out from my post <a title="http://www.codepedia.org/ama/error-handling-in-rest-api-with-jersey/" href="http://www.codepedia.org/ama/error-handling-in-rest-api-with-jersey/" target="_blank">Error handling in REST API with Jersey</a>, I like handling the checked exceptions using Jersey&#8217;s <a title="https://jersey.java.net/documentation/latest/user-guide.html#d0e5206" href="https://jersey.java.net/documentation/latest/user-guide.html#d0e5206" target="_blank">ExceptionMapper </a>capability.
 </p>
 
 For the purpose of this demonstration I defined a `CustomReasonPhraseException`:
@@ -227,7 +227,7 @@ Custom Reason Phrase exception occured : message attached to the Custom Reason P
 , the custom Reason Phrase appears in the response as expected.
 
 <p style="text-align: justify;">
-  <strong>Tip:</strong> If you want really learn how to design and implement REST API in Java read the following <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
+  <strong>Tip:</strong> If you want really learn how to design and implement REST API in Java read the following <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
 </p>
 
 ## <span id="Summary">Summary</span>
@@ -257,7 +257,7 @@ Custom Reason Phrase exception occured : message attached to the Custom Reason P
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

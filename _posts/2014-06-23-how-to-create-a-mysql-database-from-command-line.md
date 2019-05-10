@@ -4,7 +4,7 @@ title: How to create a MySQL database from command line
 date: 2014-06-23T14:45:34+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1583
+guid: http://www.codepedia.org/?p=1583
 permalink: /ama/how-to-create-a-mysql-database-from-command-line/
 fsb_show_social:
   - 0
@@ -95,7 +95,7 @@ tags:
             For Windows place the configuration file where the MySQL server is installed &#8211; the <a href="https://github.com/podcastpedia/podcastpedia-sql/blob/master/_prepare_database_for_development/my.ini">my.ini</a> file from above is an example used on a Windows 7 machine
           </li>
           <li style="text-align: justify;">
-            For linux you need to use .cnf files. You can see in this blog post &#8211;<a href="http://www.codingpedia.org/ama/optimizing-mysql-server-settings/">Optimizing MySQL server settings</a> &#8211; how the MySQL database is configured in production for <a href="https://github.com/Codingpedia/podcastpedia/">Podcastpedia.org</a>
+            For linux you need to use .cnf files. You can see in this blog post &#8211;<a href="http://www.codepedia.org/ama/optimizing-mysql-server-settings/">Optimizing MySQL server settings</a> &#8211; how the MySQL database is configured in production for <a href="https://github.com/Codingpedia/podcastpedia/">Podcastpedia.org</a>
           </li>
         </ul>
       </li>
@@ -263,7 +263,7 @@ The pcmDB database will be than saved into the single file _pcmdb-backup-2014.06
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

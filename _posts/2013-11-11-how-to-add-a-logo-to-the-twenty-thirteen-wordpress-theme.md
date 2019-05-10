@@ -4,7 +4,7 @@ title: How to add a logo to the Twenty Thirteen WordPress theme
 date: 2013-11-11T21:09:59+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=915
+guid: http://www.codepedia.org/?p=915
 permalink: /ama/how-to-add-a-logo-to-the-twenty-thirteen-wordpress-theme/
 fsb_show_social:
   - 0
@@ -30,7 +30,7 @@ tags:
   - wordpress
 ---
 <p style="text-align: justify;">
-  In this post I will share my experience of adding a logo in front of the site title when using the <a title="Wordpress - Twenty Thirteen theme" href="http://wordpress.org/themes/twentythirteen" target="_blank">Twenty Thirteen</a> theme for WordPress. I&#8217;ve been learning WordPress basics in the last couple of months, but I am no expert to create a custom theme, so I will stick to default ones for the moment. Up until today I have been using the <a title="Wordpress - Twenty Twelve theme" href="http://wordpress.org/themes/twentytwelve" target="_blank">Twenty Twelve</a> theme &#8211; this is fully a responsive theme and with the right plugins you get a pretty good functionality, at least for a technical blog, &#8230;but I find it a little dull. So I said why not try some more colour? Well, the <a title="Wordpress - Twenty Thirteen theme" href="http://wordpress.org/themes/twentythirteen" target="_blank">Twenty Thirteen</a> theme is certainly an answer for that. I gave it a try on my localhost, I liked it, so I decided to give it a try in production. This is so cool about WordPress, you can change the look of your pages pretty fast, as long as you haven&#8217;t invested much too effort in customizing one theme. <!--more-->If by the time of your reading, Codingpedia.org does not use the Twenty Thirteen anymore this is how it looked like :
+  In this post I will share my experience of adding a logo in front of the site title when using the <a title="Wordpress - Twenty Thirteen theme" href="http://wordpress.org/themes/twentythirteen" target="_blank">Twenty Thirteen</a> theme for WordPress. I&#8217;ve been learning WordPress basics in the last couple of months, but I am no expert to create a custom theme, so I will stick to default ones for the moment. Up until today I have been using the <a title="Wordpress - Twenty Twelve theme" href="http://wordpress.org/themes/twentytwelve" target="_blank">Twenty Twelve</a> theme &#8211; this is fully a responsive theme and with the right plugins you get a pretty good functionality, at least for a technical blog, &#8230;but I find it a little dull. So I said why not try some more colour? Well, the <a title="Wordpress - Twenty Thirteen theme" href="http://wordpress.org/themes/twentythirteen" target="_blank">Twenty Thirteen</a> theme is certainly an answer for that. I gave it a try on my localhost, I liked it, so I decided to give it a try in production. This is so cool about WordPress, you can change the look of your pages pretty fast, as long as you haven&#8217;t invested much too effort in customizing one theme. <!--more-->If by the time of your reading, Codepedia.org does not use the Twenty Thirteen anymore this is how it looked like :
 </p>
 
 <div id="attachment_918" style="width: 614px" class="wp-caption alignnone">
@@ -201,7 +201,7 @@ Now to the **logo adding** part, I floated both the image (line 27) and the `tit
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

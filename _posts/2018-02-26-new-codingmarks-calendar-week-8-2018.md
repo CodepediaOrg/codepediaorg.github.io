@@ -68,11 +68,11 @@ It's interesting to see what designs and features others have come up with. Link
 
 <hr>
 
-**[How to insert and highlight code in Jekyll blog post on Codingpedia.org – CodingpediaOrg](http://www.codingpedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org)**
+**[How to insert and highlight code in Jekyll blog post on Codepedia.org – CodingpediaOrg](http://www.codepedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org)**
 
   * **tags**: &nbsp; [jekyll](https://www.codingmarks.org/search?q=[jekyll]), &nbsp; [markdown](https://www.codingmarks.org/search?q=[markdown]), &nbsp; [blogging](https://www.codingmarks.org/search?q=[blogging])
 
-Demo post displaying the various ways of inserting and highlighting code in Markdown, when posting on Codingpedia.org
+Demo post displaying the various ways of inserting and highlighting code in Markdown, when posting on Codepedia.org
 
 <hr>
 
@@ -248,11 +248,11 @@ It's interesting to see what designs and features others have come up with. Link
 
 <hr>
 
-**[How to insert and highlight code in Jekyll blog post on Codingpedia.org – CodingpediaOrg](http://www.codingpedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org)**
+**[How to insert and highlight code in Jekyll blog post on Codepedia.org – CodingpediaOrg](http://www.codepedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org)**
 
   * **tags**: &nbsp; [jekyll](https://www.codingmarks.org/search?q=[jekyll]), &nbsp; [markdown](https://www.codingmarks.org/search?q=[markdown]), &nbsp; [blogging](https://www.codingmarks.org/search?q=[blogging])
 
-Demo post displaying the various ways of inserting and highlighting code in Markdown, when posting on Codingpedia.org
+Demo post displaying the various ways of inserting and highlighting code in Markdown, when posting on Codepedia.org
 
 <hr>
 
@@ -304,11 +304,11 @@ Apache Log4j 2 is an upgrade to Log4j that provides significant improvements ove
 
 ## markdown 
 
-**[How to insert and highlight code in Jekyll blog post on Codingpedia.org – CodingpediaOrg](http://www.codingpedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org)**
+**[How to insert and highlight code in Jekyll blog post on Codepedia.org – CodingpediaOrg](http://www.codepedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org)**
 
   * **tags**: &nbsp; [jekyll](https://www.codingmarks.org/search?q=[jekyll]), &nbsp; [markdown](https://www.codingmarks.org/search?q=[markdown]), &nbsp; [blogging](https://www.codingmarks.org/search?q=[blogging])
 
-Demo post displaying the various ways of inserting and highlighting code in Markdown, when posting on Codingpedia.org
+Demo post displaying the various ways of inserting and highlighting code in Markdown, when posting on Codepedia.org
 
 <hr>
 

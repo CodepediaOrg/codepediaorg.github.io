@@ -4,7 +4,7 @@ title: Understanding JavaScript Callbacks
 date: 2014-12-29T21:28:27+00:00
 author: Christopher Buecheler
 layout: post
-guid: http://www.codingpedia.org/?p=2157
+guid: http://www.codepedia.org/?p=2157
 permalink: /cwbuecheler/understanding-javascript-callbacks/
 fsb_show_social:
   - 0
@@ -225,7 +225,7 @@ Same deal either way, whether the callback function is declared or anonymized.
 Hope this helps! Any questions? Drop me a line or comment in the discussion below.
 
 <p class="note_normal" style="text-align: justify;">
-  Published on Codingpedia.org with the permission of Christopher Buecheler – source <a title="http://cwbuecheler.com/web/tutorials/2013/javascript-callbacks/" href="http://cwbuecheler.com/web/tutorials/2013/javascript-callbacks/" target="_blank">UNDERSTANDING JAVASCRIPT CALLBACKS</a> from <a title="http://cwbuecheler.com/" href="http://cwbuecheler.com/" target="_blank">http://cwbuecheler.com/</a>
+  Published on Codepedia.org with the permission of Christopher Buecheler – source <a title="http://cwbuecheler.com/web/tutorials/2013/javascript-callbacks/" href="http://cwbuecheler.com/web/tutorials/2013/javascript-callbacks/" target="_blank">UNDERSTANDING JAVASCRIPT CALLBACKS</a> from <a title="http://cwbuecheler.com/" href="http://cwbuecheler.com/" target="_blank">http://cwbuecheler.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

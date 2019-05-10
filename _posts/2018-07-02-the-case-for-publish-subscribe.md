@@ -27,7 +27,7 @@ broker, that will be consumed by one or several clients, subscribers. See the di
 
 <!--more-->
 <figure>
-   	<img src="http://www.codingpedia.org/images/posts/publish-subscribe-architecture/publish-subscribe-architecture.png" alt="" />
+   	<img src="http://www.codepedia.org/images/posts/publish-subscribe-architecture/publish-subscribe-architecture.png" alt="" />
    	<figcaption>Model architecture for a publish/subscribe scenario in enterprise</figcaption>
 </figure>
 

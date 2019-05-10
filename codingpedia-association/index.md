@@ -4,7 +4,7 @@ title: Codingpedia Association
 date: 2014-06-20T08:59:53+00:00
 author: Adrian Matei
 layout: page
-guid: http://www.codingpedia.org/?page_id=1540
+guid: http://www.codepedia.org/?page_id=1540
 dsq_thread_id:
   - 2780282416
 ---
@@ -67,10 +67,10 @@ dsq_thread_id:
 We are a non-profit organisation currently supporting two websites :
 
 <li style="text-align: justify;">
-  <em><a title="Codingpedia.org, let's code the better world" href="http://www.codingpedia.org/" target="_blank"><strong>Codingpedia.org, let&#8217;s code the better world</strong></a></em> &#8211; <strong>a coding knowledge hub</strong>, providing free educational content for professionals involved in software development. The website covers different topics and technologies with posts whose difficulty levels range from beginner to &#8220;hard-core&#8221; programming. You can learn more about the website by visiting the <em><a title="Codingpedia.org, about us" href="http://www.codingpedia.org/about/" target="_blank">About us</a></em> page and <em><a title="Coding Friend Program" href="http://www.codingpedia.org/friends/" target="_blank">you can <strong>too</strong> be part of the community.<br /> </a><br /> </em>
+  <em><a title="Codepedia.org, let's code the better world" href="http://www.codepedia.org/" target="_blank"><strong>Codepedia.org, let&#8217;s code the better world</strong></a></em> &#8211; <strong>a coding knowledge hub</strong>, providing free educational content for professionals involved in software development. The website covers different topics and technologies with posts whose difficulty levels range from beginner to &#8220;hard-core&#8221; programming. You can learn more about the website by visiting the <em><a title="Codepedia.org, about us" href="http://www.codepedia.org/about/" target="_blank">About us</a></em> page and <em><a title="Coding Friend Program" href="http://www.codepedia.org/friends/" target="_blank">you can <strong>too</strong> be part of the community.<br /> </a><br /> </em>
 </li>
 <li style="text-align: justify;">
-  <strong><em> <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org, knowledge to go</a></em> &#8211; with the mission to build the most popular podcast directory</strong>. You can learn more about Podcastpedia by visiting <em>our <a title="http://www.codingpedia.org/ama/story-of-podcastpedia-org/" href="http://www.codingpedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia.org </a></em>page. The Pocastpedia.org has recently been made open-source &#8211; <a title="https://github.com/podcastpedia" href="https://github.com/podcastpedia" target="_blank">PodcastpediaOrg GitHub repositories.</a> We are looking there for your feedback and support.
+  <strong><em> <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org, knowledge to go</a></em> &#8211; with the mission to build the most popular podcast directory</strong>. You can learn more about Podcastpedia by visiting <em>our <a title="http://www.codepedia.org/ama/story-of-podcastpedia-org/" href="http://www.codepedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia.org </a></em>page. The Pocastpedia.org has recently been made open-source &#8211; <a title="https://github.com/podcastpedia" href="https://github.com/podcastpedia" target="_blank">PodcastpediaOrg GitHub repositories.</a> We are looking there for your feedback and support.
 </li>
 
 ## <span id="2_Organization_info">2. Organization info</span>
@@ -86,10 +86,10 @@ We are a non-profit organisation currently supporting two websites :
 #### <span id="President">President</span>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2014/01/AdrianMatei.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codepedia.org/wp-content/uploads/2014/01/AdrianMatei.png" alt="Podcastpedia image" />
 
   <div id="author_details" style="text-align: justify;">
-    <a title="Codingpedia.org, let's code the better world" href="http://www.codingpedia.org/" target="_blank">Codingpedia.org</a> was founded by Adrian Matei (ama [AT] codingpedia DOT org), a computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy.
+    <a title="Codepedia.org, let's code the better world" href="http://www.codepedia.org/" target="_blank">Codepedia.org</a> was founded by Adrian Matei (ama [AT] codingpedia DOT org), a computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy.
   </div>
 
   <div id="follow_social" style="clear: both;">
@@ -105,7 +105,7 @@ We are a non-profit organisation currently supporting two websites :
 #### <span id="Vice-president">Vice-president</span>
 
 <div id="about_secretary" style="background-color: #e6e6e6; padding: 10px;">
-  <img style="float: left; margin-right: 20px; width: 150px; height: 130px;" src="http://www.codingpedia.org/wp-content/uploads/2014/07/silvia-200.png" alt="Secretary image" /></p>
+  <img style="float: left; margin-right: 20px; width: 150px; height: 130px;" src="http://www.codepedia.org/wp-content/uploads/2014/07/silvia-200.png" alt="Secretary image" /></p>
 
   <div style="text-align: justify;">
     Vice-president of the organisation, Siebel developer, wife, caring mother of our son Sebastian.
@@ -119,7 +119,7 @@ We are a non-profit organisation currently supporting two websites :
 
 <div id="about_vicepresident" style="background-color: #e6e6e6; padding: 10px;">
   <p>
-    <img style="float: left; margin-right: 20px; width: 150px; height: 150px;" src="http://www.codingpedia.org/wp-content/uploads/2014/07/mother.png" alt="Vicepresident image" />
+    <img style="float: left; margin-right: 20px; width: 150px; height: 150px;" src="http://www.codepedia.org/wp-content/uploads/2014/07/mother.png" alt="Vicepresident image" />
   </p>
 
   <div style="text-align: justify;">
@@ -149,7 +149,7 @@ If you live in Romania you may choose to donate directly **two percent** from yo
 #### <span id="311_Why_should_I_donate_to_the_Codingpedia_Association">3.1.1. Why should I donate to the Codingpedia Association?</span>
 
 <p style="text-align: justify;">
-  By donating to the Codingpedia Association you show your support for <a title="http://www.codingpedia.org/about/" href="http://www.codingpedia.org/about/" target="_blank">our mission</a> and help sustain a promising organization. Donations also shows your support for Open Source and provides you the opportunity to &#8220;give back&#8221; to the community. Finally, since the Codingpedia Association is non-profit organization, sponsorship might provide attractive tax benefits.
+  By donating to the Codingpedia Association you show your support for <a title="http://www.codepedia.org/about/" href="http://www.codepedia.org/about/" target="_blank">our mission</a> and help sustain a promising organization. Donations also shows your support for Open Source and provides you the opportunity to &#8220;give back&#8221; to the community. Finally, since the Codingpedia Association is non-profit organization, sponsorship might provide attractive tax benefits.
 </p>
 
 ### <span id="312_Where_will_my_funds_go">3.1.2. Where will my funds go?</span>

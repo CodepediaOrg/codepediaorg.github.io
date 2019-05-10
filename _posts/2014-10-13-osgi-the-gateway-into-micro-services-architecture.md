@@ -4,7 +4,7 @@ title: 'OSGi: the gateway into micro-services architecture'
 date: 2014-10-13T20:54:05+00:00
 author: Andriy Redko
 layout: post
-guid: http://www.codingpedia.org/?p=1986
+guid: http://www.codepedia.org/?p=1986
 permalink: /aredko/osgi-the-gateway-into-micro-services-architecture/
 fsb_show_social:
   - 0
@@ -517,7 +517,7 @@ Would be nice to check if database has the person populated as well. With <a st
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="http://aredko.blogspot.ro/2014/08/osgi-gateway-into-micro-services.html" href="http://aredko.blogspot.ro/2014/08/osgi-gateway-into-micro-services.html" target="_blank">OSGi: the gateway into micro-services architecture</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com" target="_blank">http://aredko.blogspot.com</a>
+  Published at Codepedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="http://aredko.blogspot.ro/2014/08/osgi-gateway-into-micro-services.html" href="http://aredko.blogspot.ro/2014/08/osgi-gateway-into-micro-services.html" target="_blank">OSGi: the gateway into micro-services architecture</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com" target="_blank">http://aredko.blogspot.com</a>
 </p>
 
 <p style="text-align: justify;">

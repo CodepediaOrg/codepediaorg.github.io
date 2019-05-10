@@ -4,7 +4,7 @@ title: Upgrade from Tiles 2 to Tiles 3 on Spring MVC 3 application
 date: 2013-11-14T21:29:36+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=931
+guid: http://www.codepedia.org/?p=931
 permalink: /ama/upgrade-from-tiles-2-to-tiles-3-on-spring-mvc-3-application/
 fsb_show_social:
   - 0
@@ -125,4 +125,4 @@ That&#8217;s it.
 
 P.S.
   
-For a complete example of Tiles integration with Spring MVC see my post &#8211; <a title="Spring 3 and Tiles 2 integration" href="http://www.codingpedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration</a>
+For a complete example of Tiles integration with Spring MVC see my post &#8211; <a title="Spring 3 and Tiles 2 integration" href="http://www.codepedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration</a>

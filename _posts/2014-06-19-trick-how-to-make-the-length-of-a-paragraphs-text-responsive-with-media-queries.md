@@ -4,7 +4,7 @@ title: 'Trick &#8211; how to make the length of a paragraph&#8217;s text respons
 date: 2014-06-19T14:27:08+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1516
+guid: http://www.codepedia.org/?p=1516
 permalink: /ama/trick-how-to-make-the-length-of-a-paragraphs-text-responsive-with-media-queries/
 gr_overridden:
   - 1
@@ -101,7 +101,7 @@ The CSS code supporting this is the following:
 }</pre>
 
 <p class="note_code">
-  <strong>Code tip:</strong> As you might recall from the post <a title="http://www.codingpedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" href="http://www.codingpedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" target="_blank">CSS Preprocessors – Introducing Sass to Podcastpedia.org</a>, the CSS for Podcastpedia.org gets generated from SASS with Gulp.
+  <strong>Code tip:</strong> As you might recall from the post <a title="http://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" href="http://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" target="_blank">CSS Preprocessors – Introducing Sass to Podcastpedia.org</a>, the CSS for Podcastpedia.org gets generated from SASS with Gulp.
 </p>
 
 Well, that&#8217;s it. If you have a better proposal to achieve this please leave a comment!!! 10x
@@ -129,7 +129,7 @@ Well, that&#8217;s it. If you have a better proposal to achieve this please leav
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

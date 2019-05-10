@@ -4,7 +4,7 @@ title: Troubleshooting WordPress installation on GoDaddy VPS
 date: 2013-07-25T14:50:14+00:00
 author: ama
 layout: post
-guid: http://www.codingpedia.org/?p=5
+guid: http://www.codepedia.org/?p=5
 permalink: /ama/troubleshooting-wordpress-on-godaddy-vps-account/
 dsq_thread_id:
   - 1533849201
@@ -34,11 +34,11 @@ tags:
 My first entry in the blogosphere is not &#8220;About us&#8221;, but about the problems I encountered trying to install WordPress on my GoDaddy Virtual Private Server (VPS).
 
 <p class="western">
-  For the installation I followed the steps from <a title="Codex Installing WordPress" href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a>. Everything went fine until <em>Step 5: Run the Install Script</em>. After calling <tt>http://codingpedia.org/wp-admin/install.php</tt> , my excitement to have finished quickly finished the installation was ruined by the infamous
+  For the installation I followed the steps from <a title="Codex Installing WordPress" href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a>. Everything went fine until <em>Step 5: Run the Install Script</em>. After calling <tt>http://codepedia.org/wp-admin/install.php</tt> , my excitement to have finished quickly finished the installation was ruined by the infamous
 </p>
 
 <p class="western" style="padding-left: 30px;">
-  <em><strong>Internal Server Error </strong></em><br /> <em>The server encountered an internal error or misconfiguration and was unable to complete your request.</em><br /> <em>Please contact the server administrator, webmaster@codingpedia.org and inform them of the time the error occurred, and anything you might have done that may have caused the error.</em><br /> <em>More information about this error may be available in the server error log.</em>
+  <em><strong>Internal Server Error </strong></em><br /> <em>The server encountered an internal error or misconfiguration and was unable to complete your request.</em><br /> <em>Please contact the server administrator, webmaster@codepedia.org and inform them of the time the error occurred, and anything you might have done that may have caused the error.</em><br /> <em>More information about this error may be available in the server error log.</em>
 </p>
 
 <p class="western" style="padding-left: 30px;">
@@ -51,7 +51,7 @@ My first entry in the blogosphere is not &#8220;About us&#8221;, but about the p
   After spending a couple of hours researching the logs and the web it occured to me I had uploaded the files to my webserver via SSH and all the wordpress files had the owner and group set to <strong><em>root</em></strong>. My <strong>PHP 5 handler</strong> was set to <strong>suphp</strong>. After correcting the user and owner as the ones specified in my virtual host configuration for the domain:
 </p>
 
-<pre class="lang:default decode:true" title="Virtual Host configuration mod_suphp">ServerName codingpedia.org
+<pre class="lang:default decode:true" title="Virtual Host configuration mod_suphp">ServerName codepedia.org
 ...
 UserDir enabled my_user
 &lt;IfModule mod_suphp.c&gt;
@@ -61,7 +61,7 @@ UserDir enabled my_user
 
 , this problem was solved.
 
-But when trying run the install script <tt>http://codingpedia.org/wp-admin/install.php</tt> again, I got another infamous HTTP error code &#8211; 403
+But when trying run the install script <tt>http://codepedia.org/wp-admin/install.php</tt> again, I got another infamous HTTP error code &#8211; 403
 
 <p style="padding-left: 30px;">
   <em><strong>Forbidden</strong> </em><br /> <em>You don&#8217;t have permission to access / on this server.</em><br /> <em>Additionally, a 403 Forbidden error was encountered while trying to use an ErrorDocument to handle the request.</em>

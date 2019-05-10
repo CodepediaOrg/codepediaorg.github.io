@@ -4,7 +4,7 @@ title: 'Java 8 Optional: How to Use it'
 date: 2014-10-16T21:08:13+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codingpedia.org/?p=1998
+guid: http://www.codepedia.org/?p=1998
 permalink: /jhadesdev/java-8-optional-how-to-use-it/
 fsb_show_social:
   - 0
@@ -166,7 +166,7 @@ This blog post from Oracle goes further into `Optional`and it&#8217;s uses, com
 This cheat sheet provides a thorough overview of Optional &#8211; [Optional in Java 8 Cheat Sheet](http://java.dzone.com/articles/optional-java-8-cheat-sheet)
 
 <p class="note_normal">
-  Published at Codingpedia.org with permission of Aleksey Novik &#8211; source <a title="http://blog.jhades.org/java-8-how-to-use-optional/" href="http://blog.jhades.org/java-8-how-to-use-optional/" target="_blank">Java 8 Optional: How to Use it</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik &#8211; source <a title="http://blog.jhades.org/java-8-how-to-use-optional/" href="http://blog.jhades.org/java-8-how-to-use-optional/" target="_blank">Java 8 Optional: How to Use it</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

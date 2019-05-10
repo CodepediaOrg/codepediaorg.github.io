@@ -116,7 +116,7 @@ alias mysql-connect-root="mysql -uroot -p"
 alias mysql-vim-mysql.conf.d.my.cnf="sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf"
 ```
 
-> See my post [A developer's guide to using aliases](http://www.codingpedia.org/ama/a-developers-guide-to-using-aliases/) to learn how I've become best buddies with the Bash alias. O, and I've
+> See my post [A developer's guide to using aliases](http://www.codepedia.org/ama/a-developers-guide-to-using-aliases/) to learn how I've become best buddies with the Bash alias. O, and I've
 also created a video with it.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Emlc7mkZDQ4" frameborder="0" allowfullscreen></iframe>
@@ -130,7 +130,7 @@ performance [^3].
 [^2]: <https://www.linode.com/docs/websites/hosting-a-website>
 [^3]: <http://www.speedemy.com/17-key-mysql-config-file-settings-mysql-5-7-proof/>
 
-> I have personally written about [optimizing MySQL Server Settings](http://www.codingpedia.org/ama/optimizing-mysql-server-settings/), but this remains a science for itself to me. Anyway before you are ready to override
+> I have personally written about [optimizing MySQL Server Settings](http://www.codepedia.org/ama/optimizing-mysql-server-settings/), but this remains a science for itself to me. Anyway before you are ready to override
  a default value in `my.cnf`, have a look in the official documentation about [Server System Variables](https://dev.mysql.com/doc/refman/5.5/en/server-system-variables.html) and try to reason what each
  really means...
 

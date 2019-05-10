@@ -4,7 +4,7 @@ title: Securing Microservices with Keycloak
 date: 2016-01-09T18:50:16+00:00
 author: keycloak keycloak
 layout: post
-guid: http://www.codingpedia.org/?p=2605
+guid: http://www.codepedia.org/?p=2605
 permalink: /keycloak/securing-microservices-with-keycloak/
 fsb_show_social:
   - 0
@@ -84,7 +84,7 @@ tags:
 </p>
 
 <p style="text-align: justify;" class="note_normal">
-  Published at Codingpedia.org with the permission of Keycloak&#8217;s team – source <a title="Are you getting worked up over code duplication?" href="http://blog.keycloak.org/2015/05/securing-microservices.html" target="_blank">Securing Microservices</a> from <a title="http://johannesbrodwall.com/" href="http://keycloak.org" target="_blank">http://keycloak.org</a>
+  Published at Codepedia.org with the permission of Keycloak&#8217;s team – source <a title="Are you getting worked up over code duplication?" href="http://blog.keycloak.org/2015/05/securing-microservices.html" target="_blank">Securing Microservices</a> from <a title="http://johannesbrodwall.com/" href="http://keycloak.org" target="_blank">http://keycloak.org</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

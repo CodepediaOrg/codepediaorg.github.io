@@ -4,7 +4,7 @@ title: SpringMVC4 + Spring Data JPA + SpringSecurity configuration using JavaCon
 date: 2014-11-05T14:16:59+00:00
 author: Siva Reddy
 layout: post
-guid: http://www.codingpedia.org/?p=2070
+guid: http://www.codepedia.org/?p=2070
 permalink: /sivalabs/springmvc4-spring-data-jpa-springsecurity-configuration-using-javaconfig/
 fsb_show_social:
   - 0
@@ -854,7 +854,7 @@ You can find the source code at github <a title="https://github.com/sivaprasadr
 </p>
 
 <p class="note_normal">
-  Published at Codingpedia.org with permission of Siva Reddy<span style="font-style: italic; color: #3a4145;"> &#8211; source <a title="http://www.sivalabs.in/2014/03/springmvc4-spring-data-jpa.html" href="http://www.sivalabs.in/2014/03/springmvc4-spring-data-jpa.html" target="_blank">SpringMVC4 + Spring Data JPA + SpringSecurity configuration using JavaConfig </a></span><span style="font-style: italic; color: #3a4145;"> from </span><a style="font-style: italic; color: #bc360a;" title="http://www.sivalabs.in/" href="http://www.sivalabs.in/" target="_blank">http://www.sivalabs.in/</a>
+  Published at Codepedia.org with permission of Siva Reddy<span style="font-style: italic; color: #3a4145;"> &#8211; source <a title="http://www.sivalabs.in/2014/03/springmvc4-spring-data-jpa.html" href="http://www.sivalabs.in/2014/03/springmvc4-spring-data-jpa.html" target="_blank">SpringMVC4 + Spring Data JPA + SpringSecurity configuration using JavaConfig </a></span><span style="font-style: italic; color: #3a4145;"> from </span><a style="font-style: italic; color: #bc360a;" title="http://www.sivalabs.in/" href="http://www.sivalabs.in/" target="_blank">http://www.sivalabs.in/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

@@ -4,7 +4,7 @@ title: How to log in Spring with SLF4J and Logback
 date: 2014-03-21T10:35:16+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1244
+guid: http://www.codepedia.org/?p=1244
 permalink: /ama/how-to-log-in-spring-with-slf4j-and-logback/
 fsb_show_social:
   - 0
@@ -35,7 +35,7 @@ tags:
 ---
 
 <p style="text-align: justify;">
-  <span style="text-align: justify; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">In this post I will present how to log in a Spring based application with the help of Simple Logging Facade for Java (SLF4J) and Logback. For demonstration I will use the application presented in the post <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a></span>, to which I will add now logging capabilities.
+  <span style="text-align: justify; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">In this post I will present how to log in a Spring based application with the help of Simple Logging Facade for Java (SLF4J) and Logback. For demonstration I will use the application presented in the post <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a></span>, to which I will add now logging capabilities.
 </p>
 
 <!--more-->
@@ -393,7 +393,7 @@ So you I am just getting the &#8220;LoggingResponseFilter &#8221; logger  and 
 
 ### <span id="41_Codingpedia">4.1. Codingpedia</span>
 
-  * <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
+  * <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
 
 ### <span id="43_Web">4.3. Web</span>
 
@@ -415,7 +415,7 @@ So you I am just getting the &#8220;LoggingResponseFilter &#8221; logger  and 
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

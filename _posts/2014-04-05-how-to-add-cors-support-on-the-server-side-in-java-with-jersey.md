@@ -4,7 +4,7 @@ title: How to add CORS support on the server side in Java with Jersey
 date: 2014-04-05T14:50:56+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1299
+guid: http://www.codepedia.org/?p=1299
 permalink: /ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/
 fsb_show_social:
   - 0
@@ -37,7 +37,7 @@ tags:
   - XMLHttpRequest
 ---
 <p style="text-align: justify;">
-  In this post I will present how easy it is to enable HTTP response headers on the server sidein Java with Jersey, as defined by the <a title="http://www.w3.org/TR/cors/" href="http://www.w3.org/TR/cors/" target="_blank">Cross-Origing Resource Sharing (CORS)</a> specification. For that I have extended the REST API  built in the post <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, with CORS support.
+  In this post I will present how easy it is to enable HTTP response headers on the server sidein Java with Jersey, as defined by the <a title="http://www.w3.org/TR/cors/" href="http://www.w3.org/TR/cors/" target="_blank">Cross-Origing Resource Sharing (CORS)</a> specification. For that I have extended the REST API  built in the post <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, with CORS support.
 </p>
 <!--more-->
 
@@ -292,7 +292,7 @@ Well, that&#8217;s it &#8211; you&#8217;ve learned how easy it is to add CORS su
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

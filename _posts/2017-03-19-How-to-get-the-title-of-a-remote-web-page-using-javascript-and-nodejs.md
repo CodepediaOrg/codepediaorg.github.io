@@ -27,7 +27,7 @@ When I [add a new bookmark](https://youtu.be/bj22xbE5ZiY?t=5m10s) to my bookmark
 In the _package.json_ make sure you have the `cheerio` and `request` dependencies:
 
 ```{
-     "name": "bookmarks-api.codingpedia.org",
+     "name": "bookmarks-api.codepedia.org",
      "version": "1.0.0",
      "private": true,
      "scripts": {

@@ -4,7 +4,7 @@ title: Really Understanding Javascript Closures
 date: 2014-10-01T21:34:32+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codingpedia.org/?p=1899
+guid: http://www.codepedia.org/?p=1899
 permalink: /jhadesdev/really-understanding-javascript-closures/
 fsb_show_social:
   - 0
@@ -241,7 +241,7 @@ Javascript closures are a powerful feature that is mostly transparent in the day
 </p>
 
 <p class="note_normal" style="color: #3a4145;">
-  Published at Codingpedia.org with permission of Aleksey Novik &#8211; source <a title="http://blog.jhades.org/really-understanding-javascript-closures/" href="http://blog.jhades.org/really-understanding-javascript-closures/" target="_blank"><em>Really Understanding Javascript Closures</em></a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik &#8211; source <a title="http://blog.jhades.org/really-understanding-javascript-closures/" href="http://blog.jhades.org/really-understanding-javascript-closures/" target="_blank"><em>Really Understanding Javascript Closures</em></a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p>
 
 <p style="color: #3a4145;">

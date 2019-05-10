@@ -4,7 +4,7 @@ title: 'How JSF Works and how to Debug it &#8211; is polyglot an alternative?'
 date: 2015-01-21T17:47:27+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codingpedia.org/?p=2235
+guid: http://www.codepedia.org/?p=2235
 permalink: /jhadesdev/how-jsf-works-and-how-to-debug-it-is-polyglot-an-alternative/
 fsb_show_social:
   - 0
@@ -475,7 +475,7 @@ javax.faces.partial.ajax:true</pre>
 </ul>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with permission of Aleksey Novik – source <a title="http://blog.jhades.org/how-jsf-works-and-how-to-debug-jsf-applications-effectivelly-is-polyglot-an-alternative/" href="http://blog.jhades.org/how-jsf-works-and-how-to-debug-jsf-applications-effectivelly-is-polyglot-an-alternative/" target="_blank">How JSF Works and how to Debug it</a> – is polyglot an alternative? from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik – source <a title="http://blog.jhades.org/how-jsf-works-and-how-to-debug-jsf-applications-effectivelly-is-polyglot-an-alternative/" href="http://blog.jhades.org/how-jsf-works-and-how-to-debug-jsf-applications-effectivelly-is-polyglot-an-alternative/" target="_blank">How JSF Works and how to Debug it</a> – is polyglot an alternative? from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

@@ -4,7 +4,7 @@ title: How to handle 403 Forbidden HTTP status code in Java
 date: 2013-12-07T13:58:07+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1020
+guid: http://www.codepedia.org/?p=1020
 permalink: /ama/how-to-handle-403-forbidden-http-status-code-in-java/
 fsb_show_social:
   - 0
@@ -30,7 +30,7 @@ tags:
 ---
 ## The challenge &#8211; <code style="font-size: 0.8em;">java.io.IOException: Server returned HTTP response code: 403 for URL</code>
 
-Remember my post <a title="Reading/Parsing RSS and Atom feeds in Java with Rome" href="http://www.codingpedia.org/ama/reading-parsing-rss-and-atom-feeds-with-rome/#more-585" target="_blank">Reading/Parsing RSS and Atom feeds in Java with Rome</a>, remember how I build `SyndFeed` objects out of a feed&#8217;s URL:
+Remember my post <a title="Reading/Parsing RSS and Atom feeds in Java with Rome" href="http://www.codepedia.org/ama/reading-parsing-rss-and-atom-feeds-with-rome/#more-585" target="_blank">Reading/Parsing RSS and Atom feeds in Java with Rome</a>, remember how I build `SyndFeed` objects out of a feed&#8217;s URL:
 
 <pre class="lang:java decode:true" title="Build SyndFeed from URL">public SyndFeed getSyndFeedForUrl(String url) throws MalformedURLException, IOException, IllegalArgumentException, FeedException {
 
@@ -224,7 +224,7 @@ Et voilà, this solved the problem. I hope you could learn something from this a
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

@@ -4,7 +4,7 @@ title: How to enable Android USB Debugging on Samsung Galaxy S4 mini (in picture
 date: 2013-11-08T21:31:15+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=880
+guid: http://www.codepedia.org/?p=880
 permalink: /ama/how-to-enable-android-usb-debugging-on-samsung-galaxy-s4-mini-in-pictures/
 fsb_show_social:
   - 0

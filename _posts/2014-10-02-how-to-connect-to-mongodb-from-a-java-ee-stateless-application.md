@@ -4,7 +4,7 @@ title: How to connect to MongoDB from a Java EE stateless application
 date: 2014-10-02T17:24:40+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1903
+guid: http://www.codepedia.org/?p=1903
 permalink: /ama/how-to-connect-to-mongodb-from-a-java-ee-stateless-application/
 fsb_show_social:
   - 0

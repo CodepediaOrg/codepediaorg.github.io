@@ -4,7 +4,7 @@ title: The anatomy of connection pooling
 date: 2014-10-07T20:37:52+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codingpedia.org/?p=1930
+guid: http://www.codepedia.org/?p=1930
 permalink: /vladmihalcea/the-anatomy-of-connection-pooling/
 fsb_show_social:
   - 0
@@ -293,7 +293,7 @@ The chart displays the time spent during opening and closing connections so lowe
 </p>
 
 <p class="note_normal" style="color: #444444; text-align: justify;">
-  Published at Codingpedia.org with the permission of Vlad Mihalcea &#8211; source <a title="http://vladmihalcea.com/2014/04/17/the-anatomy-of-connection-pooling/" href="http://vladmihalcea.com/2014/04/17/the-anatomy-of-connection-pooling/" target="_blank">The anatomy of connection pooling</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
+  Published at Codepedia.org with the permission of Vlad Mihalcea &#8211; source <a title="http://vladmihalcea.com/2014/04/17/the-anatomy-of-connection-pooling/" href="http://vladmihalcea.com/2014/04/17/the-anatomy-of-connection-pooling/" target="_blank">The anatomy of connection pooling</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
 </p>
 
 <p style="color: #444444;">

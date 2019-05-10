@@ -4,7 +4,7 @@ title: Resources on how to design error handling in a REST API
 date: 2014-05-14T18:22:23+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1415
+guid: http://www.codepedia.org/?p=1415
 permalink: /ama/resources-on-how-to-design-error-handling-in-a-rest-api/
 fsb_show_social:
   - 0

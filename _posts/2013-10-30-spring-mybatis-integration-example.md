@@ -4,7 +4,7 @@ title: Spring MyBatis integration example
 date: 2013-10-30T09:21:25+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=806
+guid: http://www.codepedia.org/?p=806
 permalink: /ama/spring-mybatis-integration-example/
 fsb_show_social:
   - 0
@@ -119,7 +119,7 @@ tags:
 ## <span id="1_Why_Mybatis">1. Why Mybatis?</span>
 
 <p style="text-align: justify;">
-  Short answer: simple, lightweight, open source, dynamic sql and sql control, previous iBATIS knowledge. Now let me elaborate a little bit on the subject. Back in the old days of Podcastmania.ro, see <a title="Story of Podcastpedia.org" href="http://www.codingpedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia.org</a>, I used my own MVC like framwork based on servlets to develop the web application and plain old <a title="Wikipedia - JDBC" href="http://en.wikipedia.org/wiki/Java_Database_Connectivity" target="_blank">JDBC</a> to access the database. After &#8220;upgrading&#8221; to Spring MVC, I started using Spring&#8217;s <code>JdbcTemplate</code> for database access, which removed some of the boilerplate code. Later I got involved in projects where database access occured via iBATIS &#8211; Hibernate was there for a long time, but because of legacy reasons and no database normalization whatsoever, iBATIS was the optimal choice. By about the same time MyBatis had been just launched, so I read the documentation, did a pilot, liked it and switched from Spring&#8217;s <code>JdbcTemplate</code> to MyBatis. In the mean time I&#8217;ve been working on projects with Hibernate and JPA 2.0 with Hibernate used for persistence, so I&#8217;d say I have a pretty good overview on the most popular Java Persistence Frameworks. You have currently four major options:
+  Short answer: simple, lightweight, open source, dynamic sql and sql control, previous iBATIS knowledge. Now let me elaborate a little bit on the subject. Back in the old days of Podcastmania.ro, see <a title="Story of Podcastpedia.org" href="http://www.codepedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia.org</a>, I used my own MVC like framwork based on servlets to develop the web application and plain old <a title="Wikipedia - JDBC" href="http://en.wikipedia.org/wiki/Java_Database_Connectivity" target="_blank">JDBC</a> to access the database. After &#8220;upgrading&#8221; to Spring MVC, I started using Spring&#8217;s <code>JdbcTemplate</code> for database access, which removed some of the boilerplate code. Later I got involved in projects where database access occured via iBATIS &#8211; Hibernate was there for a long time, but because of legacy reasons and no database normalization whatsoever, iBATIS was the optimal choice. By about the same time MyBatis had been just launched, so I read the documentation, did a pilot, liked it and switched from Spring&#8217;s <code>JdbcTemplate</code> to MyBatis. In the mean time I&#8217;ve been working on projects with Hibernate and JPA 2.0 with Hibernate used for persistence, so I&#8217;d say I have a pretty good overview on the most popular Java Persistence Frameworks. You have currently four major options:
 </p>
 
   * JPA/Hibernate
@@ -233,7 +233,7 @@ java:comp/env/jdbc/pcmDB.  --&gt;
 &lt;/bean&gt;</pre>
 
   <p style="text-align: justify;">
-    See my post <a title="Tomcat JDBC Connection Pool configuration for production and development" href="http://www.codingpedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">Tomcat JDBC Connection Pool configuration for production and development</a>, to find out how the database resource is configured for production and development/testing environments.
+    See my post <a title="Tomcat JDBC Connection Pool configuration for production and development" href="http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">Tomcat JDBC Connection Pool configuration for production and development</a>, to find out how the database resource is configured for production and development/testing environments.
   </p>
 
   <p>
@@ -293,7 +293,7 @@ java:comp/env/jdbc/pcmDB.  --&gt;
   </p>
 
   <p style="padding-left: 30px;">
-    <em><strong>Note:</strong> If you want to find out how the <code>@Cacheable</code> annotation is configured, visit my post <a title="Codingpedia.org - Spring caching with Ehcache" href="http://www.codingpedia.org/ama/spring-caching-with-ehcache/" target="_blank">Spring caching with Ehcache</a></em>.
+    <em><strong>Note:</strong> If you want to find out how the <code>@Cacheable</code> annotation is configured, visit my post <a title="Codepedia.org - Spring caching with Ehcache" href="http://www.codepedia.org/ama/spring-caching-with-ehcache/" target="_blank">Spring caching with Ehcache</a></em>.
   </p>
 
   <h4>
@@ -550,7 +550,7 @@ Well, that&#8217;s it. You&#8217;ve learned about MyBatis, how it integrates wit
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

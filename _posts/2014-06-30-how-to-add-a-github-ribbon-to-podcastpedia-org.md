@@ -4,7 +4,7 @@ title: How to add a GitHub ribbon to Podcastpedia.org
 date: 2014-06-30T21:58:49+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1501
+guid: http://www.codepedia.org/?p=1501
 permalink: /ama/how-to-add-a-github-ribbon-to-podcastpedia-org/
 fsb_show_social:
   - 0
@@ -62,7 +62,7 @@ tags:
 </h3>
 
 <p style="text-align: justify;">
-  As you might recall from my blog post <a title="http://www.codingpedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" href="http://www.codingpedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" target="_blank">CSS Preprocessors – Introducing Sass to Podcastpedia.org</a>, I am generating the css files needed for Podcastpedia.org from Sass, so I transformed the css file needed for Github ribbon &#8211; <a title="https://github.com/simonwhitaker/github-fork-ribbon-css/blob/b3305a5555123a30502c1feb4ff23047030dc3f0/gh-fork-ribbon.css" href="https://github.com/simonwhitaker/github-fork-ribbon-css/blob/b3305a5555123a30502c1feb4ff23047030dc3f0/gh-fork-ribbon.css" target="_blank">gh-fork-ribbon.css</a>, into the following:
+  As you might recall from my blog post <a title="http://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" href="http://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" target="_blank">CSS Preprocessors – Introducing Sass to Podcastpedia.org</a>, I am generating the css files needed for Podcastpedia.org from Sass, so I transformed the css file needed for Github ribbon &#8211; <a title="https://github.com/simonwhitaker/github-fork-ribbon-css/blob/b3305a5555123a30502c1feb4ff23047030dc3f0/gh-fork-ribbon.css" href="https://github.com/simonwhitaker/github-fork-ribbon-css/blob/b3305a5555123a30502c1feb4ff23047030dc3f0/gh-fork-ribbon.css" target="_blank">gh-fork-ribbon.css</a>, into the following:
 </p>
 
 <pre class="lang:sass decode:true" title="scss version of the gh-fork-ribbon.css">/*!
@@ -189,7 +189,7 @@ $rotation-angle: 45deg;
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> By using the <em>gulp-autoprefixer</em> plugin, there was no need to replicate the CSS vendor prefixes present in the original .css file. See my post <a title="http://www.codingpedia.org/ama/how-to-use-gulp-to-generate-css-from-sass-scss/" href="http://www.codingpedia.org/ama/how-to-use-gulp-to-generate-css-from-sass-scss/" target="_blank">How to use Gulp to generate CSS from Sass/scss</a>  for more details about that.
+  <strong>Note:</strong> By using the <em>gulp-autoprefixer</em> plugin, there was no need to replicate the CSS vendor prefixes present in the original .css file. See my post <a title="http://www.codepedia.org/ama/how-to-use-gulp-to-generate-css-from-sass-scss/" href="http://www.codepedia.org/ama/how-to-use-gulp-to-generate-css-from-sass-scss/" target="_blank">How to use Gulp to generate CSS from Sass/scss</a>  for more details about that.
 </p>
 
 ### 2. Add code snippet after the body tag
@@ -227,7 +227,7 @@ Well, it cannot get simpler than that&#8230; So thanks again <a title="https://g
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

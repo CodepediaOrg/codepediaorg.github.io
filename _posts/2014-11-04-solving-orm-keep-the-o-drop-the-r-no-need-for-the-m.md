@@ -4,7 +4,7 @@ title: 'Solving ORM &#8211; Keep the O, Drop the R, no need for the M'
 date: 2014-11-04T14:31:29+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codingpedia.org/?p=2040
+guid: http://www.codepedia.org/?p=2040
 permalink: /jhadesdev/solving-orm-keep-the-o-drop-the-r-no-need-for-the-m/
 fsb_show_social:
   - 0
@@ -304,7 +304,7 @@ The Hibernate team has written [Hibernate OGM](http://hibernate.org/ogm/), which
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with permission of Aleksey Novik – source <a title="http://blog.jhades.org/solving-orm-complexity-keep-the-o-drop-the-r-no-need-for-the-m/" href="http://blog.jhades.org/solving-orm-complexity-keep-the-o-drop-the-r-no-need-for-the-m/" target="_blank">Solving ORM &#8211; Keep the O, Drop the R, no need for the M</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik – source <a title="http://blog.jhades.org/solving-orm-complexity-keep-the-o-drop-the-r-no-need-for-the-m/" href="http://blog.jhades.org/solving-orm-complexity-keep-the-o-drop-the-r-no-need-for-the-m/" target="_blank">Solving ORM &#8211; Keep the O, Drop the R, no need for the M</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p>
 
 <p style="text-align: justify;">

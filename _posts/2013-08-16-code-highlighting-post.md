@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How to insert and highlight code in Jekyll blog post on Codingpedia.org
-description: "Demo post displaying the various ways of inserting and highlighting code in Markdown, when posting on Codingpedia.org"
+title: How to insert and highlight code in Jekyll blog post on Codepedia.org
+description: "Demo post displaying the various ways of inserting and highlighting code in Markdown, when posting on Codepedia.org"
 permalink: /ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org
 author: ama
 modified: 2014-12-23
 tags: [sample post, code, highlighting]
 categories: [intro]
 ---
-This demo post displays the various ways of inserting and highlighting code in Markdown, when posting on Codingpedia.org, because you know
-code showing is the main point of Codingpedia.org
+This demo post displays the various ways of inserting and highlighting code in Markdown, when posting on Codepedia.org, because you know
+code showing is the main point of Codepedia.org
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
 

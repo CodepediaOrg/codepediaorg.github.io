@@ -4,7 +4,7 @@ title: Introduction to the Jspm package manager and the SystemJs module loader
 date: 2016-01-11T16:35:30+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codingpedia.org/?p=2570
+guid: http://www.codepedia.org/?p=2570
 permalink: /jhadesdev/introduction-to-the-jspm-package-manager-and-the-systemjs-module-loader/
 fsb_show_social:
   - 0
@@ -289,7 +289,7 @@ core-js@1.1.4</pre>
 </p>
 
 <p style="text-align: justify;" class="note_normal">
-  Published at Codingpedia.org with permission of Aleksey Novik – source <em><a title="The main goals of Angular 2 and how they will be achieved" href="http://blog.jhades.org/introduction-to-es6-modularity-the-jspm-package-manager-and-the-systemjs-loader/" target="_blank">Introduction to the Jspm package manager and the SystemJs module loader</a></em> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/
+  Published at Codepedia.org with permission of Aleksey Novik – source <em><a title="The main goals of Angular 2 and how they will be achieved" href="http://blog.jhades.org/introduction-to-es6-modularity-the-jspm-package-manager-and-the-systemjs-loader/" target="_blank">Introduction to the Jspm package manager and the SystemJs module loader</a></em> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/
   
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
     <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" /> 

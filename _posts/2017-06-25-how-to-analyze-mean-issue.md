@@ -202,7 +202,7 @@ After:
 
 Before:
 ```
-bookmarks-api.codingpedia.org:server Listening on port 3000 +0ms
+bookmarks-api.codepedia.org:server Listening on port 3000 +0ms
 OPTIONS /api/users/55d49696-c07d-4b31-929c-29f7c8f1a10a/bookmarks 200 5.045 ms - 13
 here
 GET /api/bookmarks/ 304 511.807 ms - -
@@ -212,7 +212,7 @@ GET /api/users/55d49696-c07d-4b31-929c-29f7c8f1a10a/bookmarks 304 24.830 ms - -
 After (with mongoose.lean) dramatic increase:
 ```
 [nodemon] starting `node ./bin/www start`
-  bookmarks-api.codingpedia.org:server Listening on port 3000 +0ms
+  bookmarks-api.codepedia.org:server Listening on port 3000 +0ms
 here
 GET /api/bookmarks/ 200 87.038 ms - 1040147
 OPTIONS /api/users/55d49696-c07d-4b31-929c-29f7c8f1a10a/bookmarks 200 3.082 ms - 13

@@ -4,7 +4,7 @@ title: How to revert changes in EGit
 date: 2014-02-28T16:42:33+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1221
+guid: http://www.codepedia.org/?p=1221
 permalink: /ama/how-to-revert-changes-in-egit/
 fsb_show_social:
   - 0

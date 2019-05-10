@@ -4,7 +4,7 @@ title: 'Simple trick to create a one line horizontal responsive menu with CSS on
 date: 2014-05-13T22:14:02+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1402
+guid: http://www.codepedia.org/?p=1402
 permalink: /ama/simple-trick-to-create-a-one-line-horizontal-responsive-menu-with-css-only-podcastpedia-org/
 fsb_show_social:
   - 0
@@ -267,7 +267,7 @@ Now that the menu item are present twice, I can show and hide them based on the 
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

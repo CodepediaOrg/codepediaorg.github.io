@@ -4,7 +4,7 @@ title: How to integrate Jersey in a Spring MVC application
 date: 2015-01-05T09:52:36+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=2173
+guid: http://www.codepedia.org/?p=2173
 permalink: /ama/how-to-integrate-jersey-in-a-spring-mvc-application/
 fsb_show_social:
   - 0
@@ -32,7 +32,7 @@ tags:
   - spring mvc
 ---
 <p style="text-align: justify;">
-  I have recently started to build a public REST API with Java for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and for the <a title="https://jax-rs-spec.java.net/" href="https://jax-rs-spec.java.net/" target="_blank">JAX-RS</a> implementation I have chosen <a title="https://jersey.java.net/" href="https://jersey.java.net/" target="_blank">Jersey</a>, as I find it &#8220;natural&#8221; and powerful &#8211; you can find out more about it by following the <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring.</a>  Because <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> is a web application powered by Spring MVC, I wanted to integrate both frameworks in <a title="https://github.com/podcastpedia/podcastpedia-web" href="https://github.com/podcastpedia/podcastpedia-web" target="_blank">podcastpedia-web</a>, to take advantage of the backend service functionality already present in the project. Anyway this short post will present the steps I had to take to make the integration between the two frameworks work.<!--more-->
+  I have recently started to build a public REST API with Java for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and for the <a title="https://jax-rs-spec.java.net/" href="https://jax-rs-spec.java.net/" target="_blank">JAX-RS</a> implementation I have chosen <a title="https://jersey.java.net/" href="https://jersey.java.net/" target="_blank">Jersey</a>, as I find it &#8220;natural&#8221; and powerful &#8211; you can find out more about it by following the <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring.</a>  Because <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> is a web application powered by Spring MVC, I wanted to integrate both frameworks in <a title="https://github.com/podcastpedia/podcastpedia-web" href="https://github.com/podcastpedia/podcastpedia-web" target="_blank">podcastpedia-web</a>, to take advantage of the backend service functionality already present in the project. Anyway this short post will present the steps I had to take to make the integration between the two frameworks work.<!--more-->
 </p>
 
 ## Framework versions
@@ -149,7 +149,7 @@ In the `web.xml`, in addition  to the Spring MVC servlet configuration I added 
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

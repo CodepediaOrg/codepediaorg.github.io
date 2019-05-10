@@ -4,7 +4,7 @@ title: How to use the new Apache Http Client to make a HEAD request
 date: 2014-08-08T20:47:44+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1691
+guid: http://www.codepedia.org/?p=1691
 permalink: /ama/how-to-use-the-new-apache-http-client-to-make-a-head-request/
 fsb_show_social:
   - 0
@@ -90,7 +90,7 @@ tags:
 </p>
 
 <h2 style="text-align: justify;">
-  <span id="1_Use_case_from_Podcastpediaorg">1. Use case from <a title="Podcastpedia, knowledge to go" href="http://www.codingpedia.org/ama/how-to-add-categories-to-menu-in-wordpress/" target="_blank">Podcastpedia.org</a></span>
+  <span id="1_Use_case_from_Podcastpediaorg">1. Use case from <a title="Podcastpedia, knowledge to go" href="http://www.codepedia.org/ama/how-to-add-categories-to-menu-in-wordpress/" target="_blank">Podcastpedia.org</a></span>
 </h2>
 
 <p style="text-align: justify;">
@@ -276,7 +276,7 @@ RequestConfig requestConfig = RequestConfig.custom()
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/wp-content/uploads/2014/01/AdrianMatei.png" alt="Podcastpedia image" />
 
   <div id="author_details" style="text-align: justify;">
-    <a title="Codingpedia.org, let's code the better world" href="http://www.codingpedia.org/" target="_blank">Codingpedia.org</a> was founded by Adrian Matei (ama [AT] codingpedia DOT org), a computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy.
+    <a title="Codepedia.org, let's code the better world" href="http://www.codepedia.org/" target="_blank">Codepedia.org</a> was founded by Adrian Matei (ama [AT] codingpedia DOT org), a computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy.
   </div>
 
   <div id="follow_social" style="clear: both;">

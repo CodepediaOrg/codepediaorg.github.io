@@ -4,7 +4,7 @@ title: Story of Podcastpedia.org
 date: 2013-08-12T21:23:10+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=397
+guid: http://www.codepedia.org/?p=397
 permalink: /ama/story-of-podcastpedia-org/
 fsb_show_social:
   - 0
@@ -89,7 +89,7 @@ I have pushed things through.
   Podcastpedia.org is an ads-free podcast directory and, with the motto is all about <em>&#8220;Educating oneself &#8220;</em> with selected podcasts from various domains such as science, technology, education, medicine, people, environment, spirituality and much more&#8230;
 </p>
 
-Developing Podcastpedia.org was/is a great technical and personal experience, that I want to share with you on this <a title="Codingpedia.org" href="http://www.codingpedia.org" target="_blank">blog</a>.
+Developing Podcastpedia.org was/is a great technical and personal experience, that I want to share with you on this <a title="Codepedia.org" href="http://www.codepedia.org" target="_blank">blog</a>.
 
 ### What&#8217;s next? {##whatiscoming}
 
@@ -101,9 +101,9 @@ What lies ahead we never know for certain, but what Podcastpedia&#8217;s agenda 
   * introduce wiki pages, at first to simplify collobaration for internationalization (next languages considered Spanish, Polnish)
       * considering <a title="Apache JSPWiki" href="http://jspwiki.apache.org/" target="_blank">Apache JSPWiki</a>
       * convince some friends to help
-      * <a href="mailto:ama@codingpedia.org?Subject=Localize%20Podcastpedia.org" target="_top">contact us</a> if you want Podcastpedia.org localized in your language
+      * <a href="mailto:ama@codepedia.org?Subject=Localize%20Podcastpedia.org" target="_top">contact us</a> if you want Podcastpedia.org localized in your language
       * any suggestions ?&#8230;
-  * weekly posts on Codingpedia.org
+  * weekly posts on Codepedia.org
   * open source the website / project
       * considering <a title="Github" href="https://github.com/" target="_blank">GIT</a>
       * any suggestions ?&#8230;
@@ -116,7 +116,7 @@ As you can see I&#8217;ve already got some trustworthy coding support
 
 
 
-but any extra hand is <a href="mailto:ama@codingpedia.org?Subject=Support%20Podcastpedia.org" target="_top">much appreciated</a>&#8230;
+but any extra hand is <a href="mailto:ama@codepedia.org?Subject=Support%20Podcastpedia.org" target="_top">much appreciated</a>&#8230;
 
 ### THANK YOU
 
@@ -145,7 +145,7 @@ but any extra hand is <a href="mailto:ama@codingpedia.org?Subject=Support%20Podc
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

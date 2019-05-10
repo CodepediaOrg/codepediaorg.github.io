@@ -4,7 +4,7 @@ title: Java WebSockets (JSR-356) on Jetty 9.1
 date: 2014-10-29T21:09:39+00:00
 author: Andriy Redko
 layout: post
-guid: http://www.codingpedia.org/?p=2060
+guid: http://www.codepedia.org/?p=2060
 permalink: /aredko/java-websockets-jsr-356-on-jetty-9-1/
 gr_overridden:
   - 1
@@ -491,7 +491,7 @@ INFO: Received message 'Message #10' from '392f68ef'
 </p>
 
 <p class="note_normal" style="color: #333333;">
-  Published at Codingpedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="http://aredko.blogspot.de/2013/11/java-websockets-jsr-356-on-jetty-91.html" href="http://aredko.blogspot.de/2013/11/java-websockets-jsr-356-on-jetty-91.html" target="_blank">Java WebSockets (JSR-356) on Jetty 9.1</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com/" target="_blank">http://aredko.blogspot.com</a>
+  Published at Codepedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="http://aredko.blogspot.de/2013/11/java-websockets-jsr-356-on-jetty-91.html" href="http://aredko.blogspot.de/2013/11/java-websockets-jsr-356-on-jetty-91.html" target="_blank">Java WebSockets (JSR-356) on Jetty 9.1</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com/" target="_blank">http://aredko.blogspot.com</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

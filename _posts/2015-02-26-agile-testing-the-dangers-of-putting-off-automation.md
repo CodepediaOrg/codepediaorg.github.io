@@ -4,7 +4,7 @@ title: Agile Testing – The Dangers of putting off Automation
 date: 2015-02-26T17:16:03+00:00
 author: Joe Colantonio
 layout: post
-guid: http://www.codingpedia.org/?p=2299
+guid: http://www.codepedia.org/?p=2299
 permalink: /joecolantonio/agile-testing-the-dangers-of-putting-off-automation/
 fsb_show_social:
   - 0
@@ -129,7 +129,7 @@ _
   * [_More Agile Testing: Learning Journeys for the Whole Team_](%20Learning%20Journeys%20for%20the%20Whole%20Team)
 
 <p class="note_normal" style="color: #333333;">
-  Published at Codingpedia.org with the permission of Joe Colantonio – source <a title="http://www.joecolantonio.com/2015/01/20/agile-testing-the-dangers-of-putting-off-automation/" href="http://www.joecolantonio.com/2015/01/20/agile-testing-the-dangers-of-putting-off-automation/" target="_blank">Agile Testing – The Dangers of putting off Automation</a> from <a title="http://www.joecolantonio.com/" href="http://www.joecolantonio.com/" target="_blank">http://www.joecolantonio.com/</a>
+  Published at Codepedia.org with the permission of Joe Colantonio – source <a title="http://www.joecolantonio.com/2015/01/20/agile-testing-the-dangers-of-putting-off-automation/" href="http://www.joecolantonio.com/2015/01/20/agile-testing-the-dangers-of-putting-off-automation/" target="_blank">Agile Testing – The Dangers of putting off Automation</a> from <a title="http://www.joecolantonio.com/" href="http://www.joecolantonio.com/" target="_blank">http://www.joecolantonio.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

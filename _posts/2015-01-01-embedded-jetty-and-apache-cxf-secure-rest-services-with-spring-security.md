@@ -4,7 +4,7 @@ title: 'Embedded Jetty and Apache CXF: secure REST services with Spring Security
 date: 2015-01-01T16:38:28+00:00
 author: Andriy Redko
 layout: post
-guid: http://www.codingpedia.org/?p=2171
+guid: http://www.codepedia.org/?p=2171
 permalink: /aredko/embedded-jetty-and-apache-cxf-secure-rest-services-with-spring-security/
 fsb_show_social:
   - 0
@@ -305,7 +305,7 @@ public class UserDetailsSecurityConfig extends WebSecurityConfigurerAdapter {
 The complete source code is available on [GitHub](https://github.com/reta/jax-rs-2.0-spring-security).
 
 <p class="note_normal">
-  Published on Codingpedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="http://aredko.blogspot.de/2014/09/embedded-jetty-and-apache-cxf-secure.html" href="http://aredko.blogspot.de/2014/09/embedded-jetty-and-apache-cxf-secure.html" target="_blank">Embedded Jetty and Apache CXF: secure REST services with Spring Security</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com" target="_blank">http://aredko.blogspot.com</a>
+  Published on Codepedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="http://aredko.blogspot.de/2014/09/embedded-jetty-and-apache-cxf-secure.html" href="http://aredko.blogspot.de/2014/09/embedded-jetty-and-apache-cxf-secure.html" target="_blank">Embedded Jetty and Apache CXF: secure REST services with Spring Security</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com" target="_blank">http://aredko.blogspot.com</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

@@ -4,7 +4,7 @@ title: 'Quick way to check if the REST API is alive &#8211; GET details from Man
 date: 2015-01-15T20:48:56+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=2208
+guid: http://www.codepedia.org/?p=2208
 permalink: /ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/
 fsb_show_social:
   - 0
@@ -35,7 +35,7 @@ tags:
   - troubleshoot
 ---
 <p style="text-align: justify;">
-  There might be cases when you want to quickly verify if your REST API, that is deployed either on dev, test or prod environments, is reachable altogether. A common way to do this is by building a generic resource that delivers for example the version of the deployed API. You can trigger a request to this resource manually or, even better, have a Jenkings/Hudson job, which runs a checkup job after deployment. In this post, I will present how to implement such a service that reads the implementation details from the application&#8217;s manifest file. The API verified, is the one developed in the <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a><!--more-->
+  There might be cases when you want to quickly verify if your REST API, that is deployed either on dev, test or prod environments, is reachable altogether. A common way to do this is by building a generic resource that delivers for example the version of the deployed API. You can trigger a request to this resource manually or, even better, have a Jenkings/Hudson job, which runs a checkup job after deployment. In this post, I will present how to implement such a service that reads the implementation details from the application&#8217;s manifest file. The API verified, is the one developed in the <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a><!--more-->
 </p>
 
 <h2 style="text-align: justify;">
@@ -256,7 +256,7 @@ Here you have &#8211; a quick way to verify that your REST api is reachable. If 
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

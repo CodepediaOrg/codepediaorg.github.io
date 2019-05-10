@@ -4,7 +4,7 @@ title: The madness of layered architecture
 date: 2014-10-23T21:20:04+00:00
 author: Johannes Brodwall
 layout: post
-guid: http://www.codingpedia.org/?p=2020
+guid: http://www.codepedia.org/?p=2020
 permalink: /jhannes/the-madness-of-layered-architecture-2/
 fsb_show_social:
   - 0
@@ -138,7 +138,7 @@ tags:
 </p>
 
 <p class="note_normal" style="color: #333333; text-align: justify;">
-  Published at Codingpedia.org with the permission of Johannes Brodwall – source <a title="The madness of layered architecture" href="http://johannesbrodwall.com/2014/07/10/the-madness-of-layered-architecture/" target="_blank">The madness of layered architecture</a> from <a title="http://johannesbrodwall.com/" href="http://johannesbrodwall.com/" target="_blank">http://johannesbrodwall.com/</a>
+  Published at Codepedia.org with the permission of Johannes Brodwall – source <a title="The madness of layered architecture" href="http://johannesbrodwall.com/2014/07/10/the-madness-of-layered-architecture/" target="_blank">The madness of layered architecture</a> from <a title="http://johannesbrodwall.com/" href="http://johannesbrodwall.com/" target="_blank">http://johannesbrodwall.com/</a>
 </p>
 
 <p style="color: #333333;">

@@ -4,7 +4,7 @@ title: 'A beginner&#8217;s guide to JPA/Hibernate flush strategies'
 date: 2014-09-12T06:51:39+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codingpedia.org/?p=1810
+guid: http://www.codepedia.org/?p=1810
 permalink: /vladmihalcea/a-beginners-guide-to-jpahibernate-flush-strategies/
 fsb_show_social:
   - 0
@@ -296,7 +296,7 @@ tags:
 </p>
 
 <p class="note_normal" style="color: #444444; text-align: justify;">
-  Published at Codingpedia.org with permission of Vlad Mihalcea &#8211; source <a title="http://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/" href="http://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/" target="_blank">A BEGINNER’S GUIDE TO JPA/HIBERNATE FLUSH STRATEGIES</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
+  Published at Codepedia.org with permission of Vlad Mihalcea &#8211; source <a title="http://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/" href="http://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/" target="_blank">A BEGINNER’S GUIDE TO JPA/HIBERNATE FLUSH STRATEGIES</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
 </p>
 
 <p style="color: #444444; text-align: justify;">

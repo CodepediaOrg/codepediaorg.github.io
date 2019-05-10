@@ -4,7 +4,7 @@ title: How to handle session timeout exceptions in Spring MVC
 date: 2013-12-01T13:37:09+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=994
+guid: http://www.codepedia.org/?p=994
 permalink: /ama/how-to-handle-session-timeout-exceptions-in-spring-mvc/
 fsb_show_social:
   - 0
@@ -118,7 +118,7 @@ public String handleSessionExpired(){
 </p>
 
 <p class="note_normal">
-  <strong>Note:</strong> Please see my post <a title="Spring MVC and Apache Tiles integration example" href="http://www.codingpedia.org/ama/spring-mvc-and-apache-tiles-integration-example/" target="_blank">Spring MVC and Apache Tiles integration example</a> for an explanation of using Tiles definitions with Spring MVC.
+  <strong>Note:</strong> Please see my post <a title="Spring MVC and Apache Tiles integration example" href="http://www.codepedia.org/ama/spring-mvc-and-apache-tiles-integration-example/" target="_blank">Spring MVC and Apache Tiles integration example</a> for an explanation of using Tiles definitions with Spring MVC.
 </p>
 
 ### <span id="Exception_handling_configuration_in_the_application_context">Exception handling configuration in the application context</span>
@@ -164,7 +164,7 @@ Well, that&#8217;s it. I hope you could learn something from this as I did.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

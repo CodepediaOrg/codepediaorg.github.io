@@ -4,7 +4,7 @@ title: The reuse dilemma
 date: 2015-01-12T16:48:20+00:00
 author: Johannes Brodwall
 layout: post
-guid: http://www.codingpedia.org/?p=2180
+guid: http://www.codepedia.org/?p=2180
 permalink: /jhannes/the-reuse-dilemma/
 fsb_show_social:
   - 0
@@ -76,7 +76,7 @@ tags:
 </p>
 
 <p class="note_normal" style="color: #333333; text-align: justify;">
-  Published at Codingpedia.org with the permission of Johannes Brodwall – source <a title="http://johannesbrodwall.com/2014/10/10/the-reuse-dilemma/" href="The%20reuse dilemma" target="_blank">The reuse dilemma</a> from <a title="http://johannesbrodwall.com/" href="http://johannesbrodwall.com/" target="_blank">http://johannesbrodwall.com/</a>
+  Published at Codepedia.org with the permission of Johannes Brodwall – source <a title="http://johannesbrodwall.com/2014/10/10/the-reuse-dilemma/" href="The%20reuse dilemma" target="_blank">The reuse dilemma</a> from <a title="http://johannesbrodwall.com/" href="http://johannesbrodwall.com/" target="_blank">http://johannesbrodwall.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

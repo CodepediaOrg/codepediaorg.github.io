@@ -4,7 +4,7 @@ title: Yet another Java 8 Lambas and Streams example
 date: 2015-03-18T13:33:48+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=2341
+guid: http://www.codepedia.org/?p=2341
 permalink: /ama/yet-another-java-8-lambas-and-streams-example/
 fsb_show_social:
   - 0

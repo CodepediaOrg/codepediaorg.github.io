@@ -4,7 +4,7 @@ title: A beginner’s guide to Cache synchronization strategies
 date: 2015-05-08T06:39:09+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codingpedia.org/?p=2377
+guid: http://www.codepedia.org/?p=2377
 permalink: /vladmihalcea/a-beginners-guide-to-cache-synchronization-strategies/
 fsb_show_social:
   - 0
@@ -101,7 +101,7 @@ tags:
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with permission of <a title="A beginner’s guide to Cache synchronization strategies" href="A%20beginner’s guide to Cache synchronization strategies" target="_blank">Vlad Mihalcea</a> – source <a title="http://vladmihalcea.com/2015/04/20/a-beginners-guide-to-cache-synchronization-strategies/" href="http://vladmihalcea.com/2015/04/20/a-beginners-guide-to-cache-synchronization-strategies/" target="_blank">A beginner’s guide to Cache synchronization strategies</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
+  Published at Codepedia.org with permission of <a title="A beginner’s guide to Cache synchronization strategies" href="A%20beginner’s guide to Cache synchronization strategies" target="_blank">Vlad Mihalcea</a> – source <a title="http://vladmihalcea.com/2015/04/20/a-beginners-guide-to-cache-synchronization-strategies/" href="http://vladmihalcea.com/2015/04/20/a-beginners-guide-to-cache-synchronization-strategies/" target="_blank">A beginner’s guide to Cache synchronization strategies</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

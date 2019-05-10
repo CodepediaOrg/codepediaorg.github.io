@@ -4,7 +4,7 @@ title: Coding Friend - Republishing Policies
 date: 2014-10-15T20:40:36+00:00
 author: Adrian Matei
 layout: page
-guid: http://www.codingpedia.org/?page_id=1035
+guid: http://www.codepedia.org/?page_id=1035
 permalink: /friends/republishing-policies/
 dsq_thread_id:
   - 2052521569
@@ -15,7 +15,7 @@ Our content policies play an important role in maintaining a positive, and espec
 
 ## Republishing policies and rights
 
-1. You grant Codingpedia the permission to publish your articles on the Codingpedia.org website
+1. You grant Codingpedia the permission to publish your articles on the Codepedia.org website
 2. You grant Codingpedia the right to display a picture of you, short biography and links to your social media channels
 3. Codingpedia will clearly attribute the content to the original author
 4. Codingpedia reserves the right to make corrections for spelling and grammar

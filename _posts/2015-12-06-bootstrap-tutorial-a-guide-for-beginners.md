@@ -4,7 +4,7 @@ title: 'Bootstrap Tutorial: A Guide for Beginners'
 date: 2015-12-06T21:07:36+00:00
 author: Udemy tutorials
 layout: post
-guid: http://www.codingpedia.org/?p=2511
+guid: http://www.codepedia.org/?p=2511
 permalink: /udemy/bootstrap-tutorial-a-guide-for-beginners/
 fsb_show_social:
   - 0
@@ -2847,7 +2847,7 @@ color: #3498db;
             </p>
             
             <p class="note_normal">
-              Published on Codingpedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/bootstrap-tutorial-a-guide-for-beginners/" target="_blank">Bootstrap Tutorial: A Guide for Beginners</a> from<span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
+              Published on Codepedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/bootstrap-tutorial-a-guide-for-beginners/" target="_blank">Bootstrap Tutorial: A Guide for Beginners</a> from<span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
             </p>
             
             <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

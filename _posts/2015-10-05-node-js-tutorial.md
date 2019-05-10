@@ -4,7 +4,7 @@ title: Node.js Tutorial
 date: 2015-10-05T06:56:45+00:00
 author: Udemy tutorials
 layout: post
-guid: http://www.codingpedia.org/?p=2472
+guid: http://www.codepedia.org/?p=2472
 permalink: /udemy/node-js-tutorial/
 fsb_show_social:
   - 0
@@ -1596,7 +1596,7 @@ You’re done. Let’s test the delete functionality. Go back to the browser, an
 If you enjoyed my teaching style and would like to learn more from me, [subscribe to my newsletter](http://programmingwithmosh.com/node-js-course-coming-soon/). I’ll send out an announcement once my course is ready.
 
 <p class="note_normal">
-  Published on Codingpedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/node-js-tutorial/" target="_blank">Node.js Tutorial</a> from<span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
+  Published on Codepedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/node-js-tutorial/" target="_blank">Node.js Tutorial</a> from<span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

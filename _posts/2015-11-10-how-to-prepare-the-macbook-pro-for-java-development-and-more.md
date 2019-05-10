@@ -4,7 +4,7 @@ title: How to prepare the MacBook Pro for Java development and more
 date: 2015-11-10T21:23:41+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=2521
+guid: http://www.codepedia.org/?p=2521
 permalink: /ama/how-to-prepare-the-macbook-pro-for-java-development-and-more/
 fsb_show_social:
   - 0
@@ -457,7 +457,7 @@ alias rmcon='ssh ama@x.y.z.q'</pre>
 
 <pre class="lang:default decode:true">source ~/.bash_profile</pre>
 
-> I can't stress enough, how much comfortable your life can become, if you are using aliases the right way - [A developer's guide to using aliases](http://www.codingpedia.org/ama/a-developers-guide-to-using-aliases/)
+> I can't stress enough, how much comfortable your life can become, if you are using aliases the right way - [A developer's guide to using aliases](http://www.codepedia.org/ama/a-developers-guide-to-using-aliases/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Emlc7mkZDQ4" frameborder="0" allowfullscreen></iframe>
 
@@ -699,7 +699,7 @@ You can now use the generated _id_rsa.pub_ key and upload it to the systems you 
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -4,7 +4,7 @@ title: 'A beginner&#8217;s guide to ACID and database transactions'
 date: 2015-01-02T10:51:21+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codingpedia.org/?p=2194
+guid: http://www.codepedia.org/?p=2194
 permalink: /vladmihalcea/a-beginners-guide-to-acid-and-database-transactions/
 fsb_show_social:
   - 0
@@ -385,7 +385,7 @@ tags:
   If you are interested in learning more about Transactions you can follow me on my blog, or on <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://twitter.com/vlad_mihalcea">twitter</a> since all this material will hopefully materialize in my <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.com/2014/01/05/a-beginners-guide-to-acid-and-database-transactions/2014/01/01/my-open-book-movement/">open-source book</a>.
 </p>
 
-Published on Codingpedia.org with permission of Vlad Mihalcea – source <a title="A beginner's guide to ACID and database transactions" href="A%20beginner's guide to ACID and database transactions" target="_blank">A beginner&#8217;s guide to ACID and database transactions</a> from <a style="color: #bc360a;" title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a> 
+Published on Codepedia.org with permission of Vlad Mihalcea – source <a title="A beginner's guide to ACID and database transactions" href="A%20beginner's guide to ACID and database transactions" target="_blank">A beginner&#8217;s guide to ACID and database transactions</a> from <a style="color: #bc360a;" title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a> 
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" /> 

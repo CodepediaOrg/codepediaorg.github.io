@@ -4,7 +4,7 @@ title: How to setup multiple data sources with Spring and JPA
 date: 2014-03-02T12:42:31+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1218
+guid: http://www.codepedia.org/?p=1218
 permalink: /ama/how-to-setup-multiple-data-sources-with-spring-and-jpa/
 fsb_show_social:
   - 0
@@ -85,10 +85,10 @@ tags:
   In this post I will show you how to setup two or more data sources in a Spring application where the access to the database is done via JPA. It will be a XML-based Spring configuration. To highlight the setup I will use a showcase that builds on an existing demo example I have committed on GitHub, that covers other two posts of mine
 </p>
 
-  * <a title="http://www.codingpedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" href="http://www.codingpedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis</a>
+  * <a title="http://www.codepedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" href="http://www.codepedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis</a>
 
     and
-  * <a title="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>
+  * <a title="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>
 
 Don’t worry! You don’t have to understand what&#8217;s going on in those if you just want to see how the setup for multiple data sources looks like &#8211; I&#8217;ll do a quick introduction in the first part of the post.<!--more-->
 
@@ -311,9 +311,9 @@ Well, that&#8217;s it. You&#8217;ve learned how to configure multiple a Spring a
 
 ### <span id="41_Codingpedia">4.1. Codingpedia</span>
 
-  * <a title="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>
-  * <a title="http://www.codingpedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" href="http://www.codingpedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis</a>
-  * <a title="http://www.codingpedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" href="http://www.codingpedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">Tomcat JDBC Connection Pool configuration for production and development</a>
+  * <a title="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>
+  * <a title="http://www.codepedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" href="http://www.codepedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis</a>
+  * <a title="http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" href="http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">Tomcat JDBC Connection Pool configuration for production and development</a>
 
 ### <span id="42_GitHub">4.2. GitHub</span>
 
@@ -333,7 +333,7 @@ Well, that&#8217;s it. You&#8217;ve learned how to configure multiple a Spring a
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

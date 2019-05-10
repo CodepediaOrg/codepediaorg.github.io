@@ -57,36 +57,36 @@ The output should will look something like the following:
 Now I changed to the parent directory where I want to place my backend project and execute the following command
 
 ```bash
-$ express bookmarks-api.codingpedia.org --git
+$ express bookmarks-api.codepedia.org --git
 ```
 
 with the following output:
 
 ```bash
- create : bookmarks-api.codingpedia.org
- create : bookmarks-api.codingpedia.org/package.json
- create : bookmarks-api.codingpedia.org/app.js
- create : bookmarks-api.codingpedia.org/.gitignore
- create : bookmarks-api.codingpedia.org/public
- create : bookmarks-api.codingpedia.org/public/javascripts
- create : bookmarks-api.codingpedia.org/routes
- create : bookmarks-api.codingpedia.org/routes/index.js
- create : bookmarks-api.codingpedia.org/routes/users.js
- create : bookmarks-api.codingpedia.org/public/images
- create : bookmarks-api.codingpedia.org/views
- create : bookmarks-api.codingpedia.org/views/index.jade
- create : bookmarks-api.codingpedia.org/views/layout.jade
- create : bookmarks-api.codingpedia.org/views/error.jade
- create : bookmarks-api.codingpedia.org/public/stylesheets
- create : bookmarks-api.codingpedia.org/public/stylesheets/style.css
- create : bookmarks-api.codingpedia.org/bin
- create : bookmarks-api.codingpedia.org/bin/www
+ create : bookmarks-api.codepedia.org
+ create : bookmarks-api.codepedia.org/package.json
+ create : bookmarks-api.codepedia.org/app.js
+ create : bookmarks-api.codepedia.org/.gitignore
+ create : bookmarks-api.codepedia.org/public
+ create : bookmarks-api.codepedia.org/public/javascripts
+ create : bookmarks-api.codepedia.org/routes
+ create : bookmarks-api.codepedia.org/routes/index.js
+ create : bookmarks-api.codepedia.org/routes/users.js
+ create : bookmarks-api.codepedia.org/public/images
+ create : bookmarks-api.codepedia.org/views
+ create : bookmarks-api.codepedia.org/views/index.jade
+ create : bookmarks-api.codepedia.org/views/layout.jade
+ create : bookmarks-api.codepedia.org/views/error.jade
+ create : bookmarks-api.codepedia.org/public/stylesheets
+ create : bookmarks-api.codepedia.org/public/stylesheets/style.css
+ create : bookmarks-api.codepedia.org/bin
+ create : bookmarks-api.codepedia.org/bin/www
 
  install dependencies:
-   $ cd bookmarks-api.codingpedia.org && npm install
+   $ cd bookmarks-api.codepedia.org && npm install
 
  run the app:
-   $ DEBUG=bookmarks-api.codingpedia.org:* npm start
+   $ DEBUG=bookmarks-api.codepedia.org:* npm start
 
 ```
 
@@ -113,23 +113,23 @@ $ express -h
 Now do as the man says - install the dependencies
 
 ```bash
- $ cd bookmarks-api.codingpedia.org && npm install
+ $ cd bookmarks-api.codepedia.org && npm install
 ```
 
 and run the application
 
 ```bash
- $ DEBUG=bookmarks-api.codingpedia.org:* npm start
+ $ DEBUG=bookmarks-api.codepedia.org:* npm start
 ```
 
 You should see now that the server is listening at port 3000:
 
 ```bash
- $ DEBUG=bookmarks-api.codingpedia.org:* npm start
-> bookmarks-api.codingpedia.org@0.0.0 start /Users/ama/projects/codingpedia-bookmarks/bookmarks-api.codingpedia.org
+ $ DEBUG=bookmarks-api.codepedia.org:* npm start
+> bookmarks-api.codepedia.org@0.0.0 start /Users/ama/projects/codingpedia-bookmarks/bookmarks-api.codepedia.org
 > node ./bin/www
 
-  bookmarks-api.codingpedia.org:server Listening on port 3000 +0ms
+  bookmarks-api.codepedia.org:server Listening on port 3000 +0ms
 ```
 
 And when I type in the browser http://localhost:3000 I get a _Welcome To Express_ page - Yeeey, success!!!
@@ -137,11 +137,11 @@ And when I type in the browser http://localhost:3000 I get a _Welcome To Express
 Now add a `README.md` file and push it to GitHub before my computer breaks down :):
 
 ```bash
-echo "# bookmarks-api.codingpedia.org" >> README.md
+echo "# bookmarks-api.codepedia.org" >> README.md
 git init
 git add --all
 git commit -m "first commit"
-git remote add origin https://github.com/Codingpedia/bookmarks-api.codingpedia.org.git
+git remote add origin https://github.com/Codingpedia/bookmarks-api.codepedia.org.git
 git push -u origin master
 ```
 

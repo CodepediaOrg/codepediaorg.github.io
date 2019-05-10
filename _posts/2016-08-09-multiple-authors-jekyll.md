@@ -9,7 +9,7 @@ categories: [jekyll]
 tags: [jekyll, wordpress, blog, migration, codingpedia, blogging]
 ---
 
-One of my main concern when I considered the [migration from Wordpress to Jekyll](//www.codingpedia.org/ama/how-to-migrate-programming-blog-from-wordpress-to-jekyll/) was how would I be able to handle multiple authors, because this plays an important role in the website supporting our [Coding Friend Program](//www.codingpedia.org/friends/). Fear no more, I have found a satisfactory way to handle multiple authors with Jekyll[^1] and in this short post I list the main points concerning that.
+One of my main concern when I considered the [migration from Wordpress to Jekyll](//www.codepedia.org/ama/how-to-migrate-programming-blog-from-wordpress-to-jekyll/) was how would I be able to handle multiple authors, because this plays an important role in the website supporting our [Coding Friend Program](//www.codepedia.org/friends/). Fear no more, I have found a satisfactory way to handle multiple authors with Jekyll[^1] and in this short post I list the main points concerning that.
 
 [^1]: <https://jekyllrb.com/>
 
@@ -17,7 +17,7 @@ One of my main concern when I considered the [migration from Wordpress to Jekyll
 
 ## Permalinks
 
-In Wordpress, the author's username was present in the custom URL format -  __www.codingpedia.org/{author_username}/seo-friendly-url__ - this had to be kept. Good thing in Jekyll you can define custom permalinks[^2] per post. The Jekyll Exporter plugin did a great job and by exported the permalinks exactly as they were in Wordpress. Here a couple samples from front matters[^3] of different exported posts:
+In Wordpress, the author's username was present in the custom URL format -  __www.codepedia.org/{author_username}/seo-friendly-url__ - this had to be kept. Good thing in Jekyll you can define custom permalinks[^2] per post. The Jekyll Exporter plugin did a great job and by exported the permalinks exactly as they were in Wordpress. Here a couple samples from front matters[^3] of different exported posts:
 
 ```
 permalink: /ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/
@@ -27,7 +27,7 @@ permalink: /udemy/git-tutorial-a-comprehensive-guide/
 [^2]:<https://jekyllrb.com/docs/permalinks/>
 [^3]:<https://jekyllrb.com/docs/frontmatter/>
 
-> If I had to start a new multi author blog all over again, I might also consider something like the following http://www.codingpedia.org/authors/{author_username}/posts/seo-friendly-url (more REST like, but a thorough research would be on the table)... Anyway with Jekyll you have the possibility to choose whatever you like for each post, by customizing the permalink in its front matter.
+> If I had to start a new multi author blog all over again, I might also consider something like the following http://www.codepedia.org/authors/{author_username}/posts/seo-friendly-url (more REST like, but a thorough research would be on the table)... Anyway with Jekyll you have the possibility to choose whatever you like for each post, by customizing the permalink in its front matter.
 
 ## Author specific details in posts
 
@@ -40,7 +40,7 @@ Good thing Jekyll supports data files[^4], where you can specify your own custom
 ``` html
 ama:
   name:          Adrian Matei
-  site:           http://www.codingpedia.org
+  site:           http://www.codepedia.org
   avatar:         amacoder.png
   bio:            "Life force expressing itself as a coding capable human being"
   email:          adrianmatei@gmail.com
@@ -60,7 +60,7 @@ ama:
 ...........
 dexter:
   name:          Dexter from Dexter's Laboratory
-  site:           http://www.codingpedia.org
+  site:           http://www.codepedia.org
   avatar:         dexter.jpg
   bio:            "A boy-genius and inventor with a secret laboratory, who constantly battles his sister Dee Dee in an attempt to keep her out of the lab."
   email:          adrianmatei@gmail.com
@@ -179,7 +179,7 @@ The same functionality is valid when generating the entries in the atom [feed.xm
 
 ## What's missing
 
-In Wordpress if I clicked on __http://www.codingpedia.org/authors/{author_username}__ I would get all the posts of the name author with pagination if they were more than five, I guess it's a nice feature and once I will implement that I will post it here.
+In Wordpress if I clicked on __http://www.codepedia.org/authors/{author_username}__ I would get all the posts of the name author with pagination if they were more than five, I guess it's a nice feature and once I will implement that I will post it here.
 
 I hope you've found this useful and if you see any improvement possibilities to this approach please leave a comment below, or even better make a pull request to improve the [source code](https://github.com/Codingpedia/codingpedia.github.io) directly - thanks.
 

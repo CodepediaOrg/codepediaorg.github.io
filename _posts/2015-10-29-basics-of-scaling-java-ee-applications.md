@@ -4,7 +4,7 @@ title: Basics of scaling Java EE applications
 date: 2015-10-29T16:52:13+00:00
 author: Abhishek Gupta
 layout: post
-guid: http://www.codingpedia.org/?p=2525
+guid: http://www.codepedia.org/?p=2525
 permalink: /abhirockzz/basics-of-scaling-java-ee-applications/
 fsb_show_social:
   - 0
@@ -295,7 +295,7 @@ tags:
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with the permission of Abhishek Gupta – source <a title="https://abhirockzz.wordpress.com/2015/04/05/timeout-policies-for-ejbs-how-do-they-help/" href="https://abhirockzz.wordpress.com/2015/10/19/basics-of-scaling-java-ee-applications/" target="_blank">Basics of scaling Java EE applications</a> from <a title="https://abhirockzz.wordpress.com" href="https://abhirockzz.wordpress.com/" target="_blank">https://abhirockzz.wordpress.com</a>
+  Published at Codepedia.org with the permission of Abhishek Gupta – source <a title="https://abhirockzz.wordpress.com/2015/04/05/timeout-policies-for-ejbs-how-do-they-help/" href="https://abhirockzz.wordpress.com/2015/10/19/basics-of-scaling-java-ee-applications/" target="_blank">Basics of scaling Java EE applications</a> from <a title="https://abhirockzz.wordpress.com" href="https://abhirockzz.wordpress.com/" target="_blank">https://abhirockzz.wordpress.com</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

@@ -11,7 +11,7 @@ tags: [java, javaee, async]
 ---
 
 Some time ago I wrote how elegant and rapid is to [make parallel calls in NodeJS with async-await and Promise.all
-capabilities](http://www.codingpedia.org/ama/parallel-calls-with-async-await-in-javascript-i-promise-you-all-performance-and-simplicity). 
+capabilities](http://www.codepedia.org/ama/parallel-calls-with-async-await-in-javascript-i-promise-you-all-performance-and-simplicity). 
 Well, it turns out in Java is just as elegant and succinct with the help of [CompletableFuture](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html)
 which was introduced in Java 8. To demonstrate that let's imagine that you need to retrieve a list of ToDos from a REST service, given their Ids. Of course
 you could iterate through the list of Ids and sequentially call the web service, but it's much more performant to do it in parallel 

@@ -4,7 +4,7 @@ title: How I reduced my Java batch application’s code by 80% using Easy Batch!
 date: 2014-09-14T14:01:53+00:00
 author: Mahmoud Ben Hassine
 layout: post
-guid: http://www.codingpedia.org/?p=1817
+guid: http://www.codepedia.org/?p=1817
 permalink: /mahmoudbenhassine/how-i-reduced-my-java-batch-applications-code-by-80-using-easy-batch/
 fsb_show_social:
   - 0
@@ -152,7 +152,7 @@ Actually I had to put 90% or even 95% because this is not all what Easy Batch ha
 You can check out Easy Batch tutorials <a title="Easy Batch tutorials" href="http://www.easybatch.org/tutorials/index.html" target="_blank">here</a>!
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with permission of <a href="http://www.codingpedia.org/author/mahmoudbenhassine" target="_blank">Mahmoud Ben Hassine</a> – source  &#8220;<a title="http://mahmoudbenhassine.wordpress.com/2014/01/21/how-i-reduced-my-java-batch-applications-code-by-80-using-easy-batch/" href="http://mahmoudbenhassine.wordpress.com/2014/01/21/how-i-reduced-my-java-batch-applications-code-by-80-using-easy-batch/" target="_blank">How I reduced my Java batch application’s code by 80% using Easy Batch!</a>&#8221; from <a title="http://www.mahmoudbenhassine.com/" href="http://www.mahmoudbenhassine.com/" target="_blank">http://www.<wbr />mahmoudbenhassine.com/</a>
+  Published at Codepedia.org with permission of <a href="http://www.codepedia.org/author/mahmoudbenhassine" target="_blank">Mahmoud Ben Hassine</a> – source  &#8220;<a title="http://mahmoudbenhassine.wordpress.com/2014/01/21/how-i-reduced-my-java-batch-applications-code-by-80-using-easy-batch/" href="http://mahmoudbenhassine.wordpress.com/2014/01/21/how-i-reduced-my-java-batch-applications-code-by-80-using-easy-batch/" target="_blank">How I reduced my Java batch application’s code by 80% using Easy Batch!</a>&#8221; from <a title="http://www.mahmoudbenhassine.com/" href="http://www.mahmoudbenhassine.com/" target="_blank">http://www.<wbr />mahmoudbenhassine.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

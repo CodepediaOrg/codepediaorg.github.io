@@ -4,7 +4,7 @@ title: 'C# Tricks: Slimming down your controllers'
 date: 2014-11-15T19:41:46+00:00
 author: Johannes Brodwall
 layout: post
-guid: http://www.codingpedia.org/?p=2094
+guid: http://www.codepedia.org/?p=2094
 permalink: /jhannes/c-tricks-slimming-down-your-controllers/
 fsb_show_social:
   - 0
@@ -271,7 +271,7 @@ public class PersonController : ApiController
 </p>
 
 <p class="note_normal" style="color: #333333;">
-  Published at Codingpedia.org with the permission of Johannes Brodwall – source <a title="http://johannesbrodwall.com/2014/02/07/c-tricks-slimming-down-your-controllers/" href="http://johannesbrodwall.com/2014/02/07/c-tricks-slimming-down-your-controllers/" target="_blank">C# Tricks: Slimming down your controllers</a> from <a title="http://johannesbrodwall.com/" href="http://johannesbrodwall.com/" target="_blank">http://johannesbrodwall.com/</a>
+  Published at Codepedia.org with the permission of Johannes Brodwall – source <a title="http://johannesbrodwall.com/2014/02/07/c-tricks-slimming-down-your-controllers/" href="http://johannesbrodwall.com/2014/02/07/c-tricks-slimming-down-your-controllers/" target="_blank">C# Tricks: Slimming down your controllers</a> from <a title="http://johannesbrodwall.com/" href="http://johannesbrodwall.com/" target="_blank">http://johannesbrodwall.com/</a>
 </p>
 
 <p style="color: #333333;">

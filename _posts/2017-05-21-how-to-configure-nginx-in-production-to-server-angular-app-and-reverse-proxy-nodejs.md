@@ -153,7 +153,7 @@ $ nginx-backup-config-bookmarks.conf before-ssl
 The result is a backup file named _www.codingmarks.org.2017-05-20_09:30-before-ssl_,
 that contains the **name** of the original file + **timestamp** when the backup was done + the **text** I input before as parameter.
 
-> Check out my post - [A developer's guide to using aliases](http://www.codingpedia.org/ama/a-developers-guide-to-using-aliases/),
+> Check out my post - [A developer's guide to using aliases](http://www.codepedia.org/ama/a-developers-guide-to-using-aliases/),
 > to learn more about my philosophy of using aliases.
 
 ## Content

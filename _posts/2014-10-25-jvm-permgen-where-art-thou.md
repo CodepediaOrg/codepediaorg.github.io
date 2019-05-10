@@ -4,7 +4,7 @@ title: JVM PermGen – where art thou?
 date: 2014-10-25T07:36:17+00:00
 author: Abhishek Gupta
 layout: post
-guid: http://www.codingpedia.org/?p=2030
+guid: http://www.codepedia.org/?p=2030
 permalink: /abhirockzz/jvm-permgen-where-art-thou/
 fsb_show_social:
   - 0
@@ -142,7 +142,7 @@ So, that’s about it for the JVM memory segment basics. Coming to back to the P
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with the permission of Abhishek Gupta – source <a title="https://abhirockzz.wordpress.com/2014/09/06/jvm-permgen-where-art-thou/" href="https://abhirockzz.wordpress.com/2014/09/06/jvm-permgen-where-art-thou/" target="_blank">JVM PermGen – where art thou?</a> from <a title="https://abhirockzz.wordpress.com" href="https://abhirockzz.wordpress.com" target="_blank">https://abhirockzz.wordpress.com</a>
+  Published at Codepedia.org with the permission of Abhishek Gupta – source <a title="https://abhirockzz.wordpress.com/2014/09/06/jvm-permgen-where-art-thou/" href="https://abhirockzz.wordpress.com/2014/09/06/jvm-permgen-where-art-thou/" target="_blank">JVM PermGen – where art thou?</a> from <a title="https://abhirockzz.wordpress.com" href="https://abhirockzz.wordpress.com" target="_blank">https://abhirockzz.wordpress.com</a>
 </p>
 
 <p style="text-align: justify;">

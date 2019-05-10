@@ -4,7 +4,7 @@ title: 'What every Angular project likely needs &#8211; and a Gulp build to prov
 date: 2015-05-01T14:52:57+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codingpedia.org/?p=2365
+guid: http://www.codepedia.org/?p=2365
 permalink: /jhadesdev/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/
 fsb_show_social:
   - 0
@@ -460,5 +460,5 @@ The `gulp-webserver` plugin was configured to do exactly that in the following w
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with permission of Aleksey Novik – source <a title="http://blog.jhades.org/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/" href="http://blog.jhades.org/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/" target="_blank"><em>What every Angular project likely needs &#8211; and a Gulp build to provide it</em></a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik – source <a title="http://blog.jhades.org/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/" href="http://blog.jhades.org/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/" target="_blank"><em>What every Angular project likely needs &#8211; and a Gulp build to provide it</em></a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p></section>

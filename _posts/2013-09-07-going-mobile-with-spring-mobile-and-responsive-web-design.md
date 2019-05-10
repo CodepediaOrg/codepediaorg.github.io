@@ -4,7 +4,7 @@ title: Going mobile with Spring mobile and responsive web design
 date: 2013-09-07T06:57:51+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=543
+guid: http://www.codepedia.org/?p=543
 permalink: /ama/going-mobile-with-spring-mobile-and-responsive-web-design/
 fsb_show_social:
   - 0
@@ -61,7 +61,7 @@ tags:
 </div>
 
 <p style="text-align: justify;">
-  As mentioned in <a title="Story of Podcastpedia.org" href="http://www.codingpedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia</a>, the next thing that needed urgent improvement on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, was to make the website more user friendly for mobile users. This post will present how, with the help of <a title="Spring Mobile " href="http://www.springsource.org/spring-mobile" target="_blank">Spring Mobile</a>, the website can detect now if the request is coming from a mobile device and act accordingly: it displays a mobile view employing some responsive design features, while also offering the possibility to choose the preferred way (desktop or mobile) for displaying the web pages.
+  As mentioned in <a title="Story of Podcastpedia.org" href="http://www.codepedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia</a>, the next thing that needed urgent improvement on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, was to make the website more user friendly for mobile users. This post will present how, with the help of <a title="Spring Mobile " href="http://www.springsource.org/spring-mobile" target="_blank">Spring Mobile</a>, the website can detect now if the request is coming from a mobile device and act accordingly: it displays a mobile view employing some responsive design features, while also offering the possibility to choose the preferred way (desktop or mobile) for displaying the web pages.
 </p>
 
 ## <span id="1_Dependency">1. Dependency</span>
@@ -218,7 +218,7 @@ On the <a title="Podcastpedia.org, knowledge to go - mobile" href="https://githu
 
 You can download the complete css file <a title="CSS file mobile" href="http://podcastpedia.org/static/css/style.min.m.css" target="_blank">here</a> (media queries can be found right at the end of the file).
 
-Apart from just modifying the css file, second `.jsp` files for mobile (e.g. `podcastDetails<strong>_m</strong>.jsp`) were added, in which some parts, present in the destkop version, were removed to speed up things on mobile. As mentioned in the post <a title="How To: Enable compression and leverage browser caching with Apache Server" href="http://www.codingpedia.org/ama/how-to-enable-compression-and-leverage-browser-caching-with-apache-server/" target="_blank">How To: Enable compression and leverage browser caching with Apache Server</a>, using Google&#8217;s <a title="PageSpeed Insights" href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a> to test how your web pages perform on mobile and desktop is highly recommended.
+Apart from just modifying the css file, second `.jsp` files for mobile (e.g. `podcastDetails<strong>_m</strong>.jsp`) were added, in which some parts, present in the destkop version, were removed to speed up things on mobile. As mentioned in the post <a title="How To: Enable compression and leverage browser caching with Apache Server" href="http://www.codepedia.org/ama/how-to-enable-compression-and-leverage-browser-caching-with-apache-server/" target="_blank">How To: Enable compression and leverage browser caching with Apache Server</a>, using Google&#8217;s <a title="PageSpeed Insights" href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a> to test how your web pages perform on mobile and desktop is highly recommended.
 
 This is just the beginning of improving the mobile experience, so if you notice any room for improvement, PLEASE <a href="mailto:contact@codingepdia.org?Subject=Apache%20optimization" target="_top">contact us</a> or leave a message.
 
@@ -241,7 +241,7 @@ We promise to only share high quality podcasts and episodes.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

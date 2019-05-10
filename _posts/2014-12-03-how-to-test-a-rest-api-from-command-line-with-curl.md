@@ -4,7 +4,7 @@ title: How to test a REST api from command line with curl
 date: 2014-12-03T07:19:41+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=2124
+guid: http://www.codepedia.org/?p=2124
 permalink: /ama/how-to-test-a-rest-api-from-command-line-with-curl/
 fsb_show_social:
   - 0
@@ -38,7 +38,7 @@ tags:
   - testing
 ---
 <p style="text-align: justify;">
-  If you want to quickly test your REST api from the command line, you can use <a title="http://curl.haxx.se/" href="http://curl.haxx.se/" target="_blank">curl</a>. In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api developed in my post <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
+  If you want to quickly test your REST api from the command line, you can use <a title="http://curl.haxx.se/" href="http://curl.haxx.se/" target="_blank">curl</a>. In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api developed in my post <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
 </p>
 <!--more-->
 
@@ -213,7 +213,7 @@ Content-Length: 631
 
 in the response.
 
-<span style="font-size: 16.3636360168457px; line-height: 1.5;">They&#8217;ve been added to support </span><a style="color: #bc360a;" title="http://www.w3.org/TR/cors/" href="http://www.w3.org/TR/cors/" target="_blank">Cross-Origing Resource Sharing (CORS)</a><span style="font-size: 16.3636360168457px; line-height: 1.5;">. You can find more about that in my post </span><a style="font-size: 16.3636360168457px; line-height: 1.5;" title="http://www.codingpedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" href="http://www.codingpedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" target="_blank">How to add CORS support on the server side in Java with Jersey</a><span style="font-size: 16.3636360168457px; line-height: 1.5;">.</span>
+<span style="font-size: 16.3636360168457px; line-height: 1.5;">They&#8217;ve been added to support </span><a style="color: #bc360a;" title="http://www.w3.org/TR/cors/" href="http://www.w3.org/TR/cors/" target="_blank">Cross-Origing Resource Sharing (CORS)</a><span style="font-size: 16.3636360168457px; line-height: 1.5;">. You can find more about that in my post </span><a style="font-size: 16.3636360168457px; line-height: 1.5;" title="http://www.codepedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" href="http://www.codepedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" target="_blank">How to add CORS support on the server side in Java with Jersey</a><span style="font-size: 16.3636360168457px; line-height: 1.5;">.</span>
 
 <p style="text-align: justify;">
   What I find a little bit intriguing is the response header <code>Content-Type: application/xml</code>, because I would have expected it to be <code>application/json</code>, since in the resource method defined with Jersey this should have taken precedence:
@@ -325,7 +325,7 @@ curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/
 ### <span id="14_Curl_request_with_multiple_headers">1.4. Curl request with multiple headers</span>
 
 <p style="text-align: justify;">
-  As you&#8217;ve found out in my latest post, <a title="http://www.codingpedia.org/ama/how-to-compress-responses-in-java-rest-api-with-gzip-and-jersey/" href="http://www.codingpedia.org/ama/how-to-compress-responses-in-java-rest-api-with-gzip-and-jersey/" target="_blank">How to compress responses in Java REST API with GZip and Jersey</a>, all the responses provided by the REST api are being compressed with GZip. This happens only if the client &#8220;suggests&#8221; that it accepts such encoding, by setting the following header <code>Accept-encoding:gzip</code>.
+  As you&#8217;ve found out in my latest post, <a title="http://www.codepedia.org/ama/how-to-compress-responses-in-java-rest-api-with-gzip-and-jersey/" href="http://www.codepedia.org/ama/how-to-compress-responses-in-java-rest-api-with-gzip-and-jersey/" target="_blank">How to compress responses in Java REST API with GZip and Jersey</a>, all the responses provided by the REST api are being compressed with GZip. This happens only if the client &#8220;suggests&#8221; that it accepts such encoding, by setting the following header <code>Accept-encoding:gzip</code>.
 </p>
 
 **Request**
@@ -382,7 +382,7 @@ n8▒i▒▒▒}H▒▒i1▒3g▒▒▒▒▒   ;▒E▒0O▒n▒R*▒g/E▒▒n
 
 ## <span id="2_SOAPui_test_suite_translated_to_curl_requests">2. SOAPui test suite translated to curl requests</span>
 
-As mentioned, in this second part I will map to curl requests the SOAPui test suite presented <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/#72_Integration_tests_with_SoapUI" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/#72_Integration_tests_with_SoapUI" target="_blank">here</a>.
+As mentioned, in this second part I will map to curl requests the SOAPui test suite presented <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/#72_Integration_tests_with_SoapUI" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/#72_Integration_tests_with_SoapUI" target="_blank">here</a>.
 
 ### <span id="21_Create_podcasts_resource">2.1. Create podcast(s) resource</span>
 
@@ -432,7 +432,7 @@ Content-Length: 271
 Via: 1.1 vldn680:8888
 Connection: close
 
-{"status":400,"code":400,"message":"Provided data not sufficient for insertion","link":"http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"Please verify that the feed is properly generated/set"}
+{"status":400,"code":400,"message":"Provided data not sufficient for insertion","link":"http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"Please verify that the feed is properly generated/set"}
 ```
 
 #### <span id="213_POST_new_podcast_correctly_8211_201_CREATED">2.1.3. POST new podcast correctly &#8211; 201 (CREATED)</span>
@@ -480,7 +480,7 @@ Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
 Vary: Accept-Encoding
 Content-Length: 300
 
-{"status":409,"code":409,"message":"Podcast with feed already existing in the database with the id 1","link":"http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"Please verify that the feed and title are properly generated"}
+{"status":409,"code":409,"message":"Podcast with feed already existing in the database with the id 1","link":"http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"Please verify that the feed and title are properly generated"}
 ```
 
 #### <span id="215_PUT_new_podcast_at_location_8211_201_CREATED">2.1.5. PUT new podcast at location &#8211; 201 (CREATED)</span>
@@ -616,7 +616,7 @@ curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-res
 * STATE: PERFORM => DONE handle 0x600056180; line 1626 (connection #0)
 * Connection #0 to host localhost left intact
 * Expire cleared
-{"status":400,"code":400,"message":"Please specify all properties for Full UPDATE","link":"http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"required properties - id, title, feed, lnkOnPodcastpedia, description"}
+{"status":400,"code":400,"message":"Please specify all properties for Full UPDATE","link":"http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"required properties - id, title, feed, lnkOnPodcastpedia, description"}
 ```
 
 #### <span id="232_PUT_podcast_for_FULL_update_8211_200_OK">2.3.2. PUT podcast for FULL update &#8211; 200 (OK)</span>
@@ -676,7 +676,7 @@ $ curl -v -H "Content-Type:application/json" -X POST http://localhost:8888/demo-
 {
     "code": 404,
     "developerMessage": "Please verify existence of data in the database for the id - 3",
-    "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
+    "link": "http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
     "message": "The resource you are trying to update does not exist in the database",
     "status": 404
 }
@@ -766,7 +766,7 @@ curl -v http://localhost:8888/demo-rest-jersey-spring/podcasts/2 | python -m jso
 {
     "code": 404,
     "developerMessage": "Verify the existence of the podcast with the id 2 in the database",
-    "link": "http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
+    "link": "http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
     "message": "The podcast you requested with id 2 was not found in the database",
     "status": 404
 }
@@ -821,7 +821,7 @@ A new podcast/resource has been created at /demo-rest-jersey-spring/podcasts/nul
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

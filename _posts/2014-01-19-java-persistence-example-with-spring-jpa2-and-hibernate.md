@@ -4,7 +4,7 @@ title: Java Persistence Example with Spring, JPA2 and Hibernate
 date: 2014-01-19T22:51:41+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=1097
+guid: http://www.codepedia.org/?p=1097
 permalink: /ama/java-persistence-example-with-spring-jpa2-and-hibernate/
 fsb_show_social:
   - 0
@@ -38,7 +38,7 @@ tags:
 ---
 
 <p style="text-align: justify;">
-  This is sort of a follow up post for a previous post of mine &#8211; <a title="RESTful Web Services Example in Java with Jersey, Spring and MyBatis" href="http://www.codingpedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis.</a> It is based on the same example application, which, via a REST API, can execute CRUD operations against a single Podcasts table. If in the first post the focus was on how to build the REST API with Jersey, this time <span style="font-size: medium;"><strong>it is on the data persistence layer</strong></span>. I will present how to implement a container-agnostic persistence layer with JPA2/Hibernate, being glued in the application via Spring.
+  This is sort of a follow up post for a previous post of mine &#8211; <a title="RESTful Web Services Example in Java with Jersey, Spring and MyBatis" href="http://www.codepedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis.</a> It is based on the same example application, which, via a REST API, can execute CRUD operations against a single Podcasts table. If in the first post the focus was on how to build the REST API with Jersey, this time <span style="font-size: medium;"><strong>it is on the data persistence layer</strong></span>. I will present how to implement a container-agnostic persistence layer with JPA2/Hibernate, being glued in the application via Spring.
 </p>
 
 <!--more-->
@@ -335,7 +335,7 @@ For this interface I provide a `PodcastDaoJPA2Impl` JPA-specific implementation 
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Note: When the persistence layer was implemented with MyBatis, there was no need to have an implementation class of the interface, as one was provided at runtime via the MapperFactoryBean. See my post <a title="http://www.codingpedia.org/ama/spring-mybatis-integration-example/" href="http://www.codingpedia.org/ama/spring-mybatis-integration-example/" target="_blank">Spring MyBatis integration example</a>, for complete details how to integrate MyBatis in Spring.
+  Note: When the persistence layer was implemented with MyBatis, there was no need to have an implementation class of the interface, as one was provided at runtime via the MapperFactoryBean. See my post <a title="http://www.codepedia.org/ama/spring-mybatis-integration-example/" href="http://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">Spring MyBatis integration example</a>, for complete details how to integrate MyBatis in Spring.
 </p>
 
 <p style="text-align: justify;">
@@ -503,8 +503,8 @@ Well, that&#8217;s it. You&#8217;ve seen how to configure Spring with JPA/Hibern
 
 ### <span id="44_Codingpedia_related_resources"><span id="Codingpedia_resources">4.4. Codingpedia related resources</span></span>
 
-  * <a title="www.codingpedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" href="www.codingpedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis</a>
-  * <a title="http://www.codingpedia.org/ama/spring-mybatis-integration-example/" href="http://www.codingpedia.org/ama/spring-mybatis-integration-example/" target="_blank">Spring MyBatis integration example</a>
+  * <a title="www.codepedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" href="www.codepedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis</a>
+  * <a title="http://www.codepedia.org/ama/spring-mybatis-integration-example/" href="http://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">Spring MyBatis integration example</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
@@ -514,7 +514,7 @@ Well, that&#8217;s it. You&#8217;ve seen how to configure Spring with JPA/Hibern
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -4,7 +4,7 @@ title: 'Timeout policies for EJBs : how do they help…?'
 date: 2015-04-23T13:55:59+00:00
 author: Abhishek Gupta
 layout: post
-guid: http://www.codingpedia.org/?p=2353
+guid: http://www.codepedia.org/?p=2353
 permalink: /abhirockzz/timeout-policies-for-ejbs-how-do-they-help/
 fsb_show_social:
   - 0
@@ -126,7 +126,7 @@ _Few things to note_
 Cheers !
 
 <p class="note_normal">
-  Published at Codingpedia.org with the permission of Abhishek Gupta – source <a title="https://abhirockzz.wordpress.com/2015/04/05/timeout-policies-for-ejbs-how-do-they-help/" href="https://abhirockzz.wordpress.com/2015/04/05/timeout-policies-for-ejbs-how-do-they-help/" target="_blank">Timeout policies for EJBs : how do they help…?</a> from <a title="https://abhirockzz.wordpress.com" href="https://abhirockzz.wordpress.com" target="_blank">https://abhirockzz.wordpress.com</a>
+  Published at Codepedia.org with the permission of Abhishek Gupta – source <a title="https://abhirockzz.wordpress.com/2015/04/05/timeout-policies-for-ejbs-how-do-they-help/" href="https://abhirockzz.wordpress.com/2015/04/05/timeout-policies-for-ejbs-how-do-they-help/" target="_blank">Timeout policies for EJBs : how do they help…?</a> from <a title="https://abhirockzz.wordpress.com" href="https://abhirockzz.wordpress.com" target="_blank">https://abhirockzz.wordpress.com</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

@@ -4,7 +4,7 @@ title: How to secure Jersey REST services with Spring Security and Basic authent
 date: 2015-02-12T17:36:35+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=2231
+guid: http://www.codepedia.org/?p=2231
 permalink: /ama/how-to-secure-jersey-rest-services-with-spring-security-and-basic-authentication/
 fsb_show_social:
   - 0
@@ -37,11 +37,11 @@ tags:
   - web services
 ---
 <p style="text-align: justify;">
-  In my previous blog post, <a title="http://www.codingpedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" href="http://www.codingpedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" target="_blank">Quick way to check if the REST API is alive &#8211; GET details from Manifest file</a>, I showed how to develop a REST resource to easy check if the developed REST API is reachable. In this post I will present how you can secure this resource with Spring Security and <a title="http://en.wikipedia.org/wiki/Basic_access_authentication" href="http://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">Basic authentication</a> &#8211; <em>&#8220;In the context of an HTTP transaction, basic access authentication is a method for an HTTP user agent to provide a user name and password when making a request.&#8221;</em>
+  In my previous blog post, <a title="http://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" href="http://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" target="_blank">Quick way to check if the REST API is alive &#8211; GET details from Manifest file</a>, I showed how to develop a REST resource to easy check if the developed REST API is reachable. In this post I will present how you can secure this resource with Spring Security and <a title="http://en.wikipedia.org/wiki/Basic_access_authentication" href="http://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">Basic authentication</a> &#8211; <em>&#8220;In the context of an HTTP transaction, basic access authentication is a method for an HTTP user agent to provide a user name and password when making a request.&#8221;</em>
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  The secured REST resources introduced here are part of bigger project, presented extensively in the <a title="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
+  The secured REST resources introduced here are part of bigger project, presented extensively in the <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
 </p>
 
 <p style="text-align: justify;">
@@ -314,7 +314,7 @@ Server: Jetty(9.2.6.v20141205)
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

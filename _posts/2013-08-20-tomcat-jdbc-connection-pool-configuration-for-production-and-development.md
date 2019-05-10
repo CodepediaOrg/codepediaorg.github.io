@@ -4,7 +4,7 @@ title: Tomcat JDBC Connection Pool configuration for production and development
 date: 2013-08-20T11:29:13+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codingpedia.org/?p=485
+guid: http://www.codepedia.org/?p=485
 permalink: /ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/
 fsb_show_social:
   - 0
@@ -39,7 +39,7 @@ tags:
   - tomcat
 ---
 <p style="text-align: justify;">
-  As mentioned in the post <a title="Install Eclipse Kepler on Windows 7 " href=" http://www.codingpedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit" target="_blank">Install Eclipse Kepler 64 bit on Windows 7 64 bit</a>, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> uses <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Apache Tomcat 7</a> as application server. This post presents how the Tomcat JDBC Connection Pool is configured in development and production for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>. The used database is MySql.<br />
+  As mentioned in the post <a title="Install Eclipse Kepler on Windows 7 " href=" http://www.codepedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit" target="_blank">Install Eclipse Kepler 64 bit on Windows 7 64 bit</a>, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> uses <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Apache Tomcat 7</a> as application server. This post presents how the Tomcat JDBC Connection Pool is configured in development and production for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>. The used database is MySql.<br />
 
   <!--more-->
 
@@ -223,7 +223,7 @@ One of the exceptions I have got was:
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

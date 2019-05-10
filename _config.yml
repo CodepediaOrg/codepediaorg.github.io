@@ -7,7 +7,7 @@ words_per_minute: 200
 logo:             images/logo.png # logo visible in the topbar
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url: https://www.codingpedia.org
+url: https://www.codepedia.org
 
 # draw your top menu here
 # each item must have a title and a url.
@@ -28,10 +28,10 @@ menu:
 # Owner/author information
 owner:
   name:          Codingpedia Association
-  site:           https://www.codingpedia.org
+  site:           https://www.codepedia.org
   avatar:         images/avatar.jpg
   bio:            "Share coding knowledge"
-  email:          contact@codingpedia.org
+  email:          contact@codepedia.org
   # Twitter nick for use in Twitter cards and follow button.
   twitter: codingpedia # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.

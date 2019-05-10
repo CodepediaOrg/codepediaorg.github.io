@@ -4,7 +4,7 @@ title: Javascript for Java Developers
 date: 2014-09-11T09:42:53+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codingpedia.org/?p=1783
+guid: http://www.codepedia.org/?p=1783
 permalink: /jhadesdev/javascript-for-java-developers/
 fsb_show_social:
   - 0
@@ -537,7 +537,7 @@ counter after loop = 3
 </p>
 
 <p class="note_normal" style="color: #3a4145;">
-  Published at Codingpedia.org with permission of Aleksey Novik &#8211; source <em><a title="http://blog.jhades.org/javascript-for-java-developers/" href="http://blog.jhades.org/javascript-for-java-developers/" target="_blank">Javascript for Java Developers</a></em> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik &#8211; source <em><a title="http://blog.jhades.org/javascript-for-java-developers/" href="http://blog.jhades.org/javascript-for-java-developers/" target="_blank">Javascript for Java Developers</a></em> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

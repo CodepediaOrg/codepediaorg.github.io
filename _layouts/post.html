@@ -1,0 +1,64 @@
+{% assign author = site.data.authors[page.author] %}
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+  <!-- include stuff relevant only for posts -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.2/clipboard.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+</head>
+
+<body id="post" {% if page.image.feature %}class="feature"{% endif %}>
+{% include github-fork-ribbon.html %}
+{% include browser-upgrade.html %}
+{% include header.html %}
+
+<div id="main" role="main">
+  <article class="hentry">
+    <div class="entry-content">
+        {% if page.image.feature %}
+            <div class="entry-image-index">
+              <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
+              {% if page.image.credit %}<div class="image-credit">Image source: <a target="_blank" href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
+            </div>
+        {% endif %}
+      <h1 class="post-title entry-title">{{ page.title }}</h1>
+      {% include promote-codingmarks.html %}
+      {{ content }}
+      {% include mailchimp.html %}
+      {% if page.republished %}
+        {% include republished.html %}
+      {% endif %}
+      <footer class="entry-meta">
+        <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags#{{ tag }}" title="Pages tagged {{ tag }}" class="tag"><span class="term">{{ tag }}</span></a>{% unless forloop.last %}{% endunless %}{% endfor %}</span>
+        {% if page.modified %}<span>Updated on <span class="entry-date date updated"><time datetime="{{ page.modified }}">{{ page.modified | date: "%B %d, %Y" }}</time></span></span>
+        {% endif %}
+        {% if author %}
+        <span class="author vcard"><span class="fn">{{ author.name }}</span></span>
+        {% endif %}
+        {% if page.share != false %}{% include social-share.html %}{% endif %}
+      </footer>
+    </div><!-- /.entry-content -->
+    {% if author %}
+    {% include author.html %}
+    {% endif %}
+    {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+    {% if site.related_posts.size > 0 %}{% include read-more.html %}{% endif %}
+  </article>
+
+
+</div><!-- /#main -->
+
+{% include scripts.html %}
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+</body>
+</html>

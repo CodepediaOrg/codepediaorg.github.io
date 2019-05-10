@@ -1,0 +1,9 @@
+{% assign author = site.data.authors[page.author] %}
+<p style="text-align: justify;" class="note_normal">
+    <span>Republished on Codingpedia.org with the permission of {{ author.name }} – source </span>
+    <a title="{{ page.original_title }}" href="{{ page.original_url }}" target="_blank">
+        {{ page.original_title }}
+    </a>
+    <span> from</span><span class="Apple-converted-space"> </span>
+    <a title="{{ author.site }}" href="{{ author.site }}" target="_blank">{{ author.site }}</a>
+</p>

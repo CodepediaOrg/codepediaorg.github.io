@@ -1,0 +1,34 @@
+---
+sitemap: false
+---
+
+/*
+ *
+ *  HPSTR
+ *
+ *  Designer: Michael Rose
+ *  Twitter: http://twitter.com/mmistakes
+ *
+*/
+
+// Partials
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "vendor/font-awesome/font-awesome";
+@import "vendor/magnific-popup/magnific-popup";
+@import "site";
+@import "typography";
+//@import "rouge";//replaced rouge with syntax at recommendation from Jekyll
+@import "syntax";
+//@import "coderay";
+@import "grid";
+@import "elements";
+@import "animations";
+@import "dl-menu";
+@import "page";
+@import "wordpress";
+@import "github_fork_ribbon";
+@import "scroll-up";
+@import "clipboardjs";
+@import "codingpedia";

@@ -1,0 +1,58 @@
+.copy-button {
+  cursor: pointer;
+  border: 0;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 6px 10px 10px;
+  color: #795548;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.copy-button:hover,
+.copy-button:focus,
+.copy-button:active {
+  outline: 0;
+  background-color: #eee9e6;
+}
+
+.copy-button:before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  background-size: contain;
+  background-image: url('../img/clipboard.svg');
+  background-repeat: no-repeat;
+  position: relative;
+  vertical-align: middle;
+}
+
+.content-section {
+  padding: 40px;
+}
+.content-section--paste {
+  margin-top: 60px;
+  background-color: #CFD8DC;
+}
+.content-section--paste h1 {
+  font-size: 12px;
+  color: #546E7A;
+  text-transform: uppercase;
+}
+
+#paste-content {
+  border: 2px dashed #B0BEC5;
+  min-height: 160px;
+}
+#paste-content:focus {
+  outline: 0;
+  border-color: #90A4AE;
+}
+#paste-content pre {
+  margin: 0 !important;
+}

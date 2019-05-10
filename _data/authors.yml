@@ -1,0 +1,70 @@
+ama:
+  name:          Adrian Matei
+  site:           http://www.codingpedia.org
+  avatar:         images/authors/amacoder.png
+  bio:            "Life force expressing itself as a coding capable human being"
+  email:          adrianmatei@gmail.com
+  # Twitter nick for use in Twitter cards and follow button.
+  twitter: codingpedia # if no twitter in this config, the twitter follow button will be removed
+  # GitHub nick for use in follow button in author block.
+  github: adrianmatei-me
+  social:
+    - title: "github"
+      url: "https://github.com/adrianmatei-me"
+    - title: "linkedin"
+      url: "https://www.linkedin.com/in/adrianmatei-me/"
+    - title: "youtube"
+      url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
+    - title: "facebook"
+      url: "https://www.facebook.com/adrianmatei.me"
+
+aredko:
+  name:          Andriy Redko
+  site:           http://aredko.blogspot.com/
+  avatar:         images/authors/aredko.jpg
+  bio:            "Seasoned software developer with a great passion to code. I am extensively working with JVM platform using Java, Groovy, Scala as well as other languages and technologies (Ruby, Grails, Play!, Akka, MySQL, PostreSQL, MongoDB, Redis, JUnit, ...)"
+  # GitHub nick for use in follow button in author block.
+  github: reta
+  social:
+    - title: "github"
+      url: "https://github.com/reta"
+    - title: "linkedin"
+      url: "http://ca.linkedin.com/in/aredko"
+
+benas:
+  name:          Mahmoud Ben Hassine
+  site:           http://benas.github.io/
+  avatar_url: https://pbs.twimg.com/profile_images/682858329220190208/YhIK6TIE_400x400.jpg
+  bio:            "Aspiring software craftsman living in the shell, chess master and scrum basterd!"
+  email:          mahmoud.benhassine@icloud.com
+  # Twitter nick for use in Twitter cards and follow button.
+  twitter: pragmatic_coder # if no twitter in this config, the twitter follow button will be removed
+  # GitHub nick for use in follow button in author block.
+  github: benas
+  social:
+    - title: "twitter"
+      url: "https://twitter.com/pragmatic_coder"
+    - title: "github"
+      url: "https://github.com/benas"
+    - title: "linkedin"
+      url: "https://fr.linkedin.com/in/mbenhassine/"
+
+dexter:
+  name:          Dexter's Laboratory
+  site:           http://www.codingpedia.org
+  avatar:         images/authors/dexter.jpg
+  bio:            "A boy-genius and inventor with a secret laboratory, who constantly battles his sister Dee Dee in an attempt to keep her out of the lab."
+  email:          adrianmatei@gmail.com
+  # Twitter nick for use in Twitter cards and follow button.
+  twitter: codingpedia # if no twitter in this config, the twitter follow button will be removed
+  # GitHub nick for use in follow button in author block.
+  github: amacoder
+  social:
+    - title: "github"
+      url: "https://github.com/adrianmatei-me"
+    - title: "linkedin"
+      url: "https://www.linkedin.com/in/adrianmatei1983"
+    - title: "youtube"
+      url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
+    - title: "facebook"
+      url: "https://www.facebook.com/adrian.matei.90"

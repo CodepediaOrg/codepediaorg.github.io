@@ -290,7 +290,7 @@ Thanks for sharing and connecting with us
 </div>
 
 <div class="social_logo_small">
-  <a href="https://twitter.com/codingpedia" target="_blank"><img class="social_logo" src="{{site.url}}/wp-content/uploads/2013/10/twitter.png" alt="Twitter" /></a>
+  <a href="https://twitter.com/CodepediaOrg" target="_blank"><img class="social_logo" src="{{site.url}}/wp-content/uploads/2013/10/twitter.png" alt="Twitter" /></a>
 </div>
 
 <div class="social_logo_small">
@@ -329,7 +329,7 @@ Thanks for sharing and connecting with us
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-         <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
+         <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
       </div>
 
       <div class="clear">

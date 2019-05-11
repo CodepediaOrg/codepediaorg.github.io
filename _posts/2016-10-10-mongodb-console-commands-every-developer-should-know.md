@@ -218,7 +218,7 @@ For more details see the [db.collection.remove() documentation](https://docs.mon
 Update `githubURL` for document with the given `location` (we know that is unique):
 
 ```
-> db.bookmarks.update({ location : "http://www.codepedia.org/" }, { githubURL : "https://github.com/Codingpedia/codepedia.github.io"} );
+> db.bookmarks.update({ location : "http://www.codepedia.org/" }, { githubURL : "https://github.com/CodepediaOrg/codepediaorg.github.io"} );
 ```
 
 ### Add new field

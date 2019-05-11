@@ -11,7 +11,7 @@ Both require some common things which are listed below:
 
 ## Getting Started
 * Make sure you have a [GitHub account](https://github.com/signup/free)
-* Fork the [repository](https://github.com/Codingpedia/codepedia.github.io) on GitHub
+* Fork the [repository](https://github.com/CodepediaOrg/codepediaorg.github.io) on GitHub
 
 ## Requirements
 We recommend using [Bundler](http://bundler.io/) to install and run Jekyll. Bundler manages Ruby gem dependencies, reduces Jekyll build errors, and prevents environment-related bugs. To install Bundler, you must install [Ruby](https://www.ruby-lang.org/).
@@ -32,7 +32,7 @@ $ gem install bundler
 ```
 
 ## Step 1: Set up a working copy on your computer
-Firstly you need a local fork of the the [Codingpedia project](https://github.com/Codingpedia/codepedia.github.io), so go ahead and press the "fork" button in GitHub. This will create a copy of the repository in your own GitHub account and you'll see a note that it's been forked underneath the project name:
+Firstly you need a local fork of the the [Codingpedia project](https://github.com/CodepediaOrg/codepediaorg.github.io), so go ahead and press the "fork" button in GitHub. This will create a copy of the repository in your own GitHub account and you'll see a note that it's been forked underneath the project name:
 
 Now you need a copy locally, so find the "SSH clone URL" in the right hand column and use that to clone locally using a terminal:
 <pre><code class="bash">git clone https://github.com/your_github_account/codepedia.github.io.git</pre></code>
@@ -42,7 +42,7 @@ Change now to your project's directory:
 
 Finally, in this stage, you need to set up a new remote that points to the original project so that you can grab any changes and bring them into your local copy. Firstly clock on the link to the original repository – it's labeled "Forked from" at the top of the GitHub page. This takes you back to the projects main GitHub page, so you can find the "SSH clone URL" and use it to create the new remote, which we'll call **upstream**.
 
-<pre><code class="bash">git remote add upstream https://github.com/Codingpedia/codepedia.github.io.git</pre></code>
+<pre><code class="bash">git remote add upstream https://github.com/CodepediaOrg/codepediaorg.github.io.git</pre></code>
 
 You now have two remotes for this project on disk:
 

@@ -48,7 +48,7 @@ We believe that technological advancement and efficiency, driven among other th
 If you think the same way we do, you should know we are on a continuous journey looking to recruit talented people who know how to write both code and articles. You can join us by becoming:
 </p>
 
-  * <a title="Codepedia.org - Contributing posts" href="https://github.com/Codingpedia/codepedia.github.io/blob/master/CONTRIBUTING_POST.md" target="_blank">Contributing posts</a> &#8211; either regularly or as a guest
+  * <a title="Codepedia.org - Contributing posts" href="https://github.com/CodepediaOrg/codepediaorg.github.io/blob/master/CONTRIBUTING_POST.md" target="_blank">Contributing posts</a> &#8211; either regularly or as a guest
   * <a title="Codepedia.org - Coding Friend Program" href="http://www.codepedia.org/friends" target="_blank">Coding Friend</a> &#8211; this implies you allow Codingpedia to republish some of your articles on our website
 
 ## <span id="Organization">Organization</span>

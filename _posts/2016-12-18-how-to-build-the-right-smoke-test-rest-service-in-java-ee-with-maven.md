@@ -49,7 +49,7 @@ Merge: df736ab 3ebcbdb
 Author: Adrian Matei <ama@codepedia.org>
 Date:   Sat Dec 3 09:30:41 2016 +0100
 
-    Merge branch 'master' of https://github.com/Codingpedia/codepedia.github.io
+    Merge branch 'master' of https://github.com/CodepediaOrg/codepediaorg.github.io
 
 ```
 
@@ -300,6 +300,6 @@ GET http://localhost:8080/some-root-context/version
 }
 ```
 
-If if you've found this useful, please share the joy and give us a star un [GitHub](https://github.com/Codingpedia/codepedia.github.io)
+If if you've found this useful, please share the joy and give us a star un [GitHub](https://github.com/CodepediaOrg/codepediaorg.github.io)
 
 ## References

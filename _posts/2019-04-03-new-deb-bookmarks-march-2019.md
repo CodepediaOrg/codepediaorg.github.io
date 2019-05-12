@@ -5,8 +5,8 @@ description: "Lots of exciting dev #bookmarks added in march 2019. Keywords: ali
 author: ama
 permalink: /ama/new-dev-bookmarks-march-2019
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in march 2019. Hot topics include:
 

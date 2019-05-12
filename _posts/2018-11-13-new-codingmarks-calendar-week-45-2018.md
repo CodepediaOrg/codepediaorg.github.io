@@ -5,8 +5,8 @@ description: "New codingmarks published in week 45 of 2018. Keywords: agile, api
 author: ama
 permalink: /ama/new-codingmarks-week-45-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in week 45 of 2018. Hot topics include:
 

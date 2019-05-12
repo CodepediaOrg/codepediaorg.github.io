@@ -8,7 +8,7 @@ description: "Finding a desired link, you already visited, can be a tedious job 
 author: ama
 permalink: /ama/how-i-save-a-workweek-a-year-by-efficiently-managing-my-codingmarks
 published: true
-categories: [codingmarks]
+categories: [dev-bookmarks]
 tags: [codingmarks, efficiency]
 ---
 ## Motivation

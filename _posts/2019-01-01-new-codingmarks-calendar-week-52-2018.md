@@ -5,8 +5,8 @@ description: "New codingmarks published in week 52 of 2018. Keywords: api, api-d
 author: ama
 permalink: /ama/new-codingmarks-week-52-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in week 52 of 2018. Hot topics include:
 

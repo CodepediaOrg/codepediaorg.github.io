@@ -5,8 +5,8 @@ description: "Lots of exciting #codingmarks added in january 2019. Keywords: ang
 author: ama
 permalink: /ama/new-codingmarks-in-january-2019
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [#codingmarks](https://www.codingmarks.org) added in january 2018. Hot topics include:
 
@@ -547,7 +547,7 @@ Our comprehensive guide to CSS flexbox layout. This complete guide explains ever
 **[Coding bookmarks, aka #codingmarks](https://www.codingmarks.org)**
 
   * **tags**: &nbsp; [software-development](https://www.codingmarks.org/search?q=[software-development]), &nbsp; [free-programming-books](https://www.codingmarks.org/search?q=[free-programming-books]), &nbsp; [programming](https://www.codingmarks.org/search?q=[programming])
-  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/codingmarks)
+  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks)
 
 Efficiently manage and retrieve your coding bookmarks. Contribute by sharing and voting the worthy ones, so others can benefit
 
@@ -1170,7 +1170,7 @@ TL;DR ORM is a terrible anti-pattern that violates all principles of object-orie
 **[Coding bookmarks, aka #codingmarks](https://www.codingmarks.org)**
 
   * **tags**: &nbsp; [software-development](https://www.codingmarks.org/search?q=[software-development]), &nbsp; [free-programming-books](https://www.codingmarks.org/search?q=[free-programming-books]), &nbsp; [programming](https://www.codingmarks.org/search?q=[programming])
-  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/codingmarks)
+  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks)
 
 Efficiently manage and retrieve your coding bookmarks. Contribute by sharing and voting the worthy ones, so others can benefit
 
@@ -1337,7 +1337,7 @@ Ben Sigelman talks about what Google got wrong about microservices, the lessons 
 **[Coding bookmarks, aka #codingmarks](https://www.codingmarks.org)**
 
   * **tags**: &nbsp; [software-development](https://www.codingmarks.org/search?q=[software-development]), &nbsp; [free-programming-books](https://www.codingmarks.org/search?q=[free-programming-books]), &nbsp; [programming](https://www.codingmarks.org/search?q=[programming])
-  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/codingmarks)
+  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks)
 
 Efficiently manage and retrieve your coding bookmarks. Contribute by sharing and voting the worthy ones, so others can benefit
 

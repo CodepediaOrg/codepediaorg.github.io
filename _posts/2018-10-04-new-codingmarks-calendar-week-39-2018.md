@@ -5,8 +5,8 @@ description: "New codingmarks published in week 39 of 2018. Keywords: angular, a
 author: ama
 permalink: /ama/new-codingmarks-week-39-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 39 th week of 2018. Hot topics include:
 

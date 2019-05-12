@@ -6,7 +6,7 @@ from the Free-Programming-Books project"
 author: ama
 permalink: /ama/free-programming-books-are-now-on-codingmarks-org
 published: true
-categories: [codingmarks]
+categories: [dev-bookmarks]
 tags: [codingmarks, books, free-programming-books]
 ---
 
@@ -44,6 +44,6 @@ This was possible by importing the free programming books from the [Free-Program
  
  <p class="note_normal">
     <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" />
-     If you wonder how I've done this, weill I have written a <a href="https://github.com/CodepediaOrg/codingmarks-free-programming-books-importer" target="_blank">simple Java importer</a>,
+     If you wonder how I've done this, weill I have written a <a href="https://github.com/CodepediaOrg/bookmarks-free-programming-books-importer" target="_blank">simple Java importer</a>,
      to help me with the import.
  </p>  

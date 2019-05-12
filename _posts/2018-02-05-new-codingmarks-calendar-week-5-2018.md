@@ -5,8 +5,8 @@ description: "New codingmarks added in the 5th week of 2018. Keywords: caching, 
 author: ama
 permalink: /ama/new-codingmarks-week-5-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 
 New [dev bookmarks](https://www.bookmarks.dev) added in the 5th week of 2018. Hot topics include:

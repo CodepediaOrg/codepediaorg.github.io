@@ -5,8 +5,8 @@ description: "New codingmarks added in the 19th week of 2018. Keywords: architec
 author: ama
 permalink: /ama/new-codingmarks-week-19-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 19th week of 2018. Hot topics include:
 

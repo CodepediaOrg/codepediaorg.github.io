@@ -8,8 +8,8 @@ description: "New codingmarks added in the 7th week of 2018. Keywords: cloud, en
 author: ama
 permalink: /ama/new-codingmarks-week-7-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 7th week of 2018. Hot topics include:
 

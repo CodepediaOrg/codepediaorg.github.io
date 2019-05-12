@@ -5,8 +5,8 @@ description: "New codingmarks published in week 48 of 2018. Keywords: android, a
 author: ama
 permalink: /ama/new-codingmarks-week-48-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in week 48 of 2018. Hot topics include:
 

@@ -5,8 +5,8 @@ description: "New codingmarks added in the 11th week of 2018. Keywords: access-c
 author: ama
 permalink: /ama/new-codingmarks-week-11-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 11th week of 2018. Hot topics include:
 

@@ -5,8 +5,8 @@ description: "New codingmarks added in the 25th week of 2018. Keywords: benchmar
 author: ama
 permalink: /ama/new-codingmarks-week-25-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 25th week of 2018. Hot topics include:
 

@@ -13,7 +13,7 @@ This blog post presents a simple example showing how to insert a document in mon
 
  <p class="note_normal">
     <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" />
-     The code samples are taken from the Free-Programming-Books-Importer project, available on <a href="https://github.com/CodepediaOrg/codingmarks-free-programming-books-importer" target="_blank">Github</a>
+     The code samples are taken from the Free-Programming-Books-Importer project, available on <a href="https://github.com/CodepediaOrg/bookmarks-free-programming-books-importer" target="_blank">Github</a>
  </p>  
  
 ## Use MongoDB Java Driver
@@ -95,5 +95,5 @@ Documents are analogous to JSON objects but exist in the database in a more type
 
  <p class="note_normal">
     <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" />
-     Source code for this example is available on <a href="https://github.com/CodepediaOrg/codingmarks-free-programming-books-importer" target="_blank">Github</a>
+     Source code for this example is available on <a href="https://github.com/CodepediaOrg/bookmarks-free-programming-books-importer" target="_blank">Github</a>
  </p>  

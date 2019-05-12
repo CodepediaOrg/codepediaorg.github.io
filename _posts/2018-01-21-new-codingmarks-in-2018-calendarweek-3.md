@@ -6,8 +6,8 @@ description: "New codingmarks added this year so far. They were marked with the 
 author: ama
 permalink: /ama/new-codingmarks-week-3-2018-nodejs-mongodb-git-design-patterns-and-more
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added this year so far. They were marked with the following keywords: 
 

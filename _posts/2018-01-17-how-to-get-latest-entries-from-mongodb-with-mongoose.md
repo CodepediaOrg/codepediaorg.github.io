@@ -9,7 +9,7 @@ categories: [mongodb]
 tags: [codingmarks, mongodb, mongoose, nodejs]
 ---
 
-I have a use case where I need to retrieve the latest added public [codingmarks](https://github.com/CodepediaOrg/codingmarks).
+I have a use case where I need to retrieve the latest added public [dev-bookmarks](https://github.com/CodepediaOrg/bookmarks).
 They are store in a mongo database, and I use Mongoose as ORM. 
 
 I want to have two possibilites to achieve this:

@@ -5,8 +5,8 @@ description: "New codingmarks added in the 10th week of 2018. Keywords: big-data
 author: ama
 permalink: /ama/new-codingmarks-week-10-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 10th week of 2018. Hot topics include:
 

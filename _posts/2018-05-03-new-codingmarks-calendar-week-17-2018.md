@@ -5,8 +5,8 @@ description: "New codingmarks added in the 17th week of 2018. Keywords: aggregat
 author: ama
 permalink: /ama/new-codingmarks-week-17-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 17th week of 2018. Hot topics include:
 
@@ -125,7 +125,7 @@ Awesome community for programmers.
 
 Collection of (cu)rated coding bookmarks. Create your personal bookmark list and share selected bookmarks so others can benefit.
 
-The public codingmarks are also published weekly on Github at https://github.com/CodepediaOrg/codingmarks
+The public codingmarks are also published weekly on Github at https://github.com/CodepediaOrg/bookmarks
 
 <hr>
 
@@ -408,7 +408,7 @@ A website dedicated to the fascinating world of mathematics and programming.
 
 Collection of (cu)rated coding bookmarks. Create your personal bookmark list and share selected bookmarks so others can benefit.
 
-The public codingmarks are also published weekly on Github at https://github.com/CodepediaOrg/codingmarks
+The public codingmarks are also published weekly on Github at https://github.com/CodepediaOrg/bookmarks
 
 <hr>
 

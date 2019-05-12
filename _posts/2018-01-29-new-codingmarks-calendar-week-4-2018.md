@@ -5,8 +5,8 @@ description: "New codingmarks added in the 5th calendar week of 2018. Hot topics
 author: ama
 permalink: /ama/new-codingmarks-week-4-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 
 New [dev bookmarks](https://www.bookmarks.dev) added in the 4th calendar week of 2018. Hot topics this week:

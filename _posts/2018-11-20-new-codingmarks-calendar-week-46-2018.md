@@ -5,8 +5,8 @@ description: "New codingmarks published in week 46 of 2018. Keywords: api, git, 
 author: ama
 permalink: /ama/new-codingmarks-week-46-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in week 46 of 2018. Hot topics include:
 
@@ -230,8 +230,8 @@ description: "New codingmarks published in week 46 of 2018. Keywords: api, git, 
 author: ama
 permalink: /ama/new-codingmarks-week-46-2018
 published: true
-categories: [codingmarks]
-tags: [codingmarks]
+categories: [dev-bookmarks]
+tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in week 46 of 2018. Hot topics include:
 

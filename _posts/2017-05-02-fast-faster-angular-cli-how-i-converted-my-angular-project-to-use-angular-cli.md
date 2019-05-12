@@ -10,7 +10,7 @@ categories: [javascript]
 tags: [angular, angular-cli, codingmarks, webpack, bootstrap, font-awesome, showdown]
 ---
 
-Last week I migrated the [codingmarks](http://codingmarks.org) project to use [Angular CLI](https://cli.angular.io/) and it's awesome. Initially it was based on Angular Seed with Webpack - [preboot/angular-webpack](https://github.com/preboot/angular-webpack).
+Last week I migrated the [dev-bookmarks](http://codingmarks.org) project to use [Angular CLI](https://cli.angular.io/) and it's awesome. Initially it was based on Angular Seed with Webpack - [preboot/angular-webpack](https://github.com/preboot/angular-webpack).
   I couldn't take the update breaking changes pain anymore when I wanted to add  Ahead-Of-Time compilation[^1] support. My webpack[^2] configuration was also getting out of hand. But I did it, I moved it to Angular CLI and in this post I am going to list the major steps I had to take. It is based on the [Moving your project to Angular CLI story](https://github.com/angular/angular-cli/wiki/stories-moving-into-the-cli) with my own needs and flavor added to it.
 
 [^1]: <https://angular.io/docs/ts/latest/cookbook/aot-compiler.html>

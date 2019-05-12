@@ -372,12 +372,12 @@ Let&#8217;s see how everything is configured in the application context:
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
+       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
     </div>
 
     <div class="clear">

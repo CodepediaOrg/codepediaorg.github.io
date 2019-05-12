@@ -698,7 +698,7 @@ Most of the properties set in the caches are self explaining by name, but here a
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

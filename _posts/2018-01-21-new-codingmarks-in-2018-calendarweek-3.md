@@ -9,7 +9,7 @@ published: true
 categories: [codingmarks]
 tags: [codingmarks]
 ---
-New [codingmarks](https://www.codingmarks.org) added this year so far. They were marked with the following keywords: 
+New [dev bookmarks](https://www.bookmarks.dev) added this year so far. They were marked with the following keywords: 
 
 * TOC
 {:toc} 

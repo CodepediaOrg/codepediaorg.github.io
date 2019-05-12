@@ -8,7 +8,7 @@ published: true
 categories: [codingmarks]
 tags: [codingmarks]
 ---
-New [codingmarks](https://www.codingmarks.org) published in the week 44 of 2018. Hot topics include:
+New [dev bookmarks](https://www.bookmarks.dev) published in the week 44 of 2018. Hot topics include:
 
 * TOC
 {:toc} 

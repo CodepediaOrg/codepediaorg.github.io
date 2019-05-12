@@ -8,7 +8,7 @@ published: true
 categories: [codingmarks]
 tags: [codingmarks]
 ---
-New [codingmarks](https://www.codingmarks.org) added in the 30th week of 2018. Hot topics include:
+New [dev bookmarks](https://www.bookmarks.dev) added in the 30th week of 2018. Hot topics include:
 
 * TOC
 {:toc} 

@@ -8,7 +8,7 @@ published: true
 categories: [codingmarks]
 tags: [codingmarks]
 ---
-New [codingmarks](https://www.codingmarks.org) added in week 46 of 2018. Hot topics include:
+New [dev bookmarks](https://www.bookmarks.dev) added in week 46 of 2018. Hot topics include:
 
 * TOC
 {:toc} 
@@ -233,7 +233,7 @@ published: true
 categories: [codingmarks]
 tags: [codingmarks]
 ---
-New [codingmarks](https://www.codingmarks.org) added in week 46 of 2018. Hot topics include:
+New [dev bookmarks](https://www.bookmarks.dev) added in week 46 of 2018. Hot topics include:
 
 * TOC
 {:toc} 

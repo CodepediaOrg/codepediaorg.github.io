@@ -9,7 +9,7 @@ categories: [codingmarks]
 tags: [codingmarks]
 ---
 
-New [codingmarks](https://www.codingmarks.org) added in the 4th calendar week of 2018. Hot topics this week:
+New [dev bookmarks](https://www.bookmarks.dev) added in the 4th calendar week of 2018. Hot topics this week:
 
 * TOC
 {:toc} 

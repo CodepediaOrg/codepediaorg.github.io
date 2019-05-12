@@ -11,7 +11,7 @@ fsb_show_social:
 gr_overridden:
   - 1
 gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/Codingpedia/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
+  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
 fsb_social_facebook:
   - 30
 fsb_social_google:
@@ -39,7 +39,7 @@ tags:
   - spring
 ---
 <p style="text-align: justify;">
-  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="https://github.com/Codingpedia/podcastpedia/podcasting" href="https://github.com/Codingpedia/podcastpedia/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
+  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="https://github.com/CodepediaOrg/podcastpedia/podcasting" href="https://github.com/CodepediaOrg/podcastpedia/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
 </p>
 
 <!--more-->
@@ -294,7 +294,7 @@ tags:
 </h3>
 
 <p style="text-align: justify;">
-  Before we start, let me tell you why I&#8217;ve written this post &#8211; well, my intention is to offer in the future a REST API for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>. Of course I could use <a title="Designing and Implementing RESTful Web Services with Spring" href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring&#8217;s own REST implementation</a>, as I currently do for the AJAX calls, but I wanted also to see how the &#8220;official&#8221; implementation looks like. So, the best way to get to know the technology is to build a prototype with it. That is what I did and what I am presenting here, and I can say that I am pretty damn satisfied with Jersey. Read along to understand why!!!
+  Before we start, let me tell you why I&#8217;ve written this post &#8211; well, my intention is to offer in the future a REST API for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>. Of course I could use <a title="Designing and Implementing RESTful Web Services with Spring" href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring&#8217;s own REST implementation</a>, as I currently do for the AJAX calls, but I wanted also to see how the &#8220;official&#8221; implementation looks like. So, the best way to get to know the technology is to build a prototype with it. That is what I did and what I am presenting here, and I can say that I am pretty damn satisfied with Jersey. Read along to understand why!!!
 </p>
 
 <p class="note_normal" style="text-align: justify;">
@@ -393,7 +393,7 @@ A few words on the technologies/frameworks used:
 
 The source code for the project presented here is available on GitHub, with complete instructions on how to install and run the project:
 
-  * <a title="Source code for project" href="https://github.com/Codingpedia/demo-rest-jersey-spring" target="_blank">Codingpedia / demo-rest-jersey-spring </a>
+  * <a title="Source code for project" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring" target="_blank">Codingpedia / demo-rest-jersey-spring </a>
 
 ## <span id="2_Configuration">2. Configuration</span>
 
@@ -435,7 +435,7 @@ Before I start presenting the design and implementation of the REST API, we need
 </p>
 
 <p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> If you want to see what other dependencies are needed (e.g. Spring, Hibernate, Jetty maven plugin, testing etc.) in the project you can have a look at the the complete <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" target="_blank">pom.xml</a> file available on GitHub.
+  <strong>Code alert:</strong> If you want to see what other dependencies are needed (e.g. Spring, Hibernate, Jetty maven plugin, testing etc.) in the project you can have a look at the the complete <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" target="_blank">pom.xml</a> file available on GitHub.
 </p>
 
 ### <span id="22_webxml">2.2. web.xml</span>
@@ -490,7 +490,7 @@ Before I start presenting the design and implementation of the REST API, we need
 </p>
 
 My implementation of the `ResourceConfig` class, ``<p style="text-align: justify;">
-  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="https://github.com/Codingpedia/podcastpedia/podcasting" href="https://github.com/Codingpedia/podcastpedia/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
+  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="https://github.com/CodepediaOrg/podcastpedia/podcasting" href="https://github.com/CodepediaOrg/podcastpedia/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
 </p>
 
 My implementation of the `ResourceConfig` class,`` registers application resources, filters, exception mappers and feature :
@@ -652,14 +652,14 @@ For the sake of simplicity, a podcast will have only the following properties:
   I could have used only one Java class for the representation of the podcast resource in the code, but in that case the class and its properties/methods would have gotten cluttered with both JPA and XML/JAXB/JSON annotations. I wanted to avoid that and I used two representations which have pretty much the same properties instead:
 </p>
 
-  * <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/dao/PodcastEntity.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/dao/PodcastEntity.java" target="_blank">PodcastEntity.java</a> &#8211; JPA annotated class used in the DB and business layers
-  * <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" target="_blank">Podcast.java</a> &#8211; JAXB/JSON annotated class used in the facade and business layers
+  * <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/dao/PodcastEntity.java" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/dao/PodcastEntity.java" target="_blank">PodcastEntity.java</a> &#8211; JPA annotated class used in the DB and business layers
+  * <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" target="_blank">Podcast.java</a> &#8211; JAXB/JSON annotated class used in the facade and business layers
 
 <p class="note_normal" style="text-align: justify;">
   <strong>Note:</strong> I am still trying to convince myself that this is the better approach, so if you have a suggestion on this please leave a comment.
 </p>
 
-The <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" target="_blank">Podcast.java</a> classs look something like the following:
+The <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/Podcast.java" target="_blank">Podcast.java</a> classs look something like the following:
 
 <pre><code class="java">package org.codingpedia.demo.rest.resource;
 
@@ -738,7 +738,7 @@ and translates into the following JSON representation, which is actually the de 
 <pre><code class="json">{
     	"id":1,
     	"title":"Quarks & Co - zum Mitnehmen-modified",
-    	"linkOnPodcastpedia":"https://github.com/Codingpedia/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen",
+    	"linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen",
     	"feed":"http://podcast.wdr.de/quarks.xml",
     	"description":"Quarks & Co: Das Wissenschaftsmagazin",
     	"insertionDate":"2014-05-30T10:26:12.00+0200"
@@ -793,7 +793,7 @@ As already mentioned the `PodcastRestResource` class is the one handling all the
 </p>
 
 <p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> You can find the entire content of the class on GitHub &#8211; <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/PodcastResource.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/PodcastResource.java" target="_blank">PodcastResource.java</a>. We&#8217;ll be going through the file step by step and explain the different methods corresponding to the different operations.
+  <strong>Code alert:</strong> You can find the entire content of the class on GitHub &#8211; <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/PodcastResource.java" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/resource/PodcastResource.java" target="_blank">PodcastResource.java</a>. We&#8217;ll be going through the file step by step and explain the different methods corresponding to the different operations.
 </p>
 
 #### <span id="321_Create_podcasts">3.2.1. Create podcast(s)</span>
@@ -1605,7 +1605,7 @@ The integration tests will be executed against a running jetty server, that will
 </p>
 
 <p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> Find the complete <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" target="_blank">pom.xml</a> file on GitHub
+  <strong>Code alert:</strong> Find the complete <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/pom.xml" target="_blank">pom.xml</a> file on GitHub
 </p>
 
 #### <span id="712_Build_the_integration_tests">7.1.2. Build the integration tests</span>
@@ -1756,14 +1756,14 @@ Here are some great resources from people that understand better the matter:
 </h2>
 
 <p class="note_normal" style="text-align: justify;">
-  Well, that&#8217;s it. I have to congratulate you, if you&#8217;ve come so far, but I hope you could learn something from this tutorial about REST, like designing a REST API, implementing a REST API in Java, testing a REST API and much more. If you did, I&#8217;d be very grateful if you helped it spread by leaving a comment or sharing it on Twitter, Google+ or Facebook. Thank you! Don&#8217;t forget also to check out <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> &#8211; you&#8217;ll find for sure interesting podcasts and episodes. We are grateful for <a title="Podcastpedia.org - how can I contribute" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">your support.</a>
+  Well, that&#8217;s it. I have to congratulate you, if you&#8217;ve come so far, but I hope you could learn something from this tutorial about REST, like designing a REST API, implementing a REST API in Java, testing a REST API and much more. If you did, I&#8217;d be very grateful if you helped it spread by leaving a comment or sharing it on Twitter, Google+ or Facebook. Thank you! Don&#8217;t forget also to check out <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> &#8211; you&#8217;ll find for sure interesting podcasts and episodes. We are grateful for <a title="Podcastpedia.org - how can I contribute" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">your support.</a>
 </p>
 
 ## <span id="Resources">Resources</span>
 
 ### <span id="Source_Code">Source Code</span>
 
-  * <a title="https://github.com/Codingpedia/demo-rest-jersey-spring" href="https://github.com/Codingpedia/demo-rest-jersey-spring" target="_blank">GitHub &#8211; Codingpedia/demo-rest-jersey-spring </a>(instructions on how to install and run the project)
+  * <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring" target="_blank">GitHub &#8211; Codingpedia/demo-rest-jersey-spring </a>(instructions on how to install and run the project)
 
 ### <span id="Web_resources">Web resources</span>
 
@@ -1801,7 +1801,7 @@ Here are some great resources from people that understand better the matter:
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

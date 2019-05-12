@@ -177,11 +177,11 @@ Of interest are
 
 ## <span id="Creating_and_using_Tiles_pages">Creating and using Tiles pages</span>
 
-After installing and learning some of Tiles concepts, it&#8217;s time to show you how the pages are created for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>
+After installing and learning some of Tiles concepts, it&#8217;s time to show you how the pages are created for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>
 
 ### <span id="Create_a_template">Create a template</span>
 
-<a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> uses sort of a **classic  layout** page structure:
+<a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> uses sort of a **classic  layout** page structure:
 
 <div id="attachment_939" style="width: 370px" class="wp-caption alignnone">
   <a href="{{site.url}}/wp-content/uploads/2013/07/Template.png"><img class="size-full wp-image-939" src="{{site.url}}/wp-content/uploads/2013/07/Template.png" alt="Template" width="360" height="378" srcset="{{site.url}}/wp-content/uploads/2013/07/Template.png 360w, {{site.url}}/wp-content/uploads/2013/07/Template-285x300.png 285w" sizes="(max-width: 360px) 100vw, 360px" /></a>
@@ -279,7 +279,7 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
 		&lt;put-attribute name="content" value="/WEB-INF/jsp/start/start_page.jsp"/&gt;
     	&lt;put-attribute name="og_title" value="Podcastpedia, knowledge to go"/&gt;
  	    &lt;put-attribute name="og_desc" value="Educate yourself with selected podcasts from various domains such as science, technology, education, medicine, people, environment, spirituality and much more..."/&gt;
- 	    &lt;put-attribute name="og_image" value="https://github.com/Codingpedia/podcastpedia/static/images/fb_share.png"/&gt;
+ 	    &lt;put-attribute name="og_image" value="https://github.com/CodepediaOrg/podcastpedia/static/images/fb_share.png"/&gt;
 	&lt;/definition&gt;
  ......
 &lt;/tiles-definitions&gt;</pre>
@@ -307,12 +307,12 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
 &lt;/tiles-definitions&gt;</pre>
 
 <p style="text-align: justify;">
-  Notice here you can also use <strong>dynamic</strong> values for the Tiles attributes &#8211; for example the <code>title</code> attribute (line 4) is set dynamically with a value,(<code>${podcast.title}</code>), passed from the controller . If you follow the link &#8211; <a title="Podcast details example" href="https://github.com/Codingpedia/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science" target="_blank">The Naked Scientist Podcast</a> &#8211; and inspect the source code or the tab name in your browser, you will notice the title of the page was set to &#8220;- The Naked Scientists Podcast &#8211; Stripping Down Science&#8221;
+  Notice here you can also use <strong>dynamic</strong> values for the Tiles attributes &#8211; for example the <code>title</code> attribute (line 4) is set dynamically with a value,(<code>${podcast.title}</code>), passed from the controller . If you follow the link &#8211; <a title="Podcast details example" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science" target="_blank">The Naked Scientist Podcast</a> &#8211; and inspect the source code or the tab name in your browser, you will notice the title of the page was set to &#8220;- The Naked Scientists Podcast &#8211; Stripping Down Science&#8221;
 </p>
 
 Well, this is pretty much all you need to do to integrate Tiles 2 in Spring MVC.
 
-If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia/" target="_blank">Podcastpedia.org</a>
+If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a>
 
 We promise to only share high quality podcasts and episodes.
 
@@ -329,7 +329,7 @@ We promise to only share high quality podcasts and episodes.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

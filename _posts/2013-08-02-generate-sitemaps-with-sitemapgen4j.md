@@ -29,7 +29,7 @@ tags:
   - sitemap
   - sitemapgen4j
 ---
-This post is about automatically generating sitemaps. I chose this topic, because it is fresh in my mind as I have recently started using sitemaps for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> After some research I came to the conclusion this would be a good thing &#8211; at the time of the posting Google had 3171 URLs indexed for the website (it has been live for 3 months now), whereby after generating sitemaps there were 87,818 URLs submitted. I am curios how many will get indexed after that&#8230;
+This post is about automatically generating sitemaps. I chose this topic, because it is fresh in my mind as I have recently started using sitemaps for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> After some research I came to the conclusion this would be a good thing &#8211; at the time of the posting Google had 3171 URLs indexed for the website (it has been live for 3 months now), whereby after generating sitemaps there were 87,818 URLs submitted. I am curios how many will get indexed after that&#8230;
 
 So because I didn&#8217;t want to introduce over 80k URLs manually, I had to come up with an automated solution for that. Because Podcastpedia.org was developed with Java, it came easy to me to select <a title="SitemapGen4j is an XML sitemap generator written in Java." href="http://code.google.com/p/sitemapgen4j/" target="_blank">sitemapgen4j</a>
 
@@ -68,7 +68,7 @@ _Method : createSitemapForPodcastsWithFrequency &#8211; generates one sitemap fi
 		int nrOfURLs = 0;
 
 		File targetDirectory = new File(sitemapsDirectoryPath);
-		WebSitemapGenerator wsg = WebSitemapGenerator.builder("https://github.com/Codingpedia/podcastpedia", targetDirectory)
+		WebSitemapGenerator wsg = WebSitemapGenerator.builder("https://github.com/CodepediaOrg/podcastpedia", targetDirectory)
 									.fileNamePrefix("sitemap_" + updateFrequency.toString()) // name of the generated sitemap
 									.gzip(true) //recommended - as it decreases the file's size significantly
 									.build();
@@ -76,7 +76,7 @@ _Method : createSitemapForPodcastsWithFrequency &#8211; generates one sitemap fi
 		//reads reachable podcasts with episodes from Database with
 		List podcasts = readDao.getPodcastsAndEpisodeWithUpdateFrequency(updateFrequency);
 		for(Podcast podcast : podcasts) {
-			String url = "https://github.com/Codingpedia/podcastpedia" + "/podcasts/" + podcast.getPodcastId() + "/" + podcast.getTitleInUrl();
+			String url = "https://github.com/CodepediaOrg/podcastpedia" + "/podcasts/" + podcast.getPodcastId() + "/" + podcast.getTitleInUrl();
 			WebSitemapUrl wsmUrl = new WebSitemapUrl.Options(url)
 		     							.lastMod(podcast.getPublicationDate()) // date of the last published episode
 		     							.priority(0.9) //high priority just below the start page which has a default priority of 1 by default
@@ -86,7 +86,7 @@ _Method : createSitemapForPodcastsWithFrequency &#8211; generates one sitemap fi
 			nrOfURLs++;
 
 			for(Episode episode : podcast.getEpisodes() ){
-				url = "https://github.com/Codingpedia/podcastpedia" + "/podcasts/" + podcast.getPodcastId() + "/" + podcast.getTitleInUrl()
+				url = "https://github.com/CodepediaOrg/podcastpedia" + "/podcasts/" + podcast.getPodcastId() + "/" + podcast.getTitleInUrl()
 						+ "/episodes/" + episode.getEpisodeId() + "/" + episode.getTitleInUrl();
 
 				//build websitemap url
@@ -115,24 +115,24 @@ _Method : createSitemapForPodcastsWithFrequency &#8211; generates one sitemap fi
 
 The generated file contains URLs to podcasts and episodes, with changeFreq and lastMod set accordingly.
 
-Snippet from the generated <a title="sitemap for monthly updated podcasts" href="https://github.com/Codingpedia/podcastpedia/sitemap_MONTHLY.xml.gz" target="_blank">sitemap_MONTHLY.xml</a>:
+Snippet from the generated <a title="sitemap for monthly updated podcasts" href="https://github.com/CodepediaOrg/podcastpedia/sitemap_MONTHLY.xml.gz" target="_blank">sitemap_MONTHLY.xml</a>:
 
 <pre class="brush: xml; title: ; notranslate" title="">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" &gt;
   &lt;url&gt;
-    &lt;loc&gt;https://github.com/Codingpedia/podcastpedia/podcasts/581/heise-Developer-SoftwareArchitekTOUR-Podcast&lt;/loc&gt;
+    &lt;loc&gt;https://github.com/CodepediaOrg/podcastpedia/podcasts/581/heise-Developer-SoftwareArchitekTOUR-Podcast&lt;/loc&gt;
     &lt;lastmod&gt;2013-07-05T17:01+02:00&lt;/lastmod&gt;
     &lt;changefreq&gt;monthly&lt;/changefreq&gt;
     &lt;priority&gt;0.9&lt;/priority&gt;
   &lt;/url&gt;
   &lt;url&gt;
-    &lt;loc&gt;https://github.com/Codingpedia/podcastpedia/podcasts/581/heise-Developer-SoftwareArchitekTOUR-Podcast/episodes/130/Episode-40-Mobile-Multiplattform-Anwendungen-am-Beispiel-von-jQuery-Mobile&lt;/loc&gt;
+    &lt;loc&gt;https://github.com/CodepediaOrg/podcastpedia/podcasts/581/heise-Developer-SoftwareArchitekTOUR-Podcast/episodes/130/Episode-40-Mobile-Multiplattform-Anwendungen-am-Beispiel-von-jQuery-Mobile&lt;/loc&gt;
     &lt;lastmod&gt;2013-07-05T17:01+02:00&lt;/lastmod&gt;
     &lt;changefreq&gt;never&lt;/changefreq&gt;
     &lt;priority&gt;0.8&lt;/priority&gt;
   &lt;/url&gt;
   &lt;url&gt;
-    &lt;loc&gt;https://github.com/Codingpedia/podcastpedia/podcasts/581/heise-Developer-SoftwareArchitekTOUR-Podcast/episodes/90/Episode-39-Entwicklung-fr-Embedded-Systeme-mit-mbeddr&lt;/loc&gt;
+    &lt;loc&gt;https://github.com/CodepediaOrg/podcastpedia/podcasts/581/heise-Developer-SoftwareArchitekTOUR-Podcast/episodes/90/Episode-39-Entwicklung-fr-Embedded-Systeme-mit-mbeddr&lt;/loc&gt;
     &lt;lastmod&gt;2013-03-11T15:40+01:00&lt;/lastmod&gt;
     &lt;changefreq&gt;never&lt;/changefreq&gt;
     &lt;priority&gt;0.8&lt;/priority&gt;
@@ -157,14 +157,14 @@ _Method : createSitemapIndexFile_
 		File targetDirectory = new File(sitemapsDirectoryPath);
 		// generate sitemap index for foo + bar grgrg
 		File outFile = new File(sitemapsDirectoryPath + "/sitemap_index.xml");
-		SitemapIndexGenerator sig = new SitemapIndexGenerator("https://github.com/Codingpedia/podcastpedia", outFile);
+		SitemapIndexGenerator sig = new SitemapIndexGenerator("https://github.com/CodepediaOrg/podcastpedia", outFile);
 
 		//get all the files from the specified directory
 		File[] files = targetDirectory.listFiles();
 		for(int i=0; i &lt; files.length; i++){
 			boolean isNotSitemapIndexFile = !files[i].getName().startsWith("sitemap_index") || !files[i].getName().startsWith("test");
 			if(isNotSitemapIndexFile){
-				SitemapIndexUrl sitemapIndexUrl = new SitemapIndexUrl("https://github.com/Codingpedia/podcastpedia/" + files[i].getName(), new Date(files[i].lastModified()));
+				SitemapIndexUrl sitemapIndexUrl = new SitemapIndexUrl("https://github.com/CodepediaOrg/podcastpedia/" + files[i].getName(), new Date(files[i].lastModified()));
 				sig.addUrl(sitemapIndexUrl);
 			}
 
@@ -175,34 +175,34 @@ _Method : createSitemapIndexFile_
 
 The process is quite simple &#8211; the method looks in the folder where the sitemaps files were created and generates a sitemaps index with these files setting the _lastmod_ value to the time each file had been last modified (line 18).
 
-Et voilà <a title="Sitemap index Podcastpedia.org" href="https://github.com/Codingpedia/podcastpedia/sitemap_index.xml" target="_blank">sitemap_index.xml</a>:
+Et voilà <a title="Sitemap index Podcastpedia.org" href="https://github.com/CodepediaOrg/podcastpedia/sitemap_index.xml" target="_blank">sitemap_index.xml</a>:
 
 <pre class="brush: xml; title: ; notranslate" title="">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
   &lt;sitemap&gt;
-    &lt;loc&gt;https://github.com/Codingpedia/podcastpedia/sitemap_DAILY.xml.gz&lt;/loc&gt;
+    &lt;loc&gt;https://github.com/CodepediaOrg/podcastpedia/sitemap_DAILY.xml.gz&lt;/loc&gt;
     &lt;lastmod&gt;2013-08-01T07:24:38.450+02:00&lt;/lastmod&gt;
   &lt;/sitemap&gt;
   &lt;sitemap&gt;
-    &lt;loc&gt;https://github.com/Codingpedia/podcastpedia/sitemap_MONTHLY.xml.gz&lt;/loc&gt;
+    &lt;loc&gt;https://github.com/CodepediaOrg/podcastpedia/sitemap_MONTHLY.xml.gz&lt;/loc&gt;
     &lt;lastmod&gt;2013-08-01T07:25:01.347+02:00&lt;/lastmod&gt;
   &lt;/sitemap&gt;
   &lt;sitemap&gt;
-    &lt;loc&gt;https://github.com/Codingpedia/podcastpedia/sitemap_TERMINATED.xml.gz&lt;/loc&gt;
+    &lt;loc&gt;https://github.com/CodepediaOrg/podcastpedia/sitemap_TERMINATED.xml.gz&lt;/loc&gt;
     &lt;lastmod&gt;2013-08-01T07:25:10.392+02:00&lt;/lastmod&gt;
   &lt;/sitemap&gt;
   &lt;sitemap&gt;
-    &lt;loc&gt;https://github.com/Codingpedia/podcastpedia/sitemap_UNKNOWN.xml.gz&lt;/loc&gt;
+    &lt;loc&gt;https://github.com/CodepediaOrg/podcastpedia/sitemap_UNKNOWN.xml.gz&lt;/loc&gt;
     &lt;lastmod&gt;2013-08-01T07:26:33.067+02:00&lt;/lastmod&gt;
   &lt;/sitemap&gt;
   &lt;sitemap&gt;
-    &lt;loc&gt;https://github.com/Codingpedia/podcastpedia/sitemap_WEEKLY.xml.gz&lt;/loc&gt;
+    &lt;loc&gt;https://github.com/CodepediaOrg/podcastpedia/sitemap_WEEKLY.xml.gz&lt;/loc&gt;
     &lt;lastmod&gt;2013-08-01T07:24:53.957+02:00&lt;/lastmod&gt;
   &lt;/sitemap&gt;
 &lt;/sitemapindex&gt;
 </pre>
 
-If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia/" target="_blank">Podcastpedia.org</a>
+If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a>
 
 We promise to only share high quality podcasts and episodes.
 
@@ -224,7 +224,7 @@ We promise to only share high quality podcasts and episodes.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -28,7 +28,7 @@ categories:
 <p style="text-align: justify;">
   It all began back 2002, my first year at the <a title="Computer Science - University Politehnica of Bucharest" href="http://www.cs.pub.ro/" target="_blank">university</a> in Romania, when I wanted to improve my German skills. At that time my grammar was pretty good, my writing skills were satisfying, but I still had difficulties expressing myself and understanding what the Germans are talking about on TV. Being a self-taught kind of person, I began looking for ways to improve that. On my research I stumbled upon Deutsche Welle&#8217;s <a title="Deutsche Welle" href="http://www.dw.de" target="_blank">website</a>, which had lots of useful resources for learning German. I first listened to <a title="Langsam gesprochene Nachrichten" href="http://www.dw.de/deutsch-lernen/nachrichten/s-8030" target="_blank">Langsam Gesprochene Nachrichten</a> (Slowly Spoken News), which turned out to be very accesible and easy to understand. Then followed „<a title="Deutsch - warum nicht?" href="http://www.dw.de/learn-german/wieso-nicht/s-2551" target="_blank">Deutsch &#8211; warum nicht?</a>“ (German- why not?) and „<a title="Marktplatz" href="http://www.dw.de/learn-german/marktplatz/s-2555" target="_blank">Marktplatz</a>“ (marketplace). Back then you could download audio files with transcripts from the website &#8211; I still have like half of tree worth of paper of that lying in my basement, sorry&#8230;<br /> <!--more-->
 
-  <br /> Some years passed by and when I checked the website again I found out I could download the files and follow the preferred series by subscribing to <a title="Podcasting - podcastpedia.org" href="https://github.com/Codingpedia/podcastpedia/podcasting" target="_blank">podcasts</a>. According to wikipedia:
+  <br /> Some years passed by and when I checked the website again I found out I could download the files and follow the preferred series by subscribing to <a title="Podcasting - podcastpedia.org" href="https://github.com/CodepediaOrg/podcastpedia/podcasting" target="_blank">podcasts</a>. According to wikipedia:
 </p>
 
 <p style="padding-left: 30px; text-align: justify;">
@@ -79,7 +79,7 @@ but with a positive attitude
 
 I have pushed things through.
 
-#### <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>
+#### <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>
 
 <p style="text-align: justify;">
   Podcastmania.eu felt about right at the beginning, but as my expectations and attitude towards life, people, money, and the world have been evolving dramatically, it started to feel like something was missing&#8230; As nature takes care of any gaps, the one between Podcastmania.eu and the urge to do something meaningful was filled, just shortly before going live, when <em>Podcastpedia.org</em> came as a morning inspiration.
@@ -110,7 +110,7 @@ What lies ahead we never know for certain, but what Podcastpedia&#8217;s agenda 
   * build a platform for podcast producers
   * any suggestions ?&#8230;
 
-Please <a title="Podcastpedia - how can I help" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">help take the story further</a> to build an **open** and **ads free** media platform to visit, if you want to learn German, learn how to make Pasta or how our brain functions.
+Please <a title="Podcastpedia - how can I help" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">help take the story further</a> to build an **open** and **ads free** media platform to visit, if you want to learn German, learn how to make Pasta or how our brain functions.
 
 As you can see I&#8217;ve already got some trustworthy coding support
 
@@ -128,12 +128,12 @@ but any extra hand is <a href="mailto:ama@codepedia.org?Subject=Support%20Podcas
 
 ### References
 
-  * <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org </a>
-  * <a title="Mission Podcastpedia" href="https://github.com/Codingpedia/podcastpedia/mission" target="_blank">Mission</a>
-  * <a title="Podcastpedia - how can I help " href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">How can I help </a>
+  * <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org </a>
+  * <a title="Mission Podcastpedia" href="https://github.com/CodepediaOrg/podcastpedia/mission" target="_blank">Mission</a>
+  * <a title="Podcastpedia - how can I help " href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">How can I help </a>
 
 <p style="text-align: justify;">
-  <span style="color: #ff0000;"><em>The podcasts listed in the directory have been mainly collected from the internet and some have been recommended directly. </em></span><em><span style="color: #ff0000;"><a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> has no influence on the contents and details of the podcasts. These are provided from the producers&#8217; websites. For @Copyright information please visit the individual producer&#8217;s website &#8211; this is listed with every podcast in the directory. If you are a podcast producer and you don&#8217;t want your podcast listed in the directory please</span> <span style="color: #ff0000;">contact us <strong>contact [AT] codingpedia DOT org</strong> or <strong>contact [AT] podcastpedia DOT org </strong></span></em>
+  <span style="color: #ff0000;"><em>The podcasts listed in the directory have been mainly collected from the internet and some have been recommended directly. </em></span><em><span style="color: #ff0000;"><a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> has no influence on the contents and details of the podcasts. These are provided from the producers&#8217; websites. For @Copyright information please visit the individual producer&#8217;s website &#8211; this is listed with every podcast in the directory. If you are a podcast producer and you don&#8217;t want your podcast listed in the directory please</span> <span style="color: #ff0000;">contact us <strong>contact [AT] codingpedia DOT org</strong> or <strong>contact [AT] podcastpedia DOT org </strong></span></em>
 </p>
 
 <p style="text-align: justify;">
@@ -145,7 +145,7 @@ but any extra hand is <a href="mailto:ama@codepedia.org?Subject=Support%20Podcas
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

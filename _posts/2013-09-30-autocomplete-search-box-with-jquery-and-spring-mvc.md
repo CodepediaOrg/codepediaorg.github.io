@@ -33,7 +33,7 @@ tags:
 ---
 ## <span id="Functionality">Functionality</span>
 
-Each podcast on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> has one or several associated keywords. When you go to a specific podcast you will see all the associated keywords :
+Each podcast on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> has one or several associated keywords. When you go to a specific podcast you will see all the associated keywords :
 
 <div id="attachment_610" style="width: 310px" class="wp-caption alignnone">
   <a href="{{site.url}}/wp-content/uploads/2013/09/podcast_keywords.png"><img class="size-medium wp-image-610" title="Podcast keywords sample" src="{{site.url}}/wp-content/uploads/2013/09/podcast_keywords-300x146.png" alt="Podcast keywords sample" width="300" height="146" srcset="{{site.url}}/wp-content/uploads/2013/09/podcast_keywords-300x146.png 300w, {{site.url}}/wp-content/uploads/2013/09/podcast_keywords-1024x499.png 1024w, {{site.url}}/wp-content/uploads/2013/09/podcast_keywords-624x304.png 624w, {{site.url}}/wp-content/uploads/2013/09/podcast_keywords.png 1065w" sizes="(max-width: 300px) 100vw, 300px" /></a>
@@ -44,7 +44,7 @@ Each podcast on <a title="Podcastpedia.org, knowledge to go" href="https://githu
 </div>
 
 <p style="text-align: justify;">
-  There is also a special entry in the main menu &#8211; <a title="Podcastpedia.org, keywords" href="https://github.com/Codingpedia/podcastpedia/tags/all/0" target="_blank">Keywords</a> &#8211; that displays all the keywords associated to podcasts, ordered by the number of podcasts associated with. But the really cool part of the page is the <strong>autocomplete box</strong> &#8211; you can easily find podcasts related to a topic of your interest by typing in the first characters of the topic&#8217;s name. Let&#8217;s say you would like to see if there any podcasts related to Java, you would type &#8220;Ja&#8221;, the autocomplete functionality will display the keywords that start with &#8220;ja&#8221; and you can see &#8220;Java&#8221; exist and select it:
+  There is also a special entry in the main menu &#8211; <a title="Podcastpedia.org, keywords" href="https://github.com/CodepediaOrg/podcastpedia/tags/all/0" target="_blank">Keywords</a> &#8211; that displays all the keywords associated to podcasts, ordered by the number of podcasts associated with. But the really cool part of the page is the <strong>autocomplete box</strong> &#8211; you can easily find podcasts related to a topic of your interest by typing in the first characters of the topic&#8217;s name. Let&#8217;s say you would like to see if there any podcasts related to Java, you would type &#8220;Ja&#8221;, the autocomplete functionality will display the keywords that start with &#8220;ja&#8221; and you can see &#8220;Java&#8221; exist and select it:
 </p>
 
 <div id="attachment_611" style="width: 310px" class="wp-caption alignnone">
@@ -58,7 +58,7 @@ Each podcast on <a title="Podcastpedia.org, knowledge to go" href="https://githu
 As shown in the picture above, you can select several keywords on the same page. But enough talking&#8230; let&#8217;s see how the magic happens behind the scenes, because this is actually the topic of this post.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <!--more-->
@@ -318,7 +318,7 @@ The controller method is called asynchronously every time the user tips a new ch
 </p>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ### <span id="References">References</span>
@@ -338,7 +338,7 @@ The controller method is called asynchronously every time the user tips a new ch
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

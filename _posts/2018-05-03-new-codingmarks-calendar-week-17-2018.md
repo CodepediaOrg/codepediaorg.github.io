@@ -125,7 +125,7 @@ Awesome community for programmers.
 
 Collection of (cu)rated coding bookmarks. Create your personal bookmark list and share selected bookmarks so others can benefit.
 
-The public codingmarks are also published weekly on Github at https://github.com/Codingpedia/codingmarks
+The public codingmarks are also published weekly on Github at https://github.com/CodepediaOrg/codingmarks
 
 <hr>
 
@@ -408,7 +408,7 @@ A website dedicated to the fascinating world of mathematics and programming.
 
 Collection of (cu)rated coding bookmarks. Create your personal bookmark list and share selected bookmarks so others can benefit.
 
-The public codingmarks are also published weekly on Github at https://github.com/Codingpedia/codingmarks
+The public codingmarks are also published weekly on Github at https://github.com/CodepediaOrg/codingmarks
 
 <hr>
 

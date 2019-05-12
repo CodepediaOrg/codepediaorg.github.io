@@ -31,7 +31,7 @@ or down a link (feature I will start working on soon)...
 
 <!--more-->
 
-The first thing I tried, was to create a text file with bookmarks in the form of a [README](https://github.com/Codingpedia/dev-resources) on Github, approach taken by others[^1] too.
+The first thing I tried, was to create a text file with bookmarks in the form of a [README](https://github.com/CodepediaOrg/dev-resources) on Github, approach taken by others[^1] too.
 I must say it looks nice, you can **CTRL+F**-it in the browser, but it's such a hassle to maintain without a GUI[^2].
 
 [^1]: <https://github.com/vhf/free-programming-books>

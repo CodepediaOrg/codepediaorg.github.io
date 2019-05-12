@@ -39,7 +39,7 @@ tags:
   - tomcat
 ---
 <p style="text-align: justify;">
-  As mentioned in the post <a title="Install Eclipse Kepler on Windows 7 " href=" http://www.codepedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit" target="_blank">Install Eclipse Kepler 64 bit on Windows 7 64 bit</a>, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> uses <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Apache Tomcat 7</a> as application server. This post presents how the Tomcat JDBC Connection Pool is configured in development and production for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>. The used database is MySql.<br />
+  As mentioned in the post <a title="Install Eclipse Kepler on Windows 7 " href=" http://www.codepedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit" target="_blank">Install Eclipse Kepler 64 bit on Windows 7 64 bit</a>, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> uses <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Apache Tomcat 7</a> as application server. This post presents how the Tomcat JDBC Connection Pool is configured in development and production for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>. The used database is MySql.<br />
 
   <!--more-->
 
@@ -80,7 +80,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  The Tomcat Connection pool is configured as a <strong>resource</strong> described in The <a title="Apache Tomcat 7 - JNDI Datasource HOW-TO" href="http://tomcat.apache.org/tomcat-7.0-doc/jndi-datasource-examples-howto.html" target="_blank">Tomcat JDBC documentation</a> with the only difference being that you have to specify the <code>factory</code> attribute and set the value to <code>org.apache.tomcat.jdbc.pool.DataSourceFactory</code>. For <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, it is configured in the <em>context.xml</em> file of the web application:<br /> <a href="{{site.url}}/wp-content/uploads/2013/08/context-file.png"><img class="alignnone size-medium wp-image-517" src="{{site.url}}/wp-content/uploads/2013/08/context-file-246x300.png" alt="context-file" width="246" height="300" srcset="{{site.url}}/wp-content/uploads/2013/08/context-file-246x300.png 246w, {{site.url}}/wp-content/uploads/2013/08/context-file.png 474w" sizes="(max-width: 246px) 100vw, 246px" /></a>
+  The Tomcat Connection pool is configured as a <strong>resource</strong> described in The <a title="Apache Tomcat 7 - JNDI Datasource HOW-TO" href="http://tomcat.apache.org/tomcat-7.0-doc/jndi-datasource-examples-howto.html" target="_blank">Tomcat JDBC documentation</a> with the only difference being that you have to specify the <code>factory</code> attribute and set the value to <code>org.apache.tomcat.jdbc.pool.DataSourceFactory</code>. For <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, it is configured in the <em>context.xml</em> file of the web application:<br /> <a href="{{site.url}}/wp-content/uploads/2013/08/context-file.png"><img class="alignnone size-medium wp-image-517" src="{{site.url}}/wp-content/uploads/2013/08/context-file-246x300.png" alt="context-file" width="246" height="300" srcset="{{site.url}}/wp-content/uploads/2013/08/context-file-246x300.png 246w, {{site.url}}/wp-content/uploads/2013/08/context-file.png 474w" sizes="(max-width: 246px) 100vw, 246px" /></a>
 </p>
 
 ### <span id="Production_environment">Production environment</span>
@@ -223,7 +223,7 @@ One of the exceptions I have got was:
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

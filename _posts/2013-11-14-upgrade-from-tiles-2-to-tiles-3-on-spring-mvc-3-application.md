@@ -30,7 +30,7 @@ tags:
 format: aside
 ---
 <p style="text-align: justify;">
-  I&#8217;ve just upgraded the web application that powers <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> to use Apache Tiles 3 instead of Tiles 2. I am particularly interested in the Tiles integration with Velocity for email generation.
+  I&#8217;ve just upgraded the web application that powers <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> to use Apache Tiles 3 instead of Tiles 2. I am particularly interested in the Tiles integration with Velocity for email generation.
 </p>
 
 <p style="text-align: justify; padding-left: 30px;">

@@ -68,11 +68,11 @@ tags:
     </ul>
   </div>
 
-  <br /> We use currently for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org </a>a MySQL database and because we&#8217;ve recently gone <a title="PodcastpediaOrg on GitHub" href="https://github.com/Codingpedia/podcastpedia" target="_blank">open source on GitHub</a>, we&#8217;ve created a <a title="https://github.com/podcastpedia/podcastpedia-sql" href="https://github.com/Codingpedia/podcastpedia/blob/master/README.md" target="_blank">README.md to explain the setup of the database</a>. The content of that file is basically reproduced here, as &#8220;back-up&#8221;, for future reference and why not?, it might also serve others in the mean time.
+  <br /> We use currently for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org </a>a MySQL database and because we&#8217;ve recently gone <a title="PodcastpediaOrg on GitHub" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">open source on GitHub</a>, we&#8217;ve created a <a title="https://github.com/podcastpedia/podcastpedia-sql" href="https://github.com/CodepediaOrg/podcastpedia/blob/master/README.md" target="_blank">README.md to explain the setup of the database</a>. The content of that file is basically reproduced here, as &#8220;back-up&#8221;, for future reference and why not?, it might also serve others in the mean time.
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> Although the steps presented here refer to the database backing <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, they should be valid for any MySQL database you might want to setup either in Linux or Windows.<!--more-->
+  <strong>Note:</strong> Although the steps presented here refer to the database backing <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, they should be valid for any MySQL database you might want to setup either in Linux or Windows.<!--more-->
 </p>
 
 ### <span id="1_Install_MySql_55_and_above"><a class="anchor" href="https://github.com/podcastpedia/podcastpedia-sql/blob/master/README.md#install-mysql-55-and-above" name="user-content-install-mysql-55-and-above"></a>1. Install MySql 5.5 and above</span>
@@ -95,7 +95,7 @@ tags:
             For Windows place the configuration file where the MySQL server is installed &#8211; the <a href="https://github.com/podcastpedia/podcastpedia-sql/blob/master/_prepare_database_for_development/my.ini">my.ini</a> file from above is an example used on a Windows 7 machine
           </li>
           <li style="text-align: justify;">
-            For linux you need to use .cnf files. You can see in this blog post &#8211;<a href="http://www.codepedia.org/ama/optimizing-mysql-server-settings/">Optimizing MySQL server settings</a> &#8211; how the MySQL database is configured in production for <a href="https://github.com/Codingpedia/podcastpedia/">Podcastpedia.org</a>
+            For linux you need to use .cnf files. You can see in this blog post &#8211;<a href="http://www.codepedia.org/ama/optimizing-mysql-server-settings/">Optimizing MySQL server settings</a> &#8211; how the MySQL database is configured in production for <a href="https://github.com/CodepediaOrg/podcastpedia/">Podcastpedia.org</a>
           </li>
         </ul>
       </li>
@@ -185,7 +185,7 @@ Now that the database and user are put in place, you can start creating your tab
 ### <span id="4_Import_database_from_file"><a class="anchor" href="https://github.com/podcastpedia/podcastpedia-sql/blob/master/README.md#import-database-from-file" name="user-content-import-database-from-file"></a>4. Import database from file</span>
 
 <p style="text-align: justify;">
-  Tables and data required for Podcastpedia.org will be imported via a single <em>.sql</em> file, which you can download <a href="https://github.com/Codingpedia/podcastpedia/blob/master/sql/_prepare_database_for_development/podcastpedia-2014-07-17-dev-db.sql">podcastpedia-2014-06-17-dev-db.sql</a> After download you can import the database data into the pcmDB database by issuing the following command on the command line:
+  Tables and data required for Podcastpedia.org will be imported via a single <em>.sql</em> file, which you can download <a href="https://github.com/CodepediaOrg/podcastpedia/blob/master/sql/_prepare_database_for_development/podcastpedia-2014-07-17-dev-db.sql">podcastpedia-2014-06-17-dev-db.sql</a> After download you can import the database data into the pcmDB database by issuing the following command on the command line:
 </p>
 
 <pre class="lang:sh decode:true" title="Import DB From file example">shell&gt; mysql -p -u pcm pcmDB &lt; "PATH_TO_FILE\podcastpedia-2014-06-17-dev-db.sql"
@@ -242,7 +242,7 @@ If you ever want to backup up the database you can use the _mysqldump_ program, 
 The pcmDB database will be than saved into the single file _pcmdb-backup-2014.06.22.sql,_ which you can later import as mentioned on the previous step.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="Resources">Resources</span>
@@ -263,7 +263,7 @@ The pcmDB database will be than saved into the single file _pcmdb-backup-2014.06
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

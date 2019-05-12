@@ -66,12 +66,12 @@ tags:
 </div>
 
 <p style="text-align: justify;">
-  Some time ago I discovered <a title="CSS Sprites" href="http://css-tricks.com/css-sprites/" target="_blank">CSS sprites </a>and I said to myself &#8220;what a cool thing, I must definitely use it on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, for all the existent social, flags and media icons&#8221;- by using CSS sprites you send only one HTTP request to get the bigger picture, instead of issuing individual HTTP requests for each icon.  When I finally rolled up my sleeves and built a CSS sprite for the icons, I had another revelation &#8211; I recalled having heard about icon fonts, which were supposed to be superior to using images as icons in every way (well maybe except the monochromatic part&#8230;).
+  Some time ago I discovered <a title="CSS Sprites" href="http://css-tricks.com/css-sprites/" target="_blank">CSS sprites </a>and I said to myself &#8220;what a cool thing, I must definitely use it on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, for all the existent social, flags and media icons&#8221;- by using CSS sprites you send only one HTTP request to get the bigger picture, instead of issuing individual HTTP requests for each icon.  When I finally rolled up my sleeves and built a CSS sprite for the icons, I had another revelation &#8211; I recalled having heard about icon fonts, which were supposed to be superior to using images as icons in every way (well maybe except the monochromatic part&#8230;).
 </p>
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 
   <!--more-->
@@ -176,11 +176,11 @@ is inserted with the help of the pseudo element `:after`. This is applied to the
 	color: #DF7401;
 }</pre>
 
-I use the same procedure (could be `:before` ) to insert the other icon fonts present on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>
+I use the same procedure (could be `:before` ) to insert the other icon fonts present on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>
 
 ## <span id="3_The_result"><span style="font-family: Bitter, Georgia, serif; font-size: 30px; line-height: 1.3; text-align: justify;">3. The result</span></span>
 
-<span style="line-height: 1.5;">Please visit the website </span><a style="line-height: 1.5;" title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org </a><span style="line-height: 1.5;">to see the icon fonts in action. They are present in menu, social icons, feed icon etc. :<a href="{{site.url}}/wp-content/uploads/2014/03/font-icons-podcastpedia.png"><img class="alignnone size-large wp-image-1283" src="{{site.url}}/wp-content/uploads/2014/03/font-icons-podcastpedia-1024x558.png" alt="Font icons on Podcastpedia.org" width="604" height="329" srcset="{{site.url}}/wp-content/uploads/2014/03/font-icons-podcastpedia-1024x558.png 1024w, {{site.url}}/wp-content/uploads/2014/03/font-icons-podcastpedia-300x163.png 300w, {{site.url}}/wp-content/uploads/2014/03/font-icons-podcastpedia.png 1075w" sizes="(max-width: 604px) 100vw, 604px" /></a></span>
+<span style="line-height: 1.5;">Please visit the website </span><a style="line-height: 1.5;" title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org </a><span style="line-height: 1.5;">to see the icon fonts in action. They are present in menu, social icons, feed icon etc. :<a href="{{site.url}}/wp-content/uploads/2014/03/font-icons-podcastpedia.png"><img class="alignnone size-large wp-image-1283" src="{{site.url}}/wp-content/uploads/2014/03/font-icons-podcastpedia-1024x558.png" alt="Font icons on Podcastpedia.org" width="604" height="329" srcset="{{site.url}}/wp-content/uploads/2014/03/font-icons-podcastpedia-1024x558.png 1024w, {{site.url}}/wp-content/uploads/2014/03/font-icons-podcastpedia-300x163.png 300w, {{site.url}}/wp-content/uploads/2014/03/font-icons-podcastpedia.png 1075w" sizes="(max-width: 604px) 100vw, 604px" /></a></span>
 
 <p class="note_normal" style="text-align: justify;">
   <span style="line-height: 1.5;"><strong> Note:</strong> Not only the looks of the webiste got better, but there was also an increase of performance results on <a title="https://developers.google.com/speed/pagespeed/insights/" href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">Google PageSpeed Insights</a>. </span>
@@ -203,7 +203,7 @@ Thank you for sharing and connecting with us.
 
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="5_RESOURCES">5. RESOURCES</span>
@@ -223,7 +223,7 @@ Thank you for sharing and connecting with us.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

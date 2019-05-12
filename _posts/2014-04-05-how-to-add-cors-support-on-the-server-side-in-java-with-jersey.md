@@ -23,7 +23,7 @@ fsb_social_pinterest:
 gr_overridden:
   - 1
 gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/Codingpedia/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
+  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
 categories:
   - java
 tags:
@@ -270,7 +270,7 @@ Well, that&#8217;s it &#8211; you&#8217;ve learned how easy it is to add CORS su
 
 <ul style="box-sizing: border-box; margin: 16px 0px; padding: 0px 0px 0px 40px; list-style-type: square; color: #141412; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 19.200000762939453px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">
   <li style="box-sizing: border-box;">
-    <a style="box-sizing: border-box; color: #bc360a; text-decoration: none;" title="https://github.com/Codingpedia/demo-rest-jersey-spring" href="https://github.com/Codingpedia/demo-rest-jersey-spring" target="_blank">GitHub – Codingpedia/demo-rest-jersey-spring<span class="Apple-converted-space"> </span></a>(instructions on how to install and run the project)
+    <a style="box-sizing: border-box; color: #bc360a; text-decoration: none;" title="https://github.com/CodepediaOrg/demo-rest-jersey-spring" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring" target="_blank">GitHub – Codingpedia/demo-rest-jersey-spring<span class="Apple-converted-space"> </span></a>(instructions on how to install and run the project)
   </li>
 </ul>
 
@@ -292,7 +292,7 @@ Well, that&#8217;s it &#8211; you&#8217;ve learned how easy it is to add CORS su
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

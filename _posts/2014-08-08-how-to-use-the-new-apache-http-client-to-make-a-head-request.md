@@ -98,7 +98,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  So how it works? Initially, when a new podcast is added to the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia">Podcastpedia.org </a>directory I check if the headers are present for the feed resource and if so I store them in the database. To do that, I execute an HTTP HEAD request against the URL of the feed with the help of Apache Http Client. According to the <a title="http://www.ietf.org/rfc/rfc2616.txt" href="http://www.ietf.org/rfc/rfc2616.txt" target="_blank">Hypertext Transfer Protocol &#8212; HTTP/1.1 rfc2616</a>, the meta-information contained in the HTTP headers in response to a HEAD request SHOULD be identical to the information sent in response to a GET request).
+  So how it works? Initially, when a new podcast is added to the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia">Podcastpedia.org </a>directory I check if the headers are present for the feed resource and if so I store them in the database. To do that, I execute an HTTP HEAD request against the URL of the feed with the help of Apache Http Client. According to the <a title="http://www.ietf.org/rfc/rfc2616.txt" href="http://www.ietf.org/rfc/rfc2616.txt" target="_blank">Hypertext Transfer Protocol &#8212; HTTP/1.1 rfc2616</a>, the meta-information contained in the HTTP headers in response to a HEAD request SHOULD be identical to the information sent in response to a GET request).
 </p>
 
 <p style="text-align: justify;">

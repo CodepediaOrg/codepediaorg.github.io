@@ -43,11 +43,11 @@ tags:
 </div>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <p style="text-align: justify;">
-  You&#8217;ve seen in a previous post &#8211; <a title="SEO: Friendly URL construction with Spring MVC" href="http://localhost/wordpress/2013/11/09/seo-friendly-url-construction-with-spring-mvc/" target="_blank">SEO: Friendly URL construction with Spring MVC </a> &#8211; how to build (search engine) friendly URLs (or permalinks). Well, in this post I will present how to generate dynamic titles and meta descriptions with Tiles on top of a Spring MVC application, which currently powers <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>.
+  You&#8217;ve seen in a previous post &#8211; <a title="SEO: Friendly URL construction with Spring MVC" href="http://localhost/wordpress/2013/11/09/seo-friendly-url-construction-with-spring-mvc/" target="_blank">SEO: Friendly URL construction with Spring MVC </a> &#8211; how to build (search engine) friendly URLs (or permalinks). Well, in this post I will present how to generate dynamic titles and meta descriptions with Tiles on top of a Spring MVC application, which currently powers <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>.
 </p>
 
 <p style="text-align: justify;">
@@ -187,7 +187,7 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
   </p>
 
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </div>
 
@@ -209,7 +209,7 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

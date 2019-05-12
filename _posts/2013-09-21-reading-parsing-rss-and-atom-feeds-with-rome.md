@@ -62,7 +62,7 @@ tags:
 </div>
 
 <p style="text-align: justify;">
-  As you might have already guessed, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> is all about podcasts and podcasting is all about distributing audio or video content via <a title="Rss standard" href="http://en.wikipedia.org/wiki/Rss" target="_blank">RSS</a> or <a title="Atom, standard" href="http://en.wikipedia.org/wiki/Atom_%28standard%29" target="_blank">Atom</a>. This post will presents how  Atom and RSS podcast feeds are parsed and added to the directory, with the help of the Java project <a title="Rome project" href="https://rometools.jira.com/wiki/display/ROME/Home" target="_blank">Rome</a>.
+  As you might have already guessed, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is all about podcasts and podcasting is all about distributing audio or video content via <a title="Rss standard" href="http://en.wikipedia.org/wiki/Rss" target="_blank">RSS</a> or <a title="Atom, standard" href="http://en.wikipedia.org/wiki/Atom_%28standard%29" target="_blank">Atom</a>. This post will presents how  Atom and RSS podcast feeds are parsed and added to the directory, with the help of the Java project <a title="Rome project" href="https://rometools.jira.com/wiki/display/ROME/Home" target="_blank">Rome</a>.
 </p>
 
 ## <span id="Maven_dependencies">Maven dependencies</span>
@@ -100,7 +100,7 @@ In order to use Rome in the Java project, you have to add `rome.jar` and `jdom.j
 </div>
 
 <p style="text-align: justify;">
-  As you might have already guessed, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> is all about podcasts and podcasting is all about distributing audio or video content via <a title="Rss standard" href="http://en.wikipedia.org/wiki/Rss" target="_blank">RSS</a> or <a title="Atom, standard" href="http://en.wikipedia.org/wiki/Atom_%28standard%29" target="_blank">Atom</a>. This post will presents how  Atom and RSS podcast feeds are parsed and added to the directory, with the help of the Java project <a title="Rome project" href="https://rometools.jira.com/wiki/display/ROME/Home" target="_blank">Rome</a>.
+  As you might have already guessed, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is all about podcasts and podcasting is all about distributing audio or video content via <a title="Rss standard" href="http://en.wikipedia.org/wiki/Rss" target="_blank">RSS</a> or <a title="Atom, standard" href="http://en.wikipedia.org/wiki/Atom_%28standard%29" target="_blank">Atom</a>. This post will presents how  Atom and RSS podcast feeds are parsed and added to the directory, with the help of the Java project <a title="Rome project" href="https://rometools.jira.com/wiki/display/ROME/Home" target="_blank">Rome</a>.
 </p>
 
 ## <span id="Maven_dependencies">Maven dependencies</span>
@@ -305,7 +305,7 @@ Thanks for sharing and connecting with us
 </div>
 
 <p class="note_normal">
-  Don&#8217;t forget to check out <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> &#8211; you might find it really interesting. We are grateful for <a title="Podcastpedia.org - how can I contribute" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">your support. </a>
+  Don&#8217;t forget to check out <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> &#8211; you might find it really interesting. We are grateful for <a title="Podcastpedia.org - how can I contribute" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">your support. </a>
 </p>
 
 ## <span id="Resources">Resources</span>
@@ -324,7 +324,7 @@ Thanks for sharing and connecting with us
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

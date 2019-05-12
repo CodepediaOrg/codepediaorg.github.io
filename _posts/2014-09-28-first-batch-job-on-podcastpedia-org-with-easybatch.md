@@ -35,7 +35,7 @@ tags:
   - podcastpedia
 ---
 <p style="text-align: justify;">
-  Remember the first batch job for Podcastpedia.org, presented in <a title="http://www.codepedia.org/ama/spring-batch-tutorial-with-spring-boot-and-java-configuration/" href="http://www.codepedia.org/ama/spring-batch-tutorial-with-spring-boot-and-java-configuration/" target="_blank">Spring Batch Tutorial with Spring Boot and Java Configuration</a>&#8230; There, I would read submitted podcasts from a .csv file to add them to the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> directory (database). Well today I will present how I automated the creation of this kind of input file, with the help of Easy Batch. Why EasyBatch? Because, after seeing my initial post, I was contacted by its founder, <a title="http://www.mahmoudbenhassine.com/" href="http://www.mahmoudbenhassine.com/" target="_blank">Mahmoud Ben Hassine</a>, to have a look at Easy Batch and give it a try. I did, and I am happy about that. Read on to find out why&#8230;<!--more-->
+  Remember the first batch job for Podcastpedia.org, presented in <a title="http://www.codepedia.org/ama/spring-batch-tutorial-with-spring-boot-and-java-configuration/" href="http://www.codepedia.org/ama/spring-batch-tutorial-with-spring-boot-and-java-configuration/" target="_blank">Spring Batch Tutorial with Spring Boot and Java Configuration</a>&#8230; There, I would read submitted podcasts from a .csv file to add them to the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> directory (database). Well today I will present how I automated the creation of this kind of input file, with the help of Easy Batch. Why EasyBatch? Because, after seeing my initial post, I was contacted by its founder, <a title="http://www.mahmoudbenhassine.com/" href="http://www.mahmoudbenhassine.com/" target="_blank">Mahmoud Ben Hassine</a>, to have a look at Easy Batch and give it a try. I did, and I am happy about that. Read on to find out why&#8230;<!--more-->
 </p>
 
 <p style="text-align: justify;">
@@ -356,7 +356,7 @@ Check out the <a title="http://www.easybatch.org/documentation/userGuide.html" h
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

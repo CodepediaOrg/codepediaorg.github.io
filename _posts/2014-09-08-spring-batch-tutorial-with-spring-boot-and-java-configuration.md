@@ -40,7 +40,7 @@ tags:
 ---
 
 <p class="title" style="color: #000000; text-align: justify;">
-  I&#8217;ve been working on migrating some batch jobs for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> to Spring Batch. Before, these jobs were developed in my own kind of way, and I thought it was high time to use a more &#8220;standardized&#8221; approach. Because I had never used Spring with java configuration before, I thought this were a good opportunity to learn about it, by configuring the Spring Batch jobs in java. And since I am all into trying new things with Spring, why not also throw Spring Boot into the boat&#8230;<!--more-->
+  I&#8217;ve been working on migrating some batch jobs for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> to Spring Batch. Before, these jobs were developed in my own kind of way, and I thought it was high time to use a more &#8220;standardized&#8221; approach. Because I had never used Spring with java configuration before, I thought this were a good opportunity to learn about it, by configuring the Spring Batch jobs in java. And since I am all into trying new things with Spring, why not also throw Spring Boot into the boat&#8230;<!--more-->
 </p>
 
 <div id="toc_container" class="no_bullets">
@@ -136,7 +136,7 @@ tags:
 </h2>
 
 <p class="title" style="color: #000000; text-align: justify;">
-  So, as mentioned, in this post I will present Spring Batch in the context of configuring it and developing with it some batch jobs for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>. Here&#8217;s a short description of the two jobs that are currently part of the <a title="https://github.com/podcastpedia/podcastpedia-batch" href="https://github.com/podcastpedia/podcastpedia-batch" target="_blank">Podcastpedia-batch</a> project:
+  So, as mentioned, in this post I will present Spring Batch in the context of configuring it and developing with it some batch jobs for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>. Here&#8217;s a short description of the two jobs that are currently part of the <a title="https://github.com/podcastpedia/podcastpedia-batch" href="https://github.com/podcastpedia/podcastpedia-batch" target="_blank">Podcastpedia-batch</a> project:
 </p>
 
   1. **addNewPodcastJob**
@@ -144,7 +144,7 @@ tags:
       2. transforms (parses and prepares episodes to be inserted with _Http Apache Client_) the data
       3. and in the last step, _insert_ it to the Podcastpedia _database_ and _inform_ the submitter _via email_ about it
 <li style="text-align: justify;">
-  <strong>notifyEmailSubscribersJob</strong> &#8211; people can subscribe to their favorite podcasts on <a title="https://github.com/Codingpedia/podcastpedia/" href="https://github.com/Codingpedia/podcastpedia/" target="_blank">Podcastpedia.org</a> via email. For those who did it is checked on a regular basis (DAILY, WEEKLY, MONTHLY) if new episodes are available, and if they are the subscribers are informed via email about those; <em>read from database</em>, expand read data via JPA, re-group it and <em>notify</em> subscriber <em>via email</em>
+  <strong>notifyEmailSubscribersJob</strong> &#8211; people can subscribe to their favorite podcasts on <a title="https://github.com/CodepediaOrg/podcastpedia/" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a> via email. For those who did it is checked on a regular basis (DAILY, WEEKLY, MONTHLY) if new episodes are available, and if they are the subscribers are informed via email about those; <em>read from database</em>, expand read data via JPA, re-group it and <em>notify</em> subscriber <em>via email</em>
 </li>
 
 <p class="title note_code" style="color: #000000; text-align: justify;">
@@ -741,7 +741,7 @@ public class Writer implements ItemWriter&lt;SuggestedPodcast&gt;{
 
 	private String buildUrlOnPodcastpedia(Podcast podcast) {
 		StringBuffer urlOnPodcastpedia = new StringBuffer(
-				"https://github.com/Codingpedia/podcastpedia");
+				"https://github.com/CodepediaOrg/podcastpedia");
 		if (podcast.getIdentifier() != null) {
 			urlOnPodcastpedia.append("/" + podcast.getIdentifier());
 		} else {
@@ -1006,7 +1006,7 @@ The best explanation for  `SpringApplication`-, `@ComponentScan`&#8211; and `@E
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

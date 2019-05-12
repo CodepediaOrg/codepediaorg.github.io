@@ -69,7 +69,7 @@ tags:
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 
@@ -80,13 +80,13 @@ tags:
 But what is a **&#8220;friendly&#8221;** URL? I would say it&#8217;s
 
 <li style="text-align: justify;">
-  <strong>constructed logically</strong> so that is most intelligible to humans (when possible, readable words rather than long ID numbers). For example I find that a URL link like <a title="NPR: TED Radio Hour Podcast" href="https://github.com/Codingpedia/podcastpedia/podcasts/1183/NPR-TED-Radio-Hour-Podcast" target="_blank">https://github.com/Codingpedia/podcastpedia/<strong>podcasts</strong>/1183/<strong>NPR-TED-Radio-Hour-Podcast</strong></a> is much more appealing than something like this <a title="NPR: TED Radio Hour Podcast" href="https://github.com/Codingpedia/podcastpedia/podcasts/1183/NPR-TED-Radio-Hour-Podcast" target="_blank">www.podcastpedia.org/id-1183.html</a>. For one you can figure out just from the URL it&#8217;s about a podcast, and briefly what the podcast might be about.
+  <strong>constructed logically</strong> so that is most intelligible to humans (when possible, readable words rather than long ID numbers). For example I find that a URL link like <a title="NPR: TED Radio Hour Podcast" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/1183/NPR-TED-Radio-Hour-Podcast" target="_blank">https://github.com/CodepediaOrg/podcastpedia/<strong>podcasts</strong>/1183/<strong>NPR-TED-Radio-Hour-Podcast</strong></a> is much more appealing than something like this <a title="NPR: TED Radio Hour Podcast" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/1183/NPR-TED-Radio-Hour-Podcast" target="_blank">www.podcastpedia.org/id-1183.html</a>. For one you can figure out just from the URL it&#8217;s about a podcast, and briefly what the podcast might be about.
 </li>
 <li style="text-align: justify;">
   <strong>not too complex</strong> and <strong>not cryptic</strong> &#8211; visitors may be intimidated by extremely long and cryptic URLs that contain few recognizable words. Some users might link to your page using the URL of that page as the anchor text. If your URL contains relevant words, this provides users and search engines with more information about the page than an ID or oddly named parameter would
 </li>
 <li style="text-align: justify;">
-  <strong>flexible</strong> &#8211; allow for the possibility of a part of the URL being removed. For example, instead of using the breadcrumb links on the page, a user might drop off a part of the URL in the hopes of finding more general content &#8211; if the user tipped <a title="Podcasts ordered by publication date" href="https://github.com/Codingpedia/podcastpedia/podcasts" target="_blank">https://github.com/Codingpedia/podcastpedia/<strong>podcasts</strong></a>, he or she would get redirected to a list of all the podcasts available on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>. Or what if the user might be visiting <a title="Podcastpedia.org - Distillations" href="https://github.com/Codingpedia/podcastpedia/podcasts/742/Distillations" target="_blank">https://github.com/Codingpedia/podcastpedia/podcasts/742/Distillations</a>, but then enter just <a title="Podcastpedia.org - Distillations" href="https://github.com/Codingpedia/podcastpedia/podcasts/742/ " target="_blank">https://github.com/Codingpedia/podcastpedia/podcasts/742/ </a>into the browser&#8217;s address bar. Should she get a 404 or also the right page?
+  <strong>flexible</strong> &#8211; allow for the possibility of a part of the URL being removed. For example, instead of using the breadcrumb links on the page, a user might drop off a part of the URL in the hopes of finding more general content &#8211; if the user tipped <a title="Podcasts ordered by publication date" href="https://github.com/CodepediaOrg/podcastpedia/podcasts" target="_blank">https://github.com/CodepediaOrg/podcastpedia/<strong>podcasts</strong></a>, he or she would get redirected to a list of all the podcasts available on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>. Or what if the user might be visiting <a title="Podcastpedia.org - Distillations" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/742/Distillations" target="_blank">https://github.com/CodepediaOrg/podcastpedia/podcasts/742/Distillations</a>, but then enter just <a title="Podcastpedia.org - Distillations" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/742/ " target="_blank">https://github.com/CodepediaOrg/podcastpedia/podcasts/742/ </a>into the browser&#8217;s address bar. Should she get a 404 or also the right page?
 </li>
 <li style="text-align: justify;">
   makint use of <strong>hyphens (-)</strong> &#8211; there&#8217;s a reason why Google recommends it &#8211; it&#8217;s easier to read in comparison with underscore (_) or white spaces which get encoded to %20.
@@ -109,24 +109,24 @@ But what is a **&#8220;friendly&#8221;** URL? I would say it&#8217;s
 </h2>
 
 <p dir="ltr" data-font-name="g_font_505_0" data-canvas-width="322.6415370788574">
-  On <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, the URLs for podcast and episode pages are &#8220;friendly&#8221;-built. These are the core pages of the website and therefore should be highly optimized for search engines and easy to bookmark.
+  On <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, the URLs for podcast and episode pages are &#8220;friendly&#8221;-built. These are the core pages of the website and therefore should be highly optimized for search engines and easy to bookmark.
 </p>
 
 <p dir="ltr" data-font-name="g_font_505_0" data-canvas-width="322.6415370788574">
   <strong>Podcast URLs samples:</strong>
 </p>
 
-  * <a title="A History of the World in 100 Objects" href="https://github.com/Codingpedia/podcastpedia/podcasts/676/A-History-of-the-World-in-100-Objects" target="_blank">https://github.com/Codingpedia/podcastpedia/podcasts/676/A-History-of-the-World-in-100-Objects</a>
-  * <a title="Quarks & Co - zum Mitnehmen" href="https://github.com/Codingpedia/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen" target="_blank">https://github.com/Codingpedia/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen</a>
+  * <a title="A History of the World in 100 Objects" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/676/A-History-of-the-World-in-100-Objects" target="_blank">https://github.com/CodepediaOrg/podcastpedia/podcasts/676/A-History-of-the-World-in-100-Objects</a>
+  * <a title="Quarks & Co - zum Mitnehmen" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen" target="_blank">https://github.com/CodepediaOrg/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen</a>
   * <a title="NPR: TED Radio Hour Podcast" href="www.podcastpedia.org/podcasts/1183/NPR-TED-Radio-Hour-Podcast" target="_blank">www.podcastpedia.org/podcasts/1183/NPR-TED-Radio-Hour-Podcast</a>
 
 <p dir="ltr" data-font-name="g_font_505_0" data-canvas-width="322.6415370788574">
   <strong>Episode URLs samples:</strong>
 </p>
 
-  * <a title="AHOW: 100 Solar-powered lamp and charger 22 Oct 2010 " href="https://github.com/Codingpedia/podcastpedia/podcasts/676/A-History-of-the-World-in-100-Objects/episodes/2/AHOW-100-Solar-powered-lamp-and-charger-22-Oct-2010" target="_blank">https://github.com/Codingpedia/podcastpedia/podcasts/676/A-History-of-the-World-in-100-Objects/episodes/2/AHOW-100-Solar-powered-lamp-and-charger-22-Oct-2010</a>
-  * <a title="Quarks & Co: 08.10.2013, Auf Teilchenjagd " href="https://github.com/Codingpedia/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen/episodes/229/Quarks-Co-08-10-2013-Auf-Teilchenjagd" target="_blank">https://github.com/Codingpedia/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen/episodes/229/Quarks-Co-08-10-2013-Auf-Teilchenjagd</a>
-  * <a title="Haves and Have Nots" href="https://github.com/Codingpedia/podcastpedia/podcasts/1183/NPR-TED-Radio-Hour-Podcast/episodes/63/Haves-and-Have-Nots" target="_blank">https://github.com/Codingpedia/podcastpedia/podcasts/1183/NPR-TED-Radio-Hour-Podcast/episodes/63/Haves-and-Have-Nots</a>
+  * <a title="AHOW: 100 Solar-powered lamp and charger 22 Oct 2010 " href="https://github.com/CodepediaOrg/podcastpedia/podcasts/676/A-History-of-the-World-in-100-Objects/episodes/2/AHOW-100-Solar-powered-lamp-and-charger-22-Oct-2010" target="_blank">https://github.com/CodepediaOrg/podcastpedia/podcasts/676/A-History-of-the-World-in-100-Objects/episodes/2/AHOW-100-Solar-powered-lamp-and-charger-22-Oct-2010</a>
+  * <a title="Quarks & Co: 08.10.2013, Auf Teilchenjagd " href="https://github.com/CodepediaOrg/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen/episodes/229/Quarks-Co-08-10-2013-Auf-Teilchenjagd" target="_blank">https://github.com/CodepediaOrg/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen/episodes/229/Quarks-Co-08-10-2013-Auf-Teilchenjagd</a>
+  * <a title="Haves and Have Nots" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/1183/NPR-TED-Radio-Hour-Podcast/episodes/63/Haves-and-Have-Nots" target="_blank">https://github.com/CodepediaOrg/podcastpedia/podcasts/1183/NPR-TED-Radio-Hour-Podcast/episodes/63/Haves-and-Have-Nots</a>
 
 In the following sections I will present how an episode URL is constructed, as it is more complex:
 
@@ -204,7 +204,7 @@ if(titleInUrl.length() &gt; TITLE_IN_URL_MAX_LENGTH){
   <span id="View">View</span>
 </h3>
 
-Let&#8217;s consider a use case, for example when <a title="Podcastpedia.org - advanced search" href="https://github.com/Codingpedia/podcastpedia/search/advanced_search" target="_blank">searching for episodes</a>, you get a list of results. This list of `Episode` objects is loaded in the `Model` via MyBatis (see my post <a title="MyBatis and Spring integration" href="http://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">Integrate MyBatis with Spring</a> for that), and then via the `Controller` are presented in the `View`, which in this case is a `JSP` file. The user has the possibility to see the details of a specific episode by clicking on the episode&#8217;s URL, that is constructed in the following manner:
+Let&#8217;s consider a use case, for example when <a title="Podcastpedia.org - advanced search" href="https://github.com/CodepediaOrg/podcastpedia/search/advanced_search" target="_blank">searching for episodes</a>, you get a list of results. This list of `Episode` objects is loaded in the `Model` via MyBatis (see my post <a title="MyBatis and Spring integration" href="http://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">Integrate MyBatis with Spring</a> for that), and then via the `Controller` are presented in the `View`, which in this case is a `JSP` file. The user has the possibility to see the details of a specific episode by clicking on the episode&#8217;s URL, that is constructed in the following manner:
 
 <pre class="lang:default mark:3,7 decode:true" title="JSP snippet - Episodes search results">&lt;div class="results_list"&gt;
 	&lt;c:forEach items="${advancedSearchResult.episodes}" var="episode" varStatus="loop"&gt;
@@ -309,7 +309,7 @@ So if you add the values of the `@RequestMapping` at the class level (line 16) &
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 
@@ -326,7 +326,7 @@ So if you add the values of the `@RequestMapping` at the class level (line 16) &
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -24,7 +24,7 @@ categories:
   - java
   - spring
 ---
-<a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia/" target="_blank">Podcastpedia.org</a> can be accessed today in four languages &#8211; English, German, French and Romanian, with Spanish planned for the near future. In computing this is called internationalization (<a href="http://en.wikipedia.org/wiki/I18n" target="_blank">i18n</a>). The post presents how this is configured under the hood with the help of Spring 3 MVC.
+<a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a> can be accessed today in four languages &#8211; English, German, French and Romanian, with Spanish planned for the near future. In computing this is called internationalization (<a href="http://en.wikipedia.org/wiki/I18n" target="_blank">i18n</a>). The post presents how this is configured under the hood with the help of Spring 3 MVC.
 
 ### Application Context Configuration
 
@@ -107,7 +107,7 @@ Normally in the Java world, the <a title="Wikipedia - locale" href="http://en.wi
 
 <div>
   <p>
-    The <code>LocaleResolver</code> is normally used in combination with the <code>LocaleChangeInterceptor</code>, which allows you to change of the current locale by using a defined parameter in the request (in this case the <code>lang</code> parameter). So, for example, a request for the following URL, <code>&lt;a title="Podcastpedia - categories" href="https://github.com/Codingpedia/podcastpedia/categories?lang=de" target="_blank">https://github.com/Codingpedia/podcastpedia/categories?&lt;strong>lang=de&lt;/strong>&lt;/a></code>, will change the site language to German:
+    The <code>LocaleResolver</code> is normally used in combination with the <code>LocaleChangeInterceptor</code>, which allows you to change of the current locale by using a defined parameter in the request (in this case the <code>lang</code> parameter). So, for example, a request for the following URL, <code>&lt;a title="Podcastpedia - categories" href="https://github.com/CodepediaOrg/podcastpedia/categories?lang=de" target="_blank">https://github.com/CodepediaOrg/podcastpedia/categories?&lt;strong>lang=de&lt;/strong>&lt;/a></code>, will change the site language to German:
   </p>
 
 <pre><code class="xml">&lt;mvc:interceptors&gt;
@@ -122,7 +122,7 @@ Normally in the Java world, the <a title="Wikipedia - locale" href="http://en.wi
 
 #### JSP
 
-On <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia/" target="_blank">Podcastpedia.org</a> you can change the language by selecting the corresponding flag :
+On <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a> you can change the language by selecting the corresponding flag :
 
 [<img class="alignnone  wp-image-417" src="{{site.url}}/wp-content/uploads/2013/08/Language_selection-300x44.png" alt="Language_selection" width="500" height="75" srcset="{{site.url}}/wp-content/uploads/2013/08/Language_selection-300x44.png 300w, {{site.url}}/wp-content/uploads/2013/08/Language_selection-1024x153.png 1024w, {{site.url}}/wp-content/uploads/2013/08/Language_selection-624x93.png 624w, {{site.url}}/wp-content/uploads/2013/08/Language_selection.png 1082w" sizes="(max-width: 500px) 100vw, 500px" />]({{site.url}}/wp-content/uploads/2013/08/Language_selection.png)
 
@@ -184,7 +184,7 @@ Header set Cache-Control "max-age=0, private"</code></pre>
 
 Well, that&#8217;s All Folks! If you would like to have Podcastpedia.org localized in your language, you can download the message resource file for English &#8211; [messages_en.properties]({{site.url}}/wp-content/uploads/2013/08/messages_en.zip), and contact me at _ama [AT] codingpedia DOT org_ &#8211; thanks
 
-If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia/" target="_blank">Podcastpedia.org</a>
+If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a>
 
 We promise to only share high quality podcasts and episodes.
 
@@ -205,7 +205,7 @@ We promise to only share high quality podcasts and episodes.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

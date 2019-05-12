@@ -32,7 +32,7 @@ tags:
 format: aside
 ---
 <p style="text-align: justify;">
-  There are to main applications, that power <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, one that is actually the web application and another one where I do administrative stuff and podcast updates. Experience has shown that if I want to run the podcasts updates in the background and do some testing/debugging/redployment on the front-end application it&#8217;s better to have them running on different Tomcat instances on the development machine.<!--more-->
+  There are to main applications, that power <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, one that is actually the web application and another one where I do administrative stuff and podcast updates. Experience has shown that if I want to run the podcasts updates in the background and do some testing/debugging/redployment on the front-end application it&#8217;s better to have them running on different Tomcat instances on the development machine.<!--more-->
 </p>
 
 **How do I do that?** It&#8217;s very easy. First make a copy of one instance and name it as you please:
@@ -103,7 +103,7 @@ modified
 </p>
 
 <p class="note_normal">
-  Don&#8217;t forget to check out <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> &#8211; you might find it really interesting. We are grateful for <a title="Podcastpedia.org - how can I contribute" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">your support. </a>
+  Don&#8217;t forget to check out <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> &#8211; you might find it really interesting. We are grateful for <a title="Podcastpedia.org - how can I contribute" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">your support. </a>
 </p>
 
 <p class="note_normal">
@@ -115,7 +115,7 @@ modified
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

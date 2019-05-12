@@ -158,7 +158,7 @@ that contains the **name** of the original file + **timestamp** when the backup 
 
 ## Content
 * _/var/www/html_: the actual web content, which by default only consists of the default Nginx page you saw earlier, is served out of the _/var/www/html_ directory.
-I deploy alose here the generated [front end](https://github.com/Codingpedia/bookmarks) part with Angular CLI. I do this for the default's sake
+I deploy alose here the generated [front end](https://github.com/CodepediaOrg/bookmarks) part with Angular CLI. I do this for the default's sake
  and due to the fact there is only one website site being served by NGINX.
 
 ## Server Configuration
@@ -781,7 +781,7 @@ I am a developer by heart and by job, with some sysadmin experience, so if you n
 please leave a comment in the comments section... Very much appreciated.
 
 <p class="note_normal">
-    This blog post is a clone of the wiki page <a href="https://github.com/Codingpedia/bookmarks-api/wiki/Setup-Nginx-in-production" target="_blank">Setup Nginx in production</a>
+    This blog post is a clone of the wiki page <a href="https://github.com/CodepediaOrg/bookmarks-api/wiki/Setup-Nginx-in-production" target="_blank">Setup Nginx in production</a>
 </p>
 
 # References

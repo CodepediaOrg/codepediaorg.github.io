@@ -233,7 +233,7 @@ tags:
 </h3>
 
 <p style="text-align: justify;">
-  My intention is to move some of the parts from <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, that are currently implemented in Spring MVC, to JavaScript-land and for that I&#8217;ll need to use more backend REST web services. Of course I could use <a title="Designing and Implementing RESTful Web Services with Spring" href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring&#8217;s own REST implementation</a>, as I currently do for the AJAX calls, but I wanted also to see how the &#8220;official&#8221; implementation looks like.
+  My intention is to move some of the parts from <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, that are currently implemented in Spring MVC, to JavaScript-land and for that I&#8217;ll need to use more backend REST web services. Of course I could use <a title="Designing and Implementing RESTful Web Services with Spring" href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring&#8217;s own REST implementation</a>, as I currently do for the AJAX calls, but I wanted also to see how the &#8220;official&#8221; implementation looks like.
 </p>
 
 <p class="note_normal" style="text-align: justify;">
@@ -626,7 +626,7 @@ The strucuture is pretty simple &#8211; there are an `id`, which identifies a po
 <pre><code class="json">{
 	"id":1,
 	"title":"Quarks & Co - zum Mitnehmen-modified",
-	"linkOnPodcastpedia":"https://github.com/Codingpedia/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen",
+	"linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen",
 	"feed":"http://podcast.wdr.de/quarks.xml",
 	"description":"Quarks & Co: Das Wissenschaftsmagazin",
 	"insertionDate":1388213547000
@@ -1155,7 +1155,7 @@ Annotations
 </h3>
 
 <p style="text-align: justify;">
-  My intention is to move some of the parts from <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, that are currently implemented in Spring MVC, to JavaScript-land and for that I&#8217;ll need to use more backend REST web services. Of course I could use <a title="Designing and Implementing RESTful Web Services with Spring" href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring&#8217;s own REST implementation</a>, as I currently do for the AJAX calls, but I wanted also to see how the &#8220;official&#8221; implementation looks like.
+  My intention is to move some of the parts from <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, that are currently implemented in Spring MVC, to JavaScript-land and for that I&#8217;ll need to use more backend REST web services. Of course I could use <a title="Designing and Implementing RESTful Web Services with Spring" href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring&#8217;s own REST implementation</a>, as I currently do for the AJAX calls, but I wanted also to see how the &#8220;official&#8221; implementation looks like.
 </p>
 
 <p class="note_normal" style="text-align: justify;">
@@ -1548,7 +1548,7 @@ The strucuture is pretty simple &#8211; there are an `id`, which identifies a po
 <pre><code class="json">{
 	"id":1,
 	"title":"Quarks & Co - zum Mitnehmen-modified",
-	"linkOnPodcastpedia":"https://github.com/Codingpedia/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen",
+	"linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen",
 	"feed":"http://podcast.wdr.de/quarks.xml",
 	"description":"Quarks & Co: Das Wissenschaftsmagazin",
 	"insertionDate":1388213547000
@@ -2214,7 +2214,7 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  If you&#8217;ve found some usefulnes in this post, I&#8217;d be very grateful if you helped it spread by leaving a comment or sharing it on Twitter, Google+ or Facebook. Thank you! Don&#8217;t forget also to check out <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> &#8211; you&#8217;ll find for sure interesting podcasts and episodes. We are grateful for <a title="Podcastpedia.org - how can I contribute" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">your support. </a>
+  If you&#8217;ve found some usefulnes in this post, I&#8217;d be very grateful if you helped it spread by leaving a comment or sharing it on Twitter, Google+ or Facebook. Thank you! Don&#8217;t forget also to check out <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> &#8211; you&#8217;ll find for sure interesting podcasts and episodes. We are grateful for <a title="Podcastpedia.org - how can I contribute" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">your support. </a>
 </p>
 
 ## <span id="5_Resources">5. Resources</span>
@@ -2250,7 +2250,7 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -50,7 +50,7 @@ tags:
 </h2>
 
 <p style="text-align: justify;">
-  All of the podcasts and episodes present on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, have a description, whose length varies between 0 and 1000 characters (more than that is not stored in the database). To keep the length of that text shown to some extent responsive meaning not to get too long for small devices, I&#8217;ve decided that for screen with resolutions smaller than 720px, the length should not be more than 300 characters and for bigger resolutions should be limited to 600 characters (you know with podcasts you shouldn&#8217;t tell your story in text anyway&#8230;)
+  All of the podcasts and episodes present on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, have a description, whose length varies between 0 and 1000 characters (more than that is not stored in the database). To keep the length of that text shown to some extent responsive meaning not to get too long for small devices, I&#8217;ve decided that for screen with resolutions smaller than 720px, the length should not be more than 300 characters and for bigger resolutions should be limited to 600 characters (you know with podcasts you shouldn&#8217;t tell your story in text anyway&#8230;)
 </p>
 
 <h2 style="text-align: justify;">
@@ -129,7 +129,7 @@ Well, that&#8217;s it. If you have a better proposal to achieve this please leav
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -29,12 +29,12 @@ tags:
   - tomcat
 ---
 <p style="text-align: justify;">
-  While developing java web applications is very practical to have quick feedback from a &#8220;real&#8221; environment. In this post I&#8217;ll explore how to run a java web application with Maven in an embedded container be it Jetty or Tomcat.  I&#8217;ll show how I have configured them for the development of <a title="https://github.com/Codingpedia/podcastpedia" href="https://github.com/Codingpedia/podcastpedia" target="_blank">podcastpedia</a> project backing the <a title="Podcastpedia, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> website.
+  While developing java web applications is very practical to have quick feedback from a &#8220;real&#8221; environment. In this post I&#8217;ll explore how to run a java web application with Maven in an embedded container be it Jetty or Tomcat.  I&#8217;ll show how I have configured them for the development of <a title="https://github.com/CodepediaOrg/podcastpedia" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">podcastpedia</a> project backing the <a title="Podcastpedia, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> website.
 </p>
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 
   <!--more-->
@@ -43,7 +43,7 @@ tags:
 ## Prerequisites
 
 <p style="text-align: justify;">
-  You should have <a title="http://maven.apache.org/download.cgi" href="http://maven.apache.org/download.cgi" target="_blank">Maven</a> and  at least <a title="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" target="_blank">Java 7</a> installed. Ideally you could <a title="https://github.com/Codingpedia/podcastpedia" href="https://github.com/Codingpedia/podcastpedia" target="_blank">setup up the podcastpedia</a> project yourself to see it in action.
+  You should have <a title="http://maven.apache.org/download.cgi" href="http://maven.apache.org/download.cgi" target="_blank">Maven</a> and  at least <a title="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" target="_blank">Java 7</a> installed. Ideally you could <a title="https://github.com/CodepediaOrg/podcastpedia" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">setup up the podcastpedia</a> project yourself to see it in action.
 </p>
 
 ## Jetty Maven Plugin
@@ -241,7 +241,7 @@ In context.xml there are defined the database and email resources.
 </p>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## References
@@ -257,7 +257,7 @@ In context.xml there are defined the database and email resources.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -15,7 +15,7 @@ In this post, I will give my two cents on migrating a programming blog from Word
 
 ## Why?
 
-Well, there were pains - I was experiencing performance issues (caused mainly by memory shortages on a 4GB machine) with the virtual private server from GoDaddy, where I used to host both [Podcastpedia.org](https://github.com/Codingpedia/podcastpedia) and [Codepedia.org](http://www.codepedia.org). Codingpedia was developed initially with Wordpress[^1], which I still think is a great tool, if you want to quickly start a blog and don't have programming experience, but it kinda requires a LAMP[^2] stack, which it's kinda performance killer from a number of visitors forward. Of course you can always add more hardware to support the website, but that has a limit too. Limited was also the budget I was ready to spend on hosting, by today's standards.
+Well, there were pains - I was experiencing performance issues (caused mainly by memory shortages on a 4GB machine) with the virtual private server from GoDaddy, where I used to host both [Podcastpedia.org](https://github.com/CodepediaOrg/podcastpedia) and [Codepedia.org](http://www.codepedia.org). Codingpedia was developed initially with Wordpress[^1], which I still think is a great tool, if you want to quickly start a blog and don't have programming experience, but it kinda requires a LAMP[^2] stack, which it's kinda performance killer from a number of visitors forward. Of course you can always add more hardware to support the website, but that has a limit too. Limited was also the budget I was ready to spend on hosting, by today's standards.
 
 [^3]: <https://en.wikipedia.org/wiki/LAMP_(software_bundle)>
 

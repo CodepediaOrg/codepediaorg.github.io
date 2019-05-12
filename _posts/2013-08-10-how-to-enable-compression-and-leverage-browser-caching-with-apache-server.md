@@ -30,7 +30,7 @@ tags:
   - pagespeed
   - site optimization
 ---
-Looking for ways to improve <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>&#8216; mobile user-friendliness, I have discovered Google&#8217;s <a title="PageSpeed Insights" href="http://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a> . After analyzing the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">home page</a>, a podcast&#8217;s page (<a title="The Naked Scientist Podcast" href="https://github.com/Codingpedia/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science" target="_blank">The Naked Scientists Podcast &#8211; Stripping Down Science</a>), an <a title="Episode page" href="https://github.com/Codingpedia/podcastpedia/podcasts/967/Leonardo-Evo-Solution-Die-Serie-zum-Darwin-Jahr/episodes/2/WDR-5-Leonardo-Evo-Solution-Die-Serie-im-Darwin-Jahr-Folge-12-Prima-Klima-vom-30-04-2009" target="_blank">episode page</a> and scoring an average of 70 out of 100 (even worse on mobile) two points needed urgent fixing:
+Looking for ways to improve <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>&#8216; mobile user-friendliness, I have discovered Google&#8217;s <a title="PageSpeed Insights" href="http://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a> . After analyzing the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">home page</a>, a podcast&#8217;s page (<a title="The Naked Scientist Podcast" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science" target="_blank">The Naked Scientists Podcast &#8211; Stripping Down Science</a>), an <a title="Episode page" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/967/Leonardo-Evo-Solution-Die-Serie-zum-Darwin-Jahr/episodes/2/WDR-5-Leonardo-Evo-Solution-Die-Serie-im-Darwin-Jahr-Folge-12-Prima-Klima-vom-30-04-2009" target="_blank">episode page</a> and scoring an average of 70 out of 100 (even worse on mobile) two points needed urgent fixing:
 
 ### 1. Enabling compression
 
@@ -90,7 +90,7 @@ The second point was enabling **browser caching** for static resources, which ca
 
 First I checked if the <a title="Apache Module mod_expires" href="http://httpd.apache.org/docs/current/mod/mod_expires.html" target="_blank">mod_expires</a> and <a title="Apache Module mod_headers" href="http://httpd.apache.org/docs/current/mod/mod_headers.html" target="_blank">mod_headers</a> modules are active on Apache modules by issuing <span style="background-color: #e6e6e6; padding: 0px 5px;">httpd -M</span>
 
-All I had to do next is adding the following to the virtual host configuration for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, and to _.htaccess_ for <a title="Codingpedia" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>:
+All I had to do next is adding the following to the virtual host configuration for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, and to _.htaccess_ for <a title="Codingpedia" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>:
 
 <pre class="brush: plain; title: ; notranslate" title=""># Feed
   ExpiresByType application/atom+xml      "access plus 10 hours"
@@ -149,7 +149,7 @@ Well, that&#8217;s it&#8230; Two small steps, I had no clue about until now, tha
 
 If you notice any room for improvement, please <a href="mailto:contact@codingepdia.org?Subject=Apache%20optimization" target="_top">contact us</a> or leave a message.
 
-If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia/" target="_blank">Podcastpedia.org</a>
+If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a>
 
 We promise to only share high quality podcasts and episodes.
 
@@ -186,7 +186,7 @@ We promise to only share high quality podcasts and episodes.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

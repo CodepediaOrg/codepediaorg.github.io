@@ -23,7 +23,7 @@ dsq_thread_id:
 gr_overridden:
   - 1
 gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/Codingpedia/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
+  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
 categories:
   - java
   - spring
@@ -197,7 +197,7 @@ Because I am using LogBack, which implements SLF4J directly, you will need to de
 </p>
 
 <p class="note_code" style="text-align: justify;">
-  <strong>Code tip:</strong><br /> All dependencies required for the projects can be found on GitHub in the  <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/469632984fd9bd19d758e98661f0253694fff104/pom.xml" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/469632984fd9bd19d758e98661f0253694fff104/pom.xml" target="_blank">pom.xml </a> file.
+  <strong>Code tip:</strong><br /> All dependencies required for the projects can be found on GitHub in the  <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/469632984fd9bd19d758e98661f0253694fff104/pom.xml" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/469632984fd9bd19d758e98661f0253694fff104/pom.xml" target="_blank">pom.xml </a> file.
 </p>
 
 ### <span id="22_Logback"><span style="font-family: Bitter, Georgia, serif; font-size: 22px; line-height: 1.3;">2.2. Logback</span></span>
@@ -389,7 +389,7 @@ So you I am just getting the &#8220;LoggingResponseFilter &#8221; logger  and 
 
 ### <span id="41Source_code">4.1. Source code</span>
 
-  * <a style="color: #bc360a;" title="https://github.com/Codingpedia/demo-rest-jersey-spring" href="https://github.com/Codingpedia/demo-rest-jersey-spring" target="_blank">GitHub – Codingpedia/demo-rest-jersey-spring </a><span style="line-height: 1.5;">(instructions on how to install and run the project)</span>
+  * <a style="color: #bc360a;" title="https://github.com/CodepediaOrg/demo-rest-jersey-spring" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring" target="_blank">GitHub – Codingpedia/demo-rest-jersey-spring </a><span style="line-height: 1.5;">(instructions on how to install and run the project)</span>
 
 ### <span id="41_Codingpedia">4.1. Codingpedia</span>
 
@@ -415,7 +415,7 @@ So you I am just getting the &#8220;LoggingResponseFilter &#8221; logger  and 
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

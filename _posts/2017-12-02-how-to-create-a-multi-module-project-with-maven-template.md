@@ -22,11 +22,11 @@ be very annoying... Well, you might wanna consider instead creating a maven arch
 {:toc}  
 
 ## Template project selection
-Select a "template" project your new project is most similar to. For the purpose of this tutorial we'll use the [Podcastpedia](https://github.com/Codingpedia/podcastpedia)
+Select a "template" project your new project is most similar to. For the purpose of this tutorial we'll use the [Podcastpedia](https://github.com/CodepediaOrg/podcastpedia)
  multi module project:
   
 ```bash
-git clone https://github.com/Codingpedia/podcastpedia.git
+git clone https://github.com/CodepediaOrg/podcastpedia.git
 ```
 
 ## Generate maven archetype

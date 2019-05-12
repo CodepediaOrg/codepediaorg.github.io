@@ -29,7 +29,7 @@ tags:
   - jvm
   - tomcat
 ---
-I recently switched to Eclipse Kepler, being very dissapointed in the Juno Version &#8211; sometimes it took a couple of seconds just to switch between open tabs, and that on a 16 GB RAM machine with a 8-core processor&#8230; Anyway, I will shortly present here how I have configured Eclipse for the further development of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org:</a>
+I recently switched to Eclipse Kepler, being very dissapointed in the Juno Version &#8211; sometimes it took a couple of seconds just to switch between open tabs, and that on a 16 GB RAM machine with a 8-core processor&#8230; Anyway, I will shortly present here how I have configured Eclipse for the further development of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org:</a>
 
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
@@ -150,7 +150,7 @@ Once that is done, you can convert them to Maven projects by right clicking on t
 
 ### <span id="Sysdeo_Eclipse_Tomcat_Launcher_plugin">Sysdeo Eclipse Tomcat Launcher plugin</span>
 
-Apache Tomcat is the used server for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, both in development and production. For the development environment in Eclipse I really like the [Sysdeo Eclipse Tomcat Launcher plugin.](http://www.eclipsetotale.com/tomcatPlugin.html) Download the tomcatPluginV33.zip file, unzip it under Eclipse_Home/dropins and restart Eclipse. You should now have the Tomcat buttons in your menu<a href="{{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons.png" target="_blank"><img class="alignnone size-medium wp-image-249" src="{{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons-300x114.png" alt="10-tomcat-plugin-menu-buttons" width="300" height="114" srcset="{{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons-300x114.png 300w, {{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons-624x238.png 624w, {{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons.png 797w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+Apache Tomcat is the used server for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, both in development and production. For the development environment in Eclipse I really like the [Sysdeo Eclipse Tomcat Launcher plugin.](http://www.eclipsetotale.com/tomcatPlugin.html) Download the tomcatPluginV33.zip file, unzip it under Eclipse_Home/dropins and restart Eclipse. You should now have the Tomcat buttons in your menu<a href="{{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons.png" target="_blank"><img class="alignnone size-medium wp-image-249" src="{{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons-300x114.png" alt="10-tomcat-plugin-menu-buttons" width="300" height="114" srcset="{{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons-300x114.png 300w, {{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons-624x238.png 624w, {{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons.png 797w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
 Before you can start Tomcat from Eclipse go to **Window > Tomcat** and set tomcat home, and other parameters if you might need:
 
@@ -166,7 +166,7 @@ For JSP and XML editing I use the Eclipse JAVA EE Developer Tools. The installat
 
 That&#8217;s it. You might also want to install database access from Eclipse. Maybe is a matter of habit, but I prefer MySql Workbench for that&#8230;
 
-If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia/" target="_blank">Podcastpedia.org</a>
+If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a>
 
 We promise to only share high quality podcasts and episodes.
 
@@ -203,7 +203,7 @@ We promise to only share high quality podcasts and episodes.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

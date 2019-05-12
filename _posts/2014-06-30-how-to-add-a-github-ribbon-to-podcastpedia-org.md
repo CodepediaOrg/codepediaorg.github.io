@@ -36,7 +36,7 @@ tags:
   - scss
 ---
 <p style="text-align: justify;">
-  Since the source code for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> is now open <a title="https://github.com/podcastpedia/podcastpedia-web" href="https://github.com/podcastpedia/podcastpedia-web" target="_blank">on GitHub</a> for everyone to have look at and contribute to, I might as well add a ribbon on the website celebrating that. After a short research on the web, I stepped over Simon Whitaker&#8217;s project <strong><a style="color: #4183c4;" href="https://github.com/simonwhitaker/github-fork-ribbon-css">github-fork-ribbon-css</a> </strong>which I could easily integrate in  the website:
+  Since the source code for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is now open <a title="https://github.com/podcastpedia/podcastpedia-web" href="https://github.com/podcastpedia/podcastpedia-web" target="_blank">on GitHub</a> for everyone to have look at and contribute to, I might as well add a ribbon on the website celebrating that. After a short research on the web, I stepped over Simon Whitaker&#8217;s project <strong><a style="color: #4183c4;" href="https://github.com/simonwhitaker/github-fork-ribbon-css">github-fork-ribbon-css</a> </strong>which I could easily integrate in  the website:
 </p>
 
 <p style="text-align: justify;">
@@ -45,7 +45,7 @@ tags:
 
 <p style="text-align: justify;">
   <p class="note_normal">
-    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+    <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
   </p>
 </p>
 
@@ -209,7 +209,7 @@ Following the instrunctions from GitHub, the second step was to add the highlig
 Well, it cannot get simpler than that&#8230; So thanks again <a title="https://github.com/simonwhitaker" href="https://github.com/simonwhitaker" target="_blank">Simon</a> for this nice peace of work.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## Resources
@@ -227,7 +227,7 @@ Well, it cannot get simpler than that&#8230; So thanks again <a title="https://g
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

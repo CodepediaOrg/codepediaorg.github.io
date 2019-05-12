@@ -33,7 +33,7 @@ tags:
 ---
 I&#8217;ve been lagging behind with what Java 8 features exercising concerns, so in this post I will briefly present my initial experience with lambdas and streams.<!--more-->
 
-As usual, I will focus on a <a title="https://github.com/Codingpedia/podcastpedia/podcasting" href="https://github.com/Codingpedia/podcastpedia/podcasting" target="_blank">Podcast</a> class:
+As usual, I will focus on a <a title="https://github.com/CodepediaOrg/podcastpedia/podcasting" href="https://github.com/CodepediaOrg/podcastpedia/podcasting" target="_blank">Podcast</a> class:
 
 <pre class="lang:java decode:true">package org.codingpedia.learning.java.core;
 

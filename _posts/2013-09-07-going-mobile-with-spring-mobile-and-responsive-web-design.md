@@ -61,7 +61,7 @@ tags:
 </div>
 
 <p style="text-align: justify;">
-  As mentioned in <a title="Story of Podcastpedia.org" href="http://www.codepedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia</a>, the next thing that needed urgent improvement on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, was to make the website more user friendly for mobile users. This post will present how, with the help of <a title="Spring Mobile " href="http://www.springsource.org/spring-mobile" target="_blank">Spring Mobile</a>, the website can detect now if the request is coming from a mobile device and act accordingly: it displays a mobile view employing some responsive design features, while also offering the possibility to choose the preferred way (desktop or mobile) for displaying the web pages.
+  As mentioned in <a title="Story of Podcastpedia.org" href="http://www.codepedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia</a>, the next thing that needed urgent improvement on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, was to make the website more user friendly for mobile users. This post will present how, with the help of <a title="Spring Mobile " href="http://www.springsource.org/spring-mobile" target="_blank">Spring Mobile</a>, the website can detect now if the request is coming from a mobile device and act accordingly: it displays a mobile view employing some responsive design features, while also offering the possibility to choose the preferred way (desktop or mobile) for displaying the web pages.
 </p>
 
 ## <span id="1_Dependency">1. Dependency</span>
@@ -106,7 +106,7 @@ and secondly <span style="line-height: 1.5;"> a </span>`DeviceResolverHandlerI
 ### <span id="21_DeviceResolverHandlerInterceptor"><span style="font-family: Bitter, Georgia, serif; font-size: 22px; line-height: 1.3;">2.1. DeviceResolverHandlerInterceptor</span></span>
 
 <p style="text-align: justify;">
-  The <code>DeviceResolverHandlerInterceptor</code> is a <code>HandlerInterceptor</code> that, on <code>preHandle</code>, delegates to a <code>DeviceResolver</code>. The resolved Device is indexed under a request attribute named <code>'currentDevice'</code>, making it available to handlers throughout request processing. The default <code>DeviceResolver</code> implementation used for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> is based on the &#8220;lite&#8221; <a href="http://plugins.trac.wordpress.org/browser/wordpress-mobile-pack/trunk/plugins/wpmp_switcher/lite_detection.php" target="_top">detection algorithm</a> implemented as part of the <a href="http://wordpress.org/extend/plugins/wordpress-mobile-pack" target="_top">WordPress Mobile Pack</a>. This resolver only detects the presence of a mobile or tablet device, and does not detect specific capabilities. No special configuration is required to enable this resolver.
+  The <code>DeviceResolverHandlerInterceptor</code> is a <code>HandlerInterceptor</code> that, on <code>preHandle</code>, delegates to a <code>DeviceResolver</code>. The resolved Device is indexed under a request attribute named <code>'currentDevice'</code>, making it available to handlers throughout request processing. The default <code>DeviceResolver</code> implementation used for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is based on the &#8220;lite&#8221; <a href="http://plugins.trac.wordpress.org/browser/wordpress-mobile-pack/trunk/plugins/wpmp_switcher/lite_detection.php" target="_top">detection algorithm</a> implemented as part of the <a href="http://wordpress.org/extend/plugins/wordpress-mobile-pack" target="_top">WordPress Mobile Pack</a>. This resolver only detects the presence of a mobile or tablet device, and does not detect specific capabilities. No special configuration is required to enable this resolver.
 </p>
 
 ### <span id="22_SitePreferenceHandlerInterceptor">2.2. SitePreferenceHandlerInterceptor</span>
@@ -141,7 +141,7 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
     }
 }</pre>
 
-To obtain the reference to the current site preference, the `SitePreferenceUtils` (line 21) was used, by calling the `getCurrentSitePreference` method on the `HttpServletRequest` parameter. If the currentSitePreference is mobile a `mobile view (m_podcastDetails)` is selected, otherwise it will default to the `normal (podcastDetails)` desktop view. In <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, you can choose your site preference by selecting the mobile or desktop icon at the top left corner, right after the social media follow buttons:
+To obtain the reference to the current site preference, the `SitePreferenceUtils` (line 21) was used, by calling the `getCurrentSitePreference` method on the `HttpServletRequest` parameter. If the currentSitePreference is mobile a `mobile view (m_podcastDetails)` is selected, otherwise it will default to the `normal (podcastDetails)` desktop view. In <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, you can choose your site preference by selecting the mobile or desktop icon at the top left corner, right after the social media follow buttons:
 
 <div id="attachment_550" style="width: 166px" class="wp-caption alignnone">
   <a href="{{site.url}}/wp-content/uploads/2013/09/switch-to-desktop.png"><img class="size-medium wp-image-550" src="{{site.url}}/wp-content/uploads/2013/09/switch-to-desktop-156x300.png" alt="switch to desktop" width="156" height="300" srcset="{{site.url}}/wp-content/uploads/2013/09/switch-to-desktop-156x300.png 156w, {{site.url}}/wp-content/uploads/2013/09/switch-to-desktop.png 355w" sizes="(max-width: 156px) 100vw, 156px" /></a>
@@ -206,7 +206,7 @@ Behind the image the `currentSitePreference` parameter is set to either _mobile_
 .....
 }</pre>
 
-On the <a title="Podcastpedia.org, knowledge to go - mobile" href="https://github.com/Codingpedia/podcastpedia/?site_preference=mobile" target="_blank">home page, </a>the <a title="Responsive Grid System" href="http://www.responsivegridsystem.com/" target="_blank">Responsive Grid System</a> was used to allow the podcast charts to slide under each other when the screen-width becomes small enough. Thank you very much Graham Miller for this:
+On the <a title="Podcastpedia.org, knowledge to go - mobile" href="https://github.com/CodepediaOrg/podcastpedia/?site_preference=mobile" target="_blank">home page, </a>the <a title="Responsive Grid System" href="http://www.responsivegridsystem.com/" target="_blank">Responsive Grid System</a> was used to allow the podcast charts to slide under each other when the screen-width becomes small enough. Thank you very much Graham Miller for this:
 
 <div id="attachment_565" style="width: 310px" class="wp-caption alignnone">
   <a href="{{site.url}}/wp-content/uploads/2013/09/home-page-responsiveness.png"><img class="size-medium wp-image-565  " src="{{site.url}}/wp-content/uploads/2013/09/home-page-responsiveness-300x165.png" alt="home page responsiveness" width="300" height="165" srcset="{{site.url}}/wp-content/uploads/2013/09/home-page-responsiveness-300x165.png 300w, {{site.url}}/wp-content/uploads/2013/09/home-page-responsiveness-624x345.png 624w, {{site.url}}/wp-content/uploads/2013/09/home-page-responsiveness.png 1020w" sizes="(max-width: 300px) 100vw, 300px" /></a>
@@ -222,7 +222,7 @@ Apart from just modifying the css file, second `.jsp` files for mobile (e.g. `po
 
 This is just the beginning of improving the mobile experience, so if you notice any room for improvement, PLEASE <a href="mailto:contact@codingepdia.org?Subject=Apache%20optimization" target="_top">contact us</a> or leave a message.
 
-If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia/" target="_blank">Podcastpedia.org</a>
+If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a>
 
 We promise to only share high quality podcasts and episodes.
 
@@ -241,7 +241,7 @@ We promise to only share high quality podcasts and episodes.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -29,7 +29,7 @@ tags:
   - performance
 ---
 <p style="text-align: justify;">
-  <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> uses the MySQL database, in version 5.5.32 (# mysql -V),  to store metadata (title, description, update frequency, url of the image, urls of episodes etc.) of podcasts from the directory. The database contains both <a title="MyISAM" href="http://en.wikipedia.org/wiki/MyISAM" target="_blank">MyISAM</a> (for performance and full-text indexing capabilities) and <a title="Wikipedia - InnoDB" href="http://en.wikipedia.org/wiki/InnoDB" target="_blank">InnoDB</a> tables. An upgrade to version 6 and only to InnoDB tables is considered, once it&#8217;s mature enough and GoDaddy will support it. This post presents how MySQL server is configured, and to be more specific how the <code>my.cnf</code> file looks like.<br /> <!--more-->
+  <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> uses the MySQL database, in version 5.5.32 (# mysql -V),  to store metadata (title, description, update frequency, url of the image, urls of episodes etc.) of podcasts from the directory. The database contains both <a title="MyISAM" href="http://en.wikipedia.org/wiki/MyISAM" target="_blank">MyISAM</a> (for performance and full-text indexing capabilities) and <a title="Wikipedia - InnoDB" href="http://en.wikipedia.org/wiki/InnoDB" target="_blank">InnoDB</a> tables. An upgrade to version 6 and only to InnoDB tables is considered, once it&#8217;s mature enough and GoDaddy will support it. This post presents how MySQL server is configured, and to be more specific how the <code>my.cnf</code> file looks like.<br /> <!--more-->
 </p>
 
 ## The MySQL Configuration File: my.cnf
@@ -148,7 +148,7 @@ If you really want an expert&#8217;s opinion, I highly recommend <a href="http:/
   You can find in it advanced stuff around MySQL performance like query performance optimization, indexing for high performance, optimizing schema and data types, OS and hardware optimization and so much more.
 </p>
 
-If you liked this, please show your support by following us and <a title="Podcastpedia.org how can I help" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">joining us</a> on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia/" target="_blank">Podcastpedia.org</a>
+If you liked this, please show your support by following us and <a title="Podcastpedia.org how can I help" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">joining us</a> on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a>
   
 We promise to only share high quality podcasts and episodes.
 
@@ -167,7 +167,7 @@ We promise to only share high quality podcasts and episodes.
   </p>
   
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
   
   <div id="follow_social" style="clear: both;">

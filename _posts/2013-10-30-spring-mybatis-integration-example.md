@@ -128,7 +128,7 @@ tags:
   * JDBC
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <!--more-->
@@ -152,7 +152,7 @@ Enough with talking, let&#8217;s focus now on the main topic of this post, which
 ## <span id="2_Spring_MyBatis_interaction">2. Spring MyBatis interaction</span>
 
 <p style="text-align: justify;">
-  For the sake of simplicity, in this post I will present a simple example, which explains what needs to be implemented and configured to retrieve the <em>newest(recently updated) podcasts</em> from the database via MyBatis with Spring. You can experience the end result &#8220;live&#8221; by visiting the <a title="Last updated podcasts from Podcastpedia.org" href="https://github.com/Codingpedia/podcastpedia/" target="_blank">homepage of Podcastpedia.org</a>:
+  For the sake of simplicity, in this post I will present a simple example, which explains what needs to be implemented and configured to retrieve the <em>newest(recently updated) podcasts</em> from the database via MyBatis with Spring. You can experience the end result &#8220;live&#8221; by visiting the <a title="Last updated podcasts from Podcastpedia.org" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">homepage of Podcastpedia.org</a>:
 </p>
 
 <div id="attachment_814" style="width: 310px" class="wp-caption alignnone">
@@ -164,7 +164,7 @@ Enough with talking, let&#8217;s focus now on the main topic of this post, which
 </div>
 
 <p style="text-align: justify;">
-  If you are familiar with iBATIS (predecessor of MyBatis), you might know that until version 3, the Spring Framework provided direct integration with iBATIS SQL Maps in terms of resource management, DAO implementation support, and transaction strategies. But by the time iBATIS became MyBatis, Spring 3 development was already over, and the Spring team did not want to release with code based on a non-released version of MyBatis, official Spring support would have to wait. Given the interest in Spring support for MyBatis, the MyBatis community decided it was time to reunite the interested contributors and add Spring integration as a community sub-project of MyBatis instead. This is how MyBatis-Spring project was born, which is also used throughout <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>
+  If you are familiar with iBATIS (predecessor of MyBatis), you might know that until version 3, the Spring Framework provided direct integration with iBATIS SQL Maps in terms of resource management, DAO implementation support, and transaction strategies. But by the time iBATIS became MyBatis, Spring 3 development was already over, and the Spring team did not want to release with code based on a non-released version of MyBatis, official Spring support would have to wait. Given the interest in Spring support for MyBatis, the MyBatis community decided it was time to reunite the interested contributors and add Spring integration as a community sub-project of MyBatis instead. This is how MyBatis-Spring project was born, which is also used throughout <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>
 </p>
 
 ### <span id="21_What_is_MyBatis-Spring">2.1. What is MyBatis-Spring?</span>
@@ -220,7 +220,7 @@ Enough with talking, let&#8217;s focus now on the main topic of this post, which
 &lt;/bean&gt;</pre>
 
   <p>
-    Notice that the <code>SqlSessionFactory</code> requires a <code>DataSource</code>. This can be any <code>DataSource</code> and should be configured just like any other Spring database connection. For <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> the DataSource is configured via <a title="Wikipedia - JNDI" href="http://en.wikipedia.org/wiki/Java_Naming_and_Directory_Interface" target="_blank">JNDI</a>:
+    Notice that the <code>SqlSessionFactory</code> requires a <code>DataSource</code>. This can be any <code>DataSource</code> and should be configured just like any other Spring database connection. For <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> the DataSource is configured via <a title="Wikipedia - JNDI" href="http://en.wikipedia.org/wiki/Java_Naming_and_Directory_Interface" target="_blank">JNDI</a>:
   </p>
 
   <pre class="lang:default decode:true" title="DataSource configuration in the application context">&lt;!-- ========================= DATASOURCE DEFINITION via JNDI ========================= --&gt;
@@ -531,7 +531,7 @@ Well, that&#8217;s it. You&#8217;ve learned about MyBatis, how it integrates wit
 
 
 <p class="note_normal">
-<img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+<img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 
@@ -550,7 +550,7 @@ Well, that&#8217;s it. You&#8217;ve learned about MyBatis, how it integrates wit
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -41,7 +41,7 @@ tags:
 ## <span id="1_Why_use_Caching">1. Why use Caching?</span>
 
 <p style="text-align: justify;">
-  Are you aware of the Pareto principle, also known as the 80-20 rule, which states that, for many events, roughly 80% of the effects come from 20% of the causes? Well, this principle also holds true for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, where most of the traffic is driven by some of the podcasts, and only some of the search criteria are used the most. So why not <a title="Wikipedia - cache" href="http://en.wikipedia.org/wiki/Cache_%28computing%29" target="_blank">cache</a> them?
+  Are you aware of the Pareto principle, also known as the 80-20 rule, which states that, for many events, roughly 80% of the effects come from 20% of the causes? Well, this principle also holds true for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, where most of the traffic is driven by some of the podcasts, and only some of the search criteria are used the most. So why not <a title="Wikipedia - cache" href="http://en.wikipedia.org/wiki/Cache_%28computing%29" target="_blank">cache</a> them?
 </p>
 
 <p style="text-align: justify;">
@@ -51,7 +51,7 @@ tags:
 This post presents how Ehcache is integrated with Spring, which is the main technology used to develop Podcastpedia.org
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 <!--more-->
@@ -652,7 +652,7 @@ Most of the properties set in the caches are self explaining by name, but here a
   * `memoryStoreEvictionPolicy` &#8211; policy would be enforced upon reaching the maxEntriesLocalHeap limit. Default policy is `Least Recently Used` (specified as `LRU`).
 
 <p style="padding-left: 30px; text-align: justify;">
-  <em><strong>Notes:<br /> </strong>If you want take some load of your database you could also you the <code>localTempSwap</code> persistance strategy, and in that case you can use <code>maxEntriesLocalDisk</code> or <code>maxBytesLocalDisk</code> at either the Cache or CacheManager level to control the size of the disk tier. As the database of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> is not overloaded at the moment, that strategy wouldn&#8217;t make any sense.</em>
+  <em><strong>Notes:<br /> </strong>If you want take some load of your database you could also you the <code>localTempSwap</code> persistance strategy, and in that case you can use <code>maxEntriesLocalDisk</code> or <code>maxBytesLocalDisk</code> at either the Cache or CacheManager level to control the size of the disk tier. As the database of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is not overloaded at the moment, that strategy wouldn&#8217;t make any sense.</em>
 </p>
 
 <p style="padding-left: 30px; text-align: justify;">
@@ -678,7 +678,7 @@ Most of the properties set in the caches are self explaining by name, but here a
   *  <a title="How To: Enable compression and leverage browser caching with Apache Server" href="http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">to tweak your Tomcat&#8217;s JDBC connection pool configuration </a>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="4_Resources">4. Resources</span>
@@ -698,7 +698,7 @@ Most of the properties set in the caches are self explaining by name, but here a
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -11,7 +11,7 @@ fsb_show_social:
 gr_overridden:
   - 1
 gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/Codingpedia/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
+  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
 fsb_social_facebook:
   - 21
 fsb_social_google:
@@ -166,7 +166,7 @@ Now that I know how errors should look like, let&#8217;s write some code to make
 </p>
 
 <p style="color: #222222; text-align: justify;">
-  First I packed the checked(business) exceptions under the <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/AppException.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/AppException.java" target="_blank"><code>AppException</code></a> class. The structure of the class has exactly the properties mentioned for errors in the Design section, which are also mirrored in the <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/ErrorMessage.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/ErrorMessage.java" target="_blank">ErrorMessage</a> class holding the JSON entity in the response. With the help of the <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/AppExceptionMapper.java" href="https://github.com/Codingpedia/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/AppExceptionMapper.java" target="_blank"><code>AppExceptionMapper</code></a>:
+  First I packed the checked(business) exceptions under the <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/AppException.java" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/AppException.java" target="_blank"><code>AppException</code></a> class. The structure of the class has exactly the properties mentioned for errors in the Design section, which are also mirrored in the <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/ErrorMessage.java" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/ErrorMessage.java" target="_blank">ErrorMessage</a> class holding the JSON entity in the response. With the help of the <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/AppExceptionMapper.java" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/java/org/codingpedia/demo/rest/errorhandling/AppExceptionMapper.java" target="_blank"><code>AppExceptionMapper</code></a>:
 </p>
 
 <pre>
@@ -300,7 +300,7 @@ Check out our video tutorial <a title="https://www.youtube.com/watch?v=XV7WW0bDy
 
 
 <p class="note_code" style="text-align: justify;">
-  You can find the complete test suite on <a title="https://github.com/Codingpedia/demo-rest-jersey-spring/tree/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/resources/soapui" href="https://github.com/Codingpedia/demo-rest-jersey-spring/tree/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/resources/soapui" target="_blank">GitHub</a>.
+  You can find the complete test suite on <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring/tree/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/resources/soapui" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring/tree/9d13e664da1a04aa67dfe5e02ec45531219806af/src/main/resources/soapui" target="_blank">GitHub</a>.
 </p>
 
 <h2 style="text-align: justify;">
@@ -325,7 +325,7 @@ Check out our video tutorial <a title="https://www.youtube.com/watch?v=XV7WW0bDy
 
 ### <span id="61_Source_Code"><span id="101_Source_Code">6.1. Source Code</span></span>
 
-  * <a style="color: #bc360a;" title="https://github.com/Codingpedia/demo-rest-jersey-spring" href="https://github.com/Codingpedia/demo-rest-jersey-spring" target="_blank">GitHub – Codingpedia/demo-rest-jersey-spring </a>(instructions on how to install and run the project)
+  * <a style="color: #bc360a;" title="https://github.com/CodepediaOrg/demo-rest-jersey-spring" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring" target="_blank">GitHub – Codingpedia/demo-rest-jersey-spring </a>(instructions on how to install and run the project)
 
 ### <span id="62_Codingpedia">6.2. Codingpedia</span>
 
@@ -347,7 +347,7 @@ Check out our video tutorial <a title="https://www.youtube.com/watch?v=XV7WW0bDy
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

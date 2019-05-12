@@ -95,7 +95,7 @@ To get the Git revision information the plugin looks for a `<scm><plugins>` entr
 
 ```xml
 <scm>
-    <url>https://github.com/Codingpedia/podcastpedia</url>
+    <url>https://github.com/CodepediaOrg/podcastpedia</url>
     <connection>scm:git:git://github.com:PodcastpediaOrg/podcastpedia.git</connection>
     <developerConnection>scm:git:git@github.com:PodcastpediaOrg/podcastpedia.git</developerConnection>
 </scm>
@@ -175,7 +175,7 @@ git-SHA-1: 434553639c95d
 Created-By: Apache Maven 3.3.3
 Build-Jdk: 1.8.0_65
 Specification-Version: 1.2.0
-Implementation-URL: https://github.com/Codingpedia/podcastpedia
+Implementation-URL: https://github.com/CodepediaOrg/podcastpedia
 ```
 
 ## Read from the MANIFEST file

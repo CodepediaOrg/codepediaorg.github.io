@@ -37,7 +37,7 @@ tags:
   - troubleshooting
 ---
 <p style="text-align: justify;">
-  You may recall from my post <a title="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" href="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a>, that I use <a title="http://jqueryui.com/autocomplete/" href="http://jqueryui.com/autocomplete/" target="_blank">jQuery ui autocomplete</a> to dynamically search for keywords on <a title="https://github.com/Codingpedia/podcastpedia/tags/all/0" href="https://github.com/Codingpedia/podcastpedia/tags/all/0" target="_blank">Podcastpedia.org</a>. I am now in the process of migrating the source base for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> to Spring 4. I decided to go with the latest version <code>4.1.0.RELEASE</code> and everything worked pretty smoothly until I got to test the auto-complete functionality presented in the post mentioned before.<!--more-->
+  You may recall from my post <a title="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" href="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a>, that I use <a title="http://jqueryui.com/autocomplete/" href="http://jqueryui.com/autocomplete/" target="_blank">jQuery ui autocomplete</a> to dynamically search for keywords on <a title="https://github.com/CodepediaOrg/podcastpedia/tags/all/0" href="https://github.com/CodepediaOrg/podcastpedia/tags/all/0" target="_blank">Podcastpedia.org</a>. I am now in the process of migrating the source base for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> to Spring 4. I decided to go with the latest version <code>4.1.0.RELEASE</code> and everything worked pretty smoothly until I got to test the auto-complete functionality presented in the post mentioned before.<!--more-->
 </p>
 
 <div id="toc_container" class="no_bullets">
@@ -219,7 +219,7 @@ So, the short version of the blog post is _upgrade your jackson libraries to min
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

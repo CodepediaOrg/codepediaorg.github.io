@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: codepedia.org
+Token: ad805e50dda4376685665cdea5280ae05a92cff346b56274c62fba2423053898

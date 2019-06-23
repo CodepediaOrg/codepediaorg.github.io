@@ -1,4 +1,4 @@
-# Contributing to Codingpedia could mean several things
+# Contributing to Codepedia.org could mean several things
 
 1. Contribute to the website itself (bugfixes and new features)
 2. Contribute with a [new post to Codepedia.org](CONTRIBUTING_POST.md)
@@ -32,13 +32,13 @@ $ gem install bundler
 ```
 
 ## Step 1: Set up a working copy on your computer
-Firstly you need a local fork of the the [Codingpedia project](https://github.com/CodepediaOrg/codepediaorg.github.io), so go ahead and press the "fork" button in GitHub. This will create a copy of the repository in your own GitHub account and you'll see a note that it's been forked underneath the project name:
+Firstly you need a local fork of the the [CodepediaOrg project](https://github.com/CodepediaOrg/codepediaorg.github.io), so go ahead and press the "fork" button in GitHub. This will create a copy of the repository in your own GitHub account and you'll see a note that it's been forked underneath the project name:
 
 Now you need a copy locally, so find the "SSH clone URL" in the right hand column and use that to clone locally using a terminal:
-<pre><code class="bash">git clone https://github.com/your_github_account/codepedia.github.io.git</pre></code>
+<pre><code class="bash">git clone https://github.com/your_github_account/codepediaorg.github.io.git</pre></code>
 
 Change now to your project's directory:
-<pre><code class="bash">cd codepedia.github.io</pre></code>
+<pre><code class="bash">cd codepediaorg.github.io</pre></code>
 
 Finally, in this stage, you need to set up a new remote that points to the original project so that you can grab any changes and bring them into your local copy. Firstly clock on the link to the original repository – it's labeled "Forked from" at the top of the GitHub page. This takes you back to the projects main GitHub page, so you can find the "SSH clone URL" and use it to create the new remote, which we'll call **upstream**.
 
@@ -69,7 +69,7 @@ Now you can do the work.
 
 ## Step 3: Test your work locally
 
-Navigate into the root directory of Codingpedia Jekyll site repository.
+Navigate into the root directory of CodepediaOrg Jekyll site repository.
 Install Jekyll and other dependencies from the GitHub Pages gem:
 ```bash
 $ bundle install
@@ -111,7 +111,7 @@ This will create the branch on your GitHub project. The -u flag links this branc
 you can simply type git push origin.
 This will create the branch on your GitHub project. The -u flag links this branch with the remote one, so that in the future, you can simply type <code>git push origin</code>.
 
-Swap back to the browser and navigate to your fork of the project (**https://github.com/your_github_account/codepedia.github.io**)
+Swap back to the browser and navigate to your fork of the project (**https://github.com/your_github_account/codepediaorg.github.io**)
 and you'll see that your new branch is listed at the top with a handy "Compare & pull request" button:
 ![Pull request button](images/contributing/contributing-pull-request-button.png)
 

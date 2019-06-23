@@ -218,7 +218,7 @@ alias ls-dir="ls -al | grep ^d" #  listing of directories in the current directo
 alias ..="cd .."
 alias cd..="cd .."
 alias cd-projects="cd /Users/ama/projects/"
-alias cd-codepedia.github.io='cd ~/projects/blogs/codepedia.github.io'
+alias cd-codepediaorg.github.io='cd ~/projects/blogs/codepediaorg.github.io'
 alias cd-jboss-eap-6.1-logs="cd ~/dev/as/jboss-eap-6.1/standalone/logs
 ```
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How I save a workweek a year by efficiently managing my codingmarks
+title: How I save a workweek a year by efficiently managing my dev bookmarks
 description: "Finding a desired link, you already visited, can be a tedious job and sometimes even frustrating.
  It normally takes 30 seconds or more to look for a link the traditional way, and I do that at least 20 times a day.
-  With codingmarks.org it takes about 10 seconds, so I get a time saving of around 20 * 20 / 60 = 6.66 minutes a day.
+  With bookmarks.dev it takes about 10 seconds, so I get a time saving of around 20 * 20 / 60 = 6.66 minutes a day.
    Over a year's time this translates to around 40+ hours of saved time."
 author: ama
-permalink: /ama/how-i-save-a-workweek-a-year-by-efficiently-managing-my-codingmarks
+permalink: /ama/how-i-save-a-workweek-a-year-by-efficiently-managing-my-dev-bookmarks
 published: true
 categories: [dev-bookmarks]
-tags: [codingmarks, efficiency]
+tags: [bookmarks, efficiency, productivity]
 ---
 ## Motivation
 Finding the desired link again can be sometimes a tedious job. It can even become frustrating
@@ -39,7 +39,7 @@ Eventually you say "_F*ck that, Google knows everything about me anyway, so I'll
 most of the time, all the privacy issues taken into account, but what about those intranet links or not google searchable resources?
  In most cases the (internal) searches are horrific, at least this was the experiences I had with companies and tools I worked with until now...
 
-Well, out of these frustrations plus my wish to learn development with the MEAN stack, I have built [www.codingmarks.org](https://www.codingmarks.org). It helps me 
+Well, out of these frustrations plus my wish to learn development with the MEAN stack, I have built [www.bookmarks.dev](https://www.bookmarks.dev). It helps me 
 manage my programming and work related bookmarks more efficiently, like 40 hours plus a year more efficiently...
 
 <figure>
@@ -48,7 +48,7 @@ manage my programming and work related bookmarks more efficiently, like 40 hours
 </figure>
 
 ## How is this possbile?
-Now to the subject of this post, how can I save a workweek a year just by using codingmarks? 
+Now to the subject of this post, how can I save a workweek a year just by using bookmarks.dev? 
 
 Well my computations are simple. It normally takes 30 seconds or more to look for a link the "traditional" way, and I do that 
 at least 20 times a day. With codingmarks it takes about 10 seconds, so I get a time saving of around 20 * 20 / 60 = 6.66 minutes a day.
@@ -62,12 +62,12 @@ most are :
   * custom searches
   * history
 
-Check out the following video to see how I usually use [codingmarks.org](https://www.codingmarks.org):
+Check out the following video to see how I usually use [bookmarks.dev](https://www.bookmarks.dev), fomerly known as codingmarks.org:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2jGRqGDwoTM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-If you are convinced, give [www.codingmarks.org](https://www.codingmarks.org) a try and share this post so other can save time too.
+If you are convinced, give [www.bookmarks.dev](https://www.bookmarks.dev) a try and share this post so other can save time too.
  <span class="highlight-yellow">Beware there is no 30 days money back guarantee, because everything is free and open-source.</span>
 
   {% include source-code-codingmarks.html %}

@@ -67,6 +67,8 @@ You can freely combine the search  elements to find free programming books relat
 ### [Awesome List] - [485 public bookmarks](https://github.com/CodepediaOrg/bookmarks/blob/master/tagged/awesome-list.md)
 😎 [Awesome lists](https://github.com/sindresorhus/awesome) about all kinds of interesting topics
 
+> As you might have realised by now these public bookmarks are published on Github at [https://github.com/CodepediaOrg/bookmarks](https://github.com/CodepediaOrg/bookmarks)
+
 ## Next goal - 100k public dev bookmarks
 The next target is to reach 100k public dev bookmarks, for which I dependent on your contributions, unless I want
 to spend my next 27.39 years adding public bookmarks at a rate of around 10 curated articles / videos per day...

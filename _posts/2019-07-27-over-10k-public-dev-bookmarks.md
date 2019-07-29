@@ -29,10 +29,10 @@ On [www.bookmarks.dev](https://www.bookmarks.dev) tagging plays a major role. Be
 Collection of [free programming books](https://github.com/EbookFoundation/free-programming-books) 
 
 You can freely combine the search  elements to find free programming books related to a specific topic like
-- [[free-programming-books] [java]](https://www.bookmarks.dev/search?q=%5Bfree-programming-books%5D%%20%5Bjava%5D)
-- [[free-programming-books] [javascript]](https://www.bookmarks.dev/search?q=%5Bfree-programming-books%5D%%20%5Bjavascript%5D)
-- [[free-programming-books] [python]](https://www.bookmarks.dev/search?q=%5Bfree-programming-books%5D%%20%5Bpython%5D)
-- [[free-programming-books] [android]]((https://www.bookmarks.dev/search?q=%5Bfree-programming-books%5D%%20%5Bandroid%5D))
+- [[free-programming-books] [java]](https://www.bookmarks.dev/search?q=%5Bfree-programming-books%5D%20%5Bjava%5D)
+- [[free-programming-books] [javascript]](https://www.bookmarks.dev/search?q=%5Bfree-programming-books%5D%20%5Bjavascript%5D)
+- [[free-programming-books] [python]](https://www.bookmarks.dev/search?q=%5Bfree-programming-books%5D%20%5Bpython%5D)
+- [[free-programming-books] [android]](https://www.bookmarks.dev/search?q=%5Bfree-programming-books%5D%20%5Bandroid%5D)
 
 ### [Go] - [1803 public bookmarks](https://github.com/CodepediaOrg/bookmarks/blob/master/tagged/go.md)
 [Go](https://golang.org/) is an open source programming language. It is statically-typed, with a syntax loosely derived from C, adding automatic memory management,

@@ -416,7 +416,8 @@ data:
 
 
 ## Deploy on Kubernetes with Kustomize
-
+What if now when deployment into the **prod** cluster you want to have two pods, instead of one serving the web app. Of course 
+you could modify the _deployment.yaml_ file, specify there 2 replicas instead of one and deploy. 
 
 
 ### Skaffold

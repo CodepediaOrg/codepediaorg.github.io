@@ -416,8 +416,14 @@ data:
 
 
 ## Deploy on Kubernetes with Kustomize
+[Kustomize](https://github.com/kubernetes-sigs/kustomize) is a standalone tool to customize Kubernetes objects through
+a [kustomization file](https://github.com/kubernetes-sigs/kustomize/blob/master/docs/glossary.md#kustomization). Since 1.14, Kubectl
+also supports the management of Kubernetes objects using a kustomization file.
+
 What if now when deployment into the **prod** cluster you want to have two pods, instead of one serving the web app. Of course 
-you could modify the _deployment.yaml_ file, specify there 2 replicas instead of one and deploy. 
+you could modify the _deployment.yaml_ file, specify there 2 replicas instead of one and deploy. With Kustomize we can define
+base resources in the so called **bases** (cross cutting concerns available in environments) and in the **overlays** the properties
+that are specific for the different deployments.
 
 
 ### Skaffold

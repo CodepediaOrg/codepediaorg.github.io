@@ -547,14 +547,96 @@ kubectl delete -k kustomize/overlays/prod
 ```
 
 ## Deploy on Kubernetes with [Helm](https://helm.sh/)
+
+What is Helm? According to the documentation:
+> [Helm](https://github.com/helm/helm#kubernetes-helm) is a tool that streamlines installing and managing Kubernetes applications. Think of it like apt/yum/homebrew for
+Kubernetes. 
+
+Helm uses the so called Kubernetes charts. Charts are packages of pre-configured Kubernetes resources. If you want to learn
+more about Helm read the [docs](https://helm.sh/docs/), we won't go into much details here, only punctual where it is needed. 
+
+At the moment Helm has a client (`helm`) and a server (`tiller`). Tiller runs inside of your Kubernetes cluster, and manages releases (installations)
+of your charts. 
+
+### Helm installation
+On MacOS you can install the client with homebrew:
+```bash
+brew install kubernetes-helm
+```
+For other platforms see [Installing the Helm Client](https://helm.sh/docs/using_helm/#installing-helm).
+
+To install Tiller on your local Kubernetes cluster for testing just call the following command:
+```bash
+helm init
+
+#result should something similar to the following:
+Creating /Users/ama/.helm 
+Creating /Users/ama/.helm/repository 
+Creating /Users/ama/.helm/repository/cache 
+Creating /Users/ama/.helm/repository/local 
+Creating /Users/ama/.helm/plugins 
+Creating /Users/ama/.helm/starters 
+Creating /Users/ama/.helm/cache/archive 
+Creating /Users/ama/.helm/repository/repositories.yaml 
+Adding stable repo with URL: https://kubernetes-charts.storage.googleapis.com 
+Adding local repo with URL: http://127.0.0.1:8879/charts 
+$HELM_HOME has been configured at /Users/ama/.helm.
+
+Tiller (the Helm server-side component) has been installed into your Kubernetes Cluster.
+
+Please note: by default, Tiller is deployed with an insecure 'allow unauthenticated users' policy.
+To prevent this, run `helm init` with the --tiller-tls-verify flag.
+For more information on securing your installation see: https://docs.helm.sh/using_helm/#securing-your-helm-installation
+
+``` 
  
-The Helm version I used for this tutorial is 
+To check the helm version you can run then the following command:
 ```bash
 $ helm version
-Client: &version.Version{SemVer:"v2.12.2", GitCommit:"7d2b0c73d734f6586ed222a567c5d103fed435be", GitTreeState:"clean"}
-Server: &version.Version{SemVer:"v2.12.2", GitCommit:"7d2b0c73d734f6586ed222a567c5d103fed435be", GitTreeState:"clean"}
+Client: &version.Version{SemVer:"v2.14.3", GitCommit:"0e7f3b6637f7af8fcfddb3d2941fcc7cbebb0085", GitTreeState:"clean"}
+Server: &version.Version{SemVer:"v2.14.3", GitCommit:"0e7f3b6637f7af8fcfddb3d2941fcc7cbebb0085", GitTreeState:"clean"}
 ```
 
+### Helm setup in project
+The helm configuration is present in the [helm-chart](https://github.com/CodepediaOrg/multi-stage-react-app-example/tree/master/helm-chart)
+which was initially created via the `helm create helm-chart` command and adjusted for this app's needs.
+
+#### Templates
+The most important piece of the puzzle is the templates/ directory. This where Helm finds the YAML definitions for  your
+Services, Deployments and other Kubernetes resources. 
+Let's take a look at the [service](https://github.com/CodepediaOrg/multi-stage-react-app-example/blob/master/helm-chart/templates/service.yaml) definition:
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "helm-chart.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "helm-chart.name" . }}
+    helm.sh/chart: {{ include "helm-chart.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: {{ include "helm-chart.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+```
+
+It looks similar to the one used when installing with Kubectl or Kustomize, only that the values are substituted by Helm
+at deployment with the ones from Helm-specific objects. 
+
+#### Values
+Values provide a way to override template defaults with your own configuration. They are present in the template
+via the `.Values` object as seen above. 
+
+Values can be set during `helm install` and `helm upgrade` operations, either by passing them in directly, or by uploading a [`values.yaml`](https://github.com/CodepediaOrg/multi-stage-react-app-example/blob/master/helm-chart/values.yaml) file.
+
+#### The configMap
 
 ### Skaffold
 https://skaffold.dev/docs/how-tos/profiles/

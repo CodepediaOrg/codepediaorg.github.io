@@ -416,14 +416,144 @@ data:
 
 
 ## Deploy on Kubernetes with Kustomize
-[Kustomize](https://github.com/kubernetes-sigs/kustomize) is a standalone tool to customize Kubernetes objects through
+What if now when deployment into the **prod** cluster you want to have two pods, instead of one serving the web app. Of course 
+you could modify the _deployment.yaml_ file, specify there 2 replicas instead of one and deploy. You can solve this in an elegant
+matter by using Kustomize. 
+
+>[Kustomize](https://github.com/kubernetes-sigs/kustomize) is a standalone tool to customize Kubernetes objects through
 a [kustomization file](https://github.com/kubernetes-sigs/kustomize/blob/master/docs/glossary.md#kustomization). Since 1.14, Kubectl
 also supports the management of Kubernetes objects using a kustomization file.
 
-What if now when deployment into the **prod** cluster you want to have two pods, instead of one serving the web app. Of course 
-you could modify the _deployment.yaml_ file, specify there 2 replicas instead of one and deploy. With Kustomize we can define
-base resources in the so called **bases** (cross cutting concerns available in environments) and in the **overlays** the properties
-that are specific for the different deployments.
+With Kustomize we will define base resources in the so called **bases** (cross cutting concerns available in environments) and in the **overlays** the properties that are specific for the different deployments. We place the files in the [kustomize](https://github.com/CodepediaOrg/multi-stage-react-app-example/blob/master/) folder - `tree kustomize`:
+```
+kustomize/
+├── base
+│   ├── deployment.yaml
+│   ├── kustomization.yaml
+│   └── service.yaml
+└── overlays
+    ├── dev
+    │   ├── dev.properties
+    │   └── kustomization.yaml
+    ├── local
+    │   ├── kustomization.yaml
+    │   └── local.properties
+    └── prod
+        ├── deployment-prod.yaml
+        ├── kustomization.yaml
+        └── prod.properties
+```
+
+In the base folder we define the service and deployment, because in this case they are overall the same (except the 2 replicas for prod, but we'll deal
+with that later).
+
+### Deploy to **dev** cluster with Kustomize
+Let's say we watn to deploy to our **dev** cluster with kustomize. For that we will use the `dev` overlays.
+In the dev [kustomization file](https://github.com/CodepediaOrg/multi-stage-react-app-example/blob/master/kustomize/overlays/dev/kustomization.yaml):
+```
+bases:
+  - ../../base
+
+configMapGenerator:
+  - name: multi-stage-react-app-example-config
+    files:
+      - dev.properties
+```
+
+we point to the `bases` defined before and use the _dev.properties_ file to [generate the configMap](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/#generating-resources). 
+
+Before we apply the `dev` overlay to the cluster we can check what it generates by issuing the following command:
+```bash
+kubectl kustomize kustomize/overlays/dev
+```
+
+> Note that the generated configMap name has a suffix (something like - `multi-stage-react-app-example-config-gdgg4f85bt`), which
+is appended by hashing the contents This ensures that a new ConfigMap is generated when the content is changed. In the initial 
+deploymant.yaml file is still referenced by `multi-stage-react-app-example-config`, but in the generated Deployment object it has
+the generated name. 
+
+To apply the "dev kustomization" use the following command:
+```bash
+kubectl apply -k kustomize/overlays/dev # <kustomization directory>
+```
+
+Now port forward (`kubectl port-forward svc/multi-stage-react-app-example 3001:80`) and go to [http://localhost:3001](http://localhost:3001)
+
+#### Update an environment variable value
+If you for example would like to update the value of an environment variable say, `window.REACT_APP_NAVBAR_COLOR='Blue'`, what you need to
+do is apply gain the **dev** overlay:
+```bash
+kubectl apply -k kustomize/overlays/dev
+#result similar to the following
+configmap/multi-stage-react-app-example-config-dg44f5bkhh created
+service/multi-stage-react-app-example unchanged
+deployment.apps/multi-stage-react-app-example configured
+```
+
+Note the a new configMap is created and is applied with the deployment. Reload and now the navigation bar is blue. 
+
+#### Tear down
+```
+kubectl delete -k kustomize/overlays/dev
+```
+
+#### Deploy to production with kustomize
+As mentioned before, maybe for production you would like to have two replicas delivering our application. For that you 
+can create an **prod** overlay that derives from that common **base** as the **dev** overlay.
+
+It defines extra an [deployment-prod.yaml](https://github.com/CodepediaOrg/multi-stage-react-app-example/blob/master/kustomize/overlays/prod/deployment-prod.yaml) file:
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: multi-stage-react-app-example
+spec:
+  replicas: 2
+```
+which is a partial Deployment resource and we reference in the prod [kustomization.yaml](https://github.com/CodepediaOrg/multi-stage-react-app-example/blob/master/kustomize/overlays/prod/kustomization.yaml) file under [`patchesStrategicMerge`](https://github.com/kubernetes-sigs/kustomize/blob/master/docs/fields.md#patchesstrategicmerge):
+```yaml
+bases:
+  - ../../base
+
+patchesStrategicMerge:
+  - deployment-prod.yaml
+
+configMapGenerator:
+  - name: multi-stage-react-app-example-config
+    files:
+      - config.js=prod.properties
+```
+ 
+You can see it's being modified by running:
+```bash
+kubectl kustomize kustomize/overlays/prod
+```
+and then apply it:
+```bash
+kubectl apply -k kustomize/overlays/prod
+```
+
+If you run `kubectl get pods` you should now see two entries, something liks:
+```bash
+NAME                                             READY   STATUS    RESTARTS   AGE
+multi-stage-react-app-example-59c5486dc4-2mjvw   1/1     Running   0          112s
+multi-stage-react-app-example-59c5486dc4-s88ms   1/1     Running   0          112s
+```
+
+> Now you can port forward and access the application the way you know it
+##### Tear down
+```bash
+kubectl delete -k kustomize/overlays/prod
+```
+
+## Deploy on Kubernetes with [Helm](https://helm.sh/)
+ 
+The Helm version I used for this tutorial is 
+```bash
+$ helm version
+Client: &version.Version{SemVer:"v2.12.2", GitCommit:"7d2b0c73d734f6586ed222a567c5d103fed435be", GitTreeState:"clean"}
+Server: &version.Version{SemVer:"v2.12.2", GitCommit:"7d2b0c73d734f6586ed222a567c5d103fed435be", GitTreeState:"clean"}
+```
 
 
 ### Skaffold

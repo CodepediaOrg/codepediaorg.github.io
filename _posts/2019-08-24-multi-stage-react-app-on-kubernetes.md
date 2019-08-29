@@ -637,6 +637,32 @@ via the `.Values` object as seen above.
 Values can be set during `helm install` and `helm upgrade` operations, either by passing them in directly, or by uploading a [`values.yaml`](https://github.com/CodepediaOrg/multi-stage-react-app-example/blob/master/helm-chart/values.yaml) file.
 
 #### The configMap
+This time we will create the [configMap](https://github.com/CodepediaOrg/multi-stage-react-app-example/blob/master/helm-chart/templates/configMap.yaml) as Kubernetes object:
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: multi-stage-react-app-example-config
+  annotations:
+    # https://github.com/helm/helm/blob/master/docs/charts_hooks.md
+    "helm.sh/hook-delete-policy": "before-hook-creation"
+    "helm.sh/hook": pre-install, pre-upgrade
+data:
+  config.js: {{ toYaml .Values.configValues | indent 4 }}
+```
+
+### Deploy to local cluster with helm
+Before deploying with helm you might want to examine the chart for possible issues and do a `helm lint`:
+```bash
+helm lint helm-chart
+```
+and execute a dry-run
+```bash
+
+```
+
+
+ 
 
 ### Skaffold
 https://skaffold.dev/docs/how-tos/profiles/

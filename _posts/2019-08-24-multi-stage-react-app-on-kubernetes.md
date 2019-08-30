@@ -651,19 +651,209 @@ data:
   config.js: {{ toYaml .Values.configValues | indent 4 }}
 ```
 
+> We use [helm hooks](https://github.com/helm/helm/blob/master/docs/charts_hooks.md) to create the configMap before installing or upgrading a helm chart (`"helm.sh/hook": pre-install, pre-upgrade`) 
+
+The thing is that the resources that a hook creates are not tracked or managed as part of the release. Once Tiller verifies
+that the hook has reached its ready state, it will leave the hook resource alon - thus you cannot rely upon `helm delete` to remove
+the resource. One way to destroy the resource is to add the `"helm.sh/hook": pre-install, pre-upgrade` annotation to the hook template file.
+
 ### Deploy to local cluster with helm
 Before deploying with helm you might want to examine the chart for possible issues and do a `helm lint`:
 ```bash
 helm lint helm-chart
 ```
-and execute a dry-run
+and execute a dry-run to see the generated resources from the chart
 ```bash
+helm install -n local-release helm-chart/ --dry-run --debug
+```
+
+The result should be something like the following:
+```bash
+# result
+[debug] Created tunnel using local port: '64528'
+
+[debug] SERVER: "127.0.0.1:64528"
+
+[debug] Original chart version: ""
+[debug] CHART PATH: /Users/ama/projects/multi-stage-react-app-example/helm-chart
+
+NAME:   local-release
+REVISION: 1
+RELEASED: Fri Aug 30 06:30:55 2019
+CHART: helm-chart-0.1.0
+USER-SUPPLIED VALUES:
+{}
+
+COMPUTED VALUES:
+affinity: {}
+configValues: |
+  window.REACT_APP_API_URL='https://www.bookmarks.dev/api/public/bookmarks'
+  window.REACT_APP_ENVIRONMENT='LOCAL with helm'
+  window.REACT_APP_NAVBAR_COLOR='LightBlue'
+fullnameOverride: ""
+image:
+  imagePullSecrets: cfcr
+  pullPolicy: IfNotPresent
+  repository: multi-stage-react-app-example
+  tag: latest
+ingress:
+  annotations: {}
+  enabled: false
+  hosts:
+  - chart-example.local
+  paths: []
+  tls: []
+nameOverride: ""
+nodeSelector: {}
+replicaCount: 1
+resources: {}
+service:
+  port: 80
+  type: NodePort
+tolerations: []
+
+HOOKS:
+---
+# local-release-helm-chart-test-connection
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "local-release-helm-chart-test-connection"
+  labels:
+    app.kubernetes.io/name: helm-chart
+    helm.sh/chart: helm-chart-0.1.0
+    app.kubernetes.io/instance: local-release
+    app.kubernetes.io/managed-by: Tiller
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args:  ['local-release-helm-chart:80']
+  restartPolicy: Never
+---
+# local-release-multi-stage-react-app-example-config
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: local-release-multi-stage-react-app-example-config
+  annotations:
+    # https://github.com/helm/helm/blob/master/docs/charts_hooks.md
+    "helm.sh/hook-delete-policy": "before-hook-creation"
+    "helm.sh/hook": pre-install, pre-upgrade
+data:
+  config.js:     |
+      window.REACT_APP_API_URL='https://www.bookmarks.dev/api/public/bookmarks'
+      window.REACT_APP_ENVIRONMENT='LOCAL with helm'
+      window.REACT_APP_NAVBAR_COLOR='LightBlue'
+MANIFEST:
+
+---
+# Source: helm-chart/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: local-release-helm-chart
+  labels:
+    app.kubernetes.io/name: helm-chart
+    helm.sh/chart: helm-chart-0.1.0
+    app.kubernetes.io/instance: local-release
+    app.kubernetes.io/managed-by: Tiller
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: helm-chart
+    app.kubernetes.io/instance: local-release
+---
+# Source: helm-chart/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: local-release-helm-chart
+  labels:
+    app.kubernetes.io/name: helm-chart
+    helm.sh/chart: helm-chart-0.1.0
+    app.kubernetes.io/instance: local-release
+    app.kubernetes.io/managed-by: Tiller
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: helm-chart
+      app.kubernetes.io/instance: local-release
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: helm-chart
+        app.kubernetes.io/instance: local-release
+    spec:
+      imagePullSecrets:
+        - name: cfcr
+      containers:
+        - name: helm-chart
+          image: "multi-stage-react-app-example:latest"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          volumeMounts:
+            - name:  multi-stage-react-app-example-config-volume
+              mountPath: /usr/share/nginx/html/config.js
+              subPath: config.js
+              readOnly: true
+          resources:
+            {}
+            
+      volumes:
+        - name: multi-stage-react-app-example-config-volume
+          configMap:
+            name: local-release-multi-stage-react-app-example-config
 
 ```
 
+> Note the names generated for service and deployment `local-release-helm-chart` (generated from `{{ include "helm-chart.fullname" . }})` and
+`local-release-multi-stage-react-app-example-config` (generated from `{{ .Release.Name }}-multi-stage-react-app-example-config)
 
- 
+Now run the installation without the `--dry-run` flag:
+```bash
+helm install -n local-release helm-chart/
+```
+
+Verify that the helm release is present by listing the helm releases (`helm ls`):
+```bash
+helm ls
+NAME            REVISION        UPDATED                         STATUS          CHART                   APP VERSION     NAMESPACE
+local-release   1               Fri Aug 30 06:46:09 2019        DEPLOYED        helm-chart-0.1.0        1.0             default 
+```
+
+Now port-forward the service (you know how the service it's called from the dry run above `local-release-helm-chart`)
+```bash
+kubectl port-forward svc/local-release-helm-chart 3001:80
+```
+
+and access the app at [http://localhost:3001](http://localhost:3001)  with environment set to "LOCAL with helm"
+
 
 ### Skaffold
 https://skaffold.dev/docs/how-tos/profiles/
 https://skaffold.dev/docs/references/yaml/
+
+## Conclusion
+Well it's been a long post, but hopefully you learned how to deploy a create react app in kubernetes cluster and build 
+a basis for a integration in your continuous delivery pipeline. 

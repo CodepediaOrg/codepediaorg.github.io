@@ -31,6 +31,10 @@ container - you can do that with Kubernetes configMaps via native kubectl comman
 
 <!--more-->
 
+* TOC
+{:toc} 
+
+
 ## Prerequisites
 To run this application on Kubernetes locally make sure you have [Docker Desktop](https://github.com/kubernetes/minikube) with Kubernetes enabled,
 this is what I used for testing, or [minikube](https://github.com/kubernetes/minikube) installed. You can also deploy it directly in the cloud if you have an account. 

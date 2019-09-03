@@ -19,7 +19,7 @@ New [dev bookmarks](https://www.bookmarks.dev) published in the week 44 of 2018.
 
 **[Apache ZooKeeper - Home](http://zookeeper.apache.org/)**
 
-  * **tags**: &nbsp; [distributed-computing](https://www.codingmarks.org/search?q=[distributed-computing]), &nbsp; [apache-zookeeper](https://www.codingmarks.org/search?q=[apache-zookeeper])
+  * **tags**: &nbsp; [distributed-computing](https://www.bookmarks.dev/search?q=[distributed-computing]), &nbsp; [apache-zookeeper](https://www.bookmarks.dev/search?q=[apache-zookeeper])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/apache/zookeeper)
 
 Apache ZooKeeper is an effort to develop and maintain an open-source server which enables highly reliable distributed coordination.
@@ -32,7 +32,7 @@ Apache ZooKeeper is an effort to develop and maintain an open-source server whic
 **[GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler - YouTube](https://www.youtube.com/watch?v=STKCRSUsyP0)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-05-11
-  * **tags**: &nbsp; [event-driven](https://www.codingmarks.org/search?q=[event-driven]), &nbsp; [event-driven-design](https://www.codingmarks.org/search?q=[event-driven-design]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture]), &nbsp; [cqrs](https://www.codingmarks.org/search?q=[cqrs]), &nbsp; [event-sourcing](https://www.codingmarks.org/search?q=[event-sourcing])
+  * **tags**: &nbsp; [event-driven](https://www.bookmarks.dev/search?q=[event-driven]), &nbsp; [event-driven-design](https://www.bookmarks.dev/search?q=[event-driven-design]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture]), &nbsp; [cqrs](https://www.bookmarks.dev/search?q=[cqrs]), &nbsp; [event-sourcing](https://www.bookmarks.dev/search?q=[event-sourcing])
 
 During my career, I've often people heard people describe their systems as "event-driven". But when looking deeper that phrase seems to lead to some very different architectural assumptions. On a recent workshop we identified four different patterns which tend to appear under the title of "event-driven": event notification, event-based state transfer, event sourcing, and CQRS. We feel that understanding and using these more precise terms will lead to better communication and decision making.
 
@@ -43,7 +43,7 @@ During my career, I've often people heard people describe their systems as "even
 
 **[CAP theorem - Wikipedia](https://en.wikipedia.org/wiki/CAP_theorem)**
 
-  * **tags**: &nbsp; [computer-science](https://www.codingmarks.org/search?q=[computer-science]), &nbsp; [distributed-computing](https://www.codingmarks.org/search?q=[distributed-computing])
+  * **tags**: &nbsp; [computer-science](https://www.bookmarks.dev/search?q=[computer-science]), &nbsp; [distributed-computing](https://www.bookmarks.dev/search?q=[distributed-computing])
 
 In theoretical computer science, the CAP theorem, also named Brewer's theorem after computer scientist Eric Brewer, states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees:
 * **Consistency**: Every read receives the most recent write or an error
@@ -58,7 +58,7 @@ In theoretical computer science, the CAP theorem, also named Brewer's theorem af
 **[GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler - YouTube](https://www.youtube.com/watch?v=STKCRSUsyP0)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-05-11
-  * **tags**: &nbsp; [event-driven](https://www.codingmarks.org/search?q=[event-driven]), &nbsp; [event-driven-design](https://www.codingmarks.org/search?q=[event-driven-design]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture]), &nbsp; [cqrs](https://www.codingmarks.org/search?q=[cqrs]), &nbsp; [event-sourcing](https://www.codingmarks.org/search?q=[event-sourcing])
+  * **tags**: &nbsp; [event-driven](https://www.bookmarks.dev/search?q=[event-driven]), &nbsp; [event-driven-design](https://www.bookmarks.dev/search?q=[event-driven-design]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture]), &nbsp; [cqrs](https://www.bookmarks.dev/search?q=[cqrs]), &nbsp; [event-sourcing](https://www.bookmarks.dev/search?q=[event-sourcing])
 
 During my career, I've often people heard people describe their systems as "event-driven". But when looking deeper that phrase seems to lead to some very different architectural assumptions. On a recent workshop we identified four different patterns which tend to appear under the title of "event-driven": event notification, event-based state transfer, event sourcing, and CQRS. We feel that understanding and using these more precise terms will lead to better communication and decision making.
 
@@ -69,7 +69,7 @@ During my career, I've often people heard people describe their systems as "even
 
 **[Two-phase commit protocol - Wikipedia](https://en.wikipedia.org/wiki/Two-phase_commit_protocol)**
 
-  * **tags**: &nbsp; [transactions](https://www.codingmarks.org/search?q=[transactions]), &nbsp; [database](https://www.codingmarks.org/search?q=[database]), &nbsp; [database-design](https://www.codingmarks.org/search?q=[database-design])
+  * **tags**: &nbsp; [transactions](https://www.bookmarks.dev/search?q=[transactions]), &nbsp; [database](https://www.bookmarks.dev/search?q=[database]), &nbsp; [database-design](https://www.bookmarks.dev/search?q=[database-design])
 
 In transaction processing, databases, and computer networking, the two-phase commit protocol (2PC) is a type of atomic commitment protocol (ACP). It is a distributed algorithm that coordinates all the processes that participate in a distributed atomic transaction on whether to commit or abort (roll back) the transaction (it is a specialized type of consensus protocol). 
 
@@ -80,7 +80,7 @@ In transaction processing, databases, and computer networking, the two-phase com
 
 **[Two-phase commit protocol - Wikipedia](https://en.wikipedia.org/wiki/Two-phase_commit_protocol)**
 
-  * **tags**: &nbsp; [transactions](https://www.codingmarks.org/search?q=[transactions]), &nbsp; [database](https://www.codingmarks.org/search?q=[database]), &nbsp; [database-design](https://www.codingmarks.org/search?q=[database-design])
+  * **tags**: &nbsp; [transactions](https://www.bookmarks.dev/search?q=[transactions]), &nbsp; [database](https://www.bookmarks.dev/search?q=[database]), &nbsp; [database-design](https://www.bookmarks.dev/search?q=[database-design])
 
 In transaction processing, databases, and computer networking, the two-phase commit protocol (2PC) is a type of atomic commitment protocol (ACP). It is a distributed algorithm that coordinates all the processes that participate in a distributed atomic transaction on whether to commit or abort (roll back) the transaction (it is a specialized type of consensus protocol). 
 
@@ -91,7 +91,7 @@ In transaction processing, databases, and computer networking, the two-phase com
 
 **[Consul Home](https://www.consul.io/)**
 
-  * **tags**: &nbsp; [distributed-computing](https://www.codingmarks.org/search?q=[distributed-computing])
+  * **tags**: &nbsp; [distributed-computing](https://www.bookmarks.dev/search?q=[distributed-computing])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/hashicorp/consul)
 
 Consul is a highly available and distributed service discovery and KV store designed with support for the modern data center to make distributed systems and configuration easy.
@@ -100,7 +100,7 @@ Consul is a highly available and distributed service discovery and KV store desi
 
 **[Apache ZooKeeper - Home](http://zookeeper.apache.org/)**
 
-  * **tags**: &nbsp; [distributed-computing](https://www.codingmarks.org/search?q=[distributed-computing]), &nbsp; [apache-zookeeper](https://www.codingmarks.org/search?q=[apache-zookeeper])
+  * **tags**: &nbsp; [distributed-computing](https://www.bookmarks.dev/search?q=[distributed-computing]), &nbsp; [apache-zookeeper](https://www.bookmarks.dev/search?q=[apache-zookeeper])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/apache/zookeeper)
 
 Apache ZooKeeper is an effort to develop and maintain an open-source server which enables highly reliable distributed coordination.
@@ -109,7 +109,7 @@ Apache ZooKeeper is an effort to develop and maintain an open-source server whic
 
 **[CAP theorem - Wikipedia](https://en.wikipedia.org/wiki/CAP_theorem)**
 
-  * **tags**: &nbsp; [computer-science](https://www.codingmarks.org/search?q=[computer-science]), &nbsp; [distributed-computing](https://www.codingmarks.org/search?q=[distributed-computing])
+  * **tags**: &nbsp; [computer-science](https://www.bookmarks.dev/search?q=[computer-science]), &nbsp; [distributed-computing](https://www.bookmarks.dev/search?q=[distributed-computing])
 
 In theoretical computer science, the CAP theorem, also named Brewer's theorem after computer scientist Eric Brewer, states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees:
 * **Consistency**: Every read receives the most recent write or an error
@@ -123,7 +123,7 @@ In theoretical computer science, the CAP theorem, also named Brewer's theorem af
 
 **[Docker SDK for Python](https://docker-py.readthedocs.io/)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [python](https://www.codingmarks.org/search?q=[python])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [python](https://www.bookmarks.dev/search?q=[python])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/docker/docker-py)
 
 A Python library for the Docker Engine API. It lets you do anything the `docker` command does, but from within Python apps – run containers, manage containers, manage Swarms, etc.
@@ -132,7 +132,7 @@ A Python library for the Docker Engine API. It lets you do anything the `docker`
 
 **[Get started with Docker for Mac](https://docs.docker.com/docker-for-mac/)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [mac](https://www.codingmarks.org/search?q=[mac]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [mac](https://www.bookmarks.dev/search?q=[mac]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
 
 Getting Started
 
@@ -140,7 +140,7 @@ Getting Started
 
 **[GitHub - spotify/dockerfile-maven: A set of Maven tools for dealing with Dockerfiles](https://github.com/spotify/dockerfile-maven)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/spotify/dockerfile-maven)
 
 A set of Maven tools for dealing with Dockerfiles. 
@@ -150,7 +150,7 @@ A set of Maven tools for dealing with Dockerfiles.
 **[Kubernetes in Docker for Mac - YouTube](https://www.youtube.com/watch?v=jWupQjdjLN0)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-10-17
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [macOS](https://www.codingmarks.org/search?q=[macOS]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [macOS](https://www.bookmarks.dev/search?q=[macOS]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes])
 
 At DockerCon EU 2017, Docker announced support is coming for Kubernetes in Docker for Desktop. In this video, Docker Developer Advocate Elton Stoneman demonstrates how easy it will be to spin up a full Kubernetes environment on your workstation without any additional installation or configuration. Just install Docker for Mac or Docker for Windows and you're ready to go, using your choice of orchestrator.
 
@@ -161,7 +161,7 @@ At DockerCon EU 2017, Docker announced support is coming for Kubernetes in Docke
 
 **[Get started with Docker for Mac](https://docs.docker.com/docker-for-mac/)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [mac](https://www.codingmarks.org/search?q=[mac]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [mac](https://www.bookmarks.dev/search?q=[mac]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
 
 Getting Started
 
@@ -169,7 +169,7 @@ Getting Started
 
 **[Graylog documentation ](http://docs.graylog.org)**
 
-  * **tags**: &nbsp; [logging](https://www.codingmarks.org/search?q=[logging]), &nbsp; [graylog](https://www.codingmarks.org/search?q=[graylog]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [logging](https://www.bookmarks.dev/search?q=[logging]), &nbsp; [graylog](https://www.bookmarks.dev/search?q=[graylog]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/Graylog2)
 
 Graylog is an open source log management platform.
@@ -182,7 +182,7 @@ Graylog is an open source log management platform.
 **[GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler - YouTube](https://www.youtube.com/watch?v=STKCRSUsyP0)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-05-11
-  * **tags**: &nbsp; [event-driven](https://www.codingmarks.org/search?q=[event-driven]), &nbsp; [event-driven-design](https://www.codingmarks.org/search?q=[event-driven-design]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture]), &nbsp; [cqrs](https://www.codingmarks.org/search?q=[cqrs]), &nbsp; [event-sourcing](https://www.codingmarks.org/search?q=[event-sourcing])
+  * **tags**: &nbsp; [event-driven](https://www.bookmarks.dev/search?q=[event-driven]), &nbsp; [event-driven-design](https://www.bookmarks.dev/search?q=[event-driven-design]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture]), &nbsp; [cqrs](https://www.bookmarks.dev/search?q=[cqrs]), &nbsp; [event-sourcing](https://www.bookmarks.dev/search?q=[event-sourcing])
 
 During my career, I've often people heard people describe their systems as "event-driven". But when looking deeper that phrase seems to lead to some very different architectural assumptions. On a recent workshop we identified four different patterns which tend to appear under the title of "event-driven": event notification, event-based state transfer, event sourcing, and CQRS. We feel that understanding and using these more precise terms will lead to better communication and decision making.
 
@@ -194,7 +194,7 @@ During my career, I've often people heard people describe their systems as "even
 **[GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler - YouTube](https://www.youtube.com/watch?v=STKCRSUsyP0)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-05-11
-  * **tags**: &nbsp; [event-driven](https://www.codingmarks.org/search?q=[event-driven]), &nbsp; [event-driven-design](https://www.codingmarks.org/search?q=[event-driven-design]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture]), &nbsp; [cqrs](https://www.codingmarks.org/search?q=[cqrs]), &nbsp; [event-sourcing](https://www.codingmarks.org/search?q=[event-sourcing])
+  * **tags**: &nbsp; [event-driven](https://www.bookmarks.dev/search?q=[event-driven]), &nbsp; [event-driven-design](https://www.bookmarks.dev/search?q=[event-driven-design]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture]), &nbsp; [cqrs](https://www.bookmarks.dev/search?q=[cqrs]), &nbsp; [event-sourcing](https://www.bookmarks.dev/search?q=[event-sourcing])
 
 During my career, I've often people heard people describe their systems as "event-driven". But when looking deeper that phrase seems to lead to some very different architectural assumptions. On a recent workshop we identified four different patterns which tend to appear under the title of "event-driven": event notification, event-based state transfer, event sourcing, and CQRS. We feel that understanding and using these more precise terms will lead to better communication and decision making.
 
@@ -206,7 +206,7 @@ During my career, I've often people heard people describe their systems as "even
 **[GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler - YouTube](https://www.youtube.com/watch?v=STKCRSUsyP0)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-05-11
-  * **tags**: &nbsp; [event-driven](https://www.codingmarks.org/search?q=[event-driven]), &nbsp; [event-driven-design](https://www.codingmarks.org/search?q=[event-driven-design]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture]), &nbsp; [cqrs](https://www.codingmarks.org/search?q=[cqrs]), &nbsp; [event-sourcing](https://www.codingmarks.org/search?q=[event-sourcing])
+  * **tags**: &nbsp; [event-driven](https://www.bookmarks.dev/search?q=[event-driven]), &nbsp; [event-driven-design](https://www.bookmarks.dev/search?q=[event-driven-design]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture]), &nbsp; [cqrs](https://www.bookmarks.dev/search?q=[cqrs]), &nbsp; [event-sourcing](https://www.bookmarks.dev/search?q=[event-sourcing])
 
 During my career, I've often people heard people describe their systems as "event-driven". But when looking deeper that phrase seems to lead to some very different architectural assumptions. On a recent workshop we identified four different patterns which tend to appear under the title of "event-driven": event notification, event-based state transfer, event sourcing, and CQRS. We feel that understanding and using these more precise terms will lead to better communication and decision making.
 
@@ -217,7 +217,7 @@ During my career, I've often people heard people describe their systems as "even
 
 **[Flask](https://www.palletsprojects.com/p/flask/)**
 
-  * **tags**: &nbsp; [flask](https://www.codingmarks.org/search?q=[flask]), &nbsp; [python](https://www.codingmarks.org/search?q=[python])
+  * **tags**: &nbsp; [flask](https://www.bookmarks.dev/search?q=[flask]), &nbsp; [python](https://www.bookmarks.dev/search?q=[python])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/pallets/flask)
 
 Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications. It began as a simple wrapper around Werkzeug and Jinja and has become one of the most popular Python web application frameworks.
@@ -229,7 +229,7 @@ Flask is a lightweight WSGI web application framework. It is designed to make ge
 
 **[Graylog documentation ](http://docs.graylog.org)**
 
-  * **tags**: &nbsp; [logging](https://www.codingmarks.org/search?q=[logging]), &nbsp; [graylog](https://www.codingmarks.org/search?q=[graylog]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [logging](https://www.bookmarks.dev/search?q=[logging]), &nbsp; [graylog](https://www.bookmarks.dev/search?q=[graylog]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/Graylog2)
 
 Graylog is an open source log management platform.
@@ -241,7 +241,7 @@ Graylog is an open source log management platform.
 
 **[  The Hypertext Application Language - HAL](http://stateless.co/hal_specification.html)**
 
-  * **tags**: &nbsp; [hal](https://www.codingmarks.org/search?q=[hal]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest])
+  * **tags**: &nbsp; [hal](https://www.bookmarks.dev/search?q=[hal]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest])
 
 HAL is a simple way of linking in REST APIs with either JSON or XML.
 
@@ -253,7 +253,7 @@ HAL is a simple way of linking in REST APIs with either JSON or XML.
 **[Transaction strategies: Understanding transaction pitfalls](https://www.ibm.com/developerworks/library/j-ts1/index.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2009-02-10
-  * **tags**: &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [transactions](https://www.codingmarks.org/search?q=[transactions])
+  * **tags**: &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [transactions](https://www.bookmarks.dev/search?q=[transactions])
 
 Transaction processing should achieve a high degree of data integrity and consistency. This article, the first in a series on developing an effective transaction strategy for the Java platform, introduces common transaction pitfalls that can prevent you from reaching this goal. Using code examples from the Spring Framework and the Enterprise JavaBeans (EJB) 3.0 specification, series author Mark Richards explains these all-too-common mistakes.
 
@@ -264,7 +264,7 @@ Transaction processing should achieve a high degree of data integrity and consis
 
 **[Jenkins X home](https://jenkins-x.io/)**
 
-  * **tags**: &nbsp; [jenkins](https://www.codingmarks.org/search?q=[jenkins]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [jenkins](https://www.bookmarks.dev/search?q=[jenkins]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jenkins-x/jx)
 
 Jenkins X is a CI/CD solution for modern cloud applications on Kubernetes
@@ -277,7 +277,7 @@ Jenkins X is a CI/CD solution for modern cloud applications on Kubernetes
 **[Spring Boot Micro-services, Containers, and Kubernetes - How To - YouTube](https://www.youtube.com/watch?v=Bcs-inRnLDc)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2015-10-19
-  * **tags**: &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices])
+  * **tags**: &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices])
 
 Recorded at SpringOne2GX 2015 Speaker: Ray Tsang, Google Slides: TBD Join this session to learn how to create a Java-based microservice using Spring Boot, co...
 
@@ -286,7 +286,7 @@ Recorded at SpringOne2GX 2015 Speaker: Ray Tsang, Google Slides: TBD Join this s
 **[Kubernetes in Docker for Mac - YouTube](https://www.youtube.com/watch?v=jWupQjdjLN0)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-10-17
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [macOS](https://www.codingmarks.org/search?q=[macOS]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [macOS](https://www.bookmarks.dev/search?q=[macOS]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes])
 
 At DockerCon EU 2017, Docker announced support is coming for Kubernetes in Docker for Desktop. In this video, Docker Developer Advocate Elton Stoneman demonstrates how easy it will be to spin up a full Kubernetes environment on your workstation without any additional installation or configuration. Just install Docker for Mac or Docker for Windows and you're ready to go, using your choice of orchestrator.
 
@@ -294,7 +294,7 @@ At DockerCon EU 2017, Docker announced support is coming for Kubernetes in Docke
 
 **[Jenkins X home](https://jenkins-x.io/)**
 
-  * **tags**: &nbsp; [jenkins](https://www.codingmarks.org/search?q=[jenkins]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [jenkins](https://www.bookmarks.dev/search?q=[jenkins]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jenkins-x/jx)
 
 Jenkins X is a CI/CD solution for modern cloud applications on Kubernetes
@@ -306,7 +306,7 @@ Jenkins X is a CI/CD solution for modern cloud applications on Kubernetes
 
 **[Graylog documentation ](http://docs.graylog.org)**
 
-  * **tags**: &nbsp; [logging](https://www.codingmarks.org/search?q=[logging]), &nbsp; [graylog](https://www.codingmarks.org/search?q=[graylog]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [logging](https://www.bookmarks.dev/search?q=[logging]), &nbsp; [graylog](https://www.bookmarks.dev/search?q=[graylog]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/Graylog2)
 
 Graylog is an open source log management platform.
@@ -318,7 +318,7 @@ Graylog is an open source log management platform.
 
 **[Get started with Docker for Mac](https://docs.docker.com/docker-for-mac/)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [mac](https://www.codingmarks.org/search?q=[mac]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [mac](https://www.bookmarks.dev/search?q=[mac]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
 
 Getting Started
 
@@ -330,7 +330,7 @@ Getting Started
 **[Kubernetes in Docker for Mac - YouTube](https://www.youtube.com/watch?v=jWupQjdjLN0)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-10-17
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [macOS](https://www.codingmarks.org/search?q=[macOS]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [macOS](https://www.bookmarks.dev/search?q=[macOS]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes])
 
 At DockerCon EU 2017, Docker announced support is coming for Kubernetes in Docker for Desktop. In this video, Docker Developer Advocate Elton Stoneman demonstrates how easy it will be to spin up a full Kubernetes environment on your workstation without any additional installation or configuration. Just install Docker for Mac or Docker for Windows and you're ready to go, using your choice of orchestrator.
 
@@ -341,7 +341,7 @@ At DockerCon EU 2017, Docker announced support is coming for Kubernetes in Docke
 
 **[Maven wrapper](https://github.com/takari/maven-wrapper)**
 
-  * **tags**: &nbsp; [maven](https://www.codingmarks.org/search?q=[maven])
+  * **tags**: &nbsp; [maven](https://www.bookmarks.dev/search?q=[maven])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/takari/maven-wrapper)
 
 The easiest way to integrate Maven into your project! - takari/maven-wrapper
@@ -353,7 +353,7 @@ The easiest way to integrate Maven into your project! - takari/maven-wrapper
 
 **[Spring Boot Maven Plugin – Spring Boot](https://docs.spring.io/spring-boot/docs/current/maven-plugin/)**
 
-  * **tags**: &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin])
+  * **tags**: &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin])
 
 The Spring Boot Maven Plugin provides Spring Boot support in Maven, allowing you to package executable jar or war archives and run an application “in-place”.
 
@@ -361,7 +361,7 @@ The Spring Boot Maven Plugin provides Spring Boot support in Maven, allowing you
 
 **[GitHub - spotify/dockerfile-maven: A set of Maven tools for dealing with Dockerfiles](https://github.com/spotify/dockerfile-maven)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/spotify/dockerfile-maven)
 
 A set of Maven tools for dealing with Dockerfiles. 
@@ -374,7 +374,7 @@ A set of Maven tools for dealing with Dockerfiles.
 **[Spring Boot Micro-services, Containers, and Kubernetes - How To - YouTube](https://www.youtube.com/watch?v=Bcs-inRnLDc)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2015-10-19
-  * **tags**: &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices])
+  * **tags**: &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices])
 
 Recorded at SpringOne2GX 2015 Speaker: Ray Tsang, Google Slides: TBD Join this session to learn how to create a Java-based microservice using Spring Boot, co...
 
@@ -385,7 +385,7 @@ Recorded at SpringOne2GX 2015 Speaker: Ray Tsang, Google Slides: TBD Join this s
 
 **[mountebank - over the wire test doubles](http://www.mbtest.org/)**
 
-  * **tags**: &nbsp; [testing](https://www.codingmarks.org/search?q=[testing]), &nbsp; [mocking](https://www.codingmarks.org/search?q=[mocking])
+  * **tags**: &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [mocking](https://www.bookmarks.dev/search?q=[mocking])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/bbyars/mountebank)
 
 mountebank is the first open source tool to provide cross-platform, multi-protocol test doubles over the wire. Simply point your application under test to mountebank instead of the real dependency, and test like you would with traditional stubs and mocks.
@@ -397,7 +397,7 @@ mountebank is the first open source tool to provide cross-platform, multi-protoc
 
 **[Sqlectron - One single DB client for any relational DB](https://sqlectron.github.io/)**
 
-  * **tags**: &nbsp; [sql](https://www.codingmarks.org/search?q=[sql]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [mysql](https://www.codingmarks.org/search?q=[mysql])
+  * **tags**: &nbsp; [sql](https://www.bookmarks.dev/search?q=[sql]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [mysql](https://www.bookmarks.dev/search?q=[mysql])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/sqlectron/sqlectron-gui/)
 
 UNMAINTAINED - SEE BELOW. A simple and lightweight SQL client desktop with cross database and platform support.
@@ -409,7 +409,7 @@ UNMAINTAINED - SEE BELOW. A simple and lightweight SQL client desktop with cross
 
 **[Docker SDK for Python](https://docker-py.readthedocs.io/)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [python](https://www.codingmarks.org/search?q=[python])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [python](https://www.bookmarks.dev/search?q=[python])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/docker/docker-py)
 
 A Python library for the Docker Engine API. It lets you do anything the `docker` command does, but from within Python apps – run containers, manage containers, manage Swarms, etc.
@@ -418,7 +418,7 @@ A Python library for the Docker Engine API. It lets you do anything the `docker`
 
 **[Flask](https://www.palletsprojects.com/p/flask/)**
 
-  * **tags**: &nbsp; [flask](https://www.codingmarks.org/search?q=[flask]), &nbsp; [python](https://www.codingmarks.org/search?q=[python])
+  * **tags**: &nbsp; [flask](https://www.bookmarks.dev/search?q=[flask]), &nbsp; [python](https://www.bookmarks.dev/search?q=[python])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/pallets/flask)
 
 Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications. It began as a simple wrapper around Werkzeug and Jinja and has become one of the most popular Python web application frameworks.
@@ -430,7 +430,7 @@ Flask is a lightweight WSGI web application framework. It is designed to make ge
 
 **[  The Hypertext Application Language - HAL](http://stateless.co/hal_specification.html)**
 
-  * **tags**: &nbsp; [hal](https://www.codingmarks.org/search?q=[hal]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest])
+  * **tags**: &nbsp; [hal](https://www.bookmarks.dev/search?q=[hal]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest])
 
 HAL is a simple way of linking in REST APIs with either JSON or XML.
 
@@ -441,7 +441,7 @@ HAL is a simple way of linking in REST APIs with either JSON or XML.
 
 **[Category:OWASP Top Ten Project - OWASP](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)**
 
-  * **tags**: &nbsp; [security](https://www.codingmarks.org/search?q=[security])
+  * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security])
 
 The OWASP Top 10 is a powerful awareness document for web application security. It represents a broad consensus about the most critical security risks to web applications. Project members include a variety of security experts from around the world who have shared their expertise to produce this list.
 
@@ -452,7 +452,7 @@ The OWASP Top 10 is a powerful awareness document for web application security. 
 
 **[Oh My Zsh](https://ohmyz.sh/)**
 
-  * **tags**: &nbsp; [shell](https://www.codingmarks.org/search?q=[shell]), &nbsp; [zsh](https://www.codingmarks.org/search?q=[zsh]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [shell](https://www.bookmarks.dev/search?q=[shell]), &nbsp; [zsh](https://www.bookmarks.dev/search?q=[zsh]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/robbyrussell/oh-my-zsh)
 
 Oh-My-Zsh is a delightful, open source, community-driven framework for managing your ZSH configuration.
@@ -465,7 +465,7 @@ Oh-My-Zsh is a delightful, open source, community-driven framework for managing 
 **[Spring Profiles](https://www.baeldung.com/spring-profiles)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-09-13
-  * **tags**: &nbsp; [spring](https://www.codingmarks.org/search?q=[spring])
+  * **tags**: &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/spring-all)
 
 How to define and use Profiles in Spring. The 4 ways to enable profiles and their precedence. And a real-world example using profiles.
@@ -475,7 +475,7 @@ How to define and use Profiles in Spring. The 4 ways to enable profiles and thei
 **[Transaction strategies: Understanding transaction pitfalls](https://www.ibm.com/developerworks/library/j-ts1/index.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2009-02-10
-  * **tags**: &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [transactions](https://www.codingmarks.org/search?q=[transactions])
+  * **tags**: &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [transactions](https://www.bookmarks.dev/search?q=[transactions])
 
 Transaction processing should achieve a high degree of data integrity and consistency. This article, the first in a series on developing an effective transaction strategy for the Java platform, introduces common transaction pitfalls that can prevent you from reaching this goal. Using code examples from the Spring Framework and the Enterprise JavaBeans (EJB) 3.0 specification, series author Mark Richards explains these all-too-common mistakes.
 
@@ -486,7 +486,7 @@ Transaction processing should achieve a high degree of data integrity and consis
 
 **[Spring Boot Maven Plugin – Spring Boot](https://docs.spring.io/spring-boot/docs/current/maven-plugin/)**
 
-  * **tags**: &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin])
+  * **tags**: &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin])
 
 The Spring Boot Maven Plugin provides Spring Boot support in Maven, allowing you to package executable jar or war archives and run an application “in-place”.
 
@@ -495,7 +495,7 @@ The Spring Boot Maven Plugin provides Spring Boot support in Maven, allowing you
 **[Spring Boot Micro-services, Containers, and Kubernetes - How To - YouTube](https://www.youtube.com/watch?v=Bcs-inRnLDc)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2015-10-19
-  * **tags**: &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices])
+  * **tags**: &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices])
 
 Recorded at SpringOne2GX 2015 Speaker: Ray Tsang, Google Slides: TBD Join this session to learn how to create a Java-based microservice using Spring Boot, co...
 
@@ -506,7 +506,7 @@ Recorded at SpringOne2GX 2015 Speaker: Ray Tsang, Google Slides: TBD Join this s
 
 **[Sqlectron - One single DB client for any relational DB](https://sqlectron.github.io/)**
 
-  * **tags**: &nbsp; [sql](https://www.codingmarks.org/search?q=[sql]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [mysql](https://www.codingmarks.org/search?q=[mysql])
+  * **tags**: &nbsp; [sql](https://www.bookmarks.dev/search?q=[sql]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [mysql](https://www.bookmarks.dev/search?q=[mysql])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/sqlectron/sqlectron-gui/)
 
 UNMAINTAINED - SEE BELOW. A simple and lightweight SQL client desktop with cross database and platform support.
@@ -518,7 +518,7 @@ UNMAINTAINED - SEE BELOW. A simple and lightweight SQL client desktop with cross
 
 **[asciinema - Record and share your terminal sessions, the right way](https://asciinema.org)**
 
-  * **tags**: &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [terminal](https://www.codingmarks.org/search?q=[terminal])
+  * **tags**: &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [terminal](https://www.bookmarks.dev/search?q=[terminal])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/asciinema/asciinema)
 
 asciinema lets you easily record terminal sessions and replay them in a terminal as well as in a web browser.
@@ -530,7 +530,7 @@ asciinema lets you easily record terminal sessions and replay them in a terminal
 
 **[mountebank - over the wire test doubles](http://www.mbtest.org/)**
 
-  * **tags**: &nbsp; [testing](https://www.codingmarks.org/search?q=[testing]), &nbsp; [mocking](https://www.codingmarks.org/search?q=[mocking])
+  * **tags**: &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [mocking](https://www.bookmarks.dev/search?q=[mocking])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/bbyars/mountebank)
 
 mountebank is the first open source tool to provide cross-platform, multi-protocol test doubles over the wire. Simply point your application under test to mountebank instead of the real dependency, and test like you would with traditional stubs and mocks.
@@ -542,7 +542,7 @@ mountebank is the first open source tool to provide cross-platform, multi-protoc
 
 **[asciinema - Record and share your terminal sessions, the right way](https://asciinema.org)**
 
-  * **tags**: &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [terminal](https://www.codingmarks.org/search?q=[terminal])
+  * **tags**: &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [terminal](https://www.bookmarks.dev/search?q=[terminal])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/asciinema/asciinema)
 
 asciinema lets you easily record terminal sessions and replay them in a terminal as well as in a web browser.
@@ -551,7 +551,7 @@ asciinema lets you easily record terminal sessions and replay them in a terminal
 
 **[Oh My Zsh](https://ohmyz.sh/)**
 
-  * **tags**: &nbsp; [shell](https://www.codingmarks.org/search?q=[shell]), &nbsp; [zsh](https://www.codingmarks.org/search?q=[zsh]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [shell](https://www.bookmarks.dev/search?q=[shell]), &nbsp; [zsh](https://www.bookmarks.dev/search?q=[zsh]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/robbyrussell/oh-my-zsh)
 
 Oh-My-Zsh is a delightful, open source, community-driven framework for managing your ZSH configuration.
@@ -560,7 +560,7 @@ Oh-My-Zsh is a delightful, open source, community-driven framework for managing 
 
 **[Sqlectron - One single DB client for any relational DB](https://sqlectron.github.io/)**
 
-  * **tags**: &nbsp; [sql](https://www.codingmarks.org/search?q=[sql]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [mysql](https://www.codingmarks.org/search?q=[mysql])
+  * **tags**: &nbsp; [sql](https://www.bookmarks.dev/search?q=[sql]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [mysql](https://www.bookmarks.dev/search?q=[mysql])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/sqlectron/sqlectron-gui/)
 
 UNMAINTAINED - SEE BELOW. A simple and lightweight SQL client desktop with cross database and platform support.
@@ -569,7 +569,7 @@ UNMAINTAINED - SEE BELOW. A simple and lightweight SQL client desktop with cross
 
 **[Graylog documentation ](http://docs.graylog.org)**
 
-  * **tags**: &nbsp; [logging](https://www.codingmarks.org/search?q=[logging]), &nbsp; [graylog](https://www.codingmarks.org/search?q=[graylog]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [logging](https://www.bookmarks.dev/search?q=[logging]), &nbsp; [graylog](https://www.bookmarks.dev/search?q=[graylog]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/Graylog2)
 
 Graylog is an open source log management platform.
@@ -578,7 +578,7 @@ Graylog is an open source log management platform.
 
 **[Jenkins X home](https://jenkins-x.io/)**
 
-  * **tags**: &nbsp; [jenkins](https://www.codingmarks.org/search?q=[jenkins]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [jenkins](https://www.bookmarks.dev/search?q=[jenkins]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jenkins-x/jx)
 
 Jenkins X is a CI/CD solution for modern cloud applications on Kubernetes
@@ -590,7 +590,7 @@ Jenkins X is a CI/CD solution for modern cloud applications on Kubernetes
 
 **[Two-phase commit protocol - Wikipedia](https://en.wikipedia.org/wiki/Two-phase_commit_protocol)**
 
-  * **tags**: &nbsp; [transactions](https://www.codingmarks.org/search?q=[transactions]), &nbsp; [database](https://www.codingmarks.org/search?q=[database]), &nbsp; [database-design](https://www.codingmarks.org/search?q=[database-design])
+  * **tags**: &nbsp; [transactions](https://www.bookmarks.dev/search?q=[transactions]), &nbsp; [database](https://www.bookmarks.dev/search?q=[database]), &nbsp; [database-design](https://www.bookmarks.dev/search?q=[database-design])
 
 In transaction processing, databases, and computer networking, the two-phase commit protocol (2PC) is a type of atomic commitment protocol (ACP). It is a distributed algorithm that coordinates all the processes that participate in a distributed atomic transaction on whether to commit or abort (roll back) the transaction (it is a specialized type of consensus protocol). 
 
@@ -599,7 +599,7 @@ In transaction processing, databases, and computer networking, the two-phase com
 **[Transaction strategies: Understanding transaction pitfalls](https://www.ibm.com/developerworks/library/j-ts1/index.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2009-02-10
-  * **tags**: &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [transactions](https://www.codingmarks.org/search?q=[transactions])
+  * **tags**: &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [transactions](https://www.bookmarks.dev/search?q=[transactions])
 
 Transaction processing should achieve a high degree of data integrity and consistency. This article, the first in a series on developing an effective transaction strategy for the Java platform, introduces common transaction pitfalls that can prevent you from reaching this goal. Using code examples from the Spring Framework and the Enterprise JavaBeans (EJB) 3.0 specification, series author Mark Richards explains these all-too-common mistakes.
 
@@ -610,7 +610,7 @@ Transaction processing should achieve a high degree of data integrity and consis
 
 **[Oh My Zsh](https://ohmyz.sh/)**
 
-  * **tags**: &nbsp; [shell](https://www.codingmarks.org/search?q=[shell]), &nbsp; [zsh](https://www.codingmarks.org/search?q=[zsh]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [shell](https://www.bookmarks.dev/search?q=[shell]), &nbsp; [zsh](https://www.bookmarks.dev/search?q=[zsh]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/robbyrussell/oh-my-zsh)
 
 Oh-My-Zsh is a delightful, open source, community-driven framework for managing your ZSH configuration.

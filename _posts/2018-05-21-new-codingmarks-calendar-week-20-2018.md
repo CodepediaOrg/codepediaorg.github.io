@@ -20,7 +20,7 @@ New [dev bookmarks](https://www.bookmarks.dev) added in the 20th week of 2018. H
 **[Artificial Intelligence - MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2010-10-01
-  * **tags**: &nbsp; [ai](https://www.codingmarks.org/search?q=[ai]), &nbsp; [course](https://www.codingmarks.org/search?q=[course])
+  * **tags**: &nbsp; [ai](https://www.bookmarks.dev/search?q=[ai]), &nbsp; [course](https://www.bookmarks.dev/search?q=[course])
 
 This course introduces students to the basic knowledge representation, problem solving, and learning methods of artificial intelligence. Upon completion of 6.034, students should be able to develop intelligent systems by assembling solutions to concrete computational problems; understand the role of knowledge representation, problem solving, and learning in intelligent-system engineering; and appreciate the role of problem solving, vision, and language in understanding human intelligence from a computational perspective.
 
@@ -32,7 +32,7 @@ This course introduces students to the basic knowledge representation, problem s
 **[All Things Angular](https://www.telerik.com/blogs/all-things-angular)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-03-28
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular])
 
 Dive into Angular's core concepts and hot topics - Angular Labs, Angular Elements, Progressive Web Apps, Service Workers, AoT Compilation, UI Libraries and more
 
@@ -40,12 +40,12 @@ Dive into Angular's core concepts and hot topics - Angular Labs, Angular Element
 
 **[Angular Update Guide](https://update.angular.io/)**
 
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular])
 <hr>
 
 **[Angular Blog](https://blog.angular.io/)**
 
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular]), &nbsp; [blog](https://www.codingmarks.org/search?q=[blog])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular]), &nbsp; [blog](https://www.bookmarks.dev/search?q=[blog])
 
 The latest news and tips from the Angular team.
 
@@ -53,7 +53,7 @@ The latest news and tips from the Angular team.
 
 **[GitHub - Gbuomprisco/ngx-chips: Tag Input component for Angular](https://github.com/Gbuomprisco/ngx-chips)**
 
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/Gbuomprisco/ngx-chips)
 
 This is a component for Angular >= 4. Design and API are blandly inspired by Angular Material's md-chips. Formerly called ng2-tag-input.
@@ -67,7 +67,7 @@ Check out [the live demo](https://angular-mfppay.stackblitz.io/).
 **[RxJS 5.5, piping all the things – Hackages Blog](https://blog.hackages.io/rxjs-5-5-piping-all-the-things-9d469d1b3f44)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-10-22
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular])
 
 Those operators are pure functions that can be used as standalone operators instead of methods on an observable.
 
@@ -78,7 +78,7 @@ Those operators are pure functions that can be used as standalone operators inst
 
 **[Netty: Home](https://netty.io/)**
 
-  * **tags**: &nbsp; [async](https://www.codingmarks.org/search?q=[async]), &nbsp; [event-driven](https://www.codingmarks.org/search?q=[event-driven])
+  * **tags**: &nbsp; [async](https://www.bookmarks.dev/search?q=[async]), &nbsp; [event-driven](https://www.bookmarks.dev/search?q=[event-driven])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/netty/netty)
 
 Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients.
@@ -91,7 +91,7 @@ Netty is an asynchronous event-driven network application framework for rapid de
 **[Full guide to developing REST API’s with AWS API Gateway and AWS Lambda](https://blog.sourcerer.io/full-guide-to-developing-rest-apis-with-aws-api-gateway-and-aws-lambda-d254729d6992)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-05-09
-  * **tags**: &nbsp; [cloud](https://www.codingmarks.org/search?q=[cloud]), &nbsp; [serverless](https://www.codingmarks.org/search?q=[serverless]), &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [aws](https://www.codingmarks.org/search?q=[aws])
+  * **tags**: &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud]), &nbsp; [serverless](https://www.bookmarks.dev/search?q=[serverless]), &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws])
 
 In this article we’ll explore using AWS Lambda to develop a service using Node.js. Amazon recently announced an upgrade where developers using Lambda can now use an 8.10 runtime, which lets them use `async` functions. We’ll be sure to use async functions in the application.
 
@@ -102,7 +102,7 @@ In this article we’ll explore using AWS Lambda to develop a service using Node
 
 **[Google Open Source Blog](https://opensource.googleblog.com/)**
 
-  * **tags**: &nbsp; [open-source](https://www.codingmarks.org/search?q=[open-source]), &nbsp; [blog](https://www.codingmarks.org/search?q=[blog])
+  * **tags**: &nbsp; [open-source](https://www.bookmarks.dev/search?q=[open-source]), &nbsp; [blog](https://www.bookmarks.dev/search?q=[blog])
 
 The latest news from Google on open source releases, major projects, events, and student outreach programs.
 
@@ -110,7 +110,7 @@ The latest news from Google on open source releases, major projects, events, and
 
 **[Angular Blog](https://blog.angular.io/)**
 
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular]), &nbsp; [blog](https://www.codingmarks.org/search?q=[blog])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular]), &nbsp; [blog](https://www.bookmarks.dev/search?q=[blog])
 
 The latest news and tips from the Angular team.
 
@@ -122,7 +122,7 @@ The latest news and tips from the Angular team.
 **[Full guide to developing REST API’s with AWS API Gateway and AWS Lambda](https://blog.sourcerer.io/full-guide-to-developing-rest-apis-with-aws-api-gateway-and-aws-lambda-d254729d6992)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-05-09
-  * **tags**: &nbsp; [cloud](https://www.codingmarks.org/search?q=[cloud]), &nbsp; [serverless](https://www.codingmarks.org/search?q=[serverless]), &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [aws](https://www.codingmarks.org/search?q=[aws])
+  * **tags**: &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud]), &nbsp; [serverless](https://www.bookmarks.dev/search?q=[serverless]), &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws])
 
 In this article we’ll explore using AWS Lambda to develop a service using Node.js. Amazon recently announced an upgrade where developers using Lambda can now use an 8.10 runtime, which lets them use `async` functions. We’ll be sure to use async functions in the application.
 
@@ -134,7 +134,7 @@ In this article we’ll explore using AWS Lambda to develop a service using Node
 **[Artificial Intelligence - MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2010-10-01
-  * **tags**: &nbsp; [ai](https://www.codingmarks.org/search?q=[ai]), &nbsp; [course](https://www.codingmarks.org/search?q=[course])
+  * **tags**: &nbsp; [ai](https://www.bookmarks.dev/search?q=[ai]), &nbsp; [course](https://www.bookmarks.dev/search?q=[course])
 
 This course introduces students to the basic knowledge representation, problem solving, and learning methods of artificial intelligence. Upon completion of 6.034, students should be able to develop intelligent systems by assembling solutions to concrete computational problems; understand the role of knowledge representation, problem solving, and learning in intelligent-system engineering; and appreciate the role of problem solving, vision, and language in understanding human intelligence from a computational perspective.
 
@@ -143,7 +143,7 @@ This course introduces students to the basic knowledge representation, problem s
 **[Computer Systems Security - MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2014-01-01
-  * **tags**: &nbsp; [network](https://www.codingmarks.org/search?q=[network]), &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [course](https://www.codingmarks.org/search?q=[course])
+  * **tags**: &nbsp; [network](https://www.bookmarks.dev/search?q=[network]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [course](https://www.bookmarks.dev/search?q=[course])
 
 Computer Systems Security is a class about the design and implementation of secure computer systems. Lectures cover threat models, attacks that compromise security, and techniques for achieving security, based on recent research papers. Topics include operating system (OS) security, capabilities, information flow control, language security, network protocols, hardware security, and security in web applications.
 
@@ -154,7 +154,7 @@ Computer Systems Security is a class about the design and implementation of secu
 
 **[welcome home : vim online](https://www.vim.org/)**
 
-  * **tags**: &nbsp; [vim](https://www.codingmarks.org/search?q=[vim]), &nbsp; [editor](https://www.codingmarks.org/search?q=[editor])
+  * **tags**: &nbsp; [vim](https://www.bookmarks.dev/search?q=[vim]), &nbsp; [editor](https://www.bookmarks.dev/search?q=[editor])
 
 Vim - the ubiquitous text editor
 Vim is a highly configurable text editor for efficiently creating and changing any kind of text. It is included as "vi" with most UNIX systems and with Apple OS X. 
@@ -173,7 +173,7 @@ Vim is rock stable and is continuously being developed to become even better. Am
 
 **[Netty: Home](https://netty.io/)**
 
-  * **tags**: &nbsp; [async](https://www.codingmarks.org/search?q=[async]), &nbsp; [event-driven](https://www.codingmarks.org/search?q=[event-driven])
+  * **tags**: &nbsp; [async](https://www.bookmarks.dev/search?q=[async]), &nbsp; [event-driven](https://www.bookmarks.dev/search?q=[event-driven])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/netty/netty)
 
 Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients.
@@ -185,7 +185,7 @@ Netty is an asynchronous event-driven network application framework for rapid de
 
 **[Request for Comments (RFC) - Wikipedia](https://en.wikipedia.org/wiki/Request_for_Comments)**
 
-  * **tags**: &nbsp; [glossary](https://www.codingmarks.org/search?q=[glossary])
+  * **tags**: &nbsp; [glossary](https://www.bookmarks.dev/search?q=[glossary])
 
 A Request for Comments (RFC), in the context of Internet technology, is a type of publication from the Internet technical community, including the Internet Engineering Task Force (IETF), the principal technical development and standards-setting bodies for the Internet. RFCs may also come from the Internet Research Task Force (IRTF), the Internet Architecture Board (IAB) or independent authors. The RFC system is supported by the Internet Society (ISOC).
 
@@ -199,7 +199,7 @@ An RFC is authored by engineers and computer scientists in the form of a memoran
 
 **[GitHub - klauscfhq/signale: 👋 Hackable console logger](https://github.com/klauscfhq/signale)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [logging](https://www.codingmarks.org/search?q=[logging])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [logging](https://www.bookmarks.dev/search?q=[logging])
 
 Hackable and configurable to the core, signale can be used for logging purposes, status reporting, as well as for handling the output rendering process of other node modules and applications.
 
@@ -211,7 +211,7 @@ Hackable and configurable to the core, signale can be used for logging purposes,
 **[Computer Systems Security - MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2014-01-01
-  * **tags**: &nbsp; [network](https://www.codingmarks.org/search?q=[network]), &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [course](https://www.codingmarks.org/search?q=[course])
+  * **tags**: &nbsp; [network](https://www.bookmarks.dev/search?q=[network]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [course](https://www.bookmarks.dev/search?q=[course])
 
 Computer Systems Security is a class about the design and implementation of secure computer systems. Lectures cover threat models, attacks that compromise security, and techniques for achieving security, based on recent research papers. Topics include operating system (OS) security, capabilities, information flow control, language security, network protocols, hardware security, and security in web applications.
 
@@ -223,7 +223,7 @@ Computer Systems Security is a class about the design and implementation of secu
 **[Full guide to developing REST API’s with AWS API Gateway and AWS Lambda](https://blog.sourcerer.io/full-guide-to-developing-rest-apis-with-aws-api-gateway-and-aws-lambda-d254729d6992)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-05-09
-  * **tags**: &nbsp; [cloud](https://www.codingmarks.org/search?q=[cloud]), &nbsp; [serverless](https://www.codingmarks.org/search?q=[serverless]), &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [aws](https://www.codingmarks.org/search?q=[aws])
+  * **tags**: &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud]), &nbsp; [serverless](https://www.bookmarks.dev/search?q=[serverless]), &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws])
 
 In this article we’ll explore using AWS Lambda to develop a service using Node.js. Amazon recently announced an upgrade where developers using Lambda can now use an 8.10 runtime, which lets them use `async` functions. We’ll be sure to use async functions in the application.
 
@@ -231,7 +231,7 @@ In this article we’ll explore using AWS Lambda to develop a service using Node
 
 **[GitHub - klauscfhq/signale: 👋 Hackable console logger](https://github.com/klauscfhq/signale)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [logging](https://www.codingmarks.org/search?q=[logging])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [logging](https://www.bookmarks.dev/search?q=[logging])
 
 Hackable and configurable to the core, signale can be used for logging purposes, status reporting, as well as for handling the output rendering process of other node modules and applications.
 
@@ -239,7 +239,7 @@ Hackable and configurable to the core, signale can be used for logging purposes,
 
 **[Previous Releases Node.js](https://nodejs.org/en/download/releases/)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs])
 
 Previous NodeJS Release Versions; history, archive, version
 
@@ -250,7 +250,7 @@ Previous NodeJS Release Versions; history, archive, version
 
 **[Google Open Source Blog](https://opensource.googleblog.com/)**
 
-  * **tags**: &nbsp; [open-source](https://www.codingmarks.org/search?q=[open-source]), &nbsp; [blog](https://www.codingmarks.org/search?q=[blog])
+  * **tags**: &nbsp; [open-source](https://www.bookmarks.dev/search?q=[open-source]), &nbsp; [blog](https://www.bookmarks.dev/search?q=[blog])
 
 The latest news from Google on open source releases, major projects, events, and student outreach programs.
 
@@ -261,7 +261,7 @@ The latest news from Google on open source releases, major projects, events, and
 
 **[The Rust Programming Language](https://www.rust-lang.org/en-US/)**
 
-  * **tags**: &nbsp; [rust](https://www.codingmarks.org/search?q=[rust])
+  * **tags**: &nbsp; [rust](https://www.bookmarks.dev/search?q=[rust])
 
 A systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.
 
@@ -273,7 +273,7 @@ A systems programming language that runs blazingly fast, prevents segfaults, and
 **[Computer Systems Security - MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2014-01-01
-  * **tags**: &nbsp; [network](https://www.codingmarks.org/search?q=[network]), &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [course](https://www.codingmarks.org/search?q=[course])
+  * **tags**: &nbsp; [network](https://www.bookmarks.dev/search?q=[network]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [course](https://www.bookmarks.dev/search?q=[course])
 
 Computer Systems Security is a class about the design and implementation of secure computer systems. Lectures cover threat models, attacks that compromise security, and techniques for achieving security, based on recent research papers. Topics include operating system (OS) security, capabilities, information flow control, language security, network protocols, hardware security, and security in web applications.
 
@@ -285,7 +285,7 @@ Computer Systems Security is a class about the design and implementation of secu
 **[Full guide to developing REST API’s with AWS API Gateway and AWS Lambda](https://blog.sourcerer.io/full-guide-to-developing-rest-apis-with-aws-api-gateway-and-aws-lambda-d254729d6992)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-05-09
-  * **tags**: &nbsp; [cloud](https://www.codingmarks.org/search?q=[cloud]), &nbsp; [serverless](https://www.codingmarks.org/search?q=[serverless]), &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [aws](https://www.codingmarks.org/search?q=[aws])
+  * **tags**: &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud]), &nbsp; [serverless](https://www.bookmarks.dev/search?q=[serverless]), &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws])
 
 In this article we’ll explore using AWS Lambda to develop a service using Node.js. Amazon recently announced an upgrade where developers using Lambda can now use an 8.10 runtime, which lets them use `async` functions. We’ll be sure to use async functions in the application.
 
@@ -296,7 +296,7 @@ In this article we’ll explore using AWS Lambda to develop a service using Node
 
 **[welcome home : vim online](https://www.vim.org/)**
 
-  * **tags**: &nbsp; [vim](https://www.codingmarks.org/search?q=[vim]), &nbsp; [editor](https://www.codingmarks.org/search?q=[editor])
+  * **tags**: &nbsp; [vim](https://www.bookmarks.dev/search?q=[vim]), &nbsp; [editor](https://www.bookmarks.dev/search?q=[editor])
 
 Vim - the ubiquitous text editor
 Vim is a highly configurable text editor for efficiently creating and changing any kind of text. It is included as "vi" with most UNIX systems and with Apple OS X. 

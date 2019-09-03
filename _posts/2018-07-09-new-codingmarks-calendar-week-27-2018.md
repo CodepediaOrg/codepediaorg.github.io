@@ -20,7 +20,7 @@ New [dev bookmarks](https://www.bookmarks.dev) added in the 27th week of 2018. H
 **[Angular  Architecture - Smart Components vs Presentational Components](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-06-18
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture])
 
 Smart Components: also know sometimes as application-level components, container components or controller components
 
@@ -31,7 +31,7 @@ Presentation Components: also known sometimes as pure components or dumb compone
 **[Angular ngClass and ngStyle: The Complete Guide](https://blog.angular-university.io/angular-ngclass-ngstyle/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-06-16
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular])
 
 Learn the many options for styling Angular components.
 
@@ -45,7 +45,7 @@ This includes: ngClass, ngStyle, Style isolation, Style Debugging, :host, :host-
 **[Angular  Architecture - Smart Components vs Presentational Components](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-06-18
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture])
 
 Smart Components: also know sometimes as application-level components, container components or controller components
 
@@ -58,7 +58,7 @@ Presentation Components: also known sometimes as pure components or dumb compone
 
 **[GitHub - ben-manes/caffeine: A high performance caching library for Java 8](https://github.com/ben-manes/caffeine)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [caching](https://www.codingmarks.org/search?q=[caching])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [caching](https://www.bookmarks.dev/search?q=[caching])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/ben-manes/caffeine)
 
 A high performance caching library for Java 8
@@ -71,7 +71,7 @@ A high performance caching library for Java 8
 **[Observer vs Pub-Sub pattern – Hacker Noon](https://hackernoon.com/observer-vs-pub-sub-pattern-50d3b27f838c)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;1980-10-29
-  * **tags**: &nbsp; [design-patterns](https://www.codingmarks.org/search?q=[design-patterns])
+  * **tags**: &nbsp; [design-patterns](https://www.bookmarks.dev/search?q=[design-patterns])
 
 I was once asked in an interview, “what is the difference between Observer pattern and Pub-Sub pattern?”
 
@@ -82,7 +82,7 @@ I was once asked in an interview, “what is the difference between Observer pat
 
 **[Complete Guide: Inheritance strategies with JPA and Hibernate](https://www.thoughts-on-java.org/complete-guide-inheritance-strategies-jpa-hibernate/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [jpa](https://www.codingmarks.org/search?q=[jpa]), &nbsp; [hibernate](https://www.codingmarks.org/search?q=[hibernate])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [jpa](https://www.bookmarks.dev/search?q=[jpa]), &nbsp; [hibernate](https://www.bookmarks.dev/search?q=[hibernate])
 
 Hibernate and JPA support 4 inheritance strategies which map the entities to different table models. But which one is the best for your use case?
 
@@ -93,7 +93,7 @@ Hibernate and JPA support 4 inheritance strategies which map the entities to dif
 
 **[Complete Guide: Inheritance strategies with JPA and Hibernate](https://www.thoughts-on-java.org/complete-guide-inheritance-strategies-jpa-hibernate/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [jpa](https://www.codingmarks.org/search?q=[jpa]), &nbsp; [hibernate](https://www.codingmarks.org/search?q=[hibernate])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [jpa](https://www.bookmarks.dev/search?q=[jpa]), &nbsp; [hibernate](https://www.bookmarks.dev/search?q=[hibernate])
 
 Hibernate and JPA support 4 inheritance strategies which map the entities to different table models. But which one is the best for your use case?
 
@@ -101,7 +101,7 @@ Hibernate and JPA support 4 inheritance strategies which map the entities to dif
 
 **[GitHub - ben-manes/caffeine: A high performance caching library for Java 8](https://github.com/ben-manes/caffeine)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [caching](https://www.codingmarks.org/search?q=[caching])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [caching](https://www.bookmarks.dev/search?q=[caching])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/ben-manes/caffeine)
 
 A high performance caching library for Java 8
@@ -113,7 +113,7 @@ A high performance caching library for Java 8
 
 **[Complete Guide: Inheritance strategies with JPA and Hibernate](https://www.thoughts-on-java.org/complete-guide-inheritance-strategies-jpa-hibernate/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [jpa](https://www.codingmarks.org/search?q=[jpa]), &nbsp; [hibernate](https://www.codingmarks.org/search?q=[hibernate])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [jpa](https://www.bookmarks.dev/search?q=[jpa]), &nbsp; [hibernate](https://www.bookmarks.dev/search?q=[hibernate])
 
 Hibernate and JPA support 4 inheritance strategies which map the entities to different table models. But which one is the best for your use case?
 
@@ -124,7 +124,7 @@ Hibernate and JPA support 4 inheritance strategies which map the entities to dif
 
 **[Complete Guide: Inheritance strategies with JPA and Hibernate](https://www.thoughts-on-java.org/complete-guide-inheritance-strategies-jpa-hibernate/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [jpa](https://www.codingmarks.org/search?q=[jpa]), &nbsp; [hibernate](https://www.codingmarks.org/search?q=[hibernate])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [jpa](https://www.bookmarks.dev/search?q=[jpa]), &nbsp; [hibernate](https://www.bookmarks.dev/search?q=[hibernate])
 
 Hibernate and JPA support 4 inheritance strategies which map the entities to different table models. But which one is the best for your use case?
 

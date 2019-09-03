@@ -20,7 +20,7 @@ New [dev bookmarks](https://www.bookmarks.dev) added in the 4th calendar week of
 
 **[Conduit - angular example](https://angular2.realworld.io/)**
 
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/gothinkster/angular-realworld-example-app)
 
 Exemplary real world application built with Angular 5+
@@ -33,7 +33,7 @@ Exemplary real world application built with Angular 5+
 **[How to make parallel calls in Java with CompletableFuture example – CodingpediaOrg](http://www.codepedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-01-26
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [async](https://www.bookmarks.dev/search?q=[async])
 
 This blog post presents an example about how to make parallel calls in Java with CompletableFuture in an asynchronous fashion. It resembles somehow the parallel calls pattern one can achieve in JavaScript with async-await and Promise.all
 
@@ -45,7 +45,7 @@ This blog post presents an example about how to make parallel calls in Java with
 **[Guide To CompletableFuture Baeldung](http://www.baeldung.com/java-completablefuture)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-09-23
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [asynchronous](https://www.codingmarks.org/search?q=[asynchronous])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [asynchronous](https://www.bookmarks.dev/search?q=[asynchronous])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/core-java-concurrency)
 
 Quick and practical guide to Java 8's CompletableFuture.
@@ -55,7 +55,7 @@ Quick and practical guide to Java 8's CompletableFuture.
 **[Java 8 CompletableFuture Tutorial CalliCoder](https://www.callicoder.com/java-8-completablefuture-tutorial/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-07-18
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [asynchronous](https://www.codingmarks.org/search?q=[asynchronous])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [asynchronous](https://www.bookmarks.dev/search?q=[asynchronous])
 
 In this tutorial you'll learn what `CompletableFuture` is and how to use `CompletableFuture` for asynchronous programming in Java.
 
@@ -66,7 +66,7 @@ In this tutorial you'll learn what `CompletableFuture` is and how to use `Comple
 
 **[Debugging and logs](https://www.getpostman.com/docs/postman/sending_api_requests/debugging_and_logs)**
 
-  * **tags**: &nbsp; [postman](https://www.codingmarks.org/search?q=[postman]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest]), &nbsp; [debugging](https://www.codingmarks.org/search?q=[debugging])
+  * **tags**: &nbsp; [postman](https://www.bookmarks.dev/search?q=[postman]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [debugging](https://www.bookmarks.dev/search?q=[debugging])
 
 Explains the capabilities of the Postman Console, which  is analogous to a browser’s developer console, except that it’s tuned for API development.
 
@@ -77,7 +77,7 @@ Explains the capabilities of the Postman Console, which  is analogous to a brows
 
 **[Regexper](https://regexper.com/)**
 
-  * **tags**: &nbsp; [regex](https://www.codingmarks.org/search?q=[regex]), &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [dev-tools](https://www.codingmarks.org/search?q=[dev-tools])
+  * **tags**: &nbsp; [regex](https://www.bookmarks.dev/search?q=[regex]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [dev-tools](https://www.bookmarks.dev/search?q=[dev-tools])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/javallone/regexper-static)
 
 Regular expression visualizer using railroad diagrams
@@ -89,7 +89,7 @@ Regular expression visualizer using railroad diagrams
 
 **[java - Ignoring new fields on JSON objects using Jackson - Stack Overflow](https://stackoverflow.com/questions/5455014/ignoring-new-fields-on-json-objects-using-jackson)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [json](https://www.codingmarks.org/search?q=[json]), &nbsp; [jackson](https://www.codingmarks.org/search?q=[jackson])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [json](https://www.bookmarks.dev/search?q=[json]), &nbsp; [jackson](https://www.bookmarks.dev/search?q=[jackson])
 
 Mark the POJO to ignore unknown properties
 
@@ -105,7 +105,7 @@ Mark the POJO to ignore unknown properties
 **[How to make parallel calls in Java with CompletableFuture example – CodingpediaOrg](http://www.codepedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-01-26
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [async](https://www.bookmarks.dev/search?q=[async])
 
 This blog post presents an example about how to make parallel calls in Java with CompletableFuture in an asynchronous fashion. It resembles somehow the parallel calls pattern one can achieve in JavaScript with async-await and Promise.all
 
@@ -114,7 +114,7 @@ This blog post presents an example about how to make parallel calls in Java with
 **[Guide To CompletableFuture - Baeldung](http://www.baeldung.com/java-completablefuture)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-09-23
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [asynchronous](https://www.codingmarks.org/search?q=[asynchronous])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [asynchronous](https://www.bookmarks.dev/search?q=[asynchronous])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/core-java-concurrency)
 
 Quick and practical guide to Java 8's CompletableFuture.
@@ -124,7 +124,7 @@ Quick and practical guide to Java 8's CompletableFuture.
 **[Java 8 CompletableFuture Tutorial - CalliCoder](https://www.callicoder.com/java-8-completablefuture-tutorial/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-07-18
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [asynchronous](https://www.codingmarks.org/search?q=[asynchronous])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [asynchronous](https://www.bookmarks.dev/search?q=[asynchronous])
 
 In this tutorial you'll learn what `CompletableFuture` is and how to use `CompletableFuture` for asynchronous programming in Java.
 
@@ -132,7 +132,7 @@ In this tutorial you'll learn what `CompletableFuture` is and how to use `Comple
 
 **[java - Ignoring new fields on JSON objects using Jackson - Stack Overflow](https://stackoverflow.com/questions/5455014/ignoring-new-fields-on-json-objects-using-jackson)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [json](https://www.codingmarks.org/search?q=[json]), &nbsp; [jackson](https://www.codingmarks.org/search?q=[jackson])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [json](https://www.bookmarks.dev/search?q=[json]), &nbsp; [jackson](https://www.bookmarks.dev/search?q=[jackson])
 
 Mark the POJO to ignore unknown properties
 
@@ -148,7 +148,7 @@ Mark the POJO to ignore unknown properties
 **[How to make parallel calls in Java with CompletableFuture example – CodingpediaOrg](http://www.codepedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-01-26
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [async](https://www.bookmarks.dev/search?q=[async])
 
 This blog post presents an example about how to make parallel calls in Java with CompletableFuture in an asynchronous fashion. It resembles somehow the parallel calls pattern one can achieve in JavaScript with async-await and Promise.all
 
@@ -159,7 +159,7 @@ This blog post presents an example about how to make parallel calls in Java with
 
 **[Regexper](https://regexper.com/)**
 
-  * **tags**: &nbsp; [regex](https://www.codingmarks.org/search?q=[regex]), &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [dev-tools](https://www.codingmarks.org/search?q=[dev-tools])
+  * **tags**: &nbsp; [regex](https://www.bookmarks.dev/search?q=[regex]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [dev-tools](https://www.bookmarks.dev/search?q=[dev-tools])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/javallone/regexper-static)
 
 Regular expression visualizer using railroad diagrams
@@ -171,7 +171,7 @@ Regular expression visualizer using railroad diagrams
 
 **[java - Ignoring new fields on JSON objects using Jackson - Stack Overflow](https://stackoverflow.com/questions/5455014/ignoring-new-fields-on-json-objects-using-jackson)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [json](https://www.codingmarks.org/search?q=[json]), &nbsp; [jackson](https://www.codingmarks.org/search?q=[jackson])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [json](https://www.bookmarks.dev/search?q=[json]), &nbsp; [jackson](https://www.bookmarks.dev/search?q=[jackson])
 
 Mark the POJO to ignore unknown properties
 
@@ -187,7 +187,7 @@ Mark the POJO to ignore unknown properties
 **[Introducing Turbo: 5x faster than Yarn & NPM, and runs natively in-browser 🔥](https://medium.com/@ericsimons/introducing-turbo-5x-faster-than-yarn-npm-and-runs-natively-in-browser-cc2c39715403)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-12-05
-  * **tags**: &nbsp; [package-manager](https://www.codingmarks.org/search?q=[package-manager]), &nbsp; [turbo](https://www.codingmarks.org/search?q=[turbo])
+  * **tags**: &nbsp; [package-manager](https://www.bookmarks.dev/search?q=[package-manager]), &nbsp; [turbo](https://www.bookmarks.dev/search?q=[turbo])
 
 Note: This is part of a talk I’m giving at Google’s Mountain View campus on Wednesday, December 6th — come join! When we first started working on StackBlitz, our goal was to create an online IDE that…
 
@@ -198,7 +198,7 @@ Note: This is part of a talk I’m giving at Google’s Mountain View campus on 
 
 **[Debugging and logs](https://www.getpostman.com/docs/postman/sending_api_requests/debugging_and_logs)**
 
-  * **tags**: &nbsp; [postman](https://www.codingmarks.org/search?q=[postman]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest]), &nbsp; [debugging](https://www.codingmarks.org/search?q=[debugging])
+  * **tags**: &nbsp; [postman](https://www.bookmarks.dev/search?q=[postman]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [debugging](https://www.bookmarks.dev/search?q=[debugging])
 
 Explains the capabilities of the Postman Console, which  is analogous to a browser’s developer console, except that it’s tuned for API development.
 
@@ -209,7 +209,7 @@ Explains the capabilities of the Postman Console, which  is analogous to a brows
 
 **[Regexper](https://regexper.com/)**
 
-  * **tags**: &nbsp; [regex](https://www.codingmarks.org/search?q=[regex]), &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [dev-tools](https://www.codingmarks.org/search?q=[dev-tools])
+  * **tags**: &nbsp; [regex](https://www.bookmarks.dev/search?q=[regex]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [dev-tools](https://www.bookmarks.dev/search?q=[dev-tools])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/javallone/regexper-static)
 
 Regular expression visualizer using railroad diagrams
@@ -221,7 +221,7 @@ Regular expression visualizer using railroad diagrams
 
 **[Debugging and logs](https://www.getpostman.com/docs/postman/sending_api_requests/debugging_and_logs)**
 
-  * **tags**: &nbsp; [postman](https://www.codingmarks.org/search?q=[postman]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest]), &nbsp; [debugging](https://www.codingmarks.org/search?q=[debugging])
+  * **tags**: &nbsp; [postman](https://www.bookmarks.dev/search?q=[postman]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [debugging](https://www.bookmarks.dev/search?q=[debugging])
 
 Explains the capabilities of the Postman Console, which  is analogous to a browser’s developer console, except that it’s tuned for API development.
 
@@ -233,7 +233,7 @@ Explains the capabilities of the Postman Console, which  is analogous to a brows
 **[Introducing Turbo: 5x faster than Yarn & NPM, and runs natively in-browser 🔥](https://medium.com/@ericsimons/introducing-turbo-5x-faster-than-yarn-npm-and-runs-natively-in-browser-cc2c39715403)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-12-05
-  * **tags**: &nbsp; [package-manager](https://www.codingmarks.org/search?q=[package-manager]), &nbsp; [turbo](https://www.codingmarks.org/search?q=[turbo])
+  * **tags**: &nbsp; [package-manager](https://www.bookmarks.dev/search?q=[package-manager]), &nbsp; [turbo](https://www.bookmarks.dev/search?q=[turbo])
 
 Note: This is part of a talk I’m giving at Google’s Mountain View campus on Wednesday, December 6th — come join! When we first started working on StackBlitz, our goal was to create an online IDE that…
 
@@ -245,7 +245,7 @@ Note: This is part of a talk I’m giving at Google’s Mountain View campus on 
 **[Vim tips: The basics of search and replace](https://www.linux.com/learn/vim-tips-basics-search-and-replace)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2006-06-28
-  * **tags**: &nbsp; [vim](https://www.codingmarks.org/search?q=[vim])
+  * **tags**: &nbsp; [vim](https://www.bookmarks.dev/search?q=[vim])
 
 Great explanation with good examples. One of them
 

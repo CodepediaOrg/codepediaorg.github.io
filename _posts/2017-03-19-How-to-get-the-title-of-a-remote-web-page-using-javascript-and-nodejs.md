@@ -11,7 +11,7 @@ tags: [codingmarks, coding bookmarks, web scraping, cheerio, angular]
 
 When I [add a new bookmark](https://youtu.be/bj22xbE5ZiY?t=5m10s) to my bookmarks collection, I set the title of the new bookmark, most of the time, the same as the title of the web page being bookmark -
  I assume the authors have put some thought into it. To make this happen automatically, I am using a technique called web scraping[^1].  I cannot do it in front end (angular), since most of the URLs are outside
-   of the [https://www.codingmarks.org/](https://www.codingmarks.org/) domain. So the magic happens in back end, in NodeJS, with the help of a library called cheerio[^2], thank you [Matthew](https://github.com/matthewmueller) for that.
+   of the [https://www.bookmarks.dev/](https://www.bookmarks.dev/) domain. So the magic happens in back end, in NodeJS, with the help of a library called cheerio[^2], thank you [Matthew](https://github.com/matthewmueller) for that.
    Cheerio is a fast, flexible, and lean implementation of core jQuery[^3] designed specifically for the server. Read on to learn how this works.
 
 [^1]: <https://en.wikipedia.org/wiki/Web_scraping>

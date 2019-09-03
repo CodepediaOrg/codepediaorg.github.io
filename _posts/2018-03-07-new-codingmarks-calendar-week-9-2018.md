@@ -19,7 +19,7 @@ New [dev bookmarks](https://www.bookmarks.dev) added in the 9th week of 2018. Ho
 
 **[Home · angular/flex-layout Wiki · GitHub](https://github.com/angular/flex-layout/wiki)**
 
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular]), &nbsp; [flexbox](https://www.codingmarks.org/search?q=[flexbox]), &nbsp; [typescript](https://www.codingmarks.org/search?q=[typescript])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular]), &nbsp; [flexbox](https://www.bookmarks.dev/search?q=[flexbox]), &nbsp; [typescript](https://www.bookmarks.dev/search?q=[typescript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/angular/flex-layout)
 
 flex-layout - Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API 
@@ -29,7 +29,7 @@ flex-layout - Provides HTML UI layout for Angular applications; using Flexbox an
 **[Handling Observables with NgIf and the Async Pipe](https://toddmotto.com/angular-ngif-async-pipe)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-01-12
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular])
 
 There are a few common gotchas when dealing with purely cold Observables that somewhat pull in data (over perhaps, Http). There are also a few tricks we can use to mitigate common async issues, whilst being productive in templates.
 
@@ -43,7 +43,7 @@ So let’s explore how we can handle ngIf alongside the async pipe to alleviate 
 **[Weaknesses in Modern Cryptography](https://www.giac.org/paper/gsec/634/weakness-modern-cryptography/101458)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2002-01-01
-  * **tags**: &nbsp; [cryptography](https://www.codingmarks.org/search?q=[cryptography])
+  * **tags**: &nbsp; [cryptography](https://www.bookmarks.dev/search?q=[cryptography])
 
 Modern cryptography has become the savior of the Internet, promising to secure our most
 important information and communications by guarantying it may be not be deciphered
@@ -56,7 +56,7 @@ undermine the mathematical strength of the best cryptographic algorithms.
 
 **[Randomness and Entropy - An Introduction](https://www.sans.org/reading-room/whitepapers/vpns/randomness-entropy-introduction-874)**
 
-  * **tags**: &nbsp; [cryptography](https://www.codingmarks.org/search?q=[cryptography])
+  * **tags**: &nbsp; [cryptography](https://www.bookmarks.dev/search?q=[cryptography])
 
 This paper will attempt to bring together information pertaining to concepts and definitions of randomness and
 entropy. Through definition and example both the implications and applications within the Information Security
@@ -69,7 +69,7 @@ industry will be shown, bringing a complex topic to light in a concise and under
 
 **[CSS Grid Layout - CSS - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)**
 
-  * **tags**: &nbsp; [css](https://www.codingmarks.org/search?q=[css])
+  * **tags**: &nbsp; [css](https://www.bookmarks.dev/search?q=[css])
 
 **CSS Grid Layout** excels at dividing a page into major regions, or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives.
 
@@ -77,7 +77,7 @@ industry will be shown, bringing a complex topic to light in a concise and under
 
 **[CSS Flexible Box Layout - CSS - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)**
 
-  * **tags**: &nbsp; [css](https://www.codingmarks.org/search?q=[css]), &nbsp; [flexbox](https://www.codingmarks.org/search?q=[flexbox])
+  * **tags**: &nbsp; [css](https://www.bookmarks.dev/search?q=[css]), &nbsp; [flexbox](https://www.bookmarks.dev/search?q=[flexbox])
 
 CSS Flexible Box Layout is a module of CSS that defines a CSS box model optimized for user interface design, and the layout of items in one dimension. In the flex layout model, the children of a flex container can be laid out in any direction, and can “flex” their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent. Both horizontal and vertical alignment of the children can be easily manipulated.
 
@@ -88,7 +88,7 @@ CSS Flexible Box Layout is a module of CSS that defines a CSS box model optimize
 
 **[Bundler - The best way to manage a Ruby application's gems    ](http://bundler.io/docs.html)**
 
-  * **tags**: &nbsp; [ruby](https://www.codingmarks.org/search?q=[ruby]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [ruby](https://www.bookmarks.dev/search?q=[ruby]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
 
 * Guides (Step-by-step tutorials that include useful explanations and and detailed instructions to help you get up and running.)
 * Reference Guides (In-depth articles with information on each primary command and utility, and how to use them.)
@@ -97,7 +97,7 @@ CSS Flexible Box Layout is a module of CSS that defines a CSS box model optimize
 
 **[Using Jekyll as a static site generator with GitHub Pages - User Documentation        ](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)**
 
-  * **tags**: &nbsp; [github-pages](https://www.codingmarks.org/search?q=[github-pages]), &nbsp; [jekyll](https://www.codingmarks.org/search?q=[jekyll]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [github-pages](https://www.bookmarks.dev/search?q=[github-pages]), &nbsp; [jekyll](https://www.bookmarks.dev/search?q=[jekyll]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
 
 If you use Jekyll as a static site generator with GitHub Pages, you benefit from more support with setting up, updating, and troubleshooting your site.
 
@@ -110,7 +110,7 @@ Hyperlinks to Github and Jekyll
 
 **[GitHub - philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)**
 
-  * **tags**: &nbsp; [flexbox](https://www.codingmarks.org/search?q=[flexbox])
+  * **tags**: &nbsp; [flexbox](https://www.bookmarks.dev/search?q=[flexbox])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/philipwalton/flexbugs)
 
 flexbugs - A community-curated list of flexbox issues and cross-browser workarounds for them.
@@ -119,7 +119,7 @@ flexbugs - A community-curated list of flexbox issues and cross-browser workarou
 
 **[CSS Flexible Box Layout - CSS - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)**
 
-  * **tags**: &nbsp; [css](https://www.codingmarks.org/search?q=[css]), &nbsp; [flexbox](https://www.codingmarks.org/search?q=[flexbox])
+  * **tags**: &nbsp; [css](https://www.bookmarks.dev/search?q=[css]), &nbsp; [flexbox](https://www.bookmarks.dev/search?q=[flexbox])
 
 CSS Flexible Box Layout is a module of CSS that defines a CSS box model optimized for user interface design, and the layout of items in one dimension. In the flex layout model, the children of a flex container can be laid out in any direction, and can “flex” their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent. Both horizontal and vertical alignment of the children can be easily manipulated.
 
@@ -127,7 +127,7 @@ CSS Flexible Box Layout is a module of CSS that defines a CSS box model optimize
 
 **[Home · angular/flex-layout Wiki · GitHub](https://github.com/angular/flex-layout/wiki)**
 
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular]), &nbsp; [flexbox](https://www.codingmarks.org/search?q=[flexbox]), &nbsp; [typescript](https://www.codingmarks.org/search?q=[typescript])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular]), &nbsp; [flexbox](https://www.bookmarks.dev/search?q=[flexbox]), &nbsp; [typescript](https://www.bookmarks.dev/search?q=[typescript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/angular/flex-layout)
 
 flex-layout - Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API 
@@ -139,7 +139,7 @@ flex-layout - Provides HTML UI layout for Angular applications; using Flexbox an
 
 **[Collection: GitHub Pages examples · GitHub](https://github.com/collections/github-pages-examples)**
 
-  * **tags**: &nbsp; [github](https://www.codingmarks.org/search?q=[github]), &nbsp; [github-pages](https://www.codingmarks.org/search?q=[github-pages])
+  * **tags**: &nbsp; [github](https://www.bookmarks.dev/search?q=[github]), &nbsp; [github-pages](https://www.bookmarks.dev/search?q=[github-pages])
 
 Fine examples of projects using [GitHub Pages](https://pages.github.com/)
 
@@ -150,7 +150,7 @@ Fine examples of projects using [GitHub Pages](https://pages.github.com/)
 
 **[Using Jekyll as a static site generator with GitHub Pages - User Documentation        ](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)**
 
-  * **tags**: &nbsp; [github-pages](https://www.codingmarks.org/search?q=[github-pages]), &nbsp; [jekyll](https://www.codingmarks.org/search?q=[jekyll]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [github-pages](https://www.bookmarks.dev/search?q=[github-pages]), &nbsp; [jekyll](https://www.bookmarks.dev/search?q=[jekyll]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
 
 If you use Jekyll as a static site generator with GitHub Pages, you benefit from more support with setting up, updating, and troubleshooting your site.
 
@@ -160,7 +160,7 @@ Hyperlinks to Github and Jekyll
 
 **[Collection: GitHub Pages examples · GitHub](https://github.com/collections/github-pages-examples)**
 
-  * **tags**: &nbsp; [github](https://www.codingmarks.org/search?q=[github]), &nbsp; [github-pages](https://www.codingmarks.org/search?q=[github-pages])
+  * **tags**: &nbsp; [github](https://www.bookmarks.dev/search?q=[github]), &nbsp; [github-pages](https://www.bookmarks.dev/search?q=[github-pages])
 
 Fine examples of projects using [GitHub Pages](https://pages.github.com/)
 
@@ -172,7 +172,7 @@ Fine examples of projects using [GitHub Pages](https://pages.github.com/)
 **[Machine Learning From Scratch: The Perceptron Model - YouTube](https://www.youtube.com/watch?v=iumlHzoVlJM)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-25
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [machine-learning](https://www.codingmarks.org/search?q=[machine-learning])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [machine-learning](https://www.bookmarks.dev/search?q=[machine-learning])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jg-fisher/perceptronJS)
 
 Learn how to build a perceptron model from scratch with Javascript!
@@ -181,7 +181,7 @@ Learn how to build a perceptron model from scratch with Javascript!
 
 **[Socket.IO](https://socket.io/)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/socketio/socket.io/)
 
 Realtime application framework (Node.JS server)
@@ -193,7 +193,7 @@ Realtime application framework (Node.JS server)
 
 **[Using Jekyll as a static site generator with GitHub Pages - User Documentation        ](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)**
 
-  * **tags**: &nbsp; [github-pages](https://www.codingmarks.org/search?q=[github-pages]), &nbsp; [jekyll](https://www.codingmarks.org/search?q=[jekyll]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [github-pages](https://www.bookmarks.dev/search?q=[github-pages]), &nbsp; [jekyll](https://www.bookmarks.dev/search?q=[jekyll]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
 
 If you use Jekyll as a static site generator with GitHub Pages, you benefit from more support with setting up, updating, and troubleshooting your site.
 
@@ -207,7 +207,7 @@ Hyperlinks to Github and Jekyll
 **[Machine Learning From Scratch: The Perceptron Model - YouTube](https://www.youtube.com/watch?v=iumlHzoVlJM)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-25
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [machine-learning](https://www.codingmarks.org/search?q=[machine-learning])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [machine-learning](https://www.bookmarks.dev/search?q=[machine-learning])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jg-fisher/perceptronJS)
 
 Learn how to build a perceptron model from scratch with Javascript!
@@ -219,7 +219,7 @@ Learn how to build a perceptron model from scratch with Javascript!
 
 **[Game theory - Wikipedia](https://en.wikipedia.org/wiki/Game_theory)**
 
-  * **tags**: &nbsp; [math](https://www.codingmarks.org/search?q=[math])
+  * **tags**: &nbsp; [math](https://www.bookmarks.dev/search?q=[math])
 
 Game theory is "the study of mathematical models of conflict and cooperation between intelligent rational decision-makers". Game theory is mainly used in economics, political science, and psychology, as well as logic, computer science and biology. Originally, it addressed zero-sum games, in which one person's gains result in losses for the other participants. Today, game theory applies to a wide range of behavioral relations, and is now an umbrella term for the science of logical decision making in humans, animals, and computers.
 
@@ -230,7 +230,7 @@ Game theory is "the study of mathematical models of conflict and cooperation bet
 
 **[Implementing Microservice Discovery in 100 Lines of Node.js ](https://github.com/asyncanup/vasco/blob/33b878b3ae43f2c75197ea3e93afa0876ce990de/vasco-talk.pdf)**
 
-  * **tags**: &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs])
+  * **tags**: &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs])
 
 vasco - The Great Service Discoverer
 
@@ -241,7 +241,7 @@ vasco - The Great Service Discoverer
 
 **[Bufferbloat - Wikipedia](https://en.wikipedia.org/wiki/Bufferbloat)**
 
-  * **tags**: &nbsp; [networking](https://www.codingmarks.org/search?q=[networking])
+  * **tags**: &nbsp; [networking](https://www.bookmarks.dev/search?q=[networking])
 
 Bufferbloat is a cause of high latency in packet-switched networks caused by excess buffering of packets. Bufferbloat can also cause packet delay variation (also known as jitter), as well as reduce the overall network throughput. When a router or switch is configured to use excessively large buffers, even very high-speed networks can become practically unusable for many interactive applications like voice over IP (VoIP), online gaming, and even ordinary web surfing.
 
@@ -252,7 +252,7 @@ Bufferbloat is a cause of high latency in packet-switched networks caused by exc
 
 **[Implementing Microservice Discovery in 100 Lines of Node.js ](https://github.com/asyncanup/vasco/blob/33b878b3ae43f2c75197ea3e93afa0876ce990de/vasco-talk.pdf)**
 
-  * **tags**: &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs])
+  * **tags**: &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs])
 
 vasco - The Great Service Discoverer
 
@@ -260,7 +260,7 @@ vasco - The Great Service Discoverer
 
 **[Socket.IO](https://socket.io/)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/socketio/socket.io/)
 
 Realtime application framework (Node.JS server)
@@ -270,7 +270,7 @@ Realtime application framework (Node.JS server)
 **[Building a Node.js WebSocket Chat App with Socket.io and React](https://itnext.io/building-a-node-js-websocket-chat-app-with-socket-io-and-react-473a0686d1e1)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-22
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [reactjs](https://www.codingmarks.org/search?q=[reactjs]), &nbsp; [websocket](https://www.codingmarks.org/search?q=[websocket])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [reactjs](https://www.bookmarks.dev/search?q=[reactjs]), &nbsp; [websocket](https://www.bookmarks.dev/search?q=[websocket])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/justadudewhohacks/websocket-chat)
 
 In this tutorial we are going to build a simple chat app based on WebSockets with socket.io and React.
@@ -279,7 +279,7 @@ In this tutorial we are going to build a simple chat app based on WebSockets wit
 
 **[You Got This! Zine - Making web apps with Node.js](https://glitch.com/you-got-this)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs])
 
 Learn to make web apps with Node.js with our free 20-page zine
 
@@ -287,7 +287,7 @@ Learn to make web apps with Node.js with our free 20-page zine
 
 **[Pandora.js - Ready to Boot](http://www.midwayjs.org/pandora/en/)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [typescript](https://www.codingmarks.org/search?q=[typescript])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [typescript](https://www.bookmarks.dev/search?q=[typescript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/midwayjs/pandora/)
 
 A Manageable, Measurable and Traceable Node.js Application Manager represented by Alibaba powered by TypeScript
@@ -300,7 +300,7 @@ A Manageable, Measurable and Traceable Node.js Application Manager represented b
 **[Exponential Backoff And Jitter | AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2015-03-04
-  * **tags**: &nbsp; [scalability](https://www.codingmarks.org/search?q=[scalability]), &nbsp; [performance](https://www.codingmarks.org/search?q=[performance])
+  * **tags**: &nbsp; [scalability](https://www.bookmarks.dev/search?q=[scalability]), &nbsp; [performance](https://www.bookmarks.dev/search?q=[performance])
 <hr>
 
 
@@ -309,7 +309,7 @@ A Manageable, Measurable and Traceable Node.js Application Manager represented b
 **[Building a Node.js WebSocket Chat App with Socket.io and React](https://itnext.io/building-a-node-js-websocket-chat-app-with-socket-io-and-react-473a0686d1e1)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-22
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [reactjs](https://www.codingmarks.org/search?q=[reactjs]), &nbsp; [websocket](https://www.codingmarks.org/search?q=[websocket])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [reactjs](https://www.bookmarks.dev/search?q=[reactjs]), &nbsp; [websocket](https://www.bookmarks.dev/search?q=[websocket])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/justadudewhohacks/websocket-chat)
 
 In this tutorial we are going to build a simple chat app based on WebSockets with socket.io and React.
@@ -321,7 +321,7 @@ In this tutorial we are going to build a simple chat app based on WebSockets wit
 
 **[Bundler - The best way to manage a Ruby application's gems    ](http://bundler.io/docs.html)**
 
-  * **tags**: &nbsp; [ruby](https://www.codingmarks.org/search?q=[ruby]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [ruby](https://www.bookmarks.dev/search?q=[ruby]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
 
 * Guides (Step-by-step tutorials that include useful explanations and and detailed instructions to help you get up and running.)
 * Reference Guides (In-depth articles with information on each primary command and utility, and how to use them.)
@@ -334,7 +334,7 @@ In this tutorial we are going to build a simple chat app based on WebSockets wit
 **[Exponential Backoff And Jitter | AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2015-03-04
-  * **tags**: &nbsp; [scalability](https://www.codingmarks.org/search?q=[scalability]), &nbsp; [performance](https://www.codingmarks.org/search?q=[performance])
+  * **tags**: &nbsp; [scalability](https://www.bookmarks.dev/search?q=[scalability]), &nbsp; [performance](https://www.bookmarks.dev/search?q=[performance])
 <hr>
 
 
@@ -342,7 +342,7 @@ In this tutorial we are going to build a simple chat app based on WebSockets wit
 
 **[Home · angular/flex-layout Wiki · GitHub](https://github.com/angular/flex-layout/wiki)**
 
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular]), &nbsp; [flexbox](https://www.codingmarks.org/search?q=[flexbox]), &nbsp; [typescript](https://www.codingmarks.org/search?q=[typescript])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular]), &nbsp; [flexbox](https://www.bookmarks.dev/search?q=[flexbox]), &nbsp; [typescript](https://www.bookmarks.dev/search?q=[typescript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/angular/flex-layout)
 
 flex-layout - Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API 
@@ -351,7 +351,7 @@ flex-layout - Provides HTML UI layout for Angular applications; using Flexbox an
 
 **[Pandora.js - Ready to Boot](http://www.midwayjs.org/pandora/en/)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [typescript](https://www.codingmarks.org/search?q=[typescript])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [typescript](https://www.bookmarks.dev/search?q=[typescript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/midwayjs/pandora/)
 
 A Manageable, Measurable and Traceable Node.js Application Manager represented by Alibaba powered by TypeScript
@@ -364,7 +364,7 @@ A Manageable, Measurable and Traceable Node.js Application Manager represented b
 **[Building a Node.js WebSocket Chat App with Socket.io and React](https://itnext.io/building-a-node-js-websocket-chat-app-with-socket-io-and-react-473a0686d1e1)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-22
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [reactjs](https://www.codingmarks.org/search?q=[reactjs]), &nbsp; [websocket](https://www.codingmarks.org/search?q=[websocket])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [reactjs](https://www.bookmarks.dev/search?q=[reactjs]), &nbsp; [websocket](https://www.bookmarks.dev/search?q=[websocket])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/justadudewhohacks/websocket-chat)
 
 In this tutorial we are going to build a simple chat app based on WebSockets with socket.io and React.

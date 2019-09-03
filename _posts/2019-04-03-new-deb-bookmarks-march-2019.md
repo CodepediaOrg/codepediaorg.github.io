@@ -19,7 +19,7 @@ New [dev bookmarks](https://www.bookmarks.dev) added in march 2019. Hot topics i
 
 **[Nice dotfiles example](https://github.com/jessfraz/dotfiles)**
 
-  * **tags**: &nbsp; [dotfiles](https://www.codingmarks.org/search?q=[dotfiles]), &nbsp; [alias](https://www.codingmarks.org/search?q=[alias]), &nbsp; [bash](https://www.codingmarks.org/search?q=[bash])
+  * **tags**: &nbsp; [dotfiles](https://www.bookmarks.dev/search?q=[dotfiles]), &nbsp; [alias](https://www.bookmarks.dev/search?q=[alias]), &nbsp; [bash](https://www.bookmarks.dev/search?q=[bash])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jessfraz/dotfiles)
 
 My dotfiles. Buyer beware ;)
@@ -32,7 +32,7 @@ My dotfiles. Buyer beware ;)
 **[API Infrastructure at Knewton: What’s in an Edge Service?](https://medium.com/knerd/api-infrastructure-at-knewton-whats-in-an-edge-service-51a3777aeb41)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2016-05-09
-  * **tags**: &nbsp; [api](https://www.codingmarks.org/search?q=[api]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [nginx](https://www.codingmarks.org/search?q=[nginx]), &nbsp; [zuul](https://www.codingmarks.org/search?q=[zuul])
+  * **tags**: &nbsp; [api](https://www.bookmarks.dev/search?q=[api]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [nginx](https://www.bookmarks.dev/search?q=[nginx]), &nbsp; [zuul](https://www.bookmarks.dev/search?q=[zuul])
 
 In this post, we will pull back the covers of our API to explain how we handle user requests. You will first learn how to build an edge service with Netflix Zuul, the framework we chose for its simplicity and flexibility. Then, we’ll dive into the Knewton edge service to show you how it improves API simplicity, flexibility, and performance.
 
@@ -44,7 +44,7 @@ An edge service is a component which is exposed to the public internet. It acts 
 
 **[Dredd — HTTP API Testing Framework — Dredd latest documentation](https://dredd.org/)**
 
-  * **tags**: &nbsp; [api](https://www.codingmarks.org/search?q=[api]), &nbsp; [testing](https://www.codingmarks.org/search?q=[testing]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation])
+  * **tags**: &nbsp; [api](https://www.bookmarks.dev/search?q=[api]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/apiaryio/dredd)
 
 Dredd is a language-agnostic command-line tool for validating API description document against backend implementation of the API.
@@ -55,7 +55,7 @@ Dredd reads your API description and step by step validates whether your API imp
 
 **[API Blueprint home page](https://apiblueprint.org/)**
 
-  * **tags**: &nbsp; [api](https://www.codingmarks.org/search?q=[api]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest])
+  * **tags**: &nbsp; [api](https://www.bookmarks.dev/search?q=[api]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/apiaryio/api-blueprint/)
 
 API Blueprint is simple and accessible to everybody involved in the API lifecycle. Its syntax is concise yet expressive. With API Blueprint you can quickly design and prototype APIs to be created or document and test already deployed mission-critical APIs.
@@ -67,7 +67,7 @@ API Blueprint is simple and accessible to everybody involved in the API lifecycl
 
 **[Istio home page](https://istio.io/)**
 
-  * **tags**: &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [api-management](https://www.codingmarks.org/search?q=[api-management]), &nbsp; [circuit-breaker](https://www.codingmarks.org/search?q=[circuit-breaker]), &nbsp; [proxy](https://www.codingmarks.org/search?q=[proxy]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes])
+  * **tags**: &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [api-management](https://www.bookmarks.dev/search?q=[api-management]), &nbsp; [circuit-breaker](https://www.bookmarks.dev/search?q=[circuit-breaker]), &nbsp; [proxy](https://www.bookmarks.dev/search?q=[proxy]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/istio/istio)
 
 Istio is an open platform for providing a uniform way to integrate microservices, manage traffic flow across microservices, enforce policies and aggregate telemetry data. Istio's control plane provides an abstraction layer over the underlying cluster management platform, such as Kubernetes, Mesos, etc.
@@ -80,7 +80,7 @@ Istio is an open platform for providing a uniform way to integrate microservices
 **[Oliver Gierke - Whoops! Where did my architecture go](http://olivergierke.de/2013/01/whoops-where-did-my-architecture-go/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2013-01-01
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/odrotbohm/whoops-architecture)
 
 #### Summary
@@ -92,7 +92,7 @@ The basic approach I recommend is to move the vertical slices into the focus of 
 **[Layers, hexagons, features and components ](http://www.codingthearchitecture.com/2016/04/25/layers_hexagons_features_and_components.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2016-04-25
-  * **tags**: &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture])
+  * **tags**: &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture])
 
 Layers, hexagons, features and components - Coding the Architecture
 
@@ -100,7 +100,7 @@ Layers, hexagons, features and components - Coding the Architecture
 
 **[BoundedContext](https://martinfowler.com/bliki/BoundedContext.html)**
 
-  * **tags**: &nbsp; [domain-driven-design](https://www.codingmarks.org/search?q=[domain-driven-design]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture])
+  * **tags**: &nbsp; [domain-driven-design](https://www.bookmarks.dev/search?q=[domain-driven-design]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture])
 
 Bounded Context is a central pattern in Domain-Driven Design. It is the focus of DDD's strategic design section which is all about dealing with large models and teams. DDD deals with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships.
 
@@ -109,7 +109,7 @@ Bounded Context is a central pattern in Domain-Driven Design. It is the focus of
 **[The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2012-08-13
-  * **tags**: &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture])
+  * **tags**: &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture])
 
 Over the last several years we’ve seen a whole range of ideas regarding the architecture of systems. These include:
 
@@ -128,7 +128,7 @@ The diagram at the top of this article is an attempt at integrating all these ar
 **[Strategic Domain Driven Design with Context Mapping](https://www.infoq.com/articles/ddd-contextmapping)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2009-11-25
-  * **tags**: &nbsp; [domain-driven-design](https://www.codingmarks.org/search?q=[domain-driven-design]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture])
+  * **tags**: &nbsp; [domain-driven-design](https://www.bookmarks.dev/search?q=[domain-driven-design]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture])
 
 Many approaches to object oriented modeling tend not to scale well when the applications grow in size and complexity. **Context Mapping** technique can be used to manage the complexity in large software development projects. In this article, author Alberto Brandolini discusses the many sides of **bounded contexts** and how to use them to build a context map to support key decisions in a software project.
 
@@ -141,7 +141,7 @@ Many approaches to object oriented modeling tend not to scale well when the appl
 **[Big Ball of Mud](http://www.laputan.org/mud/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;1999-06-26
-  * **tags**: &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture])
+  * **tags**: &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture])
 
 While much attention has been focused on  high-level software architectural patterns, what is, in effect, the de-facto standard software architecture is seldom discussed. This paper examines the most frequently deployed architecture: 
 the **BIG BALL OF MUD**
@@ -153,7 +153,7 @@ the **BIG BALL OF MUD**
 
 **[Arquillian  Home Page](http://arquillian.org/)**
 
-  * **tags**: &nbsp; [arquillian](https://www.codingmarks.org/search?q=[arquillian]), &nbsp; [testing](https://www.codingmarks.org/search?q=[testing]), &nbsp; [integration-testing](https://www.codingmarks.org/search?q=[integration-testing])
+  * **tags**: &nbsp; [arquillian](https://www.bookmarks.dev/search?q=[arquillian]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [integration-testing](https://www.bookmarks.dev/search?q=[integration-testing])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/arquillian)
 
 An innovative testing platform for the Java Virtual Machine (JVM). Open source. Highly extensible.
@@ -166,7 +166,7 @@ An innovative testing platform for the Java Virtual Machine (JVM). Open source. 
 **[Java 8: Definitive guide to CompletableFuture](https://www.nurkiewicz.com/2013/05/java-8-definitive-guide-to.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2013-05-09
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [asynchronous](https://www.codingmarks.org/search?q=[asynchronous]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [asynchronous](https://www.bookmarks.dev/search?q=[asynchronous]), &nbsp; [async](https://www.bookmarks.dev/search?q=[async])
 
 Examples of using and combining `CompletableFuture` API
 
@@ -178,7 +178,7 @@ Examples of using and combining `CompletableFuture` API
 **[Java 8: Definitive guide to CompletableFuture](https://www.nurkiewicz.com/2013/05/java-8-definitive-guide-to.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2013-05-09
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [asynchronous](https://www.codingmarks.org/search?q=[asynchronous]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [asynchronous](https://www.bookmarks.dev/search?q=[asynchronous]), &nbsp; [async](https://www.bookmarks.dev/search?q=[async])
 
 Examples of using and combining `CompletableFuture` API
 
@@ -189,7 +189,7 @@ Examples of using and combining `CompletableFuture` API
 
 **[useful-java-links](https://github.com/Vedenin/useful-java-links#readme)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [resources](https://www.codingmarks.org/search?q=[resources]), &nbsp; [awesome](https://www.codingmarks.org/search?q=[awesome]), &nbsp; [awesome-list](https://www.codingmarks.org/search?q=[awesome-list])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [resources](https://www.bookmarks.dev/search?q=[resources]), &nbsp; [awesome](https://www.bookmarks.dev/search?q=[awesome]), &nbsp; [awesome-list](https://www.bookmarks.dev/search?q=[awesome-list])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/Vedenin/useful-java-links)
 
 A list of useful Java frameworks, libraries, software and hello worlds examples - Vedenin/useful-java-links
@@ -198,7 +198,7 @@ A list of useful Java frameworks, libraries, software and hello worlds examples 
 
 **[GitHub - stoeffel/awesome-fp-js](https://github.com/stoeffel/awesome-fp-js#readme)**
 
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [functional-programming](https://www.codingmarks.org/search?q=[functional-programming]), &nbsp; [awesome](https://www.codingmarks.org/search?q=[awesome]), &nbsp; [awesome-list](https://www.codingmarks.org/search?q=[awesome-list])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [functional-programming](https://www.bookmarks.dev/search?q=[functional-programming]), &nbsp; [awesome](https://www.bookmarks.dev/search?q=[awesome]), &nbsp; [awesome-list](https://www.bookmarks.dev/search?q=[awesome-list])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/stoeffel/awesome-fp-js)
 
 :sunglasses: A curated list of awesome functional programming stuff in js - stoeffel/awesome-fp-js
@@ -207,7 +207,7 @@ A list of useful Java frameworks, libraries, software and hello worlds examples 
 
 **[GitHub - arslanbilal/git-cheat-sheet: git and git flow cheat sheet](https://github.com/arslanbilal/git-cheat-sheet#readme)**
 
-  * **tags**: &nbsp; [git](https://www.codingmarks.org/search?q=[git]), &nbsp; [cheatsheet](https://www.codingmarks.org/search?q=[cheatsheet]), &nbsp; [awesome](https://www.codingmarks.org/search?q=[awesome])
+  * **tags**: &nbsp; [git](https://www.bookmarks.dev/search?q=[git]), &nbsp; [cheatsheet](https://www.bookmarks.dev/search?q=[cheatsheet]), &nbsp; [awesome](https://www.bookmarks.dev/search?q=[awesome])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/arslanbilal/git-cheat-sheet#readme)
 
 ##### Git Cheat Sheet English
@@ -230,7 +230,7 @@ A list of useful Java frameworks, libraries, software and hello worlds examples 
 
 **[useful-java-links](https://github.com/Vedenin/useful-java-links#readme)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [resources](https://www.codingmarks.org/search?q=[resources]), &nbsp; [awesome](https://www.codingmarks.org/search?q=[awesome]), &nbsp; [awesome-list](https://www.codingmarks.org/search?q=[awesome-list])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [resources](https://www.bookmarks.dev/search?q=[resources]), &nbsp; [awesome](https://www.bookmarks.dev/search?q=[awesome]), &nbsp; [awesome-list](https://www.bookmarks.dev/search?q=[awesome-list])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/Vedenin/useful-java-links)
 
 A list of useful Java frameworks, libraries, software and hello worlds examples - Vedenin/useful-java-links
@@ -239,7 +239,7 @@ A list of useful Java frameworks, libraries, software and hello worlds examples 
 
 **[GitHub - stoeffel/awesome-fp-js](https://github.com/stoeffel/awesome-fp-js#readme)**
 
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [functional-programming](https://www.codingmarks.org/search?q=[functional-programming]), &nbsp; [awesome](https://www.codingmarks.org/search?q=[awesome]), &nbsp; [awesome-list](https://www.codingmarks.org/search?q=[awesome-list])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [functional-programming](https://www.bookmarks.dev/search?q=[functional-programming]), &nbsp; [awesome](https://www.bookmarks.dev/search?q=[awesome]), &nbsp; [awesome-list](https://www.bookmarks.dev/search?q=[awesome-list])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/stoeffel/awesome-fp-js)
 
 :sunglasses: A curated list of awesome functional programming stuff in js - stoeffel/awesome-fp-js
@@ -251,7 +251,7 @@ A list of useful Java frameworks, libraries, software and hello worlds examples 
 
 **[kubernetes-for-java-developers repo from Aron Gupta](https://github.com/aws-samples/kubernetes-for-java-developers)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.codingmarks.org/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [aws](https://www.codingmarks.org/search?q=[aws])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.bookmarks.dev/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/aws-samples/kubernetes-for-java-developers)
 
 A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kubernetes-for-java-developers. sample. example.
@@ -261,7 +261,7 @@ A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kuber
 **[AWS re:Invent 2015: DevOps at Amazon: A Look at Our Tools and Processes (DVO202) - YouTube](https://www.youtube.com/watch?v=esEFaY0FDKc)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2015-10-15
-  * **tags**: &nbsp; [aws](https://www.codingmarks.org/search?q=[aws]), &nbsp; [devops](https://www.codingmarks.org/search?q=[devops])
+  * **tags**: &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
 
 Learn about Amazon's transition to a service-oriented architecture over a decade ago. We share lessons learned, processes adopted, and the tools built to increase both agility and reliability. 
 
@@ -272,7 +272,7 @@ Learn about Amazon's transition to a service-oriented architecture over a decade
 
 **[Nice dotfiles example](https://github.com/jessfraz/dotfiles)**
 
-  * **tags**: &nbsp; [dotfiles](https://www.codingmarks.org/search?q=[dotfiles]), &nbsp; [alias](https://www.codingmarks.org/search?q=[alias]), &nbsp; [bash](https://www.codingmarks.org/search?q=[bash])
+  * **tags**: &nbsp; [dotfiles](https://www.bookmarks.dev/search?q=[dotfiles]), &nbsp; [alias](https://www.bookmarks.dev/search?q=[alias]), &nbsp; [bash](https://www.bookmarks.dev/search?q=[bash])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jessfraz/dotfiles)
 
 My dotfiles. Buyer beware ;)
@@ -281,7 +281,7 @@ My dotfiles. Buyer beware ;)
 
 **[command line - How to list all symbolic links in a directory - Ask Ubuntu](https://askubuntu.com/questions/522051/how-to-list-all-symbolic-links-in-a-directory)**
 
-  * **tags**: &nbsp; [bash](https://www.codingmarks.org/search?q=[bash]), &nbsp; [shell](https://www.codingmarks.org/search?q=[shell]), &nbsp; [linux](https://www.codingmarks.org/search?q=[linux])
+  * **tags**: &nbsp; [bash](https://www.bookmarks.dev/search?q=[bash]), &nbsp; [shell](https://www.bookmarks.dev/search?q=[shell]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux])
 
 ```
 find . -type l -ls
@@ -296,7 +296,7 @@ find . -maxdepth 1 -type l -ls
 
 **[Install Bash git completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)**
 
-  * **tags**: &nbsp; [git](https://www.codingmarks.org/search?q=[git]), &nbsp; [bash](https://www.codingmarks.org/search?q=[bash]), &nbsp; [osx](https://www.codingmarks.org/search?q=[osx]), &nbsp; [windows](https://www.codingmarks.org/search?q=[windows]), &nbsp; [linux](https://www.codingmarks.org/search?q=[linux])
+  * **tags**: &nbsp; [git](https://www.bookmarks.dev/search?q=[git]), &nbsp; [bash](https://www.bookmarks.dev/search?q=[bash]), &nbsp; [osx](https://www.bookmarks.dev/search?q=[osx]), &nbsp; [windows](https://www.bookmarks.dev/search?q=[windows]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux])
 
 How to install git completion on different platforms...
 
@@ -307,7 +307,7 @@ How to install git completion on different platforms...
 
 **[Bootstrap 4 Cheat Sheet - The ultimate list of Bootstrap classes](https://hackerthemes.com/bootstrap-cheatsheet/)**
 
-  * **tags**: &nbsp; [bootstrap](https://www.codingmarks.org/search?q=[bootstrap]), &nbsp; [cheatsheet](https://www.codingmarks.org/search?q=[cheatsheet])
+  * **tags**: &nbsp; [bootstrap](https://www.bookmarks.dev/search?q=[bootstrap]), &nbsp; [cheatsheet](https://www.bookmarks.dev/search?q=[cheatsheet])
 
 Quickly find your Bootstrap classes on this interactive Bootstrap cheat sheet. It includes code samples and live preview of elements.
 
@@ -318,7 +318,7 @@ Quickly find your Bootstrap classes on this interactive Bootstrap cheat sheet. I
 
 **[GitHub - krallin/tini](https://github.com/krallin/tini)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [linux](https://www.codingmarks.org/search?q=[linux]), &nbsp; [c](https://www.codingmarks.org/search?q=[c])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux]), &nbsp; [c](https://www.bookmarks.dev/search?q=[c])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/krallin/tini)
 
 A tiny but valid `init` for containers. 
@@ -331,7 +331,7 @@ A tiny but valid `init` for containers.
 **[Modern Node.js: async/await based testing with Mocha & Chai](https://zaiste.net/modern_node_js_async_await_based_testing_with_mocha_chai/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-04-09
-  * **tags**: &nbsp; [mocha](https://www.codingmarks.org/search?q=[mocha]), &nbsp; [chai](https://www.codingmarks.org/search?q=[chai]), &nbsp; [testing](https://www.codingmarks.org/search?q=[testing])
+  * **tags**: &nbsp; [mocha](https://www.bookmarks.dev/search?q=[mocha]), &nbsp; [chai](https://www.bookmarks.dev/search?q=[chai]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing])
   * <i class="fa fa-github fa-lg"></i> [github url](https://zaiste.net/modern_node_js_async_await_based_testing_with_mocha_chai/)
 
 Mocha is a JavaScript test framework running on Node.js and in the browser. It can run both asynchronous and synchronous code serially. Test cases are created using describe() and it() methods, the former is used to provide a structure by allowing to put various tests cases in logical groups while the latter is where the tests are written.
@@ -342,7 +342,7 @@ In order to perform actual tests, there is a need for an assertion library: a ru
 
 **[GitHub - domenic/chai-as-promised](https://github.com/domenic/chai-as-promised)**
 
-  * **tags**: &nbsp; [chai](https://www.codingmarks.org/search?q=[chai]), &nbsp; [promise](https://www.codingmarks.org/search?q=[promise]), &nbsp; [testing](https://www.codingmarks.org/search?q=[testing])
+  * **tags**: &nbsp; [chai](https://www.bookmarks.dev/search?q=[chai]), &nbsp; [promise](https://www.bookmarks.dev/search?q=[promise]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/domenic/chai-as-promised)
 
 Extends Chai with assertions about promises. Contribute to domenic/chai-as-promised development by creating an account on GitHub.
@@ -354,7 +354,7 @@ Extends Chai with assertions about promises. Contribute to domenic/chai-as-promi
 
 **[GitHub - arslanbilal/git-cheat-sheet: git and git flow cheat sheet](https://github.com/arslanbilal/git-cheat-sheet#readme)**
 
-  * **tags**: &nbsp; [git](https://www.codingmarks.org/search?q=[git]), &nbsp; [cheatsheet](https://www.codingmarks.org/search?q=[cheatsheet]), &nbsp; [awesome](https://www.codingmarks.org/search?q=[awesome])
+  * **tags**: &nbsp; [git](https://www.bookmarks.dev/search?q=[git]), &nbsp; [cheatsheet](https://www.bookmarks.dev/search?q=[cheatsheet]), &nbsp; [awesome](https://www.bookmarks.dev/search?q=[awesome])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/arslanbilal/git-cheat-sheet#readme)
 
 ##### Git Cheat Sheet English
@@ -374,7 +374,7 @@ Extends Chai with assertions about promises. Contribute to domenic/chai-as-promi
 
 **[GitHub - audreyr/favicon-cheat-sheet](https://github.com/audreyr/favicon-cheat-sheet)**
 
-  * **tags**: &nbsp; [html](https://www.codingmarks.org/search?q=[html]), &nbsp; [web](https://www.codingmarks.org/search?q=[web]), &nbsp; [favicon](https://www.codingmarks.org/search?q=[favicon]), &nbsp; [cheatsheet](https://www.codingmarks.org/search?q=[cheatsheet])
+  * **tags**: &nbsp; [html](https://www.bookmarks.dev/search?q=[html]), &nbsp; [web](https://www.bookmarks.dev/search?q=[web]), &nbsp; [favicon](https://www.bookmarks.dev/search?q=[favicon]), &nbsp; [cheatsheet](https://www.bookmarks.dev/search?q=[cheatsheet])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/audreyr/favicon-cheat-sheet)
 
 Obsessive cheat sheet to favicon sizes/types. Please contribute! (Note: this may be in flux as I learn new things about favicon best practices.) - audreyr/favicon-cheat-sheet
@@ -383,7 +383,7 @@ Obsessive cheat sheet to favicon sizes/types. Please contribute! (Note: this may
 
 **[Bootstrap 4 Cheat Sheet - The ultimate list of Bootstrap classes](https://hackerthemes.com/bootstrap-cheatsheet/)**
 
-  * **tags**: &nbsp; [bootstrap](https://www.codingmarks.org/search?q=[bootstrap]), &nbsp; [cheatsheet](https://www.codingmarks.org/search?q=[cheatsheet])
+  * **tags**: &nbsp; [bootstrap](https://www.bookmarks.dev/search?q=[bootstrap]), &nbsp; [cheatsheet](https://www.bookmarks.dev/search?q=[cheatsheet])
 
 Quickly find your Bootstrap classes on this interactive Bootstrap cheat sheet. It includes code samples and live preview of elements.
 
@@ -394,7 +394,7 @@ Quickly find your Bootstrap classes on this interactive Bootstrap cheat sheet. I
 
 **[Istio home page](https://istio.io/)**
 
-  * **tags**: &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [api-management](https://www.codingmarks.org/search?q=[api-management]), &nbsp; [circuit-breaker](https://www.codingmarks.org/search?q=[circuit-breaker]), &nbsp; [proxy](https://www.codingmarks.org/search?q=[proxy]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes])
+  * **tags**: &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [api-management](https://www.bookmarks.dev/search?q=[api-management]), &nbsp; [circuit-breaker](https://www.bookmarks.dev/search?q=[circuit-breaker]), &nbsp; [proxy](https://www.bookmarks.dev/search?q=[proxy]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/istio/istio)
 
 Istio is an open platform for providing a uniform way to integrate microservices, manage traffic flow across microservices, enforce policies and aggregate telemetry data. Istio's control plane provides an abstraction layer over the underlying cluster management platform, such as Kubernetes, Mesos, etc.
@@ -406,7 +406,7 @@ Istio is an open platform for providing a uniform way to integrate microservices
 
 **[Angular Progressbar](https://murhafsousli.github.io/ngx-progressbar/#/)**
 
-  * **tags**: &nbsp; [css](https://www.codingmarks.org/search?q=[css]), &nbsp; [user-experience](https://www.codingmarks.org/search?q=[user-experience])
+  * **tags**: &nbsp; [css](https://www.bookmarks.dev/search?q=[css]), &nbsp; [user-experience](https://www.bookmarks.dev/search?q=[user-experience])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/murhafsousli/ngx-progressbar)
 
 A nanoscopic progress/loading bar. Featuring realistic trickle animations to convince your users that something is happening!
@@ -418,7 +418,7 @@ A nanoscopic progress/loading bar. Featuring realistic trickle animations to con
 
 **[Kubernetes + Compose = Kompose](http://kompose.io/)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [docker-compose](https://www.codingmarks.org/search?q=[docker-compose]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [devops](https://www.codingmarks.org/search?q=[devops])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docker-compose](https://www.bookmarks.dev/search?q=[docker-compose]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/kubernetes/kompose)
 
 kompose is a tool to help users familiar with docker-compose move to Kubernetes. It takes a Docker Compose file and translates it into Kubernetes resources.
@@ -428,7 +428,7 @@ kompose is a tool to help users familiar with docker-compose move to Kubernetes.
 
 **[GitHub - docker/docker-bench-security](https://github.com/docker/docker-bench-security)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [devops](https://www.codingmarks.org/search?q=[devops])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/docker/docker-bench-security)
 
 The Docker Bench for Security is a script that checks for dozens of common best-practices around deploying Docker containers in production. - docker/docker-bench-security
@@ -438,7 +438,7 @@ The Docker Bench for Security is a script that checks for dozens of common best-
 **[AWS re:Invent 2015: DevOps at Amazon: A Look at Our Tools and Processes (DVO202) - YouTube](https://www.youtube.com/watch?v=esEFaY0FDKc)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2015-10-15
-  * **tags**: &nbsp; [aws](https://www.codingmarks.org/search?q=[aws]), &nbsp; [devops](https://www.codingmarks.org/search?q=[devops])
+  * **tags**: &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
 
 Learn about Amazon's transition to a service-oriented architecture over a decade ago. We share lessons learned, processes adopted, and the tools built to increase both agility and reliability. 
 
@@ -449,7 +449,7 @@ Learn about Amazon's transition to a service-oriented architecture over a decade
 
 **[Arthas Java Diagnostics Tool - home page ](https://alibaba.github.io/arthas/en/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [diagnostics](https://www.codingmarks.org/search?q=[diagnostics]), &nbsp; [performance](https://www.codingmarks.org/search?q=[performance])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [diagnostics](https://www.bookmarks.dev/search?q=[diagnostics]), &nbsp; [performance](https://www.bookmarks.dev/search?q=[performance])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/alibaba/arthas)
 
 #### Key features
@@ -474,7 +474,7 @@ Learn about Amazon's transition to a service-oriented architecture over a decade
 
 **[mermaid docs](https://mermaidjs.github.io/)**
 
-  * **tags**: &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation]), &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [diagram](https://www.codingmarks.org/search?q=[diagram])
+  * **tags**: &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [diagram](https://www.bookmarks.dev/search?q=[diagram])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/knsv/mermaid)
 
 Generation of diagrams and flowcharts from text in a similar manner as markdown.
@@ -490,7 +490,7 @@ This is why mermaid was born, a simple markdown-like script language for generat
 
 **[MX Lookup Tool - Check your DNS MX Records online - MxToolbox](https://mxtoolbox.com/)**
 
-  * **tags**: &nbsp; [dns](https://www.codingmarks.org/search?q=[dns]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [dns](https://www.bookmarks.dev/search?q=[dns]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
 
 MxToolbox supports global Internet operations by providing free, fast and accurate network diagnostic and lookup tools. Millions of technology professionals use our tools to help diagnose and resolve a wide range of infrastructure issues.
 
@@ -501,7 +501,7 @@ MxToolbox supports global Internet operations by providing free, fast and accura
 
 **[Kubernetes + Compose = Kompose](http://kompose.io/)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [docker-compose](https://www.codingmarks.org/search?q=[docker-compose]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [devops](https://www.codingmarks.org/search?q=[devops])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docker-compose](https://www.bookmarks.dev/search?q=[docker-compose]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/kubernetes/kompose)
 
 kompose is a tool to help users familiar with docker-compose move to Kubernetes. It takes a Docker Compose file and translates it into Kubernetes resources.
@@ -511,7 +511,7 @@ kompose is a tool to help users familiar with docker-compose move to Kubernetes.
 
 **[Manage data in Docker](https://docs.docker.com/storage/)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
 
 Overview of persisting data in containers
 
@@ -525,7 +525,7 @@ Types of mounts and where they live on the Docker host
 
 **[GitHub - dockersamples/example-voting-app](https://github.com/dockersamples/example-voting-app)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [docker-compose](https://www.codingmarks.org/search?q=[docker-compose])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docker-compose](https://www.bookmarks.dev/search?q=[docker-compose])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/dockersamples/example-voting-app)
 
 Example Docker Compose app. A simple distributed application running across multiple Docker containers.
@@ -534,7 +534,7 @@ Example Docker Compose app. A simple distributed application running across mult
 
 **[GitHub - docker/docker-bench-security](https://github.com/docker/docker-bench-security)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [devops](https://www.codingmarks.org/search?q=[devops])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/docker/docker-bench-security)
 
 The Docker Bench for Security is a script that checks for dozens of common best-practices around deploying Docker containers in production. - docker/docker-bench-security
@@ -543,7 +543,7 @@ The Docker Bench for Security is a script that checks for dozens of common best-
 
 **[GitHub - krallin/tini](https://github.com/krallin/tini)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [linux](https://www.codingmarks.org/search?q=[linux]), &nbsp; [c](https://www.codingmarks.org/search?q=[c])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux]), &nbsp; [c](https://www.bookmarks.dev/search?q=[c])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/krallin/tini)
 
 A tiny but valid `init` for containers. 
@@ -552,7 +552,7 @@ A tiny but valid `init` for containers.
 
 **[jib home page](https://github.com/GoogleContainerTools/jib)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin]), &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [gradle](https://www.codingmarks.org/search?q=[gradle])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [gradle](https://www.bookmarks.dev/search?q=[gradle])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/GoogleContainerTools/jib)
 
 :sailboat: Build container images for your Java applications. - GoogleContainerTools/jib
@@ -569,7 +569,7 @@ A tiny but valid `init` for containers.
 
 **[kubernetes-for-java-developers repo from Aron Gupta](https://github.com/aws-samples/kubernetes-for-java-developers)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.codingmarks.org/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [aws](https://www.codingmarks.org/search?q=[aws])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.bookmarks.dev/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/aws-samples/kubernetes-for-java-developers)
 
 A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kubernetes-for-java-developers. sample. example.
@@ -578,7 +578,7 @@ A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kuber
 
 **[Testcontainers home page](https://www.testcontainers.org/)**
 
-  * **tags**: &nbsp; [testing](https://www.codingmarks.org/search?q=[testing]), &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/testcontainers/testcontainers-java/)
 
 Testcontainers is a Java 8 library that supports JUnit tests, providing lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container.
@@ -590,7 +590,7 @@ Testcontainers is a Java 8 library that supports JUnit tests, providing lightwei
 
 **[Kubernetes + Compose = Kompose](http://kompose.io/)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [docker-compose](https://www.codingmarks.org/search?q=[docker-compose]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [devops](https://www.codingmarks.org/search?q=[devops])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docker-compose](https://www.bookmarks.dev/search?q=[docker-compose]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/kubernetes/kompose)
 
 kompose is a tool to help users familiar with docker-compose move to Kubernetes. It takes a Docker Compose file and translates it into Kubernetes resources.
@@ -600,7 +600,7 @@ kompose is a tool to help users familiar with docker-compose move to Kubernetes.
 
 **[GitHub - dockersamples/example-voting-app](https://github.com/dockersamples/example-voting-app)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [docker-compose](https://www.codingmarks.org/search?q=[docker-compose])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docker-compose](https://www.bookmarks.dev/search?q=[docker-compose])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/dockersamples/example-voting-app)
 
 Example Docker Compose app. A simple distributed application running across multiple Docker containers.
@@ -612,7 +612,7 @@ Example Docker Compose app. A simple distributed application running across mult
 
 **[Manage data in Docker](https://docs.docker.com/storage/)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [docs](https://www.codingmarks.org/search?q=[docs])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docs](https://www.bookmarks.dev/search?q=[docs])
 
 Overview of persisting data in containers
 
@@ -629,7 +629,7 @@ Types of mounts and where they live on the Docker host
 
 **[mermaid docs](https://mermaidjs.github.io/)**
 
-  * **tags**: &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation]), &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [diagram](https://www.codingmarks.org/search?q=[diagram])
+  * **tags**: &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [diagram](https://www.bookmarks.dev/search?q=[diagram])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/knsv/mermaid)
 
 Generation of diagrams and flowcharts from text in a similar manner as markdown.
@@ -642,7 +642,7 @@ This is why mermaid was born, a simple markdown-like script language for generat
 
 **[Graphviz - Graph Visualization Software](https://graphviz.org/)**
 
-  * **tags**: &nbsp; [graph](https://www.codingmarks.org/search?q=[graph]), &nbsp; [visualization](https://www.codingmarks.org/search?q=[visualization]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation])
+  * **tags**: &nbsp; [graph](https://www.bookmarks.dev/search?q=[graph]), &nbsp; [visualization](https://www.bookmarks.dev/search?q=[visualization]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation])
   * <i class="fa fa-github fa-lg"></i> [github url](https://gitlab.com/graphviz/graphviz/)
 
 Graphviz is open source graph visualization software. It has several main layout programs. See the gallery for sample layouts. It also has web and interactive graphical interfaces, and auxiliary tools, libraries, and language bindings. We're not able to put a lot of work into GUI editors but there are quite a few external projects and even commercial tools that incorporate Graphviz. You can find some of these in the Resources section.
@@ -651,7 +651,7 @@ Graphviz is open source graph visualization software. It has several main layout
 
 **[Dredd — HTTP API Testing Framework — Dredd latest documentation](https://dredd.org/)**
 
-  * **tags**: &nbsp; [api](https://www.codingmarks.org/search?q=[api]), &nbsp; [testing](https://www.codingmarks.org/search?q=[testing]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation])
+  * **tags**: &nbsp; [api](https://www.bookmarks.dev/search?q=[api]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/apiaryio/dredd)
 
 Dredd is a language-agnostic command-line tool for validating API description document against backend implementation of the API.
@@ -662,7 +662,7 @@ Dredd reads your API description and step by step validates whether your API imp
 
 **[API Blueprint home page](https://apiblueprint.org/)**
 
-  * **tags**: &nbsp; [api](https://www.codingmarks.org/search?q=[api]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest])
+  * **tags**: &nbsp; [api](https://www.bookmarks.dev/search?q=[api]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/apiaryio/api-blueprint/)
 
 API Blueprint is simple and accessible to everybody involved in the API lifecycle. Its syntax is concise yet expressive. With API Blueprint you can quickly design and prototype APIs to be created or document and test already deployed mission-critical APIs.
@@ -674,7 +674,7 @@ API Blueprint is simple and accessible to everybody involved in the API lifecycl
 
 **[BoundedContext](https://martinfowler.com/bliki/BoundedContext.html)**
 
-  * **tags**: &nbsp; [domain-driven-design](https://www.codingmarks.org/search?q=[domain-driven-design]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture])
+  * **tags**: &nbsp; [domain-driven-design](https://www.bookmarks.dev/search?q=[domain-driven-design]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture])
 
 Bounded Context is a central pattern in Domain-Driven Design. It is the focus of DDD's strategic design section which is all about dealing with large models and teams. DDD deals with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships.
 
@@ -683,7 +683,7 @@ Bounded Context is a central pattern in Domain-Driven Design. It is the focus of
 **[Strategic Domain Driven Design with Context Mapping](https://www.infoq.com/articles/ddd-contextmapping)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2009-11-25
-  * **tags**: &nbsp; [domain-driven-design](https://www.codingmarks.org/search?q=[domain-driven-design]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture])
+  * **tags**: &nbsp; [domain-driven-design](https://www.bookmarks.dev/search?q=[domain-driven-design]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture])
 
 Many approaches to object oriented modeling tend not to scale well when the applications grow in size and complexity. **Context Mapping** technique can be used to manage the complexity in large software development projects. In this article, author Alberto Brandolini discusses the many sides of **bounded contexts** and how to use them to build a context map to support key decisions in a software project.
 
@@ -698,7 +698,7 @@ Many approaches to object oriented modeling tend not to scale well when the appl
 
 **[Vim dotfiles and configurations example](https://github.com/jessfraz/.vim)**
 
-  * **tags**: &nbsp; [vim](https://www.codingmarks.org/search?q=[vim]), &nbsp; [dotfiles](https://www.codingmarks.org/search?q=[dotfiles])
+  * **tags**: &nbsp; [vim](https://www.bookmarks.dev/search?q=[vim]), &nbsp; [dotfiles](https://www.bookmarks.dev/search?q=[dotfiles])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jessfraz/.vim)
 
 My .vim dotfiles and configurations. Contribute to jessfraz/.vim
@@ -707,7 +707,7 @@ My .vim dotfiles and configurations. Contribute to jessfraz/.vim
 
 **[Nice dotfiles example](https://github.com/jessfraz/dotfiles)**
 
-  * **tags**: &nbsp; [dotfiles](https://www.codingmarks.org/search?q=[dotfiles]), &nbsp; [alias](https://www.codingmarks.org/search?q=[alias]), &nbsp; [bash](https://www.codingmarks.org/search?q=[bash])
+  * **tags**: &nbsp; [dotfiles](https://www.bookmarks.dev/search?q=[dotfiles]), &nbsp; [alias](https://www.bookmarks.dev/search?q=[alias]), &nbsp; [bash](https://www.bookmarks.dev/search?q=[bash])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jessfraz/dotfiles)
 
 My dotfiles. Buyer beware ;)
@@ -719,7 +719,7 @@ My dotfiles. Buyer beware ;)
 
 **[Nodemailer home page](http://nodemailer.com/)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [email](https://www.codingmarks.org/search?q=[email])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [email](https://www.bookmarks.dev/search?q=[email])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/nodemailer/nodemailer)
 
 Nodemailer is a module for Node.js to send emails
@@ -731,7 +731,7 @@ Nodemailer is a module for Node.js to send emails
 
 **[Sentry home page ](https://sentry.io/)**
 
-  * **tags**: &nbsp; [error-handling](https://www.codingmarks.org/search?q=[error-handling]), &nbsp; [monitoring](https://www.codingmarks.org/search?q=[monitoring])
+  * **tags**: &nbsp; [error-handling](https://www.bookmarks.dev/search?q=[error-handling]), &nbsp; [monitoring](https://www.bookmarks.dev/search?q=[monitoring])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/getsentry/sentry)
 
 Open-source error tracking that helps developers monitor and fix crashes in real time. Iterate continuously. Boost workflow efficiency. Improve user experience. 
@@ -745,7 +745,7 @@ Error Tracking Software — JavaScript, Python, PHP, Ruby, more...
 
 **[La Gazzetta dello Sport I News su Calcio, Basket, NBA, F1 e MotoGp](https://www.gazzetta.it/)**
 
-  * **tags**: &nbsp; [facebook](https://www.codingmarks.org/search?q=[facebook])
+  * **tags**: &nbsp; [facebook](https://www.bookmarks.dev/search?q=[facebook])
 
 Leggi La Gazzetta dello Sport: news, foto, video e risultati su calcio di serie A, calciomercato, basket, F1, motoGp, ciclismo e tennis.\n
 <b>BOLD</b>
@@ -757,7 +757,7 @@ Leggi La Gazzetta dello Sport: news, foto, video e risultati su calcio di serie 
 
 **[X-Icon Editor](http://www.xiconeditor.com/)**
 
-  * **tags**: &nbsp; [favicon](https://www.codingmarks.org/search?q=[favicon]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [favicon](https://www.bookmarks.dev/search?q=[favicon]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
 
 X-Icon Editor, create high resolution icons from your own browser
 
@@ -765,7 +765,7 @@ X-Icon Editor, create high resolution icons from your own browser
 
 **[GitHub - audreyr/favicon-cheat-sheet](https://github.com/audreyr/favicon-cheat-sheet)**
 
-  * **tags**: &nbsp; [html](https://www.codingmarks.org/search?q=[html]), &nbsp; [web](https://www.codingmarks.org/search?q=[web]), &nbsp; [favicon](https://www.codingmarks.org/search?q=[favicon]), &nbsp; [cheatsheet](https://www.codingmarks.org/search?q=[cheatsheet])
+  * **tags**: &nbsp; [html](https://www.bookmarks.dev/search?q=[html]), &nbsp; [web](https://www.bookmarks.dev/search?q=[web]), &nbsp; [favicon](https://www.bookmarks.dev/search?q=[favicon]), &nbsp; [cheatsheet](https://www.bookmarks.dev/search?q=[cheatsheet])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/audreyr/favicon-cheat-sheet)
 
 Obsessive cheat sheet to favicon sizes/types. Please contribute! (Note: this may be in flux as I learn new things about favicon best practices.) - audreyr/favicon-cheat-sheet
@@ -778,7 +778,7 @@ Obsessive cheat sheet to favicon sizes/types. Please contribute! (Note: this may
 **[High Quality Gifs with FFMPEG ](https://medium.com/@colten_jackson/doing-the-gif-thing-on-debian-82b9760a8483)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2015-10-28
-  * **tags**: &nbsp; [gif](https://www.codingmarks.org/search?q=[gif]), &nbsp; [ffmpeg](https://www.codingmarks.org/search?q=[ffmpeg]), &nbsp; [video-processing](https://www.codingmarks.org/search?q=[video-processing])
+  * **tags**: &nbsp; [gif](https://www.bookmarks.dev/search?q=[gif]), &nbsp; [ffmpeg](https://www.bookmarks.dev/search?q=[ffmpeg]), &nbsp; [video-processing](https://www.bookmarks.dev/search?q=[video-processing])
 
 After getting FFMPEG installed, let’s try it out on a MOV downloaded from my google photos account:
 ```
@@ -791,7 +791,7 @@ We’re calling the ffmpeg program and telling it that MVI_6654.MOV is our input
 **[
 FFmpeg](https://www.ffmpeg.org/)**
 
-  * **tags**: &nbsp; [ffmpeg](https://www.codingmarks.org/search?q=[ffmpeg]), &nbsp; [video-processing](https://www.codingmarks.org/search?q=[video-processing])
+  * **tags**: &nbsp; [ffmpeg](https://www.bookmarks.dev/search?q=[ffmpeg]), &nbsp; [video-processing](https://www.bookmarks.dev/search?q=[video-processing])
   * <i class="fa fa-github fa-lg"></i> [github url](https://www.ffmpeg.org/download.html#get-sources)
 
 A complete, cross-platform solution to record, convert and stream audio and video.
@@ -804,7 +804,7 @@ A complete, cross-platform solution to record, convert and stream audio and vide
 
 **[Dive Into HTML5](https://diveintohtml5.info/)**
 
-  * **tags**: &nbsp; [html](https://www.codingmarks.org/search?q=[html]), &nbsp; [html5](https://www.codingmarks.org/search?q=[html5]), &nbsp; [free-programming-books](https://www.codingmarks.org/search?q=[free-programming-books])
+  * **tags**: &nbsp; [html](https://www.bookmarks.dev/search?q=[html]), &nbsp; [html5](https://www.bookmarks.dev/search?q=[html5]), &nbsp; [free-programming-books](https://www.bookmarks.dev/search?q=[free-programming-books])
 
 Dive Into HTML5 elaborates on a hand-picked selection of features from the HTML5 specification and other fine standards.
 
@@ -812,7 +812,7 @@ Dive Into HTML5 elaborates on a hand-picked selection of features from the HTML5
 
 **[rx-book RxJS - Javascript library for functional reactive programming.](http://xgrommx.github.io/rx-book)**
 
-  * **tags**: &nbsp; [rxjs](https://www.codingmarks.org/search?q=[rxjs]), &nbsp; [free-programming-books](https://www.codingmarks.org/search?q=[free-programming-books])
+  * **tags**: &nbsp; [rxjs](https://www.bookmarks.dev/search?q=[rxjs]), &nbsp; [free-programming-books](https://www.bookmarks.dev/search?q=[free-programming-books])
 
 Reactive Extensions (Rx) is a library for composing asynchronous and event-based programs using observable sequences and LINQ-style query operators.
 
@@ -823,7 +823,7 @@ Reactive Extensions (Rx) is a library for composing asynchronous and event-based
 
 **[GitHub - stoeffel/awesome-fp-js](https://github.com/stoeffel/awesome-fp-js#readme)**
 
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [functional-programming](https://www.codingmarks.org/search?q=[functional-programming]), &nbsp; [awesome](https://www.codingmarks.org/search?q=[awesome]), &nbsp; [awesome-list](https://www.codingmarks.org/search?q=[awesome-list])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [functional-programming](https://www.bookmarks.dev/search?q=[functional-programming]), &nbsp; [awesome](https://www.bookmarks.dev/search?q=[awesome]), &nbsp; [awesome-list](https://www.bookmarks.dev/search?q=[awesome-list])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/stoeffel/awesome-fp-js)
 
 :sunglasses: A curated list of awesome functional programming stuff in js - stoeffel/awesome-fp-js
@@ -833,7 +833,7 @@ Reactive Extensions (Rx) is a library for composing asynchronous and event-based
 **[Simplify your JavaScript – Use .map(), .reduce(), and .filter()](https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-01-29
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [functional-programming](https://www.codingmarks.org/search?q=[functional-programming])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [functional-programming](https://www.bookmarks.dev/search?q=[functional-programming])
 
 Simplify the way you write your JavaScript by using .map(), .reduce() and .filter() instead of for() and forEach() loops. You’ll end up with clearer, less clunky code!
 
@@ -845,7 +845,7 @@ Simplify the way you write your JavaScript by using .map(), .reduce() and .filte
 **[High Quality Gifs with FFMPEG ](https://medium.com/@colten_jackson/doing-the-gif-thing-on-debian-82b9760a8483)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2015-10-28
-  * **tags**: &nbsp; [gif](https://www.codingmarks.org/search?q=[gif]), &nbsp; [ffmpeg](https://www.codingmarks.org/search?q=[ffmpeg]), &nbsp; [video-processing](https://www.codingmarks.org/search?q=[video-processing])
+  * **tags**: &nbsp; [gif](https://www.bookmarks.dev/search?q=[gif]), &nbsp; [ffmpeg](https://www.bookmarks.dev/search?q=[ffmpeg]), &nbsp; [video-processing](https://www.bookmarks.dev/search?q=[video-processing])
 
 After getting FFMPEG installed, let’s try it out on a MOV downloaded from my google photos account:
 ```
@@ -860,7 +860,7 @@ We’re calling the ffmpeg program and telling it that MVI_6654.MOV is our input
 
 **[GitHub - arslanbilal/git-cheat-sheet: git and git flow cheat sheet](https://github.com/arslanbilal/git-cheat-sheet#readme)**
 
-  * **tags**: &nbsp; [git](https://www.codingmarks.org/search?q=[git]), &nbsp; [cheatsheet](https://www.codingmarks.org/search?q=[cheatsheet]), &nbsp; [awesome](https://www.codingmarks.org/search?q=[awesome])
+  * **tags**: &nbsp; [git](https://www.bookmarks.dev/search?q=[git]), &nbsp; [cheatsheet](https://www.bookmarks.dev/search?q=[cheatsheet]), &nbsp; [awesome](https://www.bookmarks.dev/search?q=[awesome])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/arslanbilal/git-cheat-sheet#readme)
 
 ##### Git Cheat Sheet English
@@ -880,7 +880,7 @@ We’re calling the ffmpeg program and telling it that MVI_6654.MOV is our input
 
 **[Install Bash git completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)**
 
-  * **tags**: &nbsp; [git](https://www.codingmarks.org/search?q=[git]), &nbsp; [bash](https://www.codingmarks.org/search?q=[bash]), &nbsp; [osx](https://www.codingmarks.org/search?q=[osx]), &nbsp; [windows](https://www.codingmarks.org/search?q=[windows]), &nbsp; [linux](https://www.codingmarks.org/search?q=[linux])
+  * **tags**: &nbsp; [git](https://www.bookmarks.dev/search?q=[git]), &nbsp; [bash](https://www.bookmarks.dev/search?q=[bash]), &nbsp; [osx](https://www.bookmarks.dev/search?q=[osx]), &nbsp; [windows](https://www.bookmarks.dev/search?q=[windows]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux])
 
 How to install git completion on different platforms...
 
@@ -891,7 +891,7 @@ How to install git completion on different platforms...
 
 **[jib home page](https://github.com/GoogleContainerTools/jib)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin]), &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [gradle](https://www.codingmarks.org/search?q=[gradle])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [gradle](https://www.bookmarks.dev/search?q=[gradle])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/GoogleContainerTools/jib)
 
 :sailboat: Build container images for your Java applications. - GoogleContainerTools/jib
@@ -911,7 +911,7 @@ How to install git completion on different platforms...
 
 **[Graphviz - Graph Visualization Software](https://graphviz.org/)**
 
-  * **tags**: &nbsp; [graph](https://www.codingmarks.org/search?q=[graph]), &nbsp; [visualization](https://www.codingmarks.org/search?q=[visualization]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation])
+  * **tags**: &nbsp; [graph](https://www.bookmarks.dev/search?q=[graph]), &nbsp; [visualization](https://www.bookmarks.dev/search?q=[visualization]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation])
   * <i class="fa fa-github fa-lg"></i> [github url](https://gitlab.com/graphviz/graphviz/)
 
 Graphviz is open source graph visualization software. It has several main layout programs. See the gallery for sample layouts. It also has web and interactive graphical interfaces, and auxiliary tools, libraries, and language bindings. We're not able to put a lot of work into GUI editors but there are quite a few external projects and even commercial tools that incorporate Graphviz. You can find some of these in the Resources section.
@@ -923,7 +923,7 @@ Graphviz is open source graph visualization software. It has several main layout
 
 **[Helm Docs home page](https://helm.sh/)**
 
-  * **tags**: &nbsp; [helm](https://www.codingmarks.org/search?q=[helm]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.codingmarks.org/search?q=[kubernetes-helm])
+  * **tags**: &nbsp; [helm](https://www.bookmarks.dev/search?q=[helm]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.bookmarks.dev/search?q=[kubernetes-helm])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/helm/helm)
 
 Helm - The Kubernetes Package Manager.
@@ -939,7 +939,7 @@ Charts are easy to create, version, share, and publish — so start using Helm a
 
 **[GitHub - Homebrew/homebrew-cask home page](https://github.com/Homebrew/homebrew-cask)**
 
-  * **tags**: &nbsp; [homebrew](https://www.codingmarks.org/search?q=[homebrew]), &nbsp; [macos](https://www.codingmarks.org/search?q=[macos])
+  * **tags**: &nbsp; [homebrew](https://www.bookmarks.dev/search?q=[homebrew]), &nbsp; [macos](https://www.bookmarks.dev/search?q=[macos])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/Homebrew/homebrew-cask)
 
 🍻 A CLI workflow for the administration of macOS applications distributed as binaries - Homebrew/homebrew-cask
@@ -951,7 +951,7 @@ Charts are easy to create, version, share, and publish — so start using Helm a
 
 **[GitHub - audreyr/favicon-cheat-sheet](https://github.com/audreyr/favicon-cheat-sheet)**
 
-  * **tags**: &nbsp; [html](https://www.codingmarks.org/search?q=[html]), &nbsp; [web](https://www.codingmarks.org/search?q=[web]), &nbsp; [favicon](https://www.codingmarks.org/search?q=[favicon]), &nbsp; [cheatsheet](https://www.codingmarks.org/search?q=[cheatsheet])
+  * **tags**: &nbsp; [html](https://www.bookmarks.dev/search?q=[html]), &nbsp; [web](https://www.bookmarks.dev/search?q=[web]), &nbsp; [favicon](https://www.bookmarks.dev/search?q=[favicon]), &nbsp; [cheatsheet](https://www.bookmarks.dev/search?q=[cheatsheet])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/audreyr/favicon-cheat-sheet)
 
 Obsessive cheat sheet to favicon sizes/types. Please contribute! (Note: this may be in flux as I learn new things about favicon best practices.) - audreyr/favicon-cheat-sheet
@@ -960,7 +960,7 @@ Obsessive cheat sheet to favicon sizes/types. Please contribute! (Note: this may
 
 **[Dive Into HTML5](https://diveintohtml5.info/)**
 
-  * **tags**: &nbsp; [html](https://www.codingmarks.org/search?q=[html]), &nbsp; [html5](https://www.codingmarks.org/search?q=[html5]), &nbsp; [free-programming-books](https://www.codingmarks.org/search?q=[free-programming-books])
+  * **tags**: &nbsp; [html](https://www.bookmarks.dev/search?q=[html]), &nbsp; [html5](https://www.bookmarks.dev/search?q=[html5]), &nbsp; [free-programming-books](https://www.bookmarks.dev/search?q=[free-programming-books])
 
 Dive Into HTML5 elaborates on a hand-picked selection of features from the HTML5 specification and other fine standards.
 
@@ -971,7 +971,7 @@ Dive Into HTML5 elaborates on a hand-picked selection of features from the HTML5
 
 **[Dive Into HTML5](https://diveintohtml5.info/)**
 
-  * **tags**: &nbsp; [html](https://www.codingmarks.org/search?q=[html]), &nbsp; [html5](https://www.codingmarks.org/search?q=[html5]), &nbsp; [free-programming-books](https://www.codingmarks.org/search?q=[free-programming-books])
+  * **tags**: &nbsp; [html](https://www.bookmarks.dev/search?q=[html]), &nbsp; [html5](https://www.bookmarks.dev/search?q=[html5]), &nbsp; [free-programming-books](https://www.bookmarks.dev/search?q=[free-programming-books])
 
 Dive Into HTML5 elaborates on a hand-picked selection of features from the HTML5 specification and other fine standards.
 
@@ -982,7 +982,7 @@ Dive Into HTML5 elaborates on a hand-picked selection of features from the HTML5
 
 **[Immutable.js home page](https://immutable-js.github.io/immutable-js/)**
 
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [immutable.js](https://www.codingmarks.org/search?q=[immutable.js])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [immutable.js](https://www.bookmarks.dev/search?q=[immutable.js])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/immutable-js/immutable-js)
 
 [Immutable][] data cannot be changed once created, leading to much simpler
@@ -1018,7 +1018,7 @@ Want to hear more? Watch the presentation about Immutable.js:
 
 **[macos - Mac OS X and multiple Java versions - Stack Overflow](https://stackoverflow.com/questions/26252591/mac-os-x-and-multiple-java-versions)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [jenv](https://www.codingmarks.org/search?q=[jenv]), &nbsp; [macos](https://www.codingmarks.org/search?q=[macos]), &nbsp; [install](https://www.codingmarks.org/search?q=[install])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [jenv](https://www.bookmarks.dev/search?q=[jenv]), &nbsp; [macos](https://www.bookmarks.dev/search?q=[macos]), &nbsp; [install](https://www.bookmarks.dev/search?q=[install])
 <hr>
 
 
@@ -1026,7 +1026,7 @@ Want to hear more? Watch the presentation about Immutable.js:
 
 **[Arquillian  Home Page](http://arquillian.org/)**
 
-  * **tags**: &nbsp; [arquillian](https://www.codingmarks.org/search?q=[arquillian]), &nbsp; [testing](https://www.codingmarks.org/search?q=[testing]), &nbsp; [integration-testing](https://www.codingmarks.org/search?q=[integration-testing])
+  * **tags**: &nbsp; [arquillian](https://www.bookmarks.dev/search?q=[arquillian]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [integration-testing](https://www.bookmarks.dev/search?q=[integration-testing])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/arquillian)
 
 An innovative testing platform for the Java Virtual Machine (JVM). Open source. Highly extensible.
@@ -1039,7 +1039,7 @@ An innovative testing platform for the Java Virtual Machine (JVM). Open source. 
 **[Making microservices micro with Istio Service Mesh & Kubernetes by Ray Tsang @ Spring I/O 2018 - YouTube](https://www.youtube.com/watch?v=s31kdh7Q7Hc)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-10-03
-  * **tags**: &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot])
+  * **tags**: &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot])
 
 Spring has been the leader as a microservices framework for Java with Spring Boot, Spring and Spring Cloud. Istio has emerged as a polyglot alternative to Spring Cloud as an open platform to connect, manage and secure microservices. Let's explore how Istio compares to Spring Cloud and what each platform provides in addition to the other. We will also explore the use cases that are best suited to use Spring Cloud or Istio, or perhaps a combination of both.
 
@@ -1048,7 +1048,7 @@ Spring has been the leader as a microservices framework for Java with Spring Boo
 **[A Tale of Two Frameworks: Spring Cloud and Istio - YouTube](https://www.youtube.com/watch?v=AMJQO9zs2eo)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-10-03
-  * **tags**: &nbsp; [spring-cloud](https://www.codingmarks.org/search?q=[spring-cloud]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio])
+  * **tags**: &nbsp; [spring-cloud](https://www.bookmarks.dev/search?q=[spring-cloud]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio])
 
 Spring has been the leader as a microservices framework for Java with Spring Boot, Spring and Spring Cloud. Istio has emerged as a polyglot alternative to Spring Cloud as an open platform to connect, manage and secure microservices. Let's explore how Istio compares to Spring Cloud and what each platform provides in addition to the other. We will also explore the use cases that are best suited to use Spring Cloud or Istio, or perhaps a combination of both.
 
@@ -1065,7 +1065,7 @@ Istio or a service mesh architecture works better for polyglot environments
 
 **[Istio home page](https://istio.io/)**
 
-  * **tags**: &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [api-management](https://www.codingmarks.org/search?q=[api-management]), &nbsp; [circuit-breaker](https://www.codingmarks.org/search?q=[circuit-breaker]), &nbsp; [proxy](https://www.codingmarks.org/search?q=[proxy]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes])
+  * **tags**: &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [api-management](https://www.bookmarks.dev/search?q=[api-management]), &nbsp; [circuit-breaker](https://www.bookmarks.dev/search?q=[circuit-breaker]), &nbsp; [proxy](https://www.bookmarks.dev/search?q=[proxy]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/istio/istio)
 
 Istio is an open platform for providing a uniform way to integrate microservices, manage traffic flow across microservices, enforce policies and aggregate telemetry data. Istio's control plane provides an abstraction layer over the underlying cluster management platform, such as Kubernetes, Mesos, etc.
@@ -1074,7 +1074,7 @@ Istio is an open platform for providing a uniform way to integrate microservices
 
 **[kubernetes-for-java-developers repo from Aron Gupta](https://github.com/aws-samples/kubernetes-for-java-developers)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.codingmarks.org/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [aws](https://www.codingmarks.org/search?q=[aws])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.bookmarks.dev/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/aws-samples/kubernetes-for-java-developers)
 
 A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kubernetes-for-java-developers. sample. example.
@@ -1087,7 +1087,7 @@ A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kuber
 **[Java 8: Definitive guide to CompletableFuture](https://www.nurkiewicz.com/2013/05/java-8-definitive-guide-to.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2013-05-09
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [asynchronous](https://www.codingmarks.org/search?q=[asynchronous]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [asynchronous](https://www.bookmarks.dev/search?q=[asynchronous]), &nbsp; [async](https://www.bookmarks.dev/search?q=[async])
 
 Examples of using and combining `CompletableFuture` API
 
@@ -1095,7 +1095,7 @@ Examples of using and combining `CompletableFuture` API
 
 **[Arthas Java Diagnostics Tool - home page ](https://alibaba.github.io/arthas/en/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [diagnostics](https://www.codingmarks.org/search?q=[diagnostics]), &nbsp; [performance](https://www.codingmarks.org/search?q=[performance])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [diagnostics](https://www.bookmarks.dev/search?q=[diagnostics]), &nbsp; [performance](https://www.bookmarks.dev/search?q=[performance])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/alibaba/arthas)
 
 #### Key features
@@ -1117,12 +1117,12 @@ Examples of using and combining `CompletableFuture` API
 
 **[macos - Mac OS X and multiple Java versions - Stack Overflow](https://stackoverflow.com/questions/26252591/mac-os-x-and-multiple-java-versions)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [jenv](https://www.codingmarks.org/search?q=[jenv]), &nbsp; [macos](https://www.codingmarks.org/search?q=[macos]), &nbsp; [install](https://www.codingmarks.org/search?q=[install])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [jenv](https://www.bookmarks.dev/search?q=[jenv]), &nbsp; [macos](https://www.bookmarks.dev/search?q=[macos]), &nbsp; [install](https://www.bookmarks.dev/search?q=[install])
 <hr>
 
 **[jEnv - Manage your Java environment](http://www.jenv.be/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [jenv](https://www.codingmarks.org/search?q=[jenv])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [jenv](https://www.bookmarks.dev/search?q=[jenv])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jenv/jenv)
 
 Discover jenv, the command line Java manager
@@ -1132,7 +1132,7 @@ Discover jenv, the command line Java manager
 **[Oliver Gierke - Whoops! Where did my architecture go](http://olivergierke.de/2013/01/whoops-where-did-my-architecture-go/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2013-01-01
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [architecture](https://www.codingmarks.org/search?q=[architecture])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/odrotbohm/whoops-architecture)
 
 #### Summary
@@ -1143,7 +1143,7 @@ The basic approach I recommend is to move the vertical slices into the focus of 
 
 **[useful-java-links](https://github.com/Vedenin/useful-java-links#readme)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [resources](https://www.codingmarks.org/search?q=[resources]), &nbsp; [awesome](https://www.codingmarks.org/search?q=[awesome]), &nbsp; [awesome-list](https://www.codingmarks.org/search?q=[awesome-list])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [resources](https://www.bookmarks.dev/search?q=[resources]), &nbsp; [awesome](https://www.bookmarks.dev/search?q=[awesome]), &nbsp; [awesome-list](https://www.bookmarks.dev/search?q=[awesome-list])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/Vedenin/useful-java-links)
 
 A list of useful Java frameworks, libraries, software and hello worlds examples - Vedenin/useful-java-links
@@ -1152,7 +1152,7 @@ A list of useful Java frameworks, libraries, software and hello worlds examples 
 
 **[jib home page](https://github.com/GoogleContainerTools/jib)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin]), &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [gradle](https://www.codingmarks.org/search?q=[gradle])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [gradle](https://www.bookmarks.dev/search?q=[gradle])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/GoogleContainerTools/jib)
 
 :sailboat: Build container images for your Java applications. - GoogleContainerTools/jib
@@ -1169,7 +1169,7 @@ A list of useful Java frameworks, libraries, software and hello worlds examples 
 
 **[kubernetes-for-java-developers repo from Aron Gupta](https://github.com/aws-samples/kubernetes-for-java-developers)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.codingmarks.org/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [aws](https://www.codingmarks.org/search?q=[aws])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.bookmarks.dev/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/aws-samples/kubernetes-for-java-developers)
 
 A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kubernetes-for-java-developers. sample. example.
@@ -1178,7 +1178,7 @@ A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kuber
 
 **[Testcontainers home page](https://www.testcontainers.org/)**
 
-  * **tags**: &nbsp; [testing](https://www.codingmarks.org/search?q=[testing]), &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/testcontainers/testcontainers-java/)
 
 Testcontainers is a Java 8 library that supports JUnit tests, providing lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container.
@@ -1187,7 +1187,7 @@ Testcontainers is a Java 8 library that supports JUnit tests, providing lightwei
 
 **[JUnit 5 Articles and source code from Baeldung](https://github.com/eugenp/tutorials/tree/master/testing-modules/junit-5)**
 
-  * **tags**: &nbsp; [junit](https://www.codingmarks.org/search?q=[junit]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [junit](https://www.bookmarks.dev/search?q=[junit]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/testing-modules/junit-5)
 
 - [The Basics of JUnit 5 – A Preview](http://www.baeldung.com/junit-5-preview)
@@ -1212,7 +1212,7 @@ Testcontainers is a Java 8 library that supports JUnit tests, providing lightwei
 **[Reactor vs. RxJava](http://helmbold.de/artikel/reactor-vs-rxjava/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-06-05
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [reactive](https://www.codingmarks.org/search?q=[reactive])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [reactive](https://www.bookmarks.dev/search?q=[reactive])
 
 Was spricht für und gegen Reactor und RxJava?
 
@@ -1223,7 +1223,7 @@ Was spricht für und gegen Reactor und RxJava?
 
 **[Immutable.js home page](https://immutable-js.github.io/immutable-js/)**
 
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [immutable.js](https://www.codingmarks.org/search?q=[immutable.js])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [immutable.js](https://www.bookmarks.dev/search?q=[immutable.js])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/immutable-js/immutable-js)
 
 [Immutable][] data cannot be changed once created, leading to much simpler
@@ -1257,7 +1257,7 @@ Want to hear more? Watch the presentation about Immutable.js:
 **[Jake Archibald: In The Loop - JSConf.Asia 2018 - YouTube](https://www.youtube.com/watch?v=cCOL7MC4Pl0)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-01-27
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript])
 
 Have you ever had a bug where things were happening in the wrong order, or particular style changes were being ignored? Ever fixed that bug by wrapping a section of code in a setTimeout? Ever found that fix to be unreliable, and played around with the timeout number until it kinda almost always worked? 
 This talk looks at the browser's event loop, the thing that orchestrates the main thread of the browser, which includes JavaScript, events, and rendering. We'll look at the difference between tasks, microtasks, requestAnimationFrame, requestIdleCallback, and where events land. 
@@ -1271,7 +1271,7 @@ JSConf.Asia - Capitol Theatre, Singapore - 27 January 2018
 
 **[GitHub - stoeffel/awesome-fp-js](https://github.com/stoeffel/awesome-fp-js#readme)**
 
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [functional-programming](https://www.codingmarks.org/search?q=[functional-programming]), &nbsp; [awesome](https://www.codingmarks.org/search?q=[awesome]), &nbsp; [awesome-list](https://www.codingmarks.org/search?q=[awesome-list])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [functional-programming](https://www.bookmarks.dev/search?q=[functional-programming]), &nbsp; [awesome](https://www.bookmarks.dev/search?q=[awesome]), &nbsp; [awesome-list](https://www.bookmarks.dev/search?q=[awesome-list])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/stoeffel/awesome-fp-js)
 
 :sunglasses: A curated list of awesome functional programming stuff in js - stoeffel/awesome-fp-js
@@ -1281,7 +1281,7 @@ JSConf.Asia - Capitol Theatre, Singapore - 27 January 2018
 **[The Cost Of JavaScript In 2018 – Addy Osmani – Medium](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-08-01
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [performance](https://www.codingmarks.org/search?q=[performance])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [performance](https://www.bookmarks.dev/search?q=[performance])
 
 [Youtube video](https://www.youtube.com/watch?v=63I-mEuSvGA)
 
@@ -1294,7 +1294,7 @@ Building interactive sites can involve sending JavaScript to your users. Often, 
 **[Simplify your JavaScript – Use .map(), .reduce(), and .filter()](https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-01-29
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [functional-programming](https://www.codingmarks.org/search?q=[functional-programming])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [functional-programming](https://www.bookmarks.dev/search?q=[functional-programming])
 
 Simplify the way you write your JavaScript by using .map(), .reduce() and .filter() instead of for() and forEach() loops. You’ll end up with clearer, less clunky code!
 
@@ -1302,7 +1302,7 @@ Simplify the way you write your JavaScript by using .map(), .reduce() and .filte
 
 **[mermaid docs](https://mermaidjs.github.io/)**
 
-  * **tags**: &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation]), &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [diagram](https://www.codingmarks.org/search?q=[diagram])
+  * **tags**: &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [diagram](https://www.bookmarks.dev/search?q=[diagram])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/knsv/mermaid)
 
 Generation of diagrams and flowcharts from text in a similar manner as markdown.
@@ -1318,12 +1318,12 @@ This is why mermaid was born, a simple markdown-like script language for generat
 
 **[macos - Mac OS X and multiple Java versions - Stack Overflow](https://stackoverflow.com/questions/26252591/mac-os-x-and-multiple-java-versions)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [jenv](https://www.codingmarks.org/search?q=[jenv]), &nbsp; [macos](https://www.codingmarks.org/search?q=[macos]), &nbsp; [install](https://www.codingmarks.org/search?q=[install])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [jenv](https://www.bookmarks.dev/search?q=[jenv]), &nbsp; [macos](https://www.bookmarks.dev/search?q=[macos]), &nbsp; [install](https://www.bookmarks.dev/search?q=[install])
 <hr>
 
 **[jEnv - Manage your Java environment](http://www.jenv.be/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [jenv](https://www.codingmarks.org/search?q=[jenv])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [jenv](https://www.bookmarks.dev/search?q=[jenv])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jenv/jenv)
 
 Discover jenv, the command line Java manager
@@ -1335,7 +1335,7 @@ Discover jenv, the command line Java manager
 
 **[JUnit 5 Articles and source code from Baeldung](https://github.com/eugenp/tutorials/tree/master/testing-modules/junit-5)**
 
-  * **tags**: &nbsp; [junit](https://www.codingmarks.org/search?q=[junit]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [junit](https://www.bookmarks.dev/search?q=[junit]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/testing-modules/junit-5)
 
 - [The Basics of JUnit 5 – A Preview](http://www.baeldung.com/junit-5-preview)
@@ -1362,7 +1362,7 @@ Discover jenv, the command line Java manager
 
 **[Project Reactor Home Page](https://projectreactor.io/)**
 
-  * **tags**: &nbsp; [reactive](https://www.codingmarks.org/search?q=[reactive]), &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [jvm](https://www.codingmarks.org/search?q=[jvm])
+  * **tags**: &nbsp; [reactive](https://www.bookmarks.dev/search?q=[reactive]), &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [jvm](https://www.bookmarks.dev/search?q=[jvm])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/reactor)
 
 Reactor is a fourth-generation Reactive library for building non-blocking applications on
@@ -1376,7 +1376,7 @@ the JVM based on the [Reactive Streams Specification](https://github.com/reactiv
 **[Reactive Spring - Josh Long, Mark Heckler - YouTube](https://www.youtube.com/watch?v=l7VBdWhtl7A)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-12-14
-  * **tags**: &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [reactive](https://www.codingmarks.org/search?q=[reactive]), &nbsp; [kotlin](https://www.codingmarks.org/search?q=[kotlin]), &nbsp; [redis](https://www.codingmarks.org/search?q=[redis]), &nbsp; [spring-cloud-gateway](https://www.codingmarks.org/search?q=[spring-cloud-gateway])
+  * **tags**: &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [reactive](https://www.bookmarks.dev/search?q=[reactive]), &nbsp; [kotlin](https://www.bookmarks.dev/search?q=[kotlin]), &nbsp; [redis](https://www.bookmarks.dev/search?q=[redis]), &nbsp; [spring-cloud-gateway](https://www.bookmarks.dev/search?q=[spring-cloud-gateway])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/joshlong/flux-flix-service)
 
 Spring Framework 5.0 is here! One of the most exciting introductions in this release is support for reactive programming, building on the Pivotal Reactor project to support message-driven, elastic, resilient and responsive services. Spring Framework 5 integrates an MVC-like component model adapted to support reactive processing and a new type of web endpoint, functional reactive endpoints. In this talk, we'll look at the net-new Netty-based web runtime, how existing Servlet code can run on the new world, and how to integrate it with existing Spring-stack technologies.
@@ -1388,7 +1388,7 @@ Spring Framework 5.0 is here! One of the most exciting introductions in this rel
 
 **[Kubernetes + Compose = Kompose](http://kompose.io/)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [docker-compose](https://www.codingmarks.org/search?q=[docker-compose]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [devops](https://www.codingmarks.org/search?q=[devops])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docker-compose](https://www.bookmarks.dev/search?q=[docker-compose]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/kubernetes/kompose)
 
 kompose is a tool to help users familiar with docker-compose move to Kubernetes. It takes a Docker Compose file and translates it into Kubernetes resources.
@@ -1398,7 +1398,7 @@ kompose is a tool to help users familiar with docker-compose move to Kubernetes.
 
 **[Helm Docs home page](https://helm.sh/)**
 
-  * **tags**: &nbsp; [helm](https://www.codingmarks.org/search?q=[helm]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.codingmarks.org/search?q=[kubernetes-helm])
+  * **tags**: &nbsp; [helm](https://www.bookmarks.dev/search?q=[helm]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.bookmarks.dev/search?q=[kubernetes-helm])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/helm/helm)
 
 Helm - The Kubernetes Package Manager.
@@ -1411,7 +1411,7 @@ Charts are easy to create, version, share, and publish — so start using Helm a
 
 **[Istio home page](https://istio.io/)**
 
-  * **tags**: &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [api-management](https://www.codingmarks.org/search?q=[api-management]), &nbsp; [circuit-breaker](https://www.codingmarks.org/search?q=[circuit-breaker]), &nbsp; [proxy](https://www.codingmarks.org/search?q=[proxy]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes])
+  * **tags**: &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [api-management](https://www.bookmarks.dev/search?q=[api-management]), &nbsp; [circuit-breaker](https://www.bookmarks.dev/search?q=[circuit-breaker]), &nbsp; [proxy](https://www.bookmarks.dev/search?q=[proxy]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/istio/istio)
 
 Istio is an open platform for providing a uniform way to integrate microservices, manage traffic flow across microservices, enforce policies and aggregate telemetry data. Istio's control plane provides an abstraction layer over the underlying cluster management platform, such as Kubernetes, Mesos, etc.
@@ -1420,7 +1420,7 @@ Istio is an open platform for providing a uniform way to integrate microservices
 
 **[kubernetes-for-java-developers repo from Aron Gupta](https://github.com/aws-samples/kubernetes-for-java-developers)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.codingmarks.org/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [aws](https://www.codingmarks.org/search?q=[aws])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.bookmarks.dev/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/aws-samples/kubernetes-for-java-developers)
 
 A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kubernetes-for-java-developers. sample. example.
@@ -1432,7 +1432,7 @@ A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kuber
 
 **[Helm Docs home page](https://helm.sh/)**
 
-  * **tags**: &nbsp; [helm](https://www.codingmarks.org/search?q=[helm]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.codingmarks.org/search?q=[kubernetes-helm])
+  * **tags**: &nbsp; [helm](https://www.bookmarks.dev/search?q=[helm]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.bookmarks.dev/search?q=[kubernetes-helm])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/helm/helm)
 
 Helm - The Kubernetes Package Manager.
@@ -1445,7 +1445,7 @@ Charts are easy to create, version, share, and publish — so start using Helm a
 
 **[kubernetes-for-java-developers repo from Aron Gupta](https://github.com/aws-samples/kubernetes-for-java-developers)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.codingmarks.org/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [aws](https://www.codingmarks.org/search?q=[aws])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.bookmarks.dev/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/aws-samples/kubernetes-for-java-developers)
 
 A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kubernetes-for-java-developers. sample. example.
@@ -1457,7 +1457,7 @@ A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kuber
 
 **[Pandoc home page](https://pandoc.org/)**
 
-  * **tags**: &nbsp; [pandoc](https://www.codingmarks.org/search?q=[pandoc]), &nbsp; [markdown](https://www.codingmarks.org/search?q=[markdown]), &nbsp; [latex](https://www.codingmarks.org/search?q=[latex])
+  * **tags**: &nbsp; [pandoc](https://www.bookmarks.dev/search?q=[pandoc]), &nbsp; [markdown](https://www.bookmarks.dev/search?q=[markdown]), &nbsp; [latex](https://www.bookmarks.dev/search?q=[latex])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jgm/pandoc)
 
 Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library. 
@@ -1469,7 +1469,7 @@ Pandoc is a Haskell library for converting from one markup format to another, an
 
 **[GitHub - krallin/tini](https://github.com/krallin/tini)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [linux](https://www.codingmarks.org/search?q=[linux]), &nbsp; [c](https://www.codingmarks.org/search?q=[c])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux]), &nbsp; [c](https://www.bookmarks.dev/search?q=[c])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/krallin/tini)
 
 A tiny but valid `init` for containers. 
@@ -1478,7 +1478,7 @@ A tiny but valid `init` for containers.
 
 **[command line - How to list all symbolic links in a directory - Ask Ubuntu](https://askubuntu.com/questions/522051/how-to-list-all-symbolic-links-in-a-directory)**
 
-  * **tags**: &nbsp; [bash](https://www.codingmarks.org/search?q=[bash]), &nbsp; [shell](https://www.codingmarks.org/search?q=[shell]), &nbsp; [linux](https://www.codingmarks.org/search?q=[linux])
+  * **tags**: &nbsp; [bash](https://www.bookmarks.dev/search?q=[bash]), &nbsp; [shell](https://www.bookmarks.dev/search?q=[shell]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux])
 
 ```
 find . -type l -ls
@@ -1493,7 +1493,7 @@ find . -maxdepth 1 -type l -ls
 
 **[Install Bash git completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)**
 
-  * **tags**: &nbsp; [git](https://www.codingmarks.org/search?q=[git]), &nbsp; [bash](https://www.codingmarks.org/search?q=[bash]), &nbsp; [osx](https://www.codingmarks.org/search?q=[osx]), &nbsp; [windows](https://www.codingmarks.org/search?q=[windows]), &nbsp; [linux](https://www.codingmarks.org/search?q=[linux])
+  * **tags**: &nbsp; [git](https://www.bookmarks.dev/search?q=[git]), &nbsp; [bash](https://www.bookmarks.dev/search?q=[bash]), &nbsp; [osx](https://www.bookmarks.dev/search?q=[osx]), &nbsp; [windows](https://www.bookmarks.dev/search?q=[windows]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux])
 
 How to install git completion on different platforms...
 
@@ -1504,7 +1504,7 @@ How to install git completion on different platforms...
 
 **[GitHub - Homebrew/homebrew-cask home page](https://github.com/Homebrew/homebrew-cask)**
 
-  * **tags**: &nbsp; [homebrew](https://www.codingmarks.org/search?q=[homebrew]), &nbsp; [macos](https://www.codingmarks.org/search?q=[macos])
+  * **tags**: &nbsp; [homebrew](https://www.bookmarks.dev/search?q=[homebrew]), &nbsp; [macos](https://www.bookmarks.dev/search?q=[macos])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/Homebrew/homebrew-cask)
 
 🍻 A CLI workflow for the administration of macOS applications distributed as binaries - Homebrew/homebrew-cask
@@ -1513,7 +1513,7 @@ How to install git completion on different platforms...
 
 **[macos - Mac OS X and multiple Java versions - Stack Overflow](https://stackoverflow.com/questions/26252591/mac-os-x-and-multiple-java-versions)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [jenv](https://www.codingmarks.org/search?q=[jenv]), &nbsp; [macos](https://www.codingmarks.org/search?q=[macos]), &nbsp; [install](https://www.codingmarks.org/search?q=[install])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [jenv](https://www.bookmarks.dev/search?q=[jenv]), &nbsp; [macos](https://www.bookmarks.dev/search?q=[macos]), &nbsp; [install](https://www.bookmarks.dev/search?q=[install])
 <hr>
 
 
@@ -1521,7 +1521,7 @@ How to install git completion on different platforms...
 
 **[Pandoc home page](https://pandoc.org/)**
 
-  * **tags**: &nbsp; [pandoc](https://www.codingmarks.org/search?q=[pandoc]), &nbsp; [markdown](https://www.codingmarks.org/search?q=[markdown]), &nbsp; [latex](https://www.codingmarks.org/search?q=[latex])
+  * **tags**: &nbsp; [pandoc](https://www.bookmarks.dev/search?q=[pandoc]), &nbsp; [markdown](https://www.bookmarks.dev/search?q=[markdown]), &nbsp; [latex](https://www.bookmarks.dev/search?q=[latex])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jgm/pandoc)
 
 Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library. 
@@ -1533,7 +1533,7 @@ Pandoc is a Haskell library for converting from one markup format to another, an
 
 **[jib home page](https://github.com/GoogleContainerTools/jib)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin]), &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [gradle](https://www.codingmarks.org/search?q=[gradle])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [gradle](https://www.bookmarks.dev/search?q=[gradle])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/GoogleContainerTools/jib)
 
 :sailboat: Build container images for your Java applications. - GoogleContainerTools/jib
@@ -1550,7 +1550,7 @@ Pandoc is a Haskell library for converting from one markup format to another, an
 
 **[kubernetes-for-java-developers repo from Aron Gupta](https://github.com/aws-samples/kubernetes-for-java-developers)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.codingmarks.org/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.codingmarks.org/search?q=[maven-plugin]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [aws](https://www.codingmarks.org/search?q=[aws])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes]), &nbsp; [kubernetes-helm](https://www.bookmarks.dev/search?q=[kubernetes-helm]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/aws-samples/kubernetes-for-java-developers)
 
 A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kubernetes-for-java-developers. sample. example.
@@ -1563,7 +1563,7 @@ A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kuber
 **[Making microservices micro with Istio Service Mesh & Kubernetes by Ray Tsang @ Spring I/O 2018 - YouTube](https://www.youtube.com/watch?v=s31kdh7Q7Hc)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-10-03
-  * **tags**: &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot])
+  * **tags**: &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot])
 
 Spring has been the leader as a microservices framework for Java with Spring Boot, Spring and Spring Cloud. Istio has emerged as a polyglot alternative to Spring Cloud as an open platform to connect, manage and secure microservices. Let's explore how Istio compares to Spring Cloud and what each platform provides in addition to the other. We will also explore the use cases that are best suited to use Spring Cloud or Istio, or perhaps a combination of both.
 
@@ -1571,7 +1571,7 @@ Spring has been the leader as a microservices framework for Java with Spring Boo
 
 **[Istio home page](https://istio.io/)**
 
-  * **tags**: &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [api-management](https://www.codingmarks.org/search?q=[api-management]), &nbsp; [circuit-breaker](https://www.codingmarks.org/search?q=[circuit-breaker]), &nbsp; [proxy](https://www.codingmarks.org/search?q=[proxy]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes])
+  * **tags**: &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [api-management](https://www.bookmarks.dev/search?q=[api-management]), &nbsp; [circuit-breaker](https://www.bookmarks.dev/search?q=[circuit-breaker]), &nbsp; [proxy](https://www.bookmarks.dev/search?q=[proxy]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/istio/istio)
 
 Istio is an open platform for providing a uniform way to integrate microservices, manage traffic flow across microservices, enforce policies and aggregate telemetry data. Istio's control plane provides an abstraction layer over the underlying cluster management platform, such as Kubernetes, Mesos, etc.
@@ -1581,7 +1581,7 @@ Istio is an open platform for providing a uniform way to integrate microservices
 **[API Infrastructure at Knewton: What’s in an Edge Service?](https://medium.com/knerd/api-infrastructure-at-knewton-whats-in-an-edge-service-51a3777aeb41)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2016-05-09
-  * **tags**: &nbsp; [api](https://www.codingmarks.org/search?q=[api]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [nginx](https://www.codingmarks.org/search?q=[nginx]), &nbsp; [zuul](https://www.codingmarks.org/search?q=[zuul])
+  * **tags**: &nbsp; [api](https://www.bookmarks.dev/search?q=[api]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [nginx](https://www.bookmarks.dev/search?q=[nginx]), &nbsp; [zuul](https://www.bookmarks.dev/search?q=[zuul])
 
 In this post, we will pull back the covers of our API to explain how we handle user requests. You will first learn how to build an edge service with Netflix Zuul, the framework we chose for its simplicity and flexibility. Then, we’ll dive into the Knewton edge service to show you how it improves API simplicity, flexibility, and performance.
 
@@ -1596,7 +1596,7 @@ An edge service is a component which is exposed to the public internet. It acts 
 
 **[Connect home page](https://github.com/senchalabs/connect)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [middleware](https://www.codingmarks.org/search?q=[middleware])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [middleware](https://www.bookmarks.dev/search?q=[middleware])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/senchalabs/connect)
 
 Connect is a middleware layer for Node.js. 
@@ -1609,7 +1609,7 @@ Connect is a middleware layer for Node.js.
 **[Modern Node.js: async/await based testing with Mocha & Chai](https://zaiste.net/modern_node_js_async_await_based_testing_with_mocha_chai/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-04-09
-  * **tags**: &nbsp; [mocha](https://www.codingmarks.org/search?q=[mocha]), &nbsp; [chai](https://www.codingmarks.org/search?q=[chai]), &nbsp; [testing](https://www.codingmarks.org/search?q=[testing])
+  * **tags**: &nbsp; [mocha](https://www.bookmarks.dev/search?q=[mocha]), &nbsp; [chai](https://www.bookmarks.dev/search?q=[chai]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing])
   * <i class="fa fa-github fa-lg"></i> [github url](https://zaiste.net/modern_node_js_async_await_based_testing_with_mocha_chai/)
 
 Mocha is a JavaScript test framework running on Node.js and in the browser. It can run both asynchronous and synchronous code serially. Test cases are created using describe() and it() methods, the former is used to provide a structure by allowing to put various tests cases in logical groups while the latter is where the tests are written.
@@ -1623,7 +1623,7 @@ In order to perform actual tests, there is a need for an assertion library: a ru
 
 **[Build Reactive APIs with Spring WebFlux](https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux#secure-your-spring-webflux-reactive-api-with-oidc)**
 
-  * **tags**: &nbsp; [reactive-programming](https://www.codingmarks.org/search?q=[reactive-programming]), &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [mongodb](https://www.codingmarks.org/search?q=[mongodb]), &nbsp; [spring-security](https://www.codingmarks.org/search?q=[spring-security]), &nbsp; [openid-connect](https://www.codingmarks.org/search?q=[openid-connect]), &nbsp; [websocket](https://www.codingmarks.org/search?q=[websocket])
+  * **tags**: &nbsp; [reactive-programming](https://www.bookmarks.dev/search?q=[reactive-programming]), &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb]), &nbsp; [spring-security](https://www.bookmarks.dev/search?q=[spring-security]), &nbsp; [openid-connect](https://www.bookmarks.dev/search?q=[openid-connect]), &nbsp; [websocket](https://www.bookmarks.dev/search?q=[websocket])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/oktadeveloper/okta-spring-webflux-react-example)
 
 You've heard that reactive programming can help you scale? But how do you implement it? Using Spring WebFlux, of course! This article shows you how.
@@ -1632,7 +1632,7 @@ You've heard that reactive programming can help you scale? But how do you implem
 
 **[How do you rename a MongoDB database? - Stack Overflow](https://stackoverflow.com/questions/9201832/how-do-you-rename-a-mongodb-database)**
 
-  * **tags**: &nbsp; [mongodb](https://www.codingmarks.org/search?q=[mongodb])
+  * **tags**: &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb])
 
 ```
 //copy the database
@@ -1650,7 +1650,7 @@ You've heard that reactive programming can help you scale? But how do you implem
 
 **[Sentry home page ](https://sentry.io/)**
 
-  * **tags**: &nbsp; [error-handling](https://www.codingmarks.org/search?q=[error-handling]), &nbsp; [monitoring](https://www.codingmarks.org/search?q=[monitoring])
+  * **tags**: &nbsp; [error-handling](https://www.bookmarks.dev/search?q=[error-handling]), &nbsp; [monitoring](https://www.bookmarks.dev/search?q=[monitoring])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/getsentry/sentry)
 
 Open-source error tracking that helps developers monitor and fix crashes in real time. Iterate continuously. Boost workflow efficiency. Improve user experience. 
@@ -1665,7 +1665,7 @@ Error Tracking Software — JavaScript, Python, PHP, Ruby, more...
 **[Understanding Nginx Server and Location Block Selection Algorithms](https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2014-11-17
-  * **tags**: &nbsp; [nginx](https://www.codingmarks.org/search?q=[nginx])
+  * **tags**: &nbsp; [nginx](https://www.bookmarks.dev/search?q=[nginx])
 
 Nginx is one of the most popular web servers in the world. In this guide, we will discuss how Nginx selects the server and location block that will handle a given client's request. We will go over the algorithm in place, as well as the directives and
 
@@ -1674,7 +1674,7 @@ Nginx is one of the most popular web servers in the world. In this guide, we wil
 **[API Infrastructure at Knewton: What’s in an Edge Service?](https://medium.com/knerd/api-infrastructure-at-knewton-whats-in-an-edge-service-51a3777aeb41)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2016-05-09
-  * **tags**: &nbsp; [api](https://www.codingmarks.org/search?q=[api]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [nginx](https://www.codingmarks.org/search?q=[nginx]), &nbsp; [zuul](https://www.codingmarks.org/search?q=[zuul])
+  * **tags**: &nbsp; [api](https://www.bookmarks.dev/search?q=[api]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [nginx](https://www.bookmarks.dev/search?q=[nginx]), &nbsp; [zuul](https://www.bookmarks.dev/search?q=[zuul])
 
 In this post, we will pull back the covers of our API to explain how we handle user requests. You will first learn how to build an edge service with Netflix Zuul, the framework we chose for its simplicity and flexibility. Then, we’ll dive into the Knewton edge service to show you how it improves API simplicity, flexibility, and performance.
 
@@ -1689,7 +1689,7 @@ An edge service is a component which is exposed to the public internet. It acts 
 
 **[Nodemailer home page](http://nodemailer.com/)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [email](https://www.codingmarks.org/search?q=[email])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [email](https://www.bookmarks.dev/search?q=[email])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/nodemailer/nodemailer)
 
 Nodemailer is a module for Node.js to send emails
@@ -1698,7 +1698,7 @@ Nodemailer is a module for Node.js to send emails
 
 **[Connect home page](https://github.com/senchalabs/connect)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [middleware](https://www.codingmarks.org/search?q=[middleware])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [middleware](https://www.bookmarks.dev/search?q=[middleware])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/senchalabs/connect)
 
 Connect is a middleware layer for Node.js. 
@@ -1711,7 +1711,7 @@ Connect is a middleware layer for Node.js.
 **[Identity, Claims, & Tokens – An OpenID Connect Primer, Part 1 of 3](https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-07-25
-  * **tags**: &nbsp; [openid-connect](https://www.codingmarks.org/search?q=[openid-connect]), &nbsp; [oidc](https://www.codingmarks.org/search?q=[oidc]), &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot])
+  * **tags**: &nbsp; [openid-connect](https://www.bookmarks.dev/search?q=[openid-connect]), &nbsp; [oidc](https://www.bookmarks.dev/search?q=[oidc]), &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/oktadeveloper/okta-oidc-flows-example)
 
 In this post, we learned some basics about OpenID Connect, its history, and a bit about the various flow types, scopes, and tokens involved.
@@ -1727,7 +1727,7 @@ In this post, we learned some basics about OpenID Connect, its history, and a bi
 **[Online SQLite browser](https://extendsclass.com/sqlite-browser.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2019-03-06
-  * **tags**: &nbsp; [online-tools](https://www.codingmarks.org/search?q=[online-tools]), &nbsp; [sql](https://www.codingmarks.org/search?q=[sql])
+  * **tags**: &nbsp; [online-tools](https://www.bookmarks.dev/search?q=[online-tools]), &nbsp; [sql](https://www.bookmarks.dev/search?q=[sql])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/hautdefrance/Web-GUI-for-SQLite)
 
 SQLite Browser is a online SQL interpreter for SQLite database. Open and execute queries from a SQLite file. Neither download nor installation.
@@ -1739,7 +1739,7 @@ SQLite Browser is a online SQL interpreter for SQLite database. Open and execute
 
 **[Contributor Covenant: A Code of Conduct for Open Source Projects](http://www.contributor-covenant.org/)**
 
-  * **tags**: &nbsp; [open-source](https://www.codingmarks.org/search?q=[open-source])
+  * **tags**: &nbsp; [open-source](https://www.bookmarks.dev/search?q=[open-source])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/ContributorCovenant/contributor_covenant)
 
 Open Source has always been a foundation of the Internet, and with the advent of social open source networks this is more true than ever. But free, libre, and open source projects suffer from a startling lack of diversity, with dramatically low representation by women, people of color, and other marginalized populations.
@@ -1757,7 +1757,7 @@ Adopting the Contributor Covenant can be one way to express and codify these val
 
 **[Build Reactive APIs with Spring WebFlux](https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux#secure-your-spring-webflux-reactive-api-with-oidc)**
 
-  * **tags**: &nbsp; [reactive-programming](https://www.codingmarks.org/search?q=[reactive-programming]), &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [mongodb](https://www.codingmarks.org/search?q=[mongodb]), &nbsp; [spring-security](https://www.codingmarks.org/search?q=[spring-security]), &nbsp; [openid-connect](https://www.codingmarks.org/search?q=[openid-connect]), &nbsp; [websocket](https://www.codingmarks.org/search?q=[websocket])
+  * **tags**: &nbsp; [reactive-programming](https://www.bookmarks.dev/search?q=[reactive-programming]), &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb]), &nbsp; [spring-security](https://www.bookmarks.dev/search?q=[spring-security]), &nbsp; [openid-connect](https://www.bookmarks.dev/search?q=[openid-connect]), &nbsp; [websocket](https://www.bookmarks.dev/search?q=[websocket])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/oktadeveloper/okta-spring-webflux-react-example)
 
 You've heard that reactive programming can help you scale? But how do you implement it? Using Spring WebFlux, of course! This article shows you how.
@@ -1767,7 +1767,7 @@ You've heard that reactive programming can help you scale? But how do you implem
 **[Identity, Claims, & Tokens – An OpenID Connect Primer, Part 1 of 3](https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-07-25
-  * **tags**: &nbsp; [openid-connect](https://www.codingmarks.org/search?q=[openid-connect]), &nbsp; [oidc](https://www.codingmarks.org/search?q=[oidc]), &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot])
+  * **tags**: &nbsp; [openid-connect](https://www.bookmarks.dev/search?q=[openid-connect]), &nbsp; [oidc](https://www.bookmarks.dev/search?q=[oidc]), &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/oktadeveloper/okta-oidc-flows-example)
 
 In this post, we learned some basics about OpenID Connect, its history, and a bit about the various flow types, scopes, and tokens involved.
@@ -1779,7 +1779,7 @@ In this post, we learned some basics about OpenID Connect, its history, and a bi
 
 **[OpenID Connect Scopes](https://auth0.com/docs/scopes/current/oidc-scopes)**
 
-  * **tags**: &nbsp; [openid-connect](https://www.codingmarks.org/search?q=[openid-connect])
+  * **tags**: &nbsp; [openid-connect](https://www.bookmarks.dev/search?q=[openid-connect])
 
 Understand scopes and claims used with the OpenID Connect (OIDC) protocol.
 
@@ -1790,7 +1790,7 @@ Understand scopes and claims used with the OpenID Connect (OIDC) protocol.
 
 **[Install Bash git completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)**
 
-  * **tags**: &nbsp; [git](https://www.codingmarks.org/search?q=[git]), &nbsp; [bash](https://www.codingmarks.org/search?q=[bash]), &nbsp; [osx](https://www.codingmarks.org/search?q=[osx]), &nbsp; [windows](https://www.codingmarks.org/search?q=[windows]), &nbsp; [linux](https://www.codingmarks.org/search?q=[linux])
+  * **tags**: &nbsp; [git](https://www.bookmarks.dev/search?q=[git]), &nbsp; [bash](https://www.bookmarks.dev/search?q=[bash]), &nbsp; [osx](https://www.bookmarks.dev/search?q=[osx]), &nbsp; [windows](https://www.bookmarks.dev/search?q=[windows]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux])
 
 How to install git completion on different platforms...
 
@@ -1801,7 +1801,7 @@ How to install git completion on different platforms...
 
 **[Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)**
 
-  * **tags**: &nbsp; [r](https://www.codingmarks.org/search?q=[r]), &nbsp; [package-manager](https://www.codingmarks.org/search?q=[package-manager])
+  * **tags**: &nbsp; [r](https://www.bookmarks.dev/search?q=[r]), &nbsp; [package-manager](https://www.bookmarks.dev/search?q=[package-manager])
 
 Writing R Extensions - the canonical reference for writing R packages.
 
@@ -1812,7 +1812,7 @@ Writing R Extensions - the canonical reference for writing R packages.
 
 **[Pandoc home page](https://pandoc.org/)**
 
-  * **tags**: &nbsp; [pandoc](https://www.codingmarks.org/search?q=[pandoc]), &nbsp; [markdown](https://www.codingmarks.org/search?q=[markdown]), &nbsp; [latex](https://www.codingmarks.org/search?q=[latex])
+  * **tags**: &nbsp; [pandoc](https://www.bookmarks.dev/search?q=[pandoc]), &nbsp; [markdown](https://www.bookmarks.dev/search?q=[markdown]), &nbsp; [latex](https://www.bookmarks.dev/search?q=[latex])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jgm/pandoc)
 
 Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library. 
@@ -1824,7 +1824,7 @@ Pandoc is a Haskell library for converting from one markup format to another, an
 
 **[Arthas Java Diagnostics Tool - home page ](https://alibaba.github.io/arthas/en/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [diagnostics](https://www.codingmarks.org/search?q=[diagnostics]), &nbsp; [performance](https://www.codingmarks.org/search?q=[performance])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [diagnostics](https://www.bookmarks.dev/search?q=[diagnostics]), &nbsp; [performance](https://www.bookmarks.dev/search?q=[performance])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/alibaba/arthas)
 
 #### Key features
@@ -1847,7 +1847,7 @@ Pandoc is a Haskell library for converting from one markup format to another, an
 **[The Cost Of JavaScript In 2018 – Addy Osmani – Medium](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-08-01
-  * **tags**: &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [performance](https://www.codingmarks.org/search?q=[performance])
+  * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [performance](https://www.bookmarks.dev/search?q=[performance])
 
 [Youtube video](https://www.youtube.com/watch?v=63I-mEuSvGA)
 
@@ -1862,7 +1862,7 @@ Building interactive sites can involve sending JavaScript to your users. Often, 
 
 **[Podcasts – React](https://reactjs.org/community/podcasts.html)**
 
-  * **tags**: &nbsp; [reactjs](https://www.codingmarks.org/search?q=[reactjs]), &nbsp; [podcast](https://www.codingmarks.org/search?q=[podcast])
+  * **tags**: &nbsp; [reactjs](https://www.bookmarks.dev/search?q=[reactjs]), &nbsp; [podcast](https://www.bookmarks.dev/search?q=[podcast])
 
 Podcasts dedicated to React and individual podcast episodes with React discussions.
 
@@ -1890,7 +1890,7 @@ Podcasts dedicated to React and individual podcast episodes with React discussio
 
 **[GitHub - domenic/chai-as-promised](https://github.com/domenic/chai-as-promised)**
 
-  * **tags**: &nbsp; [chai](https://www.codingmarks.org/search?q=[chai]), &nbsp; [promise](https://www.codingmarks.org/search?q=[promise]), &nbsp; [testing](https://www.codingmarks.org/search?q=[testing])
+  * **tags**: &nbsp; [chai](https://www.bookmarks.dev/search?q=[chai]), &nbsp; [promise](https://www.bookmarks.dev/search?q=[promise]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/domenic/chai-as-promised)
 
 Extends Chai with assertions about promises. Contribute to domenic/chai-as-promised development by creating an account on GitHub.
@@ -1902,7 +1902,7 @@ Extends Chai with assertions about promises. Contribute to domenic/chai-as-promi
 
 **[Istio home page](https://istio.io/)**
 
-  * **tags**: &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [api-management](https://www.codingmarks.org/search?q=[api-management]), &nbsp; [circuit-breaker](https://www.codingmarks.org/search?q=[circuit-breaker]), &nbsp; [proxy](https://www.codingmarks.org/search?q=[proxy]), &nbsp; [kubernetes](https://www.codingmarks.org/search?q=[kubernetes])
+  * **tags**: &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [api-management](https://www.bookmarks.dev/search?q=[api-management]), &nbsp; [circuit-breaker](https://www.bookmarks.dev/search?q=[circuit-breaker]), &nbsp; [proxy](https://www.bookmarks.dev/search?q=[proxy]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/istio/istio)
 
 Istio is an open platform for providing a uniform way to integrate microservices, manage traffic flow across microservices, enforce policies and aggregate telemetry data. Istio's control plane provides an abstraction layer over the underlying cluster management platform, such as Kubernetes, Mesos, etc.
@@ -1914,7 +1914,7 @@ Istio is an open platform for providing a uniform way to integrate microservices
 
 **[Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)**
 
-  * **tags**: &nbsp; [r](https://www.codingmarks.org/search?q=[r]), &nbsp; [package-manager](https://www.codingmarks.org/search?q=[package-manager])
+  * **tags**: &nbsp; [r](https://www.bookmarks.dev/search?q=[r]), &nbsp; [package-manager](https://www.bookmarks.dev/search?q=[package-manager])
 
 Writing R Extensions - the canonical reference for writing R packages.
 
@@ -1926,7 +1926,7 @@ Writing R Extensions - the canonical reference for writing R packages.
 **[Reactor vs. RxJava](http://helmbold.de/artikel/reactor-vs-rxjava/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-06-05
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [reactive](https://www.codingmarks.org/search?q=[reactive])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [reactive](https://www.bookmarks.dev/search?q=[reactive])
 
 Was spricht für und gegen Reactor und RxJava?
 
@@ -1935,7 +1935,7 @@ Was spricht für und gegen Reactor und RxJava?
 **[Reactive Spring - Josh Long, Mark Heckler - YouTube](https://www.youtube.com/watch?v=l7VBdWhtl7A)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-12-14
-  * **tags**: &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [reactive](https://www.codingmarks.org/search?q=[reactive]), &nbsp; [kotlin](https://www.codingmarks.org/search?q=[kotlin]), &nbsp; [redis](https://www.codingmarks.org/search?q=[redis]), &nbsp; [spring-cloud-gateway](https://www.codingmarks.org/search?q=[spring-cloud-gateway])
+  * **tags**: &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [reactive](https://www.bookmarks.dev/search?q=[reactive]), &nbsp; [kotlin](https://www.bookmarks.dev/search?q=[kotlin]), &nbsp; [redis](https://www.bookmarks.dev/search?q=[redis]), &nbsp; [spring-cloud-gateway](https://www.bookmarks.dev/search?q=[spring-cloud-gateway])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/joshlong/flux-flix-service)
 
 Spring Framework 5.0 is here! One of the most exciting introductions in this release is support for reactive programming, building on the Pivotal Reactor project to support message-driven, elastic, resilient and responsive services. Spring Framework 5 integrates an MVC-like component model adapted to support reactive processing and a new type of web endpoint, functional reactive endpoints. In this talk, we'll look at the net-new Netty-based web runtime, how existing Servlet code can run on the new world, and how to integrate it with existing Spring-stack technologies.
@@ -1944,7 +1944,7 @@ Spring Framework 5.0 is here! One of the most exciting introductions in this rel
 
 **[Project Reactor Home Page](https://projectreactor.io/)**
 
-  * **tags**: &nbsp; [reactive](https://www.codingmarks.org/search?q=[reactive]), &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [jvm](https://www.codingmarks.org/search?q=[jvm])
+  * **tags**: &nbsp; [reactive](https://www.bookmarks.dev/search?q=[reactive]), &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [jvm](https://www.bookmarks.dev/search?q=[jvm])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/reactor)
 
 Reactor is a fourth-generation Reactive library for building non-blocking applications on
@@ -1957,7 +1957,7 @@ the JVM based on the [Reactive Streams Specification](https://github.com/reactiv
 
 **[Build Reactive APIs with Spring WebFlux](https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux#secure-your-spring-webflux-reactive-api-with-oidc)**
 
-  * **tags**: &nbsp; [reactive-programming](https://www.codingmarks.org/search?q=[reactive-programming]), &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [mongodb](https://www.codingmarks.org/search?q=[mongodb]), &nbsp; [spring-security](https://www.codingmarks.org/search?q=[spring-security]), &nbsp; [openid-connect](https://www.codingmarks.org/search?q=[openid-connect]), &nbsp; [websocket](https://www.codingmarks.org/search?q=[websocket])
+  * **tags**: &nbsp; [reactive-programming](https://www.bookmarks.dev/search?q=[reactive-programming]), &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb]), &nbsp; [spring-security](https://www.bookmarks.dev/search?q=[spring-security]), &nbsp; [openid-connect](https://www.bookmarks.dev/search?q=[openid-connect]), &nbsp; [websocket](https://www.bookmarks.dev/search?q=[websocket])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/oktadeveloper/okta-spring-webflux-react-example)
 
 You've heard that reactive programming can help you scale? But how do you implement it? Using Spring WebFlux, of course! This article shows you how.
@@ -1966,7 +1966,7 @@ You've heard that reactive programming can help you scale? But how do you implem
 
 **[Spring 5 WebClient](https://www.baeldung.com/spring-5-webclient)**
 
-  * **tags**: &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [reactive-programming](https://www.codingmarks.org/search?q=[reactive-programming])
+  * **tags**: &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [reactive-programming](https://www.bookmarks.dev/search?q=[reactive-programming])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/spring-5-reactive)
 
 Discover Spring 5's WebClient - a new reactive RestTemplate alternative.
@@ -1978,7 +1978,7 @@ Discover Spring 5's WebClient - a new reactive RestTemplate alternative.
 
 **[Podcasts – React](https://reactjs.org/community/podcasts.html)**
 
-  * **tags**: &nbsp; [reactjs](https://www.codingmarks.org/search?q=[reactjs]), &nbsp; [podcast](https://www.codingmarks.org/search?q=[podcast])
+  * **tags**: &nbsp; [reactjs](https://www.bookmarks.dev/search?q=[reactjs]), &nbsp; [podcast](https://www.bookmarks.dev/search?q=[podcast])
 
 Podcasts dedicated to React and individual podcast episodes with React discussions.
 
@@ -2007,7 +2007,7 @@ Podcasts dedicated to React and individual podcast episodes with React discussio
 **[Reactive Spring - Josh Long, Mark Heckler - YouTube](https://www.youtube.com/watch?v=l7VBdWhtl7A)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-12-14
-  * **tags**: &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [reactive](https://www.codingmarks.org/search?q=[reactive]), &nbsp; [kotlin](https://www.codingmarks.org/search?q=[kotlin]), &nbsp; [redis](https://www.codingmarks.org/search?q=[redis]), &nbsp; [spring-cloud-gateway](https://www.codingmarks.org/search?q=[spring-cloud-gateway])
+  * **tags**: &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [reactive](https://www.bookmarks.dev/search?q=[reactive]), &nbsp; [kotlin](https://www.bookmarks.dev/search?q=[kotlin]), &nbsp; [redis](https://www.bookmarks.dev/search?q=[redis]), &nbsp; [spring-cloud-gateway](https://www.bookmarks.dev/search?q=[spring-cloud-gateway])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/joshlong/flux-flix-service)
 
 Spring Framework 5.0 is here! One of the most exciting introductions in this release is support for reactive programming, building on the Pivotal Reactor project to support message-driven, elastic, resilient and responsive services. Spring Framework 5 integrates an MVC-like component model adapted to support reactive processing and a new type of web endpoint, functional reactive endpoints. In this talk, we'll look at the net-new Netty-based web runtime, how existing Servlet code can run on the new world, and how to integrate it with existing Spring-stack technologies.
@@ -2019,7 +2019,7 @@ Spring Framework 5.0 is here! One of the most exciting introductions in this rel
 
 **[useful-java-links](https://github.com/Vedenin/useful-java-links#readme)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [resources](https://www.codingmarks.org/search?q=[resources]), &nbsp; [awesome](https://www.codingmarks.org/search?q=[awesome]), &nbsp; [awesome-list](https://www.codingmarks.org/search?q=[awesome-list])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [resources](https://www.bookmarks.dev/search?q=[resources]), &nbsp; [awesome](https://www.bookmarks.dev/search?q=[awesome]), &nbsp; [awesome-list](https://www.bookmarks.dev/search?q=[awesome-list])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/Vedenin/useful-java-links)
 
 A list of useful Java frameworks, libraries, software and hello worlds examples - Vedenin/useful-java-links
@@ -2031,7 +2031,7 @@ A list of useful Java frameworks, libraries, software and hello worlds examples 
 
 **[API Blueprint home page](https://apiblueprint.org/)**
 
-  * **tags**: &nbsp; [api](https://www.codingmarks.org/search?q=[api]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest])
+  * **tags**: &nbsp; [api](https://www.bookmarks.dev/search?q=[api]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/apiaryio/api-blueprint/)
 
 API Blueprint is simple and accessible to everybody involved in the API lifecycle. Its syntax is concise yet expressive. With API Blueprint you can quickly design and prototype APIs to be created or document and test already deployed mission-critical APIs.
@@ -2043,7 +2043,7 @@ API Blueprint is simple and accessible to everybody involved in the API lifecycl
 
 **[rx-book RxJS - Javascript library for functional reactive programming.](http://xgrommx.github.io/rx-book)**
 
-  * **tags**: &nbsp; [rxjs](https://www.codingmarks.org/search?q=[rxjs]), &nbsp; [free-programming-books](https://www.codingmarks.org/search?q=[free-programming-books])
+  * **tags**: &nbsp; [rxjs](https://www.bookmarks.dev/search?q=[rxjs]), &nbsp; [free-programming-books](https://www.bookmarks.dev/search?q=[free-programming-books])
 
 Reactive Extensions (Rx) is a library for composing asynchronous and event-based programs using observable sequences and LINQ-style query operators.
 
@@ -2054,7 +2054,7 @@ Reactive Extensions (Rx) is a library for composing asynchronous and event-based
 
 **[GitHub - docker/docker-bench-security](https://github.com/docker/docker-bench-security)**
 
-  * **tags**: &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [devops](https://www.codingmarks.org/search?q=[devops])
+  * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/docker/docker-bench-security)
 
 The Docker Bench for Security is a script that checks for dozens of common best-practices around deploying Docker containers in production. - docker/docker-bench-security
@@ -2066,7 +2066,7 @@ The Docker Bench for Security is a script that checks for dozens of common best-
 
 **[command line - How to list all symbolic links in a directory - Ask Ubuntu](https://askubuntu.com/questions/522051/how-to-list-all-symbolic-links-in-a-directory)**
 
-  * **tags**: &nbsp; [bash](https://www.codingmarks.org/search?q=[bash]), &nbsp; [shell](https://www.codingmarks.org/search?q=[shell]), &nbsp; [linux](https://www.codingmarks.org/search?q=[linux])
+  * **tags**: &nbsp; [bash](https://www.bookmarks.dev/search?q=[bash]), &nbsp; [shell](https://www.bookmarks.dev/search?q=[shell]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux])
 
 ```
 find . -type l -ls
@@ -2085,7 +2085,7 @@ find . -maxdepth 1 -type l -ls
 **[Making microservices micro with Istio Service Mesh & Kubernetes by Ray Tsang @ Spring I/O 2018 - YouTube](https://www.youtube.com/watch?v=s31kdh7Q7Hc)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-10-03
-  * **tags**: &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot])
+  * **tags**: &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot])
 
 Spring has been the leader as a microservices framework for Java with Spring Boot, Spring and Spring Cloud. Istio has emerged as a polyglot alternative to Spring Cloud as an open platform to connect, manage and secure microservices. Let's explore how Istio compares to Spring Cloud and what each platform provides in addition to the other. We will also explore the use cases that are best suited to use Spring Cloud or Istio, or perhaps a combination of both.
 
@@ -2093,7 +2093,7 @@ Spring has been the leader as a microservices framework for Java with Spring Boo
 
 **[Spring 5 WebClient](https://www.baeldung.com/spring-5-webclient)**
 
-  * **tags**: &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [reactive-programming](https://www.codingmarks.org/search?q=[reactive-programming])
+  * **tags**: &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [reactive-programming](https://www.bookmarks.dev/search?q=[reactive-programming])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/spring-5-reactive)
 
 Discover Spring 5's WebClient - a new reactive RestTemplate alternative.
@@ -2103,7 +2103,7 @@ Discover Spring 5's WebClient - a new reactive RestTemplate alternative.
 **[Guide to Spring 5 WebFlux](https://www.baeldung.com/spring-webflux)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2019-02-21
-  * **tags**: &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux])
+  * **tags**: &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/spring-5-reactive-security)
 
 A brief guide to using WebFlux with annotations, in Spring 5.
@@ -2112,7 +2112,7 @@ A brief guide to using WebFlux with annotations, in Spring 5.
 
 **[Project Reactor Home Page](https://projectreactor.io/)**
 
-  * **tags**: &nbsp; [reactive](https://www.codingmarks.org/search?q=[reactive]), &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [jvm](https://www.codingmarks.org/search?q=[jvm])
+  * **tags**: &nbsp; [reactive](https://www.bookmarks.dev/search?q=[reactive]), &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [jvm](https://www.bookmarks.dev/search?q=[jvm])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/reactor)
 
 Reactor is a fourth-generation Reactive library for building non-blocking applications on
@@ -2126,7 +2126,7 @@ the JVM based on the [Reactive Streams Specification](https://github.com/reactiv
 **[Making microservices micro with Istio Service Mesh & Kubernetes by Ray Tsang @ Spring I/O 2018 - YouTube](https://www.youtube.com/watch?v=s31kdh7Q7Hc)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-10-03
-  * **tags**: &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio]), &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot])
+  * **tags**: &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio]), &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot])
 
 Spring has been the leader as a microservices framework for Java with Spring Boot, Spring and Spring Cloud. Istio has emerged as a polyglot alternative to Spring Cloud as an open platform to connect, manage and secure microservices. Let's explore how Istio compares to Spring Cloud and what each platform provides in addition to the other. We will also explore the use cases that are best suited to use Spring Cloud or Istio, or perhaps a combination of both.
 
@@ -2135,7 +2135,7 @@ Spring has been the leader as a microservices framework for Java with Spring Boo
 **[Identity, Claims, & Tokens – An OpenID Connect Primer, Part 1 of 3](https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-07-25
-  * **tags**: &nbsp; [openid-connect](https://www.codingmarks.org/search?q=[openid-connect]), &nbsp; [oidc](https://www.codingmarks.org/search?q=[oidc]), &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot])
+  * **tags**: &nbsp; [openid-connect](https://www.bookmarks.dev/search?q=[openid-connect]), &nbsp; [oidc](https://www.bookmarks.dev/search?q=[oidc]), &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/oktadeveloper/okta-oidc-flows-example)
 
 In this post, we learned some basics about OpenID Connect, its history, and a bit about the various flow types, scopes, and tokens involved.
@@ -2151,7 +2151,7 @@ In this post, we learned some basics about OpenID Connect, its history, and a bi
 **[A Tale of Two Frameworks: Spring Cloud and Istio - YouTube](https://www.youtube.com/watch?v=AMJQO9zs2eo)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-10-03
-  * **tags**: &nbsp; [spring-cloud](https://www.codingmarks.org/search?q=[spring-cloud]), &nbsp; [istio](https://www.codingmarks.org/search?q=[istio])
+  * **tags**: &nbsp; [spring-cloud](https://www.bookmarks.dev/search?q=[spring-cloud]), &nbsp; [istio](https://www.bookmarks.dev/search?q=[istio])
 
 Spring has been the leader as a microservices framework for Java with Spring Boot, Spring and Spring Cloud. Istio has emerged as a polyglot alternative to Spring Cloud as an open platform to connect, manage and secure microservices. Let's explore how Istio compares to Spring Cloud and what each platform provides in addition to the other. We will also explore the use cases that are best suited to use Spring Cloud or Istio, or perhaps a combination of both.
 
@@ -2172,7 +2172,7 @@ Istio or a service mesh architecture works better for polyglot environments
 **[Reactive Spring - Josh Long, Mark Heckler - YouTube](https://www.youtube.com/watch?v=l7VBdWhtl7A)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-12-14
-  * **tags**: &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [reactive](https://www.codingmarks.org/search?q=[reactive]), &nbsp; [kotlin](https://www.codingmarks.org/search?q=[kotlin]), &nbsp; [redis](https://www.codingmarks.org/search?q=[redis]), &nbsp; [spring-cloud-gateway](https://www.codingmarks.org/search?q=[spring-cloud-gateway])
+  * **tags**: &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [reactive](https://www.bookmarks.dev/search?q=[reactive]), &nbsp; [kotlin](https://www.bookmarks.dev/search?q=[kotlin]), &nbsp; [redis](https://www.bookmarks.dev/search?q=[redis]), &nbsp; [spring-cloud-gateway](https://www.bookmarks.dev/search?q=[spring-cloud-gateway])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/joshlong/flux-flix-service)
 
 Spring Framework 5.0 is here! One of the most exciting introductions in this release is support for reactive programming, building on the Pivotal Reactor project to support message-driven, elastic, resilient and responsive services. Spring Framework 5 integrates an MVC-like component model adapted to support reactive processing and a new type of web endpoint, functional reactive endpoints. In this talk, we'll look at the net-new Netty-based web runtime, how existing Servlet code can run on the new world, and how to integrate it with existing Spring-stack technologies.
@@ -2184,7 +2184,7 @@ Spring Framework 5.0 is here! One of the most exciting introductions in this rel
 
 **[Build Reactive APIs with Spring WebFlux](https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux#secure-your-spring-webflux-reactive-api-with-oidc)**
 
-  * **tags**: &nbsp; [reactive-programming](https://www.codingmarks.org/search?q=[reactive-programming]), &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [mongodb](https://www.codingmarks.org/search?q=[mongodb]), &nbsp; [spring-security](https://www.codingmarks.org/search?q=[spring-security]), &nbsp; [openid-connect](https://www.codingmarks.org/search?q=[openid-connect]), &nbsp; [websocket](https://www.codingmarks.org/search?q=[websocket])
+  * **tags**: &nbsp; [reactive-programming](https://www.bookmarks.dev/search?q=[reactive-programming]), &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb]), &nbsp; [spring-security](https://www.bookmarks.dev/search?q=[spring-security]), &nbsp; [openid-connect](https://www.bookmarks.dev/search?q=[openid-connect]), &nbsp; [websocket](https://www.bookmarks.dev/search?q=[websocket])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/oktadeveloper/okta-spring-webflux-react-example)
 
 You've heard that reactive programming can help you scale? But how do you implement it? Using Spring WebFlux, of course! This article shows you how.
@@ -2196,7 +2196,7 @@ You've heard that reactive programming can help you scale? But how do you implem
 
 **[Build Reactive APIs with Spring WebFlux](https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux#secure-your-spring-webflux-reactive-api-with-oidc)**
 
-  * **tags**: &nbsp; [reactive-programming](https://www.codingmarks.org/search?q=[reactive-programming]), &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [mongodb](https://www.codingmarks.org/search?q=[mongodb]), &nbsp; [spring-security](https://www.codingmarks.org/search?q=[spring-security]), &nbsp; [openid-connect](https://www.codingmarks.org/search?q=[openid-connect]), &nbsp; [websocket](https://www.codingmarks.org/search?q=[websocket])
+  * **tags**: &nbsp; [reactive-programming](https://www.bookmarks.dev/search?q=[reactive-programming]), &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb]), &nbsp; [spring-security](https://www.bookmarks.dev/search?q=[spring-security]), &nbsp; [openid-connect](https://www.bookmarks.dev/search?q=[openid-connect]), &nbsp; [websocket](https://www.bookmarks.dev/search?q=[websocket])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/oktadeveloper/okta-spring-webflux-react-example)
 
 You've heard that reactive programming can help you scale? But how do you implement it? Using Spring WebFlux, of course! This article shows you how.
@@ -2205,7 +2205,7 @@ You've heard that reactive programming can help you scale? But how do you implem
 
 **[Spring 5 WebClient](https://www.baeldung.com/spring-5-webclient)**
 
-  * **tags**: &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [reactive-programming](https://www.codingmarks.org/search?q=[reactive-programming])
+  * **tags**: &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [reactive-programming](https://www.bookmarks.dev/search?q=[reactive-programming])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/spring-5-reactive)
 
 Discover Spring 5's WebClient - a new reactive RestTemplate alternative.
@@ -2215,7 +2215,7 @@ Discover Spring 5's WebClient - a new reactive RestTemplate alternative.
 **[Guide to Spring 5 WebFlux](https://www.baeldung.com/spring-webflux)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2019-02-21
-  * **tags**: &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux])
+  * **tags**: &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/spring-5-reactive-security)
 
 A brief guide to using WebFlux with annotations, in Spring 5.
@@ -2225,7 +2225,7 @@ A brief guide to using WebFlux with annotations, in Spring 5.
 **[Reactive Spring - Josh Long, Mark Heckler - YouTube](https://www.youtube.com/watch?v=l7VBdWhtl7A)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-12-14
-  * **tags**: &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [reactive](https://www.codingmarks.org/search?q=[reactive]), &nbsp; [kotlin](https://www.codingmarks.org/search?q=[kotlin]), &nbsp; [redis](https://www.codingmarks.org/search?q=[redis]), &nbsp; [spring-cloud-gateway](https://www.codingmarks.org/search?q=[spring-cloud-gateway])
+  * **tags**: &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [reactive](https://www.bookmarks.dev/search?q=[reactive]), &nbsp; [kotlin](https://www.bookmarks.dev/search?q=[kotlin]), &nbsp; [redis](https://www.bookmarks.dev/search?q=[redis]), &nbsp; [spring-cloud-gateway](https://www.bookmarks.dev/search?q=[spring-cloud-gateway])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/joshlong/flux-flix-service)
 
 Spring Framework 5.0 is here! One of the most exciting introductions in this release is support for reactive programming, building on the Pivotal Reactor project to support message-driven, elastic, resilient and responsive services. Spring Framework 5 integrates an MVC-like component model adapted to support reactive processing and a new type of web endpoint, functional reactive endpoints. In this talk, we'll look at the net-new Netty-based web runtime, how existing Servlet code can run on the new world, and how to integrate it with existing Spring-stack technologies.
@@ -2238,7 +2238,7 @@ Spring Framework 5.0 is here! One of the most exciting introductions in this rel
 **[Online SQLite browser](https://extendsclass.com/sqlite-browser.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2019-03-06
-  * **tags**: &nbsp; [online-tools](https://www.codingmarks.org/search?q=[online-tools]), &nbsp; [sql](https://www.codingmarks.org/search?q=[sql])
+  * **tags**: &nbsp; [online-tools](https://www.bookmarks.dev/search?q=[online-tools]), &nbsp; [sql](https://www.bookmarks.dev/search?q=[sql])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/hautdefrance/Web-GUI-for-SQLite)
 
 SQLite Browser is a online SQL interpreter for SQLite database. Open and execute queries from a SQLite file. Neither download nor installation.
@@ -2250,7 +2250,7 @@ SQLite Browser is a online SQL interpreter for SQLite database. Open and execute
 
 **[Testcontainers home page](https://www.testcontainers.org/)**
 
-  * **tags**: &nbsp; [testing](https://www.codingmarks.org/search?q=[testing]), &nbsp; [docker](https://www.codingmarks.org/search?q=[docker]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/testcontainers/testcontainers-java/)
 
 Testcontainers is a Java 8 library that supports JUnit tests, providing lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container.
@@ -2259,7 +2259,7 @@ Testcontainers is a Java 8 library that supports JUnit tests, providing lightwei
 
 **[Dredd — HTTP API Testing Framework — Dredd latest documentation](https://dredd.org/)**
 
-  * **tags**: &nbsp; [api](https://www.codingmarks.org/search?q=[api]), &nbsp; [testing](https://www.codingmarks.org/search?q=[testing]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation])
+  * **tags**: &nbsp; [api](https://www.bookmarks.dev/search?q=[api]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/apiaryio/dredd)
 
 Dredd is a language-agnostic command-line tool for validating API description document against backend implementation of the API.
@@ -2271,7 +2271,7 @@ Dredd reads your API description and step by step validates whether your API imp
 **[Modern Node.js: async/await based testing with Mocha & Chai](https://zaiste.net/modern_node_js_async_await_based_testing_with_mocha_chai/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-04-09
-  * **tags**: &nbsp; [mocha](https://www.codingmarks.org/search?q=[mocha]), &nbsp; [chai](https://www.codingmarks.org/search?q=[chai]), &nbsp; [testing](https://www.codingmarks.org/search?q=[testing])
+  * **tags**: &nbsp; [mocha](https://www.bookmarks.dev/search?q=[mocha]), &nbsp; [chai](https://www.bookmarks.dev/search?q=[chai]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing])
   * <i class="fa fa-github fa-lg"></i> [github url](https://zaiste.net/modern_node_js_async_await_based_testing_with_mocha_chai/)
 
 Mocha is a JavaScript test framework running on Node.js and in the browser. It can run both asynchronous and synchronous code serially. Test cases are created using describe() and it() methods, the former is used to provide a structure by allowing to put various tests cases in logical groups while the latter is where the tests are written.
@@ -2282,7 +2282,7 @@ In order to perform actual tests, there is a need for an assertion library: a ru
 
 **[GitHub - domenic/chai-as-promised](https://github.com/domenic/chai-as-promised)**
 
-  * **tags**: &nbsp; [chai](https://www.codingmarks.org/search?q=[chai]), &nbsp; [promise](https://www.codingmarks.org/search?q=[promise]), &nbsp; [testing](https://www.codingmarks.org/search?q=[testing])
+  * **tags**: &nbsp; [chai](https://www.bookmarks.dev/search?q=[chai]), &nbsp; [promise](https://www.bookmarks.dev/search?q=[promise]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/domenic/chai-as-promised)
 
 Extends Chai with assertions about promises. Contribute to domenic/chai-as-promised development by creating an account on GitHub.
@@ -2291,7 +2291,7 @@ Extends Chai with assertions about promises. Contribute to domenic/chai-as-promi
 
 **[Arquillian  Home Page](http://arquillian.org/)**
 
-  * **tags**: &nbsp; [arquillian](https://www.codingmarks.org/search?q=[arquillian]), &nbsp; [testing](https://www.codingmarks.org/search?q=[testing]), &nbsp; [integration-testing](https://www.codingmarks.org/search?q=[integration-testing])
+  * **tags**: &nbsp; [arquillian](https://www.bookmarks.dev/search?q=[arquillian]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [integration-testing](https://www.bookmarks.dev/search?q=[integration-testing])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/arquillian)
 
 An innovative testing platform for the Java Virtual Machine (JVM). Open source. Highly extensible.
@@ -2303,7 +2303,7 @@ An innovative testing platform for the Java Virtual Machine (JVM). Open source. 
 
 **[MX Lookup Tool - Check your DNS MX Records online - MxToolbox](https://mxtoolbox.com/)**
 
-  * **tags**: &nbsp; [dns](https://www.codingmarks.org/search?q=[dns]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [dns](https://www.bookmarks.dev/search?q=[dns]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
 
 MxToolbox supports global Internet operations by providing free, fast and accurate network diagnostic and lookup tools. Millions of technology professionals use our tools to help diagnose and resolve a wide range of infrastructure issues.
 
@@ -2311,7 +2311,7 @@ MxToolbox supports global Internet operations by providing free, fast and accura
 
 **[X-Icon Editor](http://www.xiconeditor.com/)**
 
-  * **tags**: &nbsp; [favicon](https://www.codingmarks.org/search?q=[favicon]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [favicon](https://www.bookmarks.dev/search?q=[favicon]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
 
 X-Icon Editor, create high resolution icons from your own browser
 
@@ -2322,7 +2322,7 @@ X-Icon Editor, create high resolution icons from your own browser
 
 **[Angular Progressbar](https://murhafsousli.github.io/ngx-progressbar/#/)**
 
-  * **tags**: &nbsp; [css](https://www.codingmarks.org/search?q=[css]), &nbsp; [user-experience](https://www.codingmarks.org/search?q=[user-experience])
+  * **tags**: &nbsp; [css](https://www.bookmarks.dev/search?q=[css]), &nbsp; [user-experience](https://www.bookmarks.dev/search?q=[user-experience])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/murhafsousli/ngx-progressbar)
 
 A nanoscopic progress/loading bar. Featuring realistic trickle animations to convince your users that something is happening!
@@ -2335,7 +2335,7 @@ A nanoscopic progress/loading bar. Featuring realistic trickle animations to con
 **[High Quality Gifs with FFMPEG ](https://medium.com/@colten_jackson/doing-the-gif-thing-on-debian-82b9760a8483)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2015-10-28
-  * **tags**: &nbsp; [gif](https://www.codingmarks.org/search?q=[gif]), &nbsp; [ffmpeg](https://www.codingmarks.org/search?q=[ffmpeg]), &nbsp; [video-processing](https://www.codingmarks.org/search?q=[video-processing])
+  * **tags**: &nbsp; [gif](https://www.bookmarks.dev/search?q=[gif]), &nbsp; [ffmpeg](https://www.bookmarks.dev/search?q=[ffmpeg]), &nbsp; [video-processing](https://www.bookmarks.dev/search?q=[video-processing])
 
 After getting FFMPEG installed, let’s try it out on a MOV downloaded from my google photos account:
 ```
@@ -2348,7 +2348,7 @@ We’re calling the ffmpeg program and telling it that MVI_6654.MOV is our input
 **[
 FFmpeg](https://www.ffmpeg.org/)**
 
-  * **tags**: &nbsp; [ffmpeg](https://www.codingmarks.org/search?q=[ffmpeg]), &nbsp; [video-processing](https://www.codingmarks.org/search?q=[video-processing])
+  * **tags**: &nbsp; [ffmpeg](https://www.bookmarks.dev/search?q=[ffmpeg]), &nbsp; [video-processing](https://www.bookmarks.dev/search?q=[video-processing])
   * <i class="fa fa-github fa-lg"></i> [github url](https://www.ffmpeg.org/download.html#get-sources)
 
 A complete, cross-platform solution to record, convert and stream audio and video.
@@ -2361,7 +2361,7 @@ A complete, cross-platform solution to record, convert and stream audio and vide
 
 **[Vim dotfiles and configurations example](https://github.com/jessfraz/.vim)**
 
-  * **tags**: &nbsp; [vim](https://www.codingmarks.org/search?q=[vim]), &nbsp; [dotfiles](https://www.codingmarks.org/search?q=[dotfiles])
+  * **tags**: &nbsp; [vim](https://www.bookmarks.dev/search?q=[vim]), &nbsp; [dotfiles](https://www.bookmarks.dev/search?q=[dotfiles])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jessfraz/.vim)
 
 My .vim dotfiles and configurations. Contribute to jessfraz/.vim
@@ -2373,7 +2373,7 @@ My .vim dotfiles and configurations. Contribute to jessfraz/.vim
 
 **[Graphviz - Graph Visualization Software](https://graphviz.org/)**
 
-  * **tags**: &nbsp; [graph](https://www.codingmarks.org/search?q=[graph]), &nbsp; [visualization](https://www.codingmarks.org/search?q=[visualization]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation])
+  * **tags**: &nbsp; [graph](https://www.bookmarks.dev/search?q=[graph]), &nbsp; [visualization](https://www.bookmarks.dev/search?q=[visualization]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation])
   * <i class="fa fa-github fa-lg"></i> [github url](https://gitlab.com/graphviz/graphviz/)
 
 Graphviz is open source graph visualization software. It has several main layout programs. See the gallery for sample layouts. It also has web and interactive graphical interfaces, and auxiliary tools, libraries, and language bindings. We're not able to put a lot of work into GUI editors but there are quite a few external projects and even commercial tools that incorporate Graphviz. You can find some of these in the Resources section.
@@ -2385,7 +2385,7 @@ Graphviz is open source graph visualization software. It has several main layout
 
 **[GitHub - audreyr/favicon-cheat-sheet](https://github.com/audreyr/favicon-cheat-sheet)**
 
-  * **tags**: &nbsp; [html](https://www.codingmarks.org/search?q=[html]), &nbsp; [web](https://www.codingmarks.org/search?q=[web]), &nbsp; [favicon](https://www.codingmarks.org/search?q=[favicon]), &nbsp; [cheatsheet](https://www.codingmarks.org/search?q=[cheatsheet])
+  * **tags**: &nbsp; [html](https://www.bookmarks.dev/search?q=[html]), &nbsp; [web](https://www.bookmarks.dev/search?q=[web]), &nbsp; [favicon](https://www.bookmarks.dev/search?q=[favicon]), &nbsp; [cheatsheet](https://www.bookmarks.dev/search?q=[cheatsheet])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/audreyr/favicon-cheat-sheet)
 
 Obsessive cheat sheet to favicon sizes/types. Please contribute! (Note: this may be in flux as I learn new things about favicon best practices.) - audreyr/favicon-cheat-sheet
@@ -2397,7 +2397,7 @@ Obsessive cheat sheet to favicon sizes/types. Please contribute! (Note: this may
 
 **[Build Reactive APIs with Spring WebFlux](https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux#secure-your-spring-webflux-reactive-api-with-oidc)**
 
-  * **tags**: &nbsp; [reactive-programming](https://www.codingmarks.org/search?q=[reactive-programming]), &nbsp; [spring-webflux](https://www.codingmarks.org/search?q=[spring-webflux]), &nbsp; [mongodb](https://www.codingmarks.org/search?q=[mongodb]), &nbsp; [spring-security](https://www.codingmarks.org/search?q=[spring-security]), &nbsp; [openid-connect](https://www.codingmarks.org/search?q=[openid-connect]), &nbsp; [websocket](https://www.codingmarks.org/search?q=[websocket])
+  * **tags**: &nbsp; [reactive-programming](https://www.bookmarks.dev/search?q=[reactive-programming]), &nbsp; [spring-webflux](https://www.bookmarks.dev/search?q=[spring-webflux]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb]), &nbsp; [spring-security](https://www.bookmarks.dev/search?q=[spring-security]), &nbsp; [openid-connect](https://www.bookmarks.dev/search?q=[openid-connect]), &nbsp; [websocket](https://www.bookmarks.dev/search?q=[websocket])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/oktadeveloper/okta-spring-webflux-react-example)
 
 You've heard that reactive programming can help you scale? But how do you implement it? Using Spring WebFlux, of course! This article shows you how.
@@ -2409,7 +2409,7 @@ You've heard that reactive programming can help you scale? But how do you implem
 
 **[Install Bash git completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)**
 
-  * **tags**: &nbsp; [git](https://www.codingmarks.org/search?q=[git]), &nbsp; [bash](https://www.codingmarks.org/search?q=[bash]), &nbsp; [osx](https://www.codingmarks.org/search?q=[osx]), &nbsp; [windows](https://www.codingmarks.org/search?q=[windows]), &nbsp; [linux](https://www.codingmarks.org/search?q=[linux])
+  * **tags**: &nbsp; [git](https://www.bookmarks.dev/search?q=[git]), &nbsp; [bash](https://www.bookmarks.dev/search?q=[bash]), &nbsp; [osx](https://www.bookmarks.dev/search?q=[osx]), &nbsp; [windows](https://www.bookmarks.dev/search?q=[windows]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux])
 
 How to install git completion on different platforms...
 
@@ -2421,7 +2421,7 @@ How to install git completion on different platforms...
 **[API Infrastructure at Knewton: What’s in an Edge Service?](https://medium.com/knerd/api-infrastructure-at-knewton-whats-in-an-edge-service-51a3777aeb41)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2016-05-09
-  * **tags**: &nbsp; [api](https://www.codingmarks.org/search?q=[api]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices]), &nbsp; [nginx](https://www.codingmarks.org/search?q=[nginx]), &nbsp; [zuul](https://www.codingmarks.org/search?q=[zuul])
+  * **tags**: &nbsp; [api](https://www.bookmarks.dev/search?q=[api]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [nginx](https://www.bookmarks.dev/search?q=[nginx]), &nbsp; [zuul](https://www.bookmarks.dev/search?q=[zuul])
 
 In this post, we will pull back the covers of our API to explain how we handle user requests. You will first learn how to build an edge service with Netflix Zuul, the framework we chose for its simplicity and flexibility. Then, we’ll dive into the Knewton edge service to show you how it improves API simplicity, flexibility, and performance.
 

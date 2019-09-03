@@ -18,7 +18,7 @@ In this guide we are going to:
 * configure NGINX as reverse proxy
 
 NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server.
-We use it in the #codingmarks project as web server to serve static files and as a reverse proxy for the NodeJS API and Keycloak Server:
+We use it in the #DevBookmarks project as web server to serve static files and as a reverse proxy for the NodeJS API and Keycloak Server:
 
 ![Network Diagram](https://raw.githubusercontent.com/wiki/Codingpedia/bookmarks-api/images/network-diagram.png)
 
@@ -182,7 +182,7 @@ Typically, these are created by linking to configuration files found in the `sit
 
 # Nginx setup for www.codingmarks.org
 
-Now that we have a gross understanding of what where belong let's configure NGINX for our production project - #codingmarks.
+Now that we have a gross understanding of what where belong let's configure NGINX for our production project - #DevBookmarks.
 
 ## nginx.conf
 
@@ -704,7 +704,7 @@ server {
 
 **Note** :
 * by setting the location block to `/auth/`, we make sure that every request for
- `https://www.codingmarks.org/auth/*` is redirected to the Keycloak server
+ `https://www.bookmarks.dev/auth/*` is redirected to the Keycloak server
 * `proxy_pass` is the directive that passes the HTTP request to the proxied `keycloak_server`,
 we defined in the upstream before
 * `proxy_http_version` sets the HTTP protocol verion for proxying
@@ -739,7 +739,7 @@ server {
 }
 ```
 
-> In the current configuration the backend api is reachable via `https://www.codingmarks.org/api/*`,
+> In the current configuration the backend api is reachable via `https://www.bookmarks.dev/api/*`,
 > which forwards the requests to the backend node api at `http://localhost:3000/api/*`
 
 ## Configure Nginx aliases

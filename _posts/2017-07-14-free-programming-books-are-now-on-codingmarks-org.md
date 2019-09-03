@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Free Programming Books are now on Codingmarks.org
-description: "We're happy to announce that we've reached and surpassed our goal of 1 Mb #codingmarks, by importing the books 
+description: "We're happy to announce that we've reached and surpassed our goal of 1 Mb #DevBookmarks, by importing the books 
 from the Free-Programming-Books project"
 author: ama
 permalink: /ama/free-programming-books-are-now-on-codingmarks-org
@@ -10,12 +10,12 @@ categories: [dev-bookmarks]
 tags: [codingmarks, books, free-programming-books]
 ---
 
-I am really happy to announce that we've reached and surpassed our [goal of 1Mb of #codingmarks](https://www.youtube.com/watch?v=bj22xbE5ZiY&feature=youtu.be).
+I am really happy to announce that we've reached and surpassed our [goal of 1Mb of #DevBookmarks](https://www.youtube.com/watch?v=bj22xbE5ZiY&feature=youtu.be).
 This was possible by importing the free programming books from the [Free-Programming-Books project](https://github.com/EbookFoundation/free-programming-books), which is one 
  of the most starred repository on GitHub. 
  
  You can look for all imported free books by typing `[free-programming-books]` (_**tag** filtering_) in the search bar, or by provide it as query parameter:
-  [https://www.codingmarks.org/search?q=Bfree-programming-books%5D](https://www.codingmarks.org/?q=%5Bfree-programming-books%5D).
+  [https://www.bookmarks.dev/search?q=Bfree-programming-books%5D](https://www.bookmarks.dev/?q=%5Bfree-programming-books%5D).
   Either way you should get a result similar to the following:
   
   <figure>

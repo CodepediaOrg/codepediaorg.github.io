@@ -44,7 +44,7 @@ Then, why not make a GUI? It was just the perfect project to get into the MEAN[^
 ## Chossing the website name
 
 It was also pretty clear I needed a website, to have my bookmarks accessible from everywhere. One of the hardest things for a website is picking the right name... A couple of ideas came up - **dev-resources.org**, **coding-bookmarks.org**, **dev-bookmarks.org**,
- but none of those felt quite right. Then I remembered the right thing to do, which is to place a request on the subconscious for it. The next morning, bam - [https://www.codingmarks.org](www.codingmarks.org)
+ but none of those felt quite right. Then I remembered the right thing to do, which is to place a request on the subconscious for it. The next morning, bam - [https://www.bookmarks.dev](www.codingmarks.org)
  It shares both the philosophy of [our mission](http://www.codepedia.org/about/) and gave me a good title - **Sharing Coding Bookmarks**.
 
 ## Metadata
@@ -76,7 +76,7 @@ The search will look through titles, URLs, tags and notes/description of bookmar
 
 ## Public bookmarks
 
-On the [landing page](https://www.codingmarks.org) of the website, you can see the public bookmarks. These are private bookmarks, that users chose to share so that others can benefit. I try to make all my personal bookmarks public,
+On the [landing page](https://www.bookmarks.dev) of the website, you can see the public bookmarks. These are private bookmarks, that users chose to share so that others can benefit. I try to make all my personal bookmarks public,
 because it forces me to really filter the ones worth adding and to dwell a bit on the right metadata.
 
 I guess this is pretty at the moment. Feel like sharing or improving it?

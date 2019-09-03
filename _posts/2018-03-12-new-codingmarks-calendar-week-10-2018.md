@@ -19,7 +19,7 @@ New [dev bookmarks](https://www.bookmarks.dev) added in the 10th week of 2018. H
 
 **[The Essential Guide to Machine Data](https://www.splunk.com/pdfs/ebooks/the-essential-guide-to-machine-data.pdf)**
 
-  * **tags**: &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [splunk](https://www.codingmarks.org/search?q=[splunk]), &nbsp; [big-data](https://www.codingmarks.org/search?q=[big-data]), &nbsp; [cloud](https://www.codingmarks.org/search?q=[cloud])
+  * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [splunk](https://www.bookmarks.dev/search?q=[splunk]), &nbsp; [big-data](https://www.bookmarks.dev/search?q=[big-data]), &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud])
 
 Whatever you call it, machine data is one of the most underused and undervalued assets of any organization. And, unfortunately, it’s usually kept for some minimum amount of time before being tossed out and never looked at again.
 
@@ -30,7 +30,7 @@ Whatever you call it, machine data is one of the most underused and undervalued 
 
 **[The Essential Guide to Machine Data](https://www.splunk.com/pdfs/ebooks/the-essential-guide-to-machine-data.pdf)**
 
-  * **tags**: &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [splunk](https://www.codingmarks.org/search?q=[splunk]), &nbsp; [big-data](https://www.codingmarks.org/search?q=[big-data]), &nbsp; [cloud](https://www.codingmarks.org/search?q=[cloud])
+  * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [splunk](https://www.bookmarks.dev/search?q=[splunk]), &nbsp; [big-data](https://www.bookmarks.dev/search?q=[big-data]), &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud])
 
 Whatever you call it, machine data is one of the most underused and undervalued assets of any organization. And, unfortunately, it’s usually kept for some minimum amount of time before being tossed out and never looked at again.
 
@@ -39,7 +39,7 @@ Whatever you call it, machine data is one of the most underused and undervalued 
 **[An Introduction To Securing a Cloud Environment](https://www.sans.org/reading-room/whitepapers/cloud/introduction-securing-cloud-environment-34052)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2012-01-01
-  * **tags**: &nbsp; [cloud](https://www.codingmarks.org/search?q=[cloud]), &nbsp; [security](https://www.codingmarks.org/search?q=[security])
+  * **tags**: &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security])
 
 While Cloud services offer flexibility, scalability and economies of scale, there have been commensurate concerns about security. As more data moves from centrally located server storage to the Cloud, the potential for personal and private data to be compromised will increase. Confidentiality, availability and integrity of data are at risk if appropriate measures are not put in place prior to selecting a Cloud vendor or implementing your own cloud and migrating to Cloud services. 
 
@@ -48,7 +48,7 @@ While Cloud services offer flexibility, scalability and economies of scale, ther
 **[9 cloud migration mistakes — and how to avoid them -- GovCloudInsider](https://govcloudinsider.com/articles/2017/03/14/cloud-migration-mistakes.aspx)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-03-14
-  * **tags**: &nbsp; [cloud](https://www.codingmarks.org/search?q=[cloud])
+  * **tags**: &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud])
 
 By learning from early adopters’ missteps, agencies can make their move to the cloud as seamless and cost-effective as possible.
 
@@ -59,7 +59,7 @@ By learning from early adopters’ missteps, agencies can make their move to the
 
 **[Computer Glossary, Computer Terms](http://whatis.techtarget.com/)**
 
-  * **tags**: &nbsp; [computer-science](https://www.codingmarks.org/search?q=[computer-science]), &nbsp; [glossary](https://www.codingmarks.org/search?q=[glossary])
+  * **tags**: &nbsp; [computer-science](https://www.bookmarks.dev/search?q=[computer-science]), &nbsp; [glossary](https://www.bookmarks.dev/search?q=[glossary])
 
 Technology Definitions and Cheat Sheets from WhatIs.com - The Tech Dictionary and IT Encyclopedia
 
@@ -70,7 +70,7 @@ Technology Definitions and Cheat Sheets from WhatIs.com - The Tech Dictionary an
 
 **[Computer Glossary, Computer Terms](http://whatis.techtarget.com/)**
 
-  * **tags**: &nbsp; [computer-science](https://www.codingmarks.org/search?q=[computer-science]), &nbsp; [glossary](https://www.codingmarks.org/search?q=[glossary])
+  * **tags**: &nbsp; [computer-science](https://www.bookmarks.dev/search?q=[computer-science]), &nbsp; [glossary](https://www.bookmarks.dev/search?q=[glossary])
 
 Technology Definitions and Cheat Sheets from WhatIs.com - The Tech Dictionary and IT Encyclopedia
 
@@ -82,7 +82,7 @@ Technology Definitions and Cheat Sheets from WhatIs.com - The Tech Dictionary an
 **[How To Serialize Enums as JSON Objects with Jackson](http://www.baeldung.com/jackson-serialize-enums)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-07-19
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [json](https://www.codingmarks.org/search?q=[json])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [json](https://www.bookmarks.dev/search?q=[json])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/jackson#readme)
 
 How to serialize an Enum as a JSON Object using Jackson 2.
@@ -92,7 +92,7 @@ How to serialize an Enum as a JSON Object using Jackson 2.
 **[Composition versus Inheritance](https://www.artima.com/designtechniques/compoinh.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;98-01-01
-  * **tags**: &nbsp; [oop](https://www.codingmarks.org/search?q=[oop]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [oop](https://www.bookmarks.dev/search?q=[oop]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
 
 Article describing how to use composition and inheritance in Java program designs.
 
@@ -110,7 +110,7 @@ Given that the inheritance relationship makes it hard to change the interface of
 **[How To Serialize Enums as JSON Objects with Jackson](http://www.baeldung.com/jackson-serialize-enums)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-07-19
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [json](https://www.codingmarks.org/search?q=[json])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [json](https://www.bookmarks.dev/search?q=[json])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/jackson#readme)
 
 How to serialize an Enum as a JSON Object using Jackson 2.
@@ -122,7 +122,7 @@ How to serialize an Enum as a JSON Object using Jackson 2.
 
 **[Moleculer - Fast & powerful microservices framework for NodeJS](https://moleculer.services/)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/moleculerjs/moleculer)
 
 Moleculer is a fast, scalable and powerful microservices framework for Node.js.
@@ -134,7 +134,7 @@ Moleculer is a fast, scalable and powerful microservices framework for Node.js.
 
 **[Moleculer - Fast & powerful microservices framework for NodeJS](https://moleculer.services/)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [microservices](https://www.codingmarks.org/search?q=[microservices])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/moleculerjs/moleculer)
 
 Moleculer is a fast, scalable and powerful microservices framework for Node.js.
@@ -147,7 +147,7 @@ Moleculer is a fast, scalable and powerful microservices framework for Node.js.
 **[Composition versus Inheritance](https://www.artima.com/designtechniques/compoinh.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;98-01-01
-  * **tags**: &nbsp; [oop](https://www.codingmarks.org/search?q=[oop]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [oop](https://www.bookmarks.dev/search?q=[oop]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
 
 Article describing how to use composition and inheritance in Java program designs.
 
@@ -164,7 +164,7 @@ Given that the inheritance relationship makes it hard to change the interface of
 
 **[The Essential Guide to Machine Data](https://www.splunk.com/pdfs/ebooks/the-essential-guide-to-machine-data.pdf)**
 
-  * **tags**: &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [splunk](https://www.codingmarks.org/search?q=[splunk]), &nbsp; [big-data](https://www.codingmarks.org/search?q=[big-data]), &nbsp; [cloud](https://www.codingmarks.org/search?q=[cloud])
+  * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [splunk](https://www.bookmarks.dev/search?q=[splunk]), &nbsp; [big-data](https://www.bookmarks.dev/search?q=[big-data]), &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud])
 
 Whatever you call it, machine data is one of the most underused and undervalued assets of any organization. And, unfortunately, it’s usually kept for some minimum amount of time before being tossed out and never looked at again.
 
@@ -173,7 +173,7 @@ Whatever you call it, machine data is one of the most underused and undervalued 
 **[An Introduction To Securing a Cloud Environment](https://www.sans.org/reading-room/whitepapers/cloud/introduction-securing-cloud-environment-34052)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2012-01-01
-  * **tags**: &nbsp; [cloud](https://www.codingmarks.org/search?q=[cloud]), &nbsp; [security](https://www.codingmarks.org/search?q=[security])
+  * **tags**: &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security])
 
 While Cloud services offer flexibility, scalability and economies of scale, there have been commensurate concerns about security. As more data moves from centrally located server storage to the Cloud, the potential for personal and private data to be compromised will increase. Confidentiality, availability and integrity of data are at risk if appropriate measures are not put in place prior to selecting a Cloud vendor or implementing your own cloud and migrating to Cloud services. 
 
@@ -184,7 +184,7 @@ While Cloud services offer flexibility, scalability and economies of scale, ther
 
 **[The Essential Guide to Machine Data](https://www.splunk.com/pdfs/ebooks/the-essential-guide-to-machine-data.pdf)**
 
-  * **tags**: &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [splunk](https://www.codingmarks.org/search?q=[splunk]), &nbsp; [big-data](https://www.codingmarks.org/search?q=[big-data]), &nbsp; [cloud](https://www.codingmarks.org/search?q=[cloud])
+  * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [splunk](https://www.bookmarks.dev/search?q=[splunk]), &nbsp; [big-data](https://www.bookmarks.dev/search?q=[big-data]), &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud])
 
 Whatever you call it, machine data is one of the most underused and undervalued assets of any organization. And, unfortunately, it’s usually kept for some minimum amount of time before being tossed out and never looked at again.
 
@@ -195,7 +195,7 @@ Whatever you call it, machine data is one of the most underused and undervalued 
 
 **[Declaration Merging     ](https://www.typescriptlang.org/docs/handbook/declaration-merging.html)**
 
-  * **tags**: &nbsp; [typescript](https://www.codingmarks.org/search?q=[typescript])
+  * **tags**: &nbsp; [typescript](https://www.bookmarks.dev/search?q=[typescript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/Microsoft/TypeScript)
 
 Some of the unique concepts in TypeScript describe the shape of JavaScript objects at the type level. One example that is especially unique to TypeScript is the concept of ‘declaration merging’. Understanding this concept will give you an advantage when working with existing JavaScript. It also opens the door to more advanced abstraction concepts.

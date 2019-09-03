@@ -9,7 +9,7 @@ categories: [nginx]
 tags: [codingmarks, nginx, networking]
 ---
 
-This post presents the snippet from the Nginx configuration that redirects all request to **https://www.codingmarks.org**:
+This post presents the snippet from the Nginx configuration that redirects all request to **https://www.bookmarks.dev**:
 
 ```
 # redirect HTTP to www
@@ -32,7 +32,7 @@ server {
 
 > Note the missing `www.codingmarks.org` in the second `server/server_name` entry, to avoid an infinite loop
 
-Lots of other good Nginx resources can be found if you search for the **nginx** tag on **codingmarks**: [https://www.codingmarks.org?q=[nginx]](https://www.codingmarks.org?q=[nginx])
+Lots of other good Nginx resources can be found if you search for the **nginx** tag on **codingmarks**: [https://www.bookmarks.dev?q=[nginx]](https://www.bookmarks.dev?q=[nginx])
 
 {% include source-code-codingmarks.html %}
 

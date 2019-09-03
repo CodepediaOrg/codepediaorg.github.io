@@ -20,7 +20,7 @@ New [dev bookmarks](https://www.bookmarks.dev) added in the 39 th week of 2018. 
 **[Angular Development Mode: What is Unidirectional Data Flow?](https://blog.angular-university.io/angular-2-what-is-unidirectional-data-flow-development-mode/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-06-18
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular])
 
 A simple explanation about the benefits of Unidirectional Data Flow in Angular, the Angular Development and why its important to use it.
 
@@ -33,7 +33,7 @@ A simple explanation about the benefits of Unidirectional Data Flow in Angular, 
 
 **[@Asynchronous does not work from inside the same EJB](https://www.whitebyte.info/programming/java/asynchronous-does-not-work-from-inside-the-same-ejb)**
 
-  * **tags**: &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [ejb](https://www.codingmarks.org/search?q=[ejb]), &nbsp; [asynchronous](https://www.codingmarks.org/search?q=[asynchronous]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])
+  * **tags**: &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [ejb](https://www.bookmarks.dev/search?q=[ejb]), &nbsp; [asynchronous](https://www.bookmarks.dev/search?q=[asynchronous]), &nbsp; [async](https://www.bookmarks.dev/search?q=[async])
 
 The @Asynchronous annotation does not work from inside the same EJB. The solution is to use a separate EJB that wraps the async Method.
 
@@ -44,7 +44,7 @@ The @Asynchronous annotation does not work from inside the same EJB. The solutio
 
 **[GitHub - BryanDonovan/node-cache-manager](https://github.com/BryanDonovan/node-cache-manager)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [caching](https://www.codingmarks.org/search?q=[caching]), &nbsp; [async-await](https://www.codingmarks.org/search?q=[async-await])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [caching](https://www.bookmarks.dev/search?q=[caching]), &nbsp; [async-await](https://www.bookmarks.dev/search?q=[async-await])
 
 Cache module for Node.JS.
 
@@ -55,7 +55,7 @@ Cache module for Node.JS.
 
 **[@Asynchronous does not work from inside the same EJB](https://www.whitebyte.info/programming/java/asynchronous-does-not-work-from-inside-the-same-ejb)**
 
-  * **tags**: &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [ejb](https://www.codingmarks.org/search?q=[ejb]), &nbsp; [asynchronous](https://www.codingmarks.org/search?q=[asynchronous]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])
+  * **tags**: &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [ejb](https://www.bookmarks.dev/search?q=[ejb]), &nbsp; [asynchronous](https://www.bookmarks.dev/search?q=[asynchronous]), &nbsp; [async](https://www.bookmarks.dev/search?q=[async])
 
 The @Asynchronous annotation does not work from inside the same EJB. The solution is to use a separate EJB that wraps the async Method.
 
@@ -66,7 +66,7 @@ The @Asynchronous annotation does not work from inside the same EJB. The solutio
 
 **[GitHub - BryanDonovan/node-cache-manager](https://github.com/BryanDonovan/node-cache-manager)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [caching](https://www.codingmarks.org/search?q=[caching]), &nbsp; [async-await](https://www.codingmarks.org/search?q=[async-await])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [caching](https://www.bookmarks.dev/search?q=[caching]), &nbsp; [async-await](https://www.bookmarks.dev/search?q=[async-await])
 
 Cache module for Node.JS.
 
@@ -77,7 +77,7 @@ Cache module for Node.JS.
 
 **[Modern Visualization for the Data Era - Plotly](https://plot.ly/)**
 
-  * **tags**: &nbsp; [charts](https://www.codingmarks.org/search?q=[charts]), &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [python](https://www.codingmarks.org/search?q=[python]), &nbsp; [data-science](https://www.codingmarks.org/search?q=[data-science])
+  * **tags**: &nbsp; [charts](https://www.bookmarks.dev/search?q=[charts]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [python](https://www.bookmarks.dev/search?q=[python]), &nbsp; [data-science](https://www.bookmarks.dev/search?q=[data-science])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/plotly/plotly.js/)
 
 Plotly creates leading open source software for Web-based data visualization and analytical apps.
@@ -91,7 +91,7 @@ Plotly's collaboration servers (available in cloud or on premises) allow data sc
 
 **[GitHub - kelektiv/node-cron: Cron for NodeJS.](https://github.com/kelektiv/node-cron)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [cron](https://www.codingmarks.org/search?q=[cron])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [cron](https://www.bookmarks.dev/search?q=[cron])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/kelektiv/node-cron)
 
 Cron for NodeJS. Contribute to kelektiv/node-cron development by creating an account on GitHub.
@@ -100,7 +100,7 @@ Cron for NodeJS. Contribute to kelektiv/node-cron development by creating an acc
 
 **[Cron Job Run Time Predictor](https://cronjob.xyz/)**
 
-  * **tags**: &nbsp; [cron](https://www.codingmarks.org/search?q=[cron])
+  * **tags**: &nbsp; [cron](https://www.bookmarks.dev/search?q=[cron])
 
 Cron Job Run Time Predictor
 
@@ -108,7 +108,7 @@ Cron Job Run Time Predictor
 
 **[crontab.guru - the cron schedule expression editor](https://crontab.guru/)**
 
-  * **tags**: &nbsp; [cron](https://www.codingmarks.org/search?q=[cron]), &nbsp; [crontab](https://www.codingmarks.org/search?q=[crontab]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [cron](https://www.bookmarks.dev/search?q=[cron]), &nbsp; [crontab](https://www.bookmarks.dev/search?q=[crontab]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
 
 An easy to use editor for crontab schedules.
 
@@ -119,7 +119,7 @@ An easy to use editor for crontab schedules.
 
 **[crontab.guru - the cron schedule expression editor](https://crontab.guru/)**
 
-  * **tags**: &nbsp; [cron](https://www.codingmarks.org/search?q=[cron]), &nbsp; [crontab](https://www.codingmarks.org/search?q=[crontab]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [cron](https://www.bookmarks.dev/search?q=[cron]), &nbsp; [crontab](https://www.bookmarks.dev/search?q=[crontab]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
 
 An easy to use editor for crontab schedules.
 
@@ -130,7 +130,7 @@ An easy to use editor for crontab schedules.
 
 **[Modern Visualization for the Data Era - Plotly](https://plot.ly/)**
 
-  * **tags**: &nbsp; [charts](https://www.codingmarks.org/search?q=[charts]), &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [python](https://www.codingmarks.org/search?q=[python]), &nbsp; [data-science](https://www.codingmarks.org/search?q=[data-science])
+  * **tags**: &nbsp; [charts](https://www.bookmarks.dev/search?q=[charts]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [python](https://www.bookmarks.dev/search?q=[python]), &nbsp; [data-science](https://www.bookmarks.dev/search?q=[data-science])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/plotly/plotly.js/)
 
 Plotly creates leading open source software for Web-based data visualization and analytical apps.
@@ -144,7 +144,7 @@ Plotly's collaboration servers (available in cloud or on premises) allow data sc
 
 **[@Asynchronous does not work from inside the same EJB](https://www.whitebyte.info/programming/java/asynchronous-does-not-work-from-inside-the-same-ejb)**
 
-  * **tags**: &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [ejb](https://www.codingmarks.org/search?q=[ejb]), &nbsp; [asynchronous](https://www.codingmarks.org/search?q=[asynchronous]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])
+  * **tags**: &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [ejb](https://www.bookmarks.dev/search?q=[ejb]), &nbsp; [asynchronous](https://www.bookmarks.dev/search?q=[asynchronous]), &nbsp; [async](https://www.bookmarks.dev/search?q=[async])
 
 The @Asynchronous annotation does not work from inside the same EJB. The solution is to use a separate EJB that wraps the async Method.
 
@@ -155,7 +155,7 @@ The @Asynchronous annotation does not work from inside the same EJB. The solutio
 
 **[JPA EntityManager: Why use persist() over merge()? - Stack Overflow](https://stackoverflow.com/questions/1069992/jpa-entitymanager-why-use-persist-over-merge)**
 
-  * **tags**: &nbsp; [jpa](https://www.codingmarks.org/search?q=[jpa]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [jpa](https://www.bookmarks.dev/search?q=[jpa]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
 
 Either way will add an entity to a PersistenceContext, the difference is in what you do with the entity afterwards.
 
@@ -170,7 +170,7 @@ Merge creates a new instance of your entity, copies the state from the supplied 
 
 **[@Asynchronous does not work from inside the same EJB](https://www.whitebyte.info/programming/java/asynchronous-does-not-work-from-inside-the-same-ejb)**
 
-  * **tags**: &nbsp; [javaee](https://www.codingmarks.org/search?q=[javaee]), &nbsp; [ejb](https://www.codingmarks.org/search?q=[ejb]), &nbsp; [asynchronous](https://www.codingmarks.org/search?q=[asynchronous]), &nbsp; [async](https://www.codingmarks.org/search?q=[async])
+  * **tags**: &nbsp; [javaee](https://www.bookmarks.dev/search?q=[javaee]), &nbsp; [ejb](https://www.bookmarks.dev/search?q=[ejb]), &nbsp; [asynchronous](https://www.bookmarks.dev/search?q=[asynchronous]), &nbsp; [async](https://www.bookmarks.dev/search?q=[async])
 
 The @Asynchronous annotation does not work from inside the same EJB. The solution is to use a separate EJB that wraps the async Method.
 
@@ -181,7 +181,7 @@ The @Asynchronous annotation does not work from inside the same EJB. The solutio
 
 **[Modern Visualization for the Data Era - Plotly](https://plot.ly/)**
 
-  * **tags**: &nbsp; [charts](https://www.codingmarks.org/search?q=[charts]), &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [python](https://www.codingmarks.org/search?q=[python]), &nbsp; [data-science](https://www.codingmarks.org/search?q=[data-science])
+  * **tags**: &nbsp; [charts](https://www.bookmarks.dev/search?q=[charts]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [python](https://www.bookmarks.dev/search?q=[python]), &nbsp; [data-science](https://www.bookmarks.dev/search?q=[data-science])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/plotly/plotly.js/)
 
 Plotly creates leading open source software for Web-based data visualization and analytical apps.
@@ -195,7 +195,7 @@ Plotly's collaboration servers (available in cloud or on premises) allow data sc
 
 **[JPA EntityManager: Why use persist() over merge()? - Stack Overflow](https://stackoverflow.com/questions/1069992/jpa-entitymanager-why-use-persist-over-merge)**
 
-  * **tags**: &nbsp; [jpa](https://www.codingmarks.org/search?q=[jpa]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [jpa](https://www.bookmarks.dev/search?q=[jpa]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
 
 Either way will add an entity to a PersistenceContext, the difference is in what you do with the entity afterwards.
 
@@ -210,7 +210,7 @@ Merge creates a new instance of your entity, copies the state from the supplied 
 
 **[A simply step by step Keycloak, MySQL and Node.js integration tutorial](https://github.com/v-ladynev/keycloak-nodejs-example)**
 
-  * **tags**: &nbsp; [keycloak](https://www.codingmarks.org/search?q=[keycloak]), &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs])
+  * **tags**: &nbsp; [keycloak](https://www.bookmarks.dev/search?q=[keycloak]), &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/v-ladynev/keycloak-nodejs-example)
 
 A simply step by step Keycloak, MySQL and Node.js integration tutorial / example. There are some docker examples as well. - v-ladynev/keycloak-nodejs-example
@@ -222,7 +222,7 @@ A simply step by step Keycloak, MySQL and Node.js integration tutorial / example
 
 **[A simply step by step Keycloak, MySQL and Node.js integration tutorial](https://github.com/v-ladynev/keycloak-nodejs-example)**
 
-  * **tags**: &nbsp; [keycloak](https://www.codingmarks.org/search?q=[keycloak]), &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs])
+  * **tags**: &nbsp; [keycloak](https://www.bookmarks.dev/search?q=[keycloak]), &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/v-ladynev/keycloak-nodejs-example)
 
 A simply step by step Keycloak, MySQL and Node.js integration tutorial / example. There are some docker examples as well. - v-ladynev/keycloak-nodejs-example
@@ -231,7 +231,7 @@ A simply step by step Keycloak, MySQL and Node.js integration tutorial / example
 
 **[GitHub - BryanDonovan/node-cache-manager](https://github.com/BryanDonovan/node-cache-manager)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [caching](https://www.codingmarks.org/search?q=[caching]), &nbsp; [async-await](https://www.codingmarks.org/search?q=[async-await])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [caching](https://www.bookmarks.dev/search?q=[caching]), &nbsp; [async-await](https://www.bookmarks.dev/search?q=[async-await])
 
 Cache module for Node.JS.
 
@@ -239,7 +239,7 @@ Cache module for Node.JS.
 
 **[GitHub - kelektiv/node-cron: Cron for NodeJS.](https://github.com/kelektiv/node-cron)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [cron](https://www.codingmarks.org/search?q=[cron])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [cron](https://www.bookmarks.dev/search?q=[cron])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/kelektiv/node-cron)
 
 Cron for NodeJS. Contribute to kelektiv/node-cron development by creating an account on GitHub.
@@ -248,7 +248,7 @@ Cron for NodeJS. Contribute to kelektiv/node-cron development by creating an acc
 
 **[Node-cron](http://merencia.github.io/node-cron/)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [scheduler](https://www.codingmarks.org/search?q=[scheduler]), &nbsp; [scheduling](https://www.codingmarks.org/search?q=[scheduling])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [scheduler](https://www.bookmarks.dev/search?q=[scheduler]), &nbsp; [scheduling](https://www.bookmarks.dev/search?q=[scheduling])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/merencia/node-cron)
 
 The node-cron module is tiny task scheduler in pure JavaScript for node.js based on GNU crontab. This module allows you to schedule task in node.js using full crontab syntax.
@@ -260,7 +260,7 @@ The node-cron module is tiny task scheduler in pure JavaScript for node.js based
 
 **[Modern Visualization for the Data Era - Plotly](https://plot.ly/)**
 
-  * **tags**: &nbsp; [charts](https://www.codingmarks.org/search?q=[charts]), &nbsp; [javascript](https://www.codingmarks.org/search?q=[javascript]), &nbsp; [python](https://www.codingmarks.org/search?q=[python]), &nbsp; [data-science](https://www.codingmarks.org/search?q=[data-science])
+  * **tags**: &nbsp; [charts](https://www.bookmarks.dev/search?q=[charts]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [python](https://www.bookmarks.dev/search?q=[python]), &nbsp; [data-science](https://www.bookmarks.dev/search?q=[data-science])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/plotly/plotly.js/)
 
 Plotly creates leading open source software for Web-based data visualization and analytical apps.
@@ -275,7 +275,7 @@ Plotly's collaboration servers (available in cloud or on premises) allow data sc
 **[The Reactive Manifesto](https://www.reactivemanifesto.org/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2014-09-16
-  * **tags**: &nbsp; [reactive](https://www.codingmarks.org/search?q=[reactive]), &nbsp; [reactive-programming](https://www.codingmarks.org/search?q=[reactive-programming])
+  * **tags**: &nbsp; [reactive](https://www.bookmarks.dev/search?q=[reactive]), &nbsp; [reactive-programming](https://www.bookmarks.dev/search?q=[reactive-programming])
 
 We believe that a coherent approach to systems architecture is needed, and we believe that all necessary aspects are already recognised individually: we want systems that are Responsive, Resilient, Elastic and Message Driven. We call these Reactive Systems.
 
@@ -287,7 +287,7 @@ We believe that a coherent approach to systems architecture is needed, and we be
 **[The Reactive Manifesto](https://www.reactivemanifesto.org/)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2014-09-16
-  * **tags**: &nbsp; [reactive](https://www.codingmarks.org/search?q=[reactive]), &nbsp; [reactive-programming](https://www.codingmarks.org/search?q=[reactive-programming])
+  * **tags**: &nbsp; [reactive](https://www.bookmarks.dev/search?q=[reactive]), &nbsp; [reactive-programming](https://www.bookmarks.dev/search?q=[reactive-programming])
 
 We believe that a coherent approach to systems architecture is needed, and we believe that all necessary aspects are already recognised individually: we want systems that are Responsive, Resilient, Elastic and Message Driven. We call these Reactive Systems.
 
@@ -298,7 +298,7 @@ We believe that a coherent approach to systems architecture is needed, and we be
 
 **[Guides - Rails Girls](http://guides.railsgirls.com/)**
 
-  * **tags**: &nbsp; [ruby](https://www.codingmarks.org/search?q=[ruby]), &nbsp; [ruby-on-rails](https://www.codingmarks.org/search?q=[ruby-on-rails])
+  * **tags**: &nbsp; [ruby](https://www.bookmarks.dev/search?q=[ruby]), &nbsp; [ruby-on-rails](https://www.bookmarks.dev/search?q=[ruby-on-rails])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/railsgirls/railsgirls.github.io/)
 
 Our aim is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet
@@ -310,7 +310,7 @@ Our aim is to give tools for women to understand technology. The Rails Girls eve
 
 **[Guides - Rails Girls](http://guides.railsgirls.com/)**
 
-  * **tags**: &nbsp; [ruby](https://www.codingmarks.org/search?q=[ruby]), &nbsp; [ruby-on-rails](https://www.codingmarks.org/search?q=[ruby-on-rails])
+  * **tags**: &nbsp; [ruby](https://www.bookmarks.dev/search?q=[ruby]), &nbsp; [ruby-on-rails](https://www.bookmarks.dev/search?q=[ruby-on-rails])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/railsgirls/railsgirls.github.io/)
 
 Our aim is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet
@@ -323,7 +323,7 @@ Our aim is to give tools for women to understand technology. The Rails Girls eve
 **[Introduction to RxJava](https://www.baeldung.com/rx-java)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-01-25
-  * **tags**: &nbsp; [rxjava](https://www.codingmarks.org/search?q=[rxjava])
+  * **tags**: &nbsp; [rxjava](https://www.bookmarks.dev/search?q=[rxjava])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/rxjava)
 
 Discover RxJava - a library for composing asynchronous and event-based programs.
@@ -335,7 +335,7 @@ Discover RxJava - a library for composing asynchronous and event-based programs.
 
 **[Node-cron](http://merencia.github.io/node-cron/)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [scheduler](https://www.codingmarks.org/search?q=[scheduler]), &nbsp; [scheduling](https://www.codingmarks.org/search?q=[scheduling])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [scheduler](https://www.bookmarks.dev/search?q=[scheduler]), &nbsp; [scheduling](https://www.bookmarks.dev/search?q=[scheduling])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/merencia/node-cron)
 
 The node-cron module is tiny task scheduler in pure JavaScript for node.js based on GNU crontab. This module allows you to schedule task in node.js using full crontab syntax.
@@ -347,7 +347,7 @@ The node-cron module is tiny task scheduler in pure JavaScript for node.js based
 
 **[Node-cron](http://merencia.github.io/node-cron/)**
 
-  * **tags**: &nbsp; [nodejs](https://www.codingmarks.org/search?q=[nodejs]), &nbsp; [scheduler](https://www.codingmarks.org/search?q=[scheduler]), &nbsp; [scheduling](https://www.codingmarks.org/search?q=[scheduling])
+  * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [scheduler](https://www.bookmarks.dev/search?q=[scheduler]), &nbsp; [scheduling](https://www.bookmarks.dev/search?q=[scheduling])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/merencia/node-cron)
 
 The node-cron module is tiny task scheduler in pure JavaScript for node.js based on GNU crontab. This module allows you to schedule task in node.js using full crontab syntax.
@@ -359,7 +359,7 @@ The node-cron module is tiny task scheduler in pure JavaScript for node.js based
 
 **[crontab.guru - the cron schedule expression editor](https://crontab.guru/)**
 
-  * **tags**: &nbsp; [cron](https://www.codingmarks.org/search?q=[cron]), &nbsp; [crontab](https://www.codingmarks.org/search?q=[crontab]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools])
+  * **tags**: &nbsp; [cron](https://www.bookmarks.dev/search?q=[cron]), &nbsp; [crontab](https://www.bookmarks.dev/search?q=[crontab]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
 
 An easy to use editor for crontab schedules.
 

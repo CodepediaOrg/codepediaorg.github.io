@@ -169,7 +169,7 @@ In `webpack.config.js`:
 var API_URL = process.env.API_URL = '';
 var isProd = ENV === 'build';
 if (isProd) {
-  API_URL = 'https://www.codingmarks.org/api';
+  API_URL = 'https://www.bookmarks.dev/api';
 } else {
   API_URL = 'http://localhost:3000/api';
 }
@@ -216,7 +216,7 @@ and
 ```javascript
 export const environment = {
   production: true,
-  'https://www.codingmarks.org/api'
+  'https://www.bookmarks.dev/api'
 };
 ```
 > The magic happens during builds - see in comments above

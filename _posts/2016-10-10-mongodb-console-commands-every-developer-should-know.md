@@ -9,11 +9,11 @@ categories: [mongodb]
 tags: [codingmarks, mongodb]
 ---
 
-The [dev-bookmarks](https://www.codingmarks.org/) are persisted in a [MongoDB Server](https://docs.mongodb.com/manual/).
+The [dev-bookmarks](https://www.bookmarks.dev/) are persisted in a [MongoDB Server](https://docs.mongodb.com/manual/).
  Very often I find myself in the situation, where I need to modify or look for something in the mongo database.
  Experience has taught me that interacting with a system via shell commands helps me understand it better,
  and sort of brings me closer to it. Ok, so how to find the right mongo shell command? Well, I google for it of course, and most likely I am pointed to the right entry in the [Mongo manual](https://docs.mongodb.com/manual/). In this post I try to consolidate the commands I usually use,
-  so that I have only one [codingmark](https://www.codingmarks.org/search?q=codingpedia mongo shell commands) to look for...
+  so that I have only one [codingmark](https://www.bookmarks.dev/search?q=codingpedia mongo shell commands) to look for...
 
   {% include source-code-codingmarks.html %}
 

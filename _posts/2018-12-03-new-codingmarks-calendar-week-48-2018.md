@@ -19,7 +19,7 @@ New [dev bookmarks](https://www.bookmarks.dev) added in week 48 of 2018. Hot top
 
 **[Kotlin Programming Language - Homepage](http://kotlinlang.org/)**
 
-  * **tags**: &nbsp; [kotlin](https://www.codingmarks.org/search?q=[kotlin]), &nbsp; [android](https://www.codingmarks.org/search?q=[android])
+  * **tags**: &nbsp; [kotlin](https://www.bookmarks.dev/search?q=[kotlin]), &nbsp; [android](https://www.bookmarks.dev/search?q=[android])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/JetBrains/kotlin)
 <hr>
 
@@ -29,7 +29,7 @@ New [dev bookmarks](https://www.bookmarks.dev) added in week 48 of 2018. Hot top
 **[Build a Basic CRUD App with Angular 7.0 and Spring Boot 2.1 | Okta Developer](https://developer.okta.com/blog/2018/08/22/basic-crud-angular-7-and-spring-boot-2)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-08-22
-  * **tags**: &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot]), &nbsp; [angular](https://www.codingmarks.org/search?q=[angular])
+  * **tags**: &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot]), &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular])
 
 Angular and Spring Boot are arguably the two most popular frameworks in all of web development. Matt Raible shows you how to use them together in the same app, and how to secure it all with Okta.
 
@@ -40,7 +40,7 @@ Angular and Spring Boot are arguably the two most popular frameworks in all of w
 
 **[GraphQL - A query language for your API - homepage](https://graphql.org/)**
 
-  * **tags**: &nbsp; [graphql](https://www.codingmarks.org/search?q=[graphql]), &nbsp; [api](https://www.codingmarks.org/search?q=[api])
+  * **tags**: &nbsp; [graphql](https://www.bookmarks.dev/search?q=[graphql]), &nbsp; [api](https://www.bookmarks.dev/search?q=[api])
   * <i class="fa fa-github fa-lg"></i> [github url](https://graphql.org/code/)
 
 GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
@@ -52,7 +52,7 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
 
 **[SpringFox homepage](http://springfox.github.io/springfox/)**
 
-  * **tags**: &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [swagger](https://www.codingmarks.org/search?q=[swagger]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation])
+  * **tags**: &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [swagger](https://www.bookmarks.dev/search?q=[swagger]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/springfox/springfox)
 
 Automated JSON API documentation for API's built with Spring
@@ -65,7 +65,7 @@ Automated JSON API documentation for API's built with Spring
 **[Intro to Feign](https://www.baeldung.com/intro-to-feign)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-07-29
-  * **tags**: &nbsp; [feign](https://www.codingmarks.org/search?q=[feign]), &nbsp; [rest-client](https://www.codingmarks.org/search?q=[rest-client])
+  * **tags**: &nbsp; [feign](https://www.bookmarks.dev/search?q=[feign]), &nbsp; [rest-client](https://www.bookmarks.dev/search?q=[rest-client])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/feign)
 
 This article introduces Feign, a declarative HTTP client that simplifies implementation and maintaining efforts
@@ -78,7 +78,7 @@ This article introduces Feign, a declarative HTTP client that simplifies impleme
 **[Getting Started with GraphQL and Spring Boot](https://www.baeldung.com/spring-graphql)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2001-11-18
-  * **tags**: &nbsp; [graphql](https://www.codingmarks.org/search?q=[graphql]), &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot])
+  * **tags**: &nbsp; [graphql](https://www.bookmarks.dev/search?q=[graphql]), &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/spring-boot)
 
 Discover GraphQL - a query language for APIs.
@@ -87,7 +87,7 @@ Discover GraphQL - a query language for APIs.
 
 **[GraphQL Java Kickstart](https://www.graphql-java-kickstart.com/)**
 
-  * **tags**: &nbsp; [graphql](https://www.codingmarks.org/search?q=[graphql]), &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot])
+  * **tags**: &nbsp; [graphql](https://www.bookmarks.dev/search?q=[graphql]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/graphql-java-kickstart)
 
 Projects for easily getting started with GraphQL using Java.
@@ -96,7 +96,7 @@ Projects for easily getting started with GraphQL using Java.
 
 **[GraphQL - A query language for your API - homepage](https://graphql.org/)**
 
-  * **tags**: &nbsp; [graphql](https://www.codingmarks.org/search?q=[graphql]), &nbsp; [api](https://www.codingmarks.org/search?q=[api])
+  * **tags**: &nbsp; [graphql](https://www.bookmarks.dev/search?q=[graphql]), &nbsp; [api](https://www.bookmarks.dev/search?q=[api])
   * <i class="fa fa-github fa-lg"></i> [github url](https://graphql.org/code/)
 
 GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
@@ -108,7 +108,7 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
 
 **[OkHttp](http://square.github.io/okhttp/)**
 
-  * **tags**: &nbsp; [http](https://www.codingmarks.org/search?q=[http]), &nbsp; [https](https://www.codingmarks.org/search?q=[https]), &nbsp; [http2](https://www.codingmarks.org/search?q=[http2]), &nbsp; [http-client](https://www.codingmarks.org/search?q=[http-client]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [http](https://www.bookmarks.dev/search?q=[http]), &nbsp; [https](https://www.bookmarks.dev/search?q=[https]), &nbsp; [http2](https://www.bookmarks.dev/search?q=[http2]), &nbsp; [http-client](https://www.bookmarks.dev/search?q=[http-client]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/square/okhttp)
 
 An HTTP & HTTP/2 client for Android and Java applications
@@ -120,7 +120,7 @@ An HTTP & HTTP/2 client for Android and Java applications
 
 **[OkHttp](http://square.github.io/okhttp/)**
 
-  * **tags**: &nbsp; [http](https://www.codingmarks.org/search?q=[http]), &nbsp; [https](https://www.codingmarks.org/search?q=[https]), &nbsp; [http2](https://www.codingmarks.org/search?q=[http2]), &nbsp; [http-client](https://www.codingmarks.org/search?q=[http-client]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [http](https://www.bookmarks.dev/search?q=[http]), &nbsp; [https](https://www.bookmarks.dev/search?q=[https]), &nbsp; [http2](https://www.bookmarks.dev/search?q=[http2]), &nbsp; [http-client](https://www.bookmarks.dev/search?q=[http-client]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/square/okhttp)
 
 An HTTP & HTTP/2 client for Android and Java applications
@@ -132,7 +132,7 @@ An HTTP & HTTP/2 client for Android and Java applications
 
 **[OkHttp](http://square.github.io/okhttp/)**
 
-  * **tags**: &nbsp; [http](https://www.codingmarks.org/search?q=[http]), &nbsp; [https](https://www.codingmarks.org/search?q=[https]), &nbsp; [http2](https://www.codingmarks.org/search?q=[http2]), &nbsp; [http-client](https://www.codingmarks.org/search?q=[http-client]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [http](https://www.bookmarks.dev/search?q=[http]), &nbsp; [https](https://www.bookmarks.dev/search?q=[https]), &nbsp; [http2](https://www.bookmarks.dev/search?q=[http2]), &nbsp; [http-client](https://www.bookmarks.dev/search?q=[http-client]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/square/okhttp)
 
 An HTTP & HTTP/2 client for Android and Java applications
@@ -144,7 +144,7 @@ An HTTP & HTTP/2 client for Android and Java applications
 
 **[OkHttp](http://square.github.io/okhttp/)**
 
-  * **tags**: &nbsp; [http](https://www.codingmarks.org/search?q=[http]), &nbsp; [https](https://www.codingmarks.org/search?q=[https]), &nbsp; [http2](https://www.codingmarks.org/search?q=[http2]), &nbsp; [http-client](https://www.codingmarks.org/search?q=[http-client]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [http](https://www.bookmarks.dev/search?q=[http]), &nbsp; [https](https://www.bookmarks.dev/search?q=[https]), &nbsp; [http2](https://www.bookmarks.dev/search?q=[http2]), &nbsp; [http-client](https://www.bookmarks.dev/search?q=[http-client]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/square/okhttp)
 
 An HTTP & HTTP/2 client for Android and Java applications
@@ -156,7 +156,7 @@ An HTTP & HTTP/2 client for Android and Java applications
 
 **[Apache Olingo Library    ](http://olingo.apache.org/)**
 
-  * **tags**: &nbsp; [odata](https://www.codingmarks.org/search?q=[odata]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [odata](https://www.bookmarks.dev/search?q=[odata]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
 
 Apache Olingo provides libraries which enable developers to implement OData producers and OData consumers. The available OData Java library implements OData version 2.0. In future on goal is to provide an OData 4.0 compliant library once the OData standard is published at OASIS. The focus within the community is currently on the Java technology but it is up to the community to discuss if other environments find interest.
 
@@ -164,7 +164,7 @@ Apache Olingo provides libraries which enable developers to implement OData prod
 
 **[GraphQL Java Kickstart](https://www.graphql-java-kickstart.com/)**
 
-  * **tags**: &nbsp; [graphql](https://www.codingmarks.org/search?q=[graphql]), &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot])
+  * **tags**: &nbsp; [graphql](https://www.bookmarks.dev/search?q=[graphql]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/graphql-java-kickstart)
 
 Projects for easily getting started with GraphQL using Java.
@@ -173,7 +173,7 @@ Projects for easily getting started with GraphQL using Java.
 
 **[Java annotations](http://tutorials.jenkov.com/java/annotations.html)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
 
 Java annotations are used to provide meta data for your Java code. Being meta data, Java annotations do not directly affect the execution of your code, although some types of annotations can actually be used for that purpose.
 
@@ -184,7 +184,7 @@ Java annotations were added to Java from Java 5. This text covers Java annotatio
 **[Java reflection tutorial](http://tutorials.jenkov.com/java-reflection/index.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-09-25
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
 
 This tutorial will get into Java reflection in depth. It will explain the basics of Java Reflection including how to work with arrays, annotations, generics and dynamic proxies, and do dynamic class loading and reloading.
 
@@ -192,7 +192,7 @@ This tutorial will get into Java reflection in depth. It will explain the basics
 
 **[MapStruct – Java bean mappings, the easy way!](http://mapstruct.org/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [mapper](https://www.codingmarks.org/search?q=[mapper]), &nbsp; [mapping](https://www.codingmarks.org/search?q=[mapping])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [mapper](https://www.bookmarks.dev/search?q=[mapper]), &nbsp; [mapping](https://www.bookmarks.dev/search?q=[mapping])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/mapstruct/mapstruct)
 
 MapStruct is a Java annotation processor for the generation of type-safe and performant mappers for Java bean classes. It saves you from writing mapping code by hand, which is a tedious and error-prone task. The generator comes with sensible defaults and many built-in type conversions, but it steps out of your way when it comes to configuring or implementing special behavior.
@@ -201,7 +201,7 @@ MapStruct is a Java annotation processor for the generation of type-safe and per
 
 **[ModelMapper - Simple, Intelligent, Object Mapping.](http://modelmapper.org/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [mapper](https://www.codingmarks.org/search?q=[mapper]), &nbsp; [mapping](https://www.codingmarks.org/search?q=[mapping])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [mapper](https://www.bookmarks.dev/search?q=[mapper]), &nbsp; [mapping](https://www.bookmarks.dev/search?q=[mapping])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/modelmapper/modelmapper/)
 
 ModelMapper is an intelligent, refactoring safe object mapping library that automatically maps objects to each other. It uses a convention based approach while providing a simple refactoring safe API for handling specific use cases.
@@ -210,7 +210,7 @@ ModelMapper is an intelligent, refactoring safe object mapping library that auto
 
 **[Project Lombok](https://projectlombok.org/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/rzwitserloot/lombok)
 
 Project Lombok is a java library that automatically plugs into your editor and build tools, spicing up your java.
@@ -221,7 +221,7 @@ Never write another getter or equals method again. Early access to future java f
 
 **[OkHttp](http://square.github.io/okhttp/)**
 
-  * **tags**: &nbsp; [http](https://www.codingmarks.org/search?q=[http]), &nbsp; [https](https://www.codingmarks.org/search?q=[https]), &nbsp; [http2](https://www.codingmarks.org/search?q=[http2]), &nbsp; [http-client](https://www.codingmarks.org/search?q=[http-client]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [http](https://www.bookmarks.dev/search?q=[http]), &nbsp; [https](https://www.bookmarks.dev/search?q=[https]), &nbsp; [http2](https://www.bookmarks.dev/search?q=[http2]), &nbsp; [http-client](https://www.bookmarks.dev/search?q=[http-client]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/square/okhttp)
 
 An HTTP & HTTP/2 client for Android and Java applications
@@ -233,7 +233,7 @@ An HTTP & HTTP/2 client for Android and Java applications
 
 **[Kotlin Programming Language - Homepage](http://kotlinlang.org/)**
 
-  * **tags**: &nbsp; [kotlin](https://www.codingmarks.org/search?q=[kotlin]), &nbsp; [android](https://www.codingmarks.org/search?q=[android])
+  * **tags**: &nbsp; [kotlin](https://www.bookmarks.dev/search?q=[kotlin]), &nbsp; [android](https://www.bookmarks.dev/search?q=[android])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/JetBrains/kotlin)
 <hr>
 
@@ -242,7 +242,7 @@ An HTTP & HTTP/2 client for Android and Java applications
 
 **[MapStruct – Java bean mappings, the easy way!](http://mapstruct.org/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [mapper](https://www.codingmarks.org/search?q=[mapper]), &nbsp; [mapping](https://www.codingmarks.org/search?q=[mapping])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [mapper](https://www.bookmarks.dev/search?q=[mapper]), &nbsp; [mapping](https://www.bookmarks.dev/search?q=[mapping])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/mapstruct/mapstruct)
 
 MapStruct is a Java annotation processor for the generation of type-safe and performant mappers for Java bean classes. It saves you from writing mapping code by hand, which is a tedious and error-prone task. The generator comes with sensible defaults and many built-in type conversions, but it steps out of your way when it comes to configuring or implementing special behavior.
@@ -251,7 +251,7 @@ MapStruct is a Java annotation processor for the generation of type-safe and per
 
 **[ModelMapper - Simple, Intelligent, Object Mapping.](http://modelmapper.org/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [mapper](https://www.codingmarks.org/search?q=[mapper]), &nbsp; [mapping](https://www.codingmarks.org/search?q=[mapping])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [mapper](https://www.bookmarks.dev/search?q=[mapper]), &nbsp; [mapping](https://www.bookmarks.dev/search?q=[mapping])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/modelmapper/modelmapper/)
 
 ModelMapper is an intelligent, refactoring safe object mapping library that automatically maps objects to each other. It uses a convention based approach while providing a simple refactoring safe API for handling specific use cases.
@@ -263,7 +263,7 @@ ModelMapper is an intelligent, refactoring safe object mapping library that auto
 
 **[MapStruct – Java bean mappings, the easy way!](http://mapstruct.org/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [mapper](https://www.codingmarks.org/search?q=[mapper]), &nbsp; [mapping](https://www.codingmarks.org/search?q=[mapping])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [mapper](https://www.bookmarks.dev/search?q=[mapper]), &nbsp; [mapping](https://www.bookmarks.dev/search?q=[mapping])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/mapstruct/mapstruct)
 
 MapStruct is a Java annotation processor for the generation of type-safe and performant mappers for Java bean classes. It saves you from writing mapping code by hand, which is a tedious and error-prone task. The generator comes with sensible defaults and many built-in type conversions, but it steps out of your way when it comes to configuring or implementing special behavior.
@@ -272,7 +272,7 @@ MapStruct is a Java annotation processor for the generation of type-safe and per
 
 **[ModelMapper - Simple, Intelligent, Object Mapping.](http://modelmapper.org/)**
 
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [mapper](https://www.codingmarks.org/search?q=[mapper]), &nbsp; [mapping](https://www.codingmarks.org/search?q=[mapping])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [mapper](https://www.bookmarks.dev/search?q=[mapper]), &nbsp; [mapping](https://www.bookmarks.dev/search?q=[mapping])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/modelmapper/modelmapper/)
 
 ModelMapper is an intelligent, refactoring safe object mapping library that automatically maps objects to each other. It uses a convention based approach while providing a simple refactoring safe API for handling specific use cases.
@@ -284,7 +284,7 @@ ModelMapper is an intelligent, refactoring safe object mapping library that auto
 
 **[Apache Olingo Library    ](http://olingo.apache.org/)**
 
-  * **tags**: &nbsp; [odata](https://www.codingmarks.org/search?q=[odata]), &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [odata](https://www.bookmarks.dev/search?q=[odata]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
 
 Apache Olingo provides libraries which enable developers to implement OData producers and OData consumers. The available OData Java library implements OData version 2.0. In future on goal is to provide an OData 4.0 compliant library once the OData standard is published at OASIS. The focus within the community is currently on the Java technology but it is up to the community to discuss if other environments find interest.
 
@@ -292,7 +292,7 @@ Apache Olingo provides libraries which enable developers to implement OData prod
 
 **[OData - the Best Way to REST  - homepage](https://www.odata.org/)**
 
-  * **tags**: &nbsp; [odata](https://www.codingmarks.org/search?q=[odata]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest])
+  * **tags**: &nbsp; [odata](https://www.bookmarks.dev/search?q=[odata]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest])
 
 OData, short for Open Data Protocol, is an open protocol to allow the creation and consumption of queryable and interoperable RESTful APIs in a simple and standard way.
 
@@ -304,7 +304,7 @@ OData, short for Open Data Protocol, is an open protocol to allow the creation a
 
 **[OData - the Best Way to REST  - homepage](https://www.odata.org/)**
 
-  * **tags**: &nbsp; [odata](https://www.codingmarks.org/search?q=[odata]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest])
+  * **tags**: &nbsp; [odata](https://www.bookmarks.dev/search?q=[odata]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest])
 
 OData, short for Open Data Protocol, is an open protocol to allow the creation and consumption of queryable and interoperable RESTful APIs in a simple and standard way.
 
@@ -313,7 +313,7 @@ OData, short for Open Data Protocol, is an open protocol to allow the creation a
 
 **[SpringFox homepage](http://springfox.github.io/springfox/)**
 
-  * **tags**: &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [swagger](https://www.codingmarks.org/search?q=[swagger]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation])
+  * **tags**: &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [swagger](https://www.bookmarks.dev/search?q=[swagger]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/springfox/springfox)
 
 Automated JSON API documentation for API's built with Spring
@@ -326,7 +326,7 @@ Automated JSON API documentation for API's built with Spring
 **[Intro to Feign](https://www.baeldung.com/intro-to-feign)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-07-29
-  * **tags**: &nbsp; [feign](https://www.codingmarks.org/search?q=[feign]), &nbsp; [rest-client](https://www.codingmarks.org/search?q=[rest-client])
+  * **tags**: &nbsp; [feign](https://www.bookmarks.dev/search?q=[feign]), &nbsp; [rest-client](https://www.bookmarks.dev/search?q=[rest-client])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/feign)
 
 This article introduces Feign, a declarative HTTP client that simplifies implementation and maintaining efforts
@@ -338,7 +338,7 @@ This article introduces Feign, a declarative HTTP client that simplifies impleme
 
 **[SpringFox homepage](http://springfox.github.io/springfox/)**
 
-  * **tags**: &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [swagger](https://www.codingmarks.org/search?q=[swagger]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation])
+  * **tags**: &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [swagger](https://www.bookmarks.dev/search?q=[swagger]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/springfox/springfox)
 
 Automated JSON API documentation for API's built with Spring
@@ -351,7 +351,7 @@ Automated JSON API documentation for API's built with Spring
 **[Getting Started with GraphQL and Spring Boot](https://www.baeldung.com/spring-graphql)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2001-11-18
-  * **tags**: &nbsp; [graphql](https://www.codingmarks.org/search?q=[graphql]), &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot])
+  * **tags**: &nbsp; [graphql](https://www.bookmarks.dev/search?q=[graphql]), &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/spring-boot)
 
 Discover GraphQL - a query language for APIs.
@@ -360,7 +360,7 @@ Discover GraphQL - a query language for APIs.
 
 **[GraphQL Java Kickstart](https://www.graphql-java-kickstart.com/)**
 
-  * **tags**: &nbsp; [graphql](https://www.codingmarks.org/search?q=[graphql]), &nbsp; [java](https://www.codingmarks.org/search?q=[java]), &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot])
+  * **tags**: &nbsp; [graphql](https://www.bookmarks.dev/search?q=[graphql]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/graphql-java-kickstart)
 
 Projects for easily getting started with GraphQL using Java.
@@ -370,7 +370,7 @@ Projects for easily getting started with GraphQL using Java.
 **[Build a Basic CRUD App with Angular 7.0 and Spring Boot 2.1 | Okta Developer](https://developer.okta.com/blog/2018/08/22/basic-crud-angular-7-and-spring-boot-2)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-08-22
-  * **tags**: &nbsp; [spring-boot](https://www.codingmarks.org/search?q=[spring-boot]), &nbsp; [angular](https://www.codingmarks.org/search?q=[angular])
+  * **tags**: &nbsp; [spring-boot](https://www.bookmarks.dev/search?q=[spring-boot]), &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular])
 
 Angular and Spring Boot are arguably the two most popular frameworks in all of web development. Matt Raible shows you how to use them together in the same app, and how to secure it all with Okta.
 
@@ -381,7 +381,7 @@ Angular and Spring Boot are arguably the two most popular frameworks in all of w
 
 **[SpringFox homepage](http://springfox.github.io/springfox/)**
 
-  * **tags**: &nbsp; [spring](https://www.codingmarks.org/search?q=[spring]), &nbsp; [swagger](https://www.codingmarks.org/search?q=[swagger]), &nbsp; [rest](https://www.codingmarks.org/search?q=[rest]), &nbsp; [documentation](https://www.codingmarks.org/search?q=[documentation])
+  * **tags**: &nbsp; [spring](https://www.bookmarks.dev/search?q=[spring]), &nbsp; [swagger](https://www.bookmarks.dev/search?q=[swagger]), &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [documentation](https://www.bookmarks.dev/search?q=[documentation])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/springfox/springfox)
 
 Automated JSON API documentation for API's built with Spring

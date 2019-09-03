@@ -19,7 +19,7 @@ New [dev bookmarks](https://www.bookmarks.dev) added in the 11th week of 2018. H
 
 **[Role-based access control - Wikipedia](https://en.wikipedia.org/wiki/Role-based_access_control)**
 
-  * **tags**: &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [roles](https://www.codingmarks.org/search?q=[roles]), &nbsp; [access-control](https://www.codingmarks.org/search?q=[access-control])
+  * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [roles](https://www.bookmarks.dev/search?q=[roles]), &nbsp; [access-control](https://www.bookmarks.dev/search?q=[access-control])
 
 In computer systems security, **role-based access control (RBAC** is an approach to restricting system access to authorized users. It is used by the majority of enterprises with more than 500 employees, and can implement **mandatory access control (MAC)** or **discretionary access control (DAC)**. RBAC is sometimes referred to as role-based security.
 
@@ -31,7 +31,7 @@ In computer systems security, **role-based access control (RBAC** is an approach
 **[Custom Form Controls in Angular by thoughtram](https://blog.thoughtram.io/angular/2016/07/27/custom-form-controls-in-angular-2.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2016-12-18
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular])
 
 Angular makes it very easy to create custom form controls. Read on to learn how to do it!
 
@@ -40,7 +40,7 @@ Angular makes it very easy to create custom form controls. Read on to learn how 
 **[Two-way Data Binding in Angular by thoughtram](https://blog.thoughtram.io/angular/2016/10/13/two-way-data-binding-in-angular-2.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2016-12-18
-  * **tags**: &nbsp; [angular](https://www.codingmarks.org/search?q=[angular])
+  * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular])
 
 Two-way data binding was one of the main selling points of AngularJS. Since Angular, we can build directives that implement two-way data binding. This article explains how!
 
@@ -51,7 +51,7 @@ Two-way data binding was one of the main selling points of AngularJS. Since Angu
 
 **[Varnish HTTP Cache](https://varnish-cache.org/)**
 
-  * **tags**: &nbsp; [http](https://www.codingmarks.org/search?q=[http]), &nbsp; [caching](https://www.codingmarks.org/search?q=[caching]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [varnish](https://www.codingmarks.org/search?q=[varnish])
+  * **tags**: &nbsp; [http](https://www.bookmarks.dev/search?q=[http]), &nbsp; [caching](https://www.bookmarks.dev/search?q=[caching]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [varnish](https://www.bookmarks.dev/search?q=[varnish])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/varnishcache/varnish-cache)
 
 
@@ -65,7 +65,7 @@ This is Varnish Cache, the high-performance HTTP accelerator.
 **[What is DevOps? - Puppet](https://puppet.com/blog/what-is-devops)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-01-30
-  * **tags**: &nbsp; [devops](https://www.codingmarks.org/search?q=[devops])
+  * **tags**: &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
 
 What is DevOps? DevOps is a set of principles and practices — both technical and cultural — that can help organizations deploy better software, faster.
 
@@ -73,7 +73,7 @@ What is DevOps? DevOps is a set of principles and practices — both technical a
 
 **[How Puppet works ](https://puppet.com/products/how-puppet-works)**
 
-  * **tags**: &nbsp; [puppet](https://www.codingmarks.org/search?q=[puppet]), &nbsp; [devops](https://www.codingmarks.org/search?q=[devops])
+  * **tags**: &nbsp; [puppet](https://www.bookmarks.dev/search?q=[puppet]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/puppetlabs/puppet)
 
 Puppet gives you an automatic way to inspect, deliver, operate and future-proof all of your software, no matter where it runs. With the Puppet approach, you know what you have so you can control and enforce consistency across it, secure it and keep it compliant, all the while modernizing it as business needs dictate.
@@ -85,7 +85,7 @@ Puppet gives you an automatic way to inspect, deliver, operate and future-proof 
 
 **[Puppet Cookbook](https://www.puppetcookbook.com/)**
 
-  * **tags**: &nbsp; [puppet](https://www.codingmarks.org/search?q=[puppet]), &nbsp; [free-programming-books](https://www.codingmarks.org/search?q=[free-programming-books])
+  * **tags**: &nbsp; [puppet](https://www.bookmarks.dev/search?q=[puppet]), &nbsp; [free-programming-books](https://www.bookmarks.dev/search?q=[free-programming-books])
 
 Throughout this site I'll attempt to answer task driven questions and provide somewhere that I can point people to in the future.
 
@@ -93,7 +93,7 @@ Throughout this site I'll attempt to answer task driven questions and provide so
 
 **[The RESTful cookbook](http://restcookbook.com/)**
 
-  * **tags**: &nbsp; [rest](https://www.codingmarks.org/search?q=[rest]), &nbsp; [free-programming-books](https://www.codingmarks.org/search?q=[free-programming-books])
+  * **tags**: &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [free-programming-books](https://www.bookmarks.dev/search?q=[free-programming-books])
   * <i class="fa fa-github fa-lg"></i> [github url](http://github.com/restcookbook/restcookbook)
 
 The RESTful cookbook website is inspired by the [puppetcookbook](https://www.puppetcookbook.com/) from Dean Wilson, who created cookbook recipes on how to deal with some of the issues people are facing over and over again when using the Puppet Configuration management tool. This site however, is about dealing with issues and questions people are facing over and over again when trying to create RESTful APIs.
@@ -105,7 +105,7 @@ The RESTful cookbook website is inspired by the [puppetcookbook](https://www.pup
 
 **[Varnish HTTP Cache](https://varnish-cache.org/)**
 
-  * **tags**: &nbsp; [http](https://www.codingmarks.org/search?q=[http]), &nbsp; [caching](https://www.codingmarks.org/search?q=[caching]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [varnish](https://www.codingmarks.org/search?q=[varnish])
+  * **tags**: &nbsp; [http](https://www.bookmarks.dev/search?q=[http]), &nbsp; [caching](https://www.bookmarks.dev/search?q=[caching]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [varnish](https://www.bookmarks.dev/search?q=[varnish])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/varnishcache/varnish-cache)
 
 
@@ -119,7 +119,7 @@ This is Varnish Cache, the high-performance HTTP accelerator.
 **[Java Volatile Keyword](http://tutorials.jenkov.com/java-concurrency/volatile.html)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-03-08
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
 
 * Variable Visibility Problems
 * The Java volatile Visibility Guarantee
@@ -135,7 +135,7 @@ This is Varnish Cache, the high-performance HTTP accelerator.
 **["Stream has already been operated upon or closed" Exception in Java](http://www.baeldung.com/java-stream-operated-upon-or-closed-exception)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-10-29
-  * **tags**: &nbsp; [java](https://www.codingmarks.org/search?q=[java])
+  * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/eugenp/tutorials/tree/master/core-java-8)
 
 Discover how to solve the "Stream has already been operated upon or closed" exception in Java.
@@ -147,7 +147,7 @@ Discover how to solve the "Stream has already been operated upon or closed" exc
 
 **[c - List of all users and groups - Stack Overflow](https://stackoverflow.com/questions/1303561/list-of-all-users-and-groups)**
 
-  * **tags**: &nbsp; [osx](https://www.codingmarks.org/search?q=[osx])
+  * **tags**: &nbsp; [osx](https://www.bookmarks.dev/search?q=[osx])
 
 ```
 $ dscl . list /users
@@ -161,7 +161,7 @@ $ dscl . list /groups
 
 **[Puppet Cookbook](https://www.puppetcookbook.com/)**
 
-  * **tags**: &nbsp; [puppet](https://www.codingmarks.org/search?q=[puppet]), &nbsp; [free-programming-books](https://www.codingmarks.org/search?q=[free-programming-books])
+  * **tags**: &nbsp; [puppet](https://www.bookmarks.dev/search?q=[puppet]), &nbsp; [free-programming-books](https://www.bookmarks.dev/search?q=[free-programming-books])
 
 Throughout this site I'll attempt to answer task driven questions and provide somewhere that I can point people to in the future.
 
@@ -169,7 +169,7 @@ Throughout this site I'll attempt to answer task driven questions and provide so
 
 **[How Puppet works ](https://puppet.com/products/how-puppet-works)**
 
-  * **tags**: &nbsp; [puppet](https://www.codingmarks.org/search?q=[puppet]), &nbsp; [devops](https://www.codingmarks.org/search?q=[devops])
+  * **tags**: &nbsp; [puppet](https://www.bookmarks.dev/search?q=[puppet]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/puppetlabs/puppet)
 
 Puppet gives you an automatic way to inspect, deliver, operate and future-proof all of your software, no matter where it runs. With the Puppet approach, you know what you have so you can control and enforce consistency across it, secure it and keep it compliant, all the while modernizing it as business needs dictate.
@@ -181,7 +181,7 @@ Puppet gives you an automatic way to inspect, deliver, operate and future-proof 
 
 **[The RESTful cookbook](http://restcookbook.com/)**
 
-  * **tags**: &nbsp; [rest](https://www.codingmarks.org/search?q=[rest]), &nbsp; [free-programming-books](https://www.codingmarks.org/search?q=[free-programming-books])
+  * **tags**: &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [free-programming-books](https://www.bookmarks.dev/search?q=[free-programming-books])
   * <i class="fa fa-github fa-lg"></i> [github url](http://github.com/restcookbook/restcookbook)
 
 The RESTful cookbook website is inspired by the [puppetcookbook](https://www.puppetcookbook.com/) from Dean Wilson, who created cookbook recipes on how to deal with some of the issues people are facing over and over again when using the Puppet Configuration management tool. This site however, is about dealing with issues and questions people are facing over and over again when trying to create RESTful APIs.
@@ -193,7 +193,7 @@ The RESTful cookbook website is inspired by the [puppetcookbook](https://www.pup
 
 **[Role-based access control - Wikipedia](https://en.wikipedia.org/wiki/Role-based_access_control)**
 
-  * **tags**: &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [roles](https://www.codingmarks.org/search?q=[roles]), &nbsp; [access-control](https://www.codingmarks.org/search?q=[access-control])
+  * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [roles](https://www.bookmarks.dev/search?q=[roles]), &nbsp; [access-control](https://www.bookmarks.dev/search?q=[access-control])
 
 In computer systems security, **role-based access control (RBAC** is an approach to restricting system access to authorized users. It is used by the majority of enterprises with more than 500 employees, and can implement **mandatory access control (MAC)** or **discretionary access control (DAC)**. RBAC is sometimes referred to as role-based security.
 
@@ -204,7 +204,7 @@ In computer systems security, **role-based access control (RBAC** is an approach
 
 **[Role-based access control - Wikipedia](https://en.wikipedia.org/wiki/Role-based_access_control)**
 
-  * **tags**: &nbsp; [security](https://www.codingmarks.org/search?q=[security]), &nbsp; [roles](https://www.codingmarks.org/search?q=[roles]), &nbsp; [access-control](https://www.codingmarks.org/search?q=[access-control])
+  * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [roles](https://www.bookmarks.dev/search?q=[roles]), &nbsp; [access-control](https://www.bookmarks.dev/search?q=[access-control])
 
 In computer systems security, **role-based access control (RBAC** is an approach to restricting system access to authorized users. It is used by the majority of enterprises with more than 500 employees, and can implement **mandatory access control (MAC)** or **discretionary access control (DAC)**. RBAC is sometimes referred to as role-based security.
 
@@ -215,7 +215,7 @@ In computer systems security, **role-based access control (RBAC** is an approach
 
 **[Varnish HTTP Cache](https://varnish-cache.org/)**
 
-  * **tags**: &nbsp; [http](https://www.codingmarks.org/search?q=[http]), &nbsp; [caching](https://www.codingmarks.org/search?q=[caching]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [varnish](https://www.codingmarks.org/search?q=[varnish])
+  * **tags**: &nbsp; [http](https://www.bookmarks.dev/search?q=[http]), &nbsp; [caching](https://www.bookmarks.dev/search?q=[caching]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [varnish](https://www.bookmarks.dev/search?q=[varnish])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/varnishcache/varnish-cache)
 
 
@@ -228,7 +228,7 @@ This is Varnish Cache, the high-performance HTTP accelerator.
 
 **[Varnish HTTP Cache](https://varnish-cache.org/)**
 
-  * **tags**: &nbsp; [http](https://www.codingmarks.org/search?q=[http]), &nbsp; [caching](https://www.codingmarks.org/search?q=[caching]), &nbsp; [tools](https://www.codingmarks.org/search?q=[tools]), &nbsp; [varnish](https://www.codingmarks.org/search?q=[varnish])
+  * **tags**: &nbsp; [http](https://www.bookmarks.dev/search?q=[http]), &nbsp; [caching](https://www.bookmarks.dev/search?q=[caching]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools]), &nbsp; [varnish](https://www.bookmarks.dev/search?q=[varnish])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/varnishcache/varnish-cache)
 
 

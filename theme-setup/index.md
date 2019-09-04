@@ -135,7 +135,29 @@ kramdown:
     coderay_css: class
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+exclude: [
+    "lib",
+    "config.rb",
+    "Capfile",
+    "config",
+    "Gemfile",
+    "Gemfile.lock",
+    "README.md",
+    "LICENSE",
+    "log",
+    ".idea",
+    "Rakefile",
+    "Rakefile.rb",
+    "tmp",
+    "less",
+    "*.sublime-project",
+    "*.sublime-workspace",
+    "test",
+    "spec",
+    "Gruntfile.js",
+    "package.json",
+    "node_modules"
+]
 
 
 {% endhighlight %}

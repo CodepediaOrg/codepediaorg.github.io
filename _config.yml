@@ -31,7 +31,7 @@ owner:
   site:           https://www.codepedia.org
   avatar:         images/avatar.jpg
   bio:            "Share coding knowledge"
-  email:          contact@codepedia.org
+  email:          ama@codingpedia.org
   # Twitter nick for use in Twitter cards and follow button.
   twitter: CodepediaOrg # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.

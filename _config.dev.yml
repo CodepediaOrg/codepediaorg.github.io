@@ -80,7 +80,7 @@ permalink:   /:categories/:title/
 # Amount of post to show on home page
 paginate: 5
 
-# if true, shows the floatting share buttons
+# if true, shows the floating share buttons
 float_share: true
 
 kramdown:
@@ -100,5 +100,5 @@ page_layout: page
 titlecase: true
 
 include: [".htaccess", ".well-known/brave-rewards-verification.txt"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+exclude: [".idea","lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
 gems: [jekyll-paginate]

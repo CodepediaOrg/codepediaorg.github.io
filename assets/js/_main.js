@@ -90,7 +90,7 @@ $(document).ready(function(){
 var sharing = function(){
     $(document).ready(function(){
       $("body").floatingSocialShare({
-        buttons: ["facebook","twitter", "linkedin", "pinterest"],
+        buttons: ["facebook","twitter", "linkedin"],
         text: "Share with "
       });
     });

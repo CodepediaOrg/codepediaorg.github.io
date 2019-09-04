@@ -5,7 +5,7 @@ ama:
   bio:            "Life force expressing itself as a coding capable human being"
   email:          adrianmatei@gmail.com
   # Twitter nick for use in Twitter cards and follow button.
-  twitter: codingpedia # if no twitter in this config, the twitter follow button will be removed
+  twitter: CodepediaOrg # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
   github: adrianmatei-me
   social:
@@ -35,7 +35,7 @@ benas:
   name:          Mahmoud Ben Hassine
   site:           http://benas.github.io/
   avatar_url: https://pbs.twimg.com/profile_images/682858329220190208/YhIK6TIE_400x400.jpg
-  bio:            "Aspiring software craftsman living in the shell, chess master and scrum basterd!"
+  bio:            "Aspiring software craftsman living in the shell, chess master and scrum bastard!"
   email:          mahmoud.benhassine@icloud.com
   # Twitter nick for use in Twitter cards and follow button.
   twitter: pragmatic_coder # if no twitter in this config, the twitter follow button will be removed
@@ -56,9 +56,9 @@ dexter:
   bio:            "A boy-genius and inventor with a secret laboratory, who constantly battles his sister Dee Dee in an attempt to keep her out of the lab."
   email:          adrianmatei@gmail.com
   # Twitter nick for use in Twitter cards and follow button.
-  twitter: codingpedia # if no twitter in this config, the twitter follow button will be removed
+  twitter: CodepediaOrg # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
-  github: amacoder
+  github: adrianmatei-me
   social:
     - title: "github"
       url: "https://github.com/adrianmatei-me"
@@ -67,4 +67,4 @@ dexter:
     - title: "youtube"
       url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
     - title: "facebook"
-      url: "https://www.facebook.com/adrian.matei.90"
+      url: "https://www.facebook.com/adrianmatei.me"

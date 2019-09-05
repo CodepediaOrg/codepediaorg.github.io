@@ -81,7 +81,7 @@ permalink:   /:categories/:title/
 paginate: 5
 
 # if true, shows the floatting share buttons
-float_share: false
+float_share: true
 
 kramdown:
   auto_ids: true

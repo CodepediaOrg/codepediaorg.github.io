@@ -2,6 +2,8 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+
+    // https://github.com/gruntjs/grunt-contrib-jshint
     jshint: {
       options: {
         jshintrc: '.jshintrc'
@@ -14,6 +16,8 @@ module.exports = function(grunt) {
         '!assets/js/scripts.min.js'
       ]
     },
+
+    // https://github.com/gruntjs/grunt-contrib-uglify
     uglify: {
       dist: {
         files: {
@@ -24,6 +28,8 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    // https://github.com/gruntjs/grunt-contrib-imagemin
     imagemin: {
       dist: {
         options: {
@@ -38,6 +44,8 @@ module.exports = function(grunt) {
         }]
       }
     },
+
+    // https://github.com/sindresorhus/grunt-svgmin
     svgmin: {
       dist: {
         files: [{
@@ -48,6 +56,8 @@ module.exports = function(grunt) {
         }]
       }
     },
+
+    //https://github.com/gruntjs/grunt-contrib-watch
     watch: {
       js: {
         files: [
@@ -56,12 +66,15 @@ module.exports = function(grunt) {
         tasks: ['jshint','uglify']
       }
     },
+
+    // https://github.com/gruntjs/grunt-contrib-clean
     clean: {
       dist: [
         'assets/js/scripts.min.js'
       ]
     },
 
+    // https://github.com/wecodemore/grunt-githooks
     githooks: {
       all: {
         'pre-commit': 'clean jshint uglify imagemin svgmin'

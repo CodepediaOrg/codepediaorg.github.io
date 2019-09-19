@@ -75,7 +75,7 @@ In the I check if the bookmark is a youtube video (`youtubeVideoId` must be pres
 ```html
 <mat-dialog-content>
   <div class="videoWrapper">
-    <iframe [src]='safeUrl' frameborder="0" allowfullscreen width="560" height="315"></iframe>
+    <iframe [src]='safeUrl' frameborder="0" allowfullscreen></iframe>
   </div>
 </mat-dialog-content>
 

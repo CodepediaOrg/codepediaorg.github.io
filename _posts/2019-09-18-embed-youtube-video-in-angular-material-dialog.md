@@ -16,8 +16,8 @@ of the bookmark:
   <figcaption>Or didn't you?</figcaption>
 </figure>
 
-Also when you click on the youtube logo, a dialog will pop where the video is embedded and you can play it directly there.
-In this blog post I will show what was required for that. The [www.bookmarks.dev](https://www.bookmarks.dev) website
+Also, when you click on the youtube logo, a dialog will pop where the video is embedded and you can play it directly there.
+In this blog post I will show what was required to achieve this. The [www.bookmarks.dev](https://www.bookmarks.dev) website
 uses Angular, with angular material and bootstrap.   
 
 <!--more-->
@@ -28,7 +28,7 @@ uses Angular, with angular material and bootstrap.
 
 
 ## HTML Template
-In the I check if the bookmark is a youtube video (`youtubeVideoId` must be present) 
+In the html template I check if the bookmark is a youtube video (`youtubeVideoId` must be present), to display the youtube icon
 
 ```html
 ...
@@ -42,11 +42,13 @@ In the I check if the bookmark is a youtube video (`youtubeVideoId` must be pres
 
 ## Angular component
 
+Below you can see the method `playYoutubeVideo` from the `AsyncBookmarkListComponent` component, which is triggered when the youtube icon is clicked:
+
 ```typescript
   playYoutubeVideo(bookmark: Bookmark) {
     const dialogConfig = new MatDialogConfig();
 
-    dialogConfig.disableClose = true;
+    dialogConfig.disableClose = false;
     dialogConfig.autoFocus = true;
 
     let relativeWidth = (this.innerWidth * 80) / 100; // take up to 80% of the screen size
@@ -68,7 +70,24 @@ In the I check if the bookmark is a youtube video (`youtubeVideoId` must be pres
   }
 ```
 
+As you can see the configuration of the dialog is quite strait forward. For smaller screens (width < 1500px), the dialog
+will take up to 80% of the width and the height corresponds to a 16:9 ratio, to which you would add a 120px to properly display
+the close button.
+
+The window width (here `innerWidth`) is set in the `ngOnInit()` method of the component:
+
+```typescript
+  ngOnInit(): void {
+    this.innerWidth = window.innerWidth;
+    ...
+  }
+```
+
+https://angular.io/guide/security#bypass-security-apis
+
 ## Angular Material Dialog Integration
+
+Let's focus now on the angular material component. 
 
 ### HTML Template
 
@@ -85,6 +104,9 @@ In the I check if the bookmark is a youtube video (`youtubeVideoId` must be pres
   <button type="button" class="btn btn-primary btn-sm" (click)="close()">Close</button>
 </mat-dialog-actions>
 ```
+
+To systematically block XSS bugs, Angular treats all values as untrusted by default.
+ When a value is inserted into the DOM from a template, via property, attribute, style, class binding, or interpolation, Angular sanitizes and escapes untrusted values.
 
 ### CSS
 ```scss

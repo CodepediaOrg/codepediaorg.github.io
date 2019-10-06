@@ -9,23 +9,23 @@ categories: [angular]
 tags: [angular-material, youtube]
 ---
 
-It's easy now to recognise the youtube video bookmarks on [www.bookmarks.dev](https://www.bookmarks.dev), by placing the youtube logo before the title 
+It's easy now to recognise the youtube video bookmarks on [www.bookmarks.dev](https://www.bookmarks.dev), by placing the youtube logo before the title
 of the bookmark:
 <figure>
   <img src="{{site.url}}/images/posts/embed-youtube-video-in-angular-material-dialog/youtube-bookmark-printscreen.png" alt="Youtube logo before bookmark title"/>
-  <figcaption>Or didn't you?</figcaption>
+  <figcaption>Bookmarks list with youtube logo</figcaption>
 </figure>
 
 Also, when you click on the youtube logo, a dialog will pop where the video is embedded and you can play it directly there.
 In this blog post I will show how it is implemented.
- 
+
 > As a reminder, the [www.bookmarks.dev](https://www.bookmarks.dev) website
 uses Angular, with angular material and bootstrap for styling.   
 
 <!--more-->
 
 * TOC
-{:toc} 
+{:toc}
 
 
 ## HTML Template
@@ -74,7 +74,7 @@ If the youtube icon is present, when clicked it triggers the method `playYoutube
 
 The configuration of the dialog is quite strait forward. For smaller screens (`width < 1500px`), the dialog
 will take up to 80% of the width and the height corresponds to a **16:9** ratio, to which you would add a 120px to properly display
-the close button. For bigger screen we have fixed values which have the same ratio. 
+the close button. For bigger screen we have fixed values which have the same ratio.
 
 The window width (here `innerWidth`) is set in the `ngOnInit()` method of the component:
 
@@ -108,8 +108,8 @@ The youtube video is embedded via an iframe.
 ```
 
 > To systematically block XSS bugs, Angular treats all values as untrusted by default. So the iframe url needs to be [marked as safe](https://angular.io/guide/security#bypass-security-apis),
- to avoid being sanitized by Angular. 
- 
+ to avoid being sanitized by Angular.
+
 ### Dialog Component - `PlayYoutubeVideoDialogComponent`
 
 The iframe's url (`safeUrl`) is marked as trusted by injecting the `DomSanitizer` and calling its `bypassSecurityTrustResourceUrl` method:
@@ -153,10 +153,10 @@ export class PlayYoutubeVideoDialogComponent implements OnInit {
 
 To display the video in a "fluid" manner in the iframe, we use a solution pioneered by Thierry Koblentz
  and presented on A List Apart in 2009: [Creating Intrinsic Ratios for Video](http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/):
- 
+
 > "The idea is to create a box with the proper ratio ( 16:9, etc.), then make the video inside that box stretch to fit the dimensions of the box. It’s that simple."
-I recommend you read the whole article to understand the details. 
- 
+I recommend you read the whole article to understand the details.
+
 ```scss
 .videoWrapper {
   position: relative;

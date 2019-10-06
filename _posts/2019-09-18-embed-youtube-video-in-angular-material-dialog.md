@@ -28,7 +28,9 @@ uses Angular, with angular material and bootstrap for styling.
 {:toc}
 
 
-## HTML Template
+## The Bookmarks List Component
+
+### HTML Template
 
 In the bookmarks list's html template I check if the bookmark is a youtube video (a `youtubeVideoId` must be present), to display the youtube icon
 
@@ -42,7 +44,7 @@ In the bookmarks list's html template I check if the bookmark is a youtube video
 ...          
 ```
 
-## Angular component
+### The Angular Bookmarks List Component - **AsyncBookmarkListComponent**
 
 If the youtube icon is present, when clicked it triggers the method `playYoutubeVideo` int the `AsyncBookmarkListComponent` component:
 
@@ -110,7 +112,7 @@ The youtube video is embedded via an iframe.
 > To systematically block XSS bugs, Angular treats all values as untrusted by default. So the iframe url needs to be [marked as safe](https://angular.io/guide/security#bypass-security-apis),
  to avoid being sanitized by Angular.
 
-### Dialog Component - `PlayYoutubeVideoDialogComponent`
+### Dialog Component - **PlayYoutubeVideoDialogComponent**
 
 The iframe's url (`safeUrl`) is marked as trusted by injecting the `DomSanitizer` and calling its `bypassSecurityTrustResourceUrl` method:
 

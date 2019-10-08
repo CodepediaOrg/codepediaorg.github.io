@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How to embed a youtube video in a angular material dialog
+title: How to embed a youtube video in an angular material dialog
 description: "A simple solution to embed a youtube video in an angular material dialog, as currently used on bookmarks.dev"
 author: ama
-permalink: /ama/how-to-embed-a-youtube-video-in-a-angular-material-dialog
+permalink: /ama/how-to-embed-a-youtube-video-in-an-angular-material-dialog
 published: true
 categories: [angular]
 tags: [angular-material, youtube]

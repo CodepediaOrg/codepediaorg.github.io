@@ -114,7 +114,7 @@ Feature Toggles (often also refered to as Feature Flags) are a powerful techniqu
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-11-05
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [async-await](https://www.bookmarks.dev/search?q=[async-await]), &nbsp; [mongoose](https://www.bookmarks.dev/search?q=[mongoose]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb])
-  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks-api)
+  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks.dev-api)
 
 Example showing migration of Mongoose calls from previously using callbacks to using the new async-await feature in NodeJs
 
@@ -988,7 +988,7 @@ var parentSchema = new Schema({
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-11-05
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [async-await](https://www.bookmarks.dev/search?q=[async-await]), &nbsp; [mongoose](https://www.bookmarks.dev/search?q=[mongoose]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb])
-  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks-api)
+  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks.dev-api)
 
 Example showing migration of Mongoose calls from previously using callbacks to using the new async-await feature in NodeJs
 
@@ -1022,7 +1022,7 @@ var parentSchema = new Schema({
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-11-05
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [async-await](https://www.bookmarks.dev/search?q=[async-await]), &nbsp; [mongoose](https://www.bookmarks.dev/search?q=[mongoose]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb])
-  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks-api)
+  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks.dev-api)
 
 Example showing migration of Mongoose calls from previously using callbacks to using the new async-await feature in NodeJs
 
@@ -1102,7 +1102,7 @@ Loads environment variables from .env for nodejs projects.
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-11-05
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [async-await](https://www.bookmarks.dev/search?q=[async-await]), &nbsp; [mongoose](https://www.bookmarks.dev/search?q=[mongoose]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb])
-  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks-api)
+  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks.dev-api)
 
 Example showing migration of Mongoose calls from previously using callbacks to using the new async-await feature in NodeJs
 

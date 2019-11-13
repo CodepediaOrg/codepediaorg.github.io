@@ -781,7 +781,7 @@ I am a developer by heart and by job, with some sysadmin experience, so if you n
 please leave a comment in the comments section... Very much appreciated.
 
 <p class="note_normal">
-    This blog post is a clone of the wiki page <a href="https://github.com/CodepediaOrg/bookmarks-api/wiki/Setup-Nginx-in-production" target="_blank">Setup Nginx in production</a>
+    This blog post is a clone of the wiki page <a href="https://github.com/CodepediaOrg/bookmarks.dev-api/wiki/Setup-Nginx-in-production" target="_blank">Setup Nginx in production</a>
 </p>
 
 # References

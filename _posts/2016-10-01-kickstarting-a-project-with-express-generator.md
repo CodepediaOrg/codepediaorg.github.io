@@ -141,7 +141,7 @@ echo "# bookmarks-api.codepedia.org" >> README.md
 git init
 git add --all
 git commit -m "first commit"
-git remote add origin https://github.com/CodepediaOrg/bookmarks-api.codepedia.org.git
+git remote add origin https://github.com/CodepediaOrg/bookmarks.dev-api.codepedia.org.git
 git push -u origin master
 ```
 

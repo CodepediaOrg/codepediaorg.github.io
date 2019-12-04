@@ -1,24 +1,25 @@
 ---
 layout: post
 title: Cleaner code in an Express REST API with unified error handling
-description: "Shows how you can make your backend ExpressJS REST API cleaner by using custom error handling. Before and after
-refactoring code snippets are presented to make the point"
+description: "Shows how you can make your backend ExpressJS REST API cleaner by using custom error handling middleware. Code snippets of before and after
+refactoring are presented to make the point"
 author: ama
 permalink: /ama/cleaner-code-in-expressjs-rest-api-with-custom-error-handling
-published: false
+published: true
 categories: [clean-code]
 tags: [expressjs, nodejs, rest, api]
 ---
 
 What started out as a simple code duplication removal, turned out into [a major refactoring](https://github.com/CodepediaOrg/bookmarks.dev-api/commit/bd4f64bf2d1bc778d3c0f8d96e898bd3d210f52e)
- with complete rewriting of error handling, moving of business logic/db access into separate files (about this in another blog post)
+ with complete rewriting of error handling, moving of business logic/db access into separate service files (about this in another blog post)
   and rewriting of all integration tests to use async/await. In this blog post I will focus on the custom error handling and how
   it made the code much cleaner for the [REST API](https://github.com/CodepediaOrg/bookmarks.dev-api) supporting [www.bookmarks.dev](https://www.bookmarks.dev).
-  The API is implemented with [ExpressJS](https://expressjs.com), currently with version 4. 
+  The API uses [ExpressJS](https://expressjs.com), currently in version 4. 
 
 
 ## Refactoring
-To make my point I will show you an example of **before** and **after** code, where I will go into more details.  
+To make my point I will show you an example of **before** and **after** code. In the **after** part where I drill into the details
+taking a top down approach.   
 
 ### Before
 
@@ -130,12 +131,47 @@ There are several issues with this code. To name a few:
 with Keycloak (btw. this was the trigger of the refactoring mentioned in the beginning of the post)
 * if one validation exception occurs the code breaks and sends the response to the caller, potentially missing validation 
 exceptions
-* try/catch block around the code, which is diligently used in the whole code base; I mean it's good that is there, but
+* try/catch block around the database access, which is diligently used in the whole code base; I mean it's good that is there, but
 maybe you can get rid of it
 
 Now let's see the refactoring result.
 
 ### After
+```javascript
+personalBookmarksRouter.post('/', keycloak.protect(), async (request, response) => {
+
+  UserIdValidator.validateUserId(request);
+  
+  const bookmark = bookmarkHelper.buildBookmarkFromRequest(request);
+  let newBookmark = await PersonalBookmarksService.createBookmark(request.params.userId, bookmark);
+
+  response
+    .set('Location', `${config.basicApiUrl}private/${request.params.userId}/bookmarks/${newBookmark.id}`)
+    .status(HttpStatus.CREATED)
+    .send({response: 'Bookmark created for userId ' + request.params.userId});
+
+});
+```
+
+Notice that the method is much shorter. 
+
+#### Remove try/catch around code
+
+The try/catch block has been eliminated, but there is a hack. When an error
+is thrown it does not go to the error middleware, because express does not support promises currently and you will get 
+an `UnhandledPromiseRejectionWarning`. The initial solution was to wrap the async function with a wrapper that would
+have a `catch` call, which would forward the error to the next middleware:
+```javascript
+let wrapAsync = function (fn) {
+  return function(req, res, next) {
+    // Make sure to `.catch()` any errors and pass them along to the `next()`
+    // middleware in the chain, in this case the error handler.
+    fn(req, res, next).catch(next);
+  };
+}
+```
+
+This meant calling the function like the following:
 ```javascript
 personalBookmarksRouter.post('/', keycloak.protect(), AsyncWrapper.wrapAsync(async (request, response) => {
 
@@ -151,9 +187,17 @@ personalBookmarksRouter.post('/', keycloak.protect(), AsyncWrapper.wrapAsync(asy
 }));
 ```
 
-The method is much shorter.
+Other options are mentioned on [javascript - Handling errors in express async middleware - Stack Overflow](https://stackoverflow.com/questions/51391080/handling-errors-in-express-async-middleware)
 
-### UserId validation
+But later I found the [express-async-errors](https://github.com/davidbanham/express-async-errors) script, which you only
+need to require **before** start using it:
+```javascript
+const express = require('express');
+require('express-async-errors');
+``` 
+Then you are good to go - no wrapper needed needed. 
+
+#### UserId validation
 
 The userId validation was moved to its own file:
 ```javascript
@@ -165,7 +209,7 @@ let validateUserId = function (request) {
    }
 ```
 
-Now instead of returning a response, a custom `UseridTokenValidationError` exception is thrown:
+Now instead of returning a response, a custom `UserIdValidationError` exception is thrown:
 ```javascript
 class UserIdValidationError extends Error {
   constructor(message) {
@@ -194,7 +238,7 @@ app.use(function handleUserIdValidationError(error, req, res, next) {
 arguments instead of three: `(err, req, res, next)`.
 
 
-### Service method 
+#### Service method 
 
 The service method `PersonalBookmarksService.createBookmark`, takes now the task of input validation and 
 saving the data to the database:
@@ -209,9 +253,9 @@ let createBookmark = async function (userId, bookmark) {
   return newBookmark;
 }
 ```
-> The service part is now "Express"-free, so I could easily change the API Framework 
+> The service is "Express"-free, so I could easily change the API Framework but keep the business logic part intact
 
-### Input validation handling
+#### Input validation handling
 
 Let's focus now on the input validation handling - `BookmarkInputValidator.validateBookmarkInput(userId, bookmark)`:
 
@@ -298,8 +342,10 @@ app.use(function handleValidationError(error, request, response, next) {
 });
 ```
 
+#### Error handling middleware
 
-Complete error handling functionality snippet:
+Please find below the complete error handling middleware:
+
 ```javascript
 app.use(function handleNotFoundError(error, req, res, next) {
   if (error instanceof NotFoundError) {
@@ -384,24 +430,17 @@ app.use(function (error, req, res, next) {
 });
 ```
 
-I think that Express offers a decent way to handle exceptions. Hope you've learned something from this post 
-and if you see signs of improvement please leave a comment, or better fix it and make a pull request at 
-[bookmarks.dev-api github repo](https://github.com/CodepediaOrg/bookmarks.dev-api)
-
-Ideas to be addressed:
-
-- error handling in app.js
-- before after code
-- discuss not throw exceptions when validating (because of multiple issues) but how that can be elegantly handled in express
-
-Mention this at the end:
-
-## Code size reduction
-So not only that the code is much cleaner now, it takes also less Javascript code (from 3441 to 3012), although the number of Javascript files
-has grown by 10 (from 32 to 42). To measure this I used [cloc](https://github.com/AlDanial/cloc) - `brew install cloc` for MacOS
+> Instead of having one `app.use(function (error, req, res, next)` middleware with nested if/else statements verifying 
+the error type, I preferred to check for one exception type or else forward it to the next middleware. I think this improved
+the readability, and it's a pattern I used in some of the routers too
 
 
-### Before refactoring
+#### Code size reduction
+Not only that the code is much cleaner now, it takes also less Javascript code (from 3441 to 3012), although the number of Javascript files
+has grown by 9 (from 32 to 41). To measure this I used [cloc](https://github.com/AlDanial/cloc) - `brew install cloc` for MacOS
+
+
+**Before **
 ```
 $ cloc $(git ls-files)
       69 text files.
@@ -421,32 +460,35 @@ SUM:                            46            635            179          11997
 
 ```
 
-### After
-```
+** After **
+```bash
 $ cloc $(git ls-files)
-      69 text files.
-      69 unique files.                              
+      68 text files.
+      68 unique files.                              
       18 files ignored.
 
-github.com/AlDanial/cloc v 1.84  T=0.11 s (545.9 files/s, 125536.5 lines/s)
+github.com/AlDanial/cloc v 1.84  T=0.36 s (159.2 files/s, 37246.4 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-JSON                             6              0              0           8597
-JavaScript                      42            716            187           3012
+JSON                             6              0              0           8603
+JavaScript                      41            713            186           3007
 YAML                             3              8             36            351
 Markdown                         6            127              0            257
 Dockerfile                       1             11             18             17
 -------------------------------------------------------------------------------
-SUM:                            58            862            241          12234
+SUM:                            57            859            240          12235
 -------------------------------------------------------------------------------
 
 ```
 
 
-
 ## Conclusion
-Well it as simple as that. The code source for this is available on [Github](https://github.com/CodepediaOrg/bookmarks.dev-api).
+It's not much left to say, I think that Express offers a decent way to handle exceptions. I hope you've learned something from this post 
+and if you have any improvement please leave a comment, or better make a pull request at [bookmarks.dev-api github repo](https://github.com/CodepediaOrg/bookmarks.dev-api).
 
-I would really appreciate if you gave [www.bookmarks.dev](https://www.bookmarks.dev) a try  
-and have a look at the generated public bookmarks at [https://github.com/CodepediaOrg/bookmarks](https://github.com/CodepediaOrg/bookmarks).
+During refactoring I researched quite a few links, and I bookmarked the best of them at [www.bookmarks.dev](https://www.bookmarks.dev)
+ with the following tags [[expressjs] [error-handling] [async-await]](https://www.bookmarks.dev/?tab=search-results&q=%5Bexpressjs%5D%20%5Berror-handling%5D%20%5Basync-await%5D&sd=public)  
+
+They will be present shortly at the generated public bookmarks at [https://github.com/CodepediaOrg/bookmarks](https://github.com/CodepediaOrg/bookmarks).
+

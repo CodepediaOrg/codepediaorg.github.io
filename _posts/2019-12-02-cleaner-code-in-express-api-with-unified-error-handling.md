@@ -10,12 +10,16 @@ categories: [clean-code]
 tags: [expressjs, nodejs, rest, api]
 ---
 
-What started out as a simple code duplication removal, turned out into [a major refactoring](https://github.com/CodepediaOrg/bookmarks.dev-api/commit/bd4f64bf2d1bc778d3c0f8d96e898bd3d210f52e)
+What started out as a simple code duplication removal, turned out into [a major refactoring](https://github.com/CodepediaOrg/bookmarks.dev-api/commit/fc2ba3339909d15f43450ba8ffbf472bacaef429)
  with complete rewriting of error handling, moving of business logic/db access into separate service files (about this in another blog post)
   and rewriting of all integration tests to use async/await. In this blog post I will focus on the custom error handling and how
   it made the code much cleaner for the [REST API](https://github.com/CodepediaOrg/bookmarks.dev-api) supporting [www.bookmarks.dev](https://www.bookmarks.dev).
   The API uses [ExpressJS](https://expressjs.com), currently in version 4. 
 
+<!--more-->
+
+* TOC
+{:toc}
 
 ## Refactoring
 To make my point I will show you an example of **before** and **after** code. In the **after** part where I drill into the details

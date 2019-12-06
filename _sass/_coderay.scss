@@ -1,6 +1,6 @@
 .CodeRay {
   font-family: $code-font;
-  @include font(12);
+  @include font(14);
   color: #d0d0d0;
   margin-bottom: 1.5em;
   @include rounded(3px);

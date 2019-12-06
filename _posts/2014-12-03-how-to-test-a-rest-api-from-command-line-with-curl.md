@@ -168,13 +168,13 @@ As mentioned, I will be using curl to simulate HEAD, GET, POST, PUT and DELETE r
 
 **Request**
 
-```bash
+```shell
 curl -I http://localhost:8888/demo-rest-jersey-spring/podcasts/1
 ```
 
   OR
 
-```bash
+```shell
 curl -i -X HEAD http://localhost:8888/demo-rest-jersey-spring/podcasts/1
 ```
 
@@ -185,7 +185,7 @@ curl -i -X HEAD http://localhost:8888/demo-rest-jersey-spring/podcasts/1
 
 **Response**
 
-```bash
+```shell
 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
   0   631    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
@@ -239,7 +239,7 @@ Executing curl with no parameters on a URL (resource) will execute a GET.
 
 **Request**
 
-```bash
+```shell
 curl http://localhost:8888/demo-rest-jersey-spring/podcasts/1
 ```
 
@@ -261,7 +261,7 @@ curl http://localhost:8888/demo-rest-jersey-spring/podcasts/1
   Note that as expected from the HEAD request we get an xml document. Anyway we can force a JSON response by adding a header line to our curl request, setting the <code>Accept</code> HTTP header to <code>application/json</code>:
 </p>
 
-```bash
+```shell
 curl --header "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1
 ```
 
@@ -270,13 +270,13 @@ curl --header "Accept:application/json" http://localhost:8888/demo-rest-jersey-s
   * `-H, --header` &#8211; customer header to pass to the server
 
 
-```bash
+```shell
 curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1
 ```
 
 **Response**
 
-```js
+```javascript
 {
   "id": 1,
   "title": "- The Naked Scientists Podcast - Stripping Down Science",
@@ -291,13 +291,13 @@ If you want to have it displayed prettier, you can use the following command, pr
 
 **Request**
 
-```bash
+```shell
 curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1 | python -m json.tool
 ```
 
 **Response**
 
-```bash
+```shell
 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   758  100   758    0     0   6954      0 --:--:-- --:--:-- --:--:--  6954
@@ -330,7 +330,7 @@ curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/
 
 **Request**
 
-```bash
+```shell
 curl -v -H "Accept:application/json" -H "Accept-encoding:gzip" http://localhost:8888/demo-rest-jersey-spring/podcasts/
 ```
 
@@ -340,7 +340,7 @@ curl -v -H "Accept:application/json" -H "Accept-encoding:gzip" http://localhost:
 
 To achieve that you need to simply **add another** -H option with the corresponding value. Of course in this case you would get some unreadable characters in the content, if you do not redirect the response to a file:
 
-```bash
+```shell
 * Adding handle: conn: 0x28ddd80
 * Adding handle: send: 0
 * Adding handle: recv: 0
@@ -390,13 +390,13 @@ As mentioned, in this second part I will map to curl requests the SOAPui test su
 
 **Request**
 
-```bash
+```shell
 curl -i -X DELETE http://localhost:8888/demo-rest-jersey-spring/podcasts/
 ```
 
 **Response**
 
-```bash
+```shell
 HTTP/1.1 204 No Content
 Date: Tue, 25 Nov 2014 14:10:17 GMT
 Server: Jetty(9.0.7.v20131107)
@@ -413,13 +413,13 @@ Content-Length: 0
 
 **Request**
 
-```bash
+```shell
 curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science-new-title2","linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
 ```
 
 **Response**
 
-```bash
+```shell
 HTTP/1.1 400 Bad Request
 Date: Tue, 25 Nov 2014 15:12:11 GMT
 Server: Jetty(9.0.7.v20131107)
@@ -439,13 +439,13 @@ Connection: close
 
 **Request**
 
-```bash
+```shell
 curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
 ```
 
 **Response**
 
-```bash
+```shell
 HTTP/1.1 201 Created
 Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/2
 Content-Type: text/html
@@ -463,13 +463,13 @@ A new podcast has been created AT THE LOCATION you specified
 
 **Request**
 
-```bash
+```shell
 curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
 ```
 
 **Response**
 
-```bash
+```shell
 HTTP/1.1 409 Conflict
 Date: Tue, 25 Nov 2014 15:58:39 GMT
 Server: Jetty(9.0.7.v20131107)
@@ -487,13 +487,13 @@ Content-Length: 300
 
 **Request**
 
-```bash
+```shell
 curl -i -X PUT -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2,"title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/quarks","feed":"http://podcast.wdr.de/quarks.xml","description":"Quarks & Co: Das Wissenschaftsmagazin"}'
 ```
 
 **Response**
 
-```bash
+```shell
 HTTP/1.1 201 Created
 Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/2
 Content-Type: text/html
@@ -513,13 +513,13 @@ A new podcast has been created AT THE LOCATION you specified
 
 **Request**
 
-```bash
+```shell
 curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1 | python -m json.tool
 ```
 
 **Response**
 
-```bash
+```shell
 < HTTP/1.1 200 OK
 < Access-Control-Allow-Headers: X-extra-header
 < Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
@@ -550,13 +550,13 @@ curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spri
 
 **Request**
 
-```bash
+```shell
 curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts?orderByInsertionDate=DESC | python -m json.tool
 ```
 
 **Response**
 
-```bash
+```shell
 < HTTP/1.1 200 OK
 < Content-Type: application/json
 < Access-Control-Allow-Origin: *
@@ -596,13 +596,13 @@ curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spri
 
 **Request**
 
-```bash
+```shell
 curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2, "title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/quarks","feed":"http://podcast.wdr.de/quarks.xml"}'
 ```
 
 **Response**
 
-```bash
+```shell
 < HTTP/1.1 400 Bad Request
 < Content-Type: application/json
 < Access-Control-Allow-Origin: *
@@ -623,13 +623,13 @@ curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-res
 
 **Request**
 
-```bash
+```shell
 $ curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2, "title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/quarks","feed":"http://podcast.wdr.de/quarks.xml", "description":"Quarks & Co: Das Wissenschaftsmagazin"}'
 ```
 
 **Response**
 
-```bash
+```shell
 < HTTP/1.1 200 OK
 < Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/2
 < Content-Type: text/html
@@ -651,13 +651,13 @@ The podcast you specified has been fully updated created AT THE LOCATION you spe
 
 **Request**
 
-```bash
+```shell
 $ curl -v -H "Content-Type:application/json" -X POST http://localhost:8888/demo-rest-jersey-spring/podcasts/3 -d '{"title":"Quarks & Co - zum Mitnehmen - GREAT PODCAST"}' | python -m json.tool
 ```
 
 **Response**
 
-```bash
+```shell
 < HTTP/1.1 404 Not Found
 < Content-Type: application/json
 < Access-Control-Allow-Origin: *
@@ -686,13 +686,13 @@ $ curl -v -H "Content-Type:application/json" -X POST http://localhost:8888/demo-
 
 **Request**
 
-```bash
+```shell
 $ curl -v -H "Content-Type:application/json" -X POST http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"title":"Quarks & Co - zum Mitnehmen - GREAT PODCAST"}'
 ```
 
 **Response**
 
-```bash
+```shell
 < HTTP/1.1 200 OK
 < Content-Type: text/html
 < Access-Control-Allow-Origin: *
@@ -715,13 +715,13 @@ The podcast you specified has been successfully updated
 
 **Request**
 
-```bash
+```shell
 $ curl -v -X DELETE http://localhost:8888/demo-rest-jersey-spring/podcasts/2
 ```
 
 **Response**
 
-```bash
+```shell
 < HTTP/1.1 204 No Content
 < Content-Type: text/html
 < Access-Control-Allow-Origin: *
@@ -741,13 +741,13 @@ $ curl -v -X DELETE http://localhost:8888/demo-rest-jersey-spring/podcasts/2
 
 **Request**
 
-```bash
+```shell
 curl -v http://localhost:8888/demo-rest-jersey-spring/podcasts/2 | python -m json.tool
 ```
 
 **Response**
 
-```bash
+```shell
 < HTTP/1.1 404 Not Found
 < Content-Type: application/json
 < Access-Control-Allow-Origin: *
@@ -778,13 +778,13 @@ curl -v http://localhost:8888/demo-rest-jersey-spring/podcasts/2 | python -m jso
 
 **Request**
 
-```bash
+```shell
 curl -v --data-urlencode "title=Day in Tech History" --data-urlencode "linkOnPodcastpedia=https://github.com/CodepediaOrg/podcastpedia/podcasts/766/Day-in-Tech-History" --data-urlencode "feed=http://www.dayintechhistory.com/feed/podcast"
 ```
 
 **Response**
 
-```bash
+```shell
 < HTTP/1.1 201 Created
 < Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/null
 < Content-Type: text/html

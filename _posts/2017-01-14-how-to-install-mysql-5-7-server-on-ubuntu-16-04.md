@@ -21,13 +21,13 @@ This guide is based on the official MySQL documentation - [A Quick Guide to Usin
 Go to the download page for the MySQL APT repository at http://dev.mysql.com/downloads/repo/apt/ and select the package for my Linux distribution. As said mine is
 Ubuntu 16.04, which is covered by the `mysql-apt-config_0.8.1-1_all.deb` package at the time of this writing:
 
-```bash
+```shell
 shell> wget http://dev.mysql.com/get/mysql-apt-config_0.8.1-1_all.deb
 ```
 
 Next install the release package with the following command:
 
-```bash
+```shell
 shell> sudo dpkg -i mysql-apt-config_0.8.1-1_all.deb
 
 Selecting previously unselected package mysql-apt-config.
@@ -46,7 +46,7 @@ OK
 
 The next **mandatory step** is to update the package information from the MySQL APT repository
 
-```bash
+```shell
 shell> sudo apt-get update
 
 Hit:1 http://mirrors.linode.com/ubuntu xenial InRelease
@@ -68,7 +68,7 @@ Reading package lists... Done
 
 ### Installing MySQL with APT
 Now to install MySQL execute the following command:
-```bash
+```shell
 shell> sudo apt-get install mysql-server
 ```
 
@@ -78,7 +78,7 @@ shell> sudo apt-get install mysql-server
 
 The server is started automatically after installation. You can check the version of the server by issuing the following command:
 
-```bash
+```shell
 shell> mysql --version
 
 mysql  Ver 14.14 Distrib 5.7.17, for Linux (x86_64) using  EditLine wrapper
@@ -88,25 +88,25 @@ mysql  Ver 14.14 Distrib 5.7.17, for Linux (x86_64) using  EditLine wrapper
 
 You can check the status:
 
-```bash
+```shell
 shell> sudo service mysql status
 ```
 
 stop it:
 
-```bash
+```shell
 shell> sudo service mysql stop
 ```
 
 and start it again:
 
-```bash
+```shell
 shell> sudo service mysql start
 ```
 
 Because I am lazy and I will probably repeat these commands several times, at least in the beginning, I defined some aliases for them - snippet from my .bash_aliases file:
 
-```bash
+```shell
 # MySql
 alias mysql-start="sudo service mysql start"
 alias mysql-stop="sudo service mysql stop"
@@ -136,7 +136,7 @@ performance [^3].
 
 Now which configuration file should I use, because there are bunch of them under the `/etc/mysql` directory:
 
-```bash
+```shell
 /etc/mysql/
 |-- conf.d
 |   -- mysql.cnf
@@ -150,13 +150,13 @@ Now which configuration file should I use, because there are bunch of them under
 
 Well, because these are server settings, I want to override I need to put them below the [mysld] tag, which is to be found in `mysqld.conf`. So edit this file:
 
-```bash
+```shell
 shell> sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 
 which looks like the following:
 
-```bash
+```shell
 #
 # The MySQL  Server configuration file.
 #

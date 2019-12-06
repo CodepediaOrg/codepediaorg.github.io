@@ -90,20 +90,20 @@ public class Application {
 
 Having @SpringBootApplication meta-annotation and using SpringApplication to initialize our Spring context, we have a full-fledged runnable Java application, which could be run from Apache Maven using Spring Boot plugin:
 
-```bash
+```shell
 mvn spring-boot:run
 ```
 
 Or packaged as a single runnable uber-JAR and invoked from command line:
 
-```bash
+```shell
 mvn package
 java -jar target/jax-rs-2.0-cxf-spring-boot-0.0.1-SNAPSHOT.jar
 ```
 
 And that's it, just a couple of annotations along with a single line of code (main method). Once we run the application, we could make sure that our people management REST(ful) web service is deployed properly and is fully operational:
 
-```bash
+```shell
 $ curl -i http://localhost:8080/api/people
 
 HTTP/1.1 200 OK

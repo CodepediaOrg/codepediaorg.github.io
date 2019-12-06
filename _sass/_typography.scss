@@ -99,7 +99,7 @@ tt, code, kbd, samp, pre {
 p,
 li {
 	code {
-		@include font-rem(12);
+		@include font-rem(16);
 		line-height: 1.5;
 		white-space: nowrap;
 		margin: 0 2px;

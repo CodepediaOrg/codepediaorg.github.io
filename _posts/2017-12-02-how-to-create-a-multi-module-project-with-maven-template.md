@@ -25,7 +25,7 @@ be very annoying... Well, you might wanna consider instead creating a maven arch
 Select a "template" project your new project is most similar to. For the purpose of this tutorial we'll use the [Podcastpedia](https://github.com/CodepediaOrg/podcastpedia)
  multi module project:
   
-```bash
+```shell
 git clone https://github.com/CodepediaOrg/podcastpedia.git
 ```
 
@@ -35,7 +35,7 @@ Run the [Maven archetype plugin](http://maven.apache.org/archetype/maven-archety
 
 Navigate to the root of the freshly cloned project and execute the following maven command:
 
-```bash
+```shell
 
 $ cd podcastpedia
 $ mvn archetype:create-from-project
@@ -43,7 +43,7 @@ $ mvn archetype:create-from-project
 
 We should get a **BUILD SUCCESS** informing us about the creation of the _jar_ archetype and about its location:
 
-```bash
+```shell
 
 [INFO] Copying 2 resources
 [INFO]
@@ -80,7 +80,7 @@ We should get a **BUILD SUCCESS** informing us about the creation of the _jar_ a
 The plugin generates the template files we are interested in, in the _target_ directory. With a simple `tree` command we 
 can better see the generated structure:
 
-```bash
+```shell
 $ tree -L 6 target/
 target/
 └── generated-sources
@@ -703,7 +703,7 @@ Here we define two additional properties: `property-with-default` and `property-
 
 Now that we tweaked a bit the generation file, the first thing we need to do, is to install the archetype
 
-```bash
+```shell
 
 $ cd target/generated-sources/archetype/
 $ mvn install
@@ -802,7 +802,7 @@ Now the archetype is present in the local maven repository.
 
 Finally move to the place, where you want to create the new project and use the newly created archetype.
 
-```bash
+```shell
 $ mkdir /tmp/archetype
 $ cd /tmp/archetype
 $ mvn archetype:generate -DarchetypeCatalog=local
@@ -812,7 +812,7 @@ A list of archetypes will be shown from the local archetype catalog (`-Darchetyp
  Since I only have one at the moment, there is not that difficult to choose from :).
   Answer the questions for setting the `groupId`, `artifactId` and other required properties:
 
-```bash
+```shell
 [INFO] Generating project in Interactive mode
 [INFO] No archetype defined. Using maven-archetype-quickstart (org.apache.maven.archetypes:maven-archetype-quickstart:1.0)
 Choose archetype:
@@ -861,7 +861,7 @@ package: org.codingpedia.example
 
 The new project's structure should look in this case similar to the following:
 
-```bash
+```shell
 $ tree -L 5 /tmp/archetype/
 /tmp/archetype/
 └── codingpedia-example

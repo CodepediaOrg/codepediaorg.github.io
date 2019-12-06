@@ -60,7 +60,7 @@ In the _package.json_ make sure you have the `cheerio` and `request` dependencie
 
 ## Implementation
 
-```js
+```javascript
 var express = require('express');
 var request = require('request');
 var cheerio = require('cheerio');

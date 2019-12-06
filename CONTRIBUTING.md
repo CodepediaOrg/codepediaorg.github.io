@@ -19,14 +19,14 @@ We recommend using [Bundler](http://bundler.io/) to install and run Jekyll. Bund
 ### 1 Open terminal
 
 ### 2 Check whether your have Ruby 2.0.0 or higher installed:
-```bash
+```shell
 $ ruby --version
 ruby 2.X.X
 ```
 ### 3 If don't have Ruby installed, [install Ruby 2.0.0 or higher](https://www.ruby-lang.org/en/downloads/). 
 
 ### 4 Install bundler
-```bash
+```shell
 $ gem install bundler
 # Installs the Bundler gem
 ```
@@ -71,7 +71,7 @@ Now you can do the work.
 
 Navigate into the root directory of CodepediaOrg Jekyll site repository.
 Install Jekyll and other dependencies from the GitHub Pages gem:
-```bash
+```shell
 $ bundle install
 Fetching gem metadata from https://rubygems.org/............
 Fetching version metadata from https://rubygems.org/...
@@ -80,7 +80,7 @@ Resolving dependencies...
 ```
 
 Run Jekyll site locally
-```bash
+```shell
 $ bundle exec jekyll serve
 Configuration file: /Users/octocat/my-site/_config.yml
            Source: /Users/octocat/my-site

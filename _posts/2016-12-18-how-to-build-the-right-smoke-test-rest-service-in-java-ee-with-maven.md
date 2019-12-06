@@ -42,7 +42,7 @@ corresponds to this deployment.
 
 You can then use the `gitSha1` value with the `git show` command to show the corresponding commit:
 
-```bash
+```shell
 $ git show 8f0b7f7
 commit 8f0b7f7e1fc0dcde3ccc0a9418f37a698dabb3b7
 Merge: df736ab 3ebcbdb

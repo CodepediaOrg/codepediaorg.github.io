@@ -138,7 +138,7 @@ Note:
 * **https** is enabled by setting the protocol to `https-remoting` and the corresponding port `9993`
 * the plugin's operations are now executed only with a specified profile `deployRemote`; so you'd have to run the build like the following:
 
-```bash
+```shell
 shell> mvn clean deploy -PdeployRemote
 ```
 

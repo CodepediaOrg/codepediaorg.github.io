@@ -32,7 +32,7 @@ I use showdown in front end everytime I create a new bookmark or I update one. T
 
 First thing is to add the proper dependencies `@types/showdown` and `showdown` in `package.json`:
 
-```js
+```javascript
   "dependencies": {
     "@angular/common": "2.4.2",
     "@angular/compiler": "2.4.2",

@@ -52,12 +52,12 @@ in the [public folder](https://create-react-app.dev/docs/using-the-public-folder
 Instead it will be copied into the _build_ folder untouched. To reference the file in the `public` folder,
 you need to use the special variable called `PUBLIC_URL`:
 
-```  
-    <head>
-       .....
-       <title>React App</title>
-       <script src="%PUBLIC_URL%/config.js"></script>
-     </head>
+```html 
+<head>
+   .....
+   <title>React App</title>
+   <script src="%PUBLIC_URL%/config.js"></script>
+ </head>
 ```
 
 The content of the _config.js_ file:
@@ -78,7 +78,7 @@ This was you can set your environment variables on the `window` object. These ar
 
 
 At this point you can run and build the app locally the way you know it:  
-```bash
+```shell
 npm install 
 npm start
 ```
@@ -115,7 +115,7 @@ an instance of the container.
 The [Dockerfile](https://github.com/CodepediaOrg/multi-stage-react-app-example/blob/master/Dockerfile) in the project root directory
 contains the steps needed to build the Docker image:
 
-```
+```docker
 # build environment
 FROM node:12.9.0-alpine as build
 WORKDIR /app
@@ -143,13 +143,13 @@ you deploy it to an [nginx-alpine image](https://hub.docker.com/_/nginx).
 ### Build the docker image
 To build the docker image run the following command in the project's root directory:
 
-```bash 
+```shell 
 docker build --tag multi-stage-react-app-example:latest .
 ```
 
 At this point you can run the application in docker by issuing the following command:
 
-```bash 
+```shell 
 docker run -p 3001:80 multi-stage-react-app-example:latest
 ```
 
@@ -159,7 +159,8 @@ We forward nginx port `80` to `3001`. Now you can access the application at [htt
 
 ### Push to docker repository
 You can also push the image to a docker repository. Here is an example pushing it to the codepediaorg organisation on dockerhub:
-```
+
+```shell
 docker tag multi-stage-react-app-example codepediaorg/multi-stage-react-app-example:latest
 docker push codepediaorg/multi-stage-react-app-example:latest
 ```
@@ -170,7 +171,7 @@ You can now take a docker container based on the image you've created and deploy
 
 For that, all you need to do is create a Kubernetes service and deployment:
 
-```
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -224,14 +225,14 @@ we operate on the local `docker-desktop` context and the `default` namespace.
 Now that you know where your kubernetes objects will be applied to, you can add them to a file, like 
 [deploy-to-kubernetes.yaml](TODO add link) and apply the following the command:
 
-```bash
+```shell
 kubectl apply -f deploy-to-kubernetes.yaml
 ```
 
 This will create the `multi-stage-react-app-example` service of type [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types).
 You can verify its presence by listing all services
 
-```bash
+```shell
 kubeclt get svc
 ```
 
@@ -240,7 +241,7 @@ or grep it with `kubectl get svc | grep multi-stage-react-app-example`
 ### Port forward
 To access the application inside the Kubernetes cluster you can use [port-forwarding](https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/).
 The command to forward the service created before is
-```bash
+```shell
 kubectl port-forward svc/multi-stage-react-app-example 3001:80
 ```
 
@@ -254,7 +255,7 @@ uses the **LOCAL** environment.
 
 ### Tear down created Kubernetes objects
 To delete the service and deployment created, issue the following command
-```bash
+```shell
 kubectl delete -f deploy-to-kubernetes.yaml
 ```
 
@@ -265,14 +266,14 @@ Remember our purpose for continuous delivery pipeline: Make the application "awa
 You start by creating a [configMap](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/). 
 We'll create one for the `dev` environment from the [environment/dev.properties](https://github.com/CodepediaOrg/multi-stage-react-app-example/blob/master/environment/dev.properties) file:
 
-```bash
+```shell
 kubectl create configmap multi-stage-react-app-example-config --from-file=config.js=environment/dev.properties
 ```
 
 This creates a configMap, which you can then reference by the `config.js` key and the content are the environment variables.
 
 You can check this by issuing the following kubectl command:
-```bash
+```shell
 kubectl get configmaps multi-stage-react-app-example-config -o yaml
 ```
 
@@ -371,13 +372,13 @@ spec:
 We will use the same local cluster to test our **dev** deployment. You apply now `kubectl` on 
 all the files in the `kubernetes` directory:
 
-```bash
+```shell
 kubectl apply -f kubernetes
 ```
 
 Verify that the _config.js file has been replaced by connecting to the pod:
 
-```bash
+```shell
 #first export list the pod holding our application
 export MY_POD=`kubectl get pods | grep multi-stage-react-app-example | cut -f1 -d ' '`
 
@@ -390,7 +391,7 @@ less /usr/share/nginx/html/config.js
 
 It should contain the variables for the **dev** environment:
 
-```bash
+```shell
 window.REACT_APP_API_URL='https://www.bookmarks.dev/api/public/bookmarks'
 window.REACT_APP_ENVIRONMENT='DEV'
 window.REACT_APP_NAVBAR_COLOR='LightGreen'
@@ -398,7 +399,7 @@ window.REACT_APP_NAVBAR_COLOR='LightGreen'
 
 But better see it in action by port forwarding the application. You know now how it goes:
 
-```bash
+```shell
 kubectl port-forward svc/multi-stage-react-app-example 3001:80
 ```
 
@@ -410,7 +411,7 @@ In a continuous delivery pipeline you could have two steps:
 
 #### Tear down 
 
-```bash
+```shell
 kubectl delete -f kubernetes
 ```
 
@@ -429,7 +430,7 @@ also supports the management of Kubernetes objects using a kustomization file, s
 With Kustomize you define base resources in the so called **bases** (cross cutting concerns available in environments) and in the **overlays** the properties that are specific for the different deployments.
  Here we place kustomize related files in the [kustomize](https://github.com/CodepediaOrg/multi-stage-react-app-example/blob/master/) folder - `tree kustomize`:
 
-```bash
+```shell
 kustomize/
 ├── base
 │   ├── deployment.yaml
@@ -468,7 +469,7 @@ configMapGenerator:
 we point to the `bases` defined before and use the _dev.properties_ file to [generate the configMap](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/#generating-resources). 
 
 Before we apply the `dev` overlay to the cluster we can check what it generates by issuing the following command:
-```bash
+```shell
 kubectl kustomize kustomize/overlays/dev
 ```
 
@@ -478,7 +479,7 @@ _deploymant.yaml_ file the configMap is still referenced by `multi-stage-react-a
 the generated name. 
 
 To apply the "dev kustomization" use the following command:
-```bash
+```shell
 kubectl apply -k kustomize/overlays/dev # <kustomization directory>
 ```
 
@@ -488,7 +489,7 @@ Now port forward (`kubectl port-forward svc/multi-stage-react-app-example 3001:8
 If you for example would like to update the value of an environment variable say, `window.REACT_APP_NAVBAR_COLOR='Blue'` in the _dev.properties_ file,
 what you need to do is apply gain the **dev** overlay:
 
-```bash
+```shell
 kubectl apply -k kustomize/overlays/dev
 
 #result similar to the following
@@ -534,16 +535,16 @@ configMapGenerator:
 ```
  
 You can see it's being modified by running:
-```bash
+```shell
 kubectl kustomize kustomize/overlays/prod
 ```
 and then apply it:
-```bash
+```shell
 kubectl apply -k kustomize/overlays/prod
 ```
 
 If you run `kubectl get pods` you should now see two entries, something like:
-```bash
+```shell
 NAME                                             READY   STATUS    RESTARTS   AGE
 multi-stage-react-app-example-59c5486dc4-2mjvw   1/1     Running   0          112s
 multi-stage-react-app-example-59c5486dc4-s88ms   1/1     Running   0          112s
@@ -552,7 +553,7 @@ multi-stage-react-app-example-59c5486dc4-s88ms   1/1     Running   0          11
 > Now you can port forward and access the application the way you know it
 
 ##### Tear down
-```bash
+```shell
 kubectl delete -k kustomize/overlays/prod
 ```
 
@@ -570,13 +571,13 @@ of your charts.
 
 ### Helm installation
 On MacOS you can install the client with homebrew:
-```bash
+```shell
 brew install kubernetes-helm
 ```
 For other platforms see [Installing the Helm Client](https://helm.sh/docs/using_helm/#installing-helm).
 
 To install Tiller on your local Kubernetes cluster for testing just call the following command:
-```bash
+```shell
 helm init
 
 #result should something similar to the following:
@@ -601,7 +602,7 @@ For more information on securing your installation see: https://docs.helm.sh/usi
 ``` 
  
 To check the helm version you can run then the following command:
-```bash
+```shell
 $ helm version
 Client: &version.Version{SemVer:"v2.14.3", GitCommit:"0e7f3b6637f7af8fcfddb3d2941fcc7cbebb0085", GitTreeState:"clean"}
 Server: &version.Version{SemVer:"v2.14.3", GitCommit:"0e7f3b6637f7af8fcfddb3d2941fcc7cbebb0085", GitTreeState:"clean"}
@@ -670,16 +671,16 @@ the resource. One way to destroy the resource is to add the `"helm.sh/hook": pre
 
 ### Deploy to local cluster with helm
 Before deploying with helm you might want to examine the chart for possible issues and do a `helm lint`:
-```bash
+```shell
 helm lint helm-chart
 ```
 and execute a dry-run to see the generated resources from the chart
-```bash
+```shell
 helm install -n local-release helm-chart/ --dry-run --debug
 ```
 
 The result should be something like the following:
-```bash
+```shell
 # result
 [debug] Created tunnel using local port: '64528'
 
@@ -842,26 +843,26 @@ spec:
 `local-release-multi-stage-react-app-example-config` (generated from `{{ .Release.Name }}-multi-stage-react-app-example-config)
 
 Now run the installation without the `--dry-run` flag for the actual installation:
-```bash
+```shell
 helm install -n local-release helm-chart/
 ```
 
 Verify that the helm release is present by listing the helm releases (`helm ls`):
-```bash
+```shell
 helm ls
 NAME            REVISION        UPDATED                         STATUS          CHART                   APP VERSION     NAMESPACE
 local-release   1               Fri Aug 30 06:46:09 2019        DEPLOYED        helm-chart-0.1.0        1.0             default 
 ```
 
 Now port-forward the service (you know how the service it's called from the dry run above `local-release-helm-chart`)
-```bash
+```shell
 kubectl port-forward svc/local-release-helm-chart 3001:80
 ```
 
 and access the app at [http://localhost:3001](http://localhost:3001)  with environment set to "LOCAL with helm"
 
 ### Tear down helm release
-```bash
+```shell
 helm delete --purge local-release
 ```
 
@@ -876,7 +877,7 @@ configValues: |
 
 which will be used at deployment to override the `configValues` from the _values.yaml_ file. Use 
 the upsert variation this time, meaning that if the release is not present it will be created:
-```bash
+```shell
 helm upgrade dev-release ./helm-chart/ --install --force --values helm-chart/config-values/config-dev.yaml
 ```
 
@@ -884,7 +885,7 @@ Now port forward `kubectl port-forward svc/dev-release-helm-chart 3001:80` and a
 voila you've deployed the dev environment.
 
 ### Tear down `dev-release`
-```bash
+```shell
 helm delete --purge dev-release
 ```
 
@@ -912,7 +913,7 @@ Kubernetes cluster, once again using the tools you prefer.
                                                                                                        
 Before we begin you need to have Skaffold installed. See [this link](https://skaffold.dev/docs/getting-started/#installing-skaffold) for the installation on your machine.
 For MacOS is as simple as:
-```bash
+```shell
 brew install skaffold
 ```
 
@@ -970,7 +971,7 @@ Local development means that Skaffold **can skip** pushing built container image
 setups such as `docker-desktop`, this works out of the box. 
 
 Remember you can check the current kubernetes context with
-```bash
+```shell
 kubectx
 # or with standard kubectl command
 kubectl config current-context 
@@ -979,7 +980,7 @@ kubectl config current-context
 Mine is `docker-desktop`.
 
 To run Skaffold you can use the `run` command (this is the default modus operandi):
-```bash
+```shell
 skaffold run --tail
 ```
 in the project root directory.
@@ -991,7 +992,7 @@ Now port-forward `kubectl port-forward svc/multi-stage-react-app-example 3001:80
 
 #### Tear down local deployment with Skaffold
 
-```bash
+```shell
 skaffold delete
 ```
 
@@ -1006,7 +1007,7 @@ In this mode you can also specify the `--port-forward`, which will port forward 
 You can override the port by specifying it in the `portForward` section of the `skaffold.yaml` file. 
 
 So now run:
-```bash
+```shell
 skaffold dev --port-forward
 ```
 and now you can access the application as usual at [http://localhost:3001](http://localhost:3001)
@@ -1044,7 +1045,7 @@ the deployment parts are different.
 
 Let's say you want to deploy to the "production" environment. You can call Skaffold with the `kustomize-prod` profile in 
 the following manner:
-```bash
+```shell
 skaffold run -p kustomize-prod
 ```
 
@@ -1054,7 +1055,7 @@ You should now see the **PROD** environment.
 > Don't forget you need to change your Kubernetes context (`kubectx`), before applying the Skaffold prod profile.
 
 #### Tear down Skaffold profile
-```bash
+```shell
 skaffold delete -p kustomize-prod
 ```
 

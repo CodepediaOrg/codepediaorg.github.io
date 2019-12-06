@@ -83,7 +83,7 @@ To find all documents from collection, type the following:
 
 Response
 
-```bash
+```shell
 { "_id" : ObjectId("57f3f0ba5fac7f3264354144"), "name" : "Test bookmark", "url" : "some titi url", "description" : "some description", "category" : "test", "tags" : [ "testing", "setup" ], "__v" : 0, "updatedAt" : ISODate("2016-10-10T08:18:32.563Z") }
 { "_id" : ObjectId("57f3f1235fac7f3264354146"), "name" : "Second bookmark", "url" : "some other url", "description" : "some description", "category" : "test", "tags" : [ "testing", "setup" ], "__v" : 0 }
 { "_id" : ObjectId("57f484ac1f991e33ab5e50bb"), "name" : "java bookmark", "url" : "java url", "description" : "some description", "category" : "java", "tags" : [ "testing", "setup" ], "__v" : 0 }
@@ -162,12 +162,12 @@ See [doku](https://docs.mongodb.com/manual/reference/method/cursor.sort/) for mo
 ### Find all documents with missing field
 
 For example I wanted to find all the documents that don't contain the field `starredBy` yet:
-```bash
+```shell
 > db.bookmarks.find({ "starredBy" : { "$exists" : false } })
 ```
 or 
 
-```bash
+```shell
 > db.bookmarks.find({starredBy: null});
 ```
 
@@ -176,19 +176,19 @@ or
 For that we need the [db.collection.count()](https://docs.mongodb.com/manual/reference/method/db.collection.count/) operator.
 
 For example to count all the documents in the collection:
-```bash
+```shell
 > db.bookmarks.count()
 ```
 
 To count all the documents missing the ``starredBy`` field as above:
-```bash
+```shell
 > db.bookmarks.count({ "starredBy" : { "$exists" : false } })
 ```
 
 ## Delete/Remove documents
 
 Remove all documents from collection:
-```bash
+```shell
 > db.bookmarks.remove()
 ```
 
@@ -199,13 +199,13 @@ WriteResult({ "nRemoved" : 4 })
 ```
 
 Remove by id, use `justOne` flag
-```bash
+```shell
 db.bookmarks.remove({ "_id" : ObjectId("5c4aa6f65b27d00447dd66bd") }, {justOne: true})
 WriteResult({ "nRemoved" : 1 })
 ```
 
 Remove with attributes (all but where `shared` is not set to true):
-```bash
+```shell
 > db.bookmarks.remove({shared:{$ne:true}})
 WriteResult({ "nRemoved" : 9 })
 ```

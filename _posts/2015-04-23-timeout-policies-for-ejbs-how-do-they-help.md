@@ -39,7 +39,8 @@ Let’s quickly look at what they are and why are they important<!--more-->
 
 Specifies the time period after which a queued request (waiting for another thread to complete) times out.
 
-<pre class="lang:java decode:true" title="Singleton_With_Timeout.java">@Singleton
+```java
+@Singleton
 @ConcurrencyManagement(ConcurrencyManagementType.CONTAINER) //this is actually by default
 public class Singleton_With_Timeout{
     @AccessTimeout(5000,java.util.concurrent.TimeUnit.MILLISECONDS)
@@ -47,7 +48,9 @@ public class Singleton_With_Timeout{
     public void find(){
         //... business logic
     }
-}</pre>
+}
+```
+
 
 <p style="text-align: justify;">
   When your session bean instances are bombarded with concurrent requests, the EJB container ensures sanity by serializing these calls i.e. blocking other threads until the current thread finishes execution. You can refine this behavior further by using this annotation.
@@ -91,12 +94,14 @@ _Few things to note_
 
 Defines the threshold limit for eviction of idle stateful session beans i.e. the ones which have not received client requests for a specific interval
 
-<pre class="lang:java decode:true " title="SFSB_With_Timeout.java">@StatefulTimeout(15000,java.util.concurrent.TimeUnit.MILLISECONDS)
+```java
+@StatefulTimeout(15000,java.util.concurrent.TimeUnit.MILLISECONDS)
 public class SFSB_With_Timeout{
     public void register(){
         //....business logic
     }
-}</pre>
+}
+```
 
 ### _Why is it important ?_
 

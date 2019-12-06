@@ -22,16 +22,14 @@ What started out as a simple code duplication removal, turned out into [a major 
 {:toc}
 
 ## Refactoring
-To make my point I will show you an example of **before** and **after** code. In the **after** part where I drill into the details
+To make my point I will show you an example of **before** and **after** code. In the **after** part where I drill down into the details
 taking a top down approach.   
 
 ### Before
 
-Our sample candidate is the router method where a personal bookmark was created:
+Our sample candidate is the router method where a personal bookmark is created:
+
 ```javascript
-/**
- * CREATE bookmark for user
- */
 personalBookmarksRouter.post('/', keycloak.protect(), async (request, response) => {
 
   let userId = request.kauth.grant.access_token.content.sub;
@@ -132,7 +130,7 @@ personalBookmarksRouter.post('/', keycloak.protect(), async (request, response) 
 There are several issues with this code. To name a few:
 * for one it is way too long for a single method
 * the userId validation in the beginning is a pattern used in all methods protected
-with Keycloak (btw. this was the trigger of the refactoring mentioned in the beginning of the post)
+with Keycloak (btw. this was the trigger of the refactoring)
 * if one validation exception occurs the code breaks and sends the response to the caller, potentially missing validation 
 exceptions
 * try/catch block around the database access, which is diligently used in the whole code base; I mean it's good that is there, but
@@ -141,6 +139,7 @@ maybe you can get rid of it
 Now let's see the refactoring result.
 
 ### After
+
 ```javascript
 personalBookmarksRouter.post('/', keycloak.protect(), async (request, response) => {
 
@@ -165,6 +164,7 @@ The try/catch block has been eliminated, but there is a hack. When an error
 is thrown it does not go to the error middleware, because express does not support promises currently and you will get 
 an `UnhandledPromiseRejectionWarning`. The initial solution was to wrap the async function with a wrapper that would
 have a `catch` call, which would forward the error to the next middleware:
+
 ```javascript
 let wrapAsync = function (fn) {
   return function(req, res, next) {
@@ -176,6 +176,7 @@ let wrapAsync = function (fn) {
 ```
 
 This meant calling the function like the following:
+
 ```javascript
 personalBookmarksRouter.post('/', keycloak.protect(), AsyncWrapper.wrapAsync(async (request, response) => {
 
@@ -199,7 +200,7 @@ need to require **before** start using it:
 const express = require('express');
 require('express-async-errors');
 ``` 
-Then you are good to go - no wrapper needed needed. 
+Then you are good to go - no wrapper needed. 
 
 #### UserId validation
 
@@ -444,7 +445,7 @@ Not only that the code is much cleaner now, it takes also less Javascript code (
 has grown by 9 (from 32 to 41). To measure this I used [cloc](https://github.com/AlDanial/cloc) - `brew install cloc` for MacOS
 
 
-**Before **
+**Before**
 ```
 $ cloc $(git ls-files)
       69 text files.
@@ -464,8 +465,8 @@ SUM:                            46            635            179          11997
 
 ```
 
-** After **
-```bash
+**After**
+```shell
 $ cloc $(git ls-files)
       68 text files.
       68 unique files.                              
@@ -491,8 +492,11 @@ SUM:                            57            859            240          12235
 It's not much left to say, I think that Express offers a decent way to handle exceptions. I hope you've learned something from this post 
 and if you have any improvement please leave a comment, or better make a pull request at [bookmarks.dev-api github repo](https://github.com/CodepediaOrg/bookmarks.dev-api).
 
-During refactoring I researched quite a few links, and I bookmarked the best of them at [www.bookmarks.dev](https://www.bookmarks.dev)
- with the following tags [[expressjs] [error-handling] [async-await]](https://www.bookmarks.dev/?tab=search-results&q=%5Bexpressjs%5D%20%5Berror-handling%5D%20%5Basync-await%5D&sd=public)  
+<p class="note_normal">
+During refactoring I researched quite a few links, and I bookmarked the best of them at <a href="https://www.bookmarks.dev" target="_blank">www.bookmarks.dev</a>
+ with the following tags <a href="https://www.bookmarks.dev/?tab=search-results&q=%5Bexpressjs%5D%20%5Berror-handling%5D%20%5Basync-await%5D&sd=public" target="_blank">[
+ [expressjs] [error-handling] [async-await]</a> 
+ <br/>  
 
-They will be present shortly at the generated public bookmarks at [https://github.com/CodepediaOrg/bookmarks](https://github.com/CodepediaOrg/bookmarks).
-
+They will be present shortly at the generated public bookmarks - <a href="https://github.com/CodepediaOrg/bookmarks">https://github.com/CodepediaOrg/bookmarks</a>
+</p>

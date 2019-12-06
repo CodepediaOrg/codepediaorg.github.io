@@ -22,13 +22,13 @@ Now with NodeJS up and running install first the express-generator` globally wit
 
 [^4]: <https://github.com/creationix/nvm>
 
-```bash
+```shell
 $ npm install -g express-generator
 ```
 
 or
 
-```bash
+```shell
 $ npmig express-generator
 ```
 
@@ -37,7 +37,7 @@ how you can efficiently use aliases to boost your shell productivity.
 
 The output should will look something like the following:
 
-```bash
+```shell
 /Users/ama/.nvm/versions/node/v6.4.0/bin/express -> /Users/ama/.nvm/versions/node/v6.4.0/lib/node_modules/express-generator/bin/express
 /Users/ama/.nvm/versions/node/v6.4.0/lib
 └─┬ express-generator@4.13.4
@@ -50,13 +50,13 @@ The output should will look something like the following:
 
 Now I changed to the parent directory where I want to place my backend project and execute the following command
 
-```bash
+```shell
 $ express bookmarks-api.codepedia.org --git
 ```
 
 with the following output:
 
-```bash
+```shell
  create : bookmarks-api.codepedia.org
  create : bookmarks-api.codepedia.org/package.json
  create : bookmarks-api.codepedia.org/app.js
@@ -87,7 +87,7 @@ with the following output:
 > the `--git` parameter generates a .gitignore` file for the project. Learn more about other options by running `express -h` command:
 
 
-```bash
+```shell
 $ express -h
 
   Usage: express [options] [dir]
@@ -106,19 +106,19 @@ $ express -h
 
 Now do as the man says - install the dependencies
 
-```bash
+```shell
  $ cd bookmarks-api.codepedia.org && npm install
 ```
 
 and run the application
 
-```bash
+```shell
  $ DEBUG=bookmarks-api.codepedia.org:* npm start
 ```
 
 You should see now that the server is listening at port 3000:
 
-```bash
+```shell
  $ DEBUG=bookmarks-api.codepedia.org:* npm start
 > bookmarks-api.codepedia.org@0.0.0 start /Users/ama/projects/codingpedia-bookmarks/bookmarks-api.codepedia.org
 > node ./bin/www
@@ -130,7 +130,7 @@ And when I type in the browser http://localhost:3000 I get a _Welcome To Express
 
 Now add a `README.md` file and push it to GitHub before my computer breaks down :):
 
-```bash
+```shell
 echo "# bookmarks-api.codepedia.org" >> README.md
 git init
 git add --all

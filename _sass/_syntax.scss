@@ -1,6 +1,7 @@
 .highlight {
   margin-bottom: 1.5em;
-  @include font(12);
+  @include font(15);
+  word-spacing: normal;
   color: #222;
   border: 1px solid darken($body-color, 5);
   background-color: #F0F0F0;
@@ -71,3 +72,8 @@
   .vi { color: #008080 } /* Name.Variable.Instance */
   .il { color: #009999 } /* Literal.Number.Integer.Long */
 }
+
+code .highlighter-rouge {
+  @include font(16);
+}
+

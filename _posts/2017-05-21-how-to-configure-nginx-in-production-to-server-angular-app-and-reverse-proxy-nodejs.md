@@ -29,7 +29,7 @@ We use it in the #DevBookmarks project as web server to serve static files and a
 
 The server we are setting up Nginx for, is an Ubuntu 16.04.1 LTS:
 
-```bash
+```shell
 $ lsb_release -a
 No LSB modules are available.
 Distributor ID:	Ubuntu

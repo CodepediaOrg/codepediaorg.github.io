@@ -4,6 +4,7 @@ body {
 	width: 100%;
 	background-color: $body-color;
 	overflow-x: hidden;
+  word-spacing: 5px;
 }
 
 pre {
@@ -22,7 +23,7 @@ pre {
 	background-color: $header-color;
 }
 .entry-content {
-	@include font-size(16);
+	@include font-size(18);
 	// Dotted line underlines for links
 	p > a,
 	li > a {
@@ -147,12 +148,12 @@ header .entry-meta {
 		@media #{$medium} {
 			margin-left: 10px;
 			margin-right: 10px;
-			padding: 20px 30px;
+			padding: 20px 25px;
 		}
 		@media #{$large} {
-			max-width: 1200px;
+			max-width: 1300px;
 			margin: 50px auto 30px auto;
-			padding: 50px 80px;
+			padding: 50px 70px;
 			> p:first-child {
 				@include font-size(20);
 			}

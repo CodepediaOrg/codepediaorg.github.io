@@ -494,8 +494,7 @@ and if you have any improvement please leave a comment, or better make a pull re
 
 <p class="note_normal">
 During refactoring I researched quite a few links, and I bookmarked the best of them at <a href="https://www.bookmarks.dev" target="_blank">www.bookmarks.dev</a>
- with the following tags <a href="https://www.bookmarks.dev/?tab=search-results&q=%5Bexpressjs%5D%20%5Berror-handling%5D%20%5Basync-await%5D&sd=public" target="_blank">[
- [expressjs] [error-handling] [async-await]</a> 
+ with the following tags <a href="https://www.bookmarks.dev/?tab=search-results&q=%5Bexpressjs%5D%20%5Berror-handling%5D%20%5Basync-await%5D&sd=public" target="_blank">[expressjs] [error-handling] [async-await]</a> 
  <br/>  
 
 They will be present shortly at the generated public bookmarks - <a href="https://github.com/CodepediaOrg/bookmarks">https://github.com/CodepediaOrg/bookmarks</a>

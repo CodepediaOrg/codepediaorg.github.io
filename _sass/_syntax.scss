@@ -1,3 +1,11 @@
+div.highlighter-rouge {
+  width: 110%;
+  margin-left: -5%;
+}
+code.highlighter-rouge {
+  width: 100%;
+  margin-left: 0;
+}
 .highlight {
   margin-bottom: 1.5em;
   @include font(15);

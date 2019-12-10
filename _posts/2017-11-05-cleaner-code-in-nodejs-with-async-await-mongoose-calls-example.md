@@ -16,7 +16,7 @@ to [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 
 <p class="note_normal">
   "The purpose of `async/await` functions is to simplify the behavior of using promises synchronously and to perform some behavior on a group of `Promises`.
-   Just as `Promises` are similar to structured callbacks, `async/await is similar to combining generators and promises."[^1]
+   Just as `Promises` are similar to structured callbacks, `async/await` is similar to combining generators and promises."[^1]
 </p>
 
 [^1]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function>

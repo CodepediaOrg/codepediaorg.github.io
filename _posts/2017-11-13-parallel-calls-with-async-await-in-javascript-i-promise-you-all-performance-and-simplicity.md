@@ -24,7 +24,7 @@ Imagine we have a notification service (might be a REST service) that sends emai
 ### Before
 The code before using parallelization is iterating through the list of employees and send sequentially emails:
 
-{% highlight typescript %}
+```typescript
     async notifyEmployees(organisationId: string): Promise<string> {
 
         const employees:Employee[] = await this.getEmployeesOfOrganisation(organisationId);
@@ -34,14 +34,14 @@ The code before using parallelization is iterating through the list of employees
         }
         return "Sent sequentially emails to employees of company with id " + organisationId;
     } 
-{% endhighlight %}
+```
 
 With an actual notification service implementation it took around 40 seconds for 30 employees. This is definitely a  NoGo
 in modern times...
 
 The notification service might look something like the following:
 
-{% highlight typescript %}
+```typescript
     async sendEmailNotification(employee: Employee, notificationRequest:NotificationRequest): Promise<void> {
         let notificationRequestMessage: NotisRequestMessage = {
             channel: "EMAIL",
@@ -53,13 +53,13 @@ The notification service might look something like the following:
             .set('Content-Type', 'application/json')
             .send(notificationRequestMessage);
     }   
-{% endhighlight %}
+```
 
 ### After
 
 Here is the same code, but now the emails are sent in parallel: 
 
-{% highlight typescript %}
+```typescript
     async notifyEmployees(organisationId: string): Promise<string> {
 
         const employees:Employee[] = await this.getEmployeesOfOrganisation(organisationId);
@@ -73,7 +73,7 @@ Here is the same code, but now the emails are sent in parallel:
 
         return "Sent in parallel emails to employees of company with id " + organisationId;
     }
-{% endhighlight %}
+```
 
 First of all the performance gain was fantastic: <span class="highlight-yellow">down to 1.3 seconds from 40 seconds</span>... 
 

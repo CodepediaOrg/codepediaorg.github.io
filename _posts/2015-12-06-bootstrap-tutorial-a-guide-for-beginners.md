@@ -339,9 +339,9 @@ In your index.html file, you will see that we have already made some code availa
 
 A standard navigation bar is created with
 
-{% highlight html %}
+```html
 <nav class='navbar navbar-default></nav>
-{% endhighlight %}
+```
 
 Let’s explain the markup bit by bit:
 

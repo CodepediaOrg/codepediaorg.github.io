@@ -191,9 +191,9 @@ It is pretty well supported in Jekyll, once you are ready to get your hands a li
 
 Because I was uing [Disqus](http://disqus.com) for the comments, migrating them was straightforward - I just changed `disqus_shortname` in `_config.yml`. By default comments appear on all post and pages. To disable commenting on a post or page, add the following to its YAML Front Matter:
 
-{% highlight yaml %}
+```yaml
 comments: false
-{% endhighlight %}
+```
 
 > You might also want to check [Jekyll Installation Instructions](https://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions) from Disqus
 

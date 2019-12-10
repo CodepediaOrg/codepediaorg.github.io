@@ -13,10 +13,10 @@ This post demonstrate how to use feature images on your posts.
 
 Just add:
 
-{% highlight yaml %}
+```yaml
 image:
   feature: filename.png
-{% endhighlight %}
+```
 
 where **filename.png** is an image inside `images` folder. This image will be displayed on the top of your post.
 

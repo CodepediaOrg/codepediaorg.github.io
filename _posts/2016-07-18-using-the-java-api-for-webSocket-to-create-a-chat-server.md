@@ -34,7 +34,7 @@ That's all we need to know for now in order to implement the chat application.
 
 Since we will be creating a chat server, let's first model messages with a POJO:
 
-{% highlight java %}
+```java
 public class Message {
 
     private String content;
@@ -43,11 +43,11 @@ public class Message {
 
     // getters and setters
 }
-{% endhighlight %}
+```
 
 Messages will be encoded/decoded to JSON format between the server and clients using the following `Encoder/Decoder` classes:
 
-{% highlight java %}
+```java
 public class MessageEncoder implements Encoder.Text<Message> {
 
     @Override
@@ -60,9 +60,9 @@ public class MessageEncoder implements Encoder.Text<Message> {
     }
 
 }
-{% endhighlight %}
+```
 
-{% highlight java %}
+```java
 public class MessageDecoder implements Decoder.Text<Message> {
 
     @Override
@@ -76,7 +76,7 @@ public class MessageDecoder implements Decoder.Text<Message> {
     }
 
 }
-{% endhighlight %}
+```
 
 The `MessageEncoder` uses the [Java API for JSON Processing](https://jsonp.java.net/) to create Json objects, no additional libraries :wink:
 
@@ -86,7 +86,7 @@ That's all for the data model, we have created our domain model object `Message`
 
 The following is the code of the server endpoint. I'll explain it in details right after the listing:
 
-{% highlight java %}
+```java
 @ServerEndpoint(value = "/chat", encoders = MessageEncoder.class, decoders = MessageDecoder.class)
 public class ServerEndpoint {
 
@@ -123,7 +123,7 @@ public class ServerEndpoint {
     }
 
 }
-{% endhighlight %}
+```
 
 The code is self explanatory, but here are important points to note:
 
@@ -139,7 +139,7 @@ That's all for the server side, nothing fancy :smile:
 
 On the client side, we need to listen to the `onMessage` event and print the received message to the console:
 
-{% highlight java %}
+```java
 @ClientEndpoint(encoders = MessageEncoder.class, decoders = MessageDecoder.class)
 public class ClientEndpoint {
 
@@ -152,7 +152,7 @@ public class ClientEndpoint {
     }
 
 }
-{% endhighlight %}
+```
 
 ## Putting it all together
 
@@ -160,7 +160,7 @@ Now that we have defined the data model, client and server endpoints, we can pro
 
 The main class to run the server is the following:
 
-{% highlight java %}
+```java
 public class Server {
 
     public static void main(String[] args) {
@@ -178,14 +178,14 @@ public class Server {
     }
 
 }
-{% endhighlight %}
+```
 
 All we have to do is create a `org.glassfish.tyrus.server.Server` instance and start it.
 We should specify the `ServerEndpoint` class, the port and the websocket endpoint as parameters.
 
 To create a client, I'll use the following class:
 
-{% highlight java %}
+```java
 public class Client {
 
     public static final String SERVER = "ws://localhost:8025/ws/chat";
@@ -210,7 +210,7 @@ public class Client {
     }
 
 }
-{% endhighlight %}
+```
 
 The `ClientManager` provided by JSR 356 is the entry point to create clients.
 Once we get a client, it is possible to connect to the server and obtain a `Session` object. This is the main point of interaction between server and clients.

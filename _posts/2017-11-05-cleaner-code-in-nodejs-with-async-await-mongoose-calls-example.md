@@ -24,6 +24,9 @@ to [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 In this blog post I present what this code "upgrade" meant for [CRUD operations](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
    performed on [dev bookmarks](https://www.bookmarks.dev). I use [Moongoose](http://mongoosejs.com/) in an ExpressJS/NodeJS backend
     to perform the operations against a MongoDB database. 
+    
+> In a later refactoring the database access part has been decoupled from ExpressJS and moved to separate service functions. 
+Thanks to [unified error handling](https://www.codepedia.org/ama/cleaner-code-in-expressjs-rest-api-with-custom-error-handling) the database errors are now handled centrally. 
      
 <!--more-->
 
@@ -33,7 +36,7 @@ In this blog post I present what this code "upgrade" meant for [CRUD operations]
 ## Create
 
 ### Before
-```
+```javascript
 router.post('/:id/bookmarks', keycloak.protect(), function(req, res, next){
   const descriptionHtml = req.body.descriptionHtml ? req.body.descriptionHtml: converter.makeHtml(req.body.description);
 
@@ -85,95 +88,85 @@ router.post('/:id/bookmarks', keycloak.protect(), function(req, res, next){
 
 ### After 
 
-{% highlight javascript %}
-router.post('/:id/bookmarks', keycloak.protect(), async (req, res) => {
-  const descriptionHtml = req.body.descriptionHtml ? req.body.descriptionHtml: converter.makeHtml(req.body.description);
+#### Router
+```javascript
+personalBookmarksRouter.post('/', keycloak.protect(), async (request, response) => {
 
-  const bookmark = new Bookmark({
-    name: req.body.name,
-    location: req.body.location,
-    language: req.body.language,
-    description: req.body.description,
-    descriptionHtml: descriptionHtml,
-    category: req.body.category,
-    tags: req.body.tags,
-    publishedOn: req.body.publishedOn,
-    githubURL: req.body.githubURL,
-    userId: req.params.id,
-    shared: req.body.shared,
-    starredBy: req.body.starredBy
-  });
+  UserIdValidator.validateUserId(request);
+  const bookmark = bookmarkHelper.buildBookmarkFromRequest(request);
+  let newBookmark = await PersonalBookmarksService.createBookmark(request.params.userId, bookmark);
 
-  try{
-    let newBookmark = await bookmark.save();
-
-    res.set('Location', 'http://localhost:3000/' + req.params.id + '/bookmarks/' + newBookmark.id);
-    res.status(201).send({response:'Bookmark created for userId ' + req.params.id});
-
-  } catch (err){
-    if (err.name === 'MongoError' && err.code === 11000) {
-      res.status(409).send(new MyError('Duplicate key', [err.message]));
-    }
-
-    res.status(500).send(err);
-  }
+  response
+    .set('Location', `${config.basicApiUrl}private/${request.params.userId}/bookmarks/${newBookmark.id}`)
+    .status(HttpStatus.CREATED)
+    .send({response: 'Bookmark created for userId ' + request.params.userId});
 
 });
-{% endhighlight %}
+```
+
+#### Service
+```javascript
+let createBookmark = async function (userId, bookmark) {
+  BookmarkInputValidator.validateBookmarkInput(userId, bookmark);
+
+  await BookmarkInputValidator.verifyPublicBookmarkExistenceOnCreation(bookmark);
+
+  let newBookmark = await bookmark.save();
+
+  return newBookmark;
+}
+```
 
 ## Read
 
 ### Before
-```
+```javascript
 /* GET bookmarks for user */
-router.get('/:id/bookmarks', keycloak.protect(), function(req, res, next) {
-  if(req.query.term){
-    var regExpTerm = new RegExp(req.query.term, 'i');
-    var regExpSearch=[{name:{$regex:regExpTerm}}, {description:{$regex: regExpTerm }}, {category:{$regex:regExpTerm }}, {tags:{$regex:regExpTerm}}];
-    Bookmark.find({userId:req.params.id, '$or':regExpSearch}, function(err, bookmarks){
+router.get('/:userId/bookmarks/:bookmarkId', keycloak.protect(), function(req, res, next) {
+    Bookmark.findOne({_id: bookmarkId, userId:req.params.userId}, function(err, bookmark){
       if(err){
         return res.status(500).send(err);
       }
-      res.send(bookmarks);
+      res.send(bookmark);
     });
-  } else {//no filter - all bookmarks
-    Bookmark.find({userId:req.params.id}, function(err, bookmarks){
-      if(err){
-        return res.status(500).send(err);
-      }
-      res.send(bookmarks);
-    });
-  }
-
 });
 ```
 
 ### After
 
-{% highlight javascript %}
+#### Router
+```javascript
 /* GET bookmarks for user */
-router.get('/:id/bookmarks', keycloak.protect(), async (req, res) => {
-  try{
-    let bookmarks;
-    if(req.query.term){
-      var regExpTerm = new RegExp(req.query.term, 'i');
-      var regExpSearch=[{name:{$regex:regExpTerm}}, {description:{$regex: regExpTerm }}, {category:{$regex:regExpTerm }}, {tags:{$regex:regExpTerm}}];
-      bookmarks = await Bookmark.find({userId:req.params.id, '$or':regExpSearch});
-    } else {//no filter - all bookmarks
-      bookmarks = await Bookmark.find({userId:req.params.id});
-    }
+personalBookmarksRouter.get('/:bookmarkId', keycloak.protect(), async (request, response) => {
+  UserIdValidator.validateUserId(request);
 
-    res.send(bookmarks);
-  } catch (err) {
-    return res.status(500).send(err);
-  }
+  const {userId, bookmarkId} = request.params;
+  const bookmark = await PersonalBookmarksService.getBookmarkById(userId, bookmarkId);
+
+  return response.status(HttpStatus.OK).send(bookmark);
 });
-{% endhighlight %}
+```
+
+#### Service
+```javascript
+let getBookmarkById = async (userId, bookmarkId) => {
+  const bookmark = await Bookmark.findOne({
+    _id: bookmarkId,
+    userId: userId
+  });
+
+  if (!bookmark) {
+    throw new NotFoundError(`Bookmark NOT_FOUND the userId: ${userId} AND id: ${bookmarkId}`);
+  } else {
+    return bookmark;
+  }
+};
+```
 
 ## Update
 
 ### Before
-```
+```javascript
 /**
  * full UPDATE via PUT - that is the whole document is required and will be updated
  * the descriptionHtml parameter is only set in backend, if only does not come front-end (might be an API call)
@@ -201,36 +194,56 @@ router.put('/:userId/bookmarks/:bookmarkId', keycloak.protect(), function(req, r
 
 ### After
 
-{% highlight javascript %}
+#### Router
+```javascript
 /**
  * full UPDATE via PUT - that is the whole document is required and will be updated
  * the descriptionHtml parameter is only set in backend, if only does not come front-end (might be an API call)
  */
-router.put('/:userId/bookmarks/:bookmarkId', keycloak.protect(), async (req, res) => {
-  if(!req.body.descriptionHtml){
-    req.body.descriptionHtml = converter.makeHtml(req.body.description);
-  }
-  try {
-    let bookmark = await Bookmark.findOneAndUpdate({_id: req.params.bookmarkId, userId: req.params.userId}, req.body, {new: true});
+personalBookmarksRouter.put('/:bookmarkId', keycloak.protect(), async (request, response) => {
 
-    if (!bookmark) {
-      return res.status(404).send(new MyError('Not Found Error', ['Bookmark for user id ' + req.params.userId + ' and bookmark id '+ req.params.bookmarkId + ' not found']));
-    } else {
-      res.status(200).send(bookmark);
-    }
-  } catch (err) {
-    if (err.name === 'MongoError' && err.code === 11000) {
-      res.status(409).send(new MyError('Duplicate key', [err.message]));
-    }
-    res.status(500).send(new MyError('Unknown Server Error', ['Unknow server error when updating bookmark for user id ' + req.params.userId + ' and bookmark id '+ req.params.bookmarkId]));
-  }
+  UserIdValidator.validateIsAdminOrUserId(request);
+
+  const bookmark = bookmarkHelper.buildBookmarkFromRequest(request);
+
+  const {userId, bookmarkId} = request.params;
+  const updatedBookmark = await PersonalBookmarksService.updateBookmark(userId, bookmarkId, bookmark);
+
+  return response.status(HttpStatus.OK).send(updatedBookmark);
 });
-{% endhighlight %}
+```
+
+#### Service
+
+```javascript
+let updateBookmark = async (userId, bookmarkId, bookmark) => {
+
+  BookmarkInputValidator.validateBookmarkInput(userId, bookmark);
+
+  await BookmarkInputValidator.verifyPublicBookmarkExistenceOnUpdate(bookmark, userId);
+
+  const updatedBookmark = await Bookmark.findOneAndUpdate(
+    {
+      _id: bookmarkId,
+      userId: userId
+    },
+    bookmark,
+    {new: true}
+  );
+
+  const bookmarkNotFound = !updatedBookmark;
+  if (bookmarkNotFound) {
+    throw new NotFoundError('Bookmark NOT_FOUND with id: ' + bookmarkId + ' AND location: ' + bookmark.location);
+  } else {
+    return updatedBookmark;
+  }
+};
+```
 
 ## Delete
 
 ### Before
-```
+```javascript
 /*
 * DELETE bookmark for user
 */
@@ -250,25 +263,65 @@ router.delete('/:userId/bookmarks/:bookmarkId', keycloak.protect(), function(req
 
 ### After
 
-{% highlight javascript %}
+#### Router
+```javascript
 /*
-* DELETE bookmark for user`
+* DELETE bookmark for user
 */
-router.delete('/:userId/bookmarks/:bookmarkId', keycloak.protect(), async (req, res) => {
-  try {
-    let bookmark = await Bookmark.findOneAndRemove({_id: req.params.bookmarkId, userId: req.params.userId});
+personalBookmarksRouter.delete('/:bookmarkId', keycloak.protect(), async (request, response) => {
 
-    if (!bookmark) {
-      return res.status(404).send(new MyError('Not Found Error', ['Bookmark for user id ' + req.params.userId + ' and bookmark id '+ req.params.bookmarkId + ' not found']));
-    } else {
-      res.status(204).send('Bookmark successfully deleted');
-    }
-  } catch (err) {
-    return res.status(500).send(new MyError('Unknown server error', ['Unknown server error when trying to delete bookmark with id ' + req.params.bookmarkId]));
-  }
+  UserIdValidator.validateIsAdminOrUserId(request);
+
+  await PersonalBookmarksService.deleteBookmarkById(request.params.userId, request.params.bookmarkId);
+  return response.status(HttpStatus.NO_CONTENT).send();
 });
-{% endhighlight %}
+```
 
+#### Service
+```javascript
+let deleteBookmarkById = async (userId, bookmarkId) => {
+  const bookmark = await Bookmark.findOneAndRemove({
+    _id: bookmarkId,
+    userId: userId
+  });
+
+  if (!bookmark) {
+    throw new NotFoundError('Bookmark NOT_FOUND with id: ' + bookmarkId);
+  }
+  
+  return true;
+};
+```
+
+## Unified error handling
+As mentioned in the beginning of the post the error handling has been centralised - see below the code snippet dealing
+with MongoDB Errors:
+
+```javascript
+
+app.use(function handleDatabaseError(error, request, response, next) {
+  if (error instanceof MongoError) {
+    if (error.code === 11000) {
+      return response
+        .status(HttpStatus.CONFLICT)
+        .json({
+          httpStatus: HttpStatus.CONFLICT,
+          type: 'MongoError',
+          message: error.message
+        });
+    } else {
+      return response.status(503).json({
+        httpStatus: HttpStatus.SERVICE_UNAVAILABLE,
+        type: 'MongoError',
+        message: error.message
+      });
+    }
+  }
+  next(error);
+});
+```
+
+## Conclusion
 > Note how the code has become shorter, easier to read (especially for someone like me, with a Java/JavaEE background) and the error handling is now much clearer.
    
 Another cool feature of `async/await` is how to easily implement multiple parallel, but that in a coming post...     

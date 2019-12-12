@@ -74,7 +74,7 @@ let getStackoverflowQuestionData = async (stackoverflowQuestionId) => {
 }
 ```
 
-> With a `key` your rate is currently limited to 10000 calls per day, otherwise to just 3000
+> With a `key` your rate is currently limited to 10000 calls per day, otherwise to just 300
 
 ### Front-end
 In front-end a little bit [more work](https://github.com/CodepediaOrg/bookmarks.dev/commit/22dae2dd163d81ade388c8602b386a79e97f1a7b) was needed,

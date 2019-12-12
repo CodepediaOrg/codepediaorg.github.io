@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Improve StackOverflow experience on bookmarks.dev
+title: Improve experience for StackOverflow dev bookmarks
 description: "New improvements for StackOverflow questions on bookmarks.dev - auto completion of bookmark attributes,
 login with stackoverflow account and visual hinting for StackOverflow questions"
 author: ama
-permalink: /ama/improve-stackoverflow-experience-on-bookmarks.dev
+permalink: /ama/improve-experience-for-stackoverflow-dev-bookmarks
 published: true
-categories: [bookmarks.dev]
+categories: [bookmarks]
 tags: [expressjs, nodejs, angular, api]
 ---
 

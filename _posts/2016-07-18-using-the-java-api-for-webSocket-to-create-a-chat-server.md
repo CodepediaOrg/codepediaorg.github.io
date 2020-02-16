@@ -9,12 +9,11 @@ tags: [java, web sockets]
 
 republished: true
 original_title: Using The Java Api For Websocket To Create A Chat Server
-original_url: http://benas.github.io/2016/02/21/using-the-java-api-for-webSocket-to-create-a-chat-server.html
+original_url: https://github.com/benas/web-socket-lab
 ---
 
-In a [previous post](http://benas.github.io/2014/10/14/using-server-sent-events-to-create-a-monitoring-dashboard.html), I've used Server Sent Events to create a monitoring dashboard. SSE are a one way messaging format form server to clients
- in contrast to Web Sockets where communication is bidirectional. In this post, I'll use Web sockets to create a tiny chat server using [Tyrus](https://tyrus.java.net/), the reference
- implementation of the Java API for WebSocket (JSR 356). A great introduction to this API can be found on Oracle Network [here](http://www.oracle.com/technetwork/articles/java/jsr356-1937161.html).
+In this post, I'll use Web sockets to create a tiny chat server using [Tyrus](https://tyrus.java.net/), the reference
+ implementation of the Java API for WebSocket (JSR 356). A great introduction to this API can be found on Oracle Network [here](https://www.oracle.com/technical-resources/articles/java/jsr356.html).
 
  In order to keep the tutorial simple, the server and clients will be command line apps, no GUIs here, it is a serious blog :smile: So let's get started!
  <!--more-->
@@ -222,12 +221,8 @@ In this lab, I've created [an example](https://github.com/benas/web-socket-lab#e
 ## Summary
 
 In this post, we have seen how easy is to create a chat application using the Java API for WebSocket (JSR 356).
- This API has been added in Java EE 7 and greatly simplify the programming model of real-time interactive applications.
+This API has been added in Java EE 7 and greatly simplify the programming model of real-time interactive applications.
+Note that I've used only reference implementations of Java EE APIs, without using a container, nor third party APIs or libraries.
 
- Note that I've used only reference implementations of Java EE APIs, without using a container, nor third party APIs or libraries.
- If only I meet one of those guys that say Java EE is heavy :rage:
-
- I've already used a Javascript stack for this kind of requirements, basically to implement a more elaborate [real-time game server](https://github.com/benas/gamehub.io) with NodeJs and SocketIO.
- I must admit that the Java API is also really great, easy and straightforward.
-
- I hope you enjoyed this article. Time to get your hands dirty..
+I've already used a Javascript stack for this kind of requirements, basically to implement a more elaborate [real-time game server](https://github.com/benas/gamehub.io) with NodeJs and SocketIO.
+I must admit that the Java API is also really great, easy and straightforward.

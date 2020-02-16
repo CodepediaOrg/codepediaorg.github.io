@@ -187,19 +187,19 @@ Our current Coding Friends:
 </div>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://pbs.twimg.com/profile_images/682858329220190208/YhIK6TIE_400x400.jpg" alt="Mahmoud Ben Hassine" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://avatars2.githubusercontent.com/u/1210553?s=400" alt="Mahmoud Ben Hassine" />
 
   <p id="about_author_header">
     Mahmoud Ben Hassine
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Passionate Software Engineer who loves to learn and teach. As an open source advocate, I love to create and contribute to open source projects and to share my experience with other developers around the globe. If you are a chess Junkie like me, it will be a pleasure to challenge you on a chess board!
+    Mahmoud is a passionate software engineer with 10+ years of experience in enterprise software development. He is an open source advocate and has contributed to several open source projects. When he is not coding, Mahmoud enjoys spending time with his family and friends, reading, running and playing chess!
   </div>
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://benas.github.io/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/_benas_" target="_blank"> </a> <a class="icon-github" href="https://github.com/benas" target="_blank"> </a> <a class="icon-linkedin" href="http://fr.linkedin.com/in/mahmoudbenhassine/" target="_blank"> </a>
+      <a class="icon-twitter" href="https://twitter.com/b_e_n_a_s" target="_blank"> </a> <a class="icon-github" href="https://github.com/benas" target="_blank"> </a>
     </div>
 
     <div class="clear">

@@ -34,20 +34,18 @@ aredko:
 benas:
   name:          Mahmoud Ben Hassine
   site:           http://benas.github.io/
-  avatar_url: https://pbs.twimg.com/profile_images/682858329220190208/YhIK6TIE_400x400.jpg
-  bio:            "Aspiring software craftsman living in the shell, chess master and scrum bastard!"
+  avatar_url: https://avatars2.githubusercontent.com/u/1210553?s=400
+  bio:            "Open source enthusiast. Principal software engineer at VMWare. I only play chess on days that end in Y."
   email:          mahmoud.benhassine@icloud.com
   # Twitter nick for use in Twitter cards and follow button.
-  twitter: pragmatic_coder # if no twitter in this config, the twitter follow button will be removed
+  twitter: b_e_n_a_s # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
   github: benas
   social:
     - title: "twitter"
-      url: "https://twitter.com/pragmatic_coder"
+      url: "https://twitter.com/b_e_n_a_s"
     - title: "github"
       url: "https://github.com/benas"
-    - title: "linkedin"
-      url: "https://fr.linkedin.com/in/mbenhassine/"
 
 dexter:
   name:          Dexter's Laboratory

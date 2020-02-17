@@ -35,7 +35,7 @@ tags:
   - podcastpedia
 ---
 <p style="text-align: justify;">
-  Remember the first batch job for Podcastpedia.org, presented in <a title="http://www.codepedia.org/ama/spring-batch-tutorial-with-spring-boot-and-java-configuration/" href="http://www.codepedia.org/ama/spring-batch-tutorial-with-spring-boot-and-java-configuration/" target="_blank">Spring Batch Tutorial with Spring Boot and Java Configuration</a>&#8230; There, I would read submitted podcasts from a .csv file to add them to the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> directory (database). Well today I will present how I automated the creation of this kind of input file, with the help of Easy Batch. Why EasyBatch? Because, after seeing my initial post, I was contacted by its founder, <a title="http://www.mahmoudbenhassine.com/" href="http://www.mahmoudbenhassine.com/" target="_blank">Mahmoud Ben Hassine</a>, to have a look at Easy Batch and give it a try. I did, and I am happy about that. Read on to find out why&#8230;<!--more-->
+  Remember the first batch job for Podcastpedia.org, presented in <a title="http://www.codepedia.org/ama/spring-batch-tutorial-with-spring-boot-and-java-configuration/" href="http://www.codepedia.org/ama/spring-batch-tutorial-with-spring-boot-and-java-configuration/" target="_blank">Spring Batch Tutorial with Spring Boot and Java Configuration</a>&#8230; There, I would read submitted podcasts from a .csv file to add them to the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> directory (database). Well today I will present how I automated the creation of this kind of input file, with the help of Easy Batch. Why EasyBatch? Because, after seeing my initial post, I was contacted by its founder, <a title="https://benas.github.io" href="https://benas.github.io" target="_blank">Mahmoud Ben Hassine</a>, to have a look at Easy Batch and give it a try. I did, and I am happy about that. Read on to find out why&#8230;<!--more-->
 </p>
 
 <p style="text-align: justify;">
@@ -319,12 +319,12 @@ You obtain an Easy Batch report when running the Easy Batch engine:
 <pre class="lang:java decode:true " title="Easy Batch engine execution and report generation">// Run easy batch engine
 EasyBatchReport easyBatchReport = easyBatchEngine.call();</pre>
 
-Check out the <a title="http://www.easybatch.org/documentation/userGuide.html" href="http://www.easybatch.org/documentation/userGuide.html" target="_blank">Easy Batch user guide</a> for other report formatting options.
+Check out the <a title="https://github.com/j-easy/easy-batch/wiki" href="https://github.com/j-easy/easy-batch/wiki" target="_blank">Easy Batch user guide</a> for other report formatting options.
 
 ## <span id="Conclusion">Conclusion</span>
 
 <p style="text-align: justify;">
-  For this easy job I had to implement, Easy Batch proved to be a simple, yet powerful batch framework, with good samples and documentation. Before starting my next batch job I will definetely have a look at Easy Batch first, before considering the &#8220;mightier&#8221; Spring Batch framework. But, to quote the author from Easy Batch, from <a title="http://mahmoudbenhassine.wordpress.com/2014/03/03/spring-batch-vs-easy-batch-a-hello-world-comparison/" href="http://mahmoudbenhassine.wordpress.com/2014/03/03/spring-batch-vs-easy-batch-a-hello-world-comparison/" target="_blank">Spring Batch vs Easy Batch: a Hello World comparison</a>
+  For this easy job I had to implement, Easy Batch proved to be a simple, yet powerful batch framework, with good samples and documentation. Before starting my next batch job I will definetely have a look at Easy Batch first, before considering the &#8220;mightier&#8221; Spring Batch framework. But, to quote the author from Easy Batch, from <a title="https://github.com/benas/easy-batch-vs-spring-batch/issues/1" href="https://github.com/benas/easy-batch-vs-spring-batch/issues/1" target="_blank">Easy Batch vs Spring Batch: Feature comparison</a>
 </p>
 
 <p style="text-align: justify; padding-left: 30px;">
@@ -341,10 +341,10 @@ Check out the <a title="http://www.easybatch.org/documentation/userGuide.html" h
 
 ### <span id="Web"><span id="Web">Web</span></span>
 
-  1. <a title="http://www.easybatch.org/" href="http://www.easybatch.org/" target="_blank">EasyBatch.org</a>
-      1. <a title="http://www.easybatch.org/tutorials/index.html" href="http://www.easybatch.org/tutorials/index.html" target="_blank">Tutorials</a>
-      2. <a title="http://www.easybatch.org/documentation/userGuide.html" href="http://www.easybatch.org/documentation/userGuide.html" target="_blank">User guide</a>
-      3. <a title="http://www.easybatch.org/tutorials/customers.html" href="http://www.easybatch.org/tutorials/customers.html" target="_blank">Customers ETL tutorial</a>
+  1. <a title="https://github.com/j-easy/easy-batch" href="https://github.com/j-easy/easy-batch" target="_blank">https://github.com/j-easy/easy-batch</a>
+      1. <a title="https://github.com/j-easy/easy-batch/tree/master/easy-batch-tutorials" href="https://github.com/j-easy/easy-batch/tree/master/easy-batch-tutorials" target="_blank">Tutorials</a>
+      2. <a title="https://github.com/j-easy/easy-batch/wiki" https://github.com/j-easy/easy-batch/wiki" target="_blank">User guide</a>
+      3. <a title="https://github.com/j-easy/easy-batch/tree/master/easy-batch-tutorials/src/main/java/org/jeasy/batch/tutorials/intermediate/csv2xml" href="https://github.com/j-easy/easy-batch/tree/master/easy-batch-tutorials/src/main/java/org/jeasy/batch/tutorials/intermediate/csv2xml" target="_blank">Tweets ETL tutorial</a>
   2. <a title="http://dev.mysql.com/doc/connector-j/en/connector-j-usagenotes-connect-drivermanager.html" href="http://dev.mysql.com/doc/connector-j/en/connector-j-usagenotes-connect-drivermanager.html" target="_blank">Connecting to MySQL Using the JDBC DriverManager Interface</a>
 
 <p style="text-align: justify;">

@@ -1,332 +1,180 @@
 ---
-id: 2124
 title: How to test a REST api from command line with curl
 date: 2014-12-03T07:19:41+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=2124
+published: true
 permalink: /ama/how-to-test-a-rest-api-from-command-line-with-curl/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
-fsb_social_facebook:
-  - 12
-fsb_social_google:
-  - 9
-fsb_social_linkedin:
-  - 17
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3285553465
+description: "This post presents examples of making CRUD HTTP calls against a backend REST API. The API chosen
+supports www.bookmarks.dev"
 categories:
   - testing
 tags:
   - curl
   - http
-  - http header
-  - http response
-  - jersey
   - rest
-  - rest api
-  - test
+  - api
   - testing
 ---
-<p style="text-align: justify;">
-  If you want to quickly test your REST api from the command line, you can use <a title="http://curl.haxx.se/" href="http://curl.haxx.se/" target="_blank">curl</a>. In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api developed in my post <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
-</p>
+
+If you want to quickly test your REST api from the command line, you can use [curl](http://curl.haxx.se/).
+ In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API.
+  For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev).
+  The API is [documented with OpenAPI](https://github.com/CodepediaOrg/bookmarks.dev-api/blob/develop/docs/openapi/openapi.yaml) 
+  and available for testing in the browser at [https://www.bookmarks.dev/api/docs/](https://www.bookmarks.dev/api/docs/).
+  
 <!--more-->
 
-<p style="text-align: justify;">
-  <div id="toc_container" class="no_bullets">
-    <p class="toc_title">
-      Contents
-    </p>
+* TOC
+{:toc} 
 
-    <ul class="toc_list">
-      <li>
-        <a href="#1_Introduction">1. Introduction</a><ul>
-          <li>
-            <a href="#11_What_is_curl">1.1. What is curl?</a>
-          </li>
-          <li>
-            <a href="#12_HEAD_requests">1.2. HEAD requests</a>
-          </li>
-          <li>
-            <a href="#13_GET_request">1.3. GET request</a>
-          </li>
-          <li>
-            <a href="#14_Curl_request_with_multiple_headers">1.4. Curl request with multiple headers</a>
-          </li>
-        </ul>
-      </li>
+## Introduction
 
-      <li>
-        <a href="#2_SOAPui_test_suite_translated_to_curl_requests">2. SOAPui test suite translated to curl requests</a><ul>
-          <li>
-            <a href="#21_Create_podcasts_resource">2.1. Create podcast(s) resource</a><ul>
-              <li>
-                <a href="#211_Delete_all_podcasts_preparation_step">2.1.1. Delete all podcasts (preparation step)</a>
-              </li>
-              <li>
-                <a href="#212_POST_new_podcast_without_feed_8211_400_BAD_REQUEST">2.1.2. POST new podcast without feed &#8211; 400 (BAD_REQUEST)</a>
-              </li>
-              <li>
-                <a href="#213_POST_new_podcast_correctly_8211_201_CREATED">2.1.3. POST new podcast correctly &#8211; 201 (CREATED)</a>
-              </li>
-              <li>
-                <a href="#214_POST_same_podcast_as_before_to_receive_8211_409_CONFLICT">2.1.4. POST same podcast as before to receive &#8211; 409 (CONFLICT)</a>
-              </li>
-              <li>
-                <a href="#215_PUT_new_podcast_at_location_8211_201_CREATED">2.1.5. PUT new podcast at location &#8211; 201 (CREATED)</a>
-              </li>
-            </ul>
-          </li>
+In the first part of the blog post I will do a brief introduction to curl and what it can do (HTTP requests with options).
+ In the second part I will show examples with different HTTP operations from [bookmarks.dev-api](https://www.bookmarks.dev/api/docs). 
 
-          <li>
-            <a href="#22_Read_podcast_resource">2.2. Read podcast resource</a><ul>
-              <li>
-                <a href="#221_GET_new_inserted_podcast_8211_200_OK">2.2.1. GET new inserted podcast &#8211; 200 (OK)</a>
-              </li>
-              <li>
-                <a href="#222_GET_podcasts_sorted_by_insertion_date_DESC_8211_200_OK">2.2.2. GET podcasts sorted by insertion date DESC &#8211; 200 (OK)</a>
-              </li>
-            </ul>
-          </li>
 
-          <li>
-            <a href="#23_Update_podcast_resource">2.3. Update podcast resource</a><ul>
-              <li>
-                <a href="#231_PUT_not_8220complete8221_podcast_for_FULL_update_8211_400_BAD_REQUEST">2.3.1. PUT not &#8220;complete&#8221; podcast for FULL update &#8211; 400 (BAD_REQUEST)</a>
-              </li>
-              <li>
-                <a href="#232_PUT_podcast_for_FULL_update_8211_200_OK">2.3.2. PUT podcast for FULL update &#8211; 200 (OK)</a>
-              </li>
-            </ul>
-          </li>
+### What is curl?
 
-          <li>
-            <a href="#233_POST_partial_update_for_not_existent_podcast_8211_404_NOT_FOUND">2.3.3. POST (partial update) for not existent podcast &#8211; 404 (NOT_FOUND)</a><ul>
-              <li>
-                <a href="#234POST_partial_update_podcast_8211_200_OK">2.3.4. POST (partial update) podcast &#8211; 200 (OK)</a>
-              </li>
-            </ul>
-          </li>
+Curl is a command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, Gopher,
+ HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP.
+  curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, HTTP/2, cookies,
+   user+password authentication (Basic, Digest, NTLM, Negotiate, Kerberos&#8230;), file transfer resume, proxy tunneling and more.
+   
+As mentioned, I will be using curl to simulate HEAD, GET, POST, PUT and DELETE request calls against a REST API.
 
-          <li>
-            <a href="#24_DELETE_resource">2.4. DELETE resource</a><ul>
-              <li>
-                <a href="#241_DELETE_second_inserted_podcast_8211_204_NO_CONTENT">2.4.1. DELETE second inserted podcast &#8211; 204 (NO_CONTENT)</a>
-              </li>
-              <li>
-                <a href="#242_GET_deleted_podcast_8211_404_NOT_FOUND">2.4.2. GET deleted podcast &#8211; 404 (NOT_FOUND)</a>
-              </li>
-            </ul>
-          </li>
+### HEAD requests
 
-          <li>
-            <a href="#25_Bonus_operations">2.5. Bonus operations</a><ul>
-              <li>
-                <a href="#251_Add_podcast_from_application_form_urlencoded">2.5.1. Add podcast from application form urlencoded</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <a href="#Resources">Resources</a>
-      </li>
-    </ul>
-  </div>
-</p>
-
-## <span id="1_Introduction">1. Introduction</span>
-
-<p style="text-align: justify;">
-  If in the first part of the blog post I will do a brief introduction to curl and what it can do (HTTP requests with options), in the second part I will &#8220;translate&#8221; the <a title="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/master/src/main/resources/soapui/Test-Demo-REST-Jersey-with-Spring-soapui-project.xml" href="https://github.com/CodepediaOrg/demo-rest-jersey-spring/blob/master/src/main/resources/soapui/Test-Demo-REST-Jersey-with-Spring-soapui-project.xml" target="_blank">SOAPui test suite</a> developed for the REST API tutorial to curl requests.
-</p>
-
-### <span id="11_What_is_curl"><strong>1.1. What is curl?</strong></span>
-
-<p style="padding-left: 30px; text-align: justify;">
- <em>Curl is a command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, HTTP/2, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, Kerberos&#8230;), file transfer resume, proxy tunneling and more.[1]</em>
-</p>
-
-As mentioned, I will be using curl to simulate HEAD, GET, POST, PUT and DELETE request calls to the REST API.
-
-### <span id="12_HEAD_requests">1.2. HEAD requests</span>
-
-<p style="text-align: justify;">
-  If you want to check if a resource is serviceable, what kind of headers it provides and other useful meta-information written in response headers, without having to transport the entire content, you can make a HEAD request.  Let&#8217;s say I want to see what I would GET when requesting a Podcast resource. I would issue the following HEAD request with curl:
-</p>
+If you want to check if a resource is serviceable, what kind of headers it provides and other useful meta-information
+ written in response headers, without having to transport the entire content, you can make a `HEAD` request.
+  
+Let's say I want to see what I would GET when requesting latest public bookmarks. I would issue the following HEAD request with curl:
 
 **Request**
 
 ```shell
-curl -I http://localhost:8888/demo-rest-jersey-spring/podcasts/1
+curl -I https://www.bookmarks.dev/api/public/bookmarks
 ```
 
-  OR
+OR
 
 ```shell
-curl -i -X HEAD http://localhost:8888/demo-rest-jersey-spring/podcasts/1
+curl -i -X HEAD https://www.bookmarks.dev/api/public/bookmarks
 ```
 
 **Curl options **
-
-  * `-i, --include` &#8211; include protocol headers in the output (H/F)
-  * `-X, --request` &#8211; specify request  COMMAND (GET, PUT, DELETE&#8230;)  to use
+  * `-I` or `--head` - fetch the headers only
+  * `-i, --include` - include the HTTP response headers in the output
+  * `-X, --request` - specify a custom request method to use when communicating with the HTTP server (GET, PUT, DELETE&)
 
 **Response**
 
 ```shell
-% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0   631    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
 HTTP/1.1 200 OK
-Date: Tue, 25 Nov 2014 12:54:56 GMT
-Server: Jetty(9.0.7.v20131107)
-Access-Control-Allow-Headers: X-extra-header
-Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-Allow: OPTIONS
-Content-Type: application/xml
+Server: nginx/1.12.0
+Date: Sun, 23 Feb 2020 21:31:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 98452
+Connection: keep-alive
+X-Powered-By: Express
 Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Vary: Accept-Encoding
-Content-Length: 631
+Access-Control-Allow-Methods: POST, GET, PUT, PATCH, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization, Location
+Access-Control-Expose-Headers: Content-Type, Authorization, Location
+ETag: W/"18094-R7MFvLpccDdVu3q8rR1UQBrAaX8"
+Strict-Transport-Security: max-age=63072000; includeSubdomains
+X-Content-Type-Options: nosniff
 ```
 
-<p style="text-align: justify;">
-  Note the following headers
-</p>
-
-  * `Access-Control-Allow-Headers: Content-Type`
-  * `Access-Control-Allow-Methods: GET, POST, DELETE, PUT`
-    and
+Note the following headers
+  * `Access-Control-Allow-Headers: Content-Type, Authorization, Location`
+  * `Access-Control-Allow-Methods: POST, GET, PUT, PATCH, DELETE, OPTIONS`
   * `Access-Control-Allow-Origin: *`
 
 in the response.
 
-<span style="font-size: 16.3636360168457px; line-height: 1.5;">They&#8217;ve been added to support </span><a style="color: #bc360a;" title="http://www.w3.org/TR/cors/" href="http://www.w3.org/TR/cors/" target="_blank">Cross-Origing Resource Sharing (CORS)</a><span style="font-size: 16.3636360168457px; line-height: 1.5;">. You can find more about that in my post </span><a style="font-size: 16.3636360168457px; line-height: 1.5;" title="http://www.codepedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" href="http://www.codepedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" target="_blank">How to add CORS support on the server side in Java with Jersey</a><span style="font-size: 16.3636360168457px; line-height: 1.5;">.</span>
+They've been added to support [Cross-Origing Resource Sharing (CORS)](http://www.w3.org/TR/cors/).
 
-<p style="text-align: justify;">
-  What I find a little bit intriguing is the response header <code>Content-Type: application/xml</code>, because I would have expected it to be <code>application/json</code>, since in the resource method defined with Jersey this should have taken precedence:
-</p>
 
-```java
-@GET
-@Path("{id}")
-@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-public Response getPodcastById(@PathParam("id") Long id, @QueryParam("detailed") boolean detailed)
-        throws IOException,	AppException {
-    Podcast podcastById = podcastService.getPodcastById(id);
-    return Response.status(200)
-            .entity(podcastById, detailed ? new Annotation[]{PodcastDetailedView.Factory.get()} : new Annotation[0])
-            .header("Access-Control-Allow-Headers", "X-extra-header")
-            .allow("OPTIONS").build();
-}
-```
-
-### <span id="13_GET_request">1.3. GET request</span>
+### GET request
 
 Executing curl with no parameters on a URL (resource) will execute a GET.
 
 **Request**
 
 ```shell
-curl http://localhost:8888/demo-rest-jersey-spring/podcasts/1
+curl https://www.bookmarks.dev/api/version
+```
+
+which is equivalent with 
+
+```shell
+curl -X GET "https://www.bookmarks.dev/api/version" -H "accept: application/json"
 ```
 
 **Response**
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<podcast>
-   <id>1</id>
-   <title>- The Naked Scientists Podcast - Stripping Down Science</title>
-   <linkOnPodcastpedia>https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science</linkOnPodcastpedia>
-   <feed>feed_placeholder</feed>
-   <description>The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.</description>
-   <insertionDate>2014-10-29T10:46:02.00+0100</insertionDate>
-</podcast>
+```json
+{"version":"7.0.0","gitSha1":"71eb40fb6d224d5d9a90c89ae943390e15f001c3"}
 ```
 
-<p style="text-align: justify;">
-  Note that as expected from the HEAD request we get an xml document. Anyway we can force a JSON response by adding a header line to our curl request, setting the <code>Accept</code> HTTP header to <code>application/json</code>:
-</p>
 
-```shell
-curl --header "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1
-```
+Note the use of `accept: application/json` 
 
 **Curl options **
 
-  * `-H, --header` &#8211; customer header to pass to the server
+  * `-H, --header` : customer header to pass to the server
 
-
-```shell
-curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1
-```
-
-**Response**
-
-```javascript
-{
-  "id": 1,
-  "title": "- The Naked Scientists Podcast - Stripping Down Science",
-  "linkOnPodcastpedia": "https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science",
-  "feed": "feed_placeholder",
-  "description": "The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.",
-  "insertionDate": "2014-10-29T10:46:02.00+0100"
-}
-```
-
-If you want to have it displayed prettier, you can use the following command, provided you have <a title="http://python.org" href="http://python.org" target="_blank">Python </a>installed on your machine.
+If you want to have it displayed prettier I suggest you use a tool like [jq](https://github.com/stedolan/jq): 
 
 **Request**
 
 ```shell
-curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1 | python -m json.tool
+curl https://www.bookmarks.dev/api/version | jq .
 ```
 
 **Response**
-
 ```shell
-% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100   758  100   758    0     0   6954      0 --:--:-- --:--:-- --:--:--  6954
-[
-    {
-        "description": "The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.",
-        "feed": "feed_placeholder",
-        "id": 1,
-        "insertionDate": "2014-10-29T10:46:02.00+0100",
-        "linkOnPodcastpedia": "https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science",
-        "title": "- The Naked Scientists Podcast - Stripping Down Science"
-    },
-    {
-        "description": "Quarks & Co: Das Wissenschaftsmagazin",
-        "feed": "http://podcast.wdr.de/quarks.xml",
-        "id": 2,
-        "insert
-        ionDate": "2014-10-29T10:46:13.00+0100",
-        "linkOnPodcastpedia": "https://github.com/CodepediaOrg/podcastpedia/quarks",
-        "title": "Quarks & Co - zum Mitnehmen"
-    }
-]
+100    72  100    72    0     0    611      0 --:--:-- --:--:-- --:--:--   615
+{
+  "version": "7.0.0",
+  "gitSha1": "71eb40fb6d224d5d9a90c89ae943390e15f001c3"
+}
 ```
 
-### <span id="14_Curl_request_with_multiple_headers">1.4. Curl request with multiple headers</span>
+If you don't want the progress meter (first part) shown, you can silent curl:
 
-<p style="text-align: justify;">
-  As you&#8217;ve found out in my latest post, <a title="http://www.codepedia.org/ama/how-to-compress-responses-in-java-rest-api-with-gzip-and-jersey/" href="http://www.codepedia.org/ama/how-to-compress-responses-in-java-rest-api-with-gzip-and-jersey/" target="_blank">How to compress responses in Java REST API with GZip and Jersey</a>, all the responses provided by the REST api are being compressed with GZip. This happens only if the client &#8220;suggests&#8221; that it accepts such encoding, by setting the following header <code>Accept-encoding:gzip</code>.
-</p>
+**Request**
+```shell
+curl -s https://www.bookmarks.dev/api/version | jq .
+```
+
+**Response**
+```shell
+{
+  "version": "7.0.0",
+  "gitSha1": "71eb40fb6d224d5d9a90c89ae943390e15f001c3"
+}
+
+```
+
+**Curl options **
+
+  * `-s, --silent` : silent or quiet mode. Don't show progress meter or error messages. Makes Curl mute.
+   It will still output the data you ask for, potentially even to the terminal/stdout unless you redirect it.
+
+
+An alternative to **jq** is to use [Python](https://www.python.org/) if you have it on your machine:
+
+```shell
+curl -s https://www.bookmarks.dev/api/version | python -m json.tool
+```
+
+### Curl request with multiple headers
+All the responses from the [bookmarks.dev-api](https://github.com/CodepediaOrg/bookmarks.dev-api/) are gzipped. 
+We could ask for the gzipped variant by issuing the following request:
 
 **Request**
 
@@ -336,500 +184,253 @@ curl -v -H "Accept:application/json" -H "Accept-encoding:gzip" http://localhost:
 
 **Curl options **
 
-  * `-v, --verbose` &#8211; make the operation more talkative
+  * `-v, --verbose` : the opposite of `--silent`, make the operation more talkative
 
-To achieve that you need to simply **add another** -H option with the corresponding value. Of course in this case you would get some unreadable characters in the content, if you do not redirect the response to a file:
+To achieve that you need to simply **add another** `-H` option with the corresponding value. In this case you
+ would get some unreadable characters in the content, if you do not redirect the response to a file:
 
+**Response**
 ```shell
-* Adding handle: conn: 0x28ddd80
-* Adding handle: send: 0
-* Adding handle: recv: 0
-* Curl_addHandleToPipeline: length: 1
-* - Conn 0 (0x28ddd80) send_pipe: 1, recv_pipe: 0
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* About to connect() to proxy vldn680 port 19001 (#0)
-*   Trying 10.32.142.80...
-* Connected to vldn680 (10.32.142.80) port 19001 (#0)
-> GET http://localhost:8888/demo-rest-jersey-spring/podcasts/ HTTP/1.1
-> User-Agent: curl/7.30.0
-> Host: localhost:8888
-> Proxy-Connection: Keep-Alive
+> GET /api/version HTTP/1.1
+> Host: www.bookmarks.dev
+> User-Agent: curl/7.54.0
 > Accept:application/json
 > Accept-encoding:gzip
->
+> 
 < HTTP/1.1 200 OK
-< Date: Tue, 25 Nov 2014 16:17:02 GMT
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-< Server: Jetty(9.0.7.v20131107)
-< Content-Type: application/json
+< Server: nginx/1.12.0
+< Date: Fri, 06 Mar 2020 14:45:39 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< X-Powered-By: Express
 < Access-Control-Allow-Origin: *
-< Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-< Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-< Vary: Accept-Encoding
+< Access-Control-Allow-Methods: POST, GET, PUT, PATCH, DELETE, OPTIONS
+< Access-Control-Allow-Headers: Content-Type, Authorization, Location
+< Access-Control-Expose-Headers: Content-Type, Authorization, Location
+< ETag: W/"48-3r0bLwzjWi409jIuXDFQE7IoNtI"
+< Strict-Transport-Security: max-age=63072000; includeSubdomains
+< X-Content-Type-Options: nosniff
 < Content-Encoding: gzip
-< Content-Length: 413
-< Via: 1.1 vldn680:8888
-<
-{ [data not shown]
-100   413  100   413    0     0   2647      0 --:--:-- --:--:-- --:--:--  2647▒QKo▒0▒+▒▒g▒▒R▒+{▒V▒Pe▒▒؊c▒▒      n▒▒▒▒fæHH▒"▒▒g▒/?2▒eM▒gl▒a▒d
-▒{=`7▒Eϖ▒▒c▒ZM
-
-n8▒i▒▒▒}H▒▒i1▒3g▒▒▒▒▒   ;▒E▒0O▒n▒R*▒g/E▒▒n=▒▒▒▒)▒U▒▒▒lժ▒Φ▒h▒6▒▒▒_>w▒▒-▒▒:▒▒▒!▒Bb▒Z▒▒tO▒N@'= |▒▒C▒f▒▒loؠ▒,T▒▒A▒4▒▒:▒l+<▒▒▒▒P▒3▒▒A▒lR
-▒u▒a▒͓9hO        #▒▒h▒i▒gq▒▒$▒▒|Ň        ▒▒▒08>#▒0b!▒▒'▒G▒^▒Iﺬ.TU▒▒▒z▒\▒i^]e▒▒▒▒2▒▒▒֯▒▒?▒:/▒m▒▒▒▒▒Y▒h▒▒▒_䶙V▒+R▒WT▒0▒?f{▒▒▒▒&▒l▒▒Sk▒iԽ~▒▒▒▒▒▒n▒▒▒▒_V]į▒
-* Connection #0 to host vldn680 left intact
+< 
+* Connection #0 to host www.bookmarks.dev left intact
+�V*K-*���S�R2�3�3P�QJ�, �H4��&��%������X&Z$[X&�Z����&��
 ```
 
-## <span id="2_SOAPui_test_suite_translated_to_curl_requests">2. SOAPui test suite translated to curl requests</span>
+## CRUD Operations on Bookmarks.dev API
 
-As mentioned, in this second part I will map to curl requests the SOAPui test suite presented <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/#72_Integration_tests_with_SoapUI" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/#72_Integration_tests_with_SoapUI" target="_blank">here</a>.
+Those were some basic curl HTTP calls with a few options. Now we will combine them and show examples against a production
+ready API. For the examples I will use the API running on localhost. It is really easy to setup with Docker-compose if 
+you follow the instructions from the [Readme](https://github.com/CodepediaOrg/bookmarks.dev-api#readme) file.
 
-### <span id="21_Create_podcasts_resource">2.1. Create podcast(s) resource</span>
+The API is protected with [Keycloak](https://www.keycloak.org) and bearer token. A way to obtain a bearer token in Keycloak
+ is to enable Direct Access Grants for the client - this corresponds to the [Resource Owner Password Credentials](https://tools.ietf.org/html/rfc6749#section-1.3.3)
+in the OAuth2 Specification. Thus the user's credentials are sent within form parameters. Of course we can do that with curl too:
 
-#### <span id="211_Delete_all_podcasts_preparation_step">2.1.1. Delete all podcasts (preparation step)</span>
+**Request**
+```bash
+curl  \
+  -d 'client_id=bookmarks' \
+  -d 'username=ama' \
+  -d "password=ama" \
+  -d 'grant_type=password' \
+  'http://localhost:8480/auth/realms/bookmarks/protocol/openid-connect/token' \
+| jq .
+```
+
+> Replace the `username` and `password` with the ones you [set up](https://github.com/CodepediaOrg/bookmarks.dev-api#readme).  
+
+The response looks something like the following:
+```shell
+{
+  "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMNHV6eUFYbUlTSDJPRi00c2VZZ2Z3UWtJT204QTR3cnBDV0JHSVdOU2c4In0.eyJqdGkiOiJlY2I3YjE0Yi02ZTZhLTQyMzEtYWI5NS04ZDAwZmI5YjNiN2MiLCJleHAiOjE1ODM1MTg0OTUsIm5iZiI6MCwiaWF0IjoxNTgzNTE0ODk1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg0ODAvYXV0aC9yZWFsbXMvYm9va21hcmtzIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjRjNjE3ZjJiLTJiYWQtNDk4Yi1hOWM2LTRlOWE4YzMwMzc5OCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImJvb2ttYXJrcyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6ImE5NGVjNGI3LTNhY2YtNGMzOS1iOTBlLTAzOWVlNzZjY2EwYiIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUk9MRV9VU0VSIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiQWRyaWFuIE1hdGVpIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYW1hIiwiZ2l2ZW5fbmFtZSI6IkFkcmlhbiIsImZhbWlseV9uYW1lIjoiTWF0ZWkiLCJlbWFpbCI6ImFkcmlhbm1hdGVpQGdtYWlsLmNvbSJ9.cymI5LzrUFje4vZNYMzvS0yhdVx4V8u_XVDUxi4sUk4tKpI2xcFQqWEiN_hxCLHpCDjNCqjw2JQUxQTvbQe_Wf8TGWz1f3nXhKg5CEw29ArCV3lFZL7_QmUOod53KnQ-9umSe2EISv2EbD0__idaivyCIerfV4M0wfgG31iyLPJ6_Pl_nJiw5RgifdqNljpKL9znpt5l3PiU7x2ACGv9V_GPvwAnU-9VxIuEqfErgc6IfhQxg9vuI_kHprXu-ClATA_Zg_xNEw53TD3qHJV_5sCu58MORhPv8fddcAZeLHxsr9sVyhFlmKMz1ZGWH0q5QZwLzKlGaaVr72Y2KSEPyA",
+  "expires_in": 3600,
+  "refresh_expires_in": 36000,
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJiNDEwODA3My0yNjZiLTQ4YzAtOGJmYi04ZGJjZmE2NjYxMmEifQ.eyJqdGkiOiI0N2VhYzc3NS1mODdjLTRiYjMtODQxZi0wYTViZGZkMzIxZjYiLCJleHAiOjE1ODM1NTA4OTUsIm5iZiI6MCwiaWF0IjoxNTgzNTE0ODk1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg0ODAvYXV0aC9yZWFsbXMvYm9va21hcmtzIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo4NDgwL2F1dGgvcmVhbG1zL2Jvb2ttYXJrcyIsInN1YiI6IjRjNjE3ZjJiLTJiYWQtNDk4Yi1hOWM2LTRlOWE4YzMwMzc5OCIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJib29rbWFya3MiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiJhOTRlYzRiNy0zYWNmLTRjMzktYjkwZS0wMzllZTc2Y2NhMGIiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUk9MRV9VU0VSIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSJ9.MNxMEtq5zcVTjxCnws5EotnfuUH7uY_kbKDwRRzGcko",
+  "token_type": "bearer",
+  "not-before-policy": 0,
+  "session_state": "a94ec4b7-3acf-4c39-b90e-039ee76cca0b",
+  "scope": "email profile"
+}
+```
+
+With jq is really easy to extract just the `access_token`:
+
+**Request**
+```bash
+curl -s \
+  -d 'client_id=bookmarks' \
+  -d 'username=ama' \
+  -d "password=ama" \
+  -d 'grant_type=password' \
+  'http://localhost:8480/auth/realms/bookmarks/protocol/openid-connect/token' \
+| jq -r '.access_token'
+```
+
+**Response**
+```shell 
+eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMNHV6eUFYbUlTSDJPRi00c2VZZ2Z3UWtJT204QTR3cnBDV0JHSVdOU2c4In0.eyJqdGkiOiJiZDQzZWM1ZC1kODkyLTRkYzktOWNjYy03MWViOGE2YWI0MWEiLCJleHAiOjE1ODM1MTg2NTYsIm5iZiI6MCwiaWF0IjoxNTgzNTE1MDU2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg0ODAvYXV0aC9yZWFsbXMvYm9va21hcmtzIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjRjNjE3ZjJiLTJiYWQtNDk4Yi1hOWM2LTRlOWE4YzMwMzc5OCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImJvb2ttYXJrcyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6ImY1ZmVkMjIzLTE0ZjQtNDJmZC04YTA5LWE1YWFmNWJmZjMzOCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUk9MRV9VU0VSIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiQWRyaWFuIE1hdGVpIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYW1hIiwiZ2l2ZW5fbmFtZSI6IkFkcmlhbiIsImZhbWlseV9uYW1lIjoiTWF0ZWkiLCJlbWFpbCI6ImFkcmlhbm1hdGVpQGdtYWlsLmNvbSJ9.EJzB7TkOrqY_enYHWgs_6NszI9PtQYfp5yco7OTF4LhcqkKXCoUvE2Jpc6gupX6uMtNPQZtWXSnwVPl8XGR4Z32sSMkxEvDj9B4zPuU2CBe8z9LZFwPjlu5ZMOnl1_hBjNmL8UHWTdCNhYf75PCDneCUM6ugbq5DaMhKkCHo8WD_x8A5I3hSM5pLSow3C82ZdMqkZbyxv28_rul9vsCsppN3CMXQjYDNn1UuVeNl8b5O-KTSumrVjVzw_wjoswva7h0Y3pnQptABDML5Q1mf__FFFHLGN6Y26Ezrjm086oRp-ntxFA9gI41toQ4xgoMyX-6obOhMGwa10RzdNbP4CA
+```
+
+**Curl options**
+
+  * `-d, --data` : (HTTP) Sends the specified data in a POST request to the HTTP server, in the same way that a browser
+   does when a user has filled in an HTML form and presses the submit button. This will cause curl to pass the data to
+   the server using the content-type `application/x-www-form-urlencoded`.
+
+
+### Create bookmark - POST
 
 **Request**
 
 ```shell
-curl -i -X DELETE http://localhost:8888/demo-rest-jersey-spring/podcasts/
+curl -i -X POST "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6-4e9a8c303798/bookmarks" \
+-H "accept: */*" -H "Authorization: Bearer eyJhbGciOiJ...."  \
+-H "Content-Type: application/json" -d "{\"name\":\"How to test a REST api from command line with curl – CodepediaOrg\",\"location\":\"https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/\",\"language\":\"en\",\"tags\":[\"rest\",\"curl\",\"api\",\"testing\"],\"publishedOn\":\"2020-03-05\",\"sourceCodeURL\":\"https://github.com/CodepediaOrg/bookmarks.dev-api\",\"description\":\" In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)\",\"descriptionHtml\":\"<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\\\"https://www.bookmarks.dev\\\">www.bookmarks.dev</a></p>\",\"userId\":\"4c617f2b-2bad-498b-a9c6-4e9a8c303798\",\"public\":true,\"lastAccessedAt\":\"2020-03-06T20:14:28.101Z\",\"likeCount\":0}"
+```
+
+> Note the Bearer token is reduced here (`Bearer eyJhbGciOiJ....`) and in the following examples for brevity
+
+**Response**
+```shell
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, PUT, PATCH, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization, Location
+Access-Control-Expose-Headers: Content-Type, Authorization, Location
+Location: http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6-4e9a8c303798/bookmarks/5e62b18b59770b5487a4c741
+Content-Type: application/json; charset=utf-8
+Content-Length: 79
+ETag: W/"4f-26GcBfsvgN8d+T+zqql3Y5R+Rl8"
+Date: Fri, 06 Mar 2020 20:24:44 GMT
+Connection: keep-alive
+
+{"response":"Bookmark created for userId 4c617f2b-2bad-498b-a9c6-4e9a8c303798"}
+```
+
+> Note the `location` header - it contains the URL of the new created resource
+
+### Read created resource - GET
+
+We will read the previously created bookmark by issuing an GET request on the url from the `location` header
+
+```shell
+curl -s -X GET "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6-4e9a8c303798/bookmarks/5e62b18b59770b5487a4c741" \
+ -H "accept: application/json" \
+ -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOi..." | jq .
 ```
 
 **Response**
 
+```shell
+{
+  "tags": [
+    "rest",
+    "curl",
+    "api",
+    "testing"
+  ],
+  "_id": "5e62b18b59770b5487a4c741",
+  "name": "How to test a REST api from command line with curl – CodepediaOrg",
+  "location": "https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/",
+  "language": "en",
+  "description": " In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)",
+  "descriptionHtml": "<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\"https://www.bookmarks.dev\">www.bookmarks.dev</a></p>",
+  "publishedOn": "2020-03-05T00:00:00.000Z",
+  "sourceCodeURL": "https://github.com/CodepediaOrg/bookmarks.dev-api",
+  "userId": "4c617f2b-2bad-498b-a9c6-4e9a8c303798",
+  "public": true,
+  "likeCount": 0,
+  "youtubeVideoId": null,
+  "stackoverflowQuestionId": null,
+  "createdAt": "2020-03-06T20:24:43.998Z",
+  "updatedAt": "2020-03-06T20:24:43.998Z"
+}
+```
+
+### Update created resource - PUT
+
+**Request**
+```shell
+curl -s -X PUT "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6-4e9a8c303798/bookmarks/5e62b18b59770b5487a4c741" \
+ -H "accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiI..."  \
+ -H "Content-Type: application/json" -d "{\"name\":\"How to test a REST api from command line with curl – CodepediaOrg\",\"location\":\"https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/\",\"tags\":[\"rest\",\"curl\",\"api\",\"testing\"],\"publishedOn\":\"2020-03-05T00:00:00.000Z\",\"sourceCodeURL\":\"https://github.com/CodepediaOrg/bookmarks.dev-api\",\"description\":\"In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)\",\"public\":true,\"readLater\":false,\"language\":\"en\",\"youtubeVideoId\":null,\"stackoverflowQuestionId\":null,\"descriptionHtml\":\"<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\\\"https://www.bookmarks.dev\\\">www.bookmarks.dev</a></p>\",\"updatedAt\":\"2020-03-06T20:42:53.706Z\",\"lastAccessedAt\":\"2020-03-06T20:42:53.706Z\",\"userId\":\"4c617f2b-2bad-498b-a9c6-4e9a8c303798\",\"_id\":\"5e62b18b59770b5487a4c741\"}" | jq .
+```
+
+**Response**
+```shell
+{
+  "tags": [
+    "rest",
+    "curl",
+    "api",
+    "testing"
+  ],
+  "_id": "5e62b18b59770b5487a4c741",
+  "name": "How to test a REST api from command line with curl – CodepediaOrg",
+  "location": "https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/",
+  "language": "en",
+  "description": "In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)",
+  "descriptionHtml": "<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\"https://www.bookmarks.dev\">www.bookmarks.dev</a></p>",
+  "publishedOn": "2020-03-05T00:00:00.000Z",
+  "sourceCodeURL": "https://github.com/CodepediaOrg/bookmarks.dev-api",
+  "userId": "4c617f2b-2bad-498b-a9c6-4e9a8c303798",
+  "public": true,
+  "likeCount": 0,
+  "youtubeVideoId": null,
+  "stackoverflowQuestionId": null,
+  "createdAt": "2020-03-06T20:24:43.998Z",
+  "updatedAt": "2020-03-06T20:43:53.582Z"
+}
+```
+
+### Delete created resource - DELETE
+
+**Request**
+```shell
+curl -i -X DELETE "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6-4e9a8c303798/bookmarks/5e62b18b59770b5487a4c741"
+ -H "accept: */*" -H "Authorization: Bearer eyJhbGciOiJS...."
+```
+
+**Response**
 ```shell
 HTTP/1.1 204 No Content
-Date: Tue, 25 Nov 2014 14:10:17 GMT
-Server: Jetty(9.0.7.v20131107)
-Content-Type: text/html
+X-Powered-By: Express
 Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-Vary: Accept-Encoding
-Via: 1.1 vldn680:8888
-Content-Length: 0
-```
-
-#### <span id="212_POST_new_podcast_without_feed_8211_400_BAD_REQUEST">2.1.2. POST new podcast without feed &#8211; 400 (BAD_REQUEST)</span>
-
-**Request**
-
-```shell
-curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science-new-title2","linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
-```
-
-**Response**
-
-```shell
-HTTP/1.1 400 Bad Request
-Date: Tue, 25 Nov 2014 15:12:11 GMT
-Server: Jetty(9.0.7.v20131107)
-Content-Type: application/json
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-Vary: Accept-Encoding
-Content-Length: 271
-Via: 1.1 vldn680:8888
-Connection: close
-
-{"status":400,"code":400,"message":"Provided data not sufficient for insertion","link":"http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"Please verify that the feed is properly generated/set"}
-```
-
-#### <span id="213_POST_new_podcast_correctly_8211_201_CREATED">2.1.3. POST new podcast correctly &#8211; 201 (CREATED)</span>
-
-**Request**
-
-```shell
-curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
-```
-
-**Response**
-
-```shell
-HTTP/1.1 201 Created
-Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/2
-Content-Type: text/html
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-Vary: Accept-Encoding
-Content-Length: 60
-Server: Jetty(9.0.7.v20131107)
-
-A new podcast has been created AT THE LOCATION you specified
-```
-
-#### <span id="214_POST_same_podcast_as_before_to_receive_8211_409_CONFLICT">2.1.4. POST same podcast as before to receive &#8211; 409 (CONFLICT)</span>
-
-**Request**
-
-```shell
-curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
-```
-
-**Response**
-
-```shell
-HTTP/1.1 409 Conflict
-Date: Tue, 25 Nov 2014 15:58:39 GMT
-Server: Jetty(9.0.7.v20131107)
-Content-Type: application/json
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-Vary: Accept-Encoding
-Content-Length: 300
-
-{"status":409,"code":409,"message":"Podcast with feed already existing in the database with the id 1","link":"http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"Please verify that the feed and title are properly generated"}
-```
-
-#### <span id="215_PUT_new_podcast_at_location_8211_201_CREATED">2.1.5. PUT new podcast at location &#8211; 201 (CREATED)</span>
-
-**Request**
-
-```shell
-curl -i -X PUT -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2,"title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/quarks","feed":"http://podcast.wdr.de/quarks.xml","description":"Quarks & Co: Das Wissenschaftsmagazin"}'
-```
-
-**Response**
-
-```shell
-HTTP/1.1 201 Created
-Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/2
-Content-Type: text/html
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-Vary: Accept-Encoding
-Content-Length: 60
-Server: Jetty(9.0.7.v20131107)
-
-A new podcast has been created AT THE LOCATION you specified
-```
-
-### <span id="22_Read_podcast_resource">2.2. Read podcast resource</span>
-
-#### <span id="221_GET_new_inserted_podcast_8211_200_OK">2.2.1. GET new inserted podcast &#8211; 200 (OK)</span>
-
-**Request**
-
-```shell
-curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/1 | python -m json.tool
-```
-
-**Response**
-
-```shell
-< HTTP/1.1 200 OK
-< Access-Control-Allow-Headers: X-extra-header
-< Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-< Allow: OPTIONS
-< Content-Type: application/json
-< Access-Control-Allow-Origin: *
-< Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-< Vary: Accept-Encoding
-< Content-Length: 192
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-< Server: Jetty(9.0.7.v20131107)
-<
-{ [data not shown]
-* STATE: PERFORM => DONE handle 0x600056180; line 1626 (connection #0)
-100   192  100   192    0     0   2766      0 --:--:-- --:--:-- --:--:--  3254
-* Connection #0 to host localhost left intact
-* Expire cleared
-{
-    "feed": "http://podcast.wdr.de/quarks.xml",
-    "id": 1,
-    "insertionDate": "2014-06-05T22:35:34.00+0200",
-    "linkOnPodcastpedia": "https://github.com/CodepediaOrg/podcastpedia/quarks",
-    "title": "Quarks & Co - zum Mitnehmen"
+Access-Control-Allow-Methods: POST, GET, PUT, PATCH, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization, Location
+Access-Control-Expose-Headers: Content-Type, Authorization, Location
+Date: Fri, 06 Mar 2020 20:53:37 GMT
+Connection: keep-alive
 }
 ```
 
-#### <span id="222_GET_podcasts_sorted_by_insertion_date_DESC_8211_200_OK">2.2.2. GET podcasts sorted by insertion date DESC &#8211; 200 (OK)</span>
+Note the 204 OK Status showing that everything worked as expected.
 
-**Request**
-
-```shell
-curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts?orderByInsertionDate=DESC | python -m json.tool
-```
+Trying to execute the deletion again will result in an 404 resource NOT_FOUND status:
 
 **Response**
-
 ```shell
-< HTTP/1.1 200 OK
-< Content-Type: application/json
-< Access-Control-Allow-Origin: *
-< Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-< Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-< Vary: Accept-Encoding
-< Content-Length: 419
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-< Server: Jetty(9.0.7.v20131107)
-<
-  0   419    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0{ [data not shown]
-* STATE: PERFORM => DONE handle 0x600056180; line 1626 (connection #0)
-100   419  100   419    0     0   6044      0 --:--:-- --:--:-- --:--:--  6983
-* Connection #0 to host localhost left intact
-* Expire cleared
-[
-    {
-        "feed": "http://podcast.wdr.de/quarks.xml",
-        "id": 1,
-        "insertionDate": "2014-06-05T22:35:34.00+0200",
-        "linkOnPodcastpedia": "https://github.com/CodepediaOrg/podcastpedia/quarks",
-        "title": "Quarks & Co - zum Mitnehmen"
-    },
-    {
-        "feed": "http://www.dayintechhistory.com/feed/podcast-2",
-        "id": 2,
-        "insertionDate": "2014-06-05T22:35:34.00+0200",
-        "linkOnPodcastpedia": "https://github.com/CodepediaOrg/podcastpedia/podcasts/766/Day-in-Tech-History",
-        "title": "Day in Tech History"
-    }
-]
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, PUT, PATCH, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization, Location
+Access-Control-Expose-Headers: Content-Type, Authorization, Location
+Content-Type: application/json; charset=utf-8
+Content-Length: 385
+ETag: W/"181-i91X0uxhZ3uP0puyszvupTavBQA"
+Date: Fri, 06 Mar 2020 20:55:27 GMT
+Connection: keep-alive
+
+{"httpStatus":404,"message":"Bookmark NOT_FOUND with id: 5e62b82a9206df5c2f274c3c","stack":"NotFoundError: Bookmark NOT_FOUND with id: 5e62b82a9206df5c2f274c3c\n    at Object.deleteBookmarkById (/Users/ama/projects/dev/personal/bookmarks/bookmarks-api/src/routes/users/bookmarks/personal-bookmarks.service.js:164:11)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
 ```
 
-### <span id="23_Update_podcast_resource">2.3. Update podcast resource</span>
+> The stacktrace is shown because we are in dev modus
 
-#### <span id="231_PUT_not_8220complete8221_podcast_for_FULL_update_8211_400_BAD_REQUEST">2.3.1. PUT not &#8220;complete&#8221; podcast for FULL update &#8211; 400 (BAD_REQUEST)</span>
 
-**Request**
+## Conclusion
 
-```shell
-curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2, "title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/quarks","feed":"http://podcast.wdr.de/quarks.xml"}'
-```
-
-**Response**
-
-```shell
-< HTTP/1.1 400 Bad Request
-< Content-Type: application/json
-< Access-Control-Allow-Origin: *
-< Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-< Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-< Vary: Accept-Encoding
-< Content-Length: 290
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-< Server: Jetty(9.0.7.v20131107)
-<
-* STATE: PERFORM => DONE handle 0x600056180; line 1626 (connection #0)
-* Connection #0 to host localhost left intact
-* Expire cleared
-{"status":400,"code":400,"message":"Please specify all properties for Full UPDATE","link":"http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/","developerMessage":"required properties - id, title, feed, lnkOnPodcastpedia, description"}
-```
-
-#### <span id="232_PUT_podcast_for_FULL_update_8211_200_OK">2.3.2. PUT podcast for FULL update &#8211; 200 (OK)</span>
-
-**Request**
-
-```shell
-$ curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2, "title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/quarks","feed":"http://podcast.wdr.de/quarks.xml", "description":"Quarks & Co: Das Wissenschaftsmagazin"}'
-```
-
-**Response**
-
-```shell
-< HTTP/1.1 200 OK
-< Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/2
-< Content-Type: text/html
-< Access-Control-Allow-Origin: *
-< Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-< Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-< Vary: Accept-Encoding
-< Content-Length: 86
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-< Server: Jetty(9.0.7.v20131107)
-<
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-* Connection #0 to host localhost left intact
-* Expire cleared
-The podcast you specified has been fully updated created AT THE LOCATION you specified
-```
-
-### <span id="233_POST_partial_update_for_not_existent_podcast_8211_404_NOT_FOUND">2.3.3. POST (partial update) for not existent podcast &#8211; 404 (NOT_FOUND)</span>
-
-**Request**
-
-```shell
-$ curl -v -H "Content-Type:application/json" -X POST http://localhost:8888/demo-rest-jersey-spring/podcasts/3 -d '{"title":"Quarks & Co - zum Mitnehmen - GREAT PODCAST"}' | python -m json.tool
-```
-
-**Response**
-
-```shell
-< HTTP/1.1 404 Not Found
-< Content-Type: application/json
-< Access-Control-Allow-Origin: *
-< Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-< Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-< Vary: Accept-Encoding
-< Content-Length: 306
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-< Server: Jetty(9.0.7.v20131107)
-<
-{ [data not shown]
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-100   361  100   306  100    55   9069   1630 --:--:-- --:--:-- --:--:-- 13304
-* Connection #0 to host localhost left intact
-* Expire cleared
-{
-    "code": 404,
-    "developerMessage": "Please verify existence of data in the database for the id - 3",
-    "link": "http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
-    "message": "The resource you are trying to update does not exist in the database",
-    "status": 404
-}
-```
-
-#### <span id="234POST_partial_update_podcast_8211_200_OK">2.3.4. POST (partial update) podcast &#8211; 200 (OK)</span>
-
-**Request**
-
-```shell
-$ curl -v -H "Content-Type:application/json" -X POST http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"title":"Quarks & Co - zum Mitnehmen - GREAT PODCAST"}'
-```
-
-**Response**
-
-```shell
-< HTTP/1.1 200 OK
-< Content-Type: text/html
-< Access-Control-Allow-Origin: *
-< Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-< Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-< Vary: Accept-Encoding
-< Content-Length: 55
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-< Server: Jetty(9.0.7.v20131107)
-<
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-* Connection #0 to host localhost left intact
-* Expire cleared
-The podcast you specified has been successfully updated
-```
-
-### <span id="24_DELETE_resource">2.4. DELETE resource</span>
-
-#### <span id="241_DELETE_second_inserted_podcast_8211_204_NO_CONTENT">2.4.1. DELETE second inserted podcast &#8211; 204 (NO_CONTENT)</span>
-
-**Request**
-
-```shell
-$ curl -v -X DELETE http://localhost:8888/demo-rest-jersey-spring/podcasts/2
-```
-
-**Response**
-
-```shell
-< HTTP/1.1 204 No Content
-< Content-Type: text/html
-< Access-Control-Allow-Origin: *
-< Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-< Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-< Vary: Accept-Encoding
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-< Server: Jetty(9.0.7.v20131107)
-<
-* Excess found in a non pipelined read: excess = 42 url = /demo-rest-jersey-spring/podcasts/2 (zero-length body)
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-* Connection #0 to host localhost left intact
-* Expire cleared
-```
-
-#### <span id="242_GET_deleted_podcast_8211_404_NOT_FOUND">2.4.2. GET deleted podcast &#8211; 404 (NOT_FOUND)</span>
-
-**Request**
-
-```shell
-curl -v http://localhost:8888/demo-rest-jersey-spring/podcasts/2 | python -m json.tool
-```
-
-**Response**
-
-```shell
-< HTTP/1.1 404 Not Found
-< Content-Type: application/json
-< Access-Control-Allow-Origin: *
-< Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-< Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-< Vary: Accept-Encoding
-< Content-Length: 306
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-< Server: Jetty(9.0.7.v20131107)
-<
-{ [data not shown]
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-100   306  100   306    0     0   8916      0 --:--:-- --:--:-- --:--:-- 13304
-* Connection #0 to host localhost left intact
-* Expire cleared
-{
-    "code": 404,
-    "developerMessage": "Verify the existence of the podcast with the id 2 in the database",
-    "link": "http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
-    "message": "The podcast you requested with id 2 was not found in the database",
-    "status": 404
-}
-```
-
-### <span id="25_Bonus_operations">2.5. Bonus operations</span>
-
-#### <span id="251_Add_podcast_from_application_form_urlencoded">2.5.1. Add podcast from application form urlencoded</span>
-
-**Request**
-
-```shell
-curl -v --data-urlencode "title=Day in Tech History" --data-urlencode "linkOnPodcastpedia=https://github.com/CodepediaOrg/podcastpedia/podcasts/766/Day-in-Tech-History" --data-urlencode "feed=http://www.dayintechhistory.com/feed/podcast"
-```
-
-**Response**
-
-```shell
-< HTTP/1.1 201 Created
-< Location: http://localhost:8888/demo-rest-jersey-spring/podcasts/null
-< Content-Type: text/html
-< Access-Control-Allow-Origin: *
-< Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-< Access-Control-Allow-Headers: X-Requested-With, Content-Type, X-Codingpedia
-< Vary: Accept-Encoding
-< Content-Length: 81
-* Server Jetty(9.0.7.v20131107) is not blacklisted
-< Server: Jetty(9.0.7.v20131107)
-<
-* STATE: PERFORM =&gt; DONE handle 0x600056180; line 1626 (connection #0)
-* Connection #0 to host localhost left intact
-* Expire cleared
-A new podcast/resource has been created at /demo-rest-jersey-spring/podcasts/null
-```
-
-<p class="note_normal">
-  <strong>Note:</strong><br /> I am still at the beginning of using curl, so please if you have any suggestions leave a comment. Thank you.
-</p>
-
-## <span id="Resources">Resources</span>
-
-  * <a title="http://curl.haxx.se/" href="http://curl.haxx.se/" target="_blank">Curl</a>
-  * <a title="https://www.cygwin.com/" href="https://www.cygwin.com/" target="_blank">C</a><a title="https://www.cygwin.com/" href="https://www.cygwin.com/" target="_blank">ygwin</a>
-  * [How to Set Up a Python Development Environment on Windows](http://www.davidbaumgold.com/tutorials/set-up-python-windows/ "http://www.davidbaumgold.com/tutorials/set-up-python-windows/")
-  * <a title="http://www.python.org" href="http://www.python.org" target="_blank">Python.org</a>
-
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>
+I am just scratching the surface in this blog post. Check out the [curl docs](https://curl.haxx.se/docs/) for further
+capabilities.

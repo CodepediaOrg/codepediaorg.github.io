@@ -9,12 +9,13 @@ categories: [api, documentation]
 tags: [openapi, expressjs, swagger, swagger-editor, swagger-ui, rest, api, documentation, nodejs]
 ---
 
+
 Recently I've taken the time to update the API documentation for [bookmarks.dev-api](https://github.com/CodepediaOrg/bookmarks.dev-api).
-Since it used the Swagger 2.0 (aka OAS 2), I decided to update to OpenAPI Specification (OAS) 3. In this post I will 
+I used the Swagger 2.0 (aka OAS 2) before and I decided to update to OpenAPI Specification (OAS) 3. In this post I will 
 highlight the main points about the process and documenting the API with OAS 3. Some points might still apply to the former OAS 2 (fka Swagger) 
 documentation, but they are worth mentioning since I hadn't payed enough attention before and I find them useful.
 
-> You can find the OAS 3 specification [on Github](https://github.com/CodepediaOrg/bookmarks.dev-api/blob/master/docs/openapi/openapi.yaml)
+> You can find the OAS 3 specification  for **bookmarks.dev-api** [on Github](https://github.com/CodepediaOrg/bookmarks.dev-api/blob/master/docs/openapi/openapi.yaml)
 and the result is available at [bookmarks.dev/api/docs/](https://www.bookmarks.dev/api/docs/)
 
 Here are the key takeaways.
@@ -67,10 +68,9 @@ Another point worth mentioning here is that you could use [swagger-jsdoc](https:
    which can then be fed into other Swagger tools, and not the vice-versa.
 
 > For now I manage documentation centrally in one [openapi.yaml](https://github.com/CodepediaOrg/bookmarks.dev-api/blob/master/docs/openapi/openapi.yaml) file,
- but I might channging consider it at a later time
+ but I might consider it at a later time
 
 ## 5. Use [tags](https://swagger.io/docs/specification/grouping-operations-with-tags/) to group the operations
-
 You can assign a list of tags to each API operation. Thus **Swagger UI** and **Swagger Editor** will display the operations by 
 tags which comes very handy. To control the sorting in Swagger UI you need to add them also at the root level as global
 tags. There you can also add a description  and link to external documentation for them.

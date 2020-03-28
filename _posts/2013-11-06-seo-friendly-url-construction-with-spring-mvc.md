@@ -317,6 +317,7 @@ So if you add the values of the `@RequestMapping` at the class level (line 16) &
 
   1. <a title="URL structure" href="https://support.google.com/webmasters/answer/76329" target="_blank">Google Webmaster Tools &#8211; URL Structure</a>
   2. [Search-engine-optimization-starter-guide](https://static.googleusercontent.com/external_content/untrusted_dlcp/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf "https://static.googleusercontent.com/external_content/untrusted_dlcp/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf")
+  3. [SEO Serp Universitoy](https://serp.co/university/seo)
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

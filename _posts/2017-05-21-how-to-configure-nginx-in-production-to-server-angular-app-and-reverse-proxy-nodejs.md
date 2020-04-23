@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to configure Nginx in production to serve an Angular app and reverse proxy NodeJS
-description: "Install Nginx on Ubuntu Server, understand configuration files, configure SSL, serve static files, 
+description: "Install Nginx on Ubuntu Server, understand configuration files, configure SSL, serve static files,
  reverse proxy Keycloak and NodeJS servers"
 author: ama
 permalink: /ama/how-to-configure-nginx-in-production-to-serve-angular-app-and-reverse-proxy-nodejs
@@ -309,7 +309,7 @@ $ sudo ln -s /etc/nginx/sites-available/www.codingmarks.org /etc/nginx/sites-ena
 
 To both avoid the "conflicting server name error" and ensure that going to your site displays the correct information,
  we disable the "default" server block by removing the symbolic link to it:
- 
+
 ```
 $ sudo rm /etc/nginx/sites-enabled/default
 ```
@@ -383,7 +383,7 @@ to obtain and manage the SSL/TLS Certificates.
 ### Install Certbot
 On [Ubuntu](https://certbot.eff.org/all-instructions/#ubuntu-16-04-xenial-nginx) systems, the Certbot team maintains a PPA.
  Once you add it to your list of repositories all you'll need to do is `apt-get` the following packages:
- 
+
 ```
 $ sudo apt-get install software-properties-common
 $ sudo add-apt-repository ppa:certbot/certbot
@@ -415,7 +415,7 @@ $ sudo certbot certonly --webroot --webroot-path=/var/www/html -d codingmarks.or
 
 If this is the first time running `certbot`, we will be prompted to enter an email address and agree to the terms of service.
  After doing so, we should see a message telling  the process was successful and where your certificates are stored:
- 
+
 ```
 Output
 IMPORTANT NOTES:
@@ -477,7 +477,7 @@ In a moment, we will configure our web server to use _fullchain.pem_ as the cert
 #### Generate Strong Diffie-Hellman Group**
 To further increase security, we should also generate a strong [Diffie-Hellman group](https://www.watchguard.com/help/docs/wsm/xtm_11/en-us/content/en-us/bovpn/manual/diffie_hellman_c.html).
  To generate a 2048-bit group, use this command:
- 
+
 ```
 $ sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
 ```
@@ -697,7 +697,7 @@ server {
           proxy_set_header X-Real-IP          $remote_addr;
           proxy_set_header X-Forwarded-For    $proxy_add_x_forwarded_for;
           proxy_set_header X-Forwarded-Proto  $scheme;
-  }  
+  }
   ...
 }
 ```
@@ -734,7 +734,7 @@ server {
           proxy_set_header X-Real-IP          $remote_addr;
           proxy_set_header X-Forwarded-For    $proxy_add_x_forwarded_for;
           proxy_set_header X-Forwarded-Proto  $scheme;
-  }  
+  }
   ...
 }
 ```
@@ -745,7 +745,7 @@ server {
 ## Configure Nginx aliases
 Throughout this guide, you've seen lots of Nginx commands one needs to use. To make our life easier
  I defined a bunch of aliases. Here is the snippet from _~/.bash_aliases_ with the NGINX aliases:
- 
+
 ```
 # Nginx
 alias nginx-start="sudo systemctl start nginx"
@@ -781,7 +781,7 @@ I am a developer by heart and by job, with some sysadmin experience, so if you n
 please leave a comment in the comments section... Very much appreciated.
 
 <p class="note_normal">
-    This blog post is a clone of the wiki page <a href="https://github.com/CodepediaOrg/bookmarks.dev-api/wiki/Setup-Nginx-in-production" target="_blank">Setup Nginx in production</a>
+    This blog post is a clone of the wiki page <a href="https://github.com/CodepediaOrg/bookmarks.dev/wiki/Nginx-Setup--in-Production" target="_blank">Setup Nginx in production</a>
 </p>
 
 # References

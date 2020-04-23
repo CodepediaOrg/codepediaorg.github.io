@@ -10,11 +10,11 @@ categories: [clean-code]
 tags: [expressjs, nodejs, rest, api]
 ---
 
-What started out as a simple code duplication removal, turned out into [a major refactoring](https://github.com/CodepediaOrg/bookmarks.dev-api/commit/fc2ba3339909d15f43450ba8ffbf472bacaef429)
+What started out as a simple code duplication removal, turned out into [a major refactoring](https://github.com/CodepediaOrg/bookmarks.dev/commit/fc2ba3339909d15f43450ba8ffbf472bacaef429)
  with complete rewriting of error handling, moving of business logic/db access into separate service files (about this in another blog post)
   and rewriting of all integration tests to use async/await. In this blog post I will focus on the custom error handling and how
-  it made the code much cleaner for the [REST API](https://github.com/CodepediaOrg/bookmarks.dev-api) supporting [www.bookmarks.dev](https://www.bookmarks.dev).
-  The API uses [ExpressJS](https://expressjs.com), currently in version 4. 
+  it made the code much cleaner for the [REST API](https://github.com/CodepediaOrg/bookmarks.dev/backend) supporting [www.bookmarks.dev](https://www.bookmarks.dev).
+  The API uses [ExpressJS](https://expressjs.com), currently in version 4.
 
 <!--more-->
 
@@ -23,7 +23,7 @@ What started out as a simple code duplication removal, turned out into [a major 
 
 ## Refactoring
 To make my point I will show you an example of **before** and **after** code. In the **after** part where I drill down into the details
-taking a top down approach.   
+taking a top down approach.
 
 ### Before
 
@@ -131,7 +131,7 @@ There are several issues with this code. To name a few:
 * for one it is way too long for a single method
 * the userId validation in the beginning is a pattern used in all methods protected
 with Keycloak (btw. this was the trigger of the refactoring)
-* if one validation exception occurs the code breaks and sends the response to the caller, potentially missing validation 
+* if one validation exception occurs the code breaks and sends the response to the caller, potentially missing validation
 exceptions
 * try/catch block around the database access, which is diligently used in the whole code base; I mean it's good that is there, but
 maybe you can get rid of it
@@ -144,7 +144,7 @@ Now let's see the refactoring result.
 personalBookmarksRouter.post('/', keycloak.protect(), async (request, response) => {
 
   UserIdValidator.validateUserId(request);
-  
+
   const bookmark = bookmarkHelper.buildBookmarkFromRequest(request);
   let newBookmark = await PersonalBookmarksService.createBookmark(request.params.userId, bookmark);
 
@@ -156,12 +156,12 @@ personalBookmarksRouter.post('/', keycloak.protect(), async (request, response) 
 });
 ```
 
-Notice that the method is much shorter. 
+Notice that the method is much shorter.
 
 #### Remove try/catch around code
 
 The try/catch block has been eliminated, but there is a hack. When an error
-is thrown it does not go to the error middleware, because express does not support promises currently and you will get 
+is thrown it does not go to the error middleware, because express does not support promises currently and you will get
 an `UnhandledPromiseRejectionWarning`. The initial solution was to wrap the async function with a wrapper that would
 have a `catch` call, which would forward the error to the next middleware:
 
@@ -199,8 +199,8 @@ need to require **before** start using it:
 ```javascript
 const express = require('express');
 require('express-async-errors');
-``` 
-Then you are good to go - no wrapper needed. 
+```
+Then you are good to go - no wrapper needed.
 
 #### UserId validation
 
@@ -243,9 +243,9 @@ app.use(function handleUserIdValidationError(error, req, res, next) {
 arguments instead of three: `(err, req, res, next)`.
 
 
-#### Service method 
+#### Service method
 
-The service method `PersonalBookmarksService.createBookmark`, takes now the task of input validation and 
+The service method `PersonalBookmarksService.createBookmark`, takes now the task of input validation and
 saving the data to the database:
 ```javascript
 let createBookmark = async function (userId, bookmark) {
@@ -267,10 +267,10 @@ Let's focus now on the input validation handling - `BookmarkInputValidator.valid
 ```javascript
 function validateBookmarkInput(userId, bookmark) {
   let validationErrorMessages = [];
-  
+
   if (bookmark.userId !== userId) {
     validationErrorMessages.push("The userId of the bookmark does not match the userId parameter");
-  }  
+  }
 
   if (!bookmark.userId) {
     validationErrorMessages.push('Missing required attribute - userId');
@@ -435,7 +435,7 @@ app.use(function (error, req, res, next) {
 });
 ```
 
-> Instead of having one `app.use(function (error, req, res, next)` middleware with nested if/else statements verifying 
+> Instead of having one `app.use(function (error, req, res, next)` middleware with nested if/else statements verifying
 the error type, I preferred to check for one exception type or else forward it to the next middleware. I think this improved
 the readability, and it's a pattern I used in some of the routers too
 
@@ -449,7 +449,7 @@ has grown by 9 (from 32 to 41). To measure this I used [cloc](https://github.com
 ```
 $ cloc $(git ls-files)
       69 text files.
-      69 unique files.                              
+      69 unique files.
       18 files ignored.
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
@@ -469,7 +469,7 @@ SUM:                            46            635            179          11997
 ```shell
 $ cloc $(git ls-files)
       68 text files.
-      68 unique files.                              
+      68 unique files.
       18 files ignored.
 
 github.com/AlDanial/cloc v 1.84  T=0.36 s (159.2 files/s, 37246.4 lines/s)
@@ -489,13 +489,13 @@ SUM:                            57            859            240          12235
 
 
 ## Conclusion
-It's not much left to say, I think that Express offers a decent way to handle exceptions. I hope you've learned something from this post 
-and if you have any improvement please leave a comment, or better make a pull request at [bookmarks.dev-api github repo](https://github.com/CodepediaOrg/bookmarks.dev-api).
+It's not much left to say, I think that Express offers a decent way to handle exceptions. I hope you've learned something from this post
+and if you have any improvement please leave a comment, or better make a pull request at [bookmarks.dev github repo](https://github.com/CodepediaOrg/bookmarks.dev).
 
 <p class="note_normal">
 During refactoring I researched quite a few links, and I bookmarked the best of them at <a href="https://www.bookmarks.dev" target="_blank">www.bookmarks.dev</a>
- with the following tags <a href="https://www.bookmarks.dev/?tab=search-results&q=%5Bexpressjs%5D%20%5Berror-handling%5D%20%5Basync-await%5D&sd=public" target="_blank">[expressjs] [error-handling] [async-await]</a> 
- <br/>  
+ with the following tags <a href="https://www.bookmarks.dev/?tab=search-results&q=%5Bexpressjs%5D%20%5Berror-handling%5D%20%5Basync-await%5D&sd=public" target="_blank">[expressjs] [error-handling] [async-await]</a>
+ <br/>
 
 They will be present shortly at the generated public bookmarks - <a href="https://github.com/CodepediaOrg/bookmarks">https://github.com/CodepediaOrg/bookmarks</a>
 </p>

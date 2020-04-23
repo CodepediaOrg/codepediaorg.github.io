@@ -11,11 +11,11 @@ tags: [dev-bookmarks]
 New [#DevBookmarks](https://www.bookmarks.dev) added in january 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## angular 
+## angular
 
 **[ Angular Observable Data Services](https://coryrylan.com/blog/angular-observable-data-services)**
 
@@ -85,7 +85,7 @@ One of the most popular Angular questions on stackoverflow is Difference between
 <hr>
 
 
-## api 
+## api
 
 **[MockAPI docs](https://www.mockapi.io/docs)**
 
@@ -96,7 +96,7 @@ MockAPI is a simple tool that lets you easily mock up APIs, generate custom data
 <hr>
 
 
-## architecture 
+## architecture
 
 **[Feature Toggles (aka Feature Flags)](https://martinfowler.com/articles/feature-toggles.html)**
 
@@ -108,20 +108,20 @@ Feature Toggles (often also refered to as Feature Flags) are a powerful techniqu
 <hr>
 
 
-## async-await 
+## async-await
 
 **[Cleaner code in NodeJs with async-await - Mongoose calls example – CodingpediaOrg](http://www.codepedia.org/ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-11-05
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [async-await](https://www.bookmarks.dev/search?q=[async-await]), &nbsp; [mongoose](https://www.bookmarks.dev/search?q=[mongoose]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb])
-  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks.dev-api)
+  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks.dev)
 
 Example showing migration of Mongoose calls from previously using callbacks to using the new async-await feature in NodeJs
 
 <hr>
 
 
-## asynchronous 
+## asynchronous
 
 **[java.util.concurrent - Java Concurrency Utilities](http://tutorials.jenkov.com/java-util-concurrent/index.html)**
 
@@ -129,7 +129,7 @@ Example showing migration of Mongoose calls from previously using callbacks to u
 
 In this tutorial I will take you through the new java.util.concurrent classes, one by one, so you can learn how to use them. I will use the versions in Java 6. I am not sure if there are any differences to the Java 5 versions.
 
-Includes theory about 
+Includes theory about
 * Java Executor Service
 * Java Callable
 * Java Future
@@ -148,7 +148,7 @@ One of new features introduced by JAX-RS 2.0 is asynchronous processing in Serve
 <hr>
 
 
-## awesome 
+## awesome
 
 **[GitHub - anaibol/awesome-serverless](https://github.com/anaibol/awesome-serverless)**
 
@@ -160,7 +160,7 @@ One of new features introduced by JAX-RS 2.0 is asynchronous processing in Serve
 <hr>
 
 
-## awesome-list 
+## awesome-list
 
 **[GitHub - anaibol/awesome-serverless](https://github.com/anaibol/awesome-serverless)**
 
@@ -172,7 +172,7 @@ One of new features introduced by JAX-RS 2.0 is asynchronous processing in Serve
 <hr>
 
 
-## aws 
+## aws
 
 **[Claudia.js Home Page](https://claudiajs.com/)**
 
@@ -184,7 +184,7 @@ Deploy Node.js projects to AWS Lambda and API Gateway easily.
 <hr>
 
 
-## bdd 
+## bdd
 
 **[Should.js API Documentation](http://shouldjs.github.io/)**
 
@@ -196,7 +196,7 @@ _should_ is an expressive, readable, framework-agnostic assertion library. The m
 <hr>
 
 
-## blog 
+## blog
 
 **[Ted Vinke's Blog – Java, Groovy and Grails](https://tedvinke.wordpress.com/)**
 
@@ -207,7 +207,7 @@ Java, Groovy and Grails
 <hr>
 
 
-## caching 
+## caching
 
 **[Advanced caching with RxJS by thoughtram](https://blog.thoughtram.io/angular/2018/03/05/advanced-caching-with-rxjs.html)**
 
@@ -220,7 +220,7 @@ When building web applications, performance should always be a top priority. One
 <hr>
 
 
-## cdi 
+## cdi
 
 **[Injection with CDI (Part I)](https://antoniogoncalves.org/2011/05/03/injection-with-cdi-part-i/)**
 
@@ -236,7 +236,7 @@ There are three parts:
 <hr>
 
 
-## chai 
+## chai
 
 **[Express Integration Testing with SuperTest · InVision Engineering Blog](https://engineering.invisionapp.com/post/express-integration-testing-supertest/)**
 
@@ -249,7 +249,7 @@ Put down that REST Client (or, gasp, the browser!) you’re using to test that A
 <hr>
 
 
-## clean-code 
+## clean-code
 
 **[Why I Changed My Mind About Field Injection?](https://www.petrikainulainen.net/software-development/design/why-i-changed-my-mind-about-field-injection/)**
 
@@ -263,7 +263,7 @@ Let’s find out what happened.
 <hr>
 
 
-## cloud 
+## cloud
 
 **[GitHub - anaibol/awesome-serverless](https://github.com/anaibol/awesome-serverless)**
 
@@ -275,7 +275,7 @@ Let’s find out what happened.
 <hr>
 
 
-## concurrency 
+## concurrency
 
 **[java.util.concurrent - Java Concurrency Utilities](http://tutorials.jenkov.com/java-util-concurrent/index.html)**
 
@@ -283,7 +283,7 @@ Let’s find out what happened.
 
 In this tutorial I will take you through the new java.util.concurrent classes, one by one, so you can learn how to use them. I will use the versions in Java 6. I am not sure if there are any differences to the Java 5 versions.
 
-Includes theory about 
+Includes theory about
 * Java Executor Service
 * Java Callable
 * Java Future
@@ -293,7 +293,7 @@ and much more
 <hr>
 
 
-## csv 
+## csv
 
 **[GitHub - Keyang/node-csvtojson](https://github.com/Keyang/node-csvtojson)**
 
@@ -305,7 +305,7 @@ Blazing fast and Comprehensive CSV Parser for Node.JS / Browser / Command Line. 
 <hr>
 
 
-## date 
+## date
 
 **[Moment.js Home Page](http://momentjs.com/)**
 
@@ -319,7 +319,7 @@ A lightweight JavaScript date library for parsing, validating, manipulating, and
 <hr>
 
 
-## date-manipulation 
+## date-manipulation
 
 **[Moment.js Home Page](http://momentjs.com/)**
 
@@ -333,7 +333,7 @@ A lightweight JavaScript date library for parsing, validating, manipulating, and
 <hr>
 
 
-## datetime 
+## datetime
 
 **[Moment.js Home Page](http://momentjs.com/)**
 
@@ -347,7 +347,7 @@ A lightweight JavaScript date library for parsing, validating, manipulating, and
 <hr>
 
 
-## dependency-injection 
+## dependency-injection
 
 **[ CDI Reference Implementation](http://docs.jboss.org/weld/reference/latest/en-US/html_single/)**
 
@@ -364,7 +364,7 @@ CDI: Contexts and Dependency Injection for the Java EE platform
 
 I’m quite frequently getting pulled into discussions on Twitter about the different flavors of Dependency Injection. Also, I’ve repeatedly expressed my distaste for field injection but as Twitter is not the right communication channel to give an in-depth rational about my opinion. So here we go.
 
-The comments section is also interesting. 
+The comments section is also interesting.
 
 <hr>
 
@@ -390,7 +390,7 @@ A couple of weeks ago a coworker told me that they have a little utility in thei
 
 Spring (and other DI frameworks) can inject dependencies into private fields. It looks like people like to use this because it combines some compelling properties:
 
-* Very little boilerplate code. 
+* Very little boilerplate code.
 * All you need is a simple annotation on the fi
 
 <hr>
@@ -406,7 +406,7 @@ There seems to be two camps in dependency-injection: (1) The constructor-injecti
 <hr>
 
 
-## design-patterns 
+## design-patterns
 
 **[The One Correct Way to do Dependency Injection](http://blog.schauderhaft.de/2012/01/01/the-one-correct-way-to-do-dependency-injection/)**
 
@@ -417,7 +417,7 @@ A couple of weeks ago a coworker told me that they have a little utility in thei
 
 Spring (and other DI frameworks) can inject dependencies into private fields. It looks like people like to use this because it combines some compelling properties:
 
-* Very little boilerplate code. 
+* Very little boilerplate code.
 * All you need is a simple annotation on the fi
 
 <hr>
@@ -434,7 +434,7 @@ Let’s find out what happened.
 <hr>
 
 
-## devops 
+## devops
 
 **[dotenv homepage](https://github.com/motdotla/dotenv)**
 
@@ -446,7 +446,7 @@ Loads environment variables from .env for nodejs projects.
 <hr>
 
 
-## docker 
+## docker
 
 **[Building Microservices with Node, Docker and Nginx pt 1 - What is a Microservice?](https://www.youtube.com/watch?v=EsCfPxjmnjo)**
 
@@ -454,7 +454,7 @@ Loads environment variables from .env for nodejs projects.
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docker-compose](https://www.bookmarks.dev/search?q=[docker-compose]), &nbsp; [nginx](https://www.bookmarks.dev/search?q=[nginx])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/fChristenson/microservices-example)
 
-`Building` Microservices with Node, Docker and Nginx  
+`Building` Microservices with Node, Docker and Nginx
 * Part 1 What is a Microservice?" I walk you through what a Microservice is and what this 3 part tutorial will show you.
 * Part 2 [Making a microservice](https://www.youtube.com/watch?v=aWxR05rUoto) - shows you how to make a Microservices and some of the thoughts I have about them.
 * Part 3 [Connecting the microservices](https://www.youtube.com/watch?v=QjhJs31h_4k) - shows you how to use Docker compose and Nginx to connect your fleet of Microservices
@@ -465,7 +465,7 @@ Loads environment variables from .env for nodejs projects.
 <hr>
 
 
-## docker-compose 
+## docker-compose
 
 **[Building Microservices with Node, Docker and Nginx pt 1 - What is a Microservice?](https://www.youtube.com/watch?v=EsCfPxjmnjo)**
 
@@ -473,7 +473,7 @@ Loads environment variables from .env for nodejs projects.
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docker-compose](https://www.bookmarks.dev/search?q=[docker-compose]), &nbsp; [nginx](https://www.bookmarks.dev/search?q=[nginx])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/fChristenson/microservices-example)
 
-`Building` Microservices with Node, Docker and Nginx  
+`Building` Microservices with Node, Docker and Nginx
 * Part 1 What is a Microservice?" I walk you through what a Microservice is and what this 3 part tutorial will show you.
 * Part 2 [Making a microservice](https://www.youtube.com/watch?v=aWxR05rUoto) - shows you how to make a Microservices and some of the thoughts I have about them.
 * Part 3 [Connecting the microservices](https://www.youtube.com/watch?v=QjhJs31h_4k) - shows you how to use Docker compose and Nginx to connect your fleet of Microservices
@@ -484,7 +484,7 @@ Loads environment variables from .env for nodejs projects.
 <hr>
 
 
-## docs 
+## docs
 
 **[ CDI Reference Implementation](http://docs.jboss.org/weld/reference/latest/en-US/html_single/)**
 
@@ -509,7 +509,7 @@ CDI: Contexts and Dependency Injection for the Java EE platform
 <hr>
 
 
-## expressjs 
+## expressjs
 
 **[Express Integration Testing with SuperTest · InVision Engineering Blog](https://engineering.invisionapp.com/post/express-integration-testing-supertest/)**
 
@@ -526,12 +526,12 @@ Put down that REST Client (or, gasp, the browser!) you’re using to test that A
   * **tags**: &nbsp; [expressjs](https://www.bookmarks.dev/search?q=[expressjs]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/express-validator/express-validator)
 
-An express.js middleware for validator.js. 
+An express.js middleware for validator.js.
 
 <hr>
 
 
-## flexbox 
+## flexbox
 
 **[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)**
 
@@ -542,7 +542,7 @@ Our comprehensive guide to CSS flexbox layout. This complete guide explains ever
 <hr>
 
 
-## free-programming-books 
+## free-programming-books
 
 **[Coding bookmarks, aka #DevBookmarks](https://www.bookmarks.dev)**
 
@@ -554,7 +554,7 @@ Efficiently manage and retrieve your coding bookmarks. Contribute by sharing and
 <hr>
 
 
-## generics 
+## generics
 
 **[The Basics of Java Generics](https://www.baeldung.com/java-generics)**
 
@@ -566,7 +566,7 @@ A quick intro tot he basics of Java Generics.
 <hr>
 
 
-## html 
+## html
 
 **[Using CORS - HTML5 Rocks](https://www.html5rocks.com/en/tutorials/cors/)**
 
@@ -577,7 +577,7 @@ An introduction to Cross Origin Resource Sharing (CORS), which gives scripts the
 <hr>
 
 
-## integration-testing 
+## integration-testing
 
 **[Express Integration Testing with SuperTest · InVision Engineering Blog](https://engineering.invisionapp.com/post/express-integration-testing-supertest/)**
 
@@ -590,7 +590,7 @@ Put down that REST Client (or, gasp, the browser!) you’re using to test that A
 <hr>
 
 
-## jackson 
+## jackson
 
 **[How To Serialize Enums as JSON Objects with Jackson](https://www.baeldung.com/jackson-serialize-enums)**
 
@@ -603,7 +603,7 @@ How to serialize an Enum as a JSON Object using Jackson 2.
 <hr>
 
 
-## java 
+## java
 
 **[ORM Is an Offensive Anti-Pattern ](https://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html)**
 
@@ -628,7 +628,7 @@ Java, Groovy and Grails
 
 In this tutorial I will take you through the new java.util.concurrent classes, one by one, so you can learn how to use them. I will use the versions in Java 6. I am not sure if there are any differences to the Java 5 versions.
 
-Includes theory about 
+Includes theory about
 * Java Executor Service
 * Java Callable
 * Java Future
@@ -687,7 +687,7 @@ One of new features introduced by JAX-RS 2.0 is asynchronous processing in Serve
 <hr>
 
 
-## javaee 
+## javaee
 
 **[Thorntail Home Page](http://thorntail.io/)**
 
@@ -722,7 +722,7 @@ People like the way how Mockito is able to mock Spring's auto-wired fields with 
 
 I’m quite frequently getting pulled into discussions on Twitter about the different flavors of Dependency Injection. Also, I’ve repeatedly expressed my distaste for field injection but as Twitter is not the right communication channel to give an in-depth rational about my opinion. So here we go.
 
-The comments section is also interesting. 
+The comments section is also interesting.
 
 <hr>
 
@@ -749,7 +749,7 @@ One of new features introduced by JAX-RS 2.0 is asynchronous processing in Serve
 <hr>
 
 
-## javascript 
+## javascript
 
 **[Moment.js Home Page](http://momentjs.com/)**
 
@@ -767,7 +767,7 @@ A lightweight JavaScript date library for parsing, validating, manipulating, and
   * **tags**: &nbsp; [expressjs](https://www.bookmarks.dev/search?q=[expressjs]), &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/express-validator/express-validator)
 
-An express.js middleware for validator.js. 
+An express.js middleware for validator.js.
 
 <hr>
 
@@ -776,7 +776,7 @@ An express.js middleware for validator.js.
   * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/chriso/validator.js)
 
-String validation. 
+String validation.
 
 <hr>
 
@@ -803,12 +803,12 @@ CodeMirror is a versatile text editor implemented in JavaScript for the browser.
   * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [markdown](https://www.bookmarks.dev/search?q=[markdown])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/markedjs/marked)
 
-A markdown parser and compiler. Built for speed. 
+A markdown parser and compiler. Built for speed.
 
 <hr>
 
 
-## jersey 
+## jersey
 
 **[How To Use Jersey Client Efficiently](https://blogs.oracle.com/japod/how-to-use-jersey-client-efficiently)**
 
@@ -826,7 +826,7 @@ In this blog post, i would like to introduce some tips to avoid unnecessary memo
 <hr>
 
 
-## json 
+## json
 
 **[GitHub - Keyang/node-csvtojson](https://github.com/Keyang/node-csvtojson)**
 
@@ -848,7 +848,7 @@ How to serialize an Enum as a JSON Object using Jackson 2.
 <hr>
 
 
-## linux 
+## linux
 
 **[5 Commands for Checking Memory Usage in Linux](https://www.linux.com/learn/5-commands-checking-memory-usage-linux)**
 
@@ -860,19 +860,19 @@ How to serialize an Enum as a JSON Object using Jackson 2.
 <hr>
 
 
-## markdown 
+## markdown
 
 **[Marked.js Homepage](https://marked.js.org/)**
 
   * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript]), &nbsp; [markdown](https://www.bookmarks.dev/search?q=[markdown])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/markedjs/marked)
 
-A markdown parser and compiler. Built for speed. 
+A markdown parser and compiler. Built for speed.
 
 <hr>
 
 
-## memory-management 
+## memory-management
 
 **[5 Commands for Checking Memory Usage in Linux](https://www.linux.com/learn/5-commands-checking-memory-usage-linux)**
 
@@ -884,7 +884,7 @@ A markdown parser and compiler. Built for speed.
 <hr>
 
 
-## microservices 
+## microservices
 
 **[Thorntail Home Page](http://thorntail.io/)**
 
@@ -910,7 +910,7 @@ Ben Sigelman talks about what Google got wrong about microservices, the lessons 
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docker-compose](https://www.bookmarks.dev/search?q=[docker-compose]), &nbsp; [nginx](https://www.bookmarks.dev/search?q=[nginx])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/fChristenson/microservices-example)
 
-`Building` Microservices with Node, Docker and Nginx  
+`Building` Microservices with Node, Docker and Nginx
 * Part 1 What is a Microservice?" I walk you through what a Microservice is and what this 3 part tutorial will show you.
 * Part 2 [Making a microservice](https://www.youtube.com/watch?v=aWxR05rUoto) - shows you how to make a Microservices and some of the thoughts I have about them.
 * Part 3 [Connecting the microservices](https://www.youtube.com/watch?v=QjhJs31h_4k) - shows you how to use Docker compose and Nginx to connect your fleet of Microservices
@@ -921,7 +921,7 @@ Ben Sigelman talks about what Google got wrong about microservices, the lessons 
 <hr>
 
 
-## mocking 
+## mocking
 
 **[Mockito: Why You Should Not Use InjectMocks Annotation to Autowire Fields – Ted Vinke's Blog](https://tedvinke.wordpress.com/2014/02/13/mockito-why-you-should-not-use-injectmocks-annotation-to-autowire-fields/)**
 
@@ -941,7 +941,7 @@ MockAPI is a simple tool that lets you easily mock up APIs, generate custom data
 <hr>
 
 
-## mockito 
+## mockito
 
 **[Mockito: Why You Should Not Use InjectMocks Annotation to Autowire Fields – Ted Vinke's Blog](https://tedvinke.wordpress.com/2014/02/13/mockito-why-you-should-not-use-injectmocks-annotation-to-autowire-fields/)**
 
@@ -953,7 +953,7 @@ People like the way how Mockito is able to mock Spring's auto-wired fields with 
 <hr>
 
 
-## mongodb 
+## mongodb
 
 **[Generating Globally Unique Identifiers for Use with MongoDB](https://www.mongodb.com/blog/post/generating-globally-unique-identifiers-for-use-with-mongodb)**
 
@@ -988,14 +988,14 @@ var parentSchema = new Schema({
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-11-05
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [async-await](https://www.bookmarks.dev/search?q=[async-await]), &nbsp; [mongoose](https://www.bookmarks.dev/search?q=[mongoose]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb])
-  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks.dev-api)
+  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks.dev)
 
 Example showing migration of Mongoose calls from previously using callbacks to using the new async-await feature in NodeJs
 
 <hr>
 
 
-## mongoose 
+## mongoose
 
 **[Mongoose - SubDocuments](https://mongoosejs.com/docs/subdocs.html)**
 
@@ -1022,14 +1022,14 @@ var parentSchema = new Schema({
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-11-05
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [async-await](https://www.bookmarks.dev/search?q=[async-await]), &nbsp; [mongoose](https://www.bookmarks.dev/search?q=[mongoose]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb])
-  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks.dev-api)
+  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks.dev)
 
 Example showing migration of Mongoose calls from previously using callbacks to using the new async-await feature in NodeJs
 
 <hr>
 
 
-## multithreading 
+## multithreading
 
 **[Finally Getting the Most out of the Java Thread Pool](https://stackify.com/java-thread-pools/)**
 
@@ -1041,7 +1041,7 @@ Finally understanding how thread pools really work in Java can be the difference
 <hr>
 
 
-## nginx 
+## nginx
 
 **[Building Microservices with Node, Docker and Nginx pt 1 - What is a Microservice?](https://www.youtube.com/watch?v=EsCfPxjmnjo)**
 
@@ -1049,7 +1049,7 @@ Finally understanding how thread pools really work in Java can be the difference
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docker-compose](https://www.bookmarks.dev/search?q=[docker-compose]), &nbsp; [nginx](https://www.bookmarks.dev/search?q=[nginx])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/fChristenson/microservices-example)
 
-`Building` Microservices with Node, Docker and Nginx  
+`Building` Microservices with Node, Docker and Nginx
 * Part 1 What is a Microservice?" I walk you through what a Microservice is and what this 3 part tutorial will show you.
 * Part 2 [Making a microservice](https://www.youtube.com/watch?v=aWxR05rUoto) - shows you how to make a Microservices and some of the thoughts I have about them.
 * Part 3 [Connecting the microservices](https://www.youtube.com/watch?v=QjhJs31h_4k) - shows you how to use Docker compose and Nginx to connect your fleet of Microservices
@@ -1060,7 +1060,7 @@ Finally understanding how thread pools really work in Java can be the difference
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[GitHub - Keyang/node-csvtojson](https://github.com/Keyang/node-csvtojson)**
 
@@ -1102,7 +1102,7 @@ Loads environment variables from .env for nodejs projects.
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-11-05
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [async-await](https://www.bookmarks.dev/search?q=[async-await]), &nbsp; [mongoose](https://www.bookmarks.dev/search?q=[mongoose]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb])
-  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks.dev-api)
+  * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/CodepediaOrg/bookmarks.dev)
 
 Example showing migration of Mongoose calls from previously using callbacks to using the new async-await feature in NodeJs
 
@@ -1114,7 +1114,7 @@ Example showing migration of Mongoose calls from previously using callbacks to u
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices]), &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [docker-compose](https://www.bookmarks.dev/search?q=[docker-compose]), &nbsp; [nginx](https://www.bookmarks.dev/search?q=[nginx])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/fChristenson/microservices-example)
 
-`Building` Microservices with Node, Docker and Nginx  
+`Building` Microservices with Node, Docker and Nginx
 * Part 1 What is a Microservice?" I walk you through what a Microservice is and what this 3 part tutorial will show you.
 * Part 2 [Making a microservice](https://www.youtube.com/watch?v=aWxR05rUoto) - shows you how to make a Microservices and some of the thoughts I have about them.
 * Part 3 [Connecting the microservices](https://www.youtube.com/watch?v=QjhJs31h_4k) - shows you how to use Docker compose and Nginx to connect your fleet of Microservices
@@ -1125,7 +1125,7 @@ Example showing migration of Mongoose calls from previously using callbacks to u
 <hr>
 
 
-## npm 
+## npm
 
 **[npm documentation  ](https://docs.npmjs.com/)**
 
@@ -1142,7 +1142,7 @@ Example showing migration of Mongoose calls from previously using callbacks to u
 <hr>
 
 
-## open-source 
+## open-source
 
 **[The Open Source Definition](https://opensource.org/docs/osd)**
 
@@ -1153,7 +1153,7 @@ Open source doesn't just mean access to the source code. The distribution terms 
 <hr>
 
 
-## orm 
+## orm
 
 **[ORM Is an Offensive Anti-Pattern ](https://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html)**
 
@@ -1165,7 +1165,7 @@ TL;DR ORM is a terrible anti-pattern that violates all principles of object-orie
 <hr>
 
 
-## programming 
+## programming
 
 **[Coding bookmarks, aka #DevBookmarks](https://www.bookmarks.dev)**
 
@@ -1177,7 +1177,7 @@ Efficiently manage and retrieve your coding bookmarks. Contribute by sharing and
 <hr>
 
 
-## reactjs 
+## reactjs
 
 **[Jest · 🃏 Delightful JavaScript Testing](https://jestjs.io/)**
 
@@ -1189,7 +1189,7 @@ Efficiently manage and retrieve your coding bookmarks. Contribute by sharing and
 <hr>
 
 
-## rest 
+## rest
 
 **[Fastify Homepage](https://www.fastify.io/)**
 
@@ -1232,7 +1232,7 @@ One of new features introduced by JAX-RS 2.0 is asynchronous processing in Serve
 <hr>
 
 
-## rest-client 
+## rest-client
 
 **[How To Use Jersey Client Efficiently](https://blogs.oracle.com/japod/how-to-use-jersey-client-efficiently)**
 
@@ -1260,7 +1260,7 @@ A quick guide to building out a client for the REST API using RESTEasy.
 <hr>
 
 
-## resteasy 
+## resteasy
 
 **[RESTEasy Client API](https://www.baeldung.com/resteasy-client-tutorial)**
 
@@ -1273,7 +1273,7 @@ A quick guide to building out a client for the REST API using RESTEasy.
 <hr>
 
 
-## rxjs 
+## rxjs
 
 **[Advanced caching with RxJS by thoughtram](https://blog.thoughtram.io/angular/2018/03/05/advanced-caching-with-rxjs.html)**
 
@@ -1286,7 +1286,7 @@ When building web applications, performance should always be a top priority. One
 <hr>
 
 
-## serialization 
+## serialization
 
 **[How To Serialize Enums as JSON Objects with Jackson](https://www.baeldung.com/jackson-serialize-enums)**
 
@@ -1299,7 +1299,7 @@ How to serialize an Enum as a JSON Object using Jackson 2.
 <hr>
 
 
-## serverless 
+## serverless
 
 **[Claudia.js Home Page](https://claudiajs.com/)**
 
@@ -1320,7 +1320,7 @@ Deploy Node.js projects to AWS Lambda and API Gateway easily.
 <hr>
 
 
-## software-architecture 
+## software-architecture
 
 **[What We Got Wrong: Lessons from the Birth of Microservices - YouTube](https://www.youtube.com/watch?v=-pDyNsB9Zr0)**
 
@@ -1332,7 +1332,7 @@ Ben Sigelman talks about what Google got wrong about microservices, the lessons 
 <hr>
 
 
-## software-development 
+## software-development
 
 **[Coding bookmarks, aka #DevBookmarks](https://www.bookmarks.dev)**
 
@@ -1344,7 +1344,7 @@ Efficiently manage and retrieve your coding bookmarks. Contribute by sharing and
 <hr>
 
 
-## spring 
+## spring
 
 **[Oliver Gierke - Why field injection is evil](http://olivergierke.de/2013/11/why-field-injection-is-evil/)**
 
@@ -1353,12 +1353,12 @@ Efficiently manage and retrieve your coding bookmarks. Contribute by sharing and
 
 I’m quite frequently getting pulled into discussions on Twitter about the different flavors of Dependency Injection. Also, I’ve repeatedly expressed my distaste for field injection but as Twitter is not the right communication channel to give an in-depth rational about my opinion. So here we go.
 
-The comments section is also interesting. 
+The comments section is also interesting.
 
 <hr>
 
 
-## supertest 
+## supertest
 
 **[Express Integration Testing with SuperTest · InVision Engineering Blog](https://engineering.invisionapp.com/post/express-integration-testing-supertest/)**
 
@@ -1371,7 +1371,7 @@ Put down that REST Client (or, gasp, the browser!) you’re using to test that A
 <hr>
 
 
-## test-coverage 
+## test-coverage
 
 **[Istanbul, a JavaScript test coverage tool.](https://istanbul.js.org/)**
 
@@ -1383,7 +1383,7 @@ Istanbul instruments your ES5 and ES2015+ JavaScript code with line counters, so
 <hr>
 
 
-## testing 
+## testing
 
 **[Mockito: Why You Should Not Use InjectMocks Annotation to Autowire Fields – Ted Vinke's Blog](https://tedvinke.wordpress.com/2014/02/13/mockito-why-you-should-not-use-injectmocks-annotation-to-autowire-fields/)**
 
@@ -1422,7 +1422,7 @@ Istanbul instruments your ES5 and ES2015+ JavaScript code with line counters, so
 <hr>
 
 
-## time 
+## time
 
 **[Moment.js Home Page](http://momentjs.com/)**
 
@@ -1436,7 +1436,7 @@ A lightweight JavaScript date library for parsing, validating, manipulating, and
 <hr>
 
 
-## tools 
+## tools
 
 **[MockAPI docs](https://www.mockapi.io/docs)**
 
@@ -1465,7 +1465,7 @@ CodeMirror is a versatile text editor implemented in JavaScript for the browser.
 <hr>
 
 
-## weld 
+## weld
 
 **[ CDI Reference Implementation](http://docs.jboss.org/weld/reference/latest/en-US/html_single/)**
 

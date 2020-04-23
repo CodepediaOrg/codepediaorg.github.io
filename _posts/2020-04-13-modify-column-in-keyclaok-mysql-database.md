@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to modify the size of a column in a Mysql database from command line
-description: "Presents how to connect to the MySql database Keycloak and modify a column's size from the command line. It's 
+description: "Presents how to connect to the MySql database Keycloak and modify a column's size from the command line. It's
 based on the investigation of bug "
 author: ama
 permalink: /ama/how-to-modify-a-column-size-in-a-mysql-database-from-command-line
@@ -10,9 +10,9 @@ categories: [debugging]
 tags: [mysql, keycloak]
 ---
 
-This blog post presents the steps required to connect to the MySql database from the command line and modify the size of 
+This blog post presents the steps required to connect to the MySql database from the command line and modify the size of
 a column in a table. The example is based on the MySql database that is backing Keycloak to run [www.bookmarks.dev](https://www.bookmarks.dev).
-For a setup of the environment you can see the wiki article [Keycloak MySQL Setup](https://github.com/CodepediaOrg/bookmarks.dev-api/wiki/Keycloak-MySQL-Setup)
+For a setup of the environment you can see the wiki article [Keycloak MySQL Setup](https://github.com/CodepediaOrg/bookmarks.dev/wiki/Keycloak-MySQL-Setup)
 
 <!--more-->
 
@@ -45,10 +45,10 @@ So let's dig in to correct the problem.
 First connect to the database
 
 ```shell
-mysql -u keycloak -p keycloak 
+mysql -u keycloak -p keycloak
 ```
 
-where 
+where
 - `keycloak` in `-u keycloak` is the username
 - the last `keycloak` is the name of the database
 
@@ -57,7 +57,7 @@ You will be asked for the user's password (`-p`).
 
 ## Find the right table
 
-The column name `DETAILS_JSON` was mentioned in logs. To find out which table this columns belongs to I listed the 
+The column name `DETAILS_JSON` was mentioned in logs. To find out which table this columns belongs to I listed the
 columns of all tables from the `keycloak` database:
 
 ```sql
@@ -66,7 +66,7 @@ where table_schema = 'keycloak'
 order by table_name,ordinal_position;
 ```
 
-The result was highly uninterpretable - I got a pretty long lists of columns because Keycloak uses lots of tables. So I needed a way 
+The result was highly uninterpretable - I got a pretty long lists of columns because Keycloak uses lots of tables. So I needed a way
 to grep the result. You can do that in mysql shell by issuing the following command
 
 ```shell
@@ -111,7 +111,7 @@ mysql> show columns from EVENT_ENTITY;
 | USER_ID      | varchar(255)  | YES  |     | NULL    |       |
 +--------------+---------------+------+-----+---------+-------+
 10 rows in set (0.00 sec)
-``` 
+```
 
 We can see now it has a size of `2550` characters. We'll just more than double that by altering the table:
 
@@ -121,10 +121,10 @@ Query OK, 0 rows affected (0.00 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 ```
 
-Run the above command again to make sure the column has now the new size. 
+Run the above command again to make sure the column has now the new size.
 
 
 ## Conclusion
 
-This post serves me as a reminder on how to connect to a MySql database and modify a column. 
+This post serves me as a reminder on how to connect to a MySql database and modify a column.
 

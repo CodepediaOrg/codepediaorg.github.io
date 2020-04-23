@@ -37,7 +37,7 @@ and then type `./bin/mongo` to start mongo
 
 MongoDB does not enable access control by default. This might be fine for development, but for a production environment it is highly recommended
 to employ [authorization](https://docs.mongodb.com/manual/core/authorization/). Please see the **Create database and users** section of
-the [MongoDB Setup For Production](https://github.com/CodepediaOrg/bookmarks.dev-api/wiki/MongoDB-Setup-for-Production) wiki page for commands related to that.
+the [MongoDB Setup For Production](https://github.com/CodepediaOrg/bookmarks.dev/wiki/MongoDB-Setup-for-Production) wiki page for commands related to that.
 
 ## Quit the mongo shell
 
@@ -97,12 +97,12 @@ Response
 ```
 
 > use the `pretty` cursor to display the results in an easy to read format like `db.bookmarks.find().pretty()`
- 
+
 ### Find document by id
 
 Explicit
 ```
-> db.test.find({"_id" : ObjectId("5b10cce6b011af410e515e21")}) 
+> db.test.find({"_id" : ObjectId("5b10cce6b011af410e515e21")})
 ```
 or shortcut
 
@@ -125,7 +125,7 @@ Check out the [find documention](https://docs.mongodb.com/manual/reference/metho
 
 #### Match an array
 
-Query for all documents where the field `tags` value is an array with exactly three elements, "angular", "angular-cli" and "dev-tools", in the specified order:   
+Query for all documents where the field `tags` value is an array with exactly three elements, "angular", "angular-cli" and "dev-tools", in the specified order:
 ```
 > db.bookmarks.find( { tags: ["angular", "angular-cli", "dev-tools"] } )
 ```
@@ -165,7 +165,7 @@ For example I wanted to find all the documents that don't contain the field `sta
 ```shell
 > db.bookmarks.find({ "starredBy" : { "$exists" : false } })
 ```
-or 
+or
 
 ```shell
 > db.bookmarks.find({starredBy: null});

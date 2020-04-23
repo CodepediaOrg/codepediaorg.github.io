@@ -1,5 +1,6 @@
 title:            CodepediaOrg
 description:      Share coding knowledge
+encoding: utf-8
 # put your disqus here
 disqus_shortname:  codingpedia
 reading_time:     true # if true, shows the estimated reading time for a post

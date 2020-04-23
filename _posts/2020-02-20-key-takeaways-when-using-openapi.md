@@ -10,12 +10,12 @@ tags: [openapi, expressjs, swagger, swagger-editor, swagger-ui, rest, api, docum
 ---
 
 
-Recently I've taken the time to update the API documentation for [bookmarks.dev-api](https://github.com/CodepediaOrg/bookmarks.dev-api).
-I used the Swagger 2.0 (aka OAS 2) before and I decided to update to OpenAPI Specification (OAS) 3. In this post I will 
-highlight the main points about the process and documenting the API with OAS 3. Some points might still apply to the former OAS 2 (fka Swagger) 
+Recently I've taken the time to update the API documentation for [bookmarks.dev](https://github.com/CodepediaOrg/bookmarks.dev).
+I used the Swagger 2.0 (aka OAS 2) before and I decided to update to OpenAPI Specification (OAS) 3. In this post I will
+highlight the main points about the process and documenting the API with OAS 3. Some points might still apply to the former OAS 2 (fka Swagger)
 documentation, but they are worth mentioning since I hadn't payed enough attention before and I find them useful.
 
-> You can find the OAS 3 specification  for **bookmarks.dev-api** [on Github](https://github.com/CodepediaOrg/bookmarks.dev-api/blob/master/docs/openapi/openapi.yaml)
+> You can find the OAS 3 specification  for **bookmarks.dev** [on Github](https://github.com/CodepediaOrg/bookmarks.dev/blob/master/backend/docs/openapi/openapi.yaml)
 and the result is available at [bookmarks.dev/api/docs/](https://www.bookmarks.dev/api/docs/)
 
 Here are the key takeaways.
@@ -36,9 +36,9 @@ docker pull swaggerapi/swagger-converter:v1.0.2
 docker run -it -p 8080:8080 --name swagger-converter swaggerapi/swagger-converter:v1.0.2
 ```
 
-## 3. Use [Swagger-Editor](https://editor.swagger.io/) to immediate validate your specification and preview it in real time 
+## 3. Use [Swagger-Editor](https://editor.swagger.io/) to immediate validate your specification and preview it in real time
 Swagger Editor lets you edit Swagger API specifications in YAML inside your browser and to preview documentations in real time.
- 
+
  You can use it online, as an [npm](https://www.npmjs.com/package/swagger-editor) distribution or as a [docker image](https://hub.docker.com/r/swaggerapi/swagger-editor/).
  For more details check the [Readme](https://github.com/swagger-api/swagger-editor#readme) of the project.
 
@@ -67,11 +67,11 @@ Another point worth mentioning here is that you could use [swagger-jsdoc](https:
   assumes that you want document your existing/living/working code in a way to "give life" to it, generating a specification
    which can then be fed into other Swagger tools, and not the vice-versa.
 
-> For now I manage documentation centrally in one [openapi.yaml](https://github.com/CodepediaOrg/bookmarks.dev-api/blob/master/docs/openapi/openapi.yaml) file,
+> For now I manage documentation centrally in one [openapi.yaml](https://github.com/CodepediaOrg/bookmarks.dev/blob/master/backend/docs/openapi/openapi.yaml) file,
  but I might consider it at a later time
 
 ## 5. Use [tags](https://swagger.io/docs/specification/grouping-operations-with-tags/) to group the operations
-You can assign a list of tags to each API operation. Thus **Swagger UI** and **Swagger Editor** will display the operations by 
+You can assign a list of tags to each API operation. Thus **Swagger UI** and **Swagger Editor** will display the operations by
 tags which comes very handy. To control the sorting in Swagger UI you need to add them also at the root level as global
 tags. There you can also add a description  and link to external documentation for them.
 
@@ -96,7 +96,7 @@ tags:
 ## 6. Use the [servers](https://swagger.io/docs/specification/api-host-and-base-path/) array to specify one or more base URLs for your API.
 In OpenAPI 3.0, you use the servers array to specify one or more base URLs for your API. servers replaces the `host`, `basePath`
  and `schemes` keywords used in OpenAPI 2.0. Each server has an `url` and an optional Markdown-formatted `description`.
- 
+
 ```yaml
 servers:
   - url: http://localhost:3000/api
@@ -108,8 +108,8 @@ servers:
 
 ## 7. Use [components](https://swagger.io/docs/specification/components/) in order to define and reuse resources
 Often, multiple API operations have some common parameters or return the same response structure.
- To avoid code duplication, you can place the common definitions in the global `components` section and reference them using `$ref`. 
- 
+ To avoid code duplication, you can place the common definitions in the global `components` section and reference them using `$ref`.
+
 For example for a list of bookmarks response that occurs with several operations I defined a `BookmarkListResponse` under
 the global `responses` section
 
@@ -151,7 +151,7 @@ and I reference it in the different operations (e.g. `get-public-bookmarks`):
 ```
 
 
-Notice above also the `locationQueryParam`. It's a `location` query parameter defined in the `components > parameters` 
+Notice above also the `locationQueryParam`. It's a `location` query parameter defined in the `components > parameters`
 section and then referenced in multiple places in the API specification (one of them above):
 
 ```yaml
@@ -167,10 +167,10 @@ componentes:
 ```
 ## 8. Add [examples](https://swagger.io/docs/specification/adding-examples/) to make it clearer
 You can add examples to parameters, properties and objects to make OpenAPI specification of your web service clearer.
- Examples can be read by tools and libraries that process your API in some way. 
+ Examples can be read by tools and libraries that process your API in some way.
  For example, an API mocking tool can use sample values to generate mock requests. You can specify examples for objects,
   individual properties and operation parameters. To specify an example, you use the `example` or `examples` keys.
-  
+
 For example the **search text** used to filter bookmarks can have complex values, and what better ways to explain it than with
 some examples:
 
@@ -190,7 +190,7 @@ components:
         type: string
       examples:       # Multiple examples
         german:
-          value: 'lang:de'    
+          value: 'lang:de'
           summary: Will look only for bookmarks in German
         site:
           value: 'site:codepedia.org'
@@ -201,7 +201,7 @@ components:
         complex-private-only:
           value: 'exception handling [java] site:wiki.my-corporation.com private:only'
           summary: Same as above but only within **private** bookmarks
-```   
+```
 
 or show what a bookmark input for creation might look like, for different scenarios (normal article, youtube video or StackOverflow question):
 
@@ -230,7 +230,7 @@ paths:
                   language: en
                   tags: [nodejs, error-handling, expressjs]
                   publishedOn: 2019-12-02,
-                  sourceCodeURL: https://github.com/CodepediaOrg/bookmarks.dev-api
+                  sourceCodeURL: https://github.com/CodepediaOrg/bookmarks.dev
                   description: Shows how you can make your backend ExpressJS REST API cleaner by using custom error handling middleware. Code snippets of before and after refactoring are presented to make the point
                   descriptionHtml: <p>Shows how you can make your backend ExpressJS REST API cleaner by using custom error handling middleware. Code snippets of before and after refactoring are presented to make the point</p>
                   userId: 4c617f2b-2bad-498b-a9c6-4e9a8c303798
@@ -293,7 +293,7 @@ components:
               type: array
               items:
                 type: string
-```  
+```
 
 Of course you can use enums to specify values for a request parameter or a model property, as they were intended. For example
 see the  `orderBy` possible values when filtering personal bookmarks
@@ -328,4 +328,4 @@ I have bookmarked quite a few Swagger/OpenAPI resources and tools along the way 
 ## Conclusion
 
 These were ten takeaways when starting with OpenAPI Specification 3. I hope you find them useful and if you have others worth mentioning and trying
-please leave a comment below.  
+please leave a comment below.

@@ -12,17 +12,17 @@ tags: [expressjs, nodejs, rest, angular, youtube, api]
 
 In this short blog post I will show you how to call the Youtube Data API v3 to get information about youtube videos.
  I am especially interested in the **video duration**, **description**, **title**, **tags** and **publication date** attributes.
-  This is the metadata I use to [automagically bookmark youtube videos](https://dev.to/ama/automagically-bookmarking-youtube-videos-for-developers-lpn). 
+  This is the metadata I use to [automagically bookmark youtube videos](https://dev.to/ama/automagically-bookmarking-youtube-videos-for-developers-lpn).
 
-> Source code for this article can be found on [Github](https://github.com/CodepediaOrg/bookmarks.dev-api)
+> Source code for this article can be found on [Github](https://github.com/CodepediaOrg/bookmarks.dev)
 
 <!--more-->
 
 ## Let's dive directly into how it's done
 
-You need to make a GET REST call. In my case the call is made from a  [Node.js/ExpressJS backend](https://github.com/CodepediaOrg/bookmarks.dev-api).
+You need to make a GET REST call. In my case the call is made from a  [Node.js/ExpressJS backend](https://github.com/CodepediaOrg/bookmarks.dev).
  I use [superagent](https://visionmedia.github.io/superagent/) to make the call, but you can use a REST client of your
- choice:  
+ choice:
 
 ```javascript
 let getYoutubeVideoData = async (youtubeVideoId) => {
@@ -54,15 +54,15 @@ let getYoutubeVideoData = async (youtubeVideoId) => {
   if(tags) { //some youtube videos might not have tags defined
     webpageData.tags = tags.slice(0,8).map(tag => tag.trim().replace(/\s+/g, '-'));
   }
-  
+
   return webpageData;
 }
 ```
 
 What are the used parameters?
-* `videoId` - this is the `id` of the video; it's the value you find the `v` query parameter of a youtube link 
- - e.g. [https://www.youtube.com/watch?v=**4q12HDjWY44**](https://www.youtube.com/watch?v=4q12HDjWY44) 
-* `key` - you need an API key to access the Youtube Data API. You can create one from the [Google Developers Console](https://console.developers.google.com/). 
+* `videoId` - this is the `id` of the video; it's the value you find the `v` query parameter of a youtube link
+ - e.g. [https://www.youtube.com/watch?v=**4q12HDjWY44**](https://www.youtube.com/watch?v=4q12HDjWY44)
+* `key` - you need an API key to access the Youtube Data API. You can create one from the [Google Developers Console](https://console.developers.google.com/).
 Make sure you select the YouTube Data API (v3 in my case); in the code example above the value of the key is read from the environment variables
 * you can query only the parts you are interested in, by specifying them in the `part` query parameter as shown in the code snippet above
 
@@ -71,7 +71,7 @@ I use the response data to make it easy to bookmark youtube videos. In the video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4q12HDjWY44" frameborder="0" allowfullscreen></iframe>
 
 > Note the [Save to Bookmarks.dev Chrome Extension](https://chrome.google.com/webstore/detail/save-url-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb)
- at the beginning of the video, which I developed and [open-sourced](https://github.com/CodepediaOrg/bookmarks.dev-chrome-extension) to make it easy to save bookmarks. 
+ at the beginning of the video, which I developed and [open-sourced](https://github.com/CodepediaOrg/bookmarks.dev-chrome-extension) to make it easy to save bookmarks.
 
 ### [Quota usage](https://developers.google.com/youtube/v3/getting-started#quota)
 The YouTube Data API uses a quota. All API requests, including invalid requests, incur at least a one-point quota cost.

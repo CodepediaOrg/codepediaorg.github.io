@@ -20,18 +20,18 @@ tags:
 If you want to quickly test your REST api from the command line, you can use [curl](http://curl.haxx.se/).
  In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API.
   For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev).
-  The API is [documented with OpenAPI](https://github.com/CodepediaOrg/bookmarks.dev-api/blob/develop/docs/openapi/openapi.yaml) 
+  The API is [documented with OpenAPI](https://github.com/CodepediaOrg/bookmarks.dev/blob/master/backend/docs/openapi/openapi.yaml)
   and available for testing in the browser at [https://www.bookmarks.dev/api/docs/](https://www.bookmarks.dev/api/docs/).
-  
+
 <!--more-->
 
 * TOC
-{:toc} 
+{:toc}
 
 ## Introduction
 
 In the first part of the blog post I will do a brief introduction to curl and what it can do (HTTP requests with options).
- In the second part I will show examples with different HTTP operations from [bookmarks.dev-api](https://www.bookmarks.dev/api/docs). 
+ In the second part I will show examples with different HTTP operations from [bookmarks.dev-api](https://www.bookmarks.dev/api/docs).
 
 
 ### What is curl?
@@ -40,14 +40,14 @@ Curl is a command line tool and library for transferring data with URL syntax, s
  HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP.
   curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, HTTP/2, cookies,
    user+password authentication (Basic, Digest, NTLM, Negotiate, Kerberos&#8230;), file transfer resume, proxy tunneling and more.
-   
+
 As mentioned, I will be using curl to simulate HEAD, GET, POST, PUT and DELETE request calls against a REST API.
 
 ### HEAD requests
 
 If you want to check if a resource is serviceable, what kind of headers it provides and other useful meta-information
  written in response headers, without having to transport the entire content, you can make a `HEAD` request.
-  
+
 Let's say I want to see what I would GET when requesting latest public bookmarks. I would issue the following HEAD request with curl:
 
 **Request**
@@ -106,7 +106,7 @@ Executing curl with no parameters on a URL (resource) will execute a GET.
 curl https://www.bookmarks.dev/api/version
 ```
 
-which is equivalent with 
+which is equivalent with
 
 ```shell
 curl -X GET "https://www.bookmarks.dev/api/version" -H "accept: application/json"
@@ -119,13 +119,13 @@ curl -X GET "https://www.bookmarks.dev/api/version" -H "accept: application/json
 ```
 
 
-Note the use of `accept: application/json` 
+Note the use of `accept: application/json`
 
 **Curl options **
 
   * `-H, --header` : customer header to pass to the server
 
-If you want to have it displayed prettier I suggest you use a tool like [jq](https://github.com/stedolan/jq): 
+If you want to have it displayed prettier I suggest you use a tool like [jq](https://github.com/stedolan/jq):
 
 **Request**
 
@@ -173,13 +173,13 @@ curl -s https://www.bookmarks.dev/api/version | python -m json.tool
 ```
 
 ### Curl request with multiple headers
-All the responses from the [bookmarks.dev-api](https://github.com/CodepediaOrg/bookmarks.dev-api/) are gzipped. 
+All the responses from the api of [bookmarks.dev](https://github.com/CodepediaOrg/bookmarks.dev) are gzipped.
 We could ask for the gzipped variant by issuing the following request:
 
 **Request**
 
 ```shell
-curl -v -H "Accept:application/json" -H "Accept-encoding:gzip" http://localhost:8888/demo-rest-jersey-spring/podcasts/
+curl -v -H "Accept:application/json" -H "Accept-encoding:gzip" https://www.bookmarks.dev/api/version
 ```
 
 **Curl options **
@@ -196,7 +196,7 @@ To achieve that you need to simply **add another** `-H` option with the correspo
 > User-Agent: curl/7.54.0
 > Accept:application/json
 > Accept-encoding:gzip
-> 
+>
 < HTTP/1.1 200 OK
 < Server: nginx/1.12.0
 < Date: Fri, 06 Mar 2020 14:45:39 GMT
@@ -212,7 +212,7 @@ To achieve that you need to simply **add another** `-H` option with the correspo
 < Strict-Transport-Security: max-age=63072000; includeSubdomains
 < X-Content-Type-Options: nosniff
 < Content-Encoding: gzip
-< 
+<
 * Connection #0 to host www.bookmarks.dev left intact
 �V*K-*���S�R2�3�3P�QJ�, �H4��&��%������X&Z$[X&�Z����&��
 ```
@@ -220,8 +220,8 @@ To achieve that you need to simply **add another** `-H` option with the correspo
 ## CRUD Operations on Bookmarks.dev API
 
 Those were some basic curl HTTP calls with a few options. Now we will combine them and show examples against a production
-ready API. For the examples I will use the API running on localhost. It is really easy to setup with Docker-compose if 
-you follow the instructions from the [Readme](https://github.com/CodepediaOrg/bookmarks.dev-api#readme) file.
+ready API. For the examples I will use the API running on localhost. It is really easy to setup with Docker-compose if
+you follow the instructions from the [Readme](https://github.com/CodepediaOrg/bookmarks.dev#readme) file.
 
 The API is protected with [Keycloak](https://www.keycloak.org) and bearer token. A way to obtain a bearer token in Keycloak
  is to enable Direct Access Grants for the client - this corresponds to the [Resource Owner Password Credentials](https://tools.ietf.org/html/rfc6749#section-1.3.3)
@@ -231,14 +231,14 @@ in the OAuth2 Specification. Thus the user's credentials are sent within form pa
 ```bash
 curl  \
   -d 'client_id=bookmarks' \
-  -d 'username=ama' \
-  -d "password=ama" \
+  -d 'username=mock' \
+  -d "password=mock" \
   -d 'grant_type=password' \
   'http://localhost:8480/auth/realms/bookmarks/protocol/openid-connect/token' \
 | jq .
 ```
 
-> Replace the `username` and `password` with the ones you [set up](https://github.com/CodepediaOrg/bookmarks.dev-api#readme).  
+> The the `username` and `password` are from the initial [set up](https://github.com/CodepediaOrg/bookmarks.dev#readme).
 
 The response looks something like the following:
 ```shell
@@ -268,7 +268,7 @@ curl -s \
 ```
 
 **Response**
-```shell 
+```shell
 eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMNHV6eUFYbUlTSDJPRi00c2VZZ2Z3UWtJT204QTR3cnBDV0JHSVdOU2c4In0.eyJqdGkiOiJiZDQzZWM1ZC1kODkyLTRkYzktOWNjYy03MWViOGE2YWI0MWEiLCJleHAiOjE1ODM1MTg2NTYsIm5iZiI6MCwiaWF0IjoxNTgzNTE1MDU2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg0ODAvYXV0aC9yZWFsbXMvYm9va21hcmtzIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjRjNjE3ZjJiLTJiYWQtNDk4Yi1hOWM2LTRlOWE4YzMwMzc5OCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImJvb2ttYXJrcyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6ImY1ZmVkMjIzLTE0ZjQtNDJmZC04YTA5LWE1YWFmNWJmZjMzOCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUk9MRV9VU0VSIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiQWRyaWFuIE1hdGVpIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYW1hIiwiZ2l2ZW5fbmFtZSI6IkFkcmlhbiIsImZhbWlseV9uYW1lIjoiTWF0ZWkiLCJlbWFpbCI6ImFkcmlhbm1hdGVpQGdtYWlsLmNvbSJ9.EJzB7TkOrqY_enYHWgs_6NszI9PtQYfp5yco7OTF4LhcqkKXCoUvE2Jpc6gupX6uMtNPQZtWXSnwVPl8XGR4Z32sSMkxEvDj9B4zPuU2CBe8z9LZFwPjlu5ZMOnl1_hBjNmL8UHWTdCNhYf75PCDneCUM6ugbq5DaMhKkCHo8WD_x8A5I3hSM5pLSow3C82ZdMqkZbyxv28_rul9vsCsppN3CMXQjYDNn1UuVeNl8b5O-KTSumrVjVzw_wjoswva7h0Y3pnQptABDML5Q1mf__FFFHLGN6Y26Ezrjm086oRp-ntxFA9gI41toQ4xgoMyX-6obOhMGwa10RzdNbP4CA
 ```
 
@@ -286,7 +286,7 @@ eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMNHV6eUFYbUlTSDJPRi00c2VZZ2Z3
 ```shell
 curl -i -X POST "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6-4e9a8c303798/bookmarks" \
 -H "accept: */*" -H "Authorization: Bearer eyJhbGciOiJ...."  \
--H "Content-Type: application/json" -d "{\"name\":\"How to test a REST api from command line with curl – CodepediaOrg\",\"location\":\"https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/\",\"language\":\"en\",\"tags\":[\"rest\",\"curl\",\"api\",\"testing\"],\"publishedOn\":\"2020-03-05\",\"sourceCodeURL\":\"https://github.com/CodepediaOrg/bookmarks.dev-api\",\"description\":\" In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)\",\"descriptionHtml\":\"<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\\\"https://www.bookmarks.dev\\\">www.bookmarks.dev</a></p>\",\"userId\":\"4c617f2b-2bad-498b-a9c6-4e9a8c303798\",\"public\":true,\"lastAccessedAt\":\"2020-03-06T20:14:28.101Z\",\"likeCount\":0}"
+-H "Content-Type: application/json" -d "{\"name\":\"How to test a REST api from command line with curl – CodepediaOrg\",\"location\":\"https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/\",\"language\":\"en\",\"tags\":[\"rest\",\"curl\",\"api\",\"testing\"],\"publishedOn\":\"2020-03-05\",\"sourceCodeURL\":\"https://github.com/CodepediaOrg/bookmarks.dev\",\"description\":\" In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)\",\"descriptionHtml\":\"<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\\\"https://www.bookmarks.dev\\\">www.bookmarks.dev</a></p>\",\"userId\":\"4c617f2b-2bad-498b-a9c6-4e9a8c303798\",\"public\":true,\"lastAccessedAt\":\"2020-03-06T20:14:28.101Z\",\"likeCount\":0}"
 ```
 
 > Note the Bearer token is reduced here (`Bearer eyJhbGciOiJ....`) and in the following examples for brevity
@@ -338,7 +338,7 @@ curl -s -X GET "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6
   "description": " In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)",
   "descriptionHtml": "<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\"https://www.bookmarks.dev\">www.bookmarks.dev</a></p>",
   "publishedOn": "2020-03-05T00:00:00.000Z",
-  "sourceCodeURL": "https://github.com/CodepediaOrg/bookmarks.dev-api",
+  "sourceCodeURL": "https://github.com/CodepediaOrg/bookmarks.dev",
   "userId": "4c617f2b-2bad-498b-a9c6-4e9a8c303798",
   "public": true,
   "likeCount": 0,
@@ -355,7 +355,7 @@ curl -s -X GET "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6
 ```shell
 curl -s -X PUT "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6-4e9a8c303798/bookmarks/5e62b18b59770b5487a4c741" \
  -H "accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiI..."  \
- -H "Content-Type: application/json" -d "{\"name\":\"How to test a REST api from command line with curl – CodepediaOrg\",\"location\":\"https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/\",\"tags\":[\"rest\",\"curl\",\"api\",\"testing\"],\"publishedOn\":\"2020-03-05T00:00:00.000Z\",\"sourceCodeURL\":\"https://github.com/CodepediaOrg/bookmarks.dev-api\",\"description\":\"In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)\",\"public\":true,\"readLater\":false,\"language\":\"en\",\"youtubeVideoId\":null,\"stackoverflowQuestionId\":null,\"descriptionHtml\":\"<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\\\"https://www.bookmarks.dev\\\">www.bookmarks.dev</a></p>\",\"updatedAt\":\"2020-03-06T20:42:53.706Z\",\"lastAccessedAt\":\"2020-03-06T20:42:53.706Z\",\"userId\":\"4c617f2b-2bad-498b-a9c6-4e9a8c303798\",\"_id\":\"5e62b18b59770b5487a4c741\"}" | jq .
+ -H "Content-Type: application/json" -d "{\"name\":\"How to test a REST api from command line with curl – CodepediaOrg\",\"location\":\"https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/\",\"tags\":[\"rest\",\"curl\",\"api\",\"testing\"],\"publishedOn\":\"2020-03-05T00:00:00.000Z\",\"sourceCodeURL\":\"https://github.com/CodepediaOrg/bookmarks.dev\",\"description\":\"In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)\",\"public\":true,\"readLater\":false,\"language\":\"en\",\"youtubeVideoId\":null,\"stackoverflowQuestionId\":null,\"descriptionHtml\":\"<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\\\"https://www.bookmarks.dev\\\">www.bookmarks.dev</a></p>\",\"updatedAt\":\"2020-03-06T20:42:53.706Z\",\"lastAccessedAt\":\"2020-03-06T20:42:53.706Z\",\"userId\":\"4c617f2b-2bad-498b-a9c6-4e9a8c303798\",\"_id\":\"5e62b18b59770b5487a4c741\"}" | jq .
 ```
 
 **Response**
@@ -374,7 +374,7 @@ curl -s -X PUT "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6
   "description": "In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)",
   "descriptionHtml": "<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\"https://www.bookmarks.dev\">www.bookmarks.dev</a></p>",
   "publishedOn": "2020-03-05T00:00:00.000Z",
-  "sourceCodeURL": "https://github.com/CodepediaOrg/bookmarks.dev-api",
+  "sourceCodeURL": "https://github.com/CodepediaOrg/bookmarks.dev",
   "userId": "4c617f2b-2bad-498b-a9c6-4e9a8c303798",
   "public": true,
   "likeCount": 0,

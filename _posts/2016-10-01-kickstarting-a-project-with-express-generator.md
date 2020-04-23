@@ -6,7 +6,7 @@ author: ama
 permalink: /ama/kick-starting-a-project-with-express-generator
 published: false
 categories: [nodejs]
-tags: [codingpedia bookmarks, beginner, nodejs, expressjs, expressjs generator, project setup, how to, tutorial]
+tags: [beginner, nodejs, expressjs, expressjs generator, project setup, how to, tutorial]
 ---
 
 As today I am going to start working on a project to enhance my bookmarks handling experience that will run at
@@ -44,49 +44,50 @@ how you can efficiently use aliases to boost your shell productivity.
 The output should will look something like the following:
 
 ```shell
-/Users/ama/.nvm/versions/node/v6.4.0/bin/express -> /Users/ama/.nvm/versions/node/v6.4.0/lib/node_modules/express-generator/bin/express
-/Users/ama/.nvm/versions/node/v6.4.0/lib
-└─┬ express-generator@4.13.4
-  ├─┬ commander@2.7.1
-  │ └── graceful-readlink@1.0.1
-  ├─┬ mkdirp@0.5.1
-  │ └── minimist@0.0.8
-  └── sorted-object@2.0.0
+/Users/ama/.nvm/versions/node/v10.15.0/bin/express -> /Users/ama/.nvm/versions/node/v10.15.0/lib/node_modules/express-generator/bin/express-cli.js
++ express-generator@4.16.1
+added 10 packages from 13 contributors in 2.064s
 ```
 
 Now I changed to the parent directory where I want to place my backend project and execute the following command
 
 ```shell
-$ express bookmarks-api.codepedia.org --git
+$ express bookmarks.dev/backend --git
 ```
 
 with the following output:
 
 ```shell
- create : bookmarks-api.codepedia.org
- create : bookmarks-api.codepedia.org/package.json
- create : bookmarks-api.codepedia.org/app.js
- create : bookmarks-api.codepedia.org/.gitignore
- create : bookmarks-api.codepedia.org/public
- create : bookmarks-api.codepedia.org/public/javascripts
- create : bookmarks-api.codepedia.org/routes
- create : bookmarks-api.codepedia.org/routes/index.js
- create : bookmarks-api.codepedia.org/routes/users.js
- create : bookmarks-api.codepedia.org/public/images
- create : bookmarks-api.codepedia.org/views
- create : bookmarks-api.codepedia.org/views/index.jade
- create : bookmarks-api.codepedia.org/views/layout.jade
- create : bookmarks-api.codepedia.org/views/error.jade
- create : bookmarks-api.codepedia.org/public/stylesheets
- create : bookmarks-api.codepedia.org/public/stylesheets/style.css
- create : bookmarks-api.codepedia.org/bin
- create : bookmarks-api.codepedia.org/bin/www
+ warning: the default view engine will not be jade in future releases
+  warning: use `--view=jade' or `--help' for additional options
 
- install dependencies:
-   $ cd bookmarks-api.codepedia.org && npm install
+   create : bookmarks.dev/backend/
+   create : bookmarks.dev/backend/public/
+   create : bookmarks.dev/backend/public/javascripts/
+   create : bookmarks.dev/backend/public/images/
+   create : bookmarks.dev/backend/public/stylesheets/
+   create : bookmarks.dev/backend/public/stylesheets/style.css
+   create : bookmarks.dev/backend/routes/
+   create : bookmarks.dev/backend/routes/index.js
+   create : bookmarks.dev/backend/routes/users.js
+   create : bookmarks.dev/backend/views/
+   create : bookmarks.dev/backend/views/error.jade
+   create : bookmarks.dev/backend/views/index.jade
+   create : bookmarks.dev/backend/views/layout.jade
+   create : bookmarks.dev/backend/.gitignore
+   create : bookmarks.dev/backend/app.js
+   create : bookmarks.dev/backend/package.json
+   create : bookmarks.dev/backend/bin/
+   create : bookmarks.dev/backend/bin/www
 
- run the app:
-   $ DEBUG=bookmarks-api.codepedia.org:* npm start
+   change directory:
+     $ cd bookmarks.dev/backend
+
+   install dependencies:
+     $ npm install
+
+   run the app:
+     $ DEBUG=backend:* npm start
 
 ```
 
@@ -113,35 +114,40 @@ $ express -h
 Now do as the man says - install the dependencies
 
 ```shell
- $ cd bookmarks-api.codepedia.org && npm install
+$ cd bookmarks.dev/backend && npm install
 ```
 
 and run the application
 
 ```shell
- $ DEBUG=bookmarks-api.codepedia.org:* npm start
+$ DEBUG=backend:* npm start
 ```
 
 You should see now that the server is listening at port 3000:
 
 ```shell
- $ DEBUG=bookmarks-api.codepedia.org:* npm start
-> bookmarks-api.codepedia.org@0.0.0 start /Users/ama/projects/codingpedia-bookmarks/bookmarks-api.codepedia.org
+ $ DEBUG=backend:* npm start
+> backend@0.0.0 start /Users/ama/projects/dev/personal/testing/bookmarks.dev/backend
 > node ./bin/www
 
-  bookmarks-api.codepedia.org:server Listening on port 3000 +0ms
+  backend:server Listening on port 3000 +0ms
 ```
 
 And when I type in the browser http://localhost:3000 I get a _Welcome To Express_ page - Yeeey, success!!!
+or via [curl](https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/):
+```shell
+$ curl localhost:3000
+<!DOCTYPE html><html><head><title>Express</title><link rel="stylesheet" href="/stylesheets/style.css"></head><body><h1>Express</h1><p>Welcome to Express</p></body></html>
+```
 
 Now add a `README.md` file and push it to GitHub before my computer breaks down :):
 
 ```shell
-echo "# bookmarks-api.codepedia.org" >> README.md
+echo "# bookmarks.dev backend" >> README.md
 git init
 git add --all
 git commit -m "first commit"
-git remote add origin https://github.com/CodepediaOrg/bookmarks.dev-api.codepedia.org.git
+git remote add origin https://github.com/CodepediaOrg/bookmarks.dev.git
 git push -u origin master
 ```
 

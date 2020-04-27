@@ -8,6 +8,14 @@ The website is developed with [Jekyll](https://github.com/jekyll/jekyll), hosted
 3. Install gems with `$ bundle install`
 4. Run Jekyll with `$ bundle exec jekyll serve --watch`
 
+## Grunt tasks
+Grunt is used mainly to minimise files and uglify scripts
+How to use it
+```shell
+nvm use
+npm install
+grunt
+```
 
 ## Contributing
 This website is open for contributions:
@@ -18,5 +26,5 @@ This website is open for contributions:
 ## License
 
 The source code supporting the Codepedia.org website (Jekyll Theme Adaptation) is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-However, to reuse posts or content from posts (present here in the **_posts** directory) on your website or third party website, 
+However, to reuse posts or content from posts (present here in the **_posts** directory) on your website or third party website,
 you need the author's consent or you **clearly** link back and specify the original source.

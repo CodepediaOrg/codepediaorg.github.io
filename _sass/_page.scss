@@ -503,6 +503,7 @@ ul.social-buttons li a:active {
 		color: $white;
 	}
 	h1 {
+    line-height: 1.45;
 		font-weight: 700;
 		margin-bottom: 20px;
 		@include font-rem(32);

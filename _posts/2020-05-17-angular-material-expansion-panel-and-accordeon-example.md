@@ -15,6 +15,8 @@ I find accordions pretty well suited for FAQs or HowTo pages. That's why I chose
 accordion](https://material.angular.io/components/expansion/overview). This blog post presents the source code for that
 with a couple of notes.
 
+{% include source-code-codingmarks.html %}
+
 <!--more-->
 
 ## The source code

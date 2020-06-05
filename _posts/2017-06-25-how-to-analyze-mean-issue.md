@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to configure Nginx in production to serve an Angular app and reverse proxy NodeJS
-description: "Install Nginx on Ubuntu Server, understand configuration files, configure SSL, serve static files, 
+description: "Install Nginx on Ubuntu Server, understand configuration files, configure SSL, serve static files,
  reverse proxy Keycloak and NodeJS servers"
 author: ama
 permalink: /ama/how-
@@ -10,19 +10,19 @@ categories: [mean]
 tags: [codingmarks, nginx, ssl, tls, cerbot, keycloak, nodejs]
 ---
 
-First when you need to optimize, it is usually great news. And indeed it is we managed have now over 1 MB of really great programming resources on the 
+First when you need to optimize, it is usually great news. And indeed it is we managed have now over 1 MB of really great programming resources on the
 [codingmarks.org](http://codingmarks.org) website. We've reached that by importing [free-programming-books](https://github.com/EbookFoundation/free-programming-books) directory into
-[codingmarks.org](http://codingmarks.org) - see the [codingmarks-free-programming-books-importer](https://github.com/CodepediaOrg/bookmarks-free-programming-books-importer)
-for that. Now 
+[codingmarks.org](http://codingmarks.org) - see the [codingmarks-free-programming-books-importer](https://github.com/BookmarksDev/bookmarks-free-programming-books-importer)
+for that. Now
 
 The application is easy - it loads the public bookmarks, so you can search through some of the best programming related
 resources out there, or you can search through your own bookmarks.
 
-After importing the 
+After importing the
 
 Mongo DB indexes the main culprit, so I thought.
 First thing inspect the indexes
-ADD there mongo examples 
+ADD there mongo examples
 https://docs.mongodb.com/manual/reference/explain-results/
 ```
 > db.bookmarks.find({userId:"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39"}).explain("executionStats");

@@ -11,11 +11,11 @@ tags: [dev-bookmarks]
 New [dev bookmarks](https://www.bookmarks.dev) added in the 17th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## aggregator 
+## aggregator
 
 **[Lobsters](https://lobste.rs/)**
 
@@ -27,7 +27,7 @@ Awesome community for programmers.
 <hr>
 
 
-## angular 
+## angular
 
 **[GitHub - mauriciovigolo/keycloak-angular: Easy Keycloak setup for Angular applications (v>4.3)](https://github.com/mauriciovigolo/keycloak-angular)**
 
@@ -47,7 +47,7 @@ In this article I will show how to use three of the engine’s features: empty-p
 <hr>
 
 
-## blog 
+## blog
 
 **[Oracle Developers Blog](https://blogs.oracle.com/developers/)**
 
@@ -58,18 +58,18 @@ Oracle Blogs
 <hr>
 
 
-## challenge 
+## challenge
 
 **[Project Euler](https://projecteuler.net/)**
 
   * **tags**: &nbsp; [puzzles](https://www.bookmarks.dev/search?q=[puzzles]), &nbsp; [math](https://www.bookmarks.dev/search?q=[math]), &nbsp; [programming](https://www.bookmarks.dev/search?q=[programming]), &nbsp; [challenge](https://www.bookmarks.dev/search?q=[challenge])
 
-A website dedicated to the fascinating world of mathematics and programming. 
+A website dedicated to the fascinating world of mathematics and programming.
 
 <hr>
 
 
-## coding 
+## coding
 
 **[Lobsters](https://lobste.rs/)**
 
@@ -81,7 +81,7 @@ Awesome community for programmers.
 <hr>
 
 
-## community 
+## community
 
 **[Lobsters](https://lobste.rs/)**
 
@@ -93,7 +93,7 @@ Awesome community for programmers.
 <hr>
 
 
-## compsci 
+## compsci
 
 **[Lobsters](https://lobste.rs/)**
 
@@ -105,7 +105,7 @@ Awesome community for programmers.
 <hr>
 
 
-## feed 
+## feed
 
 **[Lobsters](https://lobste.rs/)**
 
@@ -117,7 +117,7 @@ Awesome community for programmers.
 <hr>
 
 
-## free-programming-books 
+## free-programming-books
 
 **[Coding bookmarks, aka #DevBookmarks](https://www.bookmarks.dev/)**
 
@@ -125,12 +125,12 @@ Awesome community for programmers.
 
 Collection of (cu)rated coding bookmarks. Create your personal bookmark list and share selected bookmarks so others can benefit.
 
-The public codingmarks are also published weekly on Github at https://github.com/CodepediaOrg/bookmarks
+The public codingmarks are also published weekly on Github at https://github.com/BookmarksDev/bookmarks
 
 <hr>
 
 
-## github 
+## github
 
 **[How to promote your Github project – Hacker Noon](https://hackernoon.com/how-to-promote-your-github-project-1b39a7eee841)**
 
@@ -167,7 +167,7 @@ A template to make good README.md
 <hr>
 
 
-## go 
+## go
 
 **[🎮 A NES emulator written in Go](https://github.com/rbaron/awesomenes)**
 
@@ -179,7 +179,7 @@ A NES emulator written in Go
 <hr>
 
 
-## java 
+## java
 
 **[GraalVM](http://www.graalvm.org/)**
 
@@ -200,7 +200,7 @@ Today, we are pleased to announce the 1.0 release of [GraalVM](http://www.graalv
 <hr>
 
 
-## javascript 
+## javascript
 
 **[JavaScript Air](https://javascriptair.com/)**
 
@@ -211,7 +211,7 @@ The live JavaScript podcast all about JavaScript and the web platform. Available
 <hr>
 
 
-## jvm 
+## jvm
 
 **[Announcing GraalVM: Run Programs Faster Anywhere](https://blogs.oracle.com/developers/announcing-graalvm)**
 
@@ -223,7 +223,7 @@ Today, we are pleased to announce the 1.0 release of [GraalVM](http://www.graalv
 <hr>
 
 
-## keycloak 
+## keycloak
 
 **[GitHub - mauriciovigolo/keycloak-angular: Easy Keycloak setup for Angular applications (v>4.3)](https://github.com/mauriciovigolo/keycloak-angular)**
 
@@ -235,7 +235,7 @@ Easy Keycloak setup for Angular applications (v>4.3)
 <hr>
 
 
-## kotlin 
+## kotlin
 
 **[GraalVM](http://www.graalvm.org/)**
 
@@ -247,7 +247,7 @@ GraalVM is a universal virtual machine for running applications written in JavaS
 <hr>
 
 
-## marketing 
+## marketing
 
 **[How to promote your Github project – Hacker Noon](https://hackernoon.com/how-to-promote-your-github-project-1b39a7eee841)**
 
@@ -268,18 +268,18 @@ We recently launched a new product called Froala Design Blocks. A few days later
 <hr>
 
 
-## math 
+## math
 
 **[Project Euler](https://projecteuler.net/)**
 
   * **tags**: &nbsp; [puzzles](https://www.bookmarks.dev/search?q=[puzzles]), &nbsp; [math](https://www.bookmarks.dev/search?q=[math]), &nbsp; [programming](https://www.bookmarks.dev/search?q=[programming]), &nbsp; [challenge](https://www.bookmarks.dev/search?q=[challenge])
 
-A website dedicated to the fascinating world of mathematics and programming. 
+A website dedicated to the fascinating world of mathematics and programming.
 
 <hr>
 
 
-## news 
+## news
 
 **[Lobsters](https://lobste.rs/)**
 
@@ -291,7 +291,7 @@ Awesome community for programmers.
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[Abhinav Rastogi: Scaling NodeJS beyond the ordinary; JSConf Iceland 2018 - YouTube](https://www.youtube.com/watch?v=K8spO4hHMhg)**
 
@@ -303,7 +303,7 @@ I will be taking you through the variety of resource bottlenecks you can expect 
 <hr>
 
 
-## open-source 
+## open-source
 
 **[Google Open Source – opensource.google.com](https://opensource.google.com/)**
 
@@ -314,7 +314,7 @@ Google <3 Open Source
 <hr>
 
 
-## performance 
+## performance
 
 **[Abhinav Rastogi: Scaling NodeJS beyond the ordinary; JSConf Iceland 2018 - YouTube](https://www.youtube.com/watch?v=K8spO4hHMhg)**
 
@@ -326,7 +326,7 @@ I will be taking you through the variety of resource bottlenecks you can expect 
 <hr>
 
 
-## plt 
+## plt
 
 **[Lobsters](https://lobste.rs/)**
 
@@ -338,7 +338,7 @@ Awesome community for programmers.
 <hr>
 
 
-## podcast 
+## podcast
 
 **[GitHub - rShetty/awesome-podcasts: Collection of awesome podcasts](https://github.com/rShetty/awesome-podcasts)**
 
@@ -358,13 +358,13 @@ The live JavaScript podcast all about JavaScript and the web platform. Available
 <hr>
 
 
-## programming 
+## programming
 
 **[Project Euler](https://projecteuler.net/)**
 
   * **tags**: &nbsp; [puzzles](https://www.bookmarks.dev/search?q=[puzzles]), &nbsp; [math](https://www.bookmarks.dev/search?q=[math]), &nbsp; [programming](https://www.bookmarks.dev/search?q=[programming]), &nbsp; [challenge](https://www.bookmarks.dev/search?q=[challenge])
 
-A website dedicated to the fascinating world of mathematics and programming. 
+A website dedicated to the fascinating world of mathematics and programming.
 
 <hr>
 
@@ -389,18 +389,18 @@ Jacob Kaplan-Moss is known for his work on Django but, as he would describe in h
 <hr>
 
 
-## puzzles 
+## puzzles
 
 **[Project Euler](https://projecteuler.net/)**
 
   * **tags**: &nbsp; [puzzles](https://www.bookmarks.dev/search?q=[puzzles]), &nbsp; [math](https://www.bookmarks.dev/search?q=[math]), &nbsp; [programming](https://www.bookmarks.dev/search?q=[programming]), &nbsp; [challenge](https://www.bookmarks.dev/search?q=[challenge])
 
-A website dedicated to the fascinating world of mathematics and programming. 
+A website dedicated to the fascinating world of mathematics and programming.
 
 <hr>
 
 
-## resources 
+## resources
 
 **[Coding bookmarks, aka #DevBookmarks](https://www.bookmarks.dev/)**
 
@@ -408,7 +408,7 @@ A website dedicated to the fascinating world of mathematics and programming.
 
 Collection of (cu)rated coding bookmarks. Create your personal bookmark list and share selected bookmarks so others can benefit.
 
-The public codingmarks are also published weekly on Github at https://github.com/CodepediaOrg/bookmarks
+The public codingmarks are also published weekly on Github at https://github.com/BookmarksDev/bookmarks
 
 <hr>
 
@@ -422,7 +422,7 @@ Welcome to Learn Anything, the platform for knowledge discovery that helps you u
 <hr>
 
 
-## scala 
+## scala
 
 **[GraalVM](http://www.graalvm.org/)**
 
@@ -434,7 +434,7 @@ GraalVM is a universal virtual machine for running applications written in JavaS
 <hr>
 
 
-## tools 
+## tools
 
 **[Witeboard](https://witeboard.com/)**
 
@@ -445,7 +445,7 @@ Witeboard is the fastest way to collaborate real-time with your team anywhere.
 <hr>
 
 
-## user-experience 
+## user-experience
 
 **[Web Design: The First Hundred Years with Maciej Ceglowski - YouTube](https://www.youtube.com/watch?v=nwhZ3KEqUlw)**
 
@@ -457,7 +457,7 @@ oin Maciej Ceglowski for an insightful look “back” at web design’s beginni
 <hr>
 
 
-## virtual-machine 
+## virtual-machine
 
 **[GraalVM](http://www.graalvm.org/)**
 

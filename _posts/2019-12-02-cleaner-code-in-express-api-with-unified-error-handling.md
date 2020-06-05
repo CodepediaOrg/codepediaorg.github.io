@@ -10,10 +10,10 @@ categories: [clean-code]
 tags: [expressjs, nodejs, rest, api]
 ---
 
-What started out as a simple code duplication removal, turned out into [a major refactoring](https://github.com/CodepediaOrg/bookmarks.dev/commit/fc2ba3339909d15f43450ba8ffbf472bacaef429)
+What started out as a simple code duplication removal, turned out into [a major refactoring](https://github.com/BookmarksDev/bookmarks.dev/commit/fc2ba3339909d15f43450ba8ffbf472bacaef429)
  with complete rewriting of error handling, moving of business logic/db access into separate service files (about this in another blog post)
   and rewriting of all integration tests to use async/await. In this blog post I will focus on the custom error handling and how
-  it made the code much cleaner for the [REST API](https://github.com/CodepediaOrg/bookmarks.dev/backend) supporting [www.bookmarks.dev](https://www.bookmarks.dev).
+  it made the code much cleaner for the [REST API](https://github.com/BookmarksDev/bookmarks.dev/backend) supporting [www.bookmarks.dev](https://www.bookmarks.dev).
   The API uses [ExpressJS](https://expressjs.com), currently in version 4.
 
 <!--more-->
@@ -490,12 +490,12 @@ SUM:                            57            859            240          12235
 
 ## Conclusion
 It's not much left to say, I think that Express offers a decent way to handle exceptions. I hope you've learned something from this post
-and if you have any improvement please leave a comment, or better make a pull request at [bookmarks.dev github repo](https://github.com/CodepediaOrg/bookmarks.dev).
+and if you have any improvement please leave a comment, or better make a pull request at [bookmarks.dev github repo](https://github.com/BookmarksDev/bookmarks.dev).
 
 <p class="note_normal">
 During refactoring I researched quite a few links, and I bookmarked the best of them at <a href="https://www.bookmarks.dev" target="_blank">www.bookmarks.dev</a>
  with the following tags <a href="https://www.bookmarks.dev/?tab=search-results&q=%5Bexpressjs%5D%20%5Berror-handling%5D%20%5Basync-await%5D&sd=public" target="_blank">[expressjs] [error-handling] [async-await]</a>
  <br/>
 
-They will be present shortly at the generated public bookmarks - <a href="https://github.com/CodepediaOrg/bookmarks">https://github.com/CodepediaOrg/bookmarks</a>
+They will be present shortly at the generated public bookmarks - <a href="https://github.com/BookmarksDev/bookmarks">https://github.com/BookmarksDev/bookmarks</a>
 </p>

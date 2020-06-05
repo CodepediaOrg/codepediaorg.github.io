@@ -37,7 +37,7 @@ and then type `./bin/mongo` to start mongo
 
 MongoDB does not enable access control by default. This might be fine for development, but for a production environment it is highly recommended
 to employ [authorization](https://docs.mongodb.com/manual/core/authorization/). Please see the **Create database and users** section of
-the [MongoDB Setup For Production](https://github.com/CodepediaOrg/bookmarks.dev/wiki/MongoDB-Setup-for-Production) wiki page for commands related to that.
+the [MongoDB Setup For Production](https://github.com/BookmarksDev/bookmarks.dev/wiki/MongoDB-Setup-for-Production) wiki page for commands related to that.
 
 ## Quit the mongo shell
 

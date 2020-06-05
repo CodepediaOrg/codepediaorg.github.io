@@ -12,7 +12,7 @@ tags: [mysql, keycloak]
 
 This blog post presents the steps required to connect to the MySql database from the command line and modify the size of
 a column in a table. The example is based on the MySql database that is backing Keycloak to run [www.bookmarks.dev](https://www.bookmarks.dev).
-For a setup of the environment you can see the wiki article [Keycloak MySQL Setup](https://github.com/CodepediaOrg/bookmarks.dev/wiki/Keycloak-MySQL-Setup)
+For a setup of the environment you can see the wiki article [Keycloak MySQL Setup](https://github.com/BookmarksDev/bookmarks.dev/wiki/Keycloak-MySQL-Setup)
 
 <!--more-->
 

@@ -9,8 +9,8 @@ categories: [mongodb]
 tags: [codingmarks, mongodb, mongoose, nodejs]
 ---
 
-I have a use case where I need to retrieve the latest added public [dev-bookmarks](https://github.com/CodepediaOrg/bookmarks).
-They are store in a mongo database, and I use Mongoose as ORM. 
+I have a use case where I need to retrieve the latest added public [dev-bookmarks](https://github.com/BookmarksDev/bookmarks).
+They are store in a mongo database, and I use Mongoose as ORM.
 
 I want to have two possibilites to achieve this:
 
@@ -21,7 +21,7 @@ I think the code is self explanatory
 ```
 /**
  * Returns the codingmarks added recently.
- * 
+ *
  * The since query parameter is a timestamp which specifies the date since we want to look forward to present time.
  * If this parameter is present it has priority. If it is not present, we might specify the number of days to look back via
  * the query parameter numberOfDays. If not present it defaults to 7 days, last week.

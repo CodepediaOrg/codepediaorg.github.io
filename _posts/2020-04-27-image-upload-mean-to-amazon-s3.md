@@ -409,4 +409,4 @@ You can get it from `request.file.location` attribute.
 ## Conclusion
 You should know by now how to upload a picture to Amazon S3 bucket with Angular and ExpressJS. You have also learned
 how to validate the upload both in frontend and backend. For suggestions please leave a comment below,
- or better yet [make a pull request](https://github.com/CodepediaOrg/bookmarks.dev).
+ or better yet [make a pull request](https://github.com/BookmarksDev/bookmarks.dev).

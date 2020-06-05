@@ -20,7 +20,7 @@ Also, when you click on the youtube logo, a dialog will pop where the video is e
 In this blog post I will show how it is implemented.
 
 > As a reminder, the [www.bookmarks.dev](https://www.bookmarks.dev) website
-uses Angular, with angular material and bootstrap for styling.   
+uses Angular, with angular material and bootstrap for styling.
 
 <!--more-->
 
@@ -41,7 +41,7 @@ In the bookmarks list's html template I check if the bookmark is a youtube video
     <a href="{{bookmark.location}}" target="_blank" [innerHtml]="bookmark.name | highlight: queryText" (click)="onBookmarkLinkClick(bookmark)"></a>
     <sup class="external-link-hint"><i class="fas fa-external-link-alt"></i></sup>
   </h5>
-...          
+...
 ```
 
 ### The Angular Bookmarks List Component - **AsyncBookmarkListComponent**
@@ -89,7 +89,7 @@ The window width (here `innerWidth`) is set in the `ngOnInit()` method of the co
 
 ## Angular Material Dialog Integration
 
-Let's focus now on the angular material component that displays the youtube video.  
+Let's focus now on the angular material component that displays the youtube video.
 
 ### HTML Template
 
@@ -175,7 +175,7 @@ I recommend you read the whole article to understand the details.
 ```
 
 ## Conclusion
-Well it as simple as that. The whole code source for this for [www.bookmarks.dev](https://www.bookmarks.dev) is available on [Github](https://github.com/CodepediaOrg/bookmarks.dev).
+Well it as simple as that. The whole code source for this for [www.bookmarks.dev](https://www.bookmarks.dev) is available on [Github](https://github.com/BookmarksDev/bookmarks.dev).
 
-I would really appreciate if you gave [www.bookmarks.dev](https://www.bookmarks.dev) a try  
-and have a look at the generated public bookmarks at [https://github.com/CodepediaOrg/bookmarks](https://github.com/CodepediaOrg/bookmarks).
+I would really appreciate if you gave [www.bookmarks.dev](https://www.bookmarks.dev) a try
+and have a look at the generated public bookmarks at [https://github.com/BookmarksDev/bookmarks](https://github.com/BookmarksDev/bookmarks).

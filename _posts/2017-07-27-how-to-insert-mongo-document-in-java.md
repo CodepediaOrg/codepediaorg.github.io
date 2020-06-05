@@ -9,13 +9,13 @@ categories: [java, mongodb]
 tags: [codingmarks, java, mongodb, example, maven]
 ---
 
-This blog post presents a simple example showing how to insert a document in mongodb, in the Java language. 
+This blog post presents a simple example showing how to insert a document in mongodb, in the Java language.
 
  <p class="note_normal">
     <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" />
-     The code samples are taken from the Free-Programming-Books-Importer project, available on <a href="https://github.com/CodepediaOrg/bookmarks-free-programming-books-importer" target="_blank">Github</a>
- </p>  
- 
+     The code samples are taken from the Free-Programming-Books-Importer project, available on <a href="https://github.com/BookmarksDev/bookmarks-free-programming-books-importer" target="_blank">Github</a>
+ </p>
+
 ## Use MongoDB Java Driver
 Add the java mongo driver to your class path, or if you use maven to the `dependencies` in your _pom_ file:
 
@@ -35,7 +35,7 @@ Add the java mongo driver to your class path, or if you use maven to the `depend
 MongoClientURI connectionString = new MongoClientURI("mongodb://codingpedia:codingpedia@localhost:27017/codingpedia-bookmarks");
 MongoClient mongoClient = new MongoClient(connectionString);
 ```
-<!--more--> 
+<!--more-->
 
 ## Select Mongo Database and Collection
 Get the Mongo database:
@@ -53,7 +53,7 @@ MongoCollection<Document> bookmarksCollection = database.getCollection("bookmark
 
 > A collection is a grouping of MongoDB documents. A collection is the equivalent of an RDBMS table.
  A collection exists within a single database. Collections do not enforce a schema. Documents within a collection can have different fields.
-  Typically, all documents in a collection have a similar or related purpose. 
+  Typically, all documents in a collection have a similar or related purpose.
 
 ## Prepare the document to be inserted
 
@@ -89,11 +89,11 @@ if(bookmark!=null){
 
 ```
 
-> A document is a record in a MongoDB collection and the basic unit of data in MongoDB. 
+> A document is a record in a MongoDB collection and the basic unit of data in MongoDB.
 Documents are analogous to JSON objects but exist in the database in a more type-rich format known as BSON.
  See [Documents](https://docs.mongodb.com/manual/reference/glossary/) for more information.
 
  <p class="note_normal">
     <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" />
-     Source code for this example is available on <a href="https://github.com/CodepediaOrg/bookmarks-free-programming-books-importer" target="_blank">Github</a>
- </p>  
+     Source code for this example is available on <a href="https://github.com/BookmarksDev/bookmarks-free-programming-books-importer" target="_blank">Github</a>
+ </p>

@@ -10,12 +10,12 @@ tags: [openapi, expressjs, swagger, swagger-editor, swagger-ui, rest, api, docum
 ---
 
 
-Recently I've taken the time to update the API documentation for [bookmarks.dev](https://github.com/CodepediaOrg/bookmarks.dev).
+Recently I've taken the time to update the API documentation for [bookmarks.dev](https://github.com/BookmarksDev/bookmarks.dev).
 I used the Swagger 2.0 (aka OAS 2) before and I decided to update to OpenAPI Specification (OAS) 3. In this post I will
 highlight the main points about the process and documenting the API with OAS 3. Some points might still apply to the former OAS 2 (fka Swagger)
 documentation, but they are worth mentioning since I hadn't payed enough attention before and I find them useful.
 
-> You can find the OAS 3 specification  for **bookmarks.dev** [on Github](https://github.com/CodepediaOrg/bookmarks.dev/blob/master/backend/docs/openapi/openapi.yaml)
+> You can find the OAS 3 specification  for **bookmarks.dev** [on Github](https://github.com/BookmarksDev/bookmarks.dev/blob/master/backend/docs/openapi/openapi.yaml)
 and the result is available at [bookmarks.dev/api/docs/](https://www.bookmarks.dev/api/docs/)
 
 Here are the key takeaways.
@@ -67,7 +67,7 @@ Another point worth mentioning here is that you could use [swagger-jsdoc](https:
   assumes that you want document your existing/living/working code in a way to "give life" to it, generating a specification
    which can then be fed into other Swagger tools, and not the vice-versa.
 
-> For now I manage documentation centrally in one [openapi.yaml](https://github.com/CodepediaOrg/bookmarks.dev/blob/master/backend/docs/openapi/openapi.yaml) file,
+> For now I manage documentation centrally in one [openapi.yaml](https://github.com/BookmarksDev/bookmarks.dev/blob/master/backend/docs/openapi/openapi.yaml) file,
  but I might consider it at a later time
 
 ## 5. Use [tags](https://swagger.io/docs/specification/grouping-operations-with-tags/) to group the operations
@@ -230,7 +230,7 @@ paths:
                   language: en
                   tags: [nodejs, error-handling, expressjs]
                   publishedOn: 2019-12-02,
-                  sourceCodeURL: https://github.com/CodepediaOrg/bookmarks.dev
+                  sourceCodeURL: https://github.com/BookmarksDev/bookmarks.dev
                   description: Shows how you can make your backend ExpressJS REST API cleaner by using custom error handling middleware. Code snippets of before and after refactoring are presented to make the point
                   descriptionHtml: <p>Shows how you can make your backend ExpressJS REST API cleaner by using custom error handling middleware. Code snippets of before and after refactoring are presented to make the point</p>
                   userId: 4c617f2b-2bad-498b-a9c6-4e9a8c303798

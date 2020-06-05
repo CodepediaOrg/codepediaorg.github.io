@@ -60,13 +60,13 @@ Gone. Under the hood the whole thing still works via Webpack, but the configurat
 
 ### package.json
 
-Compare the `old-bookmarks/package.json` to the new `./package.json`. Add in third party libraries, the `@types/*` packages, and any other types. In my case you can see clearly what happened in this [commit](https://github.com/CodepediaOrg/bookmarks/commit/e7edb064483927618b182cfc5054efb913ed205f#diff-b9cfc7f2cdf78a7f4b91a753d10865a2)
+Compare the `old-bookmarks/package.json` to the new `./package.json`. Add in third party libraries, the `@types/*` packages, and any other types. In my case you can see clearly what happened in this [commit](https://github.com/BookmarksDev/bookmarks/commit/e7edb064483927618b182cfc5054efb913ed205f#diff-b9cfc7f2cdf78a7f4b91a753d10865a2)
 
 Run `npm install` to install the added packages.
 
 ### main.ts
 
-For me it meant replacing the condition to `enableProdMode()` from `if (process.env.ENV === 'build')` to `if (environment.production)`. See this [commit](https://github.com/CodepediaOrg/bookmarks/commit/e7edb064483927618b182cfc5054efb913ed205f#diff-8cfead41d88ad47d44509a8ab0a109ad) for a complete comparison.
+For me it meant replacing the condition to `enableProdMode()` from `if (process.env.ENV === 'build')` to `if (environment.production)`. See this [commit](https://github.com/BookmarksDev/bookmarks/commit/e7edb064483927618b182cfc5054efb913ed205f#diff-8cfead41d88ad47d44509a8ab0a109ad) for a complete comparison.
 
 ### Unit Testing
 
@@ -154,7 +154,7 @@ This approach is valid for any other libraries that have available typings. Even
 
 ## Environment specific configuration
 
-Every application that runs on more than just `localhost` has environment specific configurations, that we need to address.  
+Every application that runs on more than just `localhost` has environment specific configurations, that we need to address.
 
 ### Before
 

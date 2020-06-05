@@ -26,7 +26,7 @@ available via the API, or I did not find out how yet. So let's see how that work
 
 ### Backend
 
-In backend the [changes](https://github.com/CodepediaOrg/bookmarks.dev/commit/b0fe37c522998f4e8a7d79352b24299c95875181) are minimal.
+In backend the [changes](https://github.com/BookmarksDev/bookmarks.dev/commit/b0fe37c522998f4e8a7d79352b24299c95875181) are minimal.
 Chedck if the `scrape` path contains a `stackoverflowQuestionId` query param and then we invoke the api with a key registered on [stackapps](https://stackapps.com/apps/oauth/register)
 to get the data
 
@@ -77,7 +77,7 @@ let getStackoverflowQuestionData = async (stackoverflowQuestionId) => {
 > With a `key` your rate is currently limited to 10000 calls per day, otherwise to just 300
 
 ### Front-end
-In front-end a little bit [more work](https://github.com/CodepediaOrg/bookmarks.dev/commit/22dae2dd163d81ade388c8602b386a79e97f1a7b) was needed,
+In front-end a little bit [more work](https://github.com/BookmarksDev/bookmarks.dev/commit/22dae2dd163d81ade388c8602b386a79e97f1a7b) was needed,
 since some refactoring was involved.
 
 ```typescript
@@ -174,4 +174,4 @@ Now you can use your Stackoverflow account to Login and register on [www.bookmar
 
 ## Conclusion
 I hope these new additions will make managing your dev bookmarks a little better. If you have other improvements ideas
-please submit them on [Github](https://github.com/CodepediaOrg/bookmarks.dev/issues)
+please submit them on [Github](https://github.com/BookmarksDev/bookmarks.dev/issues)

@@ -14,13 +14,13 @@ In this short blog post I will show you how to call the Youtube Data API v3 to g
  I am especially interested in the **video duration**, **description**, **title**, **tags** and **publication date** attributes.
   This is the metadata I use to [automagically bookmark youtube videos](https://dev.to/ama/automagically-bookmarking-youtube-videos-for-developers-lpn).
 
-> Source code for this article can be found on [Github](https://github.com/CodepediaOrg/bookmarks.dev)
+> Source code for this article can be found on [Github](https://github.com/BookmarksDev/bookmarks.dev)
 
 <!--more-->
 
 ## Let's dive directly into how it's done
 
-You need to make a GET REST call. In my case the call is made from a  [Node.js/ExpressJS backend](https://github.com/CodepediaOrg/bookmarks.dev).
+You need to make a GET REST call. In my case the call is made from a  [Node.js/ExpressJS backend](https://github.com/BookmarksDev/bookmarks.dev).
  I use [superagent](https://visionmedia.github.io/superagent/) to make the call, but you can use a REST client of your
  choice:
 
@@ -71,7 +71,7 @@ I use the response data to make it easy to bookmark youtube videos. In the video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4q12HDjWY44" frameborder="0" allowfullscreen></iframe>
 
 > Note the [Save to Bookmarks.dev Chrome Extension](https://chrome.google.com/webstore/detail/save-url-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb)
- at the beginning of the video, which I developed and [open-sourced](https://github.com/CodepediaOrg/bookmarks.dev-chrome-extension) to make it easy to save bookmarks.
+ at the beginning of the video, which I developed and [open-sourced](https://github.com/BookmarksDev/bookmarks.dev-chrome-extension) to make it easy to save bookmarks.
 
 ### [Quota usage](https://developers.google.com/youtube/v3/getting-started#quota)
 The YouTube Data API uses a quota. All API requests, including invalid requests, incur at least a one-point quota cost.

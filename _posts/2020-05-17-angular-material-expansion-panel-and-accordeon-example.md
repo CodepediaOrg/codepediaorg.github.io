@@ -12,8 +12,11 @@ tags: [angular-material, angular]
 
 I find accordions pretty well suited for FAQs or HowTo pages. That's why I chose one for the [HowTo](https://www.bookmarks.dev/howto) page of
 [www.bookmarks.dev](https://www.bookmarks.dev/), which is implemented with [angular material expansion panel and
-accordion](https://material.angular.io/components/expansion/overview). This blog post presents the source code for that
-with a couple of notes.
+accordion](https://material.angular.io/components/expansion/overview).
+
+ ![HowTo Accordion Showcase](/images/posts/2020-05-17-angular-material-expansion-panel-and-accordeon-example/howto-accordeon-showcase.gif)
+
+This blog post presents the source code for that with a couple of notes.
 
 {% include source-code-codingmarks.html %}
 
@@ -26,7 +29,7 @@ with a couple of notes.
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <h4><i class="fas fa-xs fa-info-circle"></i> Get started</h4>
-      </mat-expansion-panel-header>
+      </mat-expansion-panel-heade}r>
 
       <ng-template matExpansionPanelContent>
         <app-howto-get-started></app-howto-get-started>

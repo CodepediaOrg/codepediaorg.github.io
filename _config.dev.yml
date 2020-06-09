@@ -33,9 +33,9 @@ owner:
   bio:            "Share coding knowledge"
   email:          contact@codepedia.org
   # Twitter nick for use in Twitter cards and follow button.
-  twitter: codingpedia # if no twitter in this config, the twitter follow button will be removed
+  twitter: CodepediaOrg # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
-  github: codingpedia
+  github: CodepediaOrg
 
 # Twitter account associated with the site if different from owner/author twitter account.
 # Used in Twitter cards.

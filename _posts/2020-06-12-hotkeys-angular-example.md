@@ -13,6 +13,10 @@ You know how good ideas come out of the blue? Recently it hit me that I could mo
 history and the pinned bookmarks on [www.bookmarks.dev](https://www.bookmarks.dev) with hot keys. So I sat down and implemented
 this feature. This post details how.
 
+ ![Hot Keys on Bookmarks.dev demo](/images/posts/2020-06-12-hotkeys-angular/angular-hotkeys-showcase-1440x900.gif)
+
+<!--more-->
+
 It's not very much. The actual magic happens in this piece of code:
 ```typescript
 import { Component, HostListener } from '@angular/core';

@@ -1,22 +1,22 @@
 ---
 layout: post
-title: New codingmarks added in 2018 so far. Keywords - git, nodejs, design-patterns, mongodb etc.
-description: "New codingmarks added this year so far. They were marked with the following keywords:
+title: New dev bookmarks added in 2018 so far. Keywords - git, nodejs, design-patterns, mongodb etc.
+description: "New dev bookmarks added this year so far. They were marked with the following keywords:
  clean-code, debugging, design-patterns, expressjs, git, http, mongodb, mongoose, nodejs, npm, rxjs, ssh, testing, typescript, unit-testing, utils and vscode"
 author: ama
-permalink: /ama/new-codingmarks-week-3-2018-nodejs-mongodb-git-design-patterns-and-more
+permalink: /ama/new-dev-bookmarks-week-3-2018-nodejs-mongodb-git-design-patterns-and-more
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
-New [dev bookmarks](https://www.bookmarks.dev) added this year so far. They were marked with the following keywords: 
+New [dev bookmarks](https://www.bookmarks.dev) added this year so far. They were marked with the following keywords:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## clean-code 
+## clean-code
 
 **[Template method pattern - Wikipedia](https://en.wikipedia.org/wiki/Template_method_pattern)**
 
@@ -57,7 +57,7 @@ When writing unit tests in Java, stick to FIRST. Your tests should be fast, inde
 <hr>
 
 
-## debugging 
+## debugging
 
 **[Debug Node.js Apps using VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)**
 
@@ -73,7 +73,7 @@ The Visual Studio Code editor includes Node.js debugging support. Set breakpoint
 <hr>
 
 
-## design-patterns 
+## design-patterns
 
 **[Template method pattern - Wikipedia](https://en.wikipedia.org/wiki/Template_method_pattern)**
 
@@ -105,7 +105,7 @@ The **single responsibility principle** is a computer programming principle that
 <hr>
 
 
-## expressjs 
+## expressjs
 
 **[RESTful API In Node & Express With TypeScript & MongoDB - YouTube](https://www.youtube.com/watch?v=XqbBv1i9Yhc)**
 
@@ -118,7 +118,7 @@ This video covers writing a RESTful JSON API using Node, Express, MongoDB, Mongo
 <hr>
 
 
-## git 
+## git
 
 **[Setting your username in Git - User Documentation        ](https://help.github.com/articles/setting-your-username-in-git/)**
 
@@ -148,7 +148,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 <hr>
 
 
-## http 
+## http
 
 **[Helmet](https://helmetjs.github.io/docs/)**
 
@@ -160,7 +160,7 @@ Helmet helps you secure your Express.js apps by setting various HTTP headers. It
 <hr>
 
 
-## mongodb 
+## mongodb
 
 **[javascript - Mongoose Model.save() hangs when called from node.js app - Stack Overflow](https://stackoverflow.com/questions/12030371/mongoose-model-save-hangs-when-called-from-node-js-app)**
 
@@ -183,7 +183,7 @@ db = mongoose.connect('localhost', 'nextrak');
   * **tags**: &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb]), &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/mongodb/node-mongodb-native/)
 
-The official MongoDB Node.js driver provides both callback-based and Promise-based interaction with MongoDB, allowing applications to take full advantage of the new features in ES6. 
+The official MongoDB Node.js driver provides both callback-based and Promise-based interaction with MongoDB, allowing applications to take full advantage of the new features in ES6.
 
 <hr>
 
@@ -207,7 +207,7 @@ typegoose - Typegoose - Define Mongoose models using TypeScript classes.
 <hr>
 
 
-## mongoose 
+## mongoose
 
 **[javascript - Mongoose Model.save() hangs when called from node.js app - Stack Overflow](https://stackoverflow.com/questions/12030371/mongoose-model-save-hangs-when-called-from-node-js-app)**
 
@@ -265,7 +265,7 @@ typegoose - Typegoose - Define Mongoose models using TypeScript classes.
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[javascript - Mongoose Model.save() hangs when called from node.js app - Stack Overflow](https://stackoverflow.com/questions/12030371/mongoose-model-save-hangs-when-called-from-node-js-app)**
 
@@ -288,7 +288,7 @@ db = mongoose.connect('localhost', 'nextrak');
   * **tags**: &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb]), &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/mongodb/node-mongodb-native/)
 
-The official MongoDB Node.js driver provides both callback-based and Promise-based interaction with MongoDB, allowing applications to take full advantage of the new features in ES6. 
+The official MongoDB Node.js driver provides both callback-based and Promise-based interaction with MongoDB, allowing applications to take full advantage of the new features in ES6.
 
 <hr>
 
@@ -332,7 +332,7 @@ typegoose - Typegoose - Define Mongoose models using TypeScript classes.
 
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [npm](https://www.bookmarks.dev/search?q=[npm])
 
-nodejs hangs when installing some packages 
+nodejs hangs when installing some packages
 
 Moste voted solution:
 
@@ -341,13 +341,13 @@ Moste voted solution:
 <hr>
 
 
-## npm 
+## npm
 
 **[npm install gets stuck at sill install loadIdealTree · Issue #17228 · npm/npm · GitHub](https://github.com/npm/npm/issues/17228)**
 
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [npm](https://www.bookmarks.dev/search?q=[npm])
 
-nodejs hangs when installing some packages 
+nodejs hangs when installing some packages
 
 Moste voted solution:
 
@@ -356,7 +356,7 @@ Moste voted solution:
 <hr>
 
 
-## rxjs 
+## rxjs
 
 **[forkJoin · learn-rxjs](https://www.learnrxjs.io/operators/combination/forkjoin.html)**
 
@@ -367,7 +367,7 @@ This operator is best used when you have a group of observables and only care ab
 <hr>
 
 
-## ssh 
+## ssh
 
 **[Adding a new SSH key to your GitHub account - User Documentation        ](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)**
 
@@ -381,7 +381,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 <hr>
 
 
-## testing 
+## testing
 
 **[Writing Your F.I.R.S.T Unit Tests - DZone Java](https://dzone.com/articles/writing-your-first-unit-tests)**
 
@@ -393,7 +393,7 @@ When writing unit tests in Java, stick to FIRST. Your tests should be fast, inde
 <hr>
 
 
-## typescript 
+## typescript
 
 **[RESTful API In Node & Express With TypeScript & MongoDB - YouTube](https://www.youtube.com/watch?v=XqbBv1i9Yhc)**
 
@@ -434,7 +434,7 @@ These guidelines are **mainly meant for contributors to the TypeScript project**
 <hr>
 
 
-## unit-testing 
+## unit-testing
 
 **[Writing Your F.I.R.S.T Unit Tests - DZone Java](https://dzone.com/articles/writing-your-first-unit-tests)**
 
@@ -446,7 +446,7 @@ When writing unit tests in Java, stick to FIRST. Your tests should be fast, inde
 <hr>
 
 
-## utils 
+## utils
 
 **[Adding a new SSH key to your GitHub account - User Documentation        ](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)**
 
@@ -460,7 +460,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 <hr>
 
 
-## vscode 
+## vscode
 
 **[Debug Node.js Apps using VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)**
 

@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 20th week of 2018
-description: "New codingmarks added in the 20th week of 2018. Keywords: ai, angular, async, aws, blog, cloud, course, editor, event-driven, glossary, logging, network, nodejs, open-source, rust, security, serverless and vim"
+title: New dev bookmarks added in the 20th week of 2018
+description: "New dev bookmarks added in the 20th week of 2018. Keywords: ai, angular, async, aws, blog, cloud, course, editor, event-driven, glossary, logging, network, nodejs, open-source, rust, security, serverless and vim"
 author: ama
-permalink: /ama/new-codingmarks-week-20-2018
+permalink: /ama/new-dev-bookmarks-week-20-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 20th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## ai 
+## ai
 
 **[Artificial Intelligence - MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/)**
 
@@ -27,7 +27,7 @@ This course introduces students to the basic knowledge representation, problem s
 <hr>
 
 
-## angular 
+## angular
 
 **[All Things Angular](https://www.telerik.com/blogs/all-things-angular)**
 
@@ -74,7 +74,7 @@ Those operators are pure functions that can be used as standalone operators inst
 <hr>
 
 
-## async 
+## async
 
 **[Netty: Home](https://netty.io/)**
 
@@ -86,7 +86,7 @@ Netty is an asynchronous event-driven network application framework for rapid de
 <hr>
 
 
-## aws 
+## aws
 
 **[Full guide to developing REST API’s with AWS API Gateway and AWS Lambda](https://blog.sourcerer.io/full-guide-to-developing-rest-apis-with-aws-api-gateway-and-aws-lambda-d254729d6992)**
 
@@ -98,7 +98,7 @@ In this article we’ll explore using AWS Lambda to develop a service using Node
 <hr>
 
 
-## blog 
+## blog
 
 **[Google Open Source Blog](https://opensource.googleblog.com/)**
 
@@ -117,7 +117,7 @@ The latest news and tips from the Angular team.
 <hr>
 
 
-## cloud 
+## cloud
 
 **[Full guide to developing REST API’s with AWS API Gateway and AWS Lambda](https://blog.sourcerer.io/full-guide-to-developing-rest-apis-with-aws-api-gateway-and-aws-lambda-d254729d6992)**
 
@@ -129,7 +129,7 @@ In this article we’ll explore using AWS Lambda to develop a service using Node
 <hr>
 
 
-## course 
+## course
 
 **[Artificial Intelligence - MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/)**
 
@@ -150,14 +150,14 @@ Computer Systems Security is a class about the design and implementation of secu
 <hr>
 
 
-## editor 
+## editor
 
 **[welcome home : vim online](https://www.vim.org/)**
 
   * **tags**: &nbsp; [vim](https://www.bookmarks.dev/search?q=[vim]), &nbsp; [editor](https://www.bookmarks.dev/search?q=[editor])
 
 Vim - the ubiquitous text editor
-Vim is a highly configurable text editor for efficiently creating and changing any kind of text. It is included as "vi" with most UNIX systems and with Apple OS X. 
+Vim is a highly configurable text editor for efficiently creating and changing any kind of text. It is included as "vi" with most UNIX systems and with Apple OS X.
 
 Vim is rock stable and is continuously being developed to become even better. Among its features are:
 * persistent, multi-level undo tree
@@ -169,7 +169,7 @@ Vim is rock stable and is continuously being developed to become even better. Am
 <hr>
 
 
-## event-driven 
+## event-driven
 
 **[Netty: Home](https://netty.io/)**
 
@@ -181,7 +181,7 @@ Netty is an asynchronous event-driven network application framework for rapid de
 <hr>
 
 
-## glossary 
+## glossary
 
 **[Request for Comments (RFC) - Wikipedia](https://en.wikipedia.org/wiki/Request_for_Comments)**
 
@@ -195,7 +195,7 @@ An RFC is authored by engineers and computer scientists in the form of a memoran
 <hr>
 
 
-## logging 
+## logging
 
 **[GitHub - klauscfhq/signale: 👋 Hackable console logger](https://github.com/klauscfhq/signale)**
 
@@ -206,7 +206,7 @@ Hackable and configurable to the core, signale can be used for logging purposes,
 <hr>
 
 
-## network 
+## network
 
 **[Computer Systems Security - MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/)**
 
@@ -218,7 +218,7 @@ Computer Systems Security is a class about the design and implementation of secu
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[Full guide to developing REST API’s with AWS API Gateway and AWS Lambda](https://blog.sourcerer.io/full-guide-to-developing-rest-apis-with-aws-api-gateway-and-aws-lambda-d254729d6992)**
 
@@ -246,7 +246,7 @@ Previous NodeJS Release Versions; history, archive, version
 <hr>
 
 
-## open-source 
+## open-source
 
 **[Google Open Source Blog](https://opensource.googleblog.com/)**
 
@@ -257,7 +257,7 @@ The latest news from Google on open source releases, major projects, events, and
 <hr>
 
 
-## rust 
+## rust
 
 **[The Rust Programming Language](https://www.rust-lang.org/en-US/)**
 
@@ -268,7 +268,7 @@ A systems programming language that runs blazingly fast, prevents segfaults, and
 <hr>
 
 
-## security 
+## security
 
 **[Computer Systems Security - MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/)**
 
@@ -280,7 +280,7 @@ Computer Systems Security is a class about the design and implementation of secu
 <hr>
 
 
-## serverless 
+## serverless
 
 **[Full guide to developing REST API’s with AWS API Gateway and AWS Lambda](https://blog.sourcerer.io/full-guide-to-developing-rest-apis-with-aws-api-gateway-and-aws-lambda-d254729d6992)**
 
@@ -292,14 +292,14 @@ In this article we’ll explore using AWS Lambda to develop a service using Node
 <hr>
 
 
-## vim 
+## vim
 
 **[welcome home : vim online](https://www.vim.org/)**
 
   * **tags**: &nbsp; [vim](https://www.bookmarks.dev/search?q=[vim]), &nbsp; [editor](https://www.bookmarks.dev/search?q=[editor])
 
 Vim - the ubiquitous text editor
-Vim is a highly configurable text editor for efficiently creating and changing any kind of text. It is included as "vi" with most UNIX systems and with Apple OS X. 
+Vim is a highly configurable text editor for efficiently creating and changing any kind of text. It is included as "vi" with most UNIX systems and with Apple OS X.
 
 Vim is rock stable and is continuously being developed to become even better. Among its features are:
 * persistent, multi-level undo tree

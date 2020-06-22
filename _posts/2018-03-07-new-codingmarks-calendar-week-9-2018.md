@@ -1,28 +1,28 @@
 ---
 layout: post
-title: New codingmarks added in the 9th week of 2018
-description: "New codingmarks added in the 9th week of 2018. Keywords: angular, cryptography, css, docs, flexbox, github, github-pages, javascript, jekyll, machine-learning, math, microservices, networking, nodejs, performance, reactjs, ruby, scalability, typescript and websocket"
+title: New dev bookmarks added in the 9th week of 2018
+description: "New dev bookmarks added in the 9th week of 2018. Keywords: angular, cryptography, css, docs, flexbox, github, github-pages, javascript, jekyll, machine-learning, math, microservices, networking, nodejs, performance, reactjs, ruby, scalability, typescript and websocket"
 author: ama
-permalink: /ama/new-codingmarks-week-9-2018
+permalink: /ama/new-dev-bookmarks-week-9-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 9th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## angular 
+## angular
 
 **[Home · angular/flex-layout Wiki · GitHub](https://github.com/angular/flex-layout/wiki)**
 
   * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular]), &nbsp; [flexbox](https://www.bookmarks.dev/search?q=[flexbox]), &nbsp; [typescript](https://www.bookmarks.dev/search?q=[typescript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/angular/flex-layout)
 
-flex-layout - Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API 
+flex-layout - Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API
 
 <hr>
 
@@ -38,7 +38,7 @@ So let’s explore how we can handle ngIf alongside the async pipe to alleviate 
 <hr>
 
 
-## cryptography 
+## cryptography
 
 **[Weaknesses in Modern Cryptography](https://www.giac.org/paper/gsec/634/weakness-modern-cryptography/101458)**
 
@@ -65,7 +65,7 @@ industry will be shown, bringing a complex topic to light in a concise and under
 <hr>
 
 
-## css 
+## css
 
 **[CSS Grid Layout - CSS - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)**
 
@@ -84,7 +84,7 @@ CSS Flexible Box Layout is a module of CSS that defines a CSS box model optimize
 <hr>
 
 
-## docs 
+## docs
 
 **[Bundler - The best way to manage a Ruby application's gems    ](http://bundler.io/docs.html)**
 
@@ -106,7 +106,7 @@ Hyperlinks to Github and Jekyll
 <hr>
 
 
-## flexbox 
+## flexbox
 
 **[GitHub - philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)**
 
@@ -130,12 +130,12 @@ CSS Flexible Box Layout is a module of CSS that defines a CSS box model optimize
   * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular]), &nbsp; [flexbox](https://www.bookmarks.dev/search?q=[flexbox]), &nbsp; [typescript](https://www.bookmarks.dev/search?q=[typescript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/angular/flex-layout)
 
-flex-layout - Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API 
+flex-layout - Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API
 
 <hr>
 
 
-## github 
+## github
 
 **[Collection: GitHub Pages examples · GitHub](https://github.com/collections/github-pages-examples)**
 
@@ -146,7 +146,7 @@ Fine examples of projects using [GitHub Pages](https://pages.github.com/)
 <hr>
 
 
-## github-pages 
+## github-pages
 
 **[Using Jekyll as a static site generator with GitHub Pages - User Documentation        ](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)**
 
@@ -167,7 +167,7 @@ Fine examples of projects using [GitHub Pages](https://pages.github.com/)
 <hr>
 
 
-## javascript 
+## javascript
 
 **[Machine Learning From Scratch: The Perceptron Model - YouTube](https://www.youtube.com/watch?v=iumlHzoVlJM)**
 
@@ -189,7 +189,7 @@ Realtime application framework (Node.JS server)
 <hr>
 
 
-## jekyll 
+## jekyll
 
 **[Using Jekyll as a static site generator with GitHub Pages - User Documentation        ](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)**
 
@@ -202,7 +202,7 @@ Hyperlinks to Github and Jekyll
 <hr>
 
 
-## machine-learning 
+## machine-learning
 
 **[Machine Learning From Scratch: The Perceptron Model - YouTube](https://www.youtube.com/watch?v=iumlHzoVlJM)**
 
@@ -215,7 +215,7 @@ Learn how to build a perceptron model from scratch with Javascript!
 <hr>
 
 
-## math 
+## math
 
 **[Game theory - Wikipedia](https://en.wikipedia.org/wiki/Game_theory)**
 
@@ -226,7 +226,7 @@ Game theory is "the study of mathematical models of conflict and cooperation bet
 <hr>
 
 
-## microservices 
+## microservices
 
 **[Implementing Microservice Discovery in 100 Lines of Node.js ](https://github.com/asyncanup/vasco/blob/33b878b3ae43f2c75197ea3e93afa0876ce990de/vasco-talk.pdf)**
 
@@ -237,7 +237,7 @@ vasco - The Great Service Discoverer
 <hr>
 
 
-## networking 
+## networking
 
 **[Bufferbloat - Wikipedia](https://en.wikipedia.org/wiki/Bufferbloat)**
 
@@ -248,7 +248,7 @@ Bufferbloat is a cause of high latency in packet-switched networks caused by exc
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[Implementing Microservice Discovery in 100 Lines of Node.js ](https://github.com/asyncanup/vasco/blob/33b878b3ae43f2c75197ea3e93afa0876ce990de/vasco-talk.pdf)**
 
@@ -295,7 +295,7 @@ A Manageable, Measurable and Traceable Node.js Application Manager represented b
 <hr>
 
 
-## performance 
+## performance
 
 **[Exponential Backoff And Jitter | AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/)**
 
@@ -304,7 +304,7 @@ A Manageable, Measurable and Traceable Node.js Application Manager represented b
 <hr>
 
 
-## reactjs 
+## reactjs
 
 **[Building a Node.js WebSocket Chat App with Socket.io and React](https://itnext.io/building-a-node-js-websocket-chat-app-with-socket-io-and-react-473a0686d1e1)**
 
@@ -317,7 +317,7 @@ In this tutorial we are going to build a simple chat app based on WebSockets wit
 <hr>
 
 
-## ruby 
+## ruby
 
 **[Bundler - The best way to manage a Ruby application's gems    ](http://bundler.io/docs.html)**
 
@@ -329,7 +329,7 @@ In this tutorial we are going to build a simple chat app based on WebSockets wit
 <hr>
 
 
-## scalability 
+## scalability
 
 **[Exponential Backoff And Jitter | AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/)**
 
@@ -338,14 +338,14 @@ In this tutorial we are going to build a simple chat app based on WebSockets wit
 <hr>
 
 
-## typescript 
+## typescript
 
 **[Home · angular/flex-layout Wiki · GitHub](https://github.com/angular/flex-layout/wiki)**
 
   * **tags**: &nbsp; [angular](https://www.bookmarks.dev/search?q=[angular]), &nbsp; [flexbox](https://www.bookmarks.dev/search?q=[flexbox]), &nbsp; [typescript](https://www.bookmarks.dev/search?q=[typescript])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/angular/flex-layout)
 
-flex-layout - Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API 
+flex-layout - Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API
 
 <hr>
 
@@ -359,7 +359,7 @@ A Manageable, Measurable and Traceable Node.js Application Manager represented b
 <hr>
 
 
-## websocket 
+## websocket
 
 **[Building a Node.js WebSocket Chat App with Socket.io and React](https://itnext.io/building-a-node-js-websocket-chat-app-with-socket-io-and-react-473a0686d1e1)**
 

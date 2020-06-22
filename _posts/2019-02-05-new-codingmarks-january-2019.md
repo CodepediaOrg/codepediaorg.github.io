@@ -3,9 +3,9 @@ layout: post
 title: Lots of exciting codingmarks added in january 2019
 description: "Lots of exciting #DevBookmarks added in january 2019. Keywords: angular, api, architecture, async-await, asynchronous, awesome, awesome-list, aws, bdd, blog, caching, cdi, chai, clean-code, cloud, concurrency, csv, date, date-manipulation, datetime, dependency-injection, design-patterns, devops, docker, docker-compose, docs, expressjs, flexbox, free-programming-books, generics, html, integration-testing, jackson, java, javaee, javascript, jersey, json, linux, markdown, memory-management, microservices, mocking, mockito, mongodb, mongoose, multithreading, nginx, nodejs, npm, open-source, orm, programming, reactjs, rest, rest-client, resteasy, rxjs, serialization, serverless, software-architecture, software-development, spring, supertest, test-coverage, testing, time, tools and weld"
 author: ama
-permalink: /ama/new-codingmarks-in-january-2019
+permalink: /ama/new-dev-bookmarks-in-january-2019
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [#DevBookmarks](https://www.bookmarks.dev) added in january 2018. Hot topics include:

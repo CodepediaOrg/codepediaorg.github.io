@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 25th week of 2018
-description: "New codingmarks added in the 25th week of 2018. Keywords: benchmarking, cissp, concurrency, expressjs, java, javascript, jmockit, jwt, mongoose, nodejs, npm, performance, sass, security, testing, tools, web, yarn and yeoman"
+title: New dev bookmarks added in the 25th week of 2018
+description: "New dev bookmarks added in the 25th week of 2018. Keywords: benchmarking, cissp, concurrency, expressjs, java, javascript, jmockit, jwt, mongoose, nodejs, npm, performance, sass, security, testing, tools, web, yarn and yeoman"
 author: ama
-permalink: /ama/new-codingmarks-week-25-2018
+permalink: /ama/new-dev-bookmarks-week-25-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 25th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## benchmarking 
+## benchmarking
 
 **[Richard Clayton - Speaking Intelligently about "Java vs Node" Performance](https://rclayton.silvrback.com/speaking-intelligently-about-java-vs-node-performance)**
 
@@ -26,7 +26,7 @@ Speaking Intelligently about "Java vs Node" Performance - Please understand what
 <hr>
 
 
-## cissp 
+## cissp
 
 **[ISC 2 CISSP Certified Information Systems Security Professional Official Study Guide and Official Practice Tests Kit](https://www.amazon.com/dp/1119523265/ref=cm_sw_r_cp_apa_EobmBbVYKBPT0)**
 
@@ -34,7 +34,7 @@ Speaking Intelligently about "Java vs Node" Performance - Please understand what
 <hr>
 
 
-## concurrency 
+## concurrency
 
 **[Richard Clayton - Speaking Intelligently about "Java vs Node" Performance](https://rclayton.silvrback.com/speaking-intelligently-about-java-vs-node-performance)**
 
@@ -45,7 +45,7 @@ Speaking Intelligently about "Java vs Node" Performance - Please understand what
 <hr>
 
 
-## expressjs 
+## expressjs
 
 **[How express.js works - Understanding the internals of the express library](https://www.sohamkamani.com/blog/2018/05/30/understanding-how-expressjs-works/)**
 
@@ -66,7 +66,7 @@ RESTful API generator using NodeJS, Express and Mongoose
 <hr>
 
 
-## java 
+## java
 
 **[The JMockit testing toolkit](http://jmockit.github.io/)**
 
@@ -97,7 +97,7 @@ Speaking Intelligently about "Java vs Node" Performance - Please understand what
 <hr>
 
 
-## javascript 
+## javascript
 
 **[Async programming basics every JS developer should know in 2018](https://dev.to/siwalik/async-programming-basics-every-js-developer-should-know-in-2018-a9c)**
 
@@ -109,7 +109,7 @@ A beginner's guide to async programming in Javascript
 <hr>
 
 
-## jmockit 
+## jmockit
 
 **[The JMockit testing toolkit](http://jmockit.github.io/)**
 
@@ -132,7 +132,7 @@ A simple and practical guide to testing and mocking with JMockit.
 <hr>
 
 
-## jwt 
+## jwt
 
 **[What Happens If Your JWT Is Stolen?](https://developer.okta.com/blog/2018/06/20/what-happens-if-your-jwt-is-stolen)**
 
@@ -143,7 +143,7 @@ What happens if a JSON Web Token is stolen or compromised? What are the security
 <hr>
 
 
-## mongoose 
+## mongoose
 
 **[GitHub - diegohaz/rest: REST API generator with Node.js, Express and Mongoose](https://github.com/diegohaz/rest)**
 
@@ -155,7 +155,7 @@ RESTful API generator using NodeJS, Express and Mongoose
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[GitHub - diegohaz/rest: REST API generator with Node.js, Express and Mongoose](https://github.com/diegohaz/rest)**
 
@@ -175,7 +175,7 @@ Speaking Intelligently about "Java vs Node" Performance - Please understand what
 <hr>
 
 
-## npm 
+## npm
 
 **[GitHub - mixmaxhq/deyarn: A command-line tool for converting projects that use Yarn to npm.](https://github.com/mixmaxhq/deyarn)**
 
@@ -195,7 +195,7 @@ Last year, we decided to move all of our JavaScript projects from npm to Yarn. 1
 <hr>
 
 
-## performance 
+## performance
 
 **[Richard Clayton - Speaking Intelligently about "Java vs Node" Performance](https://rclayton.silvrback.com/speaking-intelligently-about-java-vs-node-performance)**
 
@@ -206,19 +206,19 @@ Speaking Intelligently about "Java vs Node" Performance - Please understand what
 <hr>
 
 
-## sass 
+## sass
 
 **[A Sass `!default` use caseBlog homeSearch](https://robots.thoughtbot.com/sass-default)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2012-12-03
   * **tags**: &nbsp; [sass](https://www.bookmarks.dev/search?q=[sass])
 
-"You can assign to variables if they aren’t already assigned by adding the !default flag to the end of the value. This means that if the variable has already been assigned to, it won’t be re-assigned, but if it doesn’t have a value yet, it will be given one." 
+"You can assign to variables if they aren’t already assigned by adding the !default flag to the end of the value. This means that if the variable has already been assigned to, it won’t be re-assigned, but if it doesn’t have a value yet, it will be given one."
 
 <hr>
 
 
-## security 
+## security
 
 **[ISC 2 CISSP Certified Information Systems Security Professional Official Study Guide and Official Practice Tests Kit](https://www.amazon.com/dp/1119523265/ref=cm_sw_r_cp_apa_EobmBbVYKBPT0)**
 
@@ -234,7 +234,7 @@ What happens if a JSON Web Token is stolen or compromised? What are the security
 <hr>
 
 
-## testing 
+## testing
 
 **[The JMockit testing toolkit](http://jmockit.github.io/)**
 
@@ -257,7 +257,7 @@ A simple and practical guide to testing and mocking with JMockit.
 <hr>
 
 
-## tools 
+## tools
 
 **[GitHub - diegohaz/rest: REST API generator with Node.js, Express and Mongoose](https://github.com/diegohaz/rest)**
 
@@ -269,7 +269,7 @@ RESTful API generator using NodeJS, Express and Mongoose
 <hr>
 
 
-## web 
+## web
 
 **[What Happens If Your JWT Is Stolen?](https://developer.okta.com/blog/2018/06/20/what-happens-if-your-jwt-is-stolen)**
 
@@ -280,7 +280,7 @@ What happens if a JSON Web Token is stolen or compromised? What are the security
 <hr>
 
 
-## yarn 
+## yarn
 
 **[GitHub - mixmaxhq/deyarn: A command-line tool for converting projects that use Yarn to npm.](https://github.com/mixmaxhq/deyarn)**
 
@@ -300,7 +300,7 @@ Last year, we decided to move all of our JavaScript projects from npm to Yarn. 1
 <hr>
 
 
-## yeoman 
+## yeoman
 
 **[GitHub - diegohaz/rest: REST API generator with Node.js, Express and Mongoose](https://github.com/diegohaz/rest)**
 

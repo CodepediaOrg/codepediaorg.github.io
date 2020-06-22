@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 8th week of 2018
-description: "New codingmarks added in the 8th week of 2018. Keywords: agile, arquillian, aws, blogging, business-process, cloud, free-programming-books, go, graphql, java, javaee, javascript, jaxrs, jekyll, jersey, jpa, log4j, logging, markdown, microservices, nodejs, orm, rest, scrum, security, sql and tools"
+title: New dev bookmarks added in the 8th week of 2018
+description: "New dev bookmarks added in the 8th week of 2018. Keywords: agile, arquillian, aws, blogging, business-process, cloud, free-programming-books, go, graphql, java, javaee, javascript, jaxrs, jekyll, jersey, jpa, log4j, logging, markdown, microservices, nodejs, orm, rest, scrum, security, sql and tools"
 author: ama
-permalink: /ama/new-codingmarks-week-8-2018
+permalink: /ama/new-dev-bookmarks-week-8-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 8th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## agile 
+## agile
 
 **[Scrum Guides](https://www.scrumguides.org/)**
 
@@ -26,7 +26,7 @@ Scrum is a framework for developing and sustaining complex products. This Guide 
 <hr>
 
 
-## arquillian 
+## arquillian
 
 **[Testing Java Persistence · Arquillian Guides](http://arquillian.org/guides/testing_java_persistence/)**
 
@@ -37,7 +37,7 @@ Test your data! Learn how to test Java Persistence (JPA) queries against multipl
 <hr>
 
 
-## aws 
+## aws
 
 **[AWS Security Best Practices](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Best_Practices.pdf)**
 
@@ -58,7 +58,7 @@ applications and overall infrastructure in the cloud.
 <hr>
 
 
-## blogging 
+## blogging
 
 **[Themes · jekyll/jekyll Wiki · GitHub](https://github.com/jekyll/jekyll/wiki/Themes)**
 
@@ -77,7 +77,7 @@ Demo post displaying the various ways of inserting and highlighting code in Mark
 <hr>
 
 
-## business-process 
+## business-process
 
 **[Recovery point objective - Wikipedia](https://en.wikipedia.org/wiki/Recovery_point_objective)**
 
@@ -96,7 +96,7 @@ The **recovery time objective (RTO)** is the targeted duration of time and a ser
 <hr>
 
 
-## cloud 
+## cloud
 
 **[AWS Security Best Practices](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Best_Practices.pdf)**
 
@@ -133,7 +133,7 @@ The **recovery time objective (RTO)** is the targeted duration of time and a ser
 <hr>
 
 
-## free-programming-books 
+## free-programming-books
 
 **[An Introduction to Programming in Go](https://www.golang-book.com/books/intro)**
 
@@ -141,13 +141,13 @@ The **recovery time objective (RTO)** is the targeted duration of time and a ser
 <hr>
 
 
-## go 
+## go
 
 **[Go by Example](https://gobyexample.com/)**
 
   * **tags**: &nbsp; [go](https://www.bookmarks.dev/search?q=[go])
 
-Go by Example is a hands-on introduction to Go using annotated example programs. 
+Go by Example is a hands-on introduction to Go using annotated example programs.
 
 <hr>
 
@@ -170,7 +170,7 @@ In this article, I’ll summarize my learnings from a Node.js developer’s poin
 <hr>
 
 
-## graphql 
+## graphql
 
 **[GraphQL as an API Gateway to Microservices - via @codeship](https://blog.codeship.com/graphql-as-an-api-gateway-to-micro-services/)**
 
@@ -183,7 +183,7 @@ How can GraphQL be leveraged in an API gateway? It seems like it might be a perf
 <hr>
 
 
-## java 
+## java
 
 **[Testing Java Persistence · Arquillian Guides](http://arquillian.org/guides/testing_java_persistence/)**
 
@@ -203,7 +203,7 @@ RESTful web services with Java (Jersey / JAX-RS). This tutorial explains how to 
 <hr>
 
 
-## javaee 
+## javaee
 
 **[REST with Java (JAX-RS) using Jersey - Tutorial](http://www.vogella.com/tutorials/REST/article.html)**
 
@@ -215,7 +215,7 @@ RESTful web services with Java (Jersey / JAX-RS). This tutorial explains how to 
 <hr>
 
 
-## javascript 
+## javascript
 
 **[undefined - JavaScript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)**
 
@@ -226,7 +226,7 @@ The global undefined property represents the primitive value undefined. It is on
 <hr>
 
 
-## jaxrs 
+## jaxrs
 
 **[REST with Java (JAX-RS) using Jersey - Tutorial](http://www.vogella.com/tutorials/REST/article.html)**
 
@@ -238,7 +238,7 @@ RESTful web services with Java (Jersey / JAX-RS). This tutorial explains how to 
 <hr>
 
 
-## jekyll 
+## jekyll
 
 **[Themes · jekyll/jekyll Wiki · GitHub](https://github.com/jekyll/jekyll/wiki/Themes)**
 
@@ -257,7 +257,7 @@ Demo post displaying the various ways of inserting and highlighting code in Mark
 <hr>
 
 
-## jersey 
+## jersey
 
 **[REST with Java (JAX-RS) using Jersey - Tutorial](http://www.vogella.com/tutorials/REST/article.html)**
 
@@ -269,7 +269,7 @@ RESTful web services with Java (Jersey / JAX-RS). This tutorial explains how to 
 <hr>
 
 
-## jpa 
+## jpa
 
 **[Testing Java Persistence · Arquillian Guides](http://arquillian.org/guides/testing_java_persistence/)**
 
@@ -280,7 +280,7 @@ Test your data! Learn how to test Java Persistence (JPA) queries against multipl
 <hr>
 
 
-## log4j 
+## log4j
 
 **[Apache Log4j 2](https://logging.apache.org/log4j/2.x/)**
 
@@ -291,7 +291,7 @@ Apache Log4j 2 is an upgrade to Log4j that provides significant improvements ove
 <hr>
 
 
-## logging 
+## logging
 
 **[Apache Log4j 2](https://logging.apache.org/log4j/2.x/)**
 
@@ -302,7 +302,7 @@ Apache Log4j 2 is an upgrade to Log4j that provides significant improvements ove
 <hr>
 
 
-## markdown 
+## markdown
 
 **[How to insert and highlight code in Jekyll blog post on Codepedia.org – CodingpediaOrg](http://www.codepedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org)**
 
@@ -313,7 +313,7 @@ Demo post displaying the various ways of inserting and highlighting code in Mark
 <hr>
 
 
-## microservices 
+## microservices
 
 **[GraphQL as an API Gateway to Microservices - via @codeship](https://blog.codeship.com/graphql-as-an-api-gateway-to-micro-services/)**
 
@@ -326,7 +326,7 @@ How can GraphQL be leveraged in an API gateway? It seems like it might be a perf
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[Better Node.js Console Dumps with console-probe](https://davidwalsh.name/console-probe)**
 
@@ -378,7 +378,7 @@ Objection.js is an ORM for Node.js that aims to stay out of your way and make it
 <hr>
 
 
-## orm 
+## orm
 
 **[Knex.js - A SQL Query Builder for Javascript](http://knexjs.org/)**
 
@@ -399,7 +399,7 @@ Objection.js is an ORM for Node.js that aims to stay out of your way and make it
 <hr>
 
 
-## rest 
+## rest
 
 **[REST with Java (JAX-RS) using Jersey - Tutorial](http://www.vogella.com/tutorials/REST/article.html)**
 
@@ -421,7 +421,7 @@ How can GraphQL be leveraged in an API gateway? It seems like it might be a perf
 <hr>
 
 
-## scrum 
+## scrum
 
 **[Scrum Guides](https://www.scrumguides.org/)**
 
@@ -432,7 +432,7 @@ Scrum is a framework for developing and sustaining complex products. This Guide 
 <hr>
 
 
-## security 
+## security
 
 **[AWS Security Best Practices](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Best_Practices.pdf)**
 
@@ -469,7 +469,7 @@ The **recovery time objective (RTO)** is the targeted duration of time and a ser
 <hr>
 
 
-## sql 
+## sql
 
 **[Knex.js - A SQL Query Builder for Javascript](http://knexjs.org/)**
 
@@ -481,7 +481,7 @@ Knex.js is a "batteries included" SQL query builder for Postgres, MSSQL, MySQL, 
 <hr>
 
 
-## tools 
+## tools
 
 **[Better Node.js Console Dumps with console-probe](https://davidwalsh.name/console-probe)**
 

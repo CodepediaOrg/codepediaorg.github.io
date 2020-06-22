@@ -3,22 +3,22 @@
 
 ---
 layout: post
-title: New codingmarks added in the 7th week of 2018
-description: "New codingmarks added in the 7th week of 2018. Keywords: cloud, encryption, firewall, phising, security, tools and user-experience"
+title: New dev bookmarks added in the 7th week of 2018
+description: "New dev bookmarks added in the 7th week of 2018. Keywords: cloud, encryption, firewall, phising, security, tools and user-experience"
 author: ama
-permalink: /ama/new-codingmarks-week-7-2018
+permalink: /ama/new-dev-bookmarks-week-7-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 7th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## cloud 
+## cloud
 
 **[Cloud Computing Policy Template](http://www.itmanagerdaily.com/cloud-computing-policy-template/)**
 
@@ -29,29 +29,29 @@ Here is a sample cloud computing policy template that organizations can adapt to
 <hr>
 
 
-## encryption 
+## encryption
 
 **[How Digital Signatures Work](https://www.docusign.com/how-it-works/electronic-signature/digital-signature/digital-signature-faq)**
 
   * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [encryption](https://www.bookmarks.dev/search?q=[encryption])
 
-Digital signatures, a type of eSignature based on PKI standards, allow users to sign documents in compliance with country/industry-specific regulations. 
+Digital signatures, a type of eSignature based on PKI standards, allow users to sign documents in compliance with country/industry-specific regulations.
 
 <hr>
 
 
-## firewall 
+## firewall
 
 **[What Is a Firewall? - Cisco](https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html)**
 
   * **tags**: &nbsp; [firewall](https://www.bookmarks.dev/search?q=[firewall]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security])
 
-A firewall is a network security device that monitors traffic to or from your network. It allows or blocks traffic based on a defined set of security rules. 
+A firewall is a network security device that monitors traffic to or from your network. It allows or blocks traffic based on a defined set of security rules.
 
 <hr>
 
 
-## phising 
+## phising
 
 **[What is Phishing and Phishing Scams](https://www.microsoft.com/en-us/safety/online-privacy/phishing-symptoms.aspx)**
 
@@ -62,7 +62,7 @@ Phishing email messages, websites, and phone calls are designed to steal money. 
 <hr>
 
 
-## security 
+## security
 
 **[Online RSA Key Generator](http://travistidwell.com/jsencrypt/demo/)**
 
@@ -84,7 +84,7 @@ Calculate a SHA-256 hash with this free online converter. Additionally create a 
 
   * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [encryption](https://www.bookmarks.dev/search?q=[encryption])
 
-Digital signatures, a type of eSignature based on PKI standards, allow users to sign documents in compliance with country/industry-specific regulations. 
+Digital signatures, a type of eSignature based on PKI standards, allow users to sign documents in compliance with country/industry-specific regulations.
 
 <hr>
 
@@ -100,7 +100,7 @@ Phishing email messages, websites, and phone calls are designed to steal money. 
 
   * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security])
 
-Nice explanation of the STRIDE model. 
+Nice explanation of the STRIDE model.
 
 <hr>
 
@@ -108,12 +108,12 @@ Nice explanation of the STRIDE model.
 
   * **tags**: &nbsp; [firewall](https://www.bookmarks.dev/search?q=[firewall]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security])
 
-A firewall is a network security device that monitors traffic to or from your network. It allows or blocks traffic based on a defined set of security rules. 
+A firewall is a network security device that monitors traffic to or from your network. It allows or blocks traffic based on a defined set of security rules.
 
 <hr>
 
 
-## tools 
+## tools
 
 **[Online RSA Key Generator](http://travistidwell.com/jsencrypt/demo/)**
 
@@ -132,7 +132,7 @@ Calculate a SHA-256 hash with this free online converter. Additionally create a 
 <hr>
 
 
-## user-experience 
+## user-experience
 
 **[A/B testing - Wikipedia](https://en.wikipedia.org/wiki/A/B_testing)**
 

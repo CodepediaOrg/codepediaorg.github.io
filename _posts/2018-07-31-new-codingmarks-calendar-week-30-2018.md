@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 30th week of 2018
-description: "New codingmarks added in the 30th week of 2018. Keywords: angular, bash, cryptography, design-patterns, free-programming-books, git, rxjs and security"
+title: New dev bookmarks added in the 30th week of 2018
+description: "New dev bookmarks added in the 30th week of 2018. Keywords: angular, bash, cryptography, design-patterns, free-programming-books, git, rxjs and security"
 author: ama
-permalink: /ama/new-codingmarks-week-30-2018
+permalink: /ama/new-dev-bookmarks-week-30-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 30th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## angular 
+## angular
 
 **[RxJs Mapping: switchMap vs mergeMap vs concatMap vs exhaustMap](https://blog.angular-university.io/rxjs-higher-order-mapping/)**
 
@@ -41,7 +41,7 @@ You want a HOT observable when you don’t want to create your producer over and
 <hr>
 
 
-## bash 
+## bash
 
 **[git - Remove local branches no longer on remote - Stack Overflow](https://stackoverflow.com/questions/7726949/remove-local-branches-no-longer-on-remote)**
 
@@ -56,7 +56,7 @@ git branch --merged >/tmp/merged-branches && vi /tmp/merged-branches && xargs gi
 <hr>
 
 
-## cryptography 
+## cryptography
 
 **[Public key fingerprint - Wikipedia](https://en.wikipedia.org/wiki/Public_key_fingerprint)**
 
@@ -67,19 +67,19 @@ In public-key cryptography, a public key fingerprint is a short sequence of byte
 <hr>
 
 
-## design-patterns 
+## design-patterns
 
 **[On The Subject Of Subjects (in RxJS) – Ben Lesh ](https://medium.com/@benlesh/on-the-subject-of-subjects-in-rxjs-2b08b7198b93)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2016-12-10
   * **tags**: &nbsp; [rxjs](https://www.bookmarks.dev/search?q=[rxjs]), &nbsp; [design-patterns](https://www.bookmarks.dev/search?q=[design-patterns])
 
-Subjects in RxJS are often misunderstood. Because they allow you to imperatively push values into an observable stream, people tend to abuse Subjects when they’re not quite sure how to make an Observable out of something. 
+Subjects in RxJS are often misunderstood. Because they allow you to imperatively push values into an observable stream, people tend to abuse Subjects when they’re not quite sure how to make an Observable out of something.
 
 <hr>
 
 
-## free-programming-books 
+## free-programming-books
 
 **[Introduction · learn-rxjs](https://www.learnrxjs.io/)**
 
@@ -90,7 +90,7 @@ Clear examples, explanations, and resources for RxJS.
 <hr>
 
 
-## git 
+## git
 
 **[git - Remove local branches no longer on remote - Stack Overflow](https://stackoverflow.com/questions/7726949/remove-local-branches-no-longer-on-remote)**
 
@@ -105,7 +105,7 @@ git branch --merged >/tmp/merged-branches && vi /tmp/merged-branches && xargs gi
 <hr>
 
 
-## rxjs 
+## rxjs
 
 **[Introduction · learn-rxjs](https://www.learnrxjs.io/)**
 
@@ -141,7 +141,7 @@ An in-depth look at the multicast, publish and share operators
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2016-12-10
   * **tags**: &nbsp; [rxjs](https://www.bookmarks.dev/search?q=[rxjs]), &nbsp; [design-patterns](https://www.bookmarks.dev/search?q=[design-patterns])
 
-Subjects in RxJS are often misunderstood. Because they allow you to imperatively push values into an observable stream, people tend to abuse Subjects when they’re not quite sure how to make an Observable out of something. 
+Subjects in RxJS are often misunderstood. Because they allow you to imperatively push values into an observable stream, people tend to abuse Subjects when they’re not quite sure how to make an Observable out of something.
 
 <hr>
 
@@ -157,7 +157,7 @@ You want a HOT observable when you don’t want to create your producer over and
 <hr>
 
 
-## security 
+## security
 
 **[Public key fingerprint - Wikipedia](https://en.wikipedia.org/wiki/Public_key_fingerprint)**
 

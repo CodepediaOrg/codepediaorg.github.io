@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks published in week 44 of 2018
-description: "New codingmarks published in week 44 of 2018. Keywords: apache-zookeeper, architecture, computer-science, cqrs, database, database-design, distributed-computing, docker, docs, event-driven, event-driven-design, event-sourcing, flask, graylog, hal, javaee, jenkins, kubernetes, logging, mac, macos, maven, maven-plugin, microservices, mocking, mysql, python, rest, security, shell, spring, spring-boot, sql, terminal, testing, tools, transactions and zsh"
+title: New dev bookmarks published in week 44 of 2018
+description: "New dev bookmarks published in week 44 of 2018. Keywords: apache-zookeeper, architecture, computer-science, cqrs, database, database-design, distributed-computing, docker, docs, event-driven, event-driven-design, event-sourcing, flask, graylog, hal, javaee, jenkins, kubernetes, logging, mac, macos, maven, maven-plugin, microservices, mocking, mysql, python, rest, security, shell, spring, spring-boot, sql, terminal, testing, tools, transactions and zsh"
 author: ama
-permalink: /ama/new-codingmarks-week-44-2018
+permalink: /ama/new-dev-bookmarks-week-44-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) published in the week 44 of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## apache-zookeeper 
+## apache-zookeeper
 
 **[Apache ZooKeeper - Home](http://zookeeper.apache.org/)**
 
@@ -27,7 +27,7 @@ Apache ZooKeeper is an effort to develop and maintain an open-source server whic
 <hr>
 
 
-## architecture 
+## architecture
 
 **[GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler - YouTube](https://www.youtube.com/watch?v=STKCRSUsyP0)**
 
@@ -39,7 +39,7 @@ During my career, I've often people heard people describe their systems as "even
 <hr>
 
 
-## computer-science 
+## computer-science
 
 **[CAP theorem - Wikipedia](https://en.wikipedia.org/wiki/CAP_theorem)**
 
@@ -53,7 +53,7 @@ In theoretical computer science, the CAP theorem, also named Brewer's theorem af
 <hr>
 
 
-## cqrs 
+## cqrs
 
 **[GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler - YouTube](https://www.youtube.com/watch?v=STKCRSUsyP0)**
 
@@ -65,29 +65,29 @@ During my career, I've often people heard people describe their systems as "even
 <hr>
 
 
-## database 
+## database
 
 **[Two-phase commit protocol - Wikipedia](https://en.wikipedia.org/wiki/Two-phase_commit_protocol)**
 
   * **tags**: &nbsp; [transactions](https://www.bookmarks.dev/search?q=[transactions]), &nbsp; [database](https://www.bookmarks.dev/search?q=[database]), &nbsp; [database-design](https://www.bookmarks.dev/search?q=[database-design])
 
-In transaction processing, databases, and computer networking, the two-phase commit protocol (2PC) is a type of atomic commitment protocol (ACP). It is a distributed algorithm that coordinates all the processes that participate in a distributed atomic transaction on whether to commit or abort (roll back) the transaction (it is a specialized type of consensus protocol). 
+In transaction processing, databases, and computer networking, the two-phase commit protocol (2PC) is a type of atomic commitment protocol (ACP). It is a distributed algorithm that coordinates all the processes that participate in a distributed atomic transaction on whether to commit or abort (roll back) the transaction (it is a specialized type of consensus protocol).
 
 <hr>
 
 
-## database-design 
+## database-design
 
 **[Two-phase commit protocol - Wikipedia](https://en.wikipedia.org/wiki/Two-phase_commit_protocol)**
 
   * **tags**: &nbsp; [transactions](https://www.bookmarks.dev/search?q=[transactions]), &nbsp; [database](https://www.bookmarks.dev/search?q=[database]), &nbsp; [database-design](https://www.bookmarks.dev/search?q=[database-design])
 
-In transaction processing, databases, and computer networking, the two-phase commit protocol (2PC) is a type of atomic commitment protocol (ACP). It is a distributed algorithm that coordinates all the processes that participate in a distributed atomic transaction on whether to commit or abort (roll back) the transaction (it is a specialized type of consensus protocol). 
+In transaction processing, databases, and computer networking, the two-phase commit protocol (2PC) is a type of atomic commitment protocol (ACP). It is a distributed algorithm that coordinates all the processes that participate in a distributed atomic transaction on whether to commit or abort (roll back) the transaction (it is a specialized type of consensus protocol).
 
 <hr>
 
 
-## distributed-computing 
+## distributed-computing
 
 **[Consul Home](https://www.consul.io/)**
 
@@ -119,7 +119,7 @@ In theoretical computer science, the CAP theorem, also named Brewer's theorem af
 <hr>
 
 
-## docker 
+## docker
 
 **[Docker SDK for Python](https://docker-py.readthedocs.io/)**
 
@@ -143,7 +143,7 @@ Getting Started
   * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/spotify/dockerfile-maven)
 
-A set of Maven tools for dealing with Dockerfiles. 
+A set of Maven tools for dealing with Dockerfiles.
 
 <hr>
 
@@ -157,7 +157,7 @@ At DockerCon EU 2017, Docker announced support is coming for Kubernetes in Docke
 <hr>
 
 
-## docs 
+## docs
 
 **[Get started with Docker for Mac](https://docs.docker.com/docker-for-mac/)**
 
@@ -177,7 +177,7 @@ Graylog is an open source log management platform.
 <hr>
 
 
-## event-driven 
+## event-driven
 
 **[GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler - YouTube](https://www.youtube.com/watch?v=STKCRSUsyP0)**
 
@@ -189,7 +189,7 @@ During my career, I've often people heard people describe their systems as "even
 <hr>
 
 
-## event-driven-design 
+## event-driven-design
 
 **[GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler - YouTube](https://www.youtube.com/watch?v=STKCRSUsyP0)**
 
@@ -201,7 +201,7 @@ During my career, I've often people heard people describe their systems as "even
 <hr>
 
 
-## event-sourcing 
+## event-sourcing
 
 **[GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler - YouTube](https://www.youtube.com/watch?v=STKCRSUsyP0)**
 
@@ -213,7 +213,7 @@ During my career, I've often people heard people describe their systems as "even
 <hr>
 
 
-## flask 
+## flask
 
 **[Flask](https://www.palletsprojects.com/p/flask/)**
 
@@ -225,7 +225,7 @@ Flask is a lightweight WSGI web application framework. It is designed to make ge
 <hr>
 
 
-## graylog 
+## graylog
 
 **[Graylog documentation ](http://docs.graylog.org)**
 
@@ -237,7 +237,7 @@ Graylog is an open source log management platform.
 <hr>
 
 
-## hal 
+## hal
 
 **[  The Hypertext Application Language - HAL](http://stateless.co/hal_specification.html)**
 
@@ -248,7 +248,7 @@ HAL is a simple way of linking in REST APIs with either JSON or XML.
 <hr>
 
 
-## javaee 
+## javaee
 
 **[Transaction strategies: Understanding transaction pitfalls](https://www.ibm.com/developerworks/library/j-ts1/index.html)**
 
@@ -260,7 +260,7 @@ Transaction processing should achieve a high degree of data integrity and consis
 <hr>
 
 
-## jenkins 
+## jenkins
 
 **[Jenkins X home](https://jenkins-x.io/)**
 
@@ -272,7 +272,7 @@ Jenkins X is a CI/CD solution for modern cloud applications on Kubernetes
 <hr>
 
 
-## kubernetes 
+## kubernetes
 
 **[Spring Boot Micro-services, Containers, and Kubernetes - How To - YouTube](https://www.youtube.com/watch?v=Bcs-inRnLDc)**
 
@@ -302,7 +302,7 @@ Jenkins X is a CI/CD solution for modern cloud applications on Kubernetes
 <hr>
 
 
-## logging 
+## logging
 
 **[Graylog documentation ](http://docs.graylog.org)**
 
@@ -314,7 +314,7 @@ Graylog is an open source log management platform.
 <hr>
 
 
-## mac 
+## mac
 
 **[Get started with Docker for Mac](https://docs.docker.com/docker-for-mac/)**
 
@@ -325,7 +325,7 @@ Getting Started
 <hr>
 
 
-## macos 
+## macos
 
 **[Kubernetes in Docker for Mac - YouTube](https://www.youtube.com/watch?v=jWupQjdjLN0)**
 
@@ -337,7 +337,7 @@ At DockerCon EU 2017, Docker announced support is coming for Kubernetes in Docke
 <hr>
 
 
-## maven 
+## maven
 
 **[Maven wrapper](https://github.com/takari/maven-wrapper)**
 
@@ -349,7 +349,7 @@ The easiest way to integrate Maven into your project! - takari/maven-wrapper
 <hr>
 
 
-## maven-plugin 
+## maven-plugin
 
 **[Spring Boot Maven Plugin – Spring Boot](https://docs.spring.io/spring-boot/docs/current/maven-plugin/)**
 
@@ -364,12 +364,12 @@ The Spring Boot Maven Plugin provides Spring Boot support in Maven, allowing you
   * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [maven-plugin](https://www.bookmarks.dev/search?q=[maven-plugin])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/spotify/dockerfile-maven)
 
-A set of Maven tools for dealing with Dockerfiles. 
+A set of Maven tools for dealing with Dockerfiles.
 
 <hr>
 
 
-## microservices 
+## microservices
 
 **[Spring Boot Micro-services, Containers, and Kubernetes - How To - YouTube](https://www.youtube.com/watch?v=Bcs-inRnLDc)**
 
@@ -381,7 +381,7 @@ Recorded at SpringOne2GX 2015 Speaker: Ray Tsang, Google Slides: TBD Join this s
 <hr>
 
 
-## mocking 
+## mocking
 
 **[mountebank - over the wire test doubles](http://www.mbtest.org/)**
 
@@ -393,7 +393,7 @@ mountebank is the first open source tool to provide cross-platform, multi-protoc
 <hr>
 
 
-## mysql 
+## mysql
 
 **[Sqlectron - One single DB client for any relational DB](https://sqlectron.github.io/)**
 
@@ -405,7 +405,7 @@ UNMAINTAINED - SEE BELOW. A simple and lightweight SQL client desktop with cross
 <hr>
 
 
-## python 
+## python
 
 **[Docker SDK for Python](https://docker-py.readthedocs.io/)**
 
@@ -426,7 +426,7 @@ Flask is a lightweight WSGI web application framework. It is designed to make ge
 <hr>
 
 
-## rest 
+## rest
 
 **[  The Hypertext Application Language - HAL](http://stateless.co/hal_specification.html)**
 
@@ -437,7 +437,7 @@ HAL is a simple way of linking in REST APIs with either JSON or XML.
 <hr>
 
 
-## security 
+## security
 
 **[Category:OWASP Top Ten Project - OWASP](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)**
 
@@ -448,7 +448,7 @@ The OWASP Top 10 is a powerful awareness document for web application security. 
 <hr>
 
 
-## shell 
+## shell
 
 **[Oh My Zsh](https://ohmyz.sh/)**
 
@@ -460,7 +460,7 @@ Oh-My-Zsh is a delightful, open source, community-driven framework for managing 
 <hr>
 
 
-## spring 
+## spring
 
 **[Spring Profiles](https://www.baeldung.com/spring-profiles)**
 
@@ -482,7 +482,7 @@ Transaction processing should achieve a high degree of data integrity and consis
 <hr>
 
 
-## spring-boot 
+## spring-boot
 
 **[Spring Boot Maven Plugin – Spring Boot](https://docs.spring.io/spring-boot/docs/current/maven-plugin/)**
 
@@ -502,7 +502,7 @@ Recorded at SpringOne2GX 2015 Speaker: Ray Tsang, Google Slides: TBD Join this s
 <hr>
 
 
-## sql 
+## sql
 
 **[Sqlectron - One single DB client for any relational DB](https://sqlectron.github.io/)**
 
@@ -514,7 +514,7 @@ UNMAINTAINED - SEE BELOW. A simple and lightweight SQL client desktop with cross
 <hr>
 
 
-## terminal 
+## terminal
 
 **[asciinema - Record and share your terminal sessions, the right way](https://asciinema.org)**
 
@@ -526,7 +526,7 @@ asciinema lets you easily record terminal sessions and replay them in a terminal
 <hr>
 
 
-## testing 
+## testing
 
 **[mountebank - over the wire test doubles](http://www.mbtest.org/)**
 
@@ -538,7 +538,7 @@ mountebank is the first open source tool to provide cross-platform, multi-protoc
 <hr>
 
 
-## tools 
+## tools
 
 **[asciinema - Record and share your terminal sessions, the right way](https://asciinema.org)**
 
@@ -586,13 +586,13 @@ Jenkins X is a CI/CD solution for modern cloud applications on Kubernetes
 <hr>
 
 
-## transactions 
+## transactions
 
 **[Two-phase commit protocol - Wikipedia](https://en.wikipedia.org/wiki/Two-phase_commit_protocol)**
 
   * **tags**: &nbsp; [transactions](https://www.bookmarks.dev/search?q=[transactions]), &nbsp; [database](https://www.bookmarks.dev/search?q=[database]), &nbsp; [database-design](https://www.bookmarks.dev/search?q=[database-design])
 
-In transaction processing, databases, and computer networking, the two-phase commit protocol (2PC) is a type of atomic commitment protocol (ACP). It is a distributed algorithm that coordinates all the processes that participate in a distributed atomic transaction on whether to commit or abort (roll back) the transaction (it is a specialized type of consensus protocol). 
+In transaction processing, databases, and computer networking, the two-phase commit protocol (2PC) is a type of atomic commitment protocol (ACP). It is a distributed algorithm that coordinates all the processes that participate in a distributed atomic transaction on whether to commit or abort (roll back) the transaction (it is a specialized type of consensus protocol).
 
 <hr>
 
@@ -606,7 +606,7 @@ Transaction processing should achieve a high degree of data integrity and consis
 <hr>
 
 
-## zsh 
+## zsh
 
 **[Oh My Zsh](https://ohmyz.sh/)**
 

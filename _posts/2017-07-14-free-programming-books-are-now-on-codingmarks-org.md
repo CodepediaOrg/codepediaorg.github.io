@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Free Programming Books are now on Codingmarks.org
-description: "We're happy to announce that we've reached and surpassed our goal of 1 Mb #DevBookmarks, by importing the books
+title: Free Programming Books are now on Bookmarks.dev
+description: "We're happy to announce that we've reached and surpassed our goal of 1 Mb bookmarks, by importing the books
 from the Free-Programming-Books project"
 author: ama
-permalink: /ama/free-programming-books-are-now-on-codingmarks-org
+permalink: /ama/free-programming-books-are-now-on-bookmarks-dev
 published: true
-categories: [dev-bookmarks]
-tags: [codingmarks, books, free-programming-books]
+categories: [bookmarks]
+tags: [bookmarksdev, books, free-programming-books]
 ---
 
 I am really happy to announce that we've reached and surpassed our [goal of 1Mb of #DevBookmarks](https://www.youtube.com/watch?v=bj22xbE5ZiY&feature=youtu.be).

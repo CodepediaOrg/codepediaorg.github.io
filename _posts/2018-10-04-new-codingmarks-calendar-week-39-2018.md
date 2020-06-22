@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks published in week 39 of 2018
-description: "New codingmarks published in week 39 of 2018. Keywords: angular, async, async-await, asynchronous, caching, charts, cron, crontab, data-science, ejb, java, javaee, javascript, jpa, keycloak, nodejs, python, reactive, reactive-programming, ruby, ruby-on-rails, rxjava, scheduler, scheduling and tools"
+title: New dev bookmarks published in week 39 of 2018
+description: "New dev bookmarks published in week 39 of 2018. Keywords: angular, async, async-await, asynchronous, caching, charts, cron, crontab, data-science, ejb, java, javaee, javascript, jpa, keycloak, nodejs, python, reactive, reactive-programming, ruby, ruby-on-rails, rxjava, scheduler, scheduling and tools"
 author: ama
-permalink: /ama/new-codingmarks-week-39-2018
+permalink: /ama/new-dev-bookmarks-week-39-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 39 th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## angular 
+## angular
 
 **[Angular Development Mode: What is Unidirectional Data Flow?](https://blog.angular-university.io/angular-2-what-is-unidirectional-data-flow-development-mode/)**
 
@@ -29,7 +29,7 @@ A simple explanation about the benefits of Unidirectional Data Flow in Angular, 
 <hr>
 
 
-## async 
+## async
 
 **[@Asynchronous does not work from inside the same EJB](https://www.whitebyte.info/programming/java/asynchronous-does-not-work-from-inside-the-same-ejb)**
 
@@ -40,7 +40,7 @@ The @Asynchronous annotation does not work from inside the same EJB. The solutio
 <hr>
 
 
-## async-await 
+## async-await
 
 **[GitHub - BryanDonovan/node-cache-manager](https://github.com/BryanDonovan/node-cache-manager)**
 
@@ -51,7 +51,7 @@ Cache module for Node.JS.
 <hr>
 
 
-## asynchronous 
+## asynchronous
 
 **[@Asynchronous does not work from inside the same EJB](https://www.whitebyte.info/programming/java/asynchronous-does-not-work-from-inside-the-same-ejb)**
 
@@ -62,7 +62,7 @@ The @Asynchronous annotation does not work from inside the same EJB. The solutio
 <hr>
 
 
-## caching 
+## caching
 
 **[GitHub - BryanDonovan/node-cache-manager](https://github.com/BryanDonovan/node-cache-manager)**
 
@@ -73,7 +73,7 @@ Cache module for Node.JS.
 <hr>
 
 
-## charts 
+## charts
 
 **[Modern Visualization for the Data Era - Plotly](https://plot.ly/)**
 
@@ -87,7 +87,7 @@ Plotly's collaboration servers (available in cloud or on premises) allow data sc
 <hr>
 
 
-## cron 
+## cron
 
 **[GitHub - kelektiv/node-cron: Cron for NodeJS.](https://github.com/kelektiv/node-cron)**
 
@@ -115,7 +115,7 @@ An easy to use editor for crontab schedules.
 <hr>
 
 
-## crontab 
+## crontab
 
 **[crontab.guru - the cron schedule expression editor](https://crontab.guru/)**
 
@@ -126,7 +126,7 @@ An easy to use editor for crontab schedules.
 <hr>
 
 
-## data-science 
+## data-science
 
 **[Modern Visualization for the Data Era - Plotly](https://plot.ly/)**
 
@@ -140,7 +140,7 @@ Plotly's collaboration servers (available in cloud or on premises) allow data sc
 <hr>
 
 
-## ejb 
+## ejb
 
 **[@Asynchronous does not work from inside the same EJB](https://www.whitebyte.info/programming/java/asynchronous-does-not-work-from-inside-the-same-ejb)**
 
@@ -151,7 +151,7 @@ The @Asynchronous annotation does not work from inside the same EJB. The solutio
 <hr>
 
 
-## java 
+## java
 
 **[JPA EntityManager: Why use persist() over merge()? - Stack Overflow](https://stackoverflow.com/questions/1069992/jpa-entitymanager-why-use-persist-over-merge)**
 
@@ -166,7 +166,7 @@ Merge creates a new instance of your entity, copies the state from the supplied 
 <hr>
 
 
-## javaee 
+## javaee
 
 **[@Asynchronous does not work from inside the same EJB](https://www.whitebyte.info/programming/java/asynchronous-does-not-work-from-inside-the-same-ejb)**
 
@@ -177,7 +177,7 @@ The @Asynchronous annotation does not work from inside the same EJB. The solutio
 <hr>
 
 
-## javascript 
+## javascript
 
 **[Modern Visualization for the Data Era - Plotly](https://plot.ly/)**
 
@@ -191,7 +191,7 @@ Plotly's collaboration servers (available in cloud or on premises) allow data sc
 <hr>
 
 
-## jpa 
+## jpa
 
 **[JPA EntityManager: Why use persist() over merge()? - Stack Overflow](https://stackoverflow.com/questions/1069992/jpa-entitymanager-why-use-persist-over-merge)**
 
@@ -206,7 +206,7 @@ Merge creates a new instance of your entity, copies the state from the supplied 
 <hr>
 
 
-## keycloak 
+## keycloak
 
 **[A simply step by step Keycloak, MySQL and Node.js integration tutorial](https://github.com/v-ladynev/keycloak-nodejs-example)**
 
@@ -218,7 +218,7 @@ A simply step by step Keycloak, MySQL and Node.js integration tutorial / example
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[A simply step by step Keycloak, MySQL and Node.js integration tutorial](https://github.com/v-ladynev/keycloak-nodejs-example)**
 
@@ -256,7 +256,7 @@ The node-cron module is tiny task scheduler in pure JavaScript for node.js based
 <hr>
 
 
-## python 
+## python
 
 **[Modern Visualization for the Data Era - Plotly](https://plot.ly/)**
 
@@ -270,7 +270,7 @@ Plotly's collaboration servers (available in cloud or on premises) allow data sc
 <hr>
 
 
-## reactive 
+## reactive
 
 **[The Reactive Manifesto](https://www.reactivemanifesto.org/)**
 
@@ -282,7 +282,7 @@ We believe that a coherent approach to systems architecture is needed, and we be
 <hr>
 
 
-## reactive-programming 
+## reactive-programming
 
 **[The Reactive Manifesto](https://www.reactivemanifesto.org/)**
 
@@ -294,7 +294,7 @@ We believe that a coherent approach to systems architecture is needed, and we be
 <hr>
 
 
-## ruby 
+## ruby
 
 **[Guides - Rails Girls](http://guides.railsgirls.com/)**
 
@@ -306,7 +306,7 @@ Our aim is to give tools for women to understand technology. The Rails Girls eve
 <hr>
 
 
-## ruby-on-rails 
+## ruby-on-rails
 
 **[Guides - Rails Girls](http://guides.railsgirls.com/)**
 
@@ -318,7 +318,7 @@ Our aim is to give tools for women to understand technology. The Rails Girls eve
 <hr>
 
 
-## rxjava 
+## rxjava
 
 **[Introduction to RxJava](https://www.baeldung.com/rx-java)**
 
@@ -331,7 +331,7 @@ Discover RxJava - a library for composing asynchronous and event-based programs.
 <hr>
 
 
-## scheduler 
+## scheduler
 
 **[Node-cron](http://merencia.github.io/node-cron/)**
 
@@ -343,7 +343,7 @@ The node-cron module is tiny task scheduler in pure JavaScript for node.js based
 <hr>
 
 
-## scheduling 
+## scheduling
 
 **[Node-cron](http://merencia.github.io/node-cron/)**
 
@@ -355,7 +355,7 @@ The node-cron module is tiny task scheduler in pure JavaScript for node.js based
 <hr>
 
 
-## tools 
+## tools
 
 **[crontab.guru - the cron schedule expression editor](https://crontab.guru/)**
 

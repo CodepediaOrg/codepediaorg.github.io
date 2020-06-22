@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks published in week 45of 2018
-description: "New codingmarks published in week 45 of 2018. Keywords: agile, api, docker, docker-compose, expressjs, extreme-programming, free-programming-books, git, java, microservices, mocking, mongodb, nodejs, oauth2, openid-connect, rest, security, spy, ssh, stub, tdd and testing"
+title: New dev bookmarks published in week 45of 2018
+description: "New dev bookmarks published in week 45 of 2018. Keywords: agile, api, docker, docker-compose, expressjs, extreme-programming, free-programming-books, git, java, microservices, mocking, mongodb, nodejs, oauth2, openid-connect, rest, security, spy, ssh, stub, tdd and testing"
 author: ama
-permalink: /ama/new-codingmarks-week-45-2018
+permalink: /ama/new-dev-bookmarks-week-45-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in week 45 of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## agile 
+## agile
 
 **[James Shore: Agile-Book](https://www.jamesshore.com/Agile-Book/)**
 
@@ -30,12 +30,12 @@ Welcome to the The Art of Agile Development book site! Here, you'll find a cornu
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2011-05-02
   * **tags**: &nbsp; [agile](https://www.bookmarks.dev/search?q=[agile])
 
-This video on pair programming is part of an ongoing series of short videos covering common Agile Practices. 
+This video on pair programming is part of an ongoing series of short videos covering common Agile Practices.
 
 <hr>
 
 
-## api 
+## api
 
 **[The Nuts and Bolts of API Security: Protecting Your Data at All Times - YouTube](https://www.youtube.com/watch?v=tj03NRM6SP8)**
 
@@ -58,14 +58,14 @@ API Keys are not security. By design they lack granular control, and there are m
 <hr>
 
 
-## docker 
+## docker
 
 **[Docker Official Image packaging for MongoDB](https://github.com/docker-library/mongo)**
 
   * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/docker-library/mongo)
 
-Docker Official Image packaging for MongoDB. 
+Docker Official Image packaging for MongoDB.
 
 <hr>
 
@@ -98,7 +98,7 @@ Get back to the basics and explore a few simple docker run examples. Here, we de
 <hr>
 
 
-## docker-compose 
+## docker-compose
 
 **[Dockerizing a Node.js and MongoDB App – XOOR – Medium](https://medium.com/@xoor/dockerizing-a-node-js-and-mongodb-app-f9d80fdb280e)**
 
@@ -111,7 +111,7 @@ Docker has become an extremely popular tool not only among DevOps and Infrastruc
 <hr>
 
 
-## expressjs 
+## expressjs
 
 **[Dockerizing a Node.js and MongoDB App – XOOR – Medium](https://medium.com/@xoor/dockerizing-a-node-js-and-mongodb-app-f9d80fdb280e)**
 
@@ -124,7 +124,7 @@ Docker has become an extremely popular tool not only among DevOps and Infrastruc
 <hr>
 
 
-## extreme-programming 
+## extreme-programming
 
 **[Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html)**
 
@@ -139,7 +139,7 @@ The article addresses among other things the following:
 <hr>
 
 
-## free-programming-books 
+## free-programming-books
 
 **[James Shore: Agile-Book](https://www.jamesshore.com/Agile-Book/)**
 
@@ -150,7 +150,7 @@ Welcome to the The Art of Agile Development book site! Here, you'll find a cornu
 <hr>
 
 
-## git 
+## git
 
 **[linux - Git keeps asking me for my ssh key passphrase - Stack Overflow](https://stackoverflow.com/questions/10032461/git-keeps-asking-me-for-my-ssh-key-passphrase)**
 
@@ -167,7 +167,7 @@ To save key permanently: `$ ssh-add -K`  - this will persist it after you close 
 <hr>
 
 
-## java 
+## java
 
 **[Why getter and setter methods are evil](https://www.javaworld.com/article/2073723/core-java/why-getter-and-setter-methods-are-evil.html)**
 
@@ -179,7 +179,7 @@ The getter/setter idiom is a commonplace feature in many Java programs. Most of 
 <hr>
 
 
-## microservices 
+## microservices
 
 **[The Nuts and Bolts of API Security: Protecting Your Data at All Times - YouTube](https://www.youtube.com/watch?v=tj03NRM6SP8)**
 
@@ -191,7 +191,7 @@ Nice introduction (just introduction) to oauth, openid-connect, possible use for
 <hr>
 
 
-## mocking 
+## mocking
 
 **[Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html)**
 
@@ -215,14 +215,14 @@ It's a conversation about mocking where the different test doubles (that is stub
 <hr>
 
 
-## mongodb 
+## mongodb
 
 **[Docker Official Image packaging for MongoDB](https://github.com/docker-library/mongo)**
 
   * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [mongodb](https://www.bookmarks.dev/search?q=[mongodb])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/docker-library/mongo)
 
-Docker Official Image packaging for MongoDB. 
+Docker Official Image packaging for MongoDB.
 
 <hr>
 
@@ -237,7 +237,7 @@ Docker has become an extremely popular tool not only among DevOps and Infrastruc
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[Official Docker Image for Node.js](https://hub.docker.com/_/node/)**
 
@@ -259,7 +259,7 @@ Docker has become an extremely popular tool not only among DevOps and Infrastruc
 <hr>
 
 
-## oauth2 
+## oauth2
 
 **[The Nuts and Bolts of API Security: Protecting Your Data at All Times - YouTube](https://www.youtube.com/watch?v=tj03NRM6SP8)**
 
@@ -271,7 +271,7 @@ Nice introduction (just introduction) to oauth, openid-connect, possible use for
 <hr>
 
 
-## openid-connect 
+## openid-connect
 
 **[The Nuts and Bolts of API Security: Protecting Your Data at All Times - YouTube](https://www.youtube.com/watch?v=tj03NRM6SP8)**
 
@@ -283,7 +283,7 @@ Nice introduction (just introduction) to oauth, openid-connect, possible use for
 <hr>
 
 
-## rest 
+## rest
 
 **[API Keys ≠ Security: Why API Keys Are Not Enough](https://nordicapis.com/why-api-keys-are-not-enough/)**
 
@@ -297,7 +297,7 @@ API Keys are not security. By design they lack granular control, and there are m
 <hr>
 
 
-## security 
+## security
 
 **[The Nuts and Bolts of API Security: Protecting Your Data at All Times - YouTube](https://www.youtube.com/watch?v=tj03NRM6SP8)**
 
@@ -320,7 +320,7 @@ API Keys are not security. By design they lack granular control, and there are m
 <hr>
 
 
-## spy 
+## spy
 
 **[The little mocker](https://blog.cleancoder.com/uncle-bob/2014/05/14/TheLittleMocker.html)**
 
@@ -332,7 +332,7 @@ It's a conversation about mocking where the different test doubles (that is stub
 <hr>
 
 
-## ssh 
+## ssh
 
 **[linux - Git keeps asking me for my ssh key passphrase - Stack Overflow](https://stackoverflow.com/questions/10032461/git-keeps-asking-me-for-my-ssh-key-passphrase)**
 
@@ -349,7 +349,7 @@ To save key permanently: `$ ssh-add -K`  - this will persist it after you close 
 <hr>
 
 
-## stub 
+## stub
 
 **[Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html)**
 
@@ -373,7 +373,7 @@ It's a conversation about mocking where the different test doubles (that is stub
 <hr>
 
 
-## tdd 
+## tdd
 
 **[Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html)**
 
@@ -388,7 +388,7 @@ The article addresses among other things the following:
 <hr>
 
 
-## testing 
+## testing
 
 **[Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html)**
 

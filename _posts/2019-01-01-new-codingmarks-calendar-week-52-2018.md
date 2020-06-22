@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks published in week 52 of 2018
-description: "New codingmarks published in week 52 of 2018. Keywords: api, api-design, awesome, awesome-list, blog, cli, computer-science, course, distributed-tracing, event-driven-design, git, go, graphql, grpc, hibernate, java, javascript, jpa, jpql, json, json-api, logging, lua, macos, microservices, mysql, nodejs, open-source, osx, postgresql, programming, protocol-buffers, reactjs, relay, rest, rpc, security, social-media, software-development, sql, testing, tools, twirp, vuejs, webhooks, websocket, winston, xml and zipkin"
+title: New dev bookmarks published in week 52 of 2018
+description: "New dev bookmarks published in week 52 of 2018. Keywords: api, api-design, awesome, awesome-list, blog, cli, computer-science, course, distributed-tracing, event-driven-design, git, go, graphql, grpc, hibernate, java, javascript, jpa, jpql, json, json-api, logging, lua, macos, microservices, mysql, nodejs, open-source, osx, postgresql, programming, protocol-buffers, reactjs, relay, rest, rpc, security, social-media, software-development, sql, testing, tools, twirp, vuejs, webhooks, websocket, winston, xml and zipkin"
 author: ama
-permalink: /ama/new-codingmarks-week-52-2018
+permalink: /ama/new-dev-bookmarks-week-52-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in week 52 of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## api 
+## api
 
 **[5 Protocols For Event-Driven API Architectures](https://nordicapis.com/5-protocols-for-event-driven-api-architectures/)**
 
@@ -27,7 +27,7 @@ We define and compare five ways to design event-driven APIs; WebSockets, Webhook
 <hr>
 
 
-## api-design 
+## api-design
 
 **[The GitHub GraphQL API](https://githubengineering.com/the-github-graphql-api/)**
 
@@ -46,7 +46,7 @@ Real world, specific use cases for REST, GraphQL, gRPC, and Webhooks to help API
 <hr>
 
 
-## awesome 
+## awesome
 
 **[awesome-nodejs-security](https://github.com/lirantal/awesome-nodejs-security)**
 
@@ -94,7 +94,7 @@ Awesome list of GraphQL & Relay.
 <hr>
 
 
-## awesome-list 
+## awesome-list
 
 **[awesome-nodejs-security](https://github.com/lirantal/awesome-nodejs-security)**
 
@@ -206,12 +206,12 @@ A curated list of awesome MySQL software, libraries, tools and resources - shlom
   * **tags**: &nbsp; [grpc](https://www.bookmarks.dev/search?q=[grpc]), &nbsp; [awesome-list](https://www.bookmarks.dev/search?q=[awesome-list])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/grpc-ecosystem/awesome-grpc)
 
-A curated list of useful resources for gRPC. 
+A curated list of useful resources for gRPC.
 
 <hr>
 
 
-## blog 
+## blog
 
 **[2ality – JavaScript and more  ](http://2ality.com)**
 
@@ -222,7 +222,7 @@ A curated list of useful resources for gRPC.
 <hr>
 
 
-## cli 
+## cli
 
 **[12 Factor CLI Apps – Jeff Dickey – Medium](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)**
 
@@ -234,7 +234,7 @@ Set of 12 principles for building CLI apps
 <hr>
 
 
-## computer-science 
+## computer-science
 
 **[awesome-courses](https://github.com/prakhar1989/awesome-courses)**
 
@@ -245,7 +245,7 @@ Set of 12 principles for building CLI apps
 <hr>
 
 
-## course 
+## course
 
 **[awesome-courses](https://github.com/prakhar1989/awesome-courses)**
 
@@ -256,7 +256,7 @@ Set of 12 principles for building CLI apps
 <hr>
 
 
-## distributed-tracing 
+## distributed-tracing
 
 **[Dapper, a Large-Scale Distributed Systems Tracing Infrastructure](https://ai.google/research/pubs/pub36356)**
 
@@ -279,7 +279,7 @@ This project includes a dependency-free library and a spring-boot server. Storag
 <hr>
 
 
-## event-driven-design 
+## event-driven-design
 
 **[5 Protocols For Event-Driven API Architectures](https://nordicapis.com/5-protocols-for-event-driven-api-architectures/)**
 
@@ -291,7 +291,7 @@ We define and compare five ways to design event-driven APIs; WebSockets, Webhook
 <hr>
 
 
-## git 
+## git
 
 **[How to change the URI (URL) for a remote Git repository? - Stack Overflow](https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository)**
 
@@ -306,7 +306,7 @@ $ git remote set-url origin git://new.url.here
 <hr>
 
 
-## go 
+## go
 
 **[Meet Twirp! · Twirp](https://twitchtv.github.io/twirp/docs/intro.html)**
 
@@ -318,7 +318,7 @@ Twirp is a framework for service-to-service communication emphasizing simplicity
 <hr>
 
 
-## graphql 
+## graphql
 
 **[Lessons from 4 Years of GraphQL - YouTube](https://www.youtube.com/watch?v=zVNrqo9XGOs)**
 
@@ -355,7 +355,7 @@ Real world, specific use cases for REST, GraphQL, gRPC, and Webhooks to help API
 <hr>
 
 
-## grpc 
+## grpc
 
 **[5 Protocols For Event-Driven API Architectures](https://nordicapis.com/5-protocols-for-event-driven-api-architectures/)**
 
@@ -379,12 +379,12 @@ Real world, specific use cases for REST, GraphQL, gRPC, and Webhooks to help API
   * **tags**: &nbsp; [grpc](https://www.bookmarks.dev/search?q=[grpc]), &nbsp; [awesome-list](https://www.bookmarks.dev/search?q=[awesome-list])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/grpc-ecosystem/awesome-grpc)
 
-A curated list of useful resources for gRPC. 
+A curated list of useful resources for gRPC.
 
 <hr>
 
 
-## hibernate 
+## hibernate
 
 **[Hibernate Logging Guide - Use the right config for dev and prod](https://thoughts-on-java.org/hibernate-logging-guide/)**
 
@@ -398,12 +398,12 @@ How should you configure your Hibernate logging to find performance issues durin
 
   * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [jpa](https://www.bookmarks.dev/search?q=[jpa]), &nbsp; [hibernate](https://www.bookmarks.dev/search?q=[hibernate])
 
-Explains one-to-one, many-to-one and many-to-many associations with examples. 
+Explains one-to-one, many-to-one and many-to-many associations with examples.
 
 <hr>
 
 
-## java 
+## java
 
 **[awesome-java](https://github.com/akullpp/awesome-java)**
 
@@ -427,12 +427,12 @@ Learn different ways of iterating through the entries of a Map in Java.
 
   * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [jpa](https://www.bookmarks.dev/search?q=[jpa]), &nbsp; [hibernate](https://www.bookmarks.dev/search?q=[hibernate])
 
-Explains one-to-one, many-to-one and many-to-many associations with examples. 
+Explains one-to-one, many-to-one and many-to-many associations with examples.
 
 <hr>
 
 
-## javascript 
+## javascript
 
 **[A personal review of automated testing tools in the JavaScript world](https://itnext.io/a-personal-review-of-automated-testing-tools-in-the-javascript-world-3c504fe6e05d)**
 
@@ -461,7 +461,7 @@ Node.js 10 was released on April 24, 2018. This version provides experimental su
 <hr>
 
 
-## jpa 
+## jpa
 
 **[Hibernate Tip: What's the Difference between JOIN, LEFT JOIN & JOIN FETCH](https://thoughts-on-java.org/hibernate-tips-difference-join-left-join-fetch-join/)**
 
@@ -475,12 +475,12 @@ They are similar but there is an important difference between JOIN, LEFT JOIN an
 
   * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [jpa](https://www.bookmarks.dev/search?q=[jpa]), &nbsp; [hibernate](https://www.bookmarks.dev/search?q=[hibernate])
 
-Explains one-to-one, many-to-one and many-to-many associations with examples. 
+Explains one-to-one, many-to-one and many-to-many associations with examples.
 
 <hr>
 
 
-## jpql 
+## jpql
 
 **[Hibernate Tip: What's the Difference between JOIN, LEFT JOIN & JOIN FETCH](https://thoughts-on-java.org/hibernate-tips-difference-join-left-join-fetch-join/)**
 
@@ -491,7 +491,7 @@ They are similar but there is an important difference between JOIN, LEFT JOIN an
 <hr>
 
 
-## json 
+## json
 
 **[Online JSON Formatter](https://jsonformatter.org/)**
 
@@ -502,7 +502,7 @@ Online JSON Formatter and JSON Validator will format JSON data, and helps to val
 <hr>
 
 
-## json-api 
+## json-api
 
 **[JSON:API Home page](https://jsonapi.org/)**
 
@@ -514,7 +514,7 @@ A specification for building APIs in JSON
 <hr>
 
 
-## logging 
+## logging
 
 **[Using Winston, a versatile logging library for Node.js](https://thisdavej.com/using-winston-a-versatile-logging-library-for-node-js/)**
 
@@ -534,7 +534,7 @@ How should you configure your Hibernate logging to find performance issues durin
 <hr>
 
 
-## lua 
+## lua
 
 **[awesome-lua](https://github.com/LewisJEllis/awesome-lua)**
 
@@ -546,7 +546,7 @@ A curated list of quality Lua packages and resources. - LewisJEllis/awesome-lua
 <hr>
 
 
-## macos 
+## macos
 
 **[Postgres.app – the easiest way to get started with PostgreSQL on the Mac](https://postgresapp.com/)**
 
@@ -567,7 +567,7 @@ Postgres.app is a full featured PostgreSQL installation packaged as a standard M
 <hr>
 
 
-## microservices 
+## microservices
 
 **[awesome-microservices](https://github.com/mfornos/awesome-microservices)**
 
@@ -579,7 +579,7 @@ A curated list of Microservice Architecture related principles and technologies.
 <hr>
 
 
-## mysql 
+## mysql
 
 **[awesome-mysql](https://github.com/shlomi-noach/awesome-mysql)**
 
@@ -590,14 +590,14 @@ A curated list of awesome MySQL software, libraries, tools and resources - shlom
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[Nodeenv - Manage multiple NodeJS versions.](https://github.com/nodenv/nodenv)**
 
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/nodenv/nodenv)
 
-Manage multiple NodeJS versions. 
+Manage multiple NodeJS versions.
 
 <hr>
 
@@ -647,7 +647,7 @@ Node.js 10 was released on April 24, 2018. This version provides experimental su
 <hr>
 
 
-## open-source 
+## open-source
 
 **[zachflower/awesome-open-source-supporters](https://github.com/zachflower/awesome-open-source-supporters)**
 
@@ -659,7 +659,7 @@ Node.js 10 was released on April 24, 2018. This version provides experimental su
 <hr>
 
 
-## osx 
+## osx
 
 **[Postgres.app – the easiest way to get started with PostgreSQL on the Mac](https://postgresapp.com/)**
 
@@ -680,7 +680,7 @@ Postgres.app is a full featured PostgreSQL installation packaged as a standard M
 <hr>
 
 
-## postgresql 
+## postgresql
 
 **[Postgres.app – the easiest way to get started with PostgreSQL on the Mac](https://postgresapp.com/)**
 
@@ -701,7 +701,7 @@ A curated list of awesome PostgreSQL software, libraries, tools and resources, i
 <hr>
 
 
-## programming 
+## programming
 
 **[Things You Should Never Do, Part I – Joel on Software](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)**
 
@@ -717,7 +717,7 @@ Well, yes. They did. They did it by making the **single worst strategic mistake*
 <hr>
 
 
-## protocol-buffers 
+## protocol-buffers
 
 **[Protocol Buffers ](https://developers.google.com/protocol-buffers/)**
 
@@ -729,7 +729,7 @@ Protocol buffers are a language-neutral, platform-neutral extensible mechanism f
 <hr>
 
 
-## reactjs 
+## reactjs
 
 **[Relay Homepage](https://facebook.github.io/relay/)**
 
@@ -741,7 +741,7 @@ A JavaScript framework for building data-driven React applications
 <hr>
 
 
-## relay 
+## relay
 
 **[Relay Homepage](https://facebook.github.io/relay/)**
 
@@ -753,7 +753,7 @@ A JavaScript framework for building data-driven React applications
 <hr>
 
 
-## rest 
+## rest
 
 **[JSON:API Home page](https://jsonapi.org/)**
 
@@ -799,7 +799,7 @@ Real world, specific use cases for REST, GraphQL, gRPC, and Webhooks to help API
 <hr>
 
 
-## rpc 
+## rpc
 
 **[Meet Twirp! · Twirp](https://twitchtv.github.io/twirp/docs/intro.html)**
 
@@ -820,7 +820,7 @@ Choosing an API design style can be downright daunting. The RPC vs. REST debate 
 <hr>
 
 
-## security 
+## security
 
 **[awesome-nodejs-security](https://github.com/lirantal/awesome-nodejs-security)**
 
@@ -832,7 +832,7 @@ Awesome Node.js Security resources. Contribute to lirantal/awesome-nodejs-securi
 <hr>
 
 
-## social-media 
+## social-media
 
 **[The dos and don’ts of hashtags](https://business.twitter.com/en/blog/the-dos-and-donts-of-hashtags.html)**
 
@@ -843,7 +843,7 @@ How to grow your reach and engagement with hashtags
 <hr>
 
 
-## software-development 
+## software-development
 
 **[Things You Should Never Do, Part I – Joel on Software](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)**
 
@@ -859,7 +859,7 @@ Well, yes. They did. They did it by making the **single worst strategic mistake*
 <hr>
 
 
-## sql 
+## sql
 
 **[Visual Representation of SQL Joins - CodeProject](https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)**
 
@@ -871,7 +871,7 @@ I'm a pretty visual person. Things seem to make more sense as a picture. I looke
 <hr>
 
 
-## testing 
+## testing
 
 **[A personal review of automated testing tools in the JavaScript world](https://itnext.io/a-personal-review-of-automated-testing-tools-in-the-javascript-world-3c504fe6e05d)**
 
@@ -883,14 +883,14 @@ In this post, I will talk about my experiences with test automation using tools 
 <hr>
 
 
-## tools 
+## tools
 
 **[Nodeenv - Manage multiple NodeJS versions.](https://github.com/nodenv/nodenv)**
 
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [tools](https://www.bookmarks.dev/search?q=[tools])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/nodenv/nodenv)
 
-Manage multiple NodeJS versions. 
+Manage multiple NodeJS versions.
 
 <hr>
 
@@ -912,7 +912,7 @@ Online JSON Formatter and JSON Validator will format JSON data, and helps to val
 <hr>
 
 
-## twirp 
+## twirp
 
 **[Meet Twirp! · Twirp](https://twitchtv.github.io/twirp/docs/intro.html)**
 
@@ -924,7 +924,7 @@ Twirp is a framework for service-to-service communication emphasizing simplicity
 <hr>
 
 
-## vuejs 
+## vuejs
 
 **[Awesome vue.js](https://github.com/vuejs/awesome-vue)**
 
@@ -936,7 +936,7 @@ Twirp is a framework for service-to-service communication emphasizing simplicity
 <hr>
 
 
-## webhooks 
+## webhooks
 
 **[What's a Webhook?](https://sendgrid.com/blog/whats-webhook/)**
 
@@ -956,7 +956,7 @@ Real world, specific use cases for REST, GraphQL, gRPC, and Webhooks to help API
 <hr>
 
 
-## websocket 
+## websocket
 
 **[5 Protocols For Event-Driven API Architectures](https://nordicapis.com/5-protocols-for-event-driven-api-architectures/)**
 
@@ -968,7 +968,7 @@ We define and compare five ways to design event-driven APIs; WebSockets, Webhook
 <hr>
 
 
-## winston 
+## winston
 
 **[Using Winston, a versatile logging library for Node.js](https://thisdavej.com/using-winston-a-versatile-logging-library-for-node-js/)**
 
@@ -980,7 +980,7 @@ We explore how to use Winston, a versatile logging library for Node.js, includin
 <hr>
 
 
-## xml 
+## xml
 
 **[Online JSON Formatter](https://jsonformatter.org/)**
 
@@ -991,7 +991,7 @@ Online JSON Formatter and JSON Validator will format JSON data, and helps to val
 <hr>
 
 
-## zipkin 
+## zipkin
 
 **[OpenZipkin · A distributed tracing system      ](https://zipkin.io/)**
 

@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 6th week of 2018
-description: "New codingmarks added in the 6th week of 2018. Keywords: angular-material, architecture, cheatsheet, coding, cryptography, design-patterns, encryption, javascript, json, microservices, network, networking, nodejs, rsa, security, tools and writing"
+title: New dev bookmarks added in the 6th week of 2018
+description: "New dev bookmarks added in the 6th week of 2018. Keywords: angular-material, architecture, cheatsheet, coding, cryptography, design-patterns, encryption, javascript, json, microservices, network, networking, nodejs, rsa, security, tools and writing"
 author: ama
-permalink: /ama/new-codingmarks-week-6-2018
+permalink: /ama/new-dev-bookmarks-week-6-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 6th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## angular-material 
+## angular-material
 
 **[Angular Material](https://material.angular.io/)**
 
@@ -27,7 +27,7 @@ Material Design components for Angular
 <hr>
 
 
-## architecture 
+## architecture
 
 **[Sidecar pattern - Microsoft Docs](https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar)**
 
@@ -50,7 +50,7 @@ Deploy components of an application into a separate process or container to prov
 <hr>
 
 
-## cheatsheet 
+## cheatsheet
 
 **[GitHub - LeCoupa/awesome-cheatsheets](https://github.com/LeCoupa/awesome-cheatsheets)**
 
@@ -62,7 +62,7 @@ awesome-cheatsheets - 📚 Awesome cheatsheets for popular programming languages
 <hr>
 
 
-## coding 
+## coding
 
 **[Dan McKinley :: Choose Boring TechnologyCrazySane](http://mcfunley.com/choose-boring-technology)**
 
@@ -77,7 +77,7 @@ awesome-cheatsheets - 📚 Awesome cheatsheets for popular programming languages
 <hr>
 
 
-## cryptography 
+## cryptography
 
 **[Public Key Cryptography: RSA Encryption Algorithm - YouTube](https://www.youtube.com/watch?v=wXB-V_Keiu8)**
 
@@ -98,7 +98,7 @@ How does public-key cryptography work? What is a private key and a public key? W
 <hr>
 
 
-## design-patterns 
+## design-patterns
 
 **[Sidecar pattern - Microsoft Docs](https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar)**
 
@@ -109,7 +109,7 @@ Deploy components of an application into a separate process or container to prov
 <hr>
 
 
-## encryption 
+## encryption
 
 **[Public Key Cryptography: RSA Encryption Algorithm - YouTube](https://www.youtube.com/watch?v=wXB-V_Keiu8)**
 
@@ -130,7 +130,7 @@ How does public-key cryptography work? What is a private key and a public key? W
 <hr>
 
 
-## javascript 
+## javascript
 
 **[GitHub - LeCoupa/awesome-cheatsheets](https://github.com/LeCoupa/awesome-cheatsheets)**
 
@@ -151,7 +151,7 @@ A JavaScript library for detecting touch gestures.
 <hr>
 
 
-## json 
+## json
 
 **[JSON Hijacking - You’ve Been Haacked](https://haacked.com/archive/2009/06/25/json-hijacking.aspx/)**
 
@@ -163,7 +163,7 @@ A while back I wrote about a subtle JSON vulnerability which could result in the
 <hr>
 
 
-## microservices 
+## microservices
 
 **[Sidecar pattern - Microsoft Docs](https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar)**
 
@@ -174,7 +174,7 @@ Deploy components of an application into a separate process or container to prov
 <hr>
 
 
-## network 
+## network
 
 **[Spoofing attack - Wikipedia](https://en.wikipedia.org/wiki/Spoofing_attack)**
 
@@ -185,7 +185,7 @@ In the context of network security, a spoofing attack is a situation in which on
 <hr>
 
 
-## networking 
+## networking
 
 **[Virtual LAN - Wikipedia](https://en.wikipedia.org/wiki/Virtual_LAN)**
 
@@ -196,7 +196,7 @@ A virtual LAN (VLAN) is any broadcast domain that is partitioned and isolated in
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[GitHub - LeCoupa/awesome-cheatsheets](https://github.com/LeCoupa/awesome-cheatsheets)**
 
@@ -208,7 +208,7 @@ awesome-cheatsheets - 📚 Awesome cheatsheets for popular programming languages
 <hr>
 
 
-## rsa 
+## rsa
 
 **[Public Key Cryptography: RSA Encryption Algorithm - YouTube](https://www.youtube.com/watch?v=wXB-V_Keiu8)**
 
@@ -220,7 +220,7 @@ RSA Public Key Encryption Algorithm (cryptography). How & why it works. Introduc
 <hr>
 
 
-## security 
+## security
 
 **[STRIDE (security) - Wikipedia](https://en.wikipedia.org/wiki/STRIDE_(security))**
 
@@ -292,7 +292,7 @@ A while back I wrote about a subtle JSON vulnerability which could result in the
 <hr>
 
 
-## tools 
+## tools
 
 **[Drivel Defence text](http://www.plainenglish.co.uk/drivel-defence-text.html)**
 
@@ -342,7 +342,7 @@ Hemingway makes your writing bold and clear. It's like a spellchecker, but for s
 <hr>
 
 
-## writing 
+## writing
 
 **[Drivel Defence text](http://www.plainenglish.co.uk/drivel-defence-text.html)**
 

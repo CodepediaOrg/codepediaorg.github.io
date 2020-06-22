@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Sharing coding bookmarks
-description: "This posts presents how www.codingmarks.org came to life."
+description: "This posts presents how www.bookmarks.dev came to life."
 author: ama
 permalink: /ama/sharing-coding-bookmarks
 published: true
-categories: [codingpedia]
-tags: [codingmarks, coding bookmarks]
+categories: [bookmarks]
+tags: [bookmarksdev, programming]
 image:
   feature: 2017-02-11-coding-bookmarks-post-feature-image.png
 ---

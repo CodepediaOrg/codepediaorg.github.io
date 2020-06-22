@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 27th week of 2018
-description: "New codingmarks added in the 27th week of 2018. Keywords: angular, architecture, caching, design-patterns, hibernate, java, javaee and jpa"
+title: New dev bookmarks added in the 27th week of 2018
+description: "New dev bookmarks added in the 27th week of 2018. Keywords: angular, architecture, caching, design-patterns, hibernate, java, javaee and jpa"
 author: ama
-permalink: /ama/new-codingmarks-week-27-2018
+permalink: /ama/new-dev-bookmarks-week-27-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 27th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## angular 
+## angular
 
 **[Angular  Architecture - Smart Components vs Presentational Components](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/)**
 
@@ -40,7 +40,7 @@ This includes: ngClass, ngStyle, Style isolation, Style Debugging, :host, :host-
 <hr>
 
 
-## architecture 
+## architecture
 
 **[Angular  Architecture - Smart Components vs Presentational Components](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/)**
 
@@ -54,7 +54,7 @@ Presentation Components: also known sometimes as pure components or dumb compone
 <hr>
 
 
-## caching 
+## caching
 
 **[GitHub - ben-manes/caffeine: A high performance caching library for Java 8](https://github.com/ben-manes/caffeine)**
 
@@ -66,7 +66,7 @@ A high performance caching library for Java 8
 <hr>
 
 
-## design-patterns 
+## design-patterns
 
 **[Observer vs Pub-Sub pattern – Hacker Noon](https://hackernoon.com/observer-vs-pub-sub-pattern-50d3b27f838c)**
 
@@ -78,7 +78,7 @@ I was once asked in an interview, “what is the difference between Observer pat
 <hr>
 
 
-## hibernate 
+## hibernate
 
 **[Complete Guide: Inheritance strategies with JPA and Hibernate](https://www.thoughts-on-java.org/complete-guide-inheritance-strategies-jpa-hibernate/)**
 
@@ -89,7 +89,7 @@ Hibernate and JPA support 4 inheritance strategies which map the entities to dif
 <hr>
 
 
-## java 
+## java
 
 **[Complete Guide: Inheritance strategies with JPA and Hibernate](https://www.thoughts-on-java.org/complete-guide-inheritance-strategies-jpa-hibernate/)**
 
@@ -109,7 +109,7 @@ A high performance caching library for Java 8
 <hr>
 
 
-## javaee 
+## javaee
 
 **[Complete Guide: Inheritance strategies with JPA and Hibernate](https://www.thoughts-on-java.org/complete-guide-inheritance-strategies-jpa-hibernate/)**
 
@@ -120,7 +120,7 @@ Hibernate and JPA support 4 inheritance strategies which map the entities to dif
 <hr>
 
 
-## jpa 
+## jpa
 
 **[Complete Guide: Inheritance strategies with JPA and Hibernate](https://www.thoughts-on-java.org/complete-guide-inheritance-strategies-jpa-hibernate/)**
 

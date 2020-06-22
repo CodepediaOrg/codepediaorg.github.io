@@ -6,8 +6,8 @@ available. There are resources for programming languages like java, rust, go, py
 author: ama
 permalink: /ama/discover-a-collection-of-more-than-10k-curated-dev-bookmarks
 published: true
-categories: [dev-bookmarks]
-tags: [dev, bookmarks, programming, developer]
+categories: [bookmarks]
+tags: [dev, bookmarks, bookmarksdev, programming, developer]
 ---
 
 We have recently reached a second major milestone on [www.bookmarks.dev](https://www.bookmarks.dev). There are now more than 10k curated public dev bookmarks

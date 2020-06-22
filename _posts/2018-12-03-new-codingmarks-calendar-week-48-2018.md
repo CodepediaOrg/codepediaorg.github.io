@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks published in week 48 of 2018
-description: "New codingmarks published in week 48 of 2018. Keywords: android, angular, api, documentation, feign, graphql, http, http-client, http2, https, java, kotlin, mapper, mapping, odata, rest, rest-client, spring, spring-boot and swagger"
+title: New dev bookmarks published in week 48 of 2018
+description: "New dev bookmarks published in week 48 of 2018. Keywords: android, angular, api, documentation, feign, graphql, http, http-client, http2, https, java, kotlin, mapper, mapping, odata, rest, rest-client, spring, spring-boot and swagger"
 author: ama
-permalink: /ama/new-codingmarks-week-48-2018
+permalink: /ama/new-dev-bookmarks-week-48-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in week 48 of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## android 
+## android
 
 **[Kotlin Programming Language - Homepage](http://kotlinlang.org/)**
 
@@ -24,7 +24,7 @@ New [dev bookmarks](https://www.bookmarks.dev) added in week 48 of 2018. Hot top
 <hr>
 
 
-## angular 
+## angular
 
 **[Build a Basic CRUD App with Angular 7.0 and Spring Boot 2.1 | Okta Developer](https://developer.okta.com/blog/2018/08/22/basic-crud-angular-7-and-spring-boot-2)**
 
@@ -36,7 +36,7 @@ Angular and Spring Boot are arguably the two most popular frameworks in all of w
 <hr>
 
 
-## api 
+## api
 
 **[GraphQL - A query language for your API - homepage](https://graphql.org/)**
 
@@ -48,7 +48,7 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
 <hr>
 
 
-## documentation 
+## documentation
 
 **[SpringFox homepage](http://springfox.github.io/springfox/)**
 
@@ -60,7 +60,7 @@ Automated JSON API documentation for API's built with Spring
 <hr>
 
 
-## feign 
+## feign
 
 **[Intro to Feign](https://www.baeldung.com/intro-to-feign)**
 
@@ -73,7 +73,7 @@ This article introduces Feign, a declarative HTTP client that simplifies impleme
 <hr>
 
 
-## graphql 
+## graphql
 
 **[Getting Started with GraphQL and Spring Boot](https://www.baeldung.com/spring-graphql)**
 
@@ -104,7 +104,7 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
 <hr>
 
 
-## http 
+## http
 
 **[OkHttp](http://square.github.io/okhttp/)**
 
@@ -116,7 +116,7 @@ An HTTP & HTTP/2 client for Android and Java applications
 <hr>
 
 
-## http-client 
+## http-client
 
 **[OkHttp](http://square.github.io/okhttp/)**
 
@@ -128,7 +128,7 @@ An HTTP & HTTP/2 client for Android and Java applications
 <hr>
 
 
-## http2 
+## http2
 
 **[OkHttp](http://square.github.io/okhttp/)**
 
@@ -140,7 +140,7 @@ An HTTP & HTTP/2 client for Android and Java applications
 <hr>
 
 
-## https 
+## https
 
 **[OkHttp](http://square.github.io/okhttp/)**
 
@@ -152,7 +152,7 @@ An HTTP & HTTP/2 client for Android and Java applications
 <hr>
 
 
-## java 
+## java
 
 **[Apache Olingo Library    ](http://olingo.apache.org/)**
 
@@ -229,7 +229,7 @@ An HTTP & HTTP/2 client for Android and Java applications
 <hr>
 
 
-## kotlin 
+## kotlin
 
 **[Kotlin Programming Language - Homepage](http://kotlinlang.org/)**
 
@@ -238,7 +238,7 @@ An HTTP & HTTP/2 client for Android and Java applications
 <hr>
 
 
-## mapper 
+## mapper
 
 **[MapStruct – Java bean mappings, the easy way!](http://mapstruct.org/)**
 
@@ -259,7 +259,7 @@ ModelMapper is an intelligent, refactoring safe object mapping library that auto
 <hr>
 
 
-## mapping 
+## mapping
 
 **[MapStruct – Java bean mappings, the easy way!](http://mapstruct.org/)**
 
@@ -280,7 +280,7 @@ ModelMapper is an intelligent, refactoring safe object mapping library that auto
 <hr>
 
 
-## odata 
+## odata
 
 **[Apache Olingo Library    ](http://olingo.apache.org/)**
 
@@ -300,7 +300,7 @@ OData, short for Open Data Protocol, is an open protocol to allow the creation a
 <hr>
 
 
-## rest 
+## rest
 
 **[OData - the Best Way to REST  - homepage](https://www.odata.org/)**
 
@@ -321,7 +321,7 @@ Automated JSON API documentation for API's built with Spring
 <hr>
 
 
-## rest-client 
+## rest-client
 
 **[Intro to Feign](https://www.baeldung.com/intro-to-feign)**
 
@@ -334,7 +334,7 @@ This article introduces Feign, a declarative HTTP client that simplifies impleme
 <hr>
 
 
-## spring 
+## spring
 
 **[SpringFox homepage](http://springfox.github.io/springfox/)**
 
@@ -346,7 +346,7 @@ Automated JSON API documentation for API's built with Spring
 <hr>
 
 
-## spring-boot 
+## spring-boot
 
 **[Getting Started with GraphQL and Spring Boot](https://www.baeldung.com/spring-graphql)**
 
@@ -377,7 +377,7 @@ Angular and Spring Boot are arguably the two most popular frameworks in all of w
 <hr>
 
 
-## swagger 
+## swagger
 
 **[SpringFox homepage](http://springfox.github.io/springfox/)**
 

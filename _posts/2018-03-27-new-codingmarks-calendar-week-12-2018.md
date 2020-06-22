@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 12th week of 2018
-description: "New codingmarks added in the 12th week of 2018. Keywords: angular, arquillian, debugging, ecmascript-6, free-programming-books, http, intellij, java, javaee, javascript, jsonp, maven, npm, rxjs, testing, unit-testing and user-experience"
+title: New dev bookmarks added in the 12th week of 2018
+description: "New dev bookmarks added in the 12th week of 2018. Keywords: angular, arquillian, debugging, ecmascript-6, free-programming-books, http, intellij, java, javaee, javascript, jsonp, maven, npm, rxjs, testing, unit-testing and user-experience"
 author: ama
-permalink: /ama/new-codingmarks-week-12-2018
+permalink: /ama/new-dev-bookmarks-week-12-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 12th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## angular 
+## angular
 
 **[Insider’s guide into interceptors and HttpClient mechanics in Angular](https://blog.angularindepth.com/insiders-guide-into-interceptors-and-httpclient-mechanics-in-angular-103fbdb397bf)**
 
@@ -49,7 +49,7 @@ Let’s explore the ins and outs of `ngIf`, and how we can utilise (the right wa
 <hr>
 
 
-## arquillian 
+## arquillian
 
 **[Test run modes - Arquillian - Project Documentation Editor](https://docs.jboss.org/author/display/ARQ/Test+run+modes)**
 
@@ -80,7 +80,7 @@ Learn how to prepare and execute tests using Arquillian, a container-agnostic in
 <hr>
 
 
-## debugging 
+## debugging
 
 **[Debugging JavaScript in Chrome - Help](https://www.jetbrains.com/help/idea/debugging-javascript-in-chrome.html)**
 
@@ -93,7 +93,7 @@ IntelliJ IDEA provides a built-in debugger for your client-side JavaScript code 
 <hr>
 
 
-## ecmascript-6 
+## ecmascript-6
 
 **[ES6 In Depth – Mozilla Hacks – the Web developer blog](https://hacks.mozilla.org/category/es6-in-depth/)**
 
@@ -104,7 +104,7 @@ Series of great articles about ES6
 <hr>
 
 
-## free-programming-books 
+## free-programming-books
 
 **[Introduction RxJS - Javascript library for functional reactive programming.](http://xgrommx.github.io/rx-book/)**
 
@@ -116,7 +116,7 @@ Reactive Extensions (Rx) is a library for composing asynchronous and event-based
 <hr>
 
 
-## http 
+## http
 
 **[Insider’s guide into interceptors and HttpClient mechanics in Angular](https://blog.angularindepth.com/insiders-guide-into-interceptors-and-httpclient-mechanics-in-angular-103fbdb397bf)**
 
@@ -128,7 +128,7 @@ The documentation for the interceptors is pretty good and shows how to write and
 <hr>
 
 
-## intellij 
+## intellij
 
 **[Debugging JavaScript in Chrome - Help](https://www.jetbrains.com/help/idea/debugging-javascript-in-chrome.html)**
 
@@ -141,7 +141,7 @@ IntelliJ IDEA provides a built-in debugger for your client-side JavaScript code 
 <hr>
 
 
-## java 
+## java
 
 **[Converting array to list in Java - Stack Overflow](https://stackoverflow.com/questions/2607289/converting-array-to-list-in-java)**
 
@@ -165,7 +165,7 @@ Learn how to prepare and execute tests using Arquillian, a container-agnostic in
 <hr>
 
 
-## javaee 
+## javaee
 
 **[Arquillian and Wildfly: Integration test tutorial](https://www.softwareyoga.com/arquillian-and-wildfly-integration-test-tutorial/)**
 
@@ -188,7 +188,7 @@ Learn how to prepare and execute tests using Arquillian, a container-agnostic in
 <hr>
 
 
-## javascript 
+## javascript
 
 **[ES6 In Depth – Mozilla Hacks – the Web developer blog](https://hacks.mozilla.org/category/es6-in-depth/)**
 
@@ -258,7 +258,7 @@ Reactive Extensions (Rx) is a library for composing asynchronous and event-based
 <hr>
 
 
-## jsonp 
+## jsonp
 
 **[So how does JSONP really work? Some simple examples](http://schock.net/articles/2013/02/05/how-jsonp-really-works-examples/)**
 
@@ -270,7 +270,7 @@ Perhaps you know JSONP from a Javascript library like jQuery but aren't sure exa
 <hr>
 
 
-## maven 
+## maven
 
 **[Calen Legaspi: Separating Integration Tests from Unit Tests Using Maven Failsafe & JUnit @Category](http://calenlegaspi.blogspot.ch/2015/01/separating-integration-tests-from-unit.html)**
 
@@ -282,7 +282,7 @@ TDD at the Unit Testing level is fairly straight-forward, since classes in unit 
 <hr>
 
 
-## npm 
+## npm
 
 **[GitHub - peerigon/updtr: Update outdated npm modules with zero pain™](https://github.com/peerigon/updtr)**
 
@@ -294,7 +294,7 @@ Based on npm outdated, updtr installs the latest version and runs npm test for e
 <hr>
 
 
-## rxjs 
+## rxjs
 
 **[Introduction RxJS - Javascript library for functional reactive programming.](http://xgrommx.github.io/rx-book/)**
 
@@ -306,7 +306,7 @@ Reactive Extensions (Rx) is a library for composing asynchronous and event-based
 <hr>
 
 
-## testing 
+## testing
 
 **[Calen Legaspi: Separating Integration Tests from Unit Tests Using Maven Failsafe & JUnit @Category](http://calenlegaspi.blogspot.ch/2015/01/separating-integration-tests-from-unit.html)**
 
@@ -346,7 +346,7 @@ Learn how to prepare and execute tests using Arquillian, a container-agnostic in
 <hr>
 
 
-## unit-testing 
+## unit-testing
 
 **[Calen Legaspi: Separating Integration Tests from Unit Tests Using Maven Failsafe & JUnit @Category](http://calenlegaspi.blogspot.ch/2015/01/separating-integration-tests-from-unit.html)**
 
@@ -358,7 +358,7 @@ TDD at the Unit Testing level is fairly straight-forward, since classes in unit 
 <hr>
 
 
-## user-experience 
+## user-experience
 
 **[Why marketers should care about mobile page speed - Think with Google](https://www.thinkwithgoogle.com/marketing-resources/experience-design/mobile-page-speed-load-time/)**
 

@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks published in week 33 of 2018
-description: "New codingmarks published in week 33 of 2018. Keywords: angular, angular-material, java, javaee, javascript, jvm, nodejs, performance, scheduling, typescript, ux and wildfly"
+title: New dev bookmarks published in week 33 of 2018
+description: "New dev bookmarks published in week 33 of 2018. Keywords: angular, angular-material, java, javaee, javascript, jvm, nodejs, performance, scheduling, typescript, ux and wildfly"
 author: ama
-permalink: /ama/new-codingmarks-week-33-2018
+permalink: /ama/new-dev-bookmarks-week-33-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 33th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## angular 
+## angular
 
 **[Angular Material Dialog: A Complete Example](https://blog.angular-university.io/angular-material-dialog/)**
 
@@ -30,7 +30,7 @@ We are going to cover many of the most common use cases that revolve around the 
 <hr>
 
 
-## angular-material 
+## angular-material
 
 **[Angular Material Dialog: A Complete Example](https://blog.angular-university.io/angular-material-dialog/)**
 
@@ -45,7 +45,7 @@ We are going to cover many of the most common use cases that revolve around the 
 <hr>
 
 
-## java 
+## java
 
 **[Metrics](https://metrics.dropwizard.io/)**
 
@@ -57,7 +57,7 @@ Metrics is a Java library which gives you unparalleled insight into what your co
 <hr>
 
 
-## javaee 
+## javaee
 
 **[Creating clustered EJB 3 Timers ](http://www.mastertheboss.com/jboss-server/wildfly-8/creating-clustered-ejb-3-timers)**
 
@@ -78,7 +78,7 @@ A demonstration of how to schedule tasks in Java EE using the `@Schedule` annota
 <hr>
 
 
-## javascript 
+## javascript
 
 **[InversifyJS a powerful IoC container for JavaScript apps powered by TypeScript](http://inversify.io/)**
 
@@ -90,7 +90,7 @@ InversifyJS is a lightweight inversion of control (IoC) container for TypeScript
 <hr>
 
 
-## jvm 
+## jvm
 
 **[Metrics](https://metrics.dropwizard.io/)**
 
@@ -102,7 +102,7 @@ Metrics is a Java library which gives you unparalleled insight into what your co
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[InversifyJS a powerful IoC container for JavaScript apps powered by TypeScript](http://inversify.io/)**
 
@@ -114,7 +114,7 @@ InversifyJS is a lightweight inversion of control (IoC) container for TypeScript
 <hr>
 
 
-## performance 
+## performance
 
 **[Metrics](https://metrics.dropwizard.io/)**
 
@@ -126,7 +126,7 @@ Metrics is a Java library which gives you unparalleled insight into what your co
 <hr>
 
 
-## scheduling 
+## scheduling
 
 **[Creating clustered EJB 3 Timers ](http://www.mastertheboss.com/jboss-server/wildfly-8/creating-clustered-ejb-3-timers)**
 
@@ -147,7 +147,7 @@ A demonstration of how to schedule tasks in Java EE using the `@Schedule` annota
 <hr>
 
 
-## typescript 
+## typescript
 
 **[InversifyJS a powerful IoC container for JavaScript apps powered by TypeScript](http://inversify.io/)**
 
@@ -159,7 +159,7 @@ InversifyJS is a lightweight inversion of control (IoC) container for TypeScript
 <hr>
 
 
-## ux 
+## ux
 
 **[Should form 'Continue' button be disabled if validation is incomplete?](https://ux.stackexchange.com/questions/73728/should-form-continue-button-be-disabled-if-validation-is-incomplete/73731)**
 
@@ -171,7 +171,7 @@ For simple forms yes...
 <hr>
 
 
-## wildfly 
+## wildfly
 
 **[Creating clustered EJB 3 Timers ](http://www.mastertheboss.com/jboss-server/wildfly-8/creating-clustered-ejb-3-timers)**
 

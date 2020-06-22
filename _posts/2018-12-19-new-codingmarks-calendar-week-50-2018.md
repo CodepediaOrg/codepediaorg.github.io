@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks published in week 50 of 2018
-description: "New codingmarks published in week 50 of 2018. Keywords: aop, azure-active-directory, book, curl, expressjs, free-programming-books, functional-programming, github-pages, http, immutable, jakartaee, java, javaee, javascript, jvm, jwt, mongodb, mongoose, nodejs, npm, oauth2, openid-connect, programming, reactive, refactoring, rest, rfc, rh-sso, scala and troubleshooting"
+title: New dev bookmarks published in week 50 of 2018
+description: "New dev bookmarks published in week 50 of 2018. Keywords: aop, azure-active-directory, book, curl, expressjs, free-programming-books, functional-programming, github-pages, http, immutable, jakartaee, java, javaee, javascript, jvm, jwt, mongodb, mongoose, nodejs, npm, oauth2, openid-connect, programming, reactive, refactoring, rest, rfc, rh-sso, scala and troubleshooting"
 author: ama
-permalink: /ama/new-codingmarks-week-50-2018
+permalink: /ama/new-dev-bookmarks-week-50-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in week 50 of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## aop 
+## aop
 
 **[AOP for JS](https://github.com/cujojs/meld)**
 
@@ -27,7 +27,7 @@ AOP for JS with before, around, on, afterReturning, afterThrowing, after advice,
 <hr>
 
 
-## azure-active-directory 
+## azure-active-directory
 
 **[Differences Between Azure Active Directory and Red Hat SSO v7.1](https://medium.com/@robert.broeckelmann/differences-between-azure-active-directory-and-red-hat-sso-v7-1-239dd77a5e9a)**
 
@@ -39,7 +39,7 @@ I recently finished implementing OAuth2 and OIDC support for Azure Active Direct
 <hr>
 
 
-## book 
+## book
 
 **[Programming, Motherfucker - Do you speak it?](http://programming-motherfucker.com/)**
 
@@ -52,7 +52,7 @@ We are tired of XP, Scrum, Kanban, Waterfall, Software Craftsmanship (aka XP-Lit
 <hr>
 
 
-## curl 
+## curl
 
 **[How do I make curl ignore the proxy? - Stack Overflow](https://stackoverflow.com/questions/800805/how-do-i-make-curl-ignore-the-proxy)**
 
@@ -66,14 +66,14 @@ $ curl --noproxy "*" http://www.stackoverflow.com
 <hr>
 
 
-## expressjs 
+## expressjs
 
 **[Express routing](https://expressjs.com/en/guide/routing.html)**
 
   * **tags**: &nbsp; [expressjs](https://www.bookmarks.dev/search?q=[expressjs])
 
-**Routing** refers to how an application’s endpoints (URIs) respond to client requests. 
-- app routes, `express.Router` and more 
+**Routing** refers to how an application’s endpoints (URIs) respond to client requests.
+- app routes, `express.Router` and more
 
 <hr>
 
@@ -87,7 +87,7 @@ Constants enumerating the HTTP status codes. All status codes defined in RFC1945
 <hr>
 
 
-## free-programming-books 
+## free-programming-books
 
 **[Programming, Motherfucker - Do you speak it?](http://programming-motherfucker.com/)**
 
@@ -100,7 +100,7 @@ We are tired of XP, Scrum, Kanban, Waterfall, Software Craftsmanship (aka XP-Lit
 <hr>
 
 
-## functional-programming 
+## functional-programming
 
 **[Java Functional Programming](http://tutorials.jenkov.com/java-functional-programming/index.html)**
 
@@ -132,7 +132,7 @@ This post is my own understanding of what is the "core" of "functional programmi
 <hr>
 
 
-## github-pages 
+## github-pages
 
 **[Dependency versions](https://pages.github.com/versions/)**
 
@@ -143,7 +143,7 @@ GitHub Pages uses the following dependencies and versions
 <hr>
 
 
-## http 
+## http
 
 **[Hypertext Transfer Protocol -- HTTP/1.1](https://tools.ietf.org/html/rfc2616)**
 
@@ -151,7 +151,7 @@ GitHub Pages uses the following dependencies and versions
 <hr>
 
 
-## immutable 
+## immutable
 
 **[Refactoring to Immutability - Kevlin Henney - YouTube](https://www.youtube.com/watch?v=APUCMSPiNh4)**
 
@@ -162,7 +162,7 @@ It has been said that immutability changes everything. But what does that mean i
 <hr>
 
 
-## jakartaee 
+## jakartaee
 
 **[Jakarta EE Software  Homeage](https://jakarta.ee/)**
 
@@ -173,7 +173,7 @@ Jakarta Enterprise Edition (EE) is the future of cloud native Java. Jakarta EE o
 <hr>
 
 
-## java 
+## java
 
 **[Java Functional Programming](http://tutorials.jenkov.com/java-functional-programming/index.html)**
 
@@ -203,7 +203,7 @@ Optional is a simple yet very significant addition in Java 8. See examples of ho
 <hr>
 
 
-## javaee 
+## javaee
 
 **[Jakarta EE Software  Homeage](https://jakarta.ee/)**
 
@@ -214,7 +214,7 @@ Jakarta Enterprise Edition (EE) is the future of cloud native Java. Jakarta EE o
 <hr>
 
 
-## javascript 
+## javascript
 
 **[AOP for JS](https://github.com/cujojs/meld)**
 
@@ -244,7 +244,7 @@ Explains with examples how to use nodejs modules and in the end a comparison wit
 <hr>
 
 
-## jvm 
+## jvm
 
 **[Eclipse Vert.x homepage](https://vertx.io/)**
 
@@ -256,7 +256,7 @@ Eclipse Vert.x is a tool-kit for building reactive applications on the JVM.
 <hr>
 
 
-## jwt 
+## jwt
 
 **[Understanding ID Token](https://medium.com/@darutk/understanding-id-token-5f83f50fa02e)**
 
@@ -268,7 +268,7 @@ From an engineer's point of view, an abstract explanation like “ID Token is a 
 <hr>
 
 
-## mongodb 
+## mongodb
 
 **[mongoose-unique-validator](https://github.com/blakehaswell/mongoose-unique-validator)**
 
@@ -282,7 +282,7 @@ This makes error handling much easier, since you will get a Mongoose validation 
 <hr>
 
 
-## mongoose 
+## mongoose
 
 **[mongoose-unique-validator](https://github.com/blakehaswell/mongoose-unique-validator)**
 
@@ -296,7 +296,7 @@ This makes error handling much easier, since you will get a Mongoose validation 
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[AOP for JS](https://github.com/cujojs/meld)**
 
@@ -346,7 +346,7 @@ This makes error handling much easier, since you will get a Mongoose validation 
 <hr>
 
 
-## npm 
+## npm
 
 **[npm-check ](https://www.npmjs.com/package/npm-check)**
 
@@ -370,7 +370,7 @@ or
 <hr>
 
 
-## oauth2 
+## oauth2
 
 **[Understanding ID Token](https://medium.com/@darutk/understanding-id-token-5f83f50fa02e)**
 
@@ -417,7 +417,7 @@ The OAuth 2.0 authorization framework enables a third-party application to obtai
 <hr>
 
 
-## openid-connect 
+## openid-connect
 
 **[Understanding ID Token](https://medium.com/@darutk/understanding-id-token-5f83f50fa02e)**
 
@@ -438,7 +438,7 @@ OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0 protocol. 
 <hr>
 
 
-## programming 
+## programming
 
 **[Programming, Motherfucker - Do you speak it?](http://programming-motherfucker.com/)**
 
@@ -451,7 +451,7 @@ We are tired of XP, Scrum, Kanban, Waterfall, Software Craftsmanship (aka XP-Lit
 <hr>
 
 
-## reactive 
+## reactive
 
 **[Eclipse Vert.x homepage](https://vertx.io/)**
 
@@ -463,7 +463,7 @@ Eclipse Vert.x is a tool-kit for building reactive applications on the JVM.
 <hr>
 
 
-## refactoring 
+## refactoring
 
 **[Refactoring to Immutability - Kevlin Henney - YouTube](https://www.youtube.com/watch?v=APUCMSPiNh4)**
 
@@ -474,7 +474,7 @@ It has been said that immutability changes everything. But what does that mean i
 <hr>
 
 
-## rest 
+## rest
 
 **[Restify Homepage](http://restify.com/)**
 
@@ -486,7 +486,7 @@ A Node.js web service framework optimized for building semantically correct REST
 <hr>
 
 
-## rfc 
+## rfc
 
 **[The OAuth 2.0 Authorization Framework: Bearer Token Usage](https://tools.ietf.org/html/rfc6750)**
 
@@ -511,7 +511,7 @@ The OAuth 2.0 authorization framework enables a third-party application to obtai
 <hr>
 
 
-## rh-sso 
+## rh-sso
 
 **[Differences Between Azure Active Directory and Red Hat SSO v7.1](https://medium.com/@robert.broeckelmann/differences-between-azure-active-directory-and-red-hat-sso-v7-1-239dd77a5e9a)**
 
@@ -523,7 +523,7 @@ I recently finished implementing OAuth2 and OIDC support for Azure Active Direct
 <hr>
 
 
-## scala 
+## scala
 
 **[Finally Functional Programming in Java – Hacker Noon](https://hackernoon.com/finally-functional-programming-in-java-ad4d388fb92e)**
 
@@ -535,7 +535,7 @@ In many post we have explored Functional Programming concept on different langua
 <hr>
 
 
-## troubleshooting 
+## troubleshooting
 
 **[Resolving EACCES permissions errors when installing packages globally](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)**
 

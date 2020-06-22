@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 10th week of 2018
-description: "New codingmarks added in the 10th week of 2018. Keywords: big-data, cloud, computer-science, glossary, java, json, microservices, nodejs, oop, security, splunk and typescript"
+title: New dev bookmarks added in the 10th week of 2018
+description: "New dev bookmarks added in the 10th week of 2018. Keywords: big-data, cloud, computer-science, glossary, java, json, microservices, nodejs, oop, security, splunk and typescript"
 author: ama
-permalink: /ama/new-codingmarks-week-10-2018
+permalink: /ama/new-dev-bookmarks-week-10-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 10th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## big-data 
+## big-data
 
 **[The Essential Guide to Machine Data](https://www.splunk.com/pdfs/ebooks/the-essential-guide-to-machine-data.pdf)**
 
@@ -26,7 +26,7 @@ Whatever you call it, machine data is one of the most underused and undervalued 
 <hr>
 
 
-## cloud 
+## cloud
 
 **[The Essential Guide to Machine Data](https://www.splunk.com/pdfs/ebooks/the-essential-guide-to-machine-data.pdf)**
 
@@ -41,7 +41,7 @@ Whatever you call it, machine data is one of the most underused and undervalued 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2012-01-01
   * **tags**: &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security])
 
-While Cloud services offer flexibility, scalability and economies of scale, there have been commensurate concerns about security. As more data moves from centrally located server storage to the Cloud, the potential for personal and private data to be compromised will increase. Confidentiality, availability and integrity of data are at risk if appropriate measures are not put in place prior to selecting a Cloud vendor or implementing your own cloud and migrating to Cloud services. 
+While Cloud services offer flexibility, scalability and economies of scale, there have been commensurate concerns about security. As more data moves from centrally located server storage to the Cloud, the potential for personal and private data to be compromised will increase. Confidentiality, availability and integrity of data are at risk if appropriate measures are not put in place prior to selecting a Cloud vendor or implementing your own cloud and migrating to Cloud services.
 
 <hr>
 
@@ -55,7 +55,7 @@ By learning from early adopters’ missteps, agencies can make their move to the
 <hr>
 
 
-## computer-science 
+## computer-science
 
 **[Computer Glossary, Computer Terms](http://whatis.techtarget.com/)**
 
@@ -66,7 +66,7 @@ Technology Definitions and Cheat Sheets from WhatIs.com - The Tech Dictionary an
 <hr>
 
 
-## glossary 
+## glossary
 
 **[Computer Glossary, Computer Terms](http://whatis.techtarget.com/)**
 
@@ -77,7 +77,7 @@ Technology Definitions and Cheat Sheets from WhatIs.com - The Tech Dictionary an
 <hr>
 
 
-## java 
+## java
 
 **[How To Serialize Enums as JSON Objects with Jackson](http://www.baeldung.com/jackson-serialize-enums)**
 
@@ -105,7 +105,7 @@ Given that the inheritance relationship makes it hard to change the interface of
 <hr>
 
 
-## json 
+## json
 
 **[How To Serialize Enums as JSON Objects with Jackson](http://www.baeldung.com/jackson-serialize-enums)**
 
@@ -118,7 +118,7 @@ How to serialize an Enum as a JSON Object using Jackson 2.
 <hr>
 
 
-## microservices 
+## microservices
 
 **[Moleculer - Fast & powerful microservices framework for NodeJS](https://moleculer.services/)**
 
@@ -130,7 +130,7 @@ Moleculer is a fast, scalable and powerful microservices framework for Node.js.
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[Moleculer - Fast & powerful microservices framework for NodeJS](https://moleculer.services/)**
 
@@ -142,7 +142,7 @@ Moleculer is a fast, scalable and powerful microservices framework for Node.js.
 <hr>
 
 
-## oop 
+## oop
 
 **[Composition versus Inheritance](https://www.artima.com/designtechniques/compoinh.html)**
 
@@ -160,7 +160,7 @@ Given that the inheritance relationship makes it hard to change the interface of
 <hr>
 
 
-## security 
+## security
 
 **[The Essential Guide to Machine Data](https://www.splunk.com/pdfs/ebooks/the-essential-guide-to-machine-data.pdf)**
 
@@ -175,12 +175,12 @@ Whatever you call it, machine data is one of the most underused and undervalued 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2012-01-01
   * **tags**: &nbsp; [cloud](https://www.bookmarks.dev/search?q=[cloud]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security])
 
-While Cloud services offer flexibility, scalability and economies of scale, there have been commensurate concerns about security. As more data moves from centrally located server storage to the Cloud, the potential for personal and private data to be compromised will increase. Confidentiality, availability and integrity of data are at risk if appropriate measures are not put in place prior to selecting a Cloud vendor or implementing your own cloud and migrating to Cloud services. 
+While Cloud services offer flexibility, scalability and economies of scale, there have been commensurate concerns about security. As more data moves from centrally located server storage to the Cloud, the potential for personal and private data to be compromised will increase. Confidentiality, availability and integrity of data are at risk if appropriate measures are not put in place prior to selecting a Cloud vendor or implementing your own cloud and migrating to Cloud services.
 
 <hr>
 
 
-## splunk 
+## splunk
 
 **[The Essential Guide to Machine Data](https://www.splunk.com/pdfs/ebooks/the-essential-guide-to-machine-data.pdf)**
 
@@ -191,7 +191,7 @@ Whatever you call it, machine data is one of the most underused and undervalued 
 <hr>
 
 
-## typescript 
+## typescript
 
 **[Declaration Merging     ](https://www.typescriptlang.org/docs/handbook/declaration-merging.html)**
 

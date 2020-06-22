@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 22nd week of 2018
-description: "New codingmarks added in the 22nd week of 2018. Keywords: architecture, cryptography, email, glossary, java, javascript, pki, publish-subscribe, rfc, security, web and x509"
+title: New dev bookmarks added in the 22nd week of 2018
+description: "New dev bookmarks added in the 22nd week of 2018. Keywords: architecture, cryptography, email, glossary, java, javascript, pki, publish-subscribe, rfc, security, web and x509"
 author: ama
-permalink: /ama/new-codingmarks-week-22-2018
+permalink: /ama/new-dev-bookmarks-week-22-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 22th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## architecture 
+## architecture
 
 **[Publish–subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)**
 
@@ -26,7 +26,7 @@ In software architecture, publish–subscribe is a messaging pattern where sende
 <hr>
 
 
-## cryptography 
+## cryptography
 
 **[Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://tools.ietf.org/html/rfc5280)**
 
@@ -69,7 +69,7 @@ Shows with Java examples the following:
 <hr>
 
 
-## email 
+## email
 
 **[Understanding Public Key Cryptography](https://technet.microsoft.com/en-us/library/aa998077(v=exchg.65).aspx)**
 
@@ -81,7 +81,7 @@ Probably the best article to understand public key cryptography
 <hr>
 
 
-## glossary 
+## glossary
 
 **[Publish–subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)**
 
@@ -92,7 +92,7 @@ In software architecture, publish–subscribe is a messaging pattern where sende
 <hr>
 
 
-## java 
+## java
 
 **[RSA Signing and Encryption in Java](http://niels.nu/blog/2016/java-rsa.html)**
 
@@ -110,7 +110,7 @@ Shows with Java examples the following:
 <hr>
 
 
-## javascript 
+## javascript
 
 **[Interactive JavaScript charts for your webpage](https://www.highcharts.com/)**
 
@@ -122,7 +122,7 @@ Highcharts - Interactive JavaScript charts for your web pages.
 <hr>
 
 
-## pki 
+## pki
 
 **[Understanding Public Key Cryptography](https://technet.microsoft.com/en-us/library/aa998077(v=exchg.65).aspx)**
 
@@ -134,7 +134,7 @@ Probably the best article to understand public key cryptography
 <hr>
 
 
-## publish-subscribe 
+## publish-subscribe
 
 **[Confidentiality-Preserving Publish/Subscribe: a Survey](https://arxiv.org/pdf/1705.09404.pdf)**
 
@@ -163,7 +163,7 @@ In software architecture, publish–subscribe is a messaging pattern where sende
 <hr>
 
 
-## rfc 
+## rfc
 
 **[Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://tools.ietf.org/html/rfc5280)**
 
@@ -174,7 +174,7 @@ This specification is one part of a family of standards for the X.509 Public Key
 <hr>
 
 
-## security 
+## security
 
 **[Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://tools.ietf.org/html/rfc5280)**
 
@@ -243,7 +243,7 @@ Phishing for data continues to be a problem, but it's no longer restricted to th
 <hr>
 
 
-## web 
+## web
 
 **[Web security](https://developer.mozilla.org/en-US/docs/Web/Security)**
 
@@ -254,7 +254,7 @@ The web security oriented articles listed here provide information that may help
 <hr>
 
 
-## x509 
+## x509
 
 **[Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://tools.ietf.org/html/rfc5280)**
 

@@ -1,22 +1,22 @@
 ---
 layout: post
-title: New codingmarks added in the 4th calendar week of 2018
-description: "New codingmarks added in the 5th calendar week of 2018. Hot topics this week: angular, async, asynchronous, debugging, dev-tools, jackson, java, javaee, javascript, json, package-manager, postman, regex, rest, turbo and vim"
+title: New dev bookmarks added in the 4th calendar week of 2018
+description: "New dev bookmarks added in the 5th calendar week of 2018. Hot topics this week: angular, async, asynchronous, debugging, dev-tools, jackson, java, javaee, javascript, json, package-manager, postman, regex, rest, turbo and vim"
 author: ama
-permalink: /ama/new-codingmarks-week-4-2018
+permalink: /ama/new-dev-bookmarks-week-4-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 
 New [dev bookmarks](https://www.bookmarks.dev) added in the 4th calendar week of 2018. Hot topics this week:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## angular 
+## angular
 
 **[Conduit - angular example](https://angular2.realworld.io/)**
 
@@ -28,7 +28,7 @@ Exemplary real world application built with Angular 5+
 <hr>
 
 
-## async 
+## async
 
 **[How to make parallel calls in Java with CompletableFuture example – CodingpediaOrg](http://www.codepedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example)**
 
@@ -40,7 +40,7 @@ This blog post presents an example about how to make parallel calls in Java with
 <hr>
 
 
-## asynchronous 
+## asynchronous
 
 **[Guide To CompletableFuture Baeldung](http://www.baeldung.com/java-completablefuture)**
 
@@ -62,7 +62,7 @@ In this tutorial you'll learn what `CompletableFuture` is and how to use `Comple
 <hr>
 
 
-## debugging 
+## debugging
 
 **[Debugging and logs](https://www.getpostman.com/docs/postman/sending_api_requests/debugging_and_logs)**
 
@@ -73,7 +73,7 @@ Explains the capabilities of the Postman Console, which  is analogous to a brows
 <hr>
 
 
-## dev-tools 
+## dev-tools
 
 **[Regexper](https://regexper.com/)**
 
@@ -85,7 +85,7 @@ Regular expression visualizer using railroad diagrams
 <hr>
 
 
-## jackson 
+## jackson
 
 **[java - Ignoring new fields on JSON objects using Jackson - Stack Overflow](https://stackoverflow.com/questions/5455014/ignoring-new-fields-on-json-objects-using-jackson)**
 
@@ -100,7 +100,7 @@ Mark the POJO to ignore unknown properties
 <hr>
 
 
-## java 
+## java
 
 **[How to make parallel calls in Java with CompletableFuture example – CodingpediaOrg](http://www.codepedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example)**
 
@@ -143,7 +143,7 @@ Mark the POJO to ignore unknown properties
 <hr>
 
 
-## javaee 
+## javaee
 
 **[How to make parallel calls in Java with CompletableFuture example – CodingpediaOrg](http://www.codepedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example)**
 
@@ -155,7 +155,7 @@ This blog post presents an example about how to make parallel calls in Java with
 <hr>
 
 
-## javascript 
+## javascript
 
 **[Regexper](https://regexper.com/)**
 
@@ -167,7 +167,7 @@ Regular expression visualizer using railroad diagrams
 <hr>
 
 
-## json 
+## json
 
 **[java - Ignoring new fields on JSON objects using Jackson - Stack Overflow](https://stackoverflow.com/questions/5455014/ignoring-new-fields-on-json-objects-using-jackson)**
 
@@ -182,7 +182,7 @@ Mark the POJO to ignore unknown properties
 <hr>
 
 
-## package-manager 
+## package-manager
 
 **[Introducing Turbo: 5x faster than Yarn & NPM, and runs natively in-browser 🔥](https://medium.com/@ericsimons/introducing-turbo-5x-faster-than-yarn-npm-and-runs-natively-in-browser-cc2c39715403)**
 
@@ -194,7 +194,7 @@ Note: This is part of a talk I’m giving at Google’s Mountain View campus on 
 <hr>
 
 
-## postman 
+## postman
 
 **[Debugging and logs](https://www.getpostman.com/docs/postman/sending_api_requests/debugging_and_logs)**
 
@@ -205,7 +205,7 @@ Explains the capabilities of the Postman Console, which  is analogous to a brows
 <hr>
 
 
-## regex 
+## regex
 
 **[Regexper](https://regexper.com/)**
 
@@ -217,7 +217,7 @@ Regular expression visualizer using railroad diagrams
 <hr>
 
 
-## rest 
+## rest
 
 **[Debugging and logs](https://www.getpostman.com/docs/postman/sending_api_requests/debugging_and_logs)**
 
@@ -228,7 +228,7 @@ Explains the capabilities of the Postman Console, which  is analogous to a brows
 <hr>
 
 
-## turbo 
+## turbo
 
 **[Introducing Turbo: 5x faster than Yarn & NPM, and runs natively in-browser 🔥](https://medium.com/@ericsimons/introducing-turbo-5x-faster-than-yarn-npm-and-runs-natively-in-browser-cc2c39715403)**
 
@@ -240,7 +240,7 @@ Note: This is part of a talk I’m giving at Google’s Mountain View campus on 
 <hr>
 
 
-## vim 
+## vim
 
 **[Vim tips: The basics of search and replace](https://www.linux.com/learn/vim-tips-basics-search-and-replace)**
 

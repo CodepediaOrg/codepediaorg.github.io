@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 19th week of 2018
-description: "New codingmarks added in the 19th week of 2018. Keywords: architecture, azure, blog, blogging, cloud, devops, expressjs, glossary, go, java, kubernetes, microservices, multi-tenant, networking, nodejs, npm, osx, push-api, pushi-api, saas, security, vpn and web-push"
+title: New dev bookmarks added in the 19th week of 2018
+description: "New dev bookmarks added in the 19th week of 2018. Keywords: architecture, azure, blog, blogging, cloud, devops, expressjs, glossary, go, java, kubernetes, microservices, multi-tenant, networking, nodejs, npm, osx, push-api, pushi-api, saas, security, vpn and web-push"
 author: ama
-permalink: /ama/new-codingmarks-week-19-2018
+permalink: /ama/new-dev-bookmarks-week-19-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 19th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## architecture 
+## architecture
 
 **[Application-level multi-tenancy: the promise and pitfalls of shared-everything architectures](https://distrinet.cs.kuleuven.be/news/2015/multitenancy.pdf)**
 
@@ -34,7 +34,7 @@ Learn about the requirements and common data architecture patterns of multi-tena
 <hr>
 
 
-## azure 
+## azure
 
 **[What is Kubernetes & How to Get Started With It ](https://blog.risingstack.com/what-is-kubernetes-how-to-get-started/)**
 
@@ -54,7 +54,7 @@ Learn about the requirements and common data architecture patterns of multi-tena
 <hr>
 
 
-## blog 
+## blog
 
 **[Cloud Security Alliance Blog - Cloud Security Alliance Industry Blog](https://blog.cloudsecurityalliance.org/)**
 
@@ -73,7 +73,7 @@ Articles about the Node.js Community, How-tos, and Products from NodeSource - Th
 <hr>
 
 
-## blogging 
+## blogging
 
 **[The world’s fastest framework for building websites](https://gohugo.io/)**
 
@@ -85,7 +85,7 @@ Hugo is one of the most popular open-source static site generators. With its ama
 <hr>
 
 
-## cloud 
+## cloud
 
 **[Data Encryption Methods to Secure Your Cloud - Agile IT](https://www.agileit.com/news/data-encryption-methods-secure-cloud/)**
 
@@ -120,7 +120,7 @@ Learn about the requirements and common data architecture patterns of multi-tena
 <hr>
 
 
-## devops 
+## devops
 
 **[Introduction to Kubernetes](http://www.baeldung.com/kubernetes)**
 
@@ -132,7 +132,7 @@ A brief introduction to Kubernetes fundamentals.
 <hr>
 
 
-## expressjs 
+## expressjs
 
 **[Sending Web Push Notifications from Node.js](https://thecodebarbarian.com/sending-web-push-notifications-from-node-js.html)**
 
@@ -145,7 +145,7 @@ Using [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service
 <hr>
 
 
-## glossary 
+## glossary
 
 **[Site-to-site VPN](https://computer.howstuffworks.com/vpn4.htm)**
 
@@ -164,7 +164,7 @@ IT Terms, IT Dictionary & IT Definitions
 <hr>
 
 
-## go 
+## go
 
 **[The world’s fastest framework for building websites](https://gohugo.io/)**
 
@@ -176,26 +176,26 @@ Hugo is one of the most popular open-source static site generators. With its ama
 <hr>
 
 
-## java 
+## java
 
 **[Microservices in Java? Never. – codeburst](https://codeburst.io/microservices-in-java-never-a7f3a2540dbb)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-10-15
   * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices])
 
-There has been an ever growing number of teams looking to re-architect their monolithic systems into a series of single-responsibility microservices and with good reason. Having that separation of concerns between your multiple services helps to simplify your overall system architecture. 
+There has been an ever growing number of teams looking to re-architect their monolithic systems into a series of single-responsibility microservices and with good reason. Having that separation of concerns between your multiple services helps to simplify your overall system architecture.
 
 <hr>
 
 
-## kubernetes 
+## kubernetes
 
 **[Orchestrating Node.js Containers with Kubernetes - NodeSource](https://nodesource.com/blog/orchestrating-nodejs-containers-with-kubernetes)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-05-07
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes])
 
-Look under the Kubernetes hood to learn more about how K8s automates orchestration of Node.js application containers. 
+Look under the Kubernetes hood to learn more about how K8s automates orchestration of Node.js application containers.
 
 <hr>
 
@@ -218,19 +218,19 @@ A brief introduction to Kubernetes fundamentals.
 <hr>
 
 
-## microservices 
+## microservices
 
 **[Microservices in Java? Never. – codeburst](https://codeburst.io/microservices-in-java-never-a7f3a2540dbb)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2017-10-15
   * **tags**: &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [microservices](https://www.bookmarks.dev/search?q=[microservices])
 
-There has been an ever growing number of teams looking to re-architect their monolithic systems into a series of single-responsibility microservices and with good reason. Having that separation of concerns between your multiple services helps to simplify your overall system architecture. 
+There has been an ever growing number of teams looking to re-architect their monolithic systems into a series of single-responsibility microservices and with good reason. Having that separation of concerns between your multiple services helps to simplify your overall system architecture.
 
 <hr>
 
 
-## multi-tenant 
+## multi-tenant
 
 **[Application-level multi-tenancy: the promise and pitfalls of shared-everything architectures](https://distrinet.cs.kuleuven.be/news/2015/multitenancy.pdf)**
 
@@ -249,7 +249,7 @@ Learn about the requirements and common data architecture patterns of multi-tena
 <hr>
 
 
-## networking 
+## networking
 
 **[Site-to-site VPN](https://computer.howstuffworks.com/vpn4.htm)**
 
@@ -260,7 +260,7 @@ Site-to-site VPN - A site-to-site VPN allows offices in multiple fixed locations
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[Passport.js](http://www.passportjs.org/)**
 
@@ -276,7 +276,7 @@ Simple, unobtrusive authentication for Node.js
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-05-07
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [kubernetes](https://www.bookmarks.dev/search?q=[kubernetes])
 
-Look under the Kubernetes hood to learn more about how K8s automates orchestration of Node.js application containers. 
+Look under the Kubernetes hood to learn more about how K8s automates orchestration of Node.js application containers.
 
 <hr>
 
@@ -310,7 +310,7 @@ Using [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service
 <hr>
 
 
-## npm 
+## npm
 
 **[GitHub - web-push-libs/web-push: Web Push library for Node.js](https://github.com/web-push-libs/web-push)**
 
@@ -324,7 +324,7 @@ This module makes it easy to send messages and will also handle legacy support f
 <hr>
 
 
-## osx 
+## osx
 
 **[What is Kubernetes & How to Get Started With It ](https://blog.risingstack.com/what-is-kubernetes-how-to-get-started/)**
 
@@ -336,7 +336,7 @@ This article helps you to learn the basic concepts of Kubernetes, so you can  ha
 <hr>
 
 
-## push-api 
+## push-api
 
 **[GitHub - web-push-libs/web-push: Web Push library for Node.js](https://github.com/web-push-libs/web-push)**
 
@@ -350,7 +350,7 @@ This module makes it easy to send messages and will also handle legacy support f
 <hr>
 
 
-## pushi-api 
+## pushi-api
 
 **[Sending Web Push Notifications from Node.js](https://thecodebarbarian.com/sending-web-push-notifications-from-node-js.html)**
 
@@ -363,7 +363,7 @@ Using [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service
 <hr>
 
 
-## saas 
+## saas
 
 **[Application-level multi-tenancy: the promise and pitfalls of shared-everything architectures](https://distrinet.cs.kuleuven.be/news/2015/multitenancy.pdf)**
 
@@ -374,7 +374,7 @@ One of the key enablers to leverage economies of scale in SaaS applications is m
 <hr>
 
 
-## security 
+## security
 
 **[Data Encryption Methods to Secure Your Cloud - Agile IT](https://www.agileit.com/news/data-encryption-methods-secure-cloud/)**
 
@@ -402,7 +402,7 @@ Simple, unobtrusive authentication for Node.js
 <hr>
 
 
-## vpn 
+## vpn
 
 **[Site-to-site VPN](https://computer.howstuffworks.com/vpn4.htm)**
 
@@ -413,7 +413,7 @@ Site-to-site VPN - A site-to-site VPN allows offices in multiple fixed locations
 <hr>
 
 
-## web-push 
+## web-push
 
 **[GitHub - web-push-libs/web-push: Web Push library for Node.js](https://github.com/web-push-libs/web-push)**
 

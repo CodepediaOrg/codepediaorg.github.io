@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 11th week of 2018
-description: "New codingmarks added in the 11th week of 2018. Keywords: access-control, angular, caching, devops, free-programming-books, http, java, osx, puppet, rest, roles, security, tools and varnish"
+title: New dev bookmarks added in the 11th week of 2018
+description: "New dev bookmarks added in the 11th week of 2018. Keywords: access-control, angular, caching, devops, free-programming-books, http, java, osx, puppet, rest, roles, security, tools and varnish"
 author: ama
-permalink: /ama/new-codingmarks-week-11-2018
+permalink: /ama/new-dev-bookmarks-week-11-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 11th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## access-control 
+## access-control
 
 **[Role-based access control - Wikipedia](https://en.wikipedia.org/wiki/Role-based_access_control)**
 
@@ -26,7 +26,7 @@ In computer systems security, **role-based access control (RBAC** is an approach
 <hr>
 
 
-## angular 
+## angular
 
 **[Custom Form Controls in Angular by thoughtram](https://blog.thoughtram.io/angular/2016/07/27/custom-form-controls-in-angular-2.html)**
 
@@ -47,7 +47,7 @@ Two-way data binding was one of the main selling points of AngularJS. Since Angu
 <hr>
 
 
-## caching 
+## caching
 
 **[Varnish HTTP Cache](https://varnish-cache.org/)**
 
@@ -60,7 +60,7 @@ This is Varnish Cache, the high-performance HTTP accelerator.
 <hr>
 
 
-## devops 
+## devops
 
 **[What is DevOps? - Puppet](https://puppet.com/blog/what-is-devops)**
 
@@ -81,7 +81,7 @@ Puppet gives you an automatic way to inspect, deliver, operate and future-proof 
 <hr>
 
 
-## free-programming-books 
+## free-programming-books
 
 **[Puppet Cookbook](https://www.puppetcookbook.com/)**
 
@@ -101,7 +101,7 @@ The RESTful cookbook website is inspired by the [puppetcookbook](https://www.pup
 <hr>
 
 
-## http 
+## http
 
 **[Varnish HTTP Cache](https://varnish-cache.org/)**
 
@@ -114,7 +114,7 @@ This is Varnish Cache, the high-performance HTTP accelerator.
 <hr>
 
 
-## java 
+## java
 
 **[Java Volatile Keyword](http://tutorials.jenkov.com/java-concurrency/volatile.html)**
 
@@ -143,7 +143,7 @@ Discover how to solve the "Stream has already been operated upon or closed" exc
 <hr>
 
 
-## osx 
+## osx
 
 **[c - List of all users and groups - Stack Overflow](https://stackoverflow.com/questions/1303561/list-of-all-users-and-groups)**
 
@@ -157,7 +157,7 @@ $ dscl . list /groups
 <hr>
 
 
-## puppet 
+## puppet
 
 **[Puppet Cookbook](https://www.puppetcookbook.com/)**
 
@@ -177,7 +177,7 @@ Puppet gives you an automatic way to inspect, deliver, operate and future-proof 
 <hr>
 
 
-## rest 
+## rest
 
 **[The RESTful cookbook](http://restcookbook.com/)**
 
@@ -189,7 +189,7 @@ The RESTful cookbook website is inspired by the [puppetcookbook](https://www.pup
 <hr>
 
 
-## roles 
+## roles
 
 **[Role-based access control - Wikipedia](https://en.wikipedia.org/wiki/Role-based_access_control)**
 
@@ -200,7 +200,7 @@ In computer systems security, **role-based access control (RBAC** is an approach
 <hr>
 
 
-## security 
+## security
 
 **[Role-based access control - Wikipedia](https://en.wikipedia.org/wiki/Role-based_access_control)**
 
@@ -211,7 +211,7 @@ In computer systems security, **role-based access control (RBAC** is an approach
 <hr>
 
 
-## tools 
+## tools
 
 **[Varnish HTTP Cache](https://varnish-cache.org/)**
 
@@ -224,7 +224,7 @@ This is Varnish Cache, the high-performance HTTP accelerator.
 <hr>
 
 
-## varnish 
+## varnish
 
 **[Varnish HTTP Cache](https://varnish-cache.org/)**
 

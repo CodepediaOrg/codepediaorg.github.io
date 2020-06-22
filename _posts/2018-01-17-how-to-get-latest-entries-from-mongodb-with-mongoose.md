@@ -6,10 +6,10 @@ author: ama
 permalink: /ama/how-to-get-latest-entries-from-mongodb-collection-with-mongoose
 published: true
 categories: [mongodb]
-tags: [codingmarks, mongodb, mongoose, nodejs]
+tags: [bookmarksdev, mongodb, mongoose, nodejs]
 ---
 
-I have a use case where I need to retrieve the latest added public [dev-bookmarks](https://github.com/BookmarksDev/bookmarks).
+I have a use case where I need to retrieve the latest public bookmarks public added on [www.bookmarks.dev](https://github.com/BookmarksDev/bookmarks).
 They are store in a mongo database, and I use Mongoose as ORM.
 
 I want to have two possibilites to achieve this:

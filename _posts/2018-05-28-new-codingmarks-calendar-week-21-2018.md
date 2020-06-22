@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 21th week of 2018
-description: "New codingmarks added in the 21th week of 2018. Keywords: apache-kafka, architecture, async, cloud, continuous-deployment, cryptography, database, docker, filesystem, glossary, go, java, javascript, lua, openshift, pki, ruby, security, ssl, storage and tls"
+title: New dev bookmarks added in the 21th week of 2018
+description: "New dev bookmarks added in the 21th week of 2018. Keywords: apache-kafka, architecture, async, cloud, continuous-deployment, cryptography, database, docker, filesystem, glossary, go, java, javascript, lua, openshift, pki, ruby, security, ssl, storage and tls"
 author: ama
-permalink: /ama/new-codingmarks-week-21-2018
+permalink: /ama/new-dev-bookmarks-week-21-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 21th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## apache-kafka 
+## apache-kafka
 
 **[Apache Kafka as an Event-Driven Backbone for Service Architectures](https://www.confluent.io/blog/apache-kafka-for-service-architectures/)**
 
@@ -45,7 +45,7 @@ Apache Kafka: A Distributed Streaming Platform.
 <hr>
 
 
-## architecture 
+## architecture
 
 **[Apache Kafka as an Event-Driven Backbone for Service Architectures](https://www.confluent.io/blog/apache-kafka-for-service-architectures/)**
 
@@ -75,7 +75,7 @@ With more than 25 photos and 90 likes every second, we store a lot of data here 
 <hr>
 
 
-## async 
+## async
 
 **[Zuul 2 : The Netflix Journey to Asynchronous, Non-Blocking Systems](https://medium.com/netflix-techblog/zuul-2-the-netflix-journey-to-asynchronous-non-blocking-systems-45947377fb5c)**
 
@@ -97,7 +97,7 @@ There’s a class of scalability challenges that are best approached using an as
 <hr>
 
 
-## cloud 
+## cloud
 
 **[Gluster ](https://www.gluster.org/)**
 
@@ -118,7 +118,7 @@ This article is about creating a simple S2I builder image in OpenShift 3.
 <hr>
 
 
-## continuous-deployment 
+## continuous-deployment
 
 **[GitHub - openshift/source-to-image: A tool for building/building artifacts from source and injecting into docker images](https://github.com/openshift/source-to-image)**
 
@@ -130,14 +130,14 @@ Source-to-Image (S2I) is a toolkit and workflow for building reproducible Docker
 <hr>
 
 
-## cryptography 
+## cryptography
 
 **[SSL/TLS  handshake Protocol - YouTube](https://www.youtube.com/watch?v=sEkw8ZcxtFk&list=PLSNNzog5eydtwsdT__t5WtRgvpfMzpTc7&index=5)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-11
   * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [cryptography](https://www.bookmarks.dev/search?q=[cryptography]), &nbsp; [ssl](https://www.bookmarks.dev/search?q=[ssl]), &nbsp; [tls](https://www.bookmarks.dev/search?q=[tls])
 
-What protocol is used between a web server and its clients to establish trust? How do they negotiate and share the secret key? During the handshake process, how public key encryption algorithm is used and how private key encryption is used?  In this video, you would find all these answers. 
+What protocol is used between a web server and its clients to establish trust? How do they negotiate and share the secret key? During the handshake process, how public key encryption algorithm is used and how private key encryption is used?  In this video, you would find all these answers.
 
 <hr>
 
@@ -145,9 +145,9 @@ What protocol is used between a web server and its clients to establish trust? H
 
   * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [cryptography](https://www.bookmarks.dev/search?q=[cryptography])
 
-A digital signature is equivalent to a handwritten signature in paper, and a digital signature serves three basic purposes. Digital signature is commonly used for software distribution, financial transactions and other cases where it is important to detect forgery. Digital signatures are very popular with e-mail users. 
+A digital signature is equivalent to a handwritten signature in paper, and a digital signature serves three basic purposes. Digital signature is commonly used for software distribution, financial transactions and other cases where it is important to detect forgery. Digital signatures are very popular with e-mail users.
 
-In this video, I will talk about the digital, uses, and the whole process of creating and sending digitally signed document over the Internet. 
+In this video, I will talk about the digital, uses, and the whole process of creating and sending digitally signed document over the Internet.
 
 Keep in mind, digital signature is not about encrypting document, just like paper-based signature.
 
@@ -173,7 +173,7 @@ Private key encrypts, public key decrypts (signing)
 <hr>
 
 
-## database 
+## database
 
 **[Transaction log - Wikipedia](https://en.wikipedia.org/wiki/Transaction_log)**
 
@@ -186,7 +186,7 @@ In the field of databases in computer science, a transaction log (also transacti
 <hr>
 
 
-## docker 
+## docker
 
 **[GitHub - openshift/source-to-image: A tool for building/building artifacts from source and injecting into docker images](https://github.com/openshift/source-to-image)**
 
@@ -198,7 +198,7 @@ Source-to-Image (S2I) is a toolkit and workflow for building reproducible Docker
 <hr>
 
 
-## filesystem 
+## filesystem
 
 **[Gluster ](https://www.gluster.org/)**
 
@@ -210,7 +210,7 @@ Gluster is a software defined distributed storage that can scale to several peta
 <hr>
 
 
-## glossary 
+## glossary
 
 **[Transaction log - Wikipedia](https://en.wikipedia.org/wiki/Transaction_log)**
 
@@ -223,7 +223,7 @@ In the field of databases in computer science, a transaction log (also transacti
 <hr>
 
 
-## go 
+## go
 
 **[Hashids - generate short unique ids from integers](https://hashids.org/)**
 
@@ -235,7 +235,7 @@ Generate short unique ids from integers. Use in url shortening or as unique ids.
 <hr>
 
 
-## java 
+## java
 
 **[Hashids - generate short unique ids from integers](https://hashids.org/)**
 
@@ -247,7 +247,7 @@ Generate short unique ids from integers. Use in url shortening or as unique ids.
 <hr>
 
 
-## javascript 
+## javascript
 
 **[Hashids - generate short unique ids from integers](https://hashids.org/)**
 
@@ -259,7 +259,7 @@ Generate short unique ids from integers. Use in url shortening or as unique ids.
 <hr>
 
 
-## lua 
+## lua
 
 **[Hashids - generate short unique ids from integers](https://hashids.org/)**
 
@@ -271,7 +271,7 @@ Generate short unique ids from integers. Use in url shortening or as unique ids.
 <hr>
 
 
-## openshift 
+## openshift
 
 **[GitHub - openshift/source-to-image: A tool for building/building artifacts from source and injecting into docker images](https://github.com/openshift/source-to-image)**
 
@@ -292,21 +292,21 @@ This article is about creating a simple S2I builder image in OpenShift 3.
 <hr>
 
 
-## pki 
+## pki
 
 **[PKI -  trust & chain of trust -why, who and how? - YouTube](https://www.youtube.com/watch?v=LPxeYtMDxl0&list=PLSNNzog5eydtwsdT__t5WtRgvpfMzpTc7&index=4)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-03
   * **tags**: &nbsp; [pki](https://www.bookmarks.dev/search?q=[pki]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security])
 
-What is public key infrastructure? What is trust? Why do we need trust over the Internet?  Who should be trusted? 
+What is public key infrastructure? What is trust? Why do we need trust over the Internet?  Who should be trusted?
 
-In this video, I will talk about two trust models: Hierarchical Trust Model and distributed trust model,  and how they help us to build trust with strangers over the Internet so that we could be able to do business online.  
+In this video, I will talk about two trust models: Hierarchical Trust Model and distributed trust model,  and how they help us to build trust with strangers over the Internet so that we could be able to do business online.
 
 <hr>
 
 
-## ruby 
+## ruby
 
 **[Hashids - generate short unique ids from integers](https://hashids.org/)**
 
@@ -318,16 +318,16 @@ Generate short unique ids from integers. Use in url shortening or as unique ids.
 <hr>
 
 
-## security 
+## security
 
 **[PKI -  trust & chain of trust -why, who and how? - YouTube](https://www.youtube.com/watch?v=LPxeYtMDxl0&list=PLSNNzog5eydtwsdT__t5WtRgvpfMzpTc7&index=4)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-03
   * **tags**: &nbsp; [pki](https://www.bookmarks.dev/search?q=[pki]), &nbsp; [security](https://www.bookmarks.dev/search?q=[security])
 
-What is public key infrastructure? What is trust? Why do we need trust over the Internet?  Who should be trusted? 
+What is public key infrastructure? What is trust? Why do we need trust over the Internet?  Who should be trusted?
 
-In this video, I will talk about two trust models: Hierarchical Trust Model and distributed trust model,  and how they help us to build trust with strangers over the Internet so that we could be able to do business online.  
+In this video, I will talk about two trust models: Hierarchical Trust Model and distributed trust model,  and how they help us to build trust with strangers over the Internet so that we could be able to do business online.
 
 <hr>
 
@@ -336,7 +336,7 @@ In this video, I will talk about two trust models: Hierarchical Trust Model and 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-11
   * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [cryptography](https://www.bookmarks.dev/search?q=[cryptography]), &nbsp; [ssl](https://www.bookmarks.dev/search?q=[ssl]), &nbsp; [tls](https://www.bookmarks.dev/search?q=[tls])
 
-What protocol is used between a web server and its clients to establish trust? How do they negotiate and share the secret key? During the handshake process, how public key encryption algorithm is used and how private key encryption is used?  In this video, you would find all these answers. 
+What protocol is used between a web server and its clients to establish trust? How do they negotiate and share the secret key? During the handshake process, how public key encryption algorithm is used and how private key encryption is used?  In this video, you would find all these answers.
 
 <hr>
 
@@ -344,9 +344,9 @@ What protocol is used between a web server and its clients to establish trust? H
 
   * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [cryptography](https://www.bookmarks.dev/search?q=[cryptography])
 
-A digital signature is equivalent to a handwritten signature in paper, and a digital signature serves three basic purposes. Digital signature is commonly used for software distribution, financial transactions and other cases where it is important to detect forgery. Digital signatures are very popular with e-mail users. 
+A digital signature is equivalent to a handwritten signature in paper, and a digital signature serves three basic purposes. Digital signature is commonly used for software distribution, financial transactions and other cases where it is important to detect forgery. Digital signatures are very popular with e-mail users.
 
-In this video, I will talk about the digital, uses, and the whole process of creating and sending digitally signed document over the Internet. 
+In this video, I will talk about the digital, uses, and the whole process of creating and sending digitally signed document over the Internet.
 
 Keep in mind, digital signature is not about encrypting document, just like paper-based signature.
 
@@ -381,19 +381,19 @@ Generate short unique ids from integers. Use in url shortening or as unique ids.
 <hr>
 
 
-## ssl 
+## ssl
 
 **[SSL/TLS  handshake Protocol - YouTube](https://www.youtube.com/watch?v=sEkw8ZcxtFk&list=PLSNNzog5eydtwsdT__t5WtRgvpfMzpTc7&index=5)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-11
   * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [cryptography](https://www.bookmarks.dev/search?q=[cryptography]), &nbsp; [ssl](https://www.bookmarks.dev/search?q=[ssl]), &nbsp; [tls](https://www.bookmarks.dev/search?q=[tls])
 
-What protocol is used between a web server and its clients to establish trust? How do they negotiate and share the secret key? During the handshake process, how public key encryption algorithm is used and how private key encryption is used?  In this video, you would find all these answers. 
+What protocol is used between a web server and its clients to establish trust? How do they negotiate and share the secret key? During the handshake process, how public key encryption algorithm is used and how private key encryption is used?  In this video, you would find all these answers.
 
 <hr>
 
 
-## storage 
+## storage
 
 **[Gluster ](https://www.gluster.org/)**
 
@@ -405,14 +405,14 @@ Gluster is a software defined distributed storage that can scale to several peta
 <hr>
 
 
-## tls 
+## tls
 
 **[SSL/TLS  handshake Protocol - YouTube](https://www.youtube.com/watch?v=sEkw8ZcxtFk&list=PLSNNzog5eydtwsdT__t5WtRgvpfMzpTc7&index=5)**
 
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-11
   * **tags**: &nbsp; [security](https://www.bookmarks.dev/search?q=[security]), &nbsp; [cryptography](https://www.bookmarks.dev/search?q=[cryptography]), &nbsp; [ssl](https://www.bookmarks.dev/search?q=[ssl]), &nbsp; [tls](https://www.bookmarks.dev/search?q=[tls])
 
-What protocol is used between a web server and its clients to establish trust? How do they negotiate and share the secret key? During the handshake process, how public key encryption algorithm is used and how private key encryption is used?  In this video, you would find all these answers. 
+What protocol is used between a web server and its clients to establish trust? How do they negotiate and share the secret key? During the handshake process, how public key encryption algorithm is used and how private key encryption is used?  In this video, you would find all these answers.
 
 <hr>
 

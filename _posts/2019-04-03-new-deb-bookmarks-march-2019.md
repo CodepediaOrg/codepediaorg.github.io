@@ -5,17 +5,17 @@ description: "Lots of exciting dev #bookmarks added in march 2019. Keywords: ali
 author: ama
 permalink: /ama/new-dev-bookmarks-march-2019
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in march 2019. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## alias 
+## alias
 
 **[Nice dotfiles example](https://github.com/jessfraz/dotfiles)**
 
@@ -27,7 +27,7 @@ My dotfiles. Buyer beware ;)
 <hr>
 
 
-## api 
+## api
 
 **[API Infrastructure at Knewton: What’s in an Edge Service?](https://medium.com/knerd/api-infrastructure-at-knewton-whats-in-an-edge-service-51a3777aeb41)**
 
@@ -63,7 +63,7 @@ API Blueprint is simple and accessible to everybody involved in the API lifecycl
 <hr>
 
 
-## api-management 
+## api-management
 
 **[Istio home page](https://istio.io/)**
 
@@ -75,7 +75,7 @@ Istio is an open platform for providing a uniform way to integrate microservices
 <hr>
 
 
-## architecture 
+## architecture
 
 **[Oliver Gierke - Whoops! Where did my architecture go](http://olivergierke.de/2013/01/whoops-where-did-my-architecture-go/)**
 
@@ -143,13 +143,13 @@ Many approaches to object oriented modeling tend not to scale well when the appl
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;1999-06-26
   * **tags**: &nbsp; [architecture](https://www.bookmarks.dev/search?q=[architecture])
 
-While much attention has been focused on  high-level software architectural patterns, what is, in effect, the de-facto standard software architecture is seldom discussed. This paper examines the most frequently deployed architecture: 
+While much attention has been focused on  high-level software architectural patterns, what is, in effect, the de-facto standard software architecture is seldom discussed. This paper examines the most frequently deployed architecture:
 the **BIG BALL OF MUD**
 
 <hr>
 
 
-## arquillian 
+## arquillian
 
 **[Arquillian  Home Page](http://arquillian.org/)**
 
@@ -161,7 +161,7 @@ An innovative testing platform for the Java Virtual Machine (JVM). Open source. 
 <hr>
 
 
-## async 
+## async
 
 **[Java 8: Definitive guide to CompletableFuture](https://www.nurkiewicz.com/2013/05/java-8-definitive-guide-to.html)**
 
@@ -173,7 +173,7 @@ Examples of using and combining `CompletableFuture` API
 <hr>
 
 
-## asynchronous 
+## asynchronous
 
 **[Java 8: Definitive guide to CompletableFuture](https://www.nurkiewicz.com/2013/05/java-8-definitive-guide-to.html)**
 
@@ -185,7 +185,7 @@ Examples of using and combining `CompletableFuture` API
 <hr>
 
 
-## awesome 
+## awesome
 
 **[useful-java-links](https://github.com/Vedenin/useful-java-links#readme)**
 
@@ -226,7 +226,7 @@ A list of useful Java frameworks, libraries, software and hello worlds examples 
 <hr>
 
 
-## awesome-list 
+## awesome-list
 
 **[useful-java-links](https://github.com/Vedenin/useful-java-links#readme)**
 
@@ -247,7 +247,7 @@ A list of useful Java frameworks, libraries, software and hello worlds examples 
 <hr>
 
 
-## aws 
+## aws
 
 **[kubernetes-for-java-developers repo from Aron Gupta](https://github.com/aws-samples/kubernetes-for-java-developers)**
 
@@ -263,12 +263,12 @@ A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kuber
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2015-10-15
   * **tags**: &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
 
-Learn about Amazon's transition to a service-oriented architecture over a decade ago. We share lessons learned, processes adopted, and the tools built to increase both agility and reliability. 
+Learn about Amazon's transition to a service-oriented architecture over a decade ago. We share lessons learned, processes adopted, and the tools built to increase both agility and reliability.
 
 <hr>
 
 
-## bash 
+## bash
 
 **[Nice dotfiles example](https://github.com/jessfraz/dotfiles)**
 
@@ -303,7 +303,7 @@ How to install git completion on different platforms...
 <hr>
 
 
-## bootstrap 
+## bootstrap
 
 **[Bootstrap 4 Cheat Sheet - The ultimate list of Bootstrap classes](https://hackerthemes.com/bootstrap-cheatsheet/)**
 
@@ -314,19 +314,19 @@ Quickly find your Bootstrap classes on this interactive Bootstrap cheat sheet. I
 <hr>
 
 
-## c 
+## c
 
 **[GitHub - krallin/tini](https://github.com/krallin/tini)**
 
   * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux]), &nbsp; [c](https://www.bookmarks.dev/search?q=[c])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/krallin/tini)
 
-A tiny but valid `init` for containers. 
+A tiny but valid `init` for containers.
 
 <hr>
 
 
-## chai 
+## chai
 
 **[Modern Node.js: async/await based testing with Mocha & Chai](https://zaiste.net/modern_node_js_async_await_based_testing_with_mocha_chai/)**
 
@@ -350,7 +350,7 @@ Extends Chai with assertions about promises. Contribute to domenic/chai-as-promi
 <hr>
 
 
-## cheatsheet 
+## cheatsheet
 
 **[GitHub - arslanbilal/git-cheat-sheet: git and git flow cheat sheet](https://github.com/arslanbilal/git-cheat-sheet#readme)**
 
@@ -390,7 +390,7 @@ Quickly find your Bootstrap classes on this interactive Bootstrap cheat sheet. I
 <hr>
 
 
-## circuit-breaker 
+## circuit-breaker
 
 **[Istio home page](https://istio.io/)**
 
@@ -402,7 +402,7 @@ Istio is an open platform for providing a uniform way to integrate microservices
 <hr>
 
 
-## css 
+## css
 
 **[Angular Progressbar](https://murhafsousli.github.io/ngx-progressbar/#/)**
 
@@ -414,7 +414,7 @@ A nanoscopic progress/loading bar. Featuring realistic trickle animations to con
 <hr>
 
 
-## devops 
+## devops
 
 **[Kubernetes + Compose = Kompose](http://kompose.io/)**
 
@@ -440,12 +440,12 @@ The Docker Bench for Security is a script that checks for dozens of common best-
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2015-10-15
   * **tags**: &nbsp; [aws](https://www.bookmarks.dev/search?q=[aws]), &nbsp; [devops](https://www.bookmarks.dev/search?q=[devops])
 
-Learn about Amazon's transition to a service-oriented architecture over a decade ago. We share lessons learned, processes adopted, and the tools built to increase both agility and reliability. 
+Learn about Amazon's transition to a service-oriented architecture over a decade ago. We share lessons learned, processes adopted, and the tools built to increase both agility and reliability.
 
 <hr>
 
 
-## diagnostics 
+## diagnostics
 
 **[Arthas Java Diagnostics Tool - home page ](https://alibaba.github.io/arthas/en/)**
 
@@ -470,7 +470,7 @@ Learn about Amazon's transition to a service-oriented architecture over a decade
 <hr>
 
 
-## diagram 
+## diagram
 
 **[mermaid docs](https://mermaidjs.github.io/)**
 
@@ -486,7 +486,7 @@ This is why mermaid was born, a simple markdown-like script language for generat
 <hr>
 
 
-## dns 
+## dns
 
 **[MX Lookup Tool - Check your DNS MX Records online - MxToolbox](https://mxtoolbox.com/)**
 
@@ -497,7 +497,7 @@ MxToolbox supports global Internet operations by providing free, fast and accura
 <hr>
 
 
-## docker 
+## docker
 
 **[Kubernetes + Compose = Kompose](http://kompose.io/)**
 
@@ -546,7 +546,7 @@ The Docker Bench for Security is a script that checks for dozens of common best-
   * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux]), &nbsp; [c](https://www.bookmarks.dev/search?q=[c])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/krallin/tini)
 
-A tiny but valid `init` for containers. 
+A tiny but valid `init` for containers.
 
 <hr>
 
@@ -586,7 +586,7 @@ Testcontainers is a Java 8 library that supports JUnit tests, providing lightwei
 <hr>
 
 
-## docker-compose 
+## docker-compose
 
 **[Kubernetes + Compose = Kompose](http://kompose.io/)**
 
@@ -608,7 +608,7 @@ Example Docker Compose app. A simple distributed application running across mult
 <hr>
 
 
-## docs 
+## docs
 
 **[Manage data in Docker](https://docs.docker.com/storage/)**
 
@@ -625,7 +625,7 @@ Types of mounts and where they live on the Docker host
 <hr>
 
 
-## documentation 
+## documentation
 
 **[mermaid docs](https://mermaidjs.github.io/)**
 
@@ -670,7 +670,7 @@ API Blueprint is simple and accessible to everybody involved in the API lifecycl
 <hr>
 
 
-## domain-driven-design 
+## domain-driven-design
 
 **[BoundedContext](https://martinfowler.com/bliki/BoundedContext.html)**
 
@@ -694,7 +694,7 @@ Many approaches to object oriented modeling tend not to scale well when the appl
 <hr>
 
 
-## dotfiles 
+## dotfiles
 
 **[Vim dotfiles and configurations example](https://github.com/jessfraz/.vim)**
 
@@ -715,7 +715,7 @@ My dotfiles. Buyer beware ;)
 <hr>
 
 
-## email 
+## email
 
 **[Nodemailer home page](http://nodemailer.com/)**
 
@@ -727,21 +727,21 @@ Nodemailer is a module for Node.js to send emails
 <hr>
 
 
-## error-handling 
+## error-handling
 
 **[Sentry home page ](https://sentry.io/)**
 
   * **tags**: &nbsp; [error-handling](https://www.bookmarks.dev/search?q=[error-handling]), &nbsp; [monitoring](https://www.bookmarks.dev/search?q=[monitoring])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/getsentry/sentry)
 
-Open-source error tracking that helps developers monitor and fix crashes in real time. Iterate continuously. Boost workflow efficiency. Improve user experience. 
+Open-source error tracking that helps developers monitor and fix crashes in real time. Iterate continuously. Boost workflow efficiency. Improve user experience.
 
 Error Tracking Software — JavaScript, Python, PHP, Ruby, more...
 
 <hr>
 
 
-## facebook 
+## facebook
 
 **[La Gazzetta dello Sport I News su Calcio, Basket, NBA, F1 e MotoGp](https://www.gazzetta.it/)**
 
@@ -753,7 +753,7 @@ Leggi La Gazzetta dello Sport: news, foto, video e risultati su calcio di serie 
 <hr>
 
 
-## favicon 
+## favicon
 
 **[X-Icon Editor](http://www.xiconeditor.com/)**
 
@@ -773,7 +773,7 @@ Obsessive cheat sheet to favicon sizes/types. Please contribute! (Note: this may
 <hr>
 
 
-## ffmpeg 
+## ffmpeg
 
 **[High Quality Gifs with FFMPEG ](https://medium.com/@colten_jackson/doing-the-gif-thing-on-debian-82b9760a8483)**
 
@@ -800,7 +800,7 @@ A complete, cross-platform solution to record, convert and stream audio and vide
 <hr>
 
 
-## free-programming-books 
+## free-programming-books
 
 **[Dive Into HTML5](https://diveintohtml5.info/)**
 
@@ -819,7 +819,7 @@ Reactive Extensions (Rx) is a library for composing asynchronous and event-based
 <hr>
 
 
-## functional-programming 
+## functional-programming
 
 **[GitHub - stoeffel/awesome-fp-js](https://github.com/stoeffel/awesome-fp-js#readme)**
 
@@ -840,7 +840,7 @@ Simplify the way you write your JavaScript by using .map(), .reduce() and .filte
 <hr>
 
 
-## gif 
+## gif
 
 **[High Quality Gifs with FFMPEG ](https://medium.com/@colten_jackson/doing-the-gif-thing-on-debian-82b9760a8483)**
 
@@ -856,7 +856,7 @@ We’re calling the ffmpeg program and telling it that MVI_6654.MOV is our input
 <hr>
 
 
-## git 
+## git
 
 **[GitHub - arslanbilal/git-cheat-sheet: git and git flow cheat sheet](https://github.com/arslanbilal/git-cheat-sheet#readme)**
 
@@ -887,7 +887,7 @@ How to install git completion on different platforms...
 <hr>
 
 
-## gradle 
+## gradle
 
 **[jib home page](https://github.com/GoogleContainerTools/jib)**
 
@@ -907,7 +907,7 @@ How to install git completion on different platforms...
 <hr>
 
 
-## graph 
+## graph
 
 **[Graphviz - Graph Visualization Software](https://graphviz.org/)**
 
@@ -919,7 +919,7 @@ Graphviz is open source graph visualization software. It has several main layout
 <hr>
 
 
-## helm 
+## helm
 
 **[Helm Docs home page](https://helm.sh/)**
 
@@ -935,7 +935,7 @@ Charts are easy to create, version, share, and publish — so start using Helm a
 <hr>
 
 
-## homebrew 
+## homebrew
 
 **[GitHub - Homebrew/homebrew-cask home page](https://github.com/Homebrew/homebrew-cask)**
 
@@ -947,7 +947,7 @@ Charts are easy to create, version, share, and publish — so start using Helm a
 <hr>
 
 
-## html 
+## html
 
 **[GitHub - audreyr/favicon-cheat-sheet](https://github.com/audreyr/favicon-cheat-sheet)**
 
@@ -967,7 +967,7 @@ Dive Into HTML5 elaborates on a hand-picked selection of features from the HTML5
 <hr>
 
 
-## html5 
+## html5
 
 **[Dive Into HTML5](https://diveintohtml5.info/)**
 
@@ -978,7 +978,7 @@ Dive Into HTML5 elaborates on a hand-picked selection of features from the HTML5
 <hr>
 
 
-## immutable.js 
+## immutable.js
 
 **[Immutable.js home page](https://immutable-js.github.io/immutable-js/)**
 
@@ -1014,7 +1014,7 @@ Want to hear more? Watch the presentation about Immutable.js:
 <hr>
 
 
-## install 
+## install
 
 **[macos - Mac OS X and multiple Java versions - Stack Overflow](https://stackoverflow.com/questions/26252591/mac-os-x-and-multiple-java-versions)**
 
@@ -1022,7 +1022,7 @@ Want to hear more? Watch the presentation about Immutable.js:
 <hr>
 
 
-## integration-testing 
+## integration-testing
 
 **[Arquillian  Home Page](http://arquillian.org/)**
 
@@ -1034,7 +1034,7 @@ An innovative testing platform for the Java Virtual Machine (JVM). Open source. 
 <hr>
 
 
-## istio 
+## istio
 
 **[Making microservices micro with Istio Service Mesh & Kubernetes by Ray Tsang @ Spring I/O 2018 - YouTube](https://www.youtube.com/watch?v=s31kdh7Q7Hc)**
 
@@ -1059,7 +1059,7 @@ If its part of the platform, use it. Except for...
   * Tracing Propagation
   * Security
 
-Istio or a service mesh architecture works better for polyglot environments 
+Istio or a service mesh architecture works better for polyglot environments
 
 <hr>
 
@@ -1082,7 +1082,7 @@ A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kuber
 <hr>
 
 
-## java 
+## java
 
 **[Java 8: Definitive guide to CompletableFuture](https://www.nurkiewicz.com/2013/05/java-8-definitive-guide-to.html)**
 
@@ -1219,7 +1219,7 @@ Was spricht für und gegen Reactor und RxJava?
 <hr>
 
 
-## javascript 
+## javascript
 
 **[Immutable.js home page](https://immutable-js.github.io/immutable-js/)**
 
@@ -1259,8 +1259,8 @@ Want to hear more? Watch the presentation about Immutable.js:
   * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-01-27
   * **tags**: &nbsp; [javascript](https://www.bookmarks.dev/search?q=[javascript])
 
-Have you ever had a bug where things were happening in the wrong order, or particular style changes were being ignored? Ever fixed that bug by wrapping a section of code in a setTimeout? Ever found that fix to be unreliable, and played around with the timeout number until it kinda almost always worked? 
-This talk looks at the browser's event loop, the thing that orchestrates the main thread of the browser, which includes JavaScript, events, and rendering. We'll look at the difference between tasks, microtasks, requestAnimationFrame, requestIdleCallback, and where events land. 
+Have you ever had a bug where things were happening in the wrong order, or particular style changes were being ignored? Ever fixed that bug by wrapping a section of code in a setTimeout? Ever found that fix to be unreliable, and played around with the timeout number until it kinda almost always worked?
+This talk looks at the browser's event loop, the thing that orchestrates the main thread of the browser, which includes JavaScript, events, and rendering. We'll look at the difference between tasks, microtasks, requestAnimationFrame, requestIdleCallback, and where events land.
 Hopefully you'll never have to use setTimeout hacks again!"
 
 Jake is developer advocate for Google Chrome. He's one of the editors of the service worker spec, so he's into offline-first, push messaging and web performance.
@@ -1314,7 +1314,7 @@ This is why mermaid was born, a simple markdown-like script language for generat
 <hr>
 
 
-## jenv 
+## jenv
 
 **[macos - Mac OS X and multiple Java versions - Stack Overflow](https://stackoverflow.com/questions/26252591/mac-os-x-and-multiple-java-versions)**
 
@@ -1331,7 +1331,7 @@ Discover jenv, the command line Java manager
 <hr>
 
 
-## junit 
+## junit
 
 **[JUnit 5 Articles and source code from Baeldung](https://github.com/eugenp/tutorials/tree/master/testing-modules/junit-5)**
 
@@ -1358,7 +1358,7 @@ Discover jenv, the command line Java manager
 <hr>
 
 
-## jvm 
+## jvm
 
 **[Project Reactor Home Page](https://projectreactor.io/)**
 
@@ -1371,7 +1371,7 @@ the JVM based on the [Reactive Streams Specification](https://github.com/reactiv
 <hr>
 
 
-## kotlin 
+## kotlin
 
 **[Reactive Spring - Josh Long, Mark Heckler - YouTube](https://www.youtube.com/watch?v=l7VBdWhtl7A)**
 
@@ -1384,7 +1384,7 @@ Spring Framework 5.0 is here! One of the most exciting introductions in this rel
 <hr>
 
 
-## kubernetes 
+## kubernetes
 
 **[Kubernetes + Compose = Kompose](http://kompose.io/)**
 
@@ -1428,7 +1428,7 @@ A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kuber
 <hr>
 
 
-## kubernetes-helm 
+## kubernetes-helm
 
 **[Helm Docs home page](https://helm.sh/)**
 
@@ -1453,26 +1453,26 @@ A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kuber
 <hr>
 
 
-## latex 
+## latex
 
 **[Pandoc home page](https://pandoc.org/)**
 
   * **tags**: &nbsp; [pandoc](https://www.bookmarks.dev/search?q=[pandoc]), &nbsp; [markdown](https://www.bookmarks.dev/search?q=[markdown]), &nbsp; [latex](https://www.bookmarks.dev/search?q=[latex])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jgm/pandoc)
 
-Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library. 
+Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library.
 
 <hr>
 
 
-## linux 
+## linux
 
 **[GitHub - krallin/tini](https://github.com/krallin/tini)**
 
   * **tags**: &nbsp; [docker](https://www.bookmarks.dev/search?q=[docker]), &nbsp; [linux](https://www.bookmarks.dev/search?q=[linux]), &nbsp; [c](https://www.bookmarks.dev/search?q=[c])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/krallin/tini)
 
-A tiny but valid `init` for containers. 
+A tiny but valid `init` for containers.
 
 <hr>
 
@@ -1500,7 +1500,7 @@ How to install git completion on different platforms...
 <hr>
 
 
-## macos 
+## macos
 
 **[GitHub - Homebrew/homebrew-cask home page](https://github.com/Homebrew/homebrew-cask)**
 
@@ -1517,19 +1517,19 @@ How to install git completion on different platforms...
 <hr>
 
 
-## markdown 
+## markdown
 
 **[Pandoc home page](https://pandoc.org/)**
 
   * **tags**: &nbsp; [pandoc](https://www.bookmarks.dev/search?q=[pandoc]), &nbsp; [markdown](https://www.bookmarks.dev/search?q=[markdown]), &nbsp; [latex](https://www.bookmarks.dev/search?q=[latex])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jgm/pandoc)
 
-Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library. 
+Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library.
 
 <hr>
 
 
-## maven-plugin 
+## maven-plugin
 
 **[jib home page](https://github.com/GoogleContainerTools/jib)**
 
@@ -1558,7 +1558,7 @@ A Day in Java Developer’s Life, with a taste of Kubernetes - aws-samples/kuber
 <hr>
 
 
-## microservices 
+## microservices
 
 **[Making microservices micro with Istio Service Mesh & Kubernetes by Ray Tsang @ Spring I/O 2018 - YouTube](https://www.youtube.com/watch?v=s31kdh7Q7Hc)**
 
@@ -1592,19 +1592,19 @@ An edge service is a component which is exposed to the public internet. It acts 
 <hr>
 
 
-## middleware 
+## middleware
 
 **[Connect home page](https://github.com/senchalabs/connect)**
 
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [middleware](https://www.bookmarks.dev/search?q=[middleware])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/senchalabs/connect)
 
-Connect is a middleware layer for Node.js. 
+Connect is a middleware layer for Node.js.
 
 <hr>
 
 
-## mocha 
+## mocha
 
 **[Modern Node.js: async/await based testing with Mocha & Chai](https://zaiste.net/modern_node_js_async_await_based_testing_with_mocha_chai/)**
 
@@ -1619,7 +1619,7 @@ In order to perform actual tests, there is a need for an assertion library: a ru
 <hr>
 
 
-## mongodb 
+## mongodb
 
 **[Build Reactive APIs with Spring WebFlux](https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux#secure-your-spring-webflux-reactive-api-with-oidc)**
 
@@ -1646,21 +1646,21 @@ You've heard that reactive programming can help you scale? But how do you implem
 <hr>
 
 
-## monitoring 
+## monitoring
 
 **[Sentry home page ](https://sentry.io/)**
 
   * **tags**: &nbsp; [error-handling](https://www.bookmarks.dev/search?q=[error-handling]), &nbsp; [monitoring](https://www.bookmarks.dev/search?q=[monitoring])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/getsentry/sentry)
 
-Open-source error tracking that helps developers monitor and fix crashes in real time. Iterate continuously. Boost workflow efficiency. Improve user experience. 
+Open-source error tracking that helps developers monitor and fix crashes in real time. Iterate continuously. Boost workflow efficiency. Improve user experience.
 
 Error Tracking Software — JavaScript, Python, PHP, Ruby, more...
 
 <hr>
 
 
-## nginx 
+## nginx
 
 **[Understanding Nginx Server and Location Block Selection Algorithms](https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms)**
 
@@ -1685,7 +1685,7 @@ An edge service is a component which is exposed to the public internet. It acts 
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[Nodemailer home page](http://nodemailer.com/)**
 
@@ -1701,12 +1701,12 @@ Nodemailer is a module for Node.js to send emails
   * **tags**: &nbsp; [nodejs](https://www.bookmarks.dev/search?q=[nodejs]), &nbsp; [middleware](https://www.bookmarks.dev/search?q=[middleware])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/senchalabs/connect)
 
-Connect is a middleware layer for Node.js. 
+Connect is a middleware layer for Node.js.
 
 <hr>
 
 
-## oidc 
+## oidc
 
 **[Identity, Claims, & Tokens – An OpenID Connect Primer, Part 1 of 3](https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1)**
 
@@ -1722,7 +1722,7 @@ In this post, we learned some basics about OpenID Connect, its history, and a bi
 <hr>
 
 
-## online-tools 
+## online-tools
 
 **[Online SQLite browser](https://extendsclass.com/sqlite-browser.html)**
 
@@ -1735,7 +1735,7 @@ SQLite Browser is a online SQL interpreter for SQLite database. Open and execute
 <hr>
 
 
-## open-source 
+## open-source
 
 **[Contributor Covenant: A Code of Conduct for Open Source Projects](http://www.contributor-covenant.org/)**
 
@@ -1753,7 +1753,7 @@ Adopting the Contributor Covenant can be one way to express and codify these val
 <hr>
 
 
-## openid-connect 
+## openid-connect
 
 **[Build Reactive APIs with Spring WebFlux](https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux#secure-your-spring-webflux-reactive-api-with-oidc)**
 
@@ -1786,7 +1786,7 @@ Understand scopes and claims used with the OpenID Connect (OIDC) protocol.
 <hr>
 
 
-## osx 
+## osx
 
 **[Install Bash git completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)**
 
@@ -1797,7 +1797,7 @@ How to install git completion on different platforms...
 <hr>
 
 
-## package-manager 
+## package-manager
 
 **[Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)**
 
@@ -1808,19 +1808,19 @@ Writing R Extensions - the canonical reference for writing R packages.
 <hr>
 
 
-## pandoc 
+## pandoc
 
 **[Pandoc home page](https://pandoc.org/)**
 
   * **tags**: &nbsp; [pandoc](https://www.bookmarks.dev/search?q=[pandoc]), &nbsp; [markdown](https://www.bookmarks.dev/search?q=[markdown]), &nbsp; [latex](https://www.bookmarks.dev/search?q=[latex])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/jgm/pandoc)
 
-Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library. 
+Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library.
 
 <hr>
 
 
-## performance 
+## performance
 
 **[Arthas Java Diagnostics Tool - home page ](https://alibaba.github.io/arthas/en/)**
 
@@ -1858,7 +1858,7 @@ Building interactive sites can involve sending JavaScript to your users. Often, 
 <hr>
 
 
-## podcast 
+## podcast
 
 **[Podcasts – React](https://reactjs.org/community/podcasts.html)**
 
@@ -1886,7 +1886,7 @@ Podcasts dedicated to React and individual podcast episodes with React discussio
 <hr>
 
 
-## promise 
+## promise
 
 **[GitHub - domenic/chai-as-promised](https://github.com/domenic/chai-as-promised)**
 
@@ -1898,7 +1898,7 @@ Extends Chai with assertions about promises. Contribute to domenic/chai-as-promi
 <hr>
 
 
-## proxy 
+## proxy
 
 **[Istio home page](https://istio.io/)**
 
@@ -1910,7 +1910,7 @@ Istio is an open platform for providing a uniform way to integrate microservices
 <hr>
 
 
-## r 
+## r
 
 **[Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)**
 
@@ -1921,7 +1921,7 @@ Writing R Extensions - the canonical reference for writing R packages.
 <hr>
 
 
-## reactive 
+## reactive
 
 **[Reactor vs. RxJava](http://helmbold.de/artikel/reactor-vs-rxjava/)**
 
@@ -1953,7 +1953,7 @@ the JVM based on the [Reactive Streams Specification](https://github.com/reactiv
 <hr>
 
 
-## reactive-programming 
+## reactive-programming
 
 **[Build Reactive APIs with Spring WebFlux](https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux#secure-your-spring-webflux-reactive-api-with-oidc)**
 
@@ -1974,7 +1974,7 @@ Discover Spring 5's WebClient - a new reactive RestTemplate alternative.
 <hr>
 
 
-## reactjs 
+## reactjs
 
 **[Podcasts – React](https://reactjs.org/community/podcasts.html)**
 
@@ -2002,7 +2002,7 @@ Podcasts dedicated to React and individual podcast episodes with React discussio
 <hr>
 
 
-## redis 
+## redis
 
 **[Reactive Spring - Josh Long, Mark Heckler - YouTube](https://www.youtube.com/watch?v=l7VBdWhtl7A)**
 
@@ -2015,7 +2015,7 @@ Spring Framework 5.0 is here! One of the most exciting introductions in this rel
 <hr>
 
 
-## resources 
+## resources
 
 **[useful-java-links](https://github.com/Vedenin/useful-java-links#readme)**
 
@@ -2027,7 +2027,7 @@ A list of useful Java frameworks, libraries, software and hello worlds examples 
 <hr>
 
 
-## rest 
+## rest
 
 **[API Blueprint home page](https://apiblueprint.org/)**
 
@@ -2039,7 +2039,7 @@ API Blueprint is simple and accessible to everybody involved in the API lifecycl
 <hr>
 
 
-## rxjs 
+## rxjs
 
 **[rx-book RxJS - Javascript library for functional reactive programming.](http://xgrommx.github.io/rx-book)**
 
@@ -2050,7 +2050,7 @@ Reactive Extensions (Rx) is a library for composing asynchronous and event-based
 <hr>
 
 
-## security 
+## security
 
 **[GitHub - docker/docker-bench-security](https://github.com/docker/docker-bench-security)**
 
@@ -2062,7 +2062,7 @@ The Docker Bench for Security is a script that checks for dozens of common best-
 <hr>
 
 
-## shell 
+## shell
 
 **[command line - How to list all symbolic links in a directory - Ask Ubuntu](https://askubuntu.com/questions/522051/how-to-list-all-symbolic-links-in-a-directory)**
 
@@ -2080,7 +2080,7 @@ find . -maxdepth 1 -type l -ls
 <hr>
 
 
-## spring 
+## spring
 
 **[Making microservices micro with Istio Service Mesh & Kubernetes by Ray Tsang @ Spring I/O 2018 - YouTube](https://www.youtube.com/watch?v=s31kdh7Q7Hc)**
 
@@ -2121,7 +2121,7 @@ the JVM based on the [Reactive Streams Specification](https://github.com/reactiv
 <hr>
 
 
-## spring-boot 
+## spring-boot
 
 **[Making microservices micro with Istio Service Mesh & Kubernetes by Ray Tsang @ Spring I/O 2018 - YouTube](https://www.youtube.com/watch?v=s31kdh7Q7Hc)**
 
@@ -2146,7 +2146,7 @@ In this post, we learned some basics about OpenID Connect, its history, and a bi
 <hr>
 
 
-## spring-cloud 
+## spring-cloud
 
 **[A Tale of Two Frameworks: Spring Cloud and Istio - YouTube](https://www.youtube.com/watch?v=AMJQO9zs2eo)**
 
@@ -2162,12 +2162,12 @@ If its part of the platform, use it. Except for...
   * Tracing Propagation
   * Security
 
-Istio or a service mesh architecture works better for polyglot environments 
+Istio or a service mesh architecture works better for polyglot environments
 
 <hr>
 
 
-## spring-cloud-gateway 
+## spring-cloud-gateway
 
 **[Reactive Spring - Josh Long, Mark Heckler - YouTube](https://www.youtube.com/watch?v=l7VBdWhtl7A)**
 
@@ -2180,7 +2180,7 @@ Spring Framework 5.0 is here! One of the most exciting introductions in this rel
 <hr>
 
 
-## spring-security 
+## spring-security
 
 **[Build Reactive APIs with Spring WebFlux](https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux#secure-your-spring-webflux-reactive-api-with-oidc)**
 
@@ -2192,7 +2192,7 @@ You've heard that reactive programming can help you scale? But how do you implem
 <hr>
 
 
-## spring-webflux 
+## spring-webflux
 
 **[Build Reactive APIs with Spring WebFlux](https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux#secure-your-spring-webflux-reactive-api-with-oidc)**
 
@@ -2233,7 +2233,7 @@ Spring Framework 5.0 is here! One of the most exciting introductions in this rel
 <hr>
 
 
-## sql 
+## sql
 
 **[Online SQLite browser](https://extendsclass.com/sqlite-browser.html)**
 
@@ -2246,7 +2246,7 @@ SQLite Browser is a online SQL interpreter for SQLite database. Open and execute
 <hr>
 
 
-## testing 
+## testing
 
 **[Testcontainers home page](https://www.testcontainers.org/)**
 
@@ -2299,7 +2299,7 @@ An innovative testing platform for the Java Virtual Machine (JVM). Open source. 
 <hr>
 
 
-## tools 
+## tools
 
 **[MX Lookup Tool - Check your DNS MX Records online - MxToolbox](https://mxtoolbox.com/)**
 
@@ -2318,7 +2318,7 @@ X-Icon Editor, create high resolution icons from your own browser
 <hr>
 
 
-## user-experience 
+## user-experience
 
 **[Angular Progressbar](https://murhafsousli.github.io/ngx-progressbar/#/)**
 
@@ -2330,7 +2330,7 @@ A nanoscopic progress/loading bar. Featuring realistic trickle animations to con
 <hr>
 
 
-## video-processing 
+## video-processing
 
 **[High Quality Gifs with FFMPEG ](https://medium.com/@colten_jackson/doing-the-gif-thing-on-debian-82b9760a8483)**
 
@@ -2357,7 +2357,7 @@ A complete, cross-platform solution to record, convert and stream audio and vide
 <hr>
 
 
-## vim 
+## vim
 
 **[Vim dotfiles and configurations example](https://github.com/jessfraz/.vim)**
 
@@ -2369,7 +2369,7 @@ My .vim dotfiles and configurations. Contribute to jessfraz/.vim
 <hr>
 
 
-## visualization 
+## visualization
 
 **[Graphviz - Graph Visualization Software](https://graphviz.org/)**
 
@@ -2381,7 +2381,7 @@ Graphviz is open source graph visualization software. It has several main layout
 <hr>
 
 
-## web 
+## web
 
 **[GitHub - audreyr/favicon-cheat-sheet](https://github.com/audreyr/favicon-cheat-sheet)**
 
@@ -2393,7 +2393,7 @@ Obsessive cheat sheet to favicon sizes/types. Please contribute! (Note: this may
 <hr>
 
 
-## websocket 
+## websocket
 
 **[Build Reactive APIs with Spring WebFlux](https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux#secure-your-spring-webflux-reactive-api-with-oidc)**
 
@@ -2405,7 +2405,7 @@ You've heard that reactive programming can help you scale? But how do you implem
 <hr>
 
 
-## windows 
+## windows
 
 **[Install Bash git completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)**
 
@@ -2416,7 +2416,7 @@ How to install git completion on different platforms...
 <hr>
 
 
-## zuul 
+## zuul
 
 **[API Infrastructure at Knewton: What’s in an Edge Service?](https://medium.com/knerd/api-infrastructure-at-knewton-whats-in-an-edge-service-51a3777aeb41)**
 

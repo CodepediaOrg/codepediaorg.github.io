@@ -1,22 +1,22 @@
 ---
 layout: post
-title: New codingmarks added in the 5th week of 2018
-description: "New codingmarks added in the 5th week of 2018. Keywords: caching, cheatsheet, coding, cryptography, cvs, debugging, git, java, javascript, job, marketing, nodejs, reactjs, security, sql and writing"
+title: New dev bookmarks added in the 5th week of 2018
+description: "New dev bookmarks added in the 5th week of 2018. Keywords: caching, cheatsheet, coding, cryptography, cvs, debugging, git, java, javascript, job, marketing, nodejs, reactjs, security, sql and writing"
 author: ama
-permalink: /ama/new-codingmarks-week-5-2018
+permalink: /ama/new-dev-bookmarks-week-5-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 
 New [dev bookmarks](https://www.bookmarks.dev) added in the 5th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## caching 
+## caching
 
 **[CachesExplained · google/guava Wiki · GitHub](https://github.com/google/guava/wiki/CachesExplained)**
 
@@ -28,7 +28,7 @@ Wiki page with examples of using the caching of guava
 <hr>
 
 
-## cheatsheet 
+## cheatsheet
 
 **[XSS (Cross Site Scripting) Prevention Cheat Sheet - OWASP](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet)**
 
@@ -39,7 +39,7 @@ This article provides a simple positive model for preventing [XSS](https://www.o
 <hr>
 
 
-## coding 
+## coding
 
 **[One does not simply learn to code – freeCodeCamp](https://medium.freecodecamp.org/one-does-not-simply-learn-to-code-f25bacdc5b62)**
 
@@ -51,18 +51,18 @@ One does not simply learn to code. Because coding isn’t easy. Coding is hard. 
 <hr>
 
 
-## cryptography 
+## cryptography
 
 **[scrypt - Wikipedia](https://en.wikipedia.org/wiki/Scrypt)**
 
   * **tags**: &nbsp; [cryptgraphy](https://www.bookmarks.dev/search?q=[cryptgraphy])
 
-In cryptography, scrypt (pronounced "ess crypt"[1]) is a password-based key derivation function created by Colin Percival, originally for the Tarsnap online backup service.[2] The algorithm was specifically designed to make it costly to perform large-scale custom hardware attacks by requiring large amounts of memory. 
+In cryptography, scrypt (pronounced "ess crypt"[1]) is a password-based key derivation function created by Colin Percival, originally for the Tarsnap online backup service.[2] The algorithm was specifically designed to make it costly to perform large-scale custom hardware attacks by requiring large amounts of memory.
 
 <hr>
 
 
-## cvs 
+## cvs
 
 **[git-secret - A bash-tool to store your private data inside a git repository.](http://git-secret.io/)**
 
@@ -75,7 +75,7 @@ A bash-tool to store your private data inside a git repository.
 <hr>
 
 
-## debugging 
+## debugging
 
 **[Debugging - Getting Started Node.js](https://nodejs.org/en/docs/guides/debugging-getting-started/)**
 
@@ -86,7 +86,7 @@ This guide will help you get started debugging your Node.js apps and scripts.
 <hr>
 
 
-## git 
+## git
 
 **[git-crypt - transparent file encryption in git](https://www.agwa.name/projects/git-crypt/)**
 
@@ -108,7 +108,7 @@ A bash-tool to store your private data inside a git repository.
 <hr>
 
 
-## java 
+## java
 
 **[CachesExplained · google/guava Wiki · GitHub](https://github.com/google/guava/wiki/CachesExplained)**
 
@@ -129,7 +129,7 @@ Guava is a set of core libraries that includes new collection types (such as mul
 <hr>
 
 
-## javascript 
+## javascript
 
 **[Building Secure JavaScript Applications](https://nemethgergely.com/building-secure-javascript-applications/)**
 
@@ -180,7 +180,7 @@ project-guidelines
 <hr>
 
 
-## job 
+## job
 
 **[How to write a cover letter - YouTube](https://www.youtube.com/watch?v=3AaEvnVjrRc&feature=youtu.be)**
 
@@ -192,7 +192,7 @@ Writing a great cover letter starts with understanding its purpose. A cover lett
 <hr>
 
 
-## marketing 
+## marketing
 
 **[One does not simply learn to code – freeCodeCamp](https://medium.freecodecamp.org/one-does-not-simply-learn-to-code-f25bacdc5b62)**
 
@@ -204,7 +204,7 @@ One does not simply learn to code. Because coding isn’t easy. Coding is hard. 
 <hr>
 
 
-## nodejs 
+## nodejs
 
 **[Debugging - Getting Started | Node.js](https://nodejs.org/en/docs/guides/debugging-getting-started/)**
 
@@ -215,7 +215,7 @@ This guide will help you get started debugging your Node.js apps and scripts.
 <hr>
 
 
-## reactjs 
+## reactjs
 
 **[Dan Abramov - The Melting Pot of JavaScript - YouTube](https://www.youtube.com/watch?v=G39lKaONAlA)**
 
@@ -242,7 +242,7 @@ Create React App works on macOS, Windows, and Linux.
 <hr>
 
 
-## security 
+## security
 
 **[git-crypt - transparent file encryption in git](https://www.agwa.name/projects/git-crypt/)**
 
@@ -298,7 +298,7 @@ This article provides a simple positive model for preventing [XSS](https://www.o
 <hr>
 
 
-## sql 
+## sql
 
 **[SQL SELECT DISTINCT  - COUNT - ROWS - On one columns - Examples](http://www.dofactory.com/sql/select-distinct)**
 
@@ -314,7 +314,7 @@ SQL SELECT DISTINCT with COUNT on ROWS or on one columns
 <hr>
 
 
-## writing 
+## writing
 
 **[How to write a cover letter - YouTube](https://www.youtube.com/watch?v=3AaEvnVjrRc&feature=youtu.be)**
 

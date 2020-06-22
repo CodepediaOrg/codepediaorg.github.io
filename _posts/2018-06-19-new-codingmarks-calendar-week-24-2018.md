@@ -1,21 +1,21 @@
 ---
 layout: post
-title: New codingmarks added in the 24th week of 2018
-description: "New codingmarks added in the 24th week of 2018. Keywords: .net, agile, c#, coding-dispute, glossary, javaee and javascript"
+title: New dev bookmarks added in the 24th week of 2018
+description: "New dev bookmarks added in the 24th week of 2018. Keywords: .net, agile, c#, coding-dispute, glossary, javaee and javascript"
 author: ama
-permalink: /ama/new-codingmarks-week-24-2018
+permalink: /ama/new-dev-bookmarks-week-24-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 24th week of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## .net 
+## .net
 
 **[Why do interface names begin with “I” – Brad Abrams ](https://blogs.msdn.microsoft.com/brada/2004/02/03/why-do-interface-names-begin-with-i/)**
 
@@ -26,7 +26,7 @@ I am in the having one of those very useless “what-should-we-have-done” deba
 <hr>
 
 
-## agile 
+## agile
 
 **[Agile Thinking : Stop Starting, Start Finishing](http://www.agilebuddha.com/agile/agile-thinking-stop-starting-start-finishing/)**
 
@@ -37,7 +37,7 @@ On its outset it looks like, "Stop starting, start finishing" philosophy is limi
 <hr>
 
 
-## c# 
+## c#
 
 **[Why do interface names begin with “I” – Brad Abrams ](https://blogs.msdn.microsoft.com/brada/2004/02/03/why-do-interface-names-begin-with-i/)**
 
@@ -48,7 +48,7 @@ I am in the having one of those very useless “what-should-we-have-done” deba
 <hr>
 
 
-## coding-dispute 
+## coding-dispute
 
 **[Why do interface names begin with “I” – Brad Abrams ](https://blogs.msdn.microsoft.com/brada/2004/02/03/why-do-interface-names-begin-with-i/)**
 
@@ -59,7 +59,7 @@ I am in the having one of those very useless “what-should-we-have-done” deba
 <hr>
 
 
-## glossary 
+## glossary
 
 **[Hungarian notation - Wikipedia](https://en.wikipedia.org/wiki/Hungarian_notation)**
 
@@ -70,7 +70,7 @@ Hungarian notation is an identifier naming convention in computer programming, i
 <hr>
 
 
-## javaee 
+## javaee
 
 **[java ee - Unsatisfied dependencies for type X with qualifiers @Default - Stack Overflow](https://stackoverflow.com/questions/27706091/unsatisfied-dependencies-for-type-x-with-qualifiers-default?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)**
 
@@ -81,7 +81,7 @@ In Java EE 7, the default scanning for JARs/WARs is annotated, meaning that if y
 <hr>
 
 
-## javascript 
+## javascript
 
 **[Async programming basics every JS developer should know in 2018](https://dev.to/siwalik/async-programming-basics-every-js-developer-should-know-in-2018-a9c)**
 

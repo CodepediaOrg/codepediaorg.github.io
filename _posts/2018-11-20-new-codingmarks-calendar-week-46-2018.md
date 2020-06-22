@@ -1,33 +1,33 @@
 ---
 layout: post
-title: New codingmarks published in week 46 of 2018
-description: "New codingmarks published in week 46 of 2018. Keywords: api, git, java, marketing, objective-c, open-source, rest, spring, spring-boot, spring-data, spring-data-jpa, swift, tdd and testing"
+title: New dev bookmarks published in week 46 of 2018
+description: "New dev bookmarks published in week 46 of 2018. Keywords: api, git, java, marketing, objective-c, open-source, rest, spring, spring-boot, spring-data, spring-data-jpa, swift, tdd and testing"
 author: ama
-permalink: /ama/new-codingmarks-week-46-2018
+permalink: /ama/new-dev-bookmarks-week-46-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in week 46 of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## api 
+## api
 
 **[Rest assured](https://github.com/rest-assured/rest-assured)**
 
   * **tags**: &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [api](https://www.bookmarks.dev/search?q=[api])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/rest-assured/rest-assured)
 
-Java DSL for easy testing of REST services. 
+Java DSL for easy testing of REST services.
 
 <hr>
 
 
-## git 
+## git
 
 **[Merging vs. Rebasing - Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)**
 
@@ -47,7 +47,7 @@ Those who have eaten a chunk of wasabi thinking it was a chunk of avocado have l
 <hr>
 
 
-## java 
+## java
 
 **[How to TDD a List Implementation in Java](https://www.baeldung.com/java-test-driven-list)**
 
@@ -72,12 +72,12 @@ AssertJ provides a rich and intuitive set of strongly-typed assertions to use fo
   * **tags**: &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [api](https://www.bookmarks.dev/search?q=[api])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/rest-assured/rest-assured)
 
-Java DSL for easy testing of REST services. 
+Java DSL for easy testing of REST services.
 
 <hr>
 
 
-## marketing 
+## marketing
 
 **[Personas and Pathways for Growing Communities](https://mozillascience.github.io/working-open-workshop/personas_pathways/)**
 
@@ -88,7 +88,7 @@ This activity is designed to help you identify potential users and contributors,
 <hr>
 
 
-## objective-c 
+## objective-c
 
 **[CocoaPods.org](https://cocoapods.org/)**
 
@@ -100,7 +100,7 @@ The Dependency Manager for iOS & Mac projects
 <hr>
 
 
-## open-source 
+## open-source
 
 **[Personas and Pathways for Growing Communities](https://mozillascience.github.io/working-open-workshop/personas_pathways/)**
 
@@ -119,19 +119,19 @@ Learn how to launch and grow your project.
 <hr>
 
 
-## rest 
+## rest
 
 **[Rest assured](https://github.com/rest-assured/rest-assured)**
 
   * **tags**: &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [api](https://www.bookmarks.dev/search?q=[api])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/rest-assured/rest-assured)
 
-Java DSL for easy testing of REST services. 
+Java DSL for easy testing of REST services.
 
 <hr>
 
 
-## spring 
+## spring
 
 **[AssertJ homepage](http://joel-costigliola.github.io/assertj/)**
 
@@ -143,7 +143,7 @@ AssertJ provides a rich and intuitive set of strongly-typed assertions to use fo
 <hr>
 
 
-## spring-boot 
+## spring-boot
 
 **[Getting Started · Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)**
 
@@ -155,7 +155,7 @@ This guide provides a sampling of how Spring Boot helps you accelerate and facil
 <hr>
 
 
-## spring-data 
+## spring-data
 
 **[Getting Started - Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)**
 
@@ -167,7 +167,7 @@ This guide walks you through the process of building an application that uses Sp
 <hr>
 
 
-## spring-data-jpa 
+## spring-data-jpa
 
 **[Getting Started - Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)**
 
@@ -179,7 +179,7 @@ This guide walks you through the process of building an application that uses Sp
 <hr>
 
 
-## swift 
+## swift
 
 **[CocoaPods.org](https://cocoapods.org/)**
 
@@ -191,7 +191,7 @@ The Dependency Manager for iOS & Mac projects
 <hr>
 
 
-## tdd 
+## tdd
 
 **[How to TDD a List Implementation in Java](https://www.baeldung.com/java-test-driven-list)**
 
@@ -203,7 +203,7 @@ Learn Test-Driven Development while implementing a List implementation in Java.
 <hr>
 
 
-## testing 
+## testing
 
 **[AssertJ homepage](http://joel-costigliola.github.io/assertj/)**
 
@@ -219,40 +219,40 @@ AssertJ provides a rich and intuitive set of strongly-typed assertions to use fo
   * **tags**: &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [api](https://www.bookmarks.dev/search?q=[api])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/rest-assured/rest-assured)
 
-Java DSL for easy testing of REST services. 
+Java DSL for easy testing of REST services.
 
 <hr>
 
 ---
 layout: post
-title: New codingmarks published in week 46 of 2018
-description: "New codingmarks published in week 46 of 2018. Keywords: api, git, java, marketing, objective-c, open-source, rest, spring, spring-boot, spring-data, spring-data-jpa, swift, tdd and testing"
+title: New dev bookmarks published in week 46 of 2018
+description: "New dev bookmarks published in week 46 of 2018. Keywords: api, git, java, marketing, objective-c, open-source, rest, spring, spring-boot, spring-data, spring-data-jpa, swift, tdd and testing"
 author: ama
-permalink: /ama/new-codingmarks-week-46-2018
+permalink: /ama/new-dev-bookmarks-week-46-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in week 46 of 2018. Hot topics include:
 
 * TOC
-{:toc} 
+{:toc}
 
 <!--more-->
 
-## api 
+## api
 
 **[Rest assured](https://github.com/rest-assured/rest-assured)**
 
   * **tags**: &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [api](https://www.bookmarks.dev/search?q=[api])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/rest-assured/rest-assured)
 
-Java DSL for easy testing of REST services. 
+Java DSL for easy testing of REST services.
 
 <hr>
 
 
-## git 
+## git
 
 **[Merging vs. Rebasing - Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)**
 
@@ -272,7 +272,7 @@ Those who have eaten a chunk of wasabi thinking it was a chunk of avocado have l
 <hr>
 
 
-## java 
+## java
 
 **[How to TDD a List Implementation in Java](https://www.baeldung.com/java-test-driven-list)**
 
@@ -297,12 +297,12 @@ AssertJ provides a rich and intuitive set of strongly-typed assertions to use fo
   * **tags**: &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [api](https://www.bookmarks.dev/search?q=[api])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/rest-assured/rest-assured)
 
-Java DSL for easy testing of REST services. 
+Java DSL for easy testing of REST services.
 
 <hr>
 
 
-## marketing 
+## marketing
 
 **[Personas and Pathways for Growing Communities](https://mozillascience.github.io/working-open-workshop/personas_pathways/)**
 
@@ -313,7 +313,7 @@ This activity is designed to help you identify potential users and contributors,
 <hr>
 
 
-## objective-c 
+## objective-c
 
 **[CocoaPods.org](https://cocoapods.org/)**
 
@@ -325,7 +325,7 @@ The Dependency Manager for iOS & Mac projects
 <hr>
 
 
-## open-source 
+## open-source
 
 **[Personas and Pathways for Growing Communities](https://mozillascience.github.io/working-open-workshop/personas_pathways/)**
 
@@ -344,19 +344,19 @@ Learn how to launch and grow your project.
 <hr>
 
 
-## rest 
+## rest
 
 **[Rest assured](https://github.com/rest-assured/rest-assured)**
 
   * **tags**: &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [api](https://www.bookmarks.dev/search?q=[api])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/rest-assured/rest-assured)
 
-Java DSL for easy testing of REST services. 
+Java DSL for easy testing of REST services.
 
 <hr>
 
 
-## spring 
+## spring
 
 **[AssertJ homepage](http://joel-costigliola.github.io/assertj/)**
 
@@ -368,7 +368,7 @@ AssertJ provides a rich and intuitive set of strongly-typed assertions to use fo
 <hr>
 
 
-## spring-boot 
+## spring-boot
 
 **[Getting Started · Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)**
 
@@ -380,7 +380,7 @@ This guide provides a sampling of how Spring Boot helps you accelerate and facil
 <hr>
 
 
-## spring-data 
+## spring-data
 
 **[Getting Started - Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)**
 
@@ -392,7 +392,7 @@ This guide walks you through the process of building an application that uses Sp
 <hr>
 
 
-## spring-data-jpa 
+## spring-data-jpa
 
 **[Getting Started - Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)**
 
@@ -404,7 +404,7 @@ This guide walks you through the process of building an application that uses Sp
 <hr>
 
 
-## swift 
+## swift
 
 **[CocoaPods.org](https://cocoapods.org/)**
 
@@ -416,7 +416,7 @@ The Dependency Manager for iOS & Mac projects
 <hr>
 
 
-## tdd 
+## tdd
 
 **[How to TDD a List Implementation in Java](https://www.baeldung.com/java-test-driven-list)**
 
@@ -428,7 +428,7 @@ Learn Test-Driven Development while implementing a List implementation in Java.
 <hr>
 
 
-## testing 
+## testing
 
 **[AssertJ homepage](http://joel-costigliola.github.io/assertj/)**
 
@@ -444,7 +444,7 @@ AssertJ provides a rich and intuitive set of strongly-typed assertions to use fo
   * **tags**: &nbsp; [rest](https://www.bookmarks.dev/search?q=[rest]), &nbsp; [testing](https://www.bookmarks.dev/search?q=[testing]), &nbsp; [java](https://www.bookmarks.dev/search?q=[java]), &nbsp; [api](https://www.bookmarks.dev/search?q=[api])
   * <i class="fa fa-github fa-lg"></i> [github url](https://github.com/rest-assured/rest-assured)
 
-Java DSL for easy testing of REST services. 
+Java DSL for easy testing of REST services.
 
 <hr>
 

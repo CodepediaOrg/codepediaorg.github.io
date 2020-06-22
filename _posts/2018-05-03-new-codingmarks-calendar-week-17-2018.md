@@ -1,11 +1,11 @@
 ---
 layout: post
-title: New codingmarks added in the 17th week of 2018
-description: "New codingmarks added in the 17th week of 2018. Keywords: aggregator, angular, blog, challenge, coding, community, compsci, feed, free-programming-books, github, go, java, javascript, jvm, keycloak, kotlin, marketing, math, news, nodejs, open-source, performance, plt, podcast, programming, puzzles, resources, scala, tools, user-experience and virtual-machine"
+title: New dev bookmarks added in the 17th week of 2018
+description: "New dev bookmarks added in the 17th week of 2018. Keywords: aggregator, angular, blog, challenge, coding, community, compsci, feed, free-programming-books, github, go, java, javascript, jvm, keycloak, kotlin, marketing, math, news, nodejs, open-source, performance, plt, podcast, programming, puzzles, resources, scala, tools, user-experience and virtual-machine"
 author: ama
-permalink: /ama/new-codingmarks-week-17-2018
+permalink: /ama/new-dev-bookmarks-week-17-2018
 published: true
-categories: [dev-bookmarks]
+categories: [bookmarks]
 tags: [dev-bookmarks]
 ---
 New [dev bookmarks](https://www.bookmarks.dev) added in the 17th week of 2018. Hot topics include:

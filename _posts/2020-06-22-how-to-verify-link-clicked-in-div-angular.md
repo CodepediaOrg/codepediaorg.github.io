@@ -19,6 +19,8 @@ add "child" or related bookmarks in the description (an example would be bookmar
 
 > This plays really well now with the recently introduced [hot keys to access the history and pinned bookmarks]({{ site.baseurl }}/ama/keyboard-shortcuts-example-with-angular)
 
+{% include source-code-codingmarks.html %}
+
 Well, let's see how this looks like in code:
 
 <!--more-->

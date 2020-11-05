@@ -67,7 +67,7 @@ Read **all**, and I mean all the articles from **Introduction** to **Best practi
 Once you are through with the above resources, and you feel more comfortable with GraphQL, you can start with more advanced stuff like
 
 ### 4.1 Pagination
-#### [Understanding pagination: REST, GraphQL, and Relay](https://www.apollographql.com/blog/explaining-graphql-connections-c48b7c3d6976/)
+#### [Understanding pagination: REST, GraphQL, and Relay](https://www.apollographql.com/blog/understanding-pagination-rest-graphql-and-relay-b10f835549e7/)
  where some different approaches to pagination in REST and GraphQL are covered:
 
 * Pagination: what is it for?

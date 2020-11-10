@@ -97,6 +97,11 @@ OR
 #### [Handling GraphQL errors like a champ with unions and interfaces](https://blog.logrocket.com/handling-graphql-errors-like-a-champ-with-unions-and-interfaces/)
 An interesting approach to handling errors in GraphQL with the possibilities that the spec provides and still have type safety.
 
+### 4.4 Caching
+#### [GraphQL & Caching: The Elephant in the Room](https://www.apollographql.com/blog/graphql-caching-the-elephant-in-the-room-11a3df0c23ad/)
+The author addresses the misconception that "GraphQL breaks caching" and discusses thoroughly the topic.
+
+
 ## Bonus - [GraphQL Public Bookmarks](https://github.com/BookmarksDev/bookmarks/blob/master/tagged/graphql.md)
 You can follow the  [**graphql** tag on Bookmarks.dev](https://www.bookmarks.dev/t/graphql)
 to get the latest public entries about GraphQL or search to find resources in combination with other terms

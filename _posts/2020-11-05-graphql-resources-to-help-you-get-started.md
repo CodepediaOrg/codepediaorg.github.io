@@ -21,8 +21,11 @@ I had already [bookmarked dozens of GraphQL resources](https://www.bookmarks.dev
     <strong>Note: The order is also important</strong>
 </p>
 
-> After you are done with the theory I suggest you get your hands dirty and checkout  my second blog post on GraphQL,
+> After you are done with the theory I suggest you get your hands dirty and checkout  my second blog post on GraphQL -
 > [Complete example of a CRUD API with Express GraphQL]({% post_url 2020-11-10-complete-example-crud-api-graqphql-express %})
+
+<hr>
+<br/>
 
 * TOC
 {:toc}

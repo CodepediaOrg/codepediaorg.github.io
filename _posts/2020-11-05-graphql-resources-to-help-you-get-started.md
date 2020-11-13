@@ -1,8 +1,7 @@
 ---
 layout: post
 title: GraphQL Resources to help you get started
-description: "In this blog post I will list of the trouble I went through getting to run PM2 in cluster mode on an
-Ubuntu system, on which I had Node.js both standalone installed and managed with NVM."
+description: "List of GraphQL resources to get you started with GraphQL, from beginner to advanced - the order is important."
 author: ama
 permalink: /ama/graphql-resources-to-help-you-get-started
 published: true
@@ -21,6 +20,9 @@ I had already [bookmarked dozens of GraphQL resources](https://www.bookmarks.dev
 <p class="note_normal">
     <strong>Note: The order is also important</strong>
 </p>
+
+> After you are done with the theory I suggest you get your hands dirty and checkout  my second blog post on GraphQL,
+> [Complete example of a CRUD API with Express GraphQL]({% post_url 2020-11-10-complete-example-crud-api-graqphql-express %})
 
 * TOC
 {:toc}
@@ -108,3 +110,5 @@ to get the latest public entries about GraphQL or search to find resources in co
 (e.g. [graphql and java](https://www.bookmarks.dev/search?q=%5Bgraphql%5D%20java&sd=public-bookmarks&page=1&include=all))
 
 > I think the best way to learn something is with hands-on exercise, so in the next article we will do just that.
+
+

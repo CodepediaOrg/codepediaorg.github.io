@@ -72,7 +72,6 @@ type Bookmark {
 The language is pretty readable, but let's go over it so that we can have a shared vocabulary:
 
 * `Bookmark` is a GraphQL Object Type, meaning it's a type with some fields. Most of the types in your schema will be object types.
-name and appearsIn are fields on the Character type. That means that name and appearsIn are the only fields that can appear in any part of a GraphQL query that operates on the Character type.
 * `String`, `Boolean` and `Int` are some  of the built-in scalar types - these are types that resolve to a single scalar object, and can't have sub-selections in the query. We'll go over scalar types more later.
 * `ID`: The ID scalar type represents a unique identifier, often used to refetch an object or as the key for a cache.
  The ID type is serialized in the same way as a String; however, defining it as an ID signifies that it is not intended to be human‐readable.

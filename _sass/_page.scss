@@ -136,6 +136,9 @@ header .entry-meta {
 }
 #menu{
   margin-bottom: 48px;
+  li a {
+    font-size: 1.2rem;
+  }
 }
 #post,
 #page {
@@ -583,6 +586,7 @@ ul.social-buttons li a:active {
 		vertical-align: middle;
 		display: table-cell;
 		height: $menu-height - 2;
+    font-size: 1.5rem;
 	}
 }
 ///sections
@@ -601,6 +605,10 @@ ul.social-buttons li a:active {
 	@media #{$large} {
 		display: block;
 	}
+  a {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
 }
 .header-item-title{
 	float: left;
@@ -608,7 +616,7 @@ ul.social-buttons li a:active {
 	height: 100%;
 	a.title {
 		font-size: 1.5rem;
-	    padding-left: 5px;
+    padding-left: 5px;
 		display: none;
 		vertical-align: middle;
 		height: $menu-height - 2;

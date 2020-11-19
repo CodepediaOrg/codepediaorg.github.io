@@ -10,15 +10,18 @@ tags: [codingpedia bookmarks, beginner, nodejs, expressjs, tutorial]
 ---
 
 In the previous blog post, [Kick starting a project with Express Generator]({% post_url 2016-10-01-kickstarting-a-project-with-express-generator}),
-I had setup a started the backend project with Express Generator[^1] to support _www.codingmarks.org_. In this one I will try to implement
+I had setup a started the backend project with Express Generator[^1] to support [www.bookmarks.dev](https://www.bookmarks.dev). In this one I will try to implement
 a simple GET method that will deliver mocked bookmarks.
 
 [^1]: <https://expressjs.com/en/starter/generator.html>
 
+{% include source-code-bookmarks.dev.html %}
+
 <!--more-->
 
-Prerequisite for using Express is having NodeJS installed and running on your machine. I personally use Node Version Manager[^4], which is a simple bash script to manage multiple active node.js versions
-Now with NodeJS up and running install first the express-generator` globally with the following command:
+Prerequisite for using Express is having NodeJS installed and running on your machine. I personally use Node Version Manager[^4],
+ which is a simple bash script to manage multiple active node.js versions.
+Now with NodeJS up and running install first the express-generator globally with the following command:
 
 [^4]: <https://github.com/creationix/nvm>
 
@@ -32,10 +35,10 @@ or
 $ npmig express-generator
 ```
 
-> The `npmig` is just an alias for `npm install -g`. See my blog post [A developer's guide to using aliases]({% post_url 2016-08-02-a-developers-guide-to-using-aliases %}) to understand what I am talking about and to learn
-how you can efficiently use aliases to boost your shell productivity.
+> The `npmig` is just an alias for `npm install -g`. See my blog post [A developer's guide to using aliases]({% post_url 2016-08-02-a-developers-guide-to-using-aliases %})
+> to understand what I am talking about and to learn how you can efficiently use aliases to boost your shell productivity.
 
-The output should will look something like the following:
+The output should look something like the following:
 
 ```shell
 /Users/ama/.nvm/versions/node/v10.15.0/bin/express -> /Users/ama/.nvm/versions/node/v10.15.0/lib/node_modules/express-generator/bin/express-cli.js
@@ -43,7 +46,7 @@ The output should will look something like the following:
 added 10 packages from 13 contributors in 2.064s
 ```
 
-Now I changed to the parent directory where I want to place my backend project and execute the following command
+Now I change to the parent directory, where I want to place my backend project and execute the following command
 
 ```shell
 $ express bookmarks.dev/backend --git
@@ -140,6 +143,6 @@ git remote add origin https://github.com/BookmarksDev/bookmarks.dev.codepedia.or
 git push -u origin master
 ```
 
-That was it for the intial step. Next thing is to import the project in IntelliJ and get some actual work done :)
+That was it for the initial step. Next thing is to import the project in IntelliJ and get some actual work done :)
 
 ## References

@@ -9,14 +9,18 @@ categories: [angular, nodejs]
 tags: [codingmarks, coding bookmarks, angular, nodejs, showdown, markdown]
 ---
 
-When managing my coding bookmarks via [www.codingmarks.org](https://www.bookmarks.dev/), I often have the need to place in the bookmark's description either a code snippet (might be a command), add a list or add links and emphasize words - this seems like a perfect match for Markdown[^1]. In this post I will demonstrate how I enabled Markdown support with the help of ShodownJS[^2], both in front end (developed with Angular[^3]) and in backend, developed with NodeJS[^4].
+When managing my dev bookmarks via [www.bookmarks.dev](https://www.bookmarks.dev/),
+ I often have the need to place in the bookmark's description either a code snippet (might be a command),
+  add a list or add links and emphasize words - this seems like a perfect match for Markdown[^1].
+   In this post I will demonstrate how I enabled Markdown support with the help of ShodownJS[^2],
+    both in front end (developed with Angular[^3]) and in backend, developed with NodeJS[^4].
 
 [^1]: <https://daringfireball.net/projects/markdown/>
 [^2]: <https://github.com/showdownjs/showdown>
 [^3]: <https://angular.io/>
 [^4]: <https://nodejs.org/en/>
 
-{% include source-code-codingmarks.html %}
+{% include source-code-bookmarks.dev.html %}
 
 <!--more-->
 
@@ -191,8 +195,6 @@ router.put('/:userId/bookmarks/:bookmarkId', keycloak.protect(), function(req, r
 
 Works like a charm.
 
-If you found this useful, please star it, share it and improve it:
-
-{% include source-code-codingmarks.html %}
+{% include action-to-star-bookmarksdev-on-github.html %}
 
 ## References

@@ -134,13 +134,13 @@ $ sudo systemctl enable nginx
 
 ## Backup
 Before modifying any of the configuration files, I **strongly** recommend that you backup
-them. I use aliases to make my life easier. For example, to backup the configuration for _www.codingmarks.org_ I defined the
+them. I use aliases to make my life easier. For example, to backup the configuration for _www.bookmarks.dev_ I defined the
 following in _~/.bash_aliases_:
 ```
 alias nginx-backup-config-bookmarks.conf=nginxconfigbackup
 
 nginxconfigbackup(){
-  sudo cp /etc/nginx/sites-available/www.codingmarks.org /etc/nginx/sites-available/www.codingmarks.org.$(date "+%Y-%m-%d_%H:%M")-$1 #the parameter ending is the comment use dashes "-" between words
+  sudo cp /etc/nginx/sites-available/www.bookmarks.dev /etc/nginx/sites-available/www.bookmarks.dev.$(date "+%Y-%m-%d_%H:%M")-$1 #the parameter ending is the comment use dashes "-" between words
 }
 ```
 
@@ -150,7 +150,7 @@ Now, let's say I want to do a backup before configuring SSL. I would run then:
 $ nginx-backup-config-bookmarks.conf before-ssl
 ```
 
-The result is a backup file named _www.codingmarks.org.2017-05-20_09:30-before-ssl_,
+The result is a backup file named _www.bookmarks.dev.2017-05-20_09:30-before-ssl_,
 that contains the **name** of the original file + **timestamp** when the backup was done + the **text** I input before as parameter.
 
 > Check out my post - [A developer's guide to using aliases](http://www.codepedia.org/ama/a-developers-guide-to-using-aliases/),
@@ -180,7 +180,7 @@ Typically, these are created by linking to configuration files found in the `sit
 
 > Before reading any further, my advice is to read also the [Understanding the Nginx Configuration File Structure and Configuration Contexts](https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts)
 
-# Nginx setup for www.codingmarks.org
+# Nginx setup for www.bookmarks.dev
 
 Now that we have a gross understanding of what where belong let's configure NGINX for our production project - #DevBookmarks.
 
@@ -297,14 +297,14 @@ The HTTP block of the _nginx.conf_ file contains the statement include _/etc/ngi
    Nginx provides a single default virtual host file, which we will use as a template to create virtual host files for other domains:
 
 ```
-$ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/www.codingmarks.org
+$ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/www.bookmarks.dev
 ```
 
 
 In the end we need to activate the host by creating a symbolic link between the sites-available directory and the sites-enabled directory:
 
 ```
-$ sudo ln -s /etc/nginx/sites-available/www.codingmarks.org /etc/nginx/sites-enabled/www.codingmarks.org
+$ sudo ln -s /etc/nginx/sites-available/www.bookmarks.dev /etc/nginx/sites-enabled/www.bookmarks.dev
 ```
 
 To both avoid the "conflicting server name error" and ensure that going to your site displays the correct information,
@@ -410,7 +410,7 @@ location ~ /.well-known {
 To obtain a cert using the "webroot" plugin, which can work with the webroot directory of any webserver software:
 
 ```
-$ sudo certbot certonly --webroot --webroot-path=/var/www/html -d codingmarks.org -d www.codingmarks.org
+$ sudo certbot certonly --webroot --webroot-path=/var/www/html -d bookmarks.dev -d www.bookmarks.dev
 ```
 
 If this is the first time running `certbot`, we will be prompted to enter an email address and agree to the terms of service.
@@ -420,7 +420,7 @@ If this is the first time running `certbot`, we will be prompted to enter an ema
 Output
 IMPORTANT NOTES:
 - Congratulations! Your certificate and chain have been saved at
-  /etc/letsencrypt/live/codingmarks.org/fullchain.pem. Your cert
+  /etc/letsencrypt/live/bookmarks.dev/fullchain.pem. Your cert
   will expire on 2017-07-19. To obtain a new or tweaked version of
   this certificate in the future, simply run certbot again. To
   non-interactively renew *all* of your certificates, run "certbot
@@ -450,25 +450,25 @@ After obtaining the cert, we will have the following PEM-encoded files:
 
 It's important that we are aware of the location of the certificate files that were just created, so we can use them in our web server configuration.
  The files themselves are placed in a subdirectory in _/etc/letsencrypt/archive_.
- However, Certbot creates symbolic links to the most recent certificate files in the _/etc/letsencrypt/live/codingmarks.org_ directory.
+ However, Certbot creates symbolic links to the most recent certificate files in the _/etc/letsencrypt/live/bookmarks.dev_ directory.
   Because the links will always point to the most recent certificate files, this is the path that we should use to refer to your certificate files.
 
 We can check that the files exist by running this command:
 
 ```
-$ sudo ls -l /etc/letsencrypt/live/codingmarks.org
+$ sudo ls -l /etc/letsencrypt/live/bookmarks.dev
 ```
 
 The output should be the four previously mentioned certificate files:
 
 ```
-$ sudo ls -l /etc/letsencrypt/live/codingmarks.org
+$ sudo ls -l /etc/letsencrypt/live/bookmarks.dev
 [sudo] password for ama:
 total 0
-lrwxrwxrwx 1 root root 49 Apr 17 22:18 cert.pem -> ../../archive/codingmarks.org/cert2.pem
-lrwxrwxrwx 1 root root 50 Apr 17 22:18 chain.pem -> ../../archive/codingmarks.org/chain2.pem
-lrwxrwxrwx 1 root root 54 Apr 17 22:18 fullchain.pem -> ../../archive/codingmarks.org/fullchain2.pem
-lrwxrwxrwx 1 root root 52 Apr 17 22:18 privkey.pem -> ../../archive/codingmarks.org/privkey2.pem
+lrwxrwxrwx 1 root root 49 Apr 17 22:18 cert.pem -> ../../archive/bookmarks.dev/cert2.pem
+lrwxrwxrwx 1 root root 50 Apr 17 22:18 chain.pem -> ../../archive/bookmarks.dev/chain2.pem
+lrwxrwxrwx 1 root root 54 Apr 17 22:18 fullchain.pem -> ../../archive/bookmarks.dev/fullchain2.pem
+lrwxrwxrwx 1 root root 52 Apr 17 22:18 privkey.pem -> ../../archive/bookmarks.dev/privkey2.pem
 ```
 > Note the suffix 2 in this case - it is because the certificates have been renewed once
 
@@ -501,14 +501,14 @@ First, let's create a new Nginx configuration snippet in the _/etc/nginx/snippet
 
 To properly distinguish the purpose of this file, we will name it `ssl-`` followed by our domain name, followed by `.conf` on the end:
 ```
-$ sudo vim /etc/nginx/snippets/ssl-codingmarks.org.conf
+$ sudo vim /etc/nginx/snippets/ssl-bookmarks.dev.conf
 ```
 
 Within this file, we just need to set the `ssl_certificate` directive to our certificate file and the `ssl_certificate_key` to the associated key:
 
 ```
-ssl_certificate /etc/letsencrypt/live/codingmarks.org/fullchain.pem;
-ssl_certificate_key /etc/letsencrypt/live/codingmarks.org/privkey.pem;
+ssl_certificate /etc/letsencrypt/live/bookmarks.dev/fullchain.pem;
+ssl_certificate_key /etc/letsencrypt/live/bookmarks.dev/privkey.pem;
 ```
 
 Save and close the file.
@@ -562,7 +562,7 @@ Save and close.
 #### Adjust Nginx to Use SSL
 
 ```
-$ sudo vim /etc/nginx/sites-available/codingmarks.org
+$ sudo vim /etc/nginx/sites-available/bookmarks.dev
 ```
 
 We splitt the configuration in two separate blocks. In the first block after the two first `listen` directives,
@@ -572,7 +572,7 @@ We splitt the configuration in two separate blocks. In the first block after the
 server {
     listen 80 default_server;
     listen [::]:80 default_server;
-    server_name www.codingmarks.org;
+    server_name www.bookmarks.dev;
 
     return 301 https://$server_name$request_uri;
 }
@@ -593,7 +593,7 @@ server {
 
     expires $expires;
 
-    include snippets/ssl-codingmarks.org.conf;
+    include snippets/ssl-bookmarks.dev.conf;
     include snippets/ssl-params.conf;
     ....
 }
@@ -654,7 +654,7 @@ that is not accessible from exterior .
 > We could extend this setup basis to use Nginx also as a load balancer, that would load balance requests
 > between several Keyloak instances, if we choose the clustered operating mode... **Not the case yet**
 
-In our server configuration file, _ /etc/nginx/sites-available/codingmarks.org_, we first define an `upstream` keycloak server:
+In our server configuration file, _ /etc/nginx/sites-available/bookmarks.dev_, we first define an `upstream` keycloak server:
 
 ```
 upstream keycloak_server {
@@ -754,7 +754,7 @@ alias nginx-restart="sudo systemctl restart nginx"
 alias nginx-status="systemctl status nginx"
 alias nginx-reload="sudo kill -HUP `cat /var/run/nginx.pid`"
 alias nginx-vim-default="sudo vim /etc/nginx/sites-available/default"
-alias nginx-vim-bookmarks.conf='sudo vim /etc/nginx/sites-available/codingmarks.org'
+alias nginx-vim-bookmarks.conf='sudo vim /etc/nginx/sites-available/bookmarks.dev'
 alias nginx-vim-nginx.conf="sudo vim /etc/nginx/nginx.conf"
 alias nginx-tail-error.log="sudo tail -f -n200 /var/log/nginx/error.log"
 alias nginx-tail-access.log="sudo tail -f -n200 /var/log/nginx/access.log"
@@ -763,7 +763,7 @@ alias nginx-verify-config="sudo nginx -t"
 alias nginx-backup-config-bookmarks.conf=nginxconfigbackup
 
 nginxconfigbackup(){
-  sudo cp /etc/nginx/sites-available/codingmarks.org /etc/nginx/sites-available/codingmarks.org.$(date "+%Y-%m-%d_%H:%M")-$1 #the parameter ending is the comment use dashes "-" between words
+  sudo cp /etc/nginx/sites-available/bookmarks.dev /etc/nginx/sites-available/bookmarks.dev.$(date "+%Y-%m-%d_%H:%M")-$1 #the parameter ending is the comment use dashes "-" between words
 }
 ```
 

@@ -62,7 +62,7 @@ most are :
   * custom searches
   * history
 
-Check out the following video to see how I bookmark with [bookmarks.dev](https://www.bookmarks.dev), formerly known as codingmarks.org:
+Check out the following video to see how I bookmark with [bookmarks.dev](https://www.bookmarks.dev), formerly known as bookmarks.dev:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f9GpTtFVD9Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -70,5 +70,5 @@ Check out the following video to see how I bookmark with [bookmarks.dev](https:/
 If you are convinced, give [www.bookmarks.dev](https://www.bookmarks.dev) a try and share this post so other can save time too.
  <span class="highlight-yellow">Beware there is no 30 days money back guarantee, because everything is free and open-source.</span>
 
-  {% include source-code-codingmarks.html %}
+  {% include source-code-bookmarks.dev.html %}
 

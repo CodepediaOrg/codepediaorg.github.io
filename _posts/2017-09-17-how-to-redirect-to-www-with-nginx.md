@@ -6,7 +6,7 @@ author: ama
 permalink: /ama/how-to-redirect-domain-to-www-url-with-nginx
 published: true
 categories: [nginx]
-tags: [codingmarks, nginx, networking]
+tags: [bookmarksdev, nginx, networking]
 ---
 
 This post presents the snippet from the Nginx configuration that redirects all request to **https://www.bookmarks.dev**:
@@ -16,23 +16,23 @@ This post presents the snippet from the Nginx configuration that redirects all r
 server {
     listen 80 default_server;
     listen [::]:80 default_server;
-    server_name codingmarks.org www.codingmarks.org;
+    server_name bookmarks.dev www.bookmarks.dev;
 
-    return 301 https://www.codingmarks.org$request_uri;
+    return 301 https://www.bookmarks.dev$request_uri;
 }
 
 # redirect HTTPS to wwww
 server {
     listen 443;
-    server_name codingmarks.org;
+    server_name bookmarks.dev;
 
-    return 301 https://www.codingmarks.org$request_uri;
+    return 301 https://www.bookmarks.dev$request_uri;
 }
 ```
 
-> Note the missing `www.codingmarks.org` in the second `server/server_name` entry, to avoid an infinite loop
+> Note the missing `www.bookmarks.dev` in the second `server/server_name` entry, to avoid an infinite loop
 
 Lots of other good Nginx resources can be found if you search for the **nginx** tag on **codingmarks**: [https://www.bookmarks.dev?q=[nginx]](https://www.bookmarks.dev?q=[nginx])
 
-{% include source-code-codingmarks.html %}
+{% include source-code-bookmarks.dev.html %}
 

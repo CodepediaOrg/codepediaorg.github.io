@@ -9,9 +9,9 @@ categories: [nodejs]
 tags: [beginner, nodejs, expressjs, expressjs generator, project setup, how to, tutorial]
 ---
 
-As today I am going to start working on a project to enhance my bookmarks handling experience that will run at
-_www.codingmarks.org_. I intend to make a learning experience out of it and build it with components of MEAN[^1] stack with Angular 2, as this is quite new to me and make a learning
-new to me. I have always believed that hands-on is the best was to learn something new.
+As of today, I am going to start working on a project to enhance my bookmarks handling experience that will run at
+[www.bookmarks.dev](https://www.bookmarks.dev). I intend to make a learning experience out of it and build it
+ with components of MEAN[^1] stack with Angular 2, as this is quite new to me and make a learning new to me. I have always believed that hands-on is the best was to learn something new.
 
 [^1]: <http://mean.io/>
 
@@ -20,6 +20,8 @@ fast, unopinionated, minimalist web framework for Node.js[^3]. The easiest way t
 which creates the scaffolding for a full app with numerous JavaScript files, Jade templates, and sub-directories for various purposes
 [^2]: <https://expressjs.com/>
 [^3]: <https://nodejs.org/>
+
+{% include source-code-bookmarks.dev.html %}
 
 <!--more-->
 
@@ -41,7 +43,7 @@ $ npmig express-generator
 > The `npmig` is just an alias for `npm install -g`. See my blog post [A developer's guide to using aliases]({% post_url 2016-08-02-a-developers-guide-to-using-aliases %}) to understand what I am talking about and to learn
 how you can efficiently use aliases to boost your shell productivity.
 
-The output should will look something like the following:
+The output should look something like the following:
 
 ```shell
 /Users/ama/.nvm/versions/node/v10.15.0/bin/express -> /Users/ama/.nvm/versions/node/v10.15.0/lib/node_modules/express-generator/bin/express-cli.js
@@ -151,6 +153,6 @@ git remote add origin https://github.com/BookmarksDev/bookmarks.dev.git
 git push -u origin master
 ```
 
-That was it for the intial step. Next thing is to import the project in IntelliJ and get some actual work done :)
+That was it for the initial step. Next thing is to import the project in IntelliJ and get some actual work done :)
 
 ## References

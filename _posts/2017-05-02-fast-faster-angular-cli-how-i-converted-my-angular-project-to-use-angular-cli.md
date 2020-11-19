@@ -2,7 +2,7 @@
 layout: post
 title: Fast, faster, Angular CLI - how I converted my Angular project to use Angular CLI
 description: "Main steps to migrate a regular Angular project built with Webpack to a Angular CLI project.
-My test candidate was the codingmarks.org project "
+My test candidate was the bookmarks.dev project "
 author: ama
 permalink: /ama/fast-faster-angular-cli-how-i-converted-my-angular-project-to-use-angular-cli
 published: true
@@ -243,7 +243,7 @@ I saved the best for last - <span class="highlight-yellow">speed of development,
 With this I rest my case.
 
 <p class="note_normal">
-    PS: By the way you can find most of links referenced here if you filter the public bookmarks for the **angular-cli tag** in codingmarks - <a href="http://codingmarks.org/search?q=[angular-cli]" target="_blank">http://codingmarks.org/search?q=[angular-cli]</a>
+    PS: By the way you can find most of links referenced here if you filter the public bookmarks for the **angular-cli tag** in codingmarks - <a href="http://bookmarks.dev/search?q=[angular-cli]" target="_blank">http://bookmarks.dev/search?q=[angular-cli]</a>
 </p>
 
 ## References

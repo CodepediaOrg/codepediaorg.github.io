@@ -14,7 +14,7 @@ implemented in Angular to the backend implemented with NodeJS/ExpressJS. This is
 at the [www.bookmarks.dev](https://www.bookmarks.dev) : once you register for an account you have the possibility to change your profile picture
 with something more personal at [user settings](https://www.bookmarks.dev/settings).
 
-{% include source-code-codingmarks.html %}
+{% include source-code-bookmarks.dev.html %}
 
 So let's jump into the tutorial
 <!--more-->
@@ -408,5 +408,7 @@ You can get it from `request.file.location` attribute.
 
 ## Conclusion
 You should know by now how to upload a picture to Amazon S3 bucket with Angular and ExpressJS. You have also learned
-how to validate the upload both in frontend and backend. For suggestions please leave a comment below,
- or better yet [make a pull request](https://github.com/BookmarksDev/bookmarks.dev).
+how to validate the upload both in frontend and backend.
+
+{% include action-to-star-bookmarksdev-on-github.html %}
+

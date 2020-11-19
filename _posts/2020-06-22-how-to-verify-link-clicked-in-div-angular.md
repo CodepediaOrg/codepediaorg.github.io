@@ -19,7 +19,7 @@ add "child" or related bookmarks in the description (an example would be bookmar
 
 > This plays really well now with the recently introduced [hot keys to access the history and pinned bookmarks]({{ site.baseurl }}/ama/keyboard-shortcuts-example-with-angular)
 
-{% include source-code-codingmarks.html %}
+{% include source-code-bookmarks.dev.html %}
 
 Well, let's see how this looks like in code:
 
@@ -91,5 +91,7 @@ The pattern is the same: <span class="highlight-yellow">verify that the object o
 
 ## Conclusion
 This is definitely a [piece of code I will bookmark for later](https://dev.to/ama/bookmarking-code-snippets-with-codelets-3d44).
+
+{% include action-to-star-bookmarksdev-on-github.html %}
 
 ## References

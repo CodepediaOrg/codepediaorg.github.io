@@ -11,10 +11,11 @@ image:
   feature: 2017-02-11-coding-bookmarks-post-feature-image.png
 ---
 
-Whenever I look through coding bookmarks list in my browser, I get a little bit of discomfort... Why? Because
-for some of the "categories" like angular or java ee, the list doesn't fit into my screen anymore, and I use a 2K resolution... Despite trying to neatly order my bookmarks alphabetically,
-categorize them in folders, put tags and description on them, I ended up with one big mess.
-You might say, so what, why not use the bookmarks manager's search function? Well, first is that awkward keystroke combination or navigation through the menu you need to remember :) and
+Whenever I look through coding bookmarks list in my browser, I get a bit of discomfort... Why? Because
+for some "categories" like angular or java ee, the list doesn't fit into my screen anymore, and I use a 2K resolution...
+ Despite trying to neatly order my bookmarks alphabetically, categorize them in folders, put tags and description on them,
+  I ended up with one big mess. You might say, so what, why not use the bookmarks manager's search function?
+   Well, first is that awkward keystroke combination or navigation through the menu you need to remember :) and
  then there is browser dependency, privacy concerns, complexity. I can add to that the "just throw it there" careless behaviour.
 
 Why I don't just rely on the Google/search engine? Well,
@@ -43,9 +44,10 @@ Then, why not make a GUI? It was just the perfect project to get into the MEAN[^
 
 ## Chossing the website name
 
-It was also pretty clear I needed a website, to have my bookmarks accessible from everywhere. One of the hardest things for a website is picking the right name... A couple of ideas came up - **dev-resources.org**, **coding-bookmarks.org**, **dev-bookmarks.org**,
- but none of those felt quite right. Then I remembered the right thing to do, which is to place a request on the subconscious for it. The next morning, bam - [https://www.bookmarks.dev](www.codingmarks.org)
- It shares both the philosophy of [our mission](http://www.codepedia.org/about/) and gave me a good title - **Sharing Coding Bookmarks**.
+It was also pretty clear I needed a website, to have my bookmarks accessible from everywhere. One of the hardest things
+ for a website is picking the right name... A couple of ideas came up - **dev-resources.org**, **coding-bookmarks.org**, **dev-bookmarks.org**,
+ but none of those felt quite right. Then I remembered the right thing to do, which is to place a request on the subconscious for it.
+  The next morning, bam - [https://www.bookmarks.dev](www.bookmarks.dev). It shares both the philosophy of [our mission](http://www.codepedia.org/about/) and gave me a good title - **Sharing Coding Bookmarks**.
 
 ## Metadata
 
@@ -81,6 +83,6 @@ because it forces me to really filter the ones worth adding and to dwell a bit o
 
 I guess this is pretty at the moment. Feel like sharing or improving it?
 
-{% include source-code-codingmarks.html %}
+{% include source-code-bookmarks.dev.html %}
 
 ## References

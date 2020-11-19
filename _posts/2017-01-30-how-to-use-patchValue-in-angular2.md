@@ -6,7 +6,7 @@ author: ama
 permalink: /ama/patching-my-way-through-formgroups-and-formcontrols-in-angular-reactive-forms
 published: true
 categories: [angular]
-tags: [codingmarks, coding bookmarks, angular, forms, reactive forms]
+tags: [bookmarksdev, coding bookmarks, angular, forms, reactive forms]
 ---
 
 Here goes my first Angular post - yeeey. Well, it's not super exciting, but practical and specific... Topic - generic: present how to update a field's value in a reactive form field,
@@ -15,7 +15,7 @@ with an URL, the **title** field is being automatically filled in by scraping th
 
 In the end I present the struggle that led me to the solution.
 
-{% include source-code-codingmarks.html %}
+{% include source-code-bookmarks.dev.html %}
 
 <!--more-->
 
@@ -321,8 +321,6 @@ this.bookmarkForm.controls['location'].valueChanges
   });
 ```
 
-If you found this useful, please star it, share it and improve it:
-
-{% include source-code-codingmarks.html %}
+{% include action-to-star-bookmarksdev-on-github.html %}
 
 ## References

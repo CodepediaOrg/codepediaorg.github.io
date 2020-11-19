@@ -15,7 +15,7 @@ The bookmarks on [www.bookmarks.dev](https://www.bookmarks.dev/) are persisted i
  and sort of brings me closer to it. Ok, so how to find the right mongo shell command? Well, I google for it of course, and most likely I am pointed to the right entry in the [Mongo manual](https://docs.mongodb.com/manual/). In this post I try to consolidate the commands I usually use,
   so that I have only one [bookmark](https://www.bookmarks.dev/search?q=codepedia mongo shell commands) to look for...
 
-  {% include source-code-codingmarks.html %}
+  {% include source-code-bookmarks.dev.html %}
 
 <!--more-->
 
@@ -440,4 +440,4 @@ db.bookmarks.find({}).forEach(
 
 The more I use MongoDB, probably the bigger this blog post will get.
 
-  {% include source-code-codingmarks.html %}
+  {% include action-to-star-bookmarksdev-on-github.html %}

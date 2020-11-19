@@ -10,8 +10,8 @@ categories: [javascript, nodejs]
 tags: [javascript, nodejs, mongoose, async-await, codingmarks]
 ---
 
-A lot has been written already about the transition from [callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) 
-to [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and now to the new 
+A lot has been written already about the transition from [callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+to [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and now to the new
 `async/await`[^1] feature in ES7.
 
 <p class="note_normal">
@@ -23,15 +23,17 @@ to [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 
 In this blog post I present what this code "upgrade" meant for [CRUD operations](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
    performed on [dev bookmarks](https://www.bookmarks.dev). I use [Moongoose](http://mongoosejs.com/) in an ExpressJS/NodeJS backend
-    to perform the operations against a MongoDB database. 
-    
-> In a later refactoring the database access part has been decoupled from ExpressJS and moved to separate service functions. 
-Thanks to [unified error handling](https://www.codepedia.org/ama/cleaner-code-in-expressjs-rest-api-with-custom-error-handling) the database errors are now handled centrally. 
-     
+    to perform the operations against a MongoDB database.
+
+> In a later refactoring the database access part has been decoupled from ExpressJS and moved to separate service functions.
+Thanks to [unified error handling](https://www.codepedia.org/ama/cleaner-code-in-expressjs-rest-api-with-custom-error-handling) the database errors are now handled centrally.
+
+{% include source-code-bookmarks.dev.html %}
+
 <!--more-->
 
 * TOC
-{:toc}     
+{:toc}
 
 ## Create
 
@@ -86,7 +88,7 @@ router.post('/:id/bookmarks', keycloak.protect(), function(req, res, next){
 });
 ```
 
-### After 
+### After
 
 #### Router
 ```javascript
@@ -288,7 +290,7 @@ let deleteBookmarkById = async (userId, bookmarkId) => {
   if (!bookmark) {
     throw new NotFoundError('Bookmark NOT_FOUND with id: ' + bookmarkId);
   }
-  
+
   return true;
 };
 ```
@@ -323,8 +325,7 @@ app.use(function handleDatabaseError(error, request, response, next) {
 
 ## Conclusion
 > Note how the code has become shorter, easier to read (especially for someone like me, with a Java/JavaEE background) and the error handling is now much clearer.
-   
-Another cool feature of `async/await` is how to easily implement multiple parallel, but that in a coming post...     
-   
-{% include source-code-codingmarks.html %}
 
+Another cool feature of `async/await` is how to easily implement multiple parallel, but that in a coming post...
+
+{% include action-to-star-bookmarksdev-on-github.html %}

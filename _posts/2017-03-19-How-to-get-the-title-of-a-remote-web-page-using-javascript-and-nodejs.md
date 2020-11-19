@@ -1,7 +1,8 @@
 ---
 layout: post
 title: How to get the title of a remote web page using javascript and NodeJS
-description: "This post presents how to use web scraping with Cheerio in a NodeJS backend to retrieve the title and the meta description of a bookmark added in www.codingmarks.org"
+description: "This post presents how to use web scraping with Cheerio in a NodeJS backend to retrieve the title
+ and the meta description of a bookmark added to www.bookmarks.dev"
 author: ama
 permalink: /ama/how-to-get-the-title-of-a-remote-web-page-using-javascript-and-nodejs
 published: true
@@ -18,7 +19,7 @@ When I [add a new bookmark](https://youtu.be/bj22xbE5ZiY?t=5m10s) to my bookmark
 [^2]: <https://cheerio.js.org/>
 [^3]: <https://jquery.com/>
 
-{% include source-code-codingmarks.html %}
+{% include source-code-bookmarks.dev.html %}
 
 <!--more-->
 
@@ -93,15 +94,13 @@ If there is no error and we receive an <span class="highlight-yellow">HTTP 200 O
 
 > With Cheerio we need to pass in the HTML document.
 
-Once loaded we call the  `text()`[^5] function to get the content of the `title` element and also identify the meta description content. 
+Once loaded we call the  `text()`[^5] function to get the content of the `title` element and also identify the meta description content.
 We return them both in a custom `webpage` object. If I am not satisfied with the title or the description I can edit it manually after.
 
 [^5]: <http://api.jquery.com/text/>
 
 
-If you found this useful, please star it, share it and improve it:
-
-{% include source-code-codingmarks.html %}
+{% include action-to-star-bookmarksdev-on-github.html %}
 
 > A note on web scraping from Wikipedia - "<span class="highlight-yellow">the legality of web scraping varies across the world. In general, web scraping may be against the terms of use of some websites, but the enforceability of these terms is unclear</span>"[^6].
  Since I am using the method to get the title for bookmarking and then reference back the link, Ì think I don't do anything illegal, but be wary...

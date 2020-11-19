@@ -7,12 +7,12 @@ author: ama
 permalink: /ama/how-
 published: false
 categories: [mean]
-tags: [codingmarks, nginx, ssl, tls, cerbot, keycloak, nodejs]
+tags: [bookmarksdev, nginx, ssl, tls, cerbot, keycloak, nodejs]
 ---
 
 First when you need to optimize, it is usually great news. And indeed it is we managed have now over 1 MB of really great programming resources on the
-[codingmarks.org](http://codingmarks.org) website. We've reached that by importing [free-programming-books](https://github.com/EbookFoundation/free-programming-books) directory into
-[codingmarks.org](http://codingmarks.org) - see the [codingmarks-free-programming-books-importer](https://github.com/BookmarksDev/bookmarks-free-programming-books-importer)
+[bookmarks.dev](http://bookmarks.dev) website. We've reached that by importing [free-programming-books](https://github.com/EbookFoundation/free-programming-books) directory into
+[bookmarks.dev](http://bookmarks.dev) - see the [codingmarks-free-programming-books-importer](https://github.com/BookmarksDev/bookmarks-free-programming-books-importer)
 for that. Now
 
 The application is easy - it loads the public bookmarks, so you can search through some of the best programming related

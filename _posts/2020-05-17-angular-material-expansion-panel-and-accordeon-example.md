@@ -18,7 +18,7 @@ accordion](https://material.angular.io/components/expansion/overview).
 
 This blog post presents the source code for that with a couple of notes.
 
-{% include source-code-codingmarks.html %}
+{% include source-code-bookmarks.dev.html %}
 
 <!--more-->
 
@@ -89,3 +89,4 @@ This blog post presents the source code for that with a couple of notes.
  * by setting the input ``multi="true"`` (default `false`) on `mat-accordion` you could allow the expansions state to
  be set independently of each other
 
+{% include action-to-star-bookmarksdev-on-github.html %}

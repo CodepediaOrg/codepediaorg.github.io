@@ -1,34 +1,20 @@
 ---
 id: 1197
 title: JavaScript hoisting example reloaded
+description: "Javascript code snippet demonstrating hoisting"
 date: 2014-02-17T21:32:01+00:00
 author: Adrian Matei
 layout: post
-guid: http://www.codepedia.org/?p=1197
 permalink: /ama/javascript-hoisting-example-reloaded/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 2280310621
 categories:
-  - javascript
+  - snippets
 tags:
-  - example
-  - function
-  - hoisting
   - javascript
+  - html
+  - hoisting
 ---
 <pre class="lang:xhtml decode:true crayon-selected" title="HTML page containing JavaScript hoisting example">&lt;head&gt;
+```html
 &lt;title&gt;Hoisting example&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -49,8 +35,9 @@ tags:
             alert("local 'hoisting' var REPLACED AFTER BLOCK with its block 'shadow' =&gt; " + hoisting);
             // THE moral
             alert("The Hoisting MORAL: ALL local variables (even from blocks) are pre-defined/hoisted by JavaScript Runtime in front of the method body !\nDYI to make it clear !");
-        })(); //self-executing function 
+        })(); //self-executing function
     &lt;/script&gt;
-&lt;/body&gt;</pre>
+&lt;/body&gt;
+```
 
 Thank you <a title="@devstonez" href="https://twitter.com/devstonez" target="_blank">Dev{eloper} Stonez (@devstonez)</a> for the tip.

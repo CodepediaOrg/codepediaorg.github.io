@@ -5,7 +5,7 @@ description: "Snippet from nginx config file that redirects all requests (http a
 author: ama
 permalink: /ama/how-to-redirect-domain-to-www-url-with-nginx
 published: true
-categories: [nginx]
+categories: [infrastructure, networking]
 tags: [bookmarksdev, nginx, networking]
 ---
 

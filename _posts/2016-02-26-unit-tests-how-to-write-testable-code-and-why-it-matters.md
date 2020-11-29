@@ -21,14 +21,9 @@ fsb_social_twitter:
 fsb_social_pinterest:
   - 0
 categories:
-  - qa
   - testing
 tags:
-  - '#BestPractices'
-  - '#DesignPatterns'
-  - '#OOP'
-  - '#QA'
-  - '#UnitTesting'
+  - 'unit-testing'
   - 'C#'
   - testing
 ---
@@ -258,7 +253,7 @@ public void GetTimeOfDay_At6AM_ReturnsMorning()
 </p>
 
 <pre class="lang:default decode:true">public static string GetTimeOfDay(DateTime dateTime)
-{    
+{
     if (dateTime.Hour &gt;= 0 && dateTime.Hour &lt; 6)
     {
         return "Night";

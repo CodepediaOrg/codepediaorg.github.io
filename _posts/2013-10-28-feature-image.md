@@ -2,6 +2,7 @@
 layout: post
 title: Sample Post with Feature Image
 description: "Sample Post with Feature Image"
+published: false
 tags: [sample post]
 image:
     feature: feature.jpg

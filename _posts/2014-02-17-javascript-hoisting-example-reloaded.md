@@ -13,7 +13,7 @@ tags:
   - html
   - hoisting
 ---
-<pre class="lang:xhtml decode:true crayon-selected" title="HTML page containing JavaScript hoisting example">&lt;head&gt;
+
 ```html
 &lt;title&gt;Hoisting example&lt;/title&gt;
 &lt;/head&gt;

@@ -13,6 +13,7 @@ tags:
   - html
   - hoisting
 ---
+
 ```html
 &lt;head&gt;
 &lt;title&gt;Hoisting example&lt;/title&gt;

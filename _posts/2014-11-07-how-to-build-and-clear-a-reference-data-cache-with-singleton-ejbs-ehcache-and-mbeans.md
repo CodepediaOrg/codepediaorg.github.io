@@ -2,7 +2,7 @@
 id: 2084
 title: How to build and clear a reference data cache with singleton EJBs, Ehcache and MBeans
 date: 2014-11-07T16:15:42+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=2084
 permalink: /ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-ehcache-and-mbeans/
@@ -72,13 +72,13 @@ public class ReferenceDataCacheBean implements ReferenceDataCache {
 
 	private CacheManager cacheManager;
 
-	private Cache refDataEHCache = null; 	
+	private Cache refDataEHCache = null;
 
 	@EJB
 	ReferenceDataLogic referenceDataService;
 
 	@PostConstruct
-	public void initialize(){		
+	public void initialize(){
 
 		cacheManager = CacheManager.getInstance();
 		CacheConfiguration cacheConfiguration = new CacheConfiguration("referenceDataCache", 1000);
@@ -101,7 +101,7 @@ public class ReferenceDataCacheBean implements ReferenceDataCache {
 			refDataEHCache.putIfAbsent(new Element(ALL_REFERENCE_DATA_KEY, referenceData));
 
 			return referenceData;
-		}		
+		}
 	}
 
 	@Override
@@ -126,7 +126,7 @@ Let&#8217;s break now the code into the different parts:
 </p>
 
 <pre class="lang:java decode:true" title="Ehcache initialization">@PostConstruct
-	public void initialize(){		
+	public void initialize(){
 
 		cacheManager = CacheManager.create();
 
@@ -180,7 +180,7 @@ public ReferenceData getReferenceData() {
 		refDataEHCache.put(new Element(ALL_REFERENCE_DATA_KEY, referenceData));
 
 		return referenceData;
-	}		
+	}
 }</pre>
 
 <p style="text-align: justify;">
@@ -226,7 +226,7 @@ The method exposed will only allow the reset of the cache via JMX:
 
 <pre class="lang:java decode:true ">@MXBean
 public interface CacheResetMXBean {
-    void resetReferenceDataCache();    
+    void resetReferenceDataCache();
 }</pre>
 
 <p style="text-align: justify; padding-left: 30px;">
@@ -299,13 +299,13 @@ public class ReferenceDataResource {
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 	public Response getReferenceData(@QueryParam("version") String version) {
-		ReferenceData referenceData = referenceDataCache.getReferenceData();				
+		ReferenceData referenceData = referenceDataCache.getReferenceData();
 
 		if(version!=null && version.equals(referenceData.getVersion())){
-			return Response.status(Status.NOT_MODIFIED).entity("Reference data was not modified").build();				
+			return Response.status(Status.NOT_MODIFIED).entity("Reference data was not modified").build();
 		} else {
 			return Response.status(Status.OK)
-					.entity(referenceData).build();				
+					.entity(referenceData).build();
 		}
 	}
 }</pre>

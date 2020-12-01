@@ -1,38 +1,17 @@
 ---
-id: 1691
 title: How to use the new Apache Http Client to make a HEAD request
 date: 2014-08-08T20:47:44+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1691
 permalink: /ama/how-to-use-the-new-apache-http-client-to-make-a-head-request/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:50:"https://github.com/podcastpedia/podcastpedia-batch";s:11:"ribbon-type";i:10;}'
-dsq_thread_id:
-  - 2911650145
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - java
+  - tutorial
 tags:
-  - apache http client
+  - java
   - etag
   - http
-  - http client
-  - http header
-  - last-modified
+  - httpclient
+  - http-headers
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

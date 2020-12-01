@@ -2,30 +2,15 @@
 id: 66
 title: Spring 3 and Tiles 2 Integration
 date: 2013-07-29T14:47:12+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=66
 permalink: /ama/spring-3-and-tiles-2-integration/
-dsq_thread_id:
-  - 1544101307
-fsb_social_facebook:
-  - 1
-fsb_show_social:
-  - 0
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - spring
+  - tutorial
 tags:
   - spring
-  - spring mvc
-  - tiles
+  - spring-mvc
+  - apache-tiles
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
@@ -320,24 +305,3 @@ We promise to only share high quality podcasts and episodes.
 
   1. <a title="Apache Tiles" href="http://tiles.apache.org/" target="_blank">http://tiles.apache.org/</a>
   2. <a title="Springsource" href="http://www.springsource.org/" target="_blank">http://www.springsource.org/</a>
-
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>

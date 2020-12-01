@@ -2,35 +2,12 @@
 id: 769
 title: Spring caching with Ehcache
 date: 2013-10-23T09:14:18+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=769
 permalink: /ama/spring-caching-with-ehcache/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 5
-dsq_thread_id:
-  - 1889949003
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-fsb_social_google:
-  - 13
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:49:"https://github.com/podcastpedia/podcastpedia-web/";s:11:"ribbon-type";i:10;}'
-dsq_needs_sync:
-  - 1
 categories:
-  - optimization
-  - spring
+  - tutorial
 tags:
-  - cache
   - caching
   - ehcache
   - optimization

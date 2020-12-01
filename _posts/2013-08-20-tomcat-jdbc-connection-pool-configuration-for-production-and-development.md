@@ -2,40 +2,16 @@
 id: 485
 title: Tomcat JDBC Connection Pool configuration for production and development
 date: 2013-08-20T11:29:13+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=485
 permalink: /ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 19
-dsq_thread_id:
-  - 1620039394
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-fsb_social_google:
-  - 12
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:49:"https://github.com/podcastpedia/podcastpedia-web/";s:11:"ribbon-type";i:10;}'
 categories:
-  - development
-  - optimization
-  - tomcat
+  - article
 tags:
   - apache
   - dbcp
-  - dbcp-common
-  - development
-  - jdbc configuration
+  - jdbc
   - pool
-  - production
   - tomcat
 ---
 <p style="text-align: justify;">

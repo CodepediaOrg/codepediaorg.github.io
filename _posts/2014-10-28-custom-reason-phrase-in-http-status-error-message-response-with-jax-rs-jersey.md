@@ -2,7 +2,7 @@
 id: 2051
 title: Custom Reason Phrase in HTTP status error message response with JAX-RS (Jersey)
 date: 2014-10-28T20:15:08+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=2051
 permalink: /ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/

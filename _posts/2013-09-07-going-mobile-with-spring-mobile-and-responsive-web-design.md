@@ -2,34 +2,18 @@
 id: 543
 title: Going mobile with Spring mobile and responsive web design
 date: 2013-09-07T06:57:51+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=543
 permalink: /ama/going-mobile-with-spring-mobile-and-responsive-web-design/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 3
-dsq_thread_id:
-  - 1725153395
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
+  - article
+tags:
   - java
   - spring
-tags:
   - css
-  - css3
-  - mobile
-  - responsive design
+  - responsive-design
   - spring
-  - spring mobile
+  - spring-mobile
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
@@ -232,41 +216,3 @@ We promise to only share high quality podcasts and episodes.
   2. <a title="Spring Mobile Hello World Example" href="http://www.srccodes.com/p/article/25/spring-mobile-hello-world-example-that-includes-deviceresolver-sitepreference-urlpath-siteswitcher-and-litedevicedelegatingviewresolver" target="_blank">Spring Mobile Hello World Example that includes DeviceResolver, SitePreference, urlPath SiteSwitcher and LiteDeviceDelegatingViewResolver</a> (Abhijit Ghosh)
   3. <a title="Media queries" href="http://css-tricks.com/snippets/css/media-queries-for-standard-devices/" target="_blank">Media queries for standard devices</a>
   4. <a title="Responsive Grid System" href="http://www.responsivegridsystem.com/" target="_blank">Responsive Grid System</a>
-
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>
-
-Adrian&#8217;s favorite Spring books
-
-<div class="amazon_book">
-</div>
-
-<div class="amazon_book">
-</div>
-
-<div class="amazon_book">
-</div>
-
-<div class="amazon_book">
-</div>
-
-<div class="clear">
-</div>

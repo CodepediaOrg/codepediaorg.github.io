@@ -2,32 +2,19 @@
 id: 1697
 title: VelocityEngine Spring Java Config
 date: 2014-07-22T06:55:01+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=1697
 permalink: /ama/velocityengine-spring-java-config/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 1
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 2863114755
 categories:
-  - java
-  - spring
+  - article
 tags:
   - configuration
   - velocity
-  - xml to java config
+  - java
+  - spring
 ---
+
 This is a first post in a series of short code snippets that will present the configuration of Spring beans from XML to Java.
 
 **XML:**
@@ -57,7 +44,7 @@ public VelocityEngine velocityEngine() throws VelocityException, IOException{
 }</pre>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" /> 
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong>Adrian Matei</strong>

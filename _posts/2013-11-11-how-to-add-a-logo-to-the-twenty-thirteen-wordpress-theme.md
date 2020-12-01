@@ -1,32 +1,12 @@
 ---
-id: 915
 title: How to add a logo to the Twenty Thirteen WordPress theme
 date: 2013-11-11T21:09:59+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=915
 permalink: /ama/how-to-add-a-logo-to-the-twenty-thirteen-wordpress-theme/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 7
-dsq_thread_id:
-  - 1957130292
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-fsb_social_google:
-  - 4
 categories:
-  - WordPress
+  - article
 tags:
-  - 2013
-  - logo
-  - theme
-  - twenty thirteen
   - wordpress
 ---
 <p style="text-align: justify;">

@@ -1,35 +1,16 @@
 ---
-id: 841
 title: 'SEO: Friendly URL construction with Spring MVC'
 date: 2013-11-06T07:29:42+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=841
 permalink: /ama/seo-friendly-url-construction-with-spring-mvc/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 1
-dsq_thread_id:
-  - 1942061724
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - optimization
-  - seo
-  - spring
+  - tutorial
 tags:
-  - construction
-  - friendly
   - seo
+  - optimization
   - spring
-  - spring mvc
+  - spring-mvc
   - url
 ---
 <div id="toc_container" class="no_bullets">

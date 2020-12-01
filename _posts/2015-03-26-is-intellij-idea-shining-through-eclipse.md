@@ -2,7 +2,7 @@
 id: 2253
 title: Is IntelliJ IDEA shining through Eclipse?
 date: 2015-03-26T14:16:47+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=2253
 permalink: /ama/is-intellij-idea-shining-through-eclipse/

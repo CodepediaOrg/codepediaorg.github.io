@@ -1,30 +1,14 @@
 ---
-id: 5
 title: Troubleshooting WordPress installation on GoDaddy VPS
 date: 2013-07-25T14:50:14+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=5
 permalink: /ama/troubleshooting-wordpress-on-godaddy-vps-account/
-dsq_thread_id:
-  - 1533849201
-fsb_social_facebook:
-  - 3
-fsb_show_social:
-  - 0
-fsb_social_google:
-  - 1
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - troubleshooting
+  - article
 tags:
+  - blogging
   - apache
-  - GoDaddy
   - installation
   - mysql
   - php

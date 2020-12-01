@@ -5,7 +5,7 @@ description: "Practical MongoDB shell commands every developer should know, or I
 author: ama
 permalink: /ama/practical-mongodb-shell-commands-every-developer-should-know
 published: true
-categories: [mongodb]
+categories: [nosql]
 tags: [bookmarksdev, mongodb]
 ---
 

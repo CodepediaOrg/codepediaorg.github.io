@@ -1,34 +1,14 @@
 ---
-id: 1244
 title: How to log in Spring with SLF4J and Logback
 date: 2014-03-21T10:35:16+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1244
 permalink: /ama/how-to-log-in-spring-with-slf4j-and-logback/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 4
-fsb_social_google:
-  - 13
-fsb_social_linkedin:
-  - 5
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 2475652254
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
 categories:
+  - tutorial
+tags:
   - java
   - spring
-tags:
-  - log
   - logback
   - logging
   - slf4j
@@ -167,7 +147,7 @@ _The logback-access module integrates with Servlet containers, such as Tomcat an
     		  &lt;groupId&gt;commons-logging&lt;/groupId&gt;
     		  &lt;artifactId&gt;commons-logging&lt;/artifactId&gt;
     	   &lt;/exclusion&gt;
-    	&lt;/exclusions&gt;			
+    	&lt;/exclusions&gt;
     &lt;/dependency&gt;
   </code>
 </pre>
@@ -184,10 +164,10 @@ Because I am using LogBack, which implements SLF4J directly, you will need to de
     	&lt;artifactId&gt;logback-classic&lt;/artifactId&gt;
     	&lt;version&gt;${logback.version}&lt;/version&gt;
     &lt;/dependency&gt;
-    &lt;dependency&gt;                                    
-    	&lt;groupId&gt;org.slf4j&lt;/groupId&gt;                
-    	&lt;artifactId&gt;jcl-over-slf4j&lt;/artifactId&gt;     
-    	&lt;version&gt;${jcloverslf4j.version}&lt;/version&gt;  
+    &lt;dependency&gt;
+    	&lt;groupId&gt;org.slf4j&lt;/groupId&gt;
+    	&lt;artifactId&gt;jcl-over-slf4j&lt;/artifactId&gt;
+    	&lt;version&gt;${jcloverslf4j.version}&lt;/version&gt;
     &lt;/dependency&gt;
   </code>
 </pre>
@@ -227,12 +207,12 @@ To configure Logback all you have to do is place the file `logback.xml` in the c
     			&lt;FileNamePattern&gt;rest-demo.%d{yyyy-MM-dd}.log&lt;/FileNamePattern&gt;
 
     			&lt;!-- keep 30 days' worth of history --&gt;
-    			&lt;maxHistory&gt;30&lt;/maxHistory&gt;			
+    			&lt;maxHistory&gt;30&lt;/maxHistory&gt;
     		&lt;/rollingPolicy&gt;
 
     		&lt;encoder&gt;
     			&lt;Pattern&gt;%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg %n&lt;/Pattern&gt;
-    		&lt;/encoder&gt; 	    
+    		&lt;/encoder&gt;
       	&lt;/appender&gt;
       	&lt;appender name="minuteRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;
     		&lt;rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"&gt;
@@ -240,13 +220,13 @@ To configure Logback all you have to do is place the file `logback.xml` in the c
     			&lt;FileNamePattern&gt;c:/tmp/minutes/rest-demo-minute.%d{yyyy-MM-dd_HH-mm}.log&lt;/FileNamePattern&gt;
 
     			&lt;!-- keep 30 minutes' worth of history --&gt;
-    			&lt;maxHistory&gt;30&lt;/maxHistory&gt;			
+    			&lt;maxHistory&gt;30&lt;/maxHistory&gt;
     		&lt;/rollingPolicy&gt;
 
     		&lt;encoder&gt;
     			&lt;Pattern&gt;%-4relative [%thread] %-5level %logger{35} - %msg %n&lt;/Pattern&gt;
-    		&lt;/encoder&gt; 	    
-      	&lt;/appender&gt;  	
+    		&lt;/encoder&gt;
+      	&lt;/appender&gt;
 
     	&lt;logger name="org.codingpedia" additivity="false"&gt;
     	    &lt;level value="DEBUG" /&gt;

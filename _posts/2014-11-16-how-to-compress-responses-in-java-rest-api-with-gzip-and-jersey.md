@@ -2,7 +2,7 @@
 id: 2090
 title: How to compress responses in Java REST API with GZip and Jersey
 date: 2014-11-16T15:47:59+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=2090
 permalink: /ama/how-to-compress-responses-in-java-rest-api-with-gzip-and-jersey/
@@ -61,7 +61,7 @@ tags:
 
         packages("org.codingpedia.demo.rest");
 		register(EntityFilteringFeature.class);
-		EncodingFilter.enableFor(this, GZipEncoder.class);		
+		EncodingFilter.enableFor(this, GZipEncoder.class);
 
 	}
 }</code></pre>

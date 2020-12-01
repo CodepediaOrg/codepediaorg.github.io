@@ -15,11 +15,11 @@ tags:
 ---
 
 ```html
-&lt;head&gt;
+<head>
 &lt;title&gt;Hoisting example&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;h1&gt;Hoisting in action&lt;/h1&gt;
+    &lt;h1>Hoisting in action&lt;/h1&gt;
     &lt;script type="application/javascript"&gt;
         var hoisting = "global variable";
         (function(){

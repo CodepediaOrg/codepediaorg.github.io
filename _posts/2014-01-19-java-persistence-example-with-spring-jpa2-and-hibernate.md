@@ -1,35 +1,14 @@
 ---
-id: 1097
 title: Java Persistence Example with Spring, JPA2 and Hibernate
 date: 2014-01-19T22:51:41+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1097
 permalink: /ama/java-persistence-example-with-spring-jpa2-and-hibernate/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 0
-dsq_thread_id:
-  - 2145789827
-fsb_social_google:
-  - 11
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:68:"https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate";s:11:"ribbon-type";i:4;}'
 categories:
+  - tutorial
+tags:
   - java
   - spring
-tags:
-  - demo
-  - example
   - hibernate
   - jpa
   - jpa2

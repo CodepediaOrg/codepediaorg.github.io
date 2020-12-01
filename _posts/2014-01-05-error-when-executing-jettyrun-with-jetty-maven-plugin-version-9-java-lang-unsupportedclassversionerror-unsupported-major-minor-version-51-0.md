@@ -1,36 +1,19 @@
 ---
-id: 1061
 title: 'Error when executing &#8220;jetty:run&#8221; with jetty-maven-plugin version 9 : java.lang.UnsupportedClassVersionError Unsupported major.minor version 51.0'
 date: 2014-01-05T16:16:27+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1061
 permalink: /ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 2
-dsq_thread_id:
-  - 2097774742
-fsb_social_google:
-  - 0
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - java
-  - troubleshooting
+  - article
 tags:
-  - bug
+  - java
+  - debugging
   - eclipse
   - jdk
   - jetty
-  - jetty-maven-plugin
-  - maven
-  - plugin
+  - maven-plugin
+
 ---
 ## Tools involved
 

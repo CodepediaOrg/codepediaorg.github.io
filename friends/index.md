@@ -2,7 +2,7 @@
 id: 1912
 title: Coding Friend Program
 date: 2014-10-10T12:44:06+00:00
-author: Adrian Matei
+author: ama
 layout: page
 guid: http://www.codepedia.org/?page_id=1912
 dsq_thread_id:

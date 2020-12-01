@@ -2,7 +2,7 @@
 id: 1903
 title: How to connect to MongoDB from a Java EE stateless application
 date: 2014-10-02T17:24:40+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=1903
 permalink: /ama/how-to-connect-to-mongodb-from-a-java-ee-stateless-application/
@@ -74,14 +74,14 @@ import com.mongodb.MongoClient;
 @Singleton
 @ConcurrencyManagement(ConcurrencyManagementType.CONTAINER)
 public class MongoClientProvider {
-		
+
 	private MongoClient mongoClient = null;
-		
+
 	@Lock(LockType.READ)
-	public MongoClient getMongoClient(){	
+	public MongoClient getMongoClient(){
 		return mongoClient;
 	}
-	
+
 	@PostConstruct
 	public void init() {
 		String mongoIpAddress = "x.x.x.x";
@@ -91,9 +91,9 @@ public class MongoClientProvider {
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}		
+		}
 	}
-		
+
 }
 </pre>
 
@@ -129,24 +129,24 @@ import com.mongodb.util.JSON;
 
 @Stateless
 public class TestMongoClientProvider {
-	
+
 	@EJB
 	MongoClientProvider mongoClientProvider;
-	
+
 	public Set&lt;String&gt; getCollectionNames(){
-		
+
 		MongoClient mongoClient = mongoClientProvider.getMongoClient();
-		
-		DB db = mongoClient.getDB("myMongoDB");		
+
+		DB db = mongoClient.getDB("myMongoDB");
 		Set&lt;String&gt; colls = db.getCollectionNames();
-		
+
 		for (String s : colls) {
 		    System.out.println(s);
-		}		
-		
+		}
+
 		return colls;
 	}
-	
+
 }
 </pre>
 

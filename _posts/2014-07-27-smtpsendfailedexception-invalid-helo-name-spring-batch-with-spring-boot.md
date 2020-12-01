@@ -2,35 +2,19 @@
 id: 1707
 title: 'SMTPSendFailedException &#8220;Invalid HELO name&#8221; &#8211; Spring Batch with Spring Boot'
 date: 2014-07-27T06:46:52+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1707
 permalink: /ama/smtpsendfailedexception-invalid-helo-name-spring-batch-with-spring-boot/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 1
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 2876428870
 categories:
-  - errors
-  - java
+  - article
 tags:
-  - bug
-  - email
+  - java
+  - debugging
   - exception
   - java mail api
   - smtp
-  - spring batch
-  - spring boot
+  - spring-batch
+  - spring-boot
 ---
 If you find yourself getting the following errror, when trying to send an email in Java:
 
@@ -85,7 +69,7 @@ If you find yourself getting the following errror, when trying to send an email 
 					&lt;groupId&gt;javax.mail&lt;/groupId&gt;
 					&lt;artifactId&gt;mail&lt;/artifactId&gt;
 		        &lt;/exclusion&gt;
-		    &lt;/exclusions&gt;				
+		    &lt;/exclusions&gt;
 		&lt;/dependency&gt;
 		&lt;dependency&gt;
 			&lt;groupId&gt;javax.mail&lt;/groupId&gt;

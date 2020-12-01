@@ -2,7 +2,7 @@
 id: 1836
 title: How to build and clear a reference data cache with singleton EJBs and MBeans
 date: 2014-09-19T16:09:15+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=1836
 permalink: /ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-and-mbeans/
@@ -134,19 +134,19 @@ public class ReferenceDataCacheBean implements ReferenceDataCache {
 	@Override
 	@Lock(LockType.READ)
 	public ReferenceData getReferenceData() {
-		if(refDataCache.containsKey(ALL_REFERENCE_DATA_KEY)){			
+		if(refDataCache.containsKey(ALL_REFERENCE_DATA_KEY)){
 			return refDataCache.get(ALL_REFERENCE_DATA_KEY);
 		} else {
 			ReferenceData referenceData = referenceDataService.getReferenceData();
 			refDataCache.put(ALL_REFERENCE_DATA_KEY, referenceData);
 
 			return referenceData;
-		}		
+		}
 	}
 
 	@Override
 	public void evictAll() {
-		refDataCache.clear(); 		
+		refDataCache.clear();
 	}
 	..........
 }</pre>
@@ -272,13 +272,13 @@ public class ReferenceDataResource {
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 	public Response getReferenceData(@QueryParam("version") String version) {
-		ReferenceData referenceData = referenceDataCache.getReferenceData();				
+		ReferenceData referenceData = referenceDataCache.getReferenceData();
 
 		if(version!=null && version.equals(referenceData.getVersion())){
-			return Response.status(Status.NOT_MODIFIED).entity("Reference data was not modified").build();				
+			return Response.status(Status.NOT_MODIFIED).entity("Reference data was not modified").build();
 		} else {
 			return Response.status(Status.OK)
-					.entity(referenceData).build();				
+					.entity(referenceData).build();
 		}
 	}
 }</pre>

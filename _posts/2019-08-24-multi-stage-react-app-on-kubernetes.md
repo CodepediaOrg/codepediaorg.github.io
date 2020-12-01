@@ -6,8 +6,8 @@ Deployments with kubectl, helm charts, kustomize and skaffold are presented."
 author: ama
 permalink: /ama/a-cleaner-multi-stage-deployment-on-kubernetes-of-a-create-react-app-with-kustomize-helm-and-skaffold
 published: true
-categories: [devops, reactjs, kubernetes]
-tags: [reactjs, kubernetes, environment-variables, docker, dockerfile, continuous-deployment, kustomize, helm, skaffold]
+categories: [infrastructure, devops]
+tags: [reactjs, kubernetes, docker, dockerfile, continuous-deployment, kustomize, helm, skaffold]
 ---
 
 Most applications depend on external factors that have different values depending on the environment where they are

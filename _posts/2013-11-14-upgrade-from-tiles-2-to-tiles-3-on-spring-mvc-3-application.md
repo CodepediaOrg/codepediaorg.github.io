@@ -1,32 +1,14 @@
 ---
-id: 931
 title: Upgrade from Tiles 2 to Tiles 3 on Spring MVC 3 application
 date: 2013-11-14T21:29:36+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=931
 permalink: /ama/upgrade-from-tiles-2-to-tiles-3-on-spring-mvc-3-application/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 1
-dsq_thread_id:
-  - 1966447834
-fsb_social_google:
-  - 1
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - spring
+  - article
 tags:
-  - apache
   - spring
-  - tiles
-  - upgrade
+  - apache-tiles
 format: aside
 ---
 <p style="text-align: justify;">
@@ -67,12 +49,12 @@ format: aside
 			&lt;groupId&gt;org.apache.tiles&lt;/groupId&gt;
 			&lt;artifactId&gt;tiles-servlet&lt;/artifactId&gt;
 			&lt;version&gt;${tiles.version}&lt;/version&gt;
-		&lt;/dependency&gt;	
+		&lt;/dependency&gt;
 		&lt;dependency&gt;
 			&lt;groupId&gt;org.apache.tiles&lt;/groupId&gt;
 			&lt;artifactId&gt;tiles-template&lt;/artifactId&gt;
 			&lt;version&gt;${tiles.version}&lt;/version&gt;
-		&lt;/dependency&gt;	
+		&lt;/dependency&gt;
 		&lt;dependency&gt;
 			&lt;groupId&gt;org.apache.tiles&lt;/groupId&gt;
 			&lt;artifactId&gt;tiles-el&lt;/artifactId&gt;
@@ -85,8 +67,8 @@ The next thing was to upgrade to version 3 the `tilesViewResolver` and `tilesCon
 
 <pre class="lang:default mark:5,19 decode:true" title="Tiles configuration in the Spring application context">....................
 &lt;!-- Convenience subclass of UrlBasedViewResolver that supports TilesView (i.e. Tiles definitions) and custom subclasses of it. --&gt;
-&lt;!-- Don't forget to set the order if you declared other ViewResolvers 
---&gt;    
+&lt;!-- Don't forget to set the order if you declared other ViewResolvers
+--&gt;
 &lt;bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver"&gt;
 	&lt;property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" /&gt;
 	&lt;property name="order" value="#{contentNegotiatingResolver.order+1}" /&gt;
@@ -101,13 +83,13 @@ The next thing was to upgrade to version 3 the `tilesViewResolver` and `tilesCon
 &lt;!-- See http://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/web/servlet/view/tiles2/TilesConfigurer.html --&gt;
 &lt;!-- The actual tiles templates are in the tiles-definitions.xml  --&gt;
 
-&lt;bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer"&gt;	
-	&lt;property name="definitions"&gt;		
+&lt;bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer"&gt;
+	&lt;property name="definitions"&gt;
 		&lt;list&gt;
 			&lt;value&gt;/WEB-INF/tile-defs/templates.xml&lt;/value&gt;
 			&lt;value&gt;/WEB-INF/tile-defs/definitions.xml&lt;/value&gt;
-		&lt;/list&gt;		
-	&lt;/property&gt;	
+		&lt;/list&gt;
+	&lt;/property&gt;
 &lt;/bean&gt;
 ....................</pre>
 
@@ -116,13 +98,13 @@ The next thing was to upgrade to version 3 the `tilesViewResolver` and `tilesCon
 In the Tiles definitions templates upgrade to Tiles 3.0 dtd
 
 <pre class="lang:default mark:2 decode:true" title="Tiles definition snippet">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
-&lt;!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"&gt;        
-&lt;tiles-definitions&gt;  
-.........         
+&lt;!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"&gt;
+&lt;tiles-definitions&gt;
+.........
 &lt;/tiles-definitions&gt;</pre>
 
 That&#8217;s it.
 
 P.S.
-  
+
 For a complete example of Tiles integration with Spring MVC see my post &#8211; <a title="Spring 3 and Tiles 2 integration" href="http://www.codepedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration</a>

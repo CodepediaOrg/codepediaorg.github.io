@@ -1,48 +1,22 @@
 ---
-id: 1079
 title: RESTful Web Services Example in Java with Jersey, Spring and MyBatis
 date: 2014-01-11T16:48:00+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1079
 permalink: /ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 28
-dsq_thread_id:
-  - 2108766174
-fsb_social_google:
-  - 6
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:68:"https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis";s:11:"ribbon-type";i:10;}'
 categories:
-  - java
-  - spring
+  - tutorial
 tags:
-  - demo
-  - eclipse
-  - example
-  - failsafe-plugin
-  - integration tests
+  - java
   - jersey
-  - jersey2
   - jetty
-  - jetty-maven-plugin
   - maven
-  - maven-failsafe-plugin
-  - MyBatis
+  - mybatis
   - rest
-  - spring3
-  - web services
+  - spring
+  - rest
+  - mybatis
+  - integration-testing
 ---
 <p class="note_alert" style="text-align: justify;">
   <strong><span style="font-size: 1.2em;">Note:</span> At the time of writing this post I was just starting with REST and Jersey so I  suggest you have a look at  <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank"><span style="font-size: 1.2em;">Tutorial – REST API design and implementation in Java with Jersey and Spring </span> </a>instead. My gained REST knowledge will be from now on reflected in this post, which is already an &#8220;(r)evolution&#8221; regarding REST API design, REST best practices used and backend architecture/implementation supporting the REST API presented in the tutorial.</strong>

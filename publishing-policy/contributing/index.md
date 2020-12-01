@@ -2,7 +2,7 @@
 id: 1035
 title: Become a Coding Contributor
 date: 2013-12-15T20:40:36+00:00
-author: Adrian Matei
+author: ama
 layout: page
 guid: http://www.codepedia.org/?page_id=1035
 dsq_thread_id:

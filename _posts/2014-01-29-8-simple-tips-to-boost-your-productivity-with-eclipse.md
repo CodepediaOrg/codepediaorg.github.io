@@ -1,35 +1,17 @@
 ---
-id: 1121
 title: 8+ simple tips to boost your productivity with Eclipse
 date: 2014-01-29T08:36:12+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1121
 permalink: /ama/8-simple-tips-to-boost-your-productivity-with-eclipse/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 6
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 2189326121
 categories:
-  - development
-  - ide
+  - article
 tags:
-  - development
+  - ide
   - eclipse
   - productivity
-  - shortcuts
+  - shortcut
   - tips
-  - tricks
 ---
 ## <span id="1_References_of_used_classmethod_in_code">1. References of used class/method in code</span>
 

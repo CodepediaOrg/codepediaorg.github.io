@@ -1,37 +1,16 @@
 ---
-id: 1274
 title: Using icon fonts on Podcastpedia.org
 date: 2014-03-26T07:43:22+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1274
 permalink: /ama/using-icon-fonts-on-podcastpedia-org/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 2512346422
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 5
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - Podcastpedia.org
-  - web design
+  - article
 tags:
   - css
-  - css3
-  - font
-  - font icons
   - glyphicons
   - podcastpedia
-  - responsive design
-  - web design
+  - responsive-design
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

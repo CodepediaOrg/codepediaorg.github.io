@@ -2,33 +2,16 @@
 id: 283
 title: 'How To: Enable compression and leverage browser caching with Apache Server'
 date: 2013-08-10T20:00:17+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=283
 permalink: /ama/how-to-enable-compression-and-leverage-browser-caching-with-apache-server/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 1
-dsq_thread_id:
-  - 1593164121
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - optimization
+  - tutorial
 tags:
   - apache
-  - deflate
-  - GoDaddy
   - mobile
-  - pagespeed
-  - site optimization
+  - optimization
 ---
 Looking for ways to improve <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>&#8216; mobile user-friendliness, I have discovered Google&#8217;s <a title="PageSpeed Insights" href="http://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a> . After analyzing the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">home page</a>, a podcast&#8217;s page (<a title="The Naked Scientist Podcast" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science" target="_blank">The Naked Scientists Podcast &#8211; Stripping Down Science</a>), an <a title="Episode page" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/967/Leonardo-Evo-Solution-Die-Serie-zum-Darwin-Jahr/episodes/2/WDR-5-Leonardo-Evo-Solution-Die-Serie-im-Darwin-Jahr-Folge-12-Prima-Klima-vom-30-04-2009" target="_blank">episode page</a> and scoring an average of 70 out of 100 (even worse on mobile) two points needed urgent fixing:
 
@@ -177,24 +160,3 @@ We promise to only share high quality podcasts and episodes.
     <a title="Better Explained - How To Optimize Your Site With HTTP Caching" href="http://betterexplained.com/articles/how-to-optimize-your-site-with-http-caching/http://" target="_blank">http://betterexplained.com/articles/how-to-optimize-your-site-with-http-caching/</a>
   </li>
 </ul>
-
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>

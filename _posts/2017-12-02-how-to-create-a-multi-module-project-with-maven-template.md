@@ -5,26 +5,26 @@ description: ""
 author: ama
 permalink: /ama/how-to-create-a-multi-module-project-with-maven-template
 published: true
-categories: [maven]
+categories: [dependency-management]
 tags: [maven, java, javaee]
 ---
 
 Did you find yourself one or several times, copying your favourite java project, renaming it, removing files, keeping
-some best practice classes and so on, all that to create new projects similar to it? This is time consuming and can 
+some best practice classes and so on, all that to create new projects similar to it? This is time consuming and can
 be very annoying... Well, you might wanna consider instead creating a maven archetype out of the template project
- and use to create new projects. Not only this will save you time, but it will make you look with a more 
+ and use to create new projects. Not only this will save you time, but it will make you look with a more
  critical view on your "best of breed" project. In this blog post I will show how to create a maven archetype based
-  on an existing project and how to generate a new project from this template.  
+  on an existing project and how to generate a new project from this template.
 
 <!--more-->
 
 * TOC
-{:toc}  
+{:toc}
 
 ## Template project selection
 Select a "template" project your new project is most similar to. For the purpose of this tutorial we'll use the [Podcastpedia](https://github.com/CodepediaOrg/podcastpedia)
  multi module project:
-  
+
 ```shell
 git clone https://github.com/CodepediaOrg/podcastpedia.git
 ```
@@ -77,7 +77,7 @@ We should get a **BUILD SUCCESS** informing us about the creation of the _jar_ a
 [INFO] ------------------------------------------------------------------------
 ```
 
-The plugin generates the template files we are interested in, in the _target_ directory. With a simple `tree` command we 
+The plugin generates the template files we are interested in, in the _target_ directory. With a simple `tree` command we
 can better see the generated structure:
 
 ```shell
@@ -114,7 +114,7 @@ target/
                 └── projects
                     └── basic
 ```
- 
+
 <span class="highlight-yellow"> We can (maven) install and run the generated jar file ( _podcastpedia-archetype-1.2.0.jar_) right away
 , but we might want to do some adjustments first</span>
 
@@ -128,7 +128,7 @@ Let's inspect for a bit the important files in the _archetype_ folder:
 2. the _src/_ folder holds the archetype project source. The _src/main/resources_ contains again two important sub-folders
   * _archetype-resources_ - contains the project template and what will be generated when the archetype is run
   * _META-INF/maven_ - contains the _archetype-metadata.xml file_, which stores the metadata about the archetype
- 
+
 Let's have a better look at the key files here:
 
 ### archetype-metadata.xml
@@ -138,7 +138,7 @@ This metadata, found under _src/main/resources/META-INF/maven/archetype-metadata
 1. additional properties, with corresponding default values
 2. project's generated files in filesets
 3. inner modules of the archetype, which enable the creation of multi-module projects using a single archetype
- 
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
@@ -510,12 +510,12 @@ This metadata, found under _src/main/resources/META-INF/maven/archetype-metadata
   </modules>
 </archetype-descriptor>
 ```
- 
+
 <p class="note_normal">
      If you are generating from an IntelliJ project, you'd want to remove the <em>.idea/.iml</em> related fileSets entries from the _archetype-metadata.xml_
      Actually you'd kind want to remove all files and directories listed in <em>.gitignore</em>
 </p>
- 
+
 
 The **name** attribute from header (here _podcastpedia_):
 
@@ -526,11 +526,11 @@ The **name** attribute from header (here _podcastpedia_):
     name="podcastpedia"
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-``` 
+```
 will be displayed to the user when choosing an archetype to generate a project from.
 
-The project's generated files are stored in filesets. 
-The root fileset (directly under the `archetype-descriptor` element) includes only relevant files 
+The project's generated files are stored in filesets.
+The root fileset (directly under the `archetype-descriptor` element) includes only relevant files
 (_.gitignore_, _README.md_, _.editorconfig_) that are to be found in the root/parent project:
 
 ```xml
@@ -558,7 +558,7 @@ Filesets can be defined from the root directory of the module or project by havi
 #### Defining multiple modules in the archetype metadata
 
 Modules are specified via `<module>` entries under `<modules>`.
- Let's consider the **admin** module: 
+ Let's consider the **admin** module:
 
 ```xml
 <modules>
@@ -628,7 +628,7 @@ Modules are specified via `<module>` entries under `<modules>`.
 The module entry has the following attributes:
 * id - this is the name of the module that will be generated
 * dir - the template directory
-* name - the **artifact id* that will be put in the pom file 
+* name - the **artifact id* that will be put in the pom file
 
 You can also ues `excludes` to exclude files/files types from generation. Let's have a look at the following fileset:
 
@@ -647,12 +647,12 @@ You can also ues `excludes` to exclude files/files types from generation. Let's 
 Note:
 
 * all the _.java_ files found under _src/main/java_ folder are included in the generated project, except for _StringUtils.java_
-* filesets can be "filtered" (`filtered="true"`), which means the selected files will be used as 
+* filesets can be "filtered" (`filtered="true"`), which means the selected files will be used as
 [Velocity templates](http://velocity.apache.org/engine/releases/velocity-1.5/user-guide.html)
 They can be non-filtered, which means the selected files will be copied without modification
 * the fileset is "packaged" (`packaged="true"`), which means the selected files will be generated/copied in a directory
 structure that is prepended by the package property. That is mostly likely true for _.java_ files
-* 'encoding' - specifies the encoding when filtering content 
+* 'encoding' - specifies the encoding when filtering content
 
 > You might one remove some file types, or instead of using wild cards (*/**) specify just one representative class/file ...
 
@@ -669,19 +669,19 @@ we would have had generated something like the following:
     </module>
     <module id="${rootArtifactId}-web-ui" dir="__rootArtifactId__-web-ui" name="${rootArtifactId}--web-ui">
         ..........
-    </module>                 
+    </module>
     ..........
 </modules>
 ```
 
-> After developing quite a few Java multi module projects, I now recommend using the `rootArtifactId` in the sub-modules names  
+> After developing quite a few Java multi module projects, I now recommend using the `rootArtifactId` in the sub-modules names
 
 #### Define additional properties
 
 The main properties that are used by the Velocity engine during a project's file generation are `groupId`, `artifactId`, `version` and `package`.
  It is also possible to define additional propertie that must be valued before the file generation. These additional properties can be provided with default values.
   The additional properties are defined in the _archetype-metadata.xml_ in the `requiredProperties` element:
-  
+
 ```xml
 
 <archetype-descriptor name="backend">
@@ -710,22 +710,22 @@ $ mvn install
 
 
 [INFO] Scanning for projects...
-[INFO]                                                                         
+[INFO]
 [INFO] ------------------------------------------------------------------------
 [INFO] Building podcastpedia-archetype 1.2.0
 [INFO] ------------------------------------------------------------------------
-[INFO] 
+[INFO]
 [INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ podcastpedia-archetype ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 [INFO] Copying 590 resources
-[INFO] 
+[INFO]
 [INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ podcastpedia-archetype ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 [INFO] Copying 2 resources
-[INFO] 
+[INFO]
 [INFO] --- maven-archetype-plugin:3.0.1:jar (default-jar) @ podcastpedia-archetype ---
 [INFO] Building archetype jar: /Users/ama/podcastpedia/target/generated-sources/archetype/target/podcastpedia-archetype-1.2.0
-[INFO] 
+[INFO]
 [INFO] --- maven-archetype-plugin:3.0.1:integration-test (default-integration-test) @ podcastpedia-archetype ---
 [INFO] Processing Archetype IT project: basic
 [INFO] ----------------------------------------------------------------------------
@@ -741,22 +741,22 @@ $ mvn install
 [INFO] Parameter: groupId, Value: archetype.it
 adrians-mbp:archetype ama$ mvn install
 [INFO] Scanning for projects...
-[INFO]                                                                         
+[INFO]
 [INFO] ------------------------------------------------------------------------
 [INFO] Building podcastpedia-archetype 1.2.0
 [INFO] ------------------------------------------------------------------------
-[INFO] 
+[INFO]
 [INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ podcastpedia-archetype ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 [INFO] Copying 590 resources
-[INFO] 
+[INFO]
 [INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ podcastpedia-archetype ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 [INFO] Copying 2 resources
-[INFO] 
+[INFO]
 [INFO] --- maven-archetype-plugin:3.0.1:jar (default-jar) @ podcastpedia-archetype ---
 [INFO] Building archetype jar: /Users/ama/podcastpedia/target/generated-sources/archetype/target/podcastpedia-archetype-1.2.0
-[INFO] 
+[INFO]
 [INFO] --- maven-archetype-plugin:3.0.1:integration-test (default-integration-test) @ podcastpedia-archetype ---
 [INFO] Processing Archetype IT project: basic
 [INFO] ----------------------------------------------------------------------------
@@ -779,11 +779,11 @@ adrians-mbp:archetype ama$ mvn install
 [INFO] Parent element not overwritten in /Users/ama/podcastpedia/target/generated-sources/archetype/target/test-classes/projects/basic/project/basic/sql/pom.xml
 [INFO] Parent element not overwritten in /Users/ama/podcastpedia/target/generated-sources/archetype/target/test-classes/projects/basic/project/basic/sql-migration/pom.xml
 [INFO] Project created from Archetype in dir: /Users/ama/podcastpedia/target/generated-sources/archetype/target/test-classes/projects/basic/project/basic
-[INFO] 
+[INFO]
 [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ podcastpedia-archetype ---
 [INFO] Installing /Users/ama/podcastpedia/target/generated-sources/archetype/target/podcastpedia-archetype-1.2.0.jar to /Users/ama/.m2/repository/org/podcastpedia/podcastpedia-archetype/1.2.0/podcastpedia-archetype-1.2.0.jar
 [INFO] Installing /Users/ama/podcastpedia/target/generated-sources/archetype/pom.xml to /Users/ama/.m2/repository/org/podcastpedia/podcastpedia-archetype/1.2.0/podcastpedia-archetype-1.2.0.pom
-[INFO] 
+[INFO]
 [INFO] --- maven-archetype-plugin:3.0.1:update-local-catalog (default-update-local-catalog) @ podcastpedia-archetype ---
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
@@ -798,7 +798,7 @@ Now the archetype is present in the local maven repository.
 
 > Use `mvn deploy` command if you want to upload the maven archetype to a Nexus server for example...
 
-### Generate new project base on archetype 
+### Generate new project base on archetype
 
 Finally move to the place, where you want to create the new project and use the newly created archetype.
 
@@ -949,7 +949,7 @@ $ tree -L 5 /tmp/archetype/
 ```
 
 The sub-directories listed contain files/file-types specified via `includes`, and miss `excluded` file/files-types
- 
+
 ## References
 
 * [Maven Archetype](http://maven.apache.org/archetype/index.html)

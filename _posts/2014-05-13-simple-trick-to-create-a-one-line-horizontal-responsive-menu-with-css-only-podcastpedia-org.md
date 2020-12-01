@@ -1,37 +1,18 @@
 ---
-id: 1402
 title: 'Simple trick to create a one line horizontal responsive menu with CSS only &#8211; Podcastpedia.org'
 date: 2014-05-13T22:14:02+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1402
 permalink: /ama/simple-trick-to-create-a-one-line-horizontal-responsive-menu-with-css-only-podcastpedia-org/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 2682832643
-fsb_social_facebook:
-  - 3
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - Podcastpedia.org
-  - web design
+  - article
 tags:
   - css
-  - css3
   - podcastpedia
   - responsive
-  - responsive design
+  - responsive-design
   - sass
   - scss
-  - web design
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

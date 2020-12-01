@@ -1,34 +1,18 @@
 ---
-id: 717
 title: reCAPTCHA and Spring MVC integration
 date: 2013-10-17T09:46:42+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=717
 permalink: /ama/recaptcha-and-spring-mvc-integration/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 7
-dsq_thread_id:
-  - 1866837901
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - spring
+  - article
 tags:
   - captcha
   - java
   - javascript
   - recaptcha
   - spring
-  - spring mvc
+  - spring-mvc
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

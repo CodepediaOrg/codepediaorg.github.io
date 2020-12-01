@@ -2,26 +2,13 @@
 id: 397
 title: Story of Podcastpedia.org
 date: 2013-08-12T21:23:10+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=397
 permalink: /ama/story-of-podcastpedia-org/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 15
-dsq_thread_id:
-  - 1601515698
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - Podcastpedia.org
+  - article
+tags:
+  - showdev
 ---
 ### The beginnings
 
@@ -136,25 +123,3 @@ but any extra hand is <a href="mailto:ama@codepedia.org?Subject=Support%20Podcas
   <span style="color: #ff0000;"><em>The podcasts listed in the directory have been mainly collected from the internet and some have been recommended directly. </em></span><em><span style="color: #ff0000;"><a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> has no influence on the contents and details of the podcasts. These are provided from the producers&#8217; websites. For @Copyright information please visit the individual producer&#8217;s website &#8211; this is listed with every podcast in the directory. If you are a podcast producer and you don&#8217;t want your podcast listed in the directory please</span> <span style="color: #ff0000;">contact us <strong>contact [AT] codingpedia DOT org</strong> or <strong>contact [AT] podcastpedia DOT org </strong></span></em>
 </p>
 
-<p style="text-align: justify;">
-  <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-    <p id="about_author_header">
-      <strong>Adrian Matei</strong>
-    </p>
-
-    <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-    </div>
-
-    <div id="follow_social" style="clear: both;">
-      <div id="social_logos">
-         <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-      </div>
-
-      <div class="clear">
-      </div>
-    </div>
-  </div>
-</p>

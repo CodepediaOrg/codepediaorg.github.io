@@ -1,34 +1,19 @@
 ---
-id: 994
 title: How to handle session timeout exceptions in Spring MVC
 date: 2013-12-01T13:37:09+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=994
 permalink: /ama/how-to-handle-session-timeout-exceptions-in-spring-mvc/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 3
-dsq_thread_id:
-  - 2014641170
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - spring
-  - troubleshooting
+  - tutorial
 tags:
-  - bug
-  - debug
-  - exception
+  - java
+  - spring-mvc
+  - debugging
+  - exception-handling
   - session
   - timeout
+  - exception
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

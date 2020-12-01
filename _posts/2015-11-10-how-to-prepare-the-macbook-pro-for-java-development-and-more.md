@@ -2,7 +2,7 @@
 id: 2521
 title: How to prepare the MacBook Pro for Java development and more
 date: 2015-11-10T21:23:41+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=2521
 permalink: /ama/how-to-prepare-the-macbook-pro-for-java-development-and-more/

@@ -1,33 +1,14 @@
 ---
-id: 983
 title: Start two or more Tomcat instances on localhost machine
 date: 2013-11-27T21:16:29+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=983
 permalink: /ama/start-two-or-more-tomcat-instances-on-localhost-machine/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 3
-dsq_thread_id:
-  - 2005344231
-fsb_social_google:
-  - 2
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - development
-  - tomcat
-  - troubleshooting
+  - article
 tags:
-  - debug
+  - debugging
   - deployment
-  - instance
   - tomcat
 format: aside
 ---

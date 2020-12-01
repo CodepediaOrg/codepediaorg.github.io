@@ -2,7 +2,7 @@
 id: 1851
 title: jQuery ui autocomplete not working in Spring 4.1
 date: 2014-09-22T11:55:22+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=1851
 permalink: /ama/jquery-ui-autocomplete-not-working-in-spring-4-1/
@@ -82,14 +82,14 @@ The resource called the jQuery ajax `getJSON`:
 
 <pre class="lang:js mark:9 decode:true" title="Autocomplete jquery ajax call">$(document).ready(function() {
 	//attach autocomplete
-    $("#tagQuery").autocomplete({    	
+    $("#tagQuery").autocomplete({
     	minLength: 1,
     	delay: 500,
 
     	//define callback to format results
         source: function (request, response) {
-            $.getJSON("/tags/get_tag_list", request, function(result) {                
-                response($.map(result, function(item) {                	
+            $.getJSON("/tags/get_tag_list", request, function(result) {
+                response($.map(result, function(item) {
                     return {
                         // following property gets displayed in drop down
                         label: item.name + "(" + item.nrOfPodcasts + ")",
@@ -105,7 +105,7 @@ The resource called the jQuery ajax `getJSON`:
 
     	//define select handler
     	select : function(event, ui) {
-            if (ui.item) {       
+            if (ui.item) {
             	event.preventDefault();
                 $("#selected_tags span").append('&lt;a href=' + ui.item.tag_url + ' class="btn-metadata2" target="_blank"&gt;'+ ui.item.label +'&lt;/a&gt;');
                 //$("#tagQuery").value = $("#tagQuery").defaultValue
@@ -178,7 +178,7 @@ On a second look, I realized that, although I didn&#8217;t use the minimum versi
 &lt;dependency&gt;
 	&lt;groupId&gt;org.codehaus.jackson&lt;/groupId&gt;
 	&lt;artifactId&gt;jackson-core-asl&lt;/artifactId&gt;
-	&lt;version&gt;1.9.12&lt;/version&gt;			
+	&lt;version&gt;1.9.12&lt;/version&gt;
 &lt;/dependency&gt;</pre>
 
 , I had to upgrade the jackson libraries to a newer [2.1, *) version to work in Spring 4.1:

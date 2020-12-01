@@ -2,7 +2,7 @@
 id: 2231
 title: How to secure Jersey REST services with Spring Security and Basic authentication
 date: 2015-02-12T17:36:35+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=2231
 permalink: /ama/how-to-secure-jersey-rest-services-with-spring-security-and-basic-authentication/

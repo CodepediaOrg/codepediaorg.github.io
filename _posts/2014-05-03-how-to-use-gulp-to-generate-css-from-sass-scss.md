@@ -1,40 +1,17 @@
 ---
-id: 1346
 title: How to use Gulp to generate CSS from Sass/scss
 date: 2014-05-03T14:50:19+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1346
 permalink: /ama/how-to-use-gulp-to-generate-css-from-sass-scss/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 2657681283
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:55:"https://github.com/podcastpedia/css-generator-sass-gulp";s:11:"ribbon-type";i:10;}'
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 7
-fsb_social_linkedin:
-  - 1
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - javascript
-  - web design
+  - tutorial
 tags:
+  - javascript
   - css
   - gulp
-  - gulpjs
-  - node
-  - nodejs
+  - node.js
   - sass
-  - web design
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

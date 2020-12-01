@@ -2,29 +2,14 @@
 id: 1662
 title: How to add Categories to menu in WordPress
 date: 2014-07-03T07:44:29+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1662
 permalink: /ama/how-to-add-categories-to-menu-in-wordpress/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 2813901791
-fsb_social_facebook:
-  - 0
-fsb_social_google:
-  - 5
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - WordPress
+  - article
 tags:
-  - tip
-  - tips and tricks
+  - tips
+  - blogging
   - wordpress
 ---
 <p style="text-align: justify;">

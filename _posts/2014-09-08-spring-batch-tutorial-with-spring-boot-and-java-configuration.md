@@ -1,40 +1,17 @@
 ---
-id: 1693
 title: Spring Batch Tutorial with Spring Boot and Java Configuration
 date: 2014-09-08T11:57:40+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1693
 permalink: /ama/spring-batch-tutorial-with-spring-boot-and-java-configuration/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:50:"https://github.com/podcastpedia/podcastpedia-batch";s:11:"ribbon-type";i:10;}'
-fsb_social_facebook:
-  - 10
-fsb_social_google:
-  - 5
-fsb_social_linkedin:
-  - 4
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 2998329809
 categories:
-  - java
-  - spring
+  - tutorial
 tags:
-  - apache http client
-  - batch
-  - data source
+  - spring-batch
+  - java
   - database
   - email
-  - spring batch
-  - spring boot
+  - spring-boot
   - tutorial
   - velocity
 ---
@@ -205,17 +182,17 @@ tags:
             &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
             &lt;artifactId&gt;spring-boot-starter-batch&lt;/artifactId&gt;
 
-        &lt;/dependency&gt;  
+        &lt;/dependency&gt;
 		&lt;dependency&gt;
 		  &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-		  &lt;artifactId&gt;spring-boot-starter-data-jpa&lt;/artifactId&gt;		   
-		&lt;/dependency&gt;        
+		  &lt;artifactId&gt;spring-boot-starter-data-jpa&lt;/artifactId&gt;
+		&lt;/dependency&gt;
 
 		&lt;dependency&gt;
 			&lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;
 			&lt;artifactId&gt;httpclient&lt;/artifactId&gt;
 			&lt;version&gt;4.3.5&lt;/version&gt;
-		&lt;/dependency&gt;		
+		&lt;/dependency&gt;
 		&lt;dependency&gt;
 			&lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;
 			&lt;artifactId&gt;httpcore&lt;/artifactId&gt;
@@ -225,7 +202,7 @@ tags:
 		&lt;dependency&gt;
 			&lt;groupId&gt;org.apache.velocity&lt;/groupId&gt;
 			&lt;artifactId&gt;velocity&lt;/artifactId&gt;
-			&lt;version&gt;1.7&lt;/version&gt;		
+			&lt;version&gt;1.7&lt;/version&gt;
 		&lt;/dependency&gt;
 		&lt;dependency&gt;
 			&lt;groupId&gt;org.apache.velocity&lt;/groupId&gt;
@@ -236,7 +213,7 @@ tags:
 					&lt;groupId&gt;org.apache.struts&lt;/groupId&gt;
 					&lt;artifactId&gt;struts-core&lt;/artifactId&gt;
 		        &lt;/exclusion&gt;
-		    &lt;/exclusions&gt;				
+		    &lt;/exclusions&gt;
 		&lt;/dependency&gt;
 
 		&lt;!-- Project rome rss, atom --&gt;
@@ -255,7 +232,7 @@ tags:
 			&lt;groupId&gt;org.jdom&lt;/groupId&gt;
 			&lt;artifactId&gt;jdom&lt;/artifactId&gt;
 			&lt;version&gt;1.1&lt;/version&gt;
-		&lt;/dependency&gt;		
+		&lt;/dependency&gt;
 		&lt;!-- PID 1 --&gt;
 		&lt;dependency&gt;
 			&lt;groupId&gt;xerces&lt;/groupId&gt;
@@ -271,7 +248,7 @@ tags:
 		&lt;/dependency&gt;
  		&lt;dependency&gt;
 			&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-			&lt;artifactId&gt;spring-boot-starter-freemarker&lt;/artifactId&gt;   
+			&lt;artifactId&gt;spring-boot-starter-freemarker&lt;/artifactId&gt;
 		&lt;/dependency&gt;
  		&lt;dependency&gt;
 			&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
@@ -281,18 +258,18 @@ tags:
 					&lt;groupId&gt;javax.mail&lt;/groupId&gt;
 					&lt;artifactId&gt;mail&lt;/artifactId&gt;
 		        &lt;/exclusion&gt;
-		    &lt;/exclusions&gt;				
+		    &lt;/exclusions&gt;
 		&lt;/dependency&gt;
 		&lt;dependency&gt;
 			&lt;groupId&gt;javax.mail&lt;/groupId&gt;
 			&lt;artifactId&gt;mail&lt;/artifactId&gt;
 			&lt;version&gt;1.4.7&lt;/version&gt;
-		&lt;/dependency&gt;		
+		&lt;/dependency&gt;
 		&lt;dependency&gt;
 			&lt;groupId&gt;javax.inject&lt;/groupId&gt;
 			&lt;artifactId&gt;javax.inject&lt;/artifactId&gt;
 			&lt;version&gt;1&lt;/version&gt;
-		&lt;/dependency&gt;		
+		&lt;/dependency&gt;
 		&lt;dependency&gt;
 			&lt;groupId&gt;org.twitter4j&lt;/groupId&gt;
 			&lt;artifactId&gt;twitter4j-core&lt;/artifactId&gt;
@@ -334,9 +311,9 @@ I structured the project in the following way:
 				└── podcastpedia
 					└── batch
 						└── common
-						└── jobs					
-							└── addpodcast												
-							└── notifysubscribers</code>											
+						└── jobs
+							└── addpodcast
+							└── notifysubscribers</code>
 </pre>
 
 **Note:**
@@ -468,7 +445,7 @@ public class AddPodcastJobConfiguration {
 	@Bean
 	public LogProcessListener logProcessListener(){
 		return new LogProcessListener();
-	}    
+	}
 
 }</code>
 </pre>
@@ -651,7 +628,7 @@ public ItemReader&lt;User&gt; notifySubscribersReader(){
 
 	reader.setSql(sql);
 	reader.setDataSource(dataSource);
-	reader.setRowMapper(rowMapper());		
+	reader.setRowMapper(rowMapper());
 
 	return reader;
 }</code>
@@ -733,8 +710,8 @@ public class Writer implements ItemWriter&lt;SuggestedPodcast&gt;{
 					url);
 			if(podcast.getTwitterPage() != null){
 				socialMediaService.postOnTwitterAboutNewPodcast(podcast,
-				url);				
-			}					
+				url);
+			}
 		}
 
 	}
@@ -748,7 +725,7 @@ public class Writer implements ItemWriter&lt;SuggestedPodcast&gt;{
 			urlOnPodcastpedia.append("/podcasts/");
 			urlOnPodcastpedia.append(String.valueOf(podcast.getPodcastId()));
 			urlOnPodcastpedia.append("/" + podcast.getTitleInUrl());
-		}		
+		}
 		String url = urlOnPodcastpedia.toString();
 		return url;
 	}
@@ -783,7 +760,7 @@ While the processor of the first job requires a little bit of more logic, becaus
 	PodcastAndEpisodeAttributesService podcastAndEpisodeAttributesService;
 
 	@Autowired
-	private PoolingHttpClientConnectionManager poolingHttpClientConnectionManager;  
+	private PoolingHttpClientConnectionManager poolingHttpClientConnectionManager;
 
 	@Autowired
 	private SyndFeedService syndFeedService;
@@ -798,7 +775,7 @@ While the processor of the first job requires a little bit of more logic, becaus
 			return null;
 		}
 
-		String[] categories = item.getCategories().trim().split("\\s*,\\s*");		
+		String[] categories = item.getCategories().trim().split("\\s*,\\s*");
 
 		item.getPodcast().setAvailability(org.apache.http.HttpStatus.SC_OK);
 
@@ -845,7 +822,7 @@ public class NotifySubscribersItemProcessor implements ItemProcessor&lt;User, Us
 				+ " e.isNew IS NOT NULL  AND e.availability=200 ORDER BY e.podcast.podcastId ASC, e.publicationDate ASC";
 		TypedQuery&lt;Episode&gt; queryInnerJoinepisodes = em.createQuery(sqlInnerJoinEpisodes, Episode.class);
 		queryInnerJoinepisodes.setParameter(1, item.getEmail());
-		queryInnerJoinepisodes.setParameter(2, UpdateFrequency.valueOf(updateFrequency));		
+		queryInnerJoinepisodes.setParameter(2, UpdateFrequency.valueOf(updateFrequency));
 
 		List&lt;Episode&gt; newEpisodes = queryInnerJoinepisodes.getResultList();
 
@@ -891,7 +868,7 @@ public class Application {
         	Job addNewPodcastJob = ctx.getBean(ADD_NEW_PODCAST_JOB, Job.class);
         	JobParameters jobParameters = new JobParametersBuilder()
     		.addDate("date", new Date())
-    		.toJobParameters();  
+    		.toJobParameters();
 
         	JobExecution jobExecution = jobLauncher.run(addNewPodcastJob, jobParameters);
 
@@ -912,9 +889,9 @@ public class Application {
         	JobParameters jobParameters = new JobParametersBuilder()
     		.addDate("date", new Date())
     		.addString("updateFrequency", args[1])
-    		.toJobParameters();  
+    		.toJobParameters();
 
-        	jobLauncher.run(ctx.getBean(NEW_EPISODES_NOTIFICATION_JOB,  Job.class), jobParameters);   
+        	jobLauncher.run(ctx.getBean(NEW_EPISODES_NOTIFICATION_JOB,  Job.class), jobParameters);
         } else {
         	throw new IllegalArgumentException("Please provide a valid Job name as first application parameter");
         }

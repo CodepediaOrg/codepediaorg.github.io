@@ -1,39 +1,21 @@
 ---
-id: 1810
 title: 'A beginner&#8217;s guide to JPA/Hibernate flush strategies'
 date: 2014-09-12T06:51:39+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codepedia.org/?p=1810
 permalink: /vladmihalcea/a-beginners-guide-to-jpahibernate-flush-strategies/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3010427831
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 1
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - hibernate
+  - article
 tags:
-  - entity manager flush
   - hibernate
-  - Hibernate training
   - jpa
-  - Session flush
 ---
+
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#Introduction">Introduction</a>
@@ -48,7 +30,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Read-your-own-writes_consistency">Read-your-own-writes consistency</a>
     </li>
@@ -153,78 +135,78 @@ tags:
     <th style="font-style: inherit;">
       JPA <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/FlushModeType.html">FLUSHMODETYPE</a>
     </th>
-    
+
     <th style="font-style: inherit;">
       HIBERNATE <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html">FLUSHMODE</a>
     </th>
-    
+
     <th style="font-style: inherit;">
       HIBERNATE IMPLEMENTATION DETAILS
     </th>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/FlushModeType.html#AUTO">AUTO</a>
     </td>
-    
+
     <td style="font-style: inherit;">
       <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#AUTO">AUTO</a>
     </td>
-    
+
     <td style="font-style: inherit;">
       The Session is <strong style="font-style: inherit;">sometimes</strong> flushed before query execution.
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/FlushModeType.html#COMMIT">COMMIT</a>
     </td>
-    
+
     <td style="font-style: inherit;">
       <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#COMMIT">COMMIT</a>
     </td>
-    
+
     <td style="font-style: inherit;">
       The Session is <strong style="font-style: inherit;">only</strong> flushed prior to a transaction commit.
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
     </td>
-    
+
     <td style="font-style: inherit;">
       <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#ALWAYS">ALWAYS</a>
     </td>
-    
+
     <td style="font-style: inherit;">
       The Session is <strong style="font-style: inherit;">always</strong> flushed before query execution.
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
     </td>
-    
+
     <td style="font-style: inherit;">
       <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#MANUAL">MANUAL</a>
     </td>
-    
+
     <td style="font-style: inherit;">
       The Session can <strong style="font-style: inherit;">only</strong> be <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html#flush%28%29">manually flushed</a>.
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
     </td>
-    
+
     <td style="font-style: inherit;">
       <del style="font-weight: inherit; font-style: inherit;" datetime="2014-08-01T20:22:39+00:00"><a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#NEVER">NEVER</a></del>
     </td>
-    
+
     <td style="font-style: inherit;">
       Deprecated. Use MANUAL instead. This was the original name given to manual flushing, but it was misleading users into thinking that the Session won’t ever be flushed.
     </td>
@@ -244,39 +226,39 @@ tags:
     <th style="font-style: inherit;">
       SCOPE
     </th>
-    
+
     <th style="font-style: inherit;">
       HIBERNATE
     </th>
-    
+
     <th style="font-style: inherit;">
       JPA
     </th>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       Persistence Context
     </td>
-    
+
     <td style="font-style: inherit;">
       <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/3.5/javadocs/org/hibernate/Session.html#setFlushMode%28org.hibernate.FlushMode%29">Session</a>
     </td>
-    
+
     <td style="font-style: inherit;">
       <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#setFlushMode%28javax.persistence.FlushModeType%29">EntityManager</a>
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       Query
     </td>
-    
+
     <td style="font-style: inherit;">
       <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/3.5/javadocs/org/hibernate/Query.html#setFlushMode%28org.hibernate.FlushMode%29">Query</a><br /> <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/3.5/javadocs/org/hibernate/Criteria.html#setFlushMode%28org.hibernate.FlushMode%29">Criteria</a>
     </td>
-    
+
     <td style="font-style: inherit;">
       <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/Query.html#setFlushMode%28javax.persistence.FlushModeType%29">Query</a><br /> <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/TypedQuery.html#setFlushMode%28javax.persistence.FlushModeType%29">TypedQuery</a>
     </td>
@@ -301,21 +283,21 @@ tags:
 
 <p style="color: #444444; text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" />
+
     <p id="about_author_header">
       <strong>Vlad Mihalcea</strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Software architect passionate about software integration, high scalability and concurrency challenges
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

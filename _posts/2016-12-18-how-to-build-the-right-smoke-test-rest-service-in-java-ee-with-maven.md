@@ -46,7 +46,7 @@ You can then use the `gitSha1` value with the `git show` command to show the cor
 $ git show 8f0b7f7
 commit 8f0b7f7e1fc0dcde3ccc0a9418f37a698dabb3b7
 Merge: df736ab 3ebcbdb
-Author: Adrian Matei <ama@codepedia.org>
+author: ama <ama@codepedia.org>
 Date:   Sat Dec 3 09:30:41 2016 +0100
 
     Merge branch 'master' of https://github.com/CodepediaOrg/codepediaorg.github.io

@@ -1,38 +1,15 @@
 ---
-id: 944
 title: Spring MVC and Apache Tiles integration example
 date: 2013-11-19T21:44:37+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=944
 permalink: /ama/spring-mvc-and-apache-tiles-integration-example/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 8
-dsq_thread_id:
-  - 1980324968
-fsb_social_google:
-  - 9
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 1
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:49:"https://github.com/podcastpedia/podcastpedia-web/";s:11:"ribbon-type";i:10;}'
 categories:
-  - spring
+  - tutorial
 tags:
-  - apache
-  - example
-  - integration
+  - apache-tiles
   - spring
-  - spring mvc
-  - tiles
+  - spring-mvc
 ---
 <p class="note_alert" style="text-align: justify;">
   <strong>Note:</strong> This is a re-edit of the post <a title="Spring 3 and Tiles 2 Integration" href="http://www.codepedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration.</a> It uses now the latest version of Apache Tiles (at the time of the writing 3.0.1) and presents how Apache Tiles is used on top of Spring/Spring MVC to construct the layout of the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> website

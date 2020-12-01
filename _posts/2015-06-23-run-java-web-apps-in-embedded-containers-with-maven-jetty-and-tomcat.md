@@ -2,7 +2,7 @@
 id: 2392
 title: Run java web apps in embedded containers with Maven, Jetty and Tomcat
 date: 2015-06-23T21:24:12+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=2392
 permalink: /ama/run-java-web-apps-in-embedded-containers-with-maven-jetty-and-tomcat/

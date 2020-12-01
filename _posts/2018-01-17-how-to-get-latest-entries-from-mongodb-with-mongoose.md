@@ -5,7 +5,7 @@ description: "Example on how to retrieve the latest entries from a MongoDB colle
 author: ama
 permalink: /ama/how-to-get-latest-entries-from-mongodb-collection-with-mongoose
 published: true
-categories: [mongodb]
+categories: [nosql]
 tags: [bookmarksdev, mongodb, mongoose, nodejs]
 ---
 

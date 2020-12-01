@@ -2,36 +2,15 @@
 id: 1218
 title: How to setup multiple data sources with Spring and JPA
 date: 2014-03-02T12:42:31+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=1218
 permalink: /ama/how-to-setup-multiple-data-sources-with-spring-and-jpa/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 8
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 2345397342
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
 categories:
+  - tutorial
+tags:
   - java
   - spring
-tags:
-  - configuration
-  - data source
-  - example
-  - how to
   - jpa
   - persistence
 ---
@@ -119,7 +98,7 @@ The first thing I did was to modify the `persistence.xml` file by adding a new `
 
    &lt;persistence-unit name="demoRestPersistenceLegacy"&gt;
       &lt;provider&gt;org.hibernate.ejb.HibernatePersistence&lt;/provider&gt;
-   &lt;/persistence-unit&gt;   
+   &lt;/persistence-unit&gt;
 &lt;/persistence&gt;</pre>
 
 <p class="note_normal" style="text-align: justify;">
@@ -151,16 +130,16 @@ In the Spring application context I just added new beans for the entity manager,
 	&lt;context:component-scan base-package="org.codingpedia.demo.rest.*" /&gt;
 
 	&lt;!-- ************ JPA configuration *********** --&gt;
-	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;  
+	&lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;
     &lt;bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"&gt;
         &lt;property name="entityManagerFactory" ref="entityManagerFactory" /&gt;
     &lt;/bean&gt;
     &lt;bean id="transactionManagerLegacy" class="org.springframework.orm.jpa.JpaTransactionManager"&gt;
         &lt;property name="entityManagerFactory" ref="entityManagerFactoryLegacy" /&gt;
-    &lt;/bean&gt;    
+    &lt;/bean&gt;
     &lt;bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"&gt;
         &lt;property name="persistenceXmlLocation" value="classpath:config/persistence-demo.xml" /&gt;
-        &lt;property name="persistenceUnitName" value="demoRestPersistence" /&gt;        
+        &lt;property name="persistenceUnitName" value="demoRestPersistence" /&gt;
         &lt;property name="dataSource" ref="restDemoDS" /&gt;
         &lt;property name="packagesToScan" value="org.codingpedia.demo.*" /&gt;
         &lt;property name="jpaVendorAdapter"&gt;
@@ -169,7 +148,7 @@ In the Spring application context I just added new beans for the entity manager,
                 &lt;property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" /&gt;
             &lt;/bean&gt;
         &lt;/property&gt;
-    &lt;/bean&gt;     
+    &lt;/bean&gt;
     &lt;bean id="entityManagerFactoryLegacy" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"&gt;
         &lt;property name="persistenceXmlLocation" value="classpath:config/persistence-demo.xml" /&gt;
         &lt;property name="persistenceUnitName" value="demoRestPersistenceLegacy" /&gt;
@@ -181,7 +160,7 @@ In the Spring application context I just added new beans for the entity manager,
                 &lt;property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" /&gt;
             &lt;/bean&gt;
         &lt;/property&gt;
-    &lt;/bean&gt;        
+    &lt;/bean&gt;
 
 	&lt;bean id="podcastDao" class="org.codingpedia.demo.rest.dao.impl.PodcastDaoJPA2Impl"/&gt;
     &lt;bean id="podcastRestService" class="org.codingpedia.demo.rest.service.PodcastRestService" /&gt;
@@ -189,11 +168,11 @@ In the Spring application context I just added new beans for the entity manager,
 
 	&lt;bean id="restDemoDS" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
 	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoDB" /&gt;
-	    &lt;property name="resourceRef" value="true" /&gt;        
+	    &lt;property name="resourceRef" value="true" /&gt;
 	&lt;/bean&gt;
 	&lt;bean id="restDemoLegacyDS" class="org.springframework.jndi.JndiObjectFactoryBean" scope="singleton"&gt;
 	    &lt;property name="jndiName" value="java:comp/env/jdbc/restDemoLegacyDB" /&gt;
-	    &lt;property name="resourceRef" value="true" /&gt;        
+	    &lt;property name="resourceRef" value="true" /&gt;
 	&lt;/bean&gt;
 &lt;/beans&gt;</pre>
 
@@ -241,7 +220,7 @@ public class PodcastDaoJPA2Impl implements PodcastDao {
 	public List&lt;Podcast&gt; getPodcasts() {
 
 		String qlString = "SELECT p FROM Podcast p";
-		TypedQuery&lt;Podcast&gt; query = entityManager.createQuery(qlString, Podcast.class);		
+		TypedQuery&lt;Podcast&gt; query = entityManager.createQuery(qlString, Podcast.class);
 
 		return query.getResultList();
 	}
@@ -249,7 +228,7 @@ public class PodcastDaoJPA2Impl implements PodcastDao {
 	public List&lt;Podcast&gt; getLegacyPodcasts() {
 
 		String qlString = "SELECT p FROM Podcast p";
-		TypedQuery&lt;Podcast&gt; query = entityManagerLegacy.createQuery(qlString, Podcast.class);		
+		TypedQuery&lt;Podcast&gt; query = entityManagerLegacy.createQuery(qlString, Podcast.class);
 
 		return query.getResultList();
 	}
@@ -324,24 +303,3 @@ Well, that&#8217;s it. You&#8217;ve learned how to configure multiple a Spring a
 
   * <a title="http://stackoverflow.com/questions/3111992/difference-between-configuring-data-source-in-persistence-xml-and-in-spring-conf" href="http://stackoverflow.com/questions/3111992/difference-between-configuring-data-source-in-persistence-xml-and-in-spring-conf" target="_blank">StackOverflow &#8211; Difference between configuring data source in persistence.xml and in spring configuration files</a>
   * <a title="http://stackoverflow.com/questions/1961371/spring-multiple-transactional-datasource" href="http://stackoverflow.com/questions/1961371/spring-multiple-transactional-datasource" target="_blank">http://stackoverflow.com/questions/1961371/spring-multiple-transactional-datasource</a>
-
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>

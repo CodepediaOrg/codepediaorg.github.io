@@ -1,37 +1,15 @@
 ---
-id: 1649
 title: How to compose html emails in Java with Spring and Velocity
 date: 2014-07-05T09:22:19+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1649
 permalink: /ama/how-to-compose-html-emails-in-java-with-spring-and-velocity/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:47:"https://github.com/CodepediaOrg/podcastpedia";s:11:"ribbon-type";i:10;}'
-dsq_thread_id:
-  - 2819059243
-fsb_social_facebook:
-  - 9
-fsb_social_google:
-  - 7
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - java
-  - spring
+  - tutorial
 tags:
-  - apache
+  - java
   - email
-  - email template
-  - open source
+  - email-templates
   - spring
   - velocity
 ---

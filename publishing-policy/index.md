@@ -2,7 +2,7 @@
 id: 1035
 title: Codingpedia Publishing Policies
 date: 2014-10-15T20:40:36+00:00
-author: Adrian Matei
+author: ama
 layout: page
 permalink: /contributors/publishing-policy/
 dsq_thread_id:

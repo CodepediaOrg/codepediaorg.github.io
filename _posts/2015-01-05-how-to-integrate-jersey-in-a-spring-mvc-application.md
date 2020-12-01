@@ -2,7 +2,7 @@
 id: 2173
 title: How to integrate Jersey in a Spring MVC application
 date: 2015-01-05T09:52:36+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=2173
 permalink: /ama/how-to-integrate-jersey-in-a-spring-mvc-application/

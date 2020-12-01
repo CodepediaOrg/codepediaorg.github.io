@@ -1,31 +1,15 @@
 ---
-id: 166
 title: Generate sitemaps with sitemapgen4j
 date: 2013-08-02T07:29:34+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=166
 permalink: /ama/generate-sitemaps-with-sitemapgen4j/
-dsq_thread_id:
-  - 1559068228
-fsb_social_facebook:
-  - 3
-fsb_show_social:
-  - 0
-fsb_social_google:
-  - 10
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
+d
 categories:
+  - tutorial
+tags:
   - java
   - seo
-tags:
-  - seo
-  - seo optimization
   - sitemap
   - sitemapgen4j
 ---

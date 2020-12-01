@@ -1,37 +1,18 @@
 ---
-id: 1429
 title: Error handling in REST API with Jersey
 date: 2014-06-06T07:22:10+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1429
 permalink: /ama/error-handling-in-rest-api-with-jersey/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
-fsb_social_facebook:
-  - 21
-fsb_social_google:
-  - 9
-fsb_social_linkedin:
-  - 5
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 2740629436
 categories:
-  - java
+  - tutorial
 tags:
-  - error handling
-  - exception
+  - java
+  - error-handling
   - jersey
   - rest
-  - rest api
+  - api
+  - api-design
 ---
 
 <p style="color: #222222; text-align: justify;">
@@ -252,7 +233,7 @@ the exception mapper encapsulates the error message as JSON, with the HTTP statu
     	@Override
     	public Response toResponse(Throwable ex) {
 
-    		ErrorMessage errorMessage = new ErrorMessage();		
+    		ErrorMessage errorMessage = new ErrorMessage();
     		setHttpStatus(ex, errorMessage);
     		errorMessage.setCode(AppConstants.GENERIC_APP_ERROR_CODE);
     		errorMessage.setMessage(ex.getMessage());
@@ -339,26 +320,6 @@ Check out our video tutorial <a title="https://www.youtube.com/watch?v=XV7WW0bDy
   2. <a title="http://restcookbook.com/HTTP%20Methods/400-vs-500/" href="http://restcookbook.com/HTTP%20Methods/400-vs-500/" target="_blank">When should we return 4xx or 5xx status codes to the client?</a>
   3. Stackoverflow &#8211; <a title="http://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" href="http://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" target="_blank">When to choose checked and unchecked exceptions</a>
 
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>
 
 <p style="text-align: center;">
   “Featured Image courtesy of Stuart Miles / FreeDigitalPhotos.net”

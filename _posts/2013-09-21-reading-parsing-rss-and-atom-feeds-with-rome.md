@@ -2,26 +2,11 @@
 id: 585
 title: Reading/Parsing RSS and Atom feeds in Java with Rome
 date: 2013-09-21T14:09:59+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=585
 permalink: /ama/reading-parsing-rss-and-atom-feeds-with-rome/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 7
-dsq_thread_id:
-  - 1783605737
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - java
+  - tutorial
 tags:
   - atom
   - feed

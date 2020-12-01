@@ -2,7 +2,7 @@
 id: 55
 title: About us
 date: 2013-07-26T10:40:21+00:00
-author: Adrian Matei
+author: ama
 layout: page
 guid: http://www.codepedia.org/?page_id=55
 dsq_thread_id:
@@ -28,7 +28,7 @@ dsq_thread_id:
     </li>
     <li>
       <a href="#Sponsors">Sponsors</a>
-    </li>    
+    </li>
   </ul>
 </div>
 

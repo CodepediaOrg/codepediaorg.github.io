@@ -2,39 +2,21 @@
 id: 1501
 title: How to add a GitHub ribbon to Podcastpedia.org
 date: 2014-06-30T21:58:49+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=1501
 permalink: /ama/how-to-add-a-github-ribbon-to-podcastpedia-org/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:55:"https://github.com/podcastpedia/css-generator-sass-gulp";s:11:"ribbon-type";i:10;}'
-dsq_thread_id:
-  - 2807814421
-fsb_social_facebook:
-  - 1
-fsb_social_google:
-  - 6
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 1
-fsb_social_pinterest:
-  - 0
 categories:
-  - Podcastpedia.org
-  - web design
+  - article
 tags:
   - css
-  - css3
+  - podcastpedia
   - GitHub
-  - open source
+  - open-source
   - sass
   - scss
 ---
+
 <p style="text-align: justify;">
   Since the source code for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is now open <a title="https://github.com/podcastpedia/podcastpedia-web" href="https://github.com/podcastpedia/podcastpedia-web" target="_blank">on GitHub</a> for everyone to have look at and contribute to, I might as well add a ribbon on the website celebrating that. After a short research on the web, I stepped over Simon Whitaker&#8217;s project <strong><a style="color: #4183c4;" href="https://github.com/simonwhitaker/github-fork-ribbon-css">github-fork-ribbon-css</a> </strong>which I could easily integrate in  the website:
 </p>
@@ -218,25 +200,3 @@ Well, it cannot get simpler than that&#8230; So thanks again <a title="https://g
 
   * <a title="https://github.com/simonwhitaker/github-fork-ribbon-css" href="https://github.com/simonwhitaker/github-fork-ribbon-css" target="_blank">simonwhiteker/github-fork-ribbon-css</a>
 
-<p style="text-align: justify;">
-  <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-    <p id="about_author_header">
-      <strong>Adrian Matei</strong>
-    </p>
-
-    <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-    </div>
-
-    <div id="follow_social" style="clear: both;">
-      <div id="social_logos">
-         <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-      </div>
-
-      <div class="clear">
-      </div>
-    </div>
-  </div>
-</p>

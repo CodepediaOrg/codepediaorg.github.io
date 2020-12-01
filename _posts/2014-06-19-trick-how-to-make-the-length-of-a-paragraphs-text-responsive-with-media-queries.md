@@ -1,45 +1,20 @@
 ---
-id: 1516
 title: 'Trick &#8211; how to make the length of a paragraph&#8217;s text responsive with media queries'
 date: 2014-06-19T14:27:08+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1516
 permalink: /ama/trick-how-to-make-the-length-of-a-paragraphs-text-responsive-with-media-queries/
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:31:"https://github.com/podcastpedia";s:11:"ribbon-type";i:10;}'
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 1
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 2777914499
 categories:
-  - 'tips &amp; tricks'
-  - web design
+  - tutorial
 tags:
   - css
-  - css3
   - jsp
   - jstl
-  - media queries
+  - media-queries
   - responsive
   - sass
   - scss
-  - tip
-  - tips and tricks
-  - trick
-  - web design
+  - tips
 ---
 <p style="text-align: justify;">
   In this post I will present you a simple trick about how to make the length of the text shown in a paragraph responsive. The example presented is written in Java Server Pages (JSP) and makes use of JavaServer Pages Standard Tag Library (JSTL), but you can use the same trick with other technologies and media queries as you will find out in the coming paragraphs.<!--more-->
@@ -121,25 +96,5 @@ Well, that&#8217;s it. If you have a better proposal to achieve this please leav
 
   1. [Oracle &#8211; JavaServer Pages Standard Tag Library](http://www.oracle.com/technetwork/java/index-jsp-135995.html "http://www.oracle.com/technetwork/java/index-jsp-135995.html")
 
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>
 
 Featured image courtesy of 2nix / FreeDigitalPhotos.net

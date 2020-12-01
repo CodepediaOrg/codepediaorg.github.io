@@ -1,36 +1,17 @@
 ---
-id: 1432
 title: 'Tutorial &#8211; REST API design and implementation in Java with Jersey and Spring'
 date: 2014-05-31T07:16:51+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1432
 permalink: /ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
-fsb_social_facebook:
-  - 30
-fsb_social_google:
-  - 17
-fsb_social_linkedin:
-  - 4
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 5
-dsq_thread_id:
-  - 2725445707
 categories:
+  - tutorial
+tags:
   - java
   - spring
-tags:
   - api
-  - api design
-  - GitHub
+  - rest
+  - api-design
   - jersey
   - jersey2
   - open source

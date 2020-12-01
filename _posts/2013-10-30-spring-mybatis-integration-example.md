@@ -1,38 +1,18 @@
 ---
-id: 806
 title: Spring MyBatis integration example
 date: 2013-10-30T09:21:25+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=806
 permalink: /ama/spring-mybatis-integration-example/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 4
-dsq_thread_id:
-  - 1917850980
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-fsb_social_google:
-  - 7
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:49:"https://github.com/podcastpedia/podcastpedia-web/";s:11:"ribbon-type";i:10;}'
+
 categories:
-  - java
-  - spring
+  - tutorial
 tags:
-  - framework
+  - java
   - hibernate
-  - iBatis
-  - integration
-  - MyBatis
+  - ibatis
+  - spring
+  - mybatis
   - persistence
 ---
 <div id="toc_container" class="no_bullets">

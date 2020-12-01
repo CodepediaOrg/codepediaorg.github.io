@@ -2,34 +2,18 @@
 id: 609
 title: Autocomplete search box with jQuery and Spring MVC
 date: 2013-09-30T21:15:30+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=609
 permalink: /ama/autocomplete-search-box-with-jquery-and-spring-mvc/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 8
-dsq_thread_id:
-  - 1812057858
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 1
-fsb_social_google:
-  - 3
 categories:
-  - java
-  - spring
+  - article
 tags:
-  - autocomplete
+  - java
   - javascript
   - jQuery
   - MyBatis
   - spring
-  - spring mvc
+  - spring-mvc
 ---
 ## <span id="Functionality">Functionality</span>
 

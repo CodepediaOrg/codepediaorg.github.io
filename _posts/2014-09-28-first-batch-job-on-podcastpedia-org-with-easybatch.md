@@ -2,7 +2,7 @@
 id: 1829
 title: First batch job on Podcastpedia.org with EasyBatch
 date: 2014-09-28T20:52:10+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=1829
 permalink: /ama/first-batch-job-on-podcastpedia-org-with-easybatch/
@@ -175,7 +175,7 @@ public class JobLauncher {
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(now);
 		int weeknum = calendar.get(Calendar.WEEK_OF_YEAR);
-		String targetDirPath = System.getProperty("output.directory.base") + String.valueOf(weeknum);		
+		String targetDirPath = System.getProperty("output.directory.base") + String.valueOf(weeknum);
 		File targetDirectory = new File(targetDirPath);
 		if(!targetDirectory.exists()){
 			boolean created = targetDirectory.mkdir();
@@ -184,11 +184,11 @@ public class JobLauncher {
 			}
 		}
 
-		//build the file name based on current time to be placed in the "weeknum" directory  
+		//build the file name based on current time to be placed in the "weeknum" directory
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH.mm");
 		String outputFileName = "suggestedPodcasts " + dateFormat.format(now) + ".csv";
 
-		String filePath = targetDirPath + "/" + outputFileName;		
+		String filePath = targetDirPath + "/" + outputFileName;
 		return filePath;
 	}
 
@@ -291,7 +291,7 @@ To map the database object to the domain object I defined a `CustomMapper`:
 	@Override
 	public void processRecord(SuggestedPodcast record) throws Exception {
 		 fileWriter.write(record.getMetadataLine() + "\n");
-		 fileWriter.flush();		
+		 fileWriter.flush();
 	}
 
 }</pre>

@@ -1,40 +1,16 @@
 ---
-id: 1299
 title: How to add CORS support on the server side in Java with Jersey
 date: 2014-04-05T14:50:56+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1299
 permalink: /ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 2588437371
-fsb_social_facebook:
-  - 11
-fsb_social_google:
-  - 13
-fsb_social_linkedin:
-  - 3
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 1
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
 categories:
-  - java
+  - tutorial
 tags:
-  - ajax
+  - java
   - cors
-  - http
-  - http header
   - jersey
-  - resource
   - rest
-  - XMLHttpRequest
 ---
 <p style="text-align: justify;">
   In this post I will present how easy it is to enable HTTP response headers on the server sidein Java with Jersey, as defined by the <a title="http://www.w3.org/TR/cors/" href="http://www.w3.org/TR/cors/" target="_blank">Cross-Origing Resource Sharing (CORS)</a> specification. For that I have extended the REST API  built in the post <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, with CORS support.
@@ -222,8 +198,8 @@ implements ContainerResponseFilter {
 		MultivaluedMap&lt;String, Object&gt; headers = responseContext.getHeaders();
 
 		headers.add("Access-Control-Allow-Origin", "*");
-		//headers.add("Access-Control-Allow-Origin", "http://podcastpedia.org"); //allows CORS requests only coming from podcastpedia.org		
-		headers.add("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");			
+		//headers.add("Access-Control-Allow-Origin", "http://podcastpedia.org"); //allows CORS requests only coming from podcastpedia.org
+		headers.add("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
 		headers.add("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, X-Codingpedia");
 	}
 

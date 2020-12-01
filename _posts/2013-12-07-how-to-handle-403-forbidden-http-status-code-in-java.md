@@ -1,32 +1,17 @@
 ---
-id: 1020
 title: How to handle 403 Forbidden HTTP status code in Java
 date: 2013-12-07T13:58:07+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1020
 permalink: /ama/how-to-handle-403-forbidden-http-status-code-in-java/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 4
-dsq_thread_id:
-  - 2032757576
-fsb_social_google:
-  - 5
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - java
-  - troubleshooting
+  - tutorial
 tags:
-  - bug
+  - java
+  - debugging
   - error
-  - http
+  - error-handling
+  - http-status
 ---
 ## The challenge &#8211; <code style="font-size: 0.8em;">java.io.IOException: Server returned HTTP response code: 403 for URL</code>
 

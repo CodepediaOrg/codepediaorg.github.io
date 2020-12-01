@@ -2,7 +2,7 @@
 id: 464
 title: Disclaimer
 date: 2013-08-14T17:35:16+00:00
-author: Adrian Matei
+author: ama
 layout: page
 guid: http://www.codepedia.org/?page_id=464
 dsq_thread_id:

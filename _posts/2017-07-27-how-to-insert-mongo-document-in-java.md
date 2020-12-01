@@ -5,8 +5,8 @@ description: "Simple example showing how to insert a document in mongodb with th
 author: ama
 permalink: /ama/how-to-insert-a-document-in-mongodb-in-java-example
 published: true
-categories: [java, mongodb]
-tags: [codingmarks, java, mongodb, example, maven]
+categories: [nosql]
+tags: [bookmarksdev, java, mongodb, example, maven]
 ---
 
 This blog post presents a simple example showing how to insert a document in mongodb, in the Java language.

@@ -2,7 +2,7 @@
 id: 2208
 title: 'Quick way to check if the REST API is alive &#8211; GET details from Manifest file'
 date: 2015-01-15T20:48:56+00:00
-author: Adrian Matei
+author: ama
 layout: post
 guid: http://www.codepedia.org/?p=2208
 permalink: /ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/
@@ -125,7 +125,7 @@ Since the demo application is a web application, I am using the Apache maven war
 				&lt;addDefaultImplementationEntries&gt;true&lt;/addDefaultImplementationEntries&gt;
 				&lt;addDefaultSpecificationEntries&gt;true&lt;/addDefaultSpecificationEntries&gt;
 			&lt;/manifest&gt;
-		&lt;/archive&gt;					
+		&lt;/archive&gt;
 	&lt;/configuration&gt;
 	&lt;executions&gt;
 		&lt;execution&gt;
@@ -135,7 +135,7 @@ Since the demo application is a web application, I am using the Apache maven war
 			&lt;/goals&gt;
 			&lt;inherited&gt;true&lt;/inherited&gt;
 		&lt;/execution&gt;
-	&lt;/executions&gt;				
+	&lt;/executions&gt;
 &lt;/plugin&gt;</pre>
 
 The addDefaultImplementationEntries and addDefaultSpecificationEntries will generate default implementation, respectively specification details, out of the project properties defined in the pom.xml file:
@@ -183,7 +183,7 @@ Reading from the manifest file occurs in the injected ManifestService class:
 	    mf.read(resourceAsStream);
 	    Attributes atts = mf.getMainAttributes();
 
-	    return atts;	    		
+	    return atts;
 	}
 
 	ImplementationDetails getImplementationVersion() throws FileNotFoundException, IOException{
@@ -200,7 +200,7 @@ Reading from the manifest file occurs in the injected ManifestService class:
 	    response.setImplementationVersion(atts.getValue("Implementation-Version"));
 	    response.setImplementationVendorId(atts.getValue("Implementation-Vendor-Id"));
 
-	    return response;		
+	    return response;
 	}
 
 }</pre>
@@ -231,7 +231,7 @@ In a JavaEE environment, you would have the ServletContext injected via the @Con
 
 		return Response.status(Response.Status.OK)
 				.entity(atts)
-				.build();	    		
+				.build();
 	}
 	...
 }</pre>

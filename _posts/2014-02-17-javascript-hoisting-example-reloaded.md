@@ -3,7 +3,7 @@ id: 1197
 title: JavaScript hoisting example reloaded
 description: "Javascript code snippet demonstrating hoisting"
 date: 2014-02-17T21:32:01+00:00
-author: Adrian Matei
+author: ama
 layout: post
 permalink: /ama/javascript-hoisting-example-reloaded/
 categories:
@@ -15,8 +15,9 @@ tags:
 ---
 
 ```html
-&lt;title&gt;Hoisting example&lt;/title&gt;
-&lt;/head&gt;
+<head>
+    <title>Hoisting example reloaded</title>
+</head>
 &lt;body&gt;
     &lt;h1&gt;Hoisting in action&lt;/h1&gt;
     &lt;script type="application/javascript"&gt;

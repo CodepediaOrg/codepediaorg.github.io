@@ -1,26 +1,12 @@
 ---
-id: 387
 title: 'Spring 3 MVC: Internationalization &#038; localization of Podcastpedia.org'
 date: 2013-08-14T09:29:59+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=387
 permalink: /ama/spring-3-mvc-internationalization-localization-of-podcastpedia-org/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 12
-dsq_thread_id:
-  - 1605138990
-fsb_social_google:
-  - 8
-fsb_social_linkedin:
-  - 1
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 1
 categories:
+  - tutorial
+tags:
   - java
   - spring
 ---

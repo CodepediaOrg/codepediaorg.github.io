@@ -1,31 +1,11 @@
 ---
-id: 1324
 title: 'CSS Preprocessors &#8211; Introducing Sass to Podcastpedia.org'
 date: 2014-04-23T12:09:23+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1324
 permalink: /ama/css-preprocessors-introducing-sass-to-podcastpedia-org/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:55:"https://github.com/podcastpedia/css-generator-sass-gulp";s:11:"ribbon-type";i:10;}'
-dsq_thread_id:
-  - 2632817389
-fsb_social_facebook:
-  - 4
-fsb_social_google:
-  - 6
-fsb_social_linkedin:
-  - 3
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - Podcastpedia.org
+  - article
   - web design
 tags:
   - css
@@ -33,7 +13,7 @@ tags:
   - less
   - preprocessor
   - sass
-  - web design
+  - podcastpedia
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

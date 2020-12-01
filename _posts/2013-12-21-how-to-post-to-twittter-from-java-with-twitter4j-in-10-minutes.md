@@ -1,30 +1,13 @@
 ---
-id: 1048
 title: How to post to Twittter from Java with Twitter4J in 10 minutes
 date: 2013-12-21T17:57:50+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1048
 permalink: /ama/how-to-post-to-twittter-from-java-with-twitter4j-in-10-minutes/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 7
-dsq_thread_id:
-  - 2065212106
-fsb_social_google:
-  - 6
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - java
+  - tutorial
 tags:
-  - post
-  - social media
+  - java
   - twitter
   - twitter4j
 ---

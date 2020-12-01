@@ -1,34 +1,17 @@
 ---
-id: 972
 title: 'SEO: Dynamic title and meta description with Tiles and Spring MVC'
 date: 2013-11-24T16:08:33+00:00
-author: Adrian Matei
+author: ama
 layout: post
-guid: http://www.codepedia.org/?p=972
 permalink: /ama/seo-dynamic-title-and-meta-description-with-tiles-and-spring-mvc/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 3
-dsq_thread_id:
-  - 1994982939
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - java
-  - seo
-  - spring
+  - article
 tags:
-  - meta description
   - seo
+  - java
   - spring
-  - tiles
+  - spring-mvc
+  - apache-tiles
 ---
 <p style="text-align: justify;">
   Every webmaster should know by now, that the <code>&lt;title&gt;</code> of a webpage, is one of the most important factors for ranking in the search results. Not only it is the title of the tab or browser windows, but it&#8217;s also the first line people see in the search results, followed by the URL and the snippet(this is usually the content of the <code>&lt;meta name="description"/&gt;</code> combined maybe with a date):

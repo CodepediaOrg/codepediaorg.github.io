@@ -6,8 +6,16 @@ My test candidate was the bookmarks.dev project "
 author: ama
 permalink: /ama/fast-faster-angular-cli-how-i-converted-my-angular-project-to-use-angular-cli
 published: true
-categories: [javascript]
-tags: [angular, angular-cli, webpack, bootstrap, font-awesome, showdown, bookmarksdev]
+categories: [tutorial]
+tags:
+    - javascript
+    - angular
+    - angular-cli
+    - webpack
+    - bootstrap
+    - font-awesome
+    - showdown
+    - bookmarks.dev
 ---
 
 Last week I migrated the [www.bookmarks.dev](https://www.bookmarks.dev) project to use [Angular CLI](https://cli.angular.io/) and it's awesome. Initially it was based on Angular Seed with Webpack - [preboot/angular-webpack](https://github.com/preboot/angular-webpack).

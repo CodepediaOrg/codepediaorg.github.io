@@ -1,35 +1,18 @@
 ---
-id: 1789
 title: How does Spring @Transactional Really Work?
 date: 2014-09-23T13:51:38+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codepedia.org/?p=1789
 permalink: /jhadesdev/how-does-spring-transactional-really-work/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3045692885
-fsb_social_facebook:
-  - 1
-  - 1
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - java
-  - spring
+  - article
 tags:
   - aop
-  - entity manager
+  - java
+  - spring
   - jpa
   - transaction
-  - transaction manager
+  - transaction-manager
   - transactional
 ---
 <p style="color: #3a4145; text-align: justify;">
@@ -51,7 +34,7 @@ tags:
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#JPA_and_Transaction_Management">JPA and Transaction Management</a>
@@ -100,17 +83,17 @@ tags:
   It&#8217;s important to notice that JPA on itself does not provide any type of declarative transaction management. When using JPA outside of a dependency injection container, transactions need to be handled programatically by the developer:
 </p>
 
-<pre class="lang:java decode:true ">UserTransaction utx = entityManager.getTransaction(); 
- 
-try { 
-    utx.begin(); 
- 
+<pre class="lang:java decode:true ">UserTransaction utx = entityManager.getTransaction();
+
+try {
+    utx.begin();
+
     businessLogic();
- 
-    utx.commit(); 
-} catch(Exception ex) { 
-    utx.rollback(); 
-    throw ex; 
+
+    utx.commit();
+} catch(Exception ex) {
+    utx.rollback();
+    throw ex;
 }</pre>
 
 <p style="color: #3a4145; text-align: justify;">
@@ -380,7 +363,7 @@ This will allow the injection of Entity Manager proxies via the persistence cont
 public class EntityManagerFactoriesConfiguration {
     @Autowired
     private DataSource dataSource;
- 
+
     @Bean(name = "entityManagerFactory")
     public LocalContainerEntityManagerFactoryBean emf() {
         LocalContainerEntityManagerFactoryBean emf = ...
@@ -403,10 +386,10 @@ public class TransactionManagersConfig {
     EntityManagerFactory emf;
     @Autowired
     private DataSource dataSource;
- 
+
     @Bean(name = "transactionManager")
     public PlatformTransactionManager transactionManager() {
-        JpaTransactionManager tm = 
+        JpaTransactionManager tm =
             new JpaTransactionManager();
             tm.setEntityManagerFactory(emf);
             tm.setDataSource(dataSource);
@@ -444,21 +427,21 @@ public class TransactionManagersConfig {
 
 <p style="color: #3a4145; text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" />
+
     <p id="about_author_header">
       <strong>Aleksey Novik</strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Software developer, likes to learn new technologies, hang out on stackoverflow and blog on tips and tricks on Java/Javascript polyglot enterprise development.
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

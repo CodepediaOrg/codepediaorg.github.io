@@ -5,8 +5,18 @@ description: "Presents key points you should consider when using Open API to doc
 author: ama
 permalink: /ama/key-takeaways-when-using-oas-3-to-document-an-expressjs-rest-api
 published: true
-categories: [api, documentation]
-tags: [openapi, expressjs, swagger, swagger-editor, swagger-ui, rest, api, documentation, nodejs]
+categories: [article]
+tags:
+    - openapi
+    - expressjs
+    - swagger
+    - swagger-editor
+    - swagger-ui
+    - rest
+    - api
+    - documentation
+    - nodejs
+    - bookmarks.dev
 ---
 
 

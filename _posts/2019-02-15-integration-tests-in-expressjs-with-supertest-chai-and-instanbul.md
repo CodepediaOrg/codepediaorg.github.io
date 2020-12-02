@@ -6,20 +6,26 @@ In this blog post I show how to write integration tests for ExpressJs with the h
 author: ama
 permalink: /ama/advanced-integration-tests-for-epxressjs-with-supertest-mocha-chai-and-instanbul
 published: false
-categories: [nodejs]
-tags: [expressj, nodejs, chai, instanbul, integration-testing]
+categories: [tutorial]
+tags:
+    - expressj
+    - node.js
+    - chai
+    - instanbul
+    - integration-testing
+    - code-coverage
 ---
 
 I come from an enterprise java world, where writing integration tests is nicely said cumbersome. Anyone who tried to
 setup [Arguillian](http://arquillian.org/) or has to remember the 1000+ Spring annotations would agree with me.
 
 In this post I will show how easy it is to setup and run integration tests in NodeJS, to be more specific for an ExpressJS
-REST api with the help of supertest, mocha and chai. In the end will add test coverage functionality with instanbul. 
+REST api with the help of supertest, mocha and chai. In the end will add test coverage functionality with instanbul.
 
 A word about these tools:
 
- * [supertest](https://github.com/visionmedia/supertest) - 
+ * [supertest](https://github.com/visionmedia/supertest) -
  * [mocha]() -
- * [chai]() - 
- * [instanbul]() - 
- 
+ * [chai]() -
+ * [instanbul]() -
+

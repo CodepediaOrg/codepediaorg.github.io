@@ -5,8 +5,10 @@ description: "List of GraphQL resources to get you started with GraphQL, from be
 author: ama
 permalink: /ama/graphql-resources-to-help-you-get-started
 published: true
-categories: [graphql]
-tags: [resources, bookmarks]
+categories: [article]
+tags:
+    - graphql
+    - resources
 ---
 
 I have recently started to look more thoroughly into GraphQL.

@@ -1,40 +1,19 @@
 ---
-id: 1851
 title: jQuery ui autocomplete not working in Spring 4.1
 date: 2014-09-22T11:55:22+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1851
 permalink: /ama/jquery-ui-autocomplete-not-working-in-spring-4-1/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:48:"https://github.com/podcastpedia/podcastpedia-web";s:11:"ribbon-type";i:10;}'
-dsq_thread_id:
-  - 3042247733
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 1
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - javascript
-  - spring
-  - troubleshooting
+  - article
 tags:
+  - java
+  - javascript
   - autocomplete
-  - jQuery
-  - jquery ui
+  - jquery
+  - jquery-ui
   - spring
-  - spring 4.1
-  - troubleshooting
+  - debugging
 ---
 <p style="text-align: justify;">
   You may recall from my post <a title="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" href="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a>, that I use <a title="http://jqueryui.com/autocomplete/" href="http://jqueryui.com/autocomplete/" target="_blank">jQuery ui autocomplete</a> to dynamically search for keywords on <a title="https://github.com/CodepediaOrg/podcastpedia/tags/all/0" href="https://github.com/CodepediaOrg/podcastpedia/tags/all/0" target="_blank">Podcastpedia.org</a>. I am now in the process of migrating the source base for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> to Spring 4. I decided to go with the latest version <code>4.1.0.RELEASE</code> and everything worked pretty smoothly until I got to test the auto-complete functionality presented in the post mentioned before.<!--more-->

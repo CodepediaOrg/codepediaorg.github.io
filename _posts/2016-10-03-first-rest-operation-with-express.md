@@ -5,8 +5,12 @@ description: "In this one I will try to implement a simple GET method that will 
 author: ama
 permalink: /ama/first-rest-operation-with-express
 published: false
-categories: [nodejs]
-tags: [codingpedia bookmarks, beginner, nodejs, expressjs, tutorial]
+categories: [tutorial]
+tags:
+    - bookmarks.dev
+    - beginner
+    - node.js
+    - expressjs
 ---
 
 In the previous blog post, [Kick starting a project with Express Generator]({% post_url 2016-10-01-kickstarting-a-project-with-express-generator}),

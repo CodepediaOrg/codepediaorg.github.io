@@ -5,8 +5,12 @@ description: "This post describes how to install a MySQL 5.7 Community Edition o
 author: ama
 permalink: /ama/how-to-install-mysql-server-5-7-on-ubuntu-16-04
 published: true
-categories: [database, infrastructure, operating-system, installation]
-tags: [mysql, ubuntu, linux, setup]
+categories: [article]
+tags:
+    - mysql
+    - ubuntu
+    - linux
+    - installation
 ---
 
 This is not the first time I need to install and configure a MySql Community Server on a fresh system with Ubuntu (16.04) running on it. So instead next time to have to

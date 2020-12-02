@@ -6,7 +6,12 @@ author: ama
 permalink: /ama/complete-example-of-how-to-upload-images-to-amazon-s3-bucket-from-angular-via-express
 published: true
 categories: [tutorial]
-tags: [angular, nodejs, expressjs, amazons3, file]
+tags:
+    - angular
+    - node.js
+    - expressjs
+    - amazon-s3
+    - file
 ---
 
 In this blog post I present a complete example of how to upload an image to Amazon S3 bucket all the way from frontend

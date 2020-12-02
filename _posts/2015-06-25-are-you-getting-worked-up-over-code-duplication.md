@@ -1,31 +1,13 @@
 ---
-id: 2403
 title: Are you getting worked up over code duplication?
 date: 2015-06-25T20:50:05+00:00
 author: Johannes Brodwall
 layout: post
-guid: http://www.codepedia.org/?p=2403
 permalink: /jhannes/are-you-getting-worked-up-over-code-duplication/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3878407580
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 3
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - code
-  - development
+  - article
 tags:
-  - code duplication
-  - code reuse
+  - code-reuse
 ---
 <p style="text-align: justify;">
   As programmers, we have long learned that Duplication is the Ultimate Sin of programming. Even considering to duplicate something is almost unthinkable.
@@ -65,21 +47,21 @@ tags:
 
 <p style="text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/johannes-brodwall.jpeg" alt="Johannes Brodwall" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/johannes-brodwall.jpeg" alt="Johannes Brodwall" />
+
     <p id="about_author_header">
       <strong>Johannes Brodwall</strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Johannes is the director of software development for the MRM product company BrandMaster. In his spare time he likes to coach teams and developers on better coding, collaboration, planning and product understanding.
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-earth" href="http://johannesbrodwall.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jhannes" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhannes" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

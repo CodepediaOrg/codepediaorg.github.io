@@ -4,7 +4,6 @@ date: 2013-08-02T07:29:34+00:00
 author: ama
 layout: post
 permalink: /ama/generate-sitemaps-with-sitemapgen4j/
-d
 categories:
   - tutorial
 tags:

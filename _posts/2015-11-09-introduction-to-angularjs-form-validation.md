@@ -1,33 +1,15 @@
 ---
-id: 2535
 title: Introduction to AngularJs Form Validation
 date: 2015-11-09T21:03:12+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codepedia.org/?p=2535
 permalink: /jhadesdev/introduction-to-angularjs-form-validation/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 4304221659
-fsb_social_facebook:
-  - 0
-fsb_social_google:
-  - 1
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - javascript
-  - web development
+  - article
 tags:
-  - angular
   - angularJS
-  - form validation
-  - web development
+  - validation
+  - forms
 ---
 <p style="text-align: justify;">
   AngularJs is often seen as a viable solution for building full scale single page web applications. In this post we will go over how Angular is particularly well suited for building form-intensive large scale apps due it&#8217;s numerous form validation features (<a href="https://jsfiddle.net/jhadesdev/yfLqfzLw/2/">example</a>).<!--more-->
@@ -195,8 +177,8 @@ ng-invalid-required" name="frm"&gt;</pre>
         &lt;input name="password" ng-model="user.password"
             type="password" placeholder="Password"
             required ng-minlength="6" ng-maxlength="10"&gt;
-        &lt;div class="field-message"  
-        ng-messages="frm.password.$error" 
+        &lt;div class="field-message"
+        ng-messages="frm.password.$error"
         ng-if='frm.password.$dirty' ng-cloak&gt;
             &lt;div ng-message="required"&gt;Password is required&lt;/div&gt;
             &lt;div ng-message="minlength"&gt;
@@ -219,7 +201,7 @@ ng-invalid-required" name="frm"&gt;</pre>
   The submit button can be made enabled/disabled according to the form validity and the condition checkbox using the <code>ng-disabled</code> directive:
 </p>
 
-<pre class="lang:default decode:true">&lt;button type="submit" class="pure-button pure-button-primary" 
+<pre class="lang:default decode:true">&lt;button type="submit" class="pure-button pure-button-primary"
 ng-disabled="frm.$invalid || !conditions"&gt;Submit&lt;/button&gt;</pre>
 
 <div class="fix-syntax-highlight" style="text-align: justify;">

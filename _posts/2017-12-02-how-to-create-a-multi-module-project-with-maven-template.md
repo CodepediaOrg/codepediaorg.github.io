@@ -1,12 +1,16 @@
 ---
 layout: post
 title: How to create a multi module project with a Maven archetype generated from existing project
-description: ""
+description: "How to create a multi module project with a Maven archetype generated from existing project"
 author: ama
 permalink: /ama/how-to-create-a-multi-module-project-with-maven-template
 published: true
-categories: [dependency-management]
-tags: [maven, java, javaee]
+categories: [tutorial]
+tags:
+    - maven
+    - java
+    - javaee
+    - dependency-management
 ---
 
 Did you find yourself one or several times, copying your favourite java project, renaming it, removing files, keeping

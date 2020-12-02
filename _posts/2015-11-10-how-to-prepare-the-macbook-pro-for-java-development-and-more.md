@@ -1,36 +1,17 @@
 ---
-id: 2521
 title: How to prepare the MacBook Pro for Java development and more
 date: 2015-11-10T21:23:41+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=2521
 permalink: /ama/how-to-prepare-the-macbook-pro-for-java-development-and-more/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 4307305740
-fsb_social_facebook:
-  - 9
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 15
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - development
+  - article
 tags:
-  - Git
-  - GitHub
+  - git
   - intellij
   - java
-  - java development
   - jhipster
-  - macbook
-  - macbook pro
+  - macos
   - maven
   - nodejs
 ---

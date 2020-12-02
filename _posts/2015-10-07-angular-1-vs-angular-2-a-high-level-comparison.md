@@ -1,31 +1,14 @@
 ---
-id: 2385
-title: 'Angular 1 vs Angular 2 &#8211; a high-level comparison'
+title: Angular 1 vs Angular 2 a high-level comparison
 date: 2015-10-07T17:33:45+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codepedia.org/?p=2385
 permalink: /jhadesdev/angular-1-vs-angular-2-a-high-level-comparison/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3881588747
-fsb_social_facebook:
-  - 1
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 6
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - javascript
+  - article
 tags:
   - angular
-  - angular2
-  - angularJS
+  - angularjs
   - javascript
 ---
 <p style="text-align: justify;">
@@ -117,7 +100,7 @@ It can be used for many use cases, such as for example allowing the framework to
 
 Angular 2 uses the zones mechanism to make a lot of the reasoning about the digest cycle no longer necessary. This plain non-Angular specific Javascript code will transparently trigger a Angular 2 digest, if triggered by a component that is inside a zone:
 
-<pre><code class="javascript">element.addEventListener('keyup', function () {  
+<pre><code class="javascript">element.addEventListener('keyup', function () {
   console.log('Key pressed.');
 });
 });</code></pre>
@@ -266,7 +249,7 @@ Well, the web component behaves just like a browser component, such has for exam
 
 In Angular 2, the template syntax will avoid to bind to plain attributes, unless to read constants:
 
-<pre><code class="xml">&lt;ng2-component&gt;  
+<pre><code class="xml">&lt;ng2-component&gt;
      &lt;web-component-widget [setting]="angularExpresssion"&gt;&lt;/web-component-widget&gt;
 &lt;/ng2-component&gt;</code></pre>
 

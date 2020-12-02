@@ -1,35 +1,17 @@
 ---
-id: 2173
 title: How to integrate Jersey in a Spring MVC application
 date: 2015-01-05T09:52:36+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=2173
 permalink: /ama/how-to-integrate-jersey-in-a-spring-mvc-application/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 6
-fsb_social_google:
-  - 2
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3391292323
 categories:
-  - java
-  - spring
+  - tutorial
 tags:
-  - configuration
+  - java
   - jax-rs
-  - jax-rs 2.0
   - jersey
   - maven
-  - spring mvc
+  - spring-mvc
 ---
 <p style="text-align: justify;">
   I have recently started to build a public REST API with Java for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and for the <a title="https://jax-rs-spec.java.net/" href="https://jax-rs-spec.java.net/" target="_blank">JAX-RS</a> implementation I have chosen <a title="https://jersey.java.net/" href="https://jersey.java.net/" target="_blank">Jersey</a>, as I find it &#8220;natural&#8221; and powerful &#8211; you can find out more about it by following the <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring.</a>  Because <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is a web application powered by Spring MVC, I wanted to integrate both frameworks in <a title="https://github.com/podcastpedia/podcastpedia-web" href="https://github.com/podcastpedia/podcastpedia-web" target="_blank">podcastpedia-web</a>, to take advantage of the backend service functionality already present in the project. Anyway this short post will present the steps I had to take to make the integration between the two frameworks work.<!--more-->

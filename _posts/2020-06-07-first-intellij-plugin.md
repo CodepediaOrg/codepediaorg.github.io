@@ -6,8 +6,12 @@ description: "Shows the basic steps needed to create a simple IntelliJ plugins w
 author: ama
 permalink: /ama/my-first-intellij-plugin-to-help-me-bookmark-code
 published: true
-categories: [productivity]
-tags: [intellij, plugins, bookmarksdev]
+categories: [tutorial]
+tags:
+    - intellij
+    - plugins
+    - bookmarks.dev
+    - productivity
 ---
 
 So, I wrote my first IntelliJ plugin to help me save code snippets, aka codelets, easier to

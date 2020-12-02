@@ -1,33 +1,15 @@
 ---
-id: 2020
 title: The madness of layered architecture
 date: 2014-10-23T21:20:04+00:00
 author: Johannes Brodwall
 layout: post
-guid: http://www.codepedia.org/?p=2020
 permalink: /jhannes/the-madness-of-layered-architecture-2/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3148060378
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 5
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - architecture
-  - 'C#'
-  - java
+  - article
 tags:
-  - application architecture
-  - layer
-  - layered architecture
+  - architecture
+  - java
+  - c#
 ---
 <p style="color: #333333; text-align: justify;">
   I once visited a team that had fifteen layers in their code. That is: If you wanted to display some data in the database in a web page, that data passed through 15 classes in the application. What did these layers do? Oh, nothing much. They just copied data from one object to the next. Or sometimes the “access object layer” would perform a check that objects were valid. Or perhaps the check would be done in the “boundary object layer”. It varied, depending on which part of the application you looked.<!--more-->
@@ -143,21 +125,21 @@ tags:
 
 <p style="color: #333333;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/johannes-brodwall.jpeg" alt="Johannes Brodwall" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/johannes-brodwall.jpeg" alt="Johannes Brodwall" />
+
     <p id="about_author_header">
       <strong>Johannes Brodwall</strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Johannes is the director of software development for the MRM product company BrandMaster. In his spare time he likes to coach teams and developers on better coding, collaboration, planning and product understanding.
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-earth" href="http://johannesbrodwall.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jhannes" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhannes" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

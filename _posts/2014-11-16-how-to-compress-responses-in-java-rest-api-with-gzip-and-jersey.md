@@ -1,34 +1,14 @@
 ---
-id: 2090
 title: How to compress responses in Java REST API with GZip and Jersey
 date: 2014-11-16T15:47:59+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=2090
 permalink: /ama/how-to-compress-responses-in-java-rest-api-with-gzip-and-jersey/
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 0
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3230719873
 categories:
+  - tutorial
+tags:
   - java
   - optimization
-tags:
-  - compress
   - compression
   - gzip
   - java
@@ -273,24 +253,3 @@ Server: Jetty(9.0.7.v20131107)
       1.
       2. <a title="https://jersey.java.net/documentation/latest/user-guide.html#filters-and-interceptors" href="https://jersey.java.net/documentation/latest/user-guide.html#filters-and-interceptors" target="_blank">Filters and interceptors</a>
   3. <a title="http://www.gzip.org/" href="http://www.gzip.org/" target="_blank">Gzip.org</a>
-
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>

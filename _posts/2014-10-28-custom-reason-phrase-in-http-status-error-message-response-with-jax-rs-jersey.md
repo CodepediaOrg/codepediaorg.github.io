@@ -1,41 +1,20 @@
 ---
-id: 2051
 title: Custom Reason Phrase in HTTP status error message response with JAX-RS (Jersey)
 date: 2014-10-28T20:15:08+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=2051
 permalink: /ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
-dsq_thread_id:
-  - 3166737579
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - errors
-  - java
+  - article
 tags:
-  - error handling
+  - java
+  - error-handling
   - http
-  - http header
+  - http-headers
   - http reasponse
   - jax-rs
   - jersey
   - rest
-  - rest api
 ---
 <p style="text-align: justify;">
   In some of my recent work I got the request to produce a custom Reason Phrase in the  HTTP status response delivered to one of our REST API consuming clients when an error occurs. In this post I will demonstrate how you can achieve that with Jersey.<!--more-->
@@ -248,24 +227,3 @@ Custom Reason Phrase exception occured : message attached to the Custom Reason P
 
   1. <a title="http://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html" target="_blank">Hypertext Transfer Protocol &#8212; HTTP/1.1 &#8211; Response</a>
   2. <a title="https://jersey.java.net/documentation/latest/user-guide.html" href="https://jersey.java.net/documentation/latest/user-guide.html" target="_blank">Jersey User Guide</a>
-
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>

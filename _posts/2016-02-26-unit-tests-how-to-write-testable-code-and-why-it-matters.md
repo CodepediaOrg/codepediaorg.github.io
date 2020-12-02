@@ -1,30 +1,14 @@
 ---
-id: 2650
 title: Unit Tests, How to Write Testable Code and Why it Matters
 date: 2016-02-26T16:24:36+00:00
 author: Toptal Blog
 layout: post
-guid: http://www.codepedia.org/?p=2650
 permalink: /toptal/unit-tests-how-to-write-testable-code-and-why-it-matters/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 4613556530
-fsb_social_facebook:
-  - 0
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - testing
+  - article
 tags:
-  - 'unit-testing'
-  - 'C#'
+  - unit-testing
+  - c#
   - testing
 ---
 <p style="text-align: justify;">

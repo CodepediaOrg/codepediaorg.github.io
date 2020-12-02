@@ -5,8 +5,11 @@ description: "Tired of searching for the right command every time you need to ba
 author: ama
 permalink: /ama/the-alias-way-to-backup-a-mysql-database-from-command-line
 published: true
-categories: [database]
-tags: [mysql, bash, linux]
+categories: [tutorial]
+tags:
+    - mysql
+    - backup
+    - linux
 ---
 
 As I have told you [before](http://www.codepedia.org/ama/a-developers-guide-to-using-aliases/), I am really hooked on bash aliases[^2].

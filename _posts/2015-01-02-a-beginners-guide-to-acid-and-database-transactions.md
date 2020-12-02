@@ -1,32 +1,14 @@
 ---
-id: 2194
-title: 'A beginner&#8217;s guide to ACID and database transactions'
+title: A beginner's guide to ACID and database transactions
 date: 2015-01-02T10:51:21+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codepedia.org/?p=2194
 permalink: /vladmihalcea/a-beginners-guide-to-acid-and-database-transactions/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3382334983
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 0
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - database
+  - article
 tags:
-  - ACID
+  - acid
   - database
-  - enterprise
-  - isolation levels
   - transaction
 ---
 <p style="color: #444444; text-align: justify;">
@@ -184,87 +166,87 @@ tags:
     <th style="font-style: inherit;">
       ISOLATION LEVEL
     </th>
-    
+
     <th style="font-style: inherit;">
       DIRTY READ
     </th>
-    
+
     <th style="font-style: inherit;">
       NON-REPEATABLE READ
     </th>
-    
+
     <th style="font-style: inherit;">
       PHANTOM READ
     </th>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       READ_UNCOMMITTED
     </td>
-    
+
     <td style="font-style: inherit;">
       allowed
     </td>
-    
+
     <td style="font-style: inherit;">
       allowed
     </td>
-    
+
     <td style="font-style: inherit;">
       allowed
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       READ_COMMITTED
     </td>
-    
+
     <td style="font-style: inherit;">
       prevented
     </td>
-    
+
     <td style="font-style: inherit;">
       allowed
     </td>
-    
+
     <td style="font-style: inherit;">
       allowed
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       REPEATABLE_READ
     </td>
-    
+
     <td style="font-style: inherit;">
       prevented
     </td>
-    
+
     <td style="font-style: inherit;">
       prevented
     </td>
-    
+
     <td style="font-style: inherit;">
       allowed
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       SERIALIZABLE
     </td>
-    
+
     <td style="font-style: inherit;">
       prevented
     </td>
-    
+
     <td style="font-style: inherit;">
       prevented
     </td>
-    
+
     <td style="font-style: inherit;">
       prevented
     </td>
@@ -320,57 +302,57 @@ tags:
     <th style="font-style: inherit;">
       DATABASE
     </th>
-    
+
     <th style="font-style: inherit;">
       DEFAULT ISOLATION LEVEL
     </th>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       Oracle
     </td>
-    
+
     <td style="font-style: inherit;">
       READ_COMMITTED
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       MySQL
     </td>
-    
+
     <td style="font-style: inherit;">
       REPEATABLE_READ
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       Microsoft SQL Server
     </td>
-    
+
     <td style="font-style: inherit;">
       READ_COMMITTED
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       PostgreSQL
     </td>
-    
+
     <td style="font-style: inherit;">
       READ_COMMITTED
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       DB2
     </td>
-    
+
     <td style="font-style: inherit;">
       CURSOR STABILITY (a.k.a READ_COMMITTED)
     </td>
@@ -388,21 +370,21 @@ tags:
 Published on Codepedia.org with permission of Vlad Mihalcea – source <a title="A beginner's guide to ACID and database transactions" href="A%20beginner's guide to ACID and database transactions" target="_blank">A beginner&#8217;s guide to ACID and database transactions</a> from <a style="color: #bc360a;" title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a> 
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" />
+
   <p id="about_author_header">
     <strong>Vlad Mihalcea</strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Software architect passionate about software integration, high scalability and concurrency challenges
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

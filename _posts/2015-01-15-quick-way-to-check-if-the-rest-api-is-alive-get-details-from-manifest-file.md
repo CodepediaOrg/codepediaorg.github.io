@@ -1,38 +1,19 @@
 ---
-id: 2208
 title: 'Quick way to check if the REST API is alive &#8211; GET details from Manifest file'
 date: 2015-01-15T20:48:56+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=2208
 permalink: /ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
-fsb_social_facebook:
-  - 7
-fsb_social_google:
-  - 6
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3423690803
 categories:
-  - Java EE
-  - spring
+  - article
 tags:
+  - java
+  - javaee
   - api
   - manifest
   - maven
   - rest
-  - troubleshoot
+  - debugging
 ---
 <p style="text-align: justify;">
   There might be cases when you want to quickly verify if your REST API, that is deployed either on dev, test or prod environments, is reachable altogether. A common way to do this is by building a generic resource that delivers for example the version of the deployed API. You can trigger a request to this resource manually or, even better, have a Jenkings/Hudson job, which runs a checkup job after deployment. In this post, I will present how to implement such a service that reads the implementation details from the application&#8217;s manifest file. The API verified, is the one developed in the <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a><!--more-->

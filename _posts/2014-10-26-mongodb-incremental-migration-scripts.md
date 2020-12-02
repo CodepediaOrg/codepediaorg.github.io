@@ -1,38 +1,14 @@
 ---
-id: 2046
 title: MongoDB Incremental Migration Scripts
 date: 2014-10-26T16:15:14+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codepedia.org/?p=2046
 permalink: /vladmihalcea/mongodb-incremental-migration-scripts/
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:84:"https://github.com/vladmihalcea/vladmihalcea.wordpress.com/tree/master/mongodb-facts";s:11:"ribbon-type";i:10;}'
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3157235811
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 1
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - database
+  - article
 tags:
-  - agile
+  - database
   - flyway
-  - flywayDB
-  - incremental migration scripts
-  - migration
-  - Mongeez
   - mongoDB
 ---
 ## Introduction
@@ -176,21 +152,21 @@ Code available on [GitHub](https://github.com/vladmihalcea/vladmihalcea.wordpres
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" />
+
   <p id="about_author_header">
     <strong>Vlad Mihalcea</strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Software architect passionate about software integration, high scalability and concurrency challenges
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

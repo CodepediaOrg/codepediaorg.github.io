@@ -1,40 +1,16 @@
 ---
-id: 2331
 title: Why Angular is not only for single page web apps
 date: 2015-03-12T10:46:43+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codepedia.org/?p=2331
 permalink: /jhadesdev/why-angular-is-not-only-for-single-page-web-apps/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:74:"https://github.com/jhades/blog.jhades.org/tree/master/angular-not-only-spa";s:11:"ribbon-type";i:10;}'
-dsq_thread_id:
-  - 3588499111
-fsb_social_facebook:
-  - 1
-fsb_social_google:
-  - 1
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - javascript
+  - article
 tags:
   - angular
-  - angularJS
-  - form
-  - forma validation
+  - forms
   - javascript
-  - single page application
-  - spa
-  - web design
+  - single-page-application
 ---
 <p style="text-align: justify;">
   AngularJs is often seen as a viable solution for building full scale single page web applications. Although that is a good use case for Angular, in this post we will explore how the framework can also be used to incrementally add functionality to any web page in general, in some cases <em>with little to no Javascript needed</em> (<a href="https://jsfiddle.net/jhadesdev/yfLqfzLw/2/">example</a>).<!--more-->
@@ -78,8 +54,8 @@ Apart from that, the whole functionality is based on built-in Angular directives
 
 When Angular compiles the DOM inside `ng-app`, it applies to form tags the built-in form directive. In the case of the above form, this means that the initial HTML of the form will look something like this:
 
-<pre class="lang:js decode:true">&lt;form class="ng-pristine ng-invalid  
-ng-invalid-required" name="frm"&gt;  
+<pre class="lang:js decode:true">&lt;form class="ng-pristine ng-invalid
+ng-invalid-required" name="frm"&gt;
 &lt;/form&gt;</pre>
 
 Notice the strange looking `ng-pristine` and the `ng-invalid` classes that Angular automatically adds depending on the form state.
@@ -105,7 +81,7 @@ The validations of each field can be declared directly in HTML. For example the 
   * maximum length of 10 characters
 
 These validations are declared using the `required`, `ng-minlength` and
-  
+
 `ng-maxlength` directives:
 
 <pre class="lang:js decode:true">&lt;input name="password" ng-model="user.password" type="password"  placeholder="Password" required ng-minlength="6" ng-maxlength="10"&gt;</pre>
@@ -132,8 +108,8 @@ This functionality can be implemented using the [ng-messages](https://docs.angul
     &lt;input name="password" ng-model="user.password"
         type="password" placeholder="Password"
         required ng-minlength="6" ng-maxlength="10"&gt;
-    &lt;div class="field-message"  
-    ng-messages="frm.password.$error" 
+    &lt;div class="field-message"
+    ng-messages="frm.password.$error"
     ng-if='frm.password.$dirty' ng-cloak&gt;
         &lt;div ng-message="required"&gt;Password is required&lt;/div&gt;
         &lt;div ng-message="minlength"&gt;
@@ -178,21 +154,21 @@ A thorough walk-through of Angular form validation can be found on this [screenc
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" />
+
   <p id="about_author_header">
     <strong>Aleksey Novik</strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Software developer, likes to learn new technologies, hang out on stackoverflow and blog on tips and tricks on Java/Javascript polyglot enterprise development.
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

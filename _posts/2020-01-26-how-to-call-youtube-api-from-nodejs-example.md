@@ -6,8 +6,15 @@ description: "Shows an example on how you can call the YouTube Data API to get v
 author: ama
 permalink: /ama/how-to-call-youtube-api-from-nodejs-example
 published: true
-categories: [bookmarks]
-tags: [expressjs, nodejs, rest, angular, youtube, api]
+categories: [tutorial]
+tags:
+    - expressjs
+    - node.js
+    - rest
+    - angular
+    - youtube
+    - api
+    - bookmarks.dev
 ---
 
 In this short blog post I will show you how to call the Youtube Data API v3 to get information about youtube videos.

@@ -5,8 +5,11 @@ description: "Practical MongoDB shell commands every developer should know, or I
 author: ama
 permalink: /ama/practical-mongodb-shell-commands-every-developer-should-know
 published: true
-categories: [nosql]
-tags: [bookmarksdev, mongodb]
+categories: [article]
+tags:
+    - bookmarks.dev
+    - mongodb
+    - nosql
 ---
 
 The bookmarks on [www.bookmarks.dev](https://www.bookmarks.dev/) are persisted in a [MongoDB Server](https://docs.mongodb.com/manual/).

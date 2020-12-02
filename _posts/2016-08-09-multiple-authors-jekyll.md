@@ -5,8 +5,8 @@ description: "In this post I will describe how I currently manage multiple autho
 author: ama
 permalink: /ama/how-to-handle-multiple-authors-in-jekyll/
 published: true
-categories: [jekyll]
-tags: [jekyll, wordpress, blog, migration, codingpedia, blogging]
+categories: [article]
+tags: [jekyll, wordpress, blogging]
 ---
 
 One of my main concern when I considered the [migration from Wordpress to Jekyll](//www.codepedia.org/ama/how-to-migrate-programming-blog-from-wordpress-to-jekyll/) was how would I be able to handle multiple authors, because this plays an important role in the website supporting our [Coding Friend Program](//www.codepedia.org/friends/). Fear no more, I have found a satisfactory way to handle multiple authors with Jekyll[^1] and in this short post I list the main points concerning that.
@@ -77,7 +77,7 @@ dexter:
       url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
     - title: "facebook"
       url: "https://www.facebook.com/adrian.matei.90"
-...........      
+...........
 ```
 
 [^4]: <https://jekyllrb.com/docs/datafiles/>

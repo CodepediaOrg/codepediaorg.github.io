@@ -1,5 +1,5 @@
 ---
-title: 'A beginner&#8217;s guide to JPA/Hibernate flush strategies'
+title: A beginner's guide to JPA/Hibernate flush strategies
 date: 2014-09-12T06:51:39+00:00
 author: Vlad Mihalcea
 layout: post

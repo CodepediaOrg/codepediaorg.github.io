@@ -5,8 +5,11 @@ description: "This post shows how to dynamically fill in data in a reactive form
 author: ama
 permalink: /ama/patching-my-way-through-formgroups-and-formcontrols-in-angular-reactive-forms
 published: true
-categories: [angular]
-tags: [bookmarksdev, coding bookmarks, angular, forms, reactive forms]
+categories: [article]
+tags:
+    - bookmarks.dev
+    - angular
+    - forms
 ---
 
 Here goes my first Angular post - yeeey. Well, it's not super exciting, but practical and specific... Topic - generic: present how to update a field's value in a reactive form field,

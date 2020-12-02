@@ -1,30 +1,14 @@
 ---
-id: 2084
 title: How to build and clear a reference data cache with singleton EJBs, Ehcache and MBeans
 date: 2014-11-07T16:15:42+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=2084
 permalink: /ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-ehcache-and-mbeans/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 2
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3201795005
 categories:
-  - java
-  - Java EE
+  - tutorial
 tags:
-  - cache
+  - java
+  - javaee
   - caching
   - ehcache
   - ejb
@@ -336,25 +320,3 @@ public class ReferenceDataResource {
   5. <a style="color: #bc360a;" title="http://docs.oracle.com/javase/tutorial/jmx/" href="http://docs.oracle.com/javase/tutorial/jmx/" target="_blank">Trail: Java Management Extensions (JMX)</a>
   6. <a style="color: #bc360a;" title="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" target="_blank">Spring Cache Abstraction</a>
 
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>
-
-&nbsp;

@@ -1,40 +1,20 @@
 ---
-id: 2231
 title: How to secure Jersey REST services with Spring Security and Basic authentication
 date: 2015-02-12T17:36:35+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=2231
 permalink: /ama/how-to-secure-jersey-rest-services-with-spring-security-and-basic-authentication/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/CodepediaOrg/demo-rest-jersey-spring";s:11:"ribbon-type";i:10;}'
-fsb_social_facebook:
-  - 7
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 3
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3509817746
 categories:
-  - java
-  - Java EE
-  - spring
+  - tutorial
 tags:
-  - basic authentication
+  - authentication
   - jersey
   - rest
-  - rest api
+  - java
+  - javaee
+  - spring
   - security
-  - web services
+  - web-services
 ---
 <p style="text-align: justify;">
   In my previous blog post, <a title="http://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" href="http://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" target="_blank">Quick way to check if the REST API is alive &#8211; GET details from Manifest file</a>, I showed how to develop a REST resource to easy check if the developed REST API is reachable. In this post I will present how you can secure this resource with Spring Security and <a title="http://en.wikipedia.org/wiki/Basic_access_authentication" href="http://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">Basic authentication</a> &#8211; <em>&#8220;In the context of an HTTP transaction, basic access authentication is a method for an HTTP user agent to provide a user name and password when making a request.&#8221;</em>
@@ -305,24 +285,3 @@ Server: Jetty(9.2.6.v20141205)
 </p>
 
 ## <span id="Resources">Resources</span>
-
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>

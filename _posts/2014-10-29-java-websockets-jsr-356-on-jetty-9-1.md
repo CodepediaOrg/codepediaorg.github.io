@@ -1,39 +1,17 @@
 ---
-id: 2060
 title: Java WebSockets (JSR-356) on Jetty 9.1
 date: 2014-10-29T21:09:39+00:00
 author: Andriy Redko
 layout: post
-guid: http://www.codepedia.org/?p=2060
 permalink: /aredko/java-websockets-jsr-356-on-jetty-9-1/
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:48:"https://github.com/reta/jetty-web-sockets-jsr356";s:11:"ribbon-type";i:10;}'
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3170165568
-fsb_social_facebook:
-  - 0
-fsb_social_google:
-  - 2
-fsb_social_linkedin:
-  - 2
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
+  - article
+tags:
   - java
   - spring
-tags:
   - jetty
-  - jetty9
-  - JSON processing
-  - jsr353
-  - jsr356
-  - WebSockets
+  - json
+  - websockets
 ---
 <p style="text-align: justify;">
   <a style="color: #888855;" href="http://www.eclipse.org/jetty/documentation/current/jetty-javaee.html">Jetty 9.1</a> is finally released, bringing <a style="color: #888855;" href="http://jcp.org/en/jsr/detail?id=356">Java WebSockets (JSR-356)</a> to non-EE environments. It&#8217;s awesome news and today&#8217;s post will be about using this great new API along with <a style="color: #888855;" href="http://projects.spring.io/spring-framework/">Spring Framework</a>.
@@ -52,19 +30,19 @@ tags:
 public class Message {
     private String username;
     private String message;
- 
+
     public Message() {
     }
- 
+
     public Message( final String username, final String message ) {
         this.username = username;
         this.message = message;
     }
- 
+
     public String getMessage() {
         return message;
     }
- 
+
     public String getUsername() {
         return username;
     }
@@ -72,7 +50,7 @@ public class Message {
     public void setMessage( final String message ) {
         this.message = message;
     }
- 
+
     public void setUsername( final String username ) {
         this.username = username;
     }
@@ -95,9 +73,9 @@ import javax.websocket.Session;
 
 @ClientEndpoint
 public class BroadcastClientEndpoint {
-    private static final Logger log = Logger.getLogger( 
+    private static final Logger log = Logger.getLogger(
         BroadcastClientEndpoint.class.getName() );
- 
+
     @OnOpen
     public void onOpen( final Session session ) throws IOException, EncodeException  {
         session.getBasicRemote().sendObject( new Message( "Client", "Hello!" ) );
@@ -138,7 +116,7 @@ public class Message {
         @Override
         public void init( final EndpointConfig config ) {
         }
-  
+
         @Override
         public String encode( final Message message ) throws EncodeException {
             return Json.createObjectBuilder()
@@ -147,7 +125,7 @@ public class Message {
                 .build()
                 .toString();
         }
-  
+
         @Override
         public void destroy() {
         }
@@ -169,29 +147,29 @@ import javax.websocket.Decoder;
 public class Message {
     public static class MessageDecoder implements Decoder.Text&lt; Message &gt; {
         private JsonReaderFactory factory = Json.createReaderFactory( Collections.&lt; String, Object &gt;emptyMap() );
-  
+
         @Override
         public void init( final EndpointConfig config ) {
         }
-  
+
         @Override
         public Message decode( final String str ) throws DecodeException {
             final Message message = new Message();
-   
+
             try( final JsonReader reader = factory.createReader( new StringReader( str ) ) ) {
                 final JsonObject json = reader.readObject();
                 message.setUsername( json.getString( "username" ) );
                 message.setMessage( json.getString( "message" ) );
             }
-   
+
             return message;
         }
-  
+
         @Override
         public boolean willDecode( final String str ) {
             return true;
         }
-  
+
         @Override
         public void destroy() {
         }
@@ -230,17 +208,17 @@ import com.example.services.Message;
 public class ClientStarter {
     public static void main( final String[] args ) throws Exception {
         final String client = UUID.randomUUID().toString().substring( 0, 8 );
-  
-        final WebSocketContainer container = ContainerProvider.getWebSocketContainer();    
-        final String uri = "ws://localhost:8080/broadcast";  
-  
+
+        final WebSocketContainer container = ContainerProvider.getWebSocketContainer();
+        final String uri = "ws://localhost:8080/broadcast";
+
         try( Session session = container.connectToServer( BroadcastClientEndpoint.class, URI.create( uri ) ) ) {
             for( int i = 1; i &lt;= 10; ++i ) {
                 session.getBasicRemote().sendObject( new Message( client, "Message #" + i ) );
                 Thread.sleep( 1000 );
             }
         }
-  
+
         // Application doesn't exit if container's threads are still running
         ( ( ClientContainer )container ).stop();
     }
@@ -271,15 +249,15 @@ import javax.websocket.server.ServerEndpoint;
 import com.example.services.Message.MessageDecoder;
 import com.example.services.Message.MessageEncoder;
 
-@ServerEndpoint( 
-    value = "/broadcast", 
-    encoders = { MessageEncoder.class }, 
-    decoders = { MessageDecoder.class } 
-) 
+@ServerEndpoint(
+    value = "/broadcast",
+    encoders = { MessageEncoder.class },
+    decoders = { MessageDecoder.class }
+)
 public class BroadcastServerEndpoint {
-    private static final Set&lt; Session &gt; sessions = 
-        Collections.synchronizedSet( new HashSet&lt; Session &gt;() ); 
-   
+    private static final Set&lt; Session &gt; sessions =
+        Collections.synchronizedSet( new HashSet&lt; Session &gt;() );
+
     @OnOpen
     public void onOpen( final Session session ) {
         sessions.add( session );
@@ -291,7 +269,7 @@ public class BroadcastServerEndpoint {
     }
 
     @OnMessage
-    public void onMessage( final Message message, final Session client ) 
+    public void onMessage( final Message message, final Session client )
             throws IOException, EncodeException {
         for( final Session session: sessions ) {
             session.getBasicRemote().sendObject( message );
@@ -316,22 +294,22 @@ import com.example.config.AppConfig;
 public class ServerStarter  {
     public static void main( String[] args ) throws Exception {
         Server server = new Server( 8080 );
-        
+
         // Create the 'root' Spring application context
         final ServletHolder servletHolder = new ServletHolder( new DefaultServlet() );
         final ServletContextHandler context = new ServletContextHandler();
 
         context.setContextPath( "/" );
         context.addServlet( servletHolder, "/*" );
-        context.addEventListener( new ContextLoaderListener() );   
+        context.addEventListener( new ContextLoaderListener() );
         context.setInitParameter( "contextClass", AnnotationConfigWebApplicationContext.class.getName() );
         context.setInitParameter( "contextConfigLocation", AppConfig.class.getName() );
-   
+
         server.setHandler( context );
-        WebSocketServerContainerInitializer.configureContext( context );        
-        
+        WebSocketServerContainerInitializer.configureContext( context );
+
         server.start();
-        server.join(); 
+        server.join();
     }
 }</pre>
 
@@ -361,29 +339,29 @@ import com.example.services.BroadcastServerEndpoint;
 public class AppConfig  {
     @Inject private WebApplicationContext context;
     private ServerContainer container;
- 
+
     public class SpringServerEndpointConfigurator extends ServerEndpointConfig.Configurator {
         @Override
-        public &lt; T &gt; T getEndpointInstance( Class&lt; T &gt; endpointClass ) 
+        public &lt; T &gt; T getEndpointInstance( Class&lt; T &gt; endpointClass )
                 throws InstantiationException {
-            return context.getAutowireCapableBeanFactory().createBean( endpointClass );   
+            return context.getAutowireCapableBeanFactory().createBean( endpointClass );
         }
     }
- 
+
     @Bean
     public ServerEndpointConfig.Configurator configurator() {
         return new SpringServerEndpointConfigurator();
     }
- 
+
     @PostConstruct
     public void init() throws DeploymentException {
         container = ( ServerContainer )context.getServletContext().
             getAttribute( javax.websocket.server.ServerContainer.class.getName() );
-  
-        container.addEndpoint( 
-            new AnnotatedServerEndpointConfig( 
-                BroadcastServerEndpoint.class, 
-                BroadcastServerEndpoint.class.getAnnotation( ServerEndpoint.class )  
+
+        container.addEndpoint(
+            new AnnotatedServerEndpointConfig(
+                BroadcastServerEndpoint.class,
+                BroadcastServerEndpoint.class.getAnnotation( ServerEndpoint.class )
             ) {
                 @Override
                 public Configurator getConfigurator() {
@@ -391,7 +369,7 @@ public class AppConfig  {
                 }
             }
         );
-    }  
+    }
 }</pre>
 
 <p style="text-align: justify;">
@@ -495,21 +473,21 @@ INFO: Received message 'Message #10' from '392f68ef'
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" />
+
   <p id="about_author_header">
     Andriy Redko {devmind}
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     15+ years of software development experience as Programmer/Software Developer/Senior Software Developer/Team Lead/Consultant. I am extensively working with Java EE, Microsoft .NET and Adobe Flex platforms using Java, C#, C++, Groovy, Scala, Ruby, Action Script, Grails, MySQL, PostreSQL, MongoDB, Redis, ...
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-earth" href="http://aredko.blogspot.com" target="_blank"> </a> <a class="icon-github" href="https://github.com/reta" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

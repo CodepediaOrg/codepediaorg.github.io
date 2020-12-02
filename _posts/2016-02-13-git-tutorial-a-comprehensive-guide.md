@@ -1,35 +1,16 @@
 ---
-id: 2642
 title: 'Git Tutorial: A Comprehensive Guide'
 date: 2016-02-13T07:07:45+00:00
 author: Udemy tutorials
 layout: post
 guid: http://www.codepedia.org/?p=2642
 permalink: /udemy/git-tutorial-a-comprehensive-guide/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 4575290540
-fsb_social_facebook:
-  - 3
-fsb_social_google:
-  - 0
-fsb_social_linkedin:
-  - 6
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - development
+  - tutorial
 tags:
-  - beginner
+  - gitb
   - cvs
-  - distributed version control systems
-  - dvcs
-  - Git
-  - GitHub
-  - version control system
+  - version-control
 ---
 <p style="text-align: justify;">
   <div id="toc_container" class="no_bullets">

@@ -1,39 +1,19 @@
 ---
-id: 2171
 title: 'Embedded Jetty and Apache CXF: secure REST services with Spring Security'
 date: 2015-01-01T16:38:28+00:00
 author: Andriy Redko
 layout: post
-guid: http://www.codepedia.org/?p=2171
 permalink: /aredko/embedded-jetty-and-apache-cxf-secure-rest-services-with-spring-security/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:50:"https://github.com/reta/jax-rs-2.0-spring-security";s:11:"ribbon-type";i:10;}'
-fsb_social_facebook:
-  - 0
-fsb_social_google:
-  - 2
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3380031842
 categories:
+  - tutorial
+tags:
   - java
   - spring
-tags:
-  - apache cxf
+  - apache-cxf
   - authentication
   - jetty
   - rest
-  - rest api
-  - spring security
+  - spring-security
 ---
 <p style="text-align: justify;">
   Recently I run into very interesting problem which I thought would take me just a couple of minutes to solve: protecting <a href="http://cxf.apache.org/">Apache CXF</a> (current release <b>3.0.1</b>)/ <a href="https://jax-rs-spec.java.net/">JAX-RS</a> <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> services with <a href="http://projects.spring.io/spring-security/">Spring Security</a> (current stable version <b>3.2.5</b>) in the application running inside embedded <a href="http://www.eclipse.org/jetty/">Jetty</a> container (current release <b>9.2</b>). At the end, it turns out to be very easy, once you understand how things work together and known subtle intrinsic details. This blog post will try to reveal that.<!--more-->
@@ -51,7 +31,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
-@Path( "/people" ) 
+@Path( "/people" )
 public class PeopleRestService {
     @Produces( { "application/json" } )
     @GET
@@ -123,12 +103,12 @@ import com.example.rs.PeopleRestService;
 
 @Configuration
 @Import( InMemorySecurityConfig.class )
-public class AppConfig { 
+public class AppConfig {
     @Bean( destroyMethod = "shutdown" )
     public SpringBus cxf() {
         return new SpringBus();
     }
- 
+
     @Bean @DependsOn ( "cxf" )
     public Server jaxRsServer() {
         JAXRSServerFactoryBean factory = RuntimeDelegate.getInstance().createEndpoint( jaxRsApiApplication(), JAXRSServerFactoryBean.class );
@@ -137,16 +117,16 @@ public class AppConfig {
         factory.setProviders( Arrays.&lt; Object &gt;asList( new JsrJsonpProvider() ) );
         return factory.create();
     }
- 
-    @Bean 
+
+    @Bean
     public JaxRsApiApplication jaxRsApiApplication() {
         return new JaxRsApiApplication();
     }
- 
-    @Bean 
+
+    @Bean
     public PeopleRestService peopleRestService() {
         return new PeopleRestService();
-    }  
+    }
 }
 </pre>
 
@@ -174,26 +154,26 @@ import com.example.config.AppConfig;
 public class Starter {
     public static void main( final String[] args ) throws Exception {
         Server server = new Server( 8080 );
-          
+
         // Register and map the dispatcher servlet
         final ServletHolder servletHolder = new ServletHolder( new CXFServlet() );
-        final ServletContextHandler context = new ServletContextHandler();   
+        final ServletContextHandler context = new ServletContextHandler();
         context.setContextPath( "/" );
-        context.addServlet( servletHolder, "/rest/*" );  
+        context.addServlet( servletHolder, "/rest/*" );
         context.addEventListener( new ContextLoaderListener() );
-   
+
         context.setInitParameter( "contextClass", AnnotationConfigWebApplicationContext.class.getName() );
         context.setInitParameter( "contextConfigLocation", AppConfig.class.getName() );
-   
+
         // Add Spring Security Filter by the name
         context.addFilter(
-            new FilterHolder( new DelegatingFilterProxy( "springSecurityFilterChain" ) ), 
+            new FilterHolder( new DelegatingFilterProxy( "springSecurityFilterChain" ) ),
                 "/*", EnumSet.allOf( DispatcherType.class )
         );
-         
+
         server.setHandler( context );
         server.start();
-        server.join(); 
+        server.join();
     }
 }
 </pre>
@@ -202,7 +182,7 @@ public class Starter {
   Most of the code does not require any explanation except the the filter part. This is what I meant by subtle intrinsic detail: the <b>DelegatingFilterProxy</b> should be configured with the filter name which must be exactly <b>springSecurityFilterChain</b>, as <a href="http://projects.spring.io/spring-security/">Spring Security</a> names it. With that, the security rules we have configured are going to apply to any <a href="https://jax-rs-spec.java.net/">JAX-RS</a> service call (the security filter is executed before the <a href="http://cxf.apache.org/">Apache CXF</a> servlet), requiring the full authentication. Let us quickly check that by building and running the project:
 </p>
 
-<pre class="lang:sh decode:true ">mvn clean package   
+<pre class="lang:sh decode:true ">mvn clean package
 java -jar target/jax-rs-2.0-spring-security-0.0.1-SNAPSHOT.jar</pre>
 
 Issuing the [HTTP](http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) **GET** call without providing username and password does not succeed and returns HTTP [status code 401](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html).
@@ -257,12 +237,12 @@ public class UserDetailsSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService( userDetailsService() );
     }
-    
+
     @Bean
     public UserDetailsService userDetailsService() {
         return new UserDetailsService() {
             @Override
-            public UserDetails loadUserByUsername( final String username ) 
+            public UserDetails loadUserByUsername( final String username )
                     throws UsernameNotFoundException {
                 if( username.equals( "admin" ) ) {
                     return new User( username, "password", true, true, true, true,
@@ -277,8 +257,8 @@ public class UserDetailsSecurityConfig extends WebSecurityConfigurerAdapter {
                             new SimpleGrantedAuthority( "ROLE_USER" )
                         )
                     );
-                } 
-                    
+                }
+
                 return null;
             }
         };
@@ -309,21 +289,21 @@ The complete source code is available on [GitHub](https://github.com/reta/jax-rs
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" />
+
   <p id="about_author_header">
     Andriy Redko {devmind}
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     15+ years of software development experience as Programmer/Software Developer/Senior Software Developer/Team Lead/Consultant. I am extensively working with Java EE, Microsoft .NET and Adobe Flex platforms using Java, C#, C++, Groovy, Scala, Ruby, Action Script, Grails, MySQL, PostreSQL, MongoDB, Redis, ...
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-earth" href="http://aredko.blogspot.com" target="_blank"> </a> <a class="icon-github" href="https://github.com/reta" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

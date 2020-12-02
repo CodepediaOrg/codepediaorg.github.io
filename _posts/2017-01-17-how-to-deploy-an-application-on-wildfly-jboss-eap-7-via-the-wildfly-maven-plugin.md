@@ -5,8 +5,11 @@ description: "This post is an example on how to deploy a Java EE application to 
 author: ama
 permalink: /ama/how-to-deploy-an-application-on-wildfly-or-jboss-eap-7-via-the-wildfly-maven-plugin
 published: true
-categories: [java ee]
-tags: [jboss, wildfly, maven, https, wildfly maven plugin]
+categories: [tutorial]
+tags:
+    - jboss
+    - wildfly
+    - maven
 ---
 
 This post shows how to deploy a Java EE application on a WildFly or JBoss EAP 7 via the WildFly Maven Plugin[^1]. You can use this plugin to deploy, undeploy

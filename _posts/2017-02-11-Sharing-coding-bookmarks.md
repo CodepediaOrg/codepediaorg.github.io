@@ -5,8 +5,10 @@ description: "This posts presents how www.bookmarks.dev came to life."
 author: ama
 permalink: /ama/sharing-coding-bookmarks
 published: true
-categories: [bookmarks]
-tags: [bookmarksdev, programming]
+categories: [article]
+tags:
+    - bookmarks.dev
+    - resources
 image:
   feature: 2017-02-11-coding-bookmarks-post-feature-image.png
 ---

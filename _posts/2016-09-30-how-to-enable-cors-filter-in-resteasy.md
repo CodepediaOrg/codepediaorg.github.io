@@ -5,8 +5,8 @@ description: "In this post I will shortly present how to enable the provided RES
 author: ama
 permalink: /ama/how-to-enable-cors-filter-in-resteasy
 published: true
-categories: [java ee]
-tags: [jboss, wildfly, rest, resteasy, java ee, cors]
+categories: [article]
+tags: [jboss, wildfly, rest, resteasy, javaee, cors]
 ---
 
 In this post I will shortly present how to enable the provided RESTEasy CORS Filter in a REST API backend application. Well, it is officially documented, but for me was not that

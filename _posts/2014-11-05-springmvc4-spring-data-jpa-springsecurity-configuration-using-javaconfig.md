@@ -1,38 +1,18 @@
 ---
-id: 2070
 title: SpringMVC4 + Spring Data JPA + SpringSecurity configuration using JavaConfig
 date: 2014-11-05T14:16:59+00:00
 author: Siva Reddy
 layout: post
-guid: http://www.codepedia.org/?p=2070
 permalink: /sivalabs/springmvc4-spring-data-jpa-springsecurity-configuration-using-javaconfig/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3175711418
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:105:"https://github.com/sivaprasadreddy/sivalabs-blog-samples-code/tree/master/springmvc-datajpa-security-demo";s:11:"ribbon-type";i:10;}'
-fsb_social_facebook:
-  - 3
-fsb_social_google:
-  - 1
-fsb_social_linkedin:
-  - 8
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - hibernate
+  - article
+tags:
   - java
   - spring
-tags:
   - javaconfig
-  - spring data
-  - spring mvc
-  - spring security
+  - spring-data
+  - spring-mvc
+  - spring-security
 ---
 <span style="color: #000000;">In this article we will see how to configure and integrate SpringMVC4, Spring Data JPA with Hibernate and SpringSecurity using JavaConfig.</span>
 
@@ -48,7 +28,7 @@ tags:
 	&lt;version&gt;1.0&lt;/version&gt;
 	&lt;packaging&gt;war&lt;/packaging&gt;
 	&lt;name&gt;SpringApp JavaConfig Demo&lt;/name&gt;
-	
+
 	&lt;properties&gt;
 		&lt;java.version&gt;1.7&lt;/java.version&gt;
 		&lt;junit.version&gt;4.11&lt;/junit.version&gt;
@@ -64,7 +44,7 @@ tags:
 		&lt;commons-dbcp.version&gt;1.2.2&lt;/commons-dbcp.version&gt;
 		&lt;commons-lang3.version&gt;3.1&lt;/commons-lang3.version&gt;
 	&lt;/properties&gt;
-	
+
 	&lt;build&gt;
 		&lt;finalName&gt;${project.artifactId}&lt;/finalName&gt;
 		&lt;plugins&gt;
@@ -99,12 +79,12 @@ tags:
 			&lt;artifactId&gt;slf4j-log4j12&lt;/artifactId&gt;
 			&lt;version&gt;${slf4j.version}&lt;/version&gt;
 		&lt;/dependency&gt;
-		
+
 		&lt;dependency&gt;
 			&lt;groupId&gt;ch.qos.logback&lt;/groupId&gt;
 			&lt;artifactId&gt;logback-classic&lt;/artifactId&gt;
 			&lt;version&gt;${logback.version}&lt;/version&gt;
-		&lt;/dependency&gt;		
+		&lt;/dependency&gt;
 
 		&lt;!-- Spring dependencies --&gt;
 
@@ -127,7 +107,7 @@ tags:
 			&lt;artifactId&gt;spring-test&lt;/artifactId&gt;
 		&lt;/dependency&gt;
 		&lt;!-- Spring Data JPA dependencies --&gt;
-		
+
 		&lt;dependency&gt;
 			&lt;groupId&gt;org.springframework.data&lt;/groupId&gt;
 			&lt;artifactId&gt;spring-data-jpa&lt;/artifactId&gt;
@@ -139,7 +119,7 @@ tags:
 			&lt;artifactId&gt;hibernate-entitymanager&lt;/artifactId&gt;
 			&lt;version&gt;${hibernate.version}&lt;/version&gt;
 		&lt;/dependency&gt;
-		
+
 		&lt;!-- SpringSecurity dependencies --&gt;
 		&lt;dependency&gt;
 			&lt;groupId&gt;org.springframework.security&lt;/groupId&gt;
@@ -160,8 +140,8 @@ tags:
 			&lt;groupId&gt;org.springframework.security&lt;/groupId&gt;
 			&lt;artifactId&gt;spring-security-taglibs&lt;/artifactId&gt;
 			&lt;version&gt;${spring-security.version}&lt;/version&gt;
-		&lt;/dependency&gt;	
-		
+		&lt;/dependency&gt;
+
 		&lt;dependency&gt;
 			&lt;groupId&gt;org.aspectj&lt;/groupId&gt;
 			&lt;artifactId&gt;aspectjweaver&lt;/artifactId&gt;
@@ -171,7 +151,7 @@ tags:
 			&lt;groupId&gt;org.aspectj&lt;/groupId&gt;
 			&lt;artifactId&gt;aspectjrt&lt;/artifactId&gt;
 			&lt;version&gt;${aspectj.version}&lt;/version&gt;
-		&lt;/dependency&gt;	
+		&lt;/dependency&gt;
 
 		&lt;!-- Testing dependencies --&gt;
 		&lt;dependency&gt;
@@ -179,7 +159,7 @@ tags:
 			&lt;artifactId&gt;junit&lt;/artifactId&gt;
 			&lt;version&gt;${junit.version}&lt;/version&gt;
 			&lt;scope&gt;test&lt;/scope&gt;
-		&lt;/dependency&gt;		
+		&lt;/dependency&gt;
 
 		&lt;!-- DB dependencies --&gt;
 		&lt;dependency&gt;
@@ -187,25 +167,25 @@ tags:
 			&lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
 			&lt;version&gt;${mysql.version}&lt;/version&gt;
 		&lt;/dependency&gt;
-				
+
 		&lt;dependency&gt;
 			&lt;groupId&gt;commons-dbcp&lt;/groupId&gt;
 			&lt;artifactId&gt;commons-dbcp&lt;/artifactId&gt;
 			&lt;version&gt;${commons-dbcp.version}&lt;/version&gt;
 		&lt;/dependency&gt;
-				
+
 		&lt;dependency&gt;
 			&lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;
 			&lt;artifactId&gt;jackson-databind&lt;/artifactId&gt;
 			&lt;version&gt;${jackson-json.version}&lt;/version&gt;
 		&lt;/dependency&gt;
-		
+
 		&lt;dependency&gt;
 		    &lt;groupId&gt;javax.mail&lt;/groupId&gt;
 		    &lt;artifactId&gt;mail&lt;/artifactId&gt;
 		    &lt;version&gt;1.4.3&lt;/version&gt;
 	    &lt;/dependency&gt;
-	    
+
 		&lt;!-- Web dependencies --&gt;
 		&lt;dependency&gt;
 			&lt;groupId&gt;javax.servlet&lt;/groupId&gt;
@@ -236,10 +216,10 @@ tags:
 				&lt;version&gt;${spring.version}&lt;/version&gt;
 				&lt;type&gt;pom&lt;/type&gt;
 				&lt;scope&gt;import&lt;/scope&gt;
-			&lt;/dependency&gt;		
+			&lt;/dependency&gt;
 		&lt;/dependencies&gt;
 	&lt;/dependencyManagement&gt;
-	
+
 &lt;/project&gt;</pre>
 
 ## 2. Application properties
@@ -298,7 +278,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @EnableAspectJAutoProxy
 @EnableCaching
-public class AppConfig 
+public class AppConfig
 {
 	@Autowired
 	private Environment env;
@@ -308,7 +288,7 @@ public class AppConfig
 	{
 		return new PropertySourcesPlaceholderConfigurer();
 	}
-	
+
 	@Bean
 	public JavaMailSenderImpl javaMailSenderImpl() {
 		JavaMailSenderImpl mailSenderImpl = new JavaMailSenderImpl();
@@ -326,7 +306,7 @@ public class AppConfig
 
 		return mailSenderImpl;
 	}
-		
+
 	@Bean
 	public CacheManager cacheManager()
 	{
@@ -372,14 +352,14 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages="com.sivalabs.springapp.repositories")
-public class PersistenceConfig 
+public class PersistenceConfig
 {
 	@Autowired
 	private Environment env;
 
 	@Value("${init-db:false}")
 	private String initDatabase;
-	
+
 	@Bean
 	public PlatformTransactionManager transactionManager()
 	{
@@ -414,7 +394,7 @@ public class PersistenceConfig
 	{
 		return new HibernateExceptionTranslator();
 	}
-	
+
 	@Bean
 	public DataSource dataSource()
 	{
@@ -425,9 +405,9 @@ public class PersistenceConfig
 		dataSource.setPassword(env.getProperty("jdbc.password"));
 		return dataSource;
 	}
-	
+
 	@Bean
-	public DataSourceInitializer dataSourceInitializer(DataSource dataSource) 
+	public DataSourceInitializer dataSourceInitializer(DataSource dataSource)
 	{
 		DataSourceInitializer dataSourceInitializer = new DataSourceInitializer();
 		dataSourceInitializer.setDataSource(dataSource);
@@ -436,7 +416,7 @@ public class PersistenceConfig
 		dataSourceInitializer.setDatabasePopulator(databasePopulator);
 		dataSourceInitializer.setEnabled(Boolean.parseBoolean(initDatabase));
 		return dataSourceInitializer;
-	}	
+	}
 }</pre>
 
 <p style="text-align: justify;">
@@ -472,7 +452,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 
 @Configuration
-@ComponentScan(basePackages = { "com.sivalabs.springapp.web"}) 
+@ComponentScan(basePackages = { "com.sivalabs.springapp.web"})
 @EnableWebMvc
 public class WebMvcConfig extends WebMvcConfigurerAdapter
 {
@@ -480,7 +460,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter
 	public void addViewControllers(ViewControllerRegistry registry)
 	{
 		super.addViewControllers(registry);
-		registry.addViewController("login/form").setViewName("login");		
+		registry.addViewController("login/form").setViewName("login");
 		registry.addViewController("welcome").setViewName("welcome");
 		registry.addViewController("admin").setViewName("admin");
 	}
@@ -562,7 +542,7 @@ public class SpringWebAppInitializer extends AbstractAnnotationConfigDispatcherS
 
 	@Override
     protected Filter[] getServletFilters() {
-       return new Filter[]{ 
+       return new Filter[]{
 							new OpenEntityManagerInViewFilter()
 						  };
     }
@@ -605,15 +585,15 @@ public class SecurityUser extends User implements UserDetails
 			this.setPassword(user.getPassword());
 			this.setDob(user.getDob());
 			this.setRoles(user.getRoles());
-		}		
+		}
 	}
-	
+
 	@Override
 	public Collection&lt;? extends GrantedAuthority&gt; getAuthorities() {
-		
+
 		Collection&lt;GrantedAuthority&gt; authorities = new ArrayList&lt;&gt;();
 		Set&lt;Role&gt; userRoles = this.getRoles();
-		
+
 		if(userRoles != null)
 		{
 			for (Role role : userRoles) {
@@ -652,7 +632,7 @@ public class SecurityUser extends User implements UserDetails
 	@Override
 	public boolean isEnabled() {
 		return true;
-	}	
+	}
 }</pre>
 
 We will implement a custom `UserDetailsService` and use Spring Data JPA repositories to load User details.
@@ -673,7 +653,7 @@ public class CustomUserDetailsService implements UserDetailsService
 {
 	@Autowired
 	private UserService userService;
-	
+
 	@Override
 	public UserDetails loadUserByUsername(String userName)
 			throws UsernameNotFoundException {
@@ -724,7 +704,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
           .password("admin")
           .roles("ADMIN","USER");
         */
-        
+
         //registry.jdbcAuthentication().dataSource(dataSource);
 		registry.userDetailsService(customUserDetailsService);
     }
@@ -770,10 +750,10 @@ Update `SpringWebAppInitializer` which we created eariler to add `SecurityConfig
 	...
 	@Override
     protected Filter[] getServletFilters() {
-       return new Filter[]{ 
+       return new Filter[]{
     		   new DelegatingFilterProxy("springSecurityFilterChain"),
     		   new OpenEntityManagerInViewFilter()};
-    } 
+    }
 
 }</pre>
 
@@ -794,7 +774,7 @@ As per our SpringSecurity custom Form Login configuration, we will use the follo
 &lt;script type="text/javascript" src="${rootURL}resources/js/app.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-		&lt;div class="col-md-6 col-md-offset-2"&gt;	
+		&lt;div class="col-md-6 col-md-offset-2"&gt;
 		&lt;c:if test="${param.error != null}"&gt;
              &lt;div class="alert alert-danger"&gt;
                  Invalid UserName and Password.
@@ -804,13 +784,13 @@ As per our SpringSecurity custom Form Login configuration, we will use the follo
              &lt;div class="alert alert-success"&gt;
                  You have been logged out.
              &lt;/div&gt;
-         &lt;/c:if&gt;	
-         &lt;/div&gt;  
-            
+         &lt;/c:if&gt;
+         &lt;/div&gt;
+
      &lt;div class="row"&gt;
-		&lt;div class="col-md-6 col-md-offset-2"&gt;	
+		&lt;div class="col-md-6 col-md-offset-2"&gt;
 			&lt;h2&gt;User Login Form&lt;/h2&gt;
-			&lt;form:form id="loginForm" method="post" action="${rootURL}login" modelAttribute="user" 
+			&lt;form:form id="loginForm" method="post" action="${rootURL}login" modelAttribute="user"
 		class="form-horizontal" role="form" cssStyle="width: 800px; margin: 0 auto;"&gt;
 		  &lt;div class="form-group"&gt;
 		    &lt;label for="username" class="col-sm-2 control-label"&gt;UserName*&lt;/label&gt;
@@ -829,10 +809,10 @@ As per our SpringSecurity custom Form Login configuration, we will use the follo
 		      &lt;input type="submit" class="btn btn-primary" value="Login"&gt;
 		    &lt;/div&gt;
 		  &lt;/div&gt;
-		  
+
 		&lt;/form:form&gt;
 	&lt;/div&gt;
-&lt;/div&gt;	
+&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -858,21 +838,21 @@ You can find the source code at github <a title="https://github.com/sivaprasadr
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/sivalabs.png" alt="Siva Reddy" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/sivalabs.png" alt="Siva Reddy" />
+
   <p id="about_author_header">
     <strong>Siva Reddy</strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Passionate java developer, open source enthusiast, blogger. I like to cover Java, Struts, Spring, Hibernate, Ajax Tutorials, How-To's and Best Practices.
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-earth" href="http://www.sivalabs.in/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/+SivaPrasadReddy" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/sivalabs" target="_blank"> </a> <a class="icon-github" href="https://github.com/sivaprasadreddy/" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

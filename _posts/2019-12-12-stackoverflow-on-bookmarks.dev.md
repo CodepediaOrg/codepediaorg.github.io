@@ -6,8 +6,13 @@ login with stackoverflow account and visual hinting for StackOverflow questions"
 author: ama
 permalink: /ama/improved-bookmarking-of-stackoverflow-questions
 published: true
-categories: [bookmarks]
-tags: [expressjs, nodejs, angular, api]
+categories: [article]
+tags:
+    - bookmarks.dev
+    - expressjs
+    - node.js
+    - angular
+    - api
 ---
 
 I found myself lately adding more StackOverflow questions to [my dev bookmarks collection](https://www.bookmarks.dev),

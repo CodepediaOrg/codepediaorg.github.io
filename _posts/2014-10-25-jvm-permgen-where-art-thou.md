@@ -1,32 +1,15 @@
 ---
-id: 2030
 title: JVM PermGen – where art thou?
 date: 2014-10-25T07:36:17+00:00
 author: Abhishek Gupta
 layout: post
-guid: http://www.codepedia.org/?p=2030
 permalink: /abhirockzz/jvm-permgen-where-art-thou/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3153894421
-fsb_social_facebook:
-  - 1
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - java
+  - article
 tags:
-  - java-core
-  - java8
+  - java
   - jvm
-  - PermGen
+  - permgen
 ---
 <p style="text-align: justify;">
   This post covers some basics of <em>JVM memory structure </em>and quickly peeks into <em>PermGen</em> to find out where it has disappeared since advent of Java SE 8
@@ -147,21 +130,21 @@ So, that’s about it for the JVM memory segment basics. Coming to back to the P
 
 <p style="text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" />
+
     <p id="about_author_header">
       <strong>Abhishek Gupta</strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Java Platform fanatic and a Consultant in the Identity Management domain
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-earth" href="http://abhirockzz.wordpress.com/" target="_blank"> </a> <a class="icon-googleplus" href="http://plus.google.com/103167687788180890717/posts" target="_blank"> </a> <a class="icon-twitter" href="http://twitter.com/abhi_tweeter" target="_blank"> </a> <a class="icon-github" href="https://github.com/abhirockzz" target="_blank"> </a> <a class="icon-linkedin" href="http://in.linkedin.com/pub/abhishek-gupta/27/331/866" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

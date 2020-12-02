@@ -6,11 +6,11 @@ consumption of messages"
 author: ama
 permalink: /ama/the-case-for-publish-subscribe-in-software-architecture
 published: true
-categories: [architecture]
+categories: [article]
 tags: [architecture, design-patterns, cloud]
 ---
 
-So you are developing a core platform for your enterprise. Your platform becomes successful, you have more clients consuming 
+So you are developing a core platform for your enterprise. Your platform becomes successful, you have more clients consuming
  your services. Some (most) will need some core data synchronized in their systems. You might start experiencing the following pains
 
 ## Pains
@@ -35,7 +35,7 @@ Well, a few words won't hurt anyone: your core platform might get relevant notif
 now instead of pushing the notification to the consuming clients it publishes it to a topic (might be a cloud service), where is persisted
 for a configured duration or consumed by all subscribers.
 
-The simplest scenario is to use a broadcast pattern for the topic where every subscription gets a copy of each message sent to the topic. Other topologies 
+The simplest scenario is to use a broadcast pattern for the topic where every subscription gets a copy of each message sent to the topic. Other topologies
 could be set up for more advanced scenarios via message filtering and routing. This usually involves additional topics or queues. Most potent brokers offer
 such abilities.
 
@@ -46,7 +46,7 @@ The benefits are the solving of the previously mentioned points:
 - **decoupling**: the publisher is not aware anymore of consuming clients
 - **asynchronous consumption (offline support)**: subscribers might consume the messages at a later time
 
-This is no silver bullet for all your architecture needs, you might need tightly coupled systems to guarantee message delivery for example. 
+This is no silver bullet for all your architecture needs, you might need tightly coupled systems to guarantee message delivery for example.
 Just don't forget about it, when you are designing your next (enterprise) project.
 
 # References:

@@ -1,38 +1,17 @@
 ---
-id: 2113
-title: 'A beginner&#8217;s guide to java time zone handling'
+title: A beginner's guide to java time zone handling
 date: 2014-11-21T15:52:20+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codepedia.org/?p=2113
 permalink: /vladmihalcea/a-beginners-guide-to-java-time-zone-handling/
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:75:"https://github.com/vladmihalcea/vladmihalcea.wordpress.com/tree/master/misc";s:11:"ribbon-type";i:10;}'
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3245471040
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 5
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - java
+  - article
 tags:
-  - beginner
+  - java
   - calendar
   - date
   - datetime
-  - java8
-  - joda
+  - jodatime
 ---
 <h2 style="font-weight: inherit; color: #444444;">
   <span id="Basic_time_notions">Basic time notions</span>
@@ -47,7 +26,7 @@ tags:
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#Basic_time_notions">Basic time notions</a><ul>
@@ -65,7 +44,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Java_time_basics">Java time basics</a><ul>
           <li>
@@ -79,7 +58,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Relative_vs_Absolute_time_instances">Relative vs Absolute time instances</a><ul>
           <li>
@@ -90,7 +69,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Puzzles">Puzzles</a><ul>
           <li>
@@ -115,7 +94,7 @@ tags:
               </li>
             </ul>
           </li>
-          
+
           <li>
             <a href="#orgjodatimeDateTime-2">org.joda.time.DateTime</a>
           </li>
@@ -160,47 +139,47 @@ UTC time zone is commonly refereed as Zulu time (Z) or UTC+0. Japan time zone is
     <th style="font-style: inherit;">
       TIME ZONE
     </th>
-    
+
     <th style="font-style: inherit;">
       NOTATION
     </th>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       UTC
     </td>
-    
+
     <td style="font-style: inherit;">
       1970-01-01T00:00:00.000+00:00
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       UTC Zulu time
     </td>
-    
+
     <td style="font-style: inherit;">
       1970-01-01T00:00:00.000+Z
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       Tokio
     </td>
-    
+
     <td style="font-style: inherit;">
       1970-01-01T00:00:00.000+09:00
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       Honolulu
     </td>
-    
+
     <td style="font-style: inherit;">
       1969-12-31T14:00:00.000-10:00
     </td>
@@ -234,7 +213,7 @@ public void testTimeZonesWithCalendar() throws ParseException {
     epoch.setTimeZone(TimeZone.getTimeZone("Japan"));
     assertEquals(TimeUnit.HOURS.toMillis(-9), epoch.getTimeInMillis());
 }
- 
+
 private Calendar newCalendarInstance(String timeZoneId) {
     Calendar calendar = new GregorianCalendar();
     calendar.set(Calendar.YEAR, 1970);
@@ -290,8 +269,8 @@ public void testTimeZonesWithDateTime() throws ParseException {
     mutableDateTime.setChronology(ISOChronology.getInstance().withZone(DateTimeZone.forID("Japan")));
     assertEquals("1970-01-01T09:00:00.000+09:00", epoch.toString());
 }
- 
- 
+
+
 private DateTime newDateTimeMillis(String timeZoneId) {
     return new DateTime(DateTimeZone.forID(timeZoneId))
             .withYear(1970)
@@ -362,7 +341,7 @@ An absolute time representation is much more convenient when we want to reconstr
  * DateFormat parsing utility
  * @param pattern date/time pattern
  * @param dateTimeString date/time string value
- * @param expectedNumericTimestamp expected millis since epoch 
+ * @param expectedNumericTimestamp expected millis since epoch
  */
 private void dateFormatParse(String pattern, String dateTimeString, long expectedNumericTimestamp) {
     try {
@@ -506,21 +485,21 @@ jodaTimeParse("1970-01-01T00:00:00.200+0100", 200L - 1000 * 60 * 60);
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" />
+
   <p id="about_author_header">
     <strong>Vlad Mihalcea</strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Software architect passionate about software integration, high scalability and concurrency challenges
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

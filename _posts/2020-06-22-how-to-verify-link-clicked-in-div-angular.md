@@ -5,8 +5,12 @@ description: "Demo and code showing how to verify an anchor was clicked in Angul
 author: ama
 permalink: /ama/how-to-verify-element-click-in-div-with-angular
 published: true
-categories: [javascript]
-tags: [javascript, angular, bookmarksdev]
+categories: [tutorial]
+tags:
+    - javascript
+    - angular
+    - html
+    - bookmarks.dev
 ---
 
 Being on a constant lookout for bookmarks management optimization on [www.bookmarks.dev](http://www.bookmarks.dev),

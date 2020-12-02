@@ -1,38 +1,20 @@
 ---
-id: 2503
 title: 'AngularJS Tutorial: A Beginner’s Guide to AngularJS'
 date: 2015-10-20T15:12:59+00:00
 author: Udemy tutorials
 layout: post
-guid: http://www.codepedia.org/?p=2503
 permalink: /udemy/angularjs-tutorial-a-beginners-guide-to-angularjs/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 4242389456
-fsb_social_facebook:
-  - 3
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 8
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - javascript
-tags:
-  - angular
-  - angularJS
-  - beginner
   - tutorial
+tags:
+  - angularjs
+  - javascript
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#Introduction">Introduction</a><ul>
@@ -47,7 +29,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Directives">Directives</a><ul>
         <li>
@@ -61,7 +43,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Bindings">Bindings</a><ul>
         <li>
@@ -72,7 +54,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Directives_again">Directives again</a><ul>
         <li>
@@ -82,13 +64,13 @@ tags:
             </li>
           </ul>
         </li>
-        
+
         <li>
           <a href="#Custom_directives">Custom directives</a>
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Injection">Injection</a><ul>
         <li>
@@ -109,7 +91,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Directivescontinued">Directives continued</a><ul>
         <li>
@@ -120,7 +102,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Server_integration">Server integration</a><ul>
         <li>
@@ -140,7 +122,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Summary">Summary</a>
     </li>
@@ -544,7 +526,7 @@ In this snippet, the responsibility for the construction and use of the ``<div i
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#Introduction">Introduction</a><ul>
@@ -559,7 +541,7 @@ In this snippet, the responsibility for the construction and use of the ``<div i
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Directives">Directives</a><ul>
         <li>
@@ -573,7 +555,7 @@ In this snippet, the responsibility for the construction and use of the ``<div i
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Bindings">Bindings</a><ul>
         <li>
@@ -584,7 +566,7 @@ In this snippet, the responsibility for the construction and use of the ``<div i
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Directives_again">Directives again</a><ul>
         <li>
@@ -594,13 +576,13 @@ In this snippet, the responsibility for the construction and use of the ``<div i
             </li>
           </ul>
         </li>
-        
+
         <li>
           <a href="#Custom_directives">Custom directives</a>
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Injection">Injection</a><ul>
         <li>
@@ -621,7 +603,7 @@ In this snippet, the responsibility for the construction and use of the ``<div i
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Directivescontinued">Directives continued</a><ul>
         <li>
@@ -632,7 +614,7 @@ In this snippet, the responsibility for the construction and use of the ``<div i
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Server_integration">Server integration</a><ul>
         <li>
@@ -652,7 +634,7 @@ In this snippet, the responsibility for the construction and use of the ``<div i
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Summary">Summary</a>
     </li>
@@ -1412,8 +1394,8 @@ To see all of this in action, edit `index.html` as follows:
     &lt;div ng-repeat="article in articles | limitTo:numArticles"&gt;
       &lt;p&gt;{{article.title}}&lt;/p&gt;
       &lt;label ng-repeat="category in categories"&gt;
-        &lt;input type="checkbox" 
-          ng-checked="containsCategory(article, category)" 
+        &lt;input type="checkbox"
+          ng-checked="containsCategory(article, category)"
           ng-click="toggleCategory(article, category)" /&gt;
         {{category}}
       &lt;/label&gt;
@@ -1568,7 +1550,7 @@ Edit `controllers.js` as follows:
       $scope.categories,
       [$scope.categories.length, 0].concat(categories)
     );
-  });  
+  });
 
   $scope.articles = [
     { title: "Arduino Tutorial", categories: ['tutorial', 'hardware'] },
@@ -1700,7 +1682,7 @@ Edit `controllers.js` as follows:
       $scope.categories,
       [$scope.categories.length, 0].concat(categories)
     );
-  });  
+  });
 
   $scope.articles = Article.query();
 
@@ -1806,20 +1788,20 @@ Edit `app.js` as follows:
 
 <p style="text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/udemy-logo.png" alt="Udemy blog" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/udemy-logo.png" alt="Udemy blog" />
+
     <p id="about_author_header">
       <strong>Udemy</strong>
     </p>
-    
+
     <div id="social_logos_up">
       <a class="icon-earth" href="https://blog.udemy.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/udemy" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/udemy" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/+UdemySF" target="_blank"> </a>
     </div>
-    
+
     <div id="author_details" style="text-align: justify;">
       Udemy.com is a platform or marketplace for online learning. Unlike academic MOOC programs driven by traditional collegiate coursework, Udemy provides a platform for experts of any kind to create courses which can be offered to the public, either at no charge or for a tuition fee. Udemy provides tools which enable users to create a course, promote it and earn money from student tuition charges.
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div class="clear">
       </div>

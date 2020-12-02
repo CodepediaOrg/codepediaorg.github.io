@@ -1,43 +1,22 @@
 ---
-id: 1986
 title: 'OSGi: the gateway into micro-services architecture'
 date: 2014-10-13T20:54:05+00:00
 author: Andriy Redko
 layout: post
-guid: http://www.codepedia.org/?p=1986
 permalink: /aredko/osgi-the-gateway-into-micro-services-architecture/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:37:"https://github.com/reta/osgi-services";s:11:"ribbon-type";i:10;}'
-dsq_thread_id:
-  - 3113202146
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - architecture
-  - java
+  - article
 tags:
-  - apache cxf
-  - Apache Karaf
+  - java
+  - architecture
+  - apache-cxf
+  - Apache-Karaf
   - hibernate
   - jackson
-  - jax-rs 2.0
+  - jax-rs
   - jpa
   - json
-  - micro-services
-  - microservice
-  - modularity
+  - microservices
   - openjpa
   - OSGi
   - rest
@@ -121,10 +100,10 @@ import com.example.services.PeopleService;
 @Path( "/people" )
 public class PeopleRestService {
     private PeopleService peopleService;
-        
+
     @Produces( { MediaType.APPLICATION_JSON } )
     @GET
-    public Collection&lt; Person &gt; getPeople( 
+    public Collection&lt; Person &gt; getPeople(
             @QueryParam( "page") @DefaultValue( "1" ) final int page ) {
         return peopleService.getPeople( page, 5 );
     }
@@ -139,44 +118,44 @@ public class PeopleRestService {
     @Produces( { MediaType.APPLICATION_JSON  } )
     @POST
     public Response addPerson( @Context final UriInfo uriInfo,
-            @FormParam( "email" ) final String email, 
-            @FormParam( "firstName" ) final String firstName, 
+            @FormParam( "email" ) final String email,
+            @FormParam( "firstName" ) final String firstName,
             @FormParam( "lastName" ) final String lastName ) {
-        
+
         peopleService.addPerson( email, firstName, lastName );
         return Response.created( uriInfo
             .getRequestUriBuilder()
             .path( email )
             .build() ).build();
     }
-    
+
     @Produces( { MediaType.APPLICATION_JSON  } )
     @Path( "/{email}" )
     @PUT
-    public Person updatePerson( @PathParam( "email" ) final String email, 
-            @FormParam( "firstName" ) final String firstName, 
+    public Person updatePerson( @PathParam( "email" ) final String email,
+            @FormParam( "firstName" ) final String firstName,
             @FormParam( "lastName" )  final String lastName ) {
-        
+
         final Person person = peopleService.getByEmail( email );
-        
+
         if( firstName != null ) {
             person.setFirstName( firstName );
         }
-        
+
         if( lastName != null ) {
             person.setLastName( lastName );
         }
 
-        return person;              
+        return person;
     }
-    
+
     @Path( "/{email}" )
     @DELETE
     public Response deletePerson( @PathParam( "email" ) final String email ) {
         peopleService.removePerson( email );
         return Response.ok().build();
     }
-    
+
     public void setPeopleService( final PeopleService peopleService ) {
         this.peopleService = peopleService;
     }
@@ -191,19 +170,19 @@ public class PeopleRestService {
     xmlns:jaxrs="http://cxf.apache.org/blueprint/jaxrs"
     xmlns:cxf="http://cxf.apache.org/blueprint/core"
     xsi:schemaLocation="
-        http://www.osgi.org/xmlns/blueprint/v1.0.0 
+        http://www.osgi.org/xmlns/blueprint/v1.0.0
         http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
-        http://cxf.apache.org/blueprint/jaxws 
+        http://cxf.apache.org/blueprint/jaxws
         http://cxf.apache.org/schemas/blueprint/jaxws.xsd
-        http://cxf.apache.org/blueprint/jaxrs 
+        http://cxf.apache.org/blueprint/jaxrs
         http://cxf.apache.org/schemas/blueprint/jaxrs.xsd
-        http://cxf.apache.org/blueprint/core 
+        http://cxf.apache.org/blueprint/core
         http://cxf.apache.org/schemas/blueprint/core.xsd"&gt;
 
     &lt;cxf:bus id="bus"&gt;
         &lt;cxf:features&gt;
             &lt;cxf:logging/&gt;
-        &lt;/cxf:features&gt;       
+        &lt;/cxf:features&gt;
     &lt;/cxf:bus&gt;
 
     &lt;jaxrs:server address="/api" id="api"&gt;
@@ -214,12 +193,12 @@ public class PeopleRestService {
             &lt;bean class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider" /&gt;
         &lt;/jaxrs:providers&gt;
     &lt;/jaxrs:server&gt;
-    
+
     &lt;!-- Implementation of the rest service --&gt;
     &lt;bean id="peopleRestService" class="com.example.jaxrs.PeopleRestService"&gt;
         &lt;property name="peopleService" ref="peopleService"/&gt;
-    &lt;/bean&gt;         
-    
+    &lt;/bean&gt;
+
     &lt;reference id="peopleService" interface="com.example.services.PeopleService" /&gt;
 &lt;/blueprint&gt;</pre>
 
@@ -255,39 +234,39 @@ import com.example.services.PeopleService;
 public class PeopleServiceImpl implements PeopleService {
     private PeopleDao peopleDao;
     private LogService logService;
- 
+
     @Override
-    public Collection&lt; Person &gt; getPeople( final int page, final int pageSize ) {        
+    public Collection&lt; Person &gt; getPeople( final int page, final int pageSize ) {
         logService.log( LogService.LOG_INFO, "Getting all people" );
         return peopleDao.findAll( page, pageSize );
     }
 
     @Override
     public Person getByEmail( final String email ) {
-        logService.log( LogService.LOG_INFO, 
+        logService.log( LogService.LOG_INFO,
             "Looking for a person with e-mail: " + email );
-        return peopleDao.find( email );        
+        return peopleDao.find( email );
     }
 
     @Override
-    public Person addPerson( final String email, final String firstName, 
+    public Person addPerson( final String email, final String firstName,
             final String lastName ) {
-        logService.log( LogService.LOG_INFO, 
+        logService.log( LogService.LOG_INFO,
             "Adding new person with e-mail: " + email );
         return peopleDao.save( new Person( email, firstName, lastName ) );
     }
 
     @Override
     public void removePerson( final String email ) {
-        logService.log( LogService.LOG_INFO, 
+        logService.log( LogService.LOG_INFO,
             "Removing a person with e-mail: " + email );
         peopleDao.delete( email );
     }
-    
+
     public void setPeopleDao( final PeopleDao peopleDao ) {
         this.peopleDao = peopleDao;
     }
-    
+
     public void setLogService( final LogService logService ) {
         this.logService = logService;
     }
@@ -296,18 +275,18 @@ public class PeopleServiceImpl implements PeopleService {
 
 <span style="color: #333333;">And this time again, very small and clean implementation with two injectable dependencies,</span><b style="color: #333333;">org.osgi.service.log.LogService</b><span style="color: #333333;"> and </span><b style="color: #333333;">com.example.data.PeopleDao</b><span style="color: #333333;">. Its </span><a style="color: #888855;" href="http://aries.apache.org/modules/blueprint.html">blueprint</a><span style="color: #333333;"> configuration, located inside </span><b style="color: #333333;">OSGI-INF/blueprint</b><span style="color: #333333;"> folder, looks quite compact as well:</span>
 
-<pre class="lang:default decode:true">&lt;blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"  
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"         
+<pre class="lang:default decode:true">&lt;blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
-        http://www.osgi.org/xmlns/blueprint/v1.0.0 
+        http://www.osgi.org/xmlns/blueprint/v1.0.0
         http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd"&gt;
-        
-    &lt;service ref="peopleService" interface="com.example.services.PeopleService" /&gt;        
+
+    &lt;service ref="peopleService" interface="com.example.services.PeopleService" /&gt;
     &lt;bean id="peopleService" class="com.example.services.impl.PeopleServiceImpl"&gt;
-        &lt;property name="peopleDao" ref="peopleDao" /&gt;    
+        &lt;property name="peopleDao" ref="peopleDao" /&gt;
         &lt;property name="logService" ref="logService" /&gt;
     &lt;/bean&gt;
-    
+
     &lt;reference id="peopleDao" interface="com.example.data.PeopleDao" /&gt;
     &lt;reference id="logService" interface="org.osgi.service.log.LogService" /&gt;
 &lt;/blueprint&gt;</pre>
@@ -323,17 +302,17 @@ public class PeopleServiceImpl implements PeopleService {
 <pre class="lang:default decode:true ">&lt;persistence xmlns="http://java.sun.com/xml/ns/persistence"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     version="2.0"&gt;
- 
+
     &lt;persistence-unit name="peopleDb" transaction-type="JTA"&gt;
         &lt;jta-data-source&gt;
         osgi:service/javax.sql.DataSource/(osgi.jndi.service.name=peopleDb)
-        &lt;/jta-data-source&gt;       
+        &lt;/jta-data-source&gt;
         &lt;class&gt;com.example.data.model.Person&lt;/class&gt;
-        
+
         &lt;properties&gt;
-            &lt;property name="openjpa.jdbc.SynchronizeMappings" 
-                value="buildSchema"/&gt;         
-        &lt;/properties&gt;        
+            &lt;property name="openjpa.jdbc.SynchronizeMappings"
+                value="buildSchema"/&gt;
+        &lt;/properties&gt;
     &lt;/persistence-unit&gt;
 &lt;/persistence&gt;</pre>
 
@@ -349,7 +328,7 @@ public interface PeopleDao {
     Person save( final Person person );
     Person find( final String email );
     Collection&lt; Person &gt; findAll( final int page, final int pageSize );
-    void delete( final String email ); 
+    void delete( final String email );
 }</pre>
 
 <span style="color: #333333;">With its implementation </span><b style="color: #333333;">PeopleDaoImpl</b><span style="color: #333333;">:</span>
@@ -367,36 +346,36 @@ import com.example.data.model.Person;
 
 public class PeopleDaoImpl implements PeopleDao {
     private EntityManager entityManager;
- 
+
     @Override
     public Person save( final Person person ) {
         entityManager.persist( person );
         return person;
     }
- 
+
     @Override
     public Person find( final String email ) {
         return entityManager.find( Person.class, email );
     }
- 
+
     public void setEntityManager( final EntityManager entityManager ) {
         this.entityManager = entityManager;
     }
- 
+
     @Override
     public Collection&lt; Person &gt; findAll( final int page, final int pageSize ) {
         final CriteriaBuilder cb = entityManager.getCriteriaBuilder();
-     
+
         final CriteriaQuery&lt; Person &gt; query = cb.createQuery( Person.class );
         query.from( Person.class );
-     
+
         return entityManager
             .createQuery( query )
             .setFirstResult(( page - 1 ) * pageSize )
-            .setMaxResults( pageSize ) 
+            .setMaxResults( pageSize )
             .getResultList();
     }
- 
+
     @Override
     public void delete( final String email ) {
         entityManager.remove( find( email ) );
@@ -407,29 +386,29 @@ public class PeopleDaoImpl implements PeopleDao {
   <span style="color: #333333;">Please notice, although we are performing data manipulations, there is no mention of transactions as well as there are no explicit calls to entity manager&#8217;s transactions API. We are going to use the declarative approach to transactions as </span><a style="color: #888855;" href="http://aries.apache.org/modules/blueprint.html">blueprint</a><span style="color: #333333;"> configuration supports that (the location is unchanged, </span><b style="color: #333333;">OSGI-INF/blueprint</b><span style="color: #333333;"> folder):</span>
 </p>
 
-<pre class="lang:default decode:true ">&lt;blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"  
+<pre class="lang:default decode:true ">&lt;blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
     xmlns:jpa="http://aries.apache.org/xmlns/jpa/v1.1.0"
-    xmlns:tx="http://aries.apache.org/xmlns/transactions/v1.0.0" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"         
+    xmlns:tx="http://aries.apache.org/xmlns/transactions/v1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
-        http://www.osgi.org/xmlns/blueprint/v1.0.0 
+        http://www.osgi.org/xmlns/blueprint/v1.0.0
         http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd"&gt;
-    
+
     &lt;service ref="peopleDao" interface="com.example.data.PeopleDao" /&gt;
     &lt;bean id="peopleDao" class="com.example.data.impl.PeopleDaoImpl"&gt;
      &lt;jpa:context unitname="peopleDb" property="entityManager" /&gt;
      &lt;tx:transaction method="*" value="Required"/&gt;
     &lt;/bean&gt;
-    
+
     &lt;bean id="dataSource" class="org.hsqldb.jdbc.JDBCDataSource"&gt;
        &lt;property name="url" value="jdbc:hsqldb:mem:peopleDb"/&gt;
     &lt;/bean&gt;
-    
-    &lt;service ref="dataSource" interface="javax.sql.DataSource"&gt; 
-        &lt;service-properties&gt; 
-            &lt;entry key="osgi.jndi.service.name" value="peopleDb" /&gt; 
-        &lt;/service-properties&gt; 
-    &lt;/service&gt;     
+
+    &lt;service ref="dataSource" interface="javax.sql.DataSource"&gt;
+        &lt;service-properties&gt;
+            &lt;entry key="osgi.jndi.service.name" value="peopleDb" /&gt;
+        &lt;/service-properties&gt;
+    &lt;/service&gt;
 &lt;/blueprint&gt;</pre>
 
 <p style="text-align: justify;">
@@ -438,11 +417,11 @@ public class PeopleDaoImpl implements PeopleDao {
 
 Now, when the last service **PeopleDao** is exposed, we are ready to deploy our modules with <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a>. It is quite easy to do in three steps:
 
-  * run the <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a> container 
+  * run the <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a> container
     <pre>bin/karaf (or bin\karaf.bat on Windows)
 </pre>
 
-  * execute following commands from the <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a> shell: 
+  * execute following commands from the <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a> shell:
     <pre>feature:repo-add cxf 3.0.1
 feature:install http cxf jpa openjpa transaction jndi jdbc
 install -s mvn:org.hsqldb/hsqldb/2.3.2
@@ -453,7 +432,7 @@ install -s mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.4.0
 install -s mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.4.0
 </pre>
 
-  * build our modules and copy them into <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a>&#8216;s deploy folder (while container is still running): 
+  * build our modules and copy them into <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a>&#8216;s deploy folder (while container is still running):
     <pre>mvn clean package
 cp module*/target/*jar apache-karaf-3.0.1/deploy/
 </pre>
@@ -522,21 +501,21 @@ Would be nice to check if database has the person populated as well. With <a st
 
 <p style="text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" />
+
     <p id="about_author_header">
       Andriy Redko {devmind}
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       15+ years of software development experience as Programmer/Software Developer/Senior Software Developer/Team Lead/Consultant. I am extensively working with Java EE, Microsoft .NET and Adobe Flex platforms using Java, C#, C++, Groovy, Scala, Ruby, Action Script, Grails, MySQL, PostreSQL, MongoDB, Redis, ...
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-earth" href="http://aredko.blogspot.com" target="_blank"> </a> <a class="icon-github" href="https://github.com/reta" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

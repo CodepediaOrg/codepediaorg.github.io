@@ -5,8 +5,10 @@ description: "Real life example showing how to filter results list in Angular an
 author: ama
 permalink: /ama/how-to-filter-results-in-angular-example-with-input-text
 published: true
-categories: [angular]
-tags: [bookmarksdev, angular]
+categories: [article]
+tags:
+    - bookmarks.dev
+    - angular
 ---
 
 I find myself lately looking for recent visited bookmarks via the [Ctrl+h - History dialog]({% post_url 2020-06-12-hotkeys-angular-example %})

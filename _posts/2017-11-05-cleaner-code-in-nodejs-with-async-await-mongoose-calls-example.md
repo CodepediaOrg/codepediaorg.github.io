@@ -6,8 +6,13 @@ async-await feature in NodeJs"
 author: ama
 permalink: /ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example
 published: true
-categories: [javascript, nodejs]
-tags: [javascript, nodejs, mongoose, async-await, codingmarks]
+categories: [tutorial]
+tags:
+    - javascript
+    - node.js
+    - mongoose
+    - async-await
+    - bookmarks.dev
 ---
 
 A lot has been written already about the transition from [callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)

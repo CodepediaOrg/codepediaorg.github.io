@@ -6,21 +6,21 @@ description: "This blog post presents an elegant solution to implement a Java ca
 author: ama
 permalink: /ama/java-cache-example-with-guava
 published: true
-categories: [java]
+categories: [snippets]
 tags: [java, javaee, caching]
 ---
 
 Last week I showed you [how to increase the performance of multiple java calls by making them asynchronous and parallel](http://www.codepedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example).
-This week we take a look at another potential performance booster, you should always keep in mind - <span class="highlight-yellow">caching</span>. 
+This week we take a look at another potential performance booster, you should always keep in mind - <span class="highlight-yellow">caching</span>.
 
 Let's imagine a scenario where you call a REST service and you know the returned values don't change very often. In this case
 you really need to consider caching the response. We will use Guava's provided caching capabilities to implement such a cache
-for this example. 
+for this example.
 
 <!--more-->
 
 Here is the piece of code that might do just that:
-  
+
 ```java
 import org.codingpedia.example;
 
@@ -46,20 +46,20 @@ public class GuavaCacheDemoService {
             .build(
                     new CacheLoader<String, ToDo>() {
                         public ToDo load(String id) {
-                               final ToDo toDo = restApiClient.getToDo(id);    
+                               final ToDo toDo = restApiClient.getToDo(id);
                                return toDo;
                         }
                     }
             );
-    
+
     @Inject
     RestApiClient restApiClient;
-    
+
     ToDo getToDo(String toDoId) throws ExecutionException {
         final ToDO toDo = toDosCache.get(toDoId);
-        return toDo; 
+        return toDo;
     }
-    
+
 }
 ```
 
@@ -80,4 +80,4 @@ the cache by using `Cache.invalidateAll()`
 
 
 I encourage you to read the [Guava Caches Explained Guide](https://github.com/google/guava/wiki/CachesExplained) to learn
- about other caching capabilities like writing to cache, using other eviction methods, explicit removals and so on. 
+ about other caching capabilities like writing to cache, using other eviction methods, explicit removals and so on.

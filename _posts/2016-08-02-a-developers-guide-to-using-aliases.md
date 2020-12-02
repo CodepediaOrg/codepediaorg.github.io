@@ -5,8 +5,8 @@ description: "In this post, I am presenting a short introduction to aliases and 
 author: ama
 permalink: /ama/a-developers-guide-to-using-aliases/
 published: true
-categories: [dev tools]
-tags: [linux shell, alias, dev tools, linux, unix]
+categories: [article]
+tags: [linux, shell, alias, dev-tools]
 ---
 
 Not long time ago I have rediscovered an old friend - Bash[^1] the Alias[^2]. We were never best friends until now. We got acquainted at the beginning of my computer science studies. I visited back then a course held by Cisco, "Linux Essentials" or something like that. The trainer mentioned at one point what were aliases and how handy they could be. Well 12 years later, and I still had not gotten that, until recently, when the alias presented himself in a new light to me. Since then we've been best friends. Read on to learn why.

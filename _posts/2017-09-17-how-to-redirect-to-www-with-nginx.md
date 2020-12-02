@@ -5,8 +5,11 @@ description: "Snippet from nginx config file that redirects all requests (http a
 author: ama
 permalink: /ama/how-to-redirect-domain-to-www-url-with-nginx
 published: true
-categories: [infrastructure, networking]
-tags: [bookmarksdev, nginx, networking]
+categories: [tutorial]
+tags:
+    - bookmarksdev
+    - nginx
+    - networking
 ---
 
 This post presents the snippet from the Nginx configuration that redirects all request to **https://www.bookmarks.dev**:

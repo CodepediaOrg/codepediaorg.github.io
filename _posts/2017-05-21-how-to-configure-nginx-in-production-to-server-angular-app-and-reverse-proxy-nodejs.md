@@ -6,8 +6,16 @@ description: "Install Nginx on Ubuntu Server, understand configuration files, co
 author: ama
 permalink: /ama/how-to-configure-nginx-in-production-to-serve-angular-app-and-reverse-proxy-nodejs
 published: true
-categories: [sysdamin]
-tags: [codingmarks, nginx, ssl, tls, cerbot, keycloak, nodejs]
+categories: [tutorial]
+tags:
+    - bookmarks.dev
+    - nginx
+    - ssl
+    - tls
+    - cerbot
+    - keycloak
+    - node.js
+    - sysdamin
 ---
 
 In this guide we are going to:

@@ -1,33 +1,16 @@
 ---
-id: 2157
 title: Understanding JavaScript Callbacks
 date: 2014-12-29T21:28:27+00:00
 author: Christopher Buecheler
 layout: post
-guid: http://www.codepedia.org/?p=2157
 permalink: /cwbuecheler/understanding-javascript-callbacks/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3366780612
-fsb_social_facebook:
-  - 3
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - javascript
+  - article
 tags:
   - asynchronous
   - callback
   - javascript
-  - jQuery
-  - js
+  - jquery
 ---
 <h2 class="subtitle" style="text-align: center;">
   Unlocking the Asynchronous Powers of JavaScript
@@ -229,20 +212,20 @@ Hope this helps! Any questions? Drop me a line or comment in the discussion belo
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/cwbuecheler.png" alt="Johannes Brodwall" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/cwbuecheler.png" alt="Johannes Brodwall" />
+
   <p id="about_author_header">
     Christopher Buecheler</strong>
   </p>
-  
+
   <div id="social_logos_up">
     <a class="icon-earth" href="http://cwbuecheler.com/" target="_blank"> </a> <a class="icon-twitter" href="http://twitter.com/cwbuecheler" target="_blank"> </a>
   </div>
-  
+
   <div id="author_details" style="text-align: justify;">
     Christopher Buecheler has been designing and developing web pages professionally since 1997. He's worked as the principal front-end developer for four startups: GameSpy Industries, OkCupid, CrispyGamer, and GoldenSpear. A self-taught programmer, he understands the value of a good tutorial, and has tried to give a few back to the community. In addition to web work, he's independently published four novels and is currently working with his agent to find a publisher for his fifth. He also writes cocktail articles for Primer Magazine and runs a cocktail blog at DrinkShouts.com. He lives in Providence, Rhode Island, with his amazing French wife and their two cats.
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div class="clear">
     </div>

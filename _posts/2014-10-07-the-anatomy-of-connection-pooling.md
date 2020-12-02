@@ -1,36 +1,18 @@
 ---
-id: 1930
 title: The anatomy of connection pooling
 date: 2014-10-07T20:37:52+00:00
 author: Vlad Mihalcea
 layout: post
-guid: http://www.codepedia.org/?p=1930
 permalink: /vladmihalcea/the-anatomy-of-connection-pooling/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:79:"https://github.com/vladmihalcea/vladmihalcea.wordpress.com/tree/master/db-facts";s:11:"ribbon-type";i:10;}'
-dsq_thread_id:
-  - 3093036818
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 5
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - architecture
-  - database
+  - article
+
 tags:
-  - connection pooling
-  - performance tuning
+  - connection-pooling
+  - performance
   - rdbms
+  - database
+  - architecture
 ---
 <h2 style="font-weight: inherit; color: #444444;">
   Introduction
@@ -101,15 +83,15 @@ Let’s compare how a <strong style="font-style: inherit;">no pooling</strong>�
 The test will open and close 1000 connections.
 
 <pre class="lang:java decode:true ">private static final Logger LOGGER = LoggerFactory.getLogger(DataSourceConnectionTest.class);
- 
+
 private static final int MAX_ITERATIONS = 1000;
- 
+
 private Slf4jReporter logReporter;
- 
+
 private Timer timer;
- 
+
 protected abstract DataSource getDataSource();
- 
+
 @Before
 public void init() {
     MetricRegistry metricRegistry = new MetricRegistry();
@@ -119,7 +101,7 @@ public void init() {
             .build();
     timer = metricRegistry.timer("connection");
 }
- 
+
 @Test
 public void testOpenCloseConnections() throws SQLException {
     for (int i = 0; i &lt; MAX_ITERATIONS; i++) {
@@ -145,81 +127,81 @@ The chart displays the time spent during opening and closing connections so lowe
     <th style="font-style: inherit;">
       TYPE
     </th>
-    
+
     <th style="font-style: inherit;">
       NO POOLING TIME (MILLISECONDS)
     </th>
-    
+
     <th style="font-style: inherit;">
       CONNECTION POOLING TIME (MILLISECONDS)
     </th>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       min
     </td>
-    
+
     <td style="font-style: inherit;">
       74.551414
     </td>
-    
+
     <td style="font-style: inherit;">
       0.002633
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       max
     </td>
-    
+
     <td style="font-style: inherit;">
       146.69324
     </td>
-    
+
     <td style="font-style: inherit;">
       125.528047
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       mean
     </td>
-    
+
     <td style="font-style: inherit;">
       78.216549
     </td>
-    
+
     <td style="font-style: inherit;">
       0.128900
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       stddev
     </td>
-    
+
     <td style="font-style: inherit;">
       5.9438335
     </td>
-    
+
     <td style="font-style: inherit;">
       3.969438
     </td>
   </tr>
-  
+
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
       median
     </td>
-    
+
     <td style="font-style: inherit;">
       76.150440
     </td>
-    
+
     <td style="font-style: inherit;">
       0.003218
     </td>
@@ -298,21 +280,21 @@ The chart displays the time spent during opening and closing connections so lowe
 
 <p style="color: #444444;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" />
+
     <p id="about_author_header">
       <strong>Vlad Mihalcea</strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Software architect passionate about software integration, high scalability and concurrency challenges
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

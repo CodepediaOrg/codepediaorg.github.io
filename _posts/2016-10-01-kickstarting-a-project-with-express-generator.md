@@ -5,8 +5,8 @@ description: "In this post I will briefly present how to kick start a NodeJS bac
 author: ama
 permalink: /ama/kick-starting-a-project-with-express-generator
 published: false
-categories: [nodejs]
-tags: [beginner, nodejs, expressjs, expressjs generator, project setup, how to, tutorial]
+categories: [tutorial]
+tags: [installation, nodejs, expressjs]
 ---
 
 As of today, I am going to start working on a project to enhance my bookmarks handling experience that will run at

@@ -1,35 +1,16 @@
 ---
-id: 2525
 title: Basics of scaling Java EE applications
 date: 2015-10-29T16:52:13+00:00
 author: Abhishek Gupta
 layout: post
-guid: http://www.codepedia.org/?p=2525
 permalink: /abhirockzz/basics-of-scaling-java-ee-applications/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 4271290803
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 2
-fsb_social_linkedin:
-  - 8
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - architecture
-  - java
-  - Java EE
+  - article
 tags:
+  - java
+  - javaee
   - cache
-  - cluster
-  - distributed caching
-  - high availability
-  - java ee
+  - cluster-computing
   - scalability
 ---
 <p style="text-align: justify;">
@@ -37,7 +18,7 @@ tags:
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#The_problem">The problem…</a>
@@ -49,7 +30,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Load_Balance_your_scaled_out_cluster">Load Balance your scaled out cluster</a>
       </li>
@@ -60,7 +41,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Enter_Replicated_Clustering">Enter Replicated Clustering</a>
       </li>
@@ -74,7 +55,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Further_reading_mostly_Weblogic_specific">Further reading (mostly Weblogic specific)</a>
       </li>
@@ -299,21 +280,21 @@ tags:
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" />
+
   <p id="about_author_header">
     <strong>Abhishek Gupta</strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Java Platform fanatic and a Consultant in the Identity Management domain
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-earth" href="http://abhirockzz.wordpress.com/" target="_blank"> </a> <a class="icon-googleplus" href="http://plus.google.com/103167687788180890717/posts" target="_blank"> </a> <a class="icon-twitter" href="http://twitter.com/abhi_tweeter" target="_blank"> </a> <a class="icon-github" href="https://github.com/abhirockzz" target="_blank"> </a> <a class="icon-linkedin" href="http://in.linkedin.com/pub/abhishek-gupta/27/331/866" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

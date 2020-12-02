@@ -1,33 +1,15 @@
 ---
-id: 2605
 title: Securing Microservices with Keycloak
 date: 2016-01-09T18:50:16+00:00
 author: keycloak keycloak
 layout: post
-guid: http://www.codepedia.org/?p=2605
 permalink: /keycloak/securing-microservices-with-keycloak/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 4476603429
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 6
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - Java EE
-  - javascript
-  - security
+  - article
 tags:
   - keycloak
-  - micro-services
-  - openid connect
+  - microservices
+  - openid-connect
   - security
   - sso
 ---
@@ -88,20 +70,20 @@ tags:
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://raw.githubusercontent.com/keycloak/keycloak/master/misc/logo/keycloak_icon_256px.png" alt="Keycloak-logo" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://raw.githubusercontent.com/keycloak/keycloak/master/misc/logo/keycloak_icon_256px.png" alt="Keycloak-logo" />
+
   <p id="about_author_header">
     <strong>Keycloak</strong>
   </p>
-  
+
   <div id="social_logos_up">
     <a class="icon-earth" href="http://keycloak.jboss.org/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/keycloak" target="_blank"> </a> <a class="icon-github" href="https://github.com/keycloak" target="_blank"> </a>
   </div>
-  
+
   <div id="author_details" style="text-align: justify;">
     Integrated SSO and IDM for browser apps and RESTful web services. Built on top of the OAuth 2.0, Open ID Connect, JSON Web Token (JWT) and SAML 2.0 specifications. Keycloak has tight integration with a variety of platforms and has a HTTP security proxy service where we don't have tight integration. Options are to deploy it with an existing app server, as a black-box appliance, or as an Openshift cloud service and/or cartridge.
   </div>
-  
+
   <div class="clear">
   </div>
 </div>

@@ -6,8 +6,15 @@ plus the git sha-1 number. It can be very useful to test if the project is alive
 author: ama
 permalink: /ama/how-to-build-the-right-smoke-test-rest-service-in-java-ee-with-maven
 published: true
-categories: [java ee, devops]
-tags: [maven, java ee, rest, rest api, continuous delivery, continuous deployment, git, devops, it automation]
+categories: [tutorial]
+tags:
+    - maven
+    - javaee
+    - rest
+    - continuous-delivery
+    - continuous-deployment
+    - git
+    - devops
 ---
 
 This post describes how to develop a Java EE REST service, usually part of a REST API backend, that will provide information about the current version of the implementation

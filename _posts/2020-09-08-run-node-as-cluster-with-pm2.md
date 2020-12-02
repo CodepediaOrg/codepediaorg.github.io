@@ -6,8 +6,13 @@ Ubuntu system, on which I had Node.js both standalone installed and managed with
 author: ama
 permalink: /ama/my-troubles-getting-to-run-a-node-application-with-pm2-in-cluster-mode-with-nvm
 published: true
-categories: [nodejs]
-tags: [cluster-computing, pm2, systemd, systemctl]
+categories: [article]
+tags:
+    - cluster-computing
+    - pm2
+    - systemd
+    - systemctl
+    - node.js
 ---
 
 In this blog post I will list of the troubles I went through getting to run the [Bookmarks.dev](https://www.bookmarks.dev) API on

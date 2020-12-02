@@ -1,32 +1,13 @@
 ---
-id: 2633
 title: 'Creating Usable JVM Languages: An Overview'
 date: 2016-02-07T21:29:49+00:00
 author: Toptal Blog
 layout: post
-guid: http://www.codepedia.org/?p=2633
 permalink: /toptal/creating-usable-jvm-languages-an-overview/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 4560086036
-fsb_social_facebook:
-  - 0
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - java
+  - article
 tags:
-  - introduction
   - jvm
-  - jvm language
-  - programming language
 ---
 <p style="text-align: justify;">
   There are several possible reasons for creating a language, some of which are not immediately obvious. I would like to present them together with an approach to make a language for the <a href="https://en.wikipedia.org/wiki/Java_virtual_machine" target="_blank">Java Virtual Machine</a>(JVM) reusing existing tools as much as possible. In this way we will reduce the development effort and provide a toolchain familiar to the user, making it easier to adopt our new programming language.
@@ -262,20 +243,20 @@ tags:
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/toptal-logo.png" alt="Toptal-logo" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/toptal-logo.png" alt="Toptal-logo" />
+
   <p id="about_author_header">
     <strong>Toptal Blog</strong>
   </p>
-  
+
   <div id="social_logos_up">
     <a class="icon-earth" href="http://www.toptal.com/blog" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/toptalllc" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/Toptal-141928212544793/" target="_blank"> </a> <a class="icon-gplus" href="https://plus.google.com/+Toptalllc/posts" target="_blank"> </a>
   </div>
-  
+
   <div id="author_details" style="text-align: justify;">
     The Toptal Engineering Blog is a hub for in-depth development tutorials and new technology announcements created by professional freelance software engineers in the Toptal network.
   </div>
-  
+
   <div class="clear">
   </div>
 </div>

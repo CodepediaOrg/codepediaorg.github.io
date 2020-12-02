@@ -1,34 +1,15 @@
 ---
-id: 1829
 title: First batch job on Podcastpedia.org with EasyBatch
 date: 2014-09-28T20:52:10+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1829
 permalink: /ama/first-batch-job-on-podcastpedia-org-with-easybatch/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:54:"https://github.com/podcastpedia/podcastpedia-easybatch";s:11:"ribbon-type";i:10;}'
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 1
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3062743768
 categories:
-  - java
+  - article
 tags:
+  - java
   - batch
-  - batchprocessing
+  - batch-processing
   - database
   - easybatch
   - mysql
@@ -346,26 +327,3 @@ Check out the <a title="https://github.com/j-easy/easy-batch/wiki" href="https:/
       2. <a title="https://github.com/j-easy/easy-batch/wiki" https://github.com/j-easy/easy-batch/wiki" target="_blank">User guide</a>
       3. <a title="https://github.com/j-easy/easy-batch/tree/master/easy-batch-tutorials/src/main/java/org/jeasy/batch/tutorials/intermediate/csv2xml" href="https://github.com/j-easy/easy-batch/tree/master/easy-batch-tutorials/src/main/java/org/jeasy/batch/tutorials/intermediate/csv2xml" target="_blank">Tweets ETL tutorial</a>
   2. <a title="http://dev.mysql.com/doc/connector-j/en/connector-j-usagenotes-connect-drivermanager.html" href="http://dev.mysql.com/doc/connector-j/en/connector-j-usagenotes-connect-drivermanager.html" target="_blank">Connecting to MySQL Using the JDBC DriverManager Interface</a>
-
-<p style="text-align: justify;">
-  <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-    <p id="about_author_header">
-      <strong>Adrian Matei</strong>
-    </p>
-
-    <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-    </div>
-
-    <div id="follow_social" style="clear: both;">
-      <div id="social_logos">
-         <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-      </div>
-
-      <div class="clear">
-      </div>
-    </div>
-  </div>
-</p>

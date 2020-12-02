@@ -1,5 +1,5 @@
 ---
-title: 'A beginner&#8217;s guide to JPA/Hibernate entity state transitions'
+title: A beginner's guide to JPA/Hibernate entity state transitions
 date: 2014-09-12T06:39:29+00:00
 author: Vlad Mihalcea
 layout: post

@@ -6,8 +6,12 @@ description: "This post presents how to use web scraping with Cheerio in a NodeJ
 author: ama
 permalink: /ama/how-to-get-the-title-of-a-remote-web-page-using-javascript-and-nodejs
 published: true
-categories: [nodejs, javascript]
-tags: [codingmarks, coding bookmarks, web scraping, cheerio, angular]
+categories: [article]
+tags:
+    - bookmarks.dev
+    - web-scraping
+    - cheerio
+    - angular
 ---
 
 When I [add a new bookmark](https://youtu.be/bj22xbE5ZiY?t=5m10s) to my bookmarks collection, I set the title of the new bookmark, most of the time, the same as the title of the web page being bookmark -

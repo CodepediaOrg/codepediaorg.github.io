@@ -8,13 +8,14 @@ permalink: /ama/how-to-test-a-rest-api-from-command-line-with-curl/
 description: "This post presents examples of making CRUD HTTP calls against a backend REST API. The API chosen
 supports www.bookmarks.dev"
 categories:
-  - testing
+  - article
 tags:
   - curl
   - http
   - rest
   - api
   - testing
+  - bookmarks.dev
 ---
 
 If you want to quickly test your REST api from the command line, you can use [curl](http://curl.haxx.se/).

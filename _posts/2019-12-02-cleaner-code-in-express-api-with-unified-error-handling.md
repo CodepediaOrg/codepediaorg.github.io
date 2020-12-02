@@ -6,8 +6,13 @@ refactoring are presented to make the point"
 author: ama
 permalink: /ama/cleaner-code-in-expressjs-rest-api-with-custom-error-handling
 published: true
-categories: [clean-code]
-tags: [expressjs, nodejs, rest, api]
+categories: [article]
+tags:
+    - expressjs
+    - node.js
+    - rest
+    - api
+    - coding-style
 ---
 
 What started out as a simple code duplication removal, turned out into [a major refactoring](https://github.com/BookmarksDev/bookmarks.dev/commit/fc2ba3339909d15f43450ba8ffbf472bacaef429)

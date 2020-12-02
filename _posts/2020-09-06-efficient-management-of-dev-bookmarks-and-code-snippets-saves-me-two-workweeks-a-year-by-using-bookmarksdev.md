@@ -9,8 +9,10 @@ can be a tedious job and sometimes even frustrating.
 author: ama
 permalink: /ama/efficient-management-of-my-dev-bookmarks-and-code-snippets-saves-me-two-workweeks-a-year
 published: true
-categories: [productivity]
-tags: [bookmarks, efficiency, bookmarksdev]
+categories: [article]
+tags:
+    - bookmarks.dev
+    - productivity
 ---
 
 ## Motivation

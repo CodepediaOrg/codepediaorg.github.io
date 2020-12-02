@@ -1,54 +1,25 @@
 ---
-id: 2365
-title: 'What every Angular project likely needs &#8211; and a Gulp build to provide it'
+title: What every Angular project likely needs &#8211; and a Gulp build to provide it
 date: 2015-05-01T14:52:57+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codepedia.org/?p=2365
 permalink: /jhadesdev/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Show";s:10:"github-url";s:45:"https://github.com/jhades/angularjs-gulp-todo";s:11:"ribbon-type";i:10;}'
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 1
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3727958192
 categories:
-  - javascript
+  - article
 tags:
-  - angular
-  - angularJS
-  - browserify
-  - cache busting
-  - CommonJS
+  - angularjs
   - css
   - gulp
-  - gulpjs
-  - JsHint
-  - Karma
-  - minification
-  - requireJS
+  - karma
   - sass
-  - source maps
-  - web development
+  - source-maps
 ---
 <p class="post-title">
   <div id="toc_container" class="no_bullets">
     <p class="toc_title">
       Contents
     </p>
-    
+
     <ul class="toc_list">
       <li>
         <a href="#Why_choose_Gulp">Why choose Gulp?</a>
@@ -69,7 +40,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#The_build-css_task">The build-css task</a>
       </li>
@@ -89,7 +60,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Angular-friendly_Javascript_minification">Angular-friendly Javascript minification</a><ul>
           <li>
@@ -97,7 +68,7 @@ tags:
           </li>
         </ul>
       </li>
-      
+
       <li>
         <a href="#Pre-populating_the_Angular_template_cache">Pre-populating the Angular template cache</a>
       </li>
@@ -128,7 +99,7 @@ tags:
 
 <p class="post-title">
   Starting an AngularJs project also means choosing a whole toolchain that goes along with Angular. In this blog post we will propose a set of tools that a new Angular project will likely need, and present a <a href="https://github.com/jhades/angularjs-gulp-todo/blob/master/gulpfile.js"><strong>simple</strong> Gulp build</a> that provides those features. Let&#8217;s go over the following topics:
-</p><section class="post-content"> 
+</p><section class="post-content">
 
   * Why Gulp? Goals for a baseline Angular build
   * Why use a CSS pre-processor, and why Sass
@@ -211,7 +182,7 @@ Also, the industry seems to be converging around Sass: see for example this post
 
 Sass is integrated in the gulp build via the `build-css` task bellow:
 
-<pre class="lang:js decode:true ">gulp.task('build-css', ['clean'], function() {  
+<pre class="lang:js decode:true ">gulp.task('build-css', ['clean'], function() {
     return gulp.src('./styles/*')
         .pipe(sourcemaps.init())
         .pipe(sass())
@@ -267,14 +238,14 @@ CommonJs used to be a backend-only module system, until [browserify](http://brow
 
 Going back to our build, the following is the task that builds the Javascript bundle of our application:
 
-<pre class="lang:js decode:true">gulp.task('build-js', ['clean'], function() {  
+<pre class="lang:js decode:true">gulp.task('build-js', ['clean'], function() {
     var b = browserify({
         entries: './js/app.js',
         debug: true,
         paths: ['./js/controllers', './js/services', './js/directives'],
         transform: [ngAnnotate]
     });
- 
+
     return b.bundle()
         .pipe(source('bundle.js'))
         .pipe(buffer())
@@ -345,7 +316,7 @@ Many of the optimizations that the build provides revolve around reducing the nu
 </p>
 
 <pre class="lang:js decode:true ">gulp.task('sprite', function () {
- 
+
     var spriteData = gulp.src('./images/*.png')
         .pipe(spritesmith({
             imgName: 'todo-sprite.png',
@@ -353,7 +324,7 @@ Many of the optimizations that the build provides revolve around reducing the nu
             algorithm: 'top-down',
             padding: 5
         }));
- 
+
     spriteData.css.pipe(gulp.dest('./dist'));
     spriteData.img.pipe(gulp.dest('./dist'))
 });</pre>
@@ -394,7 +365,7 @@ The plugin [gulp-cachebust](https://www.npmjs.com/package/gulp-cachebust) was us
   This call keeps track of the CSS and Javascript files that will need to have their names concatenated with the file hash. The actual replacement of the css file names is done in the build task, by calling <code>cachebust.references()</code>:
 </p>
 
-<pre class="lang:js decode:true ">gulp.task('build', [ 'clean', 'bower','build-css','build-template-cache', 'jshint', 'build-js'], function() {  
+<pre class="lang:js decode:true ">gulp.task('build', [ 'clean', 'bower','build-css','build-template-cache', 'jshint', 'build-js'], function() {
     return gulp.src('index.html')
         .pipe(cachebust.references())
         .pipe(gulp.dest('dist'));
@@ -406,11 +377,11 @@ The plugin [gulp-cachebust](https://www.npmjs.com/package/gulp-cachebust) was us
   One of the de-facto Angular test tool is the <a href="http://karma-runner.github.io/0.12/index.html">Karma</a> test runner, and one the most used testing frameworks with it is <a href="http://jasmine.github.io/">Jasmine</a>. The following Gulp task allows to run Jasmine tests from the command line against a headless <a title="http://phantomjs.org/" href="http://phantomjs.org/" target="_blank">PhantomJs</a> browser:
 </p>
 
-<pre class="lang:js decode:true">gulp.task('test', ['build-js'], function() {  
+<pre class="lang:js decode:true">gulp.task('test', ['build-js'], function() {
     var testFiles = [
         './test/unit/*.js'
     ];
- 
+
     return gulp.src(testFiles)
         .pipe(karma({
             configFile: 'karma.conf.js',
@@ -428,7 +399,7 @@ The plugin [gulp-cachebust](https://www.npmjs.com/package/gulp-cachebust) was us
   <a href="http://jshint.com/">JsHint</a> is one of the most used Javascript linters. The following gulp task allows to integrate it in our build cycle:
 </p>
 
-<pre class="lang:js decode:true ">gulp.task('jshint', function() {  
+<pre class="lang:js decode:true ">gulp.task('jshint', function() {
     gulp.src('/js/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
@@ -440,7 +411,7 @@ After doing the main build and running all the tests using the `gulp `default t
 
 The `gulp-webserver` plugin was configured to do exactly that in the following way:
 
-<pre class="lang:js decode:true  ">gulp.task('webserver', ['watch','build'], function() {  
+<pre class="lang:js decode:true  ">gulp.task('webserver', ['watch','build'], function() {
     gulp.src('.')
         .pipe(webserver({
             livereload: false,

@@ -1,31 +1,14 @@
 ---
-id: 1899
 title: Really Understanding Javascript Closures
 date: 2014-10-01T21:34:32+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codepedia.org/?p=1899
 permalink: /jhadesdev/really-understanding-javascript-closures/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 3
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3073397773
 categories:
-  - javascript
+  - article
 tags:
   - closure
-  - example
-  - intermediate
+  - javascript
 ---
 <p style="color: #3a4145; text-align: justify;">
   This post will explain in a simple way how Javascript Closures work. We will go over these topics and frequently asked questions:
@@ -68,7 +51,7 @@ function closureExample() {
  
     var i = 0;
  
-    for (i = 0; i&lt; 3 ;i++) {    
+    for (i = 0; i&lt; 3 ;i++) {   
         setTimeout(function() {
             console.log('counter value is ' + i);
         }, 1000);
@@ -200,20 +183,20 @@ This is not a bug, it&#8217;s the way closures work. The logging function _is_�
   This can be done for example by creating a separate function to trigger the async operation. The following snippet would give the expected result:
 </p>
 
-<pre class="lang:js decode:true ">function asyncOperation(counter) {  
+<pre class="lang:js decode:true ">function asyncOperation(counter) {
     setTimeout(function() {
         console.log('counter value is ' + counter);
     }, 1000);
 }
- 
-function otherClosureExample() {  
+
+function otherClosureExample() {
     var i = 0;
- 
-    for (i = 0; i &lt; 3 ;i++) {    
+
+    for (i = 0; i &lt; 3 ;i++) {
         asyncOperation(i);
     }
 }
- 
+
 otherClosureExample();</pre>
 
 This works because when calling `asyncOperation` a copy is made of the _counter_ value, and the logging will &#8216;close over&#8217; that copied value. This means each invocation of the logging function will see a different variable with values 0, 1, 2.
@@ -246,21 +229,21 @@ Javascript closures are a powerful feature that is mostly transparent in the day
 
 <p style="color: #3a4145;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" />
+
     <p id="about_author_header">
       <strong>Aleksey Novik</strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Software developer, likes to learn new technologies, hang out on stackoverflow and blog on tips and tricks on Java/Javascript polyglot enterprise development.
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

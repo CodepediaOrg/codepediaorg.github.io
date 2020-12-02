@@ -1,37 +1,19 @@
 ---
-id: 2040
 title: 'Solving ORM &#8211; Keep the O, Drop the R, no need for the M'
 date: 2014-11-04T14:31:29+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codepedia.org/?p=2040
 permalink: /jhadesdev/solving-orm-keep-the-o-drop-the-r-no-need-for-the-m/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3157026711
-fsb_social_facebook:
-  - 2
-fsb_social_google:
-  - 2
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 1
-fsb_social_pinterest:
-  - 0
 categories:
-  - architecture
-  - database
-  - hibernate
-  - java
+  - article
 tags:
-  - graphDB
+  - java
+  - hibernate
+  - database
   - jpql
   - neo4j
   - orm
-  - relational
-  - SQL
+  - sql
 ---
 <p style="text-align: justify;">
   ORM has a simple, production-ready solution hiding in plain sight in the Java world. Let’s go through it in this post, alongside with the following topics:
@@ -59,9 +41,9 @@ tags:
 Let&#8217;s take some quotes from two recent posts on this topic: [Thoughts on Hibernate](http://java.dzone.com/articles/thoughts-hibernate) and [JPA Hibernate Alternatives](http://java.dzone.com/articles/jpa-hibernate-alternatives):
 
 > There are performance problems related to using Hibernate
-> 
+>
 > A lot of business operations and reports involve writing complex queries. Writing them in terms of objects and maintaining them seems to be difficult
-> 
+>
 > We shouldn&#8217;t be needing a 900 page book to learn a new framework.
 
 <p style="text-align: justify;">
@@ -177,12 +159,12 @@ Neo4j is a stable product that is well understood and documented, see the [Neo4J
 
 But it&#8217;s core API is all about graphs and nodes, something like this:
 
-<pre class="lang:java decode:true ">GraphDatabaseService gds = new EmbeddedGraphDatabase("/path/to/store"); 
-Node forrest=gds.createNode(); 
-forrest.setProperty("title","Forrest Gump"); 
-forrest.setProperty("year",1994); 
+<pre class="lang:java decode:true ">GraphDatabaseService gds = new EmbeddedGraphDatabase("/path/to/store");
+Node forrest=gds.createNode();
+forrest.setProperty("title","Forrest Gump");
+forrest.setProperty("year",1994);
 gds.index().forNodes("movies").add(forrest,"id",1);
- 
+
 Node tom=gds.createNode();</pre>
 
 The problem is that this is too far from domain driven development, writing to this would be like coding JDBC by hand.
@@ -218,7 +200,7 @@ It&#8217;s aimed to write the persistence layer of the application in a simplifi
 </p>
 
 <pre class="lang:java decode:true">@NodeEntity
-class Movie { 
+class Movie {
     @GraphId Long nodeId;
     String id;
     String title;
@@ -309,21 +291,21 @@ The Hibernate team has written [Hibernate OGM](http://hibernate.org/ogm/), which
 
 <p style="text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" />
+
     <p id="about_author_header">
       <strong>Aleksey Novik</strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Software developer, likes to learn new technologies, hang out on stackoverflow and blog on tips and tricks on Java/Javascript polyglot enterprise development.
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

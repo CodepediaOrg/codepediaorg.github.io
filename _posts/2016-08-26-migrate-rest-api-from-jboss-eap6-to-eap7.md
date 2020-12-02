@@ -5,8 +5,8 @@ description: "In this post I will present a few points I had to do to migrate a 
 author: ama
 permalink: /ama/how-to-migrate-a-java-ee-rest-api-from-jboss-eap6-to-jboss-eap7
 published: true
-categories: [java ee]
-tags: [jboss, wildfly, rest, resteasy, java ee, keycloak, cors]
+categories: [article]
+tags: [jboss, wildfly, rest, resteasy, javaee, keycloak, cors]
 ---
 
 In this post I will briefly describe the steps and issues encountered when migrating a Java EE REST API from JBoss EAP 6 to JBoss EAP 7 - this implies migrating from a Java EE 6/JAX RS 1.0 implementation to a Java EE 7/JAX RS.2.0 implementation. The trigger was the announcement from Red Hat regarding the general availability of their JBoss Enterprise Application Platform 7 (JBoss EAP) [^1]. JBoss EAP 7 is based on Wildfly 10[^2], so the code snippets showed along the post should work on Wildfly 10 too.
@@ -156,7 +156,7 @@ import javax.ws.rs.core.Application;
 @ApplicationPath("/root-path")
 public class MyApplication extends Application
 {
-}     
+}
 ```
 
 [^4]: <http://docs.jboss.org/resteasy/docs/3.0.19.Final/userguide/html_single/index.html#d4e42>

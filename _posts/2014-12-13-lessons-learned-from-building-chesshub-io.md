@@ -1,38 +1,15 @@
 ---
-id: 2148
 title: Lessons learned from building ChessHub.io
 date: 2014-12-13T15:08:16+00:00
 author: Mahmoud Ben Hassine
 layout: post
-guid: http://www.codepedia.org/?p=2148
 permalink: /mahmoudbenhassine/lessons-learned-from-building-chesshub-io/
-fsb_show_social:
-  - 0
-gr_overridden:
-  - 1
-gr_options:
-  - 'a:3:{s:13:"enable-ribbon";s:4:"Hide";s:10:"github-url";s:36:"https://github.com/benas/chesshub.io";s:11:"ribbon-type";i:10;}'
-fsb_social_facebook:
-  - 0
-fsb_social_google:
-  - 0
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3319793837
 categories:
-  - java
-  - javascript
+  - article
 tags:
+  - showdev
   - expressjs
-  - js
-  - lessons learned
-  - mistake
-  - mvc
+  - javascript
   - nodejs
   - spa
 ---
@@ -141,27 +118,3 @@ showQuoteOnHomePage(quote);</pre>
   See you soon <span class="wp-smiley wp-emoji wp-emoji-smile" style="font-weight: inherit; font-style: inherit;" title=":-)">🙂</span>
 </p>
 
-<p style="color: #404040;">
-  <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://pbs.twimg.com/profile_images/682858329220190208/YhIK6TIE_400x400.jpg" alt="Mahmoud Ben Hassine" /> 
-    
-    <p id="about_author_header">
-      Mahmoud Ben Hassine
-    </p>
-    
-    <div id="author_details" style="text-align: justify;">
-      Passionate Software Engineer who loves to learn and teach. As an open source advocate, I love to create and contribute to open source projects and to share my experience with other developers around the globe. If you are a chess Junkie like me, it will be a pleasure to challenge you on a chess board!
-    </div>
-    
-    <div id="follow_social" style="clear: both;">
-      <div id="social_logos">
-        <a class="icon-earth" href="http://benas.github.io/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/_benas_" target="_blank"> </a> <a class="icon-github" href="https://github.com/benas" target="_blank"> </a> <a class="icon-linkedin" href="http://fr.linkedin.com/in/mahmoudbenhassine/" target="_blank"> </a>
-      </div>
-      
-      <div class="clear">
-      </div>
-    </div>
-  </div>
-</p>
-
-&nbsp;

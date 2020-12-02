@@ -6,43 +6,23 @@ author: Udemy tutorials
 layout: post
 guid: http://www.codepedia.org/?p=2472
 permalink: /udemy/node-js-tutorial/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 4194770021
-fsb_social_facebook:
-  - 5
-fsb_social_google:
-  - 1
-fsb_social_linkedin:
-  - 10
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - javascript
+  - tutorial
 tags:
   - angular
-  - angularJS
-  - backend
-  - beginner
+  - angularjs
   - expressjs
   - javascript
-  - mean stack
   - mongoDB
-  - monk
-  - node
-  - nodejs
+  - node.js
   - nodemon
   - sublimetext
-  - tutorial
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
     Contents
   </p>
-  
+
   <ul class="toc_list">
     <li>
       <a href="#Nodejs_Tutorial_A_Beginners_Guide">Node.js Tutorial: A Beginner’s Guide</a>
@@ -93,7 +73,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Displaying_All_Videos_in_the_Database">Displaying All Videos in the Database</a><ul>
         <li>
@@ -113,7 +93,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Adding_a_New_Video">Adding a New Video</a><ul>
         <li>
@@ -130,7 +110,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Editing_a_Video">Editing a Video</a><ul>
         <li>
@@ -144,7 +124,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Deleting_a_Video">Deleting a Video</a><ul>
         <li>
@@ -155,7 +135,7 @@ tags:
         </li>
       </ul>
     </li>
-    
+
     <li>
       <a href="#Wrapping_Up">Wrapping Up</a>
     </li>
@@ -305,7 +285,7 @@ Open Command Prompt as an administrator:
 
 Open Terminal:
 
-<pre class="lang:sh decode:true">$ sudo mkdir -p /data/dbmd 
+<pre class="lang:sh decode:true">$ sudo mkdir -p /data/dbmd
 $ whoami
 moshfeghhamedani
 $ sudo chown moshfeghhamedani /data/db
@@ -355,16 +335,16 @@ Express Generator will scaffold an application under a new folder called Vidzy.
 
 Here is the generated app structure:
 
-  * bin 
+  * bin
       * www
-  * public 
+  * public
       * images
       * javascripts
       * stylesheets
-  * routes 
+  * routes
       * index.js
       * users.js
-  * views 
+  * views
       * error.jade
       * index.jade
       * layout.jade
@@ -910,7 +890,7 @@ Now we depend on two modules:<span class="Apple-converted-space"> </span>**ngRe
 
 Next, type the following code at the end of the file to create a controller:
 
-<pre><code class="hljs php">app.controller(&lt;span class="hljs-string">'HomeCtrl'&lt;/span>, [&lt;span class="hljs-string">'$scope'&lt;/span>, &lt;span class="hljs-string">'$resource'&lt;/span>, 
+<pre><code class="hljs php">app.controller(&lt;span class="hljs-string">'HomeCtrl'&lt;/span>, [&lt;span class="hljs-string">'$scope'&lt;/span>, &lt;span class="hljs-string">'$resource'&lt;/span>,
     &lt;span class="hljs-function">&lt;span class="hljs-keyword">function&lt;/span>&lt;span class="hljs-params">(&lt;span class="hljs-variable">$scope&lt;/span>, &lt;span class="hljs-variable">$resource&lt;/span>)&lt;/span>&lt;/span>{
     }]);
 </code></pre>
@@ -933,7 +913,7 @@ Let me break this down for you.
   Let’s implement the body of this controller. Inside the controller function, type the following code:
 </p>
 
-<pre><code class="hljs php">app.controller(&lt;span class="hljs-string">'HomeCtrl'&lt;/span>, [&lt;span class="hljs-string">'$scope'&lt;/span>, &lt;span class="hljs-string">'$resource'&lt;/span>, 
+<pre><code class="hljs php">app.controller(&lt;span class="hljs-string">'HomeCtrl'&lt;/span>, [&lt;span class="hljs-string">'$scope'&lt;/span>, &lt;span class="hljs-string">'$resource'&lt;/span>,
     &lt;span class="hljs-function">&lt;span class="hljs-keyword">function&lt;/span>&lt;span class="hljs-params">(&lt;span class="hljs-variable">$scope&lt;/span>, &lt;span class="hljs-variable">$resource&lt;/span>)&lt;/span>&lt;/span>{
         &lt;span class="hljs-keyword">var&lt;/span> Videos = &lt;span class="hljs-variable">$resource&lt;/span>(&lt;span class="hljs-string">'/api/videos'&lt;/span>);
         Videos.query(&lt;span class="hljs-function">&lt;span class="hljs-keyword">function&lt;/span>&lt;span class="hljs-params">(videos)&lt;/span>&lt;/span>{
@@ -1042,14 +1022,14 @@ Create a new view file called<span class="Apple-converted-space"> </span>**vide
 
 &lt;form&gt;
     &lt;div&gt;
-        &lt;label&gt;Title&lt;/label&gt;		
+        &lt;label&gt;Title&lt;/label&gt;
         &lt;input&gt;&lt;/input&gt;
     &lt;/div&gt;
     &lt;div&gt;
         &lt;label&gt;Description&lt;/label&gt;
         &lt;textarea&gt;&lt;/textarea&gt;
     &lt;/div&gt;
-    &lt;input type="button" value="Save"&gt;&lt;/input&gt;	
+    &lt;input type="button" value="Save"&gt;&lt;/input&gt;
 &lt;/form&gt;
 </pre>
 
@@ -1114,14 +1094,14 @@ Now, back to<span class="Apple-converted-space"> </span>**partials > video-form
 
 &lt;form&gt;
     &lt;div class="form-group"&gt;
-        &lt;label&gt;Title&lt;/label&gt;		
+        &lt;label&gt;Title&lt;/label&gt;
         &lt;input class="form-control"&gt;&lt;/input&gt;
     &lt;/div&gt;
     &lt;div class="form-group"&gt;
         &lt;label&gt;Description&lt;/label&gt;
         &lt;textarea class="form-control"&gt;&lt;/textarea&gt;
     &lt;/div&gt;
-    &lt;input type="button" class="btn btn-primary" value="Save"&gt;&lt;/input&gt;	
+    &lt;input type="button" class="btn btn-primary" value="Save"&gt;&lt;/input&gt;
 &lt;/form&gt;
 </pre>
 
@@ -1170,7 +1150,7 @@ This controller has three dependencies:<span class="Apple-converted-space"> </s
 Now, open<span class="Apple-converted-space"> </span>**partials > video-form.html<span class="Apple-converted-space"> </span>**and change the input fields as follows:
 
 <pre class="lang:xhtml decode:true ">&lt;div class="form-group"&gt;
-	&lt;label&gt;Title&lt;/label&gt;		
+	&lt;label&gt;Title&lt;/label&gt;
 	&lt;input class="form-control" ng-model="video.title"&gt;&lt;/input&gt;
 &lt;/div&gt;
 &lt;div class="form-group"&gt;
@@ -1315,7 +1295,7 @@ Since we haven’t created the controller yet, I haven’t set the controller fo
 In **vidzy.js**, create a new controller as follows:
 
 <pre><code class="hljs php">app.controller(&lt;span class="hljs-string">'EditVideoCtrl'&lt;/span>, [&lt;span class="hljs-string">'$scope'&lt;/span>, &lt;span class="hljs-string">'$resource'&lt;/span>, &lt;span class="hljs-string">'$location'&lt;/span>, &lt;span class="hljs-string">'$routeParams'&lt;/span>,
-    &lt;span class="hljs-function">&lt;span class="hljs-keyword">function&lt;/span>&lt;span class="hljs-params">(&lt;span class="hljs-variable">$scope&lt;/span>, &lt;span class="hljs-variable">$resource&lt;/span>, &lt;span class="hljs-variable">$location&lt;/span>, &lt;span class="hljs-variable">$routeParams&lt;/span>)&lt;/span>&lt;/span>{	
+    &lt;span class="hljs-function">&lt;span class="hljs-keyword">function&lt;/span>&lt;span class="hljs-params">(&lt;span class="hljs-variable">$scope&lt;/span>, &lt;span class="hljs-variable">$resource&lt;/span>, &lt;span class="hljs-variable">$location&lt;/span>, &lt;span class="hljs-variable">$routeParams&lt;/span>)&lt;/span>&lt;/span>{
         &lt;span class="hljs-keyword">var&lt;/span> Videos = &lt;span class="hljs-variable">$resource&lt;/span>(&lt;span class="hljs-string">'/api/videos/:id'&lt;/span>, { id: &lt;span class="hljs-string">'@_id'&lt;/span> }, {
             update: { method: &lt;span class="hljs-string">'PUT'&lt;/span> }
         });
@@ -1600,20 +1580,20 @@ If you enjoyed my teaching style and would like to learn more from me, [subscrib
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/udemy-logo.png" alt="Udemy blog" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/udemy-logo.png" alt="Udemy blog" />
+
   <p id="about_author_header">
     <strong>Udemy</strong>
   </p>
-  
+
   <div id="social_logos_up">
     <a class="icon-earth" href="https://blog.udemy.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/udemy" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/udemy" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/+UdemySF" target="_blank"> </a>
   </div>
-  
+
   <div id="author_details" style="text-align: justify;">
     Udemy.com is a platform or marketplace for online learning. Unlike academic MOOC programs driven by traditional collegiate coursework, Udemy provides a platform for experts of any kind to create courses which can be offered to the public, either at no charge or for a tuition fee. Udemy provides tools which enable users to create a course, promote it and earn money from student tuition charges.
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div class="clear">
     </div>

@@ -1,42 +1,17 @@
 ---
-id: 1836
 title: How to build and clear a reference data cache with singleton EJBs and MBeans
 date: 2014-09-19T16:09:15+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1836
 permalink: /ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-and-mbeans/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 5
-fsb_social_google:
-  - 2
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3033422226
-categories:
-  - Java EE
 tags:
-  - cache
   - cahing
   - eclipselink
   - ejb
-  - flush
-  - java enterprise
-  - jave enterprise edition
-  - jee
-  - mbean
-  - mxbean
-  - reference data
+  - javaee
   - rest
   - singleton
-  - web services
+  - web-services
 ---
 <p style="text-align: justify;">
   In one of my projects I had a requirement to load reference data from several sources in a Java EE 6 WebLogic environment, with EclipseLink as <a title="http://en.wikipedia.org/wiki/Object-relational_mapping" href="http://en.wikipedia.org/wiki/Object-relational_mapping" target="_blank">ORM</a> framework. Since I couldn&#8217;t find an annotation in the Java EE world comparable to the sweet <a title="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/cache/annotation/Cacheable.html" href="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/cache/annotation/Cacheable.html" target="_blank">@Cacheable</a> from Spring YET, I had to write my &#8220;own&#8221; caching solution. Although reference data barely changes over time, one extra requirement was to be able to clear the cache from exterior. So here it goes&#8230;<!--more-->
@@ -306,24 +281,3 @@ public class ReferenceDataResource {
   3. <a title="http://tomee.apache.org/singleton-beans.html" href="http://tomee.apache.org/singleton-beans.html" target="_blank">Tomee &#8211; Singleton Beans</a>
   4. <a title="http://docs.oracle.com/javase/tutorial/jmx/" href="http://docs.oracle.com/javase/tutorial/jmx/" target="_blank">Trail: Java Management Extensions (JMX)</a>
   5. <a title="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" target="_blank">Spring Cache Abstraction</a>
-
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>

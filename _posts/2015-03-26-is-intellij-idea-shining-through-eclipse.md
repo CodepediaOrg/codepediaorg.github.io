@@ -1,31 +1,14 @@
 ---
-id: 2253
 title: Is IntelliJ IDEA shining through Eclipse?
 date: 2015-03-26T14:16:47+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=2253
 permalink: /ama/is-intellij-idea-shining-through-eclipse/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 7
-fsb_social_google:
-  - 2
-fsb_social_linkedin:
-  - 4
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3628245122
 categories:
-  - development
+  - article
 tags:
-  - comparison
-  - eclipse
   - ide
+  - eclipse
   - intellij
 ---
 <p style="text-align: justify;">
@@ -768,24 +751,3 @@ Well, that&#8217;s all I have so far, but I&#8217;ll try to add features to the 
   2. <a title="https://www.jetbrains.com/idea/help/keyboard-shortcuts-you-cannot-miss.html" href="https://www.jetbrains.com/idea/help/keyboard-shortcuts-you-cannot-miss.html" target="_blank">IntelliJ IDEA &#8211; Keyboard Shortcuts You Cannot Miss</a>
   3. <a title="https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf" href="https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf" target="_blank">IntelliJ IDEA Default Keymap</a>
   4. <a title="http://www.vogella.com/tutorials/EclipseShortcuts/article.html" href="http://www.vogella.com/tutorials/EclipseShortcuts/article.html" target="_blank">Eclipse Shortcuts &#8211; Tutorial</a>
-
-<div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
-
-  <p id="about_author_header">
-    <strong>Adrian Matei</strong>
-  </p>
-
-  <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
-  </div>
-
-  <div id="follow_social" style="clear: both;">
-    <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
-    </div>
-
-    <div class="clear">
-    </div>
-  </div>
-</div>

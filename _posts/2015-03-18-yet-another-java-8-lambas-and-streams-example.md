@@ -1,34 +1,16 @@
 ---
-id: 2341
 title: Yet another Java 8 Lambas and Streams example
 date: 2015-03-18T13:33:48+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=2341
 permalink: /ama/yet-another-java-8-lambas-and-streams-example/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3605686719
-fsb_social_facebook:
-  - 1
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - code
-  - java
+  - article
 tags:
   - comparator
   - iterator
   - java
-  - java8
-  - lambdas
+  - lambda
   - streams
 ---
 I&#8217;ve been lagging behind with what Java 8 features exercising concerns, so in this post I will briefly present my initial experience with lambdas and streams.<!--more-->

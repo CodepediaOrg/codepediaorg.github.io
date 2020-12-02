@@ -1,10 +1,10 @@
 ---
 layout: post
-title: How to filter results list in Angular with input text
+title: TODO-generic-browser-extension
 description: "Real life example showing how to filter results list in Angular and its implementation with Angular pipes."
 author: ama
 permalink: /ama/how-to-filter-results-in-angular-example-with-input-text
-published: true
+published: false
 categories: [angular]
 tags: [javascript, browserextension]
 ---

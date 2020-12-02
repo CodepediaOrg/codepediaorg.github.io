@@ -1,31 +1,13 @@
 ---
-id: 2180
 title: The reuse dilemma
 date: 2015-01-12T16:48:20+00:00
 author: Johannes Brodwall
 layout: post
-guid: http://www.codepedia.org/?p=2180
 permalink: /jhannes/the-reuse-dilemma/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3377175406
-fsb_social_facebook:
-  - 0
-fsb_social_google:
-  - 1
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - development
+  - article
 tags:
-  - code reuse
-  - reuse
-  - software development
+  - code-reuse
 ---
 <p style="color: #333333; text-align: justify;">
   The first commandment that any young programmer learns is “Thou Shall Not Duplicate”. Thus instructed, whenever we see something that looks like it may be repeated code, we refactor. We create libraries and frameworks. But removing duplication doesn’t come for free.<!--more-->
@@ -80,21 +62,21 @@ tags:
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/johannes-brodwall.jpeg" alt="Johannes Brodwall" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/johannes-brodwall.jpeg" alt="Johannes Brodwall" />
+
   <p id="about_author_header">
     <strong>Johannes Brodwall</strong>
   </p>
-  
+
   <div id="author_details" style="text-align: justify;">
     Johannes is the director of software development for the MRM product company BrandMaster. In his spare time he likes to coach teams and developers on better coding, collaboration, planning and product understanding.
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-earth" href="http://johannesbrodwall.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jhannes" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhannes" target="_blank"> </a>
     </div>
-    
+
     <div class="clear">
     </div>
   </div>

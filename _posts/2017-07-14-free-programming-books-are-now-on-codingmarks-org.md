@@ -6,8 +6,11 @@ from the Free-Programming-Books project"
 author: ama
 permalink: /ama/free-programming-books-are-now-on-bookmarks-dev
 published: true
-categories: [bookmarks]
-tags: [bookmarksdev, books, free-programming-books]
+categories: [article]
+tags:
+    - bookmarks.dev
+    - books
+    - resources
 ---
 
 I am really happy to announce that we've reached and surpassed our [goal of 1Mb of #DevBookmarks](https://www.youtube.com/watch?v=bj22xbE5ZiY&feature=youtu.be).

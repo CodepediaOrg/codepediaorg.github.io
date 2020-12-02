@@ -4,31 +4,12 @@ title: 'C# Tricks: Slimming down your controllers'
 date: 2014-11-15T19:41:46+00:00
 author: Johannes Brodwall
 layout: post
-guid: http://www.codepedia.org/?p=2094
 permalink: /jhannes/c-tricks-slimming-down-your-controllers/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3228268433
-fsb_social_facebook:
-  - 1
-fsb_social_google:
-  - 3
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - 'C#'
-  - code
-  - 'tips &amp; tricks'
+  - article
 tags:
-  - controller
-  - slim
-  - software development
-  - tips and tricks
+  - c#
+  - tips
 ---
 <p style="text-align: justify;">
   This blog post is dedicated to my colleague <a style="color: #2a4639;" href="http://seminda.wordpress.com/">Seminda</a> who has been experimenting with how to create simple and powerful web applications. Thank you for showing me your ideas and discussing improvements with me, Seminda.
@@ -276,21 +257,21 @@ public class PersonController : ApiController
 
 <p style="color: #333333;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/johannes-brodwall.jpeg" alt="Johannes Brodwall" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/johannes-brodwall.jpeg" alt="Johannes Brodwall" />
+
     <p id="about_author_header">
       <strong>Johannes Brodwall</strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Johannes is the director of software development for the MRM product company BrandMaster. In his spare time he likes to coach teams and developers on better coding, collaboration, planning and product understanding.
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-earth" href="http://johannesbrodwall.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jhannes" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhannes" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

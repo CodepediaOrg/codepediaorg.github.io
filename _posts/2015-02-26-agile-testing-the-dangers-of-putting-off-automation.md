@@ -1,27 +1,11 @@
 ---
-id: 2299
 title: Agile Testing – The Dangers of putting off Automation
 date: 2015-02-26T17:16:03+00:00
 author: Joe Colantonio
 layout: post
-guid: http://www.codepedia.org/?p=2299
 permalink: /joecolantonio/agile-testing-the-dangers-of-putting-off-automation/
-fsb_show_social:
-  - 0
-fsb_social_facebook:
-  - 0
-fsb_social_google:
-  - 0
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
-dsq_thread_id:
-  - 3550579400
 categories:
-  - testing
+  - article
 tags:
   - agile
   - automation
@@ -45,10 +29,10 @@ The three points from the interview that I want to focus on in this post are:
 <!--more-->
 
 [<img class="alignnone size-full wp-image-2147" src="http://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin1.png" alt="012215_2026_AgileTestin1.png" width="234" height="241" />](http://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin1.png)
-  
+
 **Agile Testing is a Mindset
-  
-** 
+
+**
 
 First it takes a certain mindset, with respect to how you approach testing, to get _everyone_ involved in testing. On an Agile team, everyone is now in it together; programmers test and testers should do whatever it takes to help their team create the best possible application.
 
@@ -63,11 +47,11 @@ Having these conversations early on in the development process is one of the mos
 One way to aid in creating conversations and building an Agile testing mindset is to use the Agile Testing Quadrants.
 
 **Agile Testing Quadrants
-  
-** 
+
+**
 
 In the book [_More Agile Testing_](http://www.amazon.com/gp/product/0321967054/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321967054&linkCode=as2&tag=joecol05-20&linkId=ARZ2OC23K3JQ7UYR),
-  
+
 _“the agile testing quadrants (the Quadrants) are based on a matrix Brian Marick developed in 2003 to describe types of testing used in Extreme Programming.”_
 
 Basically, the authors take this quadrant model and make some small tweaks to reflect how it works within Agile.
@@ -102,9 +86,9 @@ For an in-depth discussion on these quadrants, check out Chapter Seven of [_More
 [<img class="alignnone size-full wp-image-2149" src="http://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin3.png" alt="012215_2026_AgileTestin3.png" width="341" height="331" />](http://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin3.png)
 
 **The Dangers of putting off Automation
-  
-** 
-  
+
+**
+
 I started my conversation with Janet around test automation by asking her how one knows what to automate and when it makes sense _not_ to automate something. She repeated a term that was used throughout our talk: “technical awareness”. One needs to be technically aware enough to be able to articulate the benefits and cost of test automation.
 
 If we as testers can’t articulate these types of things, it makes it hard to go to our managers and tell them why something can or cannot be automated — But that doesn’t mean we should ignore automation altogether.
@@ -118,14 +102,14 @@ The reality is that you cannot ignore test automation without it coming back to 
 _More Agile Testing_ actually has a really vivid example of this in Matt Barcomb’s Legend of the Test Automation Volcano. I don’t want to spoil it for those of you who haven’t read it yet, but the crux of it is that eventually _everyone_ pays for putting off test automation!
 
 **From More Agile Testing Awesomeness
-  
-** 
+
+**
 
 To hear my full conversation with Janet Gregory, check out [TestTalks Episode 34](http://www.testtalks.com/34). And be sure to add her two must-read books to your testing library:
 
   * [_Agile Testing: A Practical Guide for Testers and Agile Teams_](http://www.amazon.com/gp/product/0321534468/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321534468&linkCode=as2&tag=joecol05-20&linkId=WM3VDYONNRD6DSLU)_
-  
-_ 
+
+_
   * [_More Agile Testing: Learning Journeys for the Whole Team_](%20Learning%20Journeys%20for%20the%20Whole%20Team)
 
 <p class="note_normal" style="color: #333333;">
@@ -133,20 +117,20 @@ _
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://joecolantonio.com/testtalks/wp-content/uploads/2014/12/TestTalksItunesCover.png" alt="Joe Colantonio" /> 
-  
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://joecolantonio.com/testtalks/wp-content/uploads/2014/12/TestTalksItunesCover.png" alt="Joe Colantonio" />
+
   <p id="about_author_header">
     Joe Colantonio
   </p>
-  
+
   <div id="social_logos_up">
     <a class="icon-earth" href="http://www.joecolantonio.com/about/" target="_blank"> </a> <a class="icon-twitter" href="http://twitter.com/jcolantonio" target="_blank"> </a>
   </div>
-  
+
   <div id="author_details" style="text-align: justify;">
     I find software test automation fun. In fact, I love it. But I also believe there is nothing worse than a boring technical blog. If I ever do get laid off, and any of you potential employers out there happen across my resume out there in the blogosphere, I’m keeping my fingers crossed that the good Karma I’ve built up by publishing such automation awesomeness will not go on unrewarded.
   </div>
-  
+
   <div id="follow_social" style="clear: both;">
     <div class="clear">
     </div>

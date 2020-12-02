@@ -5,8 +5,13 @@ description: "In this post we are going to take a look at how we can use Spring 
 author: aredko
 permalink: /aredko/laziness-at-extreme-developing-jax-rs-services-with-spring-boot
 modified: 2016-07-15
-tags: [spring boot, jax-rs, rest, apache cxf]
-categories: [java]
+categories: [article]
+tags:
+    - java
+    - spring-boot
+    - jax-rs
+    - rest
+    - apache-cxf
 
 # properties only relevant if the post is being republished
 republished: true

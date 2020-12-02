@@ -5,8 +5,13 @@ description: "This post shows how to dynamically fill in data in a reactive form
 author: ama
 permalink: /ama/how-to-use-shodown-in-angular-and-nodejs
 published: true
-categories: [angular, nodejs]
-tags: [codingmarks, coding bookmarks, angular, nodejs, showdown, markdown]
+categories: [tutorial]
+tags:
+    - bookmarks.dev
+    - angular
+    - nodejs
+    - showdown
+    - markdown
 ---
 
 When managing my dev bookmarks via [www.bookmarks.dev](https://www.bookmarks.dev/),

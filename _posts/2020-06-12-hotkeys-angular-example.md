@@ -5,8 +5,12 @@ description: "Setup of hot keys with Angular to access recent and pinned bookmar
 author: ama
 permalink: /ama/keyboard-shortcuts-example-with-angular
 published: true
-categories: [productivity]
-tags: [angular, plugins, bookmarksdev]
+categories: [tutorial]
+tags:
+    - angular
+    - plugins
+    - bookmarks.dev
+    - productivity
 ---
 
 You know how good ideas come out of the blue? Recently it hit me that I could more easily access my bookmarks

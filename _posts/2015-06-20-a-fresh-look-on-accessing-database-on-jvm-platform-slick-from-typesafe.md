@@ -1,27 +1,11 @@
 ---
-id: 2388
 title: 'A fresh look on accessing database on JVM platform: Slick from Typesafe'
 date: 2015-06-20T17:41:18+00:00
 author: Andriy Redko
 layout: post
-guid: http://www.codepedia.org/?p=2388
 permalink: /aredko/a-fresh-look-on-accessing-database-on-jvm-platform-slick-from-typesafe/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 3864602135
-fsb_social_facebook:
-  - 1
-fsb_social_google:
-  - 2
-fsb_social_linkedin:
-  - 0
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - development
+  - article
 tags:
   - database
   - jpa
@@ -73,10 +57,10 @@ class Addresses( tag: Tag ) extends Table[ Address ]( tag, "addresses" ) {
   Great, leaving off some details, that is it: we have defined two database tables in pure <a href="http://www.scala-lang.org/">Scala</a>. But details are important and we are going to look closely on following two declarations: <b>Table[ Customer ]</b> and <b>Table[ Address ]</b>. Essentially, each table could be represented as a tuple with as many elements as column it has defined. For example, <b>customers</b> is a tuple of <b>(Int, String, String, String)</b>, while <b>addresses</b> table is a tuple of <b>(Int, String, String, String, Int)</b>. Tuples in <a href="http://www.scala-lang.org/">Scala</a> are great but they are not very convenient to work with. Luckily, <a href="http://slick.typesafe.com/">Slick</a> allows to use case classes instead of tuples by providing so called <a href="http://slick.typesafe.com/doc/2.1.0/introduction.html#lifted-embedding">Lifted Embedding</a>technique. Here are our <b>Customer</b> and <b>Address</b> case classes:
 </p>
 
-<pre class="lang:scala decode:true ">case class Customer( id: Option[Int] = None, email: String, 
+<pre class="lang:scala decode:true ">case class Customer( id: Option[Int] = None, email: String,
   firstName: Option[ String ] = None, lastName: Option[ String ] = None)
 
-case class Address( id: Option[Int] = None,  street: String, city: String, 
+case class Address( id: Option[Int] = None,  street: String, city: String,
   country: String, customer: Customer )</pre>
 
 <p style="text-align: justify;">
@@ -84,7 +68,7 @@ case class Address( id: Option[Int] = None,  street: String, city: String,
 </p>
 
 <pre class="lang:scala decode:true ">// Converts from Customer domain instance to table model and vice-versa
-def * = ( id.?, email, firstName.?, lastName.? ).shaped &lt;&gt; ( 
+def * = ( id.?, email, firstName.?, lastName.? ).shaped &lt;&gt; (
   Customer.tupled, Customer.unapply )</pre>
 
 <p style="text-align: justify;">
@@ -92,7 +76,7 @@ def * = ( id.?, email, firstName.?, lastName.? ).shaped &lt;&gt; (
 </p>
 
 <pre class="lang:scala decode:true">// Converts from Customer domain instance to table model and vice-versa
-def * = ( id.?, street, city, country, customerId ).shaped &lt;&gt; ( 
+def * = ( id.?, street, city, country, customerId ).shaped &lt;&gt; (
   tuple =&gt; {
     Address.apply(
       id = tuple._1,
@@ -108,7 +92,7 @@ def * = ( id.?, street, city, country, customerId ).shaped &lt;&gt; (
         address.street,
         address.city,
         address.country,
-        address.customer.id getOrElse 0 
+        address.customer.id getOrElse 0
       )
     }
   }
@@ -119,7 +103,7 @@ def * = ( id.?, street, city, country, customerId ).shaped &lt;&gt; (
 </p>
 
 <pre class="lang:scala decode:true">implicit lazy val DB = Database.forURL( "jdbc:h2:mem:test", driver = "org.h2.Driver" )
-  
+
 DB withSession { implicit session =&gt;
   ( Customers.ddl ++ Addresses.ddl ).create
 }</pre>
@@ -129,11 +113,11 @@ DB withSession { implicit session =&gt;
 </p>
 
 <pre class="lang:default decode:true ">object Customers extends TableQuery[ Customers ]( new Customers( _ ) ) {
-  def create( customer: Customer )( implicit db: Database ): Customer = 
+  def create( customer: Customer )( implicit db: Database ): Customer =
     db.withSession { implicit session =&gt;
       val id = this.autoIncrement.insert( customer )
       customer.copy( id = Some( id ) )
-    } 
+    }
 }</pre>
 
 And it could be used like this:
@@ -145,14 +129,14 @@ Customers.create( Customer( None, "bob@b.com",  Some( "Bob" ), Some( "Bobbyknock
   Similarly, the family of <b>find</b> functions could be implemented using regular <a href="http://www.scala-lang.org/">Scala</a> <b>for</b> comprehension:
 </p>
 
-<pre class="lang:default decode:true ">def findByEmail( email: String )( implicit db: Database ) : Option[ Customer ] = 
+<pre class="lang:default decode:true ">def findByEmail( email: String )( implicit db: Database ) : Option[ Customer ] =
   db.withSession { implicit session =&gt;
-    ( for { customer &lt;- this if ( customer.email === email.toLowerCase ) } 
+    ( for { customer &lt;- this if ( customer.email === email.toLowerCase ) }
       yield customer ) firstOption
   }
-   
-def findAll( implicit db: Database ): Seq[ Customer ] = 
-  db.withSession { implicit session =&gt;      
+
+def findAll( implicit db: Database ): Seq[ Customer ] =
+  db.withSession { implicit session =&gt;
     ( for { customer &lt;- this } yield customer ) list
   }</pre>
 
@@ -165,14 +149,14 @@ val customer = Customers.findByEmail( "bob@b.com" )</pre>
   Updates and deletes are a bit different though very simple as well, let us take a look on those:
 </p>
 
-<pre class="lang:default decode:true ">def update( customer: Customer )( implicit db: Database ): Boolean = 
+<pre class="lang:default decode:true ">def update( customer: Customer )( implicit db: Database ): Boolean =
   db.withSession { implicit session =&gt;
-    val query = for { c &lt;- this if ( c.id === customer.id ) } 
+    val query = for { c &lt;- this if ( c.id === customer.id ) }
       yield (c.email, c.firstName.?, c.lastName.?)
     query.update(customer.email, customer.firstName, customer.lastName) &gt; 0
   }
-  
-def remove( customer: Customer )( implicit db: Database ) : Boolean = 
+
+def remove( customer: Customer )( implicit db: Database ) : Boolean =
   db.withSession { implicit session =&gt;
     ( for { c &lt;- this if ( c.id === customer.id ) } yield c ).delete &gt; 0
   }</pre>

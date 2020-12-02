@@ -5,8 +5,13 @@ description: "Example on how to retrieve the latest entries from a MongoDB colle
 author: ama
 permalink: /ama/how-to-get-latest-entries-from-mongodb-collection-with-mongoose
 published: true
-categories: [nosql]
-tags: [bookmarksdev, mongodb, mongoose, nodejs]
+categories: [snippets]
+tags:
+    - bookmarks.dev
+    - mongodb
+    - mongoose
+    - node.js
+    - nosql
 ---
 
 I have a use case where I need to retrieve the latest public bookmarks public added on [www.bookmarks.dev](https://github.com/BookmarksDev/bookmarks).
@@ -20,7 +25,7 @@ I want to have two possibilites to achieve this:
 I think the code is self explanatory
 ```
 /**
- * Returns the codingmarks added recently.
+ * Returns the bookmarks added recently.
  *
  * The since query parameter is a timestamp which specifies the date since we want to look forward to present time.
  * If this parameter is present it has priority. If it is not present, we might specify the number of days to look back via

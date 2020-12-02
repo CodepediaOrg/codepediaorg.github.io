@@ -1,33 +1,15 @@
 ---
-id: 2570
 title: Introduction to the Jspm package manager and the SystemJs module loader
 date: 2016-01-11T16:35:30+00:00
 author: Aleksey Novik
 layout: post
-guid: http://www.codepedia.org/?p=2570
 permalink: /jhadesdev/introduction-to-the-jspm-package-manager-and-the-systemjs-module-loader/
-fsb_show_social:
-  - 0
-dsq_thread_id:
-  - 4315684752
-fsb_social_facebook:
-  - 0
-fsb_social_google:
-  - 4
-fsb_social_linkedin:
-  - 3
-fsb_social_twitter:
-  - 0
-fsb_social_pinterest:
-  - 0
 categories:
-  - javascript
+  - article
 tags:
   - bower
-  - es6
   - javascript
   - jspm
-  - package manager
   - systemjs
 ---
 <p style="text-align: justify;">
@@ -95,7 +77,7 @@ tags:
   And then import the library with a single line of code, and just start using it:
 </p>
 
-<pre class="lang:default decode:true">var $ = require('jquery'); 
+<pre class="lang:default decode:true">var $ = require('jquery');
 
 $('body').append("I've imported jQuery!");</pre>
 
@@ -290,23 +272,23 @@ core-js@1.1.4</pre>
 
 <p style="text-align: justify;" class="note_normal">
   Published at Codepedia.org with permission of Aleksey Novik – source <em><a title="The main goals of Angular 2 and how they will be achieved" href="http://blog.jhades.org/introduction-to-es6-modularity-the-jspm-package-manager-and-the-systemjs-loader/" target="_blank">Introduction to the Jspm package manager and the SystemJs module loader</a></em> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/
-  
+
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" /> 
-    
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" />
+
     <p id="about_author_header">
       <strong>Aleksey Novik</strong>
     </p>
-    
+
     <div id="author_details" style="text-align: justify;">
       Software developer, likes to learn new technologies, hang out on stackoverflow and blog on tips and tricks on Java/Javascript polyglot enterprise development.
     </div>
-    
+
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
         <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
       </div>
-      
+
       <div class="clear">
       </div>
     </div>

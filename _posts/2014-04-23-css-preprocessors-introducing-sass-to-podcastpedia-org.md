@@ -6,10 +6,8 @@ layout: post
 permalink: /ama/css-preprocessors-introducing-sass-to-podcastpedia-org/
 categories:
   - article
-  - web design
 tags:
   - css
-  - css3
   - less
   - preprocessor
   - sass

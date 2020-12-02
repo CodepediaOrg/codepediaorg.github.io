@@ -8,8 +8,10 @@ description: "Finding a desired link, you already visited, can be a tedious job 
 author: ama
 permalink: /ama/how-i-save-a-workweek-a-year-by-efficiently-managing-my-dev-bookmarks
 published: true
-categories: [productivity]
-tags: [bookmarks, efficiency, bookmarksdev]
+categories: [article]
+tags:
+    - bookmarks.dev
+    - productivity
 ---
 ## Motivation
 Finding the desired link again can be sometimes a tedious job. It can even become frustrating

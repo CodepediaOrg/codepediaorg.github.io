@@ -5,8 +5,11 @@ description: "A simple solution to embed a youtube video in an angular material 
 author: ama
 permalink: /ama/how-to-embed-a-youtube-video-in-an-angular-material-dialog
 published: true
-categories: [angular]
-tags: [angular-material, youtube]
+categories: [tutorial]
+tags:
+    - angular
+    - angular-material
+    - youtube
 ---
 
 It's easy now to recognise the youtube video bookmarks on [www.bookmarks.dev](https://www.bookmarks.dev), by placing the youtube logo before the title

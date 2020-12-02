@@ -6,8 +6,11 @@ based on the investigation of bug "
 author: ama
 permalink: /ama/how-to-modify-a-column-size-in-a-mysql-database-from-command-line
 published: true
-categories: [debugging]
-tags: [mysql, keycloak]
+categories: [tutorial]
+tags:
+    - mysql
+    - keycloak
+    - debugging
 ---
 
 This blog post presents the steps required to connect to the MySql database from the command line and modify the size of

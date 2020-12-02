@@ -5,8 +5,13 @@ description: "CRUD API example implemented with GraphQL-js and expresss-graphql 
 author: ama
 permalink: /ama/complete-example-crud-api-express-graphql
 published: true
-categories: [graphql]
-tags: [graphql, expressjs, api-design, rest]
+categories: [tutorial]
+tags:
+    - graphql
+    - expressjs
+    - api-design
+    - rest
+    - node.js
 ---
 
 As you might recall from my previous post [GraphQL Resources to help you get started]({% post_url 2020-11-05-graphql-resources-to-help-you-get-started %}),

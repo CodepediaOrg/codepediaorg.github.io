@@ -4,8 +4,8 @@ title: Using The Java Api For Websocket To Create A Chat Server
 description: "In this post, I’ll use Web sockets to create a tiny chat server using Tyrus, the reference implementation of the Java API for WebSocket (JSR 356)."
 author: benas
 permalink: /benas/using-the-java-api-for-webSocket-to-create-a-chat-server.html
-categories: [java]
-tags: [java, web sockets]
+categories: [article]
+tags: [java, websocket]
 
 republished: true
 original_title: Using The Java Api For Websocket To Create A Chat Server

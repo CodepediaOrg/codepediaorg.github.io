@@ -6,8 +6,10 @@ source code and notes"
 author: ama
 permalink: /ama/angular-material-expansion-panel-and-accordion-example
 published: true
-categories: [angular]
-tags: [angular-material, angular]
+categories: [snippets]
+tags:
+    - angular-material
+    - angular
 ---
 
 I find accordions pretty well suited for FAQs or HowTo pages. That's why I chose one for the [HowTo](https://www.bookmarks.dev/howto) page of

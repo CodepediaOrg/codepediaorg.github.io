@@ -7,7 +7,7 @@ permalink: /ama/how-to-redirect-domain-to-www-url-with-nginx
 published: true
 categories: [tutorial]
 tags:
-    - bookmarksdev
+    - bookmarks.dev
     - nginx
     - networking
 ---

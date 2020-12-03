@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How to make chrome extension compatible with firefox
-description: "Shows how to make real life chrome extension compatible with firefox with the help of webextension polyfill from mozilla"
+title: Making a chrome extension to save bookmarks cross-browser compatible
+description: "Shows how to make a real life chrome extension compatible with firefox with the help of webextension polyfill from mozilla"
 author: ama
-permalink: /ama/how-to-chrome-extension-compatible-with-firefox
+permalink: /ama/making-a-chrome-extension-to-save-bookmarks-cross-browser-compatible
 published: true
 categories: [tutorial]
 tags:

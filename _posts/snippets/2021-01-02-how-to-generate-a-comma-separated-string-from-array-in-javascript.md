@@ -2,7 +2,7 @@
 layout: post
 title: How to generate a comma separated string from array in JavaScript
 description: "How to generate a comma separated string from array in JavaScript. Tagged with typescript, javascript"
-author: TODO-change-me
+author: ama
 permalink: /snippets/5feef3220b79fd210e120d3b/how-to-generate-a-comma-separated-string-from-array-in-javascript
 published: true
 snippetId: 5feef3220b79fd210e120d3b
@@ -36,4 +36,4 @@ header += `tags: [${snippet.tags.toString()}]\n`;
 
 <hr/>
 
- {% include snippet-post-recommendation-ending.html snippetId="5feef3220b79fd210e120d3b" %} 
+ {% include snippet-post-recommendation-ending.html snippetId="5feef3220b79fd210e120d3b" %}

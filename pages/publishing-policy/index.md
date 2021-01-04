@@ -1,6 +1,6 @@
 ---
 id: 1035
-title: Codingpedia Publishing Policies
+title: CodepediaOrg Publishing Policies
 date: 2014-10-15T20:40:36+00:00
 author: ama
 layout: page

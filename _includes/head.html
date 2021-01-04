@@ -64,3 +64,15 @@
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+<!-- Check to see if we are in a page. -->
+{% if page.title %}
+  {% if page.jsonld %}
+    {% include {{page.jsonld}}.html %}
+  {% else %}
+    {% include postJSONLD.html %}
+  {% endif %}
+{% else %}
+  {% include homeJSONLD.html %}
+{% endif %}

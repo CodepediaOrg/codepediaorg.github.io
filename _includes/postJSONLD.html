@@ -1,0 +1,53 @@
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title }}",
+    "description":
+    {% if page.description %}
+      "{{ page.description }}",
+    {% else %}
+    "{{ page.title }}",
+    {% endif %}
+    "image": [
+      {% if page.ogimageoff %}
+
+      {% elsif page.ogimage %}
+      "{{page.ogimage}}"
+      {% elsif page.image %}
+      "{{page.image}}"
+      {% else %}
+      "https://www.codepedia.org/images/logo.png"
+      {% endif %}
+    ],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+    },
+    "datePublished": "{{page.date}}",
+    "dateModified": "{% if page.modified %}{{page.modified}}{% else %}{{page.date}}{% endif %}",
+    "isAccessibleForFree": "True",
+    "isPartOf": {
+      "@type": ["CreativeWork", "Product", "Blog"],
+      "name": "CodepediaOrg",
+      "productID": "codepedia.org"
+    },
+    "license": "https://github.com/CodepediaOrg/codepediaorg.github.io/blob/master/LICENSE",
+  {% if page.author == "ama" %}
+    "author": {
+      {% include ama-person-JSONLD.html %}
+    },
+  {% endif %}
+    "publisher": {
+      "@type": "Organization",
+      "name": "CodepediaOrg",
+      "description": "",
+      "sameAs": "https://www.codepedia.org",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.codepedia.org/images/logo.png"
+      },
+      "publishingPrinciples": "https://www.codepedia.org/contributors/publishing-policy/"
+    }
+  }
+</script>

@@ -3,7 +3,7 @@ title: About us
 date: 2013-07-26T10:40:21+00:00
 author: ama
 layout: page
-permalink: /about
+permalink: /about/
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

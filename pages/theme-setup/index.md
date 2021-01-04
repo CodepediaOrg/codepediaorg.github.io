@@ -3,7 +3,7 @@ layout: page
 title: Theme Setup
 description: "Instructions on how to install and customize the modern Jekyll theme Neo-HPSTR."
 share: true
-permalink: /theme-setup
+permalink: /theme-setup/
 ---
 
 General notes and suggestions for customizing **Neo-HPSTR**.

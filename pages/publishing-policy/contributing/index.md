@@ -4,9 +4,7 @@ title: Become a Coding Contributor
 date: 2013-12-15T20:40:36+00:00
 author: ama
 layout: page
-guid: http://www.codepedia.org/?page_id=1035
-dsq_thread_id:
-  - 2052521569
+permalink: publishing-policy/contributing/
 ---
 Dear fellow coder,
 

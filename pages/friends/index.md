@@ -3,7 +3,7 @@ title: Coding Friend Program
 date: 2014-10-10T12:44:06+00:00
 author: ama
 layout: page
-permalink: /friends
+permalink: /friends/
 ---
 [<img class="aligncenter wp-image-1959 size-thumbnail" src="http://www.codepedia.org/wp-content/uploads/2014/10/coding-friends-150x150.jpg" alt="Coding friends" width="150" height="150" srcset="http://www.codepedia.org/wp-content/uploads/2014/10/coding-friends-150x150.jpg 150w, http://www.codepedia.org/wp-content/uploads/2014/10/coding-friends-300x300.jpg 300w, http://www.codepedia.org/wp-content/uploads/2014/10/coding-friends-120x120.jpg 120w, http://www.codepedia.org/wp-content/uploads/2014/10/coding-friends.jpg 400w" sizes="(max-width: 150px) 100vw, 150px" />](http://www.codepedia.org/wp-content/uploads/2014/10/coding-friends.jpg)
 

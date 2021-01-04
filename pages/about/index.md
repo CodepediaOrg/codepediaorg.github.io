@@ -1,5 +1,4 @@
 ---
-id: 55
 title: About us
 date: 2013-07-26T10:40:21+00:00
 author: ama

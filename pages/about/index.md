@@ -4,9 +4,7 @@ title: About us
 date: 2013-07-26T10:40:21+00:00
 author: ama
 layout: page
-guid: http://www.codepedia.org/?page_id=55
-dsq_thread_id:
-  - 1533947248
+permalink: /about
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

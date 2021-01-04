@@ -4,9 +4,7 @@ title: Codingpedia Association
 date: 2014-06-20T08:59:53+00:00
 author: ama
 layout: page
-guid: http://www.codepedia.org/?page_id=1540
-dsq_thread_id:
-  - 2780282416
+published: false
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

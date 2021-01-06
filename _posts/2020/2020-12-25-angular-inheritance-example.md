@@ -4,7 +4,7 @@ title: Angular inheritance example
 description: ""
 author: ama
 permalink: /ama/making-a-chrome-extension-to-save-bookmarks-cross-browser-compatible
-published: true
+published: false
 categories: [tutorial]
 tags:
     - angular

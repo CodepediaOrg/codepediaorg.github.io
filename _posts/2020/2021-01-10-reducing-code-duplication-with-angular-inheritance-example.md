@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Angular inheritance example
-description: ""
+title: Reducing code duplication with angular inheritance
+description: "Real life example of using angular inheritance to reduce code duplication in create and update code snippets form components on Bookmarks.dev"
 author: ama
-permalink: /ama/making-a-chrome-extension-to-save-bookmarks-cross-browser-compatible
-published: false
+permalink: /ama/reducing-code-duplication-with-angular-inheritance
+published: true
 categories: [tutorial]
 tags:
     - angular
@@ -13,21 +13,30 @@ tags:
     - bookmarks.dev
 ---
 
-For the create and update form of code snippets I had previously only one class. But when introducing the **Copy to mine**
-functionality the logic has become too intertwined for me to bear so I decided to split the functionality in two parts
-- one for handling updating and copy to mine, and the second for creating new snippets. Because there is some common
+Recently I have just added the possibility to [share your code snippets with the world](https://dev.to/bookmarks/public-code-snippets-are-now-available-3na0)
+on [Bookmarks.dev](https://www.bookmarks.dev). I have noticed that the code to create and update code snippets,
+ was too intertwined - Initially trying to avoid code duplication I used just one component to create and update code snippets.
+ Now, I just could not stand the too many conditional checks anymore, so I decided to split the functionality in two parts
+- one for handling updating and copy to mine, and the second for creating new snippets. Because there is still some common
 functionality in both, like handling autocompletion of tags, I decided to use Angular component inheritance to avoid
-code duplication.
+code duplication. In this blog post I will just show the code examples and name the angular inheritance particularities.
 
+{% include source-code-bookmarks.dev.html %}
 
-So I have defined a snippet base form class - `to avoid code duplication `
+<!--more-->
+
+## Common Base Form Component
+
+First, I have defined a snippet base form class that handles tags loading and autocompletion, create initial snippets methods
+and navigation method:
+
 ```typescript
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
-import { codelet_common_tags } from '../shared/codelet-common-tags';
+import { snippet_common_tags } from '../shared/snippet-common-tags';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
-import { Codelet, CodeSnippet } from '../core/model/codelet';
+import { Snippet, CodeSnippet } from '../core/model/snippet';
 import { map, startWith } from 'rxjs/operators';
 import { MatChipInputEvent } from '@angular/material/chips';
 import { MatAutocompleteActivatedEvent, MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
@@ -37,7 +46,7 @@ import { Params, Router } from '@angular/router';
 import { textSizeValidator } from '../core/validators/text-size.validator';
 import { HttpResponse } from '@angular/common/http';
 import { throwError as observableThrowError } from 'rxjs/internal/observable/throwError';
-import { PersonalCodeletsService } from '../core/personal-codelets.service';
+import { PersonalSnippetsService } from '../core/personal-snippets.service';
 import { ErrorService } from '../core/error/error.service';
 
 
@@ -46,7 +55,7 @@ import { ErrorService } from '../core/error/error.service';
 })
 export class SnippetFormBaseComponent implements OnInit {
 
-  codeletFormGroup: FormGroup;
+  snippetFormGroup: FormGroup;
   codeSnippetsFormArray: FormArray;
   userId = null;
 
@@ -60,7 +69,7 @@ export class SnippetFormBaseComponent implements OnInit {
   // Enter, comma, space
   separatorKeysCodes = [ENTER, COMMA];
 
-  commonCodeletTags = codelet_common_tags;
+  commonSnippetTags = snippet_common_tags;
 
   autocompleteTags = [];
 
@@ -69,14 +78,14 @@ export class SnippetFormBaseComponent implements OnInit {
   filteredTags: Observable<any[]>;
 
   @Input()
-  codelet: Codelet;
+  snippet: Snippet;
 
   @ViewChild('tagInput', {static: false})
   tagInput: ElementRef;
 
   constructor(
     protected formBuilder: FormBuilder,
-    protected personalCodeletsService: PersonalCodeletsService,
+    protected personalSnippetsService: PersonalSnippetsService,
     protected suggestedTagsStore: SuggestedTagsStore,
     protected userInfoStore: UserInfoStore,
     protected router: Router,
@@ -84,13 +93,12 @@ export class SnippetFormBaseComponent implements OnInit {
   ) {
   }
 
-
   ngOnInit(): void {
     this.userInfoStore.getUserInfo$().subscribe(userInfo => {
       this.userId = userInfo.sub;
-      this.suggestedTagsStore.getSuggestedCodeletTags$(this.userId).subscribe(userTags => {
+      this.suggestedTagsStore.getSuggestedSnippetTags$(this.userId).subscribe(userTags => {
 
-        this.autocompleteTags = userTags.concat(this.commonCodeletTags.filter((item => userTags.indexOf(item) < 0))).sort();
+        this.autocompleteTags = userTags.concat(this.commonSnippetTags.filter((item => userTags.indexOf(item) < 0))).sort();
 
         this.filteredTags = this.tagsControl.valueChanges.pipe(
           startWith(null),
@@ -145,7 +153,7 @@ export class SnippetFormBaseComponent implements OnInit {
   }
 
   get formArrayTags() {
-    return <FormArray>this.codeletFormGroup.get('tags');
+    return <FormArray>this.snippetFormGroup.get('tags');
   }
 
   createCodeSnippet(codeSnippet: CodeSnippet): FormGroup {
@@ -177,25 +185,25 @@ export class SnippetFormBaseComponent implements OnInit {
     this.codeSnippetsFormArray.removeAt(index);
   }
 
-  createCodelet(codelet: Codelet, copyToMine: boolean, popup: any) {
-    codelet.userId = this.userId;
+  createSnippet(snippet: Snippet, copyToMine: boolean, popup: any) {
+    snippet.userId = this.userId;
     const now = new Date();
-    codelet.lastAccessedAt = now;
+    snippet.lastAccessedAt = now;
     if (copyToMine) {
-      delete codelet['_id'];
-      codelet.createdAt = now
+      delete snippet['_id'];
+      snippet.createdAt = now
     }
 
-    this.personalCodeletsService.createCodelet(this.userId, codelet)
+    this.personalSnippetsService.createSnippet(this.userId, snippet)
       .subscribe(
         response => {
           const headers = response.headers;
-          // get the codelet id, which lies in the "location" response header
+          // get the snippet id, which lies in the "location" response header
           const lastSlashIndex = headers.get('location').lastIndexOf('/');
-          const newCodeletId = headers.get('location').substring(lastSlashIndex + 1);
-          codelet._id = newCodeletId;
+          const newSnippetId = headers.get('location').substring(lastSlashIndex + 1);
+          snippet._id = newSnippetId;
           const queryParmas = popup ? {popup: popup} : {};
-          this.navigateToCodeletDetails(codelet, queryParmas)
+          this.navigateToSnippetDetails(snippet, queryParmas)
         },
         (error: HttpResponse<any>) => {
           this.errorService.handleError(error.body.json());
@@ -204,7 +212,7 @@ export class SnippetFormBaseComponent implements OnInit {
       );
   }
 
-  navigateToCodeletDetails(snippet: Codelet, queryParams: Params): void {
+  navigateToSnippetDetails(snippet: Snippet, queryParams: Params): void {
     const link = [`./my-snippets/${snippet._id}/details`];
     this.router.navigate(link, {
       state: {snippet: snippet},
@@ -215,32 +223,33 @@ export class SnippetFormBaseComponent implements OnInit {
 }
 ```
 
-to hold the common functionality. And then the `UpdateSnippetFormComponent` and `CreateSnippetFormComponent` will
+## Inheriting components
+The `UpdateSnippetFormComponent` and `CreateSnippetFormComponent` components will
 inherit from it.
 
-Let's take ``CreateSnippetFormComponent`` for example
+Let's take have a look at one of them, for example at `CreateSnippetFormComponent`, and discuss the particularities
 
 ```typescript
-// imports ignored for
+// imports ignored for brevity
 
 @Component({
-  selector: 'app-save-codelet-form',
+  selector: 'app-save-snippet-form',
   templateUrl: './create-snippet-form.component.html',
   styleUrls: ['./create-snippet-form.component.scss']
 })
 export class CreateSnippetFormComponent extends SnippetFormBaseComponent implements OnInit {
 
-  codeletFormGroup: FormGroup;
+  snippetFormGroup: FormGroup;
   codeSnippetsFormArray: FormArray;
   userId = null;
 
   @Input()
-  codelet$: Observable<Codelet>;
+  snippet$: Observable<Snippet>;
 
   @ViewChild('tagInput', {static: false})
   tagInput: ElementRef;
 
-  codelet: Codelet;
+  snippet: Snippet;
 
   @Input()
   code; // value of "desc" query parameter if present
@@ -262,7 +271,7 @@ export class CreateSnippetFormComponent extends SnippetFormBaseComponent impleme
 
   constructor(
     protected formBuilder: FormBuilder,
-    protected personalCodeletsService: PersonalCodeletsService,
+    protected personalSnippetsService: PersonalSnippetsService,
     protected suggestedTagsStore: SuggestedTagsStore,
     protected userInfoStore: UserInfoStore,
     private userDataStore: UserDataStore,
@@ -273,13 +282,13 @@ export class CreateSnippetFormComponent extends SnippetFormBaseComponent impleme
     private webpageInfoService: WebpageInfoService,
     private stackoverflowHelper: StackoverflowHelper,
   ) {
-    super(formBuilder, personalCodeletsService, suggestedTagsStore, userInfoStore, router, errorService);
+    super(formBuilder, personalSnippetsService, suggestedTagsStore, userInfoStore, router, errorService);
   }
 
   ngOnInit(): void {
     super.ngOnInit();
     this.buildInitialForm();
-    this.codeSnippetsFormArray = this.codeletFormGroup.get('codeSnippets') as FormArray;
+    this.codeSnippetsFormArray = this.snippetFormGroup.get('codeSnippets') as FormArray;
 
     if (this.sourceUrl) {
       const stackoverflowQuestionId = this.stackoverflowHelper.getStackoverflowQuestionIdFromUrl(this.sourceUrl);
@@ -316,7 +325,7 @@ export class CreateSnippetFormComponent extends SnippetFormBaseComponent impleme
   }
 
   buildInitialForm(): void {
-    this.codeletFormGroup = this.formBuilder.group({
+    this.snippetFormGroup = this.formBuilder.group({
       title: [this.title ? this.title : '', Validators.required],
       tags: this.formBuilder.array([], [tagsValidator, Validators.required]),
       codeSnippets: new FormArray([this.createInitialCodeSnippet()]),
@@ -336,83 +345,13 @@ export class CreateSnippetFormComponent extends SnippetFormBaseComponent impleme
 }
 ```
 
+* `extends` keyword is used to mark the inheritance - `CreateSnippetFormComponent extends SnippetFormBaseComponent`
+* you need to define all the properties of the parent constructor in the child as `protected` too, and call the constructor
+with the `super` keyword right at the beginning of the constructor - `super(formBuilder, personalSnippetsService, suggestedTagsStore, userInfoStore, router, errorService);`
+* to trigger the functionality of the `ngOnInit` of the parent component, you need to call it with the `super` keyword
+in the child component too (otherwise it will just get overwritten) - `super.ngOnInit();`
 
-For HTML documents, such as `browserAction` popups, or tab pages see the setup section in the project's README[^1].
+For a more detailed explanations of class inheritance in Typescript visit the [Classes section from the handbook](https://www.typescriptlang.org/docs/handbook/classes.html)
 
-[^1]: <https://github.com/mozilla/webextension-polyfill#basic-setup>
-
-## The implementation changes
-The implementation uses a **background** script that will trigger the execution of another javascript,
- `launch-bookmarksdev-dialog.js` when clicked on the extension icon or right click and select **Save link to Bookmarks.dev**.
-  Here I only needed to change `chrome` with `browser`, so not it looks like this:
-
-```javascript
-browser.browserAction.onClicked.addListener(launchBookmarksDevDialog);
-
-function launchBookmarksDevDialog() {
-    browser.tabs.executeScript({
-        file: 'launch-bookmarksdev-dialog.js'
-    });
-};
-
-browser.contextMenus.onClicked.addListener(launchBookmarksDevDialog);
-
-browser.runtime.onInstalled.addListener(function () {
-    browser.contextMenus.create({
-        "id": "save-link-to-bookmarksdev",
-        "title": "Save link to Bookmarks.dev",
-        "contexts": ["all"]
-    });
-});
-
-```
-
-instead of `chrome.browserAction...`
-
-## Test the extension
-You can still test the extension locally by loading and reloading the sources either in Chrome or Firefox,
- but with the help `web-ext`[^2] things have gotten easier.
-
-[^2]: <https://github.com/mozilla/web-ext#readme>
-
-Just run the following command in the project root directory
-```shell
-web-ext run
-```
-
-This will start Firefox with the extension installed and reloads it when you do changes in the source code.
- For options see **web-ext command reference**.[^3]
-
-[^3]: <https://github.com/mozilla/web-ext#readme>
-https://extensionworkshop.com/documentation/develop/web-ext-command-reference/>
-
-## Build the extension
-Packaging the extension for release has also gotten easier with the help of `web-ext` utility.
-
-If before I would use a `zip` command
-
-```shell
-zip -r bookmarks.browser.extension.zip * -x *.idea* *.git* '*resources/*' '*assets/*' "*README.md*" "*CHANGELOG.md*" '*web-ext-artifacts/*'
-```
-
-now I use the `web-ext` build command
-
-```
-web-ext build --overwrite-dest -i 'resources' 'assets' 'README.md' 'CHANGELOG.md'
-```
-
-This packages an extension into a `.zip` file, ignoring files that are commonly unwanted in packages, such as `.git` and other artifacts.
- The name of the `.zip` file is taken from the name field in the extension manifest.
-
-You can still exclude files by yourself, as seen above with the help of the `-i`option. See the command reference[^3] for
-further options.
-
-## Conclusion
-
-In this post you've seen a way how to migrate your Chrome Extension to be compatible with Firefox with the help
-of webextension polyfill.
-
-> If you have found this useful, please show some love and give us a star on [Github](https://github.com/BookmarksDev/bookmarks-browser-extension)
-
-## References
+> If you have found this useful, please show some love and give us a star on [Github](https://github.com/BookmarksDev/bookmarks.dev)
 

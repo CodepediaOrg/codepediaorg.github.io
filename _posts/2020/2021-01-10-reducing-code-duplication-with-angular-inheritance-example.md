@@ -351,6 +351,9 @@ with the `super` keyword right at the beginning of the constructor - `super(form
 * to trigger the functionality of the `ngOnInit` of the parent component, you need to call it with the `super` keyword
 in the child component too (otherwise it will just get overwritten) - `super.ngOnInit();`
 
+You can see the create code snippet form in action in the following gif:
+![Create public snippet](https://dev-to-uploads.s3.amazonaws.com/i/m0uncs9m86vjkxixeywd.gif)
+
 For a more detailed explanations of class inheritance in Typescript visit the [Classes section from the handbook](https://www.typescriptlang.org/docs/handbook/classes.html)
 
 > If you have found this useful, please show some love and give us a star on [Github](https://github.com/BookmarksDev/bookmarks.dev)

@@ -422,7 +422,7 @@ public class TransactionManagersConfig {
 </p>
 
 <p class="note_normal" style="color: #3a4145; text-align: justify;">
-  Published at Codepedia.org with permission of <a title="http://www.codepedia.org/jhadesdev/" href="http://www.codepedia.org/jhadesdev/" target="_blank">Aleksey Novik</a> &#8211; source <a title="http://blog.jhades.org/how-does-spring-transactional-really-work/" href="http://blog.jhades.org/how-does-spring-transactional-really-work/" target="_blank">How does Spring @Transactional Really Work?</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of <a title="https://www.codepedia.org/jhadesdev/" href="https://www.codepedia.org/jhadesdev/" target="_blank">Aleksey Novik</a> &#8211; source <a title="http://blog.jhades.org/how-does-spring-transactional-really-work/" href="http://blog.jhades.org/how-does-spring-transactional-really-work/" target="_blank">How does Spring @Transactional Really Work?</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p>
 
 <p style="color: #3a4145; text-align: justify;">

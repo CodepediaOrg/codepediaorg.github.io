@@ -259,7 +259,7 @@ public class ReferenceDataResource {
 }</pre>
 
 <p style="text-align: justify;">
-  Notice the existence of the version query parameter in the <code>@GET</code> <code>getReferenceData(...)</code> method.  This represents a hash on the reference data and if it hasn&#8217;t modified the client will receive a <em>304 Not Modified HTTP Status</em>. This is a nice way to spare some bandwidth, especially if you have mobile clients. See my post <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, for a detailed discussion around REST services design and implementation.
+  Notice the existence of the version query parameter in the <code>@GET</code> <code>getReferenceData(...)</code> method.  This represents a hash on the reference data and if it hasn&#8217;t modified the client will receive a <em>304 Not Modified HTTP Status</em>. This is a nice way to spare some bandwidth, especially if you have mobile clients. See my post <a title="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, for a detailed discussion around REST services design and implementation.
 </p>
 
 <p class="note_normal" style="text-align: justify;">

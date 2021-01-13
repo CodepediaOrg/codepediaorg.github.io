@@ -15,11 +15,13 @@ tags:
 
 Recently I have just added the possibility to [share your code snippets with the world](https://dev.to/bookmarks/public-code-snippets-are-now-available-3na0)
 on [Bookmarks.dev](https://www.bookmarks.dev). I have noticed that the code to create and update code snippets,
- was too intertwined - Initially trying to avoid code duplication I used just one component to create and update code snippets.
+ was too intertwined - trying to avoid code duplication I used initially just one component to create and update code snippets.
  Now, I just could not stand the too many conditional checks anymore, so I decided to split the functionality in two parts
-- one for handling updating and copy to mine, and the second for creating new snippets. Because there is still some common
-functionality in both, like handling autocompletion of tags, I decided to use Angular component inheritance to avoid
-code duplication. In this blog post I will just show the code examples and name the angular inheritance particularities.
+- one for handling updating and copy to mine, and the second for creating new snippets.
+
+Because there is still some common functionality in both, like handling autocompletion of tags,
+ I decided to use Angular component inheritance to avoid code duplication.
+ In this blog post I will just show code examples for inheritance and name the angular inheritance particularities.
 
 {% include source-code-bookmarks.dev.html %}
 

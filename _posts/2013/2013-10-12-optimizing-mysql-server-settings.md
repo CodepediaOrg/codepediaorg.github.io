@@ -114,7 +114,7 @@ The explanation for a few parameters:
 To verify if the variable has been set correctly run &#8221; `show variable like 'VARIABLE_NAME'` &#8221; (e.g. `show variables like 'max_connections'`) in the MySQL console.
 
 <p style="text-align: justify;">
-  The calculation was based on the assumptions that MySQL has 756MB of RAM available, a database size around 250MB and maximum 300 users trying to access the system (the underlying machine is Cent OS 6.4 virtual private server with 2GB of RAM and 8 cores processor). The same assumptions were made trying to configure the Tomcat JDBC Connection Pool &#8211; see my post <a title="Using the Tomcat 7 JDBC Connection Pool in Production" href="http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">Tomcat JDBC Connection Pool configuration for production and development</a> on that. Of course if resource demand grows (fingers crossed 🙂 ), I would have to adjust.
+  The calculation was based on the assumptions that MySQL has 756MB of RAM available, a database size around 250MB and maximum 300 users trying to access the system (the underlying machine is Cent OS 6.4 virtual private server with 2GB of RAM and 8 cores processor). The same assumptions were made trying to configure the Tomcat JDBC Connection Pool &#8211; see my post <a title="Using the Tomcat 7 JDBC Connection Pool in Production" href="https://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">Tomcat JDBC Connection Pool configuration for production and development</a> on that. Of course if resource demand grows (fingers crossed 🙂 ), I would have to adjust.
 </p>
 
 <div style="background-color: #f8e0e6; color: #580404; padding: 10px; border-style: solid; border-width: thin; margin-bottom: 15px; text-align: justify;">
@@ -150,7 +150,7 @@ We promise to only share high quality podcasts and episodes.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

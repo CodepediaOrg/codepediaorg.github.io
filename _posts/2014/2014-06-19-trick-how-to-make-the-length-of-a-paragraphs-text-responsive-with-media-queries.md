@@ -76,7 +76,7 @@ The CSS code supporting this is the following:
 }</pre>
 
 <p class="note_code">
-  <strong>Code tip:</strong> As you might recall from the post <a title="http://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" href="http://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" target="_blank">CSS Preprocessors – Introducing Sass to Podcastpedia.org</a>, the CSS for Podcastpedia.org gets generated from SASS with Gulp.
+  <strong>Code tip:</strong> As you might recall from the post <a title="https://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" href="https://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" target="_blank">CSS Preprocessors – Introducing Sass to Podcastpedia.org</a>, the CSS for Podcastpedia.org gets generated from SASS with Gulp.
 </p>
 
 Well, that&#8217;s it. If you have a better proposal to achieve this please leave a comment!!! 10x

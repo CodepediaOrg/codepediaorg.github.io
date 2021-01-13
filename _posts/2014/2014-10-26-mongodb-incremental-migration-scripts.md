@@ -148,7 +148,7 @@ Code available on [GitHub](https://github.com/vladmihalcea/vladmihalcea.wordpres
 **If you have enjoyed reading my article and you’re looking forward to getting instant email notifications of my latest posts, you just need to [follow my blog](http://vladmihalcea.com/2014/10/17/mongodb-incremental-migration-scripts/follow-me/).**
 
 <p class="note_normal">
-  Published at Codepedia.org with permission of <a title="http://www.codepedia.org/author/vladmihalcea" href="http://www.codepedia.org/author/vladmihalcea" target="_blank">Vlad Mihalcea</a> &#8211; source <a title="http://vladmihalcea.com/2014/10/17/mongodb-incremental-migration-scripts/" href="http://vladmihalcea.com/2014/10/17/mongodb-incremental-migration-scripts/" target="_blank">MongoDB Incremental Migration Scripts</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
+  Published at Codepedia.org with permission of <a title="https://www.codepedia.org/author/vladmihalcea" href="https://www.codepedia.org/author/vladmihalcea" target="_blank">Vlad Mihalcea</a> &#8211; source <a title="http://vladmihalcea.com/2014/10/17/mongodb-incremental-migration-scripts/" href="http://vladmihalcea.com/2014/10/17/mongodb-incremental-migration-scripts/" target="_blank">MongoDB Incremental Migration Scripts</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

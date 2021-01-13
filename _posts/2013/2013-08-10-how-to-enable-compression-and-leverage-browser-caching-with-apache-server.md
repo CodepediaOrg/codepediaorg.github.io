@@ -4,7 +4,6 @@ title: 'How To: Enable compression and leverage browser caching with Apache Serv
 date: 2013-08-10T20:00:17+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=283
 permalink: /ama/how-to-enable-compression-and-leverage-browser-caching-with-apache-server/
 categories:
   - tutorial
@@ -21,7 +20,7 @@ Compressing resources with gzip or deflate will reduce the number of bytes sent 
 
 #### 1.1 Enable mod_deflate on GoDaddy
 
-To enable  <span style="background-color: #e6e6e6; padding: 0px 3px;">mod_deflate</span> on a GoDaddy Virtual Private Server account, you have to use _Easy Apache_ and the same procedure as in <a title="Troubleshooting wordpress on GoDaddy" href="http://www.codepedia.org/ama/troubleshooting-wordpress-on-godaddy-vps-account/" target="_blank">Troubleshooting WordPress installation on GoDaddy VPS</a>. You need to check the <span style="background-color: #e6e6e6; padding: 0px 3px;">Deflate</span> option at step number _5. Exhaustive Options List_ and recompile the Apache Server.
+To enable  <span style="background-color: #e6e6e6; padding: 0px 3px;">mod_deflate</span> on a GoDaddy Virtual Private Server account, you have to use _Easy Apache_ and the same procedure as in <a title="Troubleshooting wordpress on GoDaddy" href="https://www.codepedia.org/ama/troubleshooting-wordpress-on-godaddy-vps-account/" target="_blank">Troubleshooting WordPress installation on GoDaddy VPS</a>. You need to check the <span style="background-color: #e6e6e6; padding: 0px 3px;">Deflate</span> option at step number _5. Exhaustive Options List_ and recompile the Apache Server.
 
 [<img class="alignnone size-medium wp-image-288" src="{{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate-300x126.png" alt="easy_apache_deflate" width="300" height="126" srcset="{{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate-300x126.png 300w, {{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate-1024x432.png 1024w, {{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate-624x263.png 624w, {{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate.png 1028w" sizes="(max-width: 300px) 100vw, 300px" />]({{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate.png)
 
@@ -52,7 +51,7 @@ After researching the web and the Apache website, the best solution for my needs
 to the virtual host configuration the html, css, xml and javascript files were compressed and an 10% score improvement on PageSpeed Insights was achieved for all the tested pages.
 
 <p style="padding-left: 30px;">
-  <em><strong>Note:</strong> The same problem held true for <a title="Codepedia.org" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, but for that I modified the <span style="background-color: #e6e6e6; padding: 0px 3px;">.htaccess</span> file from my root directory and got the same impact:</em>
+  <em><strong>Note:</strong> The same problem held true for <a title="Codepedia.org" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, but for that I modified the <span style="background-color: #e6e6e6; padding: 0px 3px;">.htaccess</span> file from my root directory and got the same impact:</em>
 </p>
 
 <pre>####################
@@ -73,7 +72,7 @@ The second point was enabling **browser caching** for static resources, which ca
 
 First I checked if the <a title="Apache Module mod_expires" href="http://httpd.apache.org/docs/current/mod/mod_expires.html" target="_blank">mod_expires</a> and <a title="Apache Module mod_headers" href="http://httpd.apache.org/docs/current/mod/mod_headers.html" target="_blank">mod_headers</a> modules are active on Apache modules by issuing <span style="background-color: #e6e6e6; padding: 0px 5px;">httpd -M</span>
 
-All I had to do next is adding the following to the virtual host configuration for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, and to _.htaccess_ for <a title="Codingpedia" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>:
+All I had to do next is adding the following to the virtual host configuration for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, and to _.htaccess_ for <a title="Codingpedia" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>:
 
 <pre class="brush: plain; title: ; notranslate" title=""># Feed
   ExpiresByType application/atom+xml      "access plus 10 hours"

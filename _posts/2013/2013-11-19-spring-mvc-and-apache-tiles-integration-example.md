@@ -12,7 +12,7 @@ tags:
   - spring-mvc
 ---
 <p class="note_alert" style="text-align: justify;">
-  <strong>Note:</strong> This is a re-edit of the post <a title="Spring 3 and Tiles 2 Integration" href="http://www.codepedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration.</a> It uses now the latest version of Apache Tiles (at the time of the writing 3.0.1) and presents how Apache Tiles is used on top of Spring/Spring MVC to construct the layout of the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> website
+  <strong>Note:</strong> This is a re-edit of the post <a title="Spring 3 and Tiles 2 Integration" href="https://www.codepedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration.</a> It uses now the latest version of Apache Tiles (at the time of the writing 3.0.1) and presents how Apache Tiles is used on top of Spring/Spring MVC to construct the layout of the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> website
 </p>
 
 ## <span id="1_Why_Apache_Tiles">1. Why Apache Tiles?</span>
@@ -353,8 +353,8 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
 
 ## <span id="6_Resources">6. Resources</span>
 
-  1. <a title="Spring 3 and Tiles 2 Integration" href="http://www.codepedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration</a>
-  2. <a title="Upgrade Tiles 2 to Tiles 3" href="http://www.codepedia.org/ama/upgrade-from-tiles-2-to-tiles-3-on-spring-mvc-3-application/#more-931" target="_blank">Upgrade from Tiles 2 to Tiles 3 on Spring MVC application</a>
+  1. <a title="Spring 3 and Tiles 2 Integration" href="https://www.codepedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration</a>
+  2. <a title="Upgrade Tiles 2 to Tiles 3" href="https://www.codepedia.org/ama/upgrade-from-tiles-2-to-tiles-3-on-spring-mvc-3-application/#more-931" target="_blank">Upgrade from Tiles 2 to Tiles 3 on Spring MVC application</a>
   3. <a title="Apache Tiles" href="http://tiles.apache.org/" target="_blank">http://tiles.apache.org/</a>
   4. <a title="Springsource" href="http://www.springsource.org/" target="_blank">http://www.springsource.org/</a>
 
@@ -366,7 +366,7 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

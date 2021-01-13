@@ -3,7 +3,7 @@ title: 'Git Tutorial: A Comprehensive Guide'
 date: 2016-02-13T07:07:45+00:00
 author: Udemy tutorials
 layout: post
-guid: http://www.codepedia.org/?p=2642
+guid: https://www.codepedia.org/?p=2642
 permalink: /udemy/git-tutorial-a-comprehensive-guide/
 categories:
   - tutorial

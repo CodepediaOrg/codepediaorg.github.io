@@ -133,7 +133,7 @@ tags:
 </p>
 
 <p class="note_normal" style="color: #444444;">
-  Published at Codepedia.org with permission of <a title="http://www.codepedia.org/author/vladmihalcea" href="http://www.codepedia.org/author/vladmihalcea" target="_blank">Vlad Mihalcea</a> &#8211; source <a title="http://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/" href="http://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/" target="_blank">A BEGINNER’S GUIDE TO JPA/HIBERNATE ENTITY STATE TRANSITIONS</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
+  Published at Codepedia.org with permission of <a title="https://www.codepedia.org/author/vladmihalcea" href="https://www.codepedia.org/author/vladmihalcea" target="_blank">Vlad Mihalcea</a> &#8211; source <a title="http://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/" href="http://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/" target="_blank">A BEGINNER’S GUIDE TO JPA/HIBERNATE ENTITY STATE TRANSITIONS</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
 </p>
 
 <p style="color: #444444;">

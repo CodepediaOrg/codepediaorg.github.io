@@ -24,7 +24,7 @@ tags:
 </p>
  <!--more-->
 <p style="color: #222222; text-align: justify;">
-  In this post I will present how I&#8217;ve designed and implemented the error handling of a REST API with the help Jersey framework. The<span class="aioseop_option_input"><span id="aioseop_snippet_description"> code is based on the open source project presented in the <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>&#8220;</span></span>
+  In this post I will present how I&#8217;ve designed and implemented the error handling of a REST API with the help Jersey framework. The<span class="aioseop_option_input"><span id="aioseop_snippet_description"> code is based on the open source project presented in the <a title="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>&#8220;</span></span>
 </p>
 
 <div id="toc_container" class="no_bullets">
@@ -81,7 +81,7 @@ tags:
 </p>
 
 <p class="note_normal">
-  Note: The design presented here is based on the great work and resources I stumbled upon from the post &#8211; <a title="http://www.codepedia.org/ama/resources-on-how-to-design-error-handling-in-a-rest-api/" href="http://www.codepedia.org/ama/resources-on-how-to-design-error-handling-in-a-rest-api/" target="_blank">Resources on how to design error handling in a REST API.</a>
+  Note: The design presented here is based on the great work and resources I stumbled upon from the post &#8211; <a title="https://www.codepedia.org/ama/resources-on-how-to-design-error-handling-in-a-rest-api/" href="https://www.codepedia.org/ama/resources-on-how-to-design-error-handling-in-a-rest-api/" target="_blank">Resources on how to design error handling in a REST API.</a>
 </p>
 
 The first way to let the client know that an error occurred, is by sending HTTP error codes in the response:
@@ -103,7 +103,7 @@ The first way to let the client know that an error occurred, is by sending HTT
        "status": 400,
        "code": 4000,
        "message": "Provided data not sufficient for insertion",
-       "link": "http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-with-jersey-and-spring",
+       "link": "https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-with-jersey-and-spring",
        "developerMessage": "Please verify that the feed is properly generated/set"
     }
   </code>
@@ -200,7 +200,7 @@ the exception mapper encapsulates the error message as JSON, with the HTTP statu
        "status": 404,
        "code": 404,
        "message": "The podcast you requested with id 22 was not found in the database",
-       "link": "http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
+       "link": "https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/",
        "developerMessage": "Verify the existence of the podcast with the id 22 in the database"
     }
   </code>
@@ -293,7 +293,7 @@ Check out our video tutorial <a title="https://www.youtube.com/watch?v=XV7WW0bDy
 </p>
 
 <p style="padding-left: 30px;">
-  <a title="http://www.codepedia.org/ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/" href="http://www.codepedia.org/ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/" target="_blank">http://www.codepedia.org/ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/</a>
+  <a title="https://www.codepedia.org/ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/" href="https://www.codepedia.org/ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/" target="_blank">https://www.codepedia.org/ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/</a>
 </p>
 
 ## <span id="5_Summary">5. Summary</span>
@@ -310,8 +310,8 @@ Check out our video tutorial <a title="https://www.youtube.com/watch?v=XV7WW0bDy
 
 ### <span id="62_Codingpedia">6.2. Codingpedia</span>
 
-  * <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
-  * Compilation &#8211; <a title="http://www.codepedia.org/ama/resources-on-how-to-design-error-handling-in-a-rest-api/" href="http://www.codepedia.org/ama/resources-on-how-to-design-error-handling-in-a-rest-api/" target="_blank">Resources on how to design error handling in a REST API</a>
+  * <a title="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
+  * Compilation &#8211; <a title="https://www.codepedia.org/ama/resources-on-how-to-design-error-handling-in-a-rest-api/" href="https://www.codepedia.org/ama/resources-on-how-to-design-error-handling-in-a-rest-api/" target="_blank">Resources on how to design error handling in a REST API</a>
   * Video &#8211; <a title="https://www.youtube.com/watch?v=XV7WW0bDy9c" href="https://www.youtube.com/watch?v=XV7WW0bDy9c" target="_blank">How to test a REST API with SoapUI </a>
 
 ### <span id="63_Web">6.3. Web</span>

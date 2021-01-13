@@ -19,7 +19,7 @@ tags:
   - integration-testing
 ---
 <p class="note_alert" style="text-align: justify;">
-  <strong><span style="font-size: 1.2em;">Note:</span> At the time of writing this post I was just starting with REST and Jersey so I  suggest you have a look at  <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank"><span style="font-size: 1.2em;">Tutorial – REST API design and implementation in Java with Jersey and Spring </span> </a>instead. My gained REST knowledge will be from now on reflected in this post, which is already an &#8220;(r)evolution&#8221; regarding REST API design, REST best practices used and backend architecture/implementation supporting the REST API presented in the tutorial.</strong>
+  <strong><span style="font-size: 1.2em;">Note:</span> At the time of writing this post I was just starting with REST and Jersey so I  suggest you have a look at  <a title="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank"><span style="font-size: 1.2em;">Tutorial – REST API design and implementation in Java with Jersey and Spring </span> </a>instead. My gained REST knowledge will be from now on reflected in this post, which is already an &#8220;(r)evolution&#8221; regarding REST API design, REST best practices used and backend architecture/implementation supporting the REST API presented in the tutorial.</strong>
 </p>
 
 <p style="text-align: justify;">
@@ -211,7 +211,7 @@ tags:
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> You can visit my post <a title="Autocomplete search box with jQuery and Spring MVC" href="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a> to see how Spring handles REST requests.
+  <strong>Note:</strong> You can visit my post <a title="Autocomplete search box with jQuery and Spring MVC" href="https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a> to see how Spring handles REST requests.
 </p>
 
 <h3 style="text-align: justify;">
@@ -251,11 +251,11 @@ tags:
 </h4>
 
 <p style="text-align: justify;">
-  For the persistence layer, I chose Mybatis because I like it the most and it integrates fairly easy with Spring (see my post <a title="Spring MyBatis integration example" href="http://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">Spring MyBatis integration example</a> for more on that), but you are free to choose any framework and technology you&#8217;re familiar with (e.g. JPA/Hibernate, Hibernate, JDBC etc).
+  For the persistence layer, I chose Mybatis because I like it the most and it integrates fairly easy with Spring (see my post <a title="Spring MyBatis integration example" href="https://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">Spring MyBatis integration example</a> for more on that), but you are free to choose any framework and technology you&#8217;re familiar with (e.g. JPA/Hibernate, Hibernate, JDBC etc).
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> If you want to see how the persistence layer is implemented for the same application with JPA2 and Hibernate 4 see the post <a title="Java Persistence Example with Spring, JPA2 and Hibernate" href="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>.
+  <strong>Note:</strong> If you want to see how the persistence layer is implemented for the same application with JPA2 and Hibernate 4 see the post <a title="Java Persistence Example with Spring, JPA2 and Hibernate" href="https://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>.
 </p>
 
 <h4 style="text-align: justify;">
@@ -937,7 +937,7 @@ public List&lt;Podcast&gt; getPodcasts() {
 Annotations
 
   * ``<p class="note_alert" style="text-align: justify;">
-  <strong><span style="font-size: 1.2em;">Note:</span> At the time of writing this post I was just starting with REST and Jersey so I  suggest you have a look at  <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank"><span style="font-size: 1.2em;">Tutorial – REST API design and implementation in Java with Jersey and Spring </span> </a>instead. My gained REST knowledge will be from now on reflected in this post, which is already an &#8220;(r)evolution&#8221; regarding REST API design, REST best practices used and backend architecture/implementation supporting the REST API presented in the tutorial.</strong>
+  <strong><span style="font-size: 1.2em;">Note:</span> At the time of writing this post I was just starting with REST and Jersey so I  suggest you have a look at  <a title="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank"><span style="font-size: 1.2em;">Tutorial – REST API design and implementation in Java with Jersey and Spring </span> </a>instead. My gained REST knowledge will be from now on reflected in this post, which is already an &#8220;(r)evolution&#8221; regarding REST API design, REST best practices used and backend architecture/implementation supporting the REST API presented in the tutorial.</strong>
 </p>
 
 <p style="text-align: justify;">
@@ -1133,7 +1133,7 @@ Annotations
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> You can visit my post <a title="Autocomplete search box with jQuery and Spring MVC" href="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a> to see how Spring handles REST requests.
+  <strong>Note:</strong> You can visit my post <a title="Autocomplete search box with jQuery and Spring MVC" href="https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a> to see how Spring handles REST requests.
 </p>
 
 <h3 style="text-align: justify;">
@@ -1173,11 +1173,11 @@ Annotations
 </h4>
 
 <p style="text-align: justify;">
-  For the persistence layer, I chose Mybatis because I like it the most and it integrates fairly easy with Spring (see my post <a title="Spring MyBatis integration example" href="http://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">Spring MyBatis integration example</a> for more on that), but you are free to choose any framework and technology you&#8217;re familiar with (e.g. JPA/Hibernate, Hibernate, JDBC etc).
+  For the persistence layer, I chose Mybatis because I like it the most and it integrates fairly easy with Spring (see my post <a title="Spring MyBatis integration example" href="https://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">Spring MyBatis integration example</a> for more on that), but you are free to choose any framework and technology you&#8217;re familiar with (e.g. JPA/Hibernate, Hibernate, JDBC etc).
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> If you want to see how the persistence layer is implemented for the same application with JPA2 and Hibernate 4 see the post <a title="Java Persistence Example with Spring, JPA2 and Hibernate" href="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>.
+  <strong>Note:</strong> If you want to see how the persistence layer is implemented for the same application with JPA2 and Hibernate 4 see the post <a title="Java Persistence Example with Spring, JPA2 and Hibernate" href="https://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>.
 </p>
 
 <h4 style="text-align: justify;">
@@ -2210,11 +2210,11 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
 
 ### <span id="53_Codingpedia_resources">5.3. Codingpedia resources</span>
 
-  * <a title="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>
-  * <a title="http://www.codepedia.org/ama/spring-mybatis-integration-example/" href="http://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">http://www.codepedia.org/ama/spring-mybatis-integration-example/</a>
-  * <a title="http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" href="http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/</a>
-  * <a title="http://www.codepedia.org/ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/" href="http://www.codepedia.org/ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/" target="_blank">http://www.codepedia.org/ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/</a>
-  * <a title="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" href="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/</a>
+  * <a title="https://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="https://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>
+  * <a title="https://www.codepedia.org/ama/spring-mybatis-integration-example/" href="https://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">https://www.codepedia.org/ama/spring-mybatis-integration-example/</a>
+  * <a title="https://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" href="https://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">https://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/</a>
+  * <a title="https://www.codepedia.org/ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/" href="https://www.codepedia.org/ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/" target="_blank">https://www.codepedia.org/ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/</a>
+  * <a title="https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" href="https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
@@ -2224,7 +2224,7 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

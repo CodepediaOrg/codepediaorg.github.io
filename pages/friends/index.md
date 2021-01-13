@@ -5,16 +5,16 @@ author: ama
 layout: page
 permalink: /friends/
 ---
-[<img class="aligncenter wp-image-1959 size-thumbnail" src="http://www.codepedia.org/wp-content/uploads/2014/10/coding-friends-150x150.jpg" alt="Coding friends" width="150" height="150" srcset="http://www.codepedia.org/wp-content/uploads/2014/10/coding-friends-150x150.jpg 150w, http://www.codepedia.org/wp-content/uploads/2014/10/coding-friends-300x300.jpg 300w, http://www.codepedia.org/wp-content/uploads/2014/10/coding-friends-120x120.jpg 120w, http://www.codepedia.org/wp-content/uploads/2014/10/coding-friends.jpg 400w" sizes="(max-width: 150px) 100vw, 150px" />](http://www.codepedia.org/wp-content/uploads/2014/10/coding-friends.jpg)
+[<img class="aligncenter wp-image-1959 size-thumbnail" src="https://www.codepedia.org/wp-content/uploads/2014/10/coding-friends-150x150.jpg" alt="Coding friends" width="150" height="150" srcset="https://www.codepedia.org/wp-content/uploads/2014/10/coding-friends-150x150.jpg 150w, https://www.codepedia.org/wp-content/uploads/2014/10/coding-friends-300x300.jpg 300w, https://www.codepedia.org/wp-content/uploads/2014/10/coding-friends-120x120.jpg 120w, https://www.codepedia.org/wp-content/uploads/2014/10/coding-friends.jpg 400w" sizes="(max-width: 150px) 100vw, 150px" />](https://www.codepedia.org/wp-content/uploads/2014/10/coding-friends.jpg)
 
 Dear fellow coder,
 
 <p style="text-align: justify;">
-  We believe here, at <a style="color: #bc360a;" title="Codepedia.org - about us" href="http://www.codepedia.org/about/" target="_blank">Codepedia.org</a>, that technological advancement and efficiency, driven among other things by the humans’ ability to program machines, has a positive impact on human evolution and well-being. We want to contribute to the expansion of this ability by offering a platform for sharing coding knowledge. We invite you to join our efforts and become a <em>Coding Friend</em> - <a style="color: #bc360a;" title="Codepedia.org - Friends" href="http://www.codepedia.org/friends/" target="_blank">www.codepedia.org/friends</a>. All you have to do is keep publishing great articles to your blog, and our team of content editors will pick up your best content and republish it on our website.
+  We believe here, at <a style="color: #bc360a;" title="Codepedia.org - about us" href="https://www.codepedia.org/about/" target="_blank">Codepedia.org</a>, that technological advancement and efficiency, driven among other things by the humans’ ability to program machines, has a positive impact on human evolution and well-being. We want to contribute to the expansion of this ability by offering a platform for sharing coding knowledge. We invite you to join our efforts and become a <em>Coding Friend</em> - <a style="color: #bc360a;" title="Codepedia.org - Friends" href="https://www.codepedia.org/friends/" target="_blank">www.codepedia.org/friends</a>. All you have to do is keep publishing great articles to your blog, and our team of content editors will pick up your best content and republish it on our website.
 </p>
 
 <p class="alert_normal" style="text-align: justify; padding-left: 30px;">
-  <em><strong>Note:</strong> Ready to go to the next step? We also offer you the possibility to write for Codepedia.org by joining our <a title="Codepedia.org - contributors" href="http://www.codepedia.org/contributors" target="_blank">Coding Contributor Program</a>.</em>
+  <em><strong>Note:</strong> Ready to go to the next step? We also offer you the possibility to write for Codepedia.org by joining our <a title="Codepedia.org - contributors" href="https://www.codepedia.org/contributors" target="_blank">Coding Contributor Program</a>.</em>
 </p>
 
 <p style="text-align: justify;">
@@ -62,7 +62,7 @@ Dear fellow coder,
       <span style="line-height: 1.5;"> because every article republished provides a link to the original post and clearly acknowledges your work </span>
     </li>
     <li style="text-align: justify;">
-      each of your republished posts will be promoted on our social media channels and will be part of our main <a style="color: #bc360a;" title="Codepedia.org - RSS feed" href="http://www.codepedia.org/feed.xml" target="_blank">RSS feed</a>
+      each of your republished posts will be promoted on our social media channels and will be part of our main <a style="color: #bc360a;" title="Codepedia.org - RSS feed" href="https://www.codepedia.org/feed.xml" target="_blank">RSS feed</a>
     </li>
   </ul>
 </li>
@@ -71,7 +71,7 @@ Dear fellow coder,
   promoting links to your Twitter, Google+, Facebook, LinkedIn and GitHub accounts with each of your republished posts
 </li>
 <li style="text-align: justify;">
-  building a reputation, as all your posts&#8217; URLs will include the <strong>nickname/author name</strong> you choose to represent you on the website (e.g. <a style="color: #bc360a;" href="http://www.codepedia.org/ama/how-to-handle-session-timeout-exceptions-in-spring-mvc/">http://www.codepedia.org/<strong>ama</strong>/how-to-handle-session-timeout-exceptions-in-spring-mvc/</a>)
+  building a reputation, as all your posts&#8217; URLs will include the <strong>nickname/author name</strong> you choose to represent you on the website (e.g. <a style="color: #bc360a;" href="https://www.codepedia.org/ama/how-to-handle-session-timeout-exceptions-in-spring-mvc/">https://www.codepedia.org/<strong>ama</strong>/how-to-handle-session-timeout-exceptions-in-spring-mvc/</a>)
 </li>
 <li style="text-align: justify;">
   enhancing the quality of your posts by having at least one pair of eyes reviewing them before republishing
@@ -93,7 +93,7 @@ Dear fellow coder,
 
 ## <span id="Republishing_Policies"><span id="Publishing_Policy">Republishing Policies</span></span>
 
-By choosing to collaborate with us you agree to our <a title="Republishing policies" href="http://www.codepedia.org/friends/republishing-policies/" target="_blank">republishing policies</a>.
+By choosing to collaborate with us you agree to our <a title="Republishing policies" href="https://www.codepedia.org/friends/republishing-policies/" target="_blank">republishing policies</a>.
 
 ## <span id="How_can_Coding_Friendspromote_Codingpediaorg">How can Coding Friends promote Codepedia.org?</span>
 
@@ -102,12 +102,12 @@ By choosing to collaborate with us you agree to our <a title="Republishing polic
 </p>
 
 <p style="padding-left: 60px;">
-  <a href="http://www.codepedia.org/wp-content/uploads/2014/10/CodingFriend-badge.png"><img class="alignleft wp-image-2034 size-full" src="http://www.codepedia.org/wp-content/uploads/2014/10/CodingFriend-badge.png" alt="CodingFriend-badge" width="120" height="120" /></a><strong>Please save this Coding Friend badge and put it on your blog to link to your republished articles.<br /> </strong>You can do so by copying the HTML code snippet below paste to the place you want the badge shown (<em>don&#8217;t forget to replace your <strong>author-name</strong></em>):
+  <a href="https://www.codepedia.org/wp-content/uploads/2014/10/CodingFriend-badge.png"><img class="alignleft wp-image-2034 size-full" src="https://www.codepedia.org/wp-content/uploads/2014/10/CodingFriend-badge.png" alt="CodingFriend-badge" width="120" height="120" /></a><strong>Please save this Coding Friend badge and put it on your blog to link to your republished articles.<br /> </strong>You can do so by copying the HTML code snippet below paste to the place you want the badge shown (<em>don&#8217;t forget to replace your <strong>author-name</strong></em>):
 </p>
 
-<pre><code class="html">&lt;a href="http://www.codepedia.org/author/{author-name}"&gt;
+<pre><code class="html">&lt;a href="https://www.codepedia.org/author/{author-name}"&gt;
 	&lt;img title="Codepedia.org Friend"
-		src="http://www.codepedia.org/wp-content/uploads/2014/10/CodingFriend-badge.png"
+		src="https://www.codepedia.org/wp-content/uploads/2014/10/CodingFriend-badge.png"
 		alt="Coding Friend"
 		style="height:120px;width:120px"/&gt;
 &lt;/a&gt;</code></pre>
@@ -121,7 +121,7 @@ By choosing to collaborate with us you agree to our <a title="Republishing polic
 Our current Coding Friends:
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codepedia.org/wp-content/uploads/2014/10/catalin-armeanu-170.png" alt="Catalin Armeanu" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://www.codepedia.org/wp-content/uploads/2014/10/catalin-armeanu-170.png" alt="Catalin Armeanu" />
 
   <p id="about_author_header">
     <strong><a href="http://www.armeanu.ro" target="_blank">Catalin Armeanu</a></strong>
@@ -163,7 +163,7 @@ Our current Coding Friends:
 </div>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codepedia.org/wp-content/uploads/2014/12/cwbuecheler.png" alt="Johannes Brodwall" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://www.codepedia.org/wp-content/uploads/2014/12/cwbuecheler.png" alt="Johannes Brodwall" />
 
   <p id="about_author_header">
     Christopher Buecheler</strong>
@@ -226,7 +226,7 @@ Our current Coding Friends:
 </div>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codepedia.org/wp-content/uploads/2016/01/keycloak-logo.png" alt="Keycloak-logo" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://www.codepedia.org/wp-content/uploads/2016/01/keycloak-logo.png" alt="Keycloak-logo" />
 
   <p id="about_author_header">
     <strong>Keycloak</strong>
@@ -245,14 +245,14 @@ Our current Coding Friends:
 </div>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codepedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://www.codepedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
     <strong>Adrian Matei</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codepediaorg, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codepediaorg, sharing coding knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">
@@ -308,7 +308,7 @@ Our current Coding Friends:
 </div>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codepedia.org/wp-content/uploads/2014/09/sivalabs.png" alt="Siva Reddy" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://www.codepedia.org/wp-content/uploads/2014/09/sivalabs.png" alt="Siva Reddy" />
 
   <p id="about_author_header">
     <strong>Siva Reddy</strong>
@@ -350,7 +350,7 @@ Our current Coding Friends:
 </div>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codepedia.org/wp-content/uploads/2016/02/toptal-logo.png" alt="Toptal-logo" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://www.codepedia.org/wp-content/uploads/2016/02/toptal-logo.png" alt="Toptal-logo" />
 
   <p id="about_author_header">
     <strong>Toptal Blog</strong>
@@ -369,7 +369,7 @@ Our current Coding Friends:
 </div>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codepedia.org/wp-content/uploads/2015/10/udemy-logo.png" alt="Udemy blog" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://www.codepedia.org/wp-content/uploads/2015/10/udemy-logo.png" alt="Udemy blog" />
 
   <p id="about_author_header">
     <strong>Udemy</strong>

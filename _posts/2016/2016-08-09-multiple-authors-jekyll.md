@@ -27,7 +27,7 @@ permalink: /udemy/git-tutorial-a-comprehensive-guide/
 [^2]:<https://jekyllrb.com/docs/permalinks/>
 [^3]:<https://jekyllrb.com/docs/frontmatter/>
 
-> If I had to start a new multi author blog all over again, I might also consider something like the following http://www.codepedia.org/authors/{author_username}/posts/seo-friendly-url (more REST like, but a thorough research would be on the table)... Anyway with Jekyll you have the possibility to choose whatever you like for each post, by customizing the permalink in its front matter.
+> If I had to start a new multi author blog all over again, I might also consider something like the following https://www.codepedia.org/authors/{author_username}/posts/seo-friendly-url (more REST like, but a thorough research would be on the table)... Anyway with Jekyll you have the possibility to choose whatever you like for each post, by customizing the permalink in its front matter.
 
 ## Author specific details in posts
 
@@ -40,7 +40,7 @@ Good thing Jekyll supports data files[^4], where you can specify your own custom
 ``` html
 ama:
   name:          Adrian Matei
-  site:           http://www.codepedia.org
+  site:           https://www.codepedia.org
   avatar:         amacoder.png
   bio:            "Life force expressing itself as a coding capable human being"
   email:          adrianmatei@gmail.com
@@ -60,7 +60,7 @@ ama:
 ...........
 dexter:
   name:          Dexter from Dexter's Laboratory
-  site:           http://www.codepedia.org
+  site:           https://www.codepedia.org
   avatar:         dexter.jpg
   bio:            "A boy-genius and inventor with a secret laboratory, who constantly battles his sister Dee Dee in an attempt to keep her out of the lab."
   email:          adrianmatei@gmail.com

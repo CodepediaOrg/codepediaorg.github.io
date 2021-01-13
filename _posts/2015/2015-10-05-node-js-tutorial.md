@@ -4,7 +4,7 @@ title: Node.js Tutorial
 date: 2015-10-05T06:56:45+00:00
 author: Udemy tutorials
 layout: post
-guid: http://www.codepedia.org/?p=2472
+guid: https://www.codepedia.org/?p=2472
 permalink: /udemy/node-js-tutorial/
 categories:
   - tutorial

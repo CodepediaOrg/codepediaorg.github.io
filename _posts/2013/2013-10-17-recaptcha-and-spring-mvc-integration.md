@@ -133,7 +133,7 @@ I wanted the reCAPTCHA widget customized, so I used the &#8220;clean&#8221; them
 	};
 &lt;/script&gt;</pre>
 
-The strings array contains the values of the localized messages I want displayed in the captcha widget. See the post <a title="Spring 3 MVC: Internationalization & localization of Podcastpedia.org" href="http://www.codepedia.org/ama/spring-3-mvc-internationalization-localization-of-podcastpedia-org/" target="_blank">Spring 3 MVC: Internationalization & localization of Podcastpedia.org</a> to find out how internationalization and localization is achieved for Podcastpedia.org
+The strings array contains the values of the localized messages I want displayed in the captcha widget. See the post <a title="Spring 3 MVC: Internationalization & localization of Podcastpedia.org" href="https://www.codepedia.org/ama/spring-3-mvc-internationalization-localization-of-podcastpedia-org/" target="_blank">Spring 3 MVC: Internationalization & localization of Podcastpedia.org</a> to find out how internationalization and localization is achieved for Podcastpedia.org
 
 If put together, all these relevant things look somewhat like the following in the jsp file:
 
@@ -290,7 +290,7 @@ Well, that&#8217;s it. After reading this I hope you feel more positive about re
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -4,7 +4,7 @@ title: How to add a GitHub ribbon to Podcastpedia.org
 date: 2014-06-30T21:58:49+00:00
 author: ama
 layout: post
-guid: http://www.codepedia.org/?p=1501
+guid: https://www.codepedia.org/?p=1501
 permalink: /ama/how-to-add-a-github-ribbon-to-podcastpedia-org/
 categories:
   - article
@@ -44,7 +44,7 @@ tags:
 </h3>
 
 <p style="text-align: justify;">
-  As you might recall from my blog post <a title="http://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" href="http://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" target="_blank">CSS Preprocessors – Introducing Sass to Podcastpedia.org</a>, I am generating the css files needed for Podcastpedia.org from Sass, so I transformed the css file needed for Github ribbon &#8211; <a title="https://github.com/simonwhitaker/github-fork-ribbon-css/blob/b3305a5555123a30502c1feb4ff23047030dc3f0/gh-fork-ribbon.css" href="https://github.com/simonwhitaker/github-fork-ribbon-css/blob/b3305a5555123a30502c1feb4ff23047030dc3f0/gh-fork-ribbon.css" target="_blank">gh-fork-ribbon.css</a>, into the following:
+  As you might recall from my blog post <a title="https://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" href="https://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" target="_blank">CSS Preprocessors – Introducing Sass to Podcastpedia.org</a>, I am generating the css files needed for Podcastpedia.org from Sass, so I transformed the css file needed for Github ribbon &#8211; <a title="https://github.com/simonwhitaker/github-fork-ribbon-css/blob/b3305a5555123a30502c1feb4ff23047030dc3f0/gh-fork-ribbon.css" href="https://github.com/simonwhitaker/github-fork-ribbon-css/blob/b3305a5555123a30502c1feb4ff23047030dc3f0/gh-fork-ribbon.css" target="_blank">gh-fork-ribbon.css</a>, into the following:
 </p>
 
 <pre class="lang:sass decode:true" title="scss version of the gh-fork-ribbon.css">/*!
@@ -171,7 +171,7 @@ $rotation-angle: 45deg;
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> By using the <em>gulp-autoprefixer</em> plugin, there was no need to replicate the CSS vendor prefixes present in the original .css file. See my post <a title="http://www.codepedia.org/ama/how-to-use-gulp-to-generate-css-from-sass-scss/" href="http://www.codepedia.org/ama/how-to-use-gulp-to-generate-css-from-sass-scss/" target="_blank">How to use Gulp to generate CSS from Sass/scss</a>  for more details about that.
+  <strong>Note:</strong> By using the <em>gulp-autoprefixer</em> plugin, there was no need to replicate the CSS vendor prefixes present in the original .css file. See my post <a title="https://www.codepedia.org/ama/how-to-use-gulp-to-generate-css-from-sass-scss/" href="https://www.codepedia.org/ama/how-to-use-gulp-to-generate-css-from-sass-scss/" target="_blank">How to use Gulp to generate CSS from Sass/scss</a>  for more details about that.
 </p>
 
 ### 2. Add code snippet after the body tag

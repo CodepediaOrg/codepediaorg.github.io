@@ -66,5 +66,5 @@ dateToLookBackAfterJoda.toDate();</pre>
 
 Check out also my related posts on the topic
 
-  * <a title="Java Persistence Example with Spring, JPA2 and Hibernate" href="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate </a>&#8211; CRUD example with JPA, Spring and Hibernate incorporating the method from above
-  * <a title="RESTful Web Services Example in Java with Jersey, Spring and MyBatis" href="http://www.codepedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis </a>&#8211; defines a REST API that among others, it requests recent podcasts employing the above method
+  * <a title="Java Persistence Example with Spring, JPA2 and Hibernate" href="https://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate </a>&#8211; CRUD example with JPA, Spring and Hibernate incorporating the method from above
+  * <a title="RESTful Web Services Example in Java with Jersey, Spring and MyBatis" href="https://www.codepedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis </a>&#8211; defines a REST API that among others, it requests recent podcasts employing the above method

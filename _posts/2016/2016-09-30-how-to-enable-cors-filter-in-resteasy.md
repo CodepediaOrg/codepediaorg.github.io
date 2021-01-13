@@ -269,9 +269,9 @@ public class CorsFilter implements ContainerRequestFilter, ContainerResponseFilt
 }
 ```
 
-> About CORS Filter enabling and how I migrated a Java EE REST API from JAX-RS 1.0 to JAX-RS 2.0 with RESTEasy I have written in my article [How to migrate a Java EE REST API from JBoss EAP 6 to EAP 7](http://www.codepedia.org/ama/how-to-migrate-a-java-ee-rest-api-from-jboss-eap6-to-jboss-eap7)
+> About CORS Filter enabling and how I migrated a Java EE REST API from JAX-RS 1.0 to JAX-RS 2.0 with RESTEasy I have written in my article [How to migrate a Java EE REST API from JBoss EAP 6 to EAP 7](https://www.codepedia.org/ama/how-to-migrate-a-java-ee-rest-api-from-jboss-eap6-to-jboss-eap7)
 
-> Other REST related posts can be found at [http://www.codepedia.org/tags/#rest](http://www.codepedia.org/tags/#rest)
+> Other REST related posts can be found at [https://www.codepedia.org/tags/#rest](https://www.codepedia.org/tags/#rest)
 
 
 ## References

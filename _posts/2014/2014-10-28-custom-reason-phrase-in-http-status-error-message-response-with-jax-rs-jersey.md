@@ -59,7 +59,7 @@ tags:
 </h2>
 
 <p style="text-align: justify;">
-  As you might have found out from my post <a title="http://www.codepedia.org/ama/error-handling-in-rest-api-with-jersey/" href="http://www.codepedia.org/ama/error-handling-in-rest-api-with-jersey/" target="_blank">Error handling in REST API with Jersey</a>, I like handling the checked exceptions using Jersey&#8217;s <a title="https://jersey.java.net/documentation/latest/user-guide.html#d0e5206" href="https://jersey.java.net/documentation/latest/user-guide.html#d0e5206" target="_blank">ExceptionMapper </a>capability.
+  As you might have found out from my post <a title="https://www.codepedia.org/ama/error-handling-in-rest-api-with-jersey/" href="https://www.codepedia.org/ama/error-handling-in-rest-api-with-jersey/" target="_blank">Error handling in REST API with Jersey</a>, I like handling the checked exceptions using Jersey&#8217;s <a title="https://jersey.java.net/documentation/latest/user-guide.html#d0e5206" href="https://jersey.java.net/documentation/latest/user-guide.html#d0e5206" target="_blank">ExceptionMapper </a>capability.
 </p>
 
 For the purpose of this demonstration I defined a `CustomReasonPhraseException`:
@@ -206,7 +206,7 @@ Custom Reason Phrase exception occured : message attached to the Custom Reason P
 , the custom Reason Phrase appears in the response as expected.
 
 <p style="text-align: justify;">
-  <strong>Tip:</strong> If you want really learn how to design and implement REST API in Java read the following <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
+  <strong>Tip:</strong> If you want really learn how to design and implement REST API in Java read the following <a title="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>
 </p>
 
 ## <span id="Summary">Summary</span>

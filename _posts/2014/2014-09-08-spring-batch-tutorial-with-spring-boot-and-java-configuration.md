@@ -737,8 +737,8 @@ public class Writer implements ItemWriter&lt;SuggestedPodcast&gt;{
   As you can see there&#8217;s nothing special here, except that the <code>write</code> method has to be overriden and this is where the injected external services <code>EmailNotificationService</code> and <code>SocialMediaService</code> are used to inform via email the podcast submitter about the addition to the podcast directory, and if a Twitter page was submitted a tweet will be posted on the <a title="Podcastpedia on Twitter" href="https://twitter.com/podcastpedia" target="_blank">Podcastpedia&#8217;s wall</a>. You can find detailed explanation on how to send email via Velocity and how to post on Twitter from Java in the following posts:
 </p>
 
-  * <a title="http://www.codepedia.org/ama/how-to-compose-html-emails-in-java-with-spring-and-velocity/" href="http://www.codepedia.org/ama/how-to-compose-html-emails-in-java-with-spring-and-velocity/" target="_blank">How to compose html emails in Java with Spring and Velocity</a>
-  * <a title="http://www.codepedia.org/ama/how-to-post-to-twittter-from-java-with-twitter4j-in-10-minutes/" href="http://www.codepedia.org/ama/how-to-post-to-twittter-from-java-with-twitter4j-in-10-minutes/" target="_blank">How to post to Twittter from Java with Twitter4J in 10 minutes</a>
+  * <a title="https://www.codepedia.org/ama/how-to-compose-html-emails-in-java-with-spring-and-velocity/" href="https://www.codepedia.org/ama/how-to-compose-html-emails-in-java-with-spring-and-velocity/" target="_blank">How to compose html emails in Java with Spring and Velocity</a>
+  * <a title="https://www.codepedia.org/ama/how-to-post-to-twittter-from-java-with-twitter4j-in-10-minutes/" href="https://www.codepedia.org/ama/how-to-post-to-twittter-from-java-with-twitter4j-in-10-minutes/" target="_blank">How to post to Twittter from Java with Twitter4J in 10 minutes</a>
 
 ### <span id="53_Processors"> 5.3. Processors</span>
 
@@ -834,7 +834,7 @@ public class NotifySubscribersItemProcessor implements ItemProcessor&lt;User, Us
 </pre>
 
 <p class="note_normal">
-  <strong>Note:</strong><br /> If you&#8217;d like to find out more how to use the Apache Http Client, to get the <code>etag</code> and <code>last-modified</code> headers, you can have a look at my post &#8211; <a title="http://www.codepedia.org/ama/how-to-use-the-new-apache-http-client-to-make-a-head-request/" href="http://www.codepedia.org/ama/how-to-use-the-new-apache-http-client-to-make-a-head-request/" target="_blank">How to use the new Apache Http Client to make a HEAD request</a>
+  <strong>Note:</strong><br /> If you&#8217;d like to find out more how to use the Apache Http Client, to get the <code>etag</code> and <code>last-modified</code> headers, you can have a look at my post &#8211; <a title="https://www.codepedia.org/ama/how-to-use-the-new-apache-http-client-to-make-a-head-request/" href="https://www.codepedia.org/ama/how-to-use-the-new-apache-http-client-to-make-a-head-request/" target="_blank">How to use the new Apache Http Client to make a HEAD request</a>
 </p>
 
 ## <span id="6_Execute_the_batch_application">6. Execute the batch application</span>
@@ -983,7 +983,7 @@ The best explanation for  `SpringApplication`-, `@ComponentScan`&#8211; and `@E
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -185,7 +185,7 @@ if(titleInUrl.length() &gt; TITLE_IN_URL_MAX_LENGTH){
   <span id="View">View</span>
 </h3>
 
-Let&#8217;s consider a use case, for example when <a title="Podcastpedia.org - advanced search" href="https://github.com/CodepediaOrg/podcastpedia/search/advanced_search" target="_blank">searching for episodes</a>, you get a list of results. This list of `Episode` objects is loaded in the `Model` via MyBatis (see my post <a title="MyBatis and Spring integration" href="http://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">Integrate MyBatis with Spring</a> for that), and then via the `Controller` are presented in the `View`, which in this case is a `JSP` file. The user has the possibility to see the details of a specific episode by clicking on the episode&#8217;s URL, that is constructed in the following manner:
+Let&#8217;s consider a use case, for example when <a title="Podcastpedia.org - advanced search" href="https://github.com/CodepediaOrg/podcastpedia/search/advanced_search" target="_blank">searching for episodes</a>, you get a list of results. This list of `Episode` objects is loaded in the `Model` via MyBatis (see my post <a title="MyBatis and Spring integration" href="https://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">Integrate MyBatis with Spring</a> for that), and then via the `Controller` are presented in the `View`, which in this case is a `JSP` file. The user has the possibility to see the details of a specific episode by clicking on the episode&#8217;s URL, that is constructed in the following manner:
 
 <pre class="lang:default mark:3,7 decode:true" title="JSP snippet - Episodes search results">&lt;div class="results_list"&gt;
 	&lt;c:forEach items="${advancedSearchResult.episodes}" var="episode" varStatus="loop"&gt;
@@ -281,7 +281,7 @@ public class EpisodeController {
 So if you add the values of the `@RequestMapping` at the class level (line 16) &#8211; `/podcasts` &#8211; and the `@RequestMapping` annotation at the method level (line=32) &#8211; `{podcastId}/*/episodes/{episodeId}/*` &#8211; you get `/podcasts/{podcastId}/*/episodes/{episodeId}/*`, which reproduce exactly the &#8220;friendly&#8221; episode URLs as mentioned before. The star (*) in the URL structure means it can be filled with any text. I chose to fill that with the titles of the podcast and of the episode respectively.
 
 <p style="text-align: justify; padding-left: 30px;">
-  <em><strong>Note:</strong> The SitePreference part (lines 44-49) routes the visitor to the desktop or mobile version, depending on her device or selected preferences. See my post <a title="Going mobile with Spring mobile and responsive web design" href="http://www.codepedia.org/ama/going-mobile-with-spring-mobile-and-responsive-web-design/" target="_blank">Going mobile with Spring mobile and responsive web design</a> for more details.</em>
+  <em><strong>Note:</strong> The SitePreference part (lines 44-49) routes the visitor to the desktop or mobile version, depending on her device or selected preferences. See my post <a title="Going mobile with Spring mobile and responsive web design" href="https://www.codepedia.org/ama/going-mobile-with-spring-mobile-and-responsive-web-design/" target="_blank">Going mobile with Spring mobile and responsive web design</a> for more details.</em>
 </p>
 
 <p style="text-align: justify;">
@@ -308,7 +308,7 @@ So if you add the values of the `@RequestMapping` at the class level (line 16) &
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

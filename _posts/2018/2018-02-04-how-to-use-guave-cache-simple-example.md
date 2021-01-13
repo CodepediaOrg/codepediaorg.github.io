@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [java, javaee, caching]
 ---
 
-Last week I showed you [how to increase the performance of multiple java calls by making them asynchronous and parallel](http://www.codepedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example).
+Last week I showed you [how to increase the performance of multiple java calls by making them asynchronous and parallel](https://www.codepedia.org/ama/how-to-make-parallel-calls-in-java-with-completablefuture-example).
 This week we take a look at another potential performance booster, you should always keep in mind - <span class="highlight-yellow">caching</span>.
 
 Let's imagine a scenario where you call a REST service and you know the returned values don't change very often. In this case

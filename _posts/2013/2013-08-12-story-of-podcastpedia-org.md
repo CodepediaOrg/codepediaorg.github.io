@@ -76,7 +76,7 @@ I have pushed things through.
   Podcastpedia.org is an ads-free podcast directory and, with the motto is all about <em>&#8220;Educating oneself &#8220;</em> with selected podcasts from various domains such as science, technology, education, medicine, people, environment, spirituality and much more&#8230;
 </p>
 
-Developing Podcastpedia.org was/is a great technical and personal experience, that I want to share with you on this <a title="Codepedia.org" href="http://www.codepedia.org" target="_blank">blog</a>.
+Developing Podcastpedia.org was/is a great technical and personal experience, that I want to share with you on this <a title="Codepedia.org" href="https://www.codepedia.org" target="_blank">blog</a>.
 
 ### What&#8217;s next? {##whatiscoming}
 

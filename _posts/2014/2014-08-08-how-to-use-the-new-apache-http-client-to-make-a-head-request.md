@@ -69,7 +69,7 @@ tags:
 </p>
 
 <h2 style="text-align: justify;">
-  <span id="1_Use_case_from_Podcastpediaorg">1. Use case from <a title="Podcastpedia, knowledge to go" href="http://www.codepedia.org/ama/how-to-add-categories-to-menu-in-wordpress/" target="_blank">Podcastpedia.org</a></span>
+  <span id="1_Use_case_from_Podcastpediaorg">1. Use case from <a title="Podcastpedia, knowledge to go" href="https://www.codepedia.org/ama/how-to-add-categories-to-menu-in-wordpress/" target="_blank">Podcastpedia.org</a></span>
 </h2>
 
 <p style="text-align: justify;">
@@ -255,7 +255,7 @@ RequestConfig requestConfig = RequestConfig.custom()
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/wp-content/uploads/2014/01/AdrianMatei.png" alt="Podcastpedia image" />
 
   <div id="author_details" style="text-align: justify;">
-    <a title="Codepedia.org, let's code the better world" href="http://www.codepedia.org/" target="_blank">Codepedia.org</a> was founded by Adrian Matei (ama [AT] codingpedia DOT org), a computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy.
+    <a title="Codepedia.org, let's code the better world" href="https://www.codepedia.org/" target="_blank">Codepedia.org</a> was founded by Adrian Matei (ama [AT] codingpedia DOT org), a computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy.
   </div>
 
   <div id="follow_social" style="clear: both;">

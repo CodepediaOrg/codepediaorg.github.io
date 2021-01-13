@@ -22,7 +22,7 @@ This was possible by importing the free programming books from the [Free-Program
   Either way you should get a result similar to the following:
 
   <figure>
-  	<img src="http://www.codepedia.org/images/posts/free-programming-books/search-results.png" alt="">
+  	<img src="https://www.codepedia.org/images/posts/free-programming-books/search-results.png" alt="">
   	<figcaption>Results when search for free-programming-books tag </figcaption>
   </figure>
 
@@ -31,14 +31,14 @@ This was possible by importing the free programming books from the [Free-Program
  Of course you might want to filter more, and not scroll through 2700+ results, so you can either  add another search term `nodejs`, for example:
 
    <figure>
-   	<img src="http://www.codepedia.org/images/posts/free-programming-books/search-results-nodejs.png" alt="">
+   	<img src="https://www.codepedia.org/images/posts/free-programming-books/search-results-nodejs.png" alt="">
    	<figcaption>Results when search for free-programming-books tag plus nodejs term</figcaption>
    </figure>
 
  Or use **Filter by language** functionality and select **Spanish** for example:
 
    <figure>
-   	<img src="http://www.codepedia.org/images/posts/free-programming-books/search-results-spanish.png" alt="">
+   	<img src="https://www.codepedia.org/images/posts/free-programming-books/search-results-spanish.png" alt="">
    	<figcaption>Results when search for free-programming-books tag in Spanish</figcaption>
    </figure>
 

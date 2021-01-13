@@ -155,7 +155,7 @@ export class MarkdownService {
 
 This approach is valid for any other libraries that have available typings. Even without them you can still manually add them[^6].
 
-> Check out my post [How to use Showdown in Angular and NodeJS](http://www.codepedia.org/ama/how-to-use-shodown-in-angular-and-nodejs) to see how I used it before...
+> Check out my post [How to use Showdown in Angular and NodeJS](https://www.codepedia.org/ama/how-to-use-shodown-in-angular-and-nodejs) to see how I used it before...
 
 
 [^7]: <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>

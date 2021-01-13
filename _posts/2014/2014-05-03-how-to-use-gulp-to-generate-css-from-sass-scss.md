@@ -81,7 +81,7 @@ tags:
 </div>
 
 <p class="alert_note" style="text-align: justify;">
-  This is the sequel of the post <a title="http://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" href="http://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" target="_blank">CSS Preprocessors – Introducing Sass to Podcastpedia.org</a>. If in the first part I presented some Sass-features I use to generated the CSS file for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, in this part I will present how the .css file generation process can be implemented with the help of Gulpjs.
+  This is the sequel of the post <a title="https://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" href="https://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" target="_blank">CSS Preprocessors – Introducing Sass to Podcastpedia.org</a>. If in the first part I presented some Sass-features I use to generated the CSS file for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, in this part I will present how the .css file generation process can be implemented with the help of Gulpjs.
 </p>
 
 <p class="note_normal">
@@ -275,7 +275,7 @@ Well, that&#8217;s it &#8211; few lines of code for pretty good functionality. I
 
 ### <span id="32_Codingpediaorg_related">3.2. Codepedia.org related</span>
 
-  * <a title="http://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" href="http://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" target="_blank">CSS Preprocessors – Introducing Sass to Podcastpedia.org</a>
+  * <a title="https://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" href="https://www.codepedia.org/ama/css-preprocessors-introducing-sass-to-podcastpedia-org/" target="_blank">CSS Preprocessors – Introducing Sass to Podcastpedia.org</a>
 
 ### <span id="33_Web">3.3. Web</span>
 
@@ -296,7 +296,7 @@ Well, that&#8217;s it &#8211; few lines of code for pretty good functionality. I
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -103,7 +103,7 @@ public String handleSessionExpired(){
 </p>
 
 <p class="note_normal">
-  <strong>Note:</strong> Please see my post <a title="Spring MVC and Apache Tiles integration example" href="http://www.codepedia.org/ama/spring-mvc-and-apache-tiles-integration-example/" target="_blank">Spring MVC and Apache Tiles integration example</a> for an explanation of using Tiles definitions with Spring MVC.
+  <strong>Note:</strong> Please see my post <a title="Spring MVC and Apache Tiles integration example" href="https://www.codepedia.org/ama/spring-mvc-and-apache-tiles-integration-example/" target="_blank">Spring MVC and Apache Tiles integration example</a> for an explanation of using Tiles definitions with Spring MVC.
 </p>
 
 ### <span id="Exception_handling_configuration_in_the_application_context">Exception handling configuration in the application context</span>
@@ -149,7 +149,7 @@ Well, that&#8217;s it. I hope you could learn something from this as I did.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -450,7 +450,7 @@ you can automate some of the boring tasks like format source code, organize impo
 
 ### <span id="Codingpedia">Codingpedia</span>
 
-  * <a title="http://www.codepedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit/" href="http://www.codepedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit/" target="_blank">Install Eclipse Kepler 64-bit on Windows 7 64-bit</a>
+  * <a title="https://www.codepedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit/" href="https://www.codepedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit/" target="_blank">Install Eclipse Kepler 64-bit on Windows 7 64-bit</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
@@ -460,7 +460,7 @@ you can automate some of the boring tasks like format source code, organize impo
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

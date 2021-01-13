@@ -16,7 +16,7 @@ tags:
   - debugging
 ---
 <p style="text-align: justify;">
-  There might be cases when you want to quickly verify if your REST API, that is deployed either on dev, test or prod environments, is reachable altogether. A common way to do this is by building a generic resource that delivers for example the version of the deployed API. You can trigger a request to this resource manually or, even better, have a Jenkings/Hudson job, which runs a checkup job after deployment. In this post, I will present how to implement such a service that reads the implementation details from the application&#8217;s manifest file. The API verified, is the one developed in the <a title="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a><!--more-->
+  There might be cases when you want to quickly verify if your REST API, that is deployed either on dev, test or prod environments, is reachable altogether. A common way to do this is by building a generic resource that delivers for example the version of the deployed API. You can trigger a request to this resource manually or, even better, have a Jenkings/Hudson job, which runs a checkup job after deployment. In this post, I will present how to implement such a service that reads the implementation details from the application&#8217;s manifest file. The API verified, is the one developed in the <a title="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a><!--more-->
 </p>
 
 <h2 style="text-align: justify;">
@@ -237,7 +237,7 @@ Here you have &#8211; a quick way to verify that your REST api is reachable. If 
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

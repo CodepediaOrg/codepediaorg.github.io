@@ -49,7 +49,7 @@ Then, why not make a GUI? It was just the perfect project to get into the MEAN[^
 It was also pretty clear I needed a website, to have my bookmarks accessible from everywhere. One of the hardest things
  for a website is picking the right name... A couple of ideas came up - **dev-resources.org**, **coding-bookmarks.org**, **dev-bookmarks.org**,
  but none of those felt quite right. Then I remembered the right thing to do, which is to place a request on the subconscious for it.
-  The next morning, bam - [https://www.bookmarks.dev](www.bookmarks.dev). It shares both the philosophy of [our mission](http://www.codepedia.org/about/) and gave me a good title - **Sharing Coding Bookmarks**.
+  The next morning, bam - [https://www.bookmarks.dev](www.bookmarks.dev). It shares both the philosophy of [our mission](https://www.codepedia.org/about/) and gave me a good title - **Sharing Coding Bookmarks**.
 
 ## Metadata
 

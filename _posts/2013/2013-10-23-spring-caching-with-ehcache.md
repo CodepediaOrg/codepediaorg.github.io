@@ -648,11 +648,11 @@ Most of the properties set in the caches are self explaining by name, but here a
   But as I mentioned before, application/website optimization should be a holistic approach, with application caching being just a part of that &#8211; it might also want to
 </p>
 
-  * <a title="Optimizing MySQL server settings" href="http://www.codepedia.org/ama/optimizing-mysql-server-settings/" target="_blank">optimize your MySQL server settings</a>,
-  * <a title="How To: Enable compression and leverage browser caching with Apache Server" href="http://www.codepedia.org/ama/how-to-enable-compression-and-leverage-browser-caching-with-apache-server/" target="_blank">enable compression and leverage browser caching with Apache Server</a>
+  * <a title="Optimizing MySQL server settings" href="https://www.codepedia.org/ama/optimizing-mysql-server-settings/" target="_blank">optimize your MySQL server settings</a>,
+  * <a title="How To: Enable compression and leverage browser caching with Apache Server" href="https://www.codepedia.org/ama/how-to-enable-compression-and-leverage-browser-caching-with-apache-server/" target="_blank">enable compression and leverage browser caching with Apache Server</a>
 
     or
-  *  <a title="How To: Enable compression and leverage browser caching with Apache Server" href="http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">to tweak your Tomcat&#8217;s JDBC connection pool configuration </a>
+  *  <a title="How To: Enable compression and leverage browser caching with Apache Server" href="https://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">to tweak your Tomcat&#8217;s JDBC connection pool configuration </a>
 
 <p class="note_normal">
   <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/CodepediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
@@ -675,7 +675,7 @@ Most of the properties set in the caches are self explaining by name, but here a
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

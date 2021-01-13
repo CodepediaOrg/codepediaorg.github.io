@@ -279,7 +279,7 @@ tags:
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> You can visit my post <a title="Autocomplete search box with jQuery and Spring MVC" href="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a> to see how Spring handles REST requests.
+  <strong>Note:</strong> You can visit my post <a title="Autocomplete search box with jQuery and Spring MVC" href="https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a> to see how Spring handles REST requests.
 </p>
 
 <h3 style="text-align: justify;">
@@ -333,7 +333,7 @@ A few words on the technologies/frameworks used:
 </p>
 
 <p style="text-align: justify;">
-  See my post <a title="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a> for an interesting discussion around persistence thema in Java.
+  See my post <a title="https://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="https://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a> for an interesting discussion around persistence thema in Java.
 </p>
 
 <h4 style="text-align: justify;">
@@ -1446,7 +1446,7 @@ will be a html document containing different messages and stati depending on wha
   Every request&#8217;s path and the response&#8217;s entity will be logged when the logging level is set to DEBUG. It is developed like a wrapper, AOP-style functionality with the help of Jetty filters.
 </p>
 
-See my post <a title="http://www.codepedia.org/ama/how-to-log-in-spring-with-slf4j-and-logback/" href="http://www.codepedia.org/ama/how-to-log-in-spring-with-slf4j-and-logback/" target="_blank">How to log in Spring with SLF4J and Logback</a> for more details on the matter.
+See my post <a title="https://www.codepedia.org/ama/how-to-log-in-spring-with-slf4j-and-logback/" href="https://www.codepedia.org/ama/how-to-log-in-spring-with-slf4j-and-logback/" target="_blank">How to log in Spring with SLF4J and Logback</a> for more details on the matter.
 
 ## <span id="5_Exception_handling">5. Exception handling</span>
 
@@ -1456,12 +1456,12 @@ In case of errros, I decided to response with unified error message structure. 
        "status": 400,
        "code": 400,
        "message": "Provided data not sufficient for insertion",
-       "link": "http://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-with-jersey-and-spring",
+       "link": "https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-with-jersey-and-spring",
        "developerMessage": "Please verify that the feed is properly generated/set"
     }</code></pre>
 
 <p class="note_normal" style="text-align: justify;">
-  A detailed explanation of how errors are handled in the REST api, you can find in the following <a title="http://www.codepedia.org/ama/error-handling-in-rest-api-with-jersey/" href="http://www.codepedia.org/ama/error-handling-in-rest-api-with-jersey/" target="_blank">post Error handling in REST API with Jersey</a>
+  A detailed explanation of how errors are handled in the REST api, you can find in the following <a title="https://www.codepedia.org/ama/error-handling-in-rest-api-with-jersey/" href="https://www.codepedia.org/ama/error-handling-in-rest-api-with-jersey/" target="_blank">post Error handling in REST API with Jersey</a>
 </p>
 
 <h3 style="text-align: justify;">
@@ -1473,7 +1473,7 @@ In case of errros, I decided to response with unified error message structure. 
 </p>
 
 <p style="padding-left: 30px;">
-  <a title="http://www.codepedia.org/ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/" href="http://www.codepedia.org/ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/" target="_blank">http://www.codepedia.org/ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/</a>
+  <a title="https://www.codepedia.org/ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/" href="https://www.codepedia.org/ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/" target="_blank">https://www.codepedia.org/ama/custom-reason-phrase-in-http-status-error-message-response-with-jax-rs-jersey/</a>
 </p>
 
 ## <span id="6_Add_CORS_support_on_the_server_side">6. Add CORS support on the server side</span>
@@ -1483,7 +1483,7 @@ In case of errros, I decided to response with unified error message structure. 
 </p>
 
 <p style="text-align: justify;">
-  Please see my post <a title="http://www.codepedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" href="http://www.codepedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" target="_blank">How to add CORS support on the server side in Java with Jersey</a> for more details on the matter.
+  Please see my post <a title="https://www.codepedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" href="https://www.codepedia.org/ama/how-to-add-cors-support-on-the-server-side-in-java-with-jersey/" target="_blank">How to add CORS support on the server side in Java with Jersey</a> for more details on the matter.
 </p>
 
 ## <span id="7_Testing">7. Testing</span>
@@ -1719,7 +1719,7 @@ Here are some great resources from people that understand better the matter:
 ## <span id="10Quick_way_to_check_if_the_REST_API_is_alive">10. Quick way to check if the REST API is alive</span>
 
 <p style="text-align: justify;">
-  There might be cases when you want to quickly verify if your REST API, that is deployed either on dev, test or prod environments, is reachable altogether. A common way to do this is by building a generic resource that delivers for example the version of the deployed API. You can trigger a request to this resource manually or, even better, have a Jenkings/Hudson job, which runs a checkup job after deployment. In the post <a title="http://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" href="http://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" target="_blank">Quick way to check if the REST API is alive – GET details from Manifest file</a>, I present how to implement such a service that reads default implementation and specification details from the application’s manifest file.
+  There might be cases when you want to quickly verify if your REST API, that is deployed either on dev, test or prod environments, is reachable altogether. A common way to do this is by building a generic resource that delivers for example the version of the deployed API. You can trigger a request to this resource manually or, even better, have a Jenkings/Hudson job, which runs a checkup job after deployment. In the post <a title="https://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" href="https://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" target="_blank">Quick way to check if the REST API is alive – GET details from Manifest file</a>, I present how to implement such a service that reads default implementation and specification details from the application’s manifest file.
 </p>
 
 <h2 style="text-align: justify;">
@@ -1729,7 +1729,7 @@ Here are some great resources from people that understand better the matter:
 ### <span id="111_Basic_Authentication">11.1. Basic Authentication</span>
 
 <p style="text-align: justify;">
-  Spring Security Framework&#8217;s powerful features were used to secure some REST resources (e.g. &#8220;/manifest&#8221;) with Basic Authentication. Read my following post <a title="http://www.codepedia.org/ama/how-to-secure-jersey-rest-services-with-spring-security-and-basic-authentication/" href="http://www.codepedia.org/ama/how-to-secure-jersey-rest-services-with-spring-security-and-basic-authentication/" target="_blank">How to secure Jersey REST services with Spring Security and Basic authentication</a> to find out how.
+  Spring Security Framework&#8217;s powerful features were used to secure some REST resources (e.g. &#8220;/manifest&#8221;) with Basic Authentication. Read my following post <a title="https://www.codepedia.org/ama/how-to-secure-jersey-rest-services-with-spring-security-and-basic-authentication/" href="https://www.codepedia.org/ama/how-to-secure-jersey-rest-services-with-spring-security-and-basic-authentication/" target="_blank">How to secure Jersey REST services with Spring Security and Basic authentication</a> to find out how.
 </p>
 
 <h2 style="text-align: justify;">
@@ -1768,11 +1768,11 @@ Here are some great resources from people that understand better the matter:
 
 ### <span id="Codingpedia_related_resources">Codingpedia related resources</span>
 
-  * <a title="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="http://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>
-  * <a title="http://www.codepedia.org/ama/spring-mybatis-integration-example/" href="http://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">http://www.codepedia.org/ama/spring-mybatis-integration-example/</a>
-  * <a title="http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" href="http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">http://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/</a>
-  * <a title="http://www.codepedia.org/ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/" href="http://www.codepedia.org/ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/" target="_blank">http://www.codepedia.org/ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/</a>
-  * <a title="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" href="http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">http://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/</a>
+  * <a title="https://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" href="https://www.codepedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate</a>
+  * <a title="https://www.codepedia.org/ama/spring-mybatis-integration-example/" href="https://www.codepedia.org/ama/spring-mybatis-integration-example/" target="_blank">https://www.codepedia.org/ama/spring-mybatis-integration-example/</a>
+  * <a title="https://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" href="https://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">https://www.codepedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/</a>
+  * <a title="https://www.codepedia.org/ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/" href="https://www.codepedia.org/ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/" target="_blank">https://www.codepedia.org/ama/error-when-executing-jettyrun-with-jetty-maven-plugin-version-9-java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0/</a>
+  * <a title="https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" href="https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
@@ -1782,7 +1782,7 @@ Here are some great resources from people that understand better the matter:
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -74,7 +74,7 @@ tags:
             For Windows place the configuration file where the MySQL server is installed &#8211; the <a href="https://github.com/podcastpedia/podcastpedia-sql/blob/master/_prepare_database_for_development/my.ini">my.ini</a> file from above is an example used on a Windows 7 machine
           </li>
           <li style="text-align: justify;">
-            For linux you need to use .cnf files. You can see in this blog post &#8211;<a href="http://www.codepedia.org/ama/optimizing-mysql-server-settings/">Optimizing MySQL server settings</a> &#8211; how the MySQL database is configured in production for <a href="https://github.com/CodepediaOrg/podcastpedia/">Podcastpedia.org</a>
+            For linux you need to use .cnf files. You can see in this blog post &#8211;<a href="https://www.codepedia.org/ama/optimizing-mysql-server-settings/">Optimizing MySQL server settings</a> &#8211; how the MySQL database is configured in production for <a href="https://github.com/CodepediaOrg/podcastpedia/">Podcastpedia.org</a>
           </li>
         </ul>
       </li>

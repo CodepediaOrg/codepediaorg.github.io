@@ -15,7 +15,7 @@ tags:
 ---
 ## The challenge &#8211; <code style="font-size: 0.8em;">java.io.IOException: Server returned HTTP response code: 403 for URL</code>
 
-Remember my post <a title="Reading/Parsing RSS and Atom feeds in Java with Rome" href="http://www.codepedia.org/ama/reading-parsing-rss-and-atom-feeds-with-rome/#more-585" target="_blank">Reading/Parsing RSS and Atom feeds in Java with Rome</a>, remember how I build `SyndFeed` objects out of a feed&#8217;s URL:
+Remember my post <a title="Reading/Parsing RSS and Atom feeds in Java with Rome" href="https://www.codepedia.org/ama/reading-parsing-rss-and-atom-feeds-with-rome/#more-585" target="_blank">Reading/Parsing RSS and Atom feeds in Java with Rome</a>, remember how I build `SyndFeed` objects out of a feed&#8217;s URL:
 
 <pre class="lang:java decode:true" title="Build SyndFeed from URL">public SyndFeed getSyndFeedForUrl(String url) throws MalformedURLException, IOException, IllegalArgumentException, FeedException {
 
@@ -209,7 +209,7 @@ Et voilà, this solved the problem. I hope you could learn something from this a
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

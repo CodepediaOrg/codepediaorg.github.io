@@ -15,7 +15,7 @@ tags:
   - tomcat
 ---
 <p style="text-align: justify;">
-  As mentioned in the post <a title="Install Eclipse Kepler on Windows 7 " href=" http://www.codepedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit" target="_blank">Install Eclipse Kepler 64 bit on Windows 7 64 bit</a>, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> uses <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Apache Tomcat 7</a> as application server. This post presents how the Tomcat JDBC Connection Pool is configured in development and production for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>. The used database is MySql.<br />
+  As mentioned in the post <a title="Install Eclipse Kepler on Windows 7 " href=" https://www.codepedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit" target="_blank">Install Eclipse Kepler 64 bit on Windows 7 64 bit</a>, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> uses <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Apache Tomcat 7</a> as application server. This post presents how the Tomcat JDBC Connection Pool is configured in development and production for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>. The used database is MySql.<br />
 
   <!--more-->
 
@@ -199,7 +199,7 @@ One of the exceptions I have got was:
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="CodepediaOrg, share code knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

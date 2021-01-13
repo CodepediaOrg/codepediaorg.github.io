@@ -14,7 +14,7 @@ information about yourself as in the following example:
 ```yaml
 ama:
   name:          Adrian Matei
-  site:           http://www.codepedia.org
+  site:           https://www.codepedia.org
   avatar:         images/authors/amacoder.png
   bio:            "Life force expressing itself as a coding capable human being"
   email:          adrianmatei@gmail.com
@@ -35,7 +35,7 @@ ama:
 Let's go through the elements now one by one:
 * The first element (here **ama**) is very important, as it is used in your posts to identify you, the author
 * **name** - your name
-* **site** - your website, where visitors can find out more about you; it is the the "About Your Name" link 
+* **site** - your website, where visitors can find out more about you; it is the the "About Your Name" link
 * **avatar** - a picture of you, please upload one in the __images/authors/folder__
 * **bio** - short information about you
 * **email** - your email address
@@ -73,7 +73,7 @@ categories: [intro]
 # properties only relevant if this is a republished post
 republished: true
 original_title: How to insert and highlight code in jekyll blog post on Codepedia.org
-original_url: http://www.codepedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org
+original_url: https://www.codepedia.org/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org
 ---
 ```
 
@@ -83,10 +83,10 @@ Let's have again a look at the different elements now
 * **description** - short description of your post, shoul be no more than 140 characters
 * **author** - the author you have previously defined in the [_data/auhors.yml](_data/auhors.yml)
 * **permalink** - this is added to __http://www.codepedia.org/__ and will form the post's URL; the permalink should have the format [__author/seo-friendly-title__]; **author** is the name specified before;
-**seo-frienly-title** could be your title with hyphens instead of spaces; to find out more about SEO friendly url follow [this link](http://www.codepedia.org/ama/seo-friendly-url-construction-with-spring-mvc/#What_is_a_friendly_URL)
+**seo-frienly-title** could be your title with hyphens instead of spaces; to find out more about SEO friendly url follow [this link](https://www.codepedia.org/ama/seo-friendly-url-construction-with-spring-mvc/#What_is_a_friendly_URL)
 * **modified** - the date when the post was last modified in [yyyy-MM-dd] format
-* **tags** - relevant tags/keywords for the post - no more than 5; see the [tags page](http://www.codepedia.org/tags/) for already used tags
-* **categories** - relevant categories - no more than 2;  see the [categoreis page](http://www.codepedia.org/categories/) for already used categories
+* **tags** - relevant tags/keywords for the post - no more than 5; see the [tags page](https://www.codepedia.org/tags/) for already used tags
+* **categories** - relevant categories - no more than 2;  see the [categoreis page](https://www.codepedia.org/categories/) for already used categories
 * **republished** - these three properties are relevant only when the post is republished from another website; it generates the __Republished from paragraph...__ at the end of the post
 * **original_title** - title of the original post
 * **original_url** - URL of the original post
@@ -100,10 +100,10 @@ Things to consider when writing a post:
 * you most likely will include **code** - see [How to insert and highlight code in Jekyll blog post on Codepedia.org]({{ site.url }}/ama/how-to-insert-and-highlight-code-in-jekyll-blog-post-on-codingpedia-org) for the different possibilities to insert code in your post
 * give credit to others and put reference links at the end of the article
 * be polite and open when replying to comments
-* make sure you comply with our [Publishing Policies](http://www.codepedia.org/contributors/publishing-policy/)
+* make sure you comply with our [Publishing Policies](https://www.codepedia.org/contributors/publishing-policy/)
 
 We are looking forward to your contribution to the coding community and please leave a comment if something is unclear to you - thank you.
 
 <p style="text-align: justify; padding-left: 30px;">
-  <em><strong>Note:</strong> No time to contribute original posts to Codepedia.org yet, but you strongly believe you have coding-related articles worth sharing, then you can join our <a title="Coding Friend Program" href="http://www.codepedia.org/friends" target="_blank">Coding Friend Program</a> and have your best ones republished. </em>
+  <em><strong>Note:</strong> No time to contribute original posts to Codepedia.org yet, but you strongly believe you have coding-related articles worth sharing, then you can join our <a title="Coding Friend Program" href="https://www.codepedia.org/friends" target="_blank">Coding Friend Program</a> and have your best ones republished. </em>
 </p>

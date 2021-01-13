@@ -12,11 +12,11 @@ tags:
     - linux
 ---
 
-As I have told you [before](http://www.codepedia.org/ama/a-developers-guide-to-using-aliases/), I am really hooked on bash aliases[^2].
+As I have told you [before](https://www.codepedia.org/ama/a-developers-guide-to-using-aliases/), I am really hooked on bash aliases[^2].
  This blog entry emphasizes that point and presents how to make a MySql database backup via `mysqldump` with only three words, even with three letters, if you will.
 
 [^1]: <http://tldp.org/LDP/abs/html/aliases.html>
-[^2]: <http://www.codepedia.org/ama/a-developers-guide-to-using-aliases/>
+[^2]: <https://www.codepedia.org/ama/a-developers-guide-to-using-aliases/>
 
 So, without further ado, let's see the alias:
 

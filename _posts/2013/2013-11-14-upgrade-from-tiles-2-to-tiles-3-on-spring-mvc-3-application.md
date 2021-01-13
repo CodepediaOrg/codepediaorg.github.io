@@ -107,4 +107,4 @@ That&#8217;s it.
 
 P.S.
 
-For a complete example of Tiles integration with Spring MVC see my post &#8211; <a title="Spring 3 and Tiles 2 integration" href="http://www.codepedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration</a>
+For a complete example of Tiles integration with Spring MVC see my post &#8211; <a title="Spring 3 and Tiles 2 integration" href="https://www.codepedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration</a>

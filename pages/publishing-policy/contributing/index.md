@@ -9,7 +9,7 @@ permalink: publishing-policy/contributing/
 Dear fellow coder,
 
 <p style="text-align: justify;">
-  Here, at <a style="color: #bc360a;" title="Codepedia.org - about us" href="http://www.codepedia.org/about/" target="_blank">Codepedia.org</a>, we are firm believers that technological advancement and efficiency, driven among other things by the humans’ ability to program machines, has a positive impact on human evolution and well-being. We want to contribute to the expansion of this ability by offering a platform for sharing coding knowledge. We know you are talented, so we invite you to join our efforts and become a guest/regular writer for <a title="Codepedia.org, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org </a>(we&#8217;ll call you a Coding Contributor).
+  Here, at <a style="color: #bc360a;" title="Codepedia.org - about us" href="https://www.codepedia.org/about/" target="_blank">Codepedia.org</a>, we are firm believers that technological advancement and efficiency, driven among other things by the humans’ ability to program machines, has a positive impact on human evolution and well-being. We want to contribute to the expansion of this ability by offering a platform for sharing coding knowledge. We know you are talented, so we invite you to join our efforts and become a guest/regular writer for <a title="Codepedia.org, sharing coding knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org </a>(we&#8217;ll call you a Coding Contributor).
 </p>
 
 <div id="toc_container" class="no_bullets">
@@ -48,7 +48,7 @@ Dear fellow coder,
 </p>
 
 <p style="text-align: justify; padding-left: 30px;">
-  <em><strong>Note:</strong> No time to contribute original posts to Codepedia.org yet, but you still have coding-related articles worth sharing, then you can join our <a title="Coding Friend Program" href="http://www.codepedia.org/friends" target="_blank">Coding Friend Program</a> and have your best ones republished. </em>
+  <em><strong>Note:</strong> No time to contribute original posts to Codepedia.org yet, but you still have coding-related articles worth sharing, then you can join our <a title="Coding Friend Program" href="https://www.codepedia.org/friends" target="_blank">Coding Friend Program</a> and have your best ones republished. </em>
 </p>
 
 <h3 style="text-align: justify;">
@@ -59,8 +59,8 @@ Well, apart from the great joy you&#8217;ll definitely experience, when you sh
 
   * <span style="color: #3c3c3c;">drive traffic, ranking back to your own blog or website, via author link</span>
   * get more quality connections on Twitter, GitHub or Google Plus, via the author link
-  * all your posts will include the <strong>nickname/author name</strong> you choose to represent you on the website (e.g. <a href="http://www.codepedia.org/ama/how-to-handle-session-timeout-exceptions-in-spring-mvc/">http://www.codepedia.org/<strong>ama</strong>/how-to-handle-session-timeout-exceptions-in-spring-mvc/</a>)
-  * your posts will be promoted on our social media channels and will be part of the <a title="Codepedia.org - RSS feed" href="http://www.codepedia.org/feed.xml" target="_blank">RSS feed</a>
+  * all your posts will include the <strong>nickname/author name</strong> you choose to represent you on the website (e.g. <a href="https://www.codepedia.org/ama/how-to-handle-session-timeout-exceptions-in-spring-mvc/">https://www.codepedia.org/<strong>ama</strong>/how-to-handle-session-timeout-exceptions-in-spring-mvc/</a>)
+  * your posts will be promoted on our social media channels and will be part of the <a title="Codepedia.org - RSS feed" href="https://www.codepedia.org/feed.xml" target="_blank">RSS feed</a>
   * you can bring your own sponsors and adds for the articles you contribute
   * build a reputation and give something back to the community
   * you can enhance the quality of your posts by having at least one pair of eyes reviewing them before published
@@ -78,7 +78,7 @@ Well, apart from the great joy you&#8217;ll definitely experience, when you sh
 Just a few hints to consider when writing for Codepedia.org
 
 <li style="text-align: justify;">
-  the content has to be original, meaning it will have to be initially posted on <a title="Codepedia.org, sharing coding knowledge" href="http://www.codepedia.org" target="_blank">Codepedia.org</a> and every republishing of the article elsewhere will have to reference it
+  the content has to be original, meaning it will have to be initially posted on <a title="Codepedia.org, sharing coding knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a> and every republishing of the article elsewhere will have to reference it
 </li>
 <li style="text-align: justify;">
   content is the most important thing in your post. So make it original, useful, relevant, simple, easy-to-read and <a title="Make content scannable" href="http://www.problogger.net/archives/2005/08/19/writing-blog-content-make-it-scannable/http://" target="_blank">scannable</a>.
@@ -95,7 +95,7 @@ Just a few hints to consider when writing for Codepedia.org
 
 ### <span id="Publishing_Policy">Publishing Policy</span>
 
-By choosing to collaborate with us you agree to our <a title="Publishing policy" href="http://www.codepedia.org/contributors/publishing-policy/" target="_blank">publishing policies</a>.
+By choosing to collaborate with us you agree to our <a title="Publishing policy" href="https://www.codepedia.org/contributors/publishing-policy/" target="_blank">publishing policies</a>.
 
 <h3 style="text-align: justify;">
   <span id="What8217s_next">What&#8217;s next?</span>

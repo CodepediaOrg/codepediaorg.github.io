@@ -16,7 +16,7 @@ tags:
   - singleton
 ---
 <p style="text-align: justify;">
-  In this post I will present how to build a simple reference data cache in Java EE, using singleton EJBs and <a title="http://ehcache.org/" href="http://ehcache.org/" target="_blank">Ehcache</a>. The cache will reset itself after a given period of time, and can be cleared &#8220;manually&#8221; by calling a REST endpoint or a MBean method. This post actually builds on a previous post <a title="https://www.codepedia.org/ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-and-mbeans/" href="https://www.codepedia.org/ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-and-mbeans/" target="_blank">How to build and clear a reference data cache with singleton EJBs and MBeans</a>; the only difference is that instead of the storing of the data in a <code>ConcurrentHashMap&lt;String, Object&gt;</code> I will be using an Ehcache cache, and the cache is able to renew itself by Ehcache means.<!--more-->
+  In this post I will present how to build a simple reference data cache in Java EE, using singleton EJBs and <a title="https://ehcache.org/" href="https://ehcache.org/" target="_blank">Ehcache</a>. The cache will reset itself after a given period of time, and can be cleared &#8220;manually&#8221; by calling a REST endpoint or a MBean method. This post actually builds on a previous post <a title="https://www.codepedia.org/ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-and-mbeans/" href="https://www.codepedia.org/ama/how-to-build-and-clear-a-reference-data-cache-with-singleton-ejbs-and-mbeans/" target="_blank">How to build and clear a reference data cache with singleton EJBs and MBeans</a>; the only difference is that instead of the storing of the data in a <code>ConcurrentHashMap&lt;String, Object&gt;</code> I will be using an Ehcache cache, and the cache is able to renew itself by Ehcache means.<!--more-->
 </p>
 
 ## <span id="1_Cache">1. Cache</span>
@@ -146,7 +146,7 @@ cacheConfiguration.setTimeToLiveSeconds(CACHE_MINUTES_TO_LIVE * 60);</pre>
 cacheManager.addCache(refDataEHCache);</pre>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong>  You can also create the caches in a declarative way: when the CacheManager is created, it creates caches found in the configuration. You can create CacheManager by specifying the path of a configuration file, from a configuration in the classpath, from a configuration in an InputStream or by havind the default ehcache.xml file in your classpath. Take a look at <a title="http://ehcache.org/documentation/2.8/code-samples" href="http://ehcache.org/documentation/2.8/code-samples" target="_blank">Ehcache code samples</a> for more information.
+  <strong>Note:</strong>  You can also create the caches in a declarative way: when the CacheManager is created, it creates caches found in the configuration. You can create CacheManager by specifying the path of a configuration file, from a configuration in the classpath, from a configuration in an InputStream or by havind the default ehcache.xml file in your classpath. Take a look at <a title="https://ehcache.org/documentation/2.8/code-samples" href="https://ehcache.org/documentation/2.8/code-samples" target="_blank">Ehcache code samples</a> for more information.
 </p>
 
 #### 1.2.2. Get data from cache
@@ -201,7 +201,7 @@ public void evictAll() {
 ### <span id="21_MBean">2.1. MBean</span>
 
 <p style="text-align: justify;">
-  If you are new to Java Management Extensions (JMX) , <em>which is a Java technology that supplies tools for managing and monitoring applications, system objects, devices (e.g. printers) and service oriented networks. Those resources are represented by objects called MBeans (for Managed Bean)</em>, I highly recommend you start with this tutorial <a style="color: #bc360a;" title="http://docs.oracle.com/javase/tutorial/jmx/" href="http://docs.oracle.com/javase/tutorial/jmx/" target="_blank">Trail: Java Management Extensions (JMX)</a>
+  If you are new to Java Management Extensions (JMX) , <em>which is a Java technology that supplies tools for managing and monitoring applications, system objects, devices (e.g. printers) and service oriented networks. Those resources are represented by objects called MBeans (for Managed Bean)</em>, I highly recommend you start with this tutorial <a style="color: #bc360a;" title="https://docs.oracle.com/javase/tutorial/jmx/" href="https://docs.oracle.com/javase/tutorial/jmx/" target="_blank">Trail: Java Management Extensions (JMX)</a>
 </p>
 
 #### <span id="211_Interface">2.1.1. Interface</span>
@@ -312,11 +312,11 @@ public class ReferenceDataResource {
 
 ### <span id="Web">Web</span>
 
-  1. <a style="color: #bc360a;" title="http://www.adam-bien.com/roller/abien/entry/singleton_the_perfect_cache_facade" href="http://www.adam-bien.com/roller/abien/entry/singleton_the_perfect_cache_facade" target="_blank">@Singleton – the perfect cache facade</a> by Adam Bien
-  2. <a style="color: #bc360a;" title="http://www.adam-bien.com/roller/abien/entry/singleton_the_simplest_possible_jmx" href="http://www.adam-bien.com/roller/abien/entry/singleton_the_simplest_possible_jmx" target="_blank">@Singleton – the simplest possible JMX MXBean </a>by Adam Bien
-  3. <a style="color: #bc360a;" title="http://tomee.apache.org/singleton-beans.html" href="http://tomee.apache.org/singleton-beans.html" target="_blank">Tomee – Singleton Beans</a>
-  4. <a title="http://ehcache.org/" href="http://ehcache.org/" target="_blank">ehcache.org</a>
-      1. <a title="http://ehcache.org/documentation/2.8/code-samples" href="http://ehcache.org/documentation/2.8/code-samples" target="_blank">Code samples</a>
-  5. <a style="color: #bc360a;" title="http://docs.oracle.com/javase/tutorial/jmx/" href="http://docs.oracle.com/javase/tutorial/jmx/" target="_blank">Trail: Java Management Extensions (JMX)</a>
-  6. <a style="color: #bc360a;" title="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" target="_blank">Spring Cache Abstraction</a>
+  1. <a style="color: #bc360a;" title="https://www.adam-bien.com/roller/abien/entry/singleton_the_perfect_cache_facade" href="https://www.adam-bien.com/roller/abien/entry/singleton_the_perfect_cache_facade" target="_blank">@Singleton – the perfect cache facade</a> by Adam Bien
+  2. <a style="color: #bc360a;" title="https://www.adam-bien.com/roller/abien/entry/singleton_the_simplest_possible_jmx" href="https://www.adam-bien.com/roller/abien/entry/singleton_the_simplest_possible_jmx" target="_blank">@Singleton – the simplest possible JMX MXBean </a>by Adam Bien
+  3. <a style="color: #bc360a;" title="https://tomee.apache.org/singleton-beans.html" href="https://tomee.apache.org/singleton-beans.html" target="_blank">Tomee – Singleton Beans</a>
+  4. <a title="https://ehcache.org/" href="https://ehcache.org/" target="_blank">ehcache.org</a>
+      1. <a title="https://ehcache.org/documentation/2.8/code-samples" href="https://ehcache.org/documentation/2.8/code-samples" target="_blank">Code samples</a>
+  5. <a style="color: #bc360a;" title="https://docs.oracle.com/javase/tutorial/jmx/" href="https://docs.oracle.com/javase/tutorial/jmx/" target="_blank">Trail: Java Management Extensions (JMX)</a>
+  6. <a style="color: #bc360a;" title="https://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" href="https://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" target="_blank">Spring Cache Abstraction</a>
 

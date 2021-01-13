@@ -20,8 +20,8 @@ tags:
 
 <span style="color: #000000;">First let&#8217;s configure all the necessary dependencies in <strong>pom.xml</strong></span><!--more-->
 
-<pre class="lang:xhtml decode:true" title="pom.xml ">&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
+<pre class="lang:xhtml decode:true" title="pom.xml ">&lt;project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
 	&lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
 	&lt;groupId&gt;com.sivalabs&lt;/groupId&gt;
 	&lt;artifactId&gt;spring-javaconfig&lt;/artifactId&gt;
@@ -760,10 +760,10 @@ Update `SpringWebAppInitializer` which we created eariler to add `SecurityConfig
 As per our SpringSecurity custom Form Login configuration, we will use the following login form in login.jsp.
 
 <pre class="lang:xhtml decode:true " title="login.jsp">&lt;!DOCTYPE html&gt;
-&lt;%@taglib uri="http://www.springframework.org/tags"  prefix="spring"%&gt;
-&lt;%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %&gt;
-&lt;%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %&gt;
-&lt;%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %&gt;
+&lt;%@taglib uri="https://www.springframework.org/tags"  prefix="spring"%&gt;
+&lt;%@taglib uri="https://www.springframework.org/tags/form" prefix="form" %&gt;
+&lt;%@ taglib prefix="sec" uri="https://www.springframework.org/security/tags" %&gt;
+&lt;%@ taglib uri="https://java.sun.com/jstl/core_rt" prefix="c" %&gt;
 &lt;c:url var="rootURL" value="/"/&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -834,7 +834,7 @@ You can find the source code at github <a title="https://github.com/sivaprasadr
 </p>
 
 <p class="note_normal">
-  Published at Codepedia.org with permission of Siva Reddy<span style="font-style: italic; color: #3a4145;"> &#8211; source <a title="http://www.sivalabs.in/2014/03/springmvc4-spring-data-jpa.html" href="http://www.sivalabs.in/2014/03/springmvc4-spring-data-jpa.html" target="_blank">SpringMVC4 + Spring Data JPA + SpringSecurity configuration using JavaConfig </a></span><span style="font-style: italic; color: #3a4145;"> from </span><a style="font-style: italic; color: #bc360a;" title="http://www.sivalabs.in/" href="http://www.sivalabs.in/" target="_blank">http://www.sivalabs.in/</a>
+  Published at Codepedia.org with permission of Siva Reddy<span style="font-style: italic; color: #3a4145;"> &#8211; source <a title="https://www.sivalabs.in/2014/03/springmvc4-spring-data-jpa.html" href="https://www.sivalabs.in/2014/03/springmvc4-spring-data-jpa.html" target="_blank">SpringMVC4 + Spring Data JPA + SpringSecurity configuration using JavaConfig </a></span><span style="font-style: italic; color: #3a4145;"> from </span><a style="font-style: italic; color: #bc360a;" title="https://www.sivalabs.in/" href="https://www.sivalabs.in/" target="_blank">https://www.sivalabs.in/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -850,7 +850,7 @@ You can find the source code at github <a title="https://github.com/sivaprasadr
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://www.sivalabs.in/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/+SivaPrasadReddy" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/sivalabs" target="_blank"> </a> <a class="icon-github" href="https://github.com/sivaprasadreddy/" target="_blank"> </a>
+      <a class="icon-earth" href="https://www.sivalabs.in/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/+SivaPrasadReddy" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/sivalabs" target="_blank"> </a> <a class="icon-github" href="https://github.com/sivaprasadreddy/" target="_blank"> </a>
     </div>
 
     <div class="clear">

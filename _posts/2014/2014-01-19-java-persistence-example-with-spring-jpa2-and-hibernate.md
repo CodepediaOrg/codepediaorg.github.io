@@ -175,19 +175,19 @@ The Spring application context configuration is located at `classpath:spring/app
 
 <pre>
   <code class="xml">
-    &lt;beans xmlns="http://www.springframework.org/schema/beans"
-    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    	xmlns:context="http://www.springframework.org/schema/context"
-    	xmlns:tx="http://www.springframework.org/schema/tx"
+    &lt;beans xmlns="https://www.springframework.org/schema/beans"
+    	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    	xmlns:context="https://www.springframework.org/schema/context"
+    	xmlns:tx="https://www.springframework.org/schema/tx"
     	xsi:schemaLocation="
-    		http://www.springframework.org/schema/beans
-    		http://www.springframework.org/schema/beans/spring-beans.xsd
+    		https://www.springframework.org/schema/beans
+    		https://www.springframework.org/schema/beans/spring-beans.xsd
 
-    		http://www.springframework.org/schema/tx
-    		http://www.springframework.org/schema/tx/spring-tx.xsd
+    		https://www.springframework.org/schema/tx
+    		https://www.springframework.org/schema/tx/spring-tx.xsd
 
-    		http://www.springframework.org/schema/context
-    		http://www.springframework.org/schema/context/spring-context.xsd"&gt;
+    		https://www.springframework.org/schema/context
+    		https://www.springframework.org/schema/context/spring-context.xsd"&gt;
 
     	&lt;context:component-scan base-package="org.codingpedia.demo.rest.*" /&gt;
 
@@ -227,7 +227,7 @@ Relevant JPA beans:
   <code>transactionManager</code> &#8211; note that the transaction manager used is <code>JpaTransactionManager</code>, instead of the <code>DataSourceTransactionManager</code>, which was the case when building the persistence layer with MyBatis.
 </li>
 <li style="text-align: justify;">
-  <code>entityManagerFactory</code> &#8211; the <code>LocalContainerEntityManagerFactoryBean</code> gives full control over <code>EntityManagerFactory</code> configuration and is appropriate for environments where fine-grained customization is required. It is a <a title="interface in org.springframework.beans.factory" href="http://docs.spring.io/spring/docs/3.1.x/javadoc-api/org/springframework/beans/factory/FactoryBean.html"><code>FactoryBean</code></a> that creates a JPA <a title="class or interface in javax.persistence" href="http://download.oracle.com/javaee/6/api/javax/persistence/EntityManagerFactory.html?is-external=true"><code>EntityManagerFactory</code></a> according to JPA&#8217;s standard <i>container</i> bootstrap contract. This is the most powerful way to set up a shared JPA EntityManagerFactory in a Spring application context; the EntityManagerFactory can then be passed to JPA-based DAOs via dependency injection. <ul>
+  <code>entityManagerFactory</code> &#8211; the <code>LocalContainerEntityManagerFactoryBean</code> gives full control over <code>EntityManagerFactory</code> configuration and is appropriate for environments where fine-grained customization is required. It is a <a title="interface in org.springframework.beans.factory" href="https://docs.spring.io/spring/docs/3.1.x/javadoc-api/org/springframework/beans/factory/FactoryBean.html"><code>FactoryBean</code></a> that creates a JPA <a title="class or interface in javax.persistence" href="https://download.oracle.com/javaee/6/api/javax/persistence/EntityManagerFactory.html?is-external=true"><code>EntityManagerFactory</code></a> according to JPA&#8217;s standard <i>container</i> bootstrap contract. This is the most powerful way to set up a shared JPA EntityManagerFactory in a Spring application context; the EntityManagerFactory can then be passed to JPA-based DAOs via dependency injection. <ul>
     <li>
       <code>persistenceXmlLocation</code> &#8211; Set the location of the <code>persistence.xml</code> file we want to use. This is a Spring resource location. Default is <code>classpath:META-INF/persistence.xml</code>.
     </li>
@@ -237,7 +237,7 @@ Relevant JPA beans:
   </ul>
 
   <p class="note_normal">
-    Note that switching to a JNDI lookup or to a <a title="class in org.springframework.orm.jpa" href="http://docs.spring.io/spring/docs/3.1.x/javadoc-api/org/springframework/orm/jpa/LocalEntityManagerFactoryBean.html"><code>LocalEntityManagerFactoryBean</code></a> definition, which are the other two options to setup JPA in a Spring environment, is just a matter of configuration!
+    Note that switching to a JNDI lookup or to a <a title="class in org.springframework.orm.jpa" href="https://docs.spring.io/spring/docs/3.1.x/javadoc-api/org/springframework/orm/jpa/LocalEntityManagerFactoryBean.html"><code>LocalEntityManagerFactoryBean</code></a> definition, which are the other two options to setup JPA in a Spring environment, is just a matter of configuration!
   </p>
 </li>
 
@@ -338,7 +338,7 @@ For this interface I provide a `PodcastDaoJPA2Impl` JPA-specific implementation 
 </pre>
 
 <p style="text-align: justify;">
-  To insert an entity in the database, you can use either <code>persist</code> or <code>merge</code>, whereas if <code>persist</code> is sufficient you should use it. There&#8217;s a nice article, <a title="http://spitballer.blogspot.de/2010/04/jpa-persisting-vs-merging-entites.html" href="http://spitballer.blogspot.de/2010/04/jpa-persisting-vs-merging-entites.html" target="_blank">JPA: persisting vs. merging entites</a>, that explains the difference between the two. In my case <code>persist</code> was enough.
+  To insert an entity in the database, you can use either <code>persist</code> or <code>merge</code>, whereas if <code>persist</code> is sufficient you should use it. There&#8217;s a nice article, <a title="https://spitballer.blogspot.de/2010/04/jpa-persisting-vs-merging-entites.html" href="https://spitballer.blogspot.de/2010/04/jpa-persisting-vs-merging-entites.html" target="_blank">JPA: persisting vs. merging entites</a>, that explains the difference between the two. In my case <code>persist</code> was enough.
 </p>
 
 <p style="text-align: justify;">
@@ -364,7 +364,7 @@ For this interface I provide a `PodcastDaoJPA2Impl` JPA-specific implementation 
 </pre>
 
 <p style="text-align: justify;">
-  Please see these articles: <a title="http://www.kumaranuj.com/2013/06/jpa-2-entitymanagers-transactions-and.html" href="http://www.kumaranuj.com/2013/06/jpa-2-entitymanagers-transactions-and.html" target="_blank">JPA 2 | EntityManagers, Transactions and everything around it </a>and <a title="http://en.wikibooks.org/wiki/Java_Persistence/Transactions" href="http://en.wikibooks.org/wiki/Java_Persistence/Transactions" target="_blank">Java Persistence/Transactions</a> for a better understanding of the JPA mechanismus for transactions.
+  Please see these articles: <a title="https://www.kumaranuj.com/2013/06/jpa-2-entitymanagers-transactions-and.html" href="https://www.kumaranuj.com/2013/06/jpa-2-entitymanagers-transactions-and.html" target="_blank">JPA 2 | EntityManagers, Transactions and everything around it </a>and <a title="https://en.wikibooks.org/wiki/Java_Persistence/Transactions" href="https://en.wikibooks.org/wiki/Java_Persistence/Transactions" target="_blank">Java Persistence/Transactions</a> for a better understanding of the JPA mechanismus for transactions.
 </p>
 
 <h4 style="text-align: justify;">
@@ -459,26 +459,26 @@ Well, that&#8217;s it. You&#8217;ve seen how to configure Spring with JPA/Hibern
 
 ### <span id="42_JPA_resources">4.2. JPA resources</span>
 
-  * <a title="http://en.wikibooks.org/wiki/Java_Persistence/" href="http://en.wikibooks.org/wiki/Java_Persistence" target="_blank">Java Persistence &#8211; open book </a>
-  * <a title="http://docs.spring.io/spring/docs/3.2.6.RELEASE/spring-framework-reference/htmlsingle/#orm-jpa" href="http://docs.spring.io/spring/docs/3.2.6.RELEASE/spring-framework-reference/htmlsingle/#orm-jpa" target="_blank">Spring ORM-JPA </a>
-  * <a title="http://www.infoq.com/news/2007/09/jpa-dao" href="http://www.infoq.com/news/2007/09/jpa-dao" target="_blank">Has JPA Killed the DAO?</a>
-  * <a title="http://en.wikipedia.org/wiki/Java_Persistence_API" href="http://en.wikipedia.org/wiki/Java_Persistence_API" target="_blank">Java Persistance API &#8211; Wikipedia.org</a>
-  * <a title="http://en.wikipedia.org/wiki/Data_access_object" href="http://en.wikipedia.org/wiki/Data_access_object" target="_blank">Data Access Object (DAO)</a>
-  * <a title="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">CRUD &#8211; Wikipedia</a>
-  * <a title="http://docs.jboss.org/hibernate/entitymanager/3.5/reference/en/html/architecture.html" href="http://docs.jboss.org/hibernate/entitymanager/3.5/reference/en/html/architecture.html" target="_blank">http://docs.jboss.org/hibernate/entitymanager/3.5/reference/en/html/architecture.html</a>
-  * <a title="http://spitballer.blogspot.de/2010/04/jpa-persisting-vs-merging-entites.html" href="http://spitballer.blogspot.de/2010/04/jpa-persisting-vs-merging-entites.html" target="_blank">JPA: persisting vs. merging entites </a>
-  * <a title="http://www.kumaranuj.com/2013/06/jpa-2-entitymanagers-transactions-and.html" href="http://www.kumaranuj.com/2013/06/jpa-2-entitymanagers-transactions-and.html" target="_blank">JPA 2 | EntityManagers, Transactions and everything around it </a>
-  * <a title="http://en.wikibooks.org/wiki/Java_Persistence/Transactions" href="http://en.wikibooks.org/wiki/Java_Persistence/Transactions" target="_blank">Java Persistence/Transactions</a>
-  * <a title="http://java.dzone.com/articles/transaction-configuration-jpa" href="http://java.dzone.com/articles/transaction-configuration-jpa" target="_blank">Transaction configuration with JPA and Spring 3.1</a>
-  * <a title="http://www.baeldung.com/2011/12/13/the-persistence-layer-with-spring-3-1-and-jpa/" href="http://www.baeldung.com/2011/12/13/the-persistence-layer-with-spring-3-1-and-jpa/" target="_blank">Spring 3 and JPA with Hibernate</a>
+  * <a title="https://en.wikibooks.org/wiki/Java_Persistence/" href="https://en.wikibooks.org/wiki/Java_Persistence" target="_blank">Java Persistence &#8211; open book </a>
+  * <a title="https://docs.spring.io/spring/docs/3.2.6.RELEASE/spring-framework-reference/htmlsingle/#orm-jpa" href="https://docs.spring.io/spring/docs/3.2.6.RELEASE/spring-framework-reference/htmlsingle/#orm-jpa" target="_blank">Spring ORM-JPA </a>
+  * <a title="https://www.infoq.com/news/2007/09/jpa-dao" href="https://www.infoq.com/news/2007/09/jpa-dao" target="_blank">Has JPA Killed the DAO?</a>
+  * <a title="https://en.wikipedia.org/wiki/Java_Persistence_API" href="https://en.wikipedia.org/wiki/Java_Persistence_API" target="_blank">Java Persistance API &#8211; Wikipedia.org</a>
+  * <a title="https://en.wikipedia.org/wiki/Data_access_object" href="https://en.wikipedia.org/wiki/Data_access_object" target="_blank">Data Access Object (DAO)</a>
+  * <a title="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">CRUD &#8211; Wikipedia</a>
+  * <a title="https://docs.jboss.org/hibernate/entitymanager/3.5/reference/en/html/architecture.html" href="https://docs.jboss.org/hibernate/entitymanager/3.5/reference/en/html/architecture.html" target="_blank">https://docs.jboss.org/hibernate/entitymanager/3.5/reference/en/html/architecture.html</a>
+  * <a title="https://spitballer.blogspot.de/2010/04/jpa-persisting-vs-merging-entites.html" href="https://spitballer.blogspot.de/2010/04/jpa-persisting-vs-merging-entites.html" target="_blank">JPA: persisting vs. merging entites </a>
+  * <a title="https://www.kumaranuj.com/2013/06/jpa-2-entitymanagers-transactions-and.html" href="https://www.kumaranuj.com/2013/06/jpa-2-entitymanagers-transactions-and.html" target="_blank">JPA 2 | EntityManagers, Transactions and everything around it </a>
+  * <a title="https://en.wikibooks.org/wiki/Java_Persistence/Transactions" href="https://en.wikibooks.org/wiki/Java_Persistence/Transactions" target="_blank">Java Persistence/Transactions</a>
+  * <a title="https://java.dzone.com/articles/transaction-configuration-jpa" href="https://java.dzone.com/articles/transaction-configuration-jpa" target="_blank">Transaction configuration with JPA and Spring 3.1</a>
+  * <a title="https://www.baeldung.com/2011/12/13/the-persistence-layer-with-spring-3-1-and-jpa/" href="https://www.baeldung.com/2011/12/13/the-persistence-layer-with-spring-3-1-and-jpa/" target="_blank">Spring 3 and JPA with Hibernate</a>
 
 ### <span id="43_Rest_resources"><span id="Rest_resources">4.3. Rest resources</span></span>
 
-  * <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer" target="_blank">http://en.wikipedia.org/wiki/Representational_State_Transfer</a>
-  * <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">http://en.wikipedia.org/wiki/Create,_read,_update_and_delete</a>
+  * <a href="https://en.wikipedia.org/wiki/Representational_State_Transfer" target="_blank">https://en.wikipedia.org/wiki/Representational_State_Transfer</a>
+  * <a title="Wikipedia - CRUD" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">https://en.wikipedia.org/wiki/Create,_read,_update_and_delete</a>
   * <a title="Java API for RESTful Services (JAX-RS)" href="https://jax-rs-spec.java.net/" target="_blank">Java API for RESTful Services (JAX-RS)</a>
   * <a title="Jersey REST" href="https://jersey.java.net/" target="_blank">Jersey – RESTful Web Services in Java </a>
-  * <a title="Status Code Definitions" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank">HTTP Status Code Definitions</a>
+  * <a title="Status Code Definitions" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank">HTTP Status Code Definitions</a>
 
 ### <span id="44_Codingpedia_related_resources"><span id="Codingpedia_resources">4.4. Codingpedia related resources</span></span>
 

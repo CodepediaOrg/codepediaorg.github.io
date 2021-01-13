@@ -243,6 +243,6 @@ public class LambdasAndStreams {
 
 ## Resources
 
-  1. <a title="http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html" href="http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html" target="_blank">Java 8 Central</a>
-  2. <a title="http://www.oracle.com/technetwork/articles/java/architect-lambdas-part1-2080972.html" href="http://www.oracle.com/technetwork/articles/java/architect-lambdas-part1-2080972.html" target="_blank">Java 8: Lambdas, Part 1</a>
-  3. <a title="http://www.oracle.com/technetwork/articles/java/architect-lambdas-part2-2081439.html" href="http://www.oracle.com/technetwork/articles/java/architect-lambdas-part2-2081439.html" target="_blank">Java 8: Lambdas, Part 2</a>
+  1. <a title="https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html" href="https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html" target="_blank">Java 8 Central</a>
+  2. <a title="https://www.oracle.com/technetwork/articles/java/architect-lambdas-part1-2080972.html" href="https://www.oracle.com/technetwork/articles/java/architect-lambdas-part1-2080972.html" target="_blank">Java 8: Lambdas, Part 1</a>
+  3. <a title="https://www.oracle.com/technetwork/articles/java/architect-lambdas-part2-2081439.html" href="https://www.oracle.com/technetwork/articles/java/architect-lambdas-part2-2081439.html" target="_blank">Java 8: Lambdas, Part 2</a>

@@ -12,7 +12,7 @@ tags:
   - tips
 ---
 <p style="text-align: justify;">
-  This blog post is dedicated to my colleague <a style="color: #2a4639;" href="http://seminda.wordpress.com/">Seminda</a> who has been experimenting with how to create simple and powerful web applications. Thank you for showing me your ideas and discussing improvements with me, Seminda.
+  This blog post is dedicated to my colleague <a style="color: #2a4639;" href="https://seminda.wordpress.com/">Seminda</a> who has been experimenting with how to create simple and powerful web applications. Thank you for showing me your ideas and discussing improvements with me, Seminda.
 </p>
 
 <p style="text-align: justify;">
@@ -252,7 +252,7 @@ public class PersonController : ApiController
 </p>
 
 <p class="note_normal" style="color: #333333;">
-  Published at Codepedia.org with the permission of Johannes Brodwall – source <a title="http://johannesbrodwall.com/2014/02/07/c-tricks-slimming-down-your-controllers/" href="http://johannesbrodwall.com/2014/02/07/c-tricks-slimming-down-your-controllers/" target="_blank">C# Tricks: Slimming down your controllers</a> from <a title="http://johannesbrodwall.com/" href="http://johannesbrodwall.com/" target="_blank">http://johannesbrodwall.com/</a>
+  Published at Codepedia.org with the permission of Johannes Brodwall – source <a title="https://johannesbrodwall.com/2014/02/07/c-tricks-slimming-down-your-controllers/" href="https://johannesbrodwall.com/2014/02/07/c-tricks-slimming-down-your-controllers/" target="_blank">C# Tricks: Slimming down your controllers</a> from <a title="https://johannesbrodwall.com/" href="https://johannesbrodwall.com/" target="_blank">https://johannesbrodwall.com/</a>
 </p>
 
 <p style="color: #333333;">
@@ -269,7 +269,7 @@ public class PersonController : ApiController
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-        <a class="icon-earth" href="http://johannesbrodwall.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jhannes" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhannes" target="_blank"> </a>
+        <a class="icon-earth" href="https://johannesbrodwall.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jhannes" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhannes" target="_blank"> </a>
       </div>
 
       <div class="clear">

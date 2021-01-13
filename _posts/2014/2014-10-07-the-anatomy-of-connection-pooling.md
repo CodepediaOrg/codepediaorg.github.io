@@ -31,7 +31,7 @@ tags:
 </p>
 
 <p style="color: #444444;">
-  <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.files.wordpress.com/2014/04/connectionlifecycle.gif"><img id="i-2138" class="size-full wp-image" src="http://vladmihalcea.files.wordpress.com/2014/04/connectionlifecycle.gif?w=785" alt="Image" /></a>
+  <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.files.wordpress.com/2014/04/connectionlifecycle.gif"><img id="i-2138" class="size-full wp-image" src="https://vladmihalcea.files.wordpress.com/2014/04/connectionlifecycle.gif?w=785" alt="Image" /></a>
 </p>
 
 <p style="color: #444444;">
@@ -59,7 +59,7 @@ tags:
   </li>
 </ol>
 
-You can easily deduce that opening/closing connections is quite an expensive operation. PostgreSQL uses a <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://www.postgresql.org/docs/9.3/static/connect-estab.html">separate OS process</a> for every client connection, so a high rate of opening/closing connections is going to put a strain on your database management system.
+You can easily deduce that opening/closing connections is quite an expensive operation. PostgreSQL uses a <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://www.postgresql.org/docs/9.3/static/connect-estab.html">separate OS process</a> for every client connection, so a high rate of opening/closing connections is going to put a strain on your database management system.
 
 <p style="color: #444444;">
   The most obvious reasons for reusing a database connection would be:
@@ -78,7 +78,7 @@ You can easily deduce that opening/closing connections is quite an expensive ope
   Pooling vs No Pooling
 </h2>
 
-Let’s compare how a <strong style="font-style: inherit;">no pooling</strong> solution compares to <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://brettwooldridge.github.io/HikariCP/">HikariCP</a> which is probably the fastest <strong style="font-style: inherit;">connection pooling</strong> framework available.
+Let’s compare how a <strong style="font-style: inherit;">no pooling</strong> solution compares to <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://brettwooldridge.github.io/HikariCP/">HikariCP</a> which is probably the fastest <strong style="font-style: inherit;">connection pooling</strong> framework available.
 
 The test will open and close 1000 connections.
 
@@ -115,7 +115,7 @@ public void testOpenCloseConnections() throws SQLException {
 The chart displays the time spent during opening and closing connections so lower is better.
 
 <p style="color: #444444;">
-  <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.files.wordpress.com/2014/04/nopoolingvsconnectionpooling1.png"><img class="alignnone size-medium wp-image-2166" src="http://vladmihalcea.files.wordpress.com/2014/04/nopoolingvsconnectionpooling1.png?w=450&h=255" alt="NoPoolingVsConnectionPooling" width="300" height="170" /></a>
+  <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.files.wordpress.com/2014/04/nopoolingvsconnectionpooling1.png"><img class="alignnone size-medium wp-image-2166" src="https://vladmihalcea.files.wordpress.com/2014/04/nopoolingvsconnectionpooling1.png?w=450&h=255" alt="NoPoolingVsConnectionPooling" width="300" height="170" /></a>
 </p>
 
 <p style="color: #444444; text-align: justify;">
@@ -217,7 +217,7 @@ The chart displays the time spent during opening and closing connections so lowe
 </p>
 
 <p style="color: #444444;">
-  <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.files.wordpress.com/2014/04/poolingconnectionlifecycle.gif"><img class="alignnone size-medium wp-image-2171" src="http://vladmihalcea.files.wordpress.com/2014/04/poolingconnectionlifecycle.gif?w=450&h=281" alt="PoolingConnectionLifeCycle" width="300" height="186" /></a>
+  <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.files.wordpress.com/2014/04/poolingconnectionlifecycle.gif"><img class="alignnone size-medium wp-image-2171" src="https://vladmihalcea.files.wordpress.com/2014/04/poolingconnectionlifecycle.gif?w=450&h=281" alt="PoolingConnectionLifeCycle" width="300" height="186" /></a>
 </p>
 
 <p style="color: #444444; text-align: justify;">
@@ -225,7 +225,7 @@ The chart displays the time spent during opening and closing connections so lowe
 </p>
 
 <p style="color: #444444;">
-  <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.files.wordpress.com/2014/04/connectionacquirerequeststates.gif"><img class="alignnone size-medium wp-image-2174" src="http://vladmihalcea.files.wordpress.com/2014/04/connectionacquirerequeststates.gif?w=450&h=363" alt="ConnectionAcquireRequestStates" width="300" height="241" /></a>
+  <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.files.wordpress.com/2014/04/connectionacquirerequeststates.gif"><img class="alignnone size-medium wp-image-2174" src="https://vladmihalcea.files.wordpress.com/2014/04/connectionacquirerequeststates.gif?w=450&h=363" alt="ConnectionAcquireRequestStates" width="300" height="241" /></a>
 </p>
 
 <h2 style="font-weight: inherit; color: #444444;">
@@ -267,7 +267,7 @@ The chart displays the time spent during opening and closing connections so lowe
 </ul>
 
 <p style="color: #444444; text-align: justify;">
-  My <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.com/2014/04/17/the-anatomy-of-connection-pooling/2014/04/25/flexy-pool-reactive-connection-pooling/">next article</a> will dig into enterprise <strong style="font-style: inherit;">connection pooling</strong> challenges and how <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://github.com/vladmihalcea/flexy-pool">FlexyPool</a> can assist you finding the right pool sizes.
+  My <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.com/2014/04/17/the-anatomy-of-connection-pooling/2014/04/25/flexy-pool-reactive-connection-pooling/">next article</a> will dig into enterprise <strong style="font-style: inherit;">connection pooling</strong> challenges and how <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://github.com/vladmihalcea/flexy-pool">FlexyPool</a> can assist you finding the right pool sizes.
 </p>
 
 <p style="color: #444444;">
@@ -275,7 +275,7 @@ The chart displays the time spent during opening and closing connections so lowe
 </p>
 
 <p class="note_normal" style="color: #444444; text-align: justify;">
-  Published at Codepedia.org with the permission of Vlad Mihalcea &#8211; source <a title="http://vladmihalcea.com/2014/04/17/the-anatomy-of-connection-pooling/" href="http://vladmihalcea.com/2014/04/17/the-anatomy-of-connection-pooling/" target="_blank">The anatomy of connection pooling</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
+  Published at Codepedia.org with the permission of Vlad Mihalcea &#8211; source <a title="https://vladmihalcea.com/2014/04/17/the-anatomy-of-connection-pooling/" href="https://vladmihalcea.com/2014/04/17/the-anatomy-of-connection-pooling/" target="_blank">The anatomy of connection pooling</a> from <a title="https://vladmihalcea.com/" href="https://vladmihalcea.com/" target="_blank">https://vladmihalcea.com/</a>
 </p>
 
 <p style="color: #444444;">
@@ -292,7 +292,7 @@ The chart displays the time spent during opening and closing connections so lowe
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-        <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
+        <a class="icon-earth" href="https://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
       </div>
 
       <div class="clear">

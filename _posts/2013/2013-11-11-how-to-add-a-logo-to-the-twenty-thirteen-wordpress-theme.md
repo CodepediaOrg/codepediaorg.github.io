@@ -10,7 +10,7 @@ tags:
   - wordpress
 ---
 <p style="text-align: justify;">
-  In this post I will share my experience of adding a logo in front of the site title when using the <a title="Wordpress - Twenty Thirteen theme" href="http://wordpress.org/themes/twentythirteen" target="_blank">Twenty Thirteen</a> theme for WordPress. I&#8217;ve been learning WordPress basics in the last couple of months, but I am no expert to create a custom theme, so I will stick to default ones for the moment. Up until today I have been using the <a title="Wordpress - Twenty Twelve theme" href="http://wordpress.org/themes/twentytwelve" target="_blank">Twenty Twelve</a> theme &#8211; this is fully a responsive theme and with the right plugins you get a pretty good functionality, at least for a technical blog, &#8230;but I find it a little dull. So I said why not try some more colour? Well, the <a title="Wordpress - Twenty Thirteen theme" href="http://wordpress.org/themes/twentythirteen" target="_blank">Twenty Thirteen</a> theme is certainly an answer for that. I gave it a try on my localhost, I liked it, so I decided to give it a try in production. This is so cool about WordPress, you can change the look of your pages pretty fast, as long as you haven&#8217;t invested much too effort in customizing one theme. <!--more-->If by the time of your reading, Codepedia.org does not use the Twenty Thirteen anymore this is how it looked like :
+  In this post I will share my experience of adding a logo in front of the site title when using the <a title="Wordpress - Twenty Thirteen theme" href="https://wordpress.org/themes/twentythirteen" target="_blank">Twenty Thirteen</a> theme for WordPress. I&#8217;ve been learning WordPress basics in the last couple of months, but I am no expert to create a custom theme, so I will stick to default ones for the moment. Up until today I have been using the <a title="Wordpress - Twenty Twelve theme" href="https://wordpress.org/themes/twentytwelve" target="_blank">Twenty Twelve</a> theme &#8211; this is fully a responsive theme and with the right plugins you get a pretty good functionality, at least for a technical blog, &#8230;but I find it a little dull. So I said why not try some more colour? Well, the <a title="Wordpress - Twenty Thirteen theme" href="https://wordpress.org/themes/twentythirteen" target="_blank">Twenty Thirteen</a> theme is certainly an answer for that. I gave it a try on my localhost, I liked it, so I decided to give it a try in production. This is so cool about WordPress, you can change the look of your pages pretty fast, as long as you haven&#8217;t invested much too effort in customizing one theme. <!--more-->If by the time of your reading, Codepedia.org does not use the Twenty Thirteen anymore this is how it looked like :
 </p>
 
 <div id="attachment_918" style="width: 614px" class="wp-caption alignnone">
@@ -28,7 +28,7 @@ tags:
 </p>
 
 <p style="padding-left: 30px;">
-  <em><strong>Note:</strong> Please follow <a title="Child Themes on WordPress " href="http://codex.wordpress.org/Child_Themes" target="_blank">Child Themes on WordPress</a> to find out what&#8217;s the exact process to create a child theme.</em>
+  <em><strong>Note:</strong> Please follow <a title="Child Themes on WordPress " href="https://codex.wordpress.org/Child_Themes" target="_blank">Child Themes on WordPress</a> to find out what&#8217;s the exact process to create a child theme.</em>
 </p>
 
 <p style="text-align: justify;">
@@ -102,10 +102,10 @@ Talking about style sheet files, create one &#8211; `style.css` &#8211; in the c
 
 <pre class="lang:css mark:2,7,11,41-47 decode:true" title="style.css - child style sheet file">/*
  Theme Name:     Twenty Thirteen Child
- Theme URI:      http://example.com/twenty-thirteen-child/
+ Theme URI:      https://example.com/twenty-thirteen-child/
  Description:    Twenty Thirteen Child Theme
  Author:         John Doe
- Author URI:     http://example.com
+ Author URI:     https://example.com
  Template:       twentythirteen
  Version:        1.0.0
 */
@@ -171,7 +171,7 @@ Now to the **logo adding** part, I floated both the image (line 27) and the `tit
 
 ## Resources
 
-  1. <a title="WordPress - Child Themes" href="http://codex.wordpress.org/Child_Themes" target="_blank">WordPress &#8211; Child Themes</a>
+  1. <a title="WordPress - Child Themes" href="https://codex.wordpress.org/Child_Themes" target="_blank">WordPress &#8211; Child Themes</a>
 
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
     <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

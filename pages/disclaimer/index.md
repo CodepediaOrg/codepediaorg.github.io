@@ -89,7 +89,7 @@ All rights reserved.
 </p>
 
 <p style="text-align: justify;">
-  If you wish to disable cookies, you may do so through your individual browser options. More detailed information about cookie management with specific web browsers can be found at the browsers&#8217; respective websites. <a href="http://www.privacypolicyonline.com/what-are-cookies">What Are Cookies?</a>
+  If you wish to disable cookies, you may do so through your individual browser options. More detailed information about cookie management with specific web browsers can be found at the browsers&#8217; respective websites. <a href="https://www.privacypolicyonline.com/what-are-cookies">What Are Cookies?</a>
 </p>
 
 ### <span id="External_websites">External websites</span>

@@ -23,7 +23,7 @@ CorsFilter filter = new CorsFilter();
 filter.getAllowedOrigins().add("http://localhost");
 ```
 
-[^1]: <http://docs.jboss.org/resteasy/docs/3.0.19.Final/userguide/html_single/index.html#d4e1343>
+[^1]: <https://docs.jboss.org/resteasy/docs/3.0.19.Final/userguide/html_single/index.html#d4e1343>
 
 Well, to make it work for me I had to register it to the `classes` component of the JAX-RS `Application` bootstrap class:
 

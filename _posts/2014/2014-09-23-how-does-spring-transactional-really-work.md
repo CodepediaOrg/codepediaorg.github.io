@@ -181,7 +181,7 @@ public void businessLogic() {
 </h4>
 
 <p style="color: #3a4145; text-align: justify;">
-  The most frequent case is when the application is using the Open Session In View pattern to deal with lazy initialization exceptions, see this previous blog post for it&#8217;s <a href="http://blog.jhades.org/open-session-in-view-pattern-pros-and-cons/">pros and cons</a>.
+  The most frequent case is when the application is using the Open Session In View pattern to deal with lazy initialization exceptions, see this previous blog post for it&#8217;s <a href="https://blog.jhades.org/open-session-in-view-pattern-pros-and-cons/">pros and cons</a>.
 </p>
 
 <p style="color: #3a4145; text-align: justify;">
@@ -322,7 +322,7 @@ private EntityManager em;</pre>
 </ul>
 
 <p style="color: #3a4145; text-align: justify;">
-  The entity manager and the connection are both bound to the current thread using <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadLocal.html">ThreadLocal</a> variables.
+  The entity manager and the connection are both bound to the current thread using <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/ThreadLocal.html">ThreadLocal</a> variables.
 </p>
 
 <p style="color: #3a4145; text-align: justify;">
@@ -422,7 +422,7 @@ public class TransactionManagersConfig {
 </p>
 
 <p class="note_normal" style="color: #3a4145; text-align: justify;">
-  Published at Codepedia.org with permission of <a title="https://www.codepedia.org/jhadesdev/" href="https://www.codepedia.org/jhadesdev/" target="_blank">Aleksey Novik</a> &#8211; source <a title="http://blog.jhades.org/how-does-spring-transactional-really-work/" href="http://blog.jhades.org/how-does-spring-transactional-really-work/" target="_blank">How does Spring @Transactional Really Work?</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of <a title="https://www.codepedia.org/jhadesdev/" href="https://www.codepedia.org/jhadesdev/" target="_blank">Aleksey Novik</a> &#8211; source <a title="https://blog.jhades.org/how-does-spring-transactional-really-work/" href="https://blog.jhades.org/how-does-spring-transactional-really-work/" target="_blank">How does Spring @Transactional Really Work?</a> from <a title="https://blog.jhades.org/" href="https://blog.jhades.org/" target="_blank">https://blog.jhades.org/</a>
 </p>
 
 <p style="color: #3a4145; text-align: justify;">
@@ -439,7 +439,7 @@ public class TransactionManagersConfig {
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-        <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
+        <a class="icon-earth" href="https://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
       </div>
 
       <div class="clear">

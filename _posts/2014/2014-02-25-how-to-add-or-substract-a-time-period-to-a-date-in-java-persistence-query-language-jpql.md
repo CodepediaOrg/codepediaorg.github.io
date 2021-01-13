@@ -15,11 +15,11 @@ tags:
 ---
 <p style="text-align: justify;">
   There are quite often situations, when you&#8217;d need to add or substract a time period to a date
-   when you are accessing the database via <a title="JPA" href="http://en.wikipedia.org/wiki/Java_Persistence_API" target="_blank">Java Persistence API(JPA)</a>. Now
+   when you are accessing the database via <a title="JPA" href="https://en.wikipedia.org/wiki/Java_Persistence_API" target="_blank">Java Persistence API(JPA)</a>. Now
 </p>
 
 <li style="text-align: justify;">
-  <strong>the bad news</strong> is that <a title="JPQL" href="http://en.wikipedia.org/wiki/Java_Persistence_Query_Language" target="_blank">Java Persistence Query Language(JPQL)</a> does not support such operations on dates yet.
+  <strong>the bad news</strong> is that <a title="JPQL" href="https://en.wikipedia.org/wiki/Java_Persistence_Query_Language" target="_blank">Java Persistence Query Language(JPQL)</a> does not support such operations on dates yet.
 </li>
 <li style="text-align: justify;">
   <strong>the good news</strong> is that it is possible by using a native query or doing the computation on the Java side. I prefer the second option as it provides database independence.<!--more-->
@@ -54,7 +54,7 @@ and call it like `getRecentPodcast(8);`
   <strong>Note </strong>that the date calculation takes place in Java. One way to do it is by using the Java <code>Calendar</code>&#8216;s  <code>add</code> function with a negative value.  After that you can use the calculated date as parameter in the JPQL comparison.
 </p>
 
-If you don&#8217;t like the Java calendar approach, you can achieve the same results with <a title="Joda time" href="http://joda-time.sourceforge.net/quickstart.html" target="_blank">Joda-Time</a>:
+If you don&#8217;t like the Java calendar approach, you can achieve the same results with <a title="Joda time" href="https://joda-time.sourceforge.net/quickstart.html" target="_blank">Joda-Time</a>:
 
 <pre class="lang:java decode:true" title="Calculate days back with Joda-Time">DateTime dateToLookBackAfterJoda = new DateTime(new Date());
 dateToLookBackAfterJoda = dateToLookBackAfterJoda.minusDays(numberOfDaysToLookBack);

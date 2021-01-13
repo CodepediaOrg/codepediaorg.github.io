@@ -21,7 +21,7 @@ original_url: https://aredko.blogspot.ch/2016/04/laziness-at-extreme-developing-
 
 
 I think it would be fair to state that we, as software developers, are always looking for the ways to write less code
-which does more stuff, automagically or not. With this regards, [Spring Boot](http://projects.spring.io/spring-boot/) project, proud member of the Spring portfolio, disrupted the traditional approaches, dramatically speeding up and simplifying Spring-based applications development.
+which does more stuff, automagically or not. With this regards, [Spring Boot](https://projects.spring.io/spring-boot/) project, proud member of the Spring portfolio, disrupted the traditional approaches, dramatically speeding up and simplifying Spring-based applications development.
 
 There is a lot to be said about Spring Boot, intrinsic details of how it works and its seamless integration with most if not all Spring projects. But its capabilities go far beyond that, supporting first-class integration with popular Java frameworks.
 
@@ -46,7 +46,7 @@ public class PeopleRestService {
 Not much to add here, pretty simple implementation which returns the hard-coded collection of people.
 There are a couple of ways we can package and deploy this JAX-RS service,
 but arguably the simplest one is by hosting it inside embedded servlet container
-like [Tomcat](http://tomcat.apache.org/), [Jetty](http://www.eclipse.org/jetty/) or [Undertow](http://undertow.io/). With that comes the routine: container initialization, configuring Spring context locations, registering listeners, ... Let us see how Spring Boot can help here by dissecting the Spring context configuration below.
+like [Tomcat](https://tomcat.apache.org/), [Jetty](https://www.eclipse.org/jetty/) or [Undertow](https://undertow.io/). With that comes the routine: container initialization, configuring Spring context locations, registering listeners, ... Let us see how Spring Boot can help here by dissecting the Spring context configuration below.
 
 ```java
 @Configuration

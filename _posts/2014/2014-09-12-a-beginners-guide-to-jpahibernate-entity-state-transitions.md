@@ -19,11 +19,11 @@ tags:
 </p>
 
 <p style="color: #444444; text-align: justify;">
-  Manipulating domain model entities (along with their associations) is much easier than writing and maintaining SQL statements. Without an <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://en.wikipedia.org/wiki/Object-relational_mapping">ORM</a> tool, adding a new column requires modifying all associated INSERT/UPDATE statements. <!--more-->
+  Manipulating domain model entities (along with their associations) is much easier than writing and maintaining SQL statements. Without an <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://en.wikipedia.org/wiki/Object-relational_mapping">ORM</a> tool, adding a new column requires modifying all associated INSERT/UPDATE statements. <!--more-->
 </p>
 
 <p style="color: #444444; text-align: justify;">
-  But Hibernate is no silver bullet either. Hibernate doesn&#8217;t free us from ever worrying about the actual executed SQL statements. Controlling Hibernate is not as straightforward as one might think and it’s mandatory to <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/2013/12/10/hibernate-facts-always-check-criteria-api-sql-queries/">check all SQL statements</a> Hibernate executes on our behalf.
+  But Hibernate is no silver bullet either. Hibernate doesn&#8217;t free us from ever worrying about the actual executed SQL statements. Controlling Hibernate is not as straightforward as one might think and it’s mandatory to <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/2013/12/10/hibernate-facts-always-check-criteria-api-sql-queries/">check all SQL statements</a> Hibernate executes on our behalf.
 </p>
 
 <h2 style="font-weight: inherit; color: #444444;">
@@ -45,7 +45,7 @@ tags:
     </p>
 
     <p style="font-weight: inherit; font-style: inherit;">
-      To become persisted we need to either explicitly call the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#persist%28java.lang.Object%29">EntityManager#persist</a> method or make use of the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch11.html#objectstate-transitive">transitive persistence</a> mechanism.
+      To become persisted we need to either explicitly call the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#persist%28java.lang.Object%29">EntityManager#persist</a> method or make use of the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch11.html#objectstate-transitive">transitive persistence</a> mechanism.
     </p>
   </li>
 
@@ -67,7 +67,7 @@ tags:
     <ul style="font-weight: inherit; font-style: inherit;">
       <li style="font-weight: inherit; font-style: inherit;">
         <strong style="font-style: inherit;">Reattaching</strong> <p style="font-weight: inherit; font-style: inherit;">
-          Hibernate (but not JPA 2.1) supports reattaching through the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html#update%28java.lang.Object%29">Session#update</a> method.
+          Hibernate (but not JPA 2.1) supports reattaching through the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html#update%28java.lang.Object%29">Session#update</a> method.
         </p>
 
         <p style="font-weight: inherit; font-style: inherit; text-align: justify;">
@@ -93,7 +93,7 @@ tags:
 
   <li style="font-weight: inherit; font-style: inherit;">
     <strong style="font-style: inherit;">Removed</strong> <p style="font-weight: inherit; font-style: inherit;">
-      Although JPA demands that <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#remove%28java.lang.Object%29">managed entities only</a> are allowed to be removed, Hibernate can also <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/core/4.3/devguide/en-US/html/ch03.html#d5e824">delete detached entities</a> (but only through a <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/core/4.3/javadocs/org/hibernate/Session.html#delete%28java.lang.Object%29">Session#delete</a> method call).
+      Although JPA demands that <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#remove%28java.lang.Object%29">managed entities only</a> are allowed to be removed, Hibernate can also <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/core/4.3/devguide/en-US/html/ch03.html#d5e824">delete detached entities</a> (but only through a <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/core/4.3/javadocs/org/hibernate/Session.html#delete%28java.lang.Object%29">Session#delete</a> method call).
     </p>
 
     <p style="font-weight: inherit; font-style: inherit;">
@@ -112,14 +112,14 @@ tags:
 
 <ul style="color: #444444;">
   <li style="font-weight: inherit; font-style: inherit;">
-    <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html">EntityManager</a> <p style="font-weight: inherit; font-style: inherit;">
-      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.files.wordpress.com/2014/07/jpaentitystates.png"><img class="alignnone size-medium wp-image-2876" src="http://vladmihalcea.files.wordpress.com/2014/07/jpaentitystates.png?w=450&h=287" alt="JPAEntityStates" width="300" height="190" /></a>
+    <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html">EntityManager</a> <p style="font-weight: inherit; font-style: inherit;">
+      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.files.wordpress.com/2014/07/jpaentitystates.png"><img class="alignnone size-medium wp-image-2876" src="https://vladmihalcea.files.wordpress.com/2014/07/jpaentitystates.png?w=450&h=287" alt="JPAEntityStates" width="300" height="190" /></a>
     </p>
   </li>
 
   <li style="font-weight: inherit; font-style: inherit;">
     <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/core/4.3/javadocs/org/hibernate/Session.html">Session</a> <p style="font-weight: inherit; font-style: inherit;">
-      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.files.wordpress.com/2014/07/hibernateentitystates1.png"><img class="alignnone size-medium wp-image-2883" src="http://vladmihalcea.files.wordpress.com/2014/07/hibernateentitystates1.png?w=450&h=284" alt="HibernateEntityStates" width="300" height="188" /></a>
+      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.files.wordpress.com/2014/07/hibernateentitystates1.png"><img class="alignnone size-medium wp-image-2883" src="https://vladmihalcea.files.wordpress.com/2014/07/hibernateentitystates1.png?w=450&h=284" alt="HibernateEntityStates" width="300" height="188" /></a>
     </p>
   </li>
 </ul>
@@ -129,11 +129,11 @@ tags:
 </p>
 
 <p style="color: #444444;">
-  <strong style="font-style: inherit;">If you have enjoyed reading my article and you’re looking forward to getting instant email notifications of my latest posts, you just need to <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/follow-me/">follow my blog</a>.</strong>
+  <strong style="font-style: inherit;">If you have enjoyed reading my article and you’re looking forward to getting instant email notifications of my latest posts, you just need to <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/follow-me/">follow my blog</a>.</strong>
 </p>
 
 <p class="note_normal" style="color: #444444;">
-  Published at Codepedia.org with permission of <a title="https://www.codepedia.org/author/vladmihalcea" href="https://www.codepedia.org/author/vladmihalcea" target="_blank">Vlad Mihalcea</a> &#8211; source <a title="http://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/" href="http://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/" target="_blank">A BEGINNER’S GUIDE TO JPA/HIBERNATE ENTITY STATE TRANSITIONS</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
+  Published at Codepedia.org with permission of <a title="https://www.codepedia.org/author/vladmihalcea" href="https://www.codepedia.org/author/vladmihalcea" target="_blank">Vlad Mihalcea</a> &#8211; source <a title="https://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/" href="https://vladmihalcea.com/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/" target="_blank">A BEGINNER’S GUIDE TO JPA/HIBERNATE ENTITY STATE TRANSITIONS</a> from <a title="https://vladmihalcea.com/" href="https://vladmihalcea.com/" target="_blank">https://vladmihalcea.com/</a>
 </p>
 
 <p style="color: #444444;">
@@ -150,7 +150,7 @@ tags:
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-        <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
+        <a class="icon-earth" href="https://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
       </div>
 
       <div class="clear">

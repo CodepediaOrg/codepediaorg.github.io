@@ -13,10 +13,10 @@ tags:
 ---
 **More Agile Testing**
 
-A few weeks ago on one of my [TestTalks](http://www.testtalks.com/) podcasts, I interviewed Janet Gregory, co-author of some of the most popular books on Agile Testing:
+A few weeks ago on one of my [TestTalks](https://www.testtalks.com/) podcasts, I interviewed Janet Gregory, co-author of some of the most popular books on Agile Testing:
 
-  * [Agile Testing; A Practical Guide for Testers and Agile Teams](http://www.amazon.com/gp/product/0321534468/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321534468&linkCode=as2&tag=joecol05-20&linkId=WM3VDYONNRD6DSLU)
-  * [More Agile Testing: Learning Journeys for the whole team](http://www.amazon.com/gp/product/0321967054/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321967054&linkCode=as2&tag=joecol05-20&linkId=ARZ2OC23K3JQ7UYR)
+  * [Agile Testing; A Practical Guide for Testers and Agile Teams](https://www.amazon.com/gp/product/0321534468/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321534468&linkCode=as2&tag=joecol05-20&linkId=WM3VDYONNRD6DSLU)
+  * [More Agile Testing: Learning Journeys for the whole team](https://www.amazon.com/gp/product/0321967054/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321967054&linkCode=as2&tag=joecol05-20&linkId=ARZ2OC23K3JQ7UYR)
 
 Janet shared some of her tips and tricks on how teams can succeed with all their Agile testing efforts.
 
@@ -28,7 +28,7 @@ The three points from the interview that I want to focus on in this post are:
 
 <!--more-->
 
-[<img class="alignnone size-full wp-image-2147" src="http://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin1.png" alt="012215_2026_AgileTestin1.png" width="234" height="241" />](http://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin1.png)
+[<img class="alignnone size-full wp-image-2147" src="https://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin1.png" alt="012215_2026_AgileTestin1.png" width="234" height="241" />](https://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin1.png)
 
 **Agile Testing is a Mindset
 
@@ -50,7 +50,7 @@ One way to aid in creating conversations and building an Agile testing mindset i
 
 **
 
-In the book [_More Agile Testing_](http://www.amazon.com/gp/product/0321967054/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321967054&linkCode=as2&tag=joecol05-20&linkId=ARZ2OC23K3JQ7UYR),
+In the book [_More Agile Testing_](https://www.amazon.com/gp/product/0321967054/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321967054&linkCode=as2&tag=joecol05-20&linkId=ARZ2OC23K3JQ7UYR),
 
 _“the agile testing quadrants (the Quadrants) are based on a matrix Brian Marick developed in 2003 to describe types of testing used in Extreme Programming.”_
 
@@ -63,7 +63,7 @@ The quadrant model is separated into four main areas:
   * Q3 – Business tests that evaluate the product
   * Q4 – Technical tests that evaluate the product
 
-[<img class="alignnone size-full wp-image-2148" src="http://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin2.png" alt="012215_2026_AgileTestin2.png" width="502" height="350" />](http://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin2.png)
+[<img class="alignnone size-full wp-image-2148" src="https://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin2.png" alt="012215_2026_AgileTestin2.png" width="502" height="350" />](https://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin2.png)
 
 These quadrants are a nice way to show Agile teams the types of testing that needs to be thought of during development. This helps makes things more visible and helps to start conversations around how much test coverage and efforts you are actually putting into testing a feature.
 
@@ -81,9 +81,9 @@ The teams are responsible to have the _conversations_ to get them to start think
 
 Also, the sooner the teams are aware of the types of testing that may need to be performed, developers can start to think about the types of hooks that will need to be added into order to make their code testable/automatable.
 
-For an in-depth discussion on these quadrants, check out Chapter Seven of [_More Agile Testing_](http://www.amazon.com/gp/product/0321967054/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321967054&linkCode=as2&tag=joecol05-20&linkId=ARZ2OC23K3JQ7UYR).
+For an in-depth discussion on these quadrants, check out Chapter Seven of [_More Agile Testing_](https://www.amazon.com/gp/product/0321967054/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321967054&linkCode=as2&tag=joecol05-20&linkId=ARZ2OC23K3JQ7UYR).
 
-[<img class="alignnone size-full wp-image-2149" src="http://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin3.png" alt="012215_2026_AgileTestin3.png" width="341" height="331" />](http://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin3.png)
+[<img class="alignnone size-full wp-image-2149" src="https://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin3.png" alt="012215_2026_AgileTestin3.png" width="341" height="331" />](https://www.joecolantonio.com/wp-content/uploads/2015/01/012215_2026_AgileTestin3.png)
 
 **The Dangers of putting off Automation
 
@@ -105,26 +105,26 @@ _More Agile Testing_ actually has a really vivid example of this in Matt Barcomb
 
 **
 
-To hear my full conversation with Janet Gregory, check out [TestTalks Episode 34](http://www.testtalks.com/34). And be sure to add her two must-read books to your testing library:
+To hear my full conversation with Janet Gregory, check out [TestTalks Episode 34](https://www.testtalks.com/34). And be sure to add her two must-read books to your testing library:
 
-  * [_Agile Testing: A Practical Guide for Testers and Agile Teams_](http://www.amazon.com/gp/product/0321534468/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321534468&linkCode=as2&tag=joecol05-20&linkId=WM3VDYONNRD6DSLU)_
+  * [_Agile Testing: A Practical Guide for Testers and Agile Teams_](https://www.amazon.com/gp/product/0321534468/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321534468&linkCode=as2&tag=joecol05-20&linkId=WM3VDYONNRD6DSLU)_
 
 _
   * [_More Agile Testing: Learning Journeys for the Whole Team_](%20Learning%20Journeys%20for%20the%20Whole%20Team)
 
 <p class="note_normal" style="color: #333333;">
-  Published at Codepedia.org with the permission of Joe Colantonio – source <a title="http://www.joecolantonio.com/2015/01/20/agile-testing-the-dangers-of-putting-off-automation/" href="http://www.joecolantonio.com/2015/01/20/agile-testing-the-dangers-of-putting-off-automation/" target="_blank">Agile Testing – The Dangers of putting off Automation</a> from <a title="http://www.joecolantonio.com/" href="http://www.joecolantonio.com/" target="_blank">http://www.joecolantonio.com/</a>
+  Published at Codepedia.org with the permission of Joe Colantonio – source <a title="https://www.joecolantonio.com/2015/01/20/agile-testing-the-dangers-of-putting-off-automation/" href="https://www.joecolantonio.com/2015/01/20/agile-testing-the-dangers-of-putting-off-automation/" target="_blank">Agile Testing – The Dangers of putting off Automation</a> from <a title="https://www.joecolantonio.com/" href="https://www.joecolantonio.com/" target="_blank">https://www.joecolantonio.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://joecolantonio.com/testtalks/wp-content/uploads/2014/12/TestTalksItunesCover.png" alt="Joe Colantonio" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://joecolantonio.com/testtalks/wp-content/uploads/2014/12/TestTalksItunesCover.png" alt="Joe Colantonio" />
 
   <p id="about_author_header">
     Joe Colantonio
   </p>
 
   <div id="social_logos_up">
-    <a class="icon-earth" href="http://www.joecolantonio.com/about/" target="_blank"> </a> <a class="icon-twitter" href="http://twitter.com/jcolantonio" target="_blank"> </a>
+    <a class="icon-earth" href="https://www.joecolantonio.com/about/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jcolantonio" target="_blank"> </a>
   </div>
 
   <div id="author_details" style="text-align: justify;">

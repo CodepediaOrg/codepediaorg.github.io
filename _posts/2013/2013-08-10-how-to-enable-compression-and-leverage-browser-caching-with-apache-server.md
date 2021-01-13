@@ -12,11 +12,11 @@ tags:
   - mobile
   - optimization
 ---
-Looking for ways to improve <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>&#8216; mobile user-friendliness, I have discovered Google&#8217;s <a title="PageSpeed Insights" href="http://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a> . After analyzing the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">home page</a>, a podcast&#8217;s page (<a title="The Naked Scientist Podcast" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science" target="_blank">The Naked Scientists Podcast &#8211; Stripping Down Science</a>), an <a title="Episode page" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/967/Leonardo-Evo-Solution-Die-Serie-zum-Darwin-Jahr/episodes/2/WDR-5-Leonardo-Evo-Solution-Die-Serie-im-Darwin-Jahr-Folge-12-Prima-Klima-vom-30-04-2009" target="_blank">episode page</a> and scoring an average of 70 out of 100 (even worse on mobile) two points needed urgent fixing:
+Looking for ways to improve <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>&#8216; mobile user-friendliness, I have discovered Google&#8217;s <a title="PageSpeed Insights" href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a> . After analyzing the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">home page</a>, a podcast&#8217;s page (<a title="The Naked Scientist Podcast" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science" target="_blank">The Naked Scientists Podcast &#8211; Stripping Down Science</a>), an <a title="Episode page" href="https://github.com/CodepediaOrg/podcastpedia/podcasts/967/Leonardo-Evo-Solution-Die-Serie-zum-Darwin-Jahr/episodes/2/WDR-5-Leonardo-Evo-Solution-Die-Serie-im-Darwin-Jahr-Folge-12-Prima-Klima-vom-30-04-2009" target="_blank">episode page</a> and scoring an average of 70 out of 100 (even worse on mobile) two points needed urgent fixing:
 
 ### 1. Enabling compression
 
-Compressing resources with gzip or deflate will reduce the number of bytes sent over the network at the expense of slightly increased CPU utilization. Smaller files also mean less bandwidth used and faster transfer time. At Google&#8217;s <a title="Enable Compression" href="https://developers.google.com/speed/docs/insights/EnableCompression" target="_blank">recommendation</a> I have enabled file compression on the Apache web server, for which you have to use the <a title="Mod_deflate module" href="http://httpd.apache.org/docs/current/mod/mod_deflate.html" target="_blank">mod_deflate</a> module.
+Compressing resources with gzip or deflate will reduce the number of bytes sent over the network at the expense of slightly increased CPU utilization. Smaller files also mean less bandwidth used and faster transfer time. At Google&#8217;s <a title="Enable Compression" href="https://developers.google.com/speed/docs/insights/EnableCompression" target="_blank">recommendation</a> I have enabled file compression on the Apache web server, for which you have to use the <a title="Mod_deflate module" href="https://httpd.apache.org/docs/current/mod/mod_deflate.html" target="_blank">mod_deflate</a> module.
 
 #### 1.1 Enable mod_deflate on GoDaddy
 
@@ -32,7 +32,7 @@ To verify the module <span style="background-color: #e6e6e6; padding: 0px 3px;">
 
 #### 1.2 Configure mod_deflate
 
-After researching the web and the Apache website, the best solution for my needs came from <a title="How to enable gzip compression on Apache " href="http://howtounix.info/howto/Apache-gzip-compression-with-mod_deflate" target="_blank">HowToUnix.info</a> &#8211; it&#8217;s similar with Apache&#8217;s suggestion and it also verifies if the different modules are active. By adding the suggested configuration
+After researching the web and the Apache website, the best solution for my needs came from <a title="How to enable gzip compression on Apache " href="https://howtounix.info/howto/Apache-gzip-compression-with-mod_deflate" target="_blank">HowToUnix.info</a> &#8211; it&#8217;s similar with Apache&#8217;s suggestion and it also verifies if the different modules are active. By adding the suggested configuration
 
 <pre style="padding-left: 30px;"><span class="tag">&lt;IfModule</span><span class="atn">mod_mime</span><span class="pln">.</span><span class="atn">c</span><span class="tag">&gt;</span><span class="pln">
  AddType application/x-javascript .js
@@ -70,7 +70,7 @@ Header append Vary User-Agent env=!dont-vary</pre>
 
 The second point was enabling **browser caching** for static resources, which can save a user time if they visit your site more than once. You can do that by configuring the <span style="background-color: #e6e6e6; padding: 0px 3px;">Expires</span> and <span style="background-color: #e6e6e6; padding: 0px 3px;">Cache-control</span> HTTP headers with Apache web server.
 
-First I checked if the <a title="Apache Module mod_expires" href="http://httpd.apache.org/docs/current/mod/mod_expires.html" target="_blank">mod_expires</a> and <a title="Apache Module mod_headers" href="http://httpd.apache.org/docs/current/mod/mod_headers.html" target="_blank">mod_headers</a> modules are active on Apache modules by issuing <span style="background-color: #e6e6e6; padding: 0px 5px;">httpd -M</span>
+First I checked if the <a title="Apache Module mod_expires" href="https://httpd.apache.org/docs/current/mod/mod_expires.html" target="_blank">mod_expires</a> and <a title="Apache Module mod_headers" href="https://httpd.apache.org/docs/current/mod/mod_headers.html" target="_blank">mod_headers</a> modules are active on Apache modules by issuing <span style="background-color: #e6e6e6; padding: 0px 5px;">httpd -M</span>
 
 All I had to do next is adding the following to the virtual host configuration for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, and to _.htaccess_ for <a title="Codingpedia" href="https://www.codepedia.org" target="_blank">Codepedia.org</a>:
 
@@ -141,21 +141,21 @@ We promise to only share high quality podcasts and episodes.
 
 <ul style="margin: 0px 0px 1.714285714rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; list-style: disc outside; line-height: 24px; color: #444444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">
   <li style="margin: 0px 0px 0px 2.571428571rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline;">
-    <a title="Apache.org" href="http://www.apache.org" target="_blank">http://www.apache.org</a>
+    <a title="Apache.org" href="https://www.apache.org" target="_blank">https://www.apache.org</a>
   </li>
   <li style="margin: 0px 0px 0px 2.571428571rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline;">
-    <a title="PageSpeed Insights" href="http://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a>
+    <a title="PageSpeed Insights" href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a>
   </li>
   <li style="margin: 0px 0px 0px 2.571428571rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline;">
-    <a title="How to enable gzip compression on Apache " href="http://howtounix.info/howto/Apache-gzip-compression-with-mod_deflate" target="_blank">http://howtounix.info/howto/Apache-gzip-compression-with-mod_deflate</a>
+    <a title="How to enable gzip compression on Apache " href="https://howtounix.info/howto/Apache-gzip-compression-with-mod_deflate" target="_blank">https://howtounix.info/howto/Apache-gzip-compression-with-mod_deflate</a>
   </li>
   <li style="margin: 0px 0px 0px 2.571428571rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline;">
-    <a title="Stackoverflow resource" href="http://stackoverflow.com/questions/2676744/set-http-caching-expiration-recommended-by-google-pagespeed" target="_blank">http://stackoverflow.com/questions/2676744/set-http-caching-expiration-recommended-by-google-pagespeed</a>
+    <a title="Stackoverflow resource" href="https://stackoverflow.com/questions/2676744/set-http-caching-expiration-recommended-by-google-pagespeed" target="_blank">https://stackoverflow.com/questions/2676744/set-http-caching-expiration-recommended-by-google-pagespeed</a>
   </li>
   <li style="margin: 0px 0px 0px 2.571428571rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline;">
-    <a title="Stackoverflow resource" href="http://stackoverflow.com/questions/2932890/http-cache-control-max-age-must-revalidate" target="_blank">http://stackoverflow.com/questions/2932890/http-cache-control-max-age-must-revalidate</a>
+    <a title="Stackoverflow resource" href="https://stackoverflow.com/questions/2932890/http-cache-control-max-age-must-revalidate" target="_blank">https://stackoverflow.com/questions/2932890/http-cache-control-max-age-must-revalidate</a>
   </li>
   <li style="margin: 0px 0px 0px 2.571428571rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline;">
-    <a title="Better Explained - How To Optimize Your Site With HTTP Caching" href="http://betterexplained.com/articles/how-to-optimize-your-site-with-http-caching/http://" target="_blank">http://betterexplained.com/articles/how-to-optimize-your-site-with-http-caching/</a>
+    <a title="Better Explained - How To Optimize Your Site With HTTP Caching" href="https://betterexplained.com/articles/how-to-optimize-your-site-with-http-caching/https://" target="_blank">https://betterexplained.com/articles/how-to-optimize-your-site-with-http-caching/</a>
   </li>
 </ul>

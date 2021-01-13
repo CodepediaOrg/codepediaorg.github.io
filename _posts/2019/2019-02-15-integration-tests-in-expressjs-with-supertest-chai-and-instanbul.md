@@ -17,7 +17,7 @@ tags:
 ---
 
 I come from an enterprise java world, where writing integration tests is nicely said cumbersome. Anyone who tried to
-setup [Arguillian](http://arquillian.org/) or has to remember the 1000+ Spring annotations would agree with me.
+setup [Arguillian](https://arquillian.org/) or has to remember the 1000+ Spring annotations would agree with me.
 
 In this post I will show how easy it is to setup and run integration tests in NodeJS, to be more specific for an ExpressJS
 REST api with the help of supertest, mocha and chai. In the end will add test coverage functionality with instanbul.

@@ -20,7 +20,7 @@ tags:
   - spring
 ---
 <p style="text-align: justify;">
-  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="https://github.com/CodepediaOrg/podcastpedia/podcasting" href="https://github.com/CodepediaOrg/podcastpedia/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
+  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="https://github.com/CodepediaOrg/podcastpedia/podcasting" href="https://github.com/CodepediaOrg/podcastpedia/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
 </p>
 
 <!--more-->
@@ -287,7 +287,7 @@ tags:
 </h3>
 
 <p style="text-align: justify;">
-  The <a title="http://en.wikipedia.org/wiki/Web_resource" href="http://en.wikipedia.org/wiki/Web_resource" target="_blank">resource</a> managed in this tutorial are podcasts. The REST API will allow creation, retrieval, update and deletion of such resources.
+  The <a title="https://en.wikipedia.org/wiki/Web_resource" href="https://en.wikipedia.org/wiki/Web_resource" target="_blank">resource</a> managed in this tutorial are podcasts. The REST API will allow creation, retrieval, update and deletion of such resources.
 </p>
 
 <h3 style="text-align: justify;">
@@ -302,7 +302,7 @@ tags:
   The demo application uses a multi-layered architecture, based on the <em>&#8220;Law of Demeter (LoD) or principle of least knowledge&#8221;[16]</em>:
 </p>
 
-  * the **first layer** is the REST support implemented with Jersey, has the role of a <a title="Facade pattern" href="http://en.wikipedia.org/wiki/Facade_pattern" target="_blank">facade</a> and delegates the logic to the business layer
+  * the **first layer** is the REST support implemented with Jersey, has the role of a <a title="Facade pattern" href="https://en.wikipedia.org/wiki/Facade_pattern" target="_blank">facade</a> and delegates the logic to the business layer
   * the **business layer** is where the logic happens
   * the **data access layer** is where the communcation with the pesistence storage (in our case the MySql database) takes place
 
@@ -321,7 +321,7 @@ A few words on the technologies/frameworks used:
 </h4>
 
 <p style="text-align: justify;">
-  I like glueing stuff together with <strong><a title="Spring Framework" href="http://projects.spring.io/spring-framework/" target="_blank">Spring</a></strong>, and this example makes no exception. In my opinion there&#8217;s no better way to make POJOs with different functionalities. You&#8217;ll find out in the tutorial what it takes to integrate Jersey 2 with Spring.
+  I like glueing stuff together with <strong><a title="Spring Framework" href="https://projects.spring.io/spring-framework/" target="_blank">Spring</a></strong>, and this example makes no exception. In my opinion there&#8217;s no better way to make POJOs with different functionalities. You&#8217;ll find out in the tutorial what it takes to integrate Jersey 2 with Spring.
 </p>
 
 <h4 style="text-align: justify;">
@@ -341,7 +341,7 @@ A few words on the technologies/frameworks used:
 </h4>
 
 <p style="text-align: justify;">
-  Everything gets packaged with Maven as a <code>.war</code> file and can be deployed on any web container &#8211; I used <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Tomcat</a> and <a title="Jetty" href="http://www.eclipse.org/jetty/" target="_blank">Jetty</a> but, it could also be Glassfih, Weblogic, JBoss or WebSphere.
+  Everything gets packaged with Maven as a <code>.war</code> file and can be deployed on any web container &#8211; I used <a title="Apache Tomcat" href="https://tomcat.apache.org/" target="_blank">Tomcat</a> and <a title="Jetty" href="https://www.eclipse.org/jetty/" target="_blank">Jetty</a> but, it could also be Glassfih, Weblogic, JBoss or WebSphere.
 </p>
 
 <h4 style="text-align: justify;">
@@ -349,7 +349,7 @@ A few words on the technologies/frameworks used:
 </h4>
 
 <p style="text-align: justify;">
-  The sample data is stored in a <a title="MySQL" href="http://www.mysql.com/" target="_blank">MySQL</a> table:
+  The sample data is stored in a <a title="MySQL" href="https://www.mysql.com/" target="_blank">MySQL</a> table:
 </p>
 
 <p style="text-align: justify;">
@@ -421,9 +421,9 @@ Before I start presenting the design and implementation of the REST API, we need
 
 ### <span id="22_webxml">2.2. web.xml</span>
 <pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-    &lt;web-app version=&quot;3.0&quot; xmlns=&quot;http://java.sun.com/xml/ns/javaee&quot;
-    	xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-    	xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd&quot;&gt;
+    &lt;web-app version=&quot;3.0&quot; xmlns=&quot;https://java.sun.com/xml/ns/javaee&quot;
+    	xmlns:xsi=&quot;https://www.w3.org/2001/XMLSchema-instance&quot;
+    	xsi:schemaLocation=&quot;https://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_3_0.xsd&quot;&gt;
     	&lt;display-name&gt;Demo - Restful Web Application&lt;/display-name&gt;
 
     	&lt;listener&gt;
@@ -471,7 +471,7 @@ Before I start presenting the design and implementation of the REST API, we need
 </p>
 
 My implementation of the `ResourceConfig` class, ``<p style="text-align: justify;">
-  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="https://github.com/CodepediaOrg/podcastpedia/podcasting" href="https://github.com/CodepediaOrg/podcastpedia/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
+  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="https://github.com/CodepediaOrg/podcastpedia/podcasting" href="https://github.com/CodepediaOrg/podcastpedia/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
 </p>
 
 My implementation of the `ResourceConfig` class,`` registers application resources, filters, exception mappers and feature :
@@ -529,19 +529,19 @@ Please note the
 
 The Spring application context configuration is located in the classpath under `spring/applicationContext.xml`:
 
-<pre><code class="xml">&lt;beans xmlns="http://www.springframework.org/schema/beans"
-    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    	xmlns:context="http://www.springframework.org/schema/context"
-    	xmlns:tx="http://www.springframework.org/schema/tx"
+<pre><code class="xml">&lt;beans xmlns="https://www.springframework.org/schema/beans"
+    	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    	xmlns:context="https://www.springframework.org/schema/context"
+    	xmlns:tx="https://www.springframework.org/schema/tx"
     	xsi:schemaLocation="
-    		http://www.springframework.org/schema/beans
-    		http://www.springframework.org/schema/beans/spring-beans.xsd
+    		https://www.springframework.org/schema/beans
+    		https://www.springframework.org/schema/beans/spring-beans.xsd
 
-    		http://www.springframework.org/schema/tx
-    		http://www.springframework.org/schema/tx/spring-tx.xsd
+    		https://www.springframework.org/schema/tx
+    		https://www.springframework.org/schema/tx/spring-tx.xsd
 
-    		http://www.springframework.org/schema/context
-    		http://www.springframework.org/schema/context/spring-context.xsd"&gt;
+    		https://www.springframework.org/schema/context
+    		https://www.springframework.org/schema/context/spring-context.xsd"&gt;
 
     	&lt;context:component-scan base-package="org.codingpedia.demo.rest.*" /&gt;
 
@@ -606,10 +606,10 @@ The Spring application context configuration is located in the classpath under `
 #### <span id="311_Design">3.1.1. Design</span>
 
 <p style="text-align: justify;">
-  As mentioned earlier, the demo application manages podcasts, which represent the <a title="Wikipedia - Web resource" href="http://en.wikipedia.org/wiki/Web_resource" target="_blank">resource</a> in our REST API. Resources are the central concept in REST and are characterized by two main things:
+  As mentioned earlier, the demo application manages podcasts, which represent the <a title="Wikipedia - Web resource" href="https://en.wikipedia.org/wiki/Web_resource" target="_blank">resource</a> in our REST API. Resources are the central concept in REST and are characterized by two main things:
 </p>
 
-  * each is referenced with a global identifier (e.g. a [URI](http://en.wikipedia.org/wiki/Uniform_resource_identifier "Uniform resource identifier") in HTTP).
+  * each is referenced with a global identifier (e.g. a [URI](https://en.wikipedia.org/wiki/Uniform_resource_identifier "Uniform resource identifier") in HTTP).
   * has one or more representations, that they expose to the outer world and can be manipulated with (we&#8217;ll be working mostly with JSON representations in this example)
 
 Resources are usually represented in REST by nouns (podcasts, customers, user, accounts etc.) and not verbs (getPodcast, deleteUser etc.)
@@ -720,7 +720,7 @@ and translates into the following JSON representation, which is actually the de 
     	"id":1,
     	"title":"Quarks & Co - zum Mitnehmen-modified",
     	"linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen",
-    	"feed":"http://podcast.wdr.de/quarks.xml",
+    	"feed":"https://podcast.wdr.de/quarks.xml",
     	"description":"Quarks & Co: Das Wissenschaftsmagazin",
     	"insertionDate":"2014-05-30T10:26:12.00+0200"
     }</code>
@@ -770,7 +770,7 @@ As already mentioned the `PodcastRestResource` class is the one handling all the
 </pre>
 
 <p style="text-align: justify;">
-  Notice the <code>@Path("/podcasts")</code> before the class definition &#8211; everything related to podcast resources will occur under this path. The <a href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/Path.html" target="_top">@Path</a> annotation&#8217;s value is a relative URI path. In the example above, the Java class will be hosted at the URI path <code>/podcasts</code>. The <code>PodcastService</code> interface exposes the business logic to the REST facade layer.
+  Notice the <code>@Path("/podcasts")</code> before the class definition &#8211; everything related to podcast resources will occur under this path. The <a href="https://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/Path.html" target="_top">@Path</a> annotation&#8217;s value is a relative URI path. In the example above, the Java class will be hosted at the URI path <code>/podcasts</code>. The <code>PodcastService</code> interface exposes the business logic to the REST facade layer.
 </p>
 
 <p class="note_code" style="text-align: justify;">
@@ -1175,7 +1175,7 @@ In the REST arena you will be doing two kind of updates:
   1. full updates &#8211; that is where you will provide all the
   2. partial updates &#8211; when only some properties will be sent over the wire for update
 
-For full updates, it&#8217;s pretty clear you can use the PUT method and you are conform the method&#8217;s specification in the <a title="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.6" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.6" target="_blank">RFC 2616</a>.
+For full updates, it&#8217;s pretty clear you can use the PUT method and you are conform the method&#8217;s specification in the <a title="https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.6" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.6" target="_blank">RFC 2616</a>.
 
 Now for the partial update there&#8217;s a bunch of proposals/debate on what to use:
 
@@ -1229,7 +1229,7 @@ That does not look like a partial update case to me&#8230;
 </p>
 
 <p style="text-align: justify;">
-  I am pretty sure this will be used in the future for partial updates, but since is not yet part of the specification and not yet implemented in Jersey I chose to use the second option with POST for this demo. If you really want to implement partial update in Java with the PATCH check out this post  &#8211; <a title="http://kingsfleet.blogspot.co.uk/2014/02/transparent-patch-support-in-jax-rs-20.html" href="http://kingsfleet.blogspot.co.uk/2014/02/transparent-patch-support-in-jax-rs-20.html" target="_blank">Transparent PATCH support in JAX-RS 2.0</a>
+  I am pretty sure this will be used in the future for partial updates, but since is not yet part of the specification and not yet implemented in Jersey I chose to use the second option with POST for this demo. If you really want to implement partial update in Java with the PATCH check out this post  &#8211; <a title="https://kingsfleet.blogspot.co.uk/2014/02/transparent-patch-support-in-jax-rs-20.html" href="https://kingsfleet.blogspot.co.uk/2014/02/transparent-patch-support-in-jax-rs-20.html" target="_blank">Transparent PATCH support in JAX-RS 2.0</a>
 </p>
 
 ##### <span id="3231_Implementation">3.2.3.1. Implementation</span>
@@ -1479,7 +1479,7 @@ In case of errros, I decided to response with unified error message structure. 
 ## <span id="6_Add_CORS_support_on_the_server_side">6. Add CORS support on the server side</span>
 
 <p style="text-align: justify;">
-  I extended the capabilities of the API developed for the tutorial to support <a style="box-sizing: border-box; color: #bc360a; text-decoration: none; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 19.200000762939453px; orphans: auto; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;" title="http://www.w3.org/TR/cors/" href="http://www.w3.org/TR/cors/" target="_blank">Cross-Origing Resource Sharing (CORS) </a>on the server side.
+  I extended the capabilities of the API developed for the tutorial to support <a style="box-sizing: border-box; color: #bc360a; text-decoration: none; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 19.200000762939453px; orphans: auto; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;" title="https://www.w3.org/TR/cors/" href="https://www.w3.org/TR/cors/" target="_blank">Cross-Origing Resource Sharing (CORS) </a>on the server side.
 </p>
 
 <p style="text-align: justify;">
@@ -1511,7 +1511,7 @@ To build a Jersey client the `jersey-client` jar is required in the classpath. W
 </h5>
 
 <p style="text-align: justify;">
-  The <a title="http://maven.apache.org/surefire/maven-failsafe-plugin/" href="http://maven.apache.org/surefire/maven-failsafe-plugin/" target="_blank">Failsafe Plugin</a> is used during the integration-test and verify phases of the build lifecycle to execute the integration tests of the application. The Failsafe Plugin will not fail the build during the integration-test phase thus enabling the post-integration-test phase to execute.<br /> To use the Failsafe Plugin, you need to add the following configuration to your <code>pom.xml</code>
+  The <a title="https://maven.apache.org/surefire/maven-failsafe-plugin/" href="https://maven.apache.org/surefire/maven-failsafe-plugin/" target="_blank">Failsafe Plugin</a> is used during the integration-test and verify phases of the build lifecycle to execute the integration tests of the application. The Failsafe Plugin will not fail the build during the integration-test phase thus enabling the post-integration-test phase to execute.<br /> To use the Failsafe Plugin, you need to add the following configuration to your <code>pom.xml</code>
 </p>
 
 <pre><code class="xml">&lt;plugins&gt;
@@ -1660,7 +1660,7 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
 </h3>
 
 <p style="text-align: justify;">
-  Recently I&#8217;ve rediscovered <a title="http://www.soapui.org/" href="http://www.soapui.org/" target="_blank">SoapUI</a> after using it heavily for testing SOAP based web services. With the recent versions (at the time of writing latest is 5.0.0) it offers pretty good functionality to test REST based web services, and coming versions should improve on this. So unless you develop your own framework/infrastructure to test REST services, why not give it a try to SoapUI. I did, I was satisfied with the results so far and I&#8217;ve decided to do a video tutorial, that you can now find on YouTube on our channel:
+  Recently I&#8217;ve rediscovered <a title="https://www.soapui.org/" href="https://www.soapui.org/" target="_blank">SoapUI</a> after using it heavily for testing SOAP based web services. With the recent versions (at the time of writing latest is 5.0.0) it offers pretty good functionality to test REST based web services, and coming versions should improve on this. So unless you develop your own framework/infrastructure to test REST services, why not give it a try to SoapUI. I did, I was satisfied with the results so far and I&#8217;ve decided to do a video tutorial, that you can now find on YouTube on our channel:
 </p>
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/XV7WW0bDy9c" frameborder="0" allowfullscreen></iframe>
@@ -1674,7 +1674,7 @@ There are three major possibilities
   1. **URL**:  &#8220;/**v1**/podcasts/{id}&#8221;
   2. **Accept/Content-type header**: application/json; version=1
 
-Because I am a developer and not a <a title="http://mikeschinkel.com/blog/whatisarestafarian/" href="http://mikeschinkel.com/blog/whatisarestafarian/" target="_blank">RESTafarian</a> yet I would do the URL option. All I would have to do on the implementation side for this example, would be to modify the `@Path`&#8216;s value annotation on the `PodcastResource` class from to
+Because I am a developer and not a <a title="https://mikeschinkel.com/blog/whatisarestafarian/" href="https://mikeschinkel.com/blog/whatisarestafarian/" target="_blank">RESTafarian</a> yet I would do the URL option. All I would have to do on the implementation side for this example, would be to modify the `@Path`&#8216;s value annotation on the `PodcastResource` class from to
 
 <pre class="lang:java mark:2 decode:true" title="Versioning in the path">@Component
 @Path("/v1/podcasts")
@@ -1684,10 +1684,10 @@ Of course on a production application, you wouldn&#8217;t want every resource cl
 
 Here are some great resources from people that understand better the matter:
 
-  * <a title="http://youtu.be/hdSrT4yjS1g?t=32m28s" href="http://youtu.be/hdSrT4yjS1g?t=32m28s" target="_blank">[Video] REST+JSON API Design &#8211; Best Practices for Developers</a>
-  * <a title="http://www.troyhunt.com/2014/02/your-api-versioning-is-wrong-which-is.html" href="http://www.troyhunt.com/2014/02/your-api-versioning-is-wrong-which-is.html" target="_blank">Your API versioning is wrong, which is why I decided to do it 3 different wrong ways</a> by @troyhunt
-  * <a title="http://www.informit.com/articles/article.aspx?p=1566460" href="http://www.informit.com/articles/article.aspx?p=1566460" target="_blank">Versioning REST Services</a>
-  * <a title="http://stackoverflow.com/questions/389169/best-practices-for-api-versioning" href="http://stackoverflow.com/questions/389169/best-practices-for-api-versioning" target="_blank">Best practices for API versioning?</a> &#8211; interesting discussion on Stackoverflow
+  * <a title="https://youtu.be/hdSrT4yjS1g?t=32m28s" href="https://youtu.be/hdSrT4yjS1g?t=32m28s" target="_blank">[Video] REST+JSON API Design &#8211; Best Practices for Developers</a>
+  * <a title="https://www.troyhunt.com/2014/02/your-api-versioning-is-wrong-which-is.html" href="https://www.troyhunt.com/2014/02/your-api-versioning-is-wrong-which-is.html" target="_blank">Your API versioning is wrong, which is why I decided to do it 3 different wrong ways</a> by @troyhunt
+  * <a title="https://www.informit.com/articles/article.aspx?p=1566460" href="https://www.informit.com/articles/article.aspx?p=1566460" target="_blank">Versioning REST Services</a>
+  * <a title="https://stackoverflow.com/questions/389169/best-practices-for-api-versioning" href="https://stackoverflow.com/questions/389169/best-practices-for-api-versioning" target="_blank">Best practices for API versioning?</a> &#8211; interesting discussion on Stackoverflow
 
 ## <span id="9_Compression">9. Compression</span>
 
@@ -1748,23 +1748,23 @@ Here are some great resources from people that understand better the matter:
 
 ### <span id="Web_resources">Web resources</span>
 
-  1. <a title="http://www.w3.org/Protocols/rfc2616/rfc2616.html" href="http://www.w3.org/Protocols/rfc2616/rfc2616.html" target="_blank">HTTP &#8211; Hypertext Transfer Protocol &#8212; HTTP/1.1 &#8211; RFC2616</a>
-  2. <a title="http://tools.ietf.org/html/rfc5789" href="http://tools.ietf.org/html/rfc5789" target="_blank">rfc5789 &#8211; PATCH Method for HTTP</a>
+  1. <a title="https://www.w3.org/Protocols/rfc2616/rfc2616.html" href="https://www.w3.org/Protocols/rfc2616/rfc2616.html" target="_blank">HTTP &#8211; Hypertext Transfer Protocol &#8212; HTTP/1.1 &#8211; RFC2616</a>
+  2. <a title="https://tools.ietf.org/html/rfc5789" href="https://tools.ietf.org/html/rfc5789" target="_blank">rfc5789 &#8211; PATCH Method for HTTP</a>
   3. <a title="https://jersey.java.net/documentation/latest/user-guide.html" href="https://jersey.java.net/documentation/latest/user-guide.html" target="_blank">Jersey User Guide</a>
-  4. <a title="Status Code Definitions" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank">HTTP Status Code Definitions</a>
-  5. <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">REST &#8211; http://en.wikipedia.org/wiki/Representational_State_Transfer</a>
-  6. <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">CRUD &#8211; http://en.wikipedia.org/wiki/Create,_read,_update_and_delete</a>
+  4. <a title="Status Code Definitions" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank">HTTP Status Code Definitions</a>
+  5. <a title="Wikipedia - CRUD" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">REST &#8211; https://en.wikipedia.org/wiki/Representational_State_Transfer</a>
+  6. <a title="Wikipedia - CRUD" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">CRUD &#8211; https://en.wikipedia.org/wiki/Create,_read,_update_and_delete</a>
   7. <a title="Java API for RESTful Services (JAX-RS)" href="https://jax-rs-spec.java.net/" target="_blank">Java API for RESTful Services (JAX-RS)</a>
   8. <a title="Jersey REST" href="https://jersey.java.net/" target="_blank">Jersey &#8211; RESTful Web Services in Java </a>
-  9. <a title="http://soabits.blogspot.dk/2013/01/http-put-patch-or-post-partial-updates.html" href="http://soabits.blogspot.dk/2013/01/http-put-patch-or-post-partial-updates.html" target="_blank">HTTP PUT, PATCH or POST &#8211; Partial updates or full replacement?</a>
- 10. <a title="http://kingsfleet.blogspot.co.uk/2014/02/transparent-patch-support-in-jax-rs-20.html" href="http://kingsfleet.blogspot.co.uk/2014/02/transparent-patch-support-in-jax-rs-20.html" target="_blank">Transparent PATCH support in JAX-RS 2.0</a>
+  9. <a title="https://soabits.blogspot.dk/2013/01/http-put-patch-or-post-partial-updates.html" href="https://soabits.blogspot.dk/2013/01/http-put-patch-or-post-partial-updates.html" target="_blank">HTTP PUT, PATCH or POST &#8211; Partial updates or full replacement?</a>
+ 10. <a title="https://kingsfleet.blogspot.co.uk/2014/02/transparent-patch-support-in-jax-rs-20.html" href="https://kingsfleet.blogspot.co.uk/2014/02/transparent-patch-support-in-jax-rs-20.html" target="_blank">Transparent PATCH support in JAX-RS 2.0</a>
  11. <a title="https://maven.apache.org/surefire/maven-failsafe-plugin/" href="https://maven.apache.org/surefire/maven-failsafe-plugin/" target="_blank">Maven Failsafe Plugin</a>
- 12. <a title="http://maven.apache.org/surefire/maven-failsafe-plugin/usage.html" href="http://maven.apache.org/surefire/maven-failsafe-plugin/usage.html" target="_blank">Maven Failsafe Plugin Usage</a>
- 13. <a title="http://www.soapui.org/SoapUI-News/soapui-50-released-today.html" href="http://www.soapui.org/SoapUI-News/soapui-50-released-today.html" target="_blank">SoapUI 5.0 released today!</a>
- 14. <a title="http://www.soapui.org/Functional-Testing/script-assertions.html" href="http://www.soapui.org/Functional-Testing/script-assertions.html" target="_blank">SoapUI &#8211; Using Script Assertions</a>
+ 12. <a title="https://maven.apache.org/surefire/maven-failsafe-plugin/usage.html" href="https://maven.apache.org/surefire/maven-failsafe-plugin/usage.html" target="_blank">Maven Failsafe Plugin Usage</a>
+ 13. <a title="https://www.soapui.org/SoapUI-News/soapui-50-released-today.html" href="https://www.soapui.org/SoapUI-News/soapui-50-released-today.html" target="_blank">SoapUI 5.0 released today!</a>
+ 14. <a title="https://www.soapui.org/Functional-Testing/script-assertions.html" href="https://www.soapui.org/Functional-Testing/script-assertions.html" target="_blank">SoapUI &#8211; Using Script Assertions</a>
  15. <a title="https://www.youtube.com/watch?v=hdSrT4yjS1g" href="https://www.youtube.com/watch?v=hdSrT4yjS1g" target="_blank">[Video] REST+JSON API Design &#8211; Best Practices for Developers</a>
  16. <a title="https://www.youtube.com/watch?v=QpAhXa12xvU" href="https://www.youtube.com/watch?v=QpAhXa12xvU" target="_blank">[Video] RESTful API Design &#8211; Second Edition</a>
- 17. <a title="http://en.wikipedia.org/wiki/Law_of_Demeter" href="http://en.wikipedia.org/wiki/Law_of_Demeter" target="_blank">Law of Demeter</a>
+ 17. <a title="https://en.wikipedia.org/wiki/Law_of_Demeter" href="https://en.wikipedia.org/wiki/Law_of_Demeter" target="_blank">Law of Demeter</a>
 
 ### <span id="Codingpedia_related_resources">Codingpedia related resources</span>
 

@@ -73,7 +73,7 @@ If Optional was there since the beginning, most libraries and applications would
 </p>
 
 <p style="color: #3a4145;">
-  This is a <a href="http://mail.openjdk.java.net/pipermail/jdk8-dev/2013-September/003274.html">quote from OpenJDK mailing list</a>:
+  This is a <a href="https://mail.openjdk.java.net/pipermail/jdk8-dev/2013-September/003274.html">quote from OpenJDK mailing list</a>:
 </p>
 
 <p style="font-style: italic; padding-left: 30px;">
@@ -143,12 +143,12 @@ In chained function calls, Optional provides method `ifPresent()`, that allows 
   Useful Links
 </h4>
 
-This blog post from Oracle goes further into `Optional`and it&#8217;s uses, comparing it with similar functionality in other languages &#8211; [Tired of Null Pointer Exceptions?](http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html)
+This blog post from Oracle goes further into `Optional`and it&#8217;s uses, comparing it with similar functionality in other languages &#8211; [Tired of Null Pointer Exceptions?](https://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html)
 
-This cheat sheet provides a thorough overview of Optional &#8211; [Optional in Java 8 Cheat Sheet](http://java.dzone.com/articles/optional-java-8-cheat-sheet)
+This cheat sheet provides a thorough overview of Optional &#8211; [Optional in Java 8 Cheat Sheet](https://java.dzone.com/articles/optional-java-8-cheat-sheet)
 
 <p class="note_normal">
-  Published at Codepedia.org with permission of Aleksey Novik &#8211; source <a title="http://blog.jhades.org/java-8-how-to-use-optional/" href="http://blog.jhades.org/java-8-how-to-use-optional/" target="_blank">Java 8 Optional: How to Use it</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik &#8211; source <a title="https://blog.jhades.org/java-8-how-to-use-optional/" href="https://blog.jhades.org/java-8-how-to-use-optional/" target="_blank">Java 8 Optional: How to Use it</a> from <a title="https://blog.jhades.org/" href="https://blog.jhades.org/" target="_blank">https://blog.jhades.org/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -164,7 +164,7 @@ This cheat sheet provides a thorough overview of Optional &#8211; [Optional in 
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
+      <a class="icon-earth" href="https://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
     </div>
 
     <div class="clear">

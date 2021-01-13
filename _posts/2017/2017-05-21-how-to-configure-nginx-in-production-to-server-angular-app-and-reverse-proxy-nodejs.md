@@ -53,7 +53,7 @@ $ sudo apt-get update;
 $ sudo apt-get install nginx
 ```
 
- I got the version `1.10.0`. Please see [here](http://nginx.org/en/CHANGES) the Nginx changelog.
+ I got the version `1.10.0`. Please see [here](https://nginx.org/en/CHANGES) the Nginx changelog.
 
 # Install Nginx latest version
 
@@ -62,8 +62,8 @@ To install the latest version, (at the time of this writing [2017.05.15] is `1.1
    we append the following stanza(=config snippet):
 
 ```
-deb http://nginx.org/packages/ubuntu/ xenial nginx
-deb-src http://nginx.org/packages/ubuntu/ xenial nginx
+deb https://nginx.org/packages/ubuntu/ xenial nginx
+deb-src https://nginx.org/packages/ubuntu/ xenial nginx
 ```
 
 **Note**
@@ -274,7 +274,7 @@ events {
 ```
 
 * **user** - defines which Linux system user will own and run the nginx server. Most Debian-based distributions use `www-data` but this may be different in other distros.
-* **worker_process** - defines how many threads, or simultaneous instances, of nginx to run. You can learn more about this directive and the values of adjusting it [here](http://wiki.nginx.org/CoreModule#worker_processes).
+* **worker_process** - defines how many threads, or simultaneous instances, of nginx to run. You can learn more about this directive and the values of adjusting it [here](https://wiki.nginx.org/CoreModule#worker_processes).
 * **pid** - defines a _file_ that will store the process ID of the main process.
 * **worker_connections** - sets the maximum number of simultaneous connections that can be opened by a worker process.
 
@@ -290,10 +290,10 @@ is interpreted as if it was written in the `http{}` block; this approach allows 
 * we can always include all files in a certain directory with the directive: `include /etc/nginx/sites-enabled/*;`
 * or we can include all _.conf_ files in a directory, as above `include /etc/nginx/conf.d/*.conf;`
 * the `gzip` directive tells the server to use on-the-fly gzip compression to limit the amount of bandwidth used and speed up some transfers.
-For full definitions of the gzip options, check out the [http gzip module](http://nginx.org/en/docs/http/ngx_http_gzip_module.html) from the nginx docs.
+For full definitions of the gzip options, check out the [http gzip module](https://nginx.org/en/docs/http/ngx_http_gzip_module.html) from the nginx docs.
 For example the `gzip_comp_level` sets the gzip compression _level_ of a response, trades CPU for bandwidth (values from 1 to 9, defaults to 1)
 
-> For detailed explanations of every directive in the HTTP block, check out the [http core module](http://nginx.org/en/docs/http/ngx_http_core_module.html) from the nginx documentation.
+> For detailed explanations of every directive in the HTTP block, check out the [http core module](https://nginx.org/en/docs/http/ngx_http_core_module.html) from the nginx documentation.
 
 And we are done with global configuration, let's see now:
 
@@ -326,7 +326,7 @@ Now let's do our own thing and start with:
 
 ### Configure Browser Caching
 
-The [`ngx_http_headers_module`](http://nginx.org/en/docs/http/ngx_http_headers_module.html) module allows adding the **“Expires”** and **“Cache-Control”** header fields.
+The [`ngx_http_headers_module`](https://nginx.org/en/docs/http/ngx_http_headers_module.html) module allows adding the **“Expires”** and **“Cache-Control”** header fields.
 If these headers are set, they can tell the browser that the requested file can be kept locally for a certain amount of time (including forever) without requesting it again.
  If the headers are not set, browsers will always request the file from the server, expecting either **200 OK** or **304 Not Modified** responses.
 To achieve this, we add two new sections:
@@ -697,7 +697,7 @@ The Nginx configuration to enable this, part of the second server block:
 server {
   ...
   location /auth/ {
-          proxy_pass http://keycloak_server;
+          proxy_pass https://keycloak_server;
 
           proxy_http_version 1.1;
 
@@ -734,7 +734,7 @@ the same configuration, only the `location` is set differently to `api`:
 server {
   ...
   location /api/ {
-          proxy_pass http://node_server/api/;
+          proxy_pass https://node_server/api/;
 
           proxy_http_version 1.1;
 
@@ -777,7 +777,7 @@ nginxconfigbackup(){
 
 # Nginx Pittfals
 
-Now that we are ready with the configuration, we should have a look at [Nginx Pittfals](http://wiki.nginx.org/Pitfalls),
+Now that we are ready with the configuration, we should have a look at [Nginx Pittfals](https://wiki.nginx.org/Pitfalls),
  not to have done something really BAD...
 
 # Conclusion
@@ -795,8 +795,8 @@ please leave a comment in the comments section... Very much appreciated.
 # References
 * https://nginx.org/en/docs/
 * https://www.nginx.com/resources/admin-guide/configuration-files/
-* http://nginx.org/en/docs/ngx_core_module.html
-* http://nginx.org/en/docs/http/ngx_http_core_module.html
+* https://nginx.org/en/docs/ngx_core_module.html
+* https://nginx.org/en/docs/http/ngx_http_core_module.html
 * https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04
 * https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04
 * https://www.linode.com/docs/web-servers/nginx/how-to-configure-nginx

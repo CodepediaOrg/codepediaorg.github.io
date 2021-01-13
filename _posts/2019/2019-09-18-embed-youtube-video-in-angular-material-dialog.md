@@ -156,7 +156,7 @@ export class PlayYoutubeVideoDialogComponent implements OnInit {
 ### CSS
 
 To display the video in a "fluid" manner in the iframe, we use a solution pioneered by Thierry Koblentz
- and presented on A List Apart in 2009: [Creating Intrinsic Ratios for Video](http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/):
+ and presented on A List Apart in 2009: [Creating Intrinsic Ratios for Video](https://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/):
 
 > "The idea is to create a box with the proper ratio ( 16:9, etc.), then make the video inside that box stretch to fit the dimensions of the box. It’s that simple."
 I recommend you read the whole article to understand the details.

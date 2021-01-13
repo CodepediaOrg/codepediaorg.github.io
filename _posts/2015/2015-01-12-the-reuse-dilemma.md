@@ -58,7 +58,7 @@ tags:
 </p>
 
 <p class="note_normal" style="color: #333333; text-align: justify;">
-  Published at Codepedia.org with the permission of Johannes Brodwall – source <a title="http://johannesbrodwall.com/2014/10/10/the-reuse-dilemma/" href="The%20reuse dilemma" target="_blank">The reuse dilemma</a> from <a title="http://johannesbrodwall.com/" href="http://johannesbrodwall.com/" target="_blank">http://johannesbrodwall.com/</a>
+  Published at Codepedia.org with the permission of Johannes Brodwall – source <a title="https://johannesbrodwall.com/2014/10/10/the-reuse-dilemma/" href="The%20reuse dilemma" target="_blank">The reuse dilemma</a> from <a title="https://johannesbrodwall.com/" href="https://johannesbrodwall.com/" target="_blank">https://johannesbrodwall.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -74,7 +74,7 @@ tags:
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://johannesbrodwall.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jhannes" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhannes" target="_blank"> </a>
+      <a class="icon-earth" href="https://johannesbrodwall.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jhannes" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhannes" target="_blank"> </a>
     </div>
 
     <div class="clear">

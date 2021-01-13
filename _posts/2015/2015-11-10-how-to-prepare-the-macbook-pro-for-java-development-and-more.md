@@ -135,15 +135,15 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  Download the Mac OS X x64 <a href="http://www.howtogeek.com/177619/how-to-install-applications-on-a-mac-everything-you-need-to-know/">.dmg</a> files version
+  Download the Mac OS X x64 <a href="https://www.howtogeek.com/177619/how-to-install-applications-on-a-mac-everything-you-need-to-know/">.dmg</a> files version
 </p>
 
 <ul style="text-align: justify;">
   <li>
-    <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">Java 7</a>
+    <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">Java 7</a>
   </li>
   <li>
-    <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Java 8</a>
+    <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Java 8</a>
   </li>
 </ul>
 
@@ -193,7 +193,7 @@ $ echo $JAVA_HOME
 <pre class="lang:sh decode:true ">tar xzvf apache-maven-3.3.3-bin.tar.gz</pre>
 
 <p style="text-align: justify;">
-  It is also recommended to create a <a href="http://www.cyberciti.biz/faq/creating-soft-link-or-symbolic-link/">symbolic link</a> to the Maven home, so that when let’s say you update your Maven version,  you’ll only have to change the symbolic link target:
+  It is also recommended to create a <a href="https://www.cyberciti.biz/faq/creating-soft-link-or-symbolic-link/">symbolic link</a> to the Maven home, so that when let’s say you update your Maven version,  you’ll only have to change the symbolic link target:
 </p>
 
 <pre class="lang:default decode:true">ln -s /opt/apache-maven-3.3.3 /opt/maven</pre>
@@ -221,7 +221,7 @@ Default locale: en_US, platform encoding: UTF-8
 OS name: "mac os x", version: "10.10.5", arch: "x86_64", family: "mac"</pre>
 
 <p style="text-align: justify;">
-  An alternative is to use <a href="http://brew.sh/">Homebrew</a> and execute the following command:
+  An alternative is to use <a href="https://brew.sh/">Homebrew</a> and execute the following command:
 </p>
 
 <pre class="lang:sh decode:true" title="Installation via Homebrew">brew install maven</pre>
@@ -242,7 +242,7 @@ OS name: "mac os x", version: "10.10.5", arch: "x86_64", family: "mac"</pre>
 </p>
 
 <p style="text-align: justify;">
-  You can do the above, but if you do not want everything from that package you can install <a href="http://brew.sh/">Homebrew</a> (<em>&#8220;Homebrew installs <a title="List of Homebrew packages" href="https://github.com/Homebrew/homebrew/tree/master/Library/Formula">the stuff you need</a> that Apple didn’t.&#8221;</em>) and run the following commands:
+  You can do the above, but if you do not want everything from that package you can install <a href="https://brew.sh/">Homebrew</a> (<em>&#8220;Homebrew installs <a title="List of Homebrew packages" href="https://github.com/Homebrew/homebrew/tree/master/Library/Formula">the stuff you need</a> that Apple didn’t.&#8221;</em>) and run the following commands:
 </p>
 
 <pre class="lang:sh decode:true">brew install gcc
@@ -335,7 +335,7 @@ v4.2.2</pre>
 </h3>
 
 <p style="text-align: justify;">
-  Go to Downloads page &#8211; <a href="http://dev.mysql.com/downloads/mysql/">http://dev.mysql.com/downloads/mysql/</a>, download the <em>Mac OS X 10.10 (x86, 64-bit), DMG Archive</em> and follow the steps described in the <a href="https://dev.mysql.com/doc/refman/5.7/en/osx-installation-pkg.html">installation guide</a>.
+  Go to Downloads page &#8211; <a href="https://dev.mysql.com/downloads/mysql/">https://dev.mysql.com/downloads/mysql/</a>, download the <em>Mac OS X 10.10 (x86, 64-bit), DMG Archive</em> and follow the steps described in the <a href="https://dev.mysql.com/doc/refman/5.7/en/osx-installation-pkg.html">installation guide</a>.
 </p>
 
 <h4 style="text-align: justify;">
@@ -373,7 +373,7 @@ mysql  Ver 14.14 Distrib 5.7.9, for osx10.9 (x86_64) using  EditLine wrapper</pr
 </h4>
 
 <p style="text-align: justify;">
-  If you want to have also a GUI on top of it I recommend you install the MySQL Workbench that can be also found in the <a href="http://dev.mysql.com/downloads/workbench/">downloads section</a>. Installation instruction is the same as the MySQL server installation.
+  If you want to have also a GUI on top of it I recommend you install the MySQL Workbench that can be also found in the <a href="https://dev.mysql.com/downloads/workbench/">downloads section</a>. Installation instruction is the same as the MySQL server installation.
 </p>
 
 <h3 style="text-align: justify;">
@@ -450,7 +450,7 @@ Find out who is listening on port (e.g. 8080)
 
 ### <span id="iTerm2">iTerm2</span>
 
-A very nice alternative to the &#8220;classic&#8221; terminal is [iTerm](http://www.iterm2.com/), now in version 2:
+A very nice alternative to the &#8220;classic&#8221; terminal is [iTerm](https://www.iterm2.com/), now in version 2:
 
 <p style="padding-left: 30px; text-align: justify;">
   &#8220;<span>iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted</span>&#8220;
@@ -629,11 +629,11 @@ You can now use the generated _id_rsa.pub_ key and upload it to the systems you 
 </h2>
 
 <p style="text-align: justify;">
-  A smoke test to verify if everything installed is functioning properly &#8220;together&#8221; is to generate an application with <a href="http://jhipster.github.io/">JHipster</a> and push it to a git repository.
+  A smoke test to verify if everything installed is functioning properly &#8220;together&#8221; is to generate an application with <a href="https://jhipster.github.io/">JHipster</a> and push it to a git repository.
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  JHipster is a <a href="http://yeoman.io/" target="_blank">Yeoman generator</a>, used to create a <a href="http://projects.spring.io/spring-boot/" target="_blank">Spring Boot</a> + <a href="https://angularjs.org/" target="_blank">AngularJS</a> project.
+  JHipster is a <a href="https://yeoman.io/" target="_blank">Yeoman generator</a>, used to create a <a href="https://projects.spring.io/spring-boot/" target="_blank">Spring Boot</a> + <a href="https://angularjs.org/" target="_blank">AngularJS</a> project.
 </p>
 
 <p style="text-align: justify;">
@@ -647,10 +647,10 @@ You can now use the generated _id_rsa.pub_ key and upload it to the systems you 
 
 <ol>
   <li style="text-align: justify;">
-    <a href="http://superuser.com/questions/100281/linux-mac-os-x-terminal-make-the-background-black-not-white">Linux/Mac OS X Terminal: make the background black, not white</a>
+    <a href="https://superuser.com/questions/100281/linux-mac-os-x-terminal-make-the-background-black-not-white">Linux/Mac OS X Terminal: make the background black, not white</a>
   </li>
   <li style="text-align: justify;">
-    <a href="http://www.mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/">How to Set $JAVA_HOME environment variable on Mac OS X</a>
+    <a href="https://www.mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/">How to Set $JAVA_HOME environment variable on Mac OS X</a>
   </li>
   <li style="text-align: justify;">
     <a href="https://maven.apache.org/install.html">Maven installation guide</a>
@@ -659,16 +659,16 @@ You can now use the generated _id_rsa.pub_ key and upload it to the systems you 
     <a href="https://blogs.oracle.com/blogfinger/entry/mac_os_x_often_used">Mac OS X: often used UNIX keys on the German keyboard</a>
   </li>
   <li style="text-align: justify;">
-    <a href="http://stackoverflow.com/questions/81272/is-there-any-way-in-the-os-x-terminal-to-move-the-cursor-word-by-word">Is there any way in the OS X Terminal to move the cursor word by word?</a>
+    <a href="https://stackoverflow.com/questions/81272/is-there-any-way-in-the-os-x-terminal-to-move-the-cursor-word-by-word">Is there any way in the OS X Terminal to move the cursor word by word?</a>
   </li>
   <li style="text-align: justify;">
-    <a href="http://stackoverflow.com/questions/420456/open-terminal-here-in-mac-os-finder">Open terminal here in Mac OS finder</a>
+    <a href="https://stackoverflow.com/questions/420456/open-terminal-here-in-mac-os-finder">Open terminal here in Mac OS finder</a>
   </li>
   <li style="text-align: justify;">
-    <a href="http://www.puddingonline.com/~dave/publications/SSH-with-Keys-HOWTO/document/html/SSH-with-Keys-HOWTO-5.html">SSH Keys with a Passphrase</a>
+    <a href="https://www.puddingonline.com/~dave/publications/SSH-with-Keys-HOWTO/document/html/SSH-with-Keys-HOWTO-5.html">SSH Keys with a Passphrase</a>
   </li>
   <li style="text-align: justify;">
-    <a href="http://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/">Make an Alias in Bash Shell in OS X Terminal</a>
+    <a href="https://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/">Make an Alias in Bash Shell in OS X Terminal</a>
   </li>
 </ol>
 

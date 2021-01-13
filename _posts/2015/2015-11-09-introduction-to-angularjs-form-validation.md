@@ -20,7 +20,7 @@ tags:
 </h3>
 
 <p style="text-align: justify;">
-  Before it became an open source framework, Angular was meant as a development tool targeted mostly at web designers. The framework would allow designers to enhance plain HTML pages and give them the ability to validate and persist forms in a transparent way (see reference<a href="http://devchat.tv/adventures-in-angular/001-aia-the-birth-of-angular-1">here</a>).
+  Before it became an open source framework, Angular was meant as a development tool targeted mostly at web designers. The framework would allow designers to enhance plain HTML pages and give them the ability to validate and persist forms in a transparent way (see reference<a href="https://devchat.tv/adventures-in-angular/001-aia-the-birth-of-angular-1">here</a>).
 </p>
 
 <p style="text-align: justify;">
@@ -165,7 +165,7 @@ ng-invalid-required" name="frm"&gt;</pre>
 </p>
 
 <div style="text-align: justify;">
-  <img src="http://d2huq83j2o5dyd.cloudfront.net/angular-not-only-spa/invalid.png" alt="" />
+  <img src="https://d2huq83j2o5dyd.cloudfront.net/angular-not-only-spa/invalid.png" alt="" />
 </div>
 
 <p style="text-align: justify;">

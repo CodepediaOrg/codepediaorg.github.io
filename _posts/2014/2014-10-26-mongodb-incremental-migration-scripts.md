@@ -18,7 +18,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  I remember working on an enterprise application where the <a href="http://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch03.html#configuration-misc-properties"><em>hibernate.hbm2ddl.auto</em></a> was the default data migration tool.
+  I remember working on an enterprise application where the <a href="https://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch03.html#configuration-misc-properties"><em>hibernate.hbm2ddl.auto</em></a> was the default data migration tool.
 </p>
 
 <p style="text-align: justify;">
@@ -36,15 +36,15 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  A project must be packed with both application code and all associated database schema/data updates scripts. Using incremental migration scripts allows us to automate the deployment process and to take advantage of <a href="http://en.wikipedia.org/wiki/Continuous_delivery">continuous delivery</a>.
+  A project must be packed with both application code and all associated database schema/data updates scripts. Using incremental migration scripts allows us to automate the deployment process and to take advantage of <a href="https://en.wikipedia.org/wiki/Continuous_delivery">continuous delivery</a>.
 </p>
 
 <p style="text-align: justify;">
-  Nowadays you don’t have to implement data migration tools, <a href="http://flywaydb.org/">Flyway</a> does a better job than all our previous custom frameworks. All database schema and data changes have to be recorded in incremental update scripts following a <a href="http://flywaydb.org/documentation/migration/">well-defined naming convention</a>.
+  Nowadays you don’t have to implement data migration tools, <a href="https://flywaydb.org/">Flyway</a> does a better job than all our previous custom frameworks. All database schema and data changes have to be recorded in incremental update scripts following a <a href="https://flywaydb.org/documentation/migration/">well-defined naming convention</a>.
 </p>
 
 <p style="text-align: justify;">
-  A <a href="http://en.wikipedia.org/wiki/Relational_database_management_system">RDBMS</a> migration plan addresses both schema and data changes. It’s always good to separate schema and data changes. Integration tests might only use the schema migration scripts in conjunction with test-time related data .
+  A <a href="https://en.wikipedia.org/wiki/Relational_database_management_system">RDBMS</a> migration plan addresses both schema and data changes. It’s always good to separate schema and data changes. Integration tests might only use the schema migration scripts in conjunction with test-time related data .
 </p>
 
 <p style="text-align: justify;">
@@ -145,10 +145,10 @@ Mongeez uses a separate MongoDB collection to record previously run scripts:
 
 Code available on [GitHub](https://github.com/vladmihalcea/vladmihalcea.wordpress.com/tree/master/mongodb-facts).
 
-**If you have enjoyed reading my article and you’re looking forward to getting instant email notifications of my latest posts, you just need to [follow my blog](http://vladmihalcea.com/2014/10/17/mongodb-incremental-migration-scripts/follow-me/).**
+**If you have enjoyed reading my article and you’re looking forward to getting instant email notifications of my latest posts, you just need to [follow my blog](https://vladmihalcea.com/2014/10/17/mongodb-incremental-migration-scripts/follow-me/).**
 
 <p class="note_normal">
-  Published at Codepedia.org with permission of <a title="https://www.codepedia.org/author/vladmihalcea" href="https://www.codepedia.org/author/vladmihalcea" target="_blank">Vlad Mihalcea</a> &#8211; source <a title="http://vladmihalcea.com/2014/10/17/mongodb-incremental-migration-scripts/" href="http://vladmihalcea.com/2014/10/17/mongodb-incremental-migration-scripts/" target="_blank">MongoDB Incremental Migration Scripts</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
+  Published at Codepedia.org with permission of <a title="https://www.codepedia.org/author/vladmihalcea" href="https://www.codepedia.org/author/vladmihalcea" target="_blank">Vlad Mihalcea</a> &#8211; source <a title="https://vladmihalcea.com/2014/10/17/mongodb-incremental-migration-scripts/" href="https://vladmihalcea.com/2014/10/17/mongodb-incremental-migration-scripts/" target="_blank">MongoDB Incremental Migration Scripts</a> from <a title="https://vladmihalcea.com/" href="https://vladmihalcea.com/" target="_blank">https://vladmihalcea.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -164,7 +164,7 @@ Code available on [GitHub](https://github.com/vladmihalcea/vladmihalcea.wordpres
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
+      <a class="icon-earth" href="https://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
     </div>
 
     <div class="clear">

@@ -35,7 +35,7 @@ git clone https://github.com/CodepediaOrg/podcastpedia.git
 
 ## Generate maven archetype
 
-Run the [Maven archetype plugin](http://maven.apache.org/archetype/maven-archetype-plugin/index.html) on the existing project
+Run the [Maven archetype plugin](https://maven.apache.org/archetype/maven-archetype-plugin/index.html) on the existing project
 
 Navigate to the root of the freshly cloned project and execute the following maven command:
 
@@ -145,11 +145,11 @@ This metadata, found under _src/main/resources/META-INF/maven/archetype-metadata
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
- http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+<archetype-descriptor xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
+ https://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
     name="podcastpedia"
-    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
   <fileSets>
     <fileSet filtered="true" encoding="UTF-8">
       <directory></directory>
@@ -525,11 +525,11 @@ The **name** attribute from header (here _podcastpedia_):
 
 ```xml
 
-<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
-                                          http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+<archetype-descriptor xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
+                                          https://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
     name="podcastpedia"
-    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
 ```
 will be displayed to the user when choosing an archetype to generate a project from.
 
@@ -652,7 +652,7 @@ Note:
 
 * all the _.java_ files found under _src/main/java_ folder are included in the generated project, except for _StringUtils.java_
 * filesets can be "filtered" (`filtered="true"`), which means the selected files will be used as
-[Velocity templates](http://velocity.apache.org/engine/releases/velocity-1.5/user-guide.html)
+[Velocity templates](https://velocity.apache.org/engine/releases/velocity-1.5/user-guide.html)
 They can be non-filtered, which means the selected files will be copied without modification
 * the fileset is "packaged" (`packaged="true"`), which means the selected files will be generated/copied in a directory
 structure that is prepended by the package property. That is mostly likely true for _.java_ files
@@ -956,8 +956,8 @@ The sub-directories listed contain files/file-types specified via `includes`, an
 
 ## References
 
-* [Maven Archetype](http://maven.apache.org/archetype/index.html)
-  * [Archetype creation](http://maven.apache.org/archetype/maven-archetype-plugin/advanced-usage.html)
-  * [Create an archetype from a multi-module project](http://maven.apache.org/archetype/maven-archetype-plugin/examples/create-multi-module-project.html)
-  * [How is metadata about an archetype stored?](http://maven.apache.org/archetype/maven-archetype-plugin/specification/archetype-metadata.html)
-  * [ArchetypeDescriptor](http://maven.apache.org/archetype/archetype-models/archetype-descriptor/archetype-descriptor.html)
+* [Maven Archetype](https://maven.apache.org/archetype/index.html)
+  * [Archetype creation](https://maven.apache.org/archetype/maven-archetype-plugin/advanced-usage.html)
+  * [Create an archetype from a multi-module project](https://maven.apache.org/archetype/maven-archetype-plugin/examples/create-multi-module-project.html)
+  * [How is metadata about an archetype stored?](https://maven.apache.org/archetype/maven-archetype-plugin/specification/archetype-metadata.html)
+  * [ArchetypeDescriptor](https://maven.apache.org/archetype/archetype-models/archetype-descriptor/archetype-descriptor.html)

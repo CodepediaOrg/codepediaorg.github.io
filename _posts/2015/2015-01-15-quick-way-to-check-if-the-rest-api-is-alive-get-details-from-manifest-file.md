@@ -93,7 +93,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)</pre>
 
 ## Generate Manifest file with Maven
 
-Since the demo application is a web application, I am using the Apache maven war plugin supported by the <a title="http://maven.apache.org/shared/maven-archiver/index.html" href="http://maven.apache.org/shared/maven-archiver/index.html" target="_blank">Apache Maven Archiver</a> to generate a Manifest file:
+Since the demo application is a web application, I am using the Apache maven war plugin supported by the <a title="https://maven.apache.org/shared/maven-archiver/index.html" href="https://maven.apache.org/shared/maven-archiver/index.html" target="_blank">Apache Maven Archiver</a> to generate a Manifest file:
 
 <pre class="lang:default decode:true" title="maven-war-plugin configuration">&lt;plugin&gt;
 	&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
@@ -133,7 +133,7 @@ Implementation-URL: ${project.url}</pre>
 Specification-Version: ${project.version}
 Specification-Vendor: ${project.organization.name}</pre>
 
-See  <a title=" Apache Maven Archiver" href="http://maven.apache.org/shared/maven-archiver/index.html" target="_blank">Apache Maven Archiver</a> for further details.
+See  <a title=" Apache Maven Archiver" href="https://maven.apache.org/shared/maven-archiver/index.html" target="_blank">Apache Maven Archiver</a> for further details.
 
 <p style="text-align: justify;">
   Notice that in order to generate the Manifest.mf file also in the file system under webapp/META-INF, you need to bind the manifest goal to an execution phase (e.g. package):
@@ -186,11 +186,11 @@ Reading from the manifest file occurs in the injected ManifestService class:
 
 }</pre>
 
-To access the MANIFEST.MF file you need to inject the <a title="http://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html" href="http://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html" target="_blank">ServletContext</a>, and call one of its methods
+To access the MANIFEST.MF file you need to inject the <a title="https://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html" href="https://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html" target="_blank">ServletContext</a>, and call one of its methods
 
-  * <a title="http://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html#getResourceAsStream(java.lang.String)" href="http://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html#getResourceAsStream(java.lang.String)" target="_blank">SerlvetContext#getResourceAsStream()</a> &#8211; (the preferred way)
+  * <a title="https://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html#getResourceAsStream(java.lang.String)" href="https://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html#getResourceAsStream(java.lang.String)" target="_blank">SerlvetContext#getResourceAsStream()</a> &#8211; (the preferred way)
 <li style="text-align: justify;">
-  <a title="http://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html#getRealPath(java.lang.String)" href="http://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html#getRealPath(java.lang.String)" target="_blank">ServletContext#getRealPath()</a> &#8211; gets the real path corresponding to the given virtual path. The real path returned will be in a form appropriate to the computer and operating system on which the servlet container is running, including the proper path separators. Its biggest problem in this case, if you don&#8217;t deploy the .war exploded you won&#8217;t have access to the manifest file.
+  <a title="https://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html#getRealPath(java.lang.String)" href="https://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html#getRealPath(java.lang.String)" target="_blank">ServletContext#getRealPath()</a> &#8211; gets the real path corresponding to the given virtual path. The real path returned will be in a form appropriate to the computer and operating system on which the servlet container is running, including the proper path separators. Its biggest problem in this case, if you don&#8217;t deploy the .war exploded you won&#8217;t have access to the manifest file.
 </li>
 
 ## Java EE version
@@ -222,12 +222,12 @@ Here you have &#8211; a quick way to verify that your REST api is reachable. If 
 ## Resources
 
   1. Apache Maven
-      1. <a title="http://maven.apache.org/shared/maven-archiver/index.html" href="http://maven.apache.org/shared/maven-archiver/index.html" target="_blank">Apache Maven Archiver</a>
-      2. <a title="http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Built-in_Lifecycle_Bindings" href="http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Built-in_Lifecycle_Bindings" target="_blank">Introduction to the Build Lifecycle#Built-in_Lifecycle_Bindings</a>
-  2. Oracle docs &#8211; <a title="http://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html" href="http://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html" target="_blank">Working with Manifest Files: The Basics</a>
+      1. <a title="https://maven.apache.org/shared/maven-archiver/index.html" href="https://maven.apache.org/shared/maven-archiver/index.html" target="_blank">Apache Maven Archiver</a>
+      2. <a title="https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Built-in_Lifecycle_Bindings" href="https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Built-in_Lifecycle_Bindings" target="_blank">Introduction to the Build Lifecycle#Built-in_Lifecycle_Bindings</a>
+  2. Oracle docs &#8211; <a title="https://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html" href="https://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html" target="_blank">Working with Manifest Files: The Basics</a>
   3.  Stackoverflow
-      1. <a title="http://stackoverflow.com/questions/2712970/how-to-get-maven-artifact-version-at-runtime" href="http://stackoverflow.com/questions/2712970/how-to-get-maven-artifact-version-at-runtime" target="_blank">How to get Maven Artifact version at runtime?</a>
-      2. <a title="http://stackoverflow.com/questions/14760638/how-to-get-maven-project-version-from-java-method-as-like-at-pom" href="http://stackoverflow.com/questions/14760638/how-to-get-maven-project-version-from-java-method-as-like-at-pom" target="_blank">How to Get Maven Project Version From Java Method as Like at Pom</a>
+      1. <a title="https://stackoverflow.com/questions/2712970/how-to-get-maven-artifact-version-at-runtime" href="https://stackoverflow.com/questions/2712970/how-to-get-maven-artifact-version-at-runtime" target="_blank">How to get Maven Artifact version at runtime?</a>
+      2. <a title="https://stackoverflow.com/questions/14760638/how-to-get-maven-project-version-from-java-method-as-like-at-pom" href="https://stackoverflow.com/questions/14760638/how-to-get-maven-project-version-from-java-method-as-like-at-pom" target="_blank">How to Get Maven Project Version From Java Method as Like at Pom</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

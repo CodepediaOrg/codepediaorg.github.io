@@ -35,18 +35,18 @@ If you find yourself getting the following errror, when trying to send an email 
 	... 43 more</pre>
 
 <p style="text-align: justify;">
-  and cannot figure out why does it not work?!, EVEN THOUGH you can send emails via Telnet using the same configuration as the one set up for the Java client or you set the <code>mail.smtp.localhost</code> property to the  fully qualified domain name (FQDN) of the client host &#8211; that might be IP address of the client host &#8211;  as suggested in the <a title="http://www.oracle.com/technetwork/java/faq-135477.html#helo" href="http://www.oracle.com/technetwork/java/faq-135477.html#helo" target="_blank">JavaMail API FAQ</a>&#8230; THEN it might be that you are using an old version of the java mail api.<!--more-->
+  and cannot figure out why does it not work?!, EVEN THOUGH you can send emails via Telnet using the same configuration as the one set up for the Java client or you set the <code>mail.smtp.localhost</code> property to the  fully qualified domain name (FQDN) of the client host &#8211; that might be IP address of the client host &#8211;  as suggested in the <a title="https://www.oracle.com/technetwork/java/faq-135477.html#helo" href="https://www.oracle.com/technetwork/java/faq-135477.html#helo" target="_blank">JavaMail API FAQ</a>&#8230; THEN it might be that you are using an old version of the java mail api.<!--more-->
 </p>
 
 ## Solution
 
 <p style="text-align: justify;">
-  I have configured a Spring Batch job with Spring Boot version 1.1.3.RELEASE by building on the <a title="http://spring.io/guides/gs/batch-processing/" href="http://spring.io/guides/gs/batch-processing/" target="_blank">Getting started guide for Spring Batch</a> on Spring.io, and for some reason the <code>spring-boot-starter-remote-shell</code> artifact comes with the java mail library in version 1.4. Replacing this with the version 1.4.7 (version which works for the batch jobs developed in my own kind of way&#8230;) solved the problem for me:
+  I have configured a Spring Batch job with Spring Boot version 1.1.3.RELEASE by building on the <a title="https://spring.io/guides/gs/batch-processing/" href="https://spring.io/guides/gs/batch-processing/" target="_blank">Getting started guide for Spring Batch</a> on Spring.io, and for some reason the <code>spring-boot-starter-remote-shell</code> artifact comes with the java mail library in version 1.4. Replacing this with the version 1.4.7 (version which works for the batch jobs developed in my own kind of way&#8230;) solved the problem for me:
 </p>
 
 <pre class="lang:xhtml mark:18-32 decode:true " title="Snippet from pom.xml to solve the problem">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
+&lt;project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
     &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
 
     &lt;groupId&gt;org.podcastpedia.batch&lt;/groupId&gt;
@@ -82,7 +82,7 @@ If you find yourself getting the following errror, when trying to send an email 
     &lt;repositories&gt;
         &lt;repository&gt;
             &lt;id&gt;spring-snapshots&lt;/id&gt;
-            &lt;url&gt;http://repo.spring.io/libs-snapshot&lt;/url&gt;
+            &lt;url&gt;https://repo.spring.io/libs-snapshot&lt;/url&gt;
             &lt;snapshots&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/snapshots&gt;
         &lt;/repository&gt;
     &lt;/repositories&gt;
@@ -90,7 +90,7 @@ If you find yourself getting the following errror, when trying to send an email 
     &lt;pluginRepositories&gt;
         &lt;pluginRepository&gt;
             &lt;id&gt;spring-snapshots&lt;/id&gt;
-            &lt;url&gt;http://repo.spring.io/libs-snapshot&lt;/url&gt;
+            &lt;url&gt;https://repo.spring.io/libs-snapshot&lt;/url&gt;
             &lt;snapshots&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/snapshots&gt;
         &lt;/pluginRepository&gt;
     &lt;/pluginRepositories&gt;

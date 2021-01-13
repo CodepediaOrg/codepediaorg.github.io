@@ -598,7 +598,7 @@ Creating /Users/ama/.helm/starters
 Creating /Users/ama/.helm/cache/archive
 Creating /Users/ama/.helm/repository/repositories.yaml
 Adding stable repo with URL: https://kubernetes-charts.storage.googleapis.com
-Adding local repo with URL: http://127.0.0.1:8879/charts
+Adding local repo with URL: https://127.0.0.1:8879/charts
 $HELM_HOME has been configured at /Users/ama/.helm.
 
 Tiller (the Helm server-side component) has been installed into your Kubernetes Cluster.

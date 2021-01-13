@@ -23,11 +23,11 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  Looking to REST? In Java? There&#8217;s never time for that :), but if you are looking to use an <em>&#8220;architectural style consisting of a coordinated set of constraints applied to components, connectors, and data elements, within a distributed <a title="Hypermedia" href="http://en.wikipedia.org/wiki/Hypermedia">hypermedia</a> system&#8221;</em> in Java<em>,</em> then you have come to the right place, because in this post I will present a simple RESTful API that maps REST calls to backend services offering <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">CRUD</a> functionality.
+  Looking to REST? In Java? There&#8217;s never time for that :), but if you are looking to use an <em>&#8220;architectural style consisting of a coordinated set of constraints applied to components, connectors, and data elements, within a distributed <a title="Hypermedia" href="https://en.wikipedia.org/wiki/Hypermedia">hypermedia</a> system&#8221;</em> in Java<em>,</em> then you have come to the right place, because in this post I will present a simple RESTful API that maps REST calls to backend services offering <a title="Wikipedia - CRUD" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">CRUD</a> functionality.
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> I will not focus too much on <a title="Wikipedia - REST" href="http://en.wikipedia.org/wiki/Representational_State_Transfer" target="_blank"><b>Representational state transfer</b></a> (<b>REST</b>) itself, because there are plenty of resources on the topic in the internet, some of which I listed under Resources at the end of the post.
+  <strong>Note:</strong> I will not focus too much on <a title="Wikipedia - REST" href="https://en.wikipedia.org/wiki/Representational_State_Transfer" target="_blank"><b>Representational state transfer</b></a> (<b>REST</b>) itself, because there are plenty of resources on the topic in the internet, some of which I listed under Resources at the end of the post.
 </p>
 <!--more-->
 <p style="text-align: justify;">
@@ -243,7 +243,7 @@ tags:
 </h4>
 
 <p style="text-align: justify;">
-  I like glueing stuff together with <strong><a title="Spring Framework" href="http://projects.spring.io/spring-framework/" target="_blank">Spring</a></strong>, and this example is no exception. You&#8217;ll find out how Jersey 2 integrates with Spring.
+  I like glueing stuff together with <strong><a title="Spring Framework" href="https://projects.spring.io/spring-framework/" target="_blank">Spring</a></strong>, and this example is no exception. You&#8217;ll find out how Jersey 2 integrates with Spring.
 </p>
 
 <h4 style="text-align: justify;">
@@ -263,7 +263,7 @@ tags:
 </h4>
 
 <p style="text-align: justify;">
-  Everything gets packaged as a <code>.war</code> file and can be deployed on any web container &#8211; I used <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Tomcat</a> and <a title="Jetty" href="http://www.eclipse.org/jetty/" target="_blank">Jetty</a> but, it could also be Glassfih, Weblogic, JBoss or WebSphere.
+  Everything gets packaged as a <code>.war</code> file and can be deployed on any web container &#8211; I used <a title="Apache Tomcat" href="https://tomcat.apache.org/" target="_blank">Tomcat</a> and <a title="Jetty" href="https://www.eclipse.org/jetty/" target="_blank">Jetty</a> but, it could also be Glassfih, Weblogic, JBoss or WebSphere.
 </p>
 
 <h4 style="text-align: justify;">
@@ -271,7 +271,7 @@ tags:
 </h4>
 
 <p style="text-align: justify;">
-  The sample data is stored in a <a title="MySQL" href="http://www.mysql.com/" target="_blank">MySQL</a> table:
+  The sample data is stored in a <a title="MySQL" href="https://www.mysql.com/" target="_blank">MySQL</a> table:
 </p>
 
 <p style="text-align: justify;">
@@ -344,9 +344,9 @@ If you want to follow along, you find all you need on GitHub:
 #### <span id="212_Web_Application_Deployment_Descriptor_8211_webxml">2.1.2. Web Application Deployment Descriptor &#8211; web.xml</span>
 
 <pre><code class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"&gt;
+&lt;web-app version="3.0" xmlns="https://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"&gt;
 	&lt;display-name&gt;Demo - Restful Web Application&lt;/display-name&gt;
 
 	&lt;listener&gt;
@@ -435,19 +435,19 @@ The class registers the following components
 
 The Spring application context configuration is located in the classpath under `spring/applicationContext.xml`:
 
-<pre><code class="xml">&lt;beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:tx="http://www.springframework.org/schema/tx"
+<pre><code class="xml">&lt;beans xmlns="https://www.springframework.org/schema/beans"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="https://www.springframework.org/schema/context"
+	xmlns:tx="https://www.springframework.org/schema/tx"
 	xsi:schemaLocation="
-		http://www.springframework.org/schema/beans
-		http://www.springframework.org/schema/beans/spring-beans.xsd
+		https://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
 
-		http://www.springframework.org/schema/tx
-		http://www.springframework.org/schema/tx/spring-tx.xsd
+		https://www.springframework.org/schema/tx
+		https://www.springframework.org/schema/tx/spring-tx.xsd
 
-		http://www.springframework.org/schema/context
-		http://www.springframework.org/schema/context/spring-context.xsd"&gt;
+		https://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd"&gt;
 
 	&lt;context:component-scan base-package="org.codingpedia.demo.rest.*" /&gt;
 
@@ -489,10 +489,10 @@ The Spring application context configuration is located in the classpath under `
 #### <span id="221_Resources">2.2.1. Resources</span>
 
 <p style="text-align: justify;">
-  As mentioned earlier, the demo application manages podcasts, which represent the <a title="Wikipedia - Web resource" href="http://en.wikipedia.org/wiki/Web_resource" target="_blank">resources</a> in our web API. Resources are the central concept in REST and are characterized by two main things:
+  As mentioned earlier, the demo application manages podcasts, which represent the <a title="Wikipedia - Web resource" href="https://en.wikipedia.org/wiki/Web_resource" target="_blank">resources</a> in our web API. Resources are the central concept in REST and are characterized by two main things:
 </p>
 
-  * each is referenced with a global identifier (e.g. a [URI](http://en.wikipedia.org/wiki/Uniform_resource_identifier "Uniform resource identifier") in HTTP).
+  * each is referenced with a global identifier (e.g. a [URI](https://en.wikipedia.org/wiki/Uniform_resource_identifier "Uniform resource identifier") in HTTP).
   * has one or more representations, that they expose to the outer world and can be manipulated with (we&#8217;ll be working mostly with JSON representations in this example)
 
 The podcast resources are represented in our application by the <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" target="_blank">Podcast</a> class:
@@ -601,7 +601,7 @@ The strucuture is pretty simple &#8211; there are an `id`, which identifies a po
 	"id":1,
 	"title":"Quarks & Co - zum Mitnehmen-modified",
 	"linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen",
-	"feed":"http://podcast.wdr.de/quarks.xml",
+	"feed":"https://podcast.wdr.de/quarks.xml",
 	"description":"Quarks & Co: Das Wissenschaftsmagazin",
 	"insertionDate":1388213547000
 }</code></pre>
@@ -786,7 +786,7 @@ public class PodcastRestService {
 }</code></pre>
 
 <p style="text-align: justify;">
-  Notice the <code>@Path("/podcasts")</code> before the class definition. The <a href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/Path.html" target="_top">@Path</a> annotation&#8217;s value is a relative URI path. In the example above, the Java class will be hosted at the URI path <code>/podcasts</code>. The <code>PodcastDao</code> interface is used to communicate with the database.
+  Notice the <code>@Path("/podcasts")</code> before the class definition. The <a href="https://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/Path.html" target="_top">@Path</a> annotation&#8217;s value is a relative URI path. In the example above, the Java class will be hosted at the URI path <code>/podcasts</code>. The <code>PodcastDao</code> interface is used to communicate with the database.
 </p>
 
 <p class="note_code" style="text-align: justify;">
@@ -795,7 +795,7 @@ public class PodcastRestService {
 
 ##### <span id="2221_CREATE">2.2.2.1. CREATE</span>
 
-For the creation of new resources(&#8220;podcasts&#8221;) I use the <a title="Wikpedia - POST (HTTP)" href="http://en.wikipedia.org/wiki/POST_%28HTTP%29" target="_blank">POST (HTTP)</a> method.
+For the creation of new resources(&#8220;podcasts&#8221;) I use the <a title="Wikpedia - POST (HTTP)" href="https://en.wikipedia.org/wiki/POST_%28HTTP%29" target="_blank">POST (HTTP)</a> method.
 
 <p class="note_normal" style="text-align: justify;">
   <strong>Note:</strong> In JAX-RS (Jersey) you specifies the HTTP methods (GET, POST, PUT, DELETE) by placing the corresponding annotation in front of the method.
@@ -941,11 +941,11 @@ Annotations
 </p>
 
 <p style="text-align: justify;">
-  Looking to REST? In Java? There&#8217;s never time for that :), but if you are looking to use an <em>&#8220;architectural style consisting of a coordinated set of constraints applied to components, connectors, and data elements, within a distributed <a title="Hypermedia" href="http://en.wikipedia.org/wiki/Hypermedia">hypermedia</a> system&#8221;</em> in Java<em>,</em> then you have come to the right place, because in this post I will present a simple RESTful API that maps REST calls to backend services offering <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">CRUD</a> functionality.
+  Looking to REST? In Java? There&#8217;s never time for that :), but if you are looking to use an <em>&#8220;architectural style consisting of a coordinated set of constraints applied to components, connectors, and data elements, within a distributed <a title="Hypermedia" href="https://en.wikipedia.org/wiki/Hypermedia">hypermedia</a> system&#8221;</em> in Java<em>,</em> then you have come to the right place, because in this post I will present a simple RESTful API that maps REST calls to backend services offering <a title="Wikipedia - CRUD" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">CRUD</a> functionality.
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> I will not focus too much on <a title="Wikipedia - REST" href="http://en.wikipedia.org/wiki/Representational_State_Transfer" target="_blank"><b>Representational state transfer</b></a> (<b>REST</b>) itself, because there are plenty of resources on the topic in the internet, some of which I listed under Resources at the end of the post.
+  <strong>Note:</strong> I will not focus too much on <a title="Wikipedia - REST" href="https://en.wikipedia.org/wiki/Representational_State_Transfer" target="_blank"><b>Representational state transfer</b></a> (<b>REST</b>) itself, because there are plenty of resources on the topic in the internet, some of which I listed under Resources at the end of the post.
 </p>
 
 <p style="text-align: justify;">
@@ -1165,7 +1165,7 @@ Annotations
 </h4>
 
 <p style="text-align: justify;">
-  I like glueing stuff together with <strong><a title="Spring Framework" href="http://projects.spring.io/spring-framework/" target="_blank">Spring</a></strong>, and this example is no exception. You&#8217;ll find out how Jersey 2 integrates with Spring.
+  I like glueing stuff together with <strong><a title="Spring Framework" href="https://projects.spring.io/spring-framework/" target="_blank">Spring</a></strong>, and this example is no exception. You&#8217;ll find out how Jersey 2 integrates with Spring.
 </p>
 
 <h4 style="text-align: justify;">
@@ -1185,7 +1185,7 @@ Annotations
 </h4>
 
 <p style="text-align: justify;">
-  Everything gets packaged as a <code>.war</code> file and can be deployed on any web container &#8211; I used <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Tomcat</a> and <a title="Jetty" href="http://www.eclipse.org/jetty/" target="_blank">Jetty</a> but, it could also be Glassfih, Weblogic, JBoss or WebSphere.
+  Everything gets packaged as a <code>.war</code> file and can be deployed on any web container &#8211; I used <a title="Apache Tomcat" href="https://tomcat.apache.org/" target="_blank">Tomcat</a> and <a title="Jetty" href="https://www.eclipse.org/jetty/" target="_blank">Jetty</a> but, it could also be Glassfih, Weblogic, JBoss or WebSphere.
 </p>
 
 <h4 style="text-align: justify;">
@@ -1193,7 +1193,7 @@ Annotations
 </h4>
 
 <p style="text-align: justify;">
-  The sample data is stored in a <a title="MySQL" href="http://www.mysql.com/" target="_blank">MySQL</a> table:
+  The sample data is stored in a <a title="MySQL" href="https://www.mysql.com/" target="_blank">MySQL</a> table:
 </p>
 
 <p style="text-align: justify;">
@@ -1266,9 +1266,9 @@ If you want to follow along, you find all you need on GitHub:
 #### <span id="212_Web_Application_Deployment_Descriptor_8211_webxml">2.1.2. Web Application Deployment Descriptor &#8211; web.xml</span>
 
 <pre><code class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"&gt;
+&lt;web-app version="3.0" xmlns="https://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"&gt;
 	&lt;display-name&gt;Demo - Restful Web Application&lt;/display-name&gt;
 
 	&lt;listener&gt;
@@ -1357,19 +1357,19 @@ The class registers the following components
 
 The Spring application context configuration is located in the classpath under `spring/applicationContext.xml`:
 
-<pre><code class="xml">&lt;beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:tx="http://www.springframework.org/schema/tx"
+<pre><code class="xml">&lt;beans xmlns="https://www.springframework.org/schema/beans"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="https://www.springframework.org/schema/context"
+	xmlns:tx="https://www.springframework.org/schema/tx"
 	xsi:schemaLocation="
-		http://www.springframework.org/schema/beans
-		http://www.springframework.org/schema/beans/spring-beans.xsd
+		https://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
 
-		http://www.springframework.org/schema/tx
-		http://www.springframework.org/schema/tx/spring-tx.xsd
+		https://www.springframework.org/schema/tx
+		https://www.springframework.org/schema/tx/spring-tx.xsd
 
-		http://www.springframework.org/schema/context
-		http://www.springframework.org/schema/context/spring-context.xsd"&gt;
+		https://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd"&gt;
 
 	&lt;context:component-scan base-package="org.codingpedia.demo.rest.*" /&gt;
 
@@ -1411,10 +1411,10 @@ The Spring application context configuration is located in the classpath under `
 #### <span id="221_Resources">2.2.1. Resources</span>
 
 <p style="text-align: justify;">
-  As mentioned earlier, the demo application manages podcasts, which represent the <a title="Wikipedia - Web resource" href="http://en.wikipedia.org/wiki/Web_resource" target="_blank">resources</a> in our web API. Resources are the central concept in REST and are characterized by two main things:
+  As mentioned earlier, the demo application manages podcasts, which represent the <a title="Wikipedia - Web resource" href="https://en.wikipedia.org/wiki/Web_resource" target="_blank">resources</a> in our web API. Resources are the central concept in REST and are characterized by two main things:
 </p>
 
-  * each is referenced with a global identifier (e.g. a [URI](http://en.wikipedia.org/wiki/Uniform_resource_identifier "Uniform resource identifier") in HTTP).
+  * each is referenced with a global identifier (e.g. a [URI](https://en.wikipedia.org/wiki/Uniform_resource_identifier "Uniform resource identifier") in HTTP).
   * has one or more representations, that they expose to the outer world and can be manipulated with (we&#8217;ll be working mostly with JSON representations in this example)
 
 The podcast resources are represented in our application by the <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" target="_blank">Podcast</a> class:
@@ -1523,7 +1523,7 @@ The strucuture is pretty simple &#8211; there are an `id`, which identifies a po
 	"id":1,
 	"title":"Quarks & Co - zum Mitnehmen-modified",
 	"linkOnPodcastpedia":"https://github.com/CodepediaOrg/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen",
-	"feed":"http://podcast.wdr.de/quarks.xml",
+	"feed":"https://podcast.wdr.de/quarks.xml",
 	"description":"Quarks & Co: Das Wissenschaftsmagazin",
 	"insertionDate":1388213547000
 }</code></pre>
@@ -1708,7 +1708,7 @@ public class PodcastRestService {
 }</code></pre>
 
 <p style="text-align: justify;">
-  Notice the <code>@Path("/podcasts")</code> before the class definition. The <a href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/Path.html" target="_top">@Path</a> annotation&#8217;s value is a relative URI path. In the example above, the Java class will be hosted at the URI path <code>/podcasts</code>. The <code>PodcastDao</code> interface is used to communicate with the database.
+  Notice the <code>@Path("/podcasts")</code> before the class definition. The <a href="https://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/Path.html" target="_top">@Path</a> annotation&#8217;s value is a relative URI path. In the example above, the Java class will be hosted at the URI path <code>/podcasts</code>. The <code>PodcastDao</code> interface is used to communicate with the database.
 </p>
 
 <p class="note_code" style="text-align: justify;">
@@ -1717,7 +1717,7 @@ public class PodcastRestService {
 
 ##### <span id="2221_CREATE">2.2.2.1. CREATE</span>
 
-For the creation of new resources(&#8220;podcasts&#8221;) I use the <a title="Wikpedia - POST (HTTP)" href="http://en.wikipedia.org/wiki/POST_%28HTTP%29" target="_blank">POST (HTTP)</a> method.
+For the creation of new resources(&#8220;podcasts&#8221;) I use the <a title="Wikpedia - POST (HTTP)" href="https://en.wikipedia.org/wiki/POST_%28HTTP%29" target="_blank">POST (HTTP)</a> method.
 
 <p class="note_normal" style="text-align: justify;">
   <strong>Note:</strong> In JAX-RS (Jersey) you specifies the HTTP methods (GET, POST, PUT, DELETE) by placing the corresponding annotation in front of the method.
@@ -2200,13 +2200,13 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
 
 ### <span id="52_Web_resources">5.2. Web resources</span>
 
-  * <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer" target="_blank">http://en.wikipedia.org/wiki/Representational_State_Transfer</a>
-  * <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">http://en.wikipedia.org/wiki/Create,_read,_update_and_delete</a>
+  * <a href="https://en.wikipedia.org/wiki/Representational_State_Transfer" target="_blank">https://en.wikipedia.org/wiki/Representational_State_Transfer</a>
+  * <a title="Wikipedia - CRUD" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">https://en.wikipedia.org/wiki/Create,_read,_update_and_delete</a>
   * <a title="Java API for RESTful Services (JAX-RS)" href="https://jax-rs-spec.java.net/" target="_blank">Java API for RESTful Services (JAX-RS)</a>
   * <a title="Jersey REST" href="https://jersey.java.net/" target="_blank">Jersey &#8211; RESTful Web Services in Java </a>
-  * <a title="Status Code Definitions" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank">HTTP Status Code Definitions</a>
+  * <a title="Status Code Definitions" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank">HTTP Status Code Definitions</a>
   * <a title="https://maven.apache.org/surefire/maven-failsafe-plugin/" href="https://maven.apache.org/surefire/maven-failsafe-plugin/" target="_blank">Maven Failsafe Plugin</a>
-  * <a title="http://maven.apache.org/surefire/maven-failsafe-plugin/usage.html" href="http://maven.apache.org/surefire/maven-failsafe-plugin/usage.html" target="_blank">Maven Failsafe Plugin Usage</a>
+  * <a title="https://maven.apache.org/surefire/maven-failsafe-plugin/usage.html" href="https://maven.apache.org/surefire/maven-failsafe-plugin/usage.html" target="_blank">Maven Failsafe Plugin Usage</a>
 
 ### <span id="53_Codingpedia_resources">5.3. Codingpedia resources</span>
 

@@ -92,7 +92,7 @@ tags:
 
 ### <span id="11_Install_Nodejs">1.1. Install Node.js</span>
 
-Well, the first I needed to do is install <a title="http://nodejs.org/" href="http://nodejs.org/" target="_blank">Nodejs</a>:
+Well, the first I needed to do is install <a title="https://nodejs.org/" href="https://nodejs.org/" target="_blank">Nodejs</a>:
 
 <p style="text-align: justify; padding-left: 30px;">
   <em>&#8220;Node.js is a platform built on Chrome&#8217;s JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.&#8221;</em>[1]<!--more-->
@@ -156,7 +156,7 @@ To install these plugins issue the following command in the console in the root 
 }</pre>
 
 <p class="alert_note" style="text-align: justify;">
-  There are all development dependencies as I only use this project to generate a CSS file. For libraries used in production you would add those under the &#8220;dependencies&#8221; element in your <em>package.json</em> file. The <em><a title="https://npmjs.org/doc/json.html" href="https://npmjs.org/doc/json.html" target="_blank">package.json</a></em> file holds variaous metadata relevant to the project and is contained in all <a title="http://en.wikipedia.org/wiki/Npm_%28software%29" href="http://en.wikipedia.org/wiki/Npm_%28software%29" target="_blank">npm</a> packages. You can create the <em>package.json</em> file according to the <a title="https://www.npmjs.org/doc/json.html" href="https://www.npmjs.org/doc/json.html" target="_blank">docs</a> or by issueing <code>npm init</code> in the root of of your project. You can find the complete package.json file for this project on <a href="https://github.com/CodepediaOrg/podcastpedia">GitHub</a>.
+  There are all development dependencies as I only use this project to generate a CSS file. For libraries used in production you would add those under the &#8220;dependencies&#8221; element in your <em>package.json</em> file. The <em><a title="https://npmjs.org/doc/json.html" href="https://npmjs.org/doc/json.html" target="_blank">package.json</a></em> file holds variaous metadata relevant to the project and is contained in all <a title="https://en.wikipedia.org/wiki/Npm_%28software%29" href="https://en.wikipedia.org/wiki/Npm_%28software%29" target="_blank">npm</a> packages. You can create the <em>package.json</em> file according to the <a title="https://www.npmjs.org/doc/json.html" href="https://www.npmjs.org/doc/json.html" target="_blank">docs</a> or by issueing <code>npm init</code> in the root of of your project. You can find the complete package.json file for this project on <a href="https://github.com/CodepediaOrg/podcastpedia">GitHub</a>.
 </p>
 
 <p style="text-align: justify;">
@@ -173,7 +173,7 @@ To install these plugins issue the following command in the console in the root 
   Node has a simple module loading system. In Node, files and modules are in one-to-one correspondence. When I installed the plugins in the previous step, they have been downloaded locally in the root folder under <em>node_modules</em>. You can load them now in the application via the <code>require()</code> function. Variables are defined to be used later in the gulp tasks:
 </p>
 
-<pre class="lang:js decode:true" title="define plugin variables">var gulp = require("gulp"),//http://gulpjs.com/
+<pre class="lang:js decode:true" title="define plugin variables">var gulp = require("gulp"),//https://gulpjs.com/
 	util = require("gulp-util"),//https://github.com/gulpjs/gulp-util
 	sass = require("gulp-sass"),//https://www.npmjs.org/package/gulp-sass
 	autoprefixer = require('gulp-autoprefixer'),//https://www.npmjs.org/package/gulp-autoprefixer
@@ -195,7 +195,7 @@ Gulp works with tasks. You define them by
 
 ### <span id="23_Pipes">2.3. Pipes</span>
 
-Gulp&#8217;s power lies in its code over configuration approach and the use of <a title="http://nodejs.org/api/stream.html" href="http://nodejs.org/api/stream.html" target="_blank">streams</a>. Streams use `.pipe()` to pair inputs with outputs.
+Gulp&#8217;s power lies in its code over configuration approach and the use of <a title="https://nodejs.org/api/stream.html" href="https://nodejs.org/api/stream.html" target="_blank">streams</a>. Streams use `.pipe()` to pair inputs with outputs.
 
 `".pipe()` is just a function that takes a readable source stream `src` and hooks the output to a destination writable stream `dst`:
 
@@ -279,14 +279,14 @@ Well, that&#8217;s it &#8211; few lines of code for pretty good functionality. I
 
 ### <span id="33_Web">3.3. Web</span>
 
-  1. <a title="http://nodejs.org/" href="http://nodejs.org/" target="_blank">nodejs</a>
-  2. <a title="http://gulpjs.com/" href="http://gulpjs.com/" target="_blank">gulpjs</a>
-  3. <a title="http://gulpjs.com/plugins/" href="http://gulpjs.com/plugins/" target="_blank">gulp plugins</a>
+  1. <a title="https://nodejs.org/" href="https://nodejs.org/" target="_blank">nodejs</a>
+  2. <a title="https://gulpjs.com/" href="https://gulpjs.com/" target="_blank">gulpjs</a>
+  3. <a title="https://gulpjs.com/plugins/" href="https://gulpjs.com/plugins/" target="_blank">gulp plugins</a>
   4. <a title="https://www.npmjs.org/doc/json.html" href="https://www.npmjs.org/doc/json.html" target="_blank">package.json</a>
-  5. <a title="http://markgoodyear.com/2014/01/getting-started-with-gulp/" href="http://markgoodyear.com/2014/01/getting-started-with-gulp/" target="_blank">Getting started with Gulp </a>
-  6. <a title="http://danreev.es/posts/getting-started-with-gulp/" href="http://danreev.es/posts/getting-started-with-gulp/" target="_blank">Getting Started With Gulp.js</a>
+  5. <a title="https://markgoodyear.com/2014/01/getting-started-with-gulp/" href="https://markgoodyear.com/2014/01/getting-started-with-gulp/" target="_blank">Getting started with Gulp </a>
+  6. <a title="https://danreev.es/posts/getting-started-with-gulp/" href="https://danreev.es/posts/getting-started-with-gulp/" target="_blank">Getting Started With Gulp.js</a>
   7. <a title="https://github.com/substack/stream-handbook" href="https://github.com/substack/stream-handbook" target="_blank">Stream-handbook</a>
-  8. <a title="http://slides.com/contra/gulp" href="http://slides.com/contra/gulp" target="_blank">Gulp &#8211; the streaming build system [presentation]</a>
+  8. <a title="https://slides.com/contra/gulp" href="https://slides.com/contra/gulp" target="_blank">Gulp &#8211; the streaming build system [presentation]</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

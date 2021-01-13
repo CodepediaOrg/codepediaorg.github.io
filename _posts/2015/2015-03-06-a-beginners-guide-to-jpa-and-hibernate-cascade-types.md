@@ -14,9 +14,9 @@ tags:
 ---
 ## <span id="Introduction">Introduction</span>
 
-[JPA](http://en.wikipedia.org/wiki/Java_Persistence_API) translates [entity state transitions](http://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/) to database [DML](http://en.wikipedia.org/wiki/Data_manipulation_language) statements. Because it’s common to operate on entity graphs, JPA allows us to propagate entity state changes from _Parents_ to _Child_ entities.
+[JPA](https://en.wikipedia.org/wiki/Java_Persistence_API) translates [entity state transitions](https://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/) to database [DML](https://en.wikipedia.org/wiki/Data_manipulation_language) statements. Because it’s common to operate on entity graphs, JPA allows us to propagate entity state changes from _Parents_ to _Child_ entities.
 
-This behavior is configured through the [CascadeType](http://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html) mappings.
+This behavior is configured through the [CascadeType](https://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html) mappings.
 
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">
@@ -121,11 +121,11 @@ Hibernate supports all JPA Cascade Types and some additional legacy cascading st
 
   <tr>
     <td>
-      <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#detach%28java.lang.Object%29">detach(entity)</a>
+      <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#detach%28java.lang.Object%29">detach(entity)</a>
     </td>
 
     <td>
-      <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#DETACH">DETACH</a>
+      <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#DETACH">DETACH</a>
     </td>
 
     <td>
@@ -143,11 +143,11 @@ Hibernate supports all JPA Cascade Types and some additional legacy cascading st
 
   <tr>
     <td>
-      <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#merge%28T%29">merge(entity)</a>
+      <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#merge%28T%29">merge(entity)</a>
     </td>
 
     <td>
-      <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#MERGE">MERGE</a>
+      <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#MERGE">MERGE</a>
     </td>
 
     <td>
@@ -165,11 +165,11 @@ Hibernate supports all JPA Cascade Types and some additional legacy cascading st
 
   <tr>
     <td>
-      <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#persist%28java.lang.Object%29">persist(entity)</a>
+      <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#persist%28java.lang.Object%29">persist(entity)</a>
     </td>
 
     <td>
-      <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#PERSIST">PERSIST</a>
+      <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#PERSIST">PERSIST</a>
     </td>
 
     <td>
@@ -187,11 +187,11 @@ Hibernate supports all JPA Cascade Types and some additional legacy cascading st
 
   <tr>
     <td>
-      <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#refresh%28java.lang.Object%29">refresh(entity)</a>
+      <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#refresh%28java.lang.Object%29">refresh(entity)</a>
     </td>
 
     <td>
-      <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#REFRESH">REFRESH</a>
+      <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#REFRESH">REFRESH</a>
     </td>
 
     <td>
@@ -209,11 +209,11 @@ Hibernate supports all JPA Cascade Types and some additional legacy cascading st
 
   <tr>
     <td>
-      <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#remove%28java.lang.Object%29">remove(entity)</a>
+      <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#remove%28java.lang.Object%29">remove(entity)</a>
     </td>
 
     <td>
-      <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#REMOVE">REMOVE</a>
+      <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#REMOVE">REMOVE</a>
     </td>
 
     <td>
@@ -271,7 +271,7 @@ Hibernate supports all JPA Cascade Types and some additional legacy cascading st
 
   <tr>
     <td>
-      <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#lock%28java.lang.Object,%20javax.persistence.LockModeType%29">lock(entity, lockModeType)</a>
+      <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#lock%28java.lang.Object,%20javax.persistence.LockModeType%29">lock(entity, lockModeType)</a>
     </td>
 
     <td>
@@ -296,7 +296,7 @@ Hibernate supports all JPA Cascade Types and some additional legacy cascading st
     </td>
 
     <td>
-      <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#ALL">ALL</a>
+      <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#ALL">ALL</a>
     </td>
 
     <td>
@@ -315,7 +315,7 @@ Hibernate supports all JPA Cascade Types and some additional legacy cascading st
 From this table we can conclude that:
 
 <li style="text-align: justify;">
-  There’s no difference between calling <em>persist</em>, <em>merge</em> or <em>refresh</em> on the JPA <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html">EntityManager</a> or the Hibernate <a href="https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html">Session</a>.
+  There’s no difference between calling <em>persist</em>, <em>merge</em> or <em>refresh</em> on the JPA <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html">EntityManager</a> or the Hibernate <a href="https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html">Session</a>.
 </li>
 <li style="text-align: justify;">
   The JPA <em>remove</em> and <em>detach</em> calls are delegated to Hibernate <em>delete</em> and <em>evict</em> native operations.
@@ -327,7 +327,7 @@ From this table we can conclude that:
   The JPA lock method shares the same behavior with Hibernate lock request method.
 </li>
 <li style="text-align: justify;">
-  The JPA <a href="http://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#ALL">CascadeType.ALL</a> doesn’t only apply to <em>EntityManager</em> state change operations, but to all Hibernate <a href="https://docs.jboss.org/hibernate/orm/3.5/api/org/hibernate/annotations/CascadeType.html">CascadeTypes</a> as well. So if you mapped your associations with <em>CascadeType.ALL</em>, you can still cascade Hibernate specific events. For example, you can cascade the JPA lock operation (although it behaves as reattaching, instead of an actual lock request propagation), even if JPA doesn’t define a LOCK <em>CascadeType</em>.
+  The JPA <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/CascadeType.html#ALL">CascadeType.ALL</a> doesn’t only apply to <em>EntityManager</em> state change operations, but to all Hibernate <a href="https://docs.jboss.org/hibernate/orm/3.5/api/org/hibernate/annotations/CascadeType.html">CascadeTypes</a> as well. So if you mapped your associations with <em>CascadeType.ALL</em>, you can still cascade Hibernate specific events. For example, you can cascade the JPA lock operation (although it behaves as reattaching, instead of an actual lock request propagation), even if JPA doesn’t define a LOCK <em>CascadeType</em>.
 </li>
 
 ## <span id="Cascading_best_practices">Cascading best practices</span>
@@ -1081,7 +1081,7 @@ delete from Author where id=3</pre>
   This use case is wrong in so many ways. There are a plethora of unnecessary SELECT statements and eventually we end up deleting all Authors and all their Books. That’s why CascadeType.ALL should raise your eyebrow, whenever you spot it on a many-to-many association.
 </p>
 
-When it comes to Hibernate mappings, you should always strive for simplicity. The [Hibernate documentation](http://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch26.html) confirms this assumption as well:
+When it comes to Hibernate mappings, you should always strive for simplicity. The [Hibernate documentation](https://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch26.html) confirms this assumption as well:
 
 > <p style="text-align: justify;">
 >   Practical test cases for real many-to-many associations are rare. Most of the time you need additional information stored in the “link table”. In this case, it is much better to use two one-to-many associations to an intermediate link class. In fact, most associations are one-to-many and many-to-one. For this reason, you should proceed cautiously when using any other association style.
@@ -1096,7 +1096,7 @@ When it comes to Hibernate mappings, you should always strive for simplicity. Th
 Code available on [GitHub](https://github.com/vladmihalcea/hibernate-master-class).
 
 <p class="note_normal">
-  Published at Codepedia.org with permission of Vlad Mihalcea – source <a title="http://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/" href="http://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/" target="_blank">A beginner’s guide to JPA and Hibernate Cascade Types</a> from http://vladmihalcea.com/
+  Published at Codepedia.org with permission of Vlad Mihalcea – source <a title="https://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/" href="https://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/" target="_blank">A beginner’s guide to JPA and Hibernate Cascade Types</a> from https://vladmihalcea.com/
 </p>
 
 <p class="note_normal">
@@ -1113,7 +1113,7 @@ Code available on [GitHub](https://github.com/vladmihalcea/hibernate-master-clas
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-        <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
+        <a class="icon-earth" href="https://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
       </div>
 
       <div class="clear">

@@ -30,7 +30,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  We want to gradually build a new platform. So it seems like we have two choices: We could make the new code call functionality on the old platform (ick! because, you know, “<a href="http://en.wikipedia.org/wiki/Law_of_holes">stop digging</a>“) or we could build a new service and change the old system to use it (OMG! because, you know, “dangerous to change”).
+  We want to gradually build a new platform. So it seems like we have two choices: We could make the new code call functionality on the old platform (ick! because, you know, “<a href="https://en.wikipedia.org/wiki/Law_of_holes">stop digging</a>“) or we could build a new service and change the old system to use it (OMG! because, you know, “dangerous to change”).
 </p>
 
 <p style="text-align: justify;">
@@ -42,7 +42,7 @@ tags:
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codepedia.org with the permission of Johannes Brodwall – source <a title="Are you getting worked up over code duplication?" href="http://johannesbrodwall.com/2015/06/10/are-you-getting-worked-up-over-code-duplication/" target="_blank">Are you getting worked up over code duplication?</a> from <a title="http://johannesbrodwall.com/" href="http://johannesbrodwall.com/" target="_blank">http://johannesbrodwall.com/</a>
+  Published at Codepedia.org with the permission of Johannes Brodwall – source <a title="Are you getting worked up over code duplication?" href="https://johannesbrodwall.com/2015/06/10/are-you-getting-worked-up-over-code-duplication/" target="_blank">Are you getting worked up over code duplication?</a> from <a title="https://johannesbrodwall.com/" href="https://johannesbrodwall.com/" target="_blank">https://johannesbrodwall.com/</a>
 </p>
 
 <p style="text-align: justify;">
@@ -59,7 +59,7 @@ tags:
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-        <a class="icon-earth" href="http://johannesbrodwall.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jhannes" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhannes" target="_blank"> </a>
+        <a class="icon-earth" href="https://johannesbrodwall.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jhannes" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhannes" target="_blank"> </a>
       </div>
 
       <div class="clear">

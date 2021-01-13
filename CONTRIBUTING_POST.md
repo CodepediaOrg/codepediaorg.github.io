@@ -26,7 +26,7 @@ ama:
     - title: "github"
       url: "https://github.com/adrianmatei-me"
     - title: "linkedin"
-      url: "https://www.linkedin.com/in/adrianmatei1983"
+      url: "https://www.linkedin.com/in/adrianmatei-me"
     - title: "youtube"
       url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
     - title: "facebook"
@@ -53,7 +53,7 @@ The result is placed at the end of your posts and looks something like the follo
 Your new post has to conform to the following rules
 * it needs to be added in the [_posts](_posts) directory
 * the naming convention of your new file is important, and must follow the format: <code>YEAR-MONTH-DAY-title.md</code>.
-The permalinks can be customized for each post, but the date and markup language (in our case [Markdown](http://daringfireball.net/projects/markdown/)) are determined solely by the file name.
+The permalinks can be customized for each post, but the date and markup language (in our case [Markdown](https://daringfireball.net/projects/markdown/)) are determined solely by the file name.
 (e.g. 2014-02-17-javascript-hoisting-example-reloaded.md)
 
 ### 2.2 Configure the front-matter of the post

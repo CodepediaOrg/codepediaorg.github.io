@@ -146,7 +146,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  AngularJS is an adaptation of the Model-View-Controller (MVC) pattern first created in 1979. MVC helps developers to separate the concerns involved in building user interfaces. Jeff Atwood of Coding Horror <a href="http://blog.codinghorror.com/understanding-model-view-controller/">wrote of an example</a> that we’re all very familiar with, a static webpage:
+  AngularJS is an adaptation of the Model-View-Controller (MVC) pattern first created in 1979. MVC helps developers to separate the concerns involved in building user interfaces. Jeff Atwood of Coding Horror <a href="https://blog.codinghorror.com/understanding-model-view-controller/">wrote of an example</a> that we’re all very familiar with, a static webpage:
 </p>
 
 <li style="text-align: justify;">
@@ -487,7 +487,7 @@ Edit `index.html` as follows:
 
 AngularJS comes with a handful of structural directives, such as `ng-include` for fetching and displaying external HTML fragments, but `ng-repeat` is the most significant.
 
-This is beyond the scope of this tutorial, but it is possible to create your own custom directives of any type (plumbing, structural or decorative). To whet your appetite for what might lie ahead in your own AngularJS journey, check out the directives in the excellent [Angular Material](https://material.angularjs.org) library or my own [angular-charts](http://crudbetter.github.io/angular-charts/) library.
+This is beyond the scope of this tutorial, but it is possible to create your own custom directives of any type (plumbing, structural or decorative). To whet your appetite for what might lie ahead in your own AngularJS journey, check out the directives in the excellent [Angular Material](https://material.angularjs.org) library or my own [angular-charts](https://crudbetter.github.io/angular-charts/) library.
 
 You will probably note that we still haven’t discussed decorative directives. That will come later in one final directives section.
 
@@ -658,7 +658,7 @@ In this snippet, the responsibility for the construction and use of the ``<div i
 </p>
 
 <p style="text-align: justify;">
-  AngularJS is an adaptation of the Model-View-Controller (MVC) pattern first created in 1979. MVC helps developers to separate the concerns involved in building user interfaces. Jeff Atwood of Coding Horror <a href="http://blog.codinghorror.com/understanding-model-view-controller/">wrote of an example</a> that we’re all very familiar with, a static webpage:
+  AngularJS is an adaptation of the Model-View-Controller (MVC) pattern first created in 1979. MVC helps developers to separate the concerns involved in building user interfaces. Jeff Atwood of Coding Horror <a href="https://blog.codinghorror.com/understanding-model-view-controller/">wrote of an example</a> that we’re all very familiar with, a static webpage:
 </p>
 
 <li style="text-align: justify;">
@@ -999,7 +999,7 @@ Edit `index.html` as follows:
 
 AngularJS comes with a handful of structural directives, such as `ng-include` for fetching and displaying external HTML fragments, but `ng-repeat` is the most significant.
 
-This is beyond the scope of this tutorial, but it is possible to create your own custom directives of any type (plumbing, structural or decorative). To whet your appetite for what might lie ahead in your own AngularJS journey, check out the directives in the excellent [Angular Material](https://material.angularjs.org) library or my own [angular-charts](http://crudbetter.github.io/angular-charts/) library.
+This is beyond the scope of this tutorial, but it is possible to create your own custom directives of any type (plumbing, structural or decorative). To whet your appetite for what might lie ahead in your own AngularJS journey, check out the directives in the excellent [Angular Material](https://material.angularjs.org) library or my own [angular-charts](https://crudbetter.github.io/angular-charts/) library.
 
 You will probably note that we still haven’t discussed decorative directives. That will come later in one final directives section.
 
@@ -1368,7 +1368,7 @@ We’ve introduced quite a lot in the above snippet. Let’s discuss each in tur
 </p>
 
 <p style="text-align: justify;">
-  When we create bindings in our HTML (e.g., via <code>ng-bind</code>, <code>{{ }}</code>, <code>ng-model</code> and many others), we are implicitly creating watches. At a simplified level, whenever AngularJS detects something that might affect an application (be it a browser event, HTTP response, and many others), it checks all of its watches against their previous values and updates bindings if there is a difference. We use <code>$scope.$watch</code> to create a manual watch of the <code>articles</code> array and re-calculate <code>$scope.categoryPercentage</code> if there is a difference. The third parameter to <code>$scope.$watch</code> indicates that we want a “deep” watch. For more information, please have a look at this excellent <a href="http://stackoverflow.com/a/29189252/305844">StackOverflow answer</a>.
+  When we create bindings in our HTML (e.g., via <code>ng-bind</code>, <code>{{ }}</code>, <code>ng-model</code> and many others), we are implicitly creating watches. At a simplified level, whenever AngularJS detects something that might affect an application (be it a browser event, HTTP response, and many others), it checks all of its watches against their previous values and updates bindings if there is a difference. We use <code>$scope.$watch</code> to create a manual watch of the <code>articles</code> array and re-calculate <code>$scope.categoryPercentage</code> if there is a difference. The third parameter to <code>$scope.$watch</code> indicates that we want a “deep” watch. For more information, please have a look at this excellent <a href="https://stackoverflow.com/a/29189252/305844">StackOverflow answer</a>.
 </p>
 
 <p style="text-align: justify;">
@@ -1783,7 +1783,7 @@ Edit `app.js` as follows:
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published on Codepedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/angularjs-tutorial/" target="_blank">AngularJS Tutorial: A Beginner’s Guide to AngularJS</a> from<span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
+  Published on Codepedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="https://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/angularjs-tutorial/" target="_blank">AngularJS Tutorial: A Beginner’s Guide to AngularJS</a> from<span class="Apple-converted-space"> </span><a title="https://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
 </p>
 
 <p style="text-align: justify;">

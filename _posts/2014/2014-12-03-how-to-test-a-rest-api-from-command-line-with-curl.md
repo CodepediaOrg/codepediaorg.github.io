@@ -18,7 +18,7 @@ tags:
   - bookmarks.dev
 ---
 
-If you want to quickly test your REST api from the command line, you can use [curl](http://curl.haxx.se/).
+If you want to quickly test your REST api from the command line, you can use [curl](https://curl.haxx.se/).
  In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API.
   For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev).
   The API is [documented with OpenAPI](https://github.com/BookmarksDev/bookmarks.dev/blob/master/backend/docs/openapi/openapi.yaml)
@@ -94,7 +94,7 @@ Note the following headers
 
 in the response.
 
-They've been added to support [Cross-Origing Resource Sharing (CORS)](http://www.w3.org/TR/cors/).
+They've been added to support [Cross-Origing Resource Sharing (CORS)](https://www.w3.org/TR/cors/).
 
 
 ### GET request

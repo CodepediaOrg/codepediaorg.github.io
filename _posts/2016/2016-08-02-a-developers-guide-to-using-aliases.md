@@ -12,7 +12,7 @@ tags: [linux, shell, alias, dev-tools]
 Not long time ago I have rediscovered an old friend - Bash[^1] the Alias[^2]. We were never best friends until now. We got acquainted at the beginning of my computer science studies. I visited back then a course held by Cisco, "Linux Essentials" or something like that. The trainer mentioned at one point what were aliases and how handy they could be. Well 12 years later, and I still had not gotten that, until recently, when the alias presented himself in a new light to me. Since then we've been best friends. Read on to learn why.
 
 [^1]: <https://www.gnu.org/software/bash/manual/html_node/What-is-Bash_003f.html>
-[^2]: <http://tldp.org/LDP/abs/html/aliases.html>
+[^2]: <https://tldp.org/LDP/abs/html/aliases.html>
 
 <!--more-->
 
@@ -23,7 +23,7 @@ So what are aliases? According to The Linux Documentation Project[^2] - "A Bash 
 The alias command is built into a number of shells including __ash__, __bash__ (the default shell on most Linux systems), __csh__ and __ksh__. Aliases are recognized only by the shell in which they are created, and they apply only for the user that creates them, unless that user is the __root__ (i.e., administrative) user, which can create aliases for any user.[^4]
 
 [^3]: ... as the first word of a command string. Obviously, an alias is only meaningful at the __beginning__ of a command.
-[^4]: <http://www.linfo.org/alias.html>
+[^4]: <https://www.linfo.org/alias.html>
 
 ### Listing and creating aliases
 
@@ -61,10 +61,10 @@ fi
 ......
 ```
 
-[^5]: <http://ss64.com/bash/source.html>
+[^5]: <https://ss64.com/bash/source.html>
 
 <p class="note_normal">
-A good introduction to the .dot files can be found if you visit <a href="http://mywiki.wooledge.org/DotFiles" target="_blank">Configuring your login sessions with dot files</a>
+A good introduction to the .dot files can be found if you visit <a href="https://mywiki.wooledge.org/DotFiles" target="_blank">Configuring your login sessions with dot files</a>
 </p>
 
 ### Removing aliases
@@ -127,7 +127,7 @@ alias mcp="mvn clean package"
 alias mcis="mvn clean install -DskipTests"
 ```
 
-[^6]: <http://linuxcommand.org/man_pages/ls1.html>
+[^6]: <https://linuxcommand.org/man_pages/ls1.html>
 [^7]: <https://maven.apache.org/>
 
 #### Commands plus meaningful text - `{command}-{relevant}-{text}`

@@ -37,7 +37,7 @@ tags:
 </p>
 
   1. include in the html/JSP code the same information twice
-  2. use the <a title="http://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/fn/substring.fn.html" href="http://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/fn/substring.fn.html" target="_blank">fn:substring()</a> function to get different subsets of the string(one time 300, and the other time 600); I am sure there are similar functionalities offered by other languages/frameworks&#8230;
+  2. use the <a title="https://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/fn/substring.fn.html" href="https://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/fn/substring.fn.html" target="_blank">fn:substring()</a> function to get different subsets of the string(one time 300, and the other time 600); I am sure there are similar functionalities offered by other languages/frameworks&#8230;
   3. use media queries to show and hide the paragraphs at the same time based on the screen&#8217;s width
 
 ### HTML/JSP part
@@ -94,7 +94,7 @@ Well, that&#8217;s it. If you have a better proposal to achieve this please leav
 
 ### <span id="42_Web">Web</span>
 
-  1. [Oracle &#8211; JavaServer Pages Standard Tag Library](http://www.oracle.com/technetwork/java/index-jsp-135995.html "http://www.oracle.com/technetwork/java/index-jsp-135995.html")
+  1. [Oracle &#8211; JavaServer Pages Standard Tag Library](https://www.oracle.com/technetwork/java/index-jsp-135995.html "https://www.oracle.com/technetwork/java/index-jsp-135995.html")
 
 
 Featured image courtesy of 2nix / FreeDigitalPhotos.net

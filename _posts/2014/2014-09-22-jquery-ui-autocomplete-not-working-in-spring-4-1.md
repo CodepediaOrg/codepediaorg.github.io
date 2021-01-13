@@ -16,7 +16,7 @@ tags:
   - debugging
 ---
 <p style="text-align: justify;">
-  You may recall from my post <a title="https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" href="https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a>, that I use <a title="http://jqueryui.com/autocomplete/" href="http://jqueryui.com/autocomplete/" target="_blank">jQuery ui autocomplete</a> to dynamically search for keywords on <a title="https://github.com/CodepediaOrg/podcastpedia/tags/all/0" href="https://github.com/CodepediaOrg/podcastpedia/tags/all/0" target="_blank">Podcastpedia.org</a>. I am now in the process of migrating the source base for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> to Spring 4. I decided to go with the latest version <code>4.1.0.RELEASE</code> and everything worked pretty smoothly until I got to test the auto-complete functionality presented in the post mentioned before.<!--more-->
+  You may recall from my post <a title="https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" href="https://www.codepedia.org/ama/autocomplete-search-box-with-jquery-and-spring-mvc/" target="_blank">Autocomplete search box with jQuery and Spring MVC</a>, that I use <a title="https://jqueryui.com/autocomplete/" href="https://jqueryui.com/autocomplete/" target="_blank">jQuery ui autocomplete</a> to dynamically search for keywords on <a title="https://github.com/CodepediaOrg/podcastpedia/tags/all/0" href="https://github.com/CodepediaOrg/podcastpedia/tags/all/0" target="_blank">Podcastpedia.org</a>. I am now in the process of migrating the source base for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> to Spring 4. I decided to go with the latest version <code>4.1.0.RELEASE</code> and everything worked pretty smoothly until I got to test the auto-complete functionality presented in the post mentioned before.<!--more-->
 </p>
 
 <div id="toc_container" class="no_bullets">
@@ -75,7 +75,7 @@ The resource called the jQuery ajax `getJSON`:
                         // following property gets entered in the textbox
                         value: item.name,
                         // following property is added for our own use
-                        tag_url: "http://" + window.location.host + "/tags/" + item.tagId + "/" + item.name
+                        tag_url: "https://" + window.location.host + "/tags/" + item.tagId + "/" + item.name
                     }
 
                 }));
@@ -169,10 +169,10 @@ On a second look, I realized that, although I didn&#8217;t use the minimum versi
 &lt;/dependency&gt;
 </pre>
 
-This dependency will download also the [jackson-core](http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core "http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core") and <a title="http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind" href="http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind" target="_blank">jackson-databind</a> artifacts for you.
+This dependency will download also the [jackson-core](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core "https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core") and <a title="https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind" href="https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind" target="_blank">jackson-databind</a> artifacts for you.
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> the groupId has changed for newer versions of the Jackson libraries.  Learn more in <a title="http://wiki.fasterxml.com/JacksonUpgradeFrom19To20" href="http://wiki.fasterxml.com/JacksonUpgradeFrom19To20" target="_blank">Upgrading Jackson 1.9 to 2.0</a>
+  <strong>Note:</strong> the groupId has changed for newer versions of the Jackson libraries.  Learn more in <a title="https://wiki.fasterxml.com/JacksonUpgradeFrom19To20" href="https://wiki.fasterxml.com/JacksonUpgradeFrom19To20" target="_blank">Upgrading Jackson 1.9 to 2.0</a>
 </p>
 
 So, the short version of the blog post is _upgrade your jackson libraries to minimum of 2.1 to work with Spring 4.1 🙂_
@@ -187,8 +187,8 @@ So, the short version of the blog post is _upgrade your jackson libraries to min
 
   * <a title="https://spring.io/blog/2014/01/30/migrating-from-spring-framework-3-2-to-4-0-1" href="https://spring.io/blog/2014/01/30/migrating-from-spring-framework-3-2-to-4-0-1" target="_blank">Migrating from Spring Framework 3.2 to 4.0.1</a>
   * [Migrating from earlier versions of the Spring Framework](https://github.com/spring-projects/spring-framework/wiki/Migrating-from-earlier-versions-of-the-spring-framework "https://github.com/spring-projects/spring-framework/wiki/Migrating-from-earlier-versions-of-the-spring-framework")
-  * <a title="http://wiki.fasterxml.com/JacksonRelease20" href="http://wiki.fasterxml.com/JacksonRelease20" target="_blank">JacksonRelease20</a>
-  * <a title="http://wiki.fasterxml.com/JacksonUpgradeFrom19To20" href="http://wiki.fasterxml.com/JacksonUpgradeFrom19To20" target="_blank">Upgrading Jackson 1.9 to 2.0</a>
+  * <a title="https://wiki.fasterxml.com/JacksonRelease20" href="https://wiki.fasterxml.com/JacksonRelease20" target="_blank">JacksonRelease20</a>
+  * <a title="https://wiki.fasterxml.com/JacksonUpgradeFrom19To20" href="https://wiki.fasterxml.com/JacksonUpgradeFrom19To20" target="_blank">Upgrading Jackson 1.9 to 2.0</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

@@ -259,7 +259,7 @@ core-js@1.1.4</pre>
 </h3>
 
 <p style="text-align: justify;">
-  The following post provides an in-depth comparison of Bower, Jspm and npm &#8211; <a href="http://www.symbiotics.co.za/blog/knowledge-share-2/post/is-bower-dead-what-is-jspm-npm-for-client-side-92">Is Bower dead? What is JSPM? Npm for client-side?</a>
+  The following post provides an in-depth comparison of Bower, Jspm and npm &#8211; <a href="https://www.symbiotics.co.za/blog/knowledge-share-2/post/is-bower-dead-what-is-jspm-npm-for-client-side-92">Is Bower dead? What is JSPM? Npm for client-side?</a>
 </p>
 
 <p style="text-align: justify;">
@@ -271,7 +271,7 @@ core-js@1.1.4</pre>
 </p>
 
 <p style="text-align: justify;" class="note_normal">
-  Published at Codepedia.org with permission of Aleksey Novik – source <em><a title="The main goals of Angular 2 and how they will be achieved" href="http://blog.jhades.org/introduction-to-es6-modularity-the-jspm-package-manager-and-the-systemjs-loader/" target="_blank">Introduction to the Jspm package manager and the SystemJs module loader</a></em> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/
+  Published at Codepedia.org with permission of Aleksey Novik – source <em><a title="The main goals of Angular 2 and how they will be achieved" href="https://blog.jhades.org/introduction-to-es6-modularity-the-jspm-package-manager-and-the-systemjs-loader/" target="_blank">Introduction to the Jspm package manager and the SystemJs module loader</a></em> from <a title="https://blog.jhades.org/" href="https://blog.jhades.org/" target="_blank">https://blog.jhades.org/
 
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
     <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" />
@@ -286,7 +286,7 @@ core-js@1.1.4</pre>
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-        <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
+        <a class="icon-earth" href="https://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
       </div>
 
       <div class="clear">

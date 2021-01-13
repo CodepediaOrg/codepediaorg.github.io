@@ -80,7 +80,7 @@ The next thing was to upgrade to version 3 the `tilesViewResolver` and `tilesCon
 &lt;/bean&gt;
 
 &lt;!-- Helper class to configure Tiles 2.x for the Spring Framework --&gt;
-&lt;!-- See http://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/web/servlet/view/tiles2/TilesConfigurer.html --&gt;
+&lt;!-- See https://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/web/servlet/view/tiles2/TilesConfigurer.html --&gt;
 &lt;!-- The actual tiles templates are in the tiles-definitions.xml  --&gt;
 
 &lt;bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer"&gt;
@@ -98,7 +98,7 @@ The next thing was to upgrade to version 3 the `tilesViewResolver` and `tilesCon
 In the Tiles definitions templates upgrade to Tiles 3.0 dtd
 
 <pre class="lang:default mark:2 decode:true" title="Tiles definition snippet">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
-&lt;!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"&gt;
+&lt;!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "https://tiles.apache.org/dtds/tiles-config_3_0.dtd"&gt;
 &lt;tiles-definitions&gt;
 .........
 &lt;/tiles-definitions&gt;</pre>

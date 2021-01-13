@@ -91,7 +91,7 @@ Well, because it
 ## <span id="2_Necessary_artifacts">2. Necessary artifacts</span>
 
 <p style="text-align: justify;">
-  Make sure you have the Tiles jars in the classpath. They can be downloaded directly from the <a title="Download Tiles" href="http://tiles.apache.org/download.html" target="_blank">official website</a>, or by adding the proper dependencies to the <code>pom.xml</code> file, if you use <a title="Apache Maven" href="http://maven.apache.org/" target="_blank">Apache Maven</a>. I use the latter.
+  Make sure you have the Tiles jars in the classpath. They can be downloaded directly from the <a title="Download Tiles" href="https://tiles.apache.org/download.html" target="_blank">official website</a>, or by adding the proper dependencies to the <code>pom.xml</code> file, if you use <a title="Apache Maven" href="https://maven.apache.org/" target="_blank">Apache Maven</a>. I use the latter.
 </p>
 
 <p style="text-align: justify;">
@@ -137,12 +137,12 @@ or, as in my case where I didn&#8217;t need all the extras, you can put in your 
 For better readability and separation of concerns the Spring Tiles configuration has been placed in a separate application context file _`pcm-tiles.xml`_ :
 
 <pre><code class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:p="http://www.springframework.org/schema/p"
+&lt;beans xmlns="https://www.springframework.org/schema/beans"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="https://www.springframework.org/schema/p"
     xsi:schemaLocation="
-		http://www.springframework.org/schema/beans
-		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"&gt;
+		https://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans-3.0.xsd"&gt;
 
     &lt;!-- Views mapped in views.properties (PDF, XLS classes, and others) --&gt;
     &lt;bean id="contentNegotiatingResolver"
@@ -181,7 +181,7 @@ For better readability and separation of concerns the Spring Tiles configuration
     &lt;/bean&gt;
 
     &lt;!-- Helper class to configure Tiles 3.x for the Spring Framework --&gt;
-    &lt;!-- See http://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/web/servlet/view/tiles2/TilesConfigurer.html --&gt;
+    &lt;!-- See https://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/web/servlet/view/tiles2/TilesConfigurer.html --&gt;
     &lt;!-- The actual tiles templates are in the tiles-definitions.xml  --&gt;
     &lt;bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer"&gt;
         &lt;property name="definitions"&gt;
@@ -216,7 +216,7 @@ After installing and learning some of Tiles concepts, it&#8217;s time to show yo
   </p>
 </div>
 
-As you can see the layout of the <a title="Podcastpedia.org, knowledge to go" href="http://podcastpedia.org" target="_blank">website</a> is made of
+As you can see the layout of the <a title="Podcastpedia.org, knowledge to go" href="https://podcastpedia.org" target="_blank">website</a> is made of
 
   * header which includes the social media connect, language selection logo and search bar
   * navigation bar (menu)
@@ -282,7 +282,7 @@ Initially I created a /`<em>WEB-INF/<em>tile-defs/template</em>.xml,</em>` with 
 
 <pre><code class="xml">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 
-&lt;!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"&gt;
+&lt;!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "https://tiles.apache.org/dtds/tiles-config_3_0.dtd"&gt;
 
 &lt;tiles-definitions&gt;
  ......
@@ -355,8 +355,8 @@ Now let&#8217;s see some examples of definitions extending the `defaultTemplate`
 
   1. <a title="Spring 3 and Tiles 2 Integration" href="https://www.codepedia.org/ama/spring-3-and-tiles-2-integration/" target="_blank">Spring 3 and Tiles 2 Integration</a>
   2. <a title="Upgrade Tiles 2 to Tiles 3" href="https://www.codepedia.org/ama/upgrade-from-tiles-2-to-tiles-3-on-spring-mvc-3-application/#more-931" target="_blank">Upgrade from Tiles 2 to Tiles 3 on Spring MVC application</a>
-  3. <a title="Apache Tiles" href="http://tiles.apache.org/" target="_blank">http://tiles.apache.org/</a>
-  4. <a title="Springsource" href="http://www.springsource.org/" target="_blank">http://www.springsource.org/</a>
+  3. <a title="Apache Tiles" href="https://tiles.apache.org/" target="_blank">https://tiles.apache.org/</a>
+  4. <a title="Springsource" href="https://www.springsource.org/" target="_blank">https://www.springsource.org/</a>
 
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
     <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

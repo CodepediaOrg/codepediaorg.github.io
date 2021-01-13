@@ -44,9 +44,9 @@ Remember my post <a title="Reading/Parsing RSS and Atom feeds in Java with Rome"
 
 <!--more-->It works pretty well, but one bug managed to mangle through &#8211;
 
-`java.io.IOException: Server returned HTTP response code: 403 for URL http://happysomeone.com/feed/podcast`:
+`java.io.IOException: Server returned HTTP response code: 403 for URL https://happysomeone.com/feed/podcast`:
 
-<pre class="lang:java decode:true" title="Http 403 Error stack trace">java.io.IOException: Server returned HTTP response code: 403 for URL: http://happysomeone.com/feed/podcast
+<pre class="lang:java decode:true" title="Http 403 Error stack trace">java.io.IOException: Server returned HTTP response code: 403 for URL: https://happysomeone.com/feed/podcast
 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1459)
 	at org.podcastpedia.admin.service.utils.impl.UtilsImpl.getSyndFeedForUrl(UtilsImpl.java:529)
 	at org.podcastpedia.admin.service.impl.UpdateServiceImpl.getSyndFeedForUpdate(UpdateServiceImpl.java:472)
@@ -131,7 +131,7 @@ Remember my post <a title="Reading/Parsing RSS and Atom feeds in Java with Rome"
 	at java.lang.Thread.run(Thread.java:662)</pre>
 
 <p style="text-align: justify;">
-  This tells us that the <a title="Web server" href="http://en.wikipedia.org/wiki/Web_server">web server</a> may return a <b>403 Forbidden</b> <a title="List of HTTP status codes" href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes">HTTP status code</a> in response to the request I made and indicates that the server can be reached and understood the request, but refuses to take any further action. Status code 403 responses are the result of the web server being configured to deny access, for some reason, to the requested resource by the client.
+  This tells us that the <a title="Web server" href="https://en.wikipedia.org/wiki/Web_server">web server</a> may return a <b>403 Forbidden</b> <a title="List of HTTP status codes" href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">HTTP status code</a> in response to the request I made and indicates that the server can be reached and understood the request, but refuses to take any further action. Status code 403 responses are the result of the web server being configured to deny access, for some reason, to the requested resource by the client.
 </p>
 
 ## The solution

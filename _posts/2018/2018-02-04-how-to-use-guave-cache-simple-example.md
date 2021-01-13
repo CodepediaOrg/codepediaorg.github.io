@@ -76,7 +76,7 @@ in our case `toDosCache.get(toDoId)`
 * your ToDos might change every night - then you want to evict all entries from
 the cache by using `Cache.invalidateAll()`
 * Guava caches are local to a single run of your application. They do not store data in files, or on outside servers.
- If this does not fit your needs, consider a tool like [Memcached](http://memcached.org/).
+ If this does not fit your needs, consider a tool like [Memcached](https://memcached.org/).
 
 
 I encourage you to read the [Guava Caches Explained Guide](https://github.com/google/guava/wiki/CachesExplained) to learn

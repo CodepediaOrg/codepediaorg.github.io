@@ -179,7 +179,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  In 2013,<span class="Apple-converted-space"> </span><a href="https://www.paypal-engineering.com/2013/11/22/node-js-at-paypal/">as explained on their blog</a>, PayPal moved from Java to Node.js. LinkedIn also<span class="Apple-converted-space"> </span><a href="http://highscalability.com/blog/2012/10/4/linkedin-moved-from-rails-to-node-27-servers-cut-and-up-to-2.html">moved from Rails to Node</a>.
+  In 2013,<span class="Apple-converted-space"> </span><a href="https://www.paypal-engineering.com/2013/11/22/node-js-at-paypal/">as explained on their blog</a>, PayPal moved from Java to Node.js. LinkedIn also<span class="Apple-converted-space"> </span><a href="https://highscalability.com/blog/2012/10/4/linkedin-moved-from-rails-to-node-27-servers-cut-and-up-to-2.html">moved from Rails to Node</a>.
 </p>
 
 <p style="text-align: justify;">
@@ -244,13 +244,13 @@ Okay, enough theory. I believe it’s time to get our hands dirty in the code an
 ### <span id="Install_Sublime_Text">Install Sublime Text</span>
 
 <p style="text-align: justify;">
-  Sublime Text is a very lightweight and sophisticated code editor. You can use any editor to build node applications, but if you haven’t used Sublime, I recommend you to give it a try. To get Sublime, go to: <a href="http://sublimetext.com/">http://sublimetext.com</a>
+  Sublime Text is a very lightweight and sophisticated code editor. You can use any editor to build node applications, but if you haven’t used Sublime, I recommend you to give it a try. To get Sublime, go to: <a href="https://sublimetext.com/">https://sublimetext.com</a>
 </p>
 
 ### <span id="Install_Mongo">Install Mongo</span>
 
 <p style="text-align: justify;">
-  Go to<span class="Apple-converted-space"> </span><a href="http://mongodb.org/">http://mongodb.org</a><span class="Apple-converted-space"> </span>and click<span class="Apple-converted-space"> </span><b>Download MongoDB</b>. Follow their documentation for installing Mongo. It’s very easy and unlike SQL Server, which takes half an hour or so, installing Mongo takes only a minute or two.
+  Go to<span class="Apple-converted-space"> </span><a href="https://mongodb.org/">https://mongodb.org</a><span class="Apple-converted-space"> </span>and click<span class="Apple-converted-space"> </span><b>Download MongoDB</b>. Follow their documentation for installing Mongo. It’s very easy and unlike SQL Server, which takes half an hour or so, installing Mongo takes only a minute or two.
 </p>
 
 <p style="text-align: justify;">
@@ -479,7 +479,7 @@ We’re going to implement this feature in a few steps:
 ### <span id="Step_1_Populating_the_Database">Step 1: Populating the Database</span>
 
 <p style="text-align: justify;">
-  How do we populate our MongoDB database with some documents? MongoDB has a shell that you can access using<span class="Apple-converted-space"> </span><b>Terminal</b><span class="Apple-converted-space"> </span>on Mac or<span class="Apple-converted-space"> </span><b>Command Prompt<span class="Apple-converted-space"> </span></b>on Windows. However, working with shell is not very user-friendly. So, to make our job easier, we’re going to use a free tool called<span class="Apple-converted-space"> </span><b>RoboMongo</b>. Head over to <a href="http://robomongo.org/">http://robomongo.org</a><span class="Apple-converted-space"> </span>and download RoboMongo for your operating system.
+  How do we populate our MongoDB database with some documents? MongoDB has a shell that you can access using<span class="Apple-converted-space"> </span><b>Terminal</b><span class="Apple-converted-space"> </span>on Mac or<span class="Apple-converted-space"> </span><b>Command Prompt<span class="Apple-converted-space"> </span></b>on Windows. However, working with shell is not very user-friendly. So, to make our job easier, we’re going to use a free tool called<span class="Apple-converted-space"> </span><b>RoboMongo</b>. Head over to <a href="https://robomongo.org/">https://robomongo.org</a><span class="Apple-converted-space"> </span>and download RoboMongo for your operating system.
 </p>
 
 Lunch RoboMongo. You’ll see a dialog box for connecting to a MongoDB server.
@@ -1105,7 +1105,7 @@ Now, back to<span class="Apple-converted-space"> </span>**partials > video-form
 &lt;/form&gt;
 </pre>
 
-These classes are standard Bootstrap classes for creating forms. For more information about how to create modern forms with Bootstrap, check out [Bootstrap documentation](http://getbootstrap.com/).
+These classes are standard Bootstrap classes for creating forms. For more information about how to create modern forms with Bootstrap, check out [Bootstrap documentation](https://getbootstrap.com/).
 
 Let’s get back to the browser and refresh the page.
 
@@ -1461,7 +1461,7 @@ Go to **partials > home.html** and add a Delete link in front of each video as f
         &lt;/a&gt;
     &lt;/li&gt;</pre>
 
-Here, **<i>** is used to render an icon. **glyphicon** and **glyphicon-remove** are both Bootstrap classes for rendering icons. Bootstrap includes tens of modern icons for building applications. To see the list of all icons, go [here](http://getbootstrap.com/components/). To render an icon, you need to use two CSS classes. One is **glyphicon** (the base for all icons), and the other is the class specific to the icon you’re using (**glyphicon-remove**). In the Bootstrap documentation, you can see the CSS class for each icon below the icon itself.
+Here, **<i>** is used to render an icon. **glyphicon** and **glyphicon-remove** are both Bootstrap classes for rendering icons. Bootstrap includes tens of modern icons for building applications. To see the list of all icons, go [here](https://getbootstrap.com/components/). To render an icon, you need to use two CSS classes. One is **glyphicon** (the base for all icons), and the other is the class specific to the icon you’re using (**glyphicon-remove**). In the Bootstrap documentation, you can see the CSS class for each icon below the icon itself.
 
 Clicking this icon is going to take us to a page at **/#/video/delete/{{video._id}}**. Let’s create this view and register a route for it.
 
@@ -1573,10 +1573,10 @@ You’re done. Let’s test the delete functionality. Go back to the browser, an
   * Real-time applications
   * And more…
 
-If you enjoyed my teaching style and would like to learn more from me, [subscribe to my newsletter](http://programmingwithmosh.com/node-js-course-coming-soon/). I’ll send out an announcement once my course is ready.
+If you enjoyed my teaching style and would like to learn more from me, [subscribe to my newsletter](https://programmingwithmosh.com/node-js-course-coming-soon/). I’ll send out an announcement once my course is ready.
 
 <p class="note_normal">
-  Published on Codepedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/node-js-tutorial/" target="_blank">Node.js Tutorial</a> from<span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
+  Published on Codepedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="https://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/node-js-tutorial/" target="_blank">Node.js Tutorial</a> from<span class="Apple-converted-space"> </span><a title="https://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

@@ -81,7 +81,7 @@ Just a few hints to consider when writing for Codepedia.org
   the content has to be original, meaning it will have to be initially posted on <a title="Codepedia.org, sharing coding knowledge" href="https://www.codepedia.org" target="_blank">Codepedia.org</a> and every republishing of the article elsewhere will have to reference it
 </li>
 <li style="text-align: justify;">
-  content is the most important thing in your post. So make it original, useful, relevant, simple, easy-to-read and <a title="Make content scannable" href="http://www.problogger.net/archives/2005/08/19/writing-blog-content-make-it-scannable/http://" target="_blank">scannable</a>.
+  content is the most important thing in your post. So make it original, useful, relevant, simple, easy-to-read and <a title="Make content scannable" href="https://www.problogger.net/archives/2005/08/19/writing-blog-content-make-it-scannable/https://" target="_blank">scannable</a>.
 </li>
 <li style="text-align: justify;">
   preferably provide some source code (GitHub etc.) or a live example of the code/technology you present

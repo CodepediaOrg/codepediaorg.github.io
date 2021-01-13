@@ -14,7 +14,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <img src="http://assets.toptal.io/uploads/blog/image/91985/toptal-blog-image-1453386059410-0b9eeb49271c73a977943205df6b374d.jpg" alt="Creating Usable JVM Languages: An Overview" />
+  <img src="https://assets.toptal.io/uploads/blog/image/91985/toptal-blog-image-1453386059410-0b9eeb49271c73a977943205df6b374d.jpg" alt="Creating Usable JVM Languages: An Overview" />
 </p>
 
 <p style="text-align: justify;">
@@ -30,7 +30,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  First of all, there are many different kinds of languages: do you want to create a general purpose programming language (GPL) or a domain specific one? The first kind includes languages like <a href="http://www.toptal.com/java">Java</a> or Scala: languages intended to write decent enough solutions to a large set of problems. Domain Specific Languages (DSL) instead focus on solving very well a specific set of problems. Think of HTML or Latex: you could draw on the screen or generate documents in Java but it would be cumbersome, with these DSLs instead you can create documents very easily but they are limited to that specific domain.
+  First of all, there are many different kinds of languages: do you want to create a general purpose programming language (GPL) or a domain specific one? The first kind includes languages like <a href="https://www.toptal.com/java">Java</a> or Scala: languages intended to write decent enough solutions to a large set of problems. Domain Specific Languages (DSL) instead focus on solving very well a specific set of problems. Think of HTML or Latex: you could draw on the screen or generate documents in Java but it would be cumbersome, with these DSLs instead you can create documents very easily but they are limited to that specific domain.
 </p>
 
 <p style="text-align: justify;">
@@ -38,11 +38,11 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  Perhaps instead you want to create a GPL because you had some new ideas, for example to represent <a href="http://tomassetti.me/representing-relationships-as-first-class-citizens-in-an-object-oriented-programming-language/" target="_blank">relationships as first class citizens</a> or <a href="http://tomassetti.me/alternatives-to-global-variables-and-passing-the-same-value-over-a-long-chain-of-calls/" target="_blank">represent context</a>.
+  Perhaps instead you want to create a GPL because you had some new ideas, for example to represent <a href="https://tomassetti.me/representing-relationships-as-first-class-citizens-in-an-object-oriented-programming-language/" target="_blank">relationships as first class citizens</a> or <a href="https://tomassetti.me/alternatives-to-global-variables-and-passing-the-same-value-over-a-long-chain-of-calls/" target="_blank">represent context</a>.
 </p>
 
 <p style="text-align: justify;">
-  <img src="http://assets.toptal.io/uploads/blog/image/91986/toptal-blog-image-1453386375924-09cd0d18553a682ee03ee2edf40c516a.jpg" alt="" />
+  <img src="https://assets.toptal.io/uploads/blog/image/91986/toptal-blog-image-1453386375924-09cd0d18553a682ee03ee2edf40c516a.jpg" alt="" />
 </p>
 
 <p style="text-align: justify;">
@@ -110,7 +110,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <img src="http://assets.toptal.io/uploads/blog/image/91987/toptal-blog-image-1453386432479-a1f1e632a9a0056c6cf27dfce0a1943b.jpg" alt="" />
+  <img src="https://assets.toptal.io/uploads/blog/image/91987/toptal-blog-image-1453386432479-a1f1e632a9a0056c6cf27dfce0a1943b.jpg" alt="" />
 </p>
 
 <p style="text-align: justify;">
@@ -183,7 +183,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <img src="http://assets.toptal.io/uploads/blog/image/91988/toptal-blog-image-1453386461243-c11d60e6e6838a057334ff7a3fae661e.jpg" alt="" />
+  <img src="https://assets.toptal.io/uploads/blog/image/91988/toptal-blog-image-1453386461243-c11d60e6e6838a057334ff7a3fae661e.jpg" alt="" />
 </p>
 
 <p style="text-align: justify;">
@@ -191,7 +191,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  Note that you should also consider how tests can be run using the build system. For supporting tests you should think of a very basic framework for <a href="http://www.toptal.com/blog/tags/unittesting">unit testing</a> and you should integrate it with the build system, so that running maven test looks for tests in your language, compile and run them reporting the output to the user.
+  Note that you should also consider how tests can be run using the build system. For supporting tests you should think of a very basic framework for <a href="https://www.toptal.com/blog/tags/unittesting">unit testing</a> and you should integrate it with the build system, so that running maven test looks for tests in your language, compile and run them reporting the output to the user.
 </p>
 
 <p style="text-align: justify;">
@@ -227,7 +227,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  In the ideal scenario, your user could clone a simple project written in your language, and build it using the <a href="http://www.toptal.com/software/creating-jvm-languages-an-overview">standard tools</a> (Maven or Gradle) without noticing any difference. If he wants to edit the project he could open it in its favorite editor and the plugin will help point out to him errors and provide smart completions. This is a scenario much different than having to figure out how to invoke your compiler and edit files using notepad. The ecosystem around your language can really make the difference, and nowadays it can be built with a reasonable effort.
+  In the ideal scenario, your user could clone a simple project written in your language, and build it using the <a href="https://www.toptal.com/software/creating-jvm-languages-an-overview">standard tools</a> (Maven or Gradle) without noticing any difference. If he wants to edit the project he could open it in its favorite editor and the plugin will help point out to him errors and provide smart completions. This is a scenario much different than having to figure out how to invoke your compiler and edit files using notepad. The ecosystem around your language can really make the difference, and nowadays it can be built with a reasonable effort.
 </p>
 
 <p style="text-align: justify;">
@@ -239,7 +239,7 @@ tags:
 </p>
 
 <p style="text-align: justify;" class="note_normal">
-  <span>Published at Codepedia.org with the permission of Toptal – source </span><a title="Are you getting worked up over code duplication?" href="http://www.toptal.com/software/creating-jvm-languages-an-overview" target="_blank">Creating Usable JVM Languages: An Overview</a><span> from </span><a title="http://www.toptal.com/blog" href="http://www.toptal.com/blog" target="_blank">http://www.toptal.com/blog</a>
+  <span>Published at Codepedia.org with the permission of Toptal – source </span><a title="Are you getting worked up over code duplication?" href="https://www.toptal.com/software/creating-jvm-languages-an-overview" target="_blank">Creating Usable JVM Languages: An Overview</a><span> from </span><a title="https://www.toptal.com/blog" href="https://www.toptal.com/blog" target="_blank">https://www.toptal.com/blog</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -250,7 +250,7 @@ tags:
   </p>
 
   <div id="social_logos_up">
-    <a class="icon-earth" href="http://www.toptal.com/blog" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/toptalllc" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/Toptal-141928212544793/" target="_blank"> </a> <a class="icon-gplus" href="https://plus.google.com/+Toptalllc/posts" target="_blank"> </a>
+    <a class="icon-earth" href="https://www.toptal.com/blog" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/toptalllc" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/Toptal-141928212544793/" target="_blank"> </a> <a class="icon-gplus" href="https://plus.google.com/+Toptalllc/posts" target="_blank"> </a>
   </div>
 
   <div id="author_details" style="text-align: justify;">

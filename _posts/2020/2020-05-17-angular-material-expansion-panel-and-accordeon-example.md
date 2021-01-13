@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular material expansion panel and accordion example
-description: "Presents angular material expansion panel and accordion in action at http://www.bookmarks.dev with
+description: "Presents angular material expansion panel and accordion in action at https://www.bookmarks.dev with
 source code and notes"
 author: ama
 permalink: /ama/angular-material-expansion-panel-and-accordion-example

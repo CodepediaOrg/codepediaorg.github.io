@@ -54,7 +54,7 @@ tags:
 ## <span id="Why_use_reCAPTCHA">Why use reCAPTCHA?</span>
 
 <p style="text-align: justify;">
-  We have a section on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, called <a title="Recommend podcasts on Podcastpedia.org" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help/add_podcast" target="_blank">Recommend podcast</a>, that allows visitors to submit podcasts. Lately we have received very good suggestions &#8211; thank you all you Guys for that, but also lots of spam. A way to signifactly reduce the amount of spam, is to use <a title="Wikipedia, captcha definition" href="http://en.wikipedia.org/wiki/CAPTCHA" target="_blank">captchas</a>, which is a type of challenge-response test used in computing to determine whether or not the user is human. One popular implementaiton of captchas, is <a title="ReCAPTCHA homepage" href="http://www.google.com/recaptcha" target="_blank">reCAPTCHA</a>, now owned by Google. You might thing that solving catpchas is annoying, but by using reCAPTCHA you help to digitize books, newspapers and old time radio shows &#8211; <a title="Ted talk cOnline Collaboration" href="http://www.ted.com/talks/luis_von_ahn_massive_scale_online_collaboration.html" target="_blank">here</a> is a greatd TED talk from Luis von Ahn on massive-scale online collaboration explaining how this works:<br /> <br /> Last but not least, you help us avoid <a title="Email spam" href="http://en.wikipedia.org/wiki/Email_spam" target="_blank">email spam</a>, which I guess you know by now how annoying and dangerous that can be.
+  We have a section on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, called <a title="Recommend podcasts on Podcastpedia.org" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help/add_podcast" target="_blank">Recommend podcast</a>, that allows visitors to submit podcasts. Lately we have received very good suggestions &#8211; thank you all you Guys for that, but also lots of spam. A way to signifactly reduce the amount of spam, is to use <a title="Wikipedia, captcha definition" href="https://en.wikipedia.org/wiki/CAPTCHA" target="_blank">captchas</a>, which is a type of challenge-response test used in computing to determine whether or not the user is human. One popular implementaiton of captchas, is <a title="ReCAPTCHA homepage" href="https://www.google.com/recaptcha" target="_blank">reCAPTCHA</a>, now owned by Google. You might thing that solving catpchas is annoying, but by using reCAPTCHA you help to digitize books, newspapers and old time radio shows &#8211; <a title="Ted talk cOnline Collaboration" href="https://www.ted.com/talks/luis_von_ahn_massive_scale_online_collaboration.html" target="_blank">here</a> is a greatd TED talk from Luis von Ahn on massive-scale online collaboration explaining how this works:<br /> <br /> Last but not least, you help us avoid <a title="Email spam" href="https://en.wikipedia.org/wiki/Email_spam" target="_blank">email spam</a>, which I guess you know by now how annoying and dangerous that can be.
 </p>
 
 This post presents how reCAPTCHA is integrated with a Spring MVC form to recommend podcasts.
@@ -86,7 +86,7 @@ Add the following dependency to your `pom.xml` file
 
 The current Spring version used for Podcastpedia is `<spring.version>3.2.3.RELEASE</spring.version>`
 
-If you don&#8217;t use Maven to build your application you can download the [reCAPTCHA Java Library here](http://code.google.com/p/recaptcha/downloads/list?q=label:java-Latest) (contributed by Soren) and unzip it. Typically the only thing you&#8217;ll need is the jar file (recaptcha4j-X.X.X.jar), which you have to copy to a place where it can be loaded by your java application. For example, if you are using Tomcat to run JSP, you may put the jar file in a directory called _WEB-INF/lib/_.
+If you don&#8217;t use Maven to build your application you can download the [reCAPTCHA Java Library here](https://code.google.com/p/recaptcha/downloads/list?q=label:java-Latest) (contributed by Soren) and unzip it. Typically the only thing you&#8217;ll need is the jar file (recaptcha4j-X.X.X.jar), which you have to copy to a place where it can be loaded by your java application. For example, if you are using Tomcat to run JSP, you may put the jar file in a directory called _WEB-INF/lib/_.
 
 ### <span id="Client_Side_How_to_make_the_CAPTCHA_image_show_up">Client Side (How to make the CAPTCHA image show up)</span>
 
@@ -138,9 +138,9 @@ The strings array contains the values of the localized messages I want displayed
 If put together, all these relevant things look somewhat like the following in the jsp file:
 
 <pre class="lang:xhtml decode:true" title="relevant reCAPTCHA code in JSP file">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&gt;
-&lt;%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%&gt;
-&lt;%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%&gt;
+&lt;%@ taglib prefix="c" uri="https://java.sun.com/jsp/jstl/core" %&gt;
+&lt;%@ taglib prefix="form" uri="https://www.springframework.org/tags/form"%&gt;
+&lt;%@ taglib prefix="spring" uri="https://www.springframework.org/tags"%&gt;
 &lt;%@ page import="net.tanesha.recaptcha.ReCaptcha" %&gt;
 &lt;%@ page import="net.tanesha.recaptcha.ReCaptchaFactory" %&gt;
 &lt;%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -176,27 +176,27 @@ where `/WEB-INF/jsp/common/recaptcha_options.jsp` contains the customization opt
 First the `reCAPTCHA bean` has to be configured in the Spring application context:
 
 <pre class="lang:default mark:27-29 decode:true">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;beans  xmlns="http://www.springframework.org/schema/beans"
-	    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	    xmlns:jaxws="http://cxf.apache.org/jaxws"
-	    xmlns:p="http://www.springframework.org/schema/p"
-	    xmlns:context="http://www.springframework.org/schema/context"
-	    xmlns:tx="http://www.springframework.org/schema/tx"
-	    xmlns:mvc="http://www.springframework.org/schema/mvc"
-	    xmlns:cache="http://www.springframework.org/schema/cache"
+&lt;beans  xmlns="https://www.springframework.org/schema/beans"
+	    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	    xmlns:jaxws="https://cxf.apache.org/jaxws"
+	    xmlns:p="https://www.springframework.org/schema/p"
+	    xmlns:context="https://www.springframework.org/schema/context"
+	    xmlns:tx="https://www.springframework.org/schema/tx"
+	    xmlns:mvc="https://www.springframework.org/schema/mvc"
+	    xmlns:cache="https://www.springframework.org/schema/cache"
 	    xsi:schemaLocation="
-			http://www.springframework.org/schema/beans
-			http://www.springframework.org/schema/beans/spring-beans.xsd
-			http://www.springframework.org/schema/mvc
-			http://www.springframework.org/schema/mvc/spring-mvc.xsd
-			http://www.springframework.org/schema/context
-			http://www.springframework.org/schema/context/spring-context.xsd
-			http://cxf.apache.org/jaxws
-			http://cxf.apache.org/schemas/jaxws.xsd
-			http://www.springframework.org/schema/tx
-			http://www.springframework.org/schema/tx/spring-tx.xsd
-			http://www.springframework.org/schema/cache
-			http://www.springframework.org/schema/cache/spring-cache.xsd"&gt;
+			https://www.springframework.org/schema/beans
+			https://www.springframework.org/schema/beans/spring-beans.xsd
+			https://www.springframework.org/schema/mvc
+			https://www.springframework.org/schema/mvc/spring-mvc.xsd
+			https://www.springframework.org/schema/context
+			https://www.springframework.org/schema/context/spring-context.xsd
+			https://cxf.apache.org/jaxws
+			https://cxf.apache.org/schemas/jaxws.xsd
+			https://www.springframework.org/schema/tx
+			https://www.springframework.org/schema/tx/spring-tx.xsd
+			https://www.springframework.org/schema/cache
+			https://www.springframework.org/schema/cache/spring-cache.xsd"&gt;
 
 	&lt;context:component-scan base-package="org.podcastpedia.service, org.podcastpedia.controllers"/&gt;
 	&lt;mvc:annotation-driven/&gt;
@@ -277,10 +277,10 @@ Well, that&#8217;s it. After reading this I hope you feel more positive about re
 
 ## <span id="References">References</span>
 
-  1. <a title="ReCAPTCHA homepage" href="http://www.google.com/recaptcha" target="_blank">reCAPTCHA</a>
+  1. <a title="ReCAPTCHA homepage" href="https://www.google.com/recaptcha" target="_blank">reCAPTCHA</a>
   2. <a title="Using reCAPTCHA with Java/JSP" href="https://developers.google.com/recaptcha/docs/java" target="_blank">Using reCAPTCHA with JAVA/JSP </a>
   3. <a title=" Customizing the Look and Feel of reCAPTCHA" href="https://developers.google.com/recaptcha/docs/customization" target="_blank">Customizing the Look and Feel of reCAPTCHA</a>
-  4. <a title="Spring Framework Reference Documentation" href="http://docs.spring.io/spring/docs/3.2.3.RELEASE/spring-framework-reference/html/" target="_blank">Spring Framework Reference Documentation</a>
+  4. <a title="Spring Framework Reference Documentation" href="https://docs.spring.io/spring/docs/3.2.3.RELEASE/spring-framework-reference/html/" target="_blank">Spring Framework Reference Documentation</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

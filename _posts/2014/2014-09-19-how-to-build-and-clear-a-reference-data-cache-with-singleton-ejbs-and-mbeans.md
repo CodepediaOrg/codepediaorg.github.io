@@ -14,7 +14,7 @@ tags:
   - web-services
 ---
 <p style="text-align: justify;">
-  In one of my projects I had a requirement to load reference data from several sources in a Java EE 6 WebLogic environment, with EclipseLink as <a title="http://en.wikipedia.org/wiki/Object-relational_mapping" href="http://en.wikipedia.org/wiki/Object-relational_mapping" target="_blank">ORM</a> framework. Since I couldn&#8217;t find an annotation in the Java EE world comparable to the sweet <a title="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/cache/annotation/Cacheable.html" href="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/cache/annotation/Cacheable.html" target="_blank">@Cacheable</a> from Spring YET, I had to write my &#8220;own&#8221; caching solution. Although reference data barely changes over time, one extra requirement was to be able to clear the cache from exterior. So here it goes&#8230;<!--more-->
+  In one of my projects I had a requirement to load reference data from several sources in a Java EE 6 WebLogic environment, with EclipseLink as <a title="https://en.wikipedia.org/wiki/Object-relational_mapping" href="https://en.wikipedia.org/wiki/Object-relational_mapping" target="_blank">ORM</a> framework. Since I couldn&#8217;t find an annotation in the Java EE world comparable to the sweet <a title="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/cache/annotation/Cacheable.html" href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/cache/annotation/Cacheable.html" target="_blank">@Cacheable</a> from Spring YET, I had to write my &#8220;own&#8221; caching solution. Although reference data barely changes over time, one extra requirement was to be able to clear the cache from exterior. So here it goes&#8230;<!--more-->
 </p>
 
 <div id="toc_container" class="no_bullets">
@@ -129,13 +129,13 @@ public class ReferenceDataCacheBean implements ReferenceDataCache {
 **Note:**
 
 <li style="text-align: justify;">
-  <code>@Singleton</code> &#8211; probably the most important line of code in this class. This annotation specifies that there will be exactly one singleton of this type of bean in the application. This bean can be invoked concurrently by multiple threads. It comes also with a <a title="http://docs.oracle.com/javaee/5/api/javax/annotation/PostConstruct.html" href="http://docs.oracle.com/javaee/5/api/javax/annotation/PostConstruct.html" target="_blank"><code>@PostConstruct</code></a> annotation. This annotation is used on a method that needs to be executed after dependency injection is done to perform any initialization &#8211; in our case is to initialize the &#8220;cache&#8221;(hash map)
+  <code>@Singleton</code> &#8211; probably the most important line of code in this class. This annotation specifies that there will be exactly one singleton of this type of bean in the application. This bean can be invoked concurrently by multiple threads. It comes also with a <a title="https://docs.oracle.com/javaee/5/api/javax/annotation/PostConstruct.html" href="https://docs.oracle.com/javaee/5/api/javax/annotation/PostConstruct.html" target="_blank"><code>@PostConstruct</code></a> annotation. This annotation is used on a method that needs to be executed after dependency injection is done to perform any initialization &#8211; in our case is to initialize the &#8220;cache&#8221;(hash map)
 </li>
 <li style="text-align: justify;">
-  the <code>@ConcurrencyManagement(ConcurrencyManagementType.CONTAINER)</code> declares a singleton session bean&#8217;s concurrency management type. By default it is set to <code>Container</code>. I use it here only to highlight its existence. The other option <a title="http://docs.oracle.com/javaee/6/api/javax/ejb/ConcurrencyManagementType.html#BEAN" href="http://docs.oracle.com/javaee/6/api/javax/ejb/ConcurrencyManagementType.html#BEAN" target="_blank"><code>ConcurrencyManagementType.BEAN</code></a> specifies that the bean developer is responsible for managing concurrent access to the bean instance.
+  the <code>@ConcurrencyManagement(ConcurrencyManagementType.CONTAINER)</code> declares a singleton session bean&#8217;s concurrency management type. By default it is set to <code>Container</code>. I use it here only to highlight its existence. The other option <a title="https://docs.oracle.com/javaee/6/api/javax/ejb/ConcurrencyManagementType.html#BEAN" href="https://docs.oracle.com/javaee/6/api/javax/ejb/ConcurrencyManagementType.html#BEAN" target="_blank"><code>ConcurrencyManagementType.BEAN</code></a> specifies that the bean developer is responsible for managing concurrent access to the bean instance.
 </li>
 <li style="text-align: justify;">
-  the actual &#8220;cache&#8221; is a <a title="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html" target="_blank"><code>ConcurrentHashMap</code></a> which has <code>String</code> based keys and stores <code>Object</code>s. This is being held in memory due to the singleton nature of the bean
+  the actual &#8220;cache&#8221; is a <a title="https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html" href="https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html" target="_blank"><code>ConcurrentHashMap</code></a> which has <code>String</code> based keys and stores <code>Object</code>s. This is being held in memory due to the singleton nature of the bean
 </li>
 <li style="text-align: justify;">
   the injected <code>ReferenceDataService</code> is a <code>@Stateless</code> <code>@EJB</code> that, behind the scenes,  gathers the reference data from the different sources
@@ -163,7 +163,7 @@ public class ReferenceDataCacheBean implements ReferenceDataCache {
 </h3>
 
 <p style="text-align: justify;">
-  If you are new to Java Management Extensions (JMX) , <em>which is a Java technology that supplies tools for managing and monitoring applications, system objects, devices (e.g. printers) and service oriented networks. Those resources are represented by objects called MBeans (for Managed Bean)</em>, I highly recommend you start with this tutorial <a title="http://docs.oracle.com/javase/tutorial/jmx/" href="http://docs.oracle.com/javase/tutorial/jmx/" target="_blank">Trail: Java Management Extensions (JMX)</a>
+  If you are new to Java Management Extensions (JMX) , <em>which is a Java technology that supplies tools for managing and monitoring applications, system objects, devices (e.g. printers) and service oriented networks. Those resources are represented by objects called MBeans (for Managed Bean)</em>, I highly recommend you start with this tutorial <a title="https://docs.oracle.com/javase/tutorial/jmx/" href="https://docs.oracle.com/javase/tutorial/jmx/" target="_blank">Trail: Java Management Extensions (JMX)</a>
 </p>
 
 #### <span id="211_Interface">2.1.1. Interface</span>
@@ -276,8 +276,8 @@ public class ReferenceDataResource {
 
 ### <span id="Web">Web</span>
 
-  1. <a title="http://www.adam-bien.com/roller/abien/entry/singleton_the_perfect_cache_facade" href="http://www.adam-bien.com/roller/abien/entry/singleton_the_perfect_cache_facade" target="_blank">@Singleton &#8211; the perfect cache facade</a> by Adam Bien
-  2. <a title="http://www.adam-bien.com/roller/abien/entry/singleton_the_simplest_possible_jmx" href="http://www.adam-bien.com/roller/abien/entry/singleton_the_simplest_possible_jmx" target="_blank">@Singleton &#8211; the simplest possible JMX MXBean </a>by Adam Bien
-  3. <a title="http://tomee.apache.org/singleton-beans.html" href="http://tomee.apache.org/singleton-beans.html" target="_blank">Tomee &#8211; Singleton Beans</a>
-  4. <a title="http://docs.oracle.com/javase/tutorial/jmx/" href="http://docs.oracle.com/javase/tutorial/jmx/" target="_blank">Trail: Java Management Extensions (JMX)</a>
-  5. <a title="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" target="_blank">Spring Cache Abstraction</a>
+  1. <a title="https://www.adam-bien.com/roller/abien/entry/singleton_the_perfect_cache_facade" href="https://www.adam-bien.com/roller/abien/entry/singleton_the_perfect_cache_facade" target="_blank">@Singleton &#8211; the perfect cache facade</a> by Adam Bien
+  2. <a title="https://www.adam-bien.com/roller/abien/entry/singleton_the_simplest_possible_jmx" href="https://www.adam-bien.com/roller/abien/entry/singleton_the_simplest_possible_jmx" target="_blank">@Singleton &#8211; the simplest possible JMX MXBean </a>by Adam Bien
+  3. <a title="https://tomee.apache.org/singleton-beans.html" href="https://tomee.apache.org/singleton-beans.html" target="_blank">Tomee &#8211; Singleton Beans</a>
+  4. <a title="https://docs.oracle.com/javase/tutorial/jmx/" href="https://docs.oracle.com/javase/tutorial/jmx/" target="_blank">Trail: Java Management Extensions (JMX)</a>
+  5. <a title="https://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" href="https://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html" target="_blank">Spring Cache Abstraction</a>

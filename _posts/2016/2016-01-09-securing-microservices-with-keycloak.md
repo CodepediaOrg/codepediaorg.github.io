@@ -18,7 +18,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <img src="http://1.bp.blogspot.com/-036NE1K0vZs/VV29q9kDXoI/AAAAAAAAStI/RLBoK8ITwOE/s1600/old-architecture.png" /><!--more-->
+  <img src="https://1.bp.blogspot.com/-036NE1K0vZs/VV29q9kDXoI/AAAAAAAAStI/RLBoK8ITwOE/s1600/old-architecture.png" /><!--more-->
 </p>
 
 <p style="text-align: justify;">
@@ -26,7 +26,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <img src="http://4.bp.blogspot.com/-HGsYTjn6IFY/VV25MDoWHYI/AAAAAAAASs4/pjazmyksZDo/s1600/microservices-architecture.png" />
+  <img src="https://4.bp.blogspot.com/-HGsYTjn6IFY/VV25MDoWHYI/AAAAAAAASs4/pjazmyksZDo/s1600/microservices-architecture.png" />
 </p>
 
 <p style="text-align: justify;">
@@ -34,7 +34,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  The first step to securing micro services is authenticating the user. This is done by adding the Keycloak JavaScript adapter to your HTML5 application. For mobile applications there&#8217;s a Keycloak Cordova adapter, but there&#8217;s also native support though the <a href="http://www.aerogear.org/">AeroGear project</a>.
+  The first step to securing micro services is authenticating the user. This is done by adding the Keycloak JavaScript adapter to your HTML5 application. For mobile applications there&#8217;s a Keycloak Cordova adapter, but there&#8217;s also native support though the <a href="https://www.aerogear.org/">AeroGear project</a>.
 </p>
 
 <p style="text-align: justify;">
@@ -42,7 +42,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <img border="0" src="http://2.bp.blogspot.com/-NjOd_xAs0IQ/VV3EcENU3hI/AAAAAAAAStY/t_XPePYNhHs/s1600/auth.png" />
+  <img border="0" src="https://2.bp.blogspot.com/-NjOd_xAs0IQ/VV3EcENU3hI/AAAAAAAAStY/t_XPePYNhHs/s1600/auth.png" />
 </p>
 
 <p style="text-align: justify;">
@@ -50,7 +50,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <img border="0" src="http://1.bp.blogspot.com/-_kp0j2ylQoo/VV3EcWeIqJI/AAAAAAAAStc/y8uDGorcMKE/s1600/microservices-architecture-with-kc.png" />
+  <img border="0" src="https://1.bp.blogspot.com/-_kp0j2ylQoo/VV3EcWeIqJI/AAAAAAAAStc/y8uDGorcMKE/s1600/microservices-architecture-with-kc.png" />
 </p>
 
 <p style="text-align: justify;">
@@ -62,11 +62,11 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  For more details about OpenID Connect you can look at the <a href="http://openid.net/connect/">OpenID Connect website</a>, but the nice thing is with Keycloak you don&#8217;t really need to know the low level details so it&#8217;s completely optional. As an alternative just go straight to the <a href="http://www.keycloak.org/">Keycloak website</a>, download the server and adapters, and check out our documentation and many examples.
+  For more details about OpenID Connect you can look at the <a href="https://openid.net/connect/">OpenID Connect website</a>, but the nice thing is with Keycloak you don&#8217;t really need to know the low level details so it&#8217;s completely optional. As an alternative just go straight to the <a href="https://www.keycloak.org/">Keycloak website</a>, download the server and adapters, and check out our documentation and many examples.
 </p>
 
 <p style="text-align: justify;" class="note_normal">
-  Published at Codepedia.org with the permission of Keycloak&#8217;s team – source <a title="Are you getting worked up over code duplication?" href="http://blog.keycloak.org/2015/05/securing-microservices.html" target="_blank">Securing Microservices</a> from <a title="http://johannesbrodwall.com/" href="http://keycloak.org" target="_blank">http://keycloak.org</a>
+  Published at Codepedia.org with the permission of Keycloak&#8217;s team – source <a title="Are you getting worked up over code duplication?" href="https://blog.keycloak.org/2015/05/securing-microservices.html" target="_blank">Securing Microservices</a> from <a title="https://johannesbrodwall.com/" href="https://keycloak.org" target="_blank">https://keycloak.org</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -77,7 +77,7 @@ tags:
   </p>
 
   <div id="social_logos_up">
-    <a class="icon-earth" href="http://keycloak.jboss.org/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/keycloak" target="_blank"> </a> <a class="icon-github" href="https://github.com/keycloak" target="_blank"> </a>
+    <a class="icon-earth" href="https://keycloak.jboss.org/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/keycloak" target="_blank"> </a> <a class="icon-github" href="https://github.com/keycloak" target="_blank"> </a>
   </div>
 
   <div id="author_details" style="text-align: justify;">

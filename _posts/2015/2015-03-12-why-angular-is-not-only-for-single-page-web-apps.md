@@ -19,7 +19,7 @@ tags:
 ### The initial intent of Angular {#theinitialintentofangular}
 
 <p style="text-align: justify;">
-  Before it became an open source framework, Angular was meant as a development tool targeted mostly at web designers. The framework would allow designers to enhance HTML pages and give them the ability to validate and persist forms in a transparent way (see reference <a href="http://devchat.tv/adventures-in-angular/001-aia-the-birth-of-angular-1">here</a>).
+  Before it became an open source framework, Angular was meant as a development tool targeted mostly at web designers. The framework would allow designers to enhance HTML pages and give them the ability to validate and persist forms in a transparent way (see reference <a href="https://devchat.tv/adventures-in-angular/001-aia-the-birth-of-angular-1">here</a>).
 </p>
 
 <p style="text-align: justify;">
@@ -98,7 +98,7 @@ While the user is entering data, it&#8217;s helpful to show a message informing 
 This is how the form should look with several of it&#8217;s components dirty and invalid:
 
 <div>
-  <img src="http://d2huq83j2o5dyd.cloudfront.net/angular-not-only-spa/invalid.png" alt="" />
+  <img src="https://d2huq83j2o5dyd.cloudfront.net/angular-not-only-spa/invalid.png" alt="" />
 </div>
 
 This functionality can be implemented using the [ng-messages](https://docs.angularjs.org/api/ngMessages/directive/ngMessages) directive:
@@ -150,7 +150,7 @@ The submit button can be made enabled/disabled according to the form validity an
 A thorough walk-through of Angular form validation can be found on this [screencast](https://www.youtube.com/watch?v=t6XUPVmlYbY) (pre-ngMessages).
 
 <p class="note_normal">
-  Published at Codepedia.org with permission of Aleksey Novik – source<a title="http://blog.jhades.org/why-angular-is-not-only-for-single-page-web-apps/" href="http://blog.jhades.org/why-angular-is-not-only-for-single-page-web-apps/"> Why Angular is not only for single page web apps</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik – source<a title="https://blog.jhades.org/why-angular-is-not-only-for-single-page-web-apps/" href="https://blog.jhades.org/why-angular-is-not-only-for-single-page-web-apps/"> Why Angular is not only for single page web apps</a> from <a title="https://blog.jhades.org/" href="https://blog.jhades.org/" target="_blank">https://blog.jhades.org/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -166,7 +166,7 @@ A thorough walk-through of Angular form validation can be found on this [screenc
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
+      <a class="icon-earth" href="https://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
     </div>
 
     <div class="clear">

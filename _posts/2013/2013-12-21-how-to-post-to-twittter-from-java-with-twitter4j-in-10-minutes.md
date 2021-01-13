@@ -54,7 +54,7 @@ I have just posted my first tweet from Java
 
 <blockquote class="twitter-tweet" lang="en-gb">
   <p>
-    &#8221; A Visit to Transylvania&#8221; by Euromaxx: Lifestyle Europe (DW) <a href="http://t.co/MJFDD4540y">http://t.co/MJFDD4540y</a>
+    &#8221; A Visit to Transylvania&#8221; by Euromaxx: Lifestyle Europe (DW) <a href="https://t.co/MJFDD4540y">https://t.co/MJFDD4540y</a>
   </p>
 
   <p>
@@ -63,7 +63,7 @@ I have just posted my first tweet from Java
 </blockquote>
 
 <p style="text-align: justify;">
-  and I still can&#8217;t believe how easy and fast it was. The actual coding took like 2 minutes, whereby the remaining 8 minutes were needed to setup a Twitter application to be able to post in the first place. Not only that, but it worked from the first try, therefore I had to stop coding and start blogging about it. This was made possible by <a title="Twitter4J" href="http://twitter4j.org" target="_blank">Twitter4j </a>(thank you very much <a title="Yusuke Yamamoto github profile" href="https://github.com/yusuke" target="_blank">Yusuke</a>):
+  and I still can&#8217;t believe how easy and fast it was. The actual coding took like 2 minutes, whereby the remaining 8 minutes were needed to setup a Twitter application to be able to post in the first place. Not only that, but it worked from the first try, therefore I had to stop coding and start blogging about it. This was made possible by <a title="Twitter4J" href="https://twitter4j.org" target="_blank">Twitter4j </a>(thank you very much <a title="Yusuke Yamamoto github profile" href="https://github.com/yusuke" target="_blank">Yusuke</a>):
 </p>
 
 <p class="note_normal" style="text-align: justify;">
@@ -138,7 +138,7 @@ public class TestTwitterPosting {
 	@Test
 	public void testPostingToTwitter() throws TwitterException{
 		Twitter twitter = TwitterFactory.getSingleton();
-		String message="\"A Visit to Transylvania\" by Euromaxx: Lifestyle Europe (DW) \n http://bit.ly/1cHB7MH";
+		String message="\"A Visit to Transylvania\" by Euromaxx: Lifestyle Europe (DW) \n https://bit.ly/1cHB7MH";
 		Status status = twitter.updateStatus(message);
 		LOG.debug("Successfully updated status to " + status.getText());
 	}
@@ -152,7 +152,7 @@ public class TestTwitterPosting {
 I ran the test method and in the log console I got:
 
 <pre class="lang:default decode:true" title="Log result">2013-12-21 07:46:16,461 DEBUG [org.podcastpedia.admin.general.TestTwitterPosting:20] - &lt;Successfully updated status to " A Visit to Transylvania" by Euromaxx: Lifestyle Europe (DW)
- http://t.co/MJFDD4540y&gt;</pre>
+ https://t.co/MJFDD4540y&gt;</pre>
 
 I couldn&#8217;t believe my eyes so I went to check Twitter, and there it was, the tweet shown at the start of the post.
 
@@ -226,11 +226,11 @@ You have now all the parameters needed to configure Twitter4J and post on Twitte
 
 ## <span id="Resources">Resources</span>
 
-  * <a title="Twitter4J" href="http://twitter4j.org/en/index.html" target="_blank">http://twitter4j.org/en/index.html</a>
-  * <a title="Twitter4J - code examples" href="http://twitter4j.org/en/code-examples.html" target="_blank">http://twitter4j.org/en/code-examples.html</a>
-  * <a title="Twitter4J - configuration" href="http://twitter4j.org/en/configuration.html" target="_blank">http://twitter4j.org/en/configuration.html</a>
-  * <a title="How to post a Tweet in Java using Twitter REST API and Twitter4J Library " href="http://codeoftheday.blogspot.de/2013/07/how-to-post-tweet-in-java-using-twitter.html" target="_blank">http://codeoftheday.blogspot.de/2013/07/how-to-post-tweet-in-java-using-twitter.html</a>
-  * <a title="OAuth" href="http://oauth.net/" target="_blank">OAuth</a>
+  * <a title="Twitter4J" href="https://twitter4j.org/en/index.html" target="_blank">https://twitter4j.org/en/index.html</a>
+  * <a title="Twitter4J - code examples" href="https://twitter4j.org/en/code-examples.html" target="_blank">https://twitter4j.org/en/code-examples.html</a>
+  * <a title="Twitter4J - configuration" href="https://twitter4j.org/en/configuration.html" target="_blank">https://twitter4j.org/en/configuration.html</a>
+  * <a title="How to post a Tweet in Java using Twitter REST API and Twitter4J Library " href="https://codeoftheday.blogspot.de/2013/07/how-to-post-tweet-in-java-using-twitter.html" target="_blank">https://codeoftheday.blogspot.de/2013/07/how-to-post-tweet-in-java-using-twitter.html</a>
+  * <a title="OAuth" href="https://oauth.net/" target="_blank">OAuth</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

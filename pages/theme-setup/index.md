@@ -10,14 +10,14 @@ General notes and suggestions for customizing **Neo-HPSTR**.
 
 ## Basic Setup for a new Jekyll site
 
-1. [Install Bundler](http://bundler.io) `gem install bundler` and then install [Jekyll](http://jekyllrb.com) and all dependencies `bundle install`.
-2. Fork the [Neo-HPSTR Jekyll Theme repo](http://github.com/aron-bordin/neo-hpstr-jekyll-theme/fork).
+1. [Install Bundler](https://bundler.io) `gem install bundler` and then install [Jekyll](https://jekyllrb.com) and all dependencies `bundle install`.
+2. Fork the [Neo-HPSTR Jekyll Theme repo](https://github.com/aron-bordin/neo-hpstr-jekyll-theme/fork).
 3. Clone the repo you just forked and rename it.
 4. Edit `_config.yml` to personalize your site.
 5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
 6. Read the documentation below for further customization pointers and documentation.
 
-<div markdown="0"><a href="http://github.com/aron-bordin/neo-hpstr-jekyll-theme/archive/master.zip" class="btn">Download the Theme</a></div>
+<div markdown="0"><a href="https://github.com/aron-bordin/neo-hpstr-jekyll-theme/archive/master.zip" class="btn">Download the Theme</a></div>
 
 **Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site.
 {: .notice}
@@ -38,9 +38,9 @@ disqus_shortname: neohpstrtheme # put your disqus here
 reading_time:     true # if true, shows the estimated reading time for a post
 words_per_minute: 200
 logo:             images/logo.png # logo visible in the topbar
-# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# Your site's domain goes here (eg: //mmistakes.github.io, https://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-# url: http://aronbordin.com/neo-hpstr-jekyll-theme
+# url: https://aronbordin.com/neo-hpstr-jekyll-theme
 
 # draw your top menu here
 # each item must have a title and a url.
@@ -51,7 +51,7 @@ menu:
   - title: 'Home'
     url: '/'
   - title: 'Fork'
-    url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme'
+    url: 'https://github.com/aron-bordin/neo-hpstr-jekyll-theme'
   - title: 'Install'
     url: '/theme-setup/'
   - title: 'Tags'
@@ -70,7 +70,7 @@ menu:
 # Owner/author information
 owner:
   name:           Your name
-  site:           http://aronbordin.com
+  site:           https://aronbordin.com
   avatar:         images/avatar.jpg
   bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
   email:          you@email.com
@@ -100,7 +100,7 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
 locale:      en_US
 future:      true
@@ -221,7 +221,7 @@ Most of the variables found here are used in the .html files found in `_includes
 
 ### Disqus Comments
 
-Create a [Disqus](http://disqus.com) account and change `disqus_shortname` in `_config.yml` to the Disqus *shortname* you just setup. By default comments appear on all post and pages if you assigned a shortname. To disable commenting on a post or page, add the following to its YAML Front Matter:
+Create a [Disqus](https://disqus.com) account and change `disqus_shortname` in `_config.yml` to the Disqus *shortname* you just setup. By default comments appear on all post and pages if you assigned a shortname. To disable commenting on a post or page, add the following to its YAML Front Matter:
 
 {% highlight yaml %}
 comments: false
@@ -250,7 +250,7 @@ Change your name, and avatar photo (200x200 pixels or larger), email, and social
 
 ### Google Analytics and Webmaster Tools
 
-Your Google Analytics ID goes here along with meta tags for [Google Webmaster Tools](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35179) and [Bing Webmaster Tools](https://ssl.bing.com/webmaster/configure/verify/ownershi) site verification.
+Your Google Analytics ID goes here along with meta tags for [Google Webmaster Tools](https://support.google.com/webmasters/bin/answer.py?hl=en&answer=35179) and [Bing Webmaster Tools](https://ssl.bing.com/webmaster/configure/verify/ownershi) site verification.
 
 ### Top Menu - Navigation Links
 
@@ -262,7 +262,7 @@ menu:
   - title: 'Home'
     url: '/'
   - title: 'Fork'
-    url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme'
+    url: 'https://github.com/aron-bordin/neo-hpstr-jekyll-theme'
   - title: 'Install'
     url: '/theme-setup/'
   - title: 'Tags'
@@ -332,13 +332,13 @@ Here's an example of what a tweet to your site could look like if you activate T
 
 ### Videos
 
-Video embeds are responsive and scale with the width of the main content block with the help of [FitVids](http://fitvidsjs.com/).
+Video embeds are responsive and scale with the width of the main content block with the help of [FitVids](https://fitvidsjs.com/).
 
 Adding YouTube video embeds causes errors when building your Jekyll site. To fix wrap the html within `{::nomarkdown}` tags. Example below:
 
 {% highlight html %}
 {::nomarkdown}
-<iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0" allowfullscreen></iframe>
 {:/nomarkdown}
 {% endhighlight %}
 
@@ -348,7 +348,7 @@ Twitter cards make it possible to attach images and post summaries to Tweets tha
 
 ### Link Post Type
 
-Link blog like a champ by adding `link: http://url-you-want-linked` to a post's YAML front matter. Arrow glyph links to the post's permalink and the the `post-title` links to the source URL. Here's an [example of a link post]({{ site.url }}/sample-link-post/) if you need a visual.
+Link blog like a champ by adding `link: https://url-you-want-linked` to a post's YAML front matter. Arrow glyph links to the post's permalink and the the `post-title` links to the source URL. Here's an [example of a link post]({{ site.url }}/sample-link-post/) if you need a visual.
 
 ---
 
@@ -378,7 +378,7 @@ Jekyll 2.x added support for Sass files making it much easier to modify a theme'
 
 For example if you wanted a red background instead of white you'd change `$bodycolor: #fff;` to `$bodycolor: $cc0033;`.
 
-To modify the site's JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into `scripts.min.js`. [Install Node.js](http://nodejs.org/), then [install Grunt](http://gruntjs.com/getting-started), and then finally install the dependencies for the theme contained in `package.json`:
+To modify the site's JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into `scripts.min.js`. [Install Node.js](https://nodejs.org/), then [install Grunt](https://gruntjs.com/getting-started), and then finally install the dependencies for the theme contained in `package.json`:
 
 {% highlight bash %}
 npm install
@@ -392,7 +392,7 @@ You can also use `grunt dev` in combination with `bundle exec jekyll serve` to w
 
 ## Questions?
 
-Having a problem getting something to work or want to know why I setup something in a certain way?  [File a GitHub Issue](http://github.com/aron-bordin/neo-hpstr-jekyll-theme/issues/new). And if you make something cool with this theme feel free to let me know.
+Having a problem getting something to work or want to know why I setup something in a certain way?  [File a GitHub Issue](https://github.com/aron-bordin/neo-hpstr-jekyll-theme/issues/new). And if you make something cool with this theme feel free to let me know.
 
 ---
 
@@ -402,6 +402,6 @@ This theme is free and open source software, distributed under the [MIT License]
 
 ---
 
-[^1]: Used to generate absolute URLs in `feed.xml`, and for canonical URLs in `head.html`. Don't include a trailing `/` in your base url ie: http://mademistakes.com. When developing locally I suggest using http://localhost:4000 or whatever localhost you're using to properly load all theme stylesheets, scripts, and image assets. If you leave this variable blank all links will resolve correctly except those pointing to home.
+[^1]: Used to generate absolute URLs in `feed.xml`, and for canonical URLs in `head.html`. Don't include a trailing `/` in your base url ie: https://mademistakes.com. When developing locally I suggest using http://localhost:4000 or whatever localhost you're using to properly load all theme stylesheets, scripts, and image assets. If you leave this variable blank all links will resolve correctly except those pointing to home.
 
 [^2]: If you're using GitHub Pages to host your site be aware that plugins are disabled. So you'll need to build your site locally and then manually deploy if you want to use this sweet plugin.

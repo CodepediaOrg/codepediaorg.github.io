@@ -13,7 +13,7 @@ tags:
     - bookmarks.dev
 ---
 
-Being on a constant lookout for bookmarks management optimization on [www.bookmarks.dev](http://www.bookmarks.dev),
+Being on a constant lookout for bookmarks management optimization on [www.bookmarks.dev](https://www.bookmarks.dev),
 I had this idea lately to add a bookmark to my history not only when I click the title of the bookmark (main URL),
 but also when I click hyperlinks in the description of the bookmark - sometimes I tend to bookmark the "parent" url and
 add "child" or related bookmarks in the description (an example would be bookmarking the same "resource" which is deployed

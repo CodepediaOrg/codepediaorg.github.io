@@ -30,7 +30,7 @@ Current versions used:
 
 The <a style="color: #bc360a;" title="https://jersey.java.net/documentation/latest/spring.html" href="https://jersey.java.net/documentation/latest/spring.html" target="_blank">Jersey Spring extension</a> must be present in your project’s classpath. If you are using Maven add it to the `pom.xml` file of your project:
 
-<pre class="lang:default decode:true" title="Dependencies snippet - pom.xml"><code>&lt;!-- Jersey-Spring http://mvnrepository.com/artifact/org.glassfish.jersey.ext/jersey-spring3/2.4.1 --&gt;
+<pre class="lang:default decode:true" title="Dependencies snippet - pom.xml"><code>&lt;!-- Jersey-Spring https://mvnrepository.com/artifact/org.glassfish.jersey.ext/jersey-spring3/2.4.1 --&gt;
 &lt;dependency&gt;
 	&lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
 	&lt;artifactId&gt;jersey-spring3&lt;/artifactId&gt;

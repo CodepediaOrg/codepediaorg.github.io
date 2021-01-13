@@ -118,8 +118,8 @@ or shortcut
 
 Filter by one attribute (here filter by **location**):
 ```
-> db.bookmarks.find({location: "http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/"});
-{ "_id" : ObjectId("5948ab65ce8e01b7e330b330"), "name" : "Git magic", "location" : "http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/", "tags" : [ "free-programming-books-zh", "版本控制" ], "description" : "", "descriptionHtml" : "<p></p>", "createdAt" : ISODate("2017-06-20T04:58:13.192Z"), "shared" : true, "userId" : "2d6f6cb5-44f3-441d-a0c5-ec9afea98d39", "language" : "zh" }
+> db.bookmarks.find({location: "https://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/"});
+{ "_id" : ObjectId("5948ab65ce8e01b7e330b330"), "name" : "Git magic", "location" : "https://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/", "tags" : [ "free-programming-books-zh", "版本控制" ], "description" : "", "descriptionHtml" : "<p></p>", "createdAt" : ISODate("2017-06-20T04:58:13.192Z"), "shared" : true, "userId" : "2d6f6cb5-44f3-441d-a0c5-ec9afea98d39", "language" : "zh" }
 ```
 
 Check out the [find documention](https://docs.mongodb.com/manual/reference/method/db.collection.find/) for more details.

@@ -14,7 +14,7 @@ Both require some common things which are listed below:
 * Fork the [repository](https://github.com/CodepediaOrg/codepediaorg.github.io) on GitHub
 
 ## Requirements
-We recommend using [Bundler](http://bundler.io/) to install and run Jekyll. Bundler manages Ruby gem dependencies, reduces Jekyll build errors, and prevents environment-related bugs. To install Bundler, you must install [Ruby](https://www.ruby-lang.org/).
+We recommend using [Bundler](https://bundler.io/) to install and run Jekyll. Bundler manages Ruby gem dependencies, reduces Jekyll build errors, and prevents environment-related bugs. To install Bundler, you must install [Ruby](https://www.ruby-lang.org/).
 
 ### 1 Open terminal
 
@@ -23,7 +23,7 @@ We recommend using [Bundler](http://bundler.io/) to install and run Jekyll. Bund
 $ ruby --version
 ruby 2.X.X
 ```
-### 3 If don't have Ruby installed, [install Ruby 2.0.0 or higher](https://www.ruby-lang.org/en/downloads/). 
+### 3 If don't have Ruby installed, [install Ruby 2.0.0 or higher](https://www.ruby-lang.org/en/downloads/).
 
 ### 4 Install bundler
 ```shell
@@ -90,7 +90,7 @@ Incremental build: disabled. Enable with --incremental
                    done in 0.309 seconds.
 Auto-regeneration: enabled for '/Users/octocat/my-site'
 Configuration file: /Users/octocat/my-site/_config.yml
-   Server address: http://127.0.0.1:4000/
+   Server address: https://127.0.0.1:4000/
  Server running... press ctrl-c to stop.
 ```
 

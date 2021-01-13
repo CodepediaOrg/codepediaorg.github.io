@@ -225,5 +225,5 @@ Custom Reason Phrase exception occured : message attached to the Custom Reason P
 
 ## <span id="Resources">Resources</span>
 
-  1. <a title="http://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html" target="_blank">Hypertext Transfer Protocol &#8212; HTTP/1.1 &#8211; Response</a>
+  1. <a title="https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html" target="_blank">Hypertext Transfer Protocol &#8212; HTTP/1.1 &#8211; Response</a>
   2. <a title="https://jersey.java.net/documentation/latest/user-guide.html" href="https://jersey.java.net/documentation/latest/user-guide.html" target="_blank">Jersey User Guide</a>

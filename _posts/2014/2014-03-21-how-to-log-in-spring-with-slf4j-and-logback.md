@@ -103,14 +103,14 @@ tags:
 
 From Logback&#8217;s official documentation:
 
-_&#8220;Logback is intended as a successor to the popular log4j project, [picking up where log4j leaves off](http://logback.qos.ch/reasonsToSwitch.html)._
+_&#8220;Logback is intended as a successor to the popular log4j project, [picking up where log4j leaves off](https://logback.qos.ch/reasonsToSwitch.html)._
 
 <p style="text-align: justify;">
   <em>Logback&#8217;s architecture is sufficiently generic so as to apply under different circumstances. At present time, logback is divided into three modules, logback-core, logback-classic and logback-access.</em>
 </p>
 
 <p style="text-align: justify;">
-  <em>The logback-core module lays the groundwork for the other two modules. The logback-classic module can be assimilated to a significantly improved version of log4j. Moreover, logback-classic natively implements the <a href="http://www.slf4j.org/">SLF4J API</a> so that you can readily switch back and forth between logback and other logging frameworks such as log4j or java.util.logging (JUL).</em>
+  <em>The logback-core module lays the groundwork for the other two modules. The logback-classic module can be assimilated to a significantly improved version of log4j. Moreover, logback-classic natively implements the <a href="https://www.slf4j.org/">SLF4J API</a> so that you can readily switch back and forth between logback and other logging frameworks such as log4j or java.util.logging (JUL).</em>
 </p>
 
 _The logback-access module integrates with Servlet containers, such as Tomcat and Jetty, to provide HTTP-access log functionality. Note that you could easily build your own module on top of logback-core.&#8221;_
@@ -118,7 +118,7 @@ _The logback-access module integrates with Servlet containers, such as Tomcat an
 ### <span id="13_Spring">1.3.  Spring</span>
 
 <p style="text-align: justify;">
-  Spring is using by default Jakarta Commons Logging, but in the blog post <a title="http://spring.io/blog/2009/12/04/logging-dependencies-in-spring/" href="http://spring.io/blog/2009/12/04/logging-dependencies-in-spring/" target="_blank">Logging Dependencies in Spring</a> from Spring.io it says &#8220;<em>if we could turn back the clock and start Spring now as a new project it would use a different logging dependency. Probably the first choice would be the Simple Logging Facade for Java (<a href="http://www.slf4j.org/">SLF4J</a>)</em>&#8220;
+  Spring is using by default Jakarta Commons Logging, but in the blog post <a title="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring/" href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring/" target="_blank">Logging Dependencies in Spring</a> from Spring.io it says &#8220;<em>if we could turn back the clock and start Spring now as a new project it would use a different logging dependency. Probably the first choice would be the Simple Logging Facade for Java (<a href="https://www.slf4j.org/">SLF4J</a>)</em>&#8220;
 </p>
 
 ## <span id="2_Configuration">2. Configuration</span>
@@ -243,12 +243,12 @@ To configure Logback all you have to do is place the file `logback.xml` in the c
   </code>
 </pre>
 
-<span style="font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">Logback uses </span><a style="font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;" title="http://logback.qos.ch/manual/appenders.html" href="http://logback.qos.ch/manual/appenders.html" target="_blank">appenders</a><span style="font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">, which are components Logback delegates the task of writing logging events to. </span>
+<span style="font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">Logback uses </span><a style="font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;" title="https://logback.qos.ch/manual/appenders.html" href="https://logback.qos.ch/manual/appenders.html" target="_blank">appenders</a><span style="font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">, which are components Logback delegates the task of writing logging events to. </span>
 
 ##### <span id="211_ConsoleAppender">2.1.1. ConsoleAppender</span>
 
 <p style="text-align: justify;">
-  As the name says it, this appender logs to the console. It has an encoder property &#8211; <a title="Logback encoders" href="http://logback.qos.ch/manual/encoders.html" target="_blank">encoders</a> are responsible for transforming an incoming event into a byte array <b>and</b> writing out the resulting byte array onto the appropriate <code>OutputStream</code>.
+  As the name says it, this appender logs to the console. It has an encoder property &#8211; <a title="Logback encoders" href="https://logback.qos.ch/manual/encoders.html" target="_blank">encoders</a> are responsible for transforming an incoming event into a byte array <b>and</b> writing out the resulting byte array onto the appropriate <code>OutputStream</code>.
 </p>
 
 <p class="note_normal" style="text-align: justify;">
@@ -256,7 +256,7 @@ To configure Logback all you have to do is place the file `logback.xml` in the c
 </p>
 
 <p style="text-align: justify;">
-  The <code>PatternLayoutEncoder</code> wraps instances of <a title="Logback - layouts" href="http://logback.qos.ch/manual/layouts.html" target="_blank"><code>PatternLayout</code></a> &#8211; this takes a logging event and returns a String, which you can customize by using PatternLayout&#8217;s conversion pattern.
+  The <code>PatternLayoutEncoder</code> wraps instances of <a title="Logback - layouts" href="https://logback.qos.ch/manual/layouts.html" target="_blank"><code>PatternLayout</code></a> &#8211; this takes a logging event and returns a String, which you can customize by using PatternLayout&#8217;s conversion pattern.
 </p>
 
 <p style="text-align: justify;">
@@ -293,7 +293,7 @@ The result looks something like this:
 
 ##### <span id="212_RollingFileAppender">2.1.2. RollingFileAppender</span>
 
-The <a style="text-align: justify; line-height: 1.5;" href="http://logback.qos.ch/xref/ch/qos/logback/core/rolling/RollingFileAppender.html"><code>RollingFileAppender</code></a><span style="text-align: justify; line-height: 1.5;"> extends </span><code style="text-align: justify;">FileAppender</code><span style="text-align: justify; line-height: 1.5;"> with the capability to rollover log files. In the example, the </span><code style="text-align: justify;">RollingFileAppender</code><span style="text-align: justify; line-height: 1.5;"> will log to a file named </span><em style="text-align: justify; line-height: 1.5;">rest-demo.log</em><span style="text-align: justify; line-height: 1.5;"> file and, once a certain condition (every day and every minute) is met, change its logging target to another file.</span>
+The <a style="text-align: justify; line-height: 1.5;" href="https://logback.qos.ch/xref/ch/qos/logback/core/rolling/RollingFileAppender.html"><code>RollingFileAppender</code></a><span style="text-align: justify; line-height: 1.5;"> extends </span><code style="text-align: justify;">FileAppender</code><span style="text-align: justify; line-height: 1.5;"> with the capability to rollover log files. In the example, the </span><code style="text-align: justify;">RollingFileAppender</code><span style="text-align: justify; line-height: 1.5;"> will log to a file named </span><em style="text-align: justify; line-height: 1.5;">rest-demo.log</em><span style="text-align: justify; line-height: 1.5;"> file and, once a certain condition (every day and every minute) is met, change its logging target to another file.</span>
 
 <p style="text-align: justify;">
   There are two important sub-components that interact with <code>RollingFileAppender</code>. The first <code>RollingFileAppender</code> sub-component, namely <code>RollingPolicy</code>, is responsible for undertaking the actions required for a rollover. A second sub-component of <code>RollingFileAppender</code>, namely <code>TriggeringPolicy</code>, will determine if and exactly when rollover occurs. Thus, <code>RollingPolicy</code> is responsible for the <em>what</em> and <code>TriggeringPolicy</code> is responsible for the <em>when</em>.
@@ -377,15 +377,15 @@ So you I am just getting the &#8220;LoggingResponseFilter &#8221; logger  and 
 
 ### <span id="43_Web">4.3. Web</span>
 
-  * <a title="Simple Logging Facade for Java (SLF4J)" href="http://www.slf4j.org/" target="_blank">Simple Logging Facade for Java (SLF4J)</a>
-  * <a title="SLF4J user manual" href="http://www.slf4j.org/manual.html" target="_blank">SLF4J user manual</a>
-  * <a title="Logback Project " href="http://logback.qos.ch/" target="_blank">Logback Project </a>
-  * <a title="Logback documentation" href="http://logback.qos.ch/documentation.html" target="_blank">Logback documentation</a>
-  * <a title="Logback Appenders" href="http://logback.qos.ch/manual/appenders.html" target="_blank">Logback Appenders</a>
-  * <a title="Logback layouts" href="http://logback.qos.ch/manual/layouts.html" target="_blank">Logback Layouts</a>
-  * <a title="Logging Dependencies in Spring" href="http://spring.io/blog/2009/12/04/logging-dependencies-in-spring/" target="_blank">Logging Dependencies in Spring</a> &#8211; spring.io
-  * <a title="JUnit, Logback, Maven with Spring 3" href="http://techforenterprise.blogspot.de/2012/07/junit-logback-maven-with-spring-3.html" target="_blank">JUnit, Logback, Maven with Spring 3</a>
-  * <a title="Logback or Log4j Additivity Explained" href="http://blog.idleworx.com/2010/07/logback-log4j-additivity-explained.html" target="_blank">Logback or Log4j Additivity Explained</a>
+  * <a title="Simple Logging Facade for Java (SLF4J)" href="https://www.slf4j.org/" target="_blank">Simple Logging Facade for Java (SLF4J)</a>
+  * <a title="SLF4J user manual" href="https://www.slf4j.org/manual.html" target="_blank">SLF4J user manual</a>
+  * <a title="Logback Project " href="https://logback.qos.ch/" target="_blank">Logback Project </a>
+  * <a title="Logback documentation" href="https://logback.qos.ch/documentation.html" target="_blank">Logback documentation</a>
+  * <a title="Logback Appenders" href="https://logback.qos.ch/manual/appenders.html" target="_blank">Logback Appenders</a>
+  * <a title="Logback layouts" href="https://logback.qos.ch/manual/layouts.html" target="_blank">Logback Layouts</a>
+  * <a title="Logging Dependencies in Spring" href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring/" target="_blank">Logging Dependencies in Spring</a> &#8211; spring.io
+  * <a title="JUnit, Logback, Maven with Spring 3" href="https://techforenterprise.blogspot.de/2012/07/junit-logback-maven-with-spring-3.html" target="_blank">JUnit, Logback, Maven with Spring 3</a>
+  * <a title="Logback or Log4j Additivity Explained" href="https://blog.idleworx.com/2010/07/logback-log4j-additivity-explained.html" target="_blank">Logback or Log4j Additivity Explained</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

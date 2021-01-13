@@ -13,7 +13,7 @@ As of today, I am going to start working on a project to enhance my bookmarks ha
 [www.bookmarks.dev](https://www.bookmarks.dev). I intend to make a learning experience out of it and build it
  with components of MEAN[^1] stack with Angular 2, as this is quite new to me and make a learning new to me. I have always believed that hands-on is the best was to learn something new.
 
-[^1]: <http://mean.io/>
+[^1]: <https://mean.io/>
 
 So first things first, and surprise, surprise, I will start with the backend, which I will implement with Express[^2], which is a
 fast, unopinionated, minimalist web framework for Node.js[^3]. The easiest way to start a project is to use the [express generator](https://expressjs.com/en/starter/generator.html),

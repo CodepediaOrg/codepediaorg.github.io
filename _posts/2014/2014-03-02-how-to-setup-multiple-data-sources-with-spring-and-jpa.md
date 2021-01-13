@@ -91,7 +91,7 @@ Don’t worry! You don’t have to understand what&#8217;s going on in those if 
 
 The first thing I did was to modify the `persistence.xml` file by adding a new `persistence unit` that will correspond to the &#8220;legacy&#8221; `entityManager`, managing the new &#8220;legacy&#8221; data source:
 
-<pre class="lang:default mark:6-8 decode:true" title="Persistence.xml">&lt;persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"&gt;
+<pre class="lang:default mark:6-8 decode:true" title="Persistence.xml">&lt;persistence version="2.0" xmlns="https://java.sun.com/xml/ns/persistence" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://java.sun.com/xml/ns/persistence https://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"&gt;
    &lt;persistence-unit name="demoRestPersistence"&gt;
       &lt;provider&gt;org.hibernate.ejb.HibernatePersistence&lt;/provider&gt;
    &lt;/persistence-unit&gt;
@@ -113,19 +113,19 @@ The first thing I did was to modify the `persistence.xml` file by adding a new `
 
 In the Spring application context I just added new beans for the entity manager, transaction manger and datasource:
 
-<pre class="lang:default mark:22-24,37-49,58-61 decode:true">&lt;beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:tx="http://www.springframework.org/schema/tx"
+<pre class="lang:default mark:22-24,37-49,58-61 decode:true">&lt;beans xmlns="https://www.springframework.org/schema/beans"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="https://www.springframework.org/schema/context"
+	xmlns:tx="https://www.springframework.org/schema/tx"
 	xsi:schemaLocation="
-		http://www.springframework.org/schema/beans
-		http://www.springframework.org/schema/beans/spring-beans.xsd
+		https://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
 
-		http://www.springframework.org/schema/tx
-		http://www.springframework.org/schema/tx/spring-tx.xsd
+		https://www.springframework.org/schema/tx
+		https://www.springframework.org/schema/tx/spring-tx.xsd
 
-		http://www.springframework.org/schema/context
-		http://www.springframework.org/schema/context/spring-context.xsd"&gt;
+		https://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd"&gt;
 
 	&lt;context:component-scan base-package="org.codingpedia.demo.rest.*" /&gt;
 
@@ -301,5 +301,5 @@ Well, that&#8217;s it. You&#8217;ve learned how to configure multiple a Spring a
 
 ### <span id="43_Web">4.3. Web</span>
 
-  * <a title="http://stackoverflow.com/questions/3111992/difference-between-configuring-data-source-in-persistence-xml-and-in-spring-conf" href="http://stackoverflow.com/questions/3111992/difference-between-configuring-data-source-in-persistence-xml-and-in-spring-conf" target="_blank">StackOverflow &#8211; Difference between configuring data source in persistence.xml and in spring configuration files</a>
-  * <a title="http://stackoverflow.com/questions/1961371/spring-multiple-transactional-datasource" href="http://stackoverflow.com/questions/1961371/spring-multiple-transactional-datasource" target="_blank">http://stackoverflow.com/questions/1961371/spring-multiple-transactional-datasource</a>
+  * <a title="https://stackoverflow.com/questions/3111992/difference-between-configuring-data-source-in-persistence-xml-and-in-spring-conf" href="https://stackoverflow.com/questions/3111992/difference-between-configuring-data-source-in-persistence-xml-and-in-spring-conf" target="_blank">StackOverflow &#8211; Difference between configuring data source in persistence.xml and in spring configuration files</a>
+  * <a title="https://stackoverflow.com/questions/1961371/spring-multiple-transactional-datasource" href="https://stackoverflow.com/questions/1961371/spring-multiple-transactional-datasource" target="_blank">https://stackoverflow.com/questions/1961371/spring-multiple-transactional-datasource</a>

@@ -686,7 +686,7 @@ So firt things first. Here&#8217;s a list of the shortcuts I use or ought to be
   1. <span style="color: #474747;">Open the IDE Settings (Ctrl+Shift+S or over the Menu File > Settings)</span>
   2. On the Editor page (type Editor in the search bar), make sure that the setting **<span class="control" style="color: #404853;">Change font size (Zoom) with Ctrl+MouseWheel</span>**<span style="color: #404853;"> is enabled.</span>
 
-<img class="alignnone" src="http://drive.google.com/uc?export=download&id=0B9xyFgZ3ENhFNlJrazNSa3hOSFE" alt="" width="1218" height="875" />
+<img class="alignnone" src="https://drive.google.com/uc?export=download&id=0B9xyFgZ3ENhFNlJrazNSa3hOSFE" alt="" width="1218" height="875" />
 
 ### <span id="Launch_terminal_directly_in_the_IDE">Launch terminal directly in the IDE</span>
 
@@ -750,4 +750,4 @@ Well, that&#8217;s all I have so far, but I&#8217;ll try to add features to the 
   1. <a title="https://www.jetbrains.com/idea/documentation/migration_faq.html" href="https://www.jetbrains.com/idea/documentation/migration_faq.html" target="_blank">IntelliJ IDEA Q&A for Eclipse Users</a>
   2. <a title="https://www.jetbrains.com/idea/help/keyboard-shortcuts-you-cannot-miss.html" href="https://www.jetbrains.com/idea/help/keyboard-shortcuts-you-cannot-miss.html" target="_blank">IntelliJ IDEA &#8211; Keyboard Shortcuts You Cannot Miss</a>
   3. <a title="https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf" href="https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf" target="_blank">IntelliJ IDEA Default Keymap</a>
-  4. <a title="http://www.vogella.com/tutorials/EclipseShortcuts/article.html" href="http://www.vogella.com/tutorials/EclipseShortcuts/article.html" target="_blank">Eclipse Shortcuts &#8211; Tutorial</a>
+  4. <a title="https://www.vogella.com/tutorials/EclipseShortcuts/article.html" href="https://www.vogella.com/tutorials/EclipseShortcuts/article.html" target="_blank">Eclipse Shortcuts &#8211; Tutorial</a>

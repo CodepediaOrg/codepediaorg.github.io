@@ -28,12 +28,12 @@ tags:
 ## Prerequisites
 
 <p style="text-align: justify;">
-  You should have <a title="http://maven.apache.org/download.cgi" href="http://maven.apache.org/download.cgi" target="_blank">Maven</a> and  at least <a title="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" target="_blank">Java 7</a> installed. Ideally you could <a title="https://github.com/CodepediaOrg/podcastpedia" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">setup up the podcastpedia</a> project yourself to see it in action.
+  You should have <a title="https://maven.apache.org/download.cgi" href="https://maven.apache.org/download.cgi" target="_blank">Maven</a> and  at least <a title="https://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" href="https://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" target="_blank">Java 7</a> installed. Ideally you could <a title="https://github.com/CodepediaOrg/podcastpedia" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">setup up the podcastpedia</a> project yourself to see it in action.
 </p>
 
 ## Jetty Maven Plugin
 
-<pre class="lang:default decode:true" title="Plugin Configuration">&lt;!-- http://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html --&gt;
+<pre class="lang:default decode:true" title="Plugin Configuration">&lt;!-- https://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html --&gt;
 &lt;plugin&gt;
 	&lt;groupId&gt;org.eclipse.jetty&lt;/groupId&gt;
 	&lt;artifactId&gt;jetty-maven-plugin&lt;/artifactId&gt;
@@ -112,7 +112,7 @@ tags:
 	&lt;/New&gt;
 &lt;/Configure&gt;</pre>
 
-In the <a title="http://www.eclipse.org/jetty/documentation/current/jetty-xml-config.html" href="http://www.eclipse.org/jetty/documentation/current/jetty-xml-config.html" target="_blank">Jetty configuration file (jetty.xml)</a> you have the following configured:
+In the <a title="https://www.eclipse.org/jetty/documentation/current/jetty-xml-config.html" href="https://www.eclipse.org/jetty/documentation/current/jetty-xml-config.html" target="_blank">Jetty configuration file (jetty.xml)</a> you have the following configured:
 
   * The Server class (or subclass if extended) and global options.
   * A ThreadPool (min and max thread).
@@ -222,7 +222,7 @@ In context.xml there are defined the database and email resources.
 * * *
 
 <p style="text-align: justify;">
-  There you go&#8230; Java webapps powered by <a title="http://projects.spring.io/spring-framework/" href="http://projects.spring.io/spring-framework/" target="_blank">Spring Framework</a> running light servlet containers posing a true alternative to JAVA EE servers and all the costs that come with them.
+  There you go&#8230; Java webapps powered by <a title="https://projects.spring.io/spring-framework/" href="https://projects.spring.io/spring-framework/" target="_blank">Spring Framework</a> running light servlet containers posing a true alternative to JAVA EE servers and all the costs that come with them.
 </p>
 
 <p class="note_normal">
@@ -231,7 +231,7 @@ In context.xml there are defined the database and email resources.
 
 ## References
 
-  1. <a title="http://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html" href="http://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html" target="_blank">Jetty Maven Plugin</a>
+  1. <a title="https://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html" href="https://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html" target="_blank">Jetty Maven Plugin</a>
   2. <a title="https://tomcat.apache.org/maven-plugin-trunk/index.html" href="https://tomcat.apache.org/maven-plugin-trunk/index.html" target="_blank">Apache Tomcat Maven Plugin</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

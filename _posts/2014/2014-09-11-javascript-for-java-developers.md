@@ -109,14 +109,14 @@ A lot of Java frontend development work is done using Java/XML based frameworks 
   * In GWT, integrating at least some third-party Javascript widgets is common and cost effective.
 
 <p style="text-align: justify;">
-  The end result is that Javascript is usually needed to do at least the last 5 to 10% of frontend work, even using Java frameworks. Also it&#8217;s starting to get more and more used for polyglot enterprise development, alongside <a href="http://angularjs.org">Angular</a> for example.
+  The end result is that Javascript is usually needed to do at least the last 5 to 10% of frontend work, even using Java frameworks. Also it&#8217;s starting to get more and more used for polyglot enterprise development, alongside <a href="https://angularjs.org">Angular</a> for example.
 </p>
 
 The good news is that, besides a few gotchas that we will get into, Javascript is a very learneable language for a Java developer.
 
 ### <span id="Objects_Only_8211_No_Classes">Objects Only &#8211; No Classes</span> {#objectsonlynoclasses}
 
-One of the most surprising things about Javascript is that although it&#8217;s an object oriented language, there are no classes (although the [new Ecmascript 6 version](http://wiki.ecmascript.org/doku.php?id=harmony:classes) will have them).
+One of the most surprising things about Javascript is that although it&#8217;s an object oriented language, there are no classes (although the [new Ecmascript 6 version](https://wiki.ecmascript.org/doku.php?id=harmony:classes) will have them).
 
 Take for example this program, that initializes an empty object and set&#8217;s two properties:
 
@@ -353,7 +353,7 @@ superMan.fly(() -&gt; System.out.println("Flying to " +
 
 The output of this snippet is `Flying to Mars`. Notice that the `FlyCommand` lambda had to &#8216;remember&#8217; the variable `destination`, because it needs it for executing the `fly` method later.
 
-This notion of a function that remembers about variables outside it&#8217;s block scope for later use is called a **Closure** in Javascript. For further details, have a look at this blog post [Really Understanding Javascript Closures](http://blog.jhades.org/really-understanding-javascript-closures/).
+This notion of a function that remembers about variables outside it&#8217;s block scope for later use is called a **Closure** in Javascript. For further details, have a look at this blog post [Really Understanding Javascript Closures](https://blog.jhades.org/really-understanding-javascript-closures/).
 
 #### <span id="What_is_the_main_difference_between_Lambdas_and_Closures">What is the main difference between Lambdas and Closures?</span> {#whatisthemaindifferencebetweenlambdasandclosures}
 
@@ -495,7 +495,7 @@ counter after loop = 3
 </p>
 
 <p style="color: #3a4145;">
-  This makes hoisting explicit and visible by the developer, and helps to avoid bugs. The next version of Javascript (Ecmascript 6) will include a<a href="http://wiki.ecmascript.org/doku.php?id=harmony:let">new keyword &#8216;let&#8217; to allow block scoping</a>.
+  This makes hoisting explicit and visible by the developer, and helps to avoid bugs. The next version of Javascript (Ecmascript 6) will include a<a href="https://wiki.ecmascript.org/doku.php?id=harmony:let">new keyword &#8216;let&#8217; to allow block scoping</a>.
 </p>
 
 <h3 id="conclusion" style="color: #3a4145;">
@@ -519,7 +519,7 @@ counter after loop = 3
 </p>
 
 <p class="note_normal" style="color: #3a4145;">
-  Published at Codepedia.org with permission of Aleksey Novik &#8211; source <em><a title="http://blog.jhades.org/javascript-for-java-developers/" href="http://blog.jhades.org/javascript-for-java-developers/" target="_blank">Javascript for Java Developers</a></em> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik &#8211; source <em><a title="https://blog.jhades.org/javascript-for-java-developers/" href="https://blog.jhades.org/javascript-for-java-developers/" target="_blank">Javascript for Java Developers</a></em> from <a title="https://blog.jhades.org/" href="https://blog.jhades.org/" target="_blank">https://blog.jhades.org/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -535,7 +535,7 @@ counter after loop = 3
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
+      <a class="icon-earth" href="https://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
     </div>
 
     <div class="clear">

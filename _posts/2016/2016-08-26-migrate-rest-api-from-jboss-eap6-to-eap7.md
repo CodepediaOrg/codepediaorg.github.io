@@ -60,7 +60,7 @@ The first thing I've done was to migrate the library dependencies used in the pr
 
 ## Java EE Deployment Descriptors
 
-The next thing to modify, were the Java EE deployment descriptors. Check out the [Java EE: XML Schemas for Java EE Deployment Descriptors](http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/index.html) document from Oracle to see the new descriptor versions and namespaces. All Java EE 7 and newer Deployment Descriptor Schemas share now the namespace __http://xmlns.jcp.org/xml/ns/javaee/__
+The next thing to modify, were the Java EE deployment descriptors. Check out the [Java EE: XML Schemas for Java EE Deployment Descriptors](https://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/index.html) document from Oracle to see the new descriptor versions and namespaces. All Java EE 7 and newer Deployment Descriptor Schemas share now the namespace __http://xmlns.jcp.org/xml/ns/javaee/__
 
 Down below are listed the ones I used in my project:
 
@@ -70,9 +70,9 @@ Down below are listed the ones I used in my project:
 
 ```xml
 <web-app
-        xmlns="http://java.sun.com/xml/ns/javaee"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+        xmlns="https://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
         version="3.0">
 .....
 </web-app>
@@ -82,9 +82,9 @@ Down below are listed the ones I used in my project:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+<web-app xmlns="https://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://xmlns.jcp.org/xml/ns/javaee https://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 ```
 
@@ -94,8 +94,8 @@ Down below are listed the ones I used in my project:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/beans_1_0.xsd">
+<beans xmlns="https://java.sun.com/xml/ns/javaee" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/beans_1_0.xsd">
 </beans>
 ```
 
@@ -103,9 +103,9 @@ Down below are listed the ones I used in my project:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+<beans xmlns="https://xmlns.jcp.org/xml/ns/javaee"
+       xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://xmlns.jcp.org/xml/ns/javaee https://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
        version="1.1" bean-discovery-mode="all">
 </beans>
 ```
@@ -117,9 +117,9 @@ Down below are listed the ones I used in my project:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence
-        xmlns="http://java.sun.com/xml/ns/persistence"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+        xmlns="https://java.sun.com/xml/ns/persistence"
+        xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://java.sun.com/xml/ns/persistence https://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
         version="2.0">
 ...........
 </persistence>
@@ -130,9 +130,9 @@ Down below are listed the ones I used in my project:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+<persistence xmlns="https://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://xmlns.jcp.org/xml/ns/persistence https://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
              version="2.1">
 ...........
 </persistence>
@@ -141,8 +141,8 @@ Down below are listed the ones I used in my project:
 
 ## Meet JAX-RS 2.0
 
-> The RESTEasy documentation version referenced throughout this post is [3.0.16.Final](http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html), as this is the version used for JBoss EAP 7.0.0, for which the migration took place at the time of the writing.
-For other/newer versions check the [RESTEasy Documentation](http://resteasy.jboss.org/docs.html), where you can find  examples, HTML, PDF, Javadocs for all RESTEasy versions.
+> The RESTEasy documentation version referenced throughout this post is [3.0.16.Final](https://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html), as this is the version used for JBoss EAP 7.0.0, for which the migration took place at the time of the writing.
+For other/newer versions check the [RESTEasy Documentation](https://resteasy.jboss.org/docs.html), where you can find  examples, HTML, PDF, Javadocs for all RESTEasy versions.
 
 ### Server API
 
@@ -159,17 +159,17 @@ public class MyApplication extends Application
 }
 ```
 
-[^4]: <http://docs.jboss.org/resteasy/docs/3.0.19.Final/userguide/html_single/index.html#d4e42>
+[^4]: <https://docs.jboss.org/resteasy/docs/3.0.19.Final/userguide/html_single/index.html#d4e42>
 
 ### Client API
 
 JAX-RS 1.0 was more or less a server side API. To write client calls one would most likely go to Apache's HTTP Client[^5]. Now JAX-RS 2.0  introduces a new API to make requests to REST web services. I needed such a REST client to make api calls to a Keycloak[^6] Admin REST API[^7]. Although the current RESTEasy implementation comes with JAX-RS 2.0 support[^8], I preferred to use  the `RestEasyClientBuilder` implementation in combination with the Resteasy Proxy Framework[^7], because I've used it like that in JBoss EAP 6 and I still find it cool to use JAX-RS annotations on the client side too. The way it works is that you write a Java interface and use JAX-RS annotations on methods of the interface. Check out the code snippets posted below and the documentation[^9] to see what I mean
 
 [^5]: <https://hc.apache.org/httpcomponents-client-ga/>
-[^6]: <http://www.keycloak.org>
-[^7]: <http://www.keycloak.org/docs/rest-api/index.html>
-[^8]: <http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#RESTEasy_Client_Framework>
-[^9]: <http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#d4e2149>
+[^6]: <https://www.keycloak.org>
+[^7]: <https://www.keycloak.org/docs/rest-api/index.html>
+[^8]: <https://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#RESTEasy_Client_Framework>
+[^9]: <https://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#d4e2149>
 
 #### REST Client interface
 
@@ -284,7 +284,7 @@ public class KeycloakApiClientProducer {
 
 > A producer method acts as a source of objects to be injected[^10] in CDI
 
-[^10]: <http://stackoverflow.com/questions/16534728/please-explain-the-produces-annotation-in-cdi>
+[^10]: <https://stackoverflow.com/questions/16534728/please-explain-the-produces-annotation-in-cdi>
 
 #### REST Client Usage
 
@@ -473,7 +473,7 @@ public class LoggingInterceptor implements javax.ws.rs.container.ContainerRespon
 
 Resteasy has a built-in `ContainerRequestFilter` that can be used to handle CORS preflight and actual requests -  the `org.jboss.resteasy.plugins.interceptors.CorsFilter`[^11]. In order to use it, you must allocate this and register it as a singleton provider from your `Application` class. See below an example:
 
-[^11]:<http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#d4e1327>
+[^11]:<https://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#d4e1327>
 
 ```java
 import javax.ws.rs.ApplicationPath;
@@ -520,7 +520,7 @@ Besides the Jettison JAXB adapter for JSON, Resteasy also support integration wi
 
 While Jackson does come with its own JAX-RS integration. Resteasy expanded it a little.To include it within your project, just add this maven dependency to your build. Resteasy supports both Jackson 1.9.x and Jackson 2.2.x. Read further on how to use each.[^13].
 
-[^13]: <http://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#json>
+[^13]: <https://docs.jboss.org/resteasy/docs/3.0.16.Final/userguide/html_single/index.html#json>
 
 Because of the Keycloak version I am using, 1.7.0.Final still use Jackson Version 1.9.x (apparently the newest one, 2.1.0.Final, also uses the same version), I had to convince the JBoss Server EAP 7 that this is the version I want. To do this I had to import the RestEasy Jackson Provider maven dependency and mark it as _provided_:
 
@@ -586,8 +586,8 @@ As mentioned, the Keycloak core uses also Jackson, and to avoid a potential conf
 
 ## Other good REST(easy) related resources
 
-* [RESTEasy Documentation examples, HTML, PDF, Javadocs](http://resteasy.jboss.org/docs.html) - for all versions...
-* [Java EE 7 and JAX-RS 2.0](http://www.oracle.com/technetwork/articles/java/jaxrs20-1929352.html) by Adam Bien
+* [RESTEasy Documentation examples, HTML, PDF, Javadocs](https://resteasy.jboss.org/docs.html) - for all versions...
+* [Java EE 7 and JAX-RS 2.0](https://www.oracle.com/technetwork/articles/java/jaxrs20-1929352.html) by Adam Bien
 * [What's new in JAX-RS 2.0](https://www.infoq.com/news/2013/06/Whats-New-in-JAX-RS-2.0) at InfoQ
 * [Java EE 7 Deployment Descriptors](https://antoniogoncalves.org/2013/06/04/java-ee-7-deployment-descriptors/)
 

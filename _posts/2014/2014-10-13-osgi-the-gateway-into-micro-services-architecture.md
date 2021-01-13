@@ -23,15 +23,15 @@ tags:
   - SOA
 ---
 <p style="text-align: justify;">
-  The terms &#8220;modularity&#8221; and &#8220;microservices architecture&#8221; pop up quite often these days in context of building scalable, reliable distributed systems. Java platform itself is known to be weak with regards to modularity (<a style="color: #888855;" href="http://openjdk.java.net/projects/jdk9/">Java 9</a> is going to address that by delivering project <a style="color: #888855;" href="http://openjdk.java.net/projects/jigsaw/">Jigsaw</a>), giving a chance to frameworks like <a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a> and <a style="color: #888855;" href="https://docs.jboss.org/author/display/MODULES/Introduction">JBoss Modules</a> to emerge.
+  The terms &#8220;modularity&#8221; and &#8220;microservices architecture&#8221; pop up quite often these days in context of building scalable, reliable distributed systems. Java platform itself is known to be weak with regards to modularity (<a style="color: #888855;" href="https://openjdk.java.net/projects/jdk9/">Java 9</a> is going to address that by delivering project <a style="color: #888855;" href="https://openjdk.java.net/projects/jigsaw/">Jigsaw</a>), giving a chance to frameworks like <a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a> and <a style="color: #888855;" href="https://docs.jboss.org/author/display/MODULES/Introduction">JBoss Modules</a> to emerge.
 </p>
 
 <p style="text-align: justify;">
-  When I first heard about <a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a> back in 2007, I was truly excited about all those advantages Java applications might benefit of by being built on top of it. But very quickly the frustration took place instead of excitement: no tooling support, very limited set of compatible libraries and frameworks, quite unstable and hard to troubleshoot runtime. Clearly, it was not ready to be used by average Java developer and as such, I had to put it on the shelf. With years, <a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a> has matured a lot and gained a widespread community support.<!--more-->
+  When I first heard about <a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a> back in 2007, I was truly excited about all those advantages Java applications might benefit of by being built on top of it. But very quickly the frustration took place instead of excitement: no tooling support, very limited set of compatible libraries and frameworks, quite unstable and hard to troubleshoot runtime. Clearly, it was not ready to be used by average Java developer and as such, I had to put it on the shelf. With years, <a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a> has matured a lot and gained a widespread community support.<!--more-->
 </p>
 
 <p style="color: #333333;">
-  The curious reader may ask: what are the benefits of using modules and <a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a> in particular? To name just a few problems it helps to solve:
+  The curious reader may ask: what are the benefits of using modules and <a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a> in particular? To name just a few problems it helps to solve:
 </p>
 
 <ul style="color: #333333;">
@@ -49,7 +49,7 @@ tags:
   </li>
 </ul>
 
-In today&#8217;s post we are going to take a 10000 feet view on a state of the art in building modular Java applications using <a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a>. Leaving aside discussions how good or bad <a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a> is, we are going to build an example application consisting of following modules:
+In today&#8217;s post we are going to take a 10000 feet view on a state of the art in building modular Java applications using <a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a>. Leaving aside discussions how good or bad <a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a> is, we are going to build an example application consisting of following modules:
 
 <ul style="color: #333333;">
   <li>
@@ -59,20 +59,20 @@ In today&#8217;s post we are going to take a 10000 feet view on a state of the a
     business services module
   </li>
   <li>
-    <a style="color: #888855;" href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> services module
+    <a style="color: #888855;" href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> services module
   </li>
 </ul>
 
 <p style="text-align: justify;">
-  <a style="color: #888855;" href="http://openjpa.apache.org/">Apache OpenJPA 2.3.0</a><span style="color: #333333;"> / </span><a style="color: #888855;" href="https://jcp.org/aboutJava/communityprocess/final/jsr317/">JPA 2.0</a><span style="color: #333333;"> for data access (unfortunately, </span><a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=338">JPA 2.1</a><span style="color: #333333;"> is not yet supported by </span><a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a> <span style="color: #333333;">implementation of our choice), </span><a style="color: #888855;" href="http://cxf.apache.org/">Apache CXF 3.0.1</a><span style="color: #333333;"> / </span><a style="color: #888855;" href="http://download.oracle.com/otndocs/jcp/jaxrs-2_0-fr-eval-spec/">JAX-RS 2.0</a><span style="color: #333333;"> for </span><a style="color: #888855;" href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a><span style="color: #333333;"> layer are two main building blocks of the application. I found </span><b style="color: #333333;">Christian Schneider</b><span style="color: #333333;">&#8216;s blog, </span><a style="color: #888855;" href="http://www.liquid-reality.de/display/liquid/Liquid+Reality+-+Christian+Schneider's+Blog">Liquid Reality</a><span style="color: #333333;">, to be invaluable source of information about </span><a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a><span style="color: #333333;"> (as well as many other topics).</span>
+  <a style="color: #888855;" href="https://openjpa.apache.org/">Apache OpenJPA 2.3.0</a><span style="color: #333333;"> / </span><a style="color: #888855;" href="https://jcp.org/aboutJava/communityprocess/final/jsr317/">JPA 2.0</a><span style="color: #333333;"> for data access (unfortunately, </span><a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=338">JPA 2.1</a><span style="color: #333333;"> is not yet supported by </span><a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a> <span style="color: #333333;">implementation of our choice), </span><a style="color: #888855;" href="https://cxf.apache.org/">Apache CXF 3.0.1</a><span style="color: #333333;"> / </span><a style="color: #888855;" href="https://download.oracle.com/otndocs/jcp/jaxrs-2_0-fr-eval-spec/">JAX-RS 2.0</a><span style="color: #333333;"> for </span><a style="color: #888855;" href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a><span style="color: #333333;"> layer are two main building blocks of the application. I found </span><b style="color: #333333;">Christian Schneider</b><span style="color: #333333;">&#8216;s blog, </span><a style="color: #888855;" href="https://www.liquid-reality.de/display/liquid/Liquid+Reality+-+Christian+Schneider's+Blog">Liquid Reality</a><span style="color: #333333;">, to be invaluable source of information about </span><a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a><span style="color: #333333;"> (as well as many other topics).</span>
 </p>
 
 <p style="text-align: justify;">
-  In <a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a> world, the modules are called <b>bundles</b>. Bundles manifest their dependencies (import packages) and the packages they expose (export packages) so other bundles are able to use them. <a style="color: #888855;" href="http://maven.apache.org/">Apache Maven</a> supports this packaging model as well. The bundles are managed by <a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a> runtime, or container, which in our case is going to be <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a> (actually, it is the single thing we need to <a style="color: #888855;" href="http://karaf.apache.org/index/community/download.html">download</a> and unpack).
+  In <a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a> world, the modules are called <b>bundles</b>. Bundles manifest their dependencies (import packages) and the packages they expose (export packages) so other bundles are able to use them. <a style="color: #888855;" href="https://maven.apache.org/">Apache Maven</a> supports this packaging model as well. The bundles are managed by <a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a> runtime, or container, which in our case is going to be <a style="color: #888855;" href="https://karaf.apache.org/">Apache Karaf 3.0.1</a> (actually, it is the single thing we need to <a style="color: #888855;" href="https://karaf.apache.org/index/community/download.html">download</a> and unpack).
 </p>
 
 <p style="color: #333333;">
-  Let me stop talking and better show some code. We are going to start from the top (<a style="color: #888855;" href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a>) and go all the way to the bottom (data access) as it would be easier to follow. Our <b>PeopleRestService</b> is a typical example of <a style="color: #888855;" href="http://download.oracle.com/otndocs/jcp/jaxrs-2_0-fr-eval-spec/">JAX-RS 2.0</a> service implementation:
+  Let me stop talking and better show some code. We are going to start from the top (<a style="color: #888855;" href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a>) and go all the way to the bottom (data access) as it would be easier to follow. Our <b>PeopleRestService</b> is a typical example of <a style="color: #888855;" href="https://download.oracle.com/otndocs/jcp/jaxrs-2_0-fr-eval-spec/">JAX-RS 2.0</a> service implementation:
 </p>
 
 <pre class="lang:java decode:true">package com.example.jaxrs;
@@ -162,22 +162,22 @@ public class PeopleRestService {
 }</pre>
 
 <p style="text-align: justify;">
-  <span style="color: #333333;">As we can see, there is nothing here telling us about </span><a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a><span style="color: #333333;">. The only dependency is the </span><b style="color: #333333;">PeopleService</b><span style="color: #333333;"> which somehow should be injected into the </span><b style="color: #333333;">PeopleRestService</b><span style="color: #333333;">. How? Typically, </span><a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a><span style="color: #333333;"> applications use </span><a style="color: #888855;" href="http://aries.apache.org/modules/blueprint.html">blueprint</a><span style="color: #333333;"> as the dependency injection framework, very similar to old buddy, XML based </span><a style="color: #888855;" href="http://spring.io/">Spring</a><span style="color: #333333;"> configuration. It should be packaged along with application inside </span><b style="color: #333333;">OSGI-INF/blueprint</b><span style="color: #333333;"> folder. Here is a </span><a style="color: #888855;" href="http://aries.apache.org/modules/blueprint.html">blueprint</a><span style="color: #333333;"> example for our </span><a style="color: #888855;" href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a><span style="color: #333333;">module, built on top of </span><a style="color: #888855;" href="http://cxf.apache.org/">Apache CXF 3.0.1</a><span style="color: #333333;">:</span>
+  <span style="color: #333333;">As we can see, there is nothing here telling us about </span><a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a><span style="color: #333333;">. The only dependency is the </span><b style="color: #333333;">PeopleService</b><span style="color: #333333;"> which somehow should be injected into the </span><b style="color: #333333;">PeopleRestService</b><span style="color: #333333;">. How? Typically, </span><a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a><span style="color: #333333;"> applications use </span><a style="color: #888855;" href="https://aries.apache.org/modules/blueprint.html">blueprint</a><span style="color: #333333;"> as the dependency injection framework, very similar to old buddy, XML based </span><a style="color: #888855;" href="https://spring.io/">Spring</a><span style="color: #333333;"> configuration. It should be packaged along with application inside </span><b style="color: #333333;">OSGI-INF/blueprint</b><span style="color: #333333;"> folder. Here is a </span><a style="color: #888855;" href="https://aries.apache.org/modules/blueprint.html">blueprint</a><span style="color: #333333;"> example for our </span><a style="color: #888855;" href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a><span style="color: #333333;">module, built on top of </span><a style="color: #888855;" href="https://cxf.apache.org/">Apache CXF 3.0.1</a><span style="color: #333333;">:</span>
 </p>
 
-<pre class="lang:default decode:true ">&lt;blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:jaxrs="http://cxf.apache.org/blueprint/jaxrs"
-    xmlns:cxf="http://cxf.apache.org/blueprint/core"
+<pre class="lang:default decode:true ">&lt;blueprint xmlns="https://www.osgi.org/xmlns/blueprint/v1.0.0"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xmlns:jaxrs="https://cxf.apache.org/blueprint/jaxrs"
+    xmlns:cxf="https://cxf.apache.org/blueprint/core"
     xsi:schemaLocation="
-        http://www.osgi.org/xmlns/blueprint/v1.0.0
-        http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
-        http://cxf.apache.org/blueprint/jaxws
-        http://cxf.apache.org/schemas/blueprint/jaxws.xsd
-        http://cxf.apache.org/blueprint/jaxrs
-        http://cxf.apache.org/schemas/blueprint/jaxrs.xsd
-        http://cxf.apache.org/blueprint/core
-        http://cxf.apache.org/schemas/blueprint/core.xsd"&gt;
+        https://www.osgi.org/xmlns/blueprint/v1.0.0
+        https://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
+        https://cxf.apache.org/blueprint/jaxws
+        https://cxf.apache.org/schemas/blueprint/jaxws.xsd
+        https://cxf.apache.org/blueprint/jaxrs
+        https://cxf.apache.org/schemas/blueprint/jaxrs.xsd
+        https://cxf.apache.org/blueprint/core
+        https://cxf.apache.org/schemas/blueprint/core.xsd"&gt;
 
     &lt;cxf:bus id="bus"&gt;
         &lt;cxf:features&gt;
@@ -203,7 +203,7 @@ public class PeopleRestService {
 &lt;/blueprint&gt;</pre>
 
 <p style="text-align: justify;">
-  <span style="color: #333333;">Very small and simple: basically the configuration just states that in order for the module to work, the reference to the </span><b style="color: #333333;">com.example.services.PeopleService</b><span style="color: #333333;"> should be provided (effectively, by </span><a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a><span style="color: #333333;"> container). To see how it is going to happen, let us take a look on another module which exposes services. It contains only one interface </span><b style="color: #333333;">PeopleService</b><span style="color: #333333;">:</span>
+  <span style="color: #333333;">Very small and simple: basically the configuration just states that in order for the module to work, the reference to the </span><b style="color: #333333;">com.example.services.PeopleService</b><span style="color: #333333;"> should be provided (effectively, by </span><a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a><span style="color: #333333;"> container). To see how it is going to happen, let us take a look on another module which exposes services. It contains only one interface </span><b style="color: #333333;">PeopleService</b><span style="color: #333333;">:</span>
 </p>
 
 <pre class="lang:java decode:true ">package com.example.services;
@@ -273,13 +273,13 @@ public class PeopleServiceImpl implements PeopleService {
 }
 </pre>
 
-<span style="color: #333333;">And this time again, very small and clean implementation with two injectable dependencies,</span><b style="color: #333333;">org.osgi.service.log.LogService</b><span style="color: #333333;"> and </span><b style="color: #333333;">com.example.data.PeopleDao</b><span style="color: #333333;">. Its </span><a style="color: #888855;" href="http://aries.apache.org/modules/blueprint.html">blueprint</a><span style="color: #333333;"> configuration, located inside </span><b style="color: #333333;">OSGI-INF/blueprint</b><span style="color: #333333;"> folder, looks quite compact as well:</span>
+<span style="color: #333333;">And this time again, very small and clean implementation with two injectable dependencies,</span><b style="color: #333333;">org.osgi.service.log.LogService</b><span style="color: #333333;"> and </span><b style="color: #333333;">com.example.data.PeopleDao</b><span style="color: #333333;">. Its </span><a style="color: #888855;" href="https://aries.apache.org/modules/blueprint.html">blueprint</a><span style="color: #333333;"> configuration, located inside </span><b style="color: #333333;">OSGI-INF/blueprint</b><span style="color: #333333;"> folder, looks quite compact as well:</span>
 
-<pre class="lang:default decode:true">&lt;blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<pre class="lang:default decode:true">&lt;blueprint xmlns="https://www.osgi.org/xmlns/blueprint/v1.0.0"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
-        http://www.osgi.org/xmlns/blueprint/v1.0.0
-        http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd"&gt;
+        https://www.osgi.org/xmlns/blueprint/v1.0.0
+        https://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd"&gt;
 
     &lt;service ref="peopleService" interface="com.example.services.PeopleService" /&gt;
     &lt;bean id="peopleService" class="com.example.services.impl.PeopleServiceImpl"&gt;
@@ -292,15 +292,15 @@ public class PeopleServiceImpl implements PeopleService {
 &lt;/blueprint&gt;</pre>
 
 <p style="text-align: justify;">
-  The references to <b>PeopleDao</b> and <b>LogService</b> are expected to be provided by <a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a> container at runtime. Hovewer, <b>PeopleService</b> implementation is exposed as service and <a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a> container will be able to inject it into <b>PeopleRestService</b> once its bundle is being activated.
+  The references to <b>PeopleDao</b> and <b>LogService</b> are expected to be provided by <a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a> container at runtime. Hovewer, <b>PeopleService</b> implementation is exposed as service and <a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a> container will be able to inject it into <b>PeopleRestService</b> once its bundle is being activated.
 </p>
 
 <p style="color: #333333; text-align: justify;">
-  The last piece of the puzzle, data access module, is a bit more complicated: it contains persistence configuration (<b>META-INF/persistence.xml</b>) and basically depends on <a style="color: #888855;" href="https://jcp.org/aboutJava/communityprocess/final/jsr317/">JPA 2.0</a> capabilities of the <a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a> container. The <b>persistence.xml</b> is quite basic:
+  The last piece of the puzzle, data access module, is a bit more complicated: it contains persistence configuration (<b>META-INF/persistence.xml</b>) and basically depends on <a style="color: #888855;" href="https://jcp.org/aboutJava/communityprocess/final/jsr317/">JPA 2.0</a> capabilities of the <a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a> container. The <b>persistence.xml</b> is quite basic:
 </p>
 
-<pre class="lang:default decode:true ">&lt;persistence xmlns="http://java.sun.com/xml/ns/persistence"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<pre class="lang:default decode:true ">&lt;persistence xmlns="https://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
     version="2.0"&gt;
 
     &lt;persistence-unit name="peopleDb" transaction-type="JTA"&gt;
@@ -383,16 +383,16 @@ public class PeopleDaoImpl implements PeopleDao {
 }</pre>
 
 <p style="text-align: justify;">
-  <span style="color: #333333;">Please notice, although we are performing data manipulations, there is no mention of transactions as well as there are no explicit calls to entity manager&#8217;s transactions API. We are going to use the declarative approach to transactions as </span><a style="color: #888855;" href="http://aries.apache.org/modules/blueprint.html">blueprint</a><span style="color: #333333;"> configuration supports that (the location is unchanged, </span><b style="color: #333333;">OSGI-INF/blueprint</b><span style="color: #333333;"> folder):</span>
+  <span style="color: #333333;">Please notice, although we are performing data manipulations, there is no mention of transactions as well as there are no explicit calls to entity manager&#8217;s transactions API. We are going to use the declarative approach to transactions as </span><a style="color: #888855;" href="https://aries.apache.org/modules/blueprint.html">blueprint</a><span style="color: #333333;"> configuration supports that (the location is unchanged, </span><b style="color: #333333;">OSGI-INF/blueprint</b><span style="color: #333333;"> folder):</span>
 </p>
 
-<pre class="lang:default decode:true ">&lt;blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
-    xmlns:jpa="http://aries.apache.org/xmlns/jpa/v1.1.0"
-    xmlns:tx="http://aries.apache.org/xmlns/transactions/v1.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<pre class="lang:default decode:true ">&lt;blueprint xmlns="https://www.osgi.org/xmlns/blueprint/v1.0.0"
+    xmlns:jpa="https://aries.apache.org/xmlns/jpa/v1.1.0"
+    xmlns:tx="https://aries.apache.org/xmlns/transactions/v1.0.0"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
-        http://www.osgi.org/xmlns/blueprint/v1.0.0
-        http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd"&gt;
+        https://www.osgi.org/xmlns/blueprint/v1.0.0
+        https://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd"&gt;
 
     &lt;service ref="peopleDao" interface="com.example.data.PeopleDao" /&gt;
     &lt;bean id="peopleDao" class="com.example.data.impl.PeopleDaoImpl"&gt;
@@ -412,16 +412,16 @@ public class PeopleDaoImpl implements PeopleDao {
 &lt;/blueprint&gt;</pre>
 
 <p style="text-align: justify;">
-  One thing to keep in mind: the application doesn&#8217;t need to create <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=338">JPA 2.1</a>&#8216;s entity manager: the <a style="color: #888855;" href="http://www.osgi.org/Main/HomePage">OSGi</a> runtime is able do that and inject it everywhere it is required, driven by <b>jpa:context</b> declarations. Consequently, <b>tx:transaction</b> instructs the runtime to wrap the selected service methods inside transaction.
+  One thing to keep in mind: the application doesn&#8217;t need to create <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=338">JPA 2.1</a>&#8216;s entity manager: the <a style="color: #888855;" href="https://www.osgi.org/Main/HomePage">OSGi</a> runtime is able do that and inject it everywhere it is required, driven by <b>jpa:context</b> declarations. Consequently, <b>tx:transaction</b> instructs the runtime to wrap the selected service methods inside transaction.
 </p>
 
-Now, when the last service **PeopleDao** is exposed, we are ready to deploy our modules with <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a>. It is quite easy to do in three steps:
+Now, when the last service **PeopleDao** is exposed, we are ready to deploy our modules with <a style="color: #888855;" href="https://karaf.apache.org/">Apache Karaf 3.0.1</a>. It is quite easy to do in three steps:
 
-  * run the <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a> container
+  * run the <a style="color: #888855;" href="https://karaf.apache.org/">Apache Karaf 3.0.1</a> container
     <pre>bin/karaf (or bin\karaf.bat on Windows)
 </pre>
 
-  * execute following commands from the <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a> shell:
+  * execute following commands from the <a style="color: #888855;" href="https://karaf.apache.org/">Apache Karaf 3.0.1</a> shell:
     <pre>feature:repo-add cxf 3.0.1
 feature:install http cxf jpa openjpa transaction jndi jdbc
 install -s mvn:org.hsqldb/hsqldb/2.3.2
@@ -432,30 +432,30 @@ install -s mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.4.0
 install -s mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.4.0
 </pre>
 
-  * build our modules and copy them into <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a>&#8216;s deploy folder (while container is still running):
+  * build our modules and copy them into <a style="color: #888855;" href="https://karaf.apache.org/">Apache Karaf 3.0.1</a>&#8216;s deploy folder (while container is still running):
     <pre>mvn clean package
 cp module*/target/*jar apache-karaf-3.0.1/deploy/
 </pre>
 
-When you run the **list** command in the <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a> shell, you should see the list of all activated bundles (modules), similar to this one:
+When you run the **list** command in the <a style="color: #888855;" href="https://karaf.apache.org/">Apache Karaf 3.0.1</a> shell, you should see the list of all activated bundles (modules), similar to this one:
 
 <div class="separator">
-  <a style="color: #888855;" href="http://3.bp.blogspot.com/-t3N__LFQGsI/U-Y7SdfzE8I/AAAAAAAAALA/uxzVwhtq_fs/s1600/apache-karaf-list.PNG"><img src="http://3.bp.blogspot.com/-t3N__LFQGsI/U-Y7SdfzE8I/AAAAAAAAALA/uxzVwhtq_fs/s400/apache-karaf-list.PNG" alt="" border="0" /></a>
+  <a style="color: #888855;" href="https://3.bp.blogspot.com/-t3N__LFQGsI/U-Y7SdfzE8I/AAAAAAAAALA/uxzVwhtq_fs/s1600/apache-karaf-list.PNG"><img src="https://3.bp.blogspot.com/-t3N__LFQGsI/U-Y7SdfzE8I/AAAAAAAAALA/uxzVwhtq_fs/s400/apache-karaf-list.PNG" alt="" border="0" /></a>
 </div>
 
 &nbsp;
 
 <p style="text-align: justify;">
-  Where <b>module-service</b>, <b>module-jax-rs</b> and <b>module-data</b> correspond to the ones we are being developed. By default, all our <a style="color: #888855;" href="http://cxf.apache.org/">Apache CXF 3.0.1</a> services will be available at base URL <b>http://:8181/cxf/api/</b>. It is easy to check by executing <b>cxf:list-endpoints -f</b> command in the <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a> shell.
+  Where <b>module-service</b>, <b>module-jax-rs</b> and <b>module-data</b> correspond to the ones we are being developed. By default, all our <a style="color: #888855;" href="https://cxf.apache.org/">Apache CXF 3.0.1</a> services will be available at base URL <b>https://:8181/cxf/api/</b>. It is easy to check by executing <b>cxf:list-endpoints -f</b> command in the <a style="color: #888855;" href="https://karaf.apache.org/">Apache Karaf 3.0.1</a> shell.
 </p>
 
 <div class="separator">
-  <a style="color: #888855;" href="http://3.bp.blogspot.com/-ylReVFqcKCQ/U-Y8toUPOEI/AAAAAAAAALI/ebrK3k8yQ1g/s1600/apache-karaf-cxf-list-endpoints.PNG"><img src="http://3.bp.blogspot.com/-ylReVFqcKCQ/U-Y8toUPOEI/AAAAAAAAALI/ebrK3k8yQ1g/s400/apache-karaf-cxf-list-endpoints.PNG" alt="" border="0" /></a>
+  <a style="color: #888855;" href="https://3.bp.blogspot.com/-ylReVFqcKCQ/U-Y8toUPOEI/AAAAAAAAALI/ebrK3k8yQ1g/s1600/apache-karaf-cxf-list-endpoints.PNG"><img src="https://3.bp.blogspot.com/-ylReVFqcKCQ/U-Y8toUPOEI/AAAAAAAAALI/ebrK3k8yQ1g/s400/apache-karaf-cxf-list-endpoints.PNG" alt="" border="0" /></a>
 </div>
 
 &nbsp;
 
-Let us make sure our <a style="color: #888855;" href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> layer works as expected by sending couple of <a style="color: #888855;" href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> requests. Let us create new person:
+Let us make sure our <a style="color: #888855;" href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> layer works as expected by sending couple of <a style="color: #888855;" href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> requests. Let us create new person:
 
 <pre>curl http://localhost:8181/cxf/api/people -iX POST -d "firstName=Tom&lastName=Knocker&email=a@b.com"
 
@@ -479,10 +479,10 @@ Server: Jetty(8.1.14.v20131031)
 [{"email":"a@b.com","firstName":"Tom","lastName":"Knocker"}]
 </pre>
 
-Would be nice to check if database has the person populated as well. With <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a> shell it is very simple to do by executing just two commands: **jdbc:datasources** and **jdbc:query peopleDb &#8220;select * from people&#8221;**.
+Would be nice to check if database has the person populated as well. With <a style="color: #888855;" href="https://karaf.apache.org/">Apache Karaf 3.0.1</a> shell it is very simple to do by executing just two commands: **jdbc:datasources** and **jdbc:query peopleDb &#8220;select * from people&#8221;**.
 
 <div class="separator">
-  <a style="color: #888855;" href="http://1.bp.blogspot.com/-eflcSSwKdMY/U-Y_K1i6poI/AAAAAAAAALU/d2WVtAWXSH4/s1600/apache-karaf-list-datasources.PNG"><img src="http://1.bp.blogspot.com/-eflcSSwKdMY/U-Y_K1i6poI/AAAAAAAAALU/d2WVtAWXSH4/s400/apache-karaf-list-datasources.PNG" alt="" border="0" /></a>
+  <a style="color: #888855;" href="https://1.bp.blogspot.com/-eflcSSwKdMY/U-Y_K1i6poI/AAAAAAAAALU/d2WVtAWXSH4/s1600/apache-karaf-list-datasources.PNG"><img src="https://1.bp.blogspot.com/-eflcSSwKdMY/U-Y_K1i6poI/AAAAAAAAALU/d2WVtAWXSH4/s400/apache-karaf-list-datasources.PNG" alt="" border="0" /></a>
 </div>
 
 &nbsp;
@@ -492,16 +492,16 @@ Would be nice to check if database has the person populated as well. With <a st
 </p>
 
 <p style="text-align: justify;">
-  Note to <b>Hibernate 4.2.x / 4.3.x</b> users: unfortunately, in the current release of <a style="color: #888855;" href="http://karaf.apache.org/">Apache Karaf 3.0.1</a> the<b>Hibernate 4.3.x</b> does work properly at all (as <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=338">JPA 2.1</a> is not yet supported) and, however I have managed to run with <b>Hibernate 4.2.x</b>, the container often refused to resolve the JPA-related dependencies.
+  Note to <b>Hibernate 4.2.x / 4.3.x</b> users: unfortunately, in the current release of <a style="color: #888855;" href="https://karaf.apache.org/">Apache Karaf 3.0.1</a> the<b>Hibernate 4.3.x</b> does work properly at all (as <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=338">JPA 2.1</a> is not yet supported) and, however I have managed to run with <b>Hibernate 4.2.x</b>, the container often refused to resolve the JPA-related dependencies.
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codepedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="http://aredko.blogspot.ro/2014/08/osgi-gateway-into-micro-services.html" href="http://aredko.blogspot.ro/2014/08/osgi-gateway-into-micro-services.html" target="_blank">OSGi: the gateway into micro-services architecture</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com" target="_blank">http://aredko.blogspot.com</a>
+  Published at Codepedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="https://aredko.blogspot.ro/2014/08/osgi-gateway-into-micro-services.html" href="https://aredko.blogspot.ro/2014/08/osgi-gateway-into-micro-services.html" target="_blank">OSGi: the gateway into micro-services architecture</a> from <a title="https://aredko.blogspot.com" href="https://aredko.blogspot.com" target="_blank">https://aredko.blogspot.com</a>
 </p>
 
 <p style="text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" />
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" />
 
     <p id="about_author_header">
       Andriy Redko {devmind}
@@ -513,7 +513,7 @@ Would be nice to check if database has the person populated as well. With <a st
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-        <a class="icon-earth" href="http://aredko.blogspot.com" target="_blank"> </a> <a class="icon-github" href="https://github.com/reta" target="_blank"> </a>
+        <a class="icon-earth" href="https://aredko.blogspot.com" target="_blank"> </a> <a class="icon-github" href="https://github.com/reta" target="_blank"> </a>
       </div>
 
       <div class="clear">

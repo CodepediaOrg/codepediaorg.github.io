@@ -58,15 +58,15 @@ tags:
 
 <ol class="task-list">
   <li>
-    <a href="http://dev.mysql.com/downloads/mysql/">Download MySQL Community Server</a> version 5.5 or 5.6 for the platform of your choice.
+    <a href="https://dev.mysql.com/downloads/mysql/">Download MySQL Community Server</a> version 5.5 or 5.6 for the platform of your choice.
   </li>
   <li>
-    <a title="http://dev.mysql.com/doc/refman/5.6/en/installing.html" href="http://dev.mysql.com/doc/refman/5.6/en/installing.html" target="_blank">Install the MySQL Server</a> <ol>
+    <a title="https://dev.mysql.com/doc/refman/5.6/en/installing.html" href="https://dev.mysql.com/doc/refman/5.6/en/installing.html" target="_blank">Install the MySQL Server</a> <ol>
       <li>
-        <a title="http://dev.mysql.com/doc/refman/5.6/en/linux-installation.html" href="http://dev.mysql.com/doc/refman/5.6/en/linux-installation.html" target="_blank">Installing MySQL on Linux</a>
+        <a title="https://dev.mysql.com/doc/refman/5.6/en/linux-installation.html" href="https://dev.mysql.com/doc/refman/5.6/en/linux-installation.html" target="_blank">Installing MySQL on Linux</a>
       </li>
       <li>
-        <a title="http://dev.mysql.com/doc/refman/5.6/en/windows-installation.html" href="http://dev.mysql.com/doc/refman/5.6/en/windows-installation.html" target="_blank">Installing MySQL on Microsoft Windows</a>
+        <a title="https://dev.mysql.com/doc/refman/5.6/en/windows-installation.html" href="https://dev.mysql.com/doc/refman/5.6/en/windows-installation.html" target="_blank">Installing MySQL on Microsoft Windows</a>
       </li>
       <li>
         Setup MySQL configuration file <ul>
@@ -80,10 +80,10 @@ tags:
       </li>
 
       <li style="text-align: justify;">
-        <a title="http://dev.mysql.com/doc/refman/5.6/en/setting-environment-variables.html" href="http://dev.mysql.com/doc/refman/5.6/en/setting-environment-variables.html" target="_blank">Set up the environment variables</a> &#8211; the MySQL programs are installed in <code>MySQL_installation_path/bin</code>, so you&#8217;d want this location added to the <code>PATH</code> variable to be easily invoked from shells and command lines.
+        <a title="https://dev.mysql.com/doc/refman/5.6/en/setting-environment-variables.html" href="https://dev.mysql.com/doc/refman/5.6/en/setting-environment-variables.html" target="_blank">Set up the environment variables</a> &#8211; the MySQL programs are installed in <code>MySQL_installation_path/bin</code>, so you&#8217;d want this location added to the <code>PATH</code> variable to be easily invoked from shells and command lines.
       </li>
       <li>
-        <strong style="line-height: 1.5;">Optional</strong><span style="line-height: 1.5;"> &#8211; install </span><a style="line-height: 1.5;" href="http://www.mysql.com/products/workbench/">MySQL Workbench</a><span style="line-height: 1.5;"> for easy DB development and administration</span>
+        <strong style="line-height: 1.5;">Optional</strong><span style="line-height: 1.5;"> &#8211; install </span><a style="line-height: 1.5;" href="https://www.mysql.com/products/workbench/">MySQL Workbench</a><span style="line-height: 1.5;"> for easy DB development and administration</span>
       </li>
     </ol>
   </li>
@@ -228,10 +228,10 @@ The pcmDB database will be than saved into the single file _pcmdb-backup-2014.06
 
 ### <span id="Web">Web</span>
 
-  1.  <a title="MySQL documentation" href="http://dev.mysql.com/doc/" target="_blank">MySQL documentation</a>
-      1. <a title="http://dev.mysql.com/doc/refman/5.6/en/connecting.html" href="http://dev.mysql.com/doc/refman/5.6/en/connecting.html" target="_blank">Connecting to the MySQL Server</a>
-      2. <a title="http://dev.mysql.com/doc/refman/5.5/en/adding-users.html" href="http://dev.mysql.com/doc/refman/5.5/en/adding-users.html" target="_blank">Adding User Accounts</a>
-      3. <a title="http://dev.mysql.com/doc/refman/5.6/en/drop-database.html" href="http://dev.mysql.com/doc/refman/5.6/en/drop-database.html" target="_blank">DROP DATABASE Syntax</a>
+  1.  <a title="MySQL documentation" href="https://dev.mysql.com/doc/" target="_blank">MySQL documentation</a>
+      1. <a title="https://dev.mysql.com/doc/refman/5.6/en/connecting.html" href="https://dev.mysql.com/doc/refman/5.6/en/connecting.html" target="_blank">Connecting to the MySQL Server</a>
+      2. <a title="https://dev.mysql.com/doc/refman/5.5/en/adding-users.html" href="https://dev.mysql.com/doc/refman/5.5/en/adding-users.html" target="_blank">Adding User Accounts</a>
+      3. <a title="https://dev.mysql.com/doc/refman/5.6/en/drop-database.html" href="https://dev.mysql.com/doc/refman/5.6/en/drop-database.html" target="_blank">DROP DATABASE Syntax</a>
   2. <a title="https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql" href="https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql" target="_blank">How To Create a New User and Grant Permissions in MySQL</a>
 
 &nbsp;

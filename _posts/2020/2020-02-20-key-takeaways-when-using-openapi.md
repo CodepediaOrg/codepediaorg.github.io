@@ -73,7 +73,7 @@ app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 ### 4.1 Use swagger-jsdoc for a code-first approach
 Another point worth mentioning here is that you could use [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc),
- to integrate [Swagger](http://swagger.io) using [`JSDoc`](https://jsdoc.app/) comments in your code. The `swagger-jsdoc` project
+ to integrate [Swagger](https://swagger.io) using [`JSDoc`](https://jsdoc.app/) comments in your code. The `swagger-jsdoc` project
   assumes that you want document your existing/living/working code in a way to "give life" to it, generating a specification
    which can then be fed into other Swagger tools, and not the vice-versa.
 

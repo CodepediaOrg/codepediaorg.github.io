@@ -89,13 +89,13 @@ tags:
 
 Some Sass vs. LESS resources
 
-  * <a title="Sass vs. LESS" href="http://css-tricks.com/sass-vs-less/" target="_blank">Sass vs. LESS</a>
+  * <a title="Sass vs. LESS" href="https://css-tricks.com/sass-vs-less/" target="_blank">Sass vs. LESS</a>
   * <a title="https://gist.github.com/chriseppstein/674726" href="https://gist.github.com/chriseppstein/674726" target="_blank">Sass/Less Comparison</a>
 
 ### <span id="11_Sass"><span style="font-family: Bitter, Georgia, serif; font-size: 22px; line-height: 1.3;">1.1. Sass</span></span>
 
 <p style="text-align: justify;">
-  For now, I chose <a title="Official website for Sass" href="http://sass-lang.com/" target="_blank"><b>Sass</b> (<b>S</b>yntactically <b>A</b>wesome <b>S</b>tyle<b>s</b>heets)</a>, also called &#8220;CSS with super powers&#8221;. Sass is a scripting language that is interpreted into Cascading Style Sheets (CSS). SassScript is the scripting language itself.
+  For now, I chose <a title="Official website for Sass" href="https://sass-lang.com/" target="_blank"><b>Sass</b> (<b>S</b>yntactically <b>A</b>wesome <b>S</b>tyle<b>s</b>heets)</a>, also called &#8220;CSS with super powers&#8221;. Sass is a scripting language that is interpreted into Cascading Style Sheets (CSS). SassScript is the scripting language itself.
 </p>
 
 #### <span id="12_SCSS">1.2. SCSS</span>
@@ -105,7 +105,7 @@ Some Sass vs. LESS resources
 </p>
 
 <p style="text-align: justify; padding-left: 30px;">
-  <em>&#8220;In <a href="http://sass-lang.com/docs/yardoc/file.SASS_CHANGELOG.html#3-0-0" target="_blank">version 3 of Sass</a>, the SCSS (Sassy CSS) syntax was introduced as &#8220;the new main syntax&#8221; for Sass and builds on the existing syntax of CSS. It uses brackets and semi-colons just like CSS. It doesn&#8217;t care about indentation levels or white-space. In fact, Sass&#8217;s SCSS syntax is a <a href="http://encyclopedia2.thefreedictionary.com/superset" target="_blank">superset</a> of CSS – which means SCSS contains all the features of CSS, but has been expanded to include the features of Sass as well. In layman&#8217;s terms, any valid CSS is valid SCSS. And in the end, SCSS has the exact same features as the Sass syntax, minus the opinionated syntax.&#8221; [3]</em>
+  <em>&#8220;In <a href="https://sass-lang.com/docs/yardoc/file.SASS_CHANGELOG.html#3-0-0" target="_blank">version 3 of Sass</a>, the SCSS (Sassy CSS) syntax was introduced as &#8220;the new main syntax&#8221; for Sass and builds on the existing syntax of CSS. It uses brackets and semi-colons just like CSS. It doesn&#8217;t care about indentation levels or white-space. In fact, Sass&#8217;s SCSS syntax is a <a href="https://encyclopedia2.thefreedictionary.com/superset" target="_blank">superset</a> of CSS – which means SCSS contains all the features of CSS, but has been expanded to include the features of Sass as well. In layman&#8217;s terms, any valid CSS is valid SCSS. And in the end, SCSS has the exact same features as the Sass syntax, minus the opinionated syntax.&#8221; [3]</em>
 </p>
 
 ## <span id="2_Advantages_of_using_preprocessors_Sass">2. Advantages of using preprocessors (Sass)</span>
@@ -354,7 +354,7 @@ is compiled to :
 </p>
 
 <p class="alert_note" style="text-align: justify;">
-  <span style="text-align: justify; line-height: 1.5;">To avoid code duplication you should only use mixins if you need to pass custom parameters. If you see yourself using the same mixing multiple times passing the same values than you should create a base “type” that is inherited by other selectors. A good article on this topic is  </span><a style="text-align: justify; line-height: 1.5;" title="http://www.zacharybrady.com/mixins-and-selector-inheritance-in-sass-when-should-you-use-one-or-the-other/" href="http://www.zacharybrady.com/mixins-and-selector-inheritance-in-sass-when-should-you-use-one-or-the-other/" target="_blank">Mixins and Selector Inheritance in SASS: When Should You Use One Or the Other?</a>
+  <span style="text-align: justify; line-height: 1.5;">To avoid code duplication you should only use mixins if you need to pass custom parameters. If you see yourself using the same mixing multiple times passing the same values than you should create a base “type” that is inherited by other selectors. A good article on this topic is  </span><a style="text-align: justify; line-height: 1.5;" title="https://www.zacharybrady.com/mixins-and-selector-inheritance-in-sass-when-should-you-use-one-or-the-other/" href="https://www.zacharybrady.com/mixins-and-selector-inheritance-in-sass-when-should-you-use-one-or-the-other/" target="_blank">Mixins and Selector Inheritance in SASS: When Should You Use One Or the Other?</a>
 </p>
 
 <p class="alert_note" style="text-align: justify;">
@@ -372,11 +372,11 @@ is compiled to :
 </p>
 
 <p style="text-align: justify;">
-  There might be some &#8220;disadvantages&#8221; in using preprocessors, like the ones mentioned in <a title="http://blog.millermedeiros.com/the-problem-with-css-pre-processors/" href="http://blog.millermedeiros.com/the-problem-with-css-pre-processors/" target="_blank">The problem with CSS pre-processors</a>, but I for one, wouldn&#8217;t go back writing plain CSS again.
+  There might be some &#8220;disadvantages&#8221; in using preprocessors, like the ones mentioned in <a title="https://blog.millermedeiros.com/the-problem-with-css-pre-processors/" href="https://blog.millermedeiros.com/the-problem-with-css-pre-processors/" target="_blank">The problem with CSS pre-processors</a>, but I for one, wouldn&#8217;t go back writing plain CSS again.
 </p>
 
 <p style="text-align: justify;">
-  Well, those are some of the &#8220;sassy&#8221; features I&#8217;ve used so far to style <a title="Podcastpedia, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia</a>, but I am sure there are other goodies left to be discovered and put to use (e.g. <a title="http://sass-lang.com/documentation/file.SASS_CHANGELOG.html#sassbased_functions" href="http://sass-lang.com/documentation/file.SASS_CHANGELOG.html#sassbased_functions" target="_blank">sass-based functions &#8230;</a>) &#8211; maybe you could give me a helping hand and leave a comment regarding this.
+  Well, those are some of the &#8220;sassy&#8221; features I&#8217;ve used so far to style <a title="Podcastpedia, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia</a>, but I am sure there are other goodies left to be discovered and put to use (e.g. <a title="https://sass-lang.com/documentation/file.SASS_CHANGELOG.html#sassbased_functions" href="https://sass-lang.com/documentation/file.SASS_CHANGELOG.html#sassbased_functions" target="_blank">sass-based functions &#8230;</a>) &#8211; maybe you could give me a helping hand and leave a comment regarding this.
 </p>
 
 <h2 style="text-align: justify;">
@@ -395,13 +395,13 @@ is compiled to :
 
 ### <span id="41_Web">4.1. Web</span>
 
-  1. <a title="http://en.wikipedia.org/wiki/Cascading_Style_Sheets" href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">Cascading Style Sheets &#8211; Wikipedia</a>
-  2. <a title="http://sass-lang.com/" href="http://sass-lang.com/" target="_blank">Sass: Syntactically Awesome Style Sheets</a>
-  3. <a title="http://sass-lang.com/guide" href="http://sass-lang.com/guide" target="_blank">Sass Guide </a>
-  4. <a title="http://lesscss.org/" href="http://lesscss.org/" target="_blank">LESS (Leaner CSS)</a>
-  5. <a title="http://www.zacharybrady.com/mixins-and-selector-inheritance-in-sass-when-should-you-use-one-or-the-other/" href="http://www.zacharybrady.com/mixins-and-selector-inheritance-in-sass-when-should-you-use-one-or-the-other/" target="_blank">Mixins and Selector Inheritance in SASS: When Should You Use One Or the Other?</a>
-  6. <a title="http://css-tricks.com/sass-style-guide/" href="http://css-tricks.com/sass-style-guide/" target="_blank">CSS tricks &#8211; Sass Style Guide</a>
-  7. <a title="http://css-tricks.com/naming-media-queries/" href="http://css-tricks.com/naming-media-queries/" target="_blank">CSS tricks &#8211; Naming Media Queries</a>
+  1. <a title="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">Cascading Style Sheets &#8211; Wikipedia</a>
+  2. <a title="https://sass-lang.com/" href="https://sass-lang.com/" target="_blank">Sass: Syntactically Awesome Style Sheets</a>
+  3. <a title="https://sass-lang.com/guide" href="https://sass-lang.com/guide" target="_blank">Sass Guide </a>
+  4. <a title="https://lesscss.org/" href="https://lesscss.org/" target="_blank">LESS (Leaner CSS)</a>
+  5. <a title="https://www.zacharybrady.com/mixins-and-selector-inheritance-in-sass-when-should-you-use-one-or-the-other/" href="https://www.zacharybrady.com/mixins-and-selector-inheritance-in-sass-when-should-you-use-one-or-the-other/" target="_blank">Mixins and Selector Inheritance in SASS: When Should You Use One Or the Other?</a>
+  6. <a title="https://css-tricks.com/sass-style-guide/" href="https://css-tricks.com/sass-style-guide/" target="_blank">CSS tricks &#8211; Sass Style Guide</a>
+  7. <a title="https://css-tricks.com/naming-media-queries/" href="https://css-tricks.com/naming-media-queries/" target="_blank">CSS tricks &#8211; Naming Media Queries</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

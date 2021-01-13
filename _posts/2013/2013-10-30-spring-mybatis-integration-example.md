@@ -99,7 +99,7 @@ tags:
 ## <span id="1_Why_Mybatis">1. Why Mybatis?</span>
 
 <p style="text-align: justify;">
-  Short answer: simple, lightweight, open source, dynamic sql and sql control, previous iBATIS knowledge. Now let me elaborate a little bit on the subject. Back in the old days of Podcastmania.ro, see <a title="Story of Podcastpedia.org" href="https://www.codepedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia.org</a>, I used my own MVC like framwork based on servlets to develop the web application and plain old <a title="Wikipedia - JDBC" href="http://en.wikipedia.org/wiki/Java_Database_Connectivity" target="_blank">JDBC</a> to access the database. After &#8220;upgrading&#8221; to Spring MVC, I started using Spring&#8217;s <code>JdbcTemplate</code> for database access, which removed some of the boilerplate code. Later I got involved in projects where database access occured via iBATIS &#8211; Hibernate was there for a long time, but because of legacy reasons and no database normalization whatsoever, iBATIS was the optimal choice. By about the same time MyBatis had been just launched, so I read the documentation, did a pilot, liked it and switched from Spring&#8217;s <code>JdbcTemplate</code> to MyBatis. In the mean time I&#8217;ve been working on projects with Hibernate and JPA 2.0 with Hibernate used for persistence, so I&#8217;d say I have a pretty good overview on the most popular Java Persistence Frameworks. You have currently four major options:
+  Short answer: simple, lightweight, open source, dynamic sql and sql control, previous iBATIS knowledge. Now let me elaborate a little bit on the subject. Back in the old days of Podcastmania.ro, see <a title="Story of Podcastpedia.org" href="https://www.codepedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia.org</a>, I used my own MVC like framwork based on servlets to develop the web application and plain old <a title="Wikipedia - JDBC" href="https://en.wikipedia.org/wiki/Java_Database_Connectivity" target="_blank">JDBC</a> to access the database. After &#8220;upgrading&#8221; to Spring MVC, I started using Spring&#8217;s <code>JdbcTemplate</code> for database access, which removed some of the boilerplate code. Later I got involved in projects where database access occured via iBATIS &#8211; Hibernate was there for a long time, but because of legacy reasons and no database normalization whatsoever, iBATIS was the optimal choice. By about the same time MyBatis had been just launched, so I read the documentation, did a pilot, liked it and switched from Spring&#8217;s <code>JdbcTemplate</code> to MyBatis. In the mean time I&#8217;ve been working on projects with Hibernate and JPA 2.0 with Hibernate used for persistence, so I&#8217;d say I have a pretty good overview on the most popular Java Persistence Frameworks. You have currently four major options:
 </p>
 
   * JPA/Hibernate
@@ -159,7 +159,7 @@ Enough with talking, let&#8217;s focus now on the main topic of this post, which
   </h3>
 
   <p>
-    To use the MyBatis-Spring module, you just need to include the <code> mybatis-spring-x.x.x.jar </code> file and its dependencies in the <a title="Wikipedia classpath java" href="http://en.wikipedia.org/wiki/Classpath_%28Java%29" target="_blank">classpath</a>.
+    To use the MyBatis-Spring module, you just need to include the <code> mybatis-spring-x.x.x.jar </code> file and its dependencies in the <a title="Wikipedia classpath java" href="https://en.wikipedia.org/wiki/Classpath_%28Java%29" target="_blank">classpath</a>.
   </p>
 
   <p>
@@ -200,7 +200,7 @@ Enough with talking, let&#8217;s focus now on the main topic of this post, which
 &lt;/bean&gt;</pre>
 
   <p>
-    Notice that the <code>SqlSessionFactory</code> requires a <code>DataSource</code>. This can be any <code>DataSource</code> and should be configured just like any other Spring database connection. For <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> the DataSource is configured via <a title="Wikipedia - JNDI" href="http://en.wikipedia.org/wiki/Java_Naming_and_Directory_Interface" target="_blank">JNDI</a>:
+    Notice that the <code>SqlSessionFactory</code> requires a <code>DataSource</code>. This can be any <code>DataSource</code> and should be configured just like any other Spring database connection. For <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> the DataSource is configured via <a title="Wikipedia - JNDI" href="https://en.wikipedia.org/wiki/Java_Naming_and_Directory_Interface" target="_blank">JNDI</a>:
   </p>
 
   <pre class="lang:default decode:true" title="DataSource configuration in the application context">&lt;!-- ========================= DATASOURCE DEFINITION via JNDI ========================= --&gt;
@@ -358,7 +358,7 @@ public interface PodcastDao {
   <pre class="lang:default decode:true" title="MyBatis configuration file snippet">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;!DOCTYPE configuration
     PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
-    "http://mybatis.org/dtd/mybatis-3-config.dtd"&gt;
+    "https://mybatis.org/dtd/mybatis-3-config.dtd"&gt;
 
 &lt;configuration&gt;
 	&lt;typeAliases&gt;
@@ -396,7 +396,7 @@ public interface PodcastDao {
   </div>
 
   <p style="padding-left: 30px;">
-    <em><strong>Note:</strong> There are many other parameters you can set up in the configuration file for MyBatis. See the <a title="MyBatis configuration" href="http://mybatis.github.io/mybatis-3/configuration.html" target="_blank">Configuration</a></em> documentation page for more details.
+    <em><strong>Note:</strong> There are many other parameters you can set up in the configuration file for MyBatis. See the <a title="MyBatis configuration" href="https://mybatis.github.io/mybatis-3/configuration.html" target="_blank">Configuration</a></em> documentation page for more details.
   </p>
 
   <h3>
@@ -413,7 +413,7 @@ public interface PodcastDao {
 
   <pre class="lang:default mark:5,21 decode:true" title="MyBatis map snippet">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-"http://mybatis.org/dtd/mybatis-3-mapper.dtd"&gt;
+"https://mybatis.org/dtd/mybatis-3-mapper.dtd"&gt;
 
 &lt;mapper namespace="org.podcastpedia.dao.PodcastDao"&gt;
 	&lt;!--    result maps     --&gt;
@@ -517,10 +517,10 @@ Well, that&#8217;s it. You&#8217;ve learned about MyBatis, how it integrates wit
 
 ## <span id="4_Resources">4. Resources</span>
 
-  1. <a title="MyBatis" href="http://mybatis.github.io/mybatis-3/" target="_blank">MyBatis</a>
-  2. <a title="MyBatis-Spring" href="http://mybatis.github.io/spring/index.html" target="_blank">MyBatis-Spring</a>
-  3. <a title="Data access with JDBC" href="http://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/jdbc.html" target="_blank">Spring Data Access with JDBC </a>
-  4. <a title="MyBatis blog" href="http://blog.mybatis.org/" target="_blank">MyBatis-Blog</a>
+  1. <a title="MyBatis" href="https://mybatis.github.io/mybatis-3/" target="_blank">MyBatis</a>
+  2. <a title="MyBatis-Spring" href="https://mybatis.github.io/spring/index.html" target="_blank">MyBatis-Spring</a>
+  3. <a title="Data access with JDBC" href="https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/jdbc.html" target="_blank">Spring Data Access with JDBC </a>
+  4. <a title="MyBatis blog" href="https://blog.mybatis.org/" target="_blank">MyBatis-Blog</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

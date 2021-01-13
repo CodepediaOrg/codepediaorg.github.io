@@ -442,7 +442,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  You can also download Git by visiting this link and following the posted directions:<br /> <span><a href="http://git-scm.com/download/mac">http://git-scm.com/download/mac</a></span>
+  You can also download Git by visiting this link and following the posted directions:<br /> <span><a href="https://git-scm.com/download/mac">https://git-scm.com/download/mac</a></span>
 </p>
 
 <p style="text-align: justify;">
@@ -450,7 +450,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  A third option is to install Git as part of the GitHub for Mac install. GitHub is repository hosting service, which we will discuss in a future section.<br /> Download GitHub for Mac via the following link:<br /> <span><a href="http://mac.github.com/">http://mac.github.com</a></span>
+  A third option is to install Git as part of the GitHub for Mac install. GitHub is repository hosting service, which we will discuss in a future section.<br /> Download GitHub for Mac via the following link:<br /> <span><a href="https://mac.github.com/">https://mac.github.com</a></span>
 </p>
 
 <h3 style="text-align: justify;">
@@ -462,7 +462,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  You can download Git by visiting this link and following the posted directions:<br /> <span><a href="http://git-scm.com/download/win">http://git-scm.com/download/win</a></span>
+  You can download Git by visiting this link and following the posted directions:<br /> <span><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></span>
 </p>
 
 <p style="text-align: justify;">
@@ -470,7 +470,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  Install Git as part of the GitHub for Windows install.<br /> <span><a href="http://windows.github.com/">http://windows.github.com</a></span>
+  Install Git as part of the GitHub for Windows install.<br /> <span><a href="https://windows.github.com/">https://windows.github.com</a></span>
 </p>
 
 <h3 style="text-align: justify;">
@@ -502,7 +502,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  To download Git for Linux, visit this link and follow the posted directions:<br /> <span><a href="http://git-scm.com/download/linux">http://git-scm.com/download/linux</a></span>
+  To download Git for Linux, visit this link and follow the posted directions:<br /> <span><a href="https://git-scm.com/download/linux">https://git-scm.com/download/linux</a></span>
 </p>
 
 <h3 style="text-align: justify;">
@@ -1663,7 +1663,7 @@ $ git config --global alias.co commit</pre>
       </ul>
 
       <p style="text-align: justify;">
-        Additional information regarding gitignore files can be found <span><a href="http://git-scm.com/docs/gitignore%20and%20https://github.com/github/gitignore" target="_blank">here</a></span>.
+        Additional information regarding gitignore files can be found <span><a href="https://git-scm.com/docs/gitignore%20and%20https://github.com/github/gitignore" target="_blank">here</a></span>.
       </p>
 
       <h2 style="text-align: justify;">
@@ -1752,7 +1752,7 @@ $ git config --global alias.co commit</pre>
       </h2>
 
       <p style="text-align: justify;">
-        <span><a href="http://git-scm.com/" target="_blank">http://git-scm.com</a></span>
+        <span><a href="https://git-scm.com/" target="_blank">https://git-scm.com</a></span>
       </p>
 
       <p style="text-align: justify;">
@@ -1764,7 +1764,7 @@ $ git config --global alias.co commit</pre>
       </p>
 
       <p style="text-align: justify;">
-        <span><a href="http://alx.github.io/gitbook/" target="_blank">http://alx.github.io/gitbook/</a></span>
+        <span><a href="https://alx.github.io/gitbook/" target="_blank">https://alx.github.io/gitbook/</a></span>
       </p>
 
       <p style="text-align: justify;">
@@ -1772,7 +1772,7 @@ $ git config --global alias.co commit</pre>
       </p>
 
       <p style="text-align: justify;" class="note_normal">
-        <span>Published on Codepedia.org with the permission of</span><span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span><span>– source </span><a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/git-tutorial-a-comprehensive-guide/" target="_blank">Git Tutorial: A Comprehensive Introduction</a><span> from</span><span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
+        <span>Published on Codepedia.org with the permission of</span><span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span><span>– source </span><a title="https://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/git-tutorial-a-comprehensive-guide/" target="_blank">Git Tutorial: A Comprehensive Introduction</a><span> from</span><span class="Apple-converted-space"> </span><a title="https://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
       </p>
 
       <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

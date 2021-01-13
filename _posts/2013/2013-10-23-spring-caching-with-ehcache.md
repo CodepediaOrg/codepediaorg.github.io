@@ -18,11 +18,11 @@ tags:
 ## <span id="1_Why_use_Caching">1. Why use Caching?</span>
 
 <p style="text-align: justify;">
-  Are you aware of the Pareto principle, also known as the 80-20 rule, which states that, for many events, roughly 80% of the effects come from 20% of the causes? Well, this principle also holds true for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, where most of the traffic is driven by some of the podcasts, and only some of the search criteria are used the most. So why not <a title="Wikipedia - cache" href="http://en.wikipedia.org/wiki/Cache_%28computing%29" target="_blank">cache</a> them?
+  Are you aware of the Pareto principle, also known as the 80-20 rule, which states that, for many events, roughly 80% of the effects come from 20% of the causes? Well, this principle also holds true for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, where most of the traffic is driven by some of the podcasts, and only some of the search criteria are used the most. So why not <a title="Wikipedia - cache" href="https://en.wikipedia.org/wiki/Cache_%28computing%29" target="_blank">cache</a> them?
 </p>
 
 <p style="text-align: justify;">
-  For application caching Podcastpedia uses <a title="Ehcache.org" href="http://ehcache.org/" target="_blank">Ehcache</a>, which is an open source, standards-based cache for boosting performance, offloading your database, and simplifying scalability. It&#8217;s the most widely-used Java-based cache because it&#8217;s robust, proven, and full-featured.
+  For application caching Podcastpedia uses <a title="Ehcache.org" href="https://ehcache.org/" target="_blank">Ehcache</a>, which is an open source, standards-based cache for boosting performance, offloading your database, and simplifying scalability. It&#8217;s the most widely-used Java-based cache because it&#8217;s robust, proven, and full-featured.
 </p>
 
 This post presents how Ehcache is integrated with Spring, which is the main technology used to develop Podcastpedia.org
@@ -115,7 +115,7 @@ This post presents how Ehcache is integrated with Spring, which is the main tech
 ## <span id="2_Spring_Cache_abstraction">2. Spring Cache abstraction</span>
 
 <p style="text-align: justify;">
-  Since version 3.1, Spring Framework provides support for transparently adding caching into an existing Spring application. Similar to the <a title="12. Transaction Management" href="http://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/transaction.html">transaction</a> support, the caching abstraction allows consistent use of various caching solutions with minimal impact on the code.
+  Since version 3.1, Spring Framework provides support for transparently adding caching into an existing Spring application. Similar to the <a title="12. Transaction Management" href="https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/transaction.html">transaction</a> support, the caching abstraction allows consistent use of various caching solutions with minimal impact on the code.
 </p>
 
 ### <span id="21_Maven_dependency">2.1. Maven dependency</span>
@@ -449,7 +449,7 @@ In this example the result (a podcast) will be placed in the `"podcasts"`-cache,
 </p>
 
 <p style="text-align: justify;">
-  For such cases, the <code class="literal">@Cacheable</code> annotation allows the user to specify how the key is generated through its <code class="literal">key</code> attribute. The developer can also use <a class="link" title="8. Spring Expression Language (SpEL)" href="http://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/expressions.html">SpEL</a> to pick the arguments of interest (or their nested properties), perform operations or even invoke arbitrary methods without having to write any code or implement any interface.
+  For such cases, the <code class="literal">@Cacheable</code> annotation allows the user to specify how the key is generated through its <code class="literal">key</code> attribute. The developer can also use <a class="link" title="8. Spring Expression Language (SpEL)" href="https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/expressions.html">SpEL</a> to pick the arguments of interest (or their nested properties), perform operations or even invoke arbitrary methods without having to write any code or implement any interface.
 </p>
 
 ###### <span id="24121_Example_one_8211_use_method_name_as_key">2.4.1.2.1. Example one &#8211; use method name as key</span>
@@ -515,7 +515,7 @@ In this example the result (a podcast) will be placed in the `"podcasts"`-cache,
 </pre>
 
 <p style="text-align: justify;">
-  <em><strong>Note:</strong> I use the <code>@Cacheable</code> annotation at the <strong>service layer</strong> rather than at the <strong><a title="Wikipedia - data access object" href="http://en.wikipedia.org/wiki/Data_access_object" target="_blank">DAO</a> layer</strong>, because there are many cases (e.g. <code>getPodcastDetails()</code>) when a service method invokes several DAO methods, and if in cache I avoid these calls completely. </em>
+  <em><strong>Note:</strong> I use the <code>@Cacheable</code> annotation at the <strong>service layer</strong> rather than at the <strong><a title="Wikipedia - data access object" href="https://en.wikipedia.org/wiki/Data_access_object" target="_blank">DAO</a> layer</strong>, because there are many cases (e.g. <code>getPodcastDetails()</code>) when a service method invokes several DAO methods, and if in cache I avoid these calls completely. </em>
 </p>
 
 #### <span id="242_CacheEvict">2.4.2. @CacheEvict</span>
@@ -660,12 +660,12 @@ Most of the properties set in the caches are self explaining by name, but here a
 
 ## <span id="4_Resources">4. Resources</span>
 
-  1. <a title="Ehcache.org" href="http://ehcache.org/" target="_blank">Ehcache.org</a>
-  2. <a title="Cache abstraction in Spring" href="http://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/cache.html" target="_blank">Spring Documentation &#8211; Cache Abstraction</a>
-  3. <a title="Ehcache configuration" href="http://ehcache.org/documentation/user-guide/configuration" target="_blank">Ehcache configuration</a>
-  4. <a title="Pinning, Expiration, and Eviction" href="http://ehcache.org/documentation/configuration/data-lifehttp://" target="_blank">Ehcache.org &#8211; Pinning of Caches and Elements in Memory</a>
-  5. <a title="Persistence and Restartability" href="http://ehcache.org/documentation/configuration/fast-restart" target="_blank">Ehcache.org &#8211; Persistence and restartability</a>
-  6. <a title="ehcache.xml" href="http://ehcache.org/ehcache.xml" target="_blank">ehcache.xml</a>
+  1. <a title="Ehcache.org" href="https://ehcache.org/" target="_blank">Ehcache.org</a>
+  2. <a title="Cache abstraction in Spring" href="https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/cache.html" target="_blank">Spring Documentation &#8211; Cache Abstraction</a>
+  3. <a title="Ehcache configuration" href="https://ehcache.org/documentation/user-guide/configuration" target="_blank">Ehcache configuration</a>
+  4. <a title="Pinning, Expiration, and Eviction" href="https://ehcache.org/documentation/configuration/data-lifehttp://" target="_blank">Ehcache.org &#8211; Pinning of Caches and Elements in Memory</a>
+  5. <a title="Persistence and Restartability" href="https://ehcache.org/documentation/configuration/fast-restart" target="_blank">Ehcache.org &#8211; Persistence and restartability</a>
+  6. <a title="ehcache.xml" href="https://ehcache.org/ehcache.xml" target="_blank">ehcache.xml</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

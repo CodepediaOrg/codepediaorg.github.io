@@ -14,15 +14,15 @@ tags:
   - websockets
 ---
 <p style="text-align: justify;">
-  <a style="color: #888855;" href="http://www.eclipse.org/jetty/documentation/current/jetty-javaee.html">Jetty 9.1</a> is finally released, bringing <a style="color: #888855;" href="http://jcp.org/en/jsr/detail?id=356">Java WebSockets (JSR-356)</a> to non-EE environments. It&#8217;s awesome news and today&#8217;s post will be about using this great new API along with <a style="color: #888855;" href="http://projects.spring.io/spring-framework/">Spring Framework</a>.
+  <a style="color: #888855;" href="https://www.eclipse.org/jetty/documentation/current/jetty-javaee.html">Jetty 9.1</a> is finally released, bringing <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=356">Java WebSockets (JSR-356)</a> to non-EE environments. It&#8217;s awesome news and today&#8217;s post will be about using this great new API along with <a style="color: #888855;" href="https://projects.spring.io/spring-framework/">Spring Framework</a>.
 </p>
 
 <p style="text-align: justify;">
-  <a style="color: #888855;" href="http://jcp.org/en/jsr/detail?id=356">JSR-356</a> defines concise, annotation-based model to allow modern Java web applications easily create bidirectional communication channels using <a style="color: #888855;" href="http://www.w3.org/TR/websockets/">WebSockets API</a>. It covers not only server-side, but client-side as well, making this API really simple to use everywhere.<!--more-->
+  <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=356">JSR-356</a> defines concise, annotation-based model to allow modern Java web applications easily create bidirectional communication channels using <a style="color: #888855;" href="https://www.w3.org/TR/websockets/">WebSockets API</a>. It covers not only server-side, but client-side as well, making this API really simple to use everywhere.<!--more-->
 </p>
 
 <p style="color: #333333; text-align: justify;">
-  Let&#8217;s get started! Our goal would be to build a <a style="color: #888855;" href="http://www.w3.org/TR/websockets/">WebSockets</a> server which accepts messages from the clients and broadcasts them to all other clients currently connected. To begin with, let&#8217;s define the message format, which server and client will be exchanging, as this simple <b>Message</b> class. We can limit ourselves to something like a <b>String</b>, but I would like to introduce to you the power of another new API &#8211; <a style="color: #888855;" href="http://jcp.org/en/jsr/detail?id=353">Java API for JSON Processing (JSR-353)</a>.
+  Let&#8217;s get started! Our goal would be to build a <a style="color: #888855;" href="https://www.w3.org/TR/websockets/">WebSockets</a> server which accepts messages from the clients and broadcasts them to all other clients currently connected. To begin with, let&#8217;s define the message format, which server and client will be exchanging, as this simple <b>Message</b> class. We can limit ourselves to something like a <b>String</b>, but I would like to introduce to you the power of another new API &#8211; <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=353">Java API for JSON Processing (JSR-353)</a>.
 </p>
 
 <pre class="lang:java decode:true ">package com.example.services;
@@ -57,7 +57,7 @@ public class Message {
 }</pre>
 
 <p style="text-align: justify;">
-  <span style="color: #333333;">To separate the declarations related to the server and the client, </span><a style="color: #888855;" href="http://jcp.org/en/jsr/detail?id=356">JSR-356</a><span style="color: #333333;"> defines two basic annotations: </span><b style="color: #333333;">@ServerEndpoint</b><span style="color: #333333;"> and </span><b style="color: #333333;">@ClientEndpoit</b><span style="color: #333333;"> respectively. Our client endpoint, let&#8217;s call it <b>BroadcastClientEndpoint</b>, will simply listen for the messages the server sends: </span>
+  <span style="color: #333333;">To separate the declarations related to the server and the client, </span><a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=356">JSR-356</a><span style="color: #333333;"> defines two basic annotations: </span><b style="color: #333333;">@ServerEndpoint</b><span style="color: #333333;"> and </span><b style="color: #333333;">@ClientEndpoit</b><span style="color: #333333;"> respectively. Our client endpoint, let&#8217;s call it <b>BroadcastClientEndpoint</b>, will simply listen for the messages the server sends: </span>
 </p>
 
 <pre class="lang:java decode:true ">package com.example.services;
@@ -96,11 +96,11 @@ That&#8217;s literally it! Very clean, self-explanatory piece of code:
   * **@OnMessage** is being called every time server sends a message to the client.
 
 <p style="color: #333333; text-align: justify;">
-  Yes, it&#8217;s very simple but there is a caveat: <a style="color: #888855;" href="http://jcp.org/en/jsr/detail?id=356">JSR-356</a> implementation can handle any simple objects but not the complex ones like <b>Message</b> is. To manage that, <a style="color: #888855;" href="http://jcp.org/en/jsr/detail?id=356">JSR-356</a> introduces the concept of <b>encoders</b> and <b>decoders</b>.
+  Yes, it&#8217;s very simple but there is a caveat: <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=356">JSR-356</a> implementation can handle any simple objects but not the complex ones like <b>Message</b> is. To manage that, <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=356">JSR-356</a> introduces the concept of <b>encoders</b> and <b>decoders</b>.
 </p>
 
 <p style="color: #333333; text-align: justify;">
-  We all love <a style="color: #888855;" href="http://www.json.org/">JSON</a>, so why don&#8217;t we define our own <a style="color: #888855;" href="http://www.json.org/">JSON</a> encoder and decoder? It&#8217;s an easy task which <a style="color: #888855;" href="http://jcp.org/en/jsr/detail?id=353">Java API for JSON Processing (JSR-353)</a> can handle for us. To create an encoder, you only need to implement <b>Encoder.Text<Message></b> and basically serialize your object to some string, in our case to <a style="color: #888855;" href="http://www.json.org/">JSON</a> string, using <a style="color: #888855;" href="http://docs.oracle.com/javaee/7/api/javax/json/JsonObjectBuilder.html">JsonObjectBuilder</a>.
+  We all love <a style="color: #888855;" href="https://www.json.org/">JSON</a>, so why don&#8217;t we define our own <a style="color: #888855;" href="https://www.json.org/">JSON</a> encoder and decoder? It&#8217;s an easy task which <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=353">Java API for JSON Processing (JSR-353)</a> can handle for us. To create an encoder, you only need to implement <b>Encoder.Text<Message></b> and basically serialize your object to some string, in our case to <a style="color: #888855;" href="https://www.json.org/">JSON</a> string, using <a style="color: #888855;" href="https://docs.oracle.com/javaee/7/api/javax/json/JsonObjectBuilder.html">JsonObjectBuilder</a>.
 </p>
 
 <pre class="lang:java decode:true ">package com.example.services;
@@ -133,7 +133,7 @@ public class Message {
 }</pre>
 
 <p style="text-align: justify;">
-  <span style="color: #333333;">For decoder part, everything looks very similar, we have to implement </span><b style="color: #333333;">Decoder.Text< Message ></b><span style="color: #333333;"> and deserialize our object from string, this time using </span><a style="color: #888855;" href="http://docs.oracle.com/javaee/7/api/javax/json/JsonReader.html">JsonReader</a><span style="color: #333333;">.</span>
+  <span style="color: #333333;">For decoder part, everything looks very similar, we have to implement </span><b style="color: #333333;">Decoder.Text< Message ></b><span style="color: #333333;"> and deserialize our object from string, this time using </span><a style="color: #888855;" href="https://docs.oracle.com/javaee/7/api/javax/json/JsonReader.html">JsonReader</a><span style="color: #333333;">.</span>
 </p>
 
 <pre class="lang:java decode:true">package com.example.services;
@@ -225,7 +225,7 @@ public class ClientStarter {
 }</pre>
 
 <p style="text-align: justify;">
-  Just couple of comments what this code does: we are connecting to <a style="color: #888855;" href="http://www.w3.org/TR/websockets/">WebSockets</a> endpoint at <b>ws://localhost:8080/broadcast</b>, randomly picking some <b>client</b> name (from UUID) and generating 10 messages, every with 1 second delay (just to be sure we have time to receive them all back).
+  Just couple of comments what this code does: we are connecting to <a style="color: #888855;" href="https://www.w3.org/TR/websockets/">WebSockets</a> endpoint at <b>ws://localhost:8080/broadcast</b>, randomly picking some <b>client</b> name (from UUID) and generating 10 messages, every with 1 second delay (just to be sure we have time to receive them all back).
 </p>
 
 <p style="color: #333333; text-align: justify;">
@@ -277,7 +277,7 @@ public class BroadcastServerEndpoint {
     }
 }</pre>
 
-<span style="color: #333333;">In order this endpoint to be available for connection, we should start the </span><a style="color: #888855;" href="http://www.w3.org/TR/websockets/">WebSockets</a><span style="color: #333333;"> container and register this endpoint inside it. As always, </span><a style="color: #888855;" href="http://www.eclipse.org/jetty/documentation/current/jetty-javaee.html">Jetty 9.1</a><span style="color: #333333;"> is runnable in embedded mode effortlessly:</span>
+<span style="color: #333333;">In order this endpoint to be available for connection, we should start the </span><a style="color: #888855;" href="https://www.w3.org/TR/websockets/">WebSockets</a><span style="color: #333333;"> container and register this endpoint inside it. As always, </span><a style="color: #888855;" href="https://www.eclipse.org/jetty/documentation/current/jetty-javaee.html">Jetty 9.1</a><span style="color: #333333;"> is runnable in embedded mode effortlessly:</span>
 
 <pre class="lang:java decode:true">package com.example.ws;
 
@@ -316,7 +316,7 @@ public class ServerStarter  {
 &nbsp;
 
 <p style="text-align: justify;">
-  <span style="color: #333333;">The most important part of the snippet above is </span><b style="color: #333333;">WebSocketServerContainerInitializer.configureContext</b><span style="color: #333333;">: it&#8217;s actually creates the instance of </span><a style="color: #888855;" href="http://www.w3.org/TR/websockets/">WebSockets</a><span style="color: #333333;"> container. Because we haven&#8217;t added any endpoints yet, the container basically sits here and does nothing. </span><a style="color: #888855;" href="http://projects.spring.io/spring-framework/">Spring Framework</a><span style="color: #333333;"> and </span><b style="color: #333333;">AppConfig</b><span style="color: #333333;"> configuration class will do this last wiring for us.</span>
+  <span style="color: #333333;">The most important part of the snippet above is </span><b style="color: #333333;">WebSocketServerContainerInitializer.configureContext</b><span style="color: #333333;">: it&#8217;s actually creates the instance of </span><a style="color: #888855;" href="https://www.w3.org/TR/websockets/">WebSockets</a><span style="color: #333333;"> container. Because we haven&#8217;t added any endpoints yet, the container basically sits here and does nothing. </span><a style="color: #888855;" href="https://projects.spring.io/spring-framework/">Spring Framework</a><span style="color: #333333;"> and </span><b style="color: #333333;">AppConfig</b><span style="color: #333333;"> configuration class will do this last wiring for us.</span>
 </p>
 
 <pre class="lang:java decode:true ">package com.example.config;
@@ -373,7 +373,7 @@ public class AppConfig  {
 }</pre>
 
 <p style="text-align: justify;">
-  As we mentioned earlier, by default container will create new instance of server endpoint every time new client connects, and it does so by calling constructor, in our case <b>BroadcastServerEndpoint.class.newInstance()</b>. It might be a desired behavior but because we are using <a style="color: #888855;" href="http://projects.spring.io/spring-framework/">Spring Framework</a> and dependency injection, such new objects are basically unmanaged beans. Thanks to very well-thought (in my opinion) design of <a style="color: #888855;" href="http://jcp.org/en/jsr/detail?id=356">JSR-356</a>, it&#8217;s actually quite easy to provide your own way of creating endpoint instances by implementing <b>ServerEndpointConfig.Configurator</b>.
+  As we mentioned earlier, by default container will create new instance of server endpoint every time new client connects, and it does so by calling constructor, in our case <b>BroadcastServerEndpoint.class.newInstance()</b>. It might be a desired behavior but because we are using <a style="color: #888855;" href="https://projects.spring.io/spring-framework/">Spring Framework</a> and dependency injection, such new objects are basically unmanaged beans. Thanks to very well-thought (in my opinion) design of <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=356">JSR-356</a>, it&#8217;s actually quite easy to provide your own way of creating endpoint instances by implementing <b>ServerEndpointConfig.Configurator</b>.
 </p>
 
 <p style="text-align: justify;">
@@ -381,7 +381,7 @@ public class AppConfig  {
 </p>
 
 <p style="text-align: justify;">
-  The way we retrieve the <a style="color: #888855;" href="http://www.w3.org/TR/websockets/">WebSockets</a> container is <a style="color: #888855;" href="http://www.eclipse.org/jetty">Jetty</a>-specific: from the attribute of the context with name<b>&#8220;javax.websocket.server.ServerContainer&#8221;</b> (it probably might change in the future). Once container is there, we are just adding new (managed!) endpoint by providing our own <b>ServerEndpointConfig</b> (based on <b>AnnotatedServerEndpointConfig</b> which <a style="color: #888855;" href="http://www.eclipse.org/jetty">Jetty</a> kindly provides already).
+  The way we retrieve the <a style="color: #888855;" href="https://www.w3.org/TR/websockets/">WebSockets</a> container is <a style="color: #888855;" href="https://www.eclipse.org/jetty">Jetty</a>-specific: from the attribute of the context with name<b>&#8220;javax.websocket.server.ServerContainer&#8221;</b> (it probably might change in the future). Once container is there, we are just adding new (managed!) endpoint by providing our own <b>ServerEndpointConfig</b> (based on <b>AnnotatedServerEndpointConfig</b> which <a style="color: #888855;" href="https://www.eclipse.org/jetty">Jetty</a> kindly provides already).
 </p>
 
 <p style="color: #333333;">
@@ -461,7 +461,7 @@ INFO: Received message 'Message #10' from '392f68ef'
 2013-11-29 21:21:39.260:INFO:oejwc.WebSocketClient:main: Stopped org.eclipse.jetty.websocket.client.WebSocketClient@3af5f6dc</pre>
 
 <p style="text-align: justify;">
-  Awesome! I hope this introductory blog post shows how easy it became to use modern web communication protocols in Java, thanks to <a style="color: #888855;" href="http://jcp.org/en/jsr/detail?id=356">Java WebSockets (JSR-356)</a>, <a style="color: #888855;" href="http://jcp.org/en/jsr/detail?id=353">Java API for JSON Processing (JSR-353)</a> and great projects such as <a style="color: #888855;" href="http://www.eclipse.org/jetty/documentation/current/jetty-javaee.html">Jetty 9.1</a>!
+  Awesome! I hope this introductory blog post shows how easy it became to use modern web communication protocols in Java, thanks to <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=356">Java WebSockets (JSR-356)</a>, <a style="color: #888855;" href="https://jcp.org/en/jsr/detail?id=353">Java API for JSON Processing (JSR-353)</a> and great projects such as <a style="color: #888855;" href="https://www.eclipse.org/jetty/documentation/current/jetty-javaee.html">Jetty 9.1</a>!
 </p>
 
 <p style="color: #333333;">
@@ -469,11 +469,11 @@ INFO: Received message 'Message #10' from '392f68ef'
 </p>
 
 <p class="note_normal" style="color: #333333;">
-  Published at Codepedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="http://aredko.blogspot.de/2013/11/java-websockets-jsr-356-on-jetty-91.html" href="http://aredko.blogspot.de/2013/11/java-websockets-jsr-356-on-jetty-91.html" target="_blank">Java WebSockets (JSR-356) on Jetty 9.1</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com/" target="_blank">http://aredko.blogspot.com</a>
+  Published at Codepedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="https://aredko.blogspot.de/2013/11/java-websockets-jsr-356-on-jetty-91.html" href="https://aredko.blogspot.de/2013/11/java-websockets-jsr-356-on-jetty-91.html" target="_blank">Java WebSockets (JSR-356) on Jetty 9.1</a> from <a title="https://aredko.blogspot.com" href="https://aredko.blogspot.com/" target="_blank">https://aredko.blogspot.com</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" />
 
   <p id="about_author_header">
     Andriy Redko {devmind}
@@ -485,7 +485,7 @@ INFO: Received message 'Message #10' from '392f68ef'
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://aredko.blogspot.com" target="_blank"> </a> <a class="icon-github" href="https://github.com/reta" target="_blank"> </a>
+      <a class="icon-earth" href="https://aredko.blogspot.com" target="_blank"> </a> <a class="icon-github" href="https://github.com/reta" target="_blank"> </a>
     </div>
 
     <div class="clear">

@@ -135,7 +135,7 @@ The simplest way is to use the Chrome Developer Tools debugger, and set a breakp
 
 When the first timeout gets hit, the closure will show up in the Scope Variables panel of the debugger:
 
-<img class="aligncenter" src="http://i.imgur.com/WMRwmsi.jpg" alt="Viewing the Javascript closure" />
+<img class="aligncenter" src="https://i.imgur.com/WMRwmsi.jpg" alt="Viewing the Javascript closure" />
 
 As we can see, the closure is just a simple data structure with links to the variables that the function needs to &#8216;remember&#8217;, in this case the _i_ variable.
 
@@ -224,7 +224,7 @@ Javascript closures are a powerful feature that is mostly transparent in the day
 </p>
 
 <p class="note_normal" style="color: #3a4145;">
-  Published at Codepedia.org with permission of Aleksey Novik &#8211; source <a title="http://blog.jhades.org/really-understanding-javascript-closures/" href="http://blog.jhades.org/really-understanding-javascript-closures/" target="_blank"><em>Really Understanding Javascript Closures</em></a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik &#8211; source <a title="https://blog.jhades.org/really-understanding-javascript-closures/" href="https://blog.jhades.org/really-understanding-javascript-closures/" target="_blank"><em>Really Understanding Javascript Closures</em></a> from <a title="https://blog.jhades.org/" href="https://blog.jhades.org/" target="_blank">https://blog.jhades.org/</a>
 </p>
 
 <p style="color: #3a4145;">
@@ -241,7 +241,7 @@ Javascript closures are a powerful feature that is mostly transparent in the day
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-        <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
+        <a class="icon-earth" href="https://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
       </div>
 
       <div class="clear">

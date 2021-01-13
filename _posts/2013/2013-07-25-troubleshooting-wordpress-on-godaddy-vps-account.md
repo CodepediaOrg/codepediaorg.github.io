@@ -18,7 +18,7 @@ tags:
 My first entry in the blogosphere is not &#8220;About us&#8221;, but about the problems I encountered trying to install WordPress on my GoDaddy Virtual Private Server (VPS).
 
 <p class="western">
-  For the installation I followed the steps from <a title="Codex Installing WordPress" href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a>. Everything went fine until <em>Step 5: Run the Install Script</em>. After calling <tt>http://codepedia.org/wp-admin/install.php</tt> , my excitement to have finished quickly finished the installation was ruined by the infamous
+  For the installation I followed the steps from <a title="Codex Installing WordPress" href="https://codex.wordpress.org/Installing_WordPress">Installing WordPress</a>. Everything went fine until <em>Step 5: Run the Install Script</em>. After calling <tt>https://www.codepedia.org/wp-admin/install.php</tt> , my excitement to have finished quickly finished the installation was ruined by the infamous
 </p>
 
 <p class="western" style="padding-left: 30px;">
@@ -45,13 +45,13 @@ UserDir enabled my_user
 
 , this problem was solved.
 
-But when trying run the install script <tt>http://codepedia.org/wp-admin/install.php</tt> again, I got another infamous HTTP error code &#8211; 403
+But when trying run the install script <tt>https://www.codepedia.org/wp-admin/install.php</tt> again, I got another infamous HTTP error code &#8211; 403
 
 <p style="padding-left: 30px;">
   <em><strong>Forbidden</strong> </em><br /> <em>You don&#8217;t have permission to access / on this server.</em><br /> <em>Additionally, a 403 Forbidden error was encountered while trying to use an ErrorDocument to handle the request.</em>
 </p>
 
-The cause was the same &#8211; uploading the files over SSH and not having the right file permissions. After <a title="Codex WordPress Changing File Permissions" href="http://codex.wordpress.org/Changing_File_Permissions" target="_blank">setting the proper file permissions</a> the problem was solved.
+The cause was the same &#8211; uploading the files over SSH and not having the right file permissions. After <a title="Codex WordPress Changing File Permissions" href="https://codex.wordpress.org/Changing_File_Permissions" target="_blank">setting the proper file permissions</a> the problem was solved.
 
 My third attempt to execute the install script ended also in failure &#8211; this time
 

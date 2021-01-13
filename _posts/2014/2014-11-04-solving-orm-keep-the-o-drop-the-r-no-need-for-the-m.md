@@ -38,7 +38,7 @@ tags:
   We would then expect that this is by know a well understood problem. But what are developers saying these days about Hibernate and ORM?
 </p>
 
-Let&#8217;s take some quotes from two recent posts on this topic: [Thoughts on Hibernate](http://java.dzone.com/articles/thoughts-hibernate) and [JPA Hibernate Alternatives](http://java.dzone.com/articles/jpa-hibernate-alternatives):
+Let&#8217;s take some quotes from two recent posts on this topic: [Thoughts on Hibernate](https://java.dzone.com/articles/thoughts-hibernate) and [JPA Hibernate Alternatives](https://java.dzone.com/articles/jpa-hibernate-alternatives):
 
 > There are performance problems related to using Hibernate
 >
@@ -51,11 +51,11 @@ Let&#8217;s take some quotes from two recent posts on this topic: [Thoughts on H
 </p>
 
 <p style="text-align: justify;">
-  Who hasn&#8217;t had to maintain that application that uses <a href="http://blog.jhades.org/open-session-in-view-pattern-pros-and-cons/">Open Session In View</a> pattern that generated a flood of SQL requests that took weeks to optimize?
+  Who hasn&#8217;t had to maintain that application that uses <a href="https://blog.jhades.org/open-session-in-view-pattern-pros-and-cons/">Open Session In View</a> pattern that generated a flood of SQL requests that took weeks to optimize?
 </p>
 
 <p style="text-align: justify;">
-  I believe it literally can take a couple of years to really understand Hibernate, lot&#8217;s of practice and several readings of the <a href="http://www.manning.com/bauer3/">Java Persistence with Hibernate</a> book (still 600 pages in it&#8217;s upcoming second edition).
+  I believe it literally can take a couple of years to really understand Hibernate, lot&#8217;s of practice and several readings of the <a href="https://www.manning.com/bauer3/">Java Persistence with Hibernate</a> book (still 600 pages in it&#8217;s upcoming second edition).
 </p>
 
 ### Are the criticisms on Hibernate warranted? {#arethecriticismsonhibernatewarranted}
@@ -79,10 +79,10 @@ Let&#8217;s take some quotes from two recent posts on this topic: [Thoughts on H
 </p>
 
 <p style="text-align: justify;">
-  ORM has been famously named almost 10 years ago the Vietnam of Computer Science, in a <a href="http://blog.codinghorror.com/object-relational-mapping-is-the-vietnam-of-computer-science/">blog post</a> from one of the creators of Stackoverflow, <a href="http://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a>.
+  ORM has been famously named almost 10 years ago the Vietnam of Computer Science, in a <a href="https://blog.codinghorror.com/object-relational-mapping-is-the-vietnam-of-computer-science/">blog post</a> from one of the creators of Stackoverflow, <a href="https://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a>.
 </p>
 
-The problems of ORM are well known and we won&#8217;t go through them in detail here, here is a [summary](http://martinfowler.com/bliki/OrmHate.html) from Martin Fowler on why ORM is hard:
+The problems of ORM are well known and we won&#8217;t go through them in detail here, here is a [summary](https://martinfowler.com/bliki/OrmHate.html) from Martin Fowler on why ORM is hard:
 
   * object identity vs database identity
   * How to map object oriented inheritance in the relational world
@@ -106,7 +106,7 @@ Given this, when should we use Hibernate and ORM in general?
 ### When does ORM make sense ? {#whendoesormmakesense}
 
 <p style="text-align: justify;">
-  ORM makes sense when the project at hand is being done using a <a href="http://en.wikipedia.org/wiki/Domain-driven_design">Domain Driven Development</a> approach, where the whole program is built around a set of core classes called the domain model, that represent concepts in the real world such as <code>Customer</code>, <code>Invoice</code>, etc.
+  ORM makes sense when the project at hand is being done using a <a href="https://en.wikipedia.org/wiki/Domain-driven_design">Domain Driven Development</a> approach, where the whole program is built around a set of core classes called the domain model, that represent concepts in the real world such as <code>Customer</code>, <code>Invoice</code>, etc.
 </p>
 
 <p style="text-align: justify;">
@@ -127,7 +127,7 @@ Someone once said something like this:
   As often happens in programming, we can find the solution by going back to the beginning and see what we are trying to solve:
 </p>
 
-![ORM](http://martinfowler.com/bliki/images/ormHate/sketch.png)
+![ORM](https://martinfowler.com/bliki/images/ormHate/sketch.png)
 
 <p style="text-align: justify;">
   So we are trying to synchronize an in-memory <em>graph</em> of objects with a set of tables. But these are two completely different types of data structures!
@@ -153,9 +153,9 @@ This solves the mapping problem, by removing the need for mapping in the first p
 
 ### A production-ready solution for the ORM problem {#aproductionreadysolutionfortheormproblem}
 
-This is easier said than done, or is it? It turns out that graph databases have been around for years, and the prime example in the Java community is [Neo4j](http://www.neo4j.org/).
+This is easier said than done, or is it? It turns out that graph databases have been around for years, and the prime example in the Java community is [Neo4j](https://www.neo4j.org/).
 
-Neo4j is a stable product that is well understood and documented, see the [Neo4J in Action](http://www.manning.com/partner/) book. It can used as an external server or in embedded mode inside the Java process itself.
+Neo4j is a stable product that is well understood and documented, see the [Neo4J in Action](https://www.manning.com/partner/) book. It can used as an external server or in embedded mode inside the Java process itself.
 
 But it&#8217;s core API is all about graphs and nodes, something like this:
 
@@ -176,11 +176,11 @@ This is the typical task of a framework like Hibernate, with the big difference 
 ### Spring Data Neo4J {#springdataneo4j}
 
 <p style="text-align: justify;">
-  One of the creators of the Spring framework Rod Johnson took the task of implementing himself the initial version of the Neo4j integration, the <a href="http://projects.spring.io/spring-data-neo4j/">Spring Data Neo4j</a> project.
+  One of the creators of the Spring framework Rod Johnson took the task of implementing himself the initial version of the Neo4j integration, the <a href="https://projects.spring.io/spring-data-neo4j/">Spring Data Neo4j</a> project.
 </p>
 
 <p style="text-align: justify;">
-  This is an important extract from the <a href="http://docs.spring.io/spring-data/data-neo4j/docs/3.2.0.RELEASE/reference/html/#foreword">foreword</a> of Rod Johnson in the documentation concerning the design of the framework:
+  This is an important extract from the <a href="https://docs.spring.io/spring-data/data-neo4j/docs/3.2.0.RELEASE/reference/html/#foreword">foreword</a> of Rod Johnson in the documentation concerning the design of the framework:
 </p>
 
 > <p style="text-align: justify;">
@@ -196,7 +196,7 @@ It&#8217;s aimed to write the persistence layer of the application in a simplifi
 ### How does the mapping to a graph database look like {#howdoesthemappingtoagraphdatabaselooklike}
 
 <p style="text-align: justify;">
-  It turns out that there is limited mapping needed (<a href="http://docs.spring.io/spring-data/data-neo4j/docs/3.2.0.RELEASE/reference/html/#tutorial_annotations">tutorial</a>). We need for one to mark which classes we want to make persistent, and define a field that will act as an Id:
+  It turns out that there is limited mapping needed (<a href="https://docs.spring.io/spring-data/data-neo4j/docs/3.2.0.RELEASE/reference/html/#tutorial_annotations">tutorial</a>). We need for one to mark which classes we want to make persistent, and define a field that will act as an Id:
 </p>
 
 <pre class="lang:java decode:true">@NodeEntity
@@ -215,7 +215,7 @@ class Movie {
 
 ### What does the query language look like? {#whatdoesthequerylanguagelooklike}
 
-The recommended query language is [Cypher](http://www.neo4j.org/learn/cypher), that is an ASCII art based language. A query can look for example like this:
+The recommended query language is [Cypher](https://www.neo4j.org/learn/cypher), that is an ASCII art based language. A query can look for example like this:
 
 <pre class="lang:java decode:true ">// returns users who rated a movie based on movie title (movieTitle parameter) higher than rating (rating parameter)
     @Query("start movie=node:Movie(title={0}) " +
@@ -251,7 +251,7 @@ There is more to say here, but there is no indication (no readilly-available DDD
 
 ### Prefer a JPA based solution? {#preferajpabasedsolution}
 
-The Hibernate team has written [Hibernate OGM](http://hibernate.org/ogm/), which provides JPA support for many NoSQL data stores, including Neo4j.
+The Hibernate team has written [Hibernate OGM](https://hibernate.org/ogm/), which provides JPA support for many NoSQL data stores, including Neo4j.
 
 ### Conclusions {#conclusions}
 
@@ -286,7 +286,7 @@ The Hibernate team has written [Hibernate OGM](http://hibernate.org/ogm/), which
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codepedia.org with permission of Aleksey Novik – source <a title="http://blog.jhades.org/solving-orm-complexity-keep-the-o-drop-the-r-no-need-for-the-m/" href="http://blog.jhades.org/solving-orm-complexity-keep-the-o-drop-the-r-no-need-for-the-m/" target="_blank">Solving ORM &#8211; Keep the O, Drop the R, no need for the M</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik – source <a title="https://blog.jhades.org/solving-orm-complexity-keep-the-o-drop-the-r-no-need-for-the-m/" href="https://blog.jhades.org/solving-orm-complexity-keep-the-o-drop-the-r-no-need-for-the-m/" target="_blank">Solving ORM &#8211; Keep the O, Drop the R, no need for the M</a> from <a title="https://blog.jhades.org/" href="https://blog.jhades.org/" target="_blank">https://blog.jhades.org/</a>
 </p>
 
 <p style="text-align: justify;">
@@ -303,7 +303,7 @@ The Hibernate team has written [Hibernate OGM](http://hibernate.org/ogm/), which
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-        <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
+        <a class="icon-earth" href="https://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
       </div>
 
       <div class="clear">

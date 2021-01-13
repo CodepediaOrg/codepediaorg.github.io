@@ -45,7 +45,7 @@ tags:
 </div>
 
 <p style="text-align: justify;">
-  As mentioned in <a title="Story of Podcastpedia.org" href="https://www.codepedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia</a>, the next thing that needed urgent improvement on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, was to make the website more user friendly for mobile users. This post will present how, with the help of <a title="Spring Mobile " href="http://www.springsource.org/spring-mobile" target="_blank">Spring Mobile</a>, the website can detect now if the request is coming from a mobile device and act accordingly: it displays a mobile view employing some responsive design features, while also offering the possibility to choose the preferred way (desktop or mobile) for displaying the web pages.
+  As mentioned in <a title="Story of Podcastpedia.org" href="https://www.codepedia.org/ama/story-of-podcastpedia-org/" target="_blank">Story of Podcastpedia</a>, the next thing that needed urgent improvement on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, was to make the website more user friendly for mobile users. This post will present how, with the help of <a title="Spring Mobile " href="https://www.springsource.org/spring-mobile" target="_blank">Spring Mobile</a>, the website can detect now if the request is coming from a mobile device and act accordingly: it displays a mobile view employing some responsive design features, while also offering the possibility to choose the preferred way (desktop or mobile) for displaying the web pages.
 </p>
 
 ## <span id="1_Dependency">1. Dependency</span>
@@ -90,7 +90,7 @@ and secondly <span style="line-height: 1.5;"> a </span>`DeviceResolverHandlerI
 ### <span id="21_DeviceResolverHandlerInterceptor"><span style="font-family: Bitter, Georgia, serif; font-size: 22px; line-height: 1.3;">2.1. DeviceResolverHandlerInterceptor</span></span>
 
 <p style="text-align: justify;">
-  The <code>DeviceResolverHandlerInterceptor</code> is a <code>HandlerInterceptor</code> that, on <code>preHandle</code>, delegates to a <code>DeviceResolver</code>. The resolved Device is indexed under a request attribute named <code>'currentDevice'</code>, making it available to handlers throughout request processing. The default <code>DeviceResolver</code> implementation used for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is based on the &#8220;lite&#8221; <a href="http://plugins.trac.wordpress.org/browser/wordpress-mobile-pack/trunk/plugins/wpmp_switcher/lite_detection.php" target="_top">detection algorithm</a> implemented as part of the <a href="http://wordpress.org/extend/plugins/wordpress-mobile-pack" target="_top">WordPress Mobile Pack</a>. This resolver only detects the presence of a mobile or tablet device, and does not detect specific capabilities. No special configuration is required to enable this resolver.
+  The <code>DeviceResolverHandlerInterceptor</code> is a <code>HandlerInterceptor</code> that, on <code>preHandle</code>, delegates to a <code>DeviceResolver</code>. The resolved Device is indexed under a request attribute named <code>'currentDevice'</code>, making it available to handlers throughout request processing. The default <code>DeviceResolver</code> implementation used for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is based on the &#8220;lite&#8221; <a href="https://plugins.trac.wordpress.org/browser/wordpress-mobile-pack/trunk/plugins/wpmp_switcher/lite_detection.php" target="_top">detection algorithm</a> implemented as part of the <a href="https://wordpress.org/extend/plugins/wordpress-mobile-pack" target="_top">WordPress Mobile Pack</a>. This resolver only detects the presence of a mobile or tablet device, and does not detect specific capabilities. No special configuration is required to enable this resolver.
 </p>
 
 ### <span id="22_SitePreferenceHandlerInterceptor">2.2. SitePreferenceHandlerInterceptor</span>
@@ -171,7 +171,7 @@ Behind the image the `currentSitePreference` parameter is set to either _mobile_
 ## <span id="3_CSS3_and_responsive_design">3. CSS3 and responsive design</span>
 
 <p style="text-align: justify;">
-  In the end I want to present some modifications I made to the original css file to allow responsive design capabilities. The main difference was to use <a title="Mediy query" href="http://en.wikipedia.org/wiki/Media_queries" target="_blank">media queries</a> to shrink image sizes, modify widths, widths percentages, hide some elements:
+  In the end I want to present some modifications I made to the original css file to allow responsive design capabilities. The main difference was to use <a title="Mediy query" href="https://en.wikipedia.org/wiki/Media_queries" target="_blank">media queries</a> to shrink image sizes, modify widths, widths percentages, hide some elements:
 </p>
 
 <pre class="lang:css decode:true" title="CSS snippet with media query">@media screen and (max-width: 480px) {
@@ -190,7 +190,7 @@ Behind the image the `currentSitePreference` parameter is set to either _mobile_
 .....
 }</pre>
 
-On the <a title="Podcastpedia.org, knowledge to go - mobile" href="https://github.com/CodepediaOrg/podcastpedia/?site_preference=mobile" target="_blank">home page, </a>the <a title="Responsive Grid System" href="http://www.responsivegridsystem.com/" target="_blank">Responsive Grid System</a> was used to allow the podcast charts to slide under each other when the screen-width becomes small enough. Thank you very much Graham Miller for this:
+On the <a title="Podcastpedia.org, knowledge to go - mobile" href="https://github.com/CodepediaOrg/podcastpedia/?site_preference=mobile" target="_blank">home page, </a>the <a title="Responsive Grid System" href="https://www.responsivegridsystem.com/" target="_blank">Responsive Grid System</a> was used to allow the podcast charts to slide under each other when the screen-width becomes small enough. Thank you very much Graham Miller for this:
 
 <div id="attachment_565" style="width: 310px" class="wp-caption alignnone">
   <a href="{{site.url}}/wp-content/uploads/2013/09/home-page-responsiveness.png"><img class="size-medium wp-image-565  " src="{{site.url}}/wp-content/uploads/2013/09/home-page-responsiveness-300x165.png" alt="home page responsiveness" width="300" height="165" srcset="{{site.url}}/wp-content/uploads/2013/09/home-page-responsiveness-300x165.png 300w, {{site.url}}/wp-content/uploads/2013/09/home-page-responsiveness-624x345.png 624w, {{site.url}}/wp-content/uploads/2013/09/home-page-responsiveness.png 1020w" sizes="(max-width: 300px) 100vw, 300px" /></a>
@@ -200,7 +200,7 @@ On the <a title="Podcastpedia.org, knowledge to go - mobile" href="https://githu
   </p>
 </div>
 
-You can download the complete css file <a title="CSS file mobile" href="http://podcastpedia.org/static/css/style.min.m.css" target="_blank">here</a> (media queries can be found right at the end of the file).
+You can download the complete css file <a title="CSS file mobile" href="https://podcastpedia.org/static/css/style.min.m.css" target="_blank">here</a> (media queries can be found right at the end of the file).
 
 Apart from just modifying the css file, second `.jsp` files for mobile (e.g. `podcastDetails<strong>_m</strong>.jsp`) were added, in which some parts, present in the destkop version, were removed to speed up things on mobile. As mentioned in the post <a title="How To: Enable compression and leverage browser caching with Apache Server" href="https://www.codepedia.org/ama/how-to-enable-compression-and-leverage-browser-caching-with-apache-server/" target="_blank">How To: Enable compression and leverage browser caching with Apache Server</a>, using Google&#8217;s <a title="PageSpeed Insights" href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a> to test how your web pages perform on mobile and desktop is highly recommended.
 
@@ -212,7 +212,7 @@ We promise to only share high quality podcasts and episodes.
 
 ## <span id="4_References">4. References</span>
 
-  1. <a title="Spring Mobile" href="http://www.springsource.org/spring-mobile" target="_blank">Spring Mobile</a>
-  2. <a title="Spring Mobile Hello World Example" href="http://www.srccodes.com/p/article/25/spring-mobile-hello-world-example-that-includes-deviceresolver-sitepreference-urlpath-siteswitcher-and-litedevicedelegatingviewresolver" target="_blank">Spring Mobile Hello World Example that includes DeviceResolver, SitePreference, urlPath SiteSwitcher and LiteDeviceDelegatingViewResolver</a> (Abhijit Ghosh)
-  3. <a title="Media queries" href="http://css-tricks.com/snippets/css/media-queries-for-standard-devices/" target="_blank">Media queries for standard devices</a>
-  4. <a title="Responsive Grid System" href="http://www.responsivegridsystem.com/" target="_blank">Responsive Grid System</a>
+  1. <a title="Spring Mobile" href="https://www.springsource.org/spring-mobile" target="_blank">Spring Mobile</a>
+  2. <a title="Spring Mobile Hello World Example" href="https://www.srccodes.com/p/article/25/spring-mobile-hello-world-example-that-includes-deviceresolver-sitepreference-urlpath-siteswitcher-and-litedevicedelegatingviewresolver" target="_blank">Spring Mobile Hello World Example that includes DeviceResolver, SitePreference, urlPath SiteSwitcher and LiteDeviceDelegatingViewResolver</a> (Abhijit Ghosh)
+  3. <a title="Media queries" href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/" target="_blank">Media queries for standard devices</a>
+  4. <a title="Responsive Grid System" href="https://www.responsivegridsystem.com/" target="_blank">Responsive Grid System</a>

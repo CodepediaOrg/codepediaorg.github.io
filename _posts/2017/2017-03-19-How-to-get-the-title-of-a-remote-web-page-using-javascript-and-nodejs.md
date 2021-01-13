@@ -101,7 +101,7 @@ If there is no error and we receive an <span class="highlight-yellow">HTTP 200 O
 Once loaded we call the  `text()`[^5] function to get the content of the `title` element and also identify the meta description content.
 We return them both in a custom `webpage` object. If I am not satisfied with the title or the description I can edit it manually after.
 
-[^5]: <http://api.jquery.com/text/>
+[^5]: <https://api.jquery.com/text/>
 
 
 {% include action-to-star-bookmarksdev-on-github.html %}

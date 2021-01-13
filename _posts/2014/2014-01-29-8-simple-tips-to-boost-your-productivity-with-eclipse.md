@@ -443,10 +443,10 @@ you can automate some of the boring tasks like format source code, organize impo
 
 ### <span id="Web">Web</span>
 
-  * <a title="http://www.vogella.com/tutorials/EclipseShortcuts/article.html" href="http://www.vogella.com/tutorials/EclipseShortcuts/article.html" target="_blank">http://www.vogella.com/tutorials/EclipseShortcuts/article.html</a>
-  * <a title="http://eclipse.dzone.com/news/effective-eclipse-shortcut-key" href="http://eclipse.dzone.com/news/effective-eclipse-shortcut-key" target="_blank">Effective Eclipse: Shortcut keys</a>
-  * <a title="http://eclipse.dzone.com/news/visual-guide-templates-eclipse" href="http://eclipse.dzone.com/news/visual-guide-templates-eclipse" target="_blank">Visual Guide to Templates in Eclipse</a>
-  * <a title="http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Feditor%2Fref-preferences-save-actions.htm" href="http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Feditor%2Fref-preferences-save-actions.htm" target="_blank">Java Save Actions Preferences</a>
+  * <a title="https://www.vogella.com/tutorials/EclipseShortcuts/article.html" href="https://www.vogella.com/tutorials/EclipseShortcuts/article.html" target="_blank">https://www.vogella.com/tutorials/EclipseShortcuts/article.html</a>
+  * <a title="https://eclipse.dzone.com/news/effective-eclipse-shortcut-key" href="https://eclipse.dzone.com/news/effective-eclipse-shortcut-key" target="_blank">Effective Eclipse: Shortcut keys</a>
+  * <a title="https://eclipse.dzone.com/news/visual-guide-templates-eclipse" href="https://eclipse.dzone.com/news/visual-guide-templates-eclipse" target="_blank">Visual Guide to Templates in Eclipse</a>
+  * <a title="https://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Feditor%2Fref-preferences-save-actions.htm" href="https://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Feditor%2Fref-preferences-save-actions.htm" target="_blank">Java Save Actions Preferences</a>
 
 ### <span id="Codingpedia">Codingpedia</span>
 

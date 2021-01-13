@@ -134,7 +134,7 @@ Ideally, the build for an Angular project would:
 
 ### <span id="A_working_build_and_sample_App">A working build and sample App</span> {#aworkingbuildandsampleapp}
 
-In order to make it more concrete, here is the [build](https://github.com/jhades/angularjs-gulp-todo/blob/master/gulpfile.js) and applied it to a sample app: the TODO App from the [TODO MVC](http://todomvc.com/) project. You can try out the sample app [here](http://jhades.github.io/angularjs-gulp-todo/todo-app.html).
+In order to make it more concrete, here is the [build](https://github.com/jhades/angularjs-gulp-todo/blob/master/gulpfile.js) and applied it to a sample app: the TODO App from the [TODO MVC](https://todomvc.com/) project. You can try out the sample app [here](https://jhades.github.io/angularjs-gulp-todo/todo-app.html).
 
 <p style="text-align: justify;">
   The build and sample app are also available in this <a href="https://github.com/jhades/angularjs-gulp-todo">Github repository</a>.<br /> In the next following sections we will go over a proposed toolchain for Angular projects, and walk through the Gulp build that provides those features.
@@ -142,7 +142,7 @@ In order to make it more concrete, here is the [build](https://github.com/jhades
 
 ### <span id="Why_use_a_CSS_pre-processor_and_why_Sass">Why use a CSS pre-processor, and why Sass</span> {#whyuseacsspreprocessorandwhysass}
 
-To quote the yearly Thoughworks [Technology radar](http://www.thoughtworks.com/radar/languages-and-frameworks/handwritten-css) from last year:
+To quote the yearly Thoughworks [Technology radar](https://www.thoughtworks.com/radar/languages-and-frameworks/handwritten-css) from last year:
 
 > We believe that the days of handwritten CSS, for anything apart from trivial work, are over.
 
@@ -161,16 +161,16 @@ In order to produce maintainable CSS, we really need today:
   * the ability to define CSS &#8216;functions&#8217;
 
 <p style="text-align: justify;">
-  All these features are provided by the multiple CSS pre-processors available today, the difficulty being how to choose one. The two main ones are <a href="http://sass-lang.com/">Sass</a> and <a href="http://lesscss.org/">Less</a>.
+  All these features are provided by the multiple CSS pre-processors available today, the difficulty being how to choose one. The two main ones are <a href="https://sass-lang.com/">Sass</a> and <a href="https://lesscss.org/">Less</a>.
 </p>
 
-Many libraries are built on top of these pre-processors that encapsulate commonly used patterns, see for example the Sass [Compass](http://compass-style.org/) library.
+Many libraries are built on top of these pre-processors that encapsulate commonly used patterns, see for example the Sass [Compass](https://compass-style.org/) library.
 
 #### <span id="Sass_or_Less">Sass or Less?</span> {#sassorless}
 
 The Less pre-processor would seem to be a better choice for a node-based build, as its also a node-based tool.
 
-But today Sass is not tied to the Ruby tool-chain anymore, as there is a C implementation of Sass ([libsass](http://libsass.org/)) that allows for fast Sass compilation in a node environment, via plugins like [gulp-sass](https://github.com/dlmanning/gulp-sass).
+But today Sass is not tied to the Ruby tool-chain anymore, as there is a C implementation of Sass ([libsass](https://libsass.org/)) that allows for fast Sass compilation in a node environment, via plugins like [gulp-sass](https://github.com/dlmanning/gulp-sass).
 
 Also, the industry seems to be converging around Sass: see for example this post on [css-tricks](https://css-tricks.com/sass-vs-less/). In the end, the three main reasons that I decided to opt for Sass where:
 
@@ -207,18 +207,18 @@ Besides solving those common problems out of the box, using a module system enco
   * simplify and better enable testing
 
 <p style="text-align: justify;">
-  But the industry is very fragmented in what concerns module systems: there is <a href="http://requirejs.org/">requireJs</a>, <a href="http://wiki.commonjs.org/wiki/CommonJS">CommonJs</a>, <a href="http://browserify.org/">browserify</a>, <a href="http://www.2ality.com/2014/09/es6-modules-final.html">ES6 modules</a> to name but a few. So which one to choose?
+  But the industry is very fragmented in what concerns module systems: there is <a href="https://requirejs.org/">requireJs</a>, <a href="https://wiki.commonjs.org/wiki/CommonJS">CommonJs</a>, <a href="https://browserify.org/">browserify</a>, <a href="https://www.2ality.com/2014/09/es6-modules-final.html">ES6 modules</a> to name but a few. So which one to choose?
 </p>
 
 ### <span id="Why_CommonJs_is_appealing">Why CommonJs is appealing</span> {#whycommonjsisappealing}
 
-CommonJs is the same module system used by node in general. It is very simple to understand and use. If we need a module, say for example [express](http://expressjs.com/), we simply say:
+CommonJs is the same module system used by node in general. It is very simple to understand and use. If we need a module, say for example [express](https://expressjs.com/), we simply say:
 
 <pre class="lang:js decode:true ">var express = require('express');</pre>
 
 Importing a module is synchronous and very intuitive. The main advantage of this syntax is that there is no need to define a config file where all the dependencies are declared: we only need to point to the entry file, and the `require` calls will themselves implicitly document the dependency tree of Javascript files.
 
-CommonJs used to be a backend-only module system, until [browserify](http://browserify.org/) came along, allowing us to use the same familiar syntax also on the front-end.
+CommonJs used to be a backend-only module system, until [browserify](https://browserify.org/) came along, allowing us to use the same familiar syntax also on the front-end.
 
 ### <span id="Angular_now_officially_supports_browserify">Angular now officially supports browserify</span> {#angularnowofficiallysupportsbrowserify}
 
@@ -271,7 +271,7 @@ The Gulp recipe was adapted to fix one Angular-specific problem: minification su
 
 ### <span id="Angular-friendly_Javascript_minification">Angular-friendly Javascript minification</span> {#angularfriendlyjavascriptminification}
 
-Angular is well-known for needing an [extra build step](http://stackoverflow.com/questions/18782324/angularjs-minify-best-practice) before minification in order to support its dependency injection mechanism. Take for example this code line:
+Angular is well-known for needing an [extra build step](https://stackoverflow.com/questions/18782324/angularjs-minify-best-practice) before minification in order to support its dependency injection mechanism. Take for example this code line:
 
 <pre class="lang:js decode:true ">angular.factory('todoStorage', function ($http, ) { ...</pre>
 
@@ -374,7 +374,7 @@ The plugin [gulp-cachebust](https://www.npmjs.com/package/gulp-cachebust) was us
 ### <span id="Running_tests_with_Karma">Running tests with Karma</span> {#runningtestswithkarma}
 
 <p style="text-align: justify;">
-  One of the de-facto Angular test tool is the <a href="http://karma-runner.github.io/0.12/index.html">Karma</a> test runner, and one the most used testing frameworks with it is <a href="http://jasmine.github.io/">Jasmine</a>. The following Gulp task allows to run Jasmine tests from the command line against a headless <a title="http://phantomjs.org/" href="http://phantomjs.org/" target="_blank">PhantomJs</a> browser:
+  One of the de-facto Angular test tool is the <a href="https://karma-runner.github.io/0.12/index.html">Karma</a> test runner, and one the most used testing frameworks with it is <a href="https://jasmine.github.io/">Jasmine</a>. The following Gulp task allows to run Jasmine tests from the command line against a headless <a title="https://phantomjs.org/" href="https://phantomjs.org/" target="_blank">PhantomJs</a> browser:
 </p>
 
 <pre class="lang:js decode:true">gulp.task('test', ['build-js'], function() {
@@ -396,7 +396,7 @@ The plugin [gulp-cachebust](https://www.npmjs.com/package/gulp-cachebust) was us
 ### <span id="Code_quality_with_JsHint">Code quality with JsHint</span> {#codequalitywithjshint}
 
 <p style="text-align: justify;">
-  <a href="http://jshint.com/">JsHint</a> is one of the most used Javascript linters. The following gulp task allows to integrate it in our build cycle:
+  <a href="https://jshint.com/">JsHint</a> is one of the most used Javascript linters. The following gulp task allows to integrate it in our build cycle:
 </p>
 
 <pre class="lang:js decode:true ">gulp.task('jshint', function() {
@@ -431,5 +431,5 @@ The `gulp-webserver` plugin was configured to do exactly that in the following w
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codepedia.org with permission of Aleksey Novik – source <a title="http://blog.jhades.org/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/" href="http://blog.jhades.org/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/" target="_blank"><em>What every Angular project likely needs &#8211; and a Gulp build to provide it</em></a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik – source <a title="https://blog.jhades.org/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/" href="https://blog.jhades.org/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/" target="_blank"><em>What every Angular project likely needs &#8211; and a Gulp build to provide it</em></a> from <a title="https://blog.jhades.org/" href="https://blog.jhades.org/" target="_blank">https://blog.jhades.org/</a>
 </p></section>

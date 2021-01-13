@@ -124,7 +124,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://www.codepedia.org/wp-content/uploads/2014/10/catalin-armeanu-170.png" alt="Catalin Armeanu" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.armeanu.ro" target="_blank">Catalin Armeanu</a></strong>
+    <strong><a href="https://www.armeanu.ro" target="_blank">Catalin Armeanu</a></strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">
@@ -133,7 +133,7 @@ Our current Coding Friends:
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://www.en.armeanu.ro" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/armeanuart" target="_blank"> </a> <a class="icon-linkedin" href="http://lnkd.in/DDj_UC" target="_blank"> </a>
+      <a class="icon-earth" href="https://www.en.armeanu.ro" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/armeanuart" target="_blank"> </a> <a class="icon-linkedin" href="https://lnkd.in/DDj_UC" target="_blank"> </a>
     </div>
 
     <div class="clear">
@@ -142,7 +142,7 @@ Our current Coding Friends:
 </div>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.gravatar.com/avatar/4f603396c8723741d2665f87beb4d1f2?s=150&r=pg&d=mm" alt="Johannes Brodwall" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://1.gravatar.com/avatar/4f603396c8723741d2665f87beb4d1f2?s=150&r=pg&d=mm" alt="Johannes Brodwall" />
 
   <p id="about_author_header">
     <strong>Johannes Brodwall</strong>
@@ -154,7 +154,7 @@ Our current Coding Friends:
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://johannesbrodwall.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jhannes" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhannes" target="_blank"> </a>
+      <a class="icon-earth" href="https://johannesbrodwall.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/jhannes" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhannes" target="_blank"> </a>
     </div>
 
     <div class="clear">
@@ -170,7 +170,7 @@ Our current Coding Friends:
   </p>
 
   <div id="social_logos_up">
-    <a class="icon-earth" href="http://cwbuecheler.com/" target="_blank"> </a> <a class="icon-twitter" href="http://twitter.com/cwbuecheler" target="_blank"> </a>
+    <a class="icon-earth" href="https://cwbuecheler.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/cwbuecheler" target="_blank"> </a>
   </div>
 
   <div id="author_details" style="text-align: justify;">
@@ -205,7 +205,7 @@ Our current Coding Friends:
 </div>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" />
 
   <p id="about_author_header">
     <strong>Abhishek Gupta</strong>
@@ -217,7 +217,7 @@ Our current Coding Friends:
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://abhirockzz.wordpress.com/" target="_blank"> </a> <a class="icon-googleplus" href="http://plus.google.com/103167687788180890717/posts" target="_blank"> </a> <a class="icon-twitter" href="http://twitter.com/abhi_tweeter" target="_blank"> </a> <a class="icon-github" href="https://github.com/abhirockzz" target="_blank"> </a> <a class="icon-linkedin" href="http://in.linkedin.com/pub/abhishek-gupta/27/331/866" target="_blank"> </a>
+      <a class="icon-earth" href="https://abhirockzz.wordpress.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/103167687788180890717/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/abhi_tweeter" target="_blank"> </a> <a class="icon-github" href="https://github.com/abhirockzz" target="_blank"> </a> <a class="icon-linkedin" href="https://in.linkedin.com/pub/abhishek-gupta/27/331/866" target="_blank"> </a>
     </div>
 
     <div class="clear">
@@ -233,7 +233,7 @@ Our current Coding Friends:
   </p>
 
   <div id="social_logos_up">
-    <a class="icon-earth" href="http://keycloak.jboss.org/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/keycloak" target="_blank"> </a> <a class="icon-github" href="https://github.com/keycloak" target="_blank"> </a>
+    <a class="icon-earth" href="https://keycloak.jboss.org/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/keycloak" target="_blank"> </a> <a class="icon-github" href="https://github.com/keycloak" target="_blank"> </a>
   </div>
 
   <div id="author_details" style="text-align: justify;">
@@ -278,7 +278,7 @@ Our current Coding Friends:
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
+      <a class="icon-earth" href="https://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
     </div>
 
     <div class="clear">
@@ -299,7 +299,7 @@ Our current Coding Friends:
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
+      <a class="icon-earth" href="https://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
     </div>
 
     <div class="clear">
@@ -320,7 +320,7 @@ Our current Coding Friends:
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://www.sivalabs.in/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/+SivaPrasadReddy" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/sivalabs" target="_blank"> </a> <a class="icon-github" href="https://github.com/sivaprasadreddy/" target="_blank"> </a>
+      <a class="icon-earth" href="https://www.sivalabs.in/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/+SivaPrasadReddy" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/sivalabs" target="_blank"> </a> <a class="icon-github" href="https://github.com/sivaprasadreddy/" target="_blank"> </a>
     </div>
 
     <div class="clear">
@@ -329,7 +329,7 @@ Our current Coding Friends:
 </div>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" />
 
   <p id="about_author_header">
     Andriy Redko {devmind}
@@ -341,7 +341,7 @@ Our current Coding Friends:
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://aredko.blogspot.com" target="_blank"> </a> <a class="icon-github" href="https://github.com/reta" target="_blank"> </a>
+      <a class="icon-earth" href="https://aredko.blogspot.com" target="_blank"> </a> <a class="icon-github" href="https://github.com/reta" target="_blank"> </a>
     </div>
 
     <div class="clear">
@@ -357,7 +357,7 @@ Our current Coding Friends:
   </p>
 
   <div id="social_logos_up">
-    <a class="icon-earth" href="http://www.toptal.com/blog" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/toptalllc" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/Toptal-141928212544793/" target="_blank"> </a> <a class="icon-gplus" href="https://plus.google.com/+Toptalllc/posts" target="_blank"> </a>
+    <a class="icon-earth" href="https://www.toptal.com/blog" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/toptalllc" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/Toptal-141928212544793/" target="_blank"> </a> <a class="icon-gplus" href="https://plus.google.com/+Toptalllc/posts" target="_blank"> </a>
   </div>
 
   <div id="author_details" style="text-align: justify;">

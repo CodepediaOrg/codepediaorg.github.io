@@ -51,7 +51,7 @@ tags:
 </h2>
 
 <p style="color: #444444; text-align: justify;">
-  In my <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/">previous post</a> I introduced the <strong style="font-style: inherit;">entity state transitions</strong> <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" title="http://en.wikipedia.org/wiki/Object-relational_mapping" href="http://en.wikipedia.org/wiki/Object-relational_mapping">Object-relational mapping</a> paradigm.
+  In my <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/2014/07/30/a-beginners-guide-to-jpahibernate-entity-state-transitions/">previous post</a> I introduced the <strong style="font-style: inherit;">entity state transitions</strong> <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" title="https://en.wikipedia.org/wiki/Object-relational_mapping" href="https://en.wikipedia.org/wiki/Object-relational_mapping">Object-relational mapping</a> paradigm.
 </p>
 
 <p style="color: #444444; text-align: justify;">
@@ -71,15 +71,15 @@ tags:
 </p>
 
 <p style="color: #444444; text-align: justify;">
-  The flushed changes are visible only for the current database transaction. Until the current transaction is committed, no change is visible by <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/2014/01/05/a-beginners-guide-to-acid-and-database-transactions">other concurrent transactions</a>.
+  The flushed changes are visible only for the current database transaction. Until the current transaction is committed, no change is visible by <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/2014/01/05/a-beginners-guide-to-acid-and-database-transactions">other concurrent transactions</a>.
 </p>
 
 <p style="color: #444444; text-align: justify;">
-  The persistence context, also known as the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch02.html#architecture-overview-terms">first level cache</a>, acts as a buffer between the current entity state transitions and the database.
+  The persistence context, also known as the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch02.html#architecture-overview-terms">first level cache</a>, acts as a buffer between the current entity state transitions and the database.
 </p>
 
 <p style="color: #444444; text-align: justify;">
-  In <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://en.wikipedia.org/wiki/Write-behind#WRITE-BEHIND">caching theory</a>, the <strong style="font-style: inherit;">write-behind</strong> synchronization requires that all changes happen against the cache, whose responsibility is to eventually synchronize with the backing store.
+  In <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://en.wikipedia.org/wiki/Write-behind#WRITE-BEHIND">caching theory</a>, the <strong style="font-style: inherit;">write-behind</strong> synchronization requires that all changes happen against the cache, whose responsibility is to eventually synchronize with the backing store.
 </p>
 
 <h3 style="font-weight: inherit; color: #444444;">
@@ -87,15 +87,15 @@ tags:
 </h3>
 
 <p style="color: #444444; text-align: justify;">
-  Every <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://en.wikipedia.org/wiki/Data_manipulation_language">DML statement</a> runs inside a database transaction. Based on the current database <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/2014/01/05/a-beginners-guide-to-acid-and-database-transactions/">transaction isolation level</a>, locks (shared or explicit) may be acquired for the current selected/modified table rows.
+  Every <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://en.wikipedia.org/wiki/Data_manipulation_language">DML statement</a> runs inside a database transaction. Based on the current database <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/2014/01/05/a-beginners-guide-to-acid-and-database-transactions/">transaction isolation level</a>, locks (shared or explicit) may be acquired for the current selected/modified table rows.
 </p>
 
 <p style="color: #444444; text-align: justify;">
-  Reducing the lock holding holding time lowers the dead-lock probability, and according to the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/2014/05/20/the-simple-scalability-equation/">scalability theory</a>, it increases throughput. Locks always introduce serial executions, and according to <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://en.wikipedia.org/wiki/Amdahl%27s_law">Amdahl’s law</a>, the maximum speedup is inversely proportional with the serial part of the currently executing program.
+  Reducing the lock holding holding time lowers the dead-lock probability, and according to the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/2014/05/20/the-simple-scalability-equation/">scalability theory</a>, it increases throughput. Locks always introduce serial executions, and according to <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://en.wikipedia.org/wiki/Amdahl%27s_law">Amdahl’s law</a>, the maximum speedup is inversely proportional with the serial part of the currently executing program.
 </p>
 
 <p style="color: #444444; text-align: justify;">
-  Even in <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://en.wikipedia.org/wiki/Isolation_%28database_systems%29#Read_committed">READ_COMMITTED</a> isolation level, UPDATE and DELETE statements acquire locks. This behavior prevents other concurring transactions from reading uncommitted changes or modify the rows in question.
+  Even in <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://en.wikipedia.org/wiki/Isolation_%28database_systems%29#Read_committed">READ_COMMITTED</a> isolation level, UPDATE and DELETE statements acquire locks. This behavior prevents other concurring transactions from reading uncommitted changes or modify the rows in question.
 </p>
 
 <p style="color: #444444; text-align: justify;">
@@ -133,11 +133,11 @@ tags:
 <table style="color: #444444;">
   <tr style="font-weight: inherit; font-style: inherit;">
     <th style="font-style: inherit;">
-      JPA <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/FlushModeType.html">FLUSHMODETYPE</a>
+      JPA <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javaee/7/api/javax/persistence/FlushModeType.html">FLUSHMODETYPE</a>
     </th>
 
     <th style="font-style: inherit;">
-      HIBERNATE <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html">FLUSHMODE</a>
+      HIBERNATE <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html">FLUSHMODE</a>
     </th>
 
     <th style="font-style: inherit;">
@@ -147,11 +147,11 @@ tags:
 
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
-      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/FlushModeType.html#AUTO">AUTO</a>
+      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javaee/7/api/javax/persistence/FlushModeType.html#AUTO">AUTO</a>
     </td>
 
     <td style="font-style: inherit;">
-      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#AUTO">AUTO</a>
+      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#AUTO">AUTO</a>
     </td>
 
     <td style="font-style: inherit;">
@@ -161,11 +161,11 @@ tags:
 
   <tr style="font-weight: inherit; font-style: inherit;">
     <td style="font-style: inherit;">
-      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/FlushModeType.html#COMMIT">COMMIT</a>
+      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javaee/7/api/javax/persistence/FlushModeType.html#COMMIT">COMMIT</a>
     </td>
 
     <td style="font-style: inherit;">
-      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#COMMIT">COMMIT</a>
+      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#COMMIT">COMMIT</a>
     </td>
 
     <td style="font-style: inherit;">
@@ -178,7 +178,7 @@ tags:
     </td>
 
     <td style="font-style: inherit;">
-      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#ALWAYS">ALWAYS</a>
+      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#ALWAYS">ALWAYS</a>
     </td>
 
     <td style="font-style: inherit;">
@@ -191,11 +191,11 @@ tags:
     </td>
 
     <td style="font-style: inherit;">
-      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#MANUAL">MANUAL</a>
+      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#MANUAL">MANUAL</a>
     </td>
 
     <td style="font-style: inherit;">
-      The Session can <strong style="font-style: inherit;">only</strong> be <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html#flush%28%29">manually flushed</a>.
+      The Session can <strong style="font-style: inherit;">only</strong> be <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html#flush%28%29">manually flushed</a>.
     </td>
   </tr>
 
@@ -204,7 +204,7 @@ tags:
     </td>
 
     <td style="font-style: inherit;">
-      <del style="font-weight: inherit; font-style: inherit;" datetime="2014-08-01T20:22:39+00:00"><a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#NEVER">NEVER</a></del>
+      <del style="font-weight: inherit; font-style: inherit;" datetime="2014-08-01T20:22:39+00:00"><a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#NEVER">NEVER</a></del>
     </td>
 
     <td style="font-style: inherit;">
@@ -242,11 +242,11 @@ tags:
     </td>
 
     <td style="font-style: inherit;">
-      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/3.5/javadocs/org/hibernate/Session.html#setFlushMode%28org.hibernate.FlushMode%29">Session</a>
+      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/3.5/javadocs/org/hibernate/Session.html#setFlushMode%28org.hibernate.FlushMode%29">Session</a>
     </td>
 
     <td style="font-style: inherit;">
-      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#setFlushMode%28javax.persistence.FlushModeType%29">EntityManager</a>
+      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#setFlushMode%28javax.persistence.FlushModeType%29">EntityManager</a>
     </td>
   </tr>
 
@@ -256,11 +256,11 @@ tags:
     </td>
 
     <td style="font-style: inherit;">
-      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/3.5/javadocs/org/hibernate/Query.html#setFlushMode%28org.hibernate.FlushMode%29">Query</a><br /> <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/3.5/javadocs/org/hibernate/Criteria.html#setFlushMode%28org.hibernate.FlushMode%29">Criteria</a>
+      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/3.5/javadocs/org/hibernate/Query.html#setFlushMode%28org.hibernate.FlushMode%29">Query</a><br /> <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/3.5/javadocs/org/hibernate/Criteria.html#setFlushMode%28org.hibernate.FlushMode%29">Criteria</a>
     </td>
 
     <td style="font-style: inherit;">
-      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/Query.html#setFlushMode%28javax.persistence.FlushModeType%29">Query</a><br /> <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.oracle.com/javaee/7/api/javax/persistence/TypedQuery.html#setFlushMode%28javax.persistence.FlushModeType%29">TypedQuery</a>
+      <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javaee/7/api/javax/persistence/Query.html#setFlushMode%28javax.persistence.FlushModeType%29">Query</a><br /> <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javaee/7/api/javax/persistence/TypedQuery.html#setFlushMode%28javax.persistence.FlushModeType%29">TypedQuery</a>
     </td>
   </tr>
 </table>
@@ -270,15 +270,15 @@ tags:
 </h2>
 
 <p style="color: #444444; text-align: justify;">
-  In my next post, you’ll find out that <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#AUTO">Hibernate FlushMode.AUTO</a> breaks data consistency for SQL queries and you’ll see how you can overcome this shortcoming.
+  In my next post, you’ll find out that <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/FlushMode.html#AUTO">Hibernate FlushMode.AUTO</a> breaks data consistency for SQL queries and you’ll see how you can overcome this shortcoming.
 </p>
 
 <p style="color: #444444; text-align: justify;">
-  <strong style="font-style: inherit;">If you have enjoyed reading my article and you’re looking forward to getting instant email notifications of my latest posts, you just need to <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/follow-me/">follow my blog</a>.</strong>
+  <strong style="font-style: inherit;">If you have enjoyed reading my article and you’re looking forward to getting instant email notifications of my latest posts, you just need to <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/follow-me/">follow my blog</a>.</strong>
 </p>
 
 <p class="note_normal" style="color: #444444; text-align: justify;">
-  Published at Codepedia.org with permission of Vlad Mihalcea &#8211; source <a title="http://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/" href="http://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/" target="_blank">A BEGINNER’S GUIDE TO JPA/HIBERNATE FLUSH STRATEGIES</a> from <a title="http://vladmihalcea.com/" href="http://vladmihalcea.com/" target="_blank">http://vladmihalcea.com/</a>
+  Published at Codepedia.org with permission of Vlad Mihalcea &#8211; source <a title="https://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/" href="https://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/" target="_blank">A BEGINNER’S GUIDE TO JPA/HIBERNATE FLUSH STRATEGIES</a> from <a title="https://vladmihalcea.com/" href="https://vladmihalcea.com/" target="_blank">https://vladmihalcea.com/</a>
 </p>
 
 <p style="color: #444444; text-align: justify;">
@@ -295,7 +295,7 @@ tags:
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-        <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
+        <a class="icon-earth" href="https://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
       </div>
 
       <div class="clear">

@@ -129,7 +129,7 @@ public class Tag implements Serializable{
 }
 </code></pre>
 
-The `IgnoreSizeOf` annotation is set to ignore the Tag as a referenced object when calculating the size of the object graph in <a title="Ehcache.org" href="http://ehcache.org/" target="_blank">Ehcache</a>. This was a measure taken to fix an EhCache `net.sf.ehcache.pool.sizeof.ObjectGraphWalker` warning :
+The `IgnoreSizeOf` annotation is set to ignore the Tag as a referenced object when calculating the size of the object graph in <a title="Ehcache.org" href="https://ehcache.org/" target="_blank">Ehcache</a>. This was a measure taken to fix an EhCache `net.sf.ehcache.pool.sizeof.ObjectGraphWalker` warning :
 
 <pre>WARN 2013-02-04 10:09:14,632 net.sf.ehcache.pool.sizeof.ObjectGraphWalker: The configured limit of 1,000 object references was reached while attempting to calculate the size of the object graph. Severe performance degradation could occur if the sizing operation continues. This can be avoided by setting the
 CacheManger or Cache  elements maxDepthExceededBehavior to "abort" or adding stop points with
@@ -152,7 +152,7 @@ Also at the model layer, we need a user interaction service, which returns a lis
 }
 </code></pre>
 
-Behind the `UserInteractionDao`, there is a <a title="MyBatis" href="http://mybatis.github.io/mybatis-3/" target="_blank">MyBatis</a> mapping that uses the following SQL statement:
+Behind the `UserInteractionDao`, there is a <a title="MyBatis" href="https://mybatis.github.io/mybatis-3/" target="_blank">MyBatis</a> mapping that uses the following SQL statement:
 
 <pre><code class="sql">SELECT
    t.tag_id,
@@ -186,8 +186,8 @@ I won&#8217;t insist on the MyBatis mapping, because it is sort of irrelevant fo
 
 The `html/jsp` code behind the input box is quite simple &#8211; it is a regular `input` tag inside of a div tag, that has an associated `class` of type `ui-widget`. Make sure to also include the jQuery and jQuery-ui libraries:
 
-<pre><code class="javascript">&lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"&gt;&lt;/script&gt;&lt;
+<pre><code class="javascript">&lt;script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"&gt;&lt;/script&gt;&lt;
 &lt;div id="find_keyword"&gt;
 &lt;div class="ui-widget"&gt;&lt;input id="tagQuery" type="text" name="tagQuery" value="&lt;spring:message code=" /&gt;" onFocus="inputFocus(this)" onBlur="inputBlur(this)"&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -222,7 +222,7 @@ The `inputFocus` and `onBlur` JavaScript-functions will just change the coloring
                         // following property gets entered in the textbox
                         value: item.name,
                         // following property is added for our own use
-                        tag_url: "http://" + window.location.host + "/tags/" + item.tagId + "/" + item.name
+                        tag_url: "https://" + window.location.host + "/tags/" + item.tagId + "/" + item.name
                     }
                 }));
             });
@@ -248,7 +248,7 @@ The real magic happens in the `jQuery UI autocomplete` function &#8211; once the
 
   * `minLength = 1` &#8211; the minimum number of characters a user must type before a search is performed
   * `delay = 500` &#8211; the delay in milliseconds between when a keystroke occurs and when a search is performed (you want to give the database some time to rest 🙂 if you have many records)
-  * `source` &#8211; must be specified and defines the data to use. In our case the data is provided by a callback function that, over `AJAX`, will get `JSON` data from the Server (the following step will present how this is implemented in Spring ). The result from the server is, as specified in the model, a list of Tag objects, which, with the help of <a title="jQuery map function" href="http://api.jquery.com/jQuery.map/" target="_blank">jQuery.map()</a>, gets translated to jQuery UI elements that are understood by autocomplete ui select handler
+  * `source` &#8211; must be specified and defines the data to use. In our case the data is provided by a callback function that, over `AJAX`, will get `JSON` data from the Server (the following step will present how this is implemented in Spring ). The result from the server is, as specified in the model, a list of Tag objects, which, with the help of <a title="jQuery map function" href="https://api.jquery.com/jQuery.map/" target="_blank">jQuery.map()</a>, gets translated to jQuery UI elements that are understood by autocomplete ui select handler
   * `select` &#8211; this is triggered when a keyword is selected from the proposed list. The action in this case will be to append the selected keyword to the existing ones (line 29), and restore the input text field value to the default one(lines 31 -33).
 
 ## <span id="The_Controller">The Controller</span>
@@ -275,7 +275,7 @@ public class TagController {
 
 The `@ResponseBody` annotation instructs Spring MVC to serialize the list of Tags to the client and bind it to the web response body. Spring MVC automatically serializes to JSON because the client accepts that content type.
 
-Underneath the covers, Spring MVC delegates to a [`HttpMessageConverter`](http://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/http/converter/HttpMessageConverter.html) to perform the serialization. In this case, Spring MVC invokes a [`MappingJacksonHttpMessageConverter`](http://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/http/converter/json/MappingJacksonHttpMessageConverter.html) built on the Jackson JSON processor. This happens automatically but you need to use the [`mvc:annotation-driven`](https://src.springframework.org/svn/spring-samples/mvc-ajax/trunk/src/main/webapp/WEB-INF/spring/mvc-config.xml) configuration element and have with Jackson present in your classpath. In the project, the Jackson libraries are loaded with maven using the following dependencies in the `pom.xml` file:
+Underneath the covers, Spring MVC delegates to a [`HttpMessageConverter`](https://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/http/converter/HttpMessageConverter.html) to perform the serialization. In this case, Spring MVC invokes a [`MappingJacksonHttpMessageConverter`](https://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/http/converter/json/MappingJacksonHttpMessageConverter.html) built on the Jackson JSON processor. This happens automatically but you need to use the [`mvc:annotation-driven`](https://src.springframework.org/svn/spring-samples/mvc-ajax/trunk/src/main/webapp/WEB-INF/spring/mvc-config.xml) configuration element and have with Jackson present in your classpath. In the project, the Jackson libraries are loaded with maven using the following dependencies in the `pom.xml` file:
 
 <pre><code class="xml"><!-- Jackson JSON Mapper -->
 &lt;dependency&gt;
@@ -307,12 +307,12 @@ The controller method is called asynchronously every time the user tips a new ch
 
 ### <span id="References">References</span>
 
-  1. <a title="jQueryUI autocomplete" href="http://jqueryui.com/autocomplete/" target="_blank">jQuery UI autocomplete </a>
-  2. <a title="jQuery.getJSON - jQuery API Documentation" href="http://api.jquery.com/jQuery.getJSON/" target="_blank">jQuery.getJSON &#8211; jQuery API Documentation</a>
-  3. <a title="jQuery Core - $(document).ready()" href="http://learn.jquery.com/using-jquery-core/document-ready/" target="_blank">jQuery Core &#8211; $(document).ready()</a>
-  4. <a title="jQuery map function" href="http://api.jquery.com/jQuery.map/" target="_blank">jQuery.map()</a>
-  5. <a title="Ajax, Wikipedia" href="http://en.wikipedia.org/wiki/Ajax_%28programming%29" target="_blank">AJAX</a>
-  6. <a title="Ajax Simplifications in Spring 3.0" href="http://spring.io/blog/2010/01/25/ajax-simplifications-in-spring-3-0/" target="_blank">Ajax Simplifications in Spring 3.0</a>
+  1. <a title="jQueryUI autocomplete" href="https://jqueryui.com/autocomplete/" target="_blank">jQuery UI autocomplete </a>
+  2. <a title="jQuery.getJSON - jQuery API Documentation" href="https://api.jquery.com/jQuery.getJSON/" target="_blank">jQuery.getJSON &#8211; jQuery API Documentation</a>
+  3. <a title="jQuery Core - $(document).ready()" href="https://learn.jquery.com/using-jquery-core/document-ready/" target="_blank">jQuery Core &#8211; $(document).ready()</a>
+  4. <a title="jQuery map function" href="https://api.jquery.com/jQuery.map/" target="_blank">jQuery.map()</a>
+  5. <a title="Ajax, Wikipedia" href="https://en.wikipedia.org/wiki/Ajax_%28programming%29" target="_blank">AJAX</a>
+  6. <a title="Ajax Simplifications in Spring 3.0" href="https://spring.io/blog/2010/01/25/ajax-simplifications-in-spring-3-0/" target="_blank">Ajax Simplifications in Spring 3.0</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

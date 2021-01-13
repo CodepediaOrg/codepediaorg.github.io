@@ -106,7 +106,7 @@ After learning some of the Tiles concepts, let&#8217;s have a look at the Tiles 
 Let&#8217;s have look now at the Tiles definition (`podcastDetails`), which renders the podcast details web page:
 
 <pre class="lang:default mark:7,8 decode:true" title="Tiles configuration file">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
-&lt;!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"&gt;
+&lt;!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "https://tiles.apache.org/dtds/tiles-config_3_0.dtd"&gt;
 
 &lt;tiles-definitions&gt;
 .............
@@ -178,10 +178,10 @@ public String getPodcastDetails(@PathVariable("podcastId") int podcastId,
 
   1. <a title="Spring MVC and Apache Tiles integration example" href="https://www.codepedia.org/ama/spring-mvc-and-apache-tiles-integration-example/" target="_blank">Spring MVC and Apache tiles integration example</a>
   2. <a title="Apache Tiles Homepage" href="https://tiles.apache.org/" target="_blank">Apache Tiles homepage</a>
-  3. <a title="Expression Language support" href="http://tiles.apache.org/framework/tutorial/advanced/el-support.html" target="_blank">Apache Tiles &#8211; Expression Language support</a>
+  3. <a title="Expression Language support" href="https://tiles.apache.org/framework/tutorial/advanced/el-support.html" target="_blank">Apache Tiles &#8211; Expression Language support</a>
   4. <a title="Site title and description - Google Webmaster tools help" href="https://support.google.com/webmasters/answer/35624?hl=en&ref_topic=2371375" target="_blank">Site title and description &#8211; Google Webmaster Tools help</a>
   5. <a title="Search engine optimization starter guide - Google" href="https://static.googleusercontent.com/media/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf" target="_blank">Search engine optimization starter guide &#8211; Google</a>
-  6. <a title="[Video] Google & SEO Friendly Page Titles" href="http://www.seobook.com/video-google-seo-friendly-page-titles" target="_blank">[Video] Google & SEO Friendly Page Titles</a>
+  6. <a title="[Video] Google & SEO Friendly Page Titles" href="https://www.seobook.com/video-google-seo-friendly-page-titles" target="_blank">[Video] Google & SEO Friendly Page Titles</a>
   7. <a title="WordPress SEO" href="yoast.com/articles/wordpress-seo/" target="_blank">WordPress SEO</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

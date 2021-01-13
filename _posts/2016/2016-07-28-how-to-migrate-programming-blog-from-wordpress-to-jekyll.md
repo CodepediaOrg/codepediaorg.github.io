@@ -189,7 +189,7 @@ It is pretty well supported in Jekyll, once you are ready to get your hands a li
 
 ### Comments
 
-Because I was uing [Disqus](http://disqus.com) for the comments, migrating them was straightforward - I just changed `disqus_shortname` in `_config.yml`. By default comments appear on all post and pages. To disable commenting on a post or page, add the following to its YAML Front Matter:
+Because I was uing [Disqus](https://disqus.com) for the comments, migrating them was straightforward - I just changed `disqus_shortname` in `_config.yml`. By default comments appear on all post and pages. To disable commenting on a post or page, add the following to its YAML Front Matter:
 
 ```yaml
 comments: false
@@ -212,7 +212,7 @@ Unlike custom feed generation, I used Sitemaps for GitHub Pages[^10], which can 
 
 [^10]: <https://help.github.com/articles/atom-rss-feeds-for-github-pages/>
 
-> If you decide you want to create your own sitemaps, a good starting point is [Building a Better Sitemap.xml with Jekyll](http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/)
+> If you decide you want to create your own sitemaps, a good starting point is [Building a Better Sitemap.xml with Jekyll](https://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/)
 
 ### Benefits
 

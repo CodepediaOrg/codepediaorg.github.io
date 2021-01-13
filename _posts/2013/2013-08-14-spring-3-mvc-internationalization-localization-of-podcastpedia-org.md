@@ -10,13 +10,13 @@ tags:
   - java
   - spring
 ---
-<a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a> can be accessed today in four languages &#8211; English, German, French and Romanian, with Spanish planned for the near future. In computing this is called internationalization (<a href="http://en.wikipedia.org/wiki/I18n" target="_blank">i18n</a>). The post presents how this is configured under the hood with the help of Spring 3 MVC.
+<a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a> can be accessed today in four languages &#8211; English, German, French and Romanian, with Spanish planned for the near future. In computing this is called internationalization (<a href="https://en.wikipedia.org/wiki/I18n" target="_blank">i18n</a>). The post presents how this is configured under the hood with the help of Spring 3 MVC.
 
 ### Application Context Configuration
 
 #### Message Resource Files
 
-Normally in the Java world, the <a title="Wikipedia - locale" href="http://en.wikipedia.org/wiki/Locale" target="_blank">locale</a>-specific data is stored in message resource files. In Spring you configure it by adding the following bean `org.springframework.context.support.ReloadableResourceBundleMessageSource` to the application context:
+Normally in the Java world, the <a title="Wikipedia - locale" href="https://en.wikipedia.org/wiki/Locale" target="_blank">locale</a>-specific data is stored in message resource files. In Spring you configure it by adding the following bean `org.springframework.context.support.ReloadableResourceBundleMessageSource` to the application context:
 
 <pre><code class="xml">&lt;!-- Application Message Bundle --&gt;
 &lt;bean id="messageSource"
@@ -30,7 +30,7 @@ Normally in the Java world, the <a title="Wikipedia - locale" href="http://en.wi
 </div>
 
 <div>
-  The configuration specifies that the message resource files should be named <em>messages_xx.properties (xx is the shortcut of the locale), </em>are stored in the <em>messages</em> folder in the classpath, and that the default encoding for the files is <a title="Wikipedia - utf8" href="http://en.wikipedia.org/wiki/Utf-8" target="_blank">UTF-8</a>.
+  The configuration specifies that the message resource files should be named <em>messages_xx.properties (xx is the shortcut of the locale), </em>are stored in the <em>messages</em> folder in the classpath, and that the default encoding for the files is <a title="Wikipedia - utf8" href="https://en.wikipedia.org/wiki/Utf-8" target="_blank">UTF-8</a>.
 </div>
 
 <div>
@@ -47,7 +47,7 @@ Normally in the Java world, the <a title="Wikipedia - locale" href="http://en.wi
 </div>
 
 <div style="padding-left: 30px;">
-  <em>Note: If the message resources files change often and you don&#8217;t want to restart the JVM, you should use <a href="http://static.springsource.org/spring/docs/3.2.4.RELEASE/javadoc-api/org/springframework/context/support/ReloadableResourceBundleMessageSource.html" target="_blank">org.springframework.context.support.ReloadableResourceBundleMessageSource </a></em>
+  <em>Note: If the message resources files change often and you don&#8217;t want to restart the JVM, you should use <a href="https://static.springsource.org/spring/docs/3.2.4.RELEASE/javadoc-api/org/springframework/context/support/ReloadableResourceBundleMessageSource.html" target="_blank">org.springframework.context.support.ReloadableResourceBundleMessageSource </a></em>
 </div>
 
 <div style="padding-left: 30px;">
@@ -75,7 +75,7 @@ Normally in the Java world, the <a title="Wikipedia - locale" href="http://en.wi
   </h3>
 
   <p>
-    The <code>CookieLocaleResolver</code> made the most sense for Podcastpedia.org . It inspects a <a title="HTTP cookie" href="http://en.wikipedia.org/wiki/HTTP_cookie" target="_blank">cookie</a> named <code>podcastpediaPreferredLanguage</code>, that might exist on the client to see if a locale is specified:
+    The <code>CookieLocaleResolver</code> made the most sense for Podcastpedia.org . It inspects a <a title="HTTP cookie" href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blank">cookie</a> named <code>podcastpediaPreferredLanguage</code>, that might exist on the client to see if a locale is specified:
   </p>
 
 <pre><code class="xml">&lt;bean id="localeResolver"&gt;
@@ -176,12 +176,12 @@ We promise to only share high quality podcasts and episodes.
 
 ### Resources
 
-  * <a title="Spring Documentation" href="http://www.springsource.org/spring-framework#documentation" target="_blank">Spring Framework documentation </a>
-  * <a href="http://static.springsource.org/spring/docs/3.2.x/spring-framework-reference/html/" target="_blank">Spring 3.2 documentation </a>
-  * <a title="Spring MVC locale resolver" href="http://static.springsource.org/spring/docs/3.2.x/spring-framework-reference/html/mvc.html#mvc-localeresolver" target="_blank">Spring MVC locale resolver</a>
-  * <a title="Wikipedia - Internationalization and localization" href="http://en.wikipedia.org/wiki/I18n" target="_blank">http://en.wikipedia.org/wiki/I18n</a>
-  * <a title="Java Resource Bundle" href="http://en.wikipedia.org/wiki/Java_resource_bundle" target="_blank">Java resource bundle </a>
-  * <a title="Wikipedia - locale" href="http://en.wikipedia.org/wiki/Locale" target="_blank">Locale</a>
+  * <a title="Spring Documentation" href="https://www.springsource.org/spring-framework#documentation" target="_blank">Spring Framework documentation </a>
+  * <a href="https://static.springsource.org/spring/docs/3.2.x/spring-framework-reference/html/" target="_blank">Spring 3.2 documentation </a>
+  * <a title="Spring MVC locale resolver" href="https://static.springsource.org/spring/docs/3.2.x/spring-framework-reference/html/mvc.html#mvc-localeresolver" target="_blank">Spring MVC locale resolver</a>
+  * <a title="Wikipedia - Internationalization and localization" href="https://en.wikipedia.org/wiki/I18n" target="_blank">https://en.wikipedia.org/wiki/I18n</a>
+  * <a title="Java Resource Bundle" href="https://en.wikipedia.org/wiki/Java_resource_bundle" target="_blank">Java resource bundle </a>
+  * <a title="Wikipedia - locale" href="https://en.wikipedia.org/wiki/Locale" target="_blank">Locale</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

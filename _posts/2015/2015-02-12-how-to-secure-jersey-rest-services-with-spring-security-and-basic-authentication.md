@@ -17,7 +17,7 @@ tags:
   - web-services
 ---
 <p style="text-align: justify;">
-  In my previous blog post, <a title="https://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" href="https://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" target="_blank">Quick way to check if the REST API is alive &#8211; GET details from Manifest file</a>, I showed how to develop a REST resource to easy check if the developed REST API is reachable. In this post I will present how you can secure this resource with Spring Security and <a title="http://en.wikipedia.org/wiki/Basic_access_authentication" href="http://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">Basic authentication</a> &#8211; <em>&#8220;In the context of an HTTP transaction, basic access authentication is a method for an HTTP user agent to provide a user name and password when making a request.&#8221;</em>
+  In my previous blog post, <a title="https://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" href="https://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/" target="_blank">Quick way to check if the REST API is alive &#8211; GET details from Manifest file</a>, I showed how to develop a REST resource to easy check if the developed REST API is reachable. In this post I will present how you can secure this resource with Spring Security and <a title="https://en.wikipedia.org/wiki/Basic_access_authentication" href="https://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">Basic authentication</a> &#8211; <em>&#8220;In the context of an HTTP transaction, basic access authentication is a method for an HTTP user agent to provide a user name and password when making a request.&#8221;</em>
 </p>
 
 <p class="note_normal" style="text-align: justify;">
@@ -116,16 +116,16 @@ tags:
 ### <span id="Security-application_context">Security-application context</span>
 
 <pre class="lang:default decode:true" title="Spring security configuration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;beans:beans xmlns="http://www.springframework.org/schema/security"
-    xmlns:beans="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:security="http://www.springframework.org/schema/security"
+&lt;beans:beans xmlns="https://www.springframework.org/schema/security"
+    xmlns:beans="https://www.springframework.org/schema/beans"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xmlns:security="https://www.springframework.org/schema/security"
     xsi:schemaLocation="
-    	http://www.springframework.org/schema/beans
-    	http://www.springframework.org/schema/beans/spring-beans.xsd
+    	https://www.springframework.org/schema/beans
+    	https://www.springframework.org/schema/beans/spring-beans.xsd
 
-        http://www.springframework.org/schema/security
-        http://www.springframework.org/schema/security/spring-security.xsd"&gt;
+        https://www.springframework.org/schema/security
+        https://www.springframework.org/schema/security/spring-security.xsd"&gt;
 
 	&lt;!-- Stateless RESTful services use BASIC authentication --&gt;
     &lt;security:http create-session="stateless" pattern="/manifest/**"&gt;
@@ -250,7 +250,7 @@ Authorization: Basic cmVzdDpyZXN0
     Username and password are combined into a string &#8220;username:password&#8221;
   </li>
   <li style="text-align: justify;">
-    The resulting string is then encoded using the RFC2045-MIME variant of <a style="color: #0b0080;" title="Base64" href="http://en.wikipedia.org/wiki/Base64">Base64</a>, except not limited to 76 char/line
+    The resulting string is then encoded using the RFC2045-MIME variant of <a style="color: #0b0080;" title="Base64" href="https://en.wikipedia.org/wiki/Base64">Base64</a>, except not limited to 76 char/line
   </li>
   <li style="text-align: justify;">
     The authorization method and a space i.e. &#8220;Basic &#8221; is then put before the encoded string.
@@ -281,7 +281,7 @@ Server: Jetty(9.2.6.v20141205)
 </p>
 
 <p class="note_alert" style="text-align: justify;">
-  <strong>Note:<br /> </strong>If you decide to use Basic Authentication to secure your REST resources, please make sure they are called over HTTPS. The preferred way nowadays to secure REST resources is with <a title="http://oauth.net/" href="http://oauth.net/" target="_blank">OAuth</a>. More on that on a later post.
+  <strong>Note:<br /> </strong>If you decide to use Basic Authentication to secure your REST resources, please make sure they are called over HTTPS. The preferred way nowadays to secure REST resources is with <a title="https://oauth.net/" href="https://oauth.net/" target="_blank">OAuth</a>. More on that on a later post.
 </p>
 
 ## <span id="Resources">Resources</span>

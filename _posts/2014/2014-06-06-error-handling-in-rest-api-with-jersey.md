@@ -143,7 +143,7 @@ Now that I know how errors should look like, let&#8217;s write some code to make
 </h3>
 
 <p style="color: #222222; padding-left: 30px;">
-  <em>&#8220;<strong style="color: #000000;">Checked Exceptions</strong><span style="color: #000000;"> should be used to declare for </span><strong style="color: #000000;">expected</strong><span style="color: #000000;">, but </span><strong style="color: #000000;">unpreventable</strong><span style="color: #000000;"> errors that are </span><strong style="color: #000000;">reasonable to recover</strong><span style="color: #000000;"> from.</span>&#8220;[<a title="http://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" href="http://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" target="_blank">3</a>]</em>
+  <em>&#8220;<strong style="color: #000000;">Checked Exceptions</strong><span style="color: #000000;"> should be used to declare for </span><strong style="color: #000000;">expected</strong><span style="color: #000000;">, but </span><strong style="color: #000000;">unpreventable</strong><span style="color: #000000;"> errors that are </span><strong style="color: #000000;">reasonable to recover</strong><span style="color: #000000;"> from.</span>&#8220;[<a title="https://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" href="https://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" target="_blank">3</a>]</em>
 </p>
 
 <p style="color: #222222; text-align: justify;">
@@ -213,7 +213,7 @@ the exception mapper encapsulates the error message as JSON, with the HTTP statu
 ### <span id="22_Uncheckedtechnical_exceptions">2.2. Unchecked(technical) exceptions</span>
 
 <p style="color: #222222; padding-left: 30px;">
-  <em><strong style="color: #000000;">&#8220;Unchecked Exceptions</strong><span style="color: #000000;"> should be used for everything else.&#8221;<em style="color: #222222;">[<a title="http://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" href="http://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" target="_blank">3</a>]</em></span></em>
+  <em><strong style="color: #000000;">&#8220;Unchecked Exceptions</strong><span style="color: #000000;"> should be used for everything else.&#8221;<em style="color: #222222;">[<a title="https://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" href="https://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" target="_blank">3</a>]</em></span></em>
 </p>
 
 <p style="color: #222222;">
@@ -316,9 +316,9 @@ Check out our video tutorial <a title="https://www.youtube.com/watch?v=XV7WW0bDy
 
 ### <span id="63_Web">6.3. Web</span>
 
-  1. <a title="http://www.hacktrix.com/checked-and-unchecked-exceptions-in-java" href="http://www.hacktrix.com/checked-and-unchecked-exceptions-in-java" target="_blank">Checked and Unchecked Exceptions in Java</a>
-  2. <a title="http://restcookbook.com/HTTP%20Methods/400-vs-500/" href="http://restcookbook.com/HTTP%20Methods/400-vs-500/" target="_blank">When should we return 4xx or 5xx status codes to the client?</a>
-  3. Stackoverflow &#8211; <a title="http://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" href="http://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" target="_blank">When to choose checked and unchecked exceptions</a>
+  1. <a title="https://www.hacktrix.com/checked-and-unchecked-exceptions-in-java" href="https://www.hacktrix.com/checked-and-unchecked-exceptions-in-java" target="_blank">Checked and Unchecked Exceptions in Java</a>
+  2. <a title="https://restcookbook.com/HTTP%20Methods/400-vs-500/" href="https://restcookbook.com/HTTP%20Methods/400-vs-500/" target="_blank">When should we return 4xx or 5xx status codes to the client?</a>
+  3. Stackoverflow &#8211; <a title="https://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" href="https://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" target="_blank">When to choose checked and unchecked exceptions</a>
 
 
 <p style="text-align: center;">

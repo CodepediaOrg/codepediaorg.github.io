@@ -68,7 +68,7 @@ Ok, let's see now how to build such a feature.
 
 So the first question is where do we get this info from? We know from a previous post of mine, [Quick way to check if the REST API is alive – GET details from Manifest file](https://www.codepedia.org/ama/quick-way-to-check-if-the-rest-api-is-alive-get-details-from-manifest-file/),
  that we can get the implementation details from the MANIFEST[^5] file, so it would be great if we had the git commit SHA-1 hash sum there too. It turns out we could have it, with
-the help of the [Build Number Maven Plugin](http://www.mojohaus.org/buildnumber-maven-plugin/), which is designed to get a unique build number for each time you build your project.
+the help of the [Build Number Maven Plugin](https://www.mojohaus.org/buildnumber-maven-plugin/), which is designed to get a unique build number for each time you build your project.
 
 [^5]: <https://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html>
 
@@ -118,7 +118,7 @@ Now if you execute the `mvn validate` command you should see something similar t
 
 ## Apache Maven WAR Plugin
 
-We have now our 13 characters buildNumber, and next step is to put in the MANIFEST file. We can do that with the help of the [Apache Maven WAR Plugin](http://maven.apache.org/plugins/maven-war-plugin/). We
+We have now our 13 characters buildNumber, and next step is to put in the MANIFEST file. We can do that with the help of the [Apache Maven WAR Plugin](https://maven.apache.org/plugins/maven-war-plugin/). We
 place the following configuration in our pom file:
 
 ```xml

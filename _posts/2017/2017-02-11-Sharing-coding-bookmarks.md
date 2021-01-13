@@ -38,7 +38,7 @@ The first thing I tried, was to create a text file with bookmarks in the form of
 I must say it looks nice, you can **CTRL+F**-it in the browser, but it's such a hassle to maintain without a GUI[^2].
 
 [^1]: <https://github.com/vhf/free-programming-books>
-[^2]: <http://www.linfo.org/gui.html>
+[^2]: <https://www.linfo.org/gui.html>
 
 Then, why not make a GUI? It was just the perfect project to get into the MEAN[^3] stack world, something I have been interested in for a while now.
 

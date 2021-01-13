@@ -49,7 +49,7 @@ tags:
 </h3>
 
 <p style="color: #3a4145; text-align: justify;">
-  JSF looks on first look like an enterprise Java/XML frontend framework, but under the hood it really <a href="http://blog.primefaces.org/?p=3035">isn&#8217;t</a>. It&#8217;s really a polyglot Java/Javascript framework, where the client Javascript part is non-neglectable and also important to understand it. It also has good support for direct HTML/CSS use.
+  JSF looks on first look like an enterprise Java/XML frontend framework, but under the hood it really <a href="https://blog.primefaces.org/?p=3035">isn&#8217;t</a>. It&#8217;s really a polyglot Java/Javascript framework, where the client Javascript part is non-neglectable and also important to understand it. It also has good support for direct HTML/CSS use.
 </p>
 
 <p style="color: #3a4145; text-align: justify;">
@@ -61,11 +61,11 @@ tags:
 </h3>
 
 <p style="color: #3a4145; text-align: justify;">
-  When <a href="http://blog.jhades.org/the-java-origins-of-angular-js-angular-vs-jsf-vs-gwt/">comparing JSF to GWT and AngularJS</a> in a previous post, I found that the (most often used) approach that the framework takes of abstracting HTML and CSS from the developer behind XML adds to the difficulty of debugging, because it creates an extra level of indirection.
+  When <a href="https://blog.jhades.org/the-java-origins-of-angular-js-angular-vs-jsf-vs-gwt/">comparing JSF to GWT and AngularJS</a> in a previous post, I found that the (most often used) approach that the framework takes of abstracting HTML and CSS from the developer behind XML adds to the difficulty of debugging, because it creates an extra level of indirection.
 </p>
 
 <p style="color: #3a4145; text-align: justify;">
-  A <a href="http://blog.primefaces.org/?p=3035">more direct approach</a> of using HTML/CSS directly is also possible, but it seems enterprise Java developers tend to stick to XML in most cases, because it&#8217;s a more familiar technology. Also another problem is that the client side Javascript part of the framework/libraries is not very well documented, and it&#8217;s often important to understand what is going on.
+  A <a href="https://blog.primefaces.org/?p=3035">more direct approach</a> of using HTML/CSS directly is also possible, but it seems enterprise Java developers tend to stick to XML in most cases, because it&#8217;s a more familiar technology. Also another problem is that the client side Javascript part of the framework/libraries is not very well documented, and it&#8217;s often important to understand what is going on.
 </p>
 
 <h3 id="theonlywaytodebugjsfsystematically" style="color: #3a4145;">
@@ -114,7 +114,7 @@ tags:
 </h3>
 
 <p style="color: #3a4145;">
-  The way JSF approaches <a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC</a> is that the whole 3 components reside on the server side:
+  The way JSF approaches <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC</a> is that the whole 3 components reside on the server side:
 </p>
 
 <ul style="color: #3a4145;">
@@ -408,7 +408,7 @@ javax.faces.partial.ajax:true</pre>
 </h3>
 
 <p style="color: #3a4145;">
-  The <code>ui:debug</code> tag allows to view a lot of debugging information using a keyboard shortcut, see <a href="http://www.jsftoolbox.com/documentation/facelets/10-TagReference/facelets-ui-debug.html">here</a> for further details.
+  The <code>ui:debug</code> tag allows to view a lot of debugging information using a keyboard shortcut, see <a href="https://www.jsftoolbox.com/documentation/facelets/10-TagReference/facelets-ui-debug.html">here</a> for further details.
 </p>
 
 <h3 id="finalthoughts" style="color: #3a4145;">
@@ -436,7 +436,7 @@ javax.faces.partial.ajax:true</pre>
 </p>
 
 <p style="color: #3a4145; text-align: justify;">
-  This would require learning more Javascript, (have a look at <a href="http://blog.jhades.org/javascript-for-java-developers/">Javascript for Java developers</a> post if curious), but this is already often necessary to do custom widget development in JSF anyway.
+  This would require learning more Javascript, (have a look at <a href="https://blog.jhades.org/javascript-for-java-developers/">Javascript for Java developers</a> post if curious), but this is already often necessary to do custom widget development in JSF anyway.
 </p>
 
 <h4 id="conclusionsandsomequestionsifyouhavethetime" style="color: #3a4145;">
@@ -457,7 +457,7 @@ javax.faces.partial.ajax:true</pre>
 </ul>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codepedia.org with permission of Aleksey Novik – source <a title="http://blog.jhades.org/how-jsf-works-and-how-to-debug-jsf-applications-effectivelly-is-polyglot-an-alternative/" href="http://blog.jhades.org/how-jsf-works-and-how-to-debug-jsf-applications-effectivelly-is-polyglot-an-alternative/" target="_blank">How JSF Works and how to Debug it</a> – is polyglot an alternative? from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik – source <a title="https://blog.jhades.org/how-jsf-works-and-how-to-debug-jsf-applications-effectivelly-is-polyglot-an-alternative/" href="https://blog.jhades.org/how-jsf-works-and-how-to-debug-jsf-applications-effectivelly-is-polyglot-an-alternative/" target="_blank">How JSF Works and how to Debug it</a> – is polyglot an alternative? from <a title="https://blog.jhades.org/" href="https://blog.jhades.org/" target="_blank">https://blog.jhades.org/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -473,7 +473,7 @@ javax.faces.partial.ajax:true</pre>
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
+      <a class="icon-earth" href="https://blog.jhades.org/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/113901291479894108481/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/JhadesDev" target="_blank"> </a> <a class="icon-github" href="https://github.com/jhades" target="_blank"> </a>
     </div>
 
     <div class="clear">

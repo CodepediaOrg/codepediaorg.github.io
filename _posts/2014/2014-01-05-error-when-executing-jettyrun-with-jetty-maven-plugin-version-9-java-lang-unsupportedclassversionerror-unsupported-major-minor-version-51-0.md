@@ -153,7 +153,7 @@ OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows" &lt;br&gt
 
     The jetty plugin configuration seemed also to be correct in the `pom.xml` file:
 
-    <pre class="lang:default decode:true" title="jetty-maven-plugin configuration in pom.xml">&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
+    <pre class="lang:default decode:true" title="jetty-maven-plugin configuration in pom.xml">&lt;project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
 .................................................
 	&lt;build&gt;
 		&lt;plugins&gt;
@@ -183,7 +183,7 @@ OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows" &lt;br&gt
 	&lt;/build&gt;
 &lt;/project&gt;</pre>
 
-    Then what was the problem? Well, thanks to <a title="java.lang.UnsupportedClassVersionError Unsupported major.minor version 51.0 [duplicate]" href="http://stackoverflow.com/questions/11239086/java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0" target="_blank">Stackoverflow</a> I found out the error happens because of a higher JDK during compile time and lower JDK during runtime. But I thought I compiled and executed everything with Java 7&#8230;
+    Then what was the problem? Well, thanks to <a title="java.lang.UnsupportedClassVersionError Unsupported major.minor version 51.0 [duplicate]" href="https://stackoverflow.com/questions/11239086/java-lang-unsupportedclassversionerror-unsupported-major-minor-version-51-0" target="_blank">Stackoverflow</a> I found out the error happens because of a higher JDK during compile time and lower JDK during runtime. But I thought I compiled and executed everything with Java 7&#8230;
 
     When checking the JDK compliance for the project:
 

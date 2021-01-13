@@ -15,7 +15,7 @@ tags:
   - tomcat
 ---
 <p style="text-align: justify;">
-  As mentioned in the post <a title="Install Eclipse Kepler on Windows 7 " href=" https://www.codepedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit" target="_blank">Install Eclipse Kepler 64 bit on Windows 7 64 bit</a>, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> uses <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Apache Tomcat 7</a> as application server. This post presents how the Tomcat JDBC Connection Pool is configured in development and production for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>. The used database is MySql.<br />
+  As mentioned in the post <a title="Install Eclipse Kepler on Windows 7 " href=" https://www.codepedia.org/ama/install-eclipse-kepler-64-bit-on-windows-7-64-bit" target="_blank">Install Eclipse Kepler 64 bit on Windows 7 64 bit</a>, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> uses <a title="Apache Tomcat" href="https://tomcat.apache.org/" target="_blank">Apache Tomcat 7</a> as application server. This post presents how the Tomcat JDBC Connection Pool is configured in development and production for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>. The used database is MySql.<br />
 
   <!--more-->
 
@@ -56,7 +56,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  The Tomcat Connection pool is configured as a <strong>resource</strong> described in The <a title="Apache Tomcat 7 - JNDI Datasource HOW-TO" href="http://tomcat.apache.org/tomcat-7.0-doc/jndi-datasource-examples-howto.html" target="_blank">Tomcat JDBC documentation</a> with the only difference being that you have to specify the <code>factory</code> attribute and set the value to <code>org.apache.tomcat.jdbc.pool.DataSourceFactory</code>. For <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, it is configured in the <em>context.xml</em> file of the web application:<br /> <a href="{{site.url}}/wp-content/uploads/2013/08/context-file.png"><img class="alignnone size-medium wp-image-517" src="{{site.url}}/wp-content/uploads/2013/08/context-file-246x300.png" alt="context-file" width="246" height="300" srcset="{{site.url}}/wp-content/uploads/2013/08/context-file-246x300.png 246w, {{site.url}}/wp-content/uploads/2013/08/context-file.png 474w" sizes="(max-width: 246px) 100vw, 246px" /></a>
+  The Tomcat Connection pool is configured as a <strong>resource</strong> described in The <a title="Apache Tomcat 7 - JNDI Datasource HOW-TO" href="https://tomcat.apache.org/tomcat-7.0-doc/jndi-datasource-examples-howto.html" target="_blank">Tomcat JDBC documentation</a> with the only difference being that you have to specify the <code>factory</code> attribute and set the value to <code>org.apache.tomcat.jdbc.pool.DataSourceFactory</code>. For <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, it is configured in the <em>context.xml</em> file of the web application:<br /> <a href="{{site.url}}/wp-content/uploads/2013/08/context-file.png"><img class="alignnone size-medium wp-image-517" src="{{site.url}}/wp-content/uploads/2013/08/context-file-246x300.png" alt="context-file" width="246" height="300" srcset="{{site.url}}/wp-content/uploads/2013/08/context-file-246x300.png 246w, {{site.url}}/wp-content/uploads/2013/08/context-file.png 474w" sizes="(max-width: 246px) 100vw, 246px" /></a>
 </p>
 
 ### <span id="Production_environment">Production environment</span>
@@ -176,7 +176,7 @@ One of the exceptions I have got was:
 </p>
 
 <p style="text-align: justify;">
-  Well that&#8217;s it&#8230; Thanks again to the open source community for developing Tomcat, and a special thank you to <a title="Apache Tomcat" href="http://www.tomcatexpert.com/users/fhanik" target="_blank">Filip Hanik</a> for explaining the JDBC- pool configuration so clearly.
+  Well that&#8217;s it&#8230; Thanks again to the open source community for developing Tomcat, and a special thank you to <a title="Apache Tomcat" href="https://www.tomcatexpert.com/users/fhanik" target="_blank">Filip Hanik</a> for explaining the JDBC- pool configuration so clearly.
 </p>
 
 <p style="text-align: justify;">
@@ -185,11 +185,11 @@ One of the exceptions I have got was:
 
 ### <span id="Resources">Resources</span>
 
-  * <a title="Apache Tomcat" href="http://tomcat.apache.org/" target="_blank">Apache Tomcat</a>
-  * <a title="The Tomcat JDBC Connection Pool" href="http://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html" target="_blank">The Tomcat JDBC Connection Pool</a>
-  * <a title="Apache Tomcat 7 - JNDI Datasource HOW-TO" href="http://tomcat.apache.org/tomcat-7.0-doc/jndi-datasource-examples-howto.html" target="_blank">Apache Tomcat 7 &#8211; JNDI Datasource HOW-TO</a>
-  * <a title="Using the Tomcat 7 JDBC Connection Pool in Production" href="http://www.tomcatexpert.com/blog/2012/01/24/using-tomcat-7-jdbc-connection-pool-production" target="_blank">Using the Tomcat 7 JDBC Connection Pool in Production</a>
-  * <a title="Configuring jdbc-pool for high-concurrency" href="http://www.tomcatexpert.com/blog/2010/04/01/configuring-jdbc-pool-high-concurrency" target="_blank">Configuring jdbc-pool for high-concurrency</a>
+  * <a title="Apache Tomcat" href="https://tomcat.apache.org/" target="_blank">Apache Tomcat</a>
+  * <a title="The Tomcat JDBC Connection Pool" href="https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html" target="_blank">The Tomcat JDBC Connection Pool</a>
+  * <a title="Apache Tomcat 7 - JNDI Datasource HOW-TO" href="https://tomcat.apache.org/tomcat-7.0-doc/jndi-datasource-examples-howto.html" target="_blank">Apache Tomcat 7 &#8211; JNDI Datasource HOW-TO</a>
+  * <a title="Using the Tomcat 7 JDBC Connection Pool in Production" href="https://www.tomcatexpert.com/blog/2012/01/24/using-tomcat-7-jdbc-connection-pool-production" target="_blank">Using the Tomcat 7 JDBC Connection Pool in Production</a>
+  * <a title="Configuring jdbc-pool for high-concurrency" href="https://www.tomcatexpert.com/blog/2010/04/01/configuring-jdbc-pool-high-concurrency" target="_blank">Configuring jdbc-pool for high-concurrency</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

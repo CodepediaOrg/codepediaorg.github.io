@@ -53,7 +53,7 @@ Second step is to make a new project on the same parent folder as `old-bookmarks
 > I am using the Sassy CSS (SCSS)[^3] for the project. You can advise Angular CLI to generate a project with this style
 by specifying the `--style=scss` option.
 
-[^3]: <http://sass-lang.com/documentation/file.SASS_REFERENCE.html#syntax>
+[^3]: <https://sass-lang.com/documentation/file.SASS_REFERENCE.html#syntax>
 
 Copy over your app files.
 
@@ -114,7 +114,7 @@ Finally in `styles.scss` add the following:
 
 [^5]: <https://github.com/angular/angular-cli/wiki/stories-include-font-awesome>
 
-[Font Awesome](http://fontawesome.io/) gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
+[Font Awesome](https://fontawesome.io/) gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
 
 To use it, I had to initially install it via `npm install --save font-awesome`. Similar as before, add then in the `_variables.scss` the following:
 
@@ -133,7 +133,7 @@ Same in `styles.scss`:
 
 [^6]: <https://github.com/angular/angular-cli/wiki/stories-third-party-lib>
 
-I use [showdown](http://showdownjs.github.io/demo/) to enable markdown[^7] in the description field of bookmarks. To enable it, **npm install** `showdown` and `@types/showdown`. Then in code just import it and it's ready to go:
+I use [showdown](https://showdownjs.github.io/demo/) to enable markdown[^7] in the description field of bookmarks. To enable it, **npm install** `showdown` and `@types/showdown`. Then in code just import it and it's ready to go:
 
 ```typescript
 import {Injectable} from '@angular/core';
@@ -251,7 +251,7 @@ I saved the best for last - <span class="highlight-yellow">speed of development,
 With this I rest my case.
 
 <p class="note_normal">
-    PS: By the way you can find most of links referenced here if you filter the public bookmarks for the **angular-cli tag** in codingmarks - <a href="http://bookmarks.dev/search?q=[angular-cli]" target="_blank">http://bookmarks.dev/search?q=[angular-cli]</a>
+    PS: By the way you can find most of links referenced here if you filter the public bookmarks for the **angular-cli tag** in codingmarks - <a href="https://bookmarks.dev/search?q=[angular-cli]" target="_blank">https://bookmarks.dev/search?q=[angular-cli]</a>
 </p>
 
 ## References

@@ -57,7 +57,7 @@ To start, let&#8217;s have a look at how the Angular 1 binding mechanism is impl
   In Angular 1, the <code>ng-model</code> functionality of being able to edit a form and instantly have those changes reflected on a Javascript POJO is one of the main reasons why the framework became so popular.
 </p>
 
-The way this works in Angular 1 is the following, according to this [podcast](http://devchat.tv/js-jabber/032-jsj-angular-js) (see at 3:50):
+The way this works in Angular 1 is the following, according to this [podcast](https://devchat.tv/js-jabber/032-jsj-angular-js) (see at 3:50):
 
   * in the Javascript runtime, everything is patcheable by design &#8211; we can change the `Number` class if we need
   * Angular at startup will patch all points of asynchronous interaction:
@@ -118,7 +118,7 @@ No longer `$scope.apply` or `$scope.digest` are needed, everything transparently
 </p>
 
 <p style="text-align: justify;">
-  To better understand how the performance gains are achieved (up to 5-10 times faster last then Angular 1), its better to refer to this <a href="http://devchat.tv/adventures-in-angular/042-aia-dependency-injection-and-change-detection-with-victor-savkin">podcast</a> and <a href="http://victorsavkin.com/post/110170125256/change-detection-in-angular-2">blog post</a>. I&#8217;ll try to summarize here the two main reasons why Angular 2 is much faster:
+  To better understand how the performance gains are achieved (up to 5-10 times faster last then Angular 1), its better to refer to this <a href="https://devchat.tv/adventures-in-angular/042-aia-dependency-injection-and-change-detection-with-victor-savkin">podcast</a> and <a href="https://victorsavkin.com/post/110170125256/change-detection-in-angular-2">blog post</a>. I&#8217;ll try to summarize here the two main reasons why Angular 2 is much faster:
 </p>
 
 #### Faster checking of a single binding {#fastercheckingofasinglebinding}
@@ -139,7 +139,7 @@ This binding-checking function looks like a function that we would write by hand
   make the model an Observable: Angular will detect this and register itself to observe the model. This way if the model changes/remains the same Angular will know via the observable mechanism and so it does not need to run change detection for that object.
 </li>
 <li style="text-align: justify;">
-  make the model immutable, using for example Facebook&#8217;s <a href="http://facebook.github.io/immutable-js/docs/#/">immutable.js</a>. Again the idea is that Angular will detect this and avoid running change detection on immutable objects.
+  make the model immutable, using for example Facebook&#8217;s <a href="https://facebook.github.io/immutable-js/docs/#/">immutable.js</a>. Again the idea is that Angular will detect this and avoid running change detection on immutable objects.
 </li>
 
 ### Goal: Improved modularity {#goalimprovedmodularity}
@@ -155,7 +155,7 @@ This binding-checking function looks like a function that we would write by hand
 #### Angular 1 and module lazy-loading {#angular1andmodulelazyloading}
 
 <p style="text-align: justify;">
-  Angular 1 lazy loading is still possible with a solution like <a href="https://oclazyload.readme.io/">ocLazyLoad</a>, but ideally it should be something native to the framework and more transparent, and according to this <a href="http://devchat.tv/adventures-in-angular/042-aia-dependency-injection-and-change-detection-with-victor-savkin">podcast</a> it seems that in Angular 2 it will be the case (see at 13:06).
+  Angular 1 lazy loading is still possible with a solution like <a href="https://oclazyload.readme.io/">ocLazyLoad</a>, but ideally it should be something native to the framework and more transparent, and according to this <a href="https://devchat.tv/adventures-in-angular/042-aia-dependency-injection-and-change-detection-with-victor-savkin">podcast</a> it seems that in Angular 2 it will be the case (see at 13:06).
 </p>
 
 #### Improvements to npm as a frontend package manager {#improvementstonpmasafrontendpackagemanager}
@@ -260,7 +260,7 @@ In Angular 2, the template syntax will avoid to bind to plain attributes, unless
 #### Support for Shadow DOM {#supportforshadowdom}
 
 <p style="text-align: justify;">
-  One of the key features of web components is the <a href="http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/">Shadow DOM</a>. This is a native browser mechanism that will allow to build native looking components, say a new implementation of <code>select</code>.
+  One of the key features of web components is the <a href="https://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/">Shadow DOM</a>. This is a native browser mechanism that will allow to build native looking components, say a new implementation of <code>select</code>.
 </p>
 
 <p style="text-align: justify;">
@@ -300,7 +300,7 @@ This is one of the parts in Angular 2 that is less clear at this moment, but the
 
 ### Goal: Improved testability {#goalimprovedtestability}
 
-In Angular 2 it&#8217;s relatively hard to write true unit tests, because for example `ng-model` really needs a DOM to be tested which leads to use of solutions like using [PhantomJs](http://phantomjs.org/).
+In Angular 2 it&#8217;s relatively hard to write true unit tests, because for example `ng-model` really needs a DOM to be tested which leads to use of solutions like using [PhantomJs](https://phantomjs.org/).
 
 The problem with this approach is that those tests are no longer unit tests, they are integration tests which have the following issues:
 
@@ -308,7 +308,7 @@ The problem with this approach is that those tests are no longer unit tests, the
   * they are fragile and harder to maintain
 
 <p style="text-align: justify;">
-  This leads to an inversion of the <a href="http://martinfowler.com/bliki/TestPyramid.html">test pyramid</a>, which is a situation where most of our tests are either UI tests or integration tests, and there are hardly any true unit tests. This means the build constantly breaks by reasons other than true bugs and the testing effort pulls less of its weight than what we would want.
+  This leads to an inversion of the <a href="https://martinfowler.com/bliki/TestPyramid.html">test pyramid</a>, which is a situation where most of our tests are either UI tests or integration tests, and there are hardly any true unit tests. This means the build constantly breaks by reasons other than true bugs and the testing effort pulls less of its weight than what we would want.
 </p>
 
 <p style="text-align: justify;">
@@ -340,5 +340,5 @@ The problem with this approach is that those tests are no longer unit tests, the
 It&#8217;s definitely not too soon to try it out, if you want to give it a go this is a [seed project](https://github.com/mgechev/angular2-seed), and the Visual Studio Code [editor](https://www.youtube.com/watch?v=HmWm21cCAXM) or [Webstorm](https://www.jetbrains.com/webstorm/) already provide great Typescript 1.5 support.
 
 <p class="note_normal">
-  Published at Codepedia.org with permission of Aleksey Novik – source <em><a title="The main goals of Angular 2 and how they will be achieved" href="http://blog.jhades.org/introduction-to-angular2-the-main-goals/" target="_blank">The main goals of Angular 2 and how they will be achieved</a></em> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codepedia.org with permission of Aleksey Novik – source <em><a title="The main goals of Angular 2 and how they will be achieved" href="https://blog.jhades.org/introduction-to-angular2-the-main-goals/" target="_blank">The main goals of Angular 2 and how they will be achieved</a></em> from <a title="https://blog.jhades.org/" href="https://blog.jhades.org/" target="_blank">https://blog.jhades.org/</a>
 </p>

@@ -105,7 +105,7 @@ tags:
 </div>
 
 <p class="title note_normal" style="text-align: justify;">
-  <strong>Note:<br /> </strong>Before you begin with this tutorial I recommend you read first Spring&#8217;s <a title="http://spring.io/guides/gs/batch-processing/" href="http://spring.io/guides/gs/batch-processing/" target="_blank">Getting started &#8211; Creating a Batch Service</a>, because  the structure and the code presented here builds on that original.
+  <strong>Note:<br /> </strong>Before you begin with this tutorial I recommend you read first Spring&#8217;s <a title="https://spring.io/guides/gs/batch-processing/" href="https://spring.io/guides/gs/batch-processing/" target="_blank">Getting started &#8211; Creating a Batch Service</a>, because  the structure and the code presented here builds on that original.
 </p>
 
 <h2 class="title" style="color: #000000; text-align: justify;">
@@ -129,7 +129,7 @@ tags:
 </p>
 
 <p class="title note_normal" style="color: #000000; text-align: justify;">
-  <strong>Note:</strong> Before you start I also highly recommend you read the <a title="http://docs.spring.io/spring-batch/reference/html/domain.html" href="http://docs.spring.io/spring-batch/reference/html/domain.html" target="_blank">Domain Language of Batch</a>,  so that terms like &#8220;Jobs&#8221;, &#8220;Steps&#8221; or &#8220;ItemReaders&#8221; don&#8217;t sound strange to you.
+  <strong>Note:</strong> Before you start I also highly recommend you read the <a title="https://docs.spring.io/spring-batch/reference/html/domain.html" href="https://docs.spring.io/spring-batch/reference/html/domain.html" target="_blank">Domain Language of Batch</a>,  so that terms like &#8220;Jobs&#8221;, &#8220;Steps&#8221; or &#8220;ItemReaders&#8221; don&#8217;t sound strange to you.
 </p>
 
 <h2 class="title" style="color: #000000; text-align: justify;">
@@ -137,15 +137,15 @@ tags:
 </h2>
 
   * A favorite text editor or IDE
-  * <a title="http://www.oracle.com/technetwork/java/javase/downloads/index.html" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">JDK 1.7</a> or later
-  * <a title="http://maven.apache.org/download.cgi" href="http://maven.apache.org/download.cgi" target="_blank">Maven 3.0+ </a>
+  * <a title="https://www.oracle.com/technetwork/java/javase/downloads/index.html" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">JDK 1.7</a> or later
+  * <a title="https://maven.apache.org/download.cgi" href="https://maven.apache.org/download.cgi" target="_blank">Maven 3.0+ </a>
 
 <h2 class="title" style="color: #000000; text-align: justify;">
   <span id="3_Set_up_the_project">3. Set up the project</span>
 </h2>
 
 <p style="text-align: justify;">
-  The project is built with <a title="https://maven.apache.org/" href="https://maven.apache.org/" target="_blank">Maven</a>. It uses Spring Boot, which makes it easy to create stand-alone Spring based Applications that you can &#8220;just run&#8221;.  You can learn more about the Spring Boot by visiting the <a title="http://projects.spring.io/spring-boot/" href="http://projects.spring.io/spring-boot/" target="_blank">project&#8217;s website.</a>
+  The project is built with <a title="https://maven.apache.org/" href="https://maven.apache.org/" target="_blank">Maven</a>. It uses Spring Boot, which makes it easy to create stand-alone Spring based Applications that you can &#8220;just run&#8221;.  You can learn more about the Spring Boot by visiting the <a title="https://projects.spring.io/spring-boot/" href="https://projects.spring.io/spring-boot/" target="_blank">project&#8217;s website.</a>
 </p>
 
 <h3 style="text-align: justify;">
@@ -158,8 +158,8 @@ tags:
 
 <pre>
   <code class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
+&lt;project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
     &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
 
     &lt;groupId&gt;org.podcastpedia.batch&lt;/groupId&gt;
@@ -486,7 +486,7 @@ public Step step(){
 </pre>
 
 <p style="text-align: justify;">
-  The first method defines a job and the second one defines a single step. As you&#8217;ve read in <a title="http://docs.spring.io/spring-batch/reference/html/domain.html" href="http://docs.spring.io/spring-batch/reference/html/domain.html" target="_blank">The Domain Language of Batch</a>,  jobs are built from steps, where each step can involve a reader, a processor, and a writer.
+  The first method defines a job and the second one defines a single step. As you&#8217;ve read in <a title="https://docs.spring.io/spring-batch/reference/html/domain.html" href="https://docs.spring.io/spring-batch/reference/html/domain.html" target="_blank">The Domain Language of Batch</a>,  jobs are built from steps, where each step can involve a reader, a processor, and a writer.
 </p>
 
 <p style="text-align: justify;">
@@ -496,12 +496,12 @@ public Step step(){
 ## <span id="5_Spring_Batchprocessing_units">5. Spring Batch processing units</span>
 
 <p style="text-align: justify;">
-  Most of the batch processing can be described as reading data, doing some transformation on it and then writing the result out. This mirrors somehow the <a title="http://en.wikipedia.org/wiki/Extract,_transform,_load" href="http://en.wikipedia.org/wiki/Extract,_transform,_load" target="_blank">Extract, Transform, Load (ETL)</a> process, in case you know more about that. Spring Batch provides three key interfaces to help perform bulk reading and writing: <span style="color: #333333;"> </span><code class="classname" style="color: #333333;">ItemReader</code><span style="color: #333333;">, </span><code class="classname" style="color: #333333;">ItemProcessor</code><span style="color: #333333;"> and </span><code class="classname" style="color: #333333;">ItemWriter</code><span style="color: #333333;">.</span>
+  Most of the batch processing can be described as reading data, doing some transformation on it and then writing the result out. This mirrors somehow the <a title="https://en.wikipedia.org/wiki/Extract,_transform,_load" href="https://en.wikipedia.org/wiki/Extract,_transform,_load" target="_blank">Extract, Transform, Load (ETL)</a> process, in case you know more about that. Spring Batch provides three key interfaces to help perform bulk reading and writing: <span style="color: #333333;"> </span><code class="classname" style="color: #333333;">ItemReader</code><span style="color: #333333;">, </span><code class="classname" style="color: #333333;">ItemProcessor</code><span style="color: #333333;"> and </span><code class="classname" style="color: #333333;">ItemWriter</code><span style="color: #333333;">.</span>
 </p>
 
 ### <span id="51_Readers">5.1. Readers</span>
 
-ItemReader is an abstraction providing the mean to retrieve data from many different types of input: _flat files_, _xml files_, _database_, _jms_ etc., one item at a time. _See the <a title="http://docs.spring.io/spring-batch/trunk/reference/html/listOfReadersAndWriters.html" href="http://docs.spring.io/spring-batch/trunk/reference/html/listOfReadersAndWriters.html" target="_blank">Appendix A. List of ItemReaders and ItemWriters</a>_ for a complete list of available item readers.
+ItemReader is an abstraction providing the mean to retrieve data from many different types of input: _flat files_, _xml files_, _database_, _jms_ etc., one item at a time. _See the <a title="https://docs.spring.io/spring-batch/trunk/reference/html/listOfReadersAndWriters.html" href="https://docs.spring.io/spring-batch/trunk/reference/html/listOfReadersAndWriters.html" target="_blank">Appendix A. List of ItemReaders and ItemWriters</a>_ for a complete list of available item readers.
 
 In the Podcastpedia batch jobs I use the following specialized ItemReaders:
 
@@ -512,8 +512,8 @@ In the Podcastpedia batch jobs I use the following specialized ItemReaders:
 </p>
 
 <pre class="lang:default decode:true" title="Input file for FlatFileItemReader">FEED_URL; IDENTIFIER_ON_PODCASTPEDIA; CATEGORIES; LANGUAGE; MEDIA_TYPE; UPDATE_FREQUENCY; KEYWORDS; FB_PAGE; TWITTER_PAGE; GPLUS_PAGE; NAME_SUBMITTER; EMAIL_SUBMITTER
-http://www.5minutebiographies.com/feed/; 5minutebiographies; people_society, history; en; Audio; WEEKLY; biography, biographies, short biography, short biographies, 5 minute biographies, five minute biographies, 5 minute biography, five minute biography; https://www.facebook.com/5minutebiographies; https://twitter.com/5MinuteBios; ; Adrian Matei; adrianmatei@gmail.com
-http://notanotherpodcast.libsyn.com/rss; NotAnotherPodcast; entertainment; en; Audio; WEEKLY; Comedy, Sports, Cinema, Movies, Pop Culture, Food, Games; https://www.facebook.com/notanotherpodcastusa; https://twitter.com/NAPodcastUSA; https://plus.google.com/u/0/103089891373760354121/posts; Adrian Matei; adrianmatei@gmail.com</pre>
+https://www.5minutebiographies.com/feed/; 5minutebiographies; people_society, history; en; Audio; WEEKLY; biography, biographies, short biography, short biographies, 5 minute biographies, five minute biographies, 5 minute biography, five minute biography; https://www.facebook.com/5minutebiographies; https://twitter.com/5MinuteBios; ; Adrian Matei; adrianmatei@gmail.com
+https://notanotherpodcast.libsyn.com/rss; NotAnotherPodcast; entertainment; en; Audio; WEEKLY; Comedy, Sports, Cinema, Movies, Pop Culture, Food, Games; https://www.facebook.com/notanotherpodcastusa; https://twitter.com/NAPodcastUSA; https://plus.google.com/u/0/103089891373760354121/posts; Adrian Matei; adrianmatei@gmail.com</pre>
 
 <p style="text-align: justify;">
   As you can see the first line defines the names of the &#8220;columns&#8221;, and the following lines contain the actual data (delimited by &#8220;;&#8221;), that needs translating to domain objects relevant in the context.
@@ -612,7 +612,7 @@ The `FieldSetMapper` is an interface that is used to map data obtained from a `F
 #### <span id="52_JdbcCursorItemReader">5.2. JdbcCursorItemReader</span>
 
 <p style="text-align: justify;">
-  In the second job, <em>notifyEmailSubscribersJob</em>, in the reader, I only read email subscribers from a single database table, but further in the processor a more detailed read(via JPA) is executed to retrieve all the new episodes of the podcasts the user subscribed to. This is a common pattern employed in the batch world. Follow this <a title="http://docs.spring.io/spring-batch/trunk/reference/html/patterns.html" href="http://docs.spring.io/spring-batch/trunk/reference/html/patterns.html" target="_blank">link</a> for more Common Batch Patterns.
+  In the second job, <em>notifyEmailSubscribersJob</em>, in the reader, I only read email subscribers from a single database table, but further in the processor a more detailed read(via JPA) is executed to retrieve all the new episodes of the podcasts the user subscribed to. This is a common pattern employed in the batch world. Follow this <a title="https://docs.spring.io/spring-batch/trunk/reference/html/patterns.html" href="https://docs.spring.io/spring-batch/trunk/reference/html/patterns.html" target="_blank">link</a> for more Common Batch Patterns.
 </p>
 
 <p style="text-align: justify;">
@@ -802,7 +802,7 @@ While the processor of the first job requires a little bit of more logic, becaus
 </pre>
 
 <p style="text-align: justify;">
-  the processor from the second job uses the <a title="http://docs.spring.io/spring-batch/trunk/reference/html/patterns.html" href="http://docs.spring.io/spring-batch/trunk/reference/html/patterns.html" target="_blank">&#8216;Driving Query&#8217; approach</a>, where I expand the data retrieved from the Reader with another &#8220;JPA-read&#8221; and I group the items on podcasts with episodes so that it looks nice in the emails that I am sending out to subscribers:
+  the processor from the second job uses the <a title="https://docs.spring.io/spring-batch/trunk/reference/html/patterns.html" href="https://docs.spring.io/spring-batch/trunk/reference/html/patterns.html" target="_blank">&#8216;Driving Query&#8217; approach</a>, where I expand the data retrieved from the Reader with another &#8220;JPA-read&#8221; and I group the items on podcasts with episodes so that it looks nice in the emails that I am sending out to subscribers:
 </p>
 
 <pre>
@@ -906,19 +906,19 @@ The best explanation for  `SpringApplication`-, `@ComponentScan`&#8211; and `@E
 
 <div class="paragraph" style="color: #34302d;">
   <p style="font-weight: 400; color: #34302d; text-align: justify; padding-left: 30px;">
-    &#8220;The <code style="color: #305cb5;">main()</code> method defers to the <a style="color: #5fa134;" href="http://docs.spring.io/spring-boot/docs/1.1.5.RELEASE/api/org/springframework/boot/SpringApplication.html"><code style="color: #305cb5;">SpringApplication</code></a> helper class, providing <code style="color: #305cb5;">Application.class</code> as an argument to its <code style="color: #305cb5;">run()</code> method. This tells Spring to read the annotation metadata from <code style="color: #305cb5;">Application</code> and to manage it as a component in the <a style="color: #5fa134;" href="http://spring.io/understanding/application-context">Spring application context</a>.
+    &#8220;The <code style="color: #305cb5;">main()</code> method defers to the <a style="color: #5fa134;" href="https://docs.spring.io/spring-boot/docs/1.1.5.RELEASE/api/org/springframework/boot/SpringApplication.html"><code style="color: #305cb5;">SpringApplication</code></a> helper class, providing <code style="color: #305cb5;">Application.class</code> as an argument to its <code style="color: #305cb5;">run()</code> method. This tells Spring to read the annotation metadata from <code style="color: #305cb5;">Application</code> and to manage it as a component in the <a style="color: #5fa134;" href="https://spring.io/understanding/application-context">Spring application context</a>.
   </p>
 </div>
 
 <div class="paragraph" style="color: #34302d; padding-left: 30px;">
   <p style="font-weight: 400; color: #34302d; text-align: justify;">
-    <span style="color: #34302d;">The <code style="color: #305cb5;">@ComponentScan</code> annotation tells Spring to search recursively through the <code>org.podcastpedia.batch</code></span><span style="color: #305cb5; font-family: monospace, serif; font-size: small;"><span style="line-height: 19.09090805053711px;"> </span></span><span style="color: #34302d;">package and its children for classes marked directly or indirectly with Spring’s </span><code style="color: #305cb5;">&lt;a style="color: #5fa134;" href="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/stereotype/Component.html">@Component&lt;/a> </code><span style="color: #34302d;">annotation. This directive ensures that Spring finds and registers </span><code style="color: #305cb5;">BatchConfiguration</code><span style="color: #34302d;">, because it is marked with </span><code style="color: #305cb5;">@Configuration</code><span style="color: #34302d;">, which in turn is a kind of </span><code style="color: #305cb5;">@Component </code><span style="color: #34302d;">annotation.</span>
+    <span style="color: #34302d;">The <code style="color: #305cb5;">@ComponentScan</code> annotation tells Spring to search recursively through the <code>org.podcastpedia.batch</code></span><span style="color: #305cb5; font-family: monospace, serif; font-size: small;"><span style="line-height: 19.09090805053711px;"> </span></span><span style="color: #34302d;">package and its children for classes marked directly or indirectly with Spring’s </span><code style="color: #305cb5;">&lt;a style="color: #5fa134;" href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/stereotype/Component.html">@Component&lt;/a> </code><span style="color: #34302d;">annotation. This directive ensures that Spring finds and registers </span><code style="color: #305cb5;">BatchConfiguration</code><span style="color: #34302d;">, because it is marked with </span><code style="color: #305cb5;">@Configuration</code><span style="color: #34302d;">, which in turn is a kind of </span><code style="color: #305cb5;">@Component </code><span style="color: #34302d;">annotation.</span>
   </p>
 </div>
 
 <div class="paragraph" style="color: #34302d;">
   <p style="font-weight: 400; color: #34302d; text-align: justify; padding-left: 30px;">
-    The <a style="color: #5fa134;" href="http://docs.spring.io/spring-boot/docs/1.1.5.RELEASE/api/org/springframework/boot/autoconfigure/EnableAutoConfiguration.html"><code style="color: #305cb5;">@EnableAutoConfiguration</code></a> annotation switches on reasonable default behaviors based on the content of your classpath. For example, it looks for any class that implements the <code style="color: #305cb5;">CommandLineRunner</code> interface and invokes its <code style="color: #305cb5;">run()</code> method.&#8221;
+    The <a style="color: #5fa134;" href="https://docs.spring.io/spring-boot/docs/1.1.5.RELEASE/api/org/springframework/boot/autoconfigure/EnableAutoConfiguration.html"><code style="color: #305cb5;">@EnableAutoConfiguration</code></a> annotation switches on reasonable default behaviors based on the content of your classpath. For example, it looks for any class that implements the <code style="color: #305cb5;">CommandLineRunner</code> interface and invokes its <code style="color: #305cb5;">run()</code> method.&#8221;
   </p>
 </div>
 
@@ -927,15 +927,15 @@ The best explanation for  `SpringApplication`-, `@ComponentScan`&#8211; and `@E
 </p>
 
 <li style="text-align: justify;">
-  the <a title="http://docs.spring.io/spring-batch/trunk/apidocs/org/springframework/batch/core/launch/JobLauncher.html" href="http://docs.spring.io/spring-batch/trunk/apidocs/org/springframework/batch/core/launch/JobLauncher.html" target="_blank"><code>JobLauncher</code></a>, which is a simple interface for controlling jobs,  is retrieved from the ApplicationContext. Remember this is automatically made available via the <code>@EnableBatchProcessing</code> annotation.
+  the <a title="https://docs.spring.io/spring-batch/trunk/apidocs/org/springframework/batch/core/launch/JobLauncher.html" href="https://docs.spring.io/spring-batch/trunk/apidocs/org/springframework/batch/core/launch/JobLauncher.html" target="_blank"><code>JobLauncher</code></a>, which is a simple interface for controlling jobs,  is retrieved from the ApplicationContext. Remember this is automatically made available via the <code>@EnableBatchProcessing</code> annotation.
 </li>
-  * now based on the first parameter of the application (`args[0]`), I will retrieve the corresponding <a title="http://docs.spring.io/spring-batch/trunk/apidocs/org/springframework/batch/core/Job.html" href="http://docs.spring.io/spring-batch/trunk/apidocs/org/springframework/batch/core/Job.html" target="_blank"><code>Job</code></a> from the `ApplicationContext`
-  * then the <a title="http://docs.spring.io/spring-batch/apidocs/org/springframework/batch/core/JobParameters.html" href="http://docs.spring.io/spring-batch/apidocs/org/springframework/batch/core/JobParameters.html" target="_blank"><code>JobParameters</code></a> are prepared, where I use the current date &#8211; `.addDate("date", new Date())`, so that the job executions are always unique.
+  * now based on the first parameter of the application (`args[0]`), I will retrieve the corresponding <a title="https://docs.spring.io/spring-batch/trunk/apidocs/org/springframework/batch/core/Job.html" href="https://docs.spring.io/spring-batch/trunk/apidocs/org/springframework/batch/core/Job.html" target="_blank"><code>Job</code></a> from the `ApplicationContext`
+  * then the <a title="https://docs.spring.io/spring-batch/apidocs/org/springframework/batch/core/JobParameters.html" href="https://docs.spring.io/spring-batch/apidocs/org/springframework/batch/core/JobParameters.html" target="_blank"><code>JobParameters</code></a> are prepared, where I use the current date &#8211; `.addDate("date", new Date())`, so that the job executions are always unique.
   * once everything is in place, the job can be executed: `JobExecution jobExecution = jobLauncher.run(addNewPodcastJob, jobParameters);`
   * you can use the returned `jobExecution` to gain access to `BatchStatus`, exit code, or job name and id.
 
 <p class="note_normal">
-  <strong style="color: #000000;">Note:</strong><span style="color: #000000;"> I highly recommend you read and understand the <a title="http://docs.spring.io/spring-batch/reference/html/metaDataSchema.html" href="http://docs.spring.io/spring-batch/reference/html/metaDataSchema.html" target="_blank">Meta-Data Schema for Spring Batch</a>. It will also help you better understand the Spring Batch Domain objects.</span>
+  <strong style="color: #000000;">Note:</strong><span style="color: #000000;"> I highly recommend you read and understand the <a title="https://docs.spring.io/spring-batch/reference/html/metaDataSchema.html" href="https://docs.spring.io/spring-batch/reference/html/metaDataSchema.html" target="_blank">Meta-Data Schema for Spring Batch</a>. It will also help you better understand the Spring Batch Domain objects.</span>
 </p>
 
 ### <span id="61_Running_the_application_on_dev_and_prod_environments">6.1. Running the application on dev and prod environments</span> {.note_normal}
@@ -967,12 +967,12 @@ The best explanation for  `SpringApplication`-, `@ComponentScan`&#8211; and `@E
 
 ### <span id="Web">Web</span>
 
-  1. <a title="http://projects.spring.io/spring-batch/" href="http://projects.spring.io/spring-batch/" target="_blank">Spring Batch project</a>
-      1. <a title="http://docs.spring.io/spring-batch/reference/html/" href="http://docs.spring.io/spring-batch/reference/html/" target="_blank">Spring Batch &#8211; Reference Documentation</a>
-      2. <a title="http://docs.spring.io/spring-batch/trunk/reference/html/patterns.html" href="http://docs.spring.io/spring-batch/trunk/reference/html/patterns.html" target="_blank">Common Batch Patterns</a>
-      3. <a title="http://spring.io/guides/gs/batch-processing/" href="http://spring.io/guides/gs/batch-processing/" target="_blank">Creating a Batch Service</a>
-  2. <a title="http://docs.spring.io/spring-batch/apidocs/" href="http://docs.spring.io/spring-batch/apidocs/" target="_blank">Spring Batch Api Docs</a>
-  3. <a title="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/" href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/" target="_blank">Spring Boot Reference Guide</a>
+  1. <a title="https://projects.spring.io/spring-batch/" href="https://projects.spring.io/spring-batch/" target="_blank">Spring Batch project</a>
+      1. <a title="https://docs.spring.io/spring-batch/reference/html/" href="https://docs.spring.io/spring-batch/reference/html/" target="_blank">Spring Batch &#8211; Reference Documentation</a>
+      2. <a title="https://docs.spring.io/spring-batch/trunk/reference/html/patterns.html" href="https://docs.spring.io/spring-batch/trunk/reference/html/patterns.html" target="_blank">Common Batch Patterns</a>
+      3. <a title="https://spring.io/guides/gs/batch-processing/" href="https://spring.io/guides/gs/batch-processing/" target="_blank">Creating a Batch Service</a>
+  2. <a title="https://docs.spring.io/spring-batch/apidocs/" href="https://docs.spring.io/spring-batch/apidocs/" target="_blank">Spring Batch Api Docs</a>
+  3. <a title="https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/" href="https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/" target="_blank">Spring Boot Reference Guide</a>
   4. <a title="https://blog.codecentric.de/en/2013/06/spring-batch-2-2-javaconfig-part-1-a-comparison-to-xml/" href="https://blog.codecentric.de/en/2013/06/spring-batch-2-2-javaconfig-part-1-a-comparison-to-xml/" target="_blank">CodeCentric Spring Batch Series</a> by <a title="https://twitter.com/TobiasFlohre" href="https://twitter.com/TobiasFlohre" target="_blank">Tobias Flohre</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

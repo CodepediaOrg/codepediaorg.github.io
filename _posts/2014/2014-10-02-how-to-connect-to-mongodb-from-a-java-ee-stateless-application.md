@@ -21,7 +21,7 @@ tags:
 </h2>
 
 <p style="text-align: justify;">
-  To connect from Java to MongoDB, you can use the <a title="http://docs.mongodb.org/ecosystem/drivers/java/" href="http://docs.mongodb.org/ecosystem/drivers/java/" target="_blank">Java MongoDB Driver</a>.  If you are building your application with Maven, you can add the dependency to the pom.xml file:
+  To connect from Java to MongoDB, you can use the <a title="https://docs.mongodb.org/ecosystem/drivers/java/" href="https://docs.mongodb.org/ecosystem/drivers/java/" target="_blank">Java MongoDB Driver</a>.  If you are building your application with Maven, you can add the dependency to the pom.xml file:
 </p>
 
 <pre class="lang:default decode:true" title="MongoDB java driver dependency">&lt;dependency&gt;
@@ -84,10 +84,10 @@ public class MongoClientProvider {
 <strong style="font-weight: bold;">Note:</strong>
 
 <li style="text-align: justify;">
-  <code>@Singleton</code> – probably the most important line of code in this class. This annotation specifies that there will be exactly one singleton of this type of bean in the application. This bean can be invoked concurrently by multiple threads. It comes also with a <a style="color: #bc360a;" title="http://docs.oracle.com/javaee/5/api/javax/annotation/PostConstruct.html" href="http://docs.oracle.com/javaee/5/api/javax/annotation/PostConstruct.html" target="_blank"><code>@PostConstruct</code></a> annotation. This annotation is used on a method that needs to be executed after dependency injection is done to perform any initialization – in our case is to initialize the MongoClient
+  <code>@Singleton</code> – probably the most important line of code in this class. This annotation specifies that there will be exactly one singleton of this type of bean in the application. This bean can be invoked concurrently by multiple threads. It comes also with a <a style="color: #bc360a;" title="https://docs.oracle.com/javaee/5/api/javax/annotation/PostConstruct.html" href="https://docs.oracle.com/javaee/5/api/javax/annotation/PostConstruct.html" target="_blank"><code>@PostConstruct</code></a> annotation. This annotation is used on a method that needs to be executed after dependency injection is done to perform any initialization – in our case is to initialize the MongoClient
 </li>
 <li style="text-align: justify;">
-  the <code>@ConcurrencyManagement(ConcurrencyManagementType.CONTAINER)</code> declares a singleton session bean’s concurrency management type. By default it is set to <code>Container,</code> I use it here only to highlight its existence. The other option <a style="color: #bc360a;" title="http://docs.oracle.com/javaee/6/api/javax/ejb/ConcurrencyManagementType.html#BEAN" href="http://docs.oracle.com/javaee/6/api/javax/ejb/ConcurrencyManagementType.html#BEAN" target="_blank"><code>ConcurrencyManagementType.BEAN</code></a> specifies that the bean developer is responsible for managing concurrent access to the bean instance.
+  the <code>@ConcurrencyManagement(ConcurrencyManagementType.CONTAINER)</code> declares a singleton session bean’s concurrency management type. By default it is set to <code>Container,</code> I use it here only to highlight its existence. The other option <a style="color: #bc360a;" title="https://docs.oracle.com/javaee/6/api/javax/ejb/ConcurrencyManagementType.html#BEAN" href="https://docs.oracle.com/javaee/6/api/javax/ejb/ConcurrencyManagementType.html#BEAN" target="_blank"><code>ConcurrencyManagementType.BEAN</code></a> specifies that the bean developer is responsible for managing concurrent access to the bean instance.
 </li>
 <li style="text-align: justify;">
   the <code>@Lock(LockType.READ)</code> specifies the concurrency lock type for singleton beans with container-managed concurrency. When set to <code>LockType.READ</code>, it enforces the method to permit full concurrent access to it (assuming no write locks are held). This permits several threads to access the same MongoClient instance and take advantage of the internal pool of connections to the database. This is VERY IMPORTANT, because the other more conservative option <code>@Lock(LockType.WRITE)</code>, is the DEFAULT and enforces exclusive access to the bean instance. This should make the method slower in a highly concurrent environment…
@@ -135,7 +135,7 @@ public class TestMongoClientProvider {
 </pre>
 
 <p style="text-align: justify;">
-  <strong>Note:</strong> The db object will be a connection to a MongoDB server for the specified database. With it, you can do further operations.  I encourage you to read the <a title="http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/" href="http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/" target="_blank">Getting Started with Java Driver</a> for more on that&#8230;
+  <strong>Note:</strong> The db object will be a connection to a MongoDB server for the specified database. With it, you can do further operations.  I encourage you to read the <a title="https://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/" href="https://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/" target="_blank">Getting Started with Java Driver</a> for more on that&#8230;
 </p>
 
 ## Be aware
@@ -166,7 +166,7 @@ try {
 
 ## Resources
 
-  1. <a title="http://docs.mongodb.org/ecosystem/drivers/java/" href="http://docs.mongodb.org/ecosystem/drivers/java/" target="_blank">Java MongoDB Driver</a>
-  2. <a title="http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/" href="http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/" target="_blank">Getting Started with Java Driver</a>
-  3. <a title="http://docs.mongodb.org/ecosystem/drivers/java-concurrency/" href="http://docs.mongodb.org/ecosystem/drivers/java-concurrency/" target="_blank">Java Driver Concurrency</a>
+  1. <a title="https://docs.mongodb.org/ecosystem/drivers/java/" href="https://docs.mongodb.org/ecosystem/drivers/java/" target="_blank">Java MongoDB Driver</a>
+  2. <a title="https://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/" href="https://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/" target="_blank">Getting Started with Java Driver</a>
+  3. <a title="https://docs.mongodb.org/ecosystem/drivers/java-concurrency/" href="https://docs.mongodb.org/ecosystem/drivers/java-concurrency/" target="_blank">Java Driver Concurrency</a>
   4. <a title="https://github.com/mongodb/mongo-java-driver/tree/master/src/examples/example" href="https://github.com/mongodb/mongo-java-driver/tree/master/src/examples/example" target="_blank">GitHub &#8211; mongodb / mongo-java-driver examples</a>

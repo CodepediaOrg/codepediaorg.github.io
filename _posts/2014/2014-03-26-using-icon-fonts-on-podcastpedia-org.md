@@ -45,7 +45,7 @@ tags:
 </div>
 
 <p style="text-align: justify;">
-  Some time ago I discovered <a title="CSS Sprites" href="http://css-tricks.com/css-sprites/" target="_blank">CSS sprites </a>and I said to myself &#8220;what a cool thing, I must definitely use it on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, for all the existent social, flags and media icons&#8221;- by using CSS sprites you send only one HTTP request to get the bigger picture, instead of issuing individual HTTP requests for each icon.  When I finally rolled up my sleeves and built a CSS sprite for the icons, I had another revelation &#8211; I recalled having heard about icon fonts, which were supposed to be superior to using images as icons in every way (well maybe except the monochromatic part&#8230;).
+  Some time ago I discovered <a title="CSS Sprites" href="https://css-tricks.com/css-sprites/" target="_blank">CSS sprites </a>and I said to myself &#8220;what a cool thing, I must definitely use it on <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, for all the existent social, flags and media icons&#8221;- by using CSS sprites you send only one HTTP request to get the bigger picture, instead of issuing individual HTTP requests for each icon.  When I finally rolled up my sleeves and built a CSS sprite for the icons, I had another revelation &#8211; I recalled having heard about icon fonts, which were supposed to be superior to using images as icons in every way (well maybe except the monochromatic part&#8230;).
 </p>
 
 <p style="text-align: justify;">
@@ -61,11 +61,11 @@ tags:
 </h2>
 
 <p style="text-align: justify;">
-  After an initial research on that topic, I&#8217;ve noticed there is a myriad of resources out there for icon fonts to choose from : <a title="http://fortawesome.github.io/Font-Awesome/" href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>, <a title="http://glyphicons.com/" href="http://glyphicons.com/" target="_blank">Glyphicons</a>, <a title="http://icomoon.io/" href="http://icomoon.io/" target="_blank">IcoMoon</a> etc. For more of them you can check out out this <a title="http://css-tricks.com/flat-icons-icon-fonts/" href="http://css-tricks.com/flat-icons-icon-fonts/" target="_blank">compilation of icon fonts resources from css-tricks.com</a>.
+  After an initial research on that topic, I&#8217;ve noticed there is a myriad of resources out there for icon fonts to choose from : <a title="https://fortawesome.github.io/Font-Awesome/" href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>, <a title="https://glyphicons.com/" href="https://glyphicons.com/" target="_blank">Glyphicons</a>, <a title="https://icomoon.io/" href="https://icomoon.io/" target="_blank">IcoMoon</a> etc. For more of them you can check out out this <a title="https://css-tricks.com/flat-icons-icon-fonts/" href="https://css-tricks.com/flat-icons-icon-fonts/" target="_blank">compilation of icon fonts resources from css-tricks.com</a>.
 </p>
 
 <p style="text-align: justify;">
-  For Podcastpedia I chose the ones from <a title="http://icomoon.io" href="http://icomoon.io" target="_blank">IcoMoon</a>, because I&#8217;ve heard of the website at a JavaScript/HTML 5 conference I attended in Munich and I really liked it after giving it an initial try. The IcoMoon app lets you build and use your own icon sets in different formats including SVG, icon font or simple PNG sprites (I have downloaded the font). You also get a <em>demo.html</em> file and a <em>style.css</em> demonstrating how you can use them.
+  For Podcastpedia I chose the ones from <a title="https://icomoon.io" href="https://icomoon.io" target="_blank">IcoMoon</a>, because I&#8217;ve heard of the website at a JavaScript/HTML 5 conference I attended in Munich and I really liked it after giving it an initial try. The IcoMoon app lets you build and use your own icon sets in different formats including SVG, icon font or simple PNG sprites (I have downloaded the font). You also get a <em>demo.html</em> file and a <em>style.css</em> demonstrating how you can use them.
 </p>
 
 <h2 style="text-align: justify;">
@@ -118,18 +118,18 @@ tags:
 
 As you can see, based on the file extension, there are several font formats included:
 
-**<a title="http://en.wikipedia.org/wiki/Embedded_OpenType" href="http://en.wikipedia.org/wiki/Embedded_OpenType" target="_blank">Embedded OpenType Fonts (EOT)<br /> </a>**EOT fonts are a compact form of OpenType fonts designed by Microsoft for use as embedded fonts on web pages.
+**<a title="https://en.wikipedia.org/wiki/Embedded_OpenType" href="https://en.wikipedia.org/wiki/Embedded_OpenType" target="_blank">Embedded OpenType Fonts (EOT)<br /> </a>**EOT fonts are a compact form of OpenType fonts designed by Microsoft for use as embedded fonts on web pages.
 
 <p style="text-align: justify;">
-  <strong><a title="http://en.wikipedia.org/wiki/Web_Open_Font_Format" href="http://en.wikipedia.org/wiki/Web_Open_Font_Format" target="_blank">The Web Open Font Format (WOFF)<br /> </a></strong>WOFF is a font format for use in web pages. It was developed in 2009, and is now a W3C Recommendation. WOFF is essentially OpenType or TrueType with compression and additional metadata. The goal is to support font distribution from a server to a client over a network with bandwidth constraints.
+  <strong><a title="https://en.wikipedia.org/wiki/Web_Open_Font_Format" href="https://en.wikipedia.org/wiki/Web_Open_Font_Format" target="_blank">The Web Open Font Format (WOFF)<br /> </a></strong>WOFF is a font format for use in web pages. It was developed in 2009, and is now a W3C Recommendation. WOFF is essentially OpenType or TrueType with compression and additional metadata. The goal is to support font distribution from a server to a client over a network with bandwidth constraints.
 </p>
 
 <p style="text-align: justify;">
-  <strong><a title="http://en.wikipedia.org/wiki/TrueType" href="http://en.wikipedia.org/wiki/TrueType" target="_blank">TrueType Fonts (TTF)</a><br /> </strong>TrueType is an outline font standard developed by Apple and Microsoft in the late 1980s as a competitor to Adobe&#8217;s Type 1 fonts used in PostScript. It has become the most common format for fonts on both the Mac OS and Microsoft Windows operating systems.
+  <strong><a title="https://en.wikipedia.org/wiki/TrueType" href="https://en.wikipedia.org/wiki/TrueType" target="_blank">TrueType Fonts (TTF)</a><br /> </strong>TrueType is an outline font standard developed by Apple and Microsoft in the late 1980s as a competitor to Adobe&#8217;s Type 1 fonts used in PostScript. It has become the most common format for fonts on both the Mac OS and Microsoft Windows operating systems.
 </p>
 
 <p style="text-align: justify;">
-  <strong><a title="http://www.w3.org/TR/SVG11/fonts.html#Introduction" href="http://www.w3.org/TR/SVG11/fonts.html#Introduction" target="_blank">SVG Fonts/Shapes</a><br /> </strong>SVG fonts allow SVG to be used as glyphs when displaying text. The SVG 1.1 specification define a font module that allows the creation of fonts within an SVG document. You can also apply CSS to SVG documents, and the <code>@font-face</code> rule can be applied to text in SVG documents.
+  <strong><a title="https://www.w3.org/TR/SVG11/fonts.html#Introduction" href="https://www.w3.org/TR/SVG11/fonts.html#Introduction" target="_blank">SVG Fonts/Shapes</a><br /> </strong>SVG fonts allow SVG to be used as glyphs when displaying text. The SVG 1.1 specification define a font module that allows the creation of fonts within an SVG document. You can also apply CSS to SVG documents, and the <code>@font-face</code> rule can be applied to text in SVG documents.
 </p>
 
 <p class="note_normal">
@@ -169,7 +169,7 @@ I use the same procedure (could be `:before` ) to insert the other icon fonts pr
 
 As a conclusion I would like to mention I am very happy right now with the icon fonts and I would like to mention some of the benefits of using icon fonts :
 
-  * they scale well (big advantage in <a title="Responsive web design" href="http://en.wikipedia.org/wiki/Responsive_web_design" target="_blank"><em>responsive design</em></a> )
+  * they scale well (big advantage in <a title="Responsive web design" href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank"><em>responsive design</em></a> )
   * you can easily change their color
   * you can easily add shadows to their shapes
   * can have transparent knockouts
@@ -187,12 +187,12 @@ Thank you for sharing and connecting with us.
 
 ## <span id="5_RESOURCES">5. RESOURCES</span>
 
-  * <a title="icomoon.io" href="http://icomoon.io" target="_blank">http://icomoon.io/ &#8211; Custom Built and Crisp Icon Fonts, Done Right</a>
-  * <a title="http://en.wikipedia.org/wiki/Glyph" href="http://en.wikipedia.org/wiki/Glyph" target="_blank">Wikipedia &#8211; Glyph</a>
-  * <a title="http://www.vanseodesign.com/web-design/icon-fonts/" href="http://www.vanseodesign.com/web-design/icon-fonts/" target="_blank">Why And How To Use Icon Fonts</a>
-  * <a title="http://css-tricks.com/flat-icons-icon-fonts/" href="http://css-tricks.com/flat-icons-icon-fonts/" target="_blank">The Big List of Flat Icons & Icon Fonts</a>
-  * <a title="http://www.w3schools.com/css/css3_fonts.asp" href="http://www.w3schools.com/css/css3_fonts.asp" target="_blank">CSS3 Web Fonts</a>
-  * <a title="http://en.wikipedia.org/wiki/Web_Open_Font_Format" href="http://en.wikipedia.org/wiki/Web_Open_Font_Format" target="_blank">Web Open Font Format &#8211; WOFF </a>
+  * <a title="icomoon.io" href="https://icomoon.io" target="_blank">https://icomoon.io/ &#8211; Custom Built and Crisp Icon Fonts, Done Right</a>
+  * <a title="https://en.wikipedia.org/wiki/Glyph" href="https://en.wikipedia.org/wiki/Glyph" target="_blank">Wikipedia &#8211; Glyph</a>
+  * <a title="https://www.vanseodesign.com/web-design/icon-fonts/" href="https://www.vanseodesign.com/web-design/icon-fonts/" target="_blank">Why And How To Use Icon Fonts</a>
+  * <a title="https://css-tricks.com/flat-icons-icon-fonts/" href="https://css-tricks.com/flat-icons-icon-fonts/" target="_blank">The Big List of Flat Icons & Icon Fonts</a>
+  * <a title="https://www.w3schools.com/css/css3_fonts.asp" href="https://www.w3schools.com/css/css3_fonts.asp" target="_blank">CSS3 Web Fonts</a>
+  * <a title="https://en.wikipedia.org/wiki/Web_Open_Font_Format" href="https://en.wikipedia.org/wiki/Web_Open_Font_Format" target="_blank">Web Open Font Format &#8211; WOFF </a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

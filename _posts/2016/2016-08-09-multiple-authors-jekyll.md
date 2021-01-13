@@ -52,7 +52,7 @@ ama:
     - title: "github"
       url: "https://github.com/adrianmatei-me"
     - title: "linkedin"
-      url: "https://www.linkedin.com/in/adrianmatei1983"
+      url: "https://www.linkedin.com/in/adrianmatei-me"
     - title: "youtube"
       url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
     - title: "facebook"
@@ -72,7 +72,7 @@ dexter:
     - title: "github"
       url: "https://github.com/adrianmatei-me"
     - title: "linkedin"
-      url: "https://www.linkedin.com/in/adrianmatei1983"
+      url: "https://www.linkedin.com/in/adrianmatei-me"
     - title: "youtube"
       url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
     - title: "facebook"
@@ -81,7 +81,7 @@ dexter:
 ```
 
 [^4]: <https://jekyllrb.com/docs/datafiles/>
-[^5]: <http://yaml.org/>
+[^5]: <https://yaml.org/>
 [^6]: <https://mademistakes.com/articles/using-jekyll-2016/>
 
 Now in the post's YAML front matter I use an `author:` entry, containing a key that matches one in the `authors.yml`, mentioned above. For example, newer posts from me have an entry like `author: ama`.

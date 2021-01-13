@@ -14,11 +14,11 @@ tags:
 ---
 This post is about automatically generating sitemaps. I chose this topic, because it is fresh in my mind as I have recently started using sitemaps for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> After some research I came to the conclusion this would be a good thing &#8211; at the time of the posting Google had 3171 URLs indexed for the website (it has been live for 3 months now), whereby after generating sitemaps there were 87,818 URLs submitted. I am curios how many will get indexed after that&#8230;
 
-So because I didn&#8217;t want to introduce over 80k URLs manually, I had to come up with an automated solution for that. Because Podcastpedia.org was developed with Java, it came easy to me to select <a title="SitemapGen4j is an XML sitemap generator written in Java." href="http://code.google.com/p/sitemapgen4j/" target="_blank">sitemapgen4j</a>
+So because I didn&#8217;t want to introduce over 80k URLs manually, I had to come up with an automated solution for that. Because Podcastpedia.org was developed with Java, it came easy to me to select <a title="SitemapGen4j is an XML sitemap generator written in Java." href="https://code.google.com/p/sitemapgen4j/" target="_blank">sitemapgen4j</a>
 
 ## Maven depedency
 
-Check out the latest version <a title="Mvn repository" href="http://mvnrepository.com/artifact/com.google.code/sitemapgen4j" target="_blank">here</a>:
+Check out the latest version <a title="Mvn repository" href="https://mvnrepository.com/artifact/com.google.code/sitemapgen4j" target="_blank">here</a>:
 
 <div>
   <pre>	com.google.code
@@ -88,7 +88,7 @@ _Method : createSitemapForPodcastsWithFrequency &#8211; generates one sitemap fi
 			wsg.write();
 		} else {
 			// in this case multiple files will be created and sitemap_index.xml file describing the files which will be ignored
-			// workaround to resolve the issue described at http://code.google.com/p/sitemapgen4j/issues/attachmentText?id=8&aid=80003000&name=Admit_Single_Sitemap_in_Index.patch&token=p2CFJZ5OOE5utzZV1UuxnVzFJmE%3A1375266156989
+			// workaround to resolve the issue described at https://code.google.com/p/sitemapgen4j/issues/attachmentText?id=8&aid=80003000&name=Admit_Single_Sitemap_in_Index.patch&token=p2CFJZ5OOE5utzZV1UuxnVzFJmE%3A1375266156989
 			wsg.write();
 			wsg.writeSitemapsWithIndex();
 		}
@@ -101,7 +101,7 @@ The generated file contains URLs to podcasts and episodes, with changeFreq and l
 Snippet from the generated <a title="sitemap for monthly updated podcasts" href="https://github.com/CodepediaOrg/podcastpedia/sitemap_MONTHLY.xml.gz" target="_blank">sitemap_MONTHLY.xml</a>:
 
 <pre class="brush: xml; title: ; notranslate" title="">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" &gt;
+&lt;urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" &gt;
   &lt;url&gt;
     &lt;loc&gt;https://github.com/CodepediaOrg/podcastpedia/podcasts/581/heise-Developer-SoftwareArchitekTOUR-Podcast&lt;/loc&gt;
     &lt;lastmod&gt;2013-07-05T17:01+02:00&lt;/lastmod&gt;
@@ -161,7 +161,7 @@ The process is quite simple &#8211; the method looks in the folder where the sit
 Et voilà <a title="Sitemap index Podcastpedia.org" href="https://github.com/CodepediaOrg/podcastpedia/sitemap_index.xml" target="_blank">sitemap_index.xml</a>:
 
 <pre class="brush: xml; title: ; notranslate" title="">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+&lt;sitemapindex xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"&gt;
   &lt;sitemap&gt;
     &lt;loc&gt;https://github.com/CodepediaOrg/podcastpedia/sitemap_DAILY.xml.gz&lt;/loc&gt;
     &lt;lastmod&gt;2013-08-01T07:24:38.450+02:00&lt;/lastmod&gt;
@@ -195,9 +195,9 @@ We promise to only share high quality podcasts and episodes.
 
 ### References
 
-  * <a href="http://code.google.com/p/sitemapgen4j/" target="_blank">http://code.google.com/p/sitemapgen4j/</a>
+  * <a href="https://code.google.com/p/sitemapgen4j/" target="_blank">https://code.google.com/p/sitemapgen4j/</a>
   * <a href="https://support.google.com/webmasters/answer/156184?hl=en" target="_blank">https://support.google.com/webmasters/answer/156184?hl=en</a>
-  * <a href="http://www.sitemaps.org/" target="_blank">http://www.sitemaps.org/</a>
+  * <a href="https://www.sitemaps.org/" target="_blank">https://www.sitemaps.org/</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

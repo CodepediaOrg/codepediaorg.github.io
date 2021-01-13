@@ -45,7 +45,7 @@ tags:
 </div>
 
 <p style="text-align: justify;">
-  <a title="Podcastpedia.org, knowledge to go" href="http://podcastpedia.org" target="_blank">Podcastpedia.org</a> makes use of <a title="Apache Tiles" href="http://tiles.apache.org/index.html" target="_blank">Apache Tiles</a> for its layout. This approach was taken because the website pages share a similar structure. Please read first the <a title="Tiles, getting started" href="http://tiles.apache.org/getting_started.html" target="_blank">Getting started guide</a> and <a title="Tiles concepts" href="http://tiles.apache.org/2.2/framework/tutorial/basic/concepts.html" target="_blank">Tiles concepts</a> to have a better understanding of what follows. This post will present how Tiles is integrated with Spring MVC for Podcastpedia.org
+  <a title="Podcastpedia.org, knowledge to go" href="https://podcastpedia.org" target="_blank">Podcastpedia.org</a> makes use of <a title="Apache Tiles" href="https://tiles.apache.org/index.html" target="_blank">Apache Tiles</a> for its layout. This approach was taken because the website pages share a similar structure. Please read first the <a title="Tiles, getting started" href="https://tiles.apache.org/getting_started.html" target="_blank">Getting started guide</a> and <a title="Tiles concepts" href="https://tiles.apache.org/2.2/framework/tutorial/basic/concepts.html" target="_blank">Tiles concepts</a> to have a better understanding of what follows. This post will present how Tiles is integrated with Spring MVC for Podcastpedia.org
 </p>
 
 <p style="padding-left: 30px;">
@@ -55,7 +55,7 @@ tags:
 ## <span id="Necessary_artifacts">Necessary artifacts</span>
 
 <p style="text-align: justify;">
-  First of all Tiles jars are required in the classpath. They can be directly downloadded from the <a title="Download Tiles" href="http://tiles.apache.org/download.html" target="_blank">official website</a>, but Tiles has also been published to the public Maven repository.
+  First of all Tiles jars are required in the classpath. They can be directly downloadded from the <a title="Download Tiles" href="https://tiles.apache.org/download.html" target="_blank">official website</a>, but Tiles has also been published to the public Maven repository.
 </p>
 
 <p style="text-align: justify;">
@@ -97,12 +97,12 @@ If you need a dependency to Tiles JSP support, Declare the dependency this way:
 For better readability the Spring Tiles configuration has been placed in a separate file _pcm-tiles.xml_ :
 
 <pre class="lang:default mark:34,48 decode:true" title="Spring application context - Tiles configuration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:p="http://www.springframework.org/schema/p"
+&lt;beans xmlns="https://www.springframework.org/schema/beans"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="https://www.springframework.org/schema/p"
     xsi:schemaLocation="
-		http://www.springframework.org/schema/beans
-		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"&gt;
+		https://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans-3.0.xsd"&gt;
 
     &lt;!-- Views mapped in views.properties (PDF, XLS classes, and others) --&gt;
     &lt;bean id="contentNegotiatingResolver"
@@ -141,7 +141,7 @@ For better readability the Spring Tiles configuration has been placed in a separ
     &lt;/bean&gt;
 
     &lt;!-- Helper class to configure Tiles 2.x for the Spring Framework --&gt;
-    &lt;!-- See http://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/web/servlet/view/tiles2/TilesConfigurer.html --&gt;
+    &lt;!-- See https://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/web/servlet/view/tiles2/TilesConfigurer.html --&gt;
     &lt;!-- The actual tiles templates are in the tiles-definitions.xml  --&gt;
     &lt;bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer"&gt;
         &lt;property name="definitions"&gt;
@@ -176,7 +176,7 @@ After installing and learning some of Tiles concepts, it&#8217;s time to show yo
   </p>
 </div>
 
-As you can see the layout of the <a title="Podcastpedia.org, knowledge to go" href="http://podcastpedia.org" target="_blank">website</a> is made of
+As you can see the layout of the <a title="Podcastpedia.org, knowledge to go" href="https://podcastpedia.org" target="_blank">website</a> is made of
 
   * header which includes the social media connect, language selection logo and search bar
   * navigation bar (menu)
@@ -240,7 +240,7 @@ Initially I created a /`<em>WEB-INF/<em>tile-defs/template</em>.xml,</em>` which
 
 <pre class="lang:default decode:true" title="File: /WebContent/WEB-INF/tile-defs/template.xml">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 
-&lt;!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd"&gt;
+&lt;!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "https://tiles.apache.org/dtds/tiles-config_2_1.dtd"&gt;
 
 &lt;tiles-definitions&gt;
  ......
@@ -303,5 +303,5 @@ We promise to only share high quality podcasts and episodes.
 
 ## <span id="Resources">Resources</span>
 
-  1. <a title="Apache Tiles" href="http://tiles.apache.org/" target="_blank">http://tiles.apache.org/</a>
-  2. <a title="Springsource" href="http://www.springsource.org/" target="_blank">http://www.springsource.org/</a>
+  1. <a title="Apache Tiles" href="https://tiles.apache.org/" target="_blank">https://tiles.apache.org/</a>
+  2. <a title="Springsource" href="https://www.springsource.org/" target="_blank">https://www.springsource.org/</a>

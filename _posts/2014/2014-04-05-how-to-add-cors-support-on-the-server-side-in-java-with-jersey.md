@@ -13,7 +13,7 @@ tags:
   - rest
 ---
 <p style="text-align: justify;">
-  In this post I will present how easy it is to enable HTTP response headers on the server sidein Java with Jersey, as defined by the <a title="http://www.w3.org/TR/cors/" href="http://www.w3.org/TR/cors/" target="_blank">Cross-Origing Resource Sharing (CORS)</a> specification. For that I have extended the REST API  built in the post <a title="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, with CORS support.
+  In this post I will present how easy it is to enable HTTP response headers on the server sidein Java with Jersey, as defined by the <a title="https://www.w3.org/TR/cors/" href="https://www.w3.org/TR/cors/" target="_blank">Cross-Origing Resource Sharing (CORS)</a> specification. For that I have extended the REST API  built in the post <a title="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" href="https://www.codepedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/" target="_blank">Tutorial – REST API design and implementation in Java with Jersey and Spring</a>, with CORS support.
 </p>
 <!--more-->
 
@@ -74,7 +74,7 @@ tags:
 Well, according to Wikipedia:
 
 <p style="padding-left: 30px; text-align: justify;">
-  <em><strong style="text-align: justify; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">&#8220;Cross-origin resource sharing (CORS)</strong><span style="text-align: justify; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;"> is a mechanism that allows JavaScript on a web page to make XMLHttpRequests to another domain, not the domain the JavaScript originated from. Such &#8220;cross-domain&#8221; requests would otherwise be forbidden by web browsers, per the </span><a style="text-align: justify; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;" title="http://en.wikipedia.org/wiki/Same-origin_policy" href="http://en.wikipedia.org/wiki/Same-origin_policy" target="_blank">same origin security policy</a><span style="text-align: justify; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">. CORS defines a way in which the browser and the server can interact to determine whether or not to allow the cross-origin request. It is more useful than only allowing same-origin requests, but it is more secure than simply allowing all such cross-origin requests.&#8221; [1]</span></em>
+  <em><strong style="text-align: justify; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">&#8220;Cross-origin resource sharing (CORS)</strong><span style="text-align: justify; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;"> is a mechanism that allows JavaScript on a web page to make XMLHttpRequests to another domain, not the domain the JavaScript originated from. Such &#8220;cross-domain&#8221; requests would otherwise be forbidden by web browsers, per the </span><a style="text-align: justify; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;" title="https://en.wikipedia.org/wiki/Same-origin_policy" href="https://en.wikipedia.org/wiki/Same-origin_policy" target="_blank">same origin security policy</a><span style="text-align: justify; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 1.5;">. CORS defines a way in which the browser and the server can interact to determine whether or not to allow the cross-origin request. It is more useful than only allowing same-origin requests, but it is more secure than simply allowing all such cross-origin requests.&#8221; [1]</span></em>
 </p>
 
 <h3 style="text-align: justify;">
@@ -198,7 +198,7 @@ implements ContainerResponseFilter {
 		MultivaluedMap&lt;String, Object&gt; headers = responseContext.getHeaders();
 
 		headers.add("Access-Control-Allow-Origin", "*");
-		//headers.add("Access-Control-Allow-Origin", "http://podcastpedia.org"); //allows CORS requests only coming from podcastpedia.org
+		//headers.add("Access-Control-Allow-Origin", "https://podcastpedia.org"); //allows CORS requests only coming from podcastpedia.org
 		headers.add("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
 		headers.add("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, X-Codingpedia");
 	}
@@ -252,13 +252,13 @@ Well, that&#8217;s it &#8211; you&#8217;ve learned how easy it is to add CORS su
 
 ### <span id="32_Web">3.2. Web</span>
 
-  1. Wikipedia &#8211; <a title="http://en.wikipedia.org/wiki/Cross-origin_resource_sharing" href="http://en.wikipedia.org/wiki/Cross-origin_resource_sharing" target="_blank">Cross-origin resource sharing</a>
+  1. Wikipedia &#8211; <a title="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing" href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing" target="_blank">Cross-origin resource sharing</a>
   2. MDN &#8211; <a title="https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS" href="https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS" target="_blank">HTTP access control (CORS)</a>
-  3. W3C Recommendation &#8211; <a title="http://www.w3.org/TR/cors/" href="http://www.w3.org/TR/cors/" target="_blank">Cross-Origin Resource Sharing</a>
-  4. <a title="http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/" href="http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/" target="_blank">Cross-domain Ajax with Cross-Origin Resource Sharing</a>
+  3. W3C Recommendation &#8211; <a title="https://www.w3.org/TR/cors/" href="https://www.w3.org/TR/cors/" target="_blank">Cross-Origin Resource Sharing</a>
+  4. <a title="https://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/" href="https://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/" target="_blank">Cross-domain Ajax with Cross-Origin Resource Sharing</a>
   5. MDN &#8211; <a title="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" target="_blank">XMLHttpRequest</a>
-  6. <a title="http://stackoverflow.com/questions/17478731/whats-the-point-of-x-requested-with-header" href="http://stackoverflow.com/questions/17478731/whats-the-point-of-x-requested-with-header" target="_blank">What&#8217;s the point of X-Requested-With header?</a>
-  7. <a title="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" target="_blank">HTTP 1.1 &#8211; RFC2616</a>
+  6. <a title="https://stackoverflow.com/questions/17478731/whats-the-point-of-x-requested-with-header" href="https://stackoverflow.com/questions/17478731/whats-the-point-of-x-requested-with-header" target="_blank">What&#8217;s the point of X-Requested-With header?</a>
+  7. <a title="https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" target="_blank">HTTP 1.1 &#8211; RFC2616</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

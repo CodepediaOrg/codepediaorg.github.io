@@ -22,11 +22,11 @@ google for the individual steps again, I decided to write a post. Find out also 
 This guide is based on the official MySQL documentation - [A Quick Guide to Using the MySQL APT Repository](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/), where my own data is used instead.
 
 ### Add the MySQL APT Repository
-Go to the download page for the MySQL APT repository at http://dev.mysql.com/downloads/repo/apt/ and select the package for my Linux distribution. As said mine is
+Go to the download page for the MySQL APT repository at https://dev.mysql.com/downloads/repo/apt/ and select the package for my Linux distribution. As said mine is
 Ubuntu 16.04, which is covered by the `mysql-apt-config_0.8.1-1_all.deb` package at the time of this writing:
 
 ```shell
-shell> wget http://dev.mysql.com/get/mysql-apt-config_0.8.1-1_all.deb
+shell> wget https://dev.mysql.com/get/mysql-apt-config_0.8.1-1_all.deb
 ```
 
 Next install the release package with the following command:
@@ -53,19 +53,19 @@ The next **mandatory step** is to update the package information from the MySQL 
 ```shell
 shell> sudo apt-get update
 
-Hit:1 http://mirrors.linode.com/ubuntu xenial InRelease
-Get:2 http://mirrors.linode.com/ubuntu xenial-updates InRelease [102 kB]
-Get:3 http://mirrors.linode.com/ubuntu xenial-backports InRelease [102 kB]
-Get:4 http://repo.mysql.com/apt/ubuntu xenial InRelease [14.2 kB]
-Hit:5 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease
-Get:6 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
-Get:7 http://repo.mysql.com/apt/ubuntu xenial/mysql-5.7 Sources [886 B]
-Get:8 http://repo.mysql.com/apt/ubuntu xenial/mysql-apt-config amd64 Packages [567 B]
-Get:9 http://repo.mysql.com/apt/ubuntu xenial/mysql-apt-config i386 Packages [567 B]
-Get:10 http://repo.mysql.com/apt/ubuntu xenial/mysql-5.7 amd64 Packages [2709 B]
-Get:11 http://repo.mysql.com/apt/ubuntu xenial/mysql-5.7 i386 Packages [2712 B]
-Get:12 http://repo.mysql.com/apt/ubuntu xenial/mysql-tools amd64 Packages [2608 B]
-Get:13 http://repo.mysql.com/apt/ubuntu xenial/mysql-tools i386 Packages [1928 B]
+Hit:1 https://mirrors.linode.com/ubuntu xenial InRelease
+Get:2 https://mirrors.linode.com/ubuntu xenial-updates InRelease [102 kB]
+Get:3 https://mirrors.linode.com/ubuntu xenial-backports InRelease [102 kB]
+Get:4 https://repo.mysql.com/apt/ubuntu xenial InRelease [14.2 kB]
+Hit:5 https://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease
+Get:6 https://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+Get:7 https://repo.mysql.com/apt/ubuntu xenial/mysql-5.7 Sources [886 B]
+Get:8 https://repo.mysql.com/apt/ubuntu xenial/mysql-apt-config amd64 Packages [567 B]
+Get:9 https://repo.mysql.com/apt/ubuntu xenial/mysql-apt-config i386 Packages [567 B]
+Get:10 https://repo.mysql.com/apt/ubuntu xenial/mysql-5.7 amd64 Packages [2709 B]
+Get:11 https://repo.mysql.com/apt/ubuntu xenial/mysql-5.7 i386 Packages [2712 B]
+Get:12 https://repo.mysql.com/apt/ubuntu xenial/mysql-tools amd64 Packages [2608 B]
+Get:13 https://repo.mysql.com/apt/ubuntu xenial/mysql-tools i386 Packages [1928 B]
 Fetched 333 kB in 0s (603 kB/s)
 Reading package lists... Done
 ```
@@ -78,7 +78,7 @@ shell> sudo apt-get install mysql-server
 
 > You will be asked for the root password during the installation. **Make a note of it if** you want to spare the time needed to reset it later[^1]
 
-[^1]: <http://dev.mysql.com/doc/refman/5.7/en/resetting-permissions.html>
+[^1]: <https://dev.mysql.com/doc/refman/5.7/en/resetting-permissions.html>
 
 The server is started automatically after installation. You can check the version of the server by issuing the following command:
 
@@ -132,7 +132,7 @@ Most of the default configuration values are fine, but you can tweak it if you d
 performance [^3].
 
 [^2]: <https://www.linode.com/docs/websites/hosting-a-website>
-[^3]: <http://www.speedemy.com/17-key-mysql-config-file-settings-mysql-5-7-proof/>
+[^3]: <https://www.speedemy.com/17-key-mysql-config-file-settings-mysql-5-7-proof/>
 
 > I have personally written about [optimizing MySQL Server Settings](https://www.codepedia.org/ama/optimizing-mysql-server-settings/), but this remains a science for itself to me. Anyway before you are ready to override
  a default value in `my.cnf`, have a look in the official documentation about [Server System Variables](https://dev.mysql.com/doc/refman/5.5/en/server-system-variables.html) and try to reason what each
@@ -165,7 +165,7 @@ which looks like the following:
 # The MySQL  Server configuration file.
 #
 # For explanations see
-# http://dev.mysql.com/doc/mysql/en/server-system-variables.html
+# https://dev.mysql.com/doc/mysql/en/server-system-variables.html
 
 [mysqld]
 pid-file        = /var/run/mysqld/mysqld.pid

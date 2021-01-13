@@ -401,8 +401,8 @@ public class ErrorMessage {
 
 ## Other good REST(easy) related resources
 
-* [RESTEasy Documentation examples, HTML, PDF, Javadocs](http://resteasy.jboss.org/docs.html) - for all versions...
-* [Java EE 7 and JAX-RS 2.0](http://www.oracle.com/technetwork/articles/java/jaxrs20-1929352.html) by Adam Bien
+* [RESTEasy Documentation examples, HTML, PDF, Javadocs](https://resteasy.jboss.org/docs.html) - for all versions...
+* [Java EE 7 and JAX-RS 2.0](https://www.oracle.com/technetwork/articles/java/jaxrs20-1929352.html) by Adam Bien
 * [What's new in JAX-RS 2.0](https://www.infoq.com/news/2013/06/Whats-New-in-JAX-RS-2.0) at InfoQ
 * [Java EE 7 Deployment Descriptors](https://antoniogoncalves.org/2013/06/04/java-ee-7-deployment-descriptors/)
 

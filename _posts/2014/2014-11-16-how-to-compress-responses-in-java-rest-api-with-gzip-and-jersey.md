@@ -215,7 +215,7 @@ Server: Jetty(9.0.7.v20131107)
       "id": 2,
       "title": "Quarks & Co - zum Mitnehmen",
       "linkOnPodcastpedia": "https://github.com/CodepediaOrg/podcastpedia/quarks",
-      "feed": "http://podcast.wdr.de/quarks.xml",
+      "feed": "https://podcast.wdr.de/quarks.xml",
       "description": "Quarks & Co: Das Wissenschaftsmagazin",
       "insertionDate": "2014-10-29T10:46:13.00+0100"
    },
@@ -252,4 +252,4 @@ Server: Jetty(9.0.7.v20131107)
   2. <a title="https://jersey.java.net/documentation/latest/user-guide.html" href="https://jersey.java.net/documentation/latest/user-guide.html" target="_blank">Jersey User Guide </a>
       1.
       2. <a title="https://jersey.java.net/documentation/latest/user-guide.html#filters-and-interceptors" href="https://jersey.java.net/documentation/latest/user-guide.html#filters-and-interceptors" target="_blank">Filters and interceptors</a>
-  3. <a title="http://www.gzip.org/" href="http://www.gzip.org/" target="_blank">Gzip.org</a>
+  3. <a title="https://www.gzip.org/" href="https://www.gzip.org/" target="_blank">Gzip.org</a>

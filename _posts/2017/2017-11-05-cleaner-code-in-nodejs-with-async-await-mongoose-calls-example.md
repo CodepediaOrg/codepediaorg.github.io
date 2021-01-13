@@ -27,7 +27,7 @@ to [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 [^1]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function>
 
 In this blog post I present what this code "upgrade" meant for [CRUD operations](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
-   performed on [dev bookmarks](https://www.bookmarks.dev). I use [Moongoose](http://mongoosejs.com/) in an ExpressJS/NodeJS backend
+   performed on [dev bookmarks](https://www.bookmarks.dev). I use [Moongoose](https://mongoosejs.com/) in an ExpressJS/NodeJS backend
     to perform the operations against a MongoDB database.
 
 > In a later refactoring the database access part has been decoupled from ExpressJS and moved to separate service functions.

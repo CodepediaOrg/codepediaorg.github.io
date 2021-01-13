@@ -12,7 +12,7 @@ tags:
   - testing
 ---
 <p style="text-align: justify;">
-  Unit testing is an essential instrument in the toolbox of any serious <a href="http://www.toptal.com/software">software developer</a>. However, it can sometimes be quite difficult to write a good unit test for a particular piece of code. Having difficulty testing their own or someone else’s code, developers often think that their struggles are caused by a lack of some fundamental testing knowledge or secret unit testing techniques.
+  Unit testing is an essential instrument in the toolbox of any serious <a href="https://www.toptal.com/software">software developer</a>. However, it can sometimes be quite difficult to write a good unit test for a particular piece of code. Having difficulty testing their own or someone else’s code, developers often think that their struggles are caused by a lack of some fundamental testing knowledge or secret unit testing techniques.
 </p>
 
 <p style="text-align: justify;">
@@ -20,7 +20,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <img src="http://assets.toptal.io/uploads/blog/image/91302/toptal-blog-image-1434578005589-4e6897ec04cc0b3c7075b9b011ee915c.gif" alt="Unit tests" />
+  <img src="https://assets.toptal.io/uploads/blog/image/91302/toptal-blog-image-1434578005589-4e6897ec04cc0b3c7075b9b011ee915c.gif" alt="Unit tests" />
 </p>
 
 <h2 id="what-is-unit-testing" style="text-align: justify;">
@@ -40,7 +40,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <img src="http://assets.toptal.io/uploads/blog/image/91299/toptal-blog-image-1434577722896-66635fe9efe5898fa701037c0da6c0f4.jpg" alt="unit testing" />
+  <img src="https://assets.toptal.io/uploads/blog/image/91299/toptal-blog-image-1434577722896-66635fe9efe5898fa701037c0da6c0f4.jpg" alt="unit testing" />
 </p>
 
 > _I will use C# for all examples in this article, but the concepts described apply to all object-oriented programming languages._
@@ -91,7 +91,7 @@ public void IsPalindrome_ForPalindromeString_ReturnsTrue()
 </p>
 
 <p style="text-align: justify;">
-  <img src="http://assets.toptal.io/uploads/blog/image/91300/toptal-blog-image-1434577772250-e8e5ff3bbe312ea395dd84a90db53c71.jpg" alt="" />
+  <img src="https://assets.toptal.io/uploads/blog/image/91300/toptal-blog-image-1434577772250-e8e5ff3bbe312ea395dd84a90db53c71.jpg" alt="" />
 </p>
 
 <p style="text-align: justify;">
@@ -426,7 +426,7 @@ else if (time.Subtract(LastMotionTime) &gt; TimeSpan.FromMinutes(1) || (timeOfDa
 </p>
 
 <p style="text-align: justify;">
-  To fully unit test the <code>ActuateLights(bool motionDetected)</code> method, we should perform interaction-based testing in addition to the state-based testing; that is, we should ensure that methods for turning the light on or off are called if, and only if, appropriate conditions are met. Unfortunately, the current design does not allow us to do that: the <code>TurnOn()</code> and <code>TurnOff()</code> methods of <code>BackyardLightSwitcher</code> trigger some state changes in the system, or, in other words, produce <a href="http://en.wikipedia.org/wiki/Side_effect_(computer_science)" target="_blank"><em>side effects</em></a>. The only way to verify that these methods were called is to check whether their corresponding side effects actually happened or not, which could be painful.
+  To fully unit test the <code>ActuateLights(bool motionDetected)</code> method, we should perform interaction-based testing in addition to the state-based testing; that is, we should ensure that methods for turning the light on or off are called if, and only if, appropriate conditions are met. Unfortunately, the current design does not allow us to do that: the <code>TurnOn()</code> and <code>TurnOff()</code> methods of <code>BackyardLightSwitcher</code> trigger some state changes in the system, or, in other words, produce <a href="https://en.wikipedia.org/wiki/Side_effect_(computer_science)" target="_blank"><em>side effects</em></a>. The only way to verify that these methods were called is to check whether their corresponding side effects actually happened or not, which could be painful.
 </p>
 
 <p style="text-align: justify;">
@@ -461,7 +461,7 @@ else if (time.Subtract(LastMotionTime) &gt; TimeSpan.FromMinutes(1) || (timeOfDa
 </p>
 
 <p style="text-align: justify;" class="note_normal">
-  <span>Published at Codepedia.org with the permission of Toptal – source </span><a title="Are you getting worked up over code duplication?" href="http://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters" target="_blank">Unit Tests, How to Write Testable Code and Why it Matters</a><span> from </span><a title="http://www.toptal.com/blog" href="http://www.toptal.com/blog" target="_blank">http://www.toptal.com/blog</a>
+  <span>Published at Codepedia.org with the permission of Toptal – source </span><a title="Are you getting worked up over code duplication?" href="https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters" target="_blank">Unit Tests, How to Write Testable Code and Why it Matters</a><span> from </span><a title="https://www.toptal.com/blog" href="https://www.toptal.com/blog" target="_blank">https://www.toptal.com/blog</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -472,7 +472,7 @@ else if (time.Subtract(LastMotionTime) &gt; TimeSpan.FromMinutes(1) || (timeOfDa
   </p>
 
   <div id="social_logos_up">
-    <a class="icon-earth" href="http://www.toptal.com/blog" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/toptalllc" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/Toptal-141928212544793/" target="_blank"> </a> <a class="icon-gplus" href="https://plus.google.com/+Toptalllc/posts" target="_blank"> </a>
+    <a class="icon-earth" href="https://www.toptal.com/blog" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/toptalllc" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/Toptal-141928212544793/" target="_blank"> </a> <a class="icon-gplus" href="https://plus.google.com/+Toptalllc/posts" target="_blank"> </a>
   </div>
 
   <div id="author_details" style="text-align: justify;">

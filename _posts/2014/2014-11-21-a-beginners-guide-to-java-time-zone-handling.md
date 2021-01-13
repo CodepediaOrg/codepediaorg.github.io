@@ -109,7 +109,7 @@ tags:
 </h3>
 
 <p style="text-align: justify;">
-  An <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://en.wikipedia.org/wiki/Epoch_%28reference_date%29">epoch</a> is a an absolute time reference. Most programming languages (e.g Java, JavaScript, Python) use the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://en.wikipedia.org/wiki/Unix_time">Unix epoch (Midnight 1 January 1970)</a> when expressing a given timestamp as the number of milliseconds elapsed since a fixed point-in-time reference.
+  An <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://en.wikipedia.org/wiki/Epoch_%28reference_date%29">epoch</a> is a an absolute time reference. Most programming languages (e.g Java, JavaScript, Python) use the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://en.wikipedia.org/wiki/Unix_time">Unix epoch (Midnight 1 January 1970)</a> when expressing a given timestamp as the number of milliseconds elapsed since a fixed point-in-time reference.
 </p>
 
 <h3 style="font-weight: inherit; color: #444444;">
@@ -124,7 +124,7 @@ tags:
   <span id="Time_zone">Time zone</span>
 </h3>
 
-The <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time">coordinated universal time (UTC)</a> is the most common time standard. The UTC time zone (equivalent to <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://en.wikipedia.org/wiki/Greenwich_Mean_Time">GMT</a>) represents the time reference all other time zones relate to (through a positive/negative offset).
+The <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">coordinated universal time (UTC)</a> is the most common time standard. The UTC time zone (equivalent to <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://en.wikipedia.org/wiki/Greenwich_Mean_Time">GMT</a>) represents the time reference all other time zones relate to (through a positive/negative offset).
 
 UTC time zone is commonly refereed as Zulu time (Z) or UTC+0. Japan time zone is UTC+9 and Honolulu time zone is UTC-10. At the time of Unix epoch (1 January 1970 00:00 UTC time zone) it was 1 January 1970 09:00 in Tokyo and 31 December 1969 14:00 in Honolulu.
 
@@ -132,7 +132,7 @@ UTC time zone is commonly refereed as Zulu time (Z) or UTC+0. Japan time zone is
   <span id="ISO_8601">ISO 8601</span>
 </h3>
 
-<a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> is the most widespread date/time representation standard and it uses the following date/time formats:
+<a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> is the most widespread date/time representation standard and it uses the following date/time formats:
 
 <table style="color: #444444;">
   <tr style="font-weight: inherit; font-style: inherit;">
@@ -194,7 +194,7 @@ UTC time zone is commonly refereed as Zulu time (Z) or UTC+0. Japan time zone is
   <span id="javautilDate">java.util.Date</span>
 </h3>
 
-<a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html">java.util.Date</a> is definitely the most common time-related class. It represents a fixed point in time, expressed as the relative number of milliseconds elapsed since epoch. java.util.Date is <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://stackoverflow.com/questions/1516213/java-util-date-is-using-time%20zone">time zone independent</a>, except for the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#toString--">toString</a> method which uses a the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javase/8/docs/api/java/text/DateFormat.html">local time zone</a> for generating a String representation.
+<a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html">java.util.Date</a> is definitely the most common time-related class. It represents a fixed point in time, expressed as the relative number of milliseconds elapsed since epoch. java.util.Date is <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://stackoverflow.com/questions/1516213/java-util-date-is-using-time%20zone">time zone independent</a>, except for the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#toString--">toString</a> method which uses a the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javase/8/docs/api/java/text/DateFormat.html">local time zone</a> for generating a String representation.
 
 <h3 style="font-weight: inherit; color: #444444;">
   <span id="javautilCalendar">java.util.Calendar</span>
@@ -231,12 +231,12 @@ At the time of Unix epoch (the UTC time zone), Tokyo time was nine hours ahead, 
 
 Changing a Calendar time zone preserves the actual time while shifting the zone offset. The relative timestamp changes along with the Calendar time zone offset.
 
-<a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://www.joda.org/joda-time/">Joda-Time</a> and Java 8 Date Time API simply make <em style="font-weight: inherit;">java.util.Calandar</em> obsolete so you no longer have to employ this quirky API.
+<a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://www.joda.org/joda-time/">Joda-Time</a> and Java 8 Date Time API simply make <em style="font-weight: inherit;">java.util.Calandar</em> obsolete so you no longer have to employ this quirky API.
 
 ### <span id="orgjodatimeDateTime"> org.joda.time.DateTime</span>
 
 <p style="color: #444444;">
-  <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://www.joda.org/joda-time/">Joda-Time</a> aims to fix the legacy Date/Time API by offering:
+  <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://www.joda.org/joda-time/">Joda-Time</a> aims to fix the legacy Date/Time API by offering:
 </p>
 
 <ul style="color: #444444;">
@@ -247,7 +247,7 @@ Changing a Calendar time zone preserves the actual time while shifting the zone 
     a fluent API
   </li>
   <li style="font-weight: inherit; font-style: inherit;">
-    <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://joda-time.sourceforge.net/apidocs/org/joda/time/format/ISODateTimeFormat.html">better support for ISO 8601 standard</a>
+    <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://joda-time.sourceforge.net/apidocs/org/joda/time/format/ISODateTimeFormat.html">better support for ISO 8601 standard</a>
   </li>
 </ul>
 
@@ -279,7 +279,7 @@ private DateTime newDateTimeMillis(String timeZoneId) {
             .withTimeAtStartOfDay();
 }</pre>
 
-The <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://joda-time.sourceforge.net/apidocs/org/joda/time/DateTime.html">DateTime</a> fluent API is much easier to use than <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#set-int-int-">java.util.Calendar#set</a>. DateTime is immutable but we can easily switch to a <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://joda-time.sourceforge.net/apidocs/org/joda/time/MutableDateTime.html">MutableDateTime</a> if it’s appropriate for our current use case.
+The <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://joda-time.sourceforge.net/apidocs/org/joda/time/DateTime.html">DateTime</a> fluent API is much easier to use than <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#set-int-int-">java.util.Calendar#set</a>. DateTime is immutable but we can easily switch to a <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://joda-time.sourceforge.net/apidocs/org/joda/time/MutableDateTime.html">MutableDateTime</a> if it’s appropriate for our current use case.
 
 <p style="color: #444444;">
   Compared to our Calendar test case, when changing the time zone the relative timestamp doesn’t change a bit, therefore remaining the same original point in time.
@@ -317,7 +317,7 @@ The absolute timestamp contains both the relative time as well as the time zone 
 
 Compared to the numerical form (a 64 bit long) the string representation is less compact and it might take up to 25 characters (200 bits in UTF-8 encoding).
 
-The ISO 8601 is quite common in XML files because the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://www.w3.org/TR/xmlschema-2/#isoformats">XML schema uses a lexical format inspired by the ISO 8601 standard</a>.
+The ISO 8601 is quite common in XML files because the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://www.w3.org/TR/xmlschema-2/#isoformats">XML schema uses a lexical format inspired by the ISO 8601 standard</a>.
 
 An absolute time representation is much more convenient when we want to reconstruct the time instance against the original time zone. An e-mail client might want to display the email creation date using the sender’s time zone, and this can only be achieved using absolute timestamps.
 
@@ -373,7 +373,7 @@ private void dateFormatParse(String pattern, String dateTimeString, long expecte
 This pattern is not ISO 8601 compliant. The single quote character is an escape sequence so the final <em style="font-weight: inherit;">‘Z’</em> symbol is not treated as a time directive (e.g. Zulu time). After parsing, we’ll simply get a local time zone Date reference.
 
 <p style="color: #444444;">
-  This test was run using my current system default <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://en.wikipedia.org/wiki/Europe/Athens">Europe/Athens</a> time zone, which as of writing this post, it’s two hours ahead of UTC.
+  This test was run using my current system default <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://en.wikipedia.org/wiki/Europe/Athens">Europe/Athens</a> time zone, which as of writing this post, it’s two hours ahead of UTC.
 </p>
 
 #### <span id="Use_case_2">Use case 2</span>
@@ -446,7 +446,7 @@ This pattern is not ISO 8601 compliant. The single quote character is an escape 
 </h3>
 
 <p style="color: #444444;">
-  As opposed to <em style="font-weight: inherit;">java.text.SimpleDateFormat</em>, <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://www.joda.org/joda-time/">Joda-Time</a> is compatible with any ISO 8601 pattern. The following test case is going to be used for the upcoming test cases:
+  As opposed to <em style="font-weight: inherit;">java.text.SimpleDateFormat</em>, <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://www.joda.org/joda-time/">Joda-Time</a> is compatible with any ISO 8601 pattern. The following test case is going to be used for the upcoming test cases:
 </p>
 
 <pre class="lang:java decode:true ">/**
@@ -473,7 +473,7 @@ jodaTimeParse("1970-01-01T00:00:00.200+0100", 200L - 1000 * 60 * 60);
 </p>
 
 <p style="color: #444444;">
-  If you happen to work with Java 8, it’s worth switching to the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html">Java 8 Date/Time API</a>, being designed from scratch but very much <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="http://blog.joda.org/2009/11/why-jsr-310-isn-joda-time_4941.html">inspired by Joda-Time</a>.
+  If you happen to work with Java 8, it’s worth switching to the <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html">Java 8 Date/Time API</a>, being designed from scratch but very much <a style="font-weight: inherit; font-style: inherit; color: #01a0db;" href="https://blog.joda.org/2009/11/why-jsr-310-isn-joda-time_4941.html">inspired by Joda-Time</a>.
 </p>
 
 <p style="color: #444444;">
@@ -481,7 +481,7 @@ jodaTimeParse("1970-01-01T00:00:00.200+0100", 200L - 1000 * 60 * 60);
 </p>
 
 <p class="note_normal">
-  Published at Codepedia.org with permission of Vlad Mihalcea &#8211; source <a title="http://vladmihalcea.com/2014/11/17/a-beginners-guide-to-java-time-zone-handling/" href="http://vladmihalcea.com/2014/11/17/a-beginners-guide-to-java-time-zone-handling/" target="_blank">A beginner&#8217;s guide to java time zone handling</a> from http://vladmihalcea.com/
+  Published at Codepedia.org with permission of Vlad Mihalcea &#8211; source <a title="https://vladmihalcea.com/2014/11/17/a-beginners-guide-to-java-time-zone-handling/" href="https://vladmihalcea.com/2014/11/17/a-beginners-guide-to-java-time-zone-handling/" target="_blank">A beginner&#8217;s guide to java time zone handling</a> from https://vladmihalcea.com/
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -497,7 +497,7 @@ jodaTimeParse("1970-01-01T00:00:00.200+0100", 200L - 1000 * 60 * 60);
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
+      <a class="icon-earth" href="https://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
     </div>
 
     <div class="clear">

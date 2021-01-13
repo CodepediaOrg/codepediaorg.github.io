@@ -47,7 +47,7 @@ tags:
 </div>
 
 <p style="text-align: justify;">
-  As you might have already guessed, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is all about podcasts and podcasting is all about distributing audio or video content via <a title="Rss standard" href="http://en.wikipedia.org/wiki/Rss" target="_blank">RSS</a> or <a title="Atom, standard" href="http://en.wikipedia.org/wiki/Atom_%28standard%29" target="_blank">Atom</a>. This post will presents how  Atom and RSS podcast feeds are parsed and added to the directory, with the help of the Java project <a title="Rome project" href="https://rometools.jira.com/wiki/display/ROME/Home" target="_blank">Rome</a>.
+  As you might have already guessed, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is all about podcasts and podcasting is all about distributing audio or video content via <a title="Rss standard" href="https://en.wikipedia.org/wiki/Rss" target="_blank">RSS</a> or <a title="Atom, standard" href="https://en.wikipedia.org/wiki/Atom_%28standard%29" target="_blank">Atom</a>. This post will presents how  Atom and RSS podcast feeds are parsed and added to the directory, with the help of the Java project <a title="Rome project" href="https://rometools.jira.com/wiki/display/ROME/Home" target="_blank">Rome</a>.
 </p>
 
 ## <span id="Maven_dependencies">Maven dependencies</span>
@@ -85,7 +85,7 @@ In order to use Rome in the Java project, you have to add `rome.jar` and `jdom.j
 </div>
 
 <p style="text-align: justify;">
-  As you might have already guessed, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is all about podcasts and podcasting is all about distributing audio or video content via <a title="Rss standard" href="http://en.wikipedia.org/wiki/Rss" target="_blank">RSS</a> or <a title="Atom, standard" href="http://en.wikipedia.org/wiki/Atom_%28standard%29" target="_blank">Atom</a>. This post will presents how  Atom and RSS podcast feeds are parsed and added to the directory, with the help of the Java project <a title="Rome project" href="https://rometools.jira.com/wiki/display/ROME/Home" target="_blank">Rome</a>.
+  As you might have already guessed, <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a> is all about podcasts and podcasting is all about distributing audio or video content via <a title="Rss standard" href="https://en.wikipedia.org/wiki/Rss" target="_blank">RSS</a> or <a title="Atom, standard" href="https://en.wikipedia.org/wiki/Atom_%28standard%29" target="_blank">Atom</a>. This post will presents how  Atom and RSS podcast feeds are parsed and added to the directory, with the help of the Java project <a title="Rome project" href="https://rometools.jira.com/wiki/display/ROME/Home" target="_blank">Rome</a>.
 </p>
 
 ## <span id="Maven_dependencies">Maven dependencies</span>
@@ -127,7 +127,7 @@ SyndFeed feed = input.build(new XmlReader(feedUrl));</pre>
 ### <span id="InputSource">InputSource</span>
 
 <p style="text-align: justify;">
-  Using the approach just mentioned works fine for most of the podcast feeds out there, but for some, <strong>mean</strong> exceptions like <code>"Content is not allowed in prolog"</code> or <code>"Invalid byte 2 of 3-byte UTF-8 sequence"</code> started to occur. To tackle these exceptions I replaced the <code>XmlReader</code> with <code>InputSource</code>, which solved most of the problems &#8211; thank you <a title=" Paŭlo Ebermann on Stackoverflow" href="http://stackoverflow.com/users/600500/paulo-ebermann" target="_blank">Paŭlo Ebermann</a> on StackOverflow for researching into this. The following code snippet presents how this is used to parse the feeds:
+  Using the approach just mentioned works fine for most of the podcast feeds out there, but for some, <strong>mean</strong> exceptions like <code>"Content is not allowed in prolog"</code> or <code>"Invalid byte 2 of 3-byte UTF-8 sequence"</code> started to occur. To tackle these exceptions I replaced the <code>XmlReader</code> with <code>InputSource</code>, which solved most of the problems &#8211; thank you <a title=" Paŭlo Ebermann on Stackoverflow" href="https://stackoverflow.com/users/600500/paulo-ebermann" target="_blank">Paŭlo Ebermann</a> on StackOverflow for researching into this. The following code snippet presents how this is used to parse the feeds:
 </p>
 
 <pre class="lang:java mark:8-15 decode:true" title="Build SyndFeed from URL">public SyndFeed getSyndFeedForUrl(String url) throws MalformedURLException, IOException, IllegalArgumentException, FeedException {
@@ -156,13 +156,13 @@ SyndFeed feed = input.build(new XmlReader(feedUrl));</pre>
 }</pre>
 
 <p style="text-align: justify;">
-  Note the line <code>if("gzip".equals(openConnection.getContentEncoding())</code> &#8211; this was needed because some web sites use <a title="Wikipedia - Gzip" href="http://en.wikipedia.org/wiki/Gzip" target="_blank">gzip</a> to compress the files, and althogh in the browsers you might not recognize this (they decompress the files automatically), if you have to decompress it programatically in your code.
+  Note the line <code>if("gzip".equals(openConnection.getContentEncoding())</code> &#8211; this was needed because some web sites use <a title="Wikipedia - Gzip" href="https://en.wikipedia.org/wiki/Gzip" target="_blank">gzip</a> to compress the files, and althogh in the browsers you might not recognize this (they decompress the files automatically), if you have to decompress it programatically in your code.
 </p>
 
 ### <span id="FileInputStream">FileInputStream</span>
 
 <p style="text-align: justify;">
-  If for some reason (<code>"Content is not allowed in prolog"</code> or <code>"Invalid byte 2 of 3-byte UTF-8 sequence" etc.</code>),  you cannot parse the feed from the online like via its URL, you can store to a local file, process it and modify the encoding for your needs (very easy with <a title="Notepad++" href="http://notepad-plus-plus.org/" target="_blank">Notepad++  </a>for example ) and parse it from there :
+  If for some reason (<code>"Content is not allowed in prolog"</code> or <code>"Invalid byte 2 of 3-byte UTF-8 sequence" etc.</code>),  you cannot parse the feed from the online like via its URL, you can store to a local file, process it and modify the encoding for your needs (very easy with <a title="Notepad++" href="https://notepad-plus-plus.org/" target="_blank">Notepad++  </a>for example ) and parse it from there :
 </p>
 
 <pre class="lang:java decode:true" title="Build SyndFeed from local file">public SyndFeed getSyndFeedFromLocalFile(String filePath)
@@ -297,9 +297,9 @@ Thanks for sharing and connecting with us
 
   1. <a title="Rome project" href="https://rometools.jira.com/wiki/display/ROME/Home" target="_blank">Rome project</a>
   2. <a title="Read and print feed example" href="https://rometools.jira.com/wiki/display/ROME/Rss+and+atOM+utilitiEs+%28ROME%29+v0.5+Tutorial,+Using+ROME+to+read+a+syndication+feed" target="_blank">Reads and prints any RSS/Atom feed type</a>
-  3. <a title="Problem with charset and rome - Stackoverflow" href="http://stackoverflow.com/questions/5365270/problem-with-charset-and-rome-rss-atom-feeds" target="_blank">Problem with charset and rome &#8211; Stackoverflow</a>
-  4. <a title="JAVA: Resolving org.xml.sax.SAXParseException: Content is not allowed in prolog" href="http://mark.koli.ch/2009/02/resolving-orgxmlsaxsaxparseexception-content-is-not-allowed-in-prolog.html" target="_blank">JAVA: Resolving org.xml.sax.SAXParseException: Content is not allowed in prolog</a>
-  5. <a title="Stackoverflow resource" href="http://stackoverflow.com/questions/20148840/getting-strange-characters-when-trying-to-read-utf-8-document-from-url" target="_blank">Stackoverflow &#8211; Getting strange characters when trying to read UTF-8 document from URL</a>
+  3. <a title="Problem with charset and rome - Stackoverflow" href="https://stackoverflow.com/questions/5365270/problem-with-charset-and-rome-rss-atom-feeds" target="_blank">Problem with charset and rome &#8211; Stackoverflow</a>
+  4. <a title="JAVA: Resolving org.xml.sax.SAXParseException: Content is not allowed in prolog" href="https://mark.koli.ch/2009/02/resolving-orgxmlsaxsaxparseexception-content-is-not-allowed-in-prolog.html" target="_blank">JAVA: Resolving org.xml.sax.SAXParseException: Content is not allowed in prolog</a>
+  5. <a title="Stackoverflow resource" href="https://stackoverflow.com/questions/20148840/getting-strange-characters-when-trying-to-read-utf-8-document-from-url" target="_blank">Stackoverflow &#8211; Getting strange characters when trying to read UTF-8 document from URL</a>
 
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
     <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

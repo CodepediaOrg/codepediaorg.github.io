@@ -19,7 +19,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  Thanks to<span class="Apple-converted-space"> </span><a href="https://www.linkedin.com/in/jbalint">Jess Balint</a><span class="Apple-converted-space"> </span>(MySQL JDBC driver contributor), who gave a<span class="Apple-converted-space"> </span><a href="http://stackoverflow.com/questions/32286518/whats-the-difference-between-cacheprepstmts-and-useserverprepstmts-in-mysql-jdb/32645365#32645365">wonderful answer</a><span class="Apple-converted-space"> </span>on StackOverflow, I managed to get a better understanding of how MySQL handles prepared statements from a database performance point of view.
+  Thanks to<span class="Apple-converted-space"> </span><a href="https://www.linkedin.com/in/jbalint">Jess Balint</a><span class="Apple-converted-space"> </span>(MySQL JDBC driver contributor), who gave a<span class="Apple-converted-space"> </span><a href="https://stackoverflow.com/questions/32286518/whats-the-difference-between-cacheprepstmts-and-useserverprepstmts-in-mysql-jdb/32645365#32645365">wonderful answer</a><span class="Apple-converted-space"> </span>on StackOverflow, I managed to get a better understanding of how MySQL handles prepared statements from a database performance point of view.
 </p>
 
 <p style="text-align: justify;">
@@ -66,7 +66,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  For server-side statements, the driver caches the<span class="Apple-converted-space"> </span><a href="http://grepcode.com/file/repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.35/com/mysql/jdbc/ServerPreparedStatement.java#ServerPreparedStatement">ServerPreparedStatement</a>, as well as the check for server-side statement support (not all statements are allowed to be prepared on the server-side).
+  For server-side statements, the driver caches the<span class="Apple-converted-space"> </span><a href="https://grepcode.com/file/repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.35/com/mysql/jdbc/ServerPreparedStatement.java#ServerPreparedStatement">ServerPreparedStatement</a>, as well as the check for server-side statement support (not all statements are allowed to be prepared on the server-side).
 </p>
 
 <p style="text-align: justify;">
@@ -74,7 +74,7 @@ tags:
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codepedia.org with permission of Vlad Mihalcea – source <a title="http://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/" href="http://vladmihalcea.com/2015/09/21/how-does-the-mysql-jdbc-driver-handle-prepared-statements/" target="_blank">How does the MySQL JDBC driver handle prepared statements</a> from http://vladmihalcea.com/
+  Published at Codepedia.org with permission of Vlad Mihalcea – source <a title="https://vladmihalcea.com/2015/03/05/a-beginners-guide-to-jpa-and-hibernate-cascade-types/" href="https://vladmihalcea.com/2015/09/21/how-does-the-mysql-jdbc-driver-handle-prepared-statements/" target="_blank">How does the MySQL JDBC driver handle prepared statements</a> from https://vladmihalcea.com/
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -90,7 +90,7 @@ tags:
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
+      <a class="icon-earth" href="https://vladmihalcea.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/102351970868518518557/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/vlad_mihalcea" target="_blank"> </a> <a class="icon-github" href="https://github.com/vladmihalcea" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/pub/vlad-mihalcea/20/a59/580" target="_blank"> </a>
     </div>
 
     <div class="clear">

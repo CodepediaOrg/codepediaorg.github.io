@@ -13,7 +13,7 @@ code showing is the main point of Codepedia.org
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
 
-[^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
+[^1]: <https://en.wikipedia.org/wiki/Syntax_highlighting>
 
 To embed code and highlight the syntax you have several possibilities:
 
@@ -24,9 +24,9 @@ It can highlight 100 different languages, and output HTML or ANSI 256-color text
 3.  use code blocks, which are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and Markdown Here -- support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer.
 
 [^2]: <https://highlightjs.org/usage/>
-[^3]: <http://rouge.jneen.net/>
-[pygments]: http://pygments.org/ "Pygments"
-[rouge]: http://rouge.jneen.net/
+[^3]: <https://rouge.jneen.net/>
+[pygments]: https://pygments.org/ "Pygments"
+[rouge]: https://rouge.jneen.net/
 
 ## How the blog post is structured?
 
@@ -157,7 +157,7 @@ by the browsers, but on the other hand the posts "feel" more like standard html 
 the String Manipulation Plugin[^4], or FreeFormater[^5] is a great online tool also for code escaping
 
 [^4]: <https://plugins.jetbrains.com/plugin/2162?pr=idea/>
-[^5]: <http://www.freeformatter.com/string-escaper.html/>
+[^5]: <https://www.freeformatter.com/string-escaper.html/>
 
 ### Jekyll liquid templates
 

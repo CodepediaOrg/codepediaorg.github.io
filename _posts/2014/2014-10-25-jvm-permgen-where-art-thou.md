@@ -33,7 +33,7 @@ As per the spec, JVM is divided into 5 virtual memory segments.
 
 &nbsp;
 
-[<img class="aligncenter wp-image-847 size-full" src="http://abhirockzz.files.wordpress.com/2014/08/jvm-memory-segments1.jpg?w=960&h=269" alt="jvm-memory-segments" width="640" height="178" />](https://abhirockzz.files.wordpress.com/2014/08/jvm-memory-segments1.jpg)
+[<img class="aligncenter wp-image-847 size-full" src="https://abhirockzz.files.wordpress.com/2014/08/jvm-memory-segments1.jpg?w=960&h=269" alt="jvm-memory-segments" width="640" height="178" />](https://abhirockzz.files.wordpress.com/2014/08/jvm-memory-segments1.jpg)
 
 &nbsp;
 
@@ -48,7 +48,7 @@ As per the spec, JVM is divided into 5 virtual memory segments.
 
 &nbsp;
 
-[<img class="aligncenter size-full wp-image-904" src="http://abhirockzz.files.wordpress.com/2014/09/out-of-memory-error.jpg?w=640" alt="out-of-memory-error" width="266" height="190" />](https://abhirockzz.files.wordpress.com/2014/09/out-of-memory-error.jpg)
+[<img class="aligncenter size-full wp-image-904" src="https://abhirockzz.files.wordpress.com/2014/09/out-of-memory-error.jpg?w=640" alt="out-of-memory-error" width="266" height="190" />](https://abhirockzz.files.wordpress.com/2014/09/out-of-memory-error.jpg)
 
 &nbsp;
 
@@ -115,7 +115,7 @@ So, that’s about it for the JVM memory segment basics. Coming to back to the P
 </li>
 
 <p style="text-align: justify;">
-  This was obviously just the tip of the iceberg. For comprehensive coverage of the JVM, there is no reference better than <a href="http://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf" target="_blank"><em><strong>the specification</strong></em></a> itself <span class="wp-smiley wp-emoji wp-emoji-smile" title=":-)">🙂</span>
+  This was obviously just the tip of the iceberg. For comprehensive coverage of the JVM, there is no reference better than <a href="https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf" target="_blank"><em><strong>the specification</strong></em></a> itself <span class="wp-smiley wp-emoji wp-emoji-smile" title=":-)">🙂</span>
 </p>
 
 (Additional note – thanks to inputs by **Jon Diamond**)
@@ -130,7 +130,7 @@ So, that’s about it for the JVM memory segment basics. Coming to back to the P
 
 <p style="text-align: justify;">
   <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-    <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" />
+    <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" />
 
     <p id="about_author_header">
       <strong>Abhishek Gupta</strong>
@@ -142,7 +142,7 @@ So, that’s about it for the JVM memory segment basics. Coming to back to the P
 
     <div id="follow_social" style="clear: both;">
       <div id="social_logos">
-        <a class="icon-earth" href="http://abhirockzz.wordpress.com/" target="_blank"> </a> <a class="icon-googleplus" href="http://plus.google.com/103167687788180890717/posts" target="_blank"> </a> <a class="icon-twitter" href="http://twitter.com/abhi_tweeter" target="_blank"> </a> <a class="icon-github" href="https://github.com/abhirockzz" target="_blank"> </a> <a class="icon-linkedin" href="http://in.linkedin.com/pub/abhishek-gupta/27/331/866" target="_blank"> </a>
+        <a class="icon-earth" href="https://abhirockzz.wordpress.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/103167687788180890717/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/abhi_tweeter" target="_blank"> </a> <a class="icon-github" href="https://github.com/abhirockzz" target="_blank"> </a> <a class="icon-linkedin" href="https://in.linkedin.com/pub/abhishek-gupta/27/331/866" target="_blank"> </a>
       </div>
 
       <div class="clear">

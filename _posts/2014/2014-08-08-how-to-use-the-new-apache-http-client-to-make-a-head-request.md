@@ -77,7 +77,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  So how it works? Initially, when a new podcast is added to the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia">Podcastpedia.org </a>directory I check if the headers are present for the feed resource and if so I store them in the database. To do that, I execute an HTTP HEAD request against the URL of the feed with the help of Apache Http Client. According to the <a title="http://www.ietf.org/rfc/rfc2616.txt" href="http://www.ietf.org/rfc/rfc2616.txt" target="_blank">Hypertext Transfer Protocol &#8212; HTTP/1.1 rfc2616</a>, the meta-information contained in the HTTP headers in response to a HEAD request SHOULD be identical to the information sent in response to a GET request).
+  So how it works? Initially, when a new podcast is added to the <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia">Podcastpedia.org </a>directory I check if the headers are present for the feed resource and if so I store them in the database. To do that, I execute an HTTP HEAD request against the URL of the feed with the help of Apache Http Client. According to the <a title="https://www.ietf.org/rfc/rfc2616.txt" href="https://www.ietf.org/rfc/rfc2616.txt" target="_blank">Hypertext Transfer Protocol &#8212; HTTP/1.1 rfc2616</a>, the meta-information contained in the HTTP headers in response to a HEAD request SHOULD be identical to the information sent in response to a GET request).
 </p>
 
 <p style="text-align: justify;">
@@ -91,7 +91,7 @@ tags:
 ### <span id="21_Software_dependencies">2.1. Software dependencies</span>
 
 <p style="text-align: justify;">
-  To build my project, which by the way is now available on GitHub &#8211; <a title="https://github.com/podcastpedia/podcastpedia-batch" href="http://https://github.com/podcastpedia/podcastpedia-batch" target="_blank">Podcastpedia-batch</a>, I am using maven, so I listed below the dependencies required for the Apache Http Client:
+  To build my project, which by the way is now available on GitHub &#8211; <a title="https://github.com/podcastpedia/podcastpedia-batch" href="https://https://github.com/podcastpedia/podcastpedia-batch" target="_blank">Podcastpedia-batch</a>, I am using maven, so I listed below the dependencies required for the Apache Http Client:
 </p>
 
 #### <span id="211_Before">2.1.1. Before</span>
@@ -246,10 +246,10 @@ RequestConfig requestConfig = RequestConfig.custom()
 
 ### <span id="Web">Web</span>
 
-  * <a title="http://www.ietf.org/rfc/rfc2616.txt" href="http://www.ietf.org/rfc/rfc2616.txthttp://" target="_blank"> Hypertext Transfer Protocol &#8212; HTTP/1.1</a>
+  * <a title="https://www.ietf.org/rfc/rfc2616.txt" href="https://www.ietf.org/rfc/rfc2616.txthttp://" target="_blank"> Hypertext Transfer Protocol &#8212; HTTP/1.1</a>
   * Maven Repository
-      * <a title="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient" href="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient" target="_blank">HttpComponents Client </a>
-      * <a title="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore" href="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore" target="_blank">HttpComponents Core (blocking I/O)</a>
+      * <a title="https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient" href="https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient" target="_blank">HttpComponents Client </a>
+      * <a title="https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore" href="https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore" target="_blank">HttpComponents Core (blocking I/O)</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/wp-content/uploads/2014/01/AdrianMatei.png" alt="Podcastpedia image" />
@@ -260,7 +260,7 @@ RequestConfig requestConfig = RequestConfig.custom()
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-googleplus" href="https://plus.google.com/+AdrianMatei" target="_blank"> </a><a class="icon-twitter" href="https://twitter.com/adrianimatei" target="_blank"> </a><a class="icon-linkedin" href="http://www.linkedin.com/in/adrianmatei1983" target="_blank"> </a><a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
+      <a class="icon-googleplus" href="https://plus.google.com/+AdrianMatei" target="_blank"> </a><a class="icon-twitter" href="https://twitter.com/adrianimatei" target="_blank"> </a><a class="icon-linkedin" href="https://www.linkedin.com/in/adrianmatei-me" target="_blank"> </a><a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
     </div>
 
     <div class="clear">

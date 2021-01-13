@@ -194,7 +194,7 @@ We will also show you how to download the bootstrap materials as if you were sta
 
 ### <span id="Downloading_the_Bootstrap_Files"><a id="1_2"></a>Downloading the Bootstrap Files</span>
 
-First things first – you will head over to the <a href="http://getbootstrap.com/getting-started/" target="_blank">Getting Started</a> page to download the Bootstrap resources.
+First things first – you will head over to the <a href="https://getbootstrap.com/getting-started/" target="_blank">Getting Started</a> page to download the Bootstrap resources.
 
 Bootstrap offers three download options. Click the first button from the left to download the package, including the compiled CSS and Javascript files.
 
@@ -202,7 +202,7 @@ This is the most basic form of Bootstrap and the easiest way for you to get star
 
 [<img class="aligncenter size-full wp-image-146144" src="https://blog.udemy.com/wp-content/uploads/2015/08/image451.png" alt="image45" width="780" height="308" />](https://blog.udemy.com/wp-content/uploads/2015/08/image451.png)
 
-(source: http://getbootstrap.com/getting-started/_
+(source: https://getbootstrap.com/getting-started/_
 
 Once you have downloaded, unzipped and saved everything in a convenient place, we can have a look at what’s inside:
 
@@ -237,7 +237,7 @@ You also have the minified version when your site is ready for deployment.
 
 **The Glyphicons**
 
-Bootstrap includes a collection of over 250 <a href="http://getbootstrap.com/components/#glyphicons" target="_blank">glyphicons</a> in font format. These should be free.
+Bootstrap includes a collection of over 250 <a href="https://getbootstrap.com/components/#glyphicons" target="_blank">glyphicons</a> in font format. These should be free.
 
 Glyphicon example below:
 
@@ -274,7 +274,7 @@ The library includes:
   * A large collection of built-in CSS and components, ready to use out the box.
   * JavaScript plugins, easy to integrate with minimal configuration
 
-The <a href="http://getbootstrap.com/css/" target="_blank">documentation</a> is organized into sections:
+The <a href="https://getbootstrap.com/css/" target="_blank">documentation</a> is organized into sections:
 
   * CSS
   * Components
@@ -284,13 +284,13 @@ Each page is divided into chapters with code snippets and examples that you can 
 
 In the project, we will use:
 
-  * The <a href="http://getbootstrap.com/components/#navbar" target="_blank">navbar</a> component
-  * The <a href="http://getbootstrap.com/components/#jumbotron" target="_blank">Jumbotron</a>
-  * and, some <a href="http://getbootstrap.com/css/#type" target="_blank">typography</a> pre-defined classes
+  * The <a href="https://getbootstrap.com/components/#navbar" target="_blank">navbar</a> component
+  * The <a href="https://getbootstrap.com/components/#jumbotron" target="_blank">Jumbotron</a>
+  * and, some <a href="https://getbootstrap.com/css/#type" target="_blank">typography</a> pre-defined classes
 
 ### <span id="Navbar_Quick_and_easy_setup"><a id="2_1"></a>Navbar: Quick and easy setup</span>
 
-The <a href="http://getbootstrap.com/components/#navbar" target="_blank">navbar</a> provided by Bootstrap is available in different variations with lots of add-ons:
+The <a href="https://getbootstrap.com/components/#navbar" target="_blank">navbar</a> provided by Bootstrap is available in different variations with lots of add-ons:
 
 Search field
 
@@ -348,11 +348,11 @@ It is easy to achieve with a pre-defined class:
 
 This will keep the navbar glued to the top. When you scroll down the page, the navbar stays in place.
 
-Conversely, you can also use **.navbar-fixed-bottom** to have the navbar <a href="http://getbootstrap.com/components/#navbar-fixed-bottom" target="_blank">fixed to the bottom</a>.
+Conversely, you can also use **.navbar-fixed-bottom** to have the navbar <a href="https://getbootstrap.com/components/#navbar-fixed-bottom" target="_blank">fixed to the bottom</a>.
 
 **Component alignment**
 
-Now, the navbar would look better with the brand name on one side and the menu on the other side. The <a href="http://getbootstrap.com/components/#navbar-component-alignment" target="_blank">component alignment</a> will do the job perfectly.
+Now, the navbar would look better with the brand name on one side and the menu on the other side. The <a href="https://getbootstrap.com/components/#navbar-component-alignment" target="_blank">component alignment</a> will do the job perfectly.
 
 By default, an HTML element is aligned to the left. Adding the class .navbar-right allows you to float the element to the right.
 
@@ -559,7 +559,7 @@ We will also show you how to download the bootstrap materials as if you were sta
 
 ### <span id="Downloading_the_Bootstrap_Files"><a id="1_2"></a>Downloading the Bootstrap Files</span>
 
-First things first – you will head over to the <a href="http://getbootstrap.com/getting-started/" target="_blank">Getting Started</a> page to download the Bootstrap resources.
+First things first – you will head over to the <a href="https://getbootstrap.com/getting-started/" target="_blank">Getting Started</a> page to download the Bootstrap resources.
 
 Bootstrap offers three download options. Click the first button from the left to download the package, including the compiled CSS and Javascript files.
 
@@ -567,7 +567,7 @@ This is the most basic form of Bootstrap and the easiest way for you to get star
 
 [<img class="aligncenter size-full wp-image-146144" src="https://blog.udemy.com/wp-content/uploads/2015/08/image451.png" alt="image45" width="780" height="308" />](https://blog.udemy.com/wp-content/uploads/2015/08/image451.png)
 
-(source: http://getbootstrap.com/getting-started/_
+(source: https://getbootstrap.com/getting-started/_
 
 Once you have downloaded, unzipped and saved everything in a convenient place, we can have a look at what’s inside:
 
@@ -602,7 +602,7 @@ You also have the minified version when your site is ready for deployment.
 
 **The Glyphicons**
 
-Bootstrap includes a collection of over 250 <a href="http://getbootstrap.com/components/#glyphicons" target="_blank">glyphicons</a> in font format. These should be free.
+Bootstrap includes a collection of over 250 <a href="https://getbootstrap.com/components/#glyphicons" target="_blank">glyphicons</a> in font format. These should be free.
 
 Glyphicon example below:
 
@@ -639,7 +639,7 @@ The library includes:
   * A large collection of built-in CSS and components, ready to use out the box.
   * JavaScript plugins, easy to integrate with minimal configuration
 
-The <a href="http://getbootstrap.com/css/" target="_blank">documentation</a> is organized into sections:
+The <a href="https://getbootstrap.com/css/" target="_blank">documentation</a> is organized into sections:
 
   * CSS
   * Components
@@ -649,13 +649,13 @@ Each page is divided into chapters with code snippets and examples that you can 
 
 In the project, we will use:
 
-  * The <a href="http://getbootstrap.com/components/#navbar" target="_blank">navbar</a> component
-  * The <a href="http://getbootstrap.com/components/#jumbotron" target="_blank">Jumbotron</a>
-  * and, some <a href="http://getbootstrap.com/css/#type" target="_blank">typography</a> pre-defined classes
+  * The <a href="https://getbootstrap.com/components/#navbar" target="_blank">navbar</a> component
+  * The <a href="https://getbootstrap.com/components/#jumbotron" target="_blank">Jumbotron</a>
+  * and, some <a href="https://getbootstrap.com/css/#type" target="_blank">typography</a> pre-defined classes
 
 ### <span id="Navbar_Quick_and_easy_setup"><a id="2_1"></a>Navbar: Quick and easy setup</span>
 
-The <a href="http://getbootstrap.com/components/#navbar" target="_blank">navbar</a> provided by Bootstrap is available in different variations with lots of add-ons:
+The <a href="https://getbootstrap.com/components/#navbar" target="_blank">navbar</a> provided by Bootstrap is available in different variations with lots of add-ons:
 
 Search field
 
@@ -711,11 +711,11 @@ It is easy to achieve with a pre-defined class:
 
 This will keep the navbar glued to the top. When you scroll down the page, the navbar stays in place.
 
-Conversely, you can also use **.navbar-fixed-bottom** to have the navbar <a href="http://getbootstrap.com/components/#navbar-fixed-bottom" target="_blank">fixed to the bottom</a>.
+Conversely, you can also use **.navbar-fixed-bottom** to have the navbar <a href="https://getbootstrap.com/components/#navbar-fixed-bottom" target="_blank">fixed to the bottom</a>.
 
 **Component alignment**
 
-Now, the navbar would look better with the brand name on one side and the menu on the other side. The <a href="http://getbootstrap.com/components/#navbar-component-alignment" target="_blank">component alignment</a> will do the job perfectly.
+Now, the navbar would look better with the brand name on one side and the menu on the other side. The <a href="https://getbootstrap.com/components/#navbar-component-alignment" target="_blank">component alignment</a> will do the job perfectly.
 
 By default, an HTML element is aligned to the left. Adding the class .navbar-right allows you to float the element to the right.
 
@@ -793,7 +793,7 @@ As shown below:
   </p>
 
   <p>
-    Bootstrap <a href="http://getbootstrap.com/css/#buttons" target="_blank">buttons</a> have a common class <strong>.btn</strong> and another specific class to add styling and a color.
+    Bootstrap <a href="https://getbootstrap.com/css/#buttons" target="_blank">buttons</a> have a common class <strong>.btn</strong> and another specific class to add styling and a color.
   </p>
 
   <p>
@@ -803,7 +803,7 @@ As shown below:
   <pre class="lang:xhtml decode:true">&lt;a class="btn btn-default"&gt;Learn More&lt;/a&gt;</pre>
 
   <p>
-    <span style="line-height: 1.5;">Color </span><a style="line-height: 1.5;" href="http://getbootstrap.com/css/#buttons-options" target="_blank">options</a><span style="line-height: 1.5;"> include:</span>
+    <span style="line-height: 1.5;">Color </span><a style="line-height: 1.5;" href="https://getbootstrap.com/css/#buttons-options" target="_blank">options</a><span style="line-height: 1.5;"> include:</span>
   </p>
 
   <p>
@@ -825,7 +825,7 @@ As shown below:
   </p>
 
   <p>
-    Size <a href="http://getbootstrap.com/css/#buttons-sizes" target="_blank">options</a> include:
+    Size <a href="https://getbootstrap.com/css/#buttons-sizes" target="_blank">options</a> include:
   </p>
 
   <ul>
@@ -848,7 +848,7 @@ As shown below:
   </p>
 
   <p>
-    <strong>Alignment classes</strong><br /> Finally, we center the text inside the jumbotron with the <a href="http://getbootstrap.com/css/#type-alignment" target="_blank">alignment classes</a>.
+    <strong>Alignment classes</strong><br /> Finally, we center the text inside the jumbotron with the <a href="https://getbootstrap.com/css/#type-alignment" target="_blank">alignment classes</a>.
   </p>
 
   <p>
@@ -882,7 +882,7 @@ As shown below:
   </h2>
 
   <p>
-    A portfolio is the place to showcase your most valuable work. So, you want to make it visible to a wide audience and on all devices.<br /> For that, we need a responsive and flexible layout that can work across all devices, from large screens to smartphones.<br /> You can achieve that with the <a href="http://getbootstrap.com/css/#grid" target="_blank">grid system</a> and the <a href="http://getbootstrap.com/css/#grid-options" target="_blank">pre-defined grid classes</a>.
+    A portfolio is the place to showcase your most valuable work. So, you want to make it visible to a wide audience and on all devices.<br /> For that, we need a responsive and flexible layout that can work across all devices, from large screens to smartphones.<br /> You can achieve that with the <a href="https://getbootstrap.com/css/#grid" target="_blank">grid system</a> and the <a href="https://getbootstrap.com/css/#grid-options" target="_blank">pre-defined grid classes</a>.
   </p>
 
   <p>
@@ -931,7 +931,7 @@ As shown below:
       <strong>col</strong> is the common prefix to every pre-defined grid class.
     </li>
     <li>
-      <strong>md</strong> is short for medium devices. It targets medium and large screens. (>992px). See other <a href="http://getbootstrap.com/css/#grid-options" target="_blank">grid options</a>
+      <strong>md</strong> is short for medium devices. It targets medium and large screens. (>992px). See other <a href="https://getbootstrap.com/css/#grid-options" target="_blank">grid options</a>
     </li>
     <li>
       <strong>4</strong> is the number of columns you want to add to your design.
@@ -980,7 +980,7 @@ As shown below:
       Inside, add an <code>&lt;h3&gt;</code>
     </li>
     <li>
-      And, use <a href="http://lipsum.com/">lorem ipsum</a> for the <code>&lt;p&gt;</code> content.
+      And, use <a href="https://lipsum.com/">lorem ipsum</a> for the <code>&lt;p&gt;</code> content.
     </li>
   </ul>
 
@@ -1033,7 +1033,7 @@ As shown below:
   </p>
 
   <p>
-    The <a href="http://getbootstrap.com/components/#thumbnails" target="_blank">thumbnail</a> is a component designed to showcase images. The markup is minimal and the setup quick – just what we are looking for!
+    The <a href="https://getbootstrap.com/components/#thumbnails" target="_blank">thumbnail</a> is a component designed to showcase images. The markup is minimal and the setup quick – just what we are looking for!
   </p>
 
   <ul>
@@ -1144,7 +1144,7 @@ As shown below:
     </p>
 
     <p>
-      <strong>Labels</strong><br /> The page was designed with Bootstrap v.3.3.5 and we want to highlight it with a<a href="http://getbootstrap.com/components/#labels" target="_blank">label</a>. It works like the button with a <strong>common class .label</strong> and <strong>modifier class</strong> to add the styling and a color.
+      <strong>Labels</strong><br /> The page was designed with Bootstrap v.3.3.5 and we want to highlight it with a<a href="https://getbootstrap.com/components/#labels" target="_blank">label</a>. It works like the button with a <strong>common class .label</strong> and <strong>modifier class</strong> to add the styling and a color.
     </p>
 
     <ul>
@@ -1155,7 +1155,7 @@ As shown below:
         Add the common class .label to the opening <code>&lt;span&gt;</code> tag
       </li>
       <li>
-        Choose a <a href="http://getbootstrap.com/components/#labels">modifier class</a> to add color.
+        Choose a <a href="https://getbootstrap.com/components/#labels">modifier class</a> to add color.
       </li>
     </ul>
 
@@ -1174,7 +1174,7 @@ As shown below:
     </p>
 
     <p>
-      <a href="http://getbootstrap.com/components/#glyphicons" target="_blank">Glyphicons</a> are free to use with the Bootstrap resources.
+      <a href="https://getbootstrap.com/components/#glyphicons" target="_blank">Glyphicons</a> are free to use with the Bootstrap resources.
     </p>
 
     <p>
@@ -1234,7 +1234,7 @@ As shown below:
         Next, we will add a <strong>modal</strong>. This is like a small window popping up on a click event
       </li>
       <li>
-        Lastly, <strong>scrollspy.js</strong>: another plugin that comes with the power of updating the active state of a menu link based on the scroll position of a webpage. (See the<a href="http://www.wndrmnt.com/" target="_blank">example</a> with scrollspy.)
+        Lastly, <strong>scrollspy.js</strong>: another plugin that comes with the power of updating the active state of a menu link based on the scroll position of a webpage. (See the<a href="https://www.wndrmnt.com/" target="_blank">example</a> with scrollspy.)
       </li>
     </ul>
 
@@ -1264,10 +1264,10 @@ As shown below:
 
     <ul>
       <li>
-        <a href="http://getbootstrap.com/javascript/#carousel">Carousel.js</a>
+        <a href="https://getbootstrap.com/javascript/#carousel">Carousel.js</a>
       </li>
       <li>
-        <a href="http://getbootstrap.com/components/#media">Media objects</a>
+        <a href="https://getbootstrap.com/components/#media">Media objects</a>
       </li>
     </ul>
 
@@ -1277,7 +1277,7 @@ As shown below:
 
     <ul>
       <li>
-        Copy the first markup <a href="http://getbootstrap.com/javascript/#carousel-examples" target="_blank">example</a> available on the documentation
+        Copy the first markup <a href="https://getbootstrap.com/javascript/#carousel-examples" target="_blank">example</a> available on the documentation
       </li>
     </ul>
 
@@ -1314,7 +1314,7 @@ As shown below:
     </p>
 
     <p>
-      Inside each <strong>.item</strong> slide, we add a <a href="http://getbootstrap.com/components/#media" target="_blank">media object</a>.
+      Inside each <strong>.item</strong> slide, we add a <a href="https://getbootstrap.com/components/#media" target="_blank">media object</a>.
     </p>
 
     <ul>
@@ -1370,7 +1370,7 @@ As shown below:
     </p>
 
     <p>
-      <a href="http://getbootstrap.com/css/#grid-offsetting" target="_blank">Offsetting columns</a> works in combination with the grid system classes. It allows you to move columns to the right by increasing the left margin.
+      <a href="https://getbootstrap.com/css/#grid-offsetting" target="_blank">Offsetting columns</a> works in combination with the grid system classes. It allows you to move columns to the right by increasing the left margin.
     </p>
 
     <p>
@@ -1401,7 +1401,7 @@ As shown below:
     </p>
 
     <p>
-      We will finish with some images. Images can be styled easily with <a href="http://getbootstrap.com/css/#images-shapes" target="_blank">image shape</a>.
+      We will finish with some images. Images can be styled easily with <a href="https://getbootstrap.com/css/#images-shapes" target="_blank">image shape</a>.
     </p>
 
     <p>
@@ -1480,7 +1480,7 @@ As shown below:
     </p>
 
     <p>
-      <strong>2-step process</strong><br /> On the bootstrap documentation, let’s head over to the javascript section and select <a href="http://getbootstrap.com/javascript/#modals" target="_blank">modal.js</a> to see how the markup looks:
+      <strong>2-step process</strong><br /> On the bootstrap documentation, let’s head over to the javascript section and select <a href="https://getbootstrap.com/javascript/#modals" target="_blank">modal.js</a> to see how the markup looks:
     </p>
 
     <p>
@@ -1598,7 +1598,7 @@ As shown below:
     </p>
 
     <p>
-      The <a href="http://getbootstrap.com/css/#forms">form</a> documentation includes code examples and snippets that make the process straightforward.
+      The <a href="https://getbootstrap.com/css/#forms">form</a> documentation includes code examples and snippets that make the process straightforward.
     </p>
 
     <ul>
@@ -1633,11 +1633,11 @@ As shown below:
     </ul>
 
     <p>
-      We will look at the 2 last ones: <a href="http://getbootstrap.com/css/#forms-help-text" target="_blank">help text</a> and <a href="http://getbootstrap.com/css/#forms-control-sizes" target="_blank">control sizing</a>.
+      We will look at the 2 last ones: <a href="https://getbootstrap.com/css/#forms-help-text" target="_blank">help text</a> and <a href="https://getbootstrap.com/css/#forms-control-sizes" target="_blank">control sizing</a>.
     </p>
 
     <p>
-      A <a href="http://getbootstrap.com/css/#forms-help-text" target="_blank">help text</a> is extra information to the user.
+      A <a href="https://getbootstrap.com/css/#forms-help-text" target="_blank">help text</a> is extra information to the user.
     </p>
 
     <ul>
@@ -1656,7 +1656,7 @@ As shown below:
           </p>
 
           <p>
-            <a href="http://getbootstrap.com/css/#forms-control-sizes" target="_blank">Control sizing</a> is made possible with super helpful classes like<strong> .input-lg</strong> and<strong>.input-sm</strong>
+            <a href="https://getbootstrap.com/css/#forms-control-sizes" target="_blank">Control sizing</a> is made possible with super helpful classes like<strong> .input-lg</strong> and<strong>.input-sm</strong>
           </p>
 
           <p>
@@ -2048,7 +2048,7 @@ As shown below:
 }</pre>
 
           <p>
-            For the color swatches, we are using <a href="http://flatuicolors.com/" target="_blank">flatuicolors</a>.
+            For the color swatches, we are using <a href="https://flatuicolors.com/" target="_blank">flatuicolors</a>.
           </p>
 
           <p>
@@ -2118,7 +2118,7 @@ As shown below:
           </p>
 
           <p>
-            The pre-defined <a href="http://getbootstrap.com/css/#grid-options" target="_blank">grid options</a> classes and the <a href="http://getbootstrap.com/css/#responsive-utilities" target="_blank">responsive utilities</a> will come to the rescue.
+            The pre-defined <a href="https://getbootstrap.com/css/#grid-options" target="_blank">grid options</a> classes and the <a href="https://getbootstrap.com/css/#responsive-utilities" target="_blank">responsive utilities</a> will come to the rescue.
           </p>
 
           <p>
@@ -2255,7 +2255,7 @@ As shown below:
           </p>
 
           <p>
-            To improve the mobile user experience, it is best to keep the content to a minimum and limit the number of images to 4 in total.<br /> How so? By making one row invisible. This is when the <a href="http://getbootstrap.com/css/#responsive-utilities" target="_blank">responsive utilities</a> come into play.
+            To improve the mobile user experience, it is best to keep the content to a minimum and limit the number of images to 4 in total.<br /> How so? By making one row invisible. This is when the <a href="https://getbootstrap.com/css/#responsive-utilities" target="_blank">responsive utilities</a> come into play.
           </p>
 
           <h3>
@@ -2502,7 +2502,7 @@ As shown below:
           </p>
 
           <p>
-            <a href="https://blog.udemy.com/wp-content/uploads/2015/08/image311.png"><img class=" size-full wp-image-146205 aligncenter" src="https://blog.udemy.com/wp-content/uploads/2015/08/image311.png" alt="image31" width="396" height="668" /></a><br /> Bootstrap provides a table of <a href="http://getbootstrap.com/css/#grid-media-queries" target="_blank">media queries</a> that you can use in FEWER files. Replace the @variables with numerical values to define your breakpoints and you are good to go.
+            <a href="https://blog.udemy.com/wp-content/uploads/2015/08/image311.png"><img class=" size-full wp-image-146205 aligncenter" src="https://blog.udemy.com/wp-content/uploads/2015/08/image311.png" alt="image31" width="396" height="668" /></a><br /> Bootstrap provides a table of <a href="https://getbootstrap.com/css/#grid-media-queries" target="_blank">media queries</a> that you can use in FEWER files. Replace the @variables with numerical values to define your breakpoints and you are good to go.
           </p>
 
           <p>
@@ -2566,7 +2566,7 @@ As shown below:
           </p>
 
           <p>
-            Tooltip.js needs to be <a href="http://getbootstrap.com/javascript/#tooltips-usage">initialized</a> with a little script at the bottom of the index.html like so:
+            Tooltip.js needs to be <a href="https://getbootstrap.com/javascript/#tooltips-usage">initialized</a> with a little script at the bottom of the index.html like so:
           </p>
 
           <pre class="lang:default decode:true">$(function () {
@@ -2609,7 +2609,7 @@ As shown below:
             </p>
 
             <p>
-              <a href="http://getbootstrap.com/javascript/#carousel-options" target="_blank">Options</a> can be easily implemented via data-attributes, inside the carousel parent element, along with other data-attributes like this:
+              <a href="https://getbootstrap.com/javascript/#carousel-options" target="_blank">Options</a> can be easily implemented via data-attributes, inside the carousel parent element, along with other data-attributes like this:
             </p>
 
             <pre class="lang:default decode:true">&lt;div id="carousel-example-generic" class="carousel slide" data-ride="carousel"&gt;</pre>
@@ -2643,7 +2643,7 @@ As shown below:
             </p>
 
             <p>
-              It is definite advantage to be able to control the behavior of a site this way. You can read more about <a href="http://getbootstrap.com/javascript/#carousel-options" target="_blank">options here</a>.
+              It is definite advantage to be able to control the behavior of a site this way. You can read more about <a href="https://getbootstrap.com/javascript/#carousel-options" target="_blank">options here</a>.
             </p>
 
             <p>
@@ -2651,7 +2651,7 @@ As shown below:
             </p>
 
             <p>
-              <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a> is a collection of 519 scalable vector icons, also designed by the Bootstrap team. They are delivered in font format, so they can be customized with CSS.
+              <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a> is a collection of 519 scalable vector icons, also designed by the Bootstrap team. They are delivered in font format, so they can be customized with CSS.
             </p>
 
             <p>
@@ -2676,7 +2676,7 @@ As shown below:
             </p>
 
             <p>
-              Font Awesome offers a quick and handy way to <a href="http://fortawesome.github.io/Font-Awesome/get-started/http:/fortawesome.github.io/Font-Awesome/get-started/" target="_blank">get started</a> with the CDN.<br /> In the head section, we have added the Font Awesome CDN.<br /> <a href="https://blog.udemy.com/wp-content/uploads/2015/08/image34.png"><img class="aligncenter wp-image-146209" src="https://blog.udemy.com/wp-content/uploads/2015/08/image34.png" alt="image34" width="787" height="247" /></a>
+              Font Awesome offers a quick and handy way to <a href="https://fortawesome.github.io/Font-Awesome/get-started/http:/fortawesome.github.io/Font-Awesome/get-started/" target="_blank">get started</a> with the CDN.<br /> In the head section, we have added the Font Awesome CDN.<br /> <a href="https://blog.udemy.com/wp-content/uploads/2015/08/image34.png"><img class="aligncenter wp-image-146209" src="https://blog.udemy.com/wp-content/uploads/2015/08/image34.png" alt="image34" width="787" height="247" /></a>
             </p>
 
             <p>
@@ -2688,7 +2688,7 @@ As shown below:
             </p>
 
             <p>
-              Now, we are going to see <a href="http://fortawesome.github.io/Font-Awesome/examples/" target="_blank">examples</a> of icons and see how to add them to our designs.
+              Now, we are going to see <a href="https://fortawesome.github.io/Font-Awesome/examples/" target="_blank">examples</a> of icons and see how to add them to our designs.
             </p>
 
             <ul>
@@ -2743,7 +2743,7 @@ As shown below:
             <pre class="lang:default decode:true">&lt;p&gt;&lt;i class="fa fa-mobile fa-4x"&gt;&lt;/i&gt;&lt;/p&gt;</pre>
 
             <p>
-              Update all 3 columns with Font Awesome <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">icons</a> like this:
+              Update all 3 columns with Font Awesome <a href="https://fortawesome.github.io/Font-Awesome/icons/" target="_blank">icons</a> like this:
             </p>
 
             <pre class="lang:default decode:true">&lt;p&gt;&lt;i class="fa fa-desktop fa-4x"&gt;&lt;/i&gt;&lt;/p&gt;
@@ -2827,7 +2827,7 @@ color: #3498db;
             </p>
 
             <p class="note_normal">
-              Published on Codepedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/bootstrap-tutorial-a-guide-for-beginners/" target="_blank">Bootstrap Tutorial: A Guide for Beginners</a> from<span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
+              Published on Codepedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="https://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/bootstrap-tutorial-a-guide-for-beginners/" target="_blank">Bootstrap Tutorial: A Guide for Beginners</a> from<span class="Apple-converted-space"> </span><a title="https://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
             </p>
 
             <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">

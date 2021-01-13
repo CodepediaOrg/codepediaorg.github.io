@@ -85,7 +85,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  I will base the demonstration on a real scenario from <a title="http://velocity.apache.org/engine/releases/velocity-1.7/overview.html" href="http://velocity.apache.org/engine/releases/velocity-1.7/overview.html" target="_blank">Podcastpedia.org</a>
+  I will base the demonstration on a real scenario from <a title="https://velocity.apache.org/engine/releases/velocity-1.7/overview.html" href="https://velocity.apache.org/engine/releases/velocity-1.7/overview.html" target="_blank">Podcastpedia.org</a>
 </p>
 
 ## <span id="Scenario">Scenario</span>
@@ -122,7 +122,7 @@ Let’s see now how Spring and Velocity play together:
       The <a class="ulink" style="color: #4183c4;" href="https://java.net/projects/javamail/pages/Home" target="_top">JavaMail</a> <code class="literal">mail.jar</code> library
     </li>
     <li class="listitem">
-      The <a class="ulink" style="color: #4183c4;" href="http://www.oracle.com/technetwork/java/jaf11-139815.html" target="_top">JAF</a> <code class="literal">activation.jar</code> library
+      The <a class="ulink" style="color: #4183c4;" href="https://www.oracle.com/technetwork/java/jaf11-139815.html" target="_top">JAF</a> <code class="literal">activation.jar</code> library
     </li>
   </ul>
 
@@ -339,8 +339,8 @@ Let&#8217;s see how everything is configured in the application context:
 
 ## <span id="Resources">Resources</span>
 
-  1. <a title="http://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/mail.html" href="http://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/mail.html" target="_blank">Spring Email integration </a>
-  2. <a title="http://velocity.apache.org/index.html" href="http://velocity.apache.org/index.html" target="_blank">Apache Velocity Project</a>
+  1. <a title="https://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/mail.html" href="https://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/mail.html" target="_blank">Spring Email integration </a>
+  2. <a title="https://velocity.apache.org/index.html" href="https://velocity.apache.org/index.html" target="_blank">Apache Velocity Project</a>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />

@@ -17,11 +17,11 @@ tags:
 </h2>
 
 <p style="text-align: justify;">
-  When I got started <a title="Tutorial - Getting Started With Node.js, Express, MongoDB by Christopher Buecheler" href="http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/">working with Node.js and Express</a>, one of the first things I had to really wrap my head around was JavaScript callbacks. This is a powerful functionality built into the language that allows you to defer action until a desired event occurs, while proceeding on with other activities.
+  When I got started <a title="Tutorial - Getting Started With Node.js, Express, MongoDB by Christopher Buecheler" href="https://cwbuecheler.com/web/tutorials/2013/node-express-mongo/">working with Node.js and Express</a>, one of the first things I had to really wrap my head around was JavaScript callbacks. This is a powerful functionality built into the language that allows you to defer action until a desired event occurs, while proceeding on with other activities.
 </p>
 
 <p style="text-align: justify;">
-  The truth is, I&#8217;ve been using callbacks for a long time, I just didn&#8217;t really realize it. I work with jQuery constantly, and it&#8217;s designed with callbacks in mind, passing anonymous functions via its built-in methods to be triggered when certain events occur, for example. Still, I wanted to move beyond &#8220;I know this works&#8221; to &#8220;I know how this works&#8221; both with jQuery and JavaScript, so I dug out my copy of <a title="JavaScript: The Good Parts by Douglas Crockford" href="http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742" target="_blank">JavaScript: The Good Parts</a>, did some reading, hit the web, did some more reading, and then wrote a few simple experiments.
+  The truth is, I&#8217;ve been using callbacks for a long time, I just didn&#8217;t really realize it. I work with jQuery constantly, and it&#8217;s designed with callbacks in mind, passing anonymous functions via its built-in methods to be triggered when certain events occur, for example. Still, I wanted to move beyond &#8220;I know this works&#8221; to &#8220;I know how this works&#8221; both with jQuery and JavaScript, so I dug out my copy of <a title="JavaScript: The Good Parts by Douglas Crockford" href="https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742" target="_blank">JavaScript: The Good Parts</a>, did some reading, hit the web, did some more reading, and then wrote a few simple experiments.
 </p>
 
 I thought I&#8217;d write up a little tutorial to help folks who are new to the concept get started. Hope it&#8217;s useful!<!--more-->
@@ -44,7 +44,7 @@ document.getElementById('output').innerHTML += ('continuing ...');
 document.getElementById('output').innerHTML += ('ending!');</pre>
 
 <p style="text-align: justify;">
-  <a title="Understanding JavaScript Callbacks - Example 1" href="http://jsfiddle.net/cwbuecheler/RBJ76/1/" target="_blank">Go ahead and run it for yourself</a>. This is tremendously boring code, and it could also be shortened if we were working with jQuery, but it gets the point across. Things in JavaScript typically execute sequentially. Let&#8217;s really hammer this home by <a title="Understanding JavaScript Callbacks - Example 2" href="http://jsfiddle.net/cwbuecheler/rFKmj/" target="_blank">putting the ending in the middle</a>:
+  <a title="Understanding JavaScript Callbacks - Example 1" href="https://jsfiddle.net/cwbuecheler/RBJ76/1/" target="_blank">Go ahead and run it for yourself</a>. This is tremendously boring code, and it could also be shortened if we were working with jQuery, but it gets the point across. Things in JavaScript typically execute sequentially. Let&#8217;s really hammer this home by <a title="Understanding JavaScript Callbacks - Example 2" href="https://jsfiddle.net/cwbuecheler/rFKmj/" target="_blank">putting the ending in the middle</a>:
 </p>
 
 <pre class="lang:js decode:true ">document.getElementById('output').innerHTML += ('starting ...');
@@ -70,7 +70,7 @@ var myTimer = window.setTimeout(function() {
 document.getElementById('output').innerHTML += ('continuing ...');</pre>
 
 <p style="text-align: justify;">
-  <a title="Understanding JavaScript Callbacks - Example 3" href="http://jsfiddle.net/cwbuecheler/fgUFF/" target="_blank">Check that out</a>. Now we&#8217;re back to having the right order in our output, even though the code&#8217;s not sequential, because we&#8217;re waiting half a second before executing an anonymous function that writes our &#8220;ending!&#8221; string. Finding the anonymous function thing confusing? You could also write the code like this:
+  <a title="Understanding JavaScript Callbacks - Example 3" href="https://jsfiddle.net/cwbuecheler/fgUFF/" target="_blank">Check that out</a>. Now we&#8217;re back to having the right order in our output, even though the code&#8217;s not sequential, because we&#8217;re waiting half a second before executing an anonymous function that writes our &#8220;ending!&#8221; string. Finding the anonymous function thing confusing? You could also write the code like this:
 </p>
 
 <pre class="lang:js decode:true ">document.getElementById('output').innerHTML += ('starting ...');
@@ -92,7 +92,7 @@ Same exact thing, but now the function&#8217;s not anonymous because we declared
 We&#8217;ve established that `setTimeout` uses a callback to enact a delayed execution of a function, but how do we write one of our own? Easy! Like this:
 
 <pre class="lang:js decode:true ">// Call our main function. Pass it a URI and a callback function
-getData('http://fakedomain1234.com/userlist', writeData);
+getData('https://fakedomain1234.com/userlist', writeData);
 
 // Write some stuff to the p tag
 document.getElementById('output').innerHTML += 'show this before data ...';
@@ -118,14 +118,14 @@ function writeData(myData) {
 }</pre>
 
 <p style="text-align: justify;">
-  If you <a title="Understanding JavaScript Callbacks - Example 4" href="http://jsfiddle.net/cwbuecheler/Y9Ca8/" target="_blank">run this in jsFiddle</a>, you&#8217;ll see it behaves just as we want it to: even though the <code>getData</code> function is the first thing called, and takes three seconds to run, the script continues right along. When the three seconds are up and <code>getData</code> responds with data, then <code>writeData</code> fires and writes the data.
+  If you <a title="Understanding JavaScript Callbacks - Example 4" href="https://jsfiddle.net/cwbuecheler/Y9Ca8/" target="_blank">run this in jsFiddle</a>, you&#8217;ll see it behaves just as we want it to: even though the <code>getData</code> function is the first thing called, and takes three seconds to run, the script continues right along. When the three seconds are up and <code>getData</code> responds with data, then <code>writeData</code> fires and writes the data.
 </p>
 
 <p style="text-align: justify;">
   Obviously we&#8217;re still using a <code>setTimeout</code> here, but that&#8217;s not required for callbacks, it&#8217;s just hard to simulate long delays in a tutorial setting without it. Here is a <strong>non-working</strong> example that uses a fake data call, so you can get an idea for what it would look like:
 </p>
 
-<pre class="lang:js decode:true">getData('http://fakedomain1234.com/userlist', writeData);
+<pre class="lang:js decode:true">getData('https://fakedomain1234.com/userlist', writeData);
 
 document.getElementById('output').innerHTML += "show this before data ...";
 
@@ -150,7 +150,7 @@ function writeData(myData) {
   It&#8217;s important to note that callbacks <strong>do not have to be asynchronous</strong>. You can use them just as easily in sequential code. In fact, it&#8217;s best not to rely on callbacks for a delay, unless you&#8217;re manually controlling that delay. For example, let&#8217;s use our code above but <strong>without</strong> forcing a delay:
 </p>
 
-<pre class="lang:js decode:true ">getData('http://fakedomain1234.com/userlist', writeData);
+<pre class="lang:js decode:true ">getData('https://fakedomain1234.com/userlist', writeData);
 
 document.getElementById('output').innerHTML += "show this before data ...";
 
@@ -164,7 +164,7 @@ function writeData(myData) {
 }</pre>
 
 <p style="text-align: justify;">
-  <a title="Understanding JavaScript Callbacks - Example 5" href="http://jsfiddle.net/cwbuecheler/upQuM/" target="_blank">Go ahead and run that</a>. Whoops … it&#8217;s not behaving right. That&#8217;s because since we&#8217;re not forcing a delay with <code>setTimeout</code>, or doing something that would naturally cause a delay (like connecting to a DB and snagging a whole big chunk of data), the function is executing basically instantaneously, and calling the callback.
+  <a title="Understanding JavaScript Callbacks - Example 5" href="https://jsfiddle.net/cwbuecheler/upQuM/" target="_blank">Go ahead and run that</a>. Whoops … it&#8217;s not behaving right. That&#8217;s because since we&#8217;re not forcing a delay with <code>setTimeout</code>, or doing something that would naturally cause a delay (like connecting to a DB and snagging a whole big chunk of data), the function is executing basically instantaneously, and calling the callback.
 </p>
 
 <p style="text-align: justify;">
@@ -190,7 +190,7 @@ function writeData(myData) {
 });</pre>
 
 <p style="text-align: justify;">
-  <a title="Understanding JavaScript Callbacks - Example 6" href="http://jsfiddle.net/cwbuecheler/YTWdn/" target="_blank">Here&#8217;s that super-exciting script in jsFiddle just for fun</a>. You see the callback happening here, right? It&#8217;s the anonymous function that triggers the alert. This is essentially how all jQuery events work: listen for an event, and when it happens, run the callback function, and in the meantime don&#8217;t hold up any other JS on the page. If you want a named function, you could just as easily do:
+  <a title="Understanding JavaScript Callbacks - Example 6" href="https://jsfiddle.net/cwbuecheler/YTWdn/" target="_blank">Here&#8217;s that super-exciting script in jsFiddle just for fun</a>. You see the callback happening here, right? It&#8217;s the anonymous function that triggers the alert. This is essentially how all jQuery events work: listen for an event, and when it happens, run the callback function, and in the meantime don&#8217;t hold up any other JS on the page. If you want a named function, you could just as easily do:
 </p>
 
 <pre class="lang:js decode:true ">$('body').on('click', 'p#output', showAlert);
@@ -202,13 +202,13 @@ function showAlert() {
 Same deal either way, whether the callback function is declared or anonymized.
 
 <p style="text-align: justify;">
-  That&#8217;s really all there is to callbacks. They&#8217;re really simple once you get used to them. JavaScript: The Good Parts only gives them about a page and a half total because there&#8217;s not that much to talk about. The most important thing is just to remember to use them. Your code will be speedier, you&#8217;ll be better-prepared to take advantage of event-based frameworks, and you&#8217;ll have an easier time understanding and working with things like the MEAN stack (<a href="http://www.mongodb.org/" target="_blank">Mongo</a>, <a href="http://expressjs.com/" target="_blank">Express</a>, <a href="http://angularjs.org/" target="_blank">Angular</a>, <a href="http://nodejs.org/" target="_blank">Node</a>).
+  That&#8217;s really all there is to callbacks. They&#8217;re really simple once you get used to them. JavaScript: The Good Parts only gives them about a page and a half total because there&#8217;s not that much to talk about. The most important thing is just to remember to use them. Your code will be speedier, you&#8217;ll be better-prepared to take advantage of event-based frameworks, and you&#8217;ll have an easier time understanding and working with things like the MEAN stack (<a href="https://www.mongodb.org/" target="_blank">Mongo</a>, <a href="https://expressjs.com/" target="_blank">Express</a>, <a href="https://angularjs.org/" target="_blank">Angular</a>, <a href="https://nodejs.org/" target="_blank">Node</a>).
 </p>
 
 Hope this helps! Any questions? Drop me a line or comment in the discussion below.
 
 <p class="note_normal" style="text-align: justify;">
-  Published on Codepedia.org with the permission of Christopher Buecheler – source <a title="http://cwbuecheler.com/web/tutorials/2013/javascript-callbacks/" href="http://cwbuecheler.com/web/tutorials/2013/javascript-callbacks/" target="_blank">UNDERSTANDING JAVASCRIPT CALLBACKS</a> from <a title="http://cwbuecheler.com/" href="http://cwbuecheler.com/" target="_blank">http://cwbuecheler.com/</a>
+  Published on Codepedia.org with the permission of Christopher Buecheler – source <a title="https://cwbuecheler.com/web/tutorials/2013/javascript-callbacks/" href="https://cwbuecheler.com/web/tutorials/2013/javascript-callbacks/" target="_blank">UNDERSTANDING JAVASCRIPT CALLBACKS</a> from <a title="https://cwbuecheler.com/" href="https://cwbuecheler.com/" target="_blank">https://cwbuecheler.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
@@ -219,7 +219,7 @@ Hope this helps! Any questions? Drop me a line or comment in the discussion belo
   </p>
 
   <div id="social_logos_up">
-    <a class="icon-earth" href="http://cwbuecheler.com/" target="_blank"> </a> <a class="icon-twitter" href="http://twitter.com/cwbuecheler" target="_blank"> </a>
+    <a class="icon-earth" href="https://cwbuecheler.com/" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/cwbuecheler" target="_blank"> </a>
   </div>
 
   <div id="author_details" style="text-align: justify;">

@@ -50,12 +50,12 @@ I recently switched to Eclipse Kepler, being very dissapointed in the Juno Versi
 ### <span id="Download_Eclipse">Download Eclipse</span>
 
 <p class="western" style="margin-bottom: 0cm;">
-  Go to <a title="Eclipse downloads" href=" http://www.eclipse.org/downloads/index-developer.php" target="_blank">eclipse downloads</a> or google  &#8220;<em>download eclipse</em>&#8220;, select the version of your preference and save it to your local disk. In my case I chose the standard Keppler version for Windows 64 bit.
+  Go to <a title="Eclipse downloads" href=" https://www.eclipse.org/downloads/index-developer.php" target="_blank">eclipse downloads</a> or google  &#8220;<em>download eclipse</em>&#8220;, select the version of your preference and save it to your local disk. In my case I chose the standard Keppler version for Windows 64 bit.
 </p>
 
 ### <span id="Launching_Eclipse">Launching Eclipse</span>
 
-Unzip the downloaded zip file in a folder of your preference. Before your start eclipse you will want to specify the JVM to use and tweak a few VM parametersin <a title="Eclipse.ini wiki" href="http://wiki.eclipse.org/Eclipse.ini" target="_blank"><em>eclipse.ini</em></a>  This is how my eclipse.ini looks like:
+Unzip the downloaded zip file in a folder of your preference. Before your start eclipse you will want to specify the JVM to use and tweak a few VM parametersin <a title="Eclipse.ini wiki" href="https://wiki.eclipse.org/Eclipse.ini" target="_blank"><em>eclipse.ini</em></a>  This is how my eclipse.ini looks like:
 
 <pre>-startup
 plugins/org.eclipse.equinox.launcher_1.3.0.v20130327-1440.jar
@@ -88,10 +88,10 @@ You can then launch eclipse by clicking on _eclipse.exe:_
 
 ### <span id="Install_Subversive_on_Eclipse">Install Subversive on Eclipse</span>
 
-For code versioning I currently use Subversion (SVN), and the easiest way to integrate it in Eclipse is by using the <a title="Subversive Eclipse project" href="http://www.eclipse.org/subversive/" target="_blank">Subversive </a>project. The following steps explain how to do that:
+For code versioning I currently use Subversion (SVN), and the easiest way to integrate it in Eclipse is by using the <a title="Subversive Eclipse project" href="https://www.eclipse.org/subversive/" target="_blank">Subversive </a>project. The following steps explain how to do that:
 
   * Run Eclipse and select **Help** > **Install New Software&#8230;** from the main menu.
-  * On the dialog that appears, select a pre-configured simultaneous release update site in the **Work with** combo-box. For example, for the Keppler release, select the &#8220;Kepler &#8211; http://download.eclipse.org/releases/kepler&#8221; update site.
+  * On the dialog that appears, select a pre-configured simultaneous release update site in the **Work with** combo-box. For example, for the Keppler release, select the &#8220;Kepler &#8211; https://download.eclipse.org/releases/kepler&#8221; update site.
   * Wait a few seconds until the content of the selected update site is displayed under the combo-box.
   * Expand the **Collaboration** group and select the Subversive features that you would like to install. Certain Subversive features are required if you want to work with SVN, others are optional and offer some additional functionality. You can skip the optional features, if you wish.
 
@@ -120,7 +120,7 @@ Go to **Window > Open Perspective > Other** and select **SVN Repository Explorin
   Now go again to the <strong>SVN Repository Exploring</strong> perspective, select <strong>New > Repository Location</strong> and give the URL of your local repository.
 </p>
 
-Before I checked out my projects, I wanted to be able to check them out as Maven projects. For that I use the <a title="Maven Integration to Eclipse" href="http://www.eclipse.org/m2e/" target="_blank">Maven Integration for Eclipse (m2e)</a> plugin. Another way to install a popular plugin is selecting in the menu **Help > Eclipse Marketplace > Popular**
+Before I checked out my projects, I wanted to be able to check them out as Maven projects. For that I use the <a title="Maven Integration to Eclipse" href="https://www.eclipse.org/m2e/" target="_blank">Maven Integration for Eclipse (m2e)</a> plugin. Another way to install a popular plugin is selecting in the menu **Help > Eclipse Marketplace > Popular**
 
 <a href="{{site.url}}/wp-content/uploads/2013/08/6-m2e-plugin.png" target="_blank"><img class="alignnone size-medium wp-image-244" src="{{site.url}}/wp-content/uploads/2013/08/6-m2e-plugin-216x300.png" alt="6-m2e-plugin" width="216" height="300" srcset="{{site.url}}/wp-content/uploads/2013/08/6-m2e-plugin-216x300.png 216w, {{site.url}}/wp-content/uploads/2013/08/6-m2e-plugin-624x864.png 624w, {{site.url}}/wp-content/uploads/2013/08/6-m2e-plugin.png 629w" sizes="(max-width: 216px) 100vw, 216px" /></a>
 
@@ -134,7 +134,7 @@ Once that is done, you can convert them to Maven projects by right clicking on t
 
 ### <span id="Sysdeo_Eclipse_Tomcat_Launcher_plugin">Sysdeo Eclipse Tomcat Launcher plugin</span>
 
-Apache Tomcat is the used server for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, both in development and production. For the development environment in Eclipse I really like the [Sysdeo Eclipse Tomcat Launcher plugin.](http://www.eclipsetotale.com/tomcatPlugin.html) Download the tomcatPluginV33.zip file, unzip it under Eclipse_Home/dropins and restart Eclipse. You should now have the Tomcat buttons in your menu<a href="{{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons.png" target="_blank"><img class="alignnone size-medium wp-image-249" src="{{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons-300x114.png" alt="10-tomcat-plugin-menu-buttons" width="300" height="114" srcset="{{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons-300x114.png 300w, {{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons-624x238.png 624w, {{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons.png 797w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+Apache Tomcat is the used server for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia" target="_blank">Podcastpedia.org</a>, both in development and production. For the development environment in Eclipse I really like the [Sysdeo Eclipse Tomcat Launcher plugin.](https://www.eclipsetotale.com/tomcatPlugin.html) Download the tomcatPluginV33.zip file, unzip it under Eclipse_Home/dropins and restart Eclipse. You should now have the Tomcat buttons in your menu<a href="{{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons.png" target="_blank"><img class="alignnone size-medium wp-image-249" src="{{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons-300x114.png" alt="10-tomcat-plugin-menu-buttons" width="300" height="114" srcset="{{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons-300x114.png 300w, {{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons-624x238.png 624w, {{site.url}}/wp-content/uploads/2013/08/10-tomcat-plugin-menu-buttons.png 797w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 
 Before you can start Tomcat from Eclipse go to **Window > Tomcat** and set tomcat home, and other parameters if you might need:
 
@@ -160,21 +160,21 @@ We promise to only share high quality podcasts and episodes.
 
 <ul style="margin: 0px 0px 1.714285714rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; list-style: disc outside; line-height: 24px; color: #444444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">
   <li style="margin: 0px 0px 0px 2.571428571rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline;">
-    <a title="Eclipse.org" href="http://www.eclipse.org" target="_blank">http://www.eclipse.org</a>
+    <a title="Eclipse.org" href="https://www.eclipse.org" target="_blank">https://www.eclipse.org</a>
   </li>
   <li style="margin: 0px 0px 0px 2.571428571rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline;">
-    <a href="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/</a>
+    <a href="https://www.eclipse.org/downloads/">https://www.eclipse.org/downloads/</a>
   </li>
   <li style="margin: 0px 0px 0px 2.571428571rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline;">
-    <a href="http://wiki.eclipse.org/Eclipse.ini">http://wiki.eclipse.org/Eclipse.ini</a>
+    <a href="https://wiki.eclipse.org/Eclipse.ini">https://wiki.eclipse.org/Eclipse.ini</a>
   </li>
   <li style="margin: 0px 0px 0px 2.571428571rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline;">
-    <a href="http://eclipse.org/m2e/download/">http://eclipse.org/m2e/download/</a>
+    <a href="https://eclipse.org/m2e/download/">https://eclipse.org/m2e/download/</a>
   </li>
   <li style="margin: 0px 0px 0px 2.571428571rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline;">
-    <a href="http://www.eclipse.org/subversive/">http://www.eclipse.org/subversive/</a>
+    <a href="https://www.eclipse.org/subversive/">https://www.eclipse.org/subversive/</a>
   </li>
   <li style="margin: 0px 0px 0px 2.571428571rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline;">
-    <a href="http://www.eclipsetotale.com/tomcatPlugin.html">http://www.eclipsetotale.com/tomcatPlugin.html</a>
+    <a href="https://www.eclipsetotale.com/tomcatPlugin.html">https://www.eclipsetotale.com/tomcatPlugin.html</a>
   </li>
 </ul>

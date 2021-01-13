@@ -119,7 +119,7 @@ Cheers !
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
-  <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" />
+  <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" />
 
   <p id="about_author_header">
     <strong>Abhishek Gupta</strong>
@@ -131,7 +131,7 @@ Cheers !
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-      <a class="icon-earth" href="http://abhirockzz.wordpress.com/" target="_blank"> </a> <a class="icon-googleplus" href="http://plus.google.com/103167687788180890717/posts" target="_blank"> </a> <a class="icon-twitter" href="http://twitter.com/abhi_tweeter" target="_blank"> </a> <a class="icon-github" href="https://github.com/abhirockzz" target="_blank"> </a> <a class="icon-linkedin" href="http://in.linkedin.com/pub/abhishek-gupta/27/331/866" target="_blank"> </a>
+      <a class="icon-earth" href="https://abhirockzz.wordpress.com/" target="_blank"> </a> <a class="icon-googleplus" href="https://plus.google.com/103167687788180890717/posts" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/abhi_tweeter" target="_blank"> </a> <a class="icon-github" href="https://github.com/abhirockzz" target="_blank"> </a> <a class="icon-linkedin" href="https://in.linkedin.com/pub/abhishek-gupta/27/331/866" target="_blank"> </a>
     </div>
 
     <div class="clear">

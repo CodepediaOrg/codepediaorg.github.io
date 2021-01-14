@@ -31,9 +31,17 @@ You can also use the `toString()` method in this particular case with the same r
 header += `tags: [${snippet.tags.toString()}]\n`;
 ```
 
-<hr/>
-<span style="font-size: 0.9rem"><strong>Reference - </strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join" target="_blank" style="font-weight: lighter">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join</a></span>
+<span style="font-size: 0.9rem">
+    <strong>Reference - </strong>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join" target="_blank" style="font-weight: lighter">
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+    </a>
+</span>
 
 <hr/>
 
- {% include snippet-post-recommendation-ending.html snippetId="5feef3220b79fd210e120d3b" %}
+{% include snippet-post-recommendation-ending.html snippetId="5feef3220b79fd210e120d3b" %}
+
+
+
+

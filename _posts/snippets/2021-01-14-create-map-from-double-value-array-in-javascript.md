@@ -31,8 +31,6 @@ Use `Array.from()` to transform a map into a 2D key-value Array
 console.log(Array.from(searchDomains)) // Will show you exactly the same Array as kvArray
 ```
 
-<hr/>
-
 <span style="font-size: 0.9rem">
   <strong>Reference - </strong>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" target="_blank" style="font-weight: lighter">
@@ -42,4 +40,10 @@ console.log(Array.from(searchDomains)) // Will show you exactly the same Array a
 
 <hr/>
 
- {% include snippet-post-recommendation-ending.html snippetId="5fcf17eb6fd7966de9f1270c" %}
+{% include snippet-post-recommendation-ending.html snippetId="5fcf17eb6fd7966de9f1270c" %}
+
+
+
+
+
+

@@ -30,9 +30,16 @@ personalBookmarksRouter.get('/:bookmarkId', keycloak.protect(), async (request, 
 });
 ```
 
-<hr/>
-<span style="font-size: 0.9rem"><strong>Reference - </strong><a href="https://github.com/BookmarksDev/bookmarks.dev" target="_blank" style="font-weight: lighter">https://github.com/BookmarksDev/bookmarks.dev</a></span>
+<span style="font-size: 0.9rem">
+    <strong>Reference - </strong>
+    <a href="https://github.com/BookmarksDev/bookmarks.dev" target="_blank" style="font-weight: lighter">
+        https://github.com/BookmarksDev/bookmarks.dev
+    </a>
+</span>
 
 <hr/>
 
  {% include snippet-post-recommendation-ending.html snippetId="5feed4910b79fd210e120c4d" %}
+
+
+

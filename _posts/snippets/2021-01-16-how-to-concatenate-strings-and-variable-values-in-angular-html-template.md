@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to concatenate strings and variable values in angular html template
+title: Concatenate strings and variable values in angular html template
 description: "How to concatenate strings and variable values in angular html template code snippet"
 author: ama
 permalink: /snippets/5fdfae7b9de1f42bb232d0bd/how-to-concatenate-strings-and-variable-values-in-angular-html-template

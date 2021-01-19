@@ -12,8 +12,6 @@ tags: [typescript, angular, routing]
 
 [**Project**: `bookmarks.dev`](https://github.com/BookmarksDev/bookmarks.dev)
 
-{% include source-code-codingmarks.html %}
-
 Use the `queryParams` extra parameter of the router `navigate` method:
 
 ```typescript

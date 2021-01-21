@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Get the current unix timestamp in oracle
-description: "Code snippet showing how to get the current unix timestamp in Oracle database. This is similar to "
-Java's currentTimeMillis"
+description: "Code snippet showing how to get the current unix timestamp in Oracle database.
+This is similar to Java's currentTimeMillis"
 author: ama
 permalink: /snippets/60092685a4155b6d32a92582/get-the-current-unix-timestamp-in-oracle
 published: true

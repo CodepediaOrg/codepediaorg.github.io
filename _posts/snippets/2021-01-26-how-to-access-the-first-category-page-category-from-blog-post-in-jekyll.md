@@ -12,13 +12,13 @@ tags: [html, jekyll, liquid, ruby]
 
 Use the `page.categories` variable and select index `0` of the array:
 
-{% highlight liquid %}
+```liquid
 {% raw %}
-      {% if page.categories[0] != "snippets" %}
-        {% include promote-bookmarks.dev.html %}
-      {% endif %}
+  {% if page.categories[0] != "snippets" %}
+    {% include promote-bookmarks.dev.html %}
+  {% endif %}
 {% endraw %}
-{% endhighlight %}
+```
 
 <span style="font-size: 0.9rem">
   <strong>Reference - </strong>

@@ -7,7 +7,7 @@ author: ama
 permalink: /ama/how-to-use-a-cursor-in-oracle-plsql-for-loop
 published: true
 snippetId: 60019329e6eb82224c98e625
-categories: [tutorials]
+categories: [tutorial]
 tags: [oracle, sql, plsql, ddl, database]
 ---
 

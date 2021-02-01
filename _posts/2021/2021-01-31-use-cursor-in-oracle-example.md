@@ -211,7 +211,7 @@ END;
 > Note some times is not possible and then you might have to stick to the cursor. In oracle you can take advantage
 > of the CURSOR bulk updates and INSERTS[^2]
 
-[^2]: <https://blogs.oracle.com/oraclemagazine/on-cursor-for-loops>
-https://blogs.oracle.com/oraclemagazine/bulk-processing-with-bulk-collect-and-forall
+[^2]: <https://blogs.oracle.com/oraclemagazine/bulk-processing-with-bulk-collect-and-forall>
+
 
 ## References

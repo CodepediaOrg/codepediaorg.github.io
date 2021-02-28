@@ -73,7 +73,31 @@ Read **all**, and I mean all the articles from **Introduction** to **Best practi
 ## 4. Advanced stuff
 Once you are through with the above resources, and you feel more comfortable with GraphQL, you can start with more advanced stuff like
 
-### 4.1 Pagination
+### 4.1 Schema Design
+
+#### [GraphQL Schema Design: Building Evolvable Schemas](https://www.apollographql.com/blog/graphql-schema-design-building-evolvable-schemas-1501f3c59ed5/)
+In this post, few things are explored that can help when designing our API for the future, like:
+1. Prefer Object Types over simpler structures
+2. When in Doubt, Be Specific With Naming
+3. Prefer Fields and Types Over Custom Scalars
+
+#### [Designing GraphQL Mutations](https://www.apollographql.com/blog/designing-graphql-mutations-e09de826ed97/)
+The main points to consider when designing your GraphQL mutations addressed in the article:
+
+- **Naming**. Name your mutations verb first. Then the object, or “noun,” if applicable. Use camelCase.
+- **Specificity**. Make mutations as specific as possible. Mutations should represent semantic actions that might be taken by the user whenever possible.
+- **Input object**. Use a single, required, unique, input object type as an argument for easier mutation execution on the client.
+- **Unique payload type**. Use a unique payload type for each mutation and add the mutation’s output as a field to that payload type.
+- **Nesting**. Use nesting to your advantage wherever it makes sense.
+
+#### [GraphQL Mutation Design: Anemic Mutations](https://www.apollographql.com/blog/graphql-schema-design-building-evolvable-schemas-1501f3c59ed5/)
+In this post, few things are explored that can help when designing our API for the future, like:
+1. Prefer Object Types over simpler structures
+2. When in Doubt, Be Specific With Naming
+3. Prefer Fields and Types Over Custom Scalars
+
+
+### 4.2 Pagination
 #### [Understanding pagination: REST, GraphQL, and Relay](https://www.apollographql.com/blog/understanding-pagination-rest-graphql-and-relay-b10f835549e7/)
  where some different approaches to pagination in REST and GraphQL are covered:
 
@@ -85,7 +109,7 @@ Once you are through with the above resources, and you feel more comfortable wit
 
 Plus extra you get to understand terms like **connections**, **edges** from the relay/graphQL world
 
-### 4.2 Security aspects
+### 4.3 Security aspects
 
 Like
 * Route change
@@ -99,12 +123,12 @@ presented very nice in
 
 OR
 
-### 4.3 Error handling
+### 4.4 Error handling
 
 #### [Handling GraphQL errors like a champ with unions and interfaces](https://blog.logrocket.com/handling-graphql-errors-like-a-champ-with-unions-and-interfaces/)
 An interesting approach to handling errors in GraphQL with the possibilities that the spec provides and still have type safety.
 
-### 4.4 Caching
+### 4.5 Caching
 #### [GraphQL & Caching: The Elephant in the Room](https://www.apollographql.com/blog/graphql-caching-the-elephant-in-the-room-11a3df0c23ad/)
 The author addresses the misconception that "GraphQL breaks caching" and discusses thoroughly the topic.
 

@@ -47,6 +47,11 @@ benas:
     - title: "github"
       url: "https://github.com/benas"
 
+danmartin:
+  name:          Dan Martin
+  avatar:         images/authors/danmartin.jpeg
+  bio:            "Dan Martin has been building teams and coaching others to foster innovation and solve real-time problems. Dan also enjoys photography and traveling."
+
 dexter:
   name:          Dexter's Laboratory
   site:           https://www.codepedia.org

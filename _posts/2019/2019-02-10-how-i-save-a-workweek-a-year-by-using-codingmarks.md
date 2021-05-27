@@ -41,7 +41,7 @@ Eventually you say "_F*ck that, Google knows everything about me anyway, so I'll
 most of the time, all the privacy issues taken into account, but what about those intranet links or not google searchable resources?
  In most cases the (internal) searches are horrific, at least this was the experiences I had with companies and tools I worked with until now...
 
-Well, out of these frustrations plus my wish to learn development with the MEAN stack, I have built [www.bookmarks.dev](https://www.bookmarks.dev). It helps me
+Well, out of these frustrations plus my wish to learn development with the MEAN stack, I have built [www.codever.land](https://www.codever.land). It helps me
 manage my programming and work related bookmarks more efficiently, like 40 hours plus a year more efficiently...
 
 <figure>
@@ -64,12 +64,12 @@ most are :
   * custom searches
   * history
 
-Check out the following video to see how I bookmark with [bookmarks.dev](https://www.bookmarks.dev), formerly known as bookmarks.dev:
+Check out the following video to see how I bookmark with [bookmarks.dev](https://www.codever.land), formerly known as bookmarks.dev:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f9GpTtFVD9Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-If you are convinced, give [www.bookmarks.dev](https://www.bookmarks.dev) a try and share this post so other can save time too.
+If you are convinced, give [www.codever.land](https://www.codever.land) a try and share this post so other can save time too.
  <span class="highlight-yellow">Beware there is no 30 days money back guarantee, because everything is free and open-source.</span>
 
   {% include source-code-bookmarks.dev.html %}

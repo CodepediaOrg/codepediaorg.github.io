@@ -14,7 +14,7 @@ tags:
 ---
 
 Recently I have just added the possibility to [share your code snippets with the world](https://dev.to/bookmarks/public-code-snippets-are-now-available-3na0)
-on [Bookmarks.dev](https://www.bookmarks.dev). I have noticed that the code to create and update code snippets,
+on [Bookmarks.dev](https://www.codever.land). I have noticed that the code to create and update code snippets,
  was too intertwined - trying to avoid code duplication I used initially just one component to create and update code snippets.
  Now, I just could not stand the too many conditional checks anymore, so I decided to split the functionality in two parts
 - one for handling updating and copy to mine, and the second for creating new snippets.
@@ -358,5 +358,5 @@ You can see the create code snippet form in action in the following gif:
 
 For a more detailed explanations of class inheritance in Typescript visit the [Classes section from the handbook](https://www.typescriptlang.org/docs/handbook/classes.html)
 
-> If you have found this useful, please show some love and give us a star on [Github](https://github.com/BookmarksDev/bookmarks.dev)
+> If you have found this useful, please show some love and give us a star on [Github](https://github.com/codeverland/codever)
 

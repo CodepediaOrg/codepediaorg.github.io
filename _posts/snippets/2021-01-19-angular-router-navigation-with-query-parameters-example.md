@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [typescript, angular, routing]
 ---
 
-[**Project**: `bookmarks.dev`](https://github.com/BookmarksDev/bookmarks.dev)
+[**Project**: `bookmarks.dev`](https://github.com/codeverland/codever)
 
 Use the `queryParams` extra parameter of the router `navigate` method:
 

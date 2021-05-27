@@ -18,7 +18,7 @@ As you might recall from my previous post [GraphQL Resources to help you get sta
  I have started to dig deeper into GraphQL. What better way to deepen one's knowledge than with a hands-on experience?
   So, in this blog post I will present the implementation of a GraphQL server API that provides CRUD operations.
    I chose the Javascript implementation of GraphQL, GraphQL-js [^1] and set up a GraphQL server with Express Graphql[^2].
-  To make the scenario more realistic, the API developed in GraphQL acts as integration layer to the existing [REST API](https://www.bookmarks.dev/api/docs/)
+  To make the scenario more realistic, the API developed in GraphQL acts as integration layer to the existing [REST API](https://www.codever.land/api/docs/)
    supporting [Bookmarks.dev](https://wwww.bookmarks.dev).
 
 [^1]: <https://github.com/graphql/graphql-js>
@@ -37,8 +37,8 @@ As you might recall from my previous post [GraphQL Resources to help you get sta
 If you want to test along please follow the steps below:
 
 ### Setup Bookmarks.dev localhost REST API
-You need to first set up the localhost REST api of Bookmarks.dev. Checkout the [project](https://github.com/BookmarksDev/bookmarks.dev) and
- then follow the steps listed in the [README](https://github.com/BookmarksDev/bookmarks.dev#readme) file of the project.
+You need to first set up the localhost REST api of Bookmarks.dev. Checkout the [project](https://github.com/codeverland/codever) and
+ then follow the steps listed in the [README](https://github.com/codeverland/codever#readme) file of the project.
 
 ### Install and run the  project `graphql-expressjs-crud-demo`
 To run the actual GraphQL project you need to set it up as described in the [README file](https://github.com/CodepediaOrg/graphql-express-crud-demo#readme) of the project.
@@ -337,8 +337,8 @@ The response should look something similar to the following:
         },
         {
           "_id": "5e9d4a463b837e57e76de0ae",
-          "name": "Getting started with www.bookmarks.dev",
-          "location": "https://www.bookmarks.dev/howto",
+          "name": "Getting started with www.codever.land",
+          "location": "https://www.codever.land/howto",
           "tags": [
             "programming",
             "resource",
@@ -350,7 +350,7 @@ The response should look something similar to the following:
         },
         {
           "_id": "5e9d4a463b837e57e76de0ad",
-          "name": "Collection of public dev bookmarks, shared with from www.bookmarks.dev",
+          "name": "Collection of public dev bookmarks, shared with from www.codever.land",
           "location": "https://github.com/CodepediaOrg/bookmarks#readme",
           "tags": [
             "programming",
@@ -364,7 +364,7 @@ The response should look something similar to the following:
         {
           "_id": "5e9d4a463b837e57e76de0ac",
           "name": "Bookmarks Manager for Devevelopers & Co",
-          "location": "https://www.bookmarks.dev/",
+          "location": "https://www.codever.land/",
           "tags": [
             "programming",
             "blog",
@@ -405,7 +405,7 @@ The response should look something similar to the following:
         {
           "_id": "5f93b3a51e55b52d7b5d73bd",
           "name": "Issues · BookmarksDev/bookmarks.dev · GitHub",
-          "location": "https://github.com/BookmarksDev/bookmarks.dev/issues",
+          "location": "https://github.com/codeverland/codever/issues",
           "tags": [
             "bookmarksdev"
           ],
@@ -417,7 +417,7 @@ The response should look something similar to the following:
         {
           "_id": "5f93b3a51e55b52d7b5d73bd",
           "name": "Issues · BookmarksDev/bookmarks.dev · GitHub",
-          "location": "https://github.com/BookmarksDev/bookmarks.dev/issues",
+          "location": "https://github.com/codeverland/codever/issues",
           "tags": [
             "bookmarksdev"
           ],

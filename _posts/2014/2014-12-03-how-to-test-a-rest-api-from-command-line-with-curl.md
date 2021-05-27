@@ -6,7 +6,7 @@ layout: post
 published: true
 permalink: /ama/how-to-test-a-rest-api-from-command-line-with-curl/
 description: "This post presents examples of making CRUD HTTP calls against a backend REST API. The API chosen
-supports www.bookmarks.dev"
+supports www.codever.land"
 categories:
   - article
 tags:
@@ -20,9 +20,9 @@ tags:
 
 If you want to quickly test your REST api from the command line, you can use [curl](https://curl.haxx.se/).
  In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API.
-  For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev).
-  The API is [documented with OpenAPI](https://github.com/BookmarksDev/bookmarks.dev/blob/master/backend/docs/openapi/openapi.yaml)
-  and available for testing in the browser at [https://www.bookmarks.dev/api/docs/](https://www.bookmarks.dev/api/docs/).
+  For the purpose of this blog post I will be using the REST api that supports [www.codever.land](https://www.codever.land).
+  The API is [documented with OpenAPI](https://github.com/codeverland/codever/blob/master/backend/docs/openapi/openapi.yaml)
+  and available for testing in the browser at [https://www.codever.land/api/docs/](https://www.codever.land/api/docs/).
 
 <!--more-->
 
@@ -32,7 +32,7 @@ If you want to quickly test your REST api from the command line, you can use [cu
 ## Introduction
 
 In the first part of the blog post I will do a brief introduction to curl and what it can do (HTTP requests with options).
- In the second part I will show examples with different HTTP operations from [bookmarks.dev-api](https://www.bookmarks.dev/api/docs).
+ In the second part I will show examples with different HTTP operations from [bookmarks.dev-api](https://www.codever.land/api/docs).
 
 
 ### What is curl?
@@ -54,13 +54,13 @@ Let's say I want to see what I would GET when requesting latest public bookmarks
 **Request**
 
 ```shell
-curl -I https://www.bookmarks.dev/api/public/bookmarks
+curl -I https://www.codever.land/api/public/bookmarks
 ```
 
 OR
 
 ```shell
-curl -i -X HEAD https://www.bookmarks.dev/api/public/bookmarks
+curl -i -X HEAD https://www.codever.land/api/public/bookmarks
 ```
 
 **Curl options **
@@ -104,13 +104,13 @@ Executing curl with no parameters on a URL (resource) will execute a GET.
 **Request**
 
 ```shell
-curl https://www.bookmarks.dev/api/version
+curl https://www.codever.land/api/version
 ```
 
 which is equivalent with
 
 ```shell
-curl -X GET "https://www.bookmarks.dev/api/version" -H "accept: application/json"
+curl -X GET "https://www.codever.land/api/version" -H "accept: application/json"
 ```
 
 **Response**
@@ -131,7 +131,7 @@ If you want to have it displayed prettier I suggest you use a tool like [jq](htt
 **Request**
 
 ```shell
-curl https://www.bookmarks.dev/api/version | jq .
+curl https://www.codever.land/api/version | jq .
 ```
 
 **Response**
@@ -149,7 +149,7 @@ If you don't want the progress meter (first part) shown, you can silent curl:
 
 **Request**
 ```shell
-curl -s https://www.bookmarks.dev/api/version | jq .
+curl -s https://www.codever.land/api/version | jq .
 ```
 
 **Response**
@@ -170,17 +170,17 @@ curl -s https://www.bookmarks.dev/api/version | jq .
 An alternative to **jq** is to use [Python](https://www.python.org/) if you have it on your machine:
 
 ```shell
-curl -s https://www.bookmarks.dev/api/version | python -m json.tool
+curl -s https://www.codever.land/api/version | python -m json.tool
 ```
 
 ### Curl request with multiple headers
-All the responses from the api of [bookmarks.dev](https://github.com/BookmarksDev/bookmarks.dev) are gzipped.
+All the responses from the api of [bookmarks.dev](https://github.com/codeverland/codever) are gzipped.
 We could ask for the gzipped variant by issuing the following request:
 
 **Request**
 
 ```shell
-curl -v -H "Accept:application/json" -H "Accept-encoding:gzip" https://www.bookmarks.dev/api/version
+curl -v -H "Accept:application/json" -H "Accept-encoding:gzip" https://www.codever.land/api/version
 ```
 
 **Curl options **
@@ -193,7 +193,7 @@ To achieve that you need to simply **add another** `-H` option with the correspo
 **Response**
 ```shell
 > GET /api/version HTTP/1.1
-> Host: www.bookmarks.dev
+> Host: www.codever.land
 > User-Agent: curl/7.54.0
 > Accept:application/json
 > Accept-encoding:gzip
@@ -214,7 +214,7 @@ To achieve that you need to simply **add another** `-H` option with the correspo
 < X-Content-Type-Options: nosniff
 < Content-Encoding: gzip
 <
-* Connection #0 to host www.bookmarks.dev left intact
+* Connection #0 to host www.codever.land left intact
 �V*K-*���S�R2�3�3P�QJ�, �H4��&��%������X&Z$[X&�Z����&��
 ```
 
@@ -222,7 +222,7 @@ To achieve that you need to simply **add another** `-H` option with the correspo
 
 Those were some basic curl HTTP calls with a few options. Now we will combine them and show examples against a production
 ready API. For the examples I will use the API running on localhost. It is really easy to setup with Docker-compose if
-you follow the instructions from the [Readme](https://github.com/BookmarksDev/bookmarks.dev#readme) file.
+you follow the instructions from the [Readme](https://github.com/codeverland/codever#readme) file.
 
 The API is protected with [Keycloak](https://www.keycloak.org) and bearer token. A way to obtain a bearer token in Keycloak
  is to enable Direct Access Grants for the client - this corresponds to the [Resource Owner Password Credentials](https://tools.ietf.org/html/rfc6749#section-1.3.3)
@@ -239,7 +239,7 @@ curl  \
 | jq .
 ```
 
-> The the `username` and `password` are from the initial [set up](https://github.com/BookmarksDev/bookmarks.dev#readme).
+> The the `username` and `password` are from the initial [set up](https://github.com/codeverland/codever#readme).
 
 The response looks something like the following:
 ```shell
@@ -287,7 +287,7 @@ eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMNHV6eUFYbUlTSDJPRi00c2VZZ2Z3
 ```shell
 curl -i -X POST "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6-4e9a8c303798/bookmarks" \
 -H "accept: */*" -H "Authorization: Bearer eyJhbGciOiJ...."  \
--H "Content-Type: application/json" -d "{\"name\":\"How to test a REST api from command line with curl – CodepediaOrg\",\"location\":\"https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/\",\"language\":\"en\",\"tags\":[\"rest\",\"curl\",\"api\",\"testing\"],\"publishedOn\":\"2020-03-05\",\"sourceCodeURL\":\"https://github.com/BookmarksDev/bookmarks.dev\",\"description\":\" In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)\",\"descriptionHtml\":\"<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\\\"https://www.bookmarks.dev\\\">www.bookmarks.dev</a></p>\",\"userId\":\"4c617f2b-2bad-498b-a9c6-4e9a8c303798\",\"public\":true,\"lastAccessedAt\":\"2020-03-06T20:14:28.101Z\",\"likeCount\":0}"
+-H "Content-Type: application/json" -d "{\"name\":\"How to test a REST api from command line with curl – CodepediaOrg\",\"location\":\"https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/\",\"language\":\"en\",\"tags\":[\"rest\",\"curl\",\"api\",\"testing\"],\"publishedOn\":\"2020-03-05\",\"sourceCodeURL\":\"https://github.com/codeverland/codever\",\"description\":\" In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.codever.land](https://www.codever.land)\",\"descriptionHtml\":\"<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\\\"https://www.codever.land\\\">www.codever.land</a></p>\",\"userId\":\"4c617f2b-2bad-498b-a9c6-4e9a8c303798\",\"public\":true,\"lastAccessedAt\":\"2020-03-06T20:14:28.101Z\",\"likeCount\":0}"
 ```
 
 > Note the Bearer token is reduced here (`Bearer eyJhbGciOiJ....`) and in the following examples for brevity
@@ -336,10 +336,10 @@ curl -s -X GET "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6
   "name": "How to test a REST api from command line with curl – CodepediaOrg",
   "location": "https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/",
   "language": "en",
-  "description": " In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)",
-  "descriptionHtml": "<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\"https://www.bookmarks.dev\">www.bookmarks.dev</a></p>",
+  "description": " In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.codever.land](https://www.codever.land)",
+  "descriptionHtml": "<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP Requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\"https://www.codever.land\">www.codever.land</a></p>",
   "publishedOn": "2020-03-05T00:00:00.000Z",
-  "sourceCodeURL": "https://github.com/BookmarksDev/bookmarks.dev",
+  "sourceCodeURL": "https://github.com/codeverland/codever",
   "userId": "4c617f2b-2bad-498b-a9c6-4e9a8c303798",
   "public": true,
   "likeCount": 0,
@@ -356,7 +356,7 @@ curl -s -X GET "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6
 ```shell
 curl -s -X PUT "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6-4e9a8c303798/bookmarks/5e62b18b59770b5487a4c741" \
  -H "accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiI..."  \
- -H "Content-Type: application/json" -d "{\"name\":\"How to test a REST api from command line with curl – CodepediaOrg\",\"location\":\"https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/\",\"tags\":[\"rest\",\"curl\",\"api\",\"testing\"],\"publishedOn\":\"2020-03-05T00:00:00.000Z\",\"sourceCodeURL\":\"https://github.com/BookmarksDev/bookmarks.dev\",\"description\":\"In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)\",\"public\":true,\"readLater\":false,\"language\":\"en\",\"youtubeVideoId\":null,\"stackoverflowQuestionId\":null,\"descriptionHtml\":\"<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\\\"https://www.bookmarks.dev\\\">www.bookmarks.dev</a></p>\",\"updatedAt\":\"2020-03-06T20:42:53.706Z\",\"lastAccessedAt\":\"2020-03-06T20:42:53.706Z\",\"userId\":\"4c617f2b-2bad-498b-a9c6-4e9a8c303798\",\"_id\":\"5e62b18b59770b5487a4c741\"}" | jq .
+ -H "Content-Type: application/json" -d "{\"name\":\"How to test a REST api from command line with curl – CodepediaOrg\",\"location\":\"https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/\",\"tags\":[\"rest\",\"curl\",\"api\",\"testing\"],\"publishedOn\":\"2020-03-05T00:00:00.000Z\",\"sourceCodeURL\":\"https://github.com/codeverland/codever\",\"description\":\"In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.codever.land](https://www.codever.land)\",\"public\":true,\"readLater\":false,\"language\":\"en\",\"youtubeVideoId\":null,\"stackoverflowQuestionId\":null,\"descriptionHtml\":\"<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\\\"https://www.codever.land\\\">www.codever.land</a></p>\",\"updatedAt\":\"2020-03-06T20:42:53.706Z\",\"lastAccessedAt\":\"2020-03-06T20:42:53.706Z\",\"userId\":\"4c617f2b-2bad-498b-a9c6-4e9a8c303798\",\"_id\":\"5e62b18b59770b5487a4c741\"}" | jq .
 ```
 
 **Response**
@@ -372,10 +372,10 @@ curl -s -X PUT "http://localhost:3000/api/personal/users/4c617f2b-2bad-498b-a9c6
   "name": "How to test a REST api from command line with curl – CodepediaOrg",
   "location": "https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/",
   "language": "en",
-  "description": "In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.bookmarks.dev](https://www.bookmarks.dev)",
-  "descriptionHtml": "<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\"https://www.bookmarks.dev\">www.bookmarks.dev</a></p>",
+  "description": "In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports [www.codever.land](https://www.codever.land)",
+  "descriptionHtml": "<p>In this post I will present how to execute GET, POST, PUT, HEAD, DELETE HTTP requests against a REST API. For the purpose of this blog post I will be using the REST api that supports <a href=\"https://www.codever.land\">www.codever.land</a></p>",
   "publishedOn": "2020-03-05T00:00:00.000Z",
-  "sourceCodeURL": "https://github.com/BookmarksDev/bookmarks.dev",
+  "sourceCodeURL": "https://github.com/codeverland/codever",
   "userId": "4c617f2b-2bad-498b-a9c6-4e9a8c303798",
   "public": true,
   "likeCount": 0,

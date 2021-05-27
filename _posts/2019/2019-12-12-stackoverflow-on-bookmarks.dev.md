@@ -15,7 +15,7 @@ tags:
     - api
 ---
 
-I found myself lately adding more StackOverflow questions to [my dev bookmarks collection](https://www.bookmarks.dev),
+I found myself lately adding more StackOverflow questions to [my dev bookmarks collection](https://www.codever.land),
 so I took the challenge over the weekend to make this experience more pleasant. In this blog post I will present you
 the result - improve auto completion of bookmark attributes on creation, login with Stackoverflow account and visual hinting
 for stackoverflow bookmarks.
@@ -31,7 +31,7 @@ available via the API, or I did not find out how yet. So let's see how that work
 
 ### Backend
 
-In backend the [changes](https://github.com/BookmarksDev/bookmarks.dev/commit/b0fe37c522998f4e8a7d79352b24299c95875181) are minimal.
+In backend the [changes](https://github.com/codeverland/codever/commit/b0fe37c522998f4e8a7d79352b24299c95875181) are minimal.
 Chedck if the `scrape` path contains a `stackoverflowQuestionId` query param and then we invoke the api with a key registered on [stackapps](https://stackapps.com/apps/oauth/register)
 to get the data
 
@@ -82,7 +82,7 @@ let getStackoverflowQuestionData = async (stackoverflowQuestionId) => {
 > With a `key` your rate is currently limited to 10000 calls per day, otherwise to just 300
 
 ### Front-end
-In front-end a little bit [more work](https://github.com/BookmarksDev/bookmarks.dev/commit/22dae2dd163d81ade388c8602b386a79e97f1a7b) was needed,
+In front-end a little bit [more work](https://github.com/codeverland/codever/commit/22dae2dd163d81ade388c8602b386a79e97f1a7b) was needed,
 since some refactoring was involved.
 
 ```typescript
@@ -173,10 +173,10 @@ Once the bookmark is submitted a stackoverflow "hint" is place in front of the r
 ## Single Sign-On (SSO) with Stackoverflow Account
 Since I am using Keycloak as Identity provider, it was also pretty easy to setup the stackoverflow login
 with it. See the [official documentation](https://www.keycloak.org/docs/latest/server_admin/index.html#stack-overflow) needed for setup.
-Now you can use your Stackoverflow account to Login and register on [www.bookmarks.dev](https://www.bookmarks.dev):
+Now you can use your Stackoverflow account to Login and register on [www.codever.land](https://www.codever.land):
 
  ![Login with stackoverflow](/images/posts/stackoverflow-on-bookmarks.dev/login-with-stackoverflow.png)
 
 ## Conclusion
 I hope these new additions will make managing your dev bookmarks a little better. If you have other improvements ideas
-please submit them on [Github](https://github.com/BookmarksDev/bookmarks.dev/issues)
+please submit them on [Github](https://github.com/codeverland/codever/issues)

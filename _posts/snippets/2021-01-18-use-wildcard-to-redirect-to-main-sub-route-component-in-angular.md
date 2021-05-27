@@ -10,9 +10,9 @@ categories: [snippets]
 tags: [typescript, angular, angular-routing]
 ---
 
-[**Project**: `bookmarks.dev`](https://github.com/BookmarksDev/bookmarks.dev) - **File**:  `public-routing.module.ts`
+[**Project**: `bookmarks.dev`](https://github.com/codeverland/codever) - **File**:  `public-routing.module.ts`
 
-The `**` wildcard has to be defined as a child of the root you want redirected back to. Thus URLs like [https://www.bookmarks.dev/snippets/60046e4554aac471e0799da7/some-mongo-title-here](https://www.bookmarks.dev/snippets/60046e4554aac471e0799da7/some-mongo-title-here) will still "point" to [https://www.bookmarks.dev/snippets/60046e4554aac471e0799da7](https://www.bookmarks.dev/snippets/60046e4554aac471e0799da7):
+The `**` wildcard has to be defined as a child of the root you want redirected back to. Thus URLs like [https://www.codever.land/snippets/60046e4554aac471e0799da7/some-mongo-title-here](https://www.codever.land/snippets/60046e4554aac471e0799da7/some-mongo-title-here) will still "point" to [https://www.codever.land/snippets/60046e4554aac471e0799da7](https://www.codever.land/snippets/60046e4554aac471e0799da7):
 
 ```typescript
   {

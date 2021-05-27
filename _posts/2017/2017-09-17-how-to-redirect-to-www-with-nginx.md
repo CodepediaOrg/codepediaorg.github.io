@@ -12,14 +12,14 @@ tags:
     - networking
 ---
 
-This post presents the snippet from the Nginx configuration that redirects all request to **https://www.bookmarks.dev**:
+This post presents the snippet from the Nginx configuration that redirects all request to **https://www.codever.land**:
 
 ```
 # redirect HTTP to www
 server {
     listen 80 default_server;
     listen [::]:80 default_server;
-    server_name bookmarks.dev www.bookmarks.dev;
+    server_name bookmarks.dev www.codever.land;
 
     return 301 https://www.bookmarks.dev$request_uri;
 }
@@ -33,9 +33,9 @@ server {
 }
 ```
 
-> Note the missing `www.bookmarks.dev` in the second `server/server_name` entry, to avoid an infinite loop
+> Note the missing `www.codever.land` in the second `server/server_name` entry, to avoid an infinite loop
 
-Lots of other good Nginx resources can be found if you search for the **nginx** tag on **codingmarks**: [https://www.bookmarks.dev?q=[nginx]](https://www.bookmarks.dev?q=[nginx])
+Lots of other good Nginx resources can be found if you search for the **nginx** tag on **codingmarks**: [https://www.codever.land?q=[nginx]](https://www.codever.land?q=[nginx])
 
 {% include source-code-bookmarks.dev.html %}
 

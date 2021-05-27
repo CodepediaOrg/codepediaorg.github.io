@@ -12,11 +12,11 @@ tags:
     - nosql
 ---
 
-The bookmarks on [www.bookmarks.dev](https://www.bookmarks.dev/) are persisted in a [MongoDB Server](https://docs.mongodb.com/manual/).
+The bookmarks on [www.codever.land](https://www.codever.land/) are persisted in a [MongoDB Server](https://docs.mongodb.com/manual/).
  Very often I find myself in the situation, where I need to modify or look for something in the mongo database.
  Experience has taught me that interacting with a system via shell commands helps me understand it better,
  and sort of brings me closer to it. Ok, so how to find the right mongo shell command? Well, I google for it of course, and most likely I am pointed to the right entry in the [Mongo manual](https://docs.mongodb.com/manual/). In this post I try to consolidate the commands I usually use,
-  so that I have only one [bookmark](https://www.bookmarks.dev/search?q=codepedia mongo shell commands) to look for...
+  so that I have only one [bookmark](https://www.codever.land/search?q=codepedia mongo shell commands) to look for...
 
   {% include source-code-bookmarks.dev.html %}
 
@@ -40,7 +40,7 @@ and then type `./bin/mongo` to start mongo
 
 MongoDB does not enable access control by default. This might be fine for development, but for a production environment it is highly recommended
 to employ [authorization](https://docs.mongodb.com/manual/core/authorization/). Please see the **Create database and users** section of
-the [MongoDB Setup For Production](https://github.com/BookmarksDev/bookmarks.dev/wiki/MongoDB-Setup-for-Production) wiki page for commands related to that.
+the [MongoDB Setup For Production](https://github.com/codeverland/codever/wiki/MongoDB-Setup-for-Production) wiki page for commands related to that.
 
 ## Quit the mongo shell
 

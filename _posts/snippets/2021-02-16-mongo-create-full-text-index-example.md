@@ -11,7 +11,7 @@ categories: [snippets]
 tags: [mongodb, indexing, full-text-search, sorting, javascript]
 ---
 
-[**Project**: `bookmarks.dev`](https://github.com/BookmarksDev/bookmarks.dev) - **File**:  `1586782890001_add-codelets-indexes-DONE.js`
+[**Project**: `bookmarks.dev`](https://github.com/codeverland/codever) - **File**:  `1586782890001_add-codelets-indexes-DONE.js`
 
 Full text search is supported in Mongo by using a text index. **Text** indexes can include any field whose value is a string,
  or an array of string elements, to which you can give weights. For a text index, the weight of an indexed

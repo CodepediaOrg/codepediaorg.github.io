@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [typescript, angular]
 ---
 
-**Project**: [`bookmarks.dev`](https://github.com/BookmarksDev/bookmarks.dev) - **File**:  `snippet-form.base.component.ts`
+**Project**: [`bookmarks.dev`](https://github.com/codeverland/codever) - **File**:  `snippet-form.base.component.ts`
 
 In the `router.navigate` method place the object /data in the `state` field of the navigation `extras` parameter
 

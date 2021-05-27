@@ -12,10 +12,10 @@ tags:
 ---
 
 I find myself lately looking for recent visited bookmarks via the [Ctrl+h - History dialog]({% post_url 2020-06-12-hotkeys-angular-example %})
-on [Bookmarks.dev](https://www.bookmarks.dev). To make my life even easier, I added a filter box in the dialog.
+on [Bookmarks.dev](https://www.codever.land). To make my life even easier, I added a filter box in the dialog.
  You can now add one or more keywords to filter the <span class="highlight-yellow">displayed results</span> even further.
-  One thing let to another and I have added the filter box to other bookmarks lists, like [Pinned](https://www.bookmarks.dev/?tab=history),
-  [ReadLater](https://www.bookmarks.dev/?tab=read-later) or [My Dashboard](https://www.bookmarks.dev/dashboard):
+  One thing let to another and I have added the filter box to other bookmarks lists, like [Pinned](https://www.codever.land/?tab=history),
+  [ReadLater](https://www.codever.land/?tab=read-later) or [My Dashboard](https://www.codever.land/dashboard):
 
 ![show filter animation](https://i.ibb.co/sjsZ5NL/show-filter-possibilities-800x500-from-ezgif.gif)
 

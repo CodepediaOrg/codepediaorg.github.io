@@ -2,7 +2,7 @@
 layout: post
 title: So, I wrote my first IntelliJ plugin to help me bookmark code
 description: "Shows the basic steps needed to create a simple IntelliJ plugins which eases the saving
- of code snippets, aka codelets, to www.bookmarks.dev"
+ of code snippets, aka codelets, to www.codever.land"
 author: ama
 permalink: /ama/my-first-intellij-plugin-to-help-me-bookmark-code
 published: true
@@ -15,13 +15,13 @@ tags:
 ---
 
 So, I wrote my first IntelliJ plugin to help me save code snippets, aka codelets, easier to
-[www.bookmarks.dev](https://www.bookmarks.dev). How does it work? **Select text** > **Right mouse click** > **Save to Bookmarks.dev**.
+[www.codever.land](https://www.codever.land). How does it work? **Select text** > **Right mouse click** > **Save to Bookmarks.dev**.
 
  ![Save to Bookmarks.dev showcase](/images/posts/2020-06-07-first-intellij-plugin/save-codelet-from-intellij-plugin-1440x900.gif)
 
 > The plugin is available to download and install in
 > [JetBrain Plugins Repository](https://plugins.jetbrains.com/plugin/14456-save-to-bookmarks-dev) and the
-> source code is available on [Github](https://github.com/BookmarksDev/bookmarks.dev-intellij-plugin)
+> source code is available on [Github](https://github.com/codeverland/codever-intellij-plugin)
 
 In this blog post we'll cover the steps to develop this simple IntelliJ plugin.
 
@@ -161,7 +161,7 @@ public class SaveToBookmarksDevAction extends AnAction {
 
     private String getUrl(String languageTag, String sourceUrl, String title, String selectedCode, String comment) {
         try {
-            StringBuilder sb = new StringBuilder("https://www.bookmarks.dev/my-codelets/new?");
+            StringBuilder sb = new StringBuilder("https://www.codever.land/my-codelets/new?");
             sb.append("code=" + URLEncoder.encode(selectedCode, "UTF-8"));
             if (title != null) {
                 sb.append("&title=" + URLEncoder.encode(title, "UTF-8"));
@@ -235,7 +235,7 @@ This is the code executed when the user triggers the action:
 ```
 
 This fills the required metadata for the codelet and passes it as query parameters (don't forget to encode the values)
- to [www.bookmarks.dev](https://www.bookmarks.dev) url via `BrowserUtil.browse(url)` method. This opens a new browser tab with the given `url`.
+ to [www.codever.land](https://www.codever.land) url via `BrowserUtil.browse(url)` method. This opens a new browser tab with the given `url`.
 
 You will now go through the individual steps and see how you can achieve that with IntelliJ's SDK.
 
@@ -251,7 +251,7 @@ You can use the `SelectionModel` to access the selected code:
 > For multi caret scenarios you should use the `CaretModel`, this does no apply in this context
 
 #### Get the language tag of the current file in the IntelliJ project
-When [saving codelets](https://www.bookmarks.dev/howto/codelets), you should define tags to easily identify them later.
+When [saving codelets](https://www.codever.land/howto/codelets), you should define tags to easily identify them later.
 I set the first tag of the codelet with the language of the file where you select the code from. You can do this by accessing
  the [`PsiFile`](https://www.jetbrains.org/intellij/sdk/docs/basics/architectural_overview/psi_files.html)
 and then its `Language` object:

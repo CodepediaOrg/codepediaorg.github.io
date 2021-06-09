@@ -7,7 +7,7 @@ permalink: /ama/how-to-get-latest-entries-from-mongodb-collection-with-mongoose
 published: true
 categories: [snippets]
 tags:
-    - bookmarks.dev
+    - codever
     - mongodb
     - mongoose
     - node.js

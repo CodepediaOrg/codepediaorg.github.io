@@ -10,7 +10,7 @@ categories: [tutorial]
 tags:
     - intellij
     - plugins
-    - bookmarks.dev
+    - codever
     - productivity
 ---
 

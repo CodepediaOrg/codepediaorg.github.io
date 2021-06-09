@@ -7,7 +7,7 @@ permalink: /ama/first-rest-operation-with-express
 published: false
 categories: [tutorial]
 tags:
-    - bookmarks.dev
+    - codever
     - beginner
     - node.js
     - expressjs

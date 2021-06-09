@@ -9,7 +9,7 @@ categories: [tutorial]
 tags:
     - angular
     - plugins
-    - bookmarks.dev
+    - codever
     - productivity
 ---
 

@@ -7,7 +7,7 @@ permalink: /ama/sharing-coding-bookmarks
 published: true
 categories: [article]
 tags:
-    - bookmarks.dev
+    - codever
     - resources
 image:
   feature: 2017-02-11-coding-bookmarks-post-feature-image.png

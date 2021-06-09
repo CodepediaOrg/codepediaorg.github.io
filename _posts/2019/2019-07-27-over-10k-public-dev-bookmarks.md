@@ -8,7 +8,7 @@ permalink: /ama/discover-a-collection-of-more-than-10k-curated-dev-bookmarks
 published: true
 categories: [article]
 tags:
-    - bookmarks.dev
+    - codever
     - resources
 ---
 

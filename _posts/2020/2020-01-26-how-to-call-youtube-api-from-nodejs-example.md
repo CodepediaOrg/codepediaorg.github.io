@@ -14,7 +14,7 @@ tags:
     - angular
     - youtube
     - api
-    - bookmarks.dev
+    - codever
 ---
 
 In this short blog post I will show you how to call the Youtube Data API v3 to get information about youtube videos.

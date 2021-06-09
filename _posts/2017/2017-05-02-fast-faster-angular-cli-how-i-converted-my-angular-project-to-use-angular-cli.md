@@ -15,7 +15,7 @@ tags:
     - bootstrap
     - font-awesome
     - showdown
-    - bookmarks.dev
+    - codever
 ---
 
 Last week I migrated the [www.codever.land](https://www.codever.land) project to use [Angular CLI](https://cli.angular.io/) and it's awesome. Initially it was based on Angular Seed with Webpack - [preboot/angular-webpack](https://github.com/preboot/angular-webpack).

@@ -7,7 +7,7 @@ permalink: /ama/practical-mongodb-shell-commands-every-developer-should-know
 published: true
 categories: [article]
 tags:
-    - bookmarks.dev
+    - codever
     - mongodb
     - nosql
 ---

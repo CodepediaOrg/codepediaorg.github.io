@@ -7,7 +7,7 @@ permalink: /ama/how-to-insert-a-document-in-mongodb-in-java-example
 published: true
 categories: [tutorial]
 tags:
-    - bookmarks.dev
+    - codever
     - java
     - mongodb
     - maven

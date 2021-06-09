@@ -8,7 +8,7 @@ permalink: /ama/how-to-get-the-title-of-a-remote-web-page-using-javascript-and-n
 published: true
 categories: [article]
 tags:
-    - bookmarks.dev
+    - codever
     - web-scraping
     - cheerio
     - angular

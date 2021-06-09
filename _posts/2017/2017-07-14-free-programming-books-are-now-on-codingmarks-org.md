@@ -8,7 +8,7 @@ permalink: /ama/free-programming-books-are-now-on-bookmarks-dev
 published: true
 categories: [article]
 tags:
-    - bookmarks.dev
+    - codever
     - books
     - resources
 ---

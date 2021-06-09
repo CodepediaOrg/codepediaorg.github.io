@@ -8,7 +8,7 @@ permalink: /ama/improved-bookmarking-of-stackoverflow-questions
 published: true
 categories: [article]
 tags:
-    - bookmarks.dev
+    - codever
     - expressjs
     - node.js
     - angular

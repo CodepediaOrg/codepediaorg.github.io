@@ -7,7 +7,7 @@ permalink: /ama/how-to-use-shodown-in-angular-and-nodejs
 published: true
 categories: [tutorial]
 tags:
-    - bookmarks.dev
+    - codever
     - angular
     - nodejs
     - showdown

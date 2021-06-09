@@ -11,7 +11,7 @@ permalink: /ama/efficient-management-of-my-dev-bookmarks-and-code-snippets-saves
 published: true
 categories: [article]
 tags:
-    - bookmarks.dev
+    - codever
     - productivity
 ---
 

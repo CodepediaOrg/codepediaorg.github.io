@@ -8,7 +8,7 @@ permalink: /ama/how-to-configure-nginx-in-production-to-serve-angular-app-and-re
 published: true
 categories: [tutorial]
 tags:
-    - bookmarks.dev
+    - codever
     - nginx
     - ssl
     - tls

@@ -9,7 +9,7 @@ categories: [tutorial]
 tags:
     - javascript
     - browser-extension
-    - bookmarks.dev
+    - codever
 ---
 
 When I first just published the ["Save to Bookmarks.dev"  chrome extension in the Chrome Web Store](https://chrome.google.com/webstore/detail/save-link-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb),

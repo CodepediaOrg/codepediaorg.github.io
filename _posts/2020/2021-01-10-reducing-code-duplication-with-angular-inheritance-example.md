@@ -10,7 +10,7 @@ tags:
     - angular
     - inheritance
     - refactoring
-    - bookmarks.dev
+    - codever
 ---
 
 Recently I have just added the possibility to [share your code snippets with the world](https://dev.to/bookmarks/public-code-snippets-are-now-available-3na0)

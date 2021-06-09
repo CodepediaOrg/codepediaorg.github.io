@@ -7,7 +7,7 @@ permalink: /ama/how-to-filter-results-in-angular-example-with-input-text
 published: true
 categories: [article]
 tags:
-    - bookmarks.dev
+    - codever
     - angular
 ---
 

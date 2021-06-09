@@ -10,7 +10,7 @@ permalink: /ama/how-i-save-a-workweek-a-year-by-efficiently-managing-my-dev-book
 published: true
 categories: [article]
 tags:
-    - bookmarks.dev
+    - codever
     - productivity
 ---
 ## Motivation

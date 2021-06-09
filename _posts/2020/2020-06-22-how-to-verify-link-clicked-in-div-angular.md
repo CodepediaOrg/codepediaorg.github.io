@@ -10,7 +10,7 @@ tags:
     - javascript
     - angular
     - html
-    - bookmarks.dev
+    - codever
 ---
 
 Being on a constant lookout for bookmarks management optimization on [www.codever.land](https://www.codever.land),

@@ -15,7 +15,7 @@ tags:
   - rest
   - api
   - testing
-  - bookmarks.dev
+  - codever
 ---
 
 If you want to quickly test your REST api from the command line, you can use [curl](https://curl.haxx.se/).

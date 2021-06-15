@@ -2,7 +2,7 @@
 layout: post
 title: So, I wrote my first IntelliJ plugin to help me bookmark code
 description: "Shows the basic steps needed to create a simple IntelliJ plugins which eases the saving
- of code snippets, aka codelets, to www.codever.land"
+ of code snippets to www.codever.land"
 author: ama
 permalink: /ama/my-first-intellij-plugin-to-help-me-bookmark-code
 published: true
@@ -17,10 +17,10 @@ tags:
 So, I wrote my first IntelliJ plugin to help me save code snippets, aka codelets, easier to
 [www.codever.land](https://www.codever.land). How does it work? **Select text** > **Right mouse click** > **Save to Bookmarks.dev**.
 
- ![Save to Bookmarks.dev showcase](/images/posts/2020-06-07-first-intellij-plugin/save-codelet-from-intellij-plugin-1440x900.gif)
+ ![Save to Codever showcase](/images/posts/2020-06-07-first-intellij-plugin/plugin-showcase-save-shorter-cover-800x456.gif)
 
 > The plugin is available to download and install in
-> [JetBrain Plugins Repository](https://plugins.jetbrains.com/plugin/14456-save-to-bookmarks-dev) and the
+> [JetBrain Plugins Repository](https://plugins.jetbrains.com/plugin/14456-codever-snippets/) and the
 > source code is available on [Github](https://github.com/codeverland/codever-intellij-plugin)
 
 In this blog post we'll cover the steps to develop this simple IntelliJ plugin.
@@ -41,7 +41,7 @@ Start with the [Plugin DevKit](https://www.jetbrains.org/intellij/sdk/docs/basic
 
  ![New Plugin Project ](/images/posts/2020-06-07-first-intellij-plugin/new-plugin-project.png)
 
- Once you select a name (in our case `bookmarks.dev-intellij-plugin`), go to **File \| Project Structure**
+ Once you select a name (in our case `codever-intellij-plugin`), go to **File \| Project Structure**
  and select the *IntelliJ Platform SDK* as the default SDK for the plugin module
 
 ## The plugin implementation
@@ -63,7 +63,7 @@ Classes that extend it, should override `AnAction.update()` and `AnAction.action
 Let's see the main class and then split into pieces and explain it individually:
 
 ```java
-package dev.bookmarks.intellij.plugin;
+package codever.intellij.plugin;
 
 import com.intellij.ide.BrowserUtil;
 import com.intellij.lang.Language;
@@ -79,8 +79,17 @@ import com.intellij.psi.PsiFile;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-public class SaveToBookmarksDevAction extends AnAction {
+public class SaveToCodeverAction extends AnAction {
 
+    /**
+     * Only make this action visible when text is selected.
+     * <p>
+     * The update method below is only called periodically so need
+     * to be careful to check for selected text
+     * https://jetbrains.org/intellij/sdk/docs/basics/action_system.html#overriding-the-anactionupdate-method
+     *
+     * @param e
+     */
     @Override
     public void update(AnActionEvent e) {
         // Get required data keys
@@ -123,19 +132,7 @@ public class SaveToBookmarksDevAction extends AnAction {
     }
 
     private String getTitle(AnActionEvent e) {
-        VirtualFile vFile = e.getData(PlatformDataKeys.VIRTUAL_FILE);
-        String fileName = vFile != null ? vFile.getName() : null;
-
-        final Project project = e.getData(PlatformDataKeys.PROJECT);
-        String projectName = project != null ? project.getName() : null;
-        StringBuilder sb = new StringBuilder();
-        if (projectName != null) {
-            sb.append(projectName);
-        }
-        if (fileName != null) {
-            sb.append(" - " + fileName);
-        }
-        return sb.length() > 0 ? sb.toString() : null;
+        return "Change me";
     }
 
     private String getComment(AnActionEvent e) {
@@ -146,10 +143,10 @@ public class SaveToBookmarksDevAction extends AnAction {
         String projectName = project != null ? project.getName() : null;
         StringBuilder sb = new StringBuilder();
         if (projectName != null) {
-            sb.append("Project: " + projectName);
+            sb.append("**Project**: `" + projectName + "`" );
         }
         if (fileName != null) {
-            sb.append(" - File: " + fileName);
+            sb.append(" - **File**:  `" + fileName + "`" );
         }
         return sb.length() > 0 ? sb.toString() : null;
     }
@@ -161,7 +158,7 @@ public class SaveToBookmarksDevAction extends AnAction {
 
     private String getUrl(String languageTag, String sourceUrl, String title, String selectedCode, String comment) {
         try {
-            StringBuilder sb = new StringBuilder("https://www.codever.land/my-codelets/new?");
+            StringBuilder sb = new StringBuilder("https://www.codever.land/my-snippets/new?") ;
             sb.append("code=" + URLEncoder.encode(selectedCode, "UTF-8"));
             if (title != null) {
                 sb.append("&title=" + URLEncoder.encode(title, "UTF-8"));
@@ -184,28 +181,6 @@ public class SaveToBookmarksDevAction extends AnAction {
     }
 
 }
-```
-
-<hr/>
-
-#### The `update()` method
-After making sure a project is open, and an instance of the `Editor` is obtained, we need to check if any selection is available.
-The [`SelectionModel`](https://upsource.jetbrains.com/idea-ce/file/idea-ce-40e5005d02df57f58ac2d498867446c43d61101f/platform/editor-ui-api/src/com/intellij/openapi/editor/SelectionModel.java) interface is accessed from the `Editor` object.
-Determining whether some text is selected is accomplished by calling the `SelectionModel.hasSelection()` method.
-The enabled/disabled state and visibility of an action is set using `Presentation.setEnabled()`:
-
-```java
-    @Override
-    public void update(AnActionEvent e) {
-        // Get required data keys
-        final Project project = e.getProject();
-        final Editor editor = e.getData(CommonDataKeys.EDITOR);
-
-        // Set visibility only in case of existing project and editor and if a selection exists
-        e.getPresentation().setEnabledAndVisible(project != null
-                && editor != null
-                && editor.getSelectionModel().hasSelection());
-    }
 ```
 
 > When an action is disabled `AnAction.actionPerformed()` will not be called.
@@ -234,12 +209,13 @@ This is the code executed when the user triggers the action:
     }
 ```
 
-This fills the required metadata for the codelet and passes it as query parameters (don't forget to encode the values)
+This fills the required metadata for the snippet and passes it as query parameters (don't forget to encode the values)
  to [www.codever.land](https://www.codever.land) url via `BrowserUtil.browse(url)` method. This opens a new browser tab with the given `url`.
 
 You will now go through the individual steps and see how you can achieve that with IntelliJ's SDK.
 
 #### Get selected text in Editor
+
 You can use the `SelectionModel` to access the selected code:
 ```java
     private String getSelectedCode(AnActionEvent e) {
@@ -248,11 +224,13 @@ You can use the `SelectionModel` to access the selected code:
     }
 ```
 
-> For multi caret scenarios you should use the `CaretModel`, this does no apply in this context
+> For multi caret scenarios you should use the `CaretModel`, this does not apply in this context
 
 #### Get the language tag of the current file in the IntelliJ project
-When [saving codelets](https://www.codever.land/howto/codelets), you should define tags to easily identify them later.
-I set the first tag of the codelet with the language of the file where you select the code from. You can do this by accessing
+
+When [saving snippets](https://www.codever.land/howto/snippets), you should define tags to easily identify them later.
+In the IntelliJ plugin's case, I set the first tag of the snippet with the language of the file where you select the code from.
+ You can access the metadata of files with the help of
  the [`PsiFile`](https://www.jetbrains.org/intellij/sdk/docs/basics/architectural_overview/psi_files.html)
 and then its `Language` object:
 
@@ -269,7 +247,8 @@ and then its `Language` object:
 ```
 
 #### Get project and file name
-The title and the comment of the codelet as well is filled with the project's name plus the file where the code snippet
+
+The start of snippet's comment is automatically filled with the project's name plus the file where the code snippet
 is selected from. You can access these attributes from a virtual file [`VirtualFile`](https://www.jetbrains.org/intellij/sdk/docs/basics/architectural_overview/virtual_file.html):
 
 ```java
@@ -291,7 +270,8 @@ is selected from. You can access these attributes from a virtual file [`VirtualF
 ```
 
 #### Get the file's path
-Last but not least, I want to have the file's path to fill the `sourceUrl` attribute of the codelet. You can get it
+
+Last but not least, I want to have the file's path to fill the `sourceUrl` attribute of the snippet. You can get it
 by accessing the `getUrl()` method of the same `VirtualFile`:
 
 ```java
@@ -309,19 +289,35 @@ In this plugin we use the configuration ``plugin.xml`` possibility:
     <actions>
         <action
                 id="BookmarsDev.Save.Editor"
-                class="dev.bookmarks.intellij.plugin.SaveToBookmarksDevAction"
-                text="Save to Bookmarks.dev"
-                description="Save code snippet to Bookmarks.dev"
-                icon="SaveToBookmarksDevPluginIcons.SAVE_TO_BOOKMARKS_DEV_ACTION">
+                class="codever.intellij.plugin.SaveToCodeverAction"
+                text="Save to Codever"
+                description="Save snippet to Codever"
+                icon="SaveToCodeverPluginIcons.SAVE_TO_BOOKMARKS_DEV_ACTION">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+        <action
+                id="BookmarsDev.Search.Editor"
+                class="codever.intellij.plugin.SearchOnCodeverDialog"
+                text="Search on Codever"
+                description="Launches dialog to input query search on Codever"
+                icon="SaveToCodeverPluginIcons.SAVE_TO_BOOKMARKS_DEV_ACTION">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
         <action
                 id="BookmarsDev.Save.Console"
-                class="dev.bookmarks.intellij.plugin.SaveToBookmarksDevAction"
-                text="Save to Bookmarks.dev"
-                description="Save code snippet to Bookmarks.dev"
-                icon="SaveToBookmarksDevPluginIcons.SAVE_TO_BOOKMARKS_DEV_ACTION">
+                class="codever.intellij.plugin.SaveToCodeverAction"
+                text="Save to Codever"
+                description="Save snippet to Codever"
+                icon="SaveToCodeverPluginIcons.SAVE_TO_BOOKMARKS_DEV_ACTION">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
+        </action>
+        <action
+                id="BookmarsDev.Search.Console"
+                class="codever.intellij.plugin.SearchOnCodeverDialog"
+                text="Search on Codever"
+                description="Launches dialog to input query search on Codever"
+                icon="SaveToCodeverPluginIcons.SAVE_TO_BOOKMARKS_DEV_ACTION">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
     </actions>
 ```

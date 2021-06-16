@@ -1,6 +1,6 @@
 ---
 layout: post
-title: So, I wrote my first IntelliJ plugin to help me bookmark code
+title: My first IntelliJ plugin to help me save code snippets to Codever
 description: "Shows the basic steps needed to create a simple IntelliJ plugins which eases the saving
  of code snippets to www.codever.land"
 author: ama
@@ -179,7 +179,6 @@ public class SaveToCodeverAction extends AnAction {
             return null;
         }
     }
-
 }
 ```
 
@@ -282,42 +281,44 @@ by accessing the `getUrl()` method of the same `VirtualFile`:
 ```
 
 ## Registering the action
+
 There are two main ways to register an action: either by listing it in the `<actions>` section of a plugin's `plugin.xml` file, or through code.
 
 In this plugin we use the configuration ``plugin.xml`` possibility:
-```
+
+```xml
     <actions>
         <action
-                id="BookmarsDev.Save.Editor"
+                id="Codever.Save.Editor"
                 class="codever.intellij.plugin.SaveToCodeverAction"
                 text="Save to Codever"
                 description="Save snippet to Codever"
-                icon="SaveToCodeverPluginIcons.SAVE_TO_BOOKMARKS_DEV_ACTION">
+                icon="SaveToCodeverPluginIcons.CODEVER_ACTION_ICON">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
         <action
-                id="BookmarsDev.Search.Editor"
+                id="Codever.Search.Editor"
                 class="codever.intellij.plugin.SearchOnCodeverDialog"
                 text="Search on Codever"
                 description="Launches dialog to input query search on Codever"
-                icon="SaveToCodeverPluginIcons.SAVE_TO_BOOKMARKS_DEV_ACTION">
+                icon="SaveToCodeverPluginIcons.CODEVER_ACTION_ICON">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
         <action
-                id="BookmarsDev.Save.Console"
+                id="Codever.Save.Console"
                 class="codever.intellij.plugin.SaveToCodeverAction"
                 text="Save to Codever"
                 description="Save snippet to Codever"
-                icon="SaveToCodeverPluginIcons.SAVE_TO_BOOKMARKS_DEV_ACTION">
+                icon="SaveToCodeverPluginIcons.CODEVER_ACTION_ICON">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
         </action>
         <action
-                id="BookmarsDev.Search.Console"
+                id="Codever.Search.Console"
                 class="codever.intellij.plugin.SearchOnCodeverDialog"
                 text="Search on Codever"
                 description="Launches dialog to input query search on Codever"
-                icon="SaveToCodeverPluginIcons.SAVE_TO_BOOKMARKS_DEV_ACTION">
-            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+                icon="SaveToCodeverPluginIcons.CODEVER_ACTION_ICON">
+            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
         </action>
     </actions>
 ```
@@ -368,7 +369,7 @@ manually:
 ```xml
     <actions>
         <action
-                id="BookmarsDev.Save.Editor"
+                id="Codever.Save.Editor"
                 class="dev.bookmarks.intellij.plugin.SaveToBookmarksDevAction"
                 text="Save to Bookmarks.dev"
                 description="Save code snippet to Bookmarks.dev"
@@ -376,7 +377,7 @@ manually:
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
         <action
-                id="BookmarsDev.Save.Console"
+                id="Codever.Save.Console"
                 class="dev.bookmarks.intellij.plugin.SaveToBookmarksDevAction"
                 text="Save to Bookmarks.dev"
                 description="Save code snippet to Bookmarks.dev"

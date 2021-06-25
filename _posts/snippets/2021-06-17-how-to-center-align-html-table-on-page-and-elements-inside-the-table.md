@@ -7,7 +7,7 @@ permalink: /snippets/60c0cf0c5eeee76d9163d4eb/how-to-center-align-html-table-on-
 published: true
 snippetId: 60c0cf0c5eeee76d9163d4eb
 categories: [snippets]
-tags: [scss, css, html, codever]
+tags: [scss, css, html, codever-snippets]
 ---
 
 **Project**: [`codever`](https://github.com/codeverland/codever) - **File**:  `howto-get-started.component.scss`

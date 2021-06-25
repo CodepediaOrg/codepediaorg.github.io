@@ -7,7 +7,7 @@ permalink: /snippets/60c5de1876edda2bb1381cba/set-css-class-dynamically-in-angul
 snippetId: 60c5de1876edda2bb1381cba
 published: true
 categories: [snippets]
-tags: [angular, css, html, codever]
+tags: [angular, css, html, codever-snippets]
 ---
 
 There are times when you need to set a `css` class of a html element dynamically in angular, given a simple or complex condition.

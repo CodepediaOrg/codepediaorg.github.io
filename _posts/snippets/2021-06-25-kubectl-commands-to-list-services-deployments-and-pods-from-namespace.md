@@ -7,7 +7,7 @@ permalink: /snippets/60d577854095c2046612eaf5/kubectl-commands-to-list-services-
 published: true
 snippetId: 60d577854095c2046612eaf5
 categories: [snippets]
-tags: [kubernetes, kubectl, codever]
+tags: [kubernetes, kubectl, codever-snippets]
 ---
 
 To list services, pods and deployments resources from kubernetes namespace use the `kubectl get`

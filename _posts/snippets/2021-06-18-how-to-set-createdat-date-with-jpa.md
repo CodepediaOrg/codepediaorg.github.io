@@ -7,7 +7,7 @@ permalink: /snippets/60cc29d95eeee76d91640345/how-to-set-createdat-date-with-jpa
 published: true
 snippetId: 60cc29d95eeee76d91640345
 categories: [snippets]
-tags: [java, jpa, timestamp, date, codever]
+tags: [java, jpa, timestamp, date, codever-snippets]
 ---
 
 I usually set the date in the `@PrePersist` hook:

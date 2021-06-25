@@ -7,7 +7,7 @@ permalink: /snippets/60c5b2ab76edda2bb13819ef/class-inheritance-in-scss-example
 published: true
 snippetId: 60c5b2ab76edda2bb13819ef
 categories: [snippets]
-tags: [scss, css, codever]
+tags: [scss, css, codever-snippets]
 ---
 
 **Project**: [`codever`](https://github.com/codeverland/codever)

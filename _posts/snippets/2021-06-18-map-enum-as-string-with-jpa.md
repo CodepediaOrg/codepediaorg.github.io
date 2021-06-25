@@ -7,7 +7,7 @@ permalink: /snippets/60cc29135eeee76d91640344/map-enum-as-string-with-jpa
 published: true
 snippetId: 60cc29135eeee76d91640344
 categories: [snippets]
-tags: [java, string, jpa, codever]
+tags: [java, string, jpa, codever-snippets]
 ---
 
 Use the `@Enumerated(EnumType.STRING)` annotation:

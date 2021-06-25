@@ -6,7 +6,7 @@ author: ama
 permalink: /ama/how-to-change-the-content-of-html-element-on-hover-in-angular
 published: true
 categories: [tutorial]
-tags: [angular, css, html, codever]
+tags: [angular, css, html, codever-snippets]
 ---
 
 ## Use case

@@ -8,7 +8,7 @@ permalink: /snippets/60c8a106c807505ef1971306/how-to-query-date-range-in-mongo
 published: true
 snippetId: 60c8a106c807505ef1971306
 categories: [snippets]
-tags: [mongodb, terminal, shell, codever]
+tags: [mongodb, terminal, shell, codever-snippets]
 ---
 
 ## Use only the **date** part

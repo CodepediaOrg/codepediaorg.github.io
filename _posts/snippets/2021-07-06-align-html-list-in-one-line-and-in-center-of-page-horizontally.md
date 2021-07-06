@@ -50,13 +50,6 @@ Usage example
 
 > You can see how it looks in the [register](https://www.codever.land/register) page on Codever
 
-
-<span style="font-size: 0.9rem">
-  <strong>Reference - </strong>
-
-</span>
-
 <hr/>
-
 
  {% include snippet-post-recommendation-ending.html snippetId="60e3dbf1a9a4e07a75cbcbed" %}

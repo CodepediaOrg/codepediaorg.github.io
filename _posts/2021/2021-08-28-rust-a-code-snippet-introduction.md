@@ -410,7 +410,9 @@ fn main() {
 ```
 
 ## Control flow
+
 - no brackets in if conditions
+
 ```rust
 if num == 5 {
     msg = "five";

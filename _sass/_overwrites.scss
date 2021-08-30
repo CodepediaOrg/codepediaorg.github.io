@@ -1,0 +1,8 @@
+
+// copy code snippet button on hower - for dark mode
+.copy-button {
+  color: white;
+  &:hover {
+    color: black;
+  }
+}

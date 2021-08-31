@@ -9,8 +9,8 @@ categories: [tutorial]
 tags: [rust]
 ---
 
-A basic introduction in Rust, with code snippets inspired from [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html)
-and [Rust by Example](https://doc.rust-lang.org/rust-by-example/) books, to show in a 40 minutes presentation.
+A basic introduction in Rust, with code snippets taken from the [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html)
+and [Rust by Example](https://doc.rust-lang.org/rust-by-example/) books, to present in a 40 minutes slot.
 
 > You can execute most of the snippets directly on [Rust Playground](https://play.rust-lang.org/)
 
@@ -300,80 +300,92 @@ fn do_stuff_with_string(s: &String) {
 
 ## [Structs](https://doc.rust-lang.org/book/ch05-01-defining-structs.html)
 
-### Definition and instantiation
+A _struct_, or _structure_, is a custom data type that lets you name and package together multiple related values that make up a meaningful group.
+ If you’re familiar with an object-oriented language, a _struct_ is like an object’s data attributes.
 
 ```rust
-struct User {
-    username: String,
-    email: String,
-    sign_in_count: u64,
-    active: bool,
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
 }
 
 fn main() {
-    let user1 = User {
-        email: String::from("someone@example.com"),
-        username: String::from("someusername123"),
-        active: true,
-        sign_in_count: 1,
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
     };
 
-    println!("{}", user1.email);
+    println!(
+        "The area of the rectangle is {} square pixels.",
+        rect1.area()
+    );
 }
 ```
 
-### "Factory" methods
+Note:
+- to define the function within the context of `Rectangle`, we start an `impl` (implementation) block.
+- we’ve chosen `&self` here for the same reason we used `&Rectangle` in the function version:
+ we don’t want to take ownership, and we just want to read the data in the struct, not write to it.
+
+## [Traits](https://doc.rust-lang.org/book/ch10-02-traits.html)
+
+A _trait_ tells the Rust compiler about functionality a particular type has and can share with other types.
+ We can use traits to define shared behavior in an abstract way. We can use trait bounds to specify that a generic can be any type that has certain behavior.
+
+> Note: Traits are similar to a feature often called interfaces in other languages, although with some differences.
 
 ```rust
-struct User {
-    username: String,
-    email: String,
-    sign_in_count: u64,
-    active: bool,
+pub trait Summary {
+    fn summarize(&self) -> String;
 }
 
-fn build_user(email: String, username: String) -> User {
-    User {
-        email: email,
-        username: username,
-        active: true,
-        sign_in_count: 1,
+pub struct NewsArticle {
+    pub headline: String,
+    pub location: String,
+    pub author: String,
+    pub content: String,
+}
+
+impl Summary for NewsArticle {
+    fn summarize(&self) -> String {
+        format!("{}, by {} ({})", self.headline, self.author, self.location)
     }
 }
+
+pub struct Tweet {
+    pub username: String,
+    pub content: String,
+    pub reply: bool,
+    pub retweet: bool,
+}
+
+impl Summary for Tweet {
+    fn summarize(&self) -> String {
+        format!("{}: {}", self.username, self.content)
+    }
+}
+
 
 fn main() {
-    let user1 = build_user(
-        String::from("someone@example.com"),
-        String::from("someusername123"),
-    );
+    let tweet = Tweet {
+        username: String::from("horse_ebooks"),
+        content: String::from(
+            "of course, as you probably already know, people",
+        ),
+        reply: false,
+        retweet: false,
+    };
 
-    println!("{}", user1.email);
+    println!("1 new tweet: {}", tweet.summarize());
 }
 ```
-
-> Use shorthand version of the return
-
-### Traits
-```rust
-trait Works {
-    fn work(&self);
-}
-
-struct Employee {
-    username: String,
-    email: String,
-    sign_in_count: u64,
-    active: bool,
-}
-
-
-impl Employee for Works {
-    fn work(&self){
-        println!()
-    }
-}
-```
-## Constructor "like"
 
 ## Enums
 ```rust
@@ -499,3 +511,71 @@ for num in 0..=50 { //both start and end inclusive
     // do stuff with num
 }
 ```
+
+## [Collections](https://doc.rust-lang.org/book/ch08-00-common-collections.html)
+
+### [Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html)
+
+```rust
+fn main() {
+
+/*
+    let mut v = Vec::new();
+
+    v.push(1);
+    v.push(2);
+    v.push(3);
+    v.push(4);
+    v.push(5);
+*/
+
+    let v = vec![1, 2, 3, 4, 5];
+
+    let third: &i32 = &v[2];
+    println!("The third element is {}", third);
+
+    match v.get(2) {
+        Some(third) => println!("The third element is {}", third),
+        None => println!("There is no third element."),
+    }
+
+    //uncomment to panic the compiler
+    //let does_not_exist = &v[100];
+    //let does_not_exist = v.get(100);
+}
+```
+
+### [Hashmaps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
+
+```rust
+fn main() {
+    use std::collections::HashMap;
+
+    let mut scores = HashMap::new();
+    scores.insert(String::from("Blue"), 10);
+
+    scores.entry(String::from("Yellow")).or_insert(50);
+    scores.entry(String::from("Blue")).or_insert(50);
+
+    println!("{:?}", scores);
+}
+
+```
+
+## [Generics](https://doc.rust-lang.org/book/ch10-01-syntax.html)
+
+```rust
+struct Point<T> {
+    x: T,
+    y: T,
+}
+
+#[allow(unused_variables)]
+fn main() {
+    let integer = Point { x: 5, y: 10 };
+    let float = Point { x: 1.0, y: 4.0 };
+
+    let wont_work = Point { x: 5, y: 4.0 }; // Try fix me
+}
+```
+

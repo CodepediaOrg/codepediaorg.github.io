@@ -24,7 +24,7 @@ ama:
   github: amacoder
   social:
     - title: "github"
-      url: "https://github.com/adrianmatei-me"
+      url: "https://github.com/adi-matei"
     - title: "linkedin"
       url: "https://www.linkedin.com/in/adrianmatei-me"
     - title: "youtube"

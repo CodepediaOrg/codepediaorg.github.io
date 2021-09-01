@@ -238,7 +238,7 @@ public class PodcastDaoJPA2Impl implements PodcastDao {
 You see here how you can use multiple entity managers in the same class. And we that we conclude the configuration example of accessing multiple data sources.
 
 <p class="note_code" style="text-align: justify;">
-  <strong>Code Tip</strong> &#8211; you can best see the differences to the code with one data source configuration by having a look at my GitHub commit for this post at <strong><a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/commit/f37d52d88348eb125097a561e9105d61fffa08c3" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/commit/f37d52d88348eb125097a561e9105d61fffa08c3" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/commit/f37d52d88348eb125097a561e9105d61fffa08c3</a></strong>
+  <strong>Code Tip</strong> &#8211; you can best see the differences to the code with one data source configuration by having a look at my GitHub commit for this post at <strong><a title="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/commit/f37d52d88348eb125097a561e9105d61fffa08c3" href="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/commit/f37d52d88348eb125097a561e9105d61fffa08c3" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/commit/f37d52d88348eb125097a561e9105d61fffa08c3</a></strong>
 </p>
 
 <h4 style="text-align: justify;">
@@ -296,8 +296,8 @@ Well, that&#8217;s it. You&#8217;ve learned how to configure multiple a Spring a
 
 ### <span id="42_GitHub">4.2. GitHub</span>
 
-  * <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate" target="_blank">Source code for <strong>Java Persistence Example with Spring, JPA2 and Hibernate </strong></a>( encapsulates code for this post)
-  * <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/commit/f37d52d88348eb125097a561e9105d61fffa08c3" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/commit/f37d52d88348eb125097a561e9105d61fffa08c3" target="_blank">Differences to one datasource version</a>
+  * <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate" href="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate" target="_blank">Source code for <strong>Java Persistence Example with Spring, JPA2 and Hibernate </strong></a>( encapsulates code for this post)
+  * <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/commit/f37d52d88348eb125097a561e9105d61fffa08c3" href="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/commit/f37d52d88348eb125097a561e9105d61fffa08c3" target="_blank">Differences to one datasource version</a>
 
 ### <span id="43_Web">4.3. Web</span>
 

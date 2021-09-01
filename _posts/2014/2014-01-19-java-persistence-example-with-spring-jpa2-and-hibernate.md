@@ -128,10 +128,10 @@ tags:
 If you want to follow along, you find all you need on GitHub:
 
 <li style="text-align: justify;">
-  <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate</a>
+  <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate" href="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate</a>
 </li>
 <li style="text-align: justify;">
-  <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/resources/input_data/DumpRESTdemoDB.sql" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/resources/input_data/DumpRESTdemoDB.sql" target="_blank">MySQL DB creation self-contained file</a> – everything is configured for the <code>username/password</code> : <code>rest_demo/rest_demo</code>
+  <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/resources/input_data/DumpRESTdemoDB.sql" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/resources/input_data/DumpRESTdemoDB.sql" target="_blank">MySQL DB creation self-contained file</a> – everything is configured for the <code>username/password</code> : <code>rest_demo/rest_demo</code>
 </li>
 
 ## <span id="3_The_coding"><span id="The_coding">3. The coding</span></span>
@@ -166,7 +166,7 @@ If you want to follow along, you find all you need on GitHub:
 </pre>
 
 <p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> If you want to see what other dependencies (Jersey, Spring, Jetty, testing etc.) are used in the project or how the <code>jetty-maven-plugin</code> is configured so that you can start the project in Jetty directly from Eclipse, you can download the complete <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/pom.xml" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/pom.xml" target="_blank">pom.xml</a> file from GitHub – <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/pom.xml" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/pom.xml" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/pom.xml</a>
+  <strong>Code alert:</strong> If you want to see what other dependencies (Jersey, Spring, Jetty, testing etc.) are used in the project or how the <code>jetty-maven-plugin</code> is configured so that you can start the project in Jetty directly from Eclipse, you can download the complete <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/pom.xml" href="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/pom.xml" target="_blank">pom.xml</a> file from GitHub – <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/pom.xml" href="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/pom.xml" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/pom.xml</a>
 </p>
 
 #### <span id="312_Spring_application_context_configuration"><span id="Spring_application_context_configuration">3.1.2. Spring application context configuration</span></span>
@@ -296,7 +296,7 @@ For this interface I provide a `PodcastDaoJPA2Impl` JPA-specific implementation 
 </pre>
 
 <p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> You can find the <a title="PodcastDaoJPA2Impl" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/src/main/java/org/codingpedia/demo/rest/dao/impl/PodcastDaoJPA2Impl.java" target="_blank">complete implementation of PodcastDaoJPA2Impl on GitHub </a> &#8211; I will present the code split and give some JPA related explanations bellow.
+  <strong>Code alert:</strong> You can find the <a title="PodcastDaoJPA2Impl" href="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/src/main/java/org/codingpedia/demo/rest/dao/impl/PodcastDaoJPA2Impl.java" target="_blank">complete implementation of PodcastDaoJPA2Impl on GitHub </a> &#8211; I will present the code split and give some JPA related explanations bellow.
 </p>
 
 **EntityManager**
@@ -346,7 +346,7 @@ For this interface I provide a `PodcastDaoJPA2Impl` JPA-specific implementation 
 </p>
 
 <p class="note_normal" style="padding-left: 30px;">
-  <strong>Note:</strong> The transaction context is set via the <code>@Transcational</code> Spring annotation at the caller of the DAO class &#8211; <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java" target="_blank">PodcastRestService</a>:
+  <strong>Note:</strong> The transaction context is set via the <code>@Transcational</code> Spring annotation at the caller of the DAO class &#8211; <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java" href="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java" target="_blank">PodcastRestService</a>:
 </p>
 
 <pre>
@@ -454,8 +454,8 @@ Well, that&#8217;s it. You&#8217;ve seen how to configure Spring with JPA/Hibern
 
 ### <span id="41_Source_Code"><span id="Source_Code">4.1. Source Code</span></span>
 
-  * <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis</a>
-  * <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/tree/master/src/main/resources/input_data" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-jpa2-hibernate/tree/master/src/main/resources/input_data" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/tree/master/src/main/resources/input_data </a>(create db schema and restore data .sql files)
+  * <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate" href="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis</a>
+  * <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/tree/master/src/main/resources/input_data" href="https://github.com/adi-matei/demo-restWS-spring-jersey-jpa2-hibernate/tree/master/src/main/resources/input_data" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/tree/master/src/main/resources/input_data </a>(create db schema and restore data .sql files)
 
 ### <span id="42_JPA_resources">4.2. JPA resources</span>
 
@@ -498,7 +498,7 @@ Well, that&#8217;s it. You&#8217;ve seen how to configure Spring with JPA/Hibern
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
+       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adi-matei" target="_blank"> </a>
     </div>
 
     <div class="clear">

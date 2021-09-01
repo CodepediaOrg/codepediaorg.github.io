@@ -240,7 +240,7 @@ Well, that&#8217;s it &#8211; you&#8217;ve learned how easy it is to add CORS su
 
 ## <span id="3_Resources">3. Resources</span>
 
-<h3 title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis">
+<h3 title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis">
   <span id="31_Source_code_8211_GitHub">3.1. Source code &#8211; GitHub</span>
 </h3>
 
@@ -273,7 +273,7 @@ Well, that&#8217;s it &#8211; you&#8217;ve learned how easy it is to add CORS su
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
+       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adi-matei" target="_blank"> </a>
     </div>
 
     <div class="clear">

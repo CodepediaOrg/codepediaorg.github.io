@@ -295,8 +295,8 @@ tags:
 
 If you want to follow along, you find all you need on GitHub:
 
-  * <a title="Source code" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis (source code of the project)</a>
-  * <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/resources/input_data/DumpRESTdemoDB.sql" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/resources/input_data/DumpRESTdemoDB.sql" target="_blank">MySQL DB creation self-contained file</a> &#8211; everything is configured for the `username/password` : `rest_demo/rest_demo`
+  * <a title="Source code" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis (source code of the project)</a>
+  * <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/resources/input_data/DumpRESTdemoDB.sql" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/resources/input_data/DumpRESTdemoDB.sql" target="_blank">MySQL DB creation self-contained file</a> &#8211; everything is configured for the `username/password` : `rest_demo/rest_demo`
 
 ## <span id="2_The_coding">2. The coding</span>
 
@@ -338,7 +338,7 @@ If you want to follow along, you find all you need on GitHub:
 </p>
 
 <p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> If you want to see what other dependencies are used (for Spring, Jetty, testing) in the project or how Jetty is configured so that you can start the project directly in Jetty, you can download the complete <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" target="_blank">pom.xml</a> file from GitHub &#8211; <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml</a>
+  <strong>Code alert:</strong> If you want to see what other dependencies are used (for Spring, Jetty, testing) in the project or how Jetty is configured so that you can start the project directly in Jetty, you can download the complete <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" target="_blank">pom.xml</a> file from GitHub &#8211; <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml</a>
 </p>
 
 #### <span id="212_Web_Application_Deployment_Descriptor_8211_webxml">2.1.2. Web Application Deployment Descriptor &#8211; web.xml</span>
@@ -495,7 +495,7 @@ The Spring application context configuration is located in the classpath under `
   * each is referenced with a global identifier (e.g. a [URI](https://en.wikipedia.org/wiki/Uniform_resource_identifier "Uniform resource identifier") in HTTP).
   * has one or more representations, that they expose to the outer world and can be manipulated with (we&#8217;ll be working mostly with JSON representations in this example)
 
-The podcast resources are represented in our application by the <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" target="_blank">Podcast</a> class:
+The podcast resources are represented in our application by the <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" target="_blank">Podcast</a> class:
 
 <pre><code class="java">package org.codingpedia.demo.rest.entities;
 
@@ -790,7 +790,7 @@ public class PodcastRestService {
 </p>
 
 <p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> You can find the entire content of the class on GitHub &#8211; <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java</a>. We&#8217;ll be going through the file step by step and explain the different methods corresponding to the different operations.
+  <strong>Code alert:</strong> You can find the entire content of the class on GitHub &#8211; <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java</a>. We&#8217;ll be going through the file step by step and explain the different methods corresponding to the different operations.
 </p>
 
 ##### <span id="2221_CREATE">2.2.2.1. CREATE</span>
@@ -1217,8 +1217,8 @@ Annotations
 
 If you want to follow along, you find all you need on GitHub:
 
-  * <a title="Source code" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis (source code of the project)</a>
-  * <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/resources/input_data/DumpRESTdemoDB.sql" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/resources/input_data/DumpRESTdemoDB.sql" target="_blank">MySQL DB creation self-contained file</a> &#8211; everything is configured for the `username/password` : `rest_demo/rest_demo`
+  * <a title="Source code" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis (source code of the project)</a>
+  * <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/resources/input_data/DumpRESTdemoDB.sql" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/resources/input_data/DumpRESTdemoDB.sql" target="_blank">MySQL DB creation self-contained file</a> &#8211; everything is configured for the `username/password` : `rest_demo/rest_demo`
 
 ## <span id="2_The_coding">2. The coding</span>
 
@@ -1260,7 +1260,7 @@ If you want to follow along, you find all you need on GitHub:
 </p>
 
 <p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> If you want to see what other dependencies are used (for Spring, Jetty, testing) in the project or how Jetty is configured so that you can start the project directly in Jetty, you can download the complete <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" target="_blank">pom.xml</a> file from GitHub &#8211; <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml</a>
+  <strong>Code alert:</strong> If you want to see what other dependencies are used (for Spring, Jetty, testing) in the project or how Jetty is configured so that you can start the project directly in Jetty, you can download the complete <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" target="_blank">pom.xml</a> file from GitHub &#8211; <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml</a>
 </p>
 
 #### <span id="212_Web_Application_Deployment_Descriptor_8211_webxml">2.1.2. Web Application Deployment Descriptor &#8211; web.xml</span>
@@ -1417,7 +1417,7 @@ The Spring application context configuration is located in the classpath under `
   * each is referenced with a global identifier (e.g. a [URI](https://en.wikipedia.org/wiki/Uniform_resource_identifier "Uniform resource identifier") in HTTP).
   * has one or more representations, that they expose to the outer world and can be manipulated with (we&#8217;ll be working mostly with JSON representations in this example)
 
-The podcast resources are represented in our application by the <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" target="_blank">Podcast</a> class:
+The podcast resources are represented in our application by the <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/entities/Podcast.java" target="_blank">Podcast</a> class:
 
 <pre><code class="java">package org.codingpedia.demo.rest.entities;
 
@@ -1712,7 +1712,7 @@ public class PodcastRestService {
 </p>
 
 <p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> You can find the entire content of the class on GitHub &#8211; <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java</a>. We&#8217;ll be going through the file step by step and explain the different methods corresponding to the different operations.
+  <strong>Code alert:</strong> You can find the entire content of the class on GitHub &#8211; <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/src/main/java/org/codingpedia/demo/rest/service/PodcastRestService.java</a>. We&#8217;ll be going through the file step by step and explain the different methods corresponding to the different operations.
 </p>
 
 ##### <span id="2221_CREATE">2.2.2.1. CREATE</span>
@@ -2098,7 +2098,7 @@ As mentioned, the integration tests will be executed against a running jetty ser
 </p>
 
 <p class="note_code" style="text-align: justify;">
-  <strong>Code alert:</strong> See the complete <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" target="_blank">pom.xml</a> file on GitHub &#8211; <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml</a>
+  <strong>Code alert:</strong> See the complete <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" target="_blank">pom.xml</a> file on GitHub &#8211; <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/blob/master/pom.xml</a>
 </p>
 
 #### <span id="312_Build_the_integration_tests">3.1.2. Build the integration tests</span>
@@ -2195,8 +2195,8 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
 
 ### <span id="51_Source_Code">5.1. Source Code</span>
 
-  * <a title="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis" href="https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis" target="_blank">https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis</a>
-  * [https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/tree/master/src/main/resources/input_data  ](https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/tree/master/src/main/resources/input_datahttp:// "https://github.com/adrianmatei-me/demo-restWS-spring-jersey-tomcat-mybatis/tree/master/src/main/resources/input_data")(create db schema and restore data .sql files)
+  * <a title="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis" href="https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis" target="_blank">https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis</a>
+  * [https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/tree/master/src/main/resources/input_data  ](https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/tree/master/src/main/resources/input_datahttp:// "https://github.com/adi-matei/demo-restWS-spring-jersey-tomcat-mybatis/tree/master/src/main/resources/input_data")(create db schema and restore data .sql files)
 
 ### <span id="52_Web_resources">5.2. Web resources</span>
 
@@ -2229,7 +2229,7 @@ To start jetty on port 8888 you need to set the `jetty.port` property to 8888. I
 
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
-       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adrianmatei-me" target="_blank"> </a>
+       <a class="icon-twitter" href="https://twitter.com/CodepediaOrg" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/CodepediaOrg" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codepediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/adi-matei" target="_blank"> </a>
     </div>
 
     <div class="clear">

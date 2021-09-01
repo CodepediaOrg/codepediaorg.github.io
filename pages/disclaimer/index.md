@@ -49,7 +49,7 @@ This policy is valid from 14 August 2013
 ### <span id="Ownership">Ownership</span>
 
 <p style="text-align: justify;">
-  This blog has been donated by his founder, Adrian Matei (<em> ama at codingpedia dot org</em> ), to the Codingpedia Association, which is a non-profit organisation based in Romania.  For questions about this blog, please leave as a message ( <em>contact at codingpedia dot org ).</em>
+  This blog has been donated by his founder, Adrian Matei (<em> ama at codepedia dot org</em> ), to the Codingpedia Association, which is a non-profit organisation based in Romania.  For questions about this blog, please leave as a message ( <em>contact at codepedia dot org ).</em>
 </p>
 
 ### <span id="Content_and_use_of_site">Content and use of site</span>

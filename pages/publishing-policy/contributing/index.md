@@ -102,7 +102,7 @@ By choosing to collaborate with us you agree to our <a title="Publishing policy"
 </h3>
 
 <p style="text-align: justify;">
-  Interested? Then, reach us at <em><strong>contact [AT] codingpedia dot org</strong></em> <a title="Mail us" href="mailto: contact@codepedia.org" target="_blank"> </a>and we&#8217;ll get back to you as soon as possible.
+  Interested? Then, reach us at <em><strong>contact [AT] codepedia dot org</strong></em> <a title="Mail us" href="mailto: contact@codepedia.org" target="_blank"> </a>and we&#8217;ll get back to you as soon as possible.
 </p>
 
 <p style="text-align: justify;">

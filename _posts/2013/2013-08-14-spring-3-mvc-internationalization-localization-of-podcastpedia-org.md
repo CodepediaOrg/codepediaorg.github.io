@@ -168,7 +168,7 @@ Header set Cache-Control "max-age=0, private"</code></pre>
 
 , so that changing the locale is effective immediately for the page &#8211; otherwise if you come back later to the same page, but without the locale parameter in the url, you would have the page displayed in the old locale, if the expiration time was not reached yet.
 
-Well, that&#8217;s All Folks! If you would like to have Podcastpedia.org localized in your language, you can download the message resource file for English &#8211; [messages_en.properties]({{site.url}}/wp-content/uploads/2013/08/messages_en.zip), and contact me at _ama [AT] codingpedia DOT org_ &#8211; thanks
+Well, that&#8217;s All Folks! If you would like to have Podcastpedia.org localized in your language, you can download the message resource file for English &#8211; [messages_en.properties]({{site.url}}/wp-content/uploads/2013/08/messages_en.zip), and contact me at _ama [AT] codepedia dot org_ &#8211; thanks
 
 If you liked this, please show your support by <a title="Podcastpedia.org how can I help" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help" target="_blank">helping us</a> with <a title="Podcastpedia.org, knowledge to go" href="https://github.com/CodepediaOrg/podcastpedia/" target="_blank">Podcastpedia.org</a>
 

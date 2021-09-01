@@ -255,7 +255,7 @@ RequestConfig requestConfig = RequestConfig.custom()
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/wp-content/uploads/2014/01/AdrianMatei.png" alt="Podcastpedia image" />
 
   <div id="author_details" style="text-align: justify;">
-    <a title="Codepedia.org, let's code the better world" href="https://www.codepedia.org/" target="_blank">Codepedia.org</a> was founded by Adrian Matei (ama [AT] codingpedia DOT org), a computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy.
+    <a title="Codepedia.org, let's code the better world" href="https://www.codepedia.org/" target="_blank">Codepedia.org</a> was founded by Adrian Matei (ama [AT] codepedia dot org), a computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy.
   </div>
 
   <div id="follow_social" style="clear: both;">

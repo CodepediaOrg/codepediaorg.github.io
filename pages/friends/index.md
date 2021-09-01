@@ -82,7 +82,7 @@ Dear fellow coder,
 </p>
 
 <p style="text-align: justify; padding-left: 30px;">
-  <em><strong>Note:</strong> You can revoke from the Coding Friend Program anytime, by contacting our editorial team &#8211; contact [AT] codingpedia dot org</em>
+  <em><strong>Note:</strong> You can revoke from the Coding Friend Program anytime, by contacting our editorial team &#8211; contact [AT] codepedia dot org</em>
 </p>
 
 ## <span id="Requirements">Requirements</span>

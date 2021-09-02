@@ -10,7 +10,8 @@ categories: [snippets]
 tags: [java, mapstruct, mapping, codever-snippets]
 ---
 
-Use the `nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS)` on the mapping property you want to be checked. In this snippet you can see a `PostalAdress` entity is mapped to an entity of the same type, but the `id` is overwritten only when it is present in the `source`:
+Use the `nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS)` on the mapping property you want to be checked.
+ In this snippet you can see a `PostalAdress` entity is mapped to an entity of the same type, but the `id` is overwritten only when it is present in the `source`:
 
 
 ```java

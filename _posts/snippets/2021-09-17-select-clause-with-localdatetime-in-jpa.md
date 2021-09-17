@@ -5,7 +5,7 @@ description: "Select clause with LocalDateTime comparison in JPA code snippet"
 author: ama
 permalink: /snippets/61446015fb0221040e46d431/select-with-in-clause-from-list-with-jpa
 published: true
-snippetId: 614479defb0221040e46d62b
+snippetId: 614479defb0221040e46d62a
 categories: [snippets]
 tags: [java, sql, jpa, jpql, hibernate, datetime, codever-snippets]
 ---
@@ -71,4 +71,4 @@ public class PartnerData {
 
 <hr/>
 
- {% include snippet-post-recommendation-ending.html snippetId="614479defb0221040e46d62b" %}
+ {% include snippet-post-recommendation-ending.html snippetId="614479defb0221040e46d62a" %}

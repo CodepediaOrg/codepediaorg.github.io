@@ -9,7 +9,7 @@ categories: [article]
 tags: [mlops, machine-learning, artificial-intelligence]
 ---
 
-![MLOPs intro](assets/images/2021-11-21-rise-of-mlops-monitoring-in-2022/1-mlops-intro.png)
+![MLOPs intro]({{site.url}}/assets/images/2021-11-21-rise-of-mlops-monitoring-in-2022/1-mlops-intro.png)
 
 Machine Learning is used in practically every industry these days, which is associated with Artificial Intelligence.
 Machine learning is used in a variety of fields, including medicine, eCommerce, and science.
@@ -32,7 +32,7 @@ as well as other features could also arise, resulting in model failure.
 Although data changes in the actual world, modifications can be high and result in a considerable,
 sometimes unmeasured predictive model.
 
-![MLOPs intro](assets/images/2021-11-21-rise-of-mlops-monitoring-in-2022/2-practical-machine-learning.jpg)
+![MLOPs intro]({{site.url}}/assets/images/2021-11-21-rise-of-mlops-monitoring-in-2022/2-practical-machine-learning.jpg)
 
 It also implies that the Proposed method tackles a few distinct and difficult tasks.
 To begin with, models frequently fail quietly. In certain terms, today's machine learning systems lack the equivalence
@@ -49,7 +49,7 @@ getting it into execution necessitates a different set of capabilities.
 The ML programmer creates ML workflows that can consistently, cheaply, accurately,
 and even at size duplicate the outputs of the data scientist's algorithms and ML production.
 
-![MLOPs intro](assets/images/2021-11-21-rise-of-mlops-monitoring-in-2022/3-from-devops-to-mlops.jpg)
+![MLOPs intro]({{site.url}}/assets/images/2021-11-21-rise-of-mlops-monitoring-in-2022/3-from-devops-to-mlops.jpg)
 
 
 ## Rise of MLOps
@@ -64,7 +64,7 @@ each with its own set of responsibilities. Workflows for the major mechanisms in
 such as pre-processing, feature extraction, [model construction](https://searchenterpriseai.techtarget.com/feature/How-to-build-a-machine-learning-model-in-7-steps),
 and deploy ML model. MLOps are critical for the basic coordination of these many processes to update the model periodically.
 
-![MLOPs intro](assets/images/2021-11-21-rise-of-mlops-monitoring-in-2022/4-generate-example-data.png)
+![MLOPs intro]({{site.url}}/assets/images/2021-11-21-rise-of-mlops-monitoring-in-2022/4-generate-example-data.png)
 
 ## Management of MLOps
 The ML lifecycle model is made up of several parts, each of which should be treated as a different software component.
@@ -86,7 +86,7 @@ As previously stated in this article, the building of models is not a cause for 
 When training models on a data set, programmers apply real data to assess the performance of the models and other measures.
  System statistics cannot be computed to evaluate the actual performance of the model without actual tags.
 
-![MLOPs intro](assets/images/2021-11-21-rise-of-mlops-monitoring-in-2022/5-pipeline.jpg)
+![MLOPs intro]({{site.url}}/assets/images/2021-11-21-rise-of-mlops-monitoring-in-2022/5-pipeline.jpg)
 
 ## Specifying data quality issues and risks
 Sophisticated models are upthrust by deep hierarchical flowlines and process automation that entail real-time data
@@ -108,7 +108,7 @@ they are likely to spread or magnify current data bias or even create new prejud
 Assessing actual distortion once a model is released, as well as examining bias concerns in detail, requires a while and is subject to mistakes.
 Teams can run past data through the current model or run the new model alongside the previous model when implementing the latest concept. Both methods have the potential to be a fatal error and time-consuming.
 
-![MLOPs intro](assets/images/2021-11-21-rise-of-mlops-monitoring-in-2022/6-quadrat.png)
+![MLOPs intro]({{site.url}}/assets/images/2021-11-21-rise-of-mlops-monitoring-in-2022/6-quadrat.png)
 
 These difficulties highlight the vital need for a tool to monitor and ML implementation to not only identify practical concerns
  but also to assist in revealing basic issues. MLOps monitoring tools are essential to help businesses continue to use AI

@@ -4,7 +4,7 @@ title: Rise of MLOps monitoring in 2022
 description: "This article will explain the rise of MLOps monitoring in 2022."
 author: danmartin
 permalink: /danmartin/rise-of-mlops-monitoring-in-2022
-published: false
+published: true
 categories: [article]
 tags: [mlops, machine-learning, artificial-intelligence]
 ---

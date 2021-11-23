@@ -42,7 +42,7 @@ to solve an overflowing CPU.  We divide ML algorithms operations monitoring into
 
 ## Use of MLOps
 
-MLOps aims to derive corporate insights from data by quickly scaling up machine learning ML model delivery.
+MLOps aims to derive corporate insights from data by quickly scaling up [machine learning ML model delivery](https://verta.ai/).
 To ensure MLOps performance, many firms have created a new role called ML engineer.
 Even though a machine learning engineer may uncover a business-valued solution,
 getting it into execution necessitates a different set of capabilities.

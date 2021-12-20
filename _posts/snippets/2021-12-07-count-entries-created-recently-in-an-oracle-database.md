@@ -10,7 +10,8 @@ categories: [snippets]
 tags: [oracle, sql, codever-snippets]
 ---
 
-We will base the logic around [`sysdate`](https://docs.oracle.com/cd/B19306_01/server.102/b14200/functions172.htm) which returns the current datetime, from which we substract units. For example for the **last day** from now use `sysdate - 1` (defaults to day) and compare with the timestamp column (in this case `CREATED_AT`) :
+We will base the logic around [`sysdate`](https://docs.oracle.com/cd/B19306_01/server.102/b14200/functions172.htm)
+ which returns the current datetime, from which we substract units. For example for the **last day** from now use `sysdate - 1` (defaults to day) and compare with the timestamp column (in this case `CREATED_AT`) :
 
 ```sql
 select count(*)

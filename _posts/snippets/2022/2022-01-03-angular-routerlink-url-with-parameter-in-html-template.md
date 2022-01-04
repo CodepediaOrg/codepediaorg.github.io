@@ -23,6 +23,7 @@ Use a two-element array when specifying a route parameter:
   </a>
 </div>
 ```
+
 This will generate a link similar to the following
  [https://www.codever.land/**tagged/angular**](https://www.codever.land/tagged/angular),
   where the value of the `tag` parameter in `routerLink` is the string `angular`

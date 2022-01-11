@@ -10,22 +10,22 @@ categories: [snippets]
 tags: [java, testing, unit-testing, jaxb, codever-snippets]
 ---
 
-Use the `getClass().getClassLoader().getResourceAsStream()`. In the following snippet we read the `bookmark-example.xml`
- file, which is placed directly in the  `src/test/resources` folder:
+Use the **`getClass().getClassLoader().getResourceAsStream()`** to get an `InputStream` for the wanted resource.
+ In the following snippet we access the `bookmark-example.xml` file resource, which is placed directly in the  `src/test/resources` folder:
 
 ```java
-    @Test
-    void shouldUnmarshallXmlToJava() throws JAXBException {
-        JAXBContext jaxbContext = JAXBContext.newInstance("dev.codepal.bookmark");
-        final var jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+@Test
+void shouldUnmarshallXmlToJava() throws JAXBException {
+    JAXBContext jaxbContext = JAXBContext.newInstance("dev.codepal.bookmark");
+    final var jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
-        InputStream inStream = getClass().getClassLoader().getResourceAsStream(
-                "bookmark-example.xml");
+    InputStream inStream = getClass().getClassLoader().getResourceAsStream(
+            "bookmark-example.xml");
 
-        JAXBElement<Bookmark> o = (JAXBElement<Bookmark>)jaxbUnmarshaller.unmarshal(inStream);
-        Bookmark bookmark = o.getValue();
-        assertThat(bookmark.getTitle(), equalTo("CodepediaOrg"));
-    }
+    JAXBElement<Bookmark> o = (JAXBElement<Bookmark>)jaxbUnmarshaller.unmarshal(inStream);
+    Bookmark bookmark = o.getValue();
+    assertThat(bookmark.getTitle(), equalTo("CodepediaOrg"));
+}
 ```
 
 

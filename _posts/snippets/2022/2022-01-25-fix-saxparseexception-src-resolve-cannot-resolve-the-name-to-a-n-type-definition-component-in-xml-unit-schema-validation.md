@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fix SAXParseException; src-resolve: Cannot resolve the name '…' to a(n) 'type definition' component in Xml unit schema validation
+title: "Fix SAXParseException; src-resolve: Cannot resolve the name '…' to a(n) 'type definition' component in Xml unit schema validation"
 description: "Fix SAXParseException; src-resolve: Cannot resolve the name '…' to a(n) 'type definition' component in Xml unit schema validation code snippet"
 author: ama
 permalink: /snippets/606d9f08f442e014739a56f5/fix-saxparseexception-src-resolve-cannot-resolve-the-name-to-a-n-type-definition-component-in-xml-unit-schema-validation

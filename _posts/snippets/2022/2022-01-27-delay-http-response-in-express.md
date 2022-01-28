@@ -35,5 +35,4 @@ router.get('/', async (request, response) => {
 
 <hr/>
 
-
  {% include snippet-post-recommendation-ending.html snippetId="60a25b99d8923017316598bd" %}

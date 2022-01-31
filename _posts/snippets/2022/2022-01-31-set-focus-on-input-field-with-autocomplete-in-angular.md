@@ -57,8 +57,6 @@ Below you can see how the referenced template variable (`publicSearchBox`) and t
   >
 ```
 
-
 <hr/>
-
 
  {% include snippet-post-recommendation-ending.html snippetId="61f7a191a6871e0e9eee347b" %}

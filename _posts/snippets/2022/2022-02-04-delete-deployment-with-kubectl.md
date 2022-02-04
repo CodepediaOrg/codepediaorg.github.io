@@ -36,10 +36,6 @@ You should get something similar to the following:
 deployment.apps "pdv-lokation-batch-test" deleted
 ```
 
-
-
-
 <hr/>
-
 
  {% include snippet-post-recommendation-ending.html snippetId="61fa84d488422d447cdeb1e4" %}

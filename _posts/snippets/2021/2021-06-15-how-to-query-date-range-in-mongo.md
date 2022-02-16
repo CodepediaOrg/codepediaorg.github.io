@@ -19,7 +19,6 @@ var start = new Date("2021-06-14");
 var end = new Date("2021-06-15");
 
 db.call_archive.find({archivedAt: {$gte: start, $lt: end}}).pretty();
-
 ```
 
 ## Use both **date** and **time**

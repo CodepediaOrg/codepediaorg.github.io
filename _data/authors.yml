@@ -7,7 +7,7 @@ ama:
   # Twitter nick for use in Twitter cards and follow button.
   twitter: CodepediaOrg # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
-  github: adrianmatei-me
+  github: adrianmateidotcom
   social:
     - title: "github"
       url: "https://github.com/adi-matei"

@@ -181,6 +181,8 @@ The same functionality is valid when generating the entries in the atom [feed.xm
 
 In Wordpress if I clicked on __http://www.codepedia.org/authors/{author_username}__ I would get all the posts of the name author with pagination if they were more than five, I guess it's a nice feature and once I will implement that I will post it here.
 
+**UPDATE**: Adding multiple authors (with paginated author pages) to a jekyll powered blog got much easier using the [jekyll-auto-authors](https://github.com/gouravkhunger/jekyll-auto-authors) plugin! [Here](https://genicsblog.com/gouravkhunger/adding-multiple-authors-to-a-jekyll-blog-got-easier)'s a detailed tutorial on using the traditional data files approach or the auto-authors plugin efficiently.
+
 I hope you've found this useful and if you see any improvement possibilities to this approach please leave a comment below, or even better make a pull request to improve the [source code](https://github.com/CodepediaOrg/codepediaorg.github.io) directly - thanks.
 
 ## References

@@ -1,22 +1,18 @@
 ama:
-  name:          Adrian Matei
+  name:          Adixchen
   site:           https://www.codepedia.org
   avatar:         images/authors/amacoder.png
   bio:            "Life force expressing itself as a coding capable human being"
-  email:          adrianmatei@gmail.com
+  email:          adixchen@proton.me
   # Twitter nick for use in Twitter cards and follow button.
   twitter: CodepediaOrg # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
-  github: adrianmateidotcom
+  github: adixchen
   social:
     - title: "github"
-      url: "https://github.com/adi-matei"
-    - title: "linkedin"
-      url: "https://www.linkedin.com/in/adrianmatei-me/"
+      url: "https://github.com/adixchen"
     - title: "youtube"
-      url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
-    - title: "facebook"
-      url: "https://www.facebook.com/adrianmatei.me"
+      url: "https://www.youtube.com/@CodepediaOrg"
 
 aredko:
   name:          Andriy Redko
@@ -57,17 +53,11 @@ dexter:
   site:           https://www.codepedia.org
   avatar:         images/authors/dexter.jpg
   bio:            "A boy-genius and inventor with a secret laboratory, who constantly battles his sister Dee Dee in an attempt to keep her out of the lab."
-  email:          adrianmatei@gmail.com
+  email:          dexter@example.com
   # Twitter nick for use in Twitter cards and follow button.
   twitter: CodepediaOrg # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
-  github: adrianmatei-me
+  github: adixchen
   social:
     - title: "github"
-      url: "https://github.com/adi-matei"
-    - title: "linkedin"
-      url: "https://www.linkedin.com/in/adrianmatei1983"
-    - title: "youtube"
-      url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
-    - title: "facebook"
-      url: "https://www.facebook.com/adrianmatei.me"
+      url: "https://github.com/CodepediaOrg"

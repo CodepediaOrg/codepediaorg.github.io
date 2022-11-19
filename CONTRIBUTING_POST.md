@@ -13,24 +13,20 @@ information about yourself as in the following example:
 
 ```yaml
 ama:
-  name:          Adrian Matei
+  name:          Adixchen
   site:           https://www.codepedia.org
   avatar:         images/authors/amacoder.png
   bio:            "Life force expressing itself as a coding capable human being"
-  email:          adrianmatei@gmail.com
+  email:          adixchen@proton.me
   # Twitter nick for use in Twitter cards and follow button.
   twitter: codingpedia # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
   github: amacoder
   social:
     - title: "github"
-      url: "https://github.com/adi-matei"
-    - title: "linkedin"
-      url: "https://www.linkedin.com/in/adrianmatei-me"
+      url: "https://github.com/adixchen"
     - title: "youtube"
-      url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
-    - title: "facebook"
-      url: "https://www.facebook.com/adrian.matei.90"
+      url: "https://www.youtube.com/@CodepediaOrg"
 ```
 Let's go through the elements now one by one:
 * The first element (here **ama**) is very important, as it is used in your posts to identify you, the author

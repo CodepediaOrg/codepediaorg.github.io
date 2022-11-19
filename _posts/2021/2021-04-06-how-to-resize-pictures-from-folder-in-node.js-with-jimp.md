@@ -9,7 +9,7 @@ categories: [article]
 tags: [productivity, node.js, image-processing]
 ---
 
-Recently I wrote a [few posts on my personal blog](https://www.adrianmatei.me/blog/) with lots of pictures. To save
+Recently I wrote a [few posts on my personal blog](https://www.adixchen.com/blog/) with lots of pictures. To save
 on bandwidth and load time it's very important to reduce the size of the images. Which until recently I did manually in Preview, MacOS.
  It was a rather cumbersome manual process, that I automated with the help of Node.js/ExpressJS and [Jimp](https://github.com/oliver-moran/jimp)
  In this post I will presently the implementation.

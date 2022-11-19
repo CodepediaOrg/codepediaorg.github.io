@@ -91,7 +91,7 @@ tags:
 ## <span id="Scenario">Scenario</span>
 
 <p style="text-align: justify;">
-  On Podcastpedia.org&#8217;s <a title="Podcastpedia.org, subtmit podcast" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help/add_podcast" target="_blank">Submit podcast</a> page, we encourage our visitors and podcast producers to submit their podcasts to be included in our podcast directory. Once a podcast is submitted, an automatic email will be generated to notify me (adrianmatei [AT] gmail DOT com ) and the Podcastpedia personnel ( contact [AT] podcastpedia DOT org) about it.
+  On Podcastpedia.org&#8217;s <a title="Podcastpedia.org, subtmit podcast" href="https://github.com/CodepediaOrg/podcastpedia/how_can_i_help/add_podcast" target="_blank">Submit podcast</a> page, we encourage our visitors and podcast producers to submit their podcasts to be included in our podcast directory. Once a podcast is submitted, an automatic email will be generated to notify me (adixchen [AT] proton DOT com ) and the Podcastpedia personnel ( contact [AT] podcastpedia DOT org) about it.
 </p>
 
 <p style="text-align: justify;">
@@ -210,7 +210,7 @@ public class EmailNotificationServiceImpl implements EmailNotificationService {
 				public void prepare(MimeMessage mimeMessage) throws Exception {
 		             MimeMessageHelper message = new MimeMessageHelper(mimeMessage);
 		             message.setTo(configService.getValue("EMAIL_TO_SUGGEST_PODCAST"));
-		             message.setBcc("adrianmatei@gmail.com");
+		             message.setBcc("example@proton.me");
 		             message.setFrom(new InternetAddress(suggestedPodcast.getEmail()) );
 		             message.setSubject("New suggested podcast");
 		             message.setSentDate(new Date());
@@ -252,7 +252,7 @@ public class EmailNotificationServiceImpl implements EmailNotificationService {
 
 <pre><code class="java">MimeMessageHelper message = new MimeMessageHelper(mimeMessage);
  message.setTo(configService.getValue("EMAIL_TO_SUGGEST_PODCAST"));
- message.setBcc("adrianmatei@gmail.com");
+ message.setBcc("example@proton.me");
  message.setFrom(new InternetAddress(suggestedPodcast.getEmail()) );
  message.setSubject("New suggested podcast");
  message.setSentDate(new Date());</code></pre>

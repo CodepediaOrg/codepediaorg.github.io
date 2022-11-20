@@ -73,7 +73,7 @@ So I though the `.json` config file should look something like the following:
     exec_mode : "cluster",
     env: {
       "NODE_ENV": "development",
-      "YOUTUBE_API_KEY" : "AIzaSyCCo1VvwO8iMfxgquoYzyYM-A5eeyvJR4Q"
+      "YOUTUBE_API_KEY" : "AIxxx..."
     },
     env_production : {
        "NODE_ENV": "production",

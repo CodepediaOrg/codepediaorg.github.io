@@ -10,7 +10,10 @@ categories: [snippets]
 tags: [angular, angular-material, html, html-template, codever-snippets]
 ---
 
-Use the `expanded` attribute of the `mat-expansion-panel` element and when condition is met it set to `true`. In the following example a filter pipe it is used and [the result is placed in the `filteredBookmarks` variable](https://www.codever.land/snippets/63806e79944cbd1faacdda84/details) which is checked in the condition - `[expanded]="filteredBookmarks.length === 1"` :
+Use the `expanded` attribute of the `mat-expansion-panel` element and set it to `true` when the condition is met.
+In the following example a filter pipe is used
+and [the result is placed in the `filteredBookmarks` variable](https://www.codever.land/snippets/63806e79944cbd1faacdda84/details)
+which is checked in the condition - `[expanded]="filteredBookmarks.length === 1"` :
 
 ```html
 <mat-expansion-panel

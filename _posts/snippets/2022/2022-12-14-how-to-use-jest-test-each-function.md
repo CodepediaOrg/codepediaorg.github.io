@@ -10,7 +10,8 @@ categories: [snippets]
 tags: [typescript, jest, testing, codever-snippets]
 ---
 
-Let's test the following `isInfiniteDate` function, which checks whether the **given** date is "infinite" in the given context:
+Let's test with Jest the following `isInfiniteDate` function,
+which checks whether the **given** date is "infinite" in the given context:
 
 ```typescript
 export const isInfiniteDate = (input: string): boolean => {
@@ -19,7 +20,7 @@ export const isInfiniteDate = (input: string): boolean => {
 };
 ```
 
-For sure, we want to test different dates with the same expected result, either `true` or `false``
+For sure, we want to test different dates with the same expected result, either `true` or `false`
 
 To avoid "duplication" of same test with different data, you can use `test.each(table)(name, fn, timeout)` function,
 to which you can pass an `Array` of Arrays with the arguments that are passed into the test `fn` for each row.
@@ -41,6 +42,8 @@ describe('isInfiniteDate > ', () => {
 
 - `name` is the `String` title of the test block -  See the [referenced link](https://jestjs.io/docs/api#testeachtablename-fn-timeout) for the different formatting options
 - optionally, you can provide a timeout (in milliseconds) for specifying how long to wait for each row before aborting. The default timeout is 5 seconds.
+
+> This is the equivalent of [@ParameterizedTest](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests) in Java
 
 <span style="font-size: 0.9rem">
   <strong>Reference - </strong>

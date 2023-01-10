@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [typescript, angular, href, codever-snippets]
 ---
 
-**Project**: [`codever`](https://www.codever.land) - **File**:  `backup-bookmarks-dialog.component.ts`
+**Project**: [`codever`](https://www.codever.dev) - **File**:  `backup-bookmarks-dialog.component.ts`
 
 Use the `DomSanitizer` and its method `bypassSecurityTrustUrl` as shown in the example below.
  Thus, you don't get the `unsafe` prefix in your generated html

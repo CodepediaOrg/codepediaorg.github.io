@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [angular, html-template, codever-snippets]
 ---
 
-**Project**: [`codever`](https://github.com/codeverland/codever) - **File**:  `snippet-details.component.html`
+**Project**: [`codever`](https://github.com/CodeverDotDev/codever) - **File**:  `snippet-details.component.html`
 
 Use the `async` pipe and store it in variable for later use `*ngIf="(snippet$ | async) as snippet"`. Below the complete snippet example:
 

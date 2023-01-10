@@ -24,7 +24,7 @@ if(searchQuery === ''){
 }
 
 if(searchQuery !== undefined){
-  const searchUrl = `https://www.codever.land/search?q=${searchQuery}&sd=my-snippets`;
+  const searchUrl = `https://www.codever.dev/search?q=${searchQuery}&sd=my-snippets`;
   vscode.env.openExternal(Uri.parse(searchUrl));
 }
 ```

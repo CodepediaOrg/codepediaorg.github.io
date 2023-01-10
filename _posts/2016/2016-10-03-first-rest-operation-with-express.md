@@ -14,7 +14,7 @@ tags:
 ---
 
 In the previous blog post, [Kick starting a project with Express Generator]({% post_url 2016-10-01-kickstarting-a-project-with-express-generator}),
-I had setup a started the backend project with Express Generator[^1] to support [www.codever.land](https://www.codever.land). In this one I will try to implement
+I had setup a started the backend project with Express Generator[^1] to support [www.codever.dev](https://www.codever.dev). In this one I will try to implement
 a simple GET method that will deliver mocked bookmarks.
 
 [^1]: <https://expressjs.com/en/starter/generator.html>
@@ -143,7 +143,7 @@ echo "# bookmarks-api.codepedia.org" >> README.md
 git init
 git add --all
 git commit -m "first commit"
-git remote add origin https://github.com/codeverland/codever.codepedia.org.git
+git remote add origin https://github.com/CodeverDotDev/codever.codepedia.org.git
 git push -u origin master
 ```
 

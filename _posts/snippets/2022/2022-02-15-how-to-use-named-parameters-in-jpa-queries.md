@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [jpa, jpql, java, sql, codever-snippets]
 ---
 
-Define a named parameter (`:status`) in a [named query](https://www.codever.land/snippets/620b6123e102f148ceb9f5e6/details):
+Define a named parameter (`:status`) in a [named query](https://www.codever.dev/snippets/620b6123e102f148ceb9f5e6/details):
 
 ```java
 import javax.persistence.*;

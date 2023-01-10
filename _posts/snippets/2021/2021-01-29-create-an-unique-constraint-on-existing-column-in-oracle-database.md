@@ -19,9 +19,9 @@ CREATE TABLE bookmark (
     PRIMARY KEY ( id )
 );
 
-INSERT INTO bookmark ( id, title, url, is_public) VALUES (1, 'https://www.codever.land');
+INSERT INTO bookmark ( id, title, url, is_public) VALUES (1, 'https://www.codever.dev');
 INSERT INTO bookmark ( id, title, url, is_public) VALUES (2, 'https://www.codepedia.org');
-INSERT INTO bookmark ( id, title, url, is_public) VALUES (3, 'https://www.codever.land');
+INSERT INTO bookmark ( id, title, url, is_public) VALUES (3, 'https://www.codever.dev');
 ```
 
 Normally you would use the following `ALTER TABLE` command to add a unique constraint on the `url` column

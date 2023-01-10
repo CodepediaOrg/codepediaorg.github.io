@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keyboard shortcuts example with Angular
-description: "Setup of hot keys with Angular to access recent and pinned bookmarks on www.codever.land"
+description: "Setup of hot keys with Angular to access recent and pinned bookmarks on www.codever.dev"
 author: ama
 permalink: /ama/keyboard-shortcuts-example-with-angular
 published: true
@@ -14,7 +14,7 @@ tags:
 ---
 
 You know how good ideas come out of the blue? Recently it hit me that I could more easily access my bookmarks
-history and the pinned bookmarks on [www.codever.land](https://www.codever.land) with hot keys. So I sat down and implemented
+history and the pinned bookmarks on [www.codever.dev](https://www.codever.dev) with hot keys. So I sat down and implemented
 this feature. This post details how.
 
  ![Hot Keys on Bookmarks.dev demo](/images/posts/2020-06-12-hotkeys-angular/angular-hotkeys-showcase-1440x900.gif)
@@ -33,7 +33,7 @@ import { UserDataPinnedStore } from './core/user/userdata.pinned.store';
 
 export class AppComponent {
 
-  url = 'https://www.codever.land';
+  url = 'https://www.codever.dev';
   innerWidth: any;
   constructor(private userDataHistoryStore: UserDataHistoryStore,
               private userDataPinnedStore: UserDataPinnedStore,

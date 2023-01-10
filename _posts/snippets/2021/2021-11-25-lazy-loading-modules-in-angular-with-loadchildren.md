@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [typescript, angular, angular-routing, codever-snippets]
 ---
 
-**Project**: [`codever`](https://github.com/codeverland/codever) - **File**:  `app.routing.ts`
+**Project**: [`codever`](https://github.com/CodeverDotDev/codever) - **File**:  `app.routing.ts`
 
 To lazy load Angular modules, use `loadChildren` (instead of component) in your AppRoutingModule routes configuration as follows.
 

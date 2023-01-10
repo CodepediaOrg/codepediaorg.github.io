@@ -17,7 +17,7 @@ url: https://www.codepedia.org
 # See the example
 menu:
   - title: 'Bookmarks'
-    url: 'https://www.codever.land/'
+    url: 'https://www.codever.dev/'
   - title: 'About'
     url: '/about/'
   - title: 'Tags'

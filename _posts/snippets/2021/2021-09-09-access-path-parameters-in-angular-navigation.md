@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [typescript, angular, angular-routing, codever-snippets]
 ---
 
-At [Codever](https://www.codever.land) we use Angular extensively, and many time the use navigates to certain routes
+At [Codever](https://www.codever.dev) we use Angular extensively, and many time the use navigates to certain routes
 where dynamically content based on an `id` for example is loaded. To access these **path params** in angular navigation
 you have two possibilities.
 

@@ -14,7 +14,7 @@ tags:
     - nosql
 ---
 
-I have a use case where I need to retrieve the latest public bookmarks public added on [www.codever.land](https://github.com/codeverland/bookmarks).
+I have a use case where I need to retrieve the latest public bookmarks public added on [www.codever.dev](https://github.com/CodeverDotDev/bookmarks).
 They are store in a mongo database, and I use Mongoose as ORM.
 
 I want to have two possibilites to achieve this:

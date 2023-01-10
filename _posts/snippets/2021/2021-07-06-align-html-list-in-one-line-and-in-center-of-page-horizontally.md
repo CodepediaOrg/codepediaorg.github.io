@@ -48,7 +48,7 @@ Usage example
   </div>
 ```
 
-> You can see how it looks in the [register](https://www.codever.land/register) page on Codever
+> You can see how it looks in the [register](https://www.codever.dev/register) page on Codever
 
 <hr/>
 

@@ -12,7 +12,7 @@ tags: [angular, angular-material, html, html-template, codever-snippets]
 
 Use the `expanded` attribute of the `mat-expansion-panel` element and set it to `true` when the condition is met.
 In the following example a filter pipe is used
-and [the result is placed in the `filteredBookmarks` variable](https://www.codever.land/snippets/63806e79944cbd1faacdda84/details)
+and [the result is placed in the `filteredBookmarks` variable](https://www.codever.dev/snippets/63806e79944cbd1faacdda84/details)
 which is checked in the condition - `[expanded]="filteredBookmarks.length === 1"` :
 
 ```html
@@ -51,7 +51,7 @@ which is checked in the condition - `[expanded]="filteredBookmarks.length === 1"
 
 > **Project**: `codever` - **File**:  `hot-keys-dialog.component.html`
 
-See it in action at [www.codever.land](https://www.codever.land):
+See it in action at [www.codever.dev](https://www.codever.dev):
 
 ![Copy-to-clipboard-demo](/images/posts/2022-11-26-expand-angular-material-accordeon-dynamically/codever-automatic-expander-filter-one-result.gif)
 

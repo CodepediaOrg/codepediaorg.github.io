@@ -14,7 +14,7 @@ tags:
     - markdown
 ---
 
-When managing my dev bookmarks via [www.codever.land](https://www.codever.land/),
+When managing my dev bookmarks via [www.codever.dev](https://www.codever.dev/),
  I often have the need to place in the bookmark's description either a code snippet (might be a command),
   add a list or add links and emphasize words - this seems like a perfect match for Markdown[^1].
    In this post I will demonstrate how I enabled Markdown support with the help of ShodownJS[^2],

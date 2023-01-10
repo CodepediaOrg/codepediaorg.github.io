@@ -12,7 +12,7 @@ tags: [angular, css, html, codever-snippets]
 
 There are times when you need to set a `css` class of a html element dynamically in angular, given a simple or complex condition.
 This was the case for me when I had to set a different `backround-color` and `color` attributes for an anchor `a` html element
-to display the **latest searches** on the landing page of [Codever](https://www.codever.land)
+to display the **latest searches** on the landing page of [Codever](https://www.codever.dev)
 
 <!--more-->
 

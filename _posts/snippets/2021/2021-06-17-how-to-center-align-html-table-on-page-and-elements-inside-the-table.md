@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [scss, css, html, codever-snippets]
 ---
 
-**Project**: [`codever`](https://github.com/codeverland/codever) - **File**:  `howto-get-started.component.scss`
+**Project**: [`codever`](https://github.com/CodeverDotDev/codever) - **File**:  `howto-get-started.component.scss`
 
 Set `margin-left` and `margin-right` to `auto` to align in center of the page/div and `text-align` to align the text and image inside of the table headers and cells:
 
@@ -75,7 +75,7 @@ Its use in html:
 </div>
 ```
 
-The [result](https://www.codever.land/howto/get-started) looks similar to the  following:
+The [result](https://www.codever.dev/howto/get-started) looks similar to the  following:
 
 <table class="codever-extensions-table">
   <thead>
@@ -120,8 +120,8 @@ The [result](https://www.codever.land/howto/get-started) looks similar to the  f
 
 <span style="font-size: 0.9rem">
   <strong>Reference - </strong>
-  <a href="https://github.com/codeverland/codever" target="_blank" style="font-weight: lighter">
-     https://github.com/codeverland/codever
+  <a href="https://github.com/CodeverDotDev/codever" target="_blank" style="font-weight: lighter">
+     https://github.com/CodeverDotDev/codever
   </a>
 </span>
 

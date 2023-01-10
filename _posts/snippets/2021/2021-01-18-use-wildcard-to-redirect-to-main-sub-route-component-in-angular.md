@@ -10,9 +10,9 @@ categories: [snippets]
 tags: [typescript, angular, angular-routing]
 ---
 
-[**Project**: `codever`](https://github.com/codeverland/codever) - **File**:  `public-routing.module.ts`
+[**Project**: `codever`](https://github.com/CodeverDotDev/codever) - **File**:  `public-routing.module.ts`
 
-The `**` wildcard has to be defined as a child of the root you want redirected back to. Thus URLs like [https://www.codever.land/snippets/60046e4554aac471e0799da7/some-mongo-title-here](https://www.codever.land/snippets/60046e4554aac471e0799da7/some-mongo-title-here) will still "point" to [https://www.codever.land/snippets/60046e4554aac471e0799da7](https://www.codever.land/snippets/60046e4554aac471e0799da7):
+The `**` wildcard has to be defined as a child of the root you want redirected back to. Thus URLs like [https://www.codever.dev/snippets/60046e4554aac471e0799da7/some-mongo-title-here](https://www.codever.dev/snippets/60046e4554aac471e0799da7/some-mongo-title-here) will still "point" to [https://www.codever.dev/snippets/60046e4554aac471e0799da7](https://www.codever.dev/snippets/60046e4554aac471e0799da7):
 
 ```typescript
   {

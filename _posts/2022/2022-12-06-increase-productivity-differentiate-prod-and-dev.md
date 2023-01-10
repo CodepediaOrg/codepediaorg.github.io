@@ -12,8 +12,8 @@ tags: [codever, productivity, environment]
 ## Going "green"
 
 As mentioned [How I manage my dev bookmarks to save time and nerves](https://dev.to/ama/how-i-manage-my-dev-bookmarks-and-save-time-and-nerves-56ae)
-I use heavily [Codever](https://www.codever.land) to manage my bookmarks and code snippets, so there is always a browser
-tab open with the website. Lately I've also been developing quite a bunch of [new features](https://github.com/codeverland/codever/tags) on the project.
+I use heavily [Codever](https://www.codever.dev) to manage my bookmarks and code snippets, so there is always a browser
+tab open with the website. Lately I've also been developing quite a bunch of [new features](https://github.com/CodeverDotDev/codever/tags) on the project.
 Lots of testing happens in the browser, and until now there was no quick way to differentiate between the production and development version,
 unless I look at the URL in the browser's navigation bar of course.
 
@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
 }
 ```
 
-> See [Configure and use environment specific values in Angular and html template](https://www.codever.land/snippets/6389997bb160cb1fab2430fe/details) to see how to work with Angular environments
+> See [Configure and use environment specific values in Angular and html template](https://www.codever.dev/snippets/6389997bb160cb1fab2430fe/details) to see how to work with Angular environments
 
 
 ### Navigation bar color
@@ -68,7 +68,7 @@ The `navbar-dev` css class
 }
 ```
 
-> See [Conditional css class in angular html element ](https://www.codever.land/snippets/638daa94d00726522c6cdd7c/details)
+> See [Conditional css class in angular html element ](https://www.codever.dev/snippets/638daa94d00726522c6cdd7c/details)
 > on how to change a class in Angular dynamically
 
 

@@ -10,7 +10,7 @@ tags: [installation, nodejs, expressjs]
 ---
 
 As of today, I am going to start working on a project to enhance my bookmarks handling experience that will run at
-[www.codever.land](https://www.codever.land). I intend to make a learning experience out of it and build it
+[www.codever.dev](https://www.codever.dev). I intend to make a learning experience out of it and build it
  with components of MEAN[^1] stack with Angular 2, as this is quite new to me and make a learning new to me. I have always believed that hands-on is the best was to learn something new.
 
 [^1]: <https://mean.io/>
@@ -149,7 +149,7 @@ echo "# bookmarks.dev backend" >> README.md
 git init
 git add --all
 git commit -m "first commit"
-git remote add origin https://github.com/codeverland/codever.git
+git remote add origin https://github.com/CodeverDotDev/codever.git
 git push -u origin master
 ```
 

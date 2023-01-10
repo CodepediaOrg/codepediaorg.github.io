@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to verify element click in div with Angular
-description: "Demo and code showing how to verify an anchor was clicked in Angular. Based on use case for www.codever.land"
+description: "Demo and code showing how to verify an anchor was clicked in Angular. Based on use case for www.codever.dev"
 author: ama
 permalink: /ama/how-to-verify-element-click-in-div-with-angular
 published: true
@@ -13,7 +13,7 @@ tags:
     - codever
 ---
 
-Being on a constant lookout for bookmarks management optimization on [www.codever.land](https://www.codever.land),
+Being on a constant lookout for bookmarks management optimization on [www.codever.dev](https://www.codever.dev),
 I had this idea lately to add a bookmark to my history not only when I click the title of the bookmark (main URL),
 but also when I click hyperlinks in the description of the bookmark - sometimes I tend to bookmark the "parent" url and
 add "child" or related bookmarks in the description (an example would be bookmarking the same "resource" which is deployed

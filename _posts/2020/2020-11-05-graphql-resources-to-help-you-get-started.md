@@ -15,7 +15,7 @@ I have recently started to look more thoroughly into GraphQL.
  I must say I felt a bit overwhelmed at the beginning with the question - **"Where do I start?"**,
   I mean take a look at the [spec](https://spec.graphql.org/draft)... or don't! Not yet.
 
-I had already [bookmarked dozens of GraphQL resources](https://www.codever.land/search?q=%5Bgraphql%5D%20user:33d22b0e-9474-46b3-9da4-b1fb5d273abc&sd=public-bookmarks),
+I had already [bookmarked dozens of GraphQL resources](https://www.codever.dev/search?q=%5Bgraphql%5D%20user:33d22b0e-9474-46b3-9da4-b1fb5d273abc&sd=public-bookmarks),
  I had read or watched before. I sat down and analyzed them again.  So, I came up with a list of GraphQL resources I found most useful to begin.
   Thus, you can get a good grasp of GraphQL in about two or three days.
 
@@ -133,10 +133,10 @@ An interesting approach to handling errors in GraphQL with the possibilities tha
 The author addresses the misconception that "GraphQL breaks caching" and discusses thoroughly the topic.
 
 
-## Bonus - [GraphQL Public Bookmarks](https://github.com/codeverland/bookmarks/blob/master/tagged/graphql.md)
-You can follow the  [**graphql** tag on Bookmarks.dev](https://www.codever.land/t/graphql)
+## Bonus - [GraphQL Public Bookmarks](https://github.com/CodeverDotDev/bookmarks/blob/master/tagged/graphql.md)
+You can follow the  [**graphql** tag on Bookmarks.dev](https://www.codever.dev/t/graphql)
 to get the latest public entries about GraphQL or search to find resources in combination with other terms
-(e.g. [graphql and java](https://www.codever.land/search?q=%5Bgraphql%5D%20java&sd=public-bookmarks&page=1&include=all))
+(e.g. [graphql and java](https://www.codever.dev/search?q=%5Bgraphql%5D%20java&sd=public-bookmarks&page=1&include=all))
 
 > I think the best way to learn something is with hands-on exercise, so in the next article we will do just that.
 

@@ -20,13 +20,13 @@ tags:
 ---
 
 
-Recently I've taken the time to update the API documentation for [bookmarks.dev](https://github.com/codeverland/codever).
+Recently I've taken the time to update the API documentation for [bookmarks.dev](https://github.com/CodeverDotDev/codever).
 I used the Swagger 2.0 (aka OAS 2) before and I decided to update to OpenAPI Specification (OAS) 3. In this post I will
 highlight the main points about the process and documenting the API with OAS 3. Some points might still apply to the former OAS 2 (fka Swagger)
 documentation, but they are worth mentioning since I hadn't payed enough attention before and I find them useful.
 
-> You can find the OAS 3 specification  for **bookmarks.dev** [on Github](https://github.com/codeverland/codever/blob/master/backend/docs/openapi/openapi.yaml)
-and the result is available at [bookmarks.dev/api/docs/](https://www.codever.land/api/docs/)
+> You can find the OAS 3 specification  for **bookmarks.dev** [on Github](https://github.com/CodeverDotDev/codever/blob/master/backend/docs/openapi/openapi.yaml)
+and the result is available at [bookmarks.dev/api/docs/](https://www.codever.dev/api/docs/)
 
 Here are the key takeaways.
 <!--more-->
@@ -56,7 +56,7 @@ Swagger Editor lets you edit Swagger API specifications in YAML inside your brow
 Swagger UI is a collection of HTML, Javascript, and CSS assets that dynamically generate beautiful documentation from a Swagger-compliant API.
 
 I use it indirectly with the help of [Swagger UI Express](https://www.npmjs.com/package/swagger-ui-express). That way
-you can access the Swagger UI documentation as a route in the API for example, in my case at [bookmarks.dev/api/docs/](https://www.codever.land/api/docs/)
+you can access the Swagger UI documentation as a route in the API for example, in my case at [bookmarks.dev/api/docs/](https://www.codever.dev/api/docs/)
 
 The code part needed in `app.js`:
 
@@ -77,7 +77,7 @@ Another point worth mentioning here is that you could use [swagger-jsdoc](https:
   assumes that you want document your existing/living/working code in a way to "give life" to it, generating a specification
    which can then be fed into other Swagger tools, and not the vice-versa.
 
-> For now I manage documentation centrally in one [openapi.yaml](https://github.com/codeverland/codever/blob/master/backend/docs/openapi/openapi.yaml) file,
+> For now I manage documentation centrally in one [openapi.yaml](https://github.com/CodeverDotDev/codever/blob/master/backend/docs/openapi/openapi.yaml) file,
  but I might consider it at a later time
 
 ## 5. Use [tags](https://swagger.io/docs/specification/grouping-operations-with-tags/) to group the operations
@@ -111,7 +111,7 @@ In OpenAPI 3.0, you use the servers array to specify one or more base URLs for y
 servers:
   - url: http://localhost:3000/api
     description: Local server for development
-  - url: https://www.codever.land/api
+  - url: https://www.codever.dev/api
     description: Main (production) server
 ```
 
@@ -240,7 +240,7 @@ paths:
                   language: en
                   tags: [nodejs, error-handling, expressjs]
                   publishedOn: 2019-12-02,
-                  sourceCodeURL: https://github.com/codeverland/codever
+                  sourceCodeURL: https://github.com/CodeverDotDev/codever
                   description: Shows how you can make your backend ExpressJS REST API cleaner by using custom error handling middleware. Code snippets of before and after refactoring are presented to make the point
                   descriptionHtml: <p>Shows how you can make your backend ExpressJS REST API cleaner by using custom error handling middleware. Code snippets of before and after refactoring are presented to make the point</p>
                   userId: 4c617f2b-2bad-498b-a9c6-4e9a8c303798
@@ -332,7 +332,7 @@ paths:
 ## 10. Bookmark the resources you might recall later
 
 I have bookmarked quite a few Swagger/OpenAPI resources and tools along the way and made them public at
-[my [openapi] public resources on bookmarks.dev](https://www.codever.land/?q=%5Bopenapi%5D%20user:33d22b0e-9474-46b3-9da4-b1fb5d273abc&sd=public&tab=search-results)
+[my [openapi] public resources on bookmarks.dev](https://www.codever.dev/?q=%5Bopenapi%5D%20user:33d22b0e-9474-46b3-9da4-b1fb5d273abc&sd=public&tab=search-results)
 
 
 ## Conclusion

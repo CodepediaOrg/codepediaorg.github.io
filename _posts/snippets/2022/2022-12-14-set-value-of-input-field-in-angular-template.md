@@ -21,7 +21,7 @@ value="{{ environment.HOST + '/bookmarks/shared/' + shareableId}}">
 **Project**: `codever` - **File**:  `social-share-dialog.component.html`
 
 To understand usage of angular environment used in this snippet (`environment.HOST`)
-see the [Configure and use environment specific values in Angular and html template](https://www.codever.land/snippets/6389997bb160cb1fab2430fe/details) snippet
+see the [Configure and use environment specific values in Angular and html template](https://www.codever.dev/snippets/6389997bb160cb1fab2430fe/details) snippet
 
 <span style="font-size: 0.9rem">
   <strong>Reference - </strong>

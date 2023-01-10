@@ -18,7 +18,7 @@ This was possible by importing the free programming books from the [Free-Program
  of the most starred repository on GitHub.
 
  You can look for all imported free books by typing `[free-programming-books]` (_**tag** filtering_) in the search bar, or by provide it as query parameter:
-  [https://www.codever.land/search?q=Bfree-programming-books%5D](https://www.codever.land/?q=%5Bfree-programming-books%5D).
+  [https://www.codever.dev/search?q=Bfree-programming-books%5D](https://www.codever.dev/?q=%5Bfree-programming-books%5D).
   Either way you should get a result similar to the following:
 
   <figure>
@@ -47,6 +47,6 @@ This was possible by importing the free programming books from the [Free-Program
 
  <p class="note_normal">
     <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" />
-     If you wonder how I've done this, weill I have written a <a href="https://github.com/codeverland/bookmarks-free-programming-books-importer" target="_blank">simple Java importer</a>,
+     If you wonder how I've done this, weill I have written a <a href="https://github.com/CodeverDotDev/bookmarks-free-programming-books-importer" target="_blank">simple Java importer</a>,
      to help me with the import.
  </p>

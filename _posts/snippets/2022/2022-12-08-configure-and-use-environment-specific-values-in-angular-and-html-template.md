@@ -26,8 +26,8 @@ export const environment = {
 //environment.prod.ts
 export const environment = {
   production: true,
-  HOST: 'https://www.codever.land',
-  API_URL:  'https://www.codever.land/api',
+  HOST: 'https://www.codever.dev',
+  API_URL:  'https://www.codever.dev/api',
 };
 ```
 

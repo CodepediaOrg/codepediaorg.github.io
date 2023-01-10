@@ -44,15 +44,15 @@ Eventually you say "_F*ck that, Google knows everything about me anyway, so I'll
  all the privacy issues taken into account ;), but what about your company's intranet links or those dozens of intern wiki articles?
   Do you really want to use the intranet search or confluence search? I sure as hell don't.
 
-## Light at the end of your toolbar - [Bookmars.dev](https://www.codever.land)
-Well, out of these frustrations I have created [www.codever.land](https://www.codever.land) to help me manage more efficiently
+## Light at the end of your toolbar - [Bookmars.dev](https://www.codever.dev)
+Well, out of these frustrations I have created [www.codever.dev](https://www.codever.dev) to help me manage more efficiently
  both my programming and work related bookmarks plus reusable code snippets (**like 80+ hours plus a year more efficiently...**)
 
 ### How can you achieve that?
 
 Well my computations are simple. It normally takes 30 seconds or more to look for a link the "traditional" way, and I do that
 at least 20 times a day. Code snippets retrieval might take even longer depending on the size of your project portfolio.
-On [Bookmarks.dev](https://www.codever.land/howto) it takes me about 10 seconds, so I get a time saving of around 40 * 20 / 60 = 13.33 minutes a day.
+On [Bookmarks.dev](https://www.codever.dev/howto) it takes me about 10 seconds, so I get a time saving of around 40 * 20 / 60 = 13.33 minutes a day.
 Over a year's time this translates to around __80+ hours of saved time__.
 
 > Sparing frustrations, that is priceless...
@@ -60,10 +60,10 @@ Over a year's time this translates to around __80+ hours of saved time__.
 I have made it very easy to
 * **Save** bookmarks and code snippets via
   * Automatic completion of location, title and description (and tags for youtube videos and stackoverflow questions)
-    * [Bookmarklets](https://www.codever.land/howto/bookmarklets)
-    * [Chromium extension](https://chrome.google.com/webstore/detail/save-url-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb) - [source code](https://github.com/codeverland/codever-chrome-extension)
-  * [IntelliJ Plugin](https://plugins.jetbrains.com/plugin/14456-save-to-bookmarks-dev) - [source code](https://github.com/codeverland/codever-intellij-plugin)
-  * [Visual Studio Extension - please help](https://github.com/codeverland/codever/issues/35)
+    * [Bookmarklets](https://www.codever.dev/howto/bookmarklets)
+    * [Chromium extension](https://chrome.google.com/webstore/detail/save-url-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb) - [source code](https://github.com/CodeverDotDev/codever-chrome-extension)
+  * [IntelliJ Plugin](https://plugins.jetbrains.com/plugin/14456-save-to-bookmarks-dev) - [source code](https://github.com/CodeverDotDev/codever-intellij-plugin)
+  * [Visual Studio Extension - please help](https://github.com/CodeverDotDev/codever/issues/35)
 
 * **Search & retrieve**
   * Tags

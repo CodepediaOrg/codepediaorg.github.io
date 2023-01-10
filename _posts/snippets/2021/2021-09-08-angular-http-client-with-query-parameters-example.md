@@ -10,8 +10,8 @@ categories: [snippets]
 tags: [typescript, angular, angular-httpclient, codever-snippets]
 ---
 
-In [Codever](https://www.codever.land) we use extensively the [Angular Http Client](https://angular.io/guide/http)
-to make REST calls against a NodeJs/ExpressJS API - [source code on Github](https://github.com/codeverland/codever).
+In [Codever](https://www.codever.dev) we use extensively the [Angular Http Client](https://angular.io/guide/http)
+to make REST calls against a NodeJs/ExpressJS API - [source code on Github](https://github.com/CodeverDotDev/codever).
 
 In the following snippet you can see hot to set http query parameters to the rest api calls.
 

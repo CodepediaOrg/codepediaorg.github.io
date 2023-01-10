@@ -18,7 +18,7 @@ tags:
     - codever
 ---
 
-Last week I migrated the [www.codever.land](https://www.codever.land) project to use [Angular CLI](https://cli.angular.io/) and it's awesome. Initially it was based on Angular Seed with Webpack - [preboot/angular-webpack](https://github.com/preboot/angular-webpack).
+Last week I migrated the [www.codever.dev](https://www.codever.dev) project to use [Angular CLI](https://cli.angular.io/) and it's awesome. Initially it was based on Angular Seed with Webpack - [preboot/angular-webpack](https://github.com/preboot/angular-webpack).
   I couldn't take the update breaking changes pain anymore when I wanted to add  Ahead-Of-Time compilation[^1] support. My webpack[^2] configuration was also getting out of hand. But I did it, I moved it to Angular CLI and in this post I am going to list the major steps I had to take. It is based on the [Moving your project to Angular CLI story](https://github.com/angular/angular-cli/wiki/stories-moving-into-the-cli) with my own needs and flavor added to it.
 
 [^1]: <https://angular.io/docs/ts/latest/cookbook/aot-compiler.html>
@@ -68,13 +68,13 @@ Gone. Under the hood the whole thing still works via Webpack, but the configurat
 
 ### package.json
 
-Compare the `old-bookmarks/package.json` to the new `./package.json`. Add in third party libraries, the `@types/*` packages, and any other types. In my case you can see clearly what happened in this [commit](https://github.com/codeverland/bookmarks/commit/e7edb064483927618b182cfc5054efb913ed205f#diff-b9cfc7f2cdf78a7f4b91a753d10865a2)
+Compare the `old-bookmarks/package.json` to the new `./package.json`. Add in third party libraries, the `@types/*` packages, and any other types. In my case you can see clearly what happened in this [commit](https://github.com/CodeverDotDev/bookmarks/commit/e7edb064483927618b182cfc5054efb913ed205f#diff-b9cfc7f2cdf78a7f4b91a753d10865a2)
 
 Run `npm install` to install the added packages.
 
 ### main.ts
 
-For me it meant replacing the condition to `enableProdMode()` from `if (process.env.ENV === 'build')` to `if (environment.production)`. See this [commit](https://github.com/codeverland/bookmarks/commit/e7edb064483927618b182cfc5054efb913ed205f#diff-8cfead41d88ad47d44509a8ab0a109ad) for a complete comparison.
+For me it meant replacing the condition to `enableProdMode()` from `if (process.env.ENV === 'build')` to `if (environment.production)`. See this [commit](https://github.com/CodeverDotDev/bookmarks/commit/e7edb064483927618b182cfc5054efb913ed205f#diff-8cfead41d88ad47d44509a8ab0a109ad) for a complete comparison.
 
 ### Unit Testing
 
@@ -177,7 +177,7 @@ In `webpack.config.js`:
 var API_URL = process.env.API_URL = '';
 var isProd = ENV === 'build';
 if (isProd) {
-  API_URL = 'https://www.codever.land/api';
+  API_URL = 'https://www.codever.dev/api';
 } else {
   API_URL = 'http://localhost:3000/api';
 }
@@ -224,7 +224,7 @@ and
 ```javascript
 export const environment = {
   production: true,
-  'https://www.codever.land/api'
+  'https://www.codever.dev/api'
 };
 ```
 > The magic happens during builds - see in comments above

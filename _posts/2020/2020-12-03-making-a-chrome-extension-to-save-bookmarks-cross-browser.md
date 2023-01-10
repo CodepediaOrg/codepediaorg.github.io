@@ -32,7 +32,7 @@ Before I do that, let's have a look at the extension in action, so you know what
 
 ![Browser extension in action](https://dev-to-uploads.s3.amazonaws.com/i/p34m9dbvcrlk041a9oiv.gif)
 
-> **Right click** OR **click the extension icon** to save the active tab's link to [Bookmarks.dev](https://www.codever.land)
+> **Right click** OR **click the extension icon** to save the active tab's link to [Bookmarks.dev](https://www.codever.dev)
 
 <!--more-->
 
@@ -150,7 +150,7 @@ further options.
 In this post you've seen a way how to migrate your Chrome Extension to be compatible with Firefox with the help
 of webextension polyfill.
 
-> If you have found this useful, please show some love and give us a star on [Github](https://github.com/codeverland/bookmarks-browser-extension)
+> If you have found this useful, please show some love and give us a star on [Github](https://github.com/CodeverDotDev/bookmarks-browser-extension)
 
 ## References
 

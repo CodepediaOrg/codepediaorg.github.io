@@ -12,7 +12,7 @@ tags:
     - youtube
 ---
 
-It's easy now to recognise the youtube video bookmarks on [www.codever.land](https://www.codever.land), by placing the youtube logo before the title
+It's easy now to recognise the youtube video bookmarks on [www.codever.dev](https://www.codever.dev), by placing the youtube logo before the title
 of the bookmark:
 <figure>
   <img src="{{site.url}}/images/posts/embed-youtube-video-in-angular-material-dialog/youtube-bookmark-printscreen.png" alt="Youtube logo before bookmark title"/>
@@ -22,7 +22,7 @@ of the bookmark:
 Also, when you click on the youtube logo, a dialog will pop where the video is embedded and you can play it directly there.
 In this blog post I will show how it is implemented.
 
-> As a reminder, the [www.codever.land](https://www.codever.land) website
+> As a reminder, the [www.codever.dev](https://www.codever.dev) website
 uses Angular, with angular material and bootstrap for styling.
 
 <!--more-->
@@ -178,7 +178,7 @@ I recommend you read the whole article to understand the details.
 ```
 
 ## Conclusion
-Well it as simple as that. The whole code source for this for [www.codever.land](https://www.codever.land) is available on [Github](https://github.com/codeverland/codever).
+Well it as simple as that. The whole code source for this for [www.codever.dev](https://www.codever.dev) is available on [Github](https://github.com/CodeverDotDev/codever).
 
-I would really appreciate if you gave [www.codever.land](https://www.codever.land) a try
-and have a look at the generated public bookmarks at [https://github.com/codeverland/bookmarks](https://github.com/codeverland/bookmarks).
+I would really appreciate if you gave [www.codever.dev](https://www.codever.dev) a try
+and have a look at the generated public bookmarks at [https://github.com/CodeverDotDev/bookmarks](https://github.com/CodeverDotDev/bookmarks).

@@ -32,8 +32,8 @@ personalBookmarksRouter.get('/:bookmarkId', keycloak.protect(), async (request, 
 
 <span style="font-size: 0.9rem">
     <strong>Reference - </strong>
-    <a href="https://github.com/codeverland/codever" target="_blank" style="font-weight: lighter">
-        https://github.com/codeverland/codever
+    <a href="https://github.com/CodeverDotDev/codever" target="_blank" style="font-weight: lighter">
+        https://github.com/CodeverDotDev/codever
     </a>
 </span>
 

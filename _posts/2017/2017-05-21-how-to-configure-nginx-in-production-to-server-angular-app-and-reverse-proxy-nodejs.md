@@ -148,7 +148,7 @@ following in _~/.bash_aliases_:
 alias nginx-backup-config-bookmarks.conf=nginxconfigbackup
 
 nginxconfigbackup(){
-  sudo cp /etc/nginx/sites-available/www.codever.land /etc/nginx/sites-available/www.codever.land.$(date "+%Y-%m-%d_%H:%M")-$1 #the parameter ending is the comment use dashes "-" between words
+  sudo cp /etc/nginx/sites-available/www.codever.dev /etc/nginx/sites-available/www.codever.dev.$(date "+%Y-%m-%d_%H:%M")-$1 #the parameter ending is the comment use dashes "-" between words
 }
 ```
 
@@ -166,7 +166,7 @@ that contains the **name** of the original file + **timestamp** when the backup 
 
 ## Content
 * _/var/www/html_: the actual web content, which by default only consists of the default Nginx page you saw earlier, is served out of the _/var/www/html_ directory.
-I deploy alose here the generated [front end](https://github.com/codeverland/bookmarks) part with Angular CLI. I do this for the default's sake
+I deploy alose here the generated [front end](https://github.com/CodeverDotDev/bookmarks) part with Angular CLI. I do this for the default's sake
  and due to the fact there is only one website site being served by NGINX.
 
 ## Server Configuration
@@ -188,7 +188,7 @@ Typically, these are created by linking to configuration files found in the `sit
 
 > Before reading any further, my advice is to read also the [Understanding the Nginx Configuration File Structure and Configuration Contexts](https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts)
 
-# Nginx setup for www.codever.land
+# Nginx setup for www.codever.dev
 
 Now that we have a gross understanding of what where belong let's configure NGINX for our production project - #DevBookmarks.
 
@@ -305,14 +305,14 @@ The HTTP block of the _nginx.conf_ file contains the statement include _/etc/ngi
    Nginx provides a single default virtual host file, which we will use as a template to create virtual host files for other domains:
 
 ```
-$ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/www.codever.land
+$ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/www.codever.dev
 ```
 
 
 In the end we need to activate the host by creating a symbolic link between the sites-available directory and the sites-enabled directory:
 
 ```
-$ sudo ln -s /etc/nginx/sites-available/www.codever.land /etc/nginx/sites-enabled/www.codever.land
+$ sudo ln -s /etc/nginx/sites-available/www.codever.dev /etc/nginx/sites-enabled/www.codever.dev
 ```
 
 To both avoid the "conflicting server name error" and ensure that going to your site displays the correct information,
@@ -418,7 +418,7 @@ location ~ /.well-known {
 To obtain a cert using the "webroot" plugin, which can work with the webroot directory of any webserver software:
 
 ```
-$ sudo certbot certonly --webroot --webroot-path=/var/www/html -d bookmarks.dev -d www.codever.land
+$ sudo certbot certonly --webroot --webroot-path=/var/www/html -d bookmarks.dev -d www.codever.dev
 ```
 
 If this is the first time running `certbot`, we will be prompted to enter an email address and agree to the terms of service.
@@ -580,7 +580,7 @@ We splitt the configuration in two separate blocks. In the first block after the
 server {
     listen 80 default_server;
     listen [::]:80 default_server;
-    server_name www.codever.land;
+    server_name www.codever.dev;
 
     return 301 https://$server_name$request_uri;
 }
@@ -712,7 +712,7 @@ server {
 
 **Note** :
 * by setting the location block to `/auth/`, we make sure that every request for
- `https://www.codever.land/auth/*` is redirected to the Keycloak server
+ `https://www.codever.dev/auth/*` is redirected to the Keycloak server
 * `proxy_pass` is the directive that passes the HTTP request to the proxied `keycloak_server`,
 we defined in the upstream before
 * `proxy_http_version` sets the HTTP protocol verion for proxying
@@ -747,7 +747,7 @@ server {
 }
 ```
 
-> In the current configuration the backend api is reachable via `https://www.codever.land/api/*`,
+> In the current configuration the backend api is reachable via `https://www.codever.dev/api/*`,
 > which forwards the requests to the backend node api at `http://localhost:3000/api/*`
 
 ## Configure Nginx aliases
@@ -789,7 +789,7 @@ I am a developer by heart and by job, with some sysadmin experience, so if you n
 please leave a comment in the comments section... Very much appreciated.
 
 <p class="note_normal">
-    This blog post is a clone of the wiki page <a href="https://github.com/codeverland/codever/wiki/Nginx-Setup--in-Production" target="_blank">Setup Nginx in production</a>
+    This blog post is a clone of the wiki page <a href="https://github.com/CodeverDotDev/codever/wiki/Nginx-Setup--in-Production" target="_blank">Setup Nginx in production</a>
 </p>
 
 # References

@@ -16,8 +16,8 @@ tags:
 
 In this blog post I present a complete example of how to upload an image to Amazon S3 bucket all the way from frontend
 implemented in Angular to the backend implemented with NodeJS/ExpressJS. This is based on a real use case running in production
-at the [www.codever.land](https://www.codever.land) : once you register for an account you have the possibility to change your profile picture
-with something more personal at [user settings](https://www.codever.land/settings).
+at the [www.codever.dev](https://www.codever.dev) : once you register for an account you have the possibility to change your profile picture
+with something more personal at [user settings](https://www.codever.dev/settings).
 
 {% include source-code-bookmarks.dev.html %}
 

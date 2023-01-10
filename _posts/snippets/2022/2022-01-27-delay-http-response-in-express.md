@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [node.js, expressjs, http, javascript, codever-snippets]
 ---
 
-**Project**: [`Codever`](https://github.com/codeverland/codever)
+**Project**: [`Codever`](https://github.com/CodeverDotDev/codever)
 
 Enclose the response in `setTimeout`
 

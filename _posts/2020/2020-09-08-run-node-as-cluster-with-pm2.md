@@ -15,7 +15,7 @@ tags:
     - node.js
 ---
 
-In this blog post I will list of the troubles I went through getting to run the [Bookmarks.dev](https://www.codever.land) API on
+In this blog post I will list of the troubles I went through getting to run the [Bookmarks.dev](https://www.codever.dev) API on
 PM2[^1] in cluster mode on an Ubuntu system with Node.js managed by NVM. The PM2 setup was on a single node (aka `fork mode`)
 until now with no problems, but I decided to take advantage of the multi-core capability and enable cluster mode with PM2.
 

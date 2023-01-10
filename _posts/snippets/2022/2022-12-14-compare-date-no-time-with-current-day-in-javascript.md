@@ -40,7 +40,7 @@ To test that we can use the following jest test:
     });
 ```
 
-See this [How to use jest test.each function ](https://www.codever.land/snippets/639852fc3b43b9521ecfe046/details) to understand the usage of `test.each` function
+See this [How to use jest test.each function ](https://www.codever.dev/snippets/639852fc3b43b9521ecfe046/details) to understand the usage of `test.each` function
 
 <hr/>
 

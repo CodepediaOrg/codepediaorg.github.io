@@ -38,7 +38,7 @@ INSERT INTO bookmark ( id, title, url, category, is_public, created_at )
 VALUES (
     1,
     'BookmarksDev - Bookmarks and Code Snippets Manager',
-    'https://www.codever.land',
+    'https://www.codever.dev',
     'developer-tools',
     1,
     TO_DATE( '2021-01-01', 'YYYY-MM-DD' )

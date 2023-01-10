@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [angular, html-template, angular-routing, codever-snippets]
 ---
 
-**Project**: [`codever`](https://github.com/codeverland/codever) - **File**:  `bookmark-list-element.component.html`
+**Project**: [`codever`](https://github.com/CodeverDotDev/codever) - **File**:  `bookmark-list-element.component.html`
 
 Use a two-element array when specifying a route parameter:
 
@@ -25,7 +25,7 @@ Use a two-element array when specifying a route parameter:
 ```
 
 This will generate a link similar to the following
- [https://www.codever.land/**tagged/angular**](https://www.codever.land/tagged/angular),
+ [https://www.codever.dev/**tagged/angular**](https://www.codever.dev/tagged/angular),
   where the value of the `tag` parameter in `routerLink` is the string `angular`
 
 <span style="font-size: 0.9rem">

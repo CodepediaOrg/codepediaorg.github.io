@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [mongodb, full-text-search]
 ---
 
-[**Project**: `codever`](https://github.com/codeverland/codever)  - **File**:  `personal-bookmarks-search.service.js`
+[**Project**: `codever`](https://github.com/CodeverDotDev/codever)  - **File**:  `personal-bookmarks-search.service.js`
 
 To perform a text search query on the `text` index of a collection, you need to use the `$text` operator.
  In the example below the results are sorted in order of relevance score,

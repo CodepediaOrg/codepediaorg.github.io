@@ -75,12 +75,12 @@ The html part
 
 <span style="font-size: 0.9rem">
   <strong>Reference - </strong>
-  <a href="https://github.com/codeverland/codever" target="_blank" style="font-weight: lighter">
-     https://github.com/codeverland/codever
+  <a href="https://github.com/CodeverDotDev/codever" target="_blank" style="font-weight: lighter">
+     https://github.com/CodeverDotDev/codever
   </a>
 </span>
 
 <hr/>
 
 
- {% include snippet-post-recommendation-ending.html snippetId="60c0cf0c5eeee76d9163d4eb" %} 
+ {% include snippet-post-recommendation-ending.html snippetId="60c0cf0c5eeee76d9163d4eb" %}

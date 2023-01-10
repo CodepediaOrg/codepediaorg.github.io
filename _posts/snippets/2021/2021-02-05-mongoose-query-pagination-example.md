@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [mongoose, mongodb, pagination, async-await, javascript]
 ---
 
-[**Project**: `codever`](https://github.com/codeverland/codever) - **File**:  `personal-bookmarks-search.service.js`
+[**Project**: `codever`](https://github.com/CodeverDotDev/codever) - **File**:  `personal-bookmarks-search.service.js`
 
 Use the mongo cursor `skip` method with `offset` in combination with the [`limit`](https://docs.mongodb.com/manual/reference/method/cursor.limit/) method:
 

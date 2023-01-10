@@ -27,13 +27,13 @@ In the beginning it will you show how to set up the React App and then guide you
 native `kubectl` commands, with [helm](https://helm.sh/), with [kustomize](https://kustomize.io/) and in the end use [skaffold](https://skaffold.dev/).
 
 The [example app]((https://github.com/CodepediaOrg/multi-stage-react-app-example)) displays the latest public bookmarks
-published on [www.codever.land](https://www.codever.land). Depending on the environment the app is built for,
+published on [www.codever.dev](https://www.codever.dev). Depending on the environment the app is built for,
 it will display the environment name in the navigation bar and the header's color is different.
 
 The source code is available on [Github](https://github.com/CodepediaOrg/multi-stage-react-app-example)
 
 ## TLDR;
-Create a _config.js_ file where you inject the environment variables in the `window` object (e.g. _window.REACT_APP_API_URL='https://www.codever.land/api/public/bookmarks'_).
+Create a _config.js_ file where you inject the environment variables in the `window` object (e.g. _window.REACT_APP_API_URL='https://www.codever.dev/api/public/bookmarks'_).
 Add this file to the _public_ folder of your react application. Dockerize the react application and at Kubernetes deployment time overwrite the _config.js_ file in the
 container - you can do that with Kubernetes configMaps via native kubectl commands, kustomize or helm.
 
@@ -70,7 +70,7 @@ you need to use the special variable called `PUBLIC_URL`:
 
 The content of the _config.js_ file:
 ```javascript
-window.REACT_APP_API_URL='https://www.codever.land/api/public/bookmarks'
+window.REACT_APP_API_URL='https://www.codever.dev/api/public/bookmarks'
 window.REACT_APP_ENVIRONMENT='LOCAL'
 window.REACT_APP_NAVBAR_COLOR='LightBlue'
 ```
@@ -291,7 +291,7 @@ The result should look something like the following:
 apiVersion: v1
 data:
   config.js: |
-    window.REACT_APP_API_URL='https://www.codever.land/api/public/bookmarks'
+    window.REACT_APP_API_URL='https://www.codever.dev/api/public/bookmarks'
     window.REACT_APP_ENVIRONMENT='DEV'
     window.REACT_APP_NAVBAR_COLOR='LightGreen'
 kind: ConfigMap
@@ -400,7 +400,7 @@ less /usr/share/nginx/html/config.js
 It should contain the variables for the **dev** environment:
 
 ```shell
-window.REACT_APP_API_URL='https://www.codever.land/api/public/bookmarks'
+window.REACT_APP_API_URL='https://www.codever.dev/api/public/bookmarks'
 window.REACT_APP_ENVIRONMENT='DEV'
 window.REACT_APP_NAVBAR_COLOR='LightGreen'
 ```
@@ -707,7 +707,7 @@ USER-SUPPLIED VALUES:
 COMPUTED VALUES:
 affinity: {}
 configValues: |
-  window.REACT_APP_API_URL='https://www.codever.land/api/public/bookmarks'
+  window.REACT_APP_API_URL='https://www.codever.dev/api/public/bookmarks'
   window.REACT_APP_ENVIRONMENT='LOCAL with helm'
   window.REACT_APP_NAVBAR_COLOR='LightBlue'
 fullnameOverride: ""
@@ -765,7 +765,7 @@ metadata:
     "helm.sh/hook": pre-install, pre-upgrade
 data:
   config.js:     |
-      window.REACT_APP_API_URL='https://www.codever.land/api/public/bookmarks'
+      window.REACT_APP_API_URL='https://www.codever.dev/api/public/bookmarks'
       window.REACT_APP_ENVIRONMENT='LOCAL with helm'
       window.REACT_APP_NAVBAR_COLOR='LightBlue'
 MANIFEST:
@@ -878,7 +878,7 @@ helm delete --purge local-release
 Now think you'd want to deploy to "dev" cluster. For that you can configure the environment values in a [config-dev.yaml](https://github.com/CodepediaOrg/multi-stage-react-app-example/blob/master/helm-chart/config-values/config-dev.yaml) file:
 ```yaml
 configValues: |
-  window.REACT_APP_API_URL='https://www.codever.land/api/public/bookmarks'
+  window.REACT_APP_API_URL='https://www.codever.dev/api/public/bookmarks'
   window.REACT_APP_ENVIRONMENT='DEV'
   window.REACT_APP_NAVBAR_COLOR='LightGreen'
 ```
@@ -1074,5 +1074,5 @@ For more details about Skaffold profiles check out the [docs](https://skaffold.d
 It's been a long ride, but hopefully you learned a few things, like how to deploy a create react app in kubernetes cluster and how to build
 a basis for a integration in your continuous delivery pipeline. You've learn to use Docker, kubernetes api manifests, kustomize, helm charts and skaffold.
 
-I would really appreciate if you had a look at the original [www.codever.land](https://www.codever.land) application and give it a try (you might cannot not use it)
-and star the generated public bookmarks at [https://github.com/codeverland/bookmarks](https://github.com/codeverland/bookmarks).
+I would really appreciate if you had a look at the original [www.codever.dev](https://www.codever.dev) application and give it a try (you might cannot not use it)
+and star the generated public bookmarks at [https://github.com/CodeverDotDev/bookmarks](https://github.com/CodeverDotDev/bookmarks).

@@ -13,7 +13,7 @@ tags:
 ---
 
 Here goes my first Angular post - yeeey. Well, it's not super exciting, but practical and specific... Topic - generic: present how to update a field's value in a reactive form field,
-once a value in another field is given. Topic - concrete: there is a **personal** bookmarks section on [https://www.codever.land](https://www.codever.land); when you add a new bookmark and you fill in the **location** field
+once a value in another field is given. Topic - concrete: there is a **personal** bookmarks section on [https://www.codever.dev](https://www.codever.dev); when you add a new bookmark and you fill in the **location** field
 with an URL, the **title** field is being automatically filled in by scraping the page for its title. Of course later you have the possibility to change it.
 
 In the end I present the struggle that led me to the solution.

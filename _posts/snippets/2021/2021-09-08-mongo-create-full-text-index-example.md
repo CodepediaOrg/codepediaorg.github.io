@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [mongodb, indexing, full-text-search, sorting, javascript, codever-snippets]
 ---
 
-When you are searching your code snippets on [Codever](https://www.codever.land), depending on the search terms
+When you are searching your code snippets on [Codever](https://www.codever.dev), depending on the search terms
 you use, relevant results are displayed. Behind this there is a MongoDb full text search index. Let's see how it is
 created and used.
 

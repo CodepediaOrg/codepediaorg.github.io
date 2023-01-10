@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [scss, css, codever-snippets]
 ---
 
-**Project**: [`codever`](https://github.com/codeverland/codever)
+**Project**: [`codever`](https://github.com/CodeverDotDev/codever)
 
 Use the `@extend` directive. In this case the **border** style is inherited:
 

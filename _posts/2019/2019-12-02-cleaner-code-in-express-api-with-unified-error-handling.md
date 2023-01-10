@@ -15,10 +15,10 @@ tags:
     - coding-style
 ---
 
-What started out as a simple code duplication removal, turned out into [a major refactoring](https://github.com/codeverland/codever/commit/fc2ba3339909d15f43450ba8ffbf472bacaef429)
+What started out as a simple code duplication removal, turned out into [a major refactoring](https://github.com/CodeverDotDev/codever/commit/fc2ba3339909d15f43450ba8ffbf472bacaef429)
  with complete rewriting of error handling, moving of business logic/db access into separate service files (about this in another blog post)
   and rewriting of all integration tests to use async/await. In this blog post I will focus on the custom error handling and how
-  it made the code much cleaner for the [REST API](https://github.com/codeverland/codever/backend) supporting [www.codever.land](https://www.codever.land).
+  it made the code much cleaner for the [REST API](https://github.com/CodeverDotDev/codever/backend) supporting [www.codever.dev](https://www.codever.dev).
   The API uses [ExpressJS](https://expressjs.com), currently in version 4.
 
 <!--more-->
@@ -495,12 +495,12 @@ SUM:                            57            859            240          12235
 
 ## Conclusion
 It's not much left to say, I think that Express offers a decent way to handle exceptions. I hope you've learned something from this post
-and if you have any improvement please leave a comment, or better make a pull request at [bookmarks.dev github repo](https://github.com/codeverland/codever).
+and if you have any improvement please leave a comment, or better make a pull request at [bookmarks.dev github repo](https://github.com/CodeverDotDev/codever).
 
 <p class="note_normal">
-During refactoring I researched quite a few links, and I bookmarked the best of them at <a href="https://www.codever.land" target="_blank">www.codever.land</a>
- with the following tags <a href="https://www.codever.land/?tab=search-results&q=%5Bexpressjs%5D%20%5Berror-handling%5D%20%5Basync-await%5D&sd=public" target="_blank">[expressjs] [error-handling] [async-await]</a>
+During refactoring I researched quite a few links, and I bookmarked the best of them at <a href="https://www.codever.dev" target="_blank">www.codever.dev</a>
+ with the following tags <a href="https://www.codever.dev/?tab=search-results&q=%5Bexpressjs%5D%20%5Berror-handling%5D%20%5Basync-await%5D&sd=public" target="_blank">[expressjs] [error-handling] [async-await]</a>
  <br/>
 
-They will be present shortly at the generated public bookmarks - <a href="https://github.com/codeverland/bookmarks">https://github.com/codeverland/bookmarks</a>
+They will be present shortly at the generated public bookmarks - <a href="https://github.com/CodeverDotDev/bookmarks">https://github.com/CodeverDotDev/bookmarks</a>
 </p>

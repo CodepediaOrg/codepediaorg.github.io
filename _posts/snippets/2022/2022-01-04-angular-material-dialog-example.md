@@ -10,10 +10,10 @@ categories: [snippets]
 tags: [typescript, angular-material, angular, codever-snippets]
 ---
 
-**Project**: [`codever`](https://github.com/codeverland/codever)
+**Project**: [`codever`](https://github.com/CodeverDotDev/codever)
 
 The following example shows the elements required to implement an angular material dialog to ask the user to log in
-on [Codever](https://www.codever.land), when this is needed (like _following tags_).
+on [Codever](https://www.codever.dev), when this is needed (like _following tags_).
 
 First thing add the `MatDialogModule` in the Angular module where you intend to use the dialog,
  and the component holding the dialog body (`LoginRequiredDialogComponent`) to the `entryComponents`

@@ -2,7 +2,7 @@
 layout: post
 title: My first IntelliJ plugin to help me save code snippets to Codever
 description: "Shows the basic steps needed to create a simple IntelliJ plugins which eases the saving
- of code snippets to www.codever.land"
+ of code snippets to www.codever.dev"
 author: ama
 permalink: /ama/my-first-intellij-plugin-to-help-me-bookmark-code
 published: true
@@ -15,13 +15,13 @@ tags:
 ---
 
 So, I wrote my first IntelliJ plugin to help me save code snippets, aka codelets, easier to
-[www.codever.land](https://www.codever.land). How does it work? **Select text** > **Right mouse click** > **Save to Bookmarks.dev**.
+[www.codever.dev](https://www.codever.dev). How does it work? **Select text** > **Right mouse click** > **Save to Bookmarks.dev**.
 
  ![Save to Codever showcase](/images/posts/2020-06-07-first-intellij-plugin/plugin-showcase-save-shorter-cover-800x456.gif)
 
 > The plugin is available to download and install in
 > [JetBrain Plugins Repository](https://plugins.jetbrains.com/plugin/14456-codever-snippets/) and the
-> source code is available on [Github](https://github.com/codeverland/codever-intellij-plugin)
+> source code is available on [Github](https://github.com/CodeverDotDev/codever-intellij-plugin)
 
 In this blog post we'll cover the steps to develop this simple IntelliJ plugin.
 
@@ -158,7 +158,7 @@ public class SaveToCodeverAction extends AnAction {
 
     private String getUrl(String languageTag, String sourceUrl, String title, String selectedCode, String comment) {
         try {
-            StringBuilder sb = new StringBuilder("https://www.codever.land/my-snippets/new?") ;
+            StringBuilder sb = new StringBuilder("https://www.codever.dev/my-snippets/new?") ;
             sb.append("code=" + URLEncoder.encode(selectedCode, "UTF-8"));
             if (title != null) {
                 sb.append("&title=" + URLEncoder.encode(title, "UTF-8"));
@@ -209,7 +209,7 @@ This is the code executed when the user triggers the action:
 ```
 
 This fills the required metadata for the snippet and passes it as query parameters (don't forget to encode the values)
- to [www.codever.land](https://www.codever.land) url via `BrowserUtil.browse(url)` method. This opens a new browser tab with the given `url`.
+ to [www.codever.dev](https://www.codever.dev) url via `BrowserUtil.browse(url)` method. This opens a new browser tab with the given `url`.
 
 You will now go through the individual steps and see how you can achieve that with IntelliJ's SDK.
 
@@ -227,7 +227,7 @@ You can use the `SelectionModel` to access the selected code:
 
 #### Get the language tag of the current file in the IntelliJ project
 
-When [saving snippets](https://www.codever.land/howto/snippets), you should define tags to easily identify them later.
+When [saving snippets](https://www.codever.dev/howto/snippets), you should define tags to easily identify them later.
 In the IntelliJ plugin's case, I set the first tag of the snippet with the language of the file where you select the code from.
  You can access the metadata of files with the help of
  the [`PsiFile`](https://www.jetbrains.org/intellij/sdk/docs/basics/architectural_overview/psi_files.html)

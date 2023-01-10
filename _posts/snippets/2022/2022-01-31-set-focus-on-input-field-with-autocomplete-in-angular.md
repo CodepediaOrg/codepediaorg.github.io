@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [angular, css, angular-material, autocomplete, codever-snippets]
 ---
 
-**Project** [`Codever`](https://www.codever.land)
+**Project** [`Codever`](https://www.codever.dev)
 
 1. get access to the input field via template variable `@ViewChild('publicSearchBox') searchBoxField: ElementRef;`
 2. get access to the autcomplete trigger to close the panel (we don't want that when the page loads) - `@ViewChild(MatAutocompleteTrigger) autocompleteTrigger: MatAutocompleteTrigger;``

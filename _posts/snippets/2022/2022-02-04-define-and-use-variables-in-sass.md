@@ -11,7 +11,7 @@ tags: [scss, css, codever-snippets]
 ---
 
 Use the `$` sign to define the variable `$variable_name: variable_value`.
-Below we define `anthracite-gray` colour in the `_colors.scss` file used in the [Codever](https://www.codever.land) project.
+Below we define `anthracite-gray` colour in the `_colors.scss` file used in the [Codever](https://www.codever.dev) project.
 Then we reference the variable in the class definition:
 
 ```scss

@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [typescript, angular, routing]
 ---
 
-[**Project**: `codever`](https://github.com/codeverland/codever)
+[**Project**: `codever`](https://github.com/CodeverDotDev/codever)
 
 Use the `queryParams` extra parameter of the router `navigate` method:
 

@@ -10,7 +10,7 @@ categories: [snippets]
 tags: [javascript, mongoose, mongodb, sorting, node.js]
 ---
 
-[**Project**: `codever`](https://github.com/codeverland/codever) - **File**:  `personal-bookmarks.service.js`
+[**Project**: `codever`](https://github.com/CodeverDotDev/codever) - **File**:  `personal-bookmarks.service.js`
 
 Use the `sort` and `limit` methods. In the following example we receive the latest 30 (`limit`) created bookmarks (sort **descending** by `createdAt` date) :
 

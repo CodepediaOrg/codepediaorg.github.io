@@ -18,7 +18,7 @@ of the `href` attribute below:
   <a
     *ngIf="snippet.public"
     type="button" class="btn btn-light btn-sm float-right"
-    href="mailto:?subject={{'Code snippet: ' + snippet.title}}&body={{'https://www.codever.land/snippets/' + snippet._id + '/details'}}"
+    href="mailto:?subject={{'Code snippet: ' + snippet.title}}&body={{'https://www.codever.dev/snippets/' + snippet._id + '/details'}}"
     title="Share link to snippet via Email">
     <i class="far fa-envelope"></i> Email
   </a>
@@ -27,8 +27,8 @@ of the `href` attribute below:
 
 <span style="font-size: 0.9rem">
   <strong>Reference - </strong>
-  <a href="https://github.com/codeverland/codever" target="_blank" style="font-weight: lighter">
-     https://github.com/codeverland/codever
+  <a href="https://github.com/CodeverDotDev/codever" target="_blank" style="font-weight: lighter">
+     https://github.com/CodeverDotDev/codever
   </a>
 </span>
 

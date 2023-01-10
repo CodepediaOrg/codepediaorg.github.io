@@ -9,8 +9,8 @@ categories: [article]
 tags: [angular, bookmarks.dev]
 ---
 
-You can now export your bookmarks and snippets from [Bookmarks.dev](https://www.codever.land) for backup or other purposes.
- You can do that by going to your [dashboard](https://www.codever.land) and click **Export my bookmarks** button.
+You can now export your bookmarks and snippets from [Bookmarks.dev](https://www.codever.dev) for backup or other purposes.
+ You can do that by going to your [dashboard](https://www.codever.dev) and click **Export my bookmarks** button.
  A dialog will pop up to ask whether you want to see your bookmarks or snippets in the browser(this opens a new window)
   or save them as a json file:
 

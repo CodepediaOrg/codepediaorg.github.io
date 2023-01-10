@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular material expansion panel and accordion example
-description: "Presents angular material expansion panel and accordion in action at https://www.codever.land with
+description: "Presents angular material expansion panel and accordion in action at https://www.codever.dev with
 source code and notes"
 author: ama
 permalink: /ama/angular-material-expansion-panel-and-accordion-example
@@ -12,8 +12,8 @@ tags:
     - angular
 ---
 
-I find accordions pretty well suited for FAQs or HowTo pages. That's why I chose one for the [HowTo](https://www.codever.land/howto) page of
-[www.codever.land](https://www.codever.land/), which is implemented with [angular material expansion panel and
+I find accordions pretty well suited for FAQs or HowTo pages. That's why I chose one for the [HowTo](https://www.codever.dev/howto) page of
+[www.codever.dev](https://www.codever.dev/), which is implemented with [angular material expansion panel and
 accordion](https://material.angular.io/components/expansion/overview).
 
  ![HowTo Accordion Showcase](/images/posts/2020-05-17-angular-material-expansion-panel-and-accordeon-example/howto-accordeon-showcase.gif)
@@ -81,11 +81,11 @@ This blog post presents the source code for that with a couple of notes.
  * the `mat-expansion-panel` components are encapsulated in an `mat-accordion` element
  * the code itself for the several sections is encapsulated in own component, for better code readability and to access
  them directly
-   * [HowTo - Get started](https://www.codever.land/howto/get-started)
-   * [HowTo - Save bookmarks](https://www.codever.land/howto/save)
-   * [HowTo - Search bookmarks](https://www.codever.land/howto/search)
-   * [HowTo - Bookmarklets](https://www.codever.land/howto/bookmarklets)
-   * [HowTo - Codelets](https://www.codever.land/howto/codelets)
+   * [HowTo - Get started](https://www.codever.dev/howto/get-started)
+   * [HowTo - Save bookmarks](https://www.codever.dev/howto/save)
+   * [HowTo - Search bookmarks](https://www.codever.dev/howto/search)
+   * [HowTo - Bookmarklets](https://www.codever.dev/howto/bookmarklets)
+   * [HowTo - Codelets](https://www.codever.dev/howto/codelets)
  * the construct `ng-template` with the `matExpansionPanelContent` attribute in the  is used to defer initialization until the panel is open.
   By default, the expansion panel content will be initialized even when the panel is closed
  * by setting the input ``multi="true"`` (default `false`) on `mat-accordion` you could allow the expansions state to

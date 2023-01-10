@@ -14,8 +14,8 @@ tags:
 ---
 
 This blog post presents the steps required to connect to the MySql database from the command line and modify the size of
-a column in a table. The example is based on the MySql database that is backing Keycloak to run [www.codever.land](https://www.codever.land).
-For a setup of the environment you can see the wiki article [Keycloak MySQL Setup](https://github.com/codeverland/codever/wiki/Keycloak-MySQL-Setup)
+a column in a table. The example is based on the MySql database that is backing Keycloak to run [www.codever.dev](https://www.codever.dev).
+For a setup of the environment you can see the wiki article [Keycloak MySQL Setup](https://github.com/CodeverDotDev/codever/wiki/Keycloak-MySQL-Setup)
 
 <!--more-->
 

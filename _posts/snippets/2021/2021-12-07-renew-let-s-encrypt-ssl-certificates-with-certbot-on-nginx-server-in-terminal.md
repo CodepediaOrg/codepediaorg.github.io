@@ -25,7 +25,7 @@ Found the following certs:
     Certificate Path: /etc/letsencrypt/live/codever.dev/fullchain.pem
     Private Key Path: /etc/letsencrypt/live/codever.dev/privkey.pem
   Certificate Name: codever.land
-    Domains: codever.land www.codever.land
+    Domains: codever.land www.codever.dev
     Expiry Date: 2021-12-21 13:06:54+00:00 (VALID: 19 days)
     Certificate Path: /etc/letsencrypt/live/codever.land/fullchain.pem
     Private Key Path: /etc/letsencrypt/live/codever.land/privkey.pem
@@ -49,7 +49,7 @@ Starting new HTTPS connection (1): acme-staging-v02.api.letsencrypt.org
 Renewing an existing certificate
 Performing the following challenges:
 http-01 challenge for codever.land
-http-01 challenge for www.codever.land
+http-01 challenge for www.codever.dev
 Waiting for verification...
 Cleaning up challenges
 
@@ -85,7 +85,7 @@ Starting new HTTPS connection (1): acme-v02.api.letsencrypt.org
 Renewing an existing certificate
 Performing the following challenges:
 http-01 challenge for codever.land
-http-01 challenge for www.codever.land
+http-01 challenge for www.codever.dev
 Waiting for verification...
 Cleaning up challenges
 
@@ -116,7 +116,7 @@ Found the following certs:
     Certificate Path: /etc/letsencrypt/live/codever.dev/fullchain.pem
     Private Key Path: /etc/letsencrypt/live/codever.dev/privkey.pem
   Certificate Name: codever.land
-    Domains: codever.land www.codever.land
+    Domains: codever.land www.codever.dev
     Expiry Date: 2022-03-02 11:18:39+00:00 (VALID: 89 days)
     Certificate Path: /etc/letsencrypt/live/codever.land/fullchain.pem
     Private Key Path: /etc/letsencrypt/live/codever.land/privkey.pem

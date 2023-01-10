@@ -40,7 +40,7 @@ public class SearchOnCodeverDialog extends AnAction {
         } else {
             queryTxt = Messages.showInputDialog(project, "Input query to search in My Snippets", "Codever Search", Messages.getQuestionIcon());
         }
-        String url = "https://www.codever.land/search?sd=my-snippets&q=" + queryTxt;
+        String url = "https://www.codever.dev/search?sd=my-snippets&q=" + queryTxt;
         if (queryTxt != null) {
             BrowserUtil.browse(url);
         }
@@ -83,4 +83,4 @@ see my previous post related to IntelliJ Plugins - [My first IntelliJ plugin to 
 
 > The plugin is available to download and install in
 > [JetBrain Plugins Repository](https://plugins.jetbrains.com/plugin/14456-codever-snippets/)
-> and the source code is available on [Github](https://github.com/codeverland/codever-intellij-plugin)
+> and the source code is available on [Github](https://github.com/CodeverDotDev/codever-intellij-plugin)

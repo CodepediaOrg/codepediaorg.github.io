@@ -43,7 +43,7 @@ copyLinkButtonText = '';
 }
 ```
 
-See it in action at [www.codever.land](https://www.codever.land):
+See it in action at [www.codever.dev](https://www.codever.dev):
 
 ![Copy-to-clipboard-demo](/images/posts/2022-10-12-angular-copy-to-clipboard-snippet/codever-copy-to-clipboard-demo.gif)
 

@@ -34,12 +34,12 @@ to then display the full content of the bookmark:
 </div>
 ```
 
-See it in action at [www.codever.land](https://www.codever.land):
+See it in action at [www.codever.dev](https://www.codever.dev):
 
 ![Copy-to-clipboard-demo](/images/posts/2022-11-25-get-filtered-results-from-angular-pipe/filter-bookmarks-results-expanding.gif)
 
 <hr>
-The source code for [Codever](https://www.codever.land) is available on [Github](https://github.com/codeverland/codever)
+The source code for [Codever](https://www.codever.dev) is available on [Github](https://github.com/CodeverDotDev/codever)
 <hr/>
 
  {% include snippet-post-recommendation-ending.html snippetId="63806e79944cbd1faacdda84" %}

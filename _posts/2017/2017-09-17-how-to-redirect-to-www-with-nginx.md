@@ -37,5 +37,5 @@ server {
 
 Lots of other good Nginx resources can be found if you search for the **nginx** tag on **codingmarks**: [https://www.codever.dev?q=[nginx]](https://www.codever.dev?q=[nginx])
 
-{% include source-code-bookmarks.dev.html %}
+{% include source-code-codever.html %}
 

@@ -104,3 +104,4 @@ describe('includeFulltextSearchTermsInFilter', () => {
 
 Now every time I run `npm run test` this test will also be executed. Easy peasy.
 
+{% include source-code-codever.html %}

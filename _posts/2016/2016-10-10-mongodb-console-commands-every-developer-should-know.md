@@ -18,7 +18,7 @@ The bookmarks on [www.codever.dev](https://www.codever.dev/) are persisted in a 
  and sort of brings me closer to it. Ok, so how to find the right mongo shell command? Well, I google for it of course, and most likely I am pointed to the right entry in the [Mongo manual](https://docs.mongodb.com/manual/). In this post I try to consolidate the commands I usually use,
   so that I have only one [bookmark](https://www.codever.dev/search?q=codepedia mongo shell commands) to look for...
 
-  {% include source-code-bookmarks.dev.html %}
+  {% include source-code-codever.html %}
 
 <!--more-->
 

@@ -21,7 +21,7 @@ which creates the scaffolding for a full app with numerous JavaScript files, Jad
 [^2]: <https://expressjs.com/>
 [^3]: <https://nodejs.org/>
 
-{% include source-code-bookmarks.dev.html %}
+{% include source-code-codever.html %}
 
 <!--more-->
 

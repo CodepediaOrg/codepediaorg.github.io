@@ -18,7 +18,7 @@ with an URL, the **title** field is being automatically filled in by scraping th
 
 In the end I present the struggle that led me to the solution.
 
-{% include source-code-bookmarks.dev.html %}
+{% include source-code-codever.html %}
 
 <!--more-->
 

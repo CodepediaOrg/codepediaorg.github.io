@@ -72,5 +72,5 @@ Check out the following video to see how I bookmark with [bookmarks.dev](https:/
 If you are convinced, give [www.codever.dev](https://www.codever.dev) a try and share this post so other can save time too.
  <span class="highlight-yellow">Beware there is no 30 days money back guarantee, because everything is free and open-source.</span>
 
-  {% include source-code-bookmarks.dev.html %}
+  {% include source-code-codever.html %}
 

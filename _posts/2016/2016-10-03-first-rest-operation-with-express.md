@@ -19,7 +19,7 @@ a simple GET method that will deliver mocked bookmarks.
 
 [^1]: <https://expressjs.com/en/starter/generator.html>
 
-{% include source-code-bookmarks.dev.html %}
+{% include source-code-codever.html %}
 
 <!--more-->
 

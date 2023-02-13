@@ -20,7 +20,7 @@ accordion](https://material.angular.io/components/expansion/overview).
 
 This blog post presents the source code for that with a couple of notes.
 
-{% include source-code-bookmarks.dev.html %}
+{% include source-code-codever.html %}
 
 <!--more-->
 

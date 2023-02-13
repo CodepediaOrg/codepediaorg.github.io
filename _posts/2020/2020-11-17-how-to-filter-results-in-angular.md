@@ -21,7 +21,7 @@ on [Bookmarks.dev](https://www.codever.dev). To make my life even easier, I adde
 
 In this blog post I will present the implementation in Angular required to achieve this new feature.
 
-{% include source-code-bookmarks.dev.html %}
+{% include source-code-codever.html %}
 
 <!--more-->
 

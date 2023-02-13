@@ -23,7 +23,7 @@ Because there is still some common functionality in both, like handling autocomp
  I decided to use Angular component inheritance to avoid code duplication.
  In this blog post I will just show code examples for inheritance and name the angular inheritance particularities.
 
-{% include source-code-bookmarks.dev.html %}
+{% include source-code-codever.html %}
 
 <!--more-->
 

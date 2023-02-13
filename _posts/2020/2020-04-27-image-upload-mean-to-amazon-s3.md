@@ -19,7 +19,7 @@ implemented in Angular to the backend implemented with NodeJS/ExpressJS. This is
 at the [www.codever.dev](https://www.codever.dev) : once you register for an account you have the possibility to change your profile picture
 with something more personal at [user settings](https://www.codever.dev/settings).
 
-{% include source-code-bookmarks.dev.html %}
+{% include source-code-codever.html %}
 
 So let's jump into the tutorial
 <!--more-->

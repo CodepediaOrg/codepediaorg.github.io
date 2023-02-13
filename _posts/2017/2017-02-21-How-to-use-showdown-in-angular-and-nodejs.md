@@ -25,7 +25,7 @@ When managing my dev bookmarks via [www.codever.dev](https://www.codever.dev/),
 [^3]: <https://angular.io/>
 [^4]: <https://nodejs.org/en/>
 
-{% include source-code-bookmarks.dev.html %}
+{% include source-code-codever.html %}
 
 <!--more-->
 

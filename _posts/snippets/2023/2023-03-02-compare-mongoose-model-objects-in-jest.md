@@ -7,7 +7,7 @@ permalink: /snippets/63ff7adb1b5b8945055f4e59/compare-mongoose-model-objects-in-
 published: true
 snippetId: 63ff7adb1b5b8945055f4e59
 categories: [snippets]
-tags: [javascript, mongoose, testing, jest, codever-snippets]
+tags: [javascript, mongoose, testing, jest, codever-snippets, mongodb]
 ---
 
 The schema model object in Mongoose provides an `_id` that is of type `ObjectId`. If you are not interested in
@@ -87,6 +87,5 @@ describe('toBookmark', () => {
 **Project**: [`codever`](https://github.com/CodeverDotDev/codever) - **File**:  `bookmark-request.mapper.test.js`
 
 <hr/>
-
 
  {% include snippet-post-recommendation-ending.html snippetId="63ff7adb1b5b8945055f4e59" %}
